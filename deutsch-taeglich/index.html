@@ -1,0 +1,1214 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Deutsch täglich</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: Reclam-yellow study booklet. Desktop = left rail + card/detail columns; phone = top bar + bottom tab bar, one column. */
+:root{
+  --bg:#f6f4ee; --paper:#fffdf7; --ink:#1d1f24; --muted:#6a6a64; --line:#e3dfd2;
+  --accent:#f2c200; --accent-ink:#2a2300; --accent-soft:#fbefb8;
+  --der:#2f62c9; --die:#c8363a; --das:#2f8a4e;
+  --good:#2f8a4e; --warn:#b97900; --bad:#c8363a;
+  --display:"Zilla Slab", Georgia, "Songti SC", serif;
+  --read:"Source Serif 4", Georgia, "Songti SC", "Noto Serif SC", serif;
+  --ui:"IBM Plex Sans", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15161a; --paper:#1d1f24; --ink:#ecebe6; --muted:#9a9a92; --line:#2e3037;
+  --accent:#f2c200; --accent-ink:#1d1a05; --accent-soft:#3a3214;
+  --der:#7aa2f2; --die:#f07a7d; --das:#6cc48d;
+  --good:#6cc48d; --warn:#e3b34a; --bad:#f07a7d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15161a; --paper:#1d1f24; --ink:#ecebe6; --muted:#9a9a92; --line:#2e3037;
+  --accent:#f2c200; --accent-ink:#1d1a05; --accent-soft:#3a3214;
+  --der:#7aa2f2; --die:#f07a7d; --das:#6cc48d;
+  --good:#6cc48d; --warn:#e3b34a; --bad:#f07a7d; color-scheme:dark}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.55}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:100%}
+.rail{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;height:100vh;padding:24px 16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:20px;background:var(--paper)}
+.brand{font-family:var(--display);font-weight:700;font-size:24px;line-height:1.1;display:flex;flex-direction:column;gap:2px}
+.brand small{font-family:var(--ui);font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.04em}
+.brand .tag{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:0 6px;border-radius:3px}
+.tabs{display:flex;flex-direction:column;gap:4px}
+.tab{display:flex;align-items:center;gap:10px;padding:9px 12px;border:0;background:none;border-radius:8px;text-align:left;font-weight:500;color:var(--muted)}
+.tab svg{width:18px;height:18px;flex:none}
+.tab[aria-current="true"]{background:var(--accent-soft);color:var(--ink)}
+.tab .badge{margin-left:auto;font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.rail-foot{margin-top:auto;display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}
+.sync{display:flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--good)} .dot.warn{background:var(--warn)}
+main{padding-inline:32px;padding-block:28px 48px;min-width:0}
+.view{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.head h1{margin:0;font-family:var(--display);font-size:30px;font-weight:600;text-wrap:balance}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.btn{border:1px solid var(--line);background:var(--paper);padding:9px 16px;border-radius:8px;font-weight:500}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn:disabled{opacity:.5;cursor:default}
+.notice{border:1px solid var(--line);background:var(--paper);border-radius:var(--r);padding:14px 16px;color:var(--muted)}
+.notice.err{border-color:var(--bad);color:var(--bad)}
+/* progress */
+.prog{display:flex;align-items:center;gap:12px;font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted)}
+.bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .k{background:var(--good)} .bar .f{background:var(--warn)} .bar .u{background:var(--bad)}
+/* word study */
+.study{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:20px;align-items:start}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 24px;display:flex;flex-direction:column;gap:18px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px)}
+.card .num{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.06em}
+.word-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.art{font-family:var(--display);font-size:22px;font-weight:600}
+.art.der{color:var(--der)} .art.die{color:var(--die)} .art.das{color:var(--das)}
+.lemma{font-family:var(--display);font-size:44px;font-weight:700;line-height:1.05;word-break:break-word}
+.speak{border:1px solid var(--line);background:none;border-radius:50%;width:36px;height:36px;display:inline-grid;place-items:center;align-self:center}
+.speak svg{width:18px;height:18px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.chip{border:1px solid var(--line);border-radius:999px;padding:1px 10px}
+.ask{font-size:14px;color:var(--muted)}
+.choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.choice{border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:12px 8px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:2px}
+.choice small{font-weight:400;font-size:12px;color:var(--muted)}
+.choice.k:hover,.choice.k.sel{border-color:var(--good);color:var(--good)}
+.choice.f:hover,.choice.f.sel{border-color:var(--warn);color:var(--warn)}
+.choice.u:hover,.choice.u.sel{border-color:var(--bad);color:var(--bad)}
+.navrow{display:flex;gap:8px;justify-content:space-between}
+.quick{border-top:1px dashed var(--line);padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.quick .mean{font-size:18px;font-weight:600}
+.linkish{border:0;background:none;padding:0;color:var(--muted);text-decoration:underline;font-size:13px;align-self:flex-start}
+.detail{display:flex;flex-direction:column;gap:14px;min-width:0}
+.sec{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.sec h3{margin:0;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;display:flex;gap:8px;align-items:baseline}
+.sec h3 span{font-family:var(--display);text-transform:none;letter-spacing:0;font-size:16px;color:var(--ink)}
+.sec p{margin:0}
+.big-mean{font-size:20px;font-weight:600}
+.ex{display:flex;flex-direction:column;gap:2px;padding-left:12px;border-left:2px solid var(--accent)}
+.ex .de{font-family:var(--read);font-size:16px}
+.ex .zh{color:var(--muted);font-size:14px}
+.parts{display:flex;flex-wrap:wrap;gap:8px}
+.part{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:8px;padding:6px 10px;min-width:0}
+.part b{font-family:var(--display);font-size:18px}
+.part span{font-size:13px;color:var(--muted)}
+.ety{font-family:var(--read);font-size:15.5px;line-height:1.7}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:13px}
+.chain .st{background:var(--accent-soft);border-radius:6px;padding:2px 8px}
+.chain .st em{color:var(--muted);font-style:normal;margin-right:4px}
+.pairs{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:6px 16px}
+.pairs div{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;min-width:0}
+.pairs b{font-weight:600}
+.pairs span{color:var(--muted);font-size:14px}
+.tip{background:var(--accent-soft);border-radius:var(--r);padding:12px 16px;font-size:14px}
+.skeleton{color:var(--muted);font-size:14px}
+.empty-detail{border:1px dashed var(--line);border-radius:var(--r);padding:28px 22px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+.empty-detail b{color:var(--ink);font-family:var(--display);font-size:18px}
+/* done summary */
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.stat b{display:block;font-family:var(--display);font-size:32px;font-variant-numeric:tabular-nums}
+.stat.k b{color:var(--good)} .stat.f b{color:var(--warn)} .stat.u b{color:var(--bad)}
+.wlist{display:flex;flex-wrap:wrap;gap:6px}
+.wpill{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:3px 12px;font-size:14px}
+.wpill.f{border-color:var(--warn)} .wpill.u{border-color:var(--bad)}
+/* reading */
+.reading{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}
+@media (max-width: 1150px){.reading{grid-template-columns:minmax(0,1fr)} .article{position:static !important;max-height:none !important;overflow:visible !important}}
+.article{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);max-height:calc(100vh - 40px);overflow:auto;overscroll-behavior:contain;container-type:inline-size;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 30px;display:flex;flex-direction:column;gap:14px}
+.article h2{margin:0;font-family:var(--display);font-size:28px;font-weight:600;text-wrap:balance}
+.article .para{font-family:var(--read);font-size:17.5px;line-height:1.75;max-width:65ch}
+.article .para p{margin:0}
+.article .tr{font-family:var(--ui);font-size:14px;color:var(--muted);margin-top:4px}
+.article mark,.tk.tw{background:var(--accent-soft);color:inherit;border-radius:3px;padding:0 2px}
+/* reading: tap a word, select to highlight, German margin glosses (Deutsch perfekt style) */
+.abody{position:relative;display:flex;flex-direction:column;gap:14px}
+.tk{cursor:pointer;border-radius:3px}
+@media (hover:hover){.tk:hover{background:var(--line)}}
+.tk.on{outline:2px solid var(--accent);outline-offset:1px}
+.hl{background:linear-gradient(transparent 52%, color-mix(in srgb,var(--accent) 55%,transparent) 52%)}
+.tk.tw.hl{background:linear-gradient(var(--accent-soft) 52%, color-mix(in srgb,var(--accent) 60%,transparent) 52%)}
+.gn{font-family:var(--ui);font-size:.6em;font-weight:600;color:var(--die);margin-left:1px;line-height:0;cursor:pointer}
+.nt{font-size:.7em;color:var(--warn);cursor:pointer;margin-left:1px;line-height:0}
+.gl{font-family:var(--ui);font-size:12.5px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:6px;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+.gl b{color:var(--ink);font-weight:600}
+.gl sup{color:var(--die);font-weight:600}
+/* wide article: glosses become side notes next to the line where the word is (positioned by layoutGl) */
+@container (min-width: 600px){
+  .abody.has-gl{padding-right:214px}
+  .abody.has-gl .gl{display:contents}
+  .abody.has-gl .gl>div{position:absolute;right:0;width:194px;box-sizing:border-box;border-left:2px solid var(--accent);padding-left:10px}
+}
+.rhint{font-size:13px;color:var(--muted);margin:0}
+.mynotes{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.mynotes h3{margin:0;font-size:13px;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.mn{display:flex;flex-direction:column;gap:2px}
+.mn .mq{border:0;background:none;padding:0;text-align:left;font-family:var(--read);font-size:15.5px}
+.mn .mq span{background:linear-gradient(transparent 52%, color-mix(in srgb,var(--accent) 55%,transparent) 52%)}
+.mn p{margin:0;font-size:14px}
+.mn .mna{display:flex;gap:14px}
+.pop{position:absolute;z-index:30;width:min(340px,calc(100vw - 24px));box-sizing:border-box;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.18);padding:14px 16px;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.pop[hidden]{display:none}
+.pop-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pop-h .pop-w{font-family:var(--display);font-size:22px;font-weight:600}
+.pop-h .art{font-size:15px}
+.pop .speak{width:30px;height:30px}
+.pop .speak svg{width:16px;height:16px}
+.pop-f,.muted{color:var(--muted);font-size:13px}
+.pop-m{font-size:15px}
+.pop-de{font-family:var(--ui);font-size:13.5px;border-left:2px solid var(--accent);padding-left:10px}
+.pop-note{font-size:13.5px;background:var(--bg);border-radius:8px;padding:8px 10px}
+.pop-q{font-family:var(--read);font-size:15.5px}
+.pop-parts{display:flex;flex-direction:column;gap:3px;font-size:13px;color:var(--muted)}
+.pop-parts b{color:var(--ink)}
+.pop-a{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:2px}
+.pop textarea{min-height:72px;background:var(--bg)}
+.ok{color:var(--good);font-size:13px;font-weight:600}
+.wb-item .d.r{color:var(--der)}
+.wb-mini{display:flex;flex-direction:column;gap:8px}
+.wb-mini p{margin:0}
+.wb-mini .de-gloss{border-left:2px solid var(--accent);padding-left:10px;font-size:14px}
+.ctx{font-family:var(--read);font-size:15px;color:var(--muted)}
+.qs{display:flex;flex-direction:column;gap:14px}
+.q{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.q .qt{font-family:var(--read);font-size:16.5px;font-weight:600}
+.q .qn{font-size:12px;color:var(--muted);letter-spacing:.06em}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;font-family:var(--read);font-size:15.5px}
+.opt input{margin-top:5px}
+.opt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 10%,transparent)}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
+textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg);color:var(--ink);font-family:var(--read);font-size:15.5px;resize:vertical}
+.fb{font-size:14px;border-radius:8px;padding:10px 12px;background:var(--bg);display:flex;flex-direction:column;gap:4px}
+.fb.good{border-left:3px solid var(--good)} .fb.mid{border-left:3px solid var(--warn)} .fb.bad{border-left:3px solid var(--bad)}
+.fb .de{font-family:var(--read)}
+.score{font-family:var(--display);font-size:22px}
+.toggle{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+/* wordbook */
+.wb{display:flex;flex-direction:column;gap:8px}
+.wb-item{background:var(--paper);border:1px solid var(--line);border-radius:var(--r)}
+.wb-item>button{width:100%;border:0;background:none;display:flex;gap:12px;align-items:baseline;padding:12px 16px;text-align:left;flex-wrap:wrap}
+.wb-item .w{font-family:var(--display);font-size:19px;font-weight:600}
+.wb-item .m{color:var(--muted);flex:1;min-width:0}
+.wb-item .d{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.wb-body{padding:0 16px 16px;display:flex;flex-direction:column;gap:12px}
+.filter{display:flex;gap:8px;flex-wrap:wrap}
+.filter button{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:4px 12px;font-size:13px}
+.filter button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+/* settings */
+.levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.lv{border:1px solid var(--line);background:var(--paper);border-radius:var(--r);padding:12px;text-align:left;display:flex;flex-direction:column;gap:2px}
+.lv b{font-family:var(--display);font-size:22px}
+.lv span{font-size:12px;color:var(--muted)}
+.lv[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.mtop{display:none}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:sp 0.8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.spin{animation:none}}
+
+/* date bar, stamp, calendar */
+.btn.sm{padding:5px 12px;font-size:13px}
+.sub{margin:0;color:var(--muted);font-size:14px}
+.kbd{font-size:12px;color:var(--muted)}
+.datebar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dnav{border:1px solid var(--line);background:var(--paper);border-radius:8px;width:34px;height:32px;font-size:18px;line-height:1}
+.dnav:disabled{opacity:.35;cursor:default}
+.dlabel{font-family:var(--display);font-size:18px;font-weight:600;display:inline-flex;align-items:center;gap:8px;padding:0 4px}
+.dlabel .chip{font-family:var(--ui);font-size:12px;font-weight:500;background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.dlevel{font-size:12px;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.stamp{display:inline-flex;flex-direction:column;align-items:center;border:2px solid var(--die);color:var(--die);border-radius:6px;padding:2px 10px;transform:rotate(-5deg);line-height:1.15;margin-left:auto}
+.stamp b{font-family:var(--display);font-size:16px;letter-spacing:.12em;text-transform:uppercase}
+.stamp span{font-size:11px}
+.stamp.big{padding:6px 16px;animation:stampin .45s cubic-bezier(.2,1.6,.4,1) both}
+.stamp.big b{font-size:24px}
+@keyframes stampin{from{transform:rotate(-14deg) scale(1.8);opacity:0}to{transform:rotate(-5deg) scale(1);opacity:1}}
+@media (prefers-reduced-motion: reduce){.stamp.big{animation:none}}
+.scoreq{flex-direction:row;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.scoreq>div{display:flex;flex-direction:column;gap:2px}
+.calnav{display:flex;gap:6px;flex-wrap:wrap}
+.calstats{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted)}
+.calstats b{font-family:var(--display);font-size:28px;color:var(--ink);margin-right:4px;font-variant-numeric:tabular-nums}
+.calgrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.calgrid .wd{font-size:12px;color:var(--muted);text-align:center;padding-bottom:2px}
+.cd{position:relative;aspect-ratio:1.25;max-width:100%;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:6px 8px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;text-align:left;min-width:0}
+.cd.blank{border:0;background:none}
+.cd:disabled{opacity:.4;cursor:default}
+.cd .dn{font-variant-numeric:tabular-nums;font-weight:600}
+.cd .pp{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.cd .ck{align-self:flex-end;font-family:var(--display);font-size:22px;color:var(--die);border:2px solid var(--die);border-radius:50%;width:30px;height:30px;display:grid;place-items:center;transform:rotate(-8deg)}
+.cd.done{background:color-mix(in srgb,var(--die) 7%,var(--paper))}
+.cd.part{border-color:var(--warn)}
+.cd.avail .pp{color:var(--ink)}
+.cd.today{outline:2px solid var(--accent);outline-offset:-1px}
+.cd.sel{box-shadow:inset 0 0 0 2px var(--ink)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.lg{display:inline-block;width:14px;height:14px;border-radius:4px;border:1px solid var(--line);background:var(--paper)}
+.lg.done{border:2px solid var(--die)} .lg.part{border-color:var(--warn)} .lg.avail{background:var(--accent-soft)}
+@media (max-width: 820px){
+  .cd{aspect-ratio:auto;min-height:52px;padding:4px 5px}
+  .cd .ck{width:22px;height:22px;font-size:15px}
+  .cd .pp{font-size:10px}
+  .calgrid{gap:4px}
+  .stamp{margin-left:0}
+}
+
+/* ---------- phone ---------- */
+@media (max-width: 820px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  .rail{position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--line);flex-direction:row;z-index:5}
+  .rail .brand,.rail-foot{display:none}
+  .tabs{flex-direction:row;flex:1;justify-content:space-around}
+  .tab{flex-direction:column;gap:2px;font-size:11px;padding:6px 2px;flex:1;align-items:center;min-width:0}
+  .tab .badge{display:none}
+  .mtop{display:flex;align-items:center;justify-content:space-between;position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--paper);border-bottom:1px solid var(--line);padding:10px 16px}
+  .mtop .brand{font-size:19px;flex-direction:row;align-items:baseline;gap:8px}
+  main{padding-inline:16px;padding-block:16px 96px}
+  .head h1{font-size:24px}
+  .study,.reading{grid-template-columns:minmax(0,1fr)}
+  .card{position:static;padding:22px 18px}
+  .lemma{font-size:38px}
+  .article{padding:20px 18px;position:static;max-height:none;overflow:visible}
+  .pop{position:fixed;left:0 !important;right:0;top:auto !important;bottom:0;width:auto;border-radius:16px 16px 0 0;max-height:62vh;overflow:auto;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40}
+  .article .para{font-size:17px}
+  .summary{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .stat b{font-size:26px}
+}
+</style>
+
+<div class="app">
+  <nav class="rail" aria-label="主导航">
+    <div class="brand">Deutsch <span><span class="tag">täglich</span></span><small>每日德语 · 30 词 + 1 篇阅读</small></div>
+    <div class="tabs" role="tablist">
+      <button class="tab" data-view="words" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>单词<span class="badge" id="b-words"></span></button>
+      <button class="tab" data-view="read"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h7a3 3 0 0 1 2 1 3 3 0 0 1 2-1h7v14h-7a3 3 0 0 0-2 1 3 3 0 0 0-2-1H3z"/><path d="M12 6v14"/></svg>阅读<span class="badge" id="b-read"></span></button>
+      <button class="tab" data-view="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg>打卡日历<span class="badge" id="b-cal"></span></button>
+      <button class="tab" data-view="book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h11v18l-5.5-4L6 21z"/></svg>生词本<span class="badge" id="b-book"></span></button>
+      <button class="tab" data-view="set"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>设置</button>
+    </div>
+    <div class="rail-foot">
+      <div class="sync"><span class="dot" id="sync-dot"></span><span id="sync-txt">正在连接云端…</span></div>
+      <div id="streak-lbl"></div>
+    </div>
+  </nav>
+  <div style="min-width:0">
+    <div class="mtop"><div class="brand">Deutsch <span class="tag">täglich</span></div><div class="sync" style="font-size:12px;color:var(--muted)"><span class="dot" id="sync-dot-m"></span><span id="sync-txt-m">连接中</span></div></div>
+    <main id="main"></main>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clone = o => JSON.parse(JSON.stringify(o));
+const ymd = d => d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+const today = () => ymd(new Date());
+const parseD = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d, 12); };
+const addDays = (s, n) => { const d = parseD(s); d.setDate(d.getDate() + n); return ymd(d); };
+const WD = ['周日','周一','周二','周三','周四','周五','周六'];
+const fmtDate = s => { const d = parseD(s); return (d.getMonth() + 1) + '月' + d.getDate() + '日 ' + WD[d.getDay()]; };
+const fmtShort = s => { const d = parseD(s); return (d.getMonth() + 1) + '月' + d.getDate() + '日'; };
+const LEVELS = [['A1','入门'],['A2','初级'],['B1','中级'],['B2','中高级'],['B2–C1','中高级到高级'],['C1','高级']];
+const DEFAULT_LEVEL = 'B2–C1';
+const SCHEDULE_TIME = '北京时间每天凌晨 4:47';
+const LEVEL_HINT = {
+  'B2–C1': '水平介于 B2 和 C1 之间：选 B2 后段到 C1 的词，偏新闻、职场、社会议题和书面表达中常见的词，例如抽象名词、带固定介词的动词、可分动词、书面连接词和副词；不要选 A1–B1 的基础词。',
+  'C1': '水平 C1：选高级、书面和学术语境中常用的词，包括固定搭配和较抽象的表达。'
+};
+const hint = l => LEVEL_HINT[l] ? '\n' + LEVEL_HINT[l] : '';
+const emptyProg = () => ({ marks: {}, pos: 0, answers: {}, grading: null, notes: [] });
+const S = { db:null, sample:null, uid:null, profileRef:null, settingsRef:null, contentRef:null, dayRef:null, unsub:null,
+  settings:{ level: DEFAULT_LEVEL, seen: [], dates: [] }, profile:{ cal: {} },
+  date: today(), day:null, content:null, calMonth: today().slice(0, 7),
+  view:'words', idx:0, gen:{ words:null, read:null }, err:{}, book:[], bookFilter:'all', openBook:null, showTr:false, showGl:true, pop:null, lookup:{}, lookingUp:null, bookGen:null,
+  cloud:'connecting', justDone:false, confirmRegen:false };
+
+/* ---------------- storage ---------------- */
+let wq = Promise.resolve();
+function save(ref, patch, full) {
+  if (!ref) return;
+  // update() rejects when the document does not exist yet (a fresh day): create it instead
+  const merge = () => ref.update(patch).catch(async e => { const s = await ref.get().catch(() => null); if (s && !s.exists) return ref.set(patch); throw e; });
+  wq = wq.then(() => (full ? ref.set(patch) : merge())).catch(e => { console.warn('save', e); setCloud('warn'); });
+  return wq;
+}
+function setCloud(s) {
+  S.cloud = s;
+  const map = {connecting:['', '正在连接云端…','连接中'], ok:['ok','已同步 · 手机电脑通用','已同步'], warn:['warn','云端不可用，仅保存在本次打开','未同步']};
+  const [c, t, m] = map[s];
+  for (const id of ['sync-dot','sync-dot-m']) $('#'+id).className = 'dot ' + c;
+  $('#sync-txt').textContent = t; $('#sync-txt-m').textContent = m;
+}
+/* local cache: the page shows the last known content instantly, then refreshes from the cloud */
+const CK = 'deutsch-taeglich-cache-v1';
+function cacheRead() { try { return JSON.parse(localStorage.getItem(CK)) || {}; } catch (e) { return {}; } }
+let cacheTimer;
+function scheduleCache() {
+  clearTimeout(cacheTimer);
+  cacheTimer = setTimeout(() => {
+    try {
+      if (!S.day || !S.content) return;
+      const c = cacheRead(); c.days = c.days || {};
+      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [] } };
+      const keep = Object.keys(c.days).sort().slice(-4); for (const k of Object.keys(c.days)) if (!keep.includes(k)) delete c.days[k];
+      c.settings = S.settings; c.cal = S.profile.cal;
+      localStorage.setItem(CK, JSON.stringify(c));
+    } catch (e) {}
+  }, 600);
+}
+function addDate(date, lemmas) {
+  const st = S.settings;
+  st.seen = Array.from(new Set((st.seen || []).concat(lemmas || []))).slice(-3000);
+  st.dates = Array.from(new Set((st.dates || []).concat(date))).sort().slice(-1000);
+  save(S.settingsRef, { seen: st.seen, dates: st.dates });
+}
+
+async function boot() {
+  const cached = cacheRead(), t0 = today();
+  if (cached.settings) Object.assign(S.settings, cached.settings);
+  if (cached.cal) S.profile.cal = cached.cal;
+  const cd = cached.days && cached.days[t0];
+  if (cd && cd.content && cd.content.date === t0) {
+    S.day = { date: t0, ...emptyProg(), ...(cd.prog || {}) };
+    applyContent(cd.content);
+    const n = S.day.lemmas.length;
+    S.idx = n && Object.keys(S.day.marks).length >= n ? n : Math.min(S.day.pos || 0, Math.max(0, n - 1));
+  }
+  render();
+  const [db, user, sample] = await Promise.all([claude.use('db'), claude.use('user'), claude.use('sample')]).catch(() => [null,null,null]);
+  S.sample = sample;
+  const uid = user ? await user.id().catch(() => null) : null;
+  if (db && uid) {
+    S.db = db; S.uid = uid;
+    S.profileRef = db.doc('data/users/' + uid + '/profile');
+    S.settingsRef = db.doc('settings/main');
+    S.contentRef = db.doc('content/' + t0);
+    S.dayRef = S.profileRef.collection('days').doc(t0);
+    S.prefetch = { date: t0, c: S.contentRef.get().catch(() => null), p: S.dayRef.get().catch(() => null) };
+    try {
+      const [p, st] = await Promise.all([S.profileRef.get(), S.settingsRef.get()]);
+      const pd = p.exists ? clone(p.data()) : null;
+      if (pd) S.profile = { cal: {}, ...pd };
+      else await S.profileRef.set({ cal: {} });
+      if (st.exists) Object.assign(S.settings, clone(st.data()));
+      else { S.settings.seen = (pd && pd.seen) || []; await S.settingsRef.set(S.settings); }
+      setCloud('ok');
+    } catch (e) { setCloud('warn'); }
+  } else setCloud('warn');
+  await openDate(today(), !!(S.day && S.day.date === today()));
+  loadBook();
+  render();
+  let lastToday = today();
+  document.addEventListener('visibilitychange', async () => {
+    if (document.visibilityState !== 'visible' || !S.db) return;
+    const t = today();
+    try { const st = await S.settingsRef.get(); if (st.exists) Object.assign(S.settings, clone(st.data())); } catch (e) {}
+    try { const p = await S.profileRef.get(); if (p.exists) S.profile = { cal: {}, ...clone(p.data()) }; } catch (e) {}
+    if (t !== lastToday && S.date === lastToday) { lastToday = t; await openDate(t); }
+    else { lastToday = t; await openDate(S.date, true); }
+    if (!document.activeElement || document.activeElement.tagName !== 'TEXTAREA') render();
+  });
+}
+
+const sig = c => c ? [c.createdAt, (c.lemmas || []).join(','), (c.words || []).filter(Boolean).length, c.reading?.title || ''].join('|') : '';
+function applyContent(c) {
+  S.content = c;
+  Object.assign(S.day, { level: c?.level || S.settings.level, lemmas: c?.lemmas || [], words: c?.words || [], reading: c?.reading || null });
+}
+
+async function openDate(date, refresh) {
+  if (S.unsub && (!refresh || date !== S.date)) { S.unsub(); S.unsub = null; }
+  const changed = date !== S.date;
+  S.date = date;
+  S.contentRef = S.db ? S.db.doc('content/' + date) : null;
+  S.dayRef = S.profileRef ? S.profileRef.collection('days').doc(date) : null;
+  if (!S.db) { if (!S.day || changed) { S.day = { date, ...emptyProg() }; applyContent(null); S.idx = 0; } return; }
+  let c = null, p = null;
+  const pf = S.prefetch && S.prefetch.date === date ? S.prefetch : null; S.prefetch = null;
+  const [cs, ps] = await Promise.all([pf ? pf.c : S.contentRef.get().catch(() => null), pf ? pf.p : S.dayRef.get().catch(() => null)]);
+  if (cs && cs.exists) c = clone(cs.data());
+  if (ps && ps.exists) p = clone(ps.data());
+  if (S.date !== date) return;
+  // earlier versions kept the words inside the private day document: move them to the shared content
+  if (p && Array.isArray(p.lemmas) && p.lemmas.length) {
+    const started = Object.keys(p.marks || {}).length > 0;
+    const legacy = { date, level: p.level || S.settings.level, lemmas: p.lemmas, words: p.words || [], reading: p.reading || null, source: 'page', createdAt: Date.now() };
+    if (!c || (started && JSON.stringify(c.lemmas) !== JSON.stringify(p.lemmas))) { c = legacy; save(S.contentRef, legacy, true); addDate(date, legacy.lemmas); }
+    else if (!c.reading && p.reading && started) { c.reading = p.reading; save(S.contentRef, { reading: p.reading }); }
+    p = started ? { marks: p.marks || {}, pos: p.pos || 0, answers: p.answers || {}, grading: p.grading || null } : emptyProg();
+    save(S.dayRef, p, true);
+  }
+  const keep = refresh && S.day && S.day.date === date && (!c || JSON.stringify(c.lemmas) === JSON.stringify(S.day.lemmas || []) || !(S.day.lemmas || []).length);
+  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [] } : emptyProg());
+  S.day = { date, ...prog };
+  applyContent(c);
+  const n = S.day.lemmas.length;
+  if (!keep || S.idx > n) S.idx = n && Object.keys(S.day.marks).length >= n ? n : Math.min(S.day.pos || 0, Math.max(0, n - 1));
+  syncCal();
+  if (!S.unsub) S.unsub = S.contentRef.onSnapshot(snap => {
+    if (!snap.exists || snap.metadata.hasPendingWrites || S.gen.words === S.date || S.gen.read === S.date) return;
+    const nc = clone(snap.data());
+    if (sig(nc) === sig(S.content) || nc.date !== S.date) return;
+    const newSet = JSON.stringify(nc.lemmas) !== JSON.stringify(S.day.lemmas);
+    // a different word list for this date: the old marks and answers belong to the old words
+    if (newSet) { Object.assign(S.day, emptyProg()); S.idx = 0; S.justDone = false; }
+    applyContent(nc);
+    if (!document.activeElement || document.activeElement.tagName !== 'TEXTAREA') render();
+  }, () => {});
+}
+
+async function loadBook() {
+  if (!S.profileRef) return;
+  try {
+    const q = await S.profileRef.collection('wordbook').orderBy('added', 'desc').limit(500).get();
+    S.book = q.docs.map(d => ({ id: d.id, ...d.data() }));
+    updateBadges();
+    if (S.view === 'book') render();
+  } catch (e) {}
+}
+
+/* ---------------- check-in ---------------- */
+function dayStatus(d) {
+  const t = d.lemmas.length, n = Math.min(Object.keys(d.marks || {}).length, t), r = !!(d.grading && !d.grading.pending);
+  return { n, t, r, done: t > 0 && n >= t && r };
+}
+function syncCal() {
+  const d = S.day; if (!d || !d.lemmas.length) return;
+  const st = dayStatus(d), old = (S.profile.cal || {})[d.date];
+  st.done = st.done || !!(old && old.done);
+  if (old && old.n === st.n && old.t === st.t && old.r === st.r && old.done === st.done) return;
+  if (st.done && !(old && old.done)) S.justDone = true;
+  S.profile.cal = { ...(S.profile.cal || {}), [d.date]: st };
+  save(S.profileRef, { cal: { [d.date]: st } });
+}
+function streak() {
+  const cal = S.profile.cal || {};
+  let d = today(), k = 0;
+  if (!(cal[d] && cal[d].done)) d = addDays(d, -1);
+  while (cal[d] && cal[d].done) { k++; d = addDays(d, -1); }
+  return k;
+}
+const isDone = date => !!((S.profile.cal || {})[date] && S.profile.cal[date].done);
+
+/* ---------------- Claude calls (fallback when the daily batch is not there yet) ---------------- */
+function sampleErr(e) {
+  const c = e && e.code;
+  if (c === 'not_granted' || c === 'sampling_disabled' || c === 'not_declared' || c === 'capability_disabled') return '需要允许这个页面使用 Claude 才能出题或批改。请在页面的权限菜单里允许后刷新。';
+  if (c === 'rate_limited') return '调用太频繁或额度已用完，稍等一会儿再点“重试”。';
+  if (c === 'session_expired') return '登录已过期，请重新登录 claude.ai 后刷新。';
+  return '生成失败（' + (c || '未知错误') + '），点“重试”再试一次。';
+}
+
+const WORD_FIELDS = `每个单词返回一个对象，字段如下（所有解释用简体中文，德语例句要地道）：
+{
+ "word": "单词原形（名词首字母大写，不带冠词）",
+ "gender": "der" | "die" | "das" | null（非名词为 null）,
+ "pos": "词性，如 名词 / 动词 / 形容词 / 副词 / 介词 / 连词",
+ "plural": "名词复数形式全写，如 die Gelegenheiten；非名词为 null",
+ "forms": "动词：第三人称单数现在时, 过去式, 完成式（注明 hat/ist）；形容词有不规则比较级时写出；其他为 null",
+ "ipa": "国际音标",
+ "meaning": "简明中文释义，多个义项用；分隔",
+ "usage": "用法要点 2-4 句：支配的格或固定介词、可分/不可分、语域、常见错误、与近义词的区别",
+ "collocations": [{"de":"常用搭配","zh":"中文"}]（3 个）,
+ "examples": [{"de":"例句","zh":"翻译"}]（2 个，难度与学习者水平匹配）,
+ "root": {"parts":[{"part":"构词成分","meaning":"该成分的含义"}], "explain":"一段话讲清这个词是怎么由这些成分拼成的、前缀/后缀如何改变意思"},
+ "etymology": {"chain":[{"stage":"阶段名，如 原始日耳曼语 / 古高地德语 / 中古高地德语 / 拉丁语 / 古法语","form":"该阶段的词形"}], "story":"3-5 句的词源故事：最初的字面意思、意义如何演变、相关的音变或借词途径；不确定的环节明说“来源不确定”，不要编造"},
+ "cognates": [{"lang":"英语 / 荷兰语 / 拉丁语 等","word":"同源词","note":"简短说明"}]（1-3 个，没有可靠同源词就给空数组）,
+ "family": [{"de":"同词根的其他德语词","zh":"中文"}]（3-5 个）,
+ "mnemonic": "一句帮助记忆的提示"
+}`;
+
+async function generateWords() {
+  if (!S.sample) { S.err.words = '这个页面需要使用 Claude 才能出题，但当前环境里不可用。请在 claude.ai 里打开这个页面。'; render(); return; }
+  const date = S.date, d = S.day, cref = S.contentRef, level = d.level || S.settings.level;
+  S.gen.words = date; S.err.words = null; render();
+  const here = () => S.date === date;
+  try {
+    if (!d.lemmas.length) {
+      const seen = (S.settings.seen || []).slice(-1200);
+      const list = await S.sample.json(
+        `你是一位德语老师。请为一位母语是中文、德语水平为 ${level} 的学习者挑选今天要学的 30 个德语单词。${hint(level)}
+要求：对该水平最有用的词，略带挑战；名词约 12 个，动词约 10 个，其余为形容词、副词、介词或连词；不要选国际通用、一看就懂的词；彼此不要重复。
+不要选下列已经学过的词：${seen.join(', ') || '（无）'}
+只返回一个 JSON 字符串数组，名词首字母大写且不带冠词，例如 ["Gelegenheit","verzichten","allmählich"]。`,
+        { cache: false });
+      const lemmas = Array.from(new Set((Array.isArray(list) ? list : []).map(x => String(x).trim()).filter(Boolean))).slice(0, 30);
+      if (lemmas.length < 10) throw { code: 'invalid_json' };
+      d.lemmas = lemmas; d.words = lemmas.map(() => null); d.level = level;
+      const c = { date, level, lemmas, words: d.words, reading: null, source: 'page', createdAt: Date.now() };
+      S.content = c; save(cref, c, true); addDate(date, lemmas);
+      if (here()) render();
+    }
+    const missing = d.lemmas.map((_, i) => i).filter(i => !d.words[i]);
+    const batches = [];
+    for (let i = 0; i < missing.length; i += 10) batches.push(missing.slice(i, i + 10));
+    const results = await Promise.allSettled(batches.map(async idxs => {
+      const words = idxs.map(i => d.lemmas[i]);
+      const arr = await S.sample.json(
+        `你是一位讲解细致的德语老师兼词源学者。学习者母语是中文，德语水平 ${level}。${hint(level)}
+请为下面 ${words.length} 个德语单词写学习卡片，词根和词源部分要讲得准确、具体、有启发性。
+单词（按此顺序）：${words.join(', ')}
+
+${WORD_FIELDS}
+
+只返回一个 JSON 数组，按上面单词的顺序，每个单词一个对象。`,
+        { cache: false, modelTier: 'complex' });
+      if (!Array.isArray(arr)) throw { code: 'invalid_json' };
+      idxs.forEach((i, k) => { const w = arr[k]; if (w && typeof w === 'object') d.words[i] = w; });
+      save(cref, { words: d.words });
+      if (here()) { S.view === 'words' ? render() : updateBadges(); }
+    }));
+    const bad = results.find(r => r.status === 'rejected');
+    if (bad) S.err.words = sampleErr(bad.reason);
+  } catch (e) { S.err.words = sampleErr(e); }
+  S.gen.words = null;
+  if (here()) render();
+}
+
+async function generateReading() {
+  if (!S.sample) { S.err.read = '需要在 claude.ai 里打开这个页面才能出文章。'; render(); return; }
+  const date = S.date, d = S.day, cref = S.contentRef, dref = S.dayRef, level = d.level || S.settings.level;
+  S.gen.read = date; S.err.read = null; render();
+  const len = { A1: '120-160', A2: '160-220', B1: '230-300', B2: '300-380', 'B2–C1': '350-450', C1: '380-460' }[level] || '300';
+  const pick = d.lemmas.filter((_, i) => d.marks[i] !== 'k').concat(d.lemmas.filter((_, i) => d.marks[i] === 'k')).slice(0, 12);
+  try {
+    const r = await S.sample.json(
+      `你是一位德语老师。请为德语水平 ${level}、母语中文的学习者写一篇原创德语短文，然后出阅读理解题。${hint(level)}${/C1/.test(level) ? '\n文章句式要有相应难度：多用从句、被动态、第二虚拟式、名词化结构和书面连接词；题目要考查推断和观点理解，不只是找原句。' : ''}
+- 长度约 ${len} 个词，话题贴近生活或时事常识（如城市生活、工作、科技、环境、社会、文化），内容要有信息量，读起来自然。
+- 尽量自然地用上这些今天学过的词中的 6-10 个（可变形）：${pick.join(', ')}。在正文中用 [[ ]] 把这些词包起来，例如 [[verzichtet]]。
+- 分 3-5 段，每段给出对应的中文翻译。
+- 出 5 道德语题：3 道选择题（4 个选项，只有一个正确，干扰项要有迷惑性），2 道简答题（需要用德语一两句话回答，考查理解和表达）。
+只返回 JSON：
+{"title":"德语标题","title_zh":"中文标题","paragraphs":[{"de":"……","zh":"……"}],
+ "questions":[
+   {"type":"mc","q":"德语问题","options":["…","…","…","…"],"answer":0,"explain":"中文解析"},
+   {"type":"short","q":"德语问题","reference":"德语参考答案","explain":"中文说明答题要点"}
+ ],
+ "glossDe":[{"p":段落序号（从 0 开始）,"w":"正文中原样出现的一个词形","h":"词条：名词带冠词和复数，如 der Reißverschluss, ¨-e；动词写不定式；固定搭配写完整，如 etw. infrage stellen","e":"仿照 Deutsch perfekt 的边注，用简单德语一句话解释（≈ 表示近义解释，↔ 表示反义）"}],
+ "gloss":{"正文中每个词形的小写":{"l":"原形","g":"der/die/das 或 null","p":"中文词性","m":"在文中的中文意思"}}
+}
+glossDe 挑 10-16 个对这个水平偏难、又不在上面单词列表里的词；gloss 要覆盖正文中出现的每一个词形（包括虚词）。`,
+      { cache: false, modelTier: 'complex' });
+    if (!r || !Array.isArray(r.paragraphs) || !Array.isArray(r.questions)) throw { code: 'invalid_json' };
+    d.reading = r; d.answers = {}; d.grading = null; d.notes = [];
+    if (S.content) S.content.reading = r;
+    save(cref, { reading: r }); save(dref, { answers: {}, grading: null, notes: [] });
+  } catch (e) { S.err.read = sampleErr(e); }
+  S.gen.read = null;
+  if (S.date === date) render();
+}
+
+async function gradeReading() {
+  const d = S.day, r = d.reading, dref = S.dayRef, date = S.date;
+  const grading = {}, shorts = [];
+  r.questions.forEach((q, i) => {
+    const a = d.answers[i];
+    if (q.type === 'mc') grading[i] = { ok: a !== undefined && a !== '' && Number(a) === Number(q.answer) };
+    else shorts.push({ i, q: q.q, reference: q.reference, answer: String(a || '').trim() });
+  });
+  d.grading = { ...grading, pending: shorts.length > 0 };
+  render();
+  if (shorts.length) {
+    if (!S.sample) S.err.grade = '无法批改简答题：Claude 不可用。';
+    else try {
+      const res = await S.sample.json(
+        `你是德语老师，请批改学习者（水平 ${d.level || S.settings.level}，母语中文）对阅读理解简答题的德语回答。文章：
+${r.paragraphs.map(p => p.de.replace(/\[\[|\]\]/g, '')).join('\n')}
+
+题目和回答：
+${JSON.stringify(shorts.map(s => ({ i: s.i, frage: s.q, referenz: s.reference, antwort: s.answer || '（未作答）' })), null, 1)}
+
+对每题从内容是否正确和德语是否准确两方面打分：2 = 内容正确且语言基本无误，1 = 部分正确或有明显语法错误，0 = 错误或未作答。
+只返回 JSON 数组：[{"i":题号,"score":0到2,"feedback":"中文点评，指出内容和语法问题","corrected":"把学习者的回答改成正确地道的德语（未作答则给出示范答案）"}]`,
+        { cache: false });
+      (Array.isArray(res) ? res : []).forEach(x => { if (x && grading[x.i] === undefined) grading[x.i] = { score: Number(x.score) || 0, feedback: x.feedback, corrected: x.corrected }; });
+      S.err.grade = null;
+    } catch (e) { S.err.grade = sampleErr(e); }
+  }
+  d.grading = { ...grading, pending: false };
+  save(dref, { answers: d.answers, grading: d.grading });
+  if (S.date === date) { syncCal(); render(); }
+}
+
+/* ---------------- actions ---------------- */
+function speak(text) {
+  try {
+    const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.9;
+    const v = speechSynthesis.getVoices().find(v => /^de/i.test(v.lang)); if (v) u.voice = v;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch (e) {}
+}
+const bookKey = l => (l || '').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/Ä/g,'Ae').replace(/Ö/g,'Oe').replace(/Ü/g,'Ue').replace(/ß/g,'ss').replace(/[^A-Za-z0-9_\-.]/g, '_');
+function mark(i, m) {
+  const d = S.day; d.marks[i] = m; d.pos = i;
+  save(S.dayRef, { marks: { [i]: m }, pos: i });
+  const w = d.words[i], key = bookKey(d.lemmas[i]) || ('w' + i);
+  if (S.profileRef && w) {
+    const ref = S.profileRef.collection('wordbook').doc(key);
+    if (m === 'k') { if ((S.book.find(b => b.id === key) || {}).mark !== 'r') { wq = wq.then(() => ref.delete()).catch(() => {}); S.book = S.book.filter(b => b.id !== key); } }
+    else {
+      const entry = { word: w, mark: m, date: d.date, added: Date.now() };
+      save(ref, entry, true);
+      S.book = [{ id: key, ...entry }].concat(S.book.filter(b => b.id !== key));
+    }
+  }
+  syncCal();
+  render();
+}
+function go(i) {
+  const n = S.day.lemmas.length;
+  S.idx = Math.max(0, Math.min(n, i));
+  if (S.idx < n) { S.day.pos = S.idx; save(S.dayRef, { pos: S.idx }); }
+  render(); window.scrollTo({ top: 0 });
+}
+async function goDate(date) {
+  if (date > today()) return;
+  S.confirmRegen = false; S.justDone = false;
+  if (S.view === 'cal' || S.view === 'book' || S.view === 'set') S.view = 'words';
+  S.day = null; render();
+  await openDate(date);
+  render(); window.scrollTo({ top: 0 });
+}
+
+/* ---------------- render ---------------- */
+function updateBadges() {
+  const d = S.day;
+  if (d) {
+    const done = Object.keys(d.marks || {}).length;
+    $('#b-words').textContent = d.lemmas.length ? done + '/' + d.lemmas.length : '';
+    $('#b-read').textContent = d.grading && !d.grading.pending ? '✓' : '';
+  }
+  $('#b-book').textContent = S.book.length || '';
+  const k = streak();
+  $('#b-cal').textContent = k ? k + ' 天' : '';
+  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成 30 词和阅读即可打卡';
+}
+function render() {
+  scheduleCache();
+  if (S.view !== 'read') closePop();
+  document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-current', String(t.dataset.view === S.view)));
+  updateBadges();
+  const m = $('#main');
+  if (S.view === 'cal') { m.innerHTML = vCal(); return; }
+  if (!S.day) { m.innerHTML = `<div class="view"><div class="notice"><span class="spin"></span>正在载入…</div></div>`; return; }
+  m.innerHTML = ({ words: vWords, read: vRead, book: vBook, set: vSet })[S.view]();
+  if (S.view === 'read') requestAnimationFrame(layoutGl);
+}
+function layoutGl() {
+  const body = $('.abody.has-gl'); if (!body) return;
+  const items = [...body.querySelectorAll('.gl > div')];
+  if (!items.length || getComputedStyle(items[0]).position !== 'absolute') { body.style.minHeight = ''; return; }
+  const top0 = body.getBoundingClientRect().top; let floor = 0;
+  items.forEach(it => {
+    const tk = body.querySelector(`.tk[data-p="${it.dataset.p}"][data-k="${it.dataset.k}"]`);
+    const top = Math.max(tk ? tk.getBoundingClientRect().top - top0 - 1 : floor, floor);
+    it.style.top = top + 'px'; floor = top + it.offsetHeight + 10;
+  });
+  body.style.minHeight = floor + 'px';
+}
+let rzT;
+addEventListener('resize', () => { clearTimeout(rzT); rzT = setTimeout(layoutGl, 120); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => layoutGl());
+
+function stamp(date, big) { return `<span class="stamp ${big ? 'big' : ''}"><b>Erledigt</b><span>已打卡 · ${esc(fmtShort(date))}</span></span>`; }
+function dateBar() {
+  const d = S.date, t = today(), isT = d === t, next = addDays(d, 1);
+  return `<div class="datebar">
+    <button class="dnav" data-date="${addDays(d, -1)}" aria-label="前一天">‹</button>
+    <span class="dlabel">${esc(fmtDate(d))}${isT ? '<span class="chip">今天</span>' : ''}</span>
+    <button class="dnav" data-date="${next}" aria-label="后一天" ${next > t ? 'disabled' : ''}>›</button>
+    ${isT ? '' : `<button class="btn sm" data-date="${t}">回到今天</button>`}
+    <button class="btn sm" data-view-go="cal">打开日历</button>
+    <span class="dlevel">${esc(S.day?.level || S.settings.level)}</span>
+    ${isDone(d) ? stamp(d) : ''}
+  </div>`;
+}
+const dayName = () => S.date === today() ? '今日' : fmtShort(S.date);
+
+const artCls = g => (g === 'der' || g === 'die' || g === 'das') ? g : '';
+function wordHead(w, lemma) {
+  const g = w && artCls(w.gender);
+  return `<div class="word-row">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="lemma">${esc(w?.word || lemma)}</span>
+    <button class="speak" data-speak="${esc((g ? g + ' ' : '') + (w?.word || lemma))}" aria-label="朗读"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></div>`;
+}
+function wordMeta(w) {
+  if (!w) return '';
+  return `<div class="meta">${w.pos ? `<span class="chip">${esc(w.pos)}</span>` : ''}${w.ipa ? `<span>[${esc(String(w.ipa).replace(/^[\[\/]|[\]\/]$/g, ''))}]</span>` : ''}${w.plural ? `<span>复数 ${esc(w.plural)}</span>` : ''}${w.forms ? `<span>${esc(w.forms)}</span>` : ''}</div>`;
+}
+function detailHTML(w) {
+  const ex = (w.examples || []).map(e => `<div class="ex"><span class="de">${esc(e.de)}</span><span class="zh">${esc(e.zh)}</span></div>`).join('');
+  const col = (w.collocations || []).map(c => `<div><b>${esc(c.de)}</b><span>${esc(c.zh)}</span></div>`).join('');
+  const parts = (w.root?.parts || []).map(p => `<div class="part"><b>${esc(p.part)}</b><span>${esc(p.meaning)}</span></div>`).join('');
+  const chain = (w.etymology?.chain || []).map(c => `<span class="st"><em>${esc(c.stage)}</em>${esc(c.form)}</span>`).join('<span aria-hidden="true">→</span>');
+  const ety = typeof w.etymology === 'string' ? w.etymology : w.etymology?.story;
+  const cog = (w.cognates || []).map(c => `<div><b>${esc(c.word)}</b><span>${esc(c.lang)}${c.note ? ' · ' + esc(c.note) : ''}</span></div>`).join('');
+  const fam = (w.family || []).map(c => `<div><b>${esc(c.de)}</b><span>${esc(c.zh)}</span></div>`).join('');
+  return `
+  <section class="sec"><h3>词意</h3><p class="big-mean">${esc(w.meaning)}</p>${wordMeta(w)}</section>
+  <section class="sec"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}</section>
+  <section class="sec"><h3>词根 <span>Wortbildung</span></h3>${parts ? `<div class="parts">${parts}</div>` : ''}<p>${esc(w.root?.explain)}</p>${fam ? `<div class="eyebrow" style="margin-top:4px">同族词</div><div class="pairs">${fam}</div>` : ''}</section>
+  <section class="sec"><h3>词源 <span>Herkunft</span></h3>${chain ? `<div class="chain">${chain}</div>` : ''}<p class="ety">${esc(ety)}</p>${cog ? `<div class="eyebrow" style="margin-top:4px">同源词</div><div class="pairs">${cog}</div>` : ''}</section>
+  ${w.mnemonic ? `<div class="tip"><b>记忆提示：</b>${esc(w.mnemonic)}</div>` : ''}`;
+}
+function progBar() {
+  const d = S.day, n = d.lemmas.length || 30;
+  const c = { k: 0, f: 0, u: 0 }; Object.values(d.marks).forEach(m => c[m]++);
+  const done = c.k + c.f + c.u;
+  return `<div class="prog"><span>${done} / ${n}</span><div class="bar">${['k','f','u'].map(k => `<i class="${k}" style="width:${c[k] / n * 100}%"></i>`).join('')}</div><span>认识 ${c.k} · 模糊 ${c.f} · 不认识 ${c.u}</span></div>`;
+}
+function noContent(what) {
+  const isT = S.date === today();
+  if (S.gen.words === S.date) return `<div class="notice"><span class="spin"></span>正在页面里挑选今天的 30 个单词并写讲解，第一次可能要等一两分钟…</div>`;
+  if (!isT) return `<div class="notice">这一天没有题。可以在日历里选一个有题的日子，或者回到今天。</div>`;
+  return `<div class="notice">今天的${what}还没出好。${SCHEDULE_TIME}会自动出好当天的 30 个词和阅读，出好后这里会自动更新。
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn primary" data-act="retry-words">现在就在页面里生成</button><span style="font-size:13px">会用你自己的 Claude 额度</span></div></div>`;
+}
+
+function vWords() {
+  const d = S.day, n = d.lemmas.length;
+  const errBox = S.err.words ? `<div class="notice err">${esc(S.err.words)} <button class="btn sm" data-act="retry-words" style="margin-left:8px">重试</button></div>` : '';
+  const head = `<div class="head"><div><h1>${esc(dayName())} 30 词</h1></div>${S.gen.words === S.date && n ? `<span class="skeleton"><span class="spin"></span>后面的词还在生成</span>` : ''}</div>`;
+  if (!n) return `<div class="view">${dateBar()}${head}${errBox}${noContent('单词')}</div>`;
+  if (S.idx >= n) return vWordsDone();
+  const i = S.idx, w = d.words[i], m = d.marks[i];
+  let right;
+  if (!w) right = S.gen.words === S.date
+    ? `<div class="empty-detail"><span><span class="spin"></span>这个词的讲解还在生成…</span><span>生成完会自动出现，可以先判断认不认识。</span></div>`
+    : `<div class="empty-detail"><b>这个词的讲解还没生成</b><span>可以先判断认不认识。</span><div><button class="btn sm" data-act="retry-words">补全讲解</button></div></div>`;
+  else if (m) right = detailHTML(w);
+  else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span>选好之后，这里会展开词意、用法、词根和词源。</span><span class="kbd">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
+  return `<div class="view">${dateBar()}${head}
+    ${progBar()}${errBox}
+    <div class="study">
+      <div class="card">
+        <span class="num">第 ${i + 1} 个 · 共 ${n} 个</span>
+        ${wordHead(w, d.lemmas[i])}
+        ${m ? wordMeta(w) : ''}
+        <div class="ask">你知道这个词的意思吗？</div>
+        <div class="choices">
+          <button class="choice k ${m === 'k' ? 'sel' : ''}" data-mark="k">认识<small>知道意思</small></button>
+          <button class="choice f ${m === 'f' ? 'sel' : ''}" data-mark="f">模糊<small>有点印象</small></button>
+          <button class="choice u ${m === 'u' ? 'sel' : ''}" data-mark="u">不认识<small>看讲解</small></button>
+        </div>
+        <div class="navrow"><button class="btn" data-go="${i - 1}" ${i === 0 ? 'disabled' : ''}>上一个</button><button class="btn ${m ? 'primary' : ''}" data-go="${i + 1}">${i === n - 1 ? '完成' : '下一个'}</button></div>
+      </div>
+      <div class="detail" id="detail">${right}</div>
+    </div></div>`;
+}
+function vWordsDone() {
+  const d = S.day, c = { k: [], f: [], u: [] };
+  d.lemmas.forEach((l, i) => { const m = d.marks[i]; if (m) c[m].push(i); });
+  const pills = arr => arr.map(i => `<button class="wpill ${d.marks[i]}" data-go="${i}">${esc(d.words[i]?.word || d.lemmas[i])}${d.words[i]?.meaning ? ' · ' + esc(String(d.words[i].meaning).split(/[；;，,]/)[0]) : ''}</button>`).join('');
+  const left = d.lemmas.length - c.k.length - c.f.length - c.u.length;
+  const graded = d.grading && !d.grading.pending;
+  return `<div class="view">${dateBar()}
+    <div class="head"><div><h1>${left ? '还有 ' + left + ' 个词没选' : esc(dayName()) + '的单词完成了'}</h1>${!left && !graded ? '<p class="sub">再做完阅读题就能打卡。</p>' : ''}</div>${graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`}</div>
+    ${progBar()}
+    <div class="summary"><div class="stat k"><b>${c.k.length}</b>认识</div><div class="stat f"><b>${c.f.length}</b>模糊</div><div class="stat u"><b>${c.u.length}</b>不认识</div></div>
+    ${c.u.length + c.f.length ? `<section class="sec"><h3>需要复习（已加入生词本）</h3><div class="wlist">${pills(c.u.concat(c.f))}</div></section>` : ''}
+    ${c.k.length ? `<section class="sec"><h3>认识的词</h3><div class="wlist">${pills(c.k)}</div></section>` : ''}
+    <div><button class="btn" data-go="0">从头再看一遍</button></div>
+  </div>`;
+}
+
+function vRead() {
+  const d = S.day, r = d.reading;
+  const errBox = S.err.read ? `<div class="notice err">${esc(S.err.read)} <button class="btn sm" data-act="gen-read" style="margin-left:8px">重试</button></div>` : '';
+  const head = `<div class="head"><div><h1>${esc(dayName())}阅读</h1></div>${r ? `<div style="display:flex;gap:16px;flex-wrap:wrap">${(r.glossDe || []).length ? `<label class="toggle"><input type="checkbox" id="gl-toggle" ${S.showGl ? 'checked' : ''}> 德语注释</label>` : ''}<label class="toggle"><input type="checkbox" id="tr-toggle" ${S.showTr ? 'checked' : ''}> 显示中文翻译</label></div>` : ''}</div>`;
+  if (!r) {
+    if (!d.lemmas.length) return `<div class="view">${dateBar()}${head}${noContent('阅读')}</div>`;
+    return `<div class="view">${dateBar()}${head}${errBox}
+      ${S.gen.read === S.date ? `<div class="notice"><span class="spin"></span>正在写一篇用上这天单词的短文，并出 5 道题，大约需要一两分钟…</div>`
+        : `<div class="notice">这一天的文章还没出好。<div style="margin-top:12px"><button class="btn primary" data-act="gen-read">现在就在页面里生成</button></div></div>`}</div>`;
+  }
+  const g = d.grading;
+  const gdx = glossIndex(r);
+  const paras = r.paragraphs.map((p, i) => {
+    const gl = S.showGl ? gdx.list.filter(x => x.p === i) : [];
+    return `<div class="para"><div class="txt"><p>${paraHTML(i, gdx)}</p>${S.showTr ? `<div class="tr">${esc(p.zh)}</div>` : ''}</div>${gl.length ? `<aside class="gl" aria-label="德语注释">${gl.map(x => `<div data-p="${x.p}" data-k="${x.k}"><sup>${x.no}</sup> <b>${esc(x.h)}</b> ${esc(x.e)}</div>`).join('')}</aside>` : ''}</div>`;
+  }).join('');
+  const hasGl = S.showGl && gdx.list.length > 0;
+  const notes = (d.notes || []).filter(n => n.p < r.paragraphs.length).sort((x, y) => x.p - y.p || x.a - y.a);
+  const notesHTML = notes.length ? `<section class="mynotes"><h3>我的标注 · ${notes.length}</h3>${notes.map(n => `<div class="mn"><button class="mq" data-jump="${esc(n.id)}"><span>${esc(rangeText(n.p, n.a, n.b))}</span></button>${n.n ? `<p>✎ ${esc(n.n)}</p>` : ''}<div class="mna"><button class="linkish" data-note-edit="${esc(n.id)}">${n.n ? '改笔记' : '加笔记'}</button><button class="linkish" data-note-del="${esc(n.id)}">删除</button></div></div>`).join('')}</section>` : '';
+  const qs = r.questions.map((q, i) => {
+    const a = d.answers[i], gi = g && g[i];
+    let body;
+    if (q.type === 'mc') {
+      body = (q.options || []).map((o, k) => {
+        let cls = '';
+        if (g && !g.pending) { if (k === Number(q.answer)) cls = 'right'; else if (String(a) === String(k)) cls = 'wrong'; }
+        return `<label class="opt ${cls}"><input type="radio" name="q${i}" id="q${i}o${k}" value="${k}" ${String(a) === String(k) ? 'checked' : ''} ${g ? 'disabled' : ''}><span>${esc(o)}</span></label>`;
+      }).join('');
+      if (g && !g.pending) body += `<div class="fb ${gi?.ok ? 'good' : 'bad'}"><b>${gi?.ok ? '正确' : '错误，正确答案是 ' + 'ABCD'[Number(q.answer)] }</b><span>${esc(q.explain)}</span></div>`;
+    } else {
+      body = `<textarea id="q${i}t" data-q="${i}" placeholder="用德语回答…" ${g ? 'disabled' : ''}>${esc(a || '')}</textarea>`;
+      if (g && g.pending) body += `<div class="fb"><span><span class="spin"></span>正在批改…</span></div>`;
+      else if (gi) body += `<div class="fb ${gi.score >= 2 ? 'good' : gi.score >= 1 ? 'mid' : 'bad'}"><b>${gi.score} / 2 分</b><span>${esc(gi.feedback)}</span>${gi.corrected ? `<span class="de">✎ ${esc(gi.corrected)}</span>` : ''}<span style="color:var(--muted)">参考答案：${esc(q.reference)}</span></div>`;
+      else if (g) body += `<div class="fb"><span style="color:var(--muted)">参考答案：${esc(q.reference)}</span></div>`;
+    }
+    return `<div class="q"><span class="qn">${q.type === 'mc' ? '选择题' : '简答题'} ${i + 1}</span><div class="qt">${esc(q.q)}</div>${body}</div>`;
+  }).join('');
+  let scoreLine = '';
+  if (g && !g.pending) {
+    let got = 0, tot = 0;
+    r.questions.forEach((q, i) => { tot += 2; got += q.type === 'mc' ? (g[i]?.ok ? 2 : 0) : (g[i]?.score || 0); });
+    const st = dayStatus(d);
+    scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">选择题每题 2 分，简答题按内容和语法打 0–2 分。</span></div>
+      ${isDone(d.date) ? stamp(d.date, S.justDone) : `<span class="sub">还有 ${st.t - st.n} 个单词没选，选完就能打卡。</span>`}</div>`;
+  }
+  return `<div class="view">${dateBar()}${head}
+    ${errBox}
+    <div class="reading">
+      <article class="article"><h2>${esc(r.title)}</h2>${S.showTr && r.title_zh ? `<div class="tr" style="margin-top:-8px">${esc(r.title_zh)}</div>` : ''}
+        <div style="display:flex;gap:8px"><button class="btn sm" data-speak="${esc(r.paragraphs.map(p => p.de.replace(/\[\[|\]\]/g, '')).join(' '))}">朗读全文</button><button class="btn sm" data-act="stop-speak">停止</button></div>
+        <p class="rhint">点任意单词看释义、加入生词本；划选一段文字可以高亮或写笔记。${(r.glossDe || []).length && S.showGl ? '带红色小数字的词，旁边有德语注释。' : ''}</p>
+        <div class="abody${hasGl ? ' has-gl' : ''}">${paras}</div>${notesHTML}</article>
+      <div class="qs">${scoreLine}${qs}
+        ${S.err.grade ? `<div class="notice err">${esc(S.err.grade)}</div>` : ''}
+        <div style="display:flex;gap:8px;flex-wrap:wrap">${g ? (g.pending ? '' : `<button class="btn" data-act="redo">重新作答</button>`) : `<button class="btn primary" data-act="grade">提交答案</button>`}${S.gen.read === S.date ? '' : '<button class="btn" data-act="new-read">换一篇</button>'}</div>
+      </div>
+    </div></div>`;
+}
+
+function vCal() {
+  const t = today(), [y, mo] = S.calMonth.split('-').map(Number);
+  const first = new Date(y, mo - 1, 1, 12), lead = (first.getDay() + 6) % 7, days = new Date(y, mo, 0).getDate();
+  const cal = S.profile.cal || {}, dates = new Set(S.settings.dates || []);
+  const prevM = ymd(new Date(y, mo - 2, 1, 12)).slice(0, 7), nextM = ymd(new Date(y, mo, 1, 12)).slice(0, 7);
+  let cells = '', doneN = 0;
+  for (let i = 0; i < lead; i++) cells += '<span class="cd blank"></span>';
+  for (let k = 1; k <= days; k++) {
+    const ds = S.calMonth + '-' + String(k).padStart(2, '0'), c = cal[ds], fut = ds > t;
+    if (c && c.done) doneN++;
+    const cls = ['cd', c && c.done ? 'done' : c && c.n ? 'part' : (dates.has(ds) || c) ? 'avail' : '', ds === t ? 'today' : '', ds === S.date ? 'sel' : ''].join(' ');
+    const inner = c && c.done ? '<span class="ck" aria-label="已打卡">✓</span>'
+      : c && (c.n || c.r) ? `<span class="pp">${c.n}/${c.t}${c.r ? ' · 读' : ''}</span>`
+      : dates.has(ds) ? '<span class="pp">有题</span>' : '';
+    cells += `<button class="${cls}" data-date="${ds}" ${fut ? 'disabled' : ''}><span class="dn">${k}</span>${inner}</button>`;
+  }
+  return `<div class="view">
+    <div class="head"><div><div class="eyebrow">打卡日历</div><h1>${y} 年 ${mo} 月</h1></div>
+      <div class="calnav"><button class="btn sm" data-month="${prevM}">‹ 上个月</button><button class="btn sm" data-month="${t.slice(0, 7)}">本月</button><button class="btn sm" data-month="${nextM}" ${nextM > t.slice(0, 7) ? 'disabled' : ''}>下个月 ›</button></div></div>
+    <div class="calstats"><span><b>${doneN}</b> 天本月打卡</span><span><b>${streak()}</b> 天连续打卡</span></div>
+    <div class="calgrid">${['一','二','三','四','五','六','日'].map(w => `<span class="wd">周${w}</span>`).join('')}${cells}</div>
+    <div class="legend"><span><i class="lg done"></i>已打卡（30 词 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
+    <p class="sub">点任意一天可以打开那天的单词和阅读。每天的题和你的答题记录都会保留。</p>
+  </div>`;
+}
+
+function vBook() {
+  const list = S.book.filter(b => S.bookFilter === 'all' || b.mark === S.bookFilter);
+  const items = list.map(b => {
+    const w = b.word || {}, open = S.openBook === b.id, g = artCls(w.gender);
+    const body = w.mini
+      ? `<div class="wb-mini">${wordHead(w, w.word)}${w.pos ? `<div class="meta"><span class="chip">${esc(w.pos)}</span></div>` : ''}${w.meaning ? `<p class="big-mean">${esc(w.meaning)}</p>` : ''}${w.de ? `<p class="de-gloss">${esc(w.de)}</p>` : ''}${b.ctx ? `<p class="ctx">原句：${esc(b.ctx)}</p>` : ''}
+          ${S.bookGen === b.id ? `<p class="muted"><span class="spin"></span>正在写完整讲解…</p>` : `<p class="muted">这个词是从阅读里收藏的，现在只有简要释义。</p><div><button class="btn sm" data-book-full="${esc(b.id)}">让 Claude 写完整讲解（用法、词根、词源）</button></div>`}
+          ${S.err.book && S.openBook === b.id ? `<div class="notice err">${esc(S.err.book)}</div>` : ''}</div>`
+      : `${wordHead(w, w.word)}${detailHTML(w)}${b.ctx ? `<p class="ctx">原句：${esc(b.ctx)}</p>` : ''}`;
+    return `<div class="wb-item"><button data-book="${esc(b.id)}" aria-expanded="${open}"><span class="w">${g ? `<span class="art ${g}" style="font-size:16px">${g}</span> ` : ''}${esc(w.word || b.id)}</span><span class="m">${esc(w.meaning)}</span><span class="d ${b.mark === 'r' ? 'r' : ''}">${({ u: '不认识', f: '模糊', r: '阅读收藏' })[b.mark] || ''} · ${esc(b.date)}</span></button>
+      ${open ? `<div class="wb-body">${body}<div><button class="btn" data-unbook="${esc(b.id)}">已掌握，移出生词本</button></div></div>` : ''}</div>`;
+  }).join('');
+  return `<div class="view"><div class="head"><div><div class="eyebrow">背单词时的“模糊”“不认识”，和阅读里收藏的词</div><h1>生词本</h1></div>
+    <div class="filter">${[['all','全部'],['u','不认识'],['f','模糊'],['r','阅读收藏']].map(([k, t]) => `<button data-filter="${k}" aria-pressed="${S.bookFilter === k}">${t}</button>`).join('')}</div></div>
+    ${items ? `<div class="wb">${items}</div>` : `<div class="notice">${S.db ? '还没有生词。背单词时选“模糊”或“不认识”的词，以及在阅读里点“加入生词本”的词，都会收进这里，手机和电脑都能看到。' : '生词本需要云端同步，请在 claude.ai 里登录后打开。'}</div>`}</div>`;
+}
+
+function vSet() {
+  const lv = S.settings.level;
+  return `<div class="view"><div class="head"><div><div class="eyebrow">设置</div><h1>我的德语水平</h1></div></div>
+    <p class="sub">按欧洲语言共同参考框架（GER）分级。每天定时出题会按这里的水平来出，修改后从下一次出题开始生效。</p>
+    <div class="levels">${LEVELS.map(([l, t]) => `<button class="lv" data-level="${l}" aria-pressed="${lv === l}"><b>${l}</b><span>${t}</span></button>`).join('')}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">${S.confirmRegen
+      ? `<span>今天的题和今天的答题进度会被清空并按 ${esc(lv)} 重新出，确定吗？</span><button class="btn primary" data-act="regen-today">确定重出</button><button class="btn" data-act="cancel-regen">取消</button>`
+      : `<button class="btn" data-act="ask-regen">现在按 ${esc(lv)} 重出今天的题</button>`}</div>
+    <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会按你的水平提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，打开页面就能直接开始。如果打开时还没出好，可以点“现在就在页面里生成”。</p>
+    <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
+    <section class="sec"><h3>同步</h3><p>${S.db ? '题目、进度、打卡记录和生词本都保存在云端。手机和电脑打开同一个链接、登录同一个 claude.ai 账号即可同步；切回这个页面时会自动拉取最新内容。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
+    <section class="sec"><h3>说明</h3><p>简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。</p></section></div>`;
+}
+
+/* ---------------- reading: words, highlights, notes ---------------- */
+const WRE = /[A-Za-zÀ-ÖØ-öø-ÿß]+(?:-[A-Za-zÀ-ÖØ-öø-ÿß]+)*/g;
+function paraSegs(de) {
+  const segs = []; let k = 0, inT = false;
+  String(de || '').split(/(\[\[|\]\])/).forEach(part => {
+    if (part === '[[') { inT = true; return; }
+    if (part === ']]') { inT = false; return; }
+    let last = 0;
+    part.replace(WRE, (m, off) => {
+      if (off > last) segs.push({ t: part.slice(last, off), k: -1 });
+      segs.push({ t: m, k: k++, tw: inT }); last = off + m.length; return m;
+    });
+    if (last < part.length) segs.push({ t: part.slice(last), k: -1 });
+  });
+  return segs;
+}
+let segR = null, segL = [];
+function segsOf(p) {
+  const r = S.day && S.day.reading;
+  if (r !== segR) { segR = r; segL = r ? r.paragraphs.map(x => paraSegs(x.de)) : []; }
+  return segL[p] || [];
+}
+function rangeText(p, a, b) {
+  const segs = segsOf(p);
+  const i = segs.findIndex(s => s.k === a), j = segs.findIndex(s => s.k === b);
+  return i < 0 || j < 0 ? '' : segs.slice(i, j + 1).map(s => s.t).join('');
+}
+function sentenceAt(p, k) {
+  const segs = segsOf(p), txt = segs.map(s => s.t).join('');
+  let off = 0; for (const s of segs) { if (s.k === k) break; off += s.t.length; }
+  const re = /[^.!?]+[.!?]*["“”»«]*\s*/g; let m;
+  while ((m = re.exec(txt))) if (m.index + m[0].length > off) return m[0].trim();
+  return txt.trim();
+}
+function glossFor(tok) {
+  const g = S.day && S.day.reading && S.day.reading.gloss, k = String(tok).toLowerCase();
+  return (g && (g[k] || g[tok])) || S.lookup[k] || null;
+}
+function glossIndex(r) {
+  const list = [], byK = {};
+  (r && r.glossDe || []).forEach(x => {
+    const s = segsOf(x.p).find(s => s.k >= 0 && s.t.toLowerCase() === String(x.w).toLowerCase());
+    if (s && !byK[x.p + ':' + s.k]) { const e = { ...x, k: s.k }; list.push(e); byK[x.p + ':' + s.k] = e; }
+  });
+  list.sort((a, b) => a.p - b.p || a.k - b.k).forEach((e, i) => e.no = i + 1);
+  return { list, byK };
+}
+function paraHTML(p, gdx) {
+  const notes = (S.day.notes || []).filter(n => n.p === p);
+  const inNote = k => notes.find(n => k >= n.a && k <= n.b);
+  let html = '', prevK = -1;
+  segsOf(p).forEach(s => {
+    if (s.k >= 0) {
+      const n = inNote(s.k), g = S.showGl && gdx.byK[p + ':' + s.k];
+      html += `<span class="tk${s.tw ? ' tw' : ''}${n ? ' hl' : ''}" data-p="${p}" data-k="${s.k}">${esc(s.t)}</span>`;
+      if (g) html += `<sup class="gn">${g.no}</sup>`;
+      if (n && n.n && n.b === s.k) html += `<sup class="nt" data-note="${esc(n.id)}" title="${esc(n.n)}">✎</sup>`;
+      prevK = s.k;
+    } else html += prevK >= 0 && notes.some(n => n.a <= prevK && n.b >= prevK + 1) ? `<span class="hl">${esc(s.t)}</span>` : esc(s.t);
+  });
+  return html;
+}
+function saveNotes() { save(S.dayRef, { notes: S.day.notes || [] }); }
+function noteAt(p, a, b) { return (S.day.notes || []).find(n => n.p === p && n.a <= a && n.b >= b); }
+function upsertNote(p, a, b) {
+  const d = S.day, ns = d.notes || [];
+  const ov = ns.filter(n => n.p === p && !(n.b < a || n.a > b));
+  if (ov.length === 1 && ov[0].a <= a && ov[0].b >= b) return ov[0];
+  const n = { id: ov[0] ? ov[0].id : 'n' + Date.now().toString(36), p, a: Math.min(a, ...ov.map(x => x.a)), b: Math.max(b, ...ov.map(x => x.b)), n: ov.map(x => x.n).filter(Boolean).join('；') };
+  d.notes = ns.filter(x => !ov.includes(x)).concat(n); saveNotes();
+  return n;
+}
+function resolveP(P) {
+  const single = P.a === P.b, tok = rangeText(P.p, P.a, P.b), g = single ? glossFor(tok) : null;
+  const lemma = g && g.l && !/ \/ /.test(g.l) ? g.l : tok;
+  return { single, tok, g, lemma, li: S.day.lemmas.indexOf(lemma), gde: single ? glossIndex(S.day.reading).byK[P.p + ':' + P.a] : null, key: bookKey(lemma).slice(0, 120) };
+}
+function addFromReading(P) {
+  const d = S.day, x = resolveP(P);
+  if (!x.key) return;
+  const ctx = sentenceAt(P.p, P.a);
+  const card = x.li >= 0 && d.words[x.li] ? d.words[x.li]
+    : { word: x.lemma, gender: x.g && x.g.g || null, pos: x.g ? x.g.p : (x.single ? '' : '词组'), meaning: x.g ? x.g.m : '', de: x.gde ? x.gde.h + '：' + x.gde.e : '', mini: true };
+  const entry = { word: card, mark: 'r', date: d.date, added: Date.now(), ctx };
+  if (S.profileRef) save(S.profileRef.collection('wordbook').doc(x.key), entry, true);
+  S.book = [{ id: x.key, ...entry }].concat(S.book.filter(b => b.id !== x.key));
+  updateBadges();
+}
+function unbook(id) {
+  S.book = S.book.filter(b => b.id !== id);
+  if (S.profileRef) wq = wq.then(() => S.profileRef.collection('wordbook').doc(id).delete()).catch(() => {});
+  updateBadges();
+}
+const SPK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>';
+function wordPopHTML(P) {
+  const x = resolveP(P), g = x.g, art = g && artCls(g.g), note = noteAt(P.p, P.a, P.b);
+  const inBook = S.book.some(b => b.id === x.key);
+  return `<div class="pop-h">${art ? `<span class="art ${art}">${art}</span>` : ''}<b class="pop-w">${esc(x.lemma)}</b><button class="speak" data-speak="${esc((art ? art + ' ' : '') + x.lemma)}" aria-label="朗读">${SPK}</button>${g && g.p ? `<span class="chip">${esc(g.p)}</span>` : ''}</div>
+    ${x.lemma.toLowerCase() !== x.tok.toLowerCase() ? `<div class="pop-f">文中写作 ${esc(x.tok)}</div>` : ''}
+    ${g ? `<div class="pop-m">${esc(g.m)}</div>` : S.lookingUp === x.tok ? `<div class="muted"><span class="spin"></span>正在查…</div>` : `<div class="muted">这个词没有现成释义。${S.sample ? ' <button class="linkish" data-pop="lookup">让 Claude 查一下</button>' : ''}</div>`}
+    ${x.gde ? `<div class="pop-de"><b>${esc(x.gde.h)}</b> ${esc(x.gde.e)}</div>` : ''}
+    ${note && note.n ? `<div class="pop-note">✎ ${esc(note.n)}</div>` : ''}
+    <div class="pop-a">
+      ${x.li >= 0 ? `<button class="btn sm" data-pop="card" data-i="${x.li}">看完整讲解</button>` : ''}
+      ${inBook ? `<span class="ok">✓ 已在生词本</span><button class="linkish" data-pop="unbook">移出</button>` : `<button class="btn sm primary" data-pop="book">加入生词本</button>`}
+      ${note ? `<button class="btn sm" data-pop="note">${note.n ? '改笔记' : '加笔记'}</button><button class="btn sm" data-pop="unhl">取消高亮</button>` : `<button class="btn sm" data-pop="hl">高亮</button><button class="btn sm" data-pop="note">加笔记</button>`}
+    </div>`;
+}
+function selPopHTML(P) {
+  const x = resolveP(P), inBook = S.book.some(b => b.id === x.key), note = noteAt(P.p, P.a, P.b);
+  const parts = segsOf(P.p).filter(s => s.k >= P.a && s.k <= P.b).map(s => ({ t: s.t, g: glossFor(s.t) })).filter(y => y.g);
+  return `<div class="pop-q">“${esc(x.tok)}”</div>
+    ${parts.length ? `<div class="pop-parts">${parts.slice(0, 8).map(y => `<div><b>${esc(y.t)}</b> ${esc(y.g.m)}</div>`).join('')}</div>` : ''}
+    <div class="pop-a">${note ? '' : '<button class="btn sm primary" data-pop="hl">高亮</button>'}<button class="btn sm" data-pop="note">${note && note.n ? '改笔记' : '加笔记'}</button>${note ? '<button class="btn sm" data-pop="unhl">取消高亮</button>' : ''}${inBook ? '<span class="ok">✓ 已在生词本</span>' : '<button class="btn sm" data-pop="book">加入生词本</button>'}</div>`;
+}
+function notePopHTML(P) {
+  const n = (S.day.notes || []).find(x => x.id === P.id);
+  return `<div class="pop-q">“${esc(rangeText(P.p, P.a, P.b))}”</div>
+    <textarea id="note-in" rows="3" placeholder="写下你的笔记…">${esc(n ? n.n : '')}</textarea>
+    <div class="pop-a"><button class="btn sm primary" data-pop="note-save">保存笔记</button><button class="btn sm" data-pop="close">取消</button></div>`;
+}
+const pop = document.createElement('div');
+pop.id = 'pop'; pop.className = 'pop'; pop.hidden = true; pop.setAttribute('role', 'dialog');
+document.body.appendChild(pop);
+pop.addEventListener('mousedown', e => { if (!e.target.closest('textarea')) e.preventDefault(); });
+let popEl = null;
+function closePop() {
+  if (!pop.hidden) pop.hidden = true;
+  S.pop = null;
+  if (popEl) { popEl.classList.remove('on'); popEl = null; }
+}
+function showPop(anchor) {
+  const P = S.pop; if (!P || !S.day || !S.day.reading) return closePop();
+  pop.innerHTML = P.mode === 'note' ? notePopHTML(P) : P.mode === 'sel' ? selPopHTML(P) : wordPopHTML(P);
+  pop.hidden = false;
+  if (anchor && anchor.classList) { if (popEl) popEl.classList.remove('on'); popEl = anchor; anchor.classList.add('on'); }
+  if (anchor && innerWidth > 820) {
+    const r = anchor.getBoundingClientRect(), w = pop.offsetWidth, h = pop.offsetHeight;
+    const left = Math.min(Math.max(12, r.left), innerWidth - w - 12);
+    let top = r.bottom + 8; if (top + h > innerHeight - 12 && r.top - h - 8 > 12) top = r.top - h - 8;
+    pop.style.left = left + scrollX + 'px'; pop.style.top = top + scrollY + 'px';
+  }
+  if (P.mode === 'note') setTimeout(() => { const t = $('#note-in'); if (t) { t.focus(); t.setSelectionRange(t.value.length, t.value.length); } }, 30);
+}
+const clearSel = () => { try { getSelection().removeAllRanges(); } catch (e) {} };
+async function lookupWord(P) {
+  const x = resolveP(P); if (!S.sample || S.lookingUp) return;
+  S.lookingUp = x.tok; showPop();
+  try {
+    const r = await S.sample.json(`德语词“${x.tok}”出现在这句话里：“${sentenceAt(P.p, P.a)}”。请只返回 JSON：{"l":"原形（名词首字母大写、不带冠词）","g":"der/die/das 或 null","p":"中文词性","m":"它在这句话里的中文意思，简明"}`, { cache: false });
+    if (r && r.l) S.lookup[x.tok.toLowerCase()] = r;
+  } catch (e) {}
+  S.lookingUp = null;
+  if (S.pop) showPop();
+}
+function popAct(act, t) {
+  const P = S.pop, d = S.day;
+  if (act === 'close' || !P) { const re = P && P.mode === 'note'; closePop(); if (re) render(); return; }
+  if (act === 'card') { closePop(); S.view = 'words'; S.idx = Number(t.dataset.i); render(); window.scrollTo({ top: 0 }); return; }
+  if (act === 'hl') { upsertNote(P.p, P.a, P.b); closePop(); clearSel(); render(); return; }
+  if (act === 'note') { const n = upsertNote(P.p, P.a, P.b); S.pop = { p: n.p, a: n.a, b: n.b, mode: 'note', id: n.id }; clearSel(); showPop(); return; }
+  if (act === 'note-save') { const n = (d.notes || []).find(x => x.id === P.id); if (n) { n.n = ($('#note-in').value || '').trim(); saveNotes(); } closePop(); render(); return; }
+  if (act === 'unhl') { const n = noteAt(P.p, P.a, P.b); d.notes = (d.notes || []).filter(x => x !== n); saveNotes(); closePop(); clearSel(); render(); return; }
+  if (act === 'book') { addFromReading(P); showPop(); return; }
+  if (act === 'unbook') { unbook(resolveP(P).key); showPop(); return; }
+  if (act === 'lookup') lookupWord(P);
+}
+function onSel() {
+  if (S.view !== 'read' || !S.day || !S.day.reading) return;
+  const sel = getSelection(); if (!sel || sel.isCollapsed || !sel.rangeCount) return;
+  const rg = sel.getRangeAt(0), node = rg.startContainer;
+  const host = (node.nodeType === 1 ? node : node.parentElement);
+  const pa = host && host.closest('.para .txt p'); if (!pa) return;
+  const ks = [...pa.querySelectorAll('.tk')].filter(el => rg.intersectsNode(el)).map(el => Number(el.dataset.k));
+  if (!ks.length) return;
+  const p = Number(pa.querySelector('.tk').dataset.p), a = Math.min(...ks), b = Math.max(...ks);
+  if (S.pop && S.pop.mode !== 'note' && S.pop.p === p && S.pop.a === a && S.pop.b === b) return;
+  S.pop = { p, a, b, mode: a === b ? 'word' : 'sel' };
+  showPop(rg);
+}
+async function bookFull(id) {
+  const b = S.book.find(x => x.id === id); if (!b || S.bookGen) return;
+  if (!S.sample) { S.err.book = '需要在 claude.ai 里打开这个页面才能生成讲解。'; render(); return; }
+  S.bookGen = id; S.err.book = null; render();
+  try {
+    const lv = S.settings.level;
+    const arr = await S.sample.json(`你是一位讲解细致的德语老师兼词源学者。学习者母语是中文，德语水平 ${lv}。${hint(lv)}
+请为下面这个德语词（或词组）写一张学习卡片${b.ctx ? `。它出现在这句话里：“${b.ctx}”，释义以它在这句话里的意思为主` : ''}，词根和词源部分要讲得准确、具体。
+单词：${b.word.word}
+
+${WORD_FIELDS}
+
+只返回一个 JSON 数组，里面只有这一个对象。`, { cache: false, modelTier: 'complex' });
+    const w = Array.isArray(arr) ? arr[0] : arr;
+    if (!w || typeof w !== 'object' || !w.meaning) throw { code: 'invalid_json' };
+    b.word = w;
+    if (S.profileRef) save(S.profileRef.collection('wordbook').doc(id), { word: w, mark: b.mark, date: b.date, added: b.added, ctx: b.ctx || '' }, true);
+  } catch (e) { S.err.book = sampleErr(e); }
+  S.bookGen = null;
+  if (S.view === 'book') render();
+}
+
+/* ---------------- events ---------------- */
+document.addEventListener('click', e => {
+  let tk = e.target.closest('.tk,.nt,.gn');
+  if (tk && tk.classList.contains('gn')) tk = tk.previousElementSibling;
+  if (tk && S.view === 'read') {
+    const sel = getSelection(); if (sel && !sel.isCollapsed) return;
+    if (tk.classList.contains('nt')) { const n = (S.day.notes || []).find(x => x.id === tk.dataset.note); if (n) { S.pop = { p: n.p, a: n.a, b: n.b, mode: 'note', id: n.id }; showPop(tk); } return; }
+    const p = Number(tk.dataset.p), k = Number(tk.dataset.k);
+    if (S.pop && S.pop.mode === 'word' && S.pop.p === p && S.pop.a === k) { closePop(); return; }
+    S.pop = { p, a: k, b: k, mode: 'word' }; showPop(tk); return;
+  }
+  if (!pop.hidden && !e.target.closest('#pop')) { const sel = getSelection(); if (!sel || sel.isCollapsed) closePop(); }
+  const t = e.target.closest('button,[data-speak]'); if (!t || t.disabled) return;
+  if (t.dataset.pop) { popAct(t.dataset.pop, t); return; }
+  if (t.dataset.bookFull) { bookFull(t.dataset.bookFull); return; }
+  if (t.dataset.noteDel) { S.day.notes = (S.day.notes || []).filter(n => n.id !== t.dataset.noteDel); saveNotes(); render(); return; }
+  if (t.dataset.noteEdit) { const n = (S.day.notes || []).find(x => x.id === t.dataset.noteEdit); if (n) { S.pop = { p: n.p, a: n.a, b: n.b, mode: 'note', id: n.id }; showPop(t); } return; }
+  if (t.dataset.jump) { const n = (S.day.notes || []).find(x => x.id === t.dataset.jump), el = n && $(`.tk[data-p="${n.p}"][data-k="${n.a}"]`); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+  if (t.dataset.view) { S.view = t.dataset.view; if (S.view === 'cal') S.calMonth = S.date.slice(0, 7); render(); window.scrollTo({ top: 0 }); return; }
+  if (t.dataset.viewGo) { S.view = t.dataset.viewGo; if (S.view === 'cal') S.calMonth = S.date.slice(0, 7); render(); window.scrollTo({ top: 0 }); return; }
+  if (t.dataset.date) { goDate(t.dataset.date); return; }
+  if (t.dataset.month) { S.calMonth = t.dataset.month; render(); return; }
+  if (t.dataset.speak) { speak(t.dataset.speak); return; }
+  if (t.dataset.mark) { mark(S.idx, t.dataset.mark); if (innerWidth <= 820) setTimeout(() => $('#detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30); return; }
+  if (t.dataset.go !== undefined) { go(Number(t.dataset.go)); return; }
+  if (t.dataset.filter) { S.bookFilter = t.dataset.filter; render(); return; }
+  if (t.dataset.book) { S.openBook = S.openBook === t.dataset.book ? null : t.dataset.book; render(); return; }
+  if (t.dataset.unbook) { unbook(t.dataset.unbook); render(); return; }
+  if (t.dataset.level) { S.settings.level = t.dataset.level; save(S.settingsRef, { level: S.settings.level }); render(); return; }
+  const act = t.dataset.act;
+  if (act === 'retry-words') { if (S.gen.words !== S.date) generateWords(); }
+  else if (act === 'gen-read' || act === 'new-read') { if (S.gen.read !== S.date) { S.day.reading = null; generateReading(); } }
+  else if (act === 'grade') gradeReading();
+  else if (act === 'redo') { S.day.grading = null; S.day.answers = {}; S.justDone = false; save(S.dayRef, { grading: null, answers: {} }); syncCal(); render(); }
+  else if (act === 'stop-speak') { try { speechSynthesis.cancel(); } catch (e) {} }
+  else if (act === 'ask-regen') { S.confirmRegen = true; render(); }
+  else if (act === 'cancel-regen') { S.confirmRegen = false; render(); }
+  else if (act === 'regen-today') {
+    S.confirmRegen = false;
+    if (S.gen.words) return;
+    (async () => {
+      await openDate(today());
+      Object.assign(S.day, emptyProg(), { lemmas: [], words: [], reading: null, level: S.settings.level });
+      S.content = null; S.idx = 0; S.view = 'words';
+      save(S.dayRef, emptyProg(), true);
+      generateWords();
+    })();
+  }
+});
+document.addEventListener('change', e => {
+  const t = e.target;
+  if (t.id === 'tr-toggle') { S.showTr = t.checked; render(); return; }
+  if (t.id === 'gl-toggle') { S.showGl = t.checked; render(); return; }
+  if (t.type === 'radio' && t.name.startsWith('q')) { S.day.answers[t.name.slice(1)] = t.value; save(S.dayRef, { answers: S.day.answers }); }
+});
+let tTimer;
+document.addEventListener('input', e => {
+  const t = e.target; if (!t.dataset.q) return;
+  S.day.answers[t.dataset.q] = t.value;
+  clearTimeout(tTimer); tTimer = setTimeout(() => save(S.dayRef, { answers: S.day.answers }), 1200);
+});
+document.addEventListener('mouseup', e => { if (!e.target.closest('#pop')) setTimeout(onSel, 0); });
+let selT;
+document.addEventListener('selectionchange', () => { clearTimeout(selT); selT = setTimeout(() => { if (matchMedia('(pointer: coarse)').matches) onSel(); }, 400); });
+document.addEventListener('scroll', e => { if (!pop.hidden && innerWidth > 820 && e.target && e.target.classList && e.target.classList.contains('article')) closePop(); }, true);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !pop.hidden) { closePop(); return; }
+  if (S.view !== 'words' || !S.day || e.target.closest('textarea,input')) return;
+  const map = { '1': 'k', '2': 'f', '3': 'u' };
+  if (map[e.key] && S.idx < S.day.lemmas.length) mark(S.idx, map[e.key]);
+  else if (e.key === 'ArrowRight') go(S.idx + 1);
+  else if (e.key === 'ArrowLeft') go(S.idx - 1);
+});
+
+if (window.claude && claude.use) boot();
+else { S.day = { date: today(), ...emptyProg(), lemmas: [], words: [], reading: null }; setCloud('warn'); S.err.words = '请在 claude.ai 里打开这个页面，才能看到题目和同步进度。'; render(); }
+})();
+</script>
+
+</body></html>

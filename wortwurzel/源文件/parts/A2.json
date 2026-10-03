@@ -1,0 +1,2449 @@
+[
+ {
+  "w": "erheben",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈheːbn̩",
+  "lvl": "C1",
+  "forms": "erhebt · erhob · hat erhoben",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "提出（异议、指控、要求等）",
+    "de": "(Einspruch, Vorwürfe, Anspruch) geltend machen",
+    "ex": [
+     {
+      "de": "Die Opposition erhob schwere Vorwürfe gegen die Regierung.",
+      "zh": "反对党对政府提出了严厉指责。"
+     },
+     {
+      "de": "Gegen den Bescheid kann innerhalb eines Monats Einspruch erhoben werden.",
+      "zh": "对该决定可在一个月内提出异议。"
+     }
+    ]
+   },
+   {
+    "zh": "征收（税、费）",
+    "de": "(Steuern, Gebühren) verlangen und einziehen",
+    "ex": [
+     {
+      "de": "Die Stadt erhebt seit diesem Jahr eine Übernachtungssteuer.",
+      "zh": "该市从今年起征收住宿税。"
+     }
+    ]
+   },
+   {
+    "zh": "采集，收集（数据）",
+    "de": "(Daten) systematisch sammeln",
+    "ex": [
+     {
+      "de": "Die Daten wurden im Rahmen einer Online-Umfrage erhoben.",
+      "zh": "这些数据是通过一项网络调查采集的。"
+     }
+    ]
+   },
+   {
+    "zh": "举起，抬起；sich erheben：站起；（民众）起义；（建筑、山）耸立",
+    "de": "hochheben; sich erheben: aufstehen; rebellieren; emporragen",
+    "ex": [
+     {
+      "de": "Das Volk erhob sich gegen die Diktatur.",
+      "zh": "人民起来反抗独裁统治。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Einspruch / Klage / Vorwürfe gegen jdn. erheben — 对某人提出异议/起诉/指责",
+   "Anspruch auf etw.(A) erheben — 对某物提出权利要求",
+   "Steuern / Gebühren erheben — 征税/收费",
+   "Daten erheben — 采集数据（学术、统计常用）",
+   "etw. zum Prinzip erheben — 把某事奉为原则"
+  ],
+  "root": "er·heb·en：er-（向上；使达到某状态）+ heben（举起）→“抬起来” → 引申为把异议、要求“提出来”，把税款“收上来”",
+  "fam": [
+   "heben",
+   "Erhebung",
+   "erheblich",
+   "Hebel",
+   "aufheben"
+  ],
+  "ety": "heben < 中古高地德语 heben < 古高地德语 heffen, heven < 原始日耳曼语 *hafjaną；erheben 古高地德语已有（irheffen）。",
+  "cog": "英 heave；荷 heffen",
+  "tip": "Daten erheben（采集数据）与 Daten erfassen（录入）不同；erheblich（相当大的）与 erheben 同族但已独立成词。"
+ },
+ {
+  "w": "erläutern",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈlɔɪ̯tɐn",
+  "lvl": "B2",
+  "forms": "erläutert · erläuterte · hat erläutert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "解释，说明，阐释（尤指详细、举例地说明）",
+    "de": "etw. ausführlich erklären, verständlich machen",
+    "ex": [
+     {
+      "de": "Der Referent erläuterte die Ergebnisse anhand mehrerer Grafiken.",
+      "zh": "报告人借助几张图表对结果作了说明。"
+     },
+     {
+      "de": "Können Sie kurz erläutern, wie Sie zu diesem Schluss gekommen sind?",
+      "zh": "您能简要说明一下您是怎么得出这个结论的吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. etw. erläutern — 向某人阐明某事",
+   "etw. an einem Beispiel / anhand von etw. erläutern — 用例子/借助某物说明",
+   "die Erläuterung (zu etw.) — （对某事的）说明、注释"
+  ],
+  "root": "er·läuter·n：er-（使成为）+ lauter（纯净的、清澈的）+ -n → “使清澈” → 把事情讲清楚",
+  "fam": [
+   "Erläuterung",
+   "lauter",
+   "läutern"
+  ],
+  "ety": "源自中古高地德语 erliutern（澄清、阐明），由 liutern（使纯净）构成；lauter < 古高地德语 hlūttar（纯净的）。",
+  "cog": "荷 louter（纯粹的）",
+  "tip": "erläutern 比 erklären 更书面、更强调逐点详细说明；考试作文中 „Erläutern Sie …“ 要求展开解释并举例。"
+ },
+ {
+  "w": "ermitteln",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈmɪtl̩n",
+  "lvl": "B2",
+  "forms": "ermittelt · ermittelte · hat ermittelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（警方、检方）侦查，调查",
+    "de": "(Polizei, Staatsanwaltschaft) Untersuchungen durchführen",
+    "ex": [
+     {
+      "de": "Die Staatsanwaltschaft ermittelt gegen den ehemaligen Vorstand wegen Betrugs.",
+      "zh": "检方正以诈骗嫌疑对前董事会成员展开调查。"
+     }
+    ]
+   },
+   {
+    "zh": "查明，确定；测算出",
+    "de": "durch Nachforschen oder Berechnen herausfinden",
+    "ex": [
+     {
+      "de": "Die Unfallursache konnte bislang nicht ermittelt werden.",
+      "zh": "事故原因至今未能查明。"
+     },
+     {
+      "de": "Der Durchschnittswert wird aus allen Messungen ermittelt.",
+      "zh": "平均值由全部测量结果计算得出。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gegen jdn. (wegen etw.) ermitteln — （因某事）对某人进行侦查",
+   "in einem Fall ermitteln — 调查某个案件",
+   "den Täter / die Ursache / den Sieger ermitteln — 查出罪犯/原因；决出胜者",
+   "die Ermittlungen (Pl.) — 侦查工作"
+  ],
+  "root": "er·mittel·n：er-（达到结果）+ mittel / Mitte（中间）→ 原义大致为“找出（确切的）位置/中点”→ 查明、确定（此构词逻辑为一般解释）",
+  "fam": [
+   "Ermittlung",
+   "Ermittler",
+   "Mitte",
+   "mittel",
+   "vermitteln"
+  ],
+  "ety": "由 mittel / Mitte 派生的动词；Mitte < 中古高地德语 mitte < 古高地德语 mitti < 原始日耳曼语 *midja-。具体语义演变过程说法不一。",
+  "cog": "英 mid, middle",
+  "tip": "ermitteln 作“侦查”时不及物：gegen jdn. ermitteln，不能说 *jdn. ermitteln（后者意为“查出某人身份”）。"
+ },
+ {
+  "w": "erörtern",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈʔœʁtɐn",
+  "lvl": "C1",
+  "forms": "erörtert · erörterte · hat erörtert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（详细、多角度地）讨论，探讨，论述",
+    "de": "etw. ausführlich und von verschiedenen Seiten besprechen",
+    "ex": [
+     {
+      "de": "Auf der Konferenz wurden mögliche Lösungsansätze erörtert.",
+      "zh": "会上探讨了可能的解决思路。"
+     },
+     {
+      "de": "Erörtern Sie die Vor- und Nachteile des Homeoffice.",
+      "zh": "请论述居家办公的利与弊。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. mit jdm. erörtern — 与某人讨论某事",
+   "eine Frage / ein Problem eingehend erörtern — 深入探讨一个问题",
+   "die Erörterung — 讨论；（中学）议论文"
+  ],
+  "root": "er·ört·er·n：er- + Ort（旧义：尖端、端点）→ 一般解释为“把问题追究到底/逐点处理”→ 详细讨论",
+  "fam": [
+   "Erörterung",
+   "Ort",
+   "örtlich"
+  ],
+  "ety": "近代高地德语形成的动词，与 Ort 有关；Ort 在古高地德语 ort 中原义为“尖端、角、边”。至于构词的确切理据，一般认为是“逐点（到底）探讨”，一说为仿拉丁语构词，未有定论。",
+  "cog": "Ort 与古英语 ord（尖端）同源",
+  "tip": "德国中学的 Erörterung 指正反论证的议论文（lineare / dialektische Erörterung）。erörtern 比 diskutieren 更书面。"
+ },
+ {
+  "w": "sich erweisen",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈvaɪ̯zn̩",
+  "lvl": "C1",
+  "forms": "erweist sich · erwies sich · hat sich erwiesen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（sich als … erweisen）证明是，结果表明是",
+    "de": "sich als etw. herausstellen, zeigen",
+    "ex": [
+     {
+      "de": "Die Entscheidung erwies sich im Nachhinein als richtig.",
+      "zh": "事后证明这个决定是正确的。"
+     },
+     {
+      "de": "Der vermeintliche Experte erwies sich als Hochstapler.",
+      "zh": "那位所谓的专家原来是个骗子。"
+     }
+    ]
+   },
+   {
+    "zh": "（及物）给予，施予（帮助、敬意等）",
+    "de": "jdm. etw. (einen Dienst, eine Ehre) zuteilwerden lassen",
+    "ex": [
+     {
+      "de": "Damit hast du mir einen großen Gefallen erwiesen.",
+      "zh": "你这可帮了我一个大忙。"
+     }
+    ]
+   },
+   {
+    "zh": "（及物）证明（多用被动或过去分词 erwiesen）",
+    "de": "nachweisen, beweisen",
+    "ex": [
+     {
+      "de": "Es ist wissenschaftlich erwiesen, dass Rauchen Krebs verursacht.",
+      "zh": "吸烟致癌已被科学证实。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich als + Adj. / Nom. erweisen — 证明是……（als 后名词通常用第一格）",
+   "jdm. einen Dienst / einen Gefallen / die letzte Ehre erweisen — 帮某人忙；向逝者致以最后的敬意",
+   "es ist erwiesen, dass … — ……已被证实"
+  ],
+  "root": "er·weis·en：er-（达成）+ weisen（指示、显示）→“显示出来” → 证明、表现为",
+  "fam": [
+   "beweisen",
+   "nachweisen",
+   "Beweis",
+   "weisen",
+   "hinweisen"
+  ],
+  "ety": "weisen < 中古高地德语 wīsen < 古高地德语 wīsen（指示、引导），与 weise（智慧的）、wissen 同属一个词族。",
+  "cog": "英 wise",
+  "tip": "强变化：erwies, erwiesen，不要写成 *erweiste。sich als … erweisen 与 sich herausstellen 同义，后者更口语。"
+ },
+ {
+  "w": "erzielen",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈt͡siːlən",
+  "lvl": "B2",
+  "forms": "erzielt · erzielte · hat erzielt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "取得，获得（成果、效果、利润、一致等）",
+    "de": "(ein Ergebnis, einen Gewinn, eine Einigung) erreichen",
+    "ex": [
+     {
+      "de": "Das Unternehmen erzielte im vergangenen Jahr einen Rekordgewinn.",
+      "zh": "该公司去年取得了创纪录的利润。"
+     },
+     {
+      "de": "Nach langen Verhandlungen wurde endlich eine Einigung erzielt.",
+      "zh": "经过漫长的谈判，终于达成了一致。"
+     }
+    ]
+   },
+   {
+    "zh": "（体育）射进，得（分）",
+    "de": "(ein Tor, Punkte) schießen, machen",
+    "ex": [
+     {
+      "de": "Er erzielte in der 90. Minute den Siegtreffer.",
+      "zh": "他在第90分钟打进了制胜球。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Erfolg / ein Ergebnis / eine Wirkung erzielen — 取得成功/结果/效果",
+   "Gewinn / Umsatz erzielen — 获得利润/实现营业额",
+   "eine Einigung / einen Kompromiss erzielen — 达成一致/妥协",
+   "ein Tor erzielen — 进球"
+  ],
+  "root": "er·ziel·en：er-（达到）+ Ziel（目标）→“达到目标” → 取得（结果）",
+  "fam": [
+   "Ziel",
+   "zielen",
+   "gezielt",
+   "zielstrebig"
+  ],
+  "ety": "Ziel < 中古高地德语 zil < 古高地德语 zil（目标、终点）；更早的来源不确定。",
+  "cog": "—（同源关系不确定）",
+  "tip": "erzielen 宾语是抽象结果（Erfolg, Gewinn, Einigung），比 erreichen 更书面；不能说 *ein Ziel erzielen，应说 ein Ziel erreichen。"
+ },
+ {
+  "w": "fördern",
+  "pos": "v",
+  "ipa": "ˈfœʁdɐn",
+  "lvl": "B2",
+  "forms": "fördert · förderte · hat gefördert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "促进，推动；资助，扶持；培养（人才）",
+    "de": "unterstützen, voranbringen; finanziell unterstützen",
+    "ex": [
+     {
+      "de": "Das Projekt wird von der EU mit zwei Millionen Euro gefördert.",
+      "zh": "该项目获得欧盟两百万欧元的资助。"
+     },
+     {
+      "de": "Schulen sollen begabte Kinder gezielt fördern.",
+      "zh": "学校应有针对性地培养有天赋的孩子。"
+     }
+    ]
+   },
+   {
+    "zh": "开采（矿产）",
+    "de": "(Bodenschätze) abbauen, gewinnen",
+    "ex": [
+     {
+      "de": "In der Region wurde bis 2018 Steinkohle gefördert.",
+      "zh": "该地区一直开采硬煤到2018年。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. / jdn. fördern — 促进某事/扶持某人",
+   "staatlich / öffentlich gefördert — 国家/公共资助的",
+   "die Förderung, das Fördermittel, das Förderprogramm — 资助、资助资金、扶持计划",
+   "Erdöl / Kohle fördern — 开采石油/煤"
+  ],
+  "root": "förder·n：源自副词 fürder / vorder（向前）→“使向前” → 促进；把矿物“往上运出” → 开采",
+  "fam": [
+   "Förderung",
+   "Förderer",
+   "befördern",
+   "fürder",
+   "vorder"
+  ],
+  "ety": "中古高地德语 vürdern < 古高地德语 furdiren，由 furdir（更向前）派生，与 vor, fort 同属一族。",
+  "cog": "英 further（动词 to further 意为“促进”）, forth",
+  "tip": "不要与 fordern（要求）混淆：fördern 有变音符号。Fordern und Fördern 是德国社会政策的固定口号。"
+ },
+ {
+  "w": "gewährleisten",
+  "pos": "v",
+  "ipa": "ɡəˈvɛːɐ̯laɪ̯stn̩",
+  "lvl": "C1",
+  "forms": "gewährleistet · gewährleistete · hat gewährleistet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "保证，确保",
+    "de": "sicherstellen, garantieren",
+    "ex": [
+     {
+      "de": "Die Sicherheit der Besucher muss jederzeit gewährleistet sein.",
+      "zh": "必须随时确保游客的安全。"
+     },
+     {
+      "de": "Nur so lässt sich ein reibungsloser Ablauf gewährleisten.",
+      "zh": "只有这样才能保证流程顺畅。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. gewährleisten — 确保某事",
+   "gewährleistet sein / werden — 得到保证",
+   "die Gewährleistung — 保证；（法律）瑕疵担保（期）"
+  ],
+  "root": "gewähr·leist·en：由词组 Gewähr leisten（提供担保）合写而成：Gewähr（担保）+ leisten（履行、提供）",
+  "fam": [
+   "Gewähr",
+   "Gewährleistung",
+   "gewähren",
+   "leisten",
+   "Leistung"
+  ],
+  "ety": "由短语 Gewähr leisten 合成。Gewähr < 中古高地德语 gewer(e)（担保、保证）；leisten < 古高地德语 leisten（履行），一般认为原义为“遵循（足迹）”。",
+  "cog": "leisten：英 last（鞋楦，一般认为同源）",
+  "tip": "不可分动词，过去分词是 gewährleistet（不加 ge-）。比 garantieren 更书面，多见于公文与法律。也可分开写作 Gewähr leisten：„Für die Richtigkeit wird keine Gewähr geleistet.“"
+ },
+ {
+  "w": "hervorheben",
+  "pos": "v",
+  "ipa": "hɛɐ̯ˈfoːɐ̯heːbn̩",
+  "lvl": "B2",
+  "forms": "hebt hervor · hob hervor · hat hervorgehoben",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "强调，突出",
+    "de": "besonders betonen, auf etw. Wichtiges aufmerksam machen",
+    "ex": [
+     {
+      "de": "Die Ministerin hob die Bedeutung der Bildung hervor.",
+      "zh": "部长强调了教育的重要性。"
+     },
+     {
+      "de": "Besonders hervorzuheben ist das Engagement der Freiwilligen.",
+      "zh": "尤其值得一提的是志愿者们的投入。"
+     }
+    ]
+   },
+   {
+    "zh": "（视觉上）突出显示",
+    "de": "optisch betonen",
+    "ex": [
+     {
+      "de": "Die wichtigsten Begriffe sind fett hervorgehoben.",
+      "zh": "最重要的概念以粗体突出显示。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. hervorheben — 强调某事",
+   "hervorheben, dass … — 强调……",
+   "besonders hervorzuheben ist … — 尤其值得强调的是……"
+  ],
+  "root": "her·vor·heb·en：hervor（向前、出来）+ heben（举起）→“举到前面来” → 突出、强调",
+  "fam": [
+   "heben",
+   "hervorragend",
+   "hervorrufen",
+   "Hervorhebung"
+  ],
+  "ety": "heben < 古高地德语 heffen, heven；hervor < 中古高地德语 her vür（向前）。",
+  "cog": "英 heave",
+  "tip": "重音在 -vor-：hervórheben。强变化：hob … hervor, hervorgehoben。"
+ },
+ {
+  "w": "hinweisen",
+  "pos": "v",
+  "ipa": "ˈhɪnvaɪ̯zn̩",
+  "lvl": "B2",
+  "forms": "weist hin · wies hin · hat hingewiesen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "指出，提醒（注意）",
+    "de": "auf etw. aufmerksam machen",
+    "ex": [
+     {
+      "de": "Wir weisen darauf hin, dass das Rauchen im Gebäude verboten ist.",
+      "zh": "我们提醒您，楼内禁止吸烟。"
+     },
+     {
+      "de": "Der Arzt wies ihn auf die Risiken der Operation hin.",
+      "zh": "医生向他指出了手术的风险。"
+     }
+    ]
+   },
+   {
+    "zh": "表明，暗示（有……迹象）",
+    "de": "auf etw. schließen lassen",
+    "ex": [
+     {
+      "de": "Alles weist darauf hin, dass der Brand vorsätzlich gelegt wurde.",
+      "zh": "一切迹象表明，这场火是有人蓄意纵的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(jdn.) auf etw.(A) hinweisen — （向某人）指出某事",
+   "darauf hinweisen, dass … — 指出/提醒……",
+   "der Hinweis (auf etw.) — 提示；线索"
+  ],
+  "root": "hin·weis·en：hin（往那边）+ weisen（指示）→“往那边指” → 指出",
+  "fam": [
+   "Hinweis",
+   "weisen",
+   "beweisen",
+   "Wegweiser"
+  ],
+  "ety": "weisen < 中古高地德语 wīsen < 古高地德语 wīsen（指示、引导）。",
+  "cog": "英 wise",
+  "tip": "支配 auf + 第四格；被提醒的人用第四格：jdn. auf etw. hinweisen（不是 *jdm.）。"
+ },
+ {
+  "w": "hinterfragen",
+  "pos": "v",
+  "ipa": "hɪntɐˈfʁaːɡn̩",
+  "lvl": "C1",
+  "forms": "hinterfragt · hinterfragte · hat hinterfragt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（批判性地）追问，质疑，探究……背后的原因/前提",
+    "de": "nach den Hintergründen, Voraussetzungen von etw. fragen; kritisch prüfen",
+    "ex": [
+     {
+      "de": "Studierende sollen lernen, Quellen kritisch zu hinterfragen.",
+      "zh": "大学生应学会批判性地审视资料来源。"
+     },
+     {
+      "de": "Man sollte auch die eigenen Vorurteile hinterfragen.",
+      "zh": "人也应该反思自己的偏见。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. (kritisch) hinterfragen — （批判性地）审视、质疑某事",
+   "Annahmen / Motive / Strukturen hinterfragen — 追问前提/动机/结构"
+  ],
+  "root": "hinter·frag·en：hinter（在……后面）+ fragen（问）→“问到后面去” → 追问背后的原因",
+  "fam": [
+   "fragen",
+   "Frage",
+   "fraglich",
+   "Hintergrund"
+  ],
+  "ety": "20世纪才形成的较新词。fragen < 中古高地德语 vrāgen < 古高地德语 frāgēn。",
+  "cog": "fragen：荷 vragen",
+  "tip": "不可分，重音在 -fra-；过去分词 hinterfragt（不加 ge-）。不等于简单的 fragen，而是“追问前提、质疑”。"
+ },
+ {
+  "w": "nachvollziehen",
+  "pos": "v",
+  "ipa": "ˈnaːxfɔlt͡siːən",
+  "lvl": "C1",
+  "forms": "vollzieht nach · vollzog nach · hat nachvollzogen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "理解，领会（别人的想法、感受、推理过程）",
+    "de": "(Gedanken, Gefühle, Gründe) verstehen, sich in etw. hineinversetzen",
+    "ex": [
+     {
+      "de": "Ich kann Ihre Verärgerung gut nachvollziehen.",
+      "zh": "我很能理解您的恼火。"
+     },
+     {
+      "de": "Die Begründung des Urteils ist kaum nachvollziehbar.",
+      "zh": "判决的理由让人难以理解。"
+     }
+    ]
+   },
+   {
+    "zh": "追溯，复现（过程）",
+    "de": "einen Vorgang im Nachhinein rekonstruieren",
+    "ex": [
+     {
+      "de": "Mit den Protokollen lässt sich jeder Schritt genau nachvollziehen.",
+      "zh": "借助记录可以精确追溯每一个步骤。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. nachvollziehen können — 能理解某事",
+   "nachvollziehbar — 可理解的，说得通的；可追溯的",
+   "zu-不定式：nachzuvollziehen"
+  ],
+  "root": "nach·voll·zieh·en：nach（跟随、事后）+ vollziehen（完成、执行）→“跟着（别人）把过程再走一遍” → 理解、复现",
+  "fam": [
+   "vollziehen",
+   "nachvollziehbar",
+   "Vollzug",
+   "ziehen"
+  ],
+  "ety": "由 nach + vollziehen 构成的较新复合动词；ziehen < 古高地德语 ziohan < 原始日耳曼语 *teuhaną。",
+  "cog": "ziehen：英 tug, tow（一般认为同源）",
+  "tip": "只有 nach- 可分，voll- 不可分：Ich vollziehe das nach；过去分词 nachvollzogen（不加 ge-）。常用于“能理解（对方立场）”，比 verstehen 更强调“设身处地地跟上思路”。"
+ },
+ {
+  "w": "rechtfertigen",
+  "pos": "v",
+  "ipa": "ˈʁɛçtfɛʁtɪɡn̩",
+  "lvl": "C1",
+  "forms": "rechtfertigt · rechtfertigte · hat gerechtfertigt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "为……辩护，证明……是正当的",
+    "de": "als richtig, berechtigt darstellen; begründen",
+    "ex": [
+     {
+      "de": "Wie will die Regierung diese Ausgaben rechtfertigen?",
+      "zh": "政府打算如何为这些开支辩护？"
+     },
+     {
+      "de": "Nichts rechtfertigt Gewalt gegen Unbeteiligte.",
+      "zh": "没有任何理由能为针对无辜者的暴力开脱。"
+     }
+    ]
+   },
+   {
+    "zh": "sich rechtfertigen：为自己辩解",
+    "de": "sich verteidigen, seine Handlung begründen",
+    "ex": [
+     {
+      "de": "Er musste sich vor dem Ausschuss für seine Entscheidung rechtfertigen.",
+      "zh": "他不得不在委员会面前为自己的决定作出辩解。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. (mit etw.) rechtfertigen — （用某理由）为某事辩护",
+   "sich (vor jdm.) für etw.(A) rechtfertigen — （在某人面前）为某事自我辩解",
+   "gerechtfertigt sein — 是正当的、有理由的",
+   "die Rechtfertigung — 辩护；正当理由"
+  ],
+  "root": "recht·fertig·en：recht（正当的）+ fertigen（使完成、使准备好）→“使处于正当状态” → 证明正当、辩护",
+  "fam": [
+   "Rechtfertigung",
+   "gerecht",
+   "fertig",
+   "Recht"
+  ],
+  "ety": "中古高地德语 rehtvertigen（使处于合法/正当状态）；fertig 原与 Fahrt 有关（原义“准备出发的”）。",
+  "cog": "recht：英 right",
+  "tip": "不是可分动词：er rechtfertigt sich（不能说 *fertigt sich recht）；过去分词 gerechtfertigt，ge- 加在最前面。"
+ },
+ {
+  "w": "scheitern",
+  "pos": "v",
+  "ipa": "ˈʃaɪ̯tɐn",
+  "lvl": "B2",
+  "forms": "scheitert · scheiterte · ist gescheitert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "失败，告吹，落空",
+    "de": "misslingen, keinen Erfolg haben",
+    "ex": [
+     {
+      "de": "Die Verhandlungen sind am Widerstand der Gewerkschaften gescheitert.",
+      "zh": "谈判因工会的反对而失败。"
+     },
+     {
+      "de": "Ihre Ehe ist nach zehn Jahren gescheitert.",
+      "zh": "他们的婚姻十年后破裂了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an etw.(D) / jdm. scheitern — 因某事/某人而失败",
+   "mit etw. scheitern — （某人）在某事上失败：Er ist mit seiner Klage gescheitert.",
+   "zum Scheitern verurteilt sein — 注定失败",
+   "ein gescheiterter Versuch — 一次失败的尝试"
+  ],
+  "root": "scheiter·n：源自 Scheiter（Scheit“劈柴、木块”的旧复数）→ 原指船只“撞成碎木片”→ 失败",
+  "fam": [
+   "Scheit",
+   "Scheitern"
+  ],
+  "ety": "源自短语 zu Scheitern gehen（船只撞碎成木片）；Scheit < 中古高地德语 schīt < 古高地德语 scīt（木片、劈柴）。",
+  "cog": "Scheit：古英语 scīd（木片）",
+  "tip": "完成时用 sein：ist gescheitert。失败的原因用 an + 第三格，不用 *wegen 或 *durch。"
+ },
+ {
+  "w": "schildern",
+  "pos": "v",
+  "ipa": "ˈʃɪldɐn",
+  "lvl": "B2",
+  "forms": "schildert · schilderte · hat geschildert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（生动、详细地）描述，叙述",
+    "de": "etw. anschaulich und ausführlich beschreiben, erzählen",
+    "ex": [
+     {
+      "de": "Die Zeugin schilderte den Unfallhergang sehr genau.",
+      "zh": "女证人非常详细地描述了事故经过。"
+     },
+     {
+      "de": "In seinem Roman schildert er das Leben im Berlin der Zwanzigerjahre.",
+      "zh": "他在小说中描绘了二十年代柏林的生活。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(jdm.) etw. schildern — （向某人）描述某事",
+   "die Lage / den Hergang / seine Eindrücke schildern — 描述局势/经过/印象",
+   "die Schilderung — 描述，叙述"
+  ],
+  "root": "schild·er·n：源自 Schild（盾牌）→ 原指“在盾牌上绘纹章” → 描绘 → （用语言）描述",
+  "fam": [
+   "Schild",
+   "Schilderung",
+   "Schilderer"
+  ],
+  "ety": "中古高地德语中 schilt（盾）派生出 schiltære / schilderære（纹章画匠），动词 schildern 原义“绘画”，后转指用语言描述。",
+  "cog": "英 shield",
+  "tip": "schildern 强调生动、带细节的叙述（经历、经过），beschreiben 更中性（可描述物体、外观）。"
+ },
+ {
+  "w": "schätzen",
+  "pos": "v",
+  "ipa": "ˈʃɛt͡sn̩",
+  "lvl": "B1",
+  "forms": "schätzt · schätzte · hat geschätzt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "估计，估算",
+    "de": "ungefähr bestimmen; vermuten",
+    "ex": [
+     {
+      "de": "Die Schäden werden auf mehrere Millionen Euro geschätzt.",
+      "zh": "损失估计达数百万欧元。"
+     },
+     {
+      "de": "Ich schätze, dass wir in einer Stunde fertig sind.",
+      "zh": "我估计我们一小时后能完成。"
+     }
+    ]
+   },
+   {
+    "zh": "重视，珍视；赏识，尊重",
+    "de": "hochachten, wertschätzen",
+    "ex": [
+     {
+      "de": "Ich schätze Ihre Offenheit sehr.",
+      "zh": "我非常欣赏您的坦率。"
+     },
+     {
+      "de": "Sie ist eine geschätzte Kollegin.",
+      "zh": "她是一位备受尊重的同事。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. auf + Betrag schätzen — 将某物估计为……",
+   "jdn. / etw. (sehr) schätzen — （非常）看重某人/某物",
+   "etw. zu schätzen wissen — 懂得珍惜某事",
+   "die Schätzung — 估计"
+  ],
+  "root": "schätz·en：源自 Schatz（财宝、财产）→“确定财产的价值” → 估价；“当作财宝” → 珍视",
+  "fam": [
+   "Schatz",
+   "Schätzung",
+   "einschätzen",
+   "unterschätzen",
+   "wertschätzen"
+  ],
+  "ety": "中古高地德语 schatzen（估价；征税）< Schatz（古高地德语 scaz，钱财、财产）；Schatz 更早的来源不详。",
+  "cog": "荷 schatten（估计）, schat",
+  "tip": "„Ich schätze …“ 口语中相当于“我猜”；„Das weiß ich zu schätzen“ 是常用感谢表达。"
+ },
+ {
+  "w": "streben",
+  "pos": "v",
+  "ipa": "ˈʃtʁeːbn̩",
+  "lvl": "C1",
+  "forms": "strebt · strebte · hat gestrebt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "追求，力求，努力争取",
+    "de": "sich mit aller Kraft um etw. bemühen",
+    "ex": [
+     {
+      "de": "Das Unternehmen strebt nach der Marktführerschaft in Europa.",
+      "zh": "该公司力争成为欧洲市场的领导者。"
+     },
+     {
+      "de": "Viele Menschen streben nach Sicherheit und Anerkennung.",
+      "zh": "许多人追求安全感和认可。"
+     }
+    ]
+   },
+   {
+    "zh": "（朝某方向）奔向，涌向",
+    "de": "sich zielstrebig irgendwohin bewegen",
+    "ex": [
+     {
+      "de": "Nach dem Konzert strebten die Besucher zu den Ausgängen.",
+      "zh": "音乐会结束后，观众纷纷涌向出口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nach etw.(D) streben — 追求某物",
+   "danach streben, etw. zu tun — 力求做某事",
+   "etw. anstreben（可分）— 以某事为目标",
+   "表示位移（义项2）时完成时可用 sein：Sie sind zum Ausgang gestrebt."
+  ],
+  "root": "streb·en：单纯词；派生出 Streben（追求）、bestrebt（努力的）、Bestrebung、anstreben",
+  "fam": [
+   "anstreben",
+   "Bestrebung",
+   "bestrebt",
+   "zielstrebig",
+   "Streber"
+  ],
+  "ety": "中古高地德语 streben（努力、挣扎），更早的来源不详。英语 strive 经古法语 estriver 借入，一说该法语词源自日耳曼语，与 streben 的关系不确定。",
+  "cog": "荷 streven",
+  "tip": "弱变化（strebte, gestrebt）。Streber 是贬义词：“书呆子、钻营者”。"
+ },
+ {
+  "w": "übernehmen",
+  "pos": "v",
+  "ipa": "yːbɐˈneːmən",
+  "lvl": "B1",
+  "forms": "übernimmt · übernahm · hat übernommen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "接管，接手；承担（任务、责任、费用）",
+    "de": "etw. von jdm. in eigene Verantwortung nehmen; auf sich nehmen",
+    "ex": [
+     {
+      "de": "Die Versicherung übernimmt die Kosten der Behandlung.",
+      "zh": "保险公司承担治疗费用。"
+     },
+     {
+      "de": "Ab Januar übernimmt sie die Leitung der Abteilung.",
+      "zh": "从一月起她接管部门领导工作。"
+     }
+    ]
+   },
+   {
+    "zh": "收购；沿用，采纳（观点、措辞、做法）",
+    "de": "(eine Firma) kaufen; etw. Fremdes für sich verwenden",
+    "ex": [
+     {
+      "de": "Der Konzern hat den Konkurrenten für 3 Milliarden Euro übernommen.",
+      "zh": "该集团以三十亿欧元收购了竞争对手。"
+     },
+     {
+      "de": "Viele Begriffe wurden aus dem Englischen übernommen.",
+      "zh": "许多概念是从英语借用来的。"
+     }
+    ]
+   },
+   {
+    "zh": "sich übernehmen：（工作、开支等）超出自己的能力，劳累过度",
+    "de": "sich zu viel zumuten",
+    "ex": [
+     {
+      "de": "Mit dem Hausbau hat sich die Familie finanziell übernommen.",
+      "zh": "盖房子让这家人在经济上力不从心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Verantwortung / die Kosten / eine Aufgabe übernehmen — 承担责任/费用/任务",
+   "etw. von jdm. übernehmen — 从某人那里接手某事",
+   "sich (mit etw.) übernehmen — （在某事上）力不从心",
+   "die Übernahme — 接管；收购",
+   "另有罕用的可分读法 ǘbernehmen（如 Wasser übernehmen“（船）进水”），一般不用"
+  ],
+  "root": "über·nehm·en：über（越过、转到）+ nehmen（拿）→“把（别人的东西）拿过来” → 接手、承担",
+  "fam": [
+   "nehmen",
+   "Übernahme",
+   "annehmen",
+   "unternehmen"
+  ],
+  "ety": "nehmen < 中古高地德语 nemen < 古高地德语 neman < 原始日耳曼语 *nemaną。",
+  "cog": "nehmen：古英语 niman；英 numb（原义“被夺去感觉的”）",
+  "tip": "常用读法不可分，重音在 -neh-：Er übernimmt（不是 *nimmt über）；过去分词 übernommen（不加 ge-）。"
+ },
+ {
+  "w": "überwiegen",
+  "pos": "v",
+  "ipa": "yːbɐˈviːɡn̩",
+  "lvl": "C1",
+  "forms": "überwiegt · überwog · hat überwogen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "占优势，占多数，占上风",
+    "de": "stärker, zahlreicher sein; vorherrschen",
+    "ex": [
+     {
+      "de": "In der Umfrage überwiegen die kritischen Stimmen.",
+      "zh": "调查中批评的声音占多数。"
+     },
+     {
+      "de": "Die Vorteile überwiegen die Nachteile deutlich.",
+      "zh": "优点明显多于缺点。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. überwiegt — 某事占优势（不及物）",
+   "etw. überwiegt etw.(A) — 某事胜过某事（及物）",
+   "überwiegend — 主要的，大多数的：Die Teilnehmer waren überwiegend Frauen."
+  ],
+  "root": "über·wieg·en：über（超过）+ wiegen（重）→“比……更重” → 占优势",
+  "fam": [
+   "wiegen",
+   "Gewicht",
+   "überwiegend",
+   "wägen",
+   "Übergewicht"
+  ],
+  "ety": "wiegen 与 wägen 同源 < 古高地德语 wegan（称重；移动）< 原始日耳曼语 *weganą。",
+  "cog": "英 weigh, weight",
+  "tip": "强变化：überwog, überwogen；不要写成 *überwiegte。形容词/副词 überwiegend 在学术、新闻中极常见。"
+ },
+ {
+  "w": "umgehen",
+  "pos": "v",
+  "ipa": "ˈʊmɡeːən; ʊmˈɡeːən",
+  "lvl": "B2",
+  "forms": "geht um · ging um · ist umgegangen（úmgehen）；umgeht · umging · hat umgangen（umgéhen）",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（úmgehen，可分）对待，处理，应付（人或事）",
+    "de": "mit jdm./etw. in bestimmter Weise verfahren, behandeln",
+    "ex": [
+     {
+      "de": "Sie kann gut mit Kritik umgehen.",
+      "zh": "她能很好地应对批评。"
+     },
+     {
+      "de": "Wir müssen sparsamer mit unseren Ressourcen umgehen.",
+      "zh": "我们必须更节约地使用资源。"
+     }
+    ]
+   },
+   {
+    "zh": "（úmgehen，可分）（传闻、疾病）流传，蔓延；（鬼魂）出没",
+    "de": "sich verbreiten, kursieren; spuken",
+    "ex": [
+     {
+      "de": "Im Büro geht gerade die Grippe um.",
+      "zh": "办公室里正流行感冒。"
+     },
+     {
+      "de": "Es geht das Gerücht um, dass die Filiale geschlossen wird.",
+      "zh": "有传言说这家分店要关门。"
+     }
+    ]
+   },
+   {
+    "zh": "（umgéhen，不可分）绕过，回避；规避（法律、规定）",
+    "de": "um etw. herumgehen/-fahren; etw. vermeiden; (ein Gesetz) unterlaufen",
+    "ex": [
+     {
+      "de": "Die Autobahn umgeht die Innenstadt weiträumig.",
+      "zh": "高速公路远远绕开市中心。"
+     },
+     {
+      "de": "Mit diesem Trick werden die Steuervorschriften umgangen.",
+      "zh": "人们用这个伎俩规避税务规定。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit jdm. / etw. umgehen（úm-）— 对待某人/处理某事：mit Geld umgehen können 会理财",
+   "der Umgang（mit jdm./etw.）— 交往；对……的处理",
+   "ein Problem / eine Frage / ein Verbot umgehen（um-ge-）— 回避问题；规避禁令",
+   "die Umgehung — 绕行；规避"
+  ],
+  "root": "um·geh·en：um（围绕）+ gehen（走）→ 可分读法：“在周围走动” → 与人周旋、对待；流传。不可分读法：“绕着走” → 绕开、规避",
+  "fam": [
+   "Umgang",
+   "umgänglich",
+   "Umgehung",
+   "Umgehungsstraße",
+   "gehen"
+  ],
+  "ety": "gehen < 中古高地德语 gān, gēn < 古高地德语 gān, gēn < 原始日耳曼语 *gāną。",
+  "cog": "英 go",
+  "tip": "两种读法助动词不同：Ich bin mit dem Problem gut umgegangen（úm-，sein）；Ich habe das Problem umgangen（um-gé-，haben，过去分词无 ge-）。"
+ },
+ {
+  "w": "unterscheiden",
+  "pos": "v",
+  "ipa": "ʊntɐˈʃaɪ̯dn̩",
+  "lvl": "B1",
+  "forms": "unterscheidet · unterschied · hat unterschieden",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "区分，区别，分辨",
+    "de": "Unterschiede erkennen, auseinanderhalten",
+    "ex": [
+     {
+      "de": "Man muss zwischen Meinung und Tatsache unterscheiden.",
+      "zh": "必须区分观点与事实。"
+     },
+     {
+      "de": "Die Zwillinge sind kaum voneinander zu unterscheiden.",
+      "zh": "这对双胞胎几乎分辨不出来。"
+     }
+    ]
+   },
+   {
+    "zh": "sich unterscheiden：有区别，不同",
+    "de": "anders sein als jd./etw.",
+    "ex": [
+     {
+      "de": "Die beiden Modelle unterscheiden sich vor allem im Preis.",
+      "zh": "这两个型号的区别主要在价格上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zwischen A und B unterscheiden — 区分A和B",
+   "A von B unterscheiden — 把A和B区分开",
+   "sich von jdm./etw. (durch etw. / in etw.(D)) unterscheiden — （在某方面）与……不同",
+   "der Unterschied, unterschiedlich — 区别；不同的"
+  ],
+  "root": "unter·scheid·en：unter（在……之间）+ scheiden（分开）→“在中间分开” → 区分",
+  "fam": [
+   "Unterschied",
+   "unterschiedlich",
+   "scheiden",
+   "entscheiden",
+   "Scheidung"
+  ],
+  "ety": "scheiden < 中古高地德语 scheiden < 古高地德语 sceidan（分开）< 原始日耳曼语 *skaidaną。",
+  "cog": "英 shed（如 watershed 分水岭）",
+  "tip": "强变化：unterschied, unterschieden；不可分，过去分词不加 ge-。"
+ },
+ {
+  "w": "unterstellen",
+  "pos": "v",
+  "ipa": "ʊntɐˈʃtɛlən; ˈʊntɐʃtɛlən",
+  "lvl": "C1",
+  "forms": "unterstellt · unterstellte · hat unterstellt（unterstéllen）；stellt unter · stellte unter · hat untergestellt（únterstellen）",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（unterstéllen，不可分）（无根据地）指责，硬说某人有（某种意图、动机）",
+    "de": "jdm. etw. (Negatives) ohne Beweis zuschreiben",
+    "ex": [
+     {
+      "de": "Man kann ihm doch keine böse Absicht unterstellen.",
+      "zh": "总不能硬说他是存心不良吧。"
+     },
+     {
+      "de": "Sie unterstellt mir, ich hätte gelogen.",
+      "zh": "她硬说我撒了谎。"
+     }
+    ]
+   },
+   {
+    "zh": "（unterstéllen，不可分）使隶属，归……领导；假定",
+    "de": "jdm. unterordnen; als gegeben annehmen",
+    "ex": [
+     {
+      "de": "Die Behörde ist direkt dem Ministerium unterstellt.",
+      "zh": "该机构直接隶属于部里。"
+     },
+     {
+      "de": "Unterstellen wir einmal, die Zahlen stimmen.",
+      "zh": "我们姑且假定这些数字是对的。"
+     }
+    ]
+   },
+   {
+    "zh": "（únterstellen，可分）把……存放在（棚下等处）；sich unterstellen：避雨",
+    "de": "etw. unter ein Dach stellen; sich zum Schutz vor Regen unter etw. stellen",
+    "ex": [
+     {
+      "de": "Wir haben die Fahrräder im Keller untergestellt.",
+      "zh": "我们把自行车放在地下室了。"
+     },
+     {
+      "de": "Während des Gewitters stellten wir uns unter einer Brücke unter.",
+      "zh": "雷雨时我们在一座桥下避雨。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. etw.(A) unterstellen — 硬说某人有某事（贬义）",
+   "jdm. unterstellt sein — 隶属于某人",
+   "die Unterstellung — 无端指责，影射",
+   "etw. irgendwo unterstellen（ún-）— 把某物寄放在某处"
+  ],
+  "root": "unter·stell·en：unter（在下面）+ stellen（放）。不可分：“放到……之下” → 使隶属；“把（意图）垫在底下” → 推定、诬指。可分：“放到下面（遮蔽处）” → 寄放、避雨",
+  "fam": [
+   "stellen",
+   "Unterstellung",
+   "darstellen",
+   "vorstellen"
+  ],
+  "ety": "stellen < 中古高地德语 stellen < 古高地德语 stellen（放置），与 Stall, Stelle 同族。",
+  "cog": "英 stall",
+  "tip": "sep 取较常用的不可分读法。注意：unterstellen 作“指责”总带贬义，比 vorwerfen 更隐晦（指暗示别人有不良动机）。"
+ },
+ {
+  "w": "untersuchen",
+  "pos": "v",
+  "ipa": "ʊntɐˈzuːxn̩",
+  "lvl": "B1",
+  "forms": "untersucht · untersuchte · hat untersucht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "研究，调查",
+    "de": "genau prüfen, erforschen",
+    "ex": [
+     {
+      "de": "Die Studie untersucht den Zusammenhang zwischen Schlaf und Leistung.",
+      "zh": "这项研究考察睡眠与表现之间的关系。"
+     },
+     {
+      "de": "Die Polizei untersucht den Vorfall.",
+      "zh": "警方正在调查这起事件。"
+     }
+    ]
+   },
+   {
+    "zh": "（医生）检查",
+    "de": "(ärztlich) den Gesundheitszustand prüfen",
+    "ex": [
+     {
+      "de": "Lassen Sie sich regelmäßig untersuchen.",
+      "zh": "请定期做检查。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. auf etw.(A) untersuchen — 检查某物是否含有某物：das Wasser auf Schadstoffe untersuchen",
+   "die Untersuchung — 研究；调查；体检",
+   "eine Untersuchung durchführen — 进行调查/研究"
+  ],
+  "root": "unter·such·en：unter（在……之下、深入）+ suchen（寻找）→“深入底下寻找” → 研究、检查",
+  "fam": [
+   "suchen",
+   "Untersuchung",
+   "besuchen",
+   "versuchen"
+  ],
+  "ety": "suchen < 中古高地德语 suochen < 古高地德语 suohhen < 原始日耳曼语 *sōkijaną。",
+  "cog": "英 seek",
+  "tip": "不可分：untersucht（不加 ge-）。学术写作中 „In dieser Arbeit wird untersucht, ob …“ 是常见句型。"
+ },
+ {
+  "w": "veranlassen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈʔanlasn̩",
+  "lvl": "C1",
+  "forms": "veranlasst · veranlasste · hat veranlasst",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "促使，使得（某人做某事）",
+    "de": "jdn. dazu bringen, etw. zu tun",
+    "ex": [
+     {
+      "de": "Was hat Sie veranlasst, die Stelle zu wechseln?",
+      "zh": "是什么促使您换工作的？"
+     },
+     {
+      "de": "Die Ergebnisse veranlassten die Behörden zu strengeren Kontrollen.",
+      "zh": "这些结果促使当局加强了检查。"
+     }
+    ]
+   },
+   {
+    "zh": "安排，下令办理",
+    "de": "anordnen, dafür sorgen, dass etw. geschieht",
+    "ex": [
+     {
+      "de": "Ich werde alles Weitere veranlassen.",
+      "zh": "其余的事我会安排。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. zu etw.(D) veranlassen — 促使某人做某事",
+   "sich veranlasst sehen / fühlen, etw. zu tun — 觉得有必要做某事",
+   "etw. veranlassen — 安排办理某事",
+   "die Veranlassung — 起因；auf Veranlassung von … 应……的要求"
+  ],
+  "root": "ver·an·lass·en：ver-（使）+ Anlass（起因、契机）→“成为起因” → 促使；安排",
+  "fam": [
+   "Anlass",
+   "lassen",
+   "Veranlassung",
+   "anlässlich"
+  ],
+  "ety": "由名词 Anlass 派生；lassen < 古高地德语 lāzan < 原始日耳曼语 *lētaną。",
+  "cog": "lassen：英 let",
+  "tip": "不是可分动词（不能说 *lasst … veran）。„Ich sehe mich veranlasst, …“ 是正式信函中常用的委婉警告语。"
+ },
+ {
+  "w": "verdeutlichen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈdɔɪ̯tlɪçn̩",
+  "lvl": "C1",
+  "forms": "verdeutlicht · verdeutlichte · hat verdeutlicht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "使清楚，阐明，说明",
+    "de": "deutlich, verständlich machen; veranschaulichen",
+    "ex": [
+     {
+      "de": "Ein Beispiel soll das Problem verdeutlichen.",
+      "zh": "举一个例子来说明这个问题。"
+     },
+     {
+      "de": "Die Grafik verdeutlicht, wie stark die Preise gestiegen sind.",
+      "zh": "图表清楚显示了价格上涨的幅度。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(jdm.) etw. verdeutlichen — （向某人）阐明某事",
+   "etw. an einem Beispiel verdeutlichen — 用例子说明",
+   "sich etw.(A) verdeutlichen — 使自己明白、认清某事"
+  ],
+  "root": "ver·deut·lich·en：ver-（使成为）+ deutlich（清楚的）→“使清楚” → 阐明",
+  "fam": [
+   "deutlich",
+   "deuten",
+   "Bedeutung",
+   "Verdeutlichung"
+  ],
+  "ety": "由 deutlich 派生；deutlich 源自 deuten（中古高地德语 diuten，古高地德语 diuten，“解释、指明”）。deuten 一般认为与 deutsch 同出一词族（原义大致为“使民众能懂”），但细节有争议。",
+  "cog": "—",
+  "tip": "与 erläutern 相近，verdeutlichen 更强调“通过例子、图示让人看清楚”。"
+ },
+ {
+  "w": "vereinbaren",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈʔaɪ̯nbaːʁən",
+  "lvl": "B1",
+  "forms": "vereinbart · vereinbarte · hat vereinbart",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "约定，商定（时间、条件等）",
+    "de": "etw. miteinander absprechen, festlegen",
+    "ex": [
+     {
+      "de": "Bitte vereinbaren Sie telefonisch einen Termin.",
+      "zh": "请电话预约时间。"
+     },
+     {
+      "de": "Die beiden Seiten vereinbarten einen Waffenstillstand.",
+      "zh": "双方商定停火。"
+     }
+    ]
+   },
+   {
+    "zh": "（etw. mit etw. vereinbaren）使协调，使相容",
+    "de": "in Einklang bringen",
+    "ex": [
+     {
+      "de": "Viele Eltern finden es schwer, Beruf und Familie zu vereinbaren.",
+      "zh": "许多父母觉得很难兼顾工作与家庭。"
+     },
+     {
+      "de": "Das ist mit meinem Gewissen nicht vereinbar.",
+      "zh": "这与我的良心相悖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Termin / ein Treffen vereinbaren — 约定时间/会面",
+   "wie vereinbart — 按照约定",
+   "etw. mit etw. vereinbaren — 使某事与某事协调",
+   "mit etw. (nicht) vereinbar sein — 与……（不）相容",
+   "die Vereinbarung — 协议；die Vereinbarkeit von Familie und Beruf 家庭与工作的兼顾"
+  ],
+  "root": "ver·ein·bar·en：ver- + einbar（中古德语“一致的”，由 ein“一”构成）→“使一致” → 商定；使相容",
+  "fam": [
+   "Vereinbarung",
+   "vereinbar",
+   "Vereinbarkeit",
+   "einig",
+   "vereinen"
+  ],
+  "ety": "一般认为源自中古高地德语 einbæren（使一致），与 ein（一）有关；具体构词过程说法不一。",
+  "cog": "ein：英 one",
+  "tip": "不可分：vereinbart（不加 ge-）。“预约”常说 einen Termin vereinbaren / ausmachen，不说 *einen Termin bestellen。"
+ },
+ {
+  "w": "verfügen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈfyːɡn̩",
+  "lvl": "B2",
+  "forms": "verfügt · verfügte · hat verfügt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（über etw. verfügen）拥有，具备；可支配",
+    "de": "etw. besitzen, haben; über etw. bestimmen können",
+    "ex": [
+     {
+      "de": "Die Bewerberin verfügt über langjährige Berufserfahrung.",
+      "zh": "这位女应聘者拥有多年工作经验。"
+     },
+     {
+      "de": "Jedes Zimmer verfügt über ein eigenes Bad.",
+      "zh": "每个房间都配有独立浴室。"
+     }
+    ]
+   },
+   {
+    "zh": "（官方）命令，规定",
+    "de": "amtlich anordnen",
+    "ex": [
+     {
+      "de": "Das Gericht verfügte die Schließung des Betriebs.",
+      "zh": "法院下令关闭该企业。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "über etw.(A) verfügen — 拥有某物；支配某物",
+   "jdm. zur Verfügung stehen — 供某人使用",
+   "jdm. etw. zur Verfügung stellen — 向某人提供某物",
+   "verfügbar — 可用的，有货的"
+  ],
+  "root": "ver·füg·en：ver- + fügen（安排、组合）→“作出安排” → 规定、支配 → 拥有（可支配的东西）",
+  "fam": [
+   "Verfügung",
+   "verfügbar",
+   "fügen",
+   "Gefüge",
+   "hinzufügen"
+  ],
+  "ety": "fügen < 中古高地德语 vüegen < 古高地德语 fuogen（使合适、组合）。",
+  "cog": "荷 voegen（接合）",
+  "tip": "„über etw. verfügen“ 比 haben 正式得多，常见于简历、房屋/产品介绍。介词 über 后接第四格。"
+ },
+ {
+  "w": "sich vergewissern",
+  "pos": "v",
+  "ipa": "fɛɐ̯ɡəˈvɪsɐn",
+  "lvl": "C1",
+  "forms": "vergewissert sich · vergewisserte sich · hat sich vergewissert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "确认，弄清楚，核实",
+    "de": "sich Gewissheit verschaffen, nachprüfen",
+    "ex": [
+     {
+      "de": "Vergewissern Sie sich vor der Abfahrt, dass alle Fenster geschlossen sind.",
+      "zh": "出发前请确认所有窗户都已关好。"
+     },
+     {
+      "de": "Sie vergewisserte sich noch einmal, ob die Tür abgeschlossen war.",
+      "zh": "她又确认了一遍门是否锁好。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich einer Sache (G) vergewissern — 确认某事（书面，第二格）",
+   "sich vergewissern, dass / ob … — 确认……",
+   "sich bei jdm. vergewissern — 向某人核实"
+  ],
+  "root": "ver·ge·wiss·er·n：ver-（使）+ gewiss（确定的）+ -ern → “使自己确定” → 确认",
+  "fam": [
+   "gewiss",
+   "Gewissheit",
+   "Gewissen",
+   "wissen"
+  ],
+  "ety": "由 gewiss 派生；gewiss < 中古高地德语 gewis < 古高地德语 giwis，与 wissen 同族。",
+  "cog": "wissen：英 wit, wise",
+  "tip": "必须带反身代词 sich（第四格）；名词宾语用第二格：sich der Richtigkeit vergewissern。"
+ },
+ {
+  "w": "verhindern",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈhɪndɐn",
+  "lvl": "B1",
+  "forms": "verhindert · verhinderte · hat verhindert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "阻止，防止",
+    "de": "bewirken, dass etw. nicht geschieht",
+    "ex": [
+     {
+      "de": "Die Feuerwehr konnte ein Übergreifen der Flammen verhindern.",
+      "zh": "消防队阻止了火势蔓延。"
+     },
+     {
+      "de": "Wie lässt sich verhindern, dass so etwas wieder passiert?",
+      "zh": "如何防止此类事情再次发生？"
+     }
+    ]
+   },
+   {
+    "zh": "verhindert sein：（因故）不能出席",
+    "de": "wegen anderer Verpflichtungen nicht kommen können",
+    "ex": [
+     {
+      "de": "Herr Bauer ist heute leider verhindert.",
+      "zh": "鲍尔先生今天很遗憾有事不能来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. verhindern — 阻止某事",
+   "verhindern, dass … — 防止……（dass 从句中不加否定词）",
+   "die Verhinderung — 阻止"
+  ],
+  "root": "ver·hinder·n：ver-（加强、彻底）+ hindern（阻碍）→“彻底阻碍” → 阻止",
+  "fam": [
+   "hindern",
+   "Hindernis",
+   "behindern",
+   "Behinderung"
+  ],
+  "ety": "hindern < 中古高地德语 hindern < 古高地德语 hintaren，与 hinter（在后面）有关，原义“使退后、阻挡”。",
+  "cog": "英 hinder",
+  "tip": "中国学生常错：verhindern, dass es nicht regnet 是错误的，dass 从句中不再加 nicht。behindern 只是“妨碍”，verhindern 是“使不发生”。"
+ },
+ {
+  "w": "verlangen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈlaŋən",
+  "lvl": "B1",
+  "forms": "verlangt · verlangte · hat verlangt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "要求，索要",
+    "de": "fordern, haben wollen",
+    "ex": [
+     {
+      "de": "Die Gewerkschaft verlangt acht Prozent mehr Lohn.",
+      "zh": "工会要求加薪百分之八。"
+     },
+     {
+      "de": "Das ist zu viel verlangt.",
+      "zh": "这要求太过分了。"
+     }
+    ]
+   },
+   {
+    "zh": "需要（某种能力等）",
+    "de": "erfordern",
+    "ex": [
+     {
+      "de": "Die Stelle verlangt viel Flexibilität.",
+      "zh": "这个职位需要很强的灵活性。"
+     }
+    ]
+   },
+   {
+    "zh": "（nach etw./jdm. verlangen）渴望；要求见（某人）",
+    "de": "sich nach etw. sehnen; jdn. sprechen wollen",
+    "ex": [
+     {
+      "de": "Der Patient verlangte nach einem Arzt.",
+      "zh": "病人要求见医生。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. von jdm. verlangen — 向某人要求某事",
+   "nach etw.(D) / jdm. verlangen — 渴望/要求见",
+   "Sie werden am Telefon verlangt. — 有您的电话。",
+   "das Verlangen (nach etw.) — 渴望"
+  ],
+  "root": "ver·lang·en：ver- + langen（伸手去够；lang 长）→“伸手要” → 要求；渴望",
+  "fam": [
+   "langen",
+   "lang",
+   "Verlangen",
+   "belangen",
+   "anlangen"
+  ],
+  "ety": "中古高地德语 verlangen，由 langen（伸向、渴望）构成，后者与 lang 有关。",
+  "cog": "英 long（to long for 渴望）",
+  "tip": "verlangen 与 fordern 近义，fordern 更强硬；„Was verlangen Sie dafür?“ = 您要价多少？"
+ },
+ {
+  "w": "vermeiden",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈmaɪ̯dn̩",
+  "lvl": "B1",
+  "forms": "vermeidet · vermied · hat vermieden",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "避免",
+    "de": "etw. nicht tun, dafür sorgen, dass etw. nicht geschieht",
+    "ex": [
+     {
+      "de": "Fehler dieser Art lassen sich leicht vermeiden.",
+      "zh": "这类错误很容易避免。"
+     },
+     {
+      "de": "Er vermied es, ihr in die Augen zu sehen.",
+      "zh": "他回避与她对视。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. vermeiden — 避免某事",
+   "es vermeiden, etw. zu tun — 避免做某事",
+   "vermeidbar / unvermeidlich — 可避免的/不可避免的"
+  ],
+  "root": "ver·meid·en：ver- + meiden（避开）→ 避免",
+  "fam": [
+   "meiden",
+   "unvermeidlich",
+   "Vermeidung"
+  ],
+  "ety": "meiden < 中古高地德语 mīden < 古高地德语 mīdan（避开）< 原始日耳曼语 *mīþaną。",
+  "cog": "古英语 mīþan（隐藏，避开）",
+  "tip": "强变化：vermied, vermieden，不要写成 *vermeidete；与 vermieten（出租）的过去分词 vermietet 不同。"
+ },
+ {
+  "w": "vermitteln",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈmɪtl̩n",
+  "lvl": "B2",
+  "forms": "vermittelt · vermittelte · hat vermittelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "传授，传达（知识、价值观、印象）",
+    "de": "(Wissen, Werte, einen Eindruck) weitergeben, übermitteln",
+    "ex": [
+     {
+      "de": "Lehrer sollen nicht nur Wissen, sondern auch Werte vermitteln.",
+      "zh": "教师不仅要传授知识，还要传递价值观。"
+     },
+     {
+      "de": "Das Foto vermittelt einen falschen Eindruck.",
+      "zh": "这张照片给人造成了错误的印象。"
+     }
+    ]
+   },
+   {
+    "zh": "调解，斡旋",
+    "de": "zwischen Parteien schlichten",
+    "ex": [
+     {
+      "de": "Norwegen hat zwischen den Konfliktparteien vermittelt.",
+      "zh": "挪威在冲突各方之间进行了斡旋。"
+     }
+    ]
+   },
+   {
+    "zh": "介绍，促成（工作、住房、联系等）",
+    "de": "jdm. etw. (eine Stelle, eine Wohnung, einen Kontakt) verschaffen",
+    "ex": [
+     {
+      "de": "Die Agentur hat ihm eine Stelle in München vermittelt.",
+      "zh": "中介给他介绍了一份在慕尼黑的工作。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. etw. vermitteln — 向某人传授/介绍某事",
+   "zwischen A und B vermitteln — 在A与B之间调解",
+   "der Vermittler, die Vermittlung — 调解人、中介；调解、介绍",
+   "die Wissensvermittlung — 知识传授"
+  ],
+  "root": "ver·mittel·n：ver- + mittel / Mitte（中间）→“处于中间” → 居间调解；在中间传递 → 传达、介绍",
+  "fam": [
+   "Mitte",
+   "Vermittlung",
+   "Vermittler",
+   "vermittelbar",
+   "ermitteln"
+  ],
+  "ety": "由 mittel（中间的）派生；Mitte < 古高地德语 mitti < 原始日耳曼语 *midja-。",
+  "cog": "英 mid, middle",
+  "tip": "„Wissen vermitteln“ 是“传授知识”的地道说法，不说 *Wissen lehren。"
+ },
+ {
+  "w": "verursachen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈʔuːɐ̯zaxn̩",
+  "lvl": "B2",
+  "forms": "verursacht · verursachte · hat verursacht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "引起，造成，导致（多为负面后果）",
+    "de": "die Ursache für etw. (meist Negatives) sein",
+    "ex": [
+     {
+      "de": "Der Sturm verursachte Schäden in Millionenhöhe.",
+      "zh": "暴风造成了数百万的损失。"
+     },
+     {
+      "de": "Der Unfall wurde durch überhöhte Geschwindigkeit verursacht.",
+      "zh": "这起事故是超速造成的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Schäden / Kosten / Probleme verursachen — 造成损失/费用/问题",
+   "der Verursacher — 肇事者，责任方：das Verursacherprinzip 污染者付费原则"
+  ],
+  "root": "ver·ur·sach·en：ver- + Ursache（原因：ur-“原初”+ Sache“事”）→“成为原因” → 造成",
+  "fam": [
+   "Ursache",
+   "Sache",
+   "Verursacher",
+   "ursächlich"
+  ],
+  "ety": "由 Ursache 派生；Sache < 古高地德语 sahha（原义“诉讼、争讼之事”）。",
+  "cog": "Sache：英 sake",
+  "tip": "verursachen 多接负面结果；正面效果更常用 bewirken 或 führen zu。"
+ },
+ {
+  "w": "verwirklichen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈvɪʁklɪçn̩",
+  "lvl": "B2",
+  "forms": "verwirklicht · verwirklichte · hat verwirklicht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "实现（计划、理想、梦想）",
+    "de": "in die Wirklichkeit umsetzen",
+    "ex": [
+     {
+      "de": "Mit dem eigenen Café hat sie sich einen Lebenstraum verwirklicht.",
+      "zh": "开了自己的咖啡馆，她实现了毕生的梦想。"
+     },
+     {
+      "de": "Das Projekt ließ sich aus Kostengründen nicht verwirklichen.",
+      "zh": "该项目因成本原因未能实现。"
+     }
+    ]
+   },
+   {
+    "zh": "sich verwirklichen：（愿望）实现；sich (selbst) verwirklichen：自我实现",
+    "de": "Wirklichkeit werden; seine Fähigkeiten entfalten",
+    "ex": [
+     {
+      "de": "Viele wollen sich im Beruf selbst verwirklichen.",
+      "zh": "许多人希望在职业中实现自我。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Plan / eine Idee / einen Traum verwirklichen — 实现计划/想法/梦想",
+   "sich (selbst) verwirklichen — 自我实现",
+   "die Selbstverwirklichung — 自我实现"
+  ],
+  "root": "ver·wirk·lich·en：ver-（使成为）+ wirklich（现实的）→“使成为现实” → 实现",
+  "fam": [
+   "wirklich",
+   "Wirklichkeit",
+   "wirken",
+   "Verwirklichung"
+  ],
+  "ety": "wirklich < 中古高地德语 würke(n)lich（起作用的）< wirken（起作用、做工）< 古高地德语 wirken。",
+  "cog": "wirken：英 work",
+  "tip": "同义：umsetzen, realisieren；verwirklichen 多用于理想、计划，不用于“实现销售额”（那说 erzielen）。"
+ },
+ {
+  "w": "verzichten",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈt͡sɪçtn̩",
+  "lvl": "B2",
+  "forms": "verzichtet · verzichtete · hat verzichtet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "放弃，舍弃；不用，不要",
+    "de": "etw. nicht (mehr) beanspruchen oder nutzen",
+    "ex": [
+     {
+      "de": "Aus gesundheitlichen Gründen verzichtet er auf Alkohol.",
+      "zh": "出于健康原因他戒了酒。"
+     },
+     {
+      "de": "Auf diesen Kommentar hätte ich gern verzichtet.",
+      "zh": "这句评论我宁愿没听到。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf etw.(A) verzichten — 放弃某物",
+   "zugunsten von jdm. verzichten — 为了某人而放弃",
+   "der Verzicht (auf etw.) — 放弃",
+   "auf etw. nicht verzichten können / wollen — 离不开某物"
+  ],
+  "root": "ver·zicht·en：由名词 Verzicht（放弃）派生；Verzicht 源自旧动词 verzeihen（放弃、拒绝；今义“原谅”）",
+  "fam": [
+   "Verzicht",
+   "verzeihen",
+   "verzichtbar",
+   "unverzichtbar"
+  ],
+  "ety": "源自中古高地德语 verzihen（放弃、拒绝）的名词形式 verziht，再由名词构成动词 verzichten；verzihen 与 zeihen（指控）有关。",
+  "cog": "—",
+  "tip": "介词固定用 auf + 第四格；unverzichtbar（不可或缺的）是高频书面词。"
+ },
+ {
+  "w": "voraussetzen",
+  "pos": "v",
+  "ipa": "foˈʁaʊ̯szɛt͡sn̩",
+  "lvl": "B2",
+  "forms": "setzt voraus · setzte voraus · hat vorausgesetzt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "以……为前提，要求具备",
+    "de": "als notwendige Bedingung verlangen",
+    "ex": [
+     {
+      "de": "Die Stelle setzt ein abgeschlossenes Studium voraus.",
+      "zh": "该职位要求具备大学学历。"
+     }
+    ]
+   },
+   {
+    "zh": "假定，预设（为理所当然）",
+    "de": "als selbstverständlich annehmen",
+    "ex": [
+     {
+      "de": "Diese Kenntnisse kann man bei Studierenden nicht einfach voraussetzen.",
+      "zh": "不能想当然地认为大学生具备这些知识。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. voraussetzen — 以某事为前提",
+   "vorausgesetzt, (dass) … — 前提是……，只要……",
+   "die Voraussetzung (für etw.) — （……的）前提、条件"
+  ],
+  "root": "vor·aus·setz·en：voraus（在前面）+ setzen（放置）→“放在前面” → 作为前提",
+  "fam": [
+   "Voraussetzung",
+   "setzen",
+   "voraussichtlich",
+   "Gesetz"
+  ],
+  "ety": "setzen < 中古高地德语 setzen < 古高地德语 sezzen < 原始日耳曼语 *satjaną（sitzen 的使役动词）。",
+  "cog": "setzen：英 set",
+  "tip": "重音在 -aus-：voráussetzen。„Vorausgesetzt, das Wetter spielt mit, …“ 是常用条件表达。"
+ },
+ {
+  "w": "vorwerfen",
+  "pos": "v",
+  "ipa": "ˈfoːɐ̯vɛʁfn̩",
+  "lvl": "B2",
+  "forms": "wirft vor · warf vor · hat vorgeworfen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "指责，责备（某人某事）",
+    "de": "jdm. etw. als Fehler oder Vergehen vorhalten",
+    "ex": [
+     {
+      "de": "Die Staatsanwaltschaft wirft ihm Betrug vor.",
+      "zh": "检方指控他诈骗。"
+     },
+     {
+      "de": "Man kann ihr nicht vorwerfen, sie habe sich nicht bemüht.",
+      "zh": "不能指责她不努力。"
+     }
+    ]
+   },
+   {
+    "zh": "（扔到……前面）把（食物）扔给（动物）",
+    "de": "etw. vor jdn. hinwerfen",
+    "ex": [
+     {
+      "de": "Den Löwen wurde Fleisch vorgeworfen.",
+      "zh": "人们把肉扔给狮子。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm.(D) etw.(A) vorwerfen — 指责某人某事",
+   "sich (D) nichts vorzuwerfen haben — 问心无愧",
+   "der Vorwurf — 指责"
+  ],
+  "root": "vor·werf·en：vor（在……前面）+ werfen（扔）→“扔到某人面前” → 指责",
+  "fam": [
+   "Vorwurf",
+   "werfen",
+   "vorwurfsvoll",
+   "Entwurf"
+  ],
+  "ety": "werfen < 中古高地德语 werfen < 古高地德语 werfan < 原始日耳曼语 *werpaną。",
+  "cog": "werfen：英 warp（原义“扔”）",
+  "tip": "人用第三格，事用第四格：Er wirft mir Faulheit vor（不是 *wirft mich）。"
+ },
+ {
+  "w": "wahrnehmen",
+  "pos": "v",
+  "ipa": "ˈvaːɐ̯neːmən",
+  "lvl": "C1",
+  "forms": "nimmt wahr · nahm wahr · hat wahrgenommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "感知，察觉；看待",
+    "de": "mit den Sinnen aufnehmen, bemerken; in bestimmter Weise sehen",
+    "ex": [
+     {
+      "de": "Hunde nehmen Geräusche wahr, die wir nicht hören.",
+      "zh": "狗能察觉到我们听不到的声音。"
+     },
+     {
+      "de": "Wie wird Deutschland im Ausland wahrgenommen?",
+      "zh": "德国在国外是怎样被看待的？"
+     }
+    ]
+   },
+   {
+    "zh": "利用（机会）；履行（职责）；维护（利益）；赴（约）",
+    "de": "(eine Gelegenheit) nutzen; (Aufgaben) ausüben; (Interessen) vertreten; (einen Termin) einhalten",
+    "ex": [
+     {
+      "de": "Sie nahm die Gelegenheit wahr, sich bei allen zu bedanken.",
+      "zh": "她借这个机会向大家致谢。"
+     },
+     {
+      "de": "Der Anwalt nimmt die Interessen seines Mandanten wahr.",
+      "zh": "律师维护当事人的利益。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. (bewusst) wahrnehmen — （有意识地）感知某事",
+   "eine Chance / Gelegenheit wahrnehmen — 抓住机会",
+   "Aufgaben / Rechte / Termine wahrnehmen — 履行任务/行使权利/赴约",
+   "die Wahrnehmung — 感知；认知"
+  ],
+  "root": "wahr·nehm·en：wahr 在此不是“真的”，而是古词 wara（注意、照看）+ nehmen → “加以注意” → 感知；照看 → 履行、维护",
+  "fam": [
+   "Wahrnehmung",
+   "bewahren",
+   "verwahren",
+   "gewahr",
+   "nehmen"
+  ],
+  "ety": "源自中古高地德语 war nemen（注意），war < 古高地德语 wara（注意、照看），与 wahr（真实的）无关。",
+  "cog": "英 aware, beware, ward",
+  "tip": "wahr- 不是 wahr（真）！一个“照看”的含义解释了“履行职责、维护利益”这些义项。"
+ },
+ {
+  "w": "widersprechen",
+  "pos": "v",
+  "ipa": "viːdɐˈʃpʁɛçn̩",
+  "lvl": "B2",
+  "forms": "widerspricht · widersprach · hat widersprochen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "反驳，提出异议",
+    "de": "eine gegenteilige Meinung äußern",
+    "ex": [
+     {
+      "de": "Der Minister widersprach den Vorwürfen entschieden.",
+      "zh": "部长坚决驳斥了这些指责。"
+     }
+    ]
+   },
+   {
+    "zh": "与……矛盾，相抵触",
+    "de": "im Gegensatz zu etw. stehen",
+    "ex": [
+     {
+      "de": "Die Aussagen der Zeugen widersprechen sich.",
+      "zh": "证人们的证词相互矛盾。"
+     },
+     {
+      "de": "Das widerspricht allen bisherigen Erfahrungen.",
+      "zh": "这与以往所有经验都相悖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. / einer Sache (D) widersprechen — 反驳某人/与某事矛盾",
+   "sich (D) widersprechen — 自相矛盾；（几方）互相矛盾",
+   "der Widerspruch — 矛盾；异议：Widerspruch einlegen 提出异议（法律）",
+   "widersprüchlich — 矛盾的"
+  ],
+  "root": "wider·sprech·en：wider（反对、相对）+ sprechen（说）→“对着说” → 反驳",
+  "fam": [
+   "Widerspruch",
+   "widersprüchlich",
+   "sprechen",
+   "widerstehen"
+  ],
+  "ety": "sprechen < 中古高地德语 sprechen < 古高地德语 sprehhan；wider < 古高地德语 widar（相对、反对）。",
+  "cog": "sprechen：英 speak；wider：古英语 wiþer（反对），英 with 在 withstand 中保留“反对”之义",
+  "tip": "wider（反对）≠ wieder（再次）。不可分，支配第三格：Ich widerspreche Ihnen.（不是 *Sie）"
+ },
+ {
+  "w": "zögern",
+  "pos": "v",
+  "ipa": "ˈt͡søːɡɐn",
+  "lvl": "B1",
+  "forms": "zögert · zögerte · hat gezögert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "犹豫，迟疑",
+    "de": "mit einer Entscheidung oder Handlung warten, unschlüssig sein",
+    "ex": [
+     {
+      "de": "Sie zögerte keinen Augenblick und sprang ins Wasser.",
+      "zh": "她毫不迟疑地跳进了水里。"
+     },
+     {
+      "de": "Wir haben zu lange gezögert und die Chance verpasst.",
+      "zh": "我们犹豫太久，错过了机会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit etw.(D) zögern — 在某事上犹豫",
+   "zögern, etw. zu tun — 迟迟不做某事",
+   "ohne zu zögern — 毫不犹豫地",
+   "zögerlich — 犹豫不决的"
+  ],
+  "root": "zög·er·n：一般认为是 ziehen（拉）的反复/弱化派生（经由中古德语 zogen“拖拉”）→“拖延” → 犹豫",
+  "fam": [
+   "zögerlich",
+   "Verzögerung",
+   "verzögern",
+   "ziehen"
+  ],
+  "ety": "近代德语形式；一般认为源自中古高地德语 zogen（拖、拉），与 ziehen 同族，细节有不同说法。",
+  "cog": "ziehen：英 tug, tow（一般认为同源）",
+  "tip": "verzögern 是“使延迟”（及物），zögern 是“犹豫”（不及物），注意区分。"
+ },
+ {
+  "w": "zugeben",
+  "pos": "v",
+  "ipa": "ˈt͡suːɡeːbn̩",
+  "lvl": "B1",
+  "forms": "gibt zu · gab zu · hat zugegeben",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "承认（错误、事实）",
+    "de": "etw. (Unangenehmes) eingestehen",
+    "ex": [
+     {
+      "de": "Er gab zu, die Unterlagen nicht gelesen zu haben.",
+      "zh": "他承认没看过那些材料。"
+     },
+     {
+      "de": "Zugegeben, die Idee ist nicht neu.",
+      "zh": "诚然，这个想法并不新。"
+     }
+    ]
+   },
+   {
+    "zh": "添加，加上",
+    "de": "hinzufügen",
+    "ex": [
+     {
+      "de": "Zum Schluss etwas Salz zugeben.",
+      "zh": "最后加少许盐。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. zugeben — 承认某事",
+   "zugeben, dass … / etw. getan zu haben — 承认……",
+   "zugegeben, … / zugegebenermaßen — 诚然……（让步）"
+  ],
+  "root": "zu·geb·en：zu（加上、向）+ geben（给）→“额外给出” → 添加；“把（真相）交出来” → 承认",
+  "fam": [
+   "geben",
+   "Zugabe",
+   "zugegebenermaßen",
+   "Gabe"
+  ],
+  "ety": "geben < 中古高地德语 geben < 古高地德语 geban < 原始日耳曼语 *gebaną。",
+  "cog": "geben：英 give",
+  "tip": "zugeben 侧重“承认（不情愿地）”，eingestehen 更书面，gestehen 多指“招供”。音乐会上的 Zugabe 是“返场加演”。"
+ },
+ {
+  "w": "zunehmen",
+  "pos": "v",
+  "ipa": "ˈt͡suːneːmən",
+  "lvl": "B1",
+  "forms": "nimmt zu · nahm zu · hat zugenommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "增加，增长，加剧",
+    "de": "größer, stärker, mehr werden",
+    "ex": [
+     {
+      "de": "Die Zahl der Pendler hat in den letzten Jahren stark zugenommen.",
+      "zh": "近年来通勤者的数量大幅增加。"
+     },
+     {
+      "de": "Der Druck auf die Regierung nimmt zu.",
+      "zh": "政府面临的压力越来越大。"
+     }
+    ]
+   },
+   {
+    "zh": "（体重）增加，长胖",
+    "de": "an Körpergewicht gewinnen",
+    "ex": [
+     {
+      "de": "Im Urlaub habe ich drei Kilo zugenommen.",
+      "zh": "度假期间我胖了三公斤。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an etw.(D) zunehmen — 在某方面增加：an Bedeutung zunehmen 越来越重要",
+   "um + Zahl zunehmen — 增加了……",
+   "zunehmend — 日益，越来越：zunehmend schwierig",
+   "die Zunahme — 增长"
+  ],
+  "root": "zu·nehm·en：zu（加上）+ nehmen（拿）→“往上加” → 增加",
+  "fam": [
+   "abnehmen",
+   "Zunahme",
+   "zunehmend",
+   "nehmen"
+  ],
+  "ety": "nehmen < 古高地德语 neman < 原始日耳曼语 *nemaną。",
+  "cog": "nehmen：古英语 niman",
+  "tip": "反义词 abnehmen（减少；减肥）。“越来越……”常用 zunehmend 或 immer + 比较级。"
+ },
+ {
+  "w": "zurückführen",
+  "pos": "v",
+  "ipa": "t͡suˈʁʏkfyːʁən",
+  "lvl": "C1",
+  "forms": "führt zurück · führte zurück · hat zurückgeführt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（auf etw. zurückführen）把……归因于；追溯到",
+    "de": "etw. als Ursache von etw. ansehen; auf einen Ursprung zurückleiten",
+    "ex": [
+     {
+      "de": "Der Rückgang wird auf die hohen Energiepreise zurückgeführt.",
+      "zh": "下滑被归因于高昂的能源价格。"
+     },
+     {
+      "de": "Der Brauch lässt sich bis ins Mittelalter zurückführen.",
+      "zh": "这一习俗可以追溯到中世纪。"
+     }
+    ]
+   },
+   {
+    "zh": "带回，引回；（道路）通回",
+    "de": "jdn./etw. an den Ausgangsort bringen",
+    "ex": [
+     {
+      "de": "Die Wanderroute führt am Ende zum Parkplatz zurück.",
+      "zh": "这条徒步路线最后会回到停车场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. auf etw.(A) zurückführen — 把某事归因于某事",
+   "auf etw. zurückzuführen sein — 是由……导致的：Der Unfall ist auf menschliches Versagen zurückzuführen."
+  ],
+  "root": "zurück·führ·en：zurück（向后、回）+ führen（引导）→“往回引” → 追溯到原因",
+  "fam": [
+   "führen",
+   "Führung",
+   "Rückführung",
+   "zurück"
+  ],
+  "ety": "führen < 中古高地德语 vüeren < 古高地德语 fuoren，为 fahren 的使役动词（“使行走”）。",
+  "cog": "fahren：英 fare",
+  "tip": "„ist auf … zurückzuführen“（zu + 不定式表被动的可能/必然）是学术与新闻中的高频结构。"
+ },
+ {
+  "w": "zusammenhängen",
+  "pos": "v",
+  "ipa": "t͡suˈzamənhɛŋən",
+  "lvl": "B2",
+  "forms": "hängt zusammen · hing zusammen · hat zusammengehangen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（与……）有关联，有联系",
+    "de": "in Beziehung, Verbindung mit etw. stehen",
+    "ex": [
+     {
+      "de": "Die Verspätung hängt mit dem Streik zusammen.",
+      "zh": "延误与罢工有关。"
+     },
+     {
+      "de": "Wie hängen Armut und Bildung zusammen?",
+      "zh": "贫困与教育之间有何关联？"
+     }
+    ]
+   },
+   {
+    "zh": "（物体）连在一起",
+    "de": "miteinander verbunden sein",
+    "ex": [
+     {
+      "de": "Die beiden Gebäude hängen durch einen Gang zusammen.",
+      "zh": "两座建筑由一条走廊相连。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit etw.(D) zusammenhängen — 与某事有关",
+   "das hängt damit zusammen, dass … — 这与……有关",
+   "der Zusammenhang — 联系；上下文：im Zusammenhang mit 与……相关",
+   "zusammenhängend — 连贯的"
+  ],
+  "root": "zusammen·häng·en：zusammen（一起）+ hängen（悬挂）→“挂在一起” → 有联系",
+  "fam": [
+   "Zusammenhang",
+   "hängen",
+   "abhängen",
+   "zusammenhängend"
+  ],
+  "ety": "hängen < 中古高地德语 hāhen / hangen < 古高地德语 hāhan / hangēn。",
+  "cog": "hängen：英 hang",
+  "tip": "不及物 hängen 强变化：hing, gehangen（不是 *hängte, *gehängt）。南德、奥地利、瑞士完成时也可用 ist zusammengehangen。"
+ },
+ {
+  "w": "zustimmen",
+  "pos": "v",
+  "ipa": "ˈt͡suːʃtɪmən",
+  "lvl": "B1",
+  "forms": "stimmt zu · stimmte zu · hat zugestimmt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "同意，赞成",
+    "de": "seine Zustimmung geben, einverstanden sein",
+    "ex": [
+     {
+      "de": "Da kann ich Ihnen nur zustimmen.",
+      "zh": "这一点我完全同意您。"
+     },
+     {
+      "de": "Der Bundestag hat dem Gesetzentwurf mit großer Mehrheit zugestimmt.",
+      "zh": "联邦议院以压倒性多数通过了该法案。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. (in etw.(D)) zustimmen — （在某点上）同意某人",
+   "einer Sache (D) zustimmen — 赞成某事",
+   "die Zustimmung — 同意，赞同"
+  ],
+  "root": "zu·stimm·en：zu（向、对）+ stimmen（投票；校音；相符）→“对着投（赞成）票” → 同意",
+  "fam": [
+   "Stimme",
+   "stimmen",
+   "Zustimmung",
+   "abstimmen",
+   "bestimmen"
+  ],
+  "ety": "由 stimmen 构成；stimmen 源自 Stimme（中古高地德语 stimme < 古高地德语 stimma，声音）。",
+  "cog": "Stimme：哥特语 stibna（声音）",
+  "tip": "支配第三格：Ich stimme dir zu / dem Vorschlag zu。不要说 *Ich stimme mit dir zu。"
+ },
+ {
+  "w": "zweifeln",
+  "pos": "v",
+  "ipa": "ˈt͡svaɪ̯fl̩n",
+  "lvl": "B1",
+  "forms": "zweifelt · zweifelte · hat gezweifelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "怀疑，不相信",
+    "de": "unsicher sein, ob etw. stimmt oder gelingt",
+    "ex": [
+     {
+      "de": "Niemand zweifelt an ihrer Kompetenz.",
+      "zh": "没有人怀疑她的能力。"
+     },
+     {
+      "de": "Ich zweifle, ob das die richtige Entscheidung war.",
+      "zh": "我怀疑这是否是正确的决定。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an etw.(D) / jdm. zweifeln — 怀疑某事/某人",
+   "zweifeln, ob … — 怀疑是否……",
+   "der Zweifel — 怀疑：ohne Zweifel 毫无疑问；bezweifeln（及物）怀疑"
+  ],
+  "root": "zweif·el·n：源自 Zweifel，后者由 zwei（二）构成 →“心里有两种可能、二心” → 怀疑",
+  "fam": [
+   "Zweifel",
+   "bezweifeln",
+   "verzweifeln",
+   "zweifellos",
+   "zwei"
+  ],
+  "ety": "Zweifel < 中古高地德语 zwīvel < 古高地德语 zwīfal，由 zwī-（二）构成。构词思路与拉丁语 dubitare（与 duo“二”有关）平行。",
+  "cog": "zwei：英 two, twi-（twice）",
+  "tip": "zweifeln an + 第三格（不及物），bezweifeln + 第四格（及物）：Ich bezweifle das. verzweifeln 是“绝望”。"
+ },
+ {
+  "w": "beanspruchen",
+  "pos": "v",
+  "ipa": "bəˈʔanʃpʁʊxn̩",
+  "lvl": "C1",
+  "forms": "beansprucht · beanspruchte · hat beansprucht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "要求，主张（权利）",
+    "de": "Anspruch auf etw. erheben, fordern",
+    "ex": [
+     {
+      "de": "Beide Staaten beanspruchen die Inselgruppe für sich.",
+      "zh": "两国都声称对该群岛拥有主权。"
+     },
+     {
+      "de": "Sie können für diese Zeit Elterngeld beanspruchen.",
+      "zh": "这段时间您可以申领父母津贴。"
+     }
+    ]
+   },
+   {
+    "zh": "占用（时间、空间、精力）；使用（服务）",
+    "de": "(Zeit, Platz, Kraft) brauchen; (eine Leistung) in Anspruch nehmen",
+    "ex": [
+     {
+      "de": "Die Renovierung wird mehrere Wochen beanspruchen.",
+      "zh": "装修将耗时数周。"
+     }
+    ]
+   },
+   {
+    "zh": "使承受负荷，消耗",
+    "de": "belasten, strapazieren",
+    "ex": [
+     {
+      "de": "Der Job beansprucht ihn körperlich und seelisch stark.",
+      "zh": "这份工作让他身心都承受很大负担。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. (für sich) beanspruchen — （为自己）主张某物",
+   "Zeit / Platz beanspruchen — 占用时间/空间",
+   "stark beansprucht sein — 负荷很重",
+   "die Beanspruchung — 负荷；占用"
+  ],
+  "root": "be·an·spruch·en：be-（使及物化）+ Anspruch（要求、权利：an + Spruch“说出的话”）→ 提出要求 → 占用",
+  "fam": [
+   "Anspruch",
+   "anspruchsvoll",
+   "Spruch",
+   "sprechen",
+   "in Anspruch nehmen"
+  ],
+  "ety": "由名词 Anspruch 派生；Spruch 与 sprechen 同族（古高地德语 sprehhan）。",
+  "cog": "sprechen：英 speak",
+  "tip": "不可分（be- 前缀）：beansprucht，不加 ge-。注意与 in Anspruch nehmen 的区别：后者多用于“利用（服务）、占用（时间）”。"
+ },
+ {
+  "w": "beharren",
+  "pos": "v",
+  "ipa": "bəˈhaʁən",
+  "lvl": "C1",
+  "forms": "beharrt · beharrte · hat beharrt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "坚持（观点、要求），固执于",
+    "de": "hartnäckig an etw. festhalten",
+    "ex": [
+     {
+      "de": "Die Gewerkschaft beharrt auf ihren Forderungen.",
+      "zh": "工会坚持其要求。"
+     },
+     {
+      "de": "Er beharrte darauf, den Vertrag selbst zu prüfen.",
+      "zh": "他坚持要亲自审核合同。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf etw.(D) beharren — 坚持某事",
+   "darauf beharren, dass … / etw. zu tun — 坚持……",
+   "beharrlich — 坚持不懈的；die Beharrlichkeit — 毅力"
+  ],
+  "root": "be·harr·en：be- + harren（等待、坚守，古雅词）→“守着不动” → 坚持",
+  "fam": [
+   "harren",
+   "beharrlich",
+   "Beharrlichkeit",
+   "verharren"
+  ],
+  "ety": "harren < 中古高地德语 harren（等待），更早的来源不详。",
+  "cog": "—",
+  "tip": "beharren auf 后接第三格（静态），与 bestehen auf + D 同义；beharren 更书面、更强调执拗。"
+ },
+ {
+  "w": "berücksichtigen",
+  "pos": "v",
+  "ipa": "bəˈʁʏkzɪçtɪɡn̩",
+  "lvl": "B2",
+  "forms": "berücksichtigt · berücksichtigte · hat berücksichtigt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "考虑到，顾及，照顾到",
+    "de": "in seine Überlegungen einbeziehen, beachten",
+    "ex": [
+     {
+      "de": "Bei der Planung müssen auch die Wünsche der Anwohner berücksichtigt werden.",
+      "zh": "规划时也必须考虑居民的意愿。"
+     },
+     {
+      "de": "Wenn man die Inflation berücksichtigt, sind die Löhne gesunken.",
+      "zh": "考虑到通货膨胀，工资实际上下降了。"
+     }
+    ]
+   },
+   {
+    "zh": "（申请等）予以考虑",
+    "de": "(einen Bewerber, eine Bewerbung) in die Auswahl einbeziehen",
+    "ex": [
+     {
+      "de": "Verspätete Bewerbungen können leider nicht berücksichtigt werden.",
+      "zh": "逾期申请恕不受理。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. berücksichtigen — 考虑到某事",
+   "unter Berücksichtigung + G — 在考虑……的情况下",
+   "etw. bleibt unberücksichtigt — 某事未被考虑"
+  ],
+  "root": "be·rück·sicht·ig·en：be- + Rücksicht（顾及：Rück“向后”+ Sicht“看”，即“回头看”）+ -ig- → 顾及",
+  "fam": [
+   "Rücksicht",
+   "rücksichtsvoll",
+   "Berücksichtigung",
+   "Sicht",
+   "sehen"
+  ],
+  "ety": "由 Rücksicht 派生；Rücksicht 为18世纪左右出现的词，一般认为是仿拉丁语 respectus（回顾、顾及）的借译。",
+  "cog": "仿译对象：拉 respectus（re-“向后”+ spectus“看”）",
+  "tip": "不可分，过去分词 berücksichtigt；注意拼写 -sichtigen 中有 -ig-。比 beachten 更强调“纳入考量”。"
+ },
+ {
+  "w": "entfalten",
+  "pos": "v",
+  "ipa": "ɛntˈfaltn̩",
+  "lvl": "C1",
+  "forms": "entfaltet · entfaltete · hat entfaltet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "展开，打开（折叠之物）",
+    "de": "(etw. Gefaltetes) auseinanderlegen, öffnen",
+    "ex": [
+     {
+      "de": "Er entfaltete die Landkarte auf dem Tisch.",
+      "zh": "他把地图在桌上摊开。"
+     }
+    ]
+   },
+   {
+    "zh": "发挥，施展（才能、作用）；sich entfalten：发展，充分展现",
+    "de": "(Fähigkeiten, Wirkung) zur Geltung bringen; sich entwickeln",
+    "ex": [
+     {
+      "de": "Das Medikament entfaltet seine Wirkung erst nach einigen Stunden.",
+      "zh": "这种药几小时后才起效。"
+     },
+     {
+      "de": "Kinder brauchen Raum, um sich frei zu entfalten.",
+      "zh": "孩子需要空间来自由成长。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "seine Wirkung entfalten — 发挥作用",
+   "sein Talent / seine Fähigkeiten entfalten — 施展才能",
+   "sich (frei) entfalten — （自由地）发展",
+   "die Entfaltung — 发展：die freie Entfaltung der Persönlichkeit 人格的自由发展（《基本法》第2条）"
+  ],
+  "root": "ent·falt·en：ent-（解除、相反动作）+ falten（折叠）→“解开折叠” → 展开；引申为潜能的“展开” → 发挥",
+  "fam": [
+   "falten",
+   "Falte",
+   "Entfaltung",
+   "vielfältig",
+   "Einfalt"
+  ],
+  "ety": "falten < 中古高地德语 valten < 古高地德语 faldan / faltan < 原始日耳曼语 *falþaną。",
+  "cog": "falten：英 fold",
+  "tip": "不可分，过去分词 entfaltet。entfalten 与 entwickeln 都是“展开 → 发展”的隐喻，构词思路相同（wickeln 卷）。"
+ }
+]
