@@ -1,4 +1,6 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="zh-CN"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#f2c200">
+<script src="shim.js"></script>
 <title>Deutsch täglich</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +15,7 @@
   --display:"Zilla Slab", Georgia, "Songti SC", serif;
   --read:"Source Serif 4", Georgia, "Songti SC", "Noto Serif SC", serif;
   --ui:"IBM Plex Sans", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
-  --r:10px;
+  --r:10px; --tabh:59px; --mtop-h:44px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#15161a; --paper:#1d1f24; --ink:#ecebe6; --muted:#9a9a92; --line:#2e3037;
@@ -30,7 +32,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:15px;
 button{font:inherit;color:inherit;cursor:pointer}
 button:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .app{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:100%}
-.rail{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;height:100vh;padding:24px 16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:20px;background:var(--paper)}
+.rail{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;height:100vh;box-sizing:border-box;padding:24px 16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:20px;background:var(--paper)}
 .brand{font-family:var(--display);font-weight:700;font-size:24px;line-height:1.1;display:flex;flex-direction:column;gap:2px}
 .brand small{font-family:var(--ui);font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.04em}
 .brand .tag{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:0 6px;border-radius:3px}
@@ -44,7 +46,7 @@ button:focus-visible,textarea:focus-visible,input:focus-visible,select:focus-vis
 .dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
 .dot.ok{background:var(--good)} .dot.warn{background:var(--warn)}
 main{padding-inline:32px;padding-block:28px 48px;min-width:0}
-.view{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.view{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
 .head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .head h1{margin:0;font-family:var(--display);font-size:30px;font-weight:600;text-wrap:balance}
 .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
@@ -65,7 +67,8 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .word-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .art{font-family:var(--display);font-size:22px;font-weight:600}
 .art.der{color:var(--der)} .art.die{color:var(--die)} .art.das{color:var(--das)}
-.lemma{font-family:var(--display);font-size:44px;font-weight:700;line-height:1.05;word-break:break-word}
+.card{container-type:inline-size}
+.lemma{font-family:var(--display);font-size:clamp(28px,12cqi,44px);font-weight:700;line-height:1.05;word-break:break-word;hyphens:auto}
 .speak{border:1px solid var(--line);background:none;border-radius:50%;width:36px;height:36px;display:inline-grid;place-items:center;align-self:center}
 .speak svg{width:18px;height:18px}
 .meta{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
@@ -106,6 +109,41 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .skeleton{color:var(--muted);font-size:14px}
 .empty-detail{border:1px dashed var(--line);border-radius:var(--r);padding:28px 22px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 .empty-detail b{color:var(--ink);font-family:var(--display);font-size:18px}
+/* detail section nav: sticky chips that jump to 词意 / 用法 / 词根 / 词源 */
+.secnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:3;background:var(--bg);display:flex;align-items:center;gap:6px;padding-block:10px}
+.secnav .sw{font-family:var(--display);font-size:19px;font-weight:600;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.secnav .sw .art{font-size:15px;margin-right:4px}
+.secnav button{flex:none;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:4px 13px;font-size:13px;color:var(--muted)}
+.secnav button[aria-current="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.sec{scroll-margin-top:62px}
+/* 30-word map on the card (desktop) */
+.wmap{display:grid;grid-template-columns:repeat(15,minmax(0,1fr));gap:5px;border-top:1px dashed var(--line);padding-top:14px}
+.wmap button{aspect-ratio:1;max-width:100%;border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:0}
+.wmap button.k{background:var(--good);border-color:var(--good)}
+.wmap button.f{background:var(--warn);border-color:var(--warn)}
+.wmap button.u{background:var(--bad);border-color:var(--bad)}
+.wmap button[aria-current="true"]{outline:2px solid var(--ink);outline-offset:1px}
+@keyframes inNx{from{opacity:0;transform:translateX(28px)}}
+@keyframes inPv{from{opacity:0;transform:translateX(-28px)}}
+.card.nx{animation:inNx .2s ease-out} .card.pv{animation:inPv .2s ease-out}
+@media (prefers-reduced-motion: reduce){.card.nx,.card.pv{animation:none}}
+/* phone-only answer dock and reading tabs (hidden on desktop by .only-m) */
+.dock{position:fixed;left:0;right:0;bottom:calc(var(--tabh) + env(safe-area-inset-bottom,0px));z-index:6;display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr)) auto;gap:6px;padding:8px 12px;background:color-mix(in srgb,var(--paper) 94%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+.dk{height:46px;min-width:46px;border:1px solid var(--line);background:var(--bg);border-radius:10px;font-weight:600;font-size:15px;padding:0 10px}
+.dk.nav{font-size:24px;font-weight:500;line-height:1;padding:0 12px}
+.dk.nav.txt{font-size:15px;font-weight:600}
+.dk.nav.go{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.dk:disabled{opacity:.35;cursor:default}
+.dk.k.sel{border-color:var(--good);color:var(--good);background:color-mix(in srgb,var(--good) 13%,var(--paper))}
+.dk.f.sel{border-color:var(--warn);color:var(--warn);background:color-mix(in srgb,var(--warn) 13%,var(--paper))}
+.dk.u.sel{border-color:var(--bad);color:var(--bad);background:color-mix(in srgb,var(--bad) 13%,var(--paper))}
+.dock-sp{height:62px}
+.rseg{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--mtop-h));z-index:3;background:var(--bg);padding-block:8px;display:grid;grid-template-columns:1fr 1fr}
+.rseg button{border:1px solid var(--line);background:var(--paper);padding:9px 8px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.rseg button:first-child{border-radius:10px 0 0 10px} .rseg button:last-child{border-radius:0 10px 10px 0;border-left:0}
+.rseg button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.to-q{align-self:stretch;margin-top:6px}
+@media (min-width: 821px){.only-m{display:none !important}}
 /* done summary */
 .summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .stat{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px}
@@ -245,7 +283,7 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
 .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .lg{display:inline-block;width:14px;height:14px;border-radius:4px;border:1px solid var(--line);background:var(--paper)}
-.lg.done{border:2px solid var(--die)} .lg.part{border-color:var(--warn)} .lg.avail{background:var(--accent-soft)}
+.lg.done{border:2px solid var(--die)} .lg.part{border-color:var(--warn);padding:0;display:inline-block;border-radius:4px} .lg.avail{background:var(--accent-soft)}
 @media (max-width: 820px){
   .cd{aspect-ratio:auto;min-height:52px;padding:4px 5px}
   .cd .ck{width:22px;height:22px;font-size:15px}
@@ -254,21 +292,48 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
   .stamp{margin-left:0}
 }
 
+/* ---------- tablet / small laptop: icon-only rail ---------- */
+@media (min-width: 821px) and (max-width: 1100px){
+  .app{grid-template-columns:68px minmax(0,1fr)}
+  .rail{padding:20px 8px;align-items:center}
+  .rail .brand,#sync-txt,#streak-lbl{display:none}
+  .tabs{width:100%}
+  .tab{font-size:0;justify-content:center;padding:11px 0}
+  .tab svg{width:22px;height:22px}
+  .tab .badge{display:none}
+  main{padding-inline:24px}
+  .study{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+
 /* ---------- phone ---------- */
 @media (max-width: 820px){
   .app{grid-template-columns:minmax(0,1fr)}
-  .rail{position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--line);flex-direction:row;z-index:5}
+  .rail{position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;padding:4px 8px calc(4px + env(safe-area-inset-bottom,0px));border-right:0;border-top:1px solid var(--line);flex-direction:row;z-index:5}
   .rail .brand,.rail-foot{display:none}
   .tabs{flex-direction:row;flex:1;justify-content:space-around}
-  .tab{flex-direction:column;gap:2px;font-size:11px;padding:6px 2px;flex:1;align-items:center;min-width:0}
+  .tab{flex-direction:column;justify-content:center;gap:2px;font-size:11px;height:50px;box-sizing:border-box;padding:0 2px;flex:1;align-items:center;min-width:0}
   .tab .badge{display:none}
-  .mtop{display:flex;align-items:center;justify-content:space-between;position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--paper);border-bottom:1px solid var(--line);padding:10px 16px}
+  .mtop{display:flex;align-items:center;justify-content:space-between;position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--paper);border-bottom:1px solid var(--line);height:var(--mtop-h);box-sizing:border-box;padding:0 16px}
   .mtop .brand{font-size:19px;flex-direction:row;align-items:baseline;gap:8px}
   main{padding-inline:16px;padding-block:16px 96px}
   .head h1{font-size:24px}
+  .only-d{display:none !important}
+  .head.hm h1{display:none}
+  .head.hm:not(:has(.skeleton,.toggle)){display:none}
+  .view{gap:16px}
+  .datebar{gap:6px}
+  .secnav{top:calc(env(safe-area-inset-top,0px) + var(--mtop-h));padding-block:8px;gap:5px}
+  .secnav button{padding:4px 10px}
+  .article h2{font-size:24px}
+  .head.hm{justify-content:flex-start}
+  .view:has(.reading.pane-q) .head.hm{display:none}
+  .sec{scroll-margin-top:calc(var(--mtop-h) + 58px)}
+  #detail{scroll-margin-top:var(--mtop-h)}
+  .sec{padding:16px}
+  .reading.pane-art .qs{display:none}
+  .reading.pane-q .article{display:none}
   .study,.reading{grid-template-columns:minmax(0,1fr)}
   .card{position:static;padding:22px 18px}
-  .lemma{font-size:38px}
   .article{padding:20px 18px;position:static;max-height:none;overflow:visible}
   .pop{position:fixed;left:0 !important;right:0;top:auto !important;bottom:0;width:auto;border-radius:16px 16px 0 0;max-height:62vh;overflow:auto;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40}
   .article .para{font-size:17px}
@@ -281,14 +346,14 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
   <nav class="rail" aria-label="主导航">
     <div class="brand">Deutsch <span><span class="tag">täglich</span></span><small>每日德语 · 30 词 + 1 篇阅读</small></div>
     <div class="tabs" role="tablist">
-      <button class="tab" data-view="words" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>单词<span class="badge" id="b-words"></span></button>
-      <button class="tab" data-view="read"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h7a3 3 0 0 1 2 1 3 3 0 0 1 2-1h7v14h-7a3 3 0 0 0-2 1 3 3 0 0 0-2-1H3z"/><path d="M12 6v14"/></svg>阅读<span class="badge" id="b-read"></span></button>
-      <button class="tab" data-view="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg>打卡日历<span class="badge" id="b-cal"></span></button>
-      <button class="tab" data-view="book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h11v18l-5.5-4L6 21z"/></svg>生词本<span class="badge" id="b-book"></span></button>
-      <button class="tab" data-view="set"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>设置</button>
+      <button class="tab" data-view="words" title="单词" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>单词<span class="badge" id="b-words"></span></button>
+      <button class="tab" data-view="read" title="阅读"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h7a3 3 0 0 1 2 1 3 3 0 0 1 2-1h7v14h-7a3 3 0 0 0-2 1 3 3 0 0 0-2-1H3z"/><path d="M12 6v14"/></svg>阅读<span class="badge" id="b-read"></span></button>
+      <button class="tab" data-view="cal" title="打卡日历"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></svg>打卡日历<span class="badge" id="b-cal"></span></button>
+      <button class="tab" data-view="book" title="生词本"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h11v18l-5.5-4L6 21z"/></svg>生词本<span class="badge" id="b-book"></span></button>
+      <button class="tab" data-view="set" title="设置"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>设置</button>
     </div>
     <div class="rail-foot">
-      <div class="sync"><span class="dot" id="sync-dot"></span><span id="sync-txt">正在连接云端…</span></div>
+      <div class="sync"><span class="dot" id="sync-dot"></span><span id="sync-txt">正在载入…</span></div>
       <div id="streak-lbl"></div>
     </div>
   </nav>
@@ -313,7 +378,7 @@ const fmtDate = s => { const d = parseD(s); return (d.getMonth() + 1) + '月' + 
 const fmtShort = s => { const d = parseD(s); return (d.getMonth() + 1) + '月' + d.getDate() + '日'; };
 const LEVELS = [['A1','入门'],['A2','初级'],['B1','中级'],['B2','中高级'],['B2–C1','中高级到高级'],['C1','高级']];
 const DEFAULT_LEVEL = 'B2–C1';
-const SCHEDULE_TIME = '北京时间每天凌晨 4:47';
+const SCHEDULE_TIME = '北京时间每天凌晨 2:30 左右';
 const LEVEL_HINT = {
   'B2–C1': '水平介于 B2 和 C1 之间：选 B2 后段到 C1 的词，偏新闻、职场、社会议题和书面表达中常见的词，例如抽象名词、带固定介词的动词、可分动词、书面连接词和副词；不要选 A1–B1 的基础词。',
   'C1': '水平 C1：选高级、书面和学术语境中常用的词，包括固定搭配和较抽象的表达。'
@@ -323,7 +388,7 @@ const emptyProg = () => ({ marks: {}, pos: 0, answers: {}, grading: null, notes:
 const S = { db:null, sample:null, uid:null, profileRef:null, settingsRef:null, contentRef:null, dayRef:null, unsub:null,
   settings:{ level: DEFAULT_LEVEL, seen: [], dates: [] }, profile:{ cal: {} },
   date: today(), day:null, content:null, calMonth: today().slice(0, 7),
-  view:'words', idx:0, gen:{ words:null, read:null }, err:{}, book:[], bookFilter:'all', openBook:null, showTr:false, showGl:true, pop:null, lookup:{}, lookingUp:null, bookGen:null,
+  view:'words', idx:0, gen:{ words:null, read:null }, err:{}, book:[], bookFilter:'all', openBook:null, showTr:false, showGl:true, readPane:'art', slide:null, pop:null, lookup:{}, lookingUp:null, bookGen:null,
   cloud:'connecting', justDone:false, confirmRegen:false };
 
 /* ---------------- storage ---------------- */
@@ -337,7 +402,7 @@ function save(ref, patch, full) {
 }
 function setCloud(s) {
   S.cloud = s;
-  const map = {connecting:['', '正在连接云端…','连接中'], ok:['ok','已同步 · 手机电脑通用','已同步'], warn:['warn','云端不可用，仅保存在本次打开','未同步']};
+  const map = {connecting:['', '正在载入…','载入中'], ok:['ok','进度保存在这台设备上','本机'], warn:['warn','本机存储不可用，进度只保留在本次打开','未保存']};
   const [c, t, m] = map[s];
   for (const id of ['sync-dot','sync-dot-m']) $('#'+id).className = 'dot ' + c;
   $('#sync-txt').textContent = t; $('#sync-txt-m').textContent = m;
@@ -612,7 +677,7 @@ async function gradeReading() {
   d.grading = { ...grading, pending: shorts.length > 0 };
   render();
   if (shorts.length) {
-    if (!S.sample) S.err.grade = '无法批改简答题：Claude 不可用。';
+    if (!S.sample) S.err.grade = '网页版不能自动批改简答题，请对照下面的参考答案自己检查。';
     else try {
       const res = await S.sample.json(
         `你是德语老师，请批改学习者（水平 ${d.level || S.settings.level}，母语中文）对阅读理解简答题的德语回答。文章：
@@ -659,14 +724,15 @@ function mark(i, m) {
   render();
 }
 function go(i) {
-  const n = S.day.lemmas.length;
-  S.idx = Math.max(0, Math.min(n, i));
+  const n = S.day.lemmas.length, ni = Math.max(0, Math.min(n, i));
+  S.slide = ni > S.idx ? 'nx' : ni < S.idx ? 'pv' : null;
+  S.idx = ni;
   if (S.idx < n) { S.day.pos = S.idx; save(S.dayRef, { pos: S.idx }); }
   render(); window.scrollTo({ top: 0 });
 }
 async function goDate(date) {
   if (date > today()) return;
-  S.confirmRegen = false; S.justDone = false;
+  S.confirmRegen = false; S.justDone = false; S.readPane = 'art';
   if (S.view === 'cal' || S.view === 'book' || S.view === 'set') S.view = 'words';
   S.day = null; render();
   await openDate(date);
@@ -695,7 +761,9 @@ function render() {
   if (S.view === 'cal') { m.innerHTML = vCal(); return; }
   if (!S.day) { m.innerHTML = `<div class="view"><div class="notice"><span class="spin"></span>正在载入…</div></div>`; return; }
   m.innerHTML = ({ words: vWords, read: vRead, book: vBook, set: vSet })[S.view]();
+  S.slide = null;
   if (S.view === 'read') requestAnimationFrame(layoutGl);
+  if (S.view === 'words') spy();
 }
 function layoutGl() {
   const body = $('.abody.has-gl'); if (!body) return;
@@ -721,8 +789,8 @@ function dateBar() {
     <span class="dlabel">${esc(fmtDate(d))}${isT ? '<span class="chip">今天</span>' : ''}</span>
     <button class="dnav" data-date="${next}" aria-label="后一天" ${next > t ? 'disabled' : ''}>›</button>
     ${isT ? '' : `<button class="btn sm" data-date="${t}">回到今天</button>`}
-    <button class="btn sm" data-view-go="cal">打开日历</button>
-    <span class="dlevel">${esc(S.day?.level || S.settings.level)}</span>
+    <button class="btn sm only-d" data-view-go="cal">打开日历</button>
+    <span class="dlevel only-d">${esc(S.day?.level || S.settings.level)}</span>
     ${isDone(d) ? stamp(d) : ''}
   </div>`;
 }
@@ -731,7 +799,7 @@ const dayName = () => S.date === today() ? '今日' : fmtShort(S.date);
 const artCls = g => (g === 'der' || g === 'die' || g === 'das') ? g : '';
 function wordHead(w, lemma) {
   const g = w && artCls(w.gender);
-  return `<div class="word-row">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="lemma">${esc(w?.word || lemma)}</span>
+  return `<div class="word-row">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="lemma" lang="de">${esc(w?.word || lemma)}</span>
     <button class="speak" data-speak="${esc((g ? g + ' ' : '') + (w?.word || lemma))}" aria-label="朗读"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg></button></div>`;
 }
 function wordMeta(w) {
@@ -747,10 +815,10 @@ function detailHTML(w) {
   const cog = (w.cognates || []).map(c => `<div><b>${esc(c.word)}</b><span>${esc(c.lang)}${c.note ? ' · ' + esc(c.note) : ''}</span></div>`).join('');
   const fam = (w.family || []).map(c => `<div><b>${esc(c.de)}</b><span>${esc(c.zh)}</span></div>`).join('');
   return `
-  <section class="sec"><h3>词意</h3><p class="big-mean">${esc(w.meaning)}</p>${wordMeta(w)}</section>
-  <section class="sec"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}</section>
-  <section class="sec"><h3>词根 <span>Wortbildung</span></h3>${parts ? `<div class="parts">${parts}</div>` : ''}<p>${esc(w.root?.explain)}</p>${fam ? `<div class="eyebrow" style="margin-top:4px">同族词</div><div class="pairs">${fam}</div>` : ''}</section>
-  <section class="sec"><h3>词源 <span>Herkunft</span></h3>${chain ? `<div class="chain">${chain}</div>` : ''}<p class="ety">${esc(ety)}</p>${cog ? `<div class="eyebrow" style="margin-top:4px">同源词</div><div class="pairs">${cog}</div>` : ''}</section>
+  <section class="sec" data-s="mean"><h3>词意</h3><p class="big-mean">${esc(w.meaning)}</p>${wordMeta(w)}</section>
+  <section class="sec" data-s="use"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}</section>
+  <section class="sec" data-s="root"><h3>词根 <span>Wortbildung</span></h3>${parts ? `<div class="parts">${parts}</div>` : ''}<p>${esc(w.root?.explain)}</p>${fam ? `<div class="eyebrow" style="margin-top:4px">同族词</div><div class="pairs">${fam}</div>` : ''}</section>
+  <section class="sec" data-s="ety"><h3>词源 <span>Herkunft</span></h3>${chain ? `<div class="chain">${chain}</div>` : ''}<p class="ety">${esc(ety)}</p>${cog ? `<div class="eyebrow" style="margin-top:4px">同源词</div><div class="pairs">${cog}</div>` : ''}</section>
   ${w.mnemonic ? `<div class="tip"><b>记忆提示：</b>${esc(w.mnemonic)}</div>` : ''}`;
 }
 function progBar() {
@@ -763,14 +831,14 @@ function noContent(what) {
   const isT = S.date === today();
   if (S.gen.words === S.date) return `<div class="notice"><span class="spin"></span>正在页面里挑选今天的 30 个单词并写讲解，第一次可能要等一两分钟…</div>`;
   if (!isT) return `<div class="notice">这一天没有题。可以在日历里选一个有题的日子，或者回到今天。</div>`;
-  return `<div class="notice">今天的${what}还没出好。${SCHEDULE_TIME}会自动出好当天的 30 个词和阅读，出好后这里会自动更新。
-    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="btn primary" data-act="retry-words">现在就在页面里生成</button><span style="font-size:13px">会用你自己的 Claude 额度</span></div></div>`;
+  return `<div class="notice">今天的${what}还没出好。${SCHEDULE_TIME}会自动出好当天的 30 个词和阅读，出好后刷新一下这个页面就能看到。
+    <div style="margin-top:12px"><button class="btn" onclick="location.reload()">刷新看看</button></div></div>`;
 }
 
 function vWords() {
   const d = S.day, n = d.lemmas.length;
   const errBox = S.err.words ? `<div class="notice err">${esc(S.err.words)} <button class="btn sm" data-act="retry-words" style="margin-left:8px">重试</button></div>` : '';
-  const head = `<div class="head"><div><h1>${esc(dayName())} 30 词</h1></div>${S.gen.words === S.date && n ? `<span class="skeleton"><span class="spin"></span>后面的词还在生成</span>` : ''}</div>`;
+  const head = `<div class="head hm"><div><h1>${esc(dayName())} 30 词</h1></div>${S.gen.words === S.date && n ? `<span class="skeleton"><span class="spin"></span>后面的词还在生成</span>` : ''}</div>`;
   if (!n) return `<div class="view">${dateBar()}${head}${errBox}${noContent('单词')}</div>`;
   if (S.idx >= n) return vWordsDone();
   const i = S.idx, w = d.words[i], m = d.marks[i];
@@ -778,25 +846,36 @@ function vWords() {
   if (!w) right = S.gen.words === S.date
     ? `<div class="empty-detail"><span><span class="spin"></span>这个词的讲解还在生成…</span><span>生成完会自动出现，可以先判断认不认识。</span></div>`
     : `<div class="empty-detail"><b>这个词的讲解还没生成</b><span>可以先判断认不认识。</span><div><button class="btn sm" data-act="retry-words">补全讲解</button></div></div>`;
-  else if (m) right = detailHTML(w);
-  else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span>选好之后，这里会展开词意、用法、词根和词源。</span><span class="kbd">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
+  else if (m) {
+    const g = artCls(w.gender);
+    right = `<nav class="secnav" aria-label="讲解目录"><b class="sw only-m">${g ? `<span class="art ${g}">${g}</span>` : ''}${esc(w.word)}</b>${[['mean','词意'],['use','用法'],['root','词根'],['ety','词源']].map(([k, l]) => `<button data-sec="${k}">${l}</button>`).join('')}</nav>` + detailHTML(w);
+  }
+  else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span class="only-d">选好之后，这里会展开词意、用法、词根和词源。</span><span class="only-m">在下面选认识、模糊或不认识，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
+  const wmap = `<div class="wmap only-d" aria-label="30 个词">${d.lemmas.map((l, k) => `<button class="${d.marks[k] || ''}" data-go="${k}" title="${k + 1}. ${esc(d.words[k]?.word || l)}" aria-label="第 ${k + 1} 个" ${k === i ? 'aria-current="true"' : ''}></button>`).join('')}</div>`;
+  const dock = `<div class="dock only-m" role="group" aria-label="认识程度">
+    <button class="dk nav" data-go="${i - 1}" ${i === 0 ? 'disabled' : ''} aria-label="上一个">‹</button>
+    <button class="dk k ${m === 'k' ? 'sel' : ''}" data-mark="k">认识</button>
+    <button class="dk f ${m === 'f' ? 'sel' : ''}" data-mark="f">模糊</button>
+    <button class="dk u ${m === 'u' ? 'sel' : ''}" data-mark="u">不认识</button>
+    <button class="dk nav ${i === n - 1 ? 'txt' : ''} ${m ? 'go' : ''}" data-go="${i + 1}" aria-label="${i === n - 1 ? '完成' : '下一个'}">${i === n - 1 ? '完成' : '›'}</button></div>`;
   return `<div class="view">${dateBar()}${head}
     ${progBar()}${errBox}
     <div class="study">
-      <div class="card">
+      <div class="card ${S.slide || ''}">
         <span class="num">第 ${i + 1} 个 · 共 ${n} 个</span>
         ${wordHead(w, d.lemmas[i])}
         ${m ? wordMeta(w) : ''}
         <div class="ask">你知道这个词的意思吗？</div>
-        <div class="choices">
+        <div class="choices only-d">
           <button class="choice k ${m === 'k' ? 'sel' : ''}" data-mark="k">认识<small>知道意思</small></button>
           <button class="choice f ${m === 'f' ? 'sel' : ''}" data-mark="f">模糊<small>有点印象</small></button>
           <button class="choice u ${m === 'u' ? 'sel' : ''}" data-mark="u">不认识<small>看讲解</small></button>
         </div>
-        <div class="navrow"><button class="btn" data-go="${i - 1}" ${i === 0 ? 'disabled' : ''}>上一个</button><button class="btn ${m ? 'primary' : ''}" data-go="${i + 1}">${i === n - 1 ? '完成' : '下一个'}</button></div>
+        <div class="navrow only-d"><button class="btn" data-go="${i - 1}" ${i === 0 ? 'disabled' : ''}>上一个</button><button class="btn ${m ? 'primary' : ''}" data-go="${i + 1}">${i === n - 1 ? '完成' : '下一个'}</button></div>
+        ${wmap}
       </div>
       <div class="detail" id="detail">${right}</div>
-    </div></div>`;
+    </div>${dock}<div class="dock-sp only-m"></div></div>`;
 }
 function vWordsDone() {
   const d = S.day, c = { k: [], f: [], u: [] };
@@ -817,7 +896,7 @@ function vWordsDone() {
 function vRead() {
   const d = S.day, r = d.reading;
   const errBox = S.err.read ? `<div class="notice err">${esc(S.err.read)} <button class="btn sm" data-act="gen-read" style="margin-left:8px">重试</button></div>` : '';
-  const head = `<div class="head"><div><h1>${esc(dayName())}阅读</h1></div>${r ? `<div style="display:flex;gap:16px;flex-wrap:wrap">${(r.glossDe || []).length ? `<label class="toggle"><input type="checkbox" id="gl-toggle" ${S.showGl ? 'checked' : ''}> 德语注释</label>` : ''}<label class="toggle"><input type="checkbox" id="tr-toggle" ${S.showTr ? 'checked' : ''}> 显示中文翻译</label></div>` : ''}</div>`;
+  const head = `<div class="head hm"><div><h1>${esc(dayName())}阅读</h1></div>${r ? `<div style="display:flex;gap:16px;flex-wrap:wrap">${(r.glossDe || []).length ? `<label class="toggle"><input type="checkbox" id="gl-toggle" ${S.showGl ? 'checked' : ''}> 德语注释</label>` : ''}<label class="toggle"><input type="checkbox" id="tr-toggle" ${S.showTr ? 'checked' : ''}> 显示中文翻译</label></div>` : ''}</div>`;
   if (!r) {
     if (!d.lemmas.length) return `<div class="view">${dateBar()}${head}${noContent('阅读')}</div>`;
     return `<div class="view">${dateBar()}${head}${errBox}
@@ -851,21 +930,24 @@ function vRead() {
     }
     return `<div class="q"><span class="qn">${q.type === 'mc' ? '选择题' : '简答题'} ${i + 1}</span><div class="qt">${esc(q.q)}</div>${body}</div>`;
   }).join('');
-  let scoreLine = '';
+  let scoreLine = '', got = 0, tot = 0;
+  const nq = r.questions.length, na = r.questions.filter((q, i) => String(d.answers[i] ?? '').trim()).length;
   if (g && !g.pending) {
-    let got = 0, tot = 0;
     r.questions.forEach((q, i) => { tot += 2; got += q.type === 'mc' ? (g[i]?.ok ? 2 : 0) : (g[i]?.score || 0); });
     const st = dayStatus(d);
     scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">选择题每题 2 分，简答题按内容和语法打 0–2 分。</span></div>
       ${isDone(d.date) ? stamp(d.date, S.justDone) : `<span class="sub">还有 ${st.t - st.n} 个单词没选，选完就能打卡。</span>`}</div>`;
   }
-  return `<div class="view">${dateBar()}${head}
+  const pane = S.readPane === 'q' ? 'q' : 'art';
+  const rseg = `<div class="rseg only-m" role="tablist"><button role="tab" data-pane="art" aria-selected="${pane === 'art'}">文章</button><button role="tab" data-pane="q" aria-selected="${pane === 'q'}">${g && !g.pending ? `题目 · ${got}/${tot} 分` : `题目 ${na}/${nq}`}</button></div>`;
+  return `<div class="view">${dateBar()}${head}${rseg}
     ${errBox}
-    <div class="reading">
+    <div class="reading pane-${pane}">
       <article class="article"><h2>${esc(r.title)}</h2>${S.showTr && r.title_zh ? `<div class="tr" style="margin-top:-8px">${esc(r.title_zh)}</div>` : ''}
         <div style="display:flex;gap:8px"><button class="btn sm" data-speak="${esc(r.paragraphs.map(p => p.de.replace(/\[\[|\]\]/g, '')).join(' '))}">朗读全文</button><button class="btn sm" data-act="stop-speak">停止</button></div>
         <p class="rhint">点任意单词看释义、加入生词本；划选一段文字可以高亮或写笔记。${(r.glossDe || []).length && S.showGl ? '带红色小数字的词，旁边有德语注释。' : ''}</p>
-        <div class="abody${hasGl ? ' has-gl' : ''}">${paras}</div>${notesHTML}</article>
+        <div class="abody${hasGl ? ' has-gl' : ''}">${paras}</div>${notesHTML}
+        <button class="btn primary to-q only-m" data-pane="q">读完了，去做题（${nq} 道）</button></article>
       <div class="qs">${scoreLine}${qs}
         ${S.err.grade ? `<div class="notice err">${esc(S.err.grade)}</div>` : ''}
         <div style="display:flex;gap:8px;flex-wrap:wrap">${g ? (g.pending ? '' : `<button class="btn" data-act="redo">重新作答</button>`) : `<button class="btn primary" data-act="grade">提交答案</button>`}${S.gen.read === S.date ? '' : '<button class="btn" data-act="new-read">换一篇</button>'}</div>
@@ -923,11 +1005,11 @@ function vSet() {
     <div class="levels">${LEVELS.map(([l, t]) => `<button class="lv" data-level="${l}" aria-pressed="${lv === l}"><b>${l}</b><span>${t}</span></button>`).join('')}</div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">${S.confirmRegen
       ? `<span>今天的题和今天的答题进度会被清空并按 ${esc(lv)} 重新出，确定吗？</span><button class="btn primary" data-act="regen-today">确定重出</button><button class="btn" data-act="cancel-regen">取消</button>`
-      : `<button class="btn" data-act="ask-regen">现在按 ${esc(lv)} 重出今天的题</button>`}</div>
-    <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会按你的水平提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，打开页面就能直接开始。如果打开时还没出好，可以点“现在就在页面里生成”。</p>
+      : `<button class="btn" data-act="ask-regen" hidden>现在按 ${esc(lv)} 重出今天的题</button>`}</div>
+    <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，发布到这个网站，打开页面就能直接开始。如果打开时还没出好，稍后刷新即可。</p>
     <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
-    <section class="sec"><h3>同步</h3><p>${S.db ? '题目、进度、打卡记录和生词本都保存在云端。手机和电脑打开同一个链接、登录同一个 claude.ai 账号即可同步；切回这个页面时会自动拉取最新内容。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
-    <section class="sec"><h3>说明</h3><p>简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。</p></section></div>`;
+    <section class="sec"><h3>同步</h3><p>${S.db ? '这是网页版：每天的题目从网站读取，你的进度、打卡记录和生词本保存在这台设备的浏览器里，手机和电脑各自记录，不互相同步。需要跨设备同步时，请用 claude.ai 上的版本。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
+    <section class="sec"><h3>说明</h3><p>网页版不调用 Claude：选择题自动判分，简答题显示参考答案供你自查。</p></section></div>`;
 }
 
 /* ---------------- reading: words, highlights, notes ---------------- */
@@ -1146,6 +1228,8 @@ document.addEventListener('click', e => {
   if (!pop.hidden && !e.target.closest('#pop')) { const sel = getSelection(); if (!sel || sel.isCollapsed) closePop(); }
   const t = e.target.closest('button,[data-speak]'); if (!t || t.disabled) return;
   if (t.dataset.pop) { popAct(t.dataset.pop, t); return; }
+  if (t.dataset.sec) { const sc = $(`#detail .sec[data-s="${t.dataset.sec}"]`); if (sc) { sc.scrollIntoView({ behavior: 'smooth', block: 'start' }); spyLock = t.dataset.sec; setSec(spyLock); clearTimeout(spyT); spyT = setTimeout(() => { spyLock = null; }, 900); } return; }
+  if (t.dataset.pane) { S.readPane = t.dataset.pane; render(); window.scrollTo({ top: 0 }); return; }
   if (t.dataset.bookFull) { bookFull(t.dataset.bookFull); return; }
   if (t.dataset.noteDel) { S.day.notes = (S.day.notes || []).filter(n => n.id !== t.dataset.noteDel); saveNotes(); render(); return; }
   if (t.dataset.noteEdit) { const n = (S.day.notes || []).find(x => x.id === t.dataset.noteEdit); if (n) { S.pop = { p: n.p, a: n.a, b: n.b, mode: 'note', id: n.id }; showPop(t); } return; }
@@ -1185,14 +1269,47 @@ document.addEventListener('change', e => {
   const t = e.target;
   if (t.id === 'tr-toggle') { S.showTr = t.checked; render(); return; }
   if (t.id === 'gl-toggle') { S.showGl = t.checked; render(); return; }
-  if (t.type === 'radio' && t.name.startsWith('q')) { S.day.answers[t.name.slice(1)] = t.value; save(S.dayRef, { answers: S.day.answers }); }
+  if (t.type === 'radio' && t.name.startsWith('q')) { S.day.answers[t.name.slice(1)] = t.value; save(S.dayRef, { answers: S.day.answers }); segLbl(); }
 });
+function segLbl() {
+  const b = $('.rseg [data-pane="q"]'), r = S.day && S.day.reading; if (!b || !r || S.day.grading) return;
+  b.textContent = `题目 ${r.questions.filter((q, i) => String(S.day.answers[i] ?? '').trim()).length}/${r.questions.length}`;
+}
 let tTimer;
 document.addEventListener('input', e => {
   const t = e.target; if (!t.dataset.q) return;
-  S.day.answers[t.dataset.q] = t.value;
+  S.day.answers[t.dataset.q] = t.value; segLbl();
   clearTimeout(tTimer); tTimer = setTimeout(() => save(S.dayRef, { answers: S.day.answers }), 1200);
 });
+/* phone: swipe the word card / detail sideways to change words */
+let sw = null;
+document.addEventListener('touchstart', e => {
+  sw = null;
+  if (S.view !== 'words' || !S.day || e.touches.length !== 1 || !e.target.closest('.study')) return;
+  const p = e.touches[0]; sw = { x: p.clientX, y: p.clientY, t: Date.now() };
+}, { passive: true });
+document.addEventListener('touchend', e => {
+  if (!sw) return;
+  const p = e.changedTouches[0], dx = p.clientX - sw.x, dy = p.clientY - sw.y, dt = Date.now() - sw.t; sw = null;
+  if (dt > 700 || Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+  const sel = getSelection(); if (sel && !sel.isCollapsed) return;
+  const ni = S.idx + (dx < 0 ? 1 : -1);
+  if (ni >= 0 && S.idx < S.day.lemmas.length) go(ni);
+}, { passive: true });
+/* section nav follows the scroll position */
+let spyRaf = 0, spyLock = null, spyT;
+function setSec(cur) { document.querySelectorAll('.secnav button[data-sec]').forEach(b => b.setAttribute('aria-current', String(b.dataset.sec === cur))); }
+function spy() {
+  spyRaf = 0;
+  const nav = S.view === 'words' && $('.secnav'); if (!nav || spyLock) return;
+  const secs = [...document.querySelectorAll('#detail .sec[data-s]')]; if (!secs.length) return;
+  const lim = nav.getBoundingClientRect().bottom + 30, de = document.documentElement;
+  let cur = secs[0].dataset.s;
+  secs.forEach(x => { if (x.getBoundingClientRect().top <= lim) cur = x.dataset.s; });
+  if (de.scrollHeight > innerHeight + 40 && scrollY + innerHeight >= de.scrollHeight - 4) cur = secs[secs.length - 1].dataset.s;
+  setSec(cur);
+}
+addEventListener('scroll', () => { if (!spyRaf) spyRaf = requestAnimationFrame(spy); }, { passive: true });
 document.addEventListener('mouseup', e => { if (!e.target.closest('#pop')) setTimeout(onSel, 0); });
 let selT;
 document.addEventListener('selectionchange', () => { clearTimeout(selT); selT = setTimeout(() => { if (matchMedia('(pointer: coarse)').matches) onSel(); }, 400); });
