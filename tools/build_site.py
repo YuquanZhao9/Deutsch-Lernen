@@ -81,10 +81,12 @@ def build_woerterbuch():
                         "window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []);"
                         " history = (Array.isArray(history) ? history : []).map(h => typeof h === 'string' ? { k: h, n: 1, t: 0 } : h).filter(h => h && (h.k || h.q));"
                         " if (tab === 'book') renderBook(); else if (tab === 'search' && !current && !q.value.trim()) renderHome(); };", 'woerterbuch')
-    # 登录 / 已同步 link in the header (label kept current by konto/sync.js)
-    page = must_replace(page, '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>',
-                        '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span>'
-                        '<a href="../konto/" data-dl-account style="margin-left:auto;font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap">登录</a></div>', 'woerterbuch')
+    # 登录 / 已同步 link in the header (label kept current by konto/sync.js), only for dictionary sources
+    # without the 设置 tab's account slot (#konto-slot, filled with konto/ by sync.js)
+    if 'konto-slot' not in page:
+        page = must_replace(page, '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>',
+                            '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span>'
+                            '<a href="../konto/" data-dl-account style="margin-left:auto;font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap">登录</a></div>', 'woerterbuch')
     # sentence translation goes to the site's API (functions/api): same origin on pages.dev, the mirror from GitHub Pages
     page = must_replace(page, "const TRANSLATE_API = '';",
                         "const TRANSLATE_API = window.DLSync ? DLSync.api + '/translate' : 'https://deutsch-lernen-1ca.pages.dev/api/translate';", 'woerterbuch')
