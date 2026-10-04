@@ -7,7 +7,7 @@
   "pl": "Auseinandersetzungen",        // 仅名词：完整复数形式；无复数写 "—"
   "gs": "der Auseinandersetzung",      // 仅名词：单数第二格（带冠词）
   "ipa": "aʊ̯sʔaɪ̯ˈnandɐˌzɛt͡sʊŋ",        // IPA，按 Duden 标准音，标重音
-  "lvl": "C1",                         // B1 / B2 / C1 / C2（按 Goethe/Profile Deutsch 大致归类）
+  "lvl": "C1",                         // A1…C2（按 Goethe/Profile Deutsch 大致归类）；介于两级之间时写成范围，如 "A1–A2"（用 en dash –）
   "forms": "setzt sich auseinander · setzte sich auseinander · hat sich auseinandergesetzt",
                                        // 动词：第三人称单数现在时 · 过去时 · 完成时（haben/sein 要对）；强变化/不规则必须准确
                                        // 形容词：比较级 · 最高级（不能比较的写 "—"）；名词/其他：省略此字段

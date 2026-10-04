@@ -110,6 +110,22 @@ ul.use li { font-size: 15px; }
 .prose { font-size: 15px; }
 .tip { background: var(--warn-bg); color: var(--warn-fg); border-color: transparent; }
 .tip h2 { color: var(--warn-fg); }
+.hitbar { background: var(--accent-soft); color: var(--ink); border-radius: 10px; padding: 9px 12px; font-size: 14px; line-height: 1.5; }
+.hitbar b { font-family: var(--f-head); color: var(--accent); }
+.row .gl .hint { color: var(--accent); }
+.conj details { border-top: 1px solid var(--line); }
+.conj details:first-of-type { border-top: 0; }
+.conj summary { cursor: pointer; padding: 8px 0; font-size: 14px; font-weight: 600; list-style: none; display: flex; justify-content: space-between; }
+.conj summary::after { content: "＋"; color: var(--muted); }
+.conj details[open] summary::after { content: "－"; }
+.conj summary::-webkit-details-marker { display: none; }
+.cj { display: grid; grid-template-columns: 5.5em 1fr; gap: 2px 10px; padding: 0 0 8px; font-size: 15px; }
+.cj .who { color: var(--muted); font-size: 13px; padding-top: 2px; }
+.cj .f { font-family: var(--f-head); overflow-wrap: anywhere; }
+.cj .on { background: var(--accent-soft); color: var(--accent); border-radius: 4px; padding: 0 4px; margin-left: -4px; }
+.conj .note { color: var(--muted); font-size: 13px; }
+.conj .parts { font-size: 14px; color: var(--muted); }
+.conj .parts b { font-family: var(--f-head); color: var(--ink); font-weight: 600; }
 .speak { color: var(--accent); }
 
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
@@ -157,6 +173,13 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem('ww.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem('ww.' + k, JSON.stringify(v)); return true; } catch { return false; } }
 };
+const idb = (() => {
+  let dbp = null;
+  const open = () => dbp || (dbp = new Promise((res, rej) => { try { const r = indexedDB.open('wortwurzel', 1); r.onupgradeneeded = () => r.result.createObjectStore('kv'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); } }));
+  const tx = (mode, fn) => open().then(db => new Promise((res, rej) => { const t = db.transaction('kv', mode); const q = fn(t.objectStore('kv')); t.oncomplete = () => res(q && q.result); t.onerror = () => rej(t.error); }));
+  return { get: k => tx('readonly', s => s.get(k)).catch(() => null), set: (k, v) => tx('readwrite', s => s.put(v, k)).then(() => true, () => false) };
+})();
+let CUSTOM = null;
 let DICT = { entries: [] }, INDEX = [], byKey = new Map();
 let tab = 'search', current = null, history = store.get('history', []), book = store.get('book', []);
 
@@ -164,20 +187,195 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const fold = s => String(s).toLowerCase().replace(/^sich\s+/, '').replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss').replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u').replace(/[·\-\s]/g,'');
 const keyOf = e => e.w;
 const ART = { m: 'der', f: 'die', n: 'das', pl: 'die' };
-const POS = { n: '名词', v: '动词', adj: '形容词', adv: '副词', konj: '连词', präp: '介词', part: '小品词' };
+const POS = { n: '名词', v: '动词', adj: '形容词', adv: '副词', konj: '连词', präp: '介词', part: '小品词', pron: '代词', num: '数词', art: '冠词', interj: '感叹词' };
 
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 2200); }
 
+// CONJ-START
+// Builds a full conjugation table from the entry's headword and principal parts
+// ("gibt · gab · hat gegeben"). Returns null when the parts can't be parsed safely.
+const CONJ = (() => {
+  const PRON = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie'];
+  const RACC = ['mich', 'dich', 'sich', 'uns', 'euch', 'sich'];
+  const RDAT = ['mir', 'dir', 'sich', 'uns', 'euch', 'sich'];
+  const HABEN = ['habe', 'hast', 'hat', 'haben', 'habt', 'haben'];
+  const SEIN = ['bin', 'bist', 'ist', 'sind', 'seid', 'sind'];
+  const WERDEN = ['werde', 'wirst', 'wird', 'werden', 'werdet', 'werden'];
+  const MODAL = ['können', 'müssen', 'dürfen', 'sollen', 'wollen', 'mögen'];
+  const MODAL_UML = ['können', 'müssen', 'dürfen', 'mögen'];
+  const UML_WEAK = ['denken', 'bringen', 'wissen', 'haben'];
+  const MIXED_PLAIN = ['kennen', 'nennen', 'brennen', 'rennen', 'senden', 'wenden'];
+  const KONJ_EXC = { stehen: 'stünde', helfen: 'hülfe', sterben: 'stürbe', werfen: 'würfe', verderben: 'verdürbe', beginnen: 'begänne', schwimmen: 'schwömme', gewinnen: 'gewönne', empfehlen: 'empföhle', befehlen: 'beföhle' };
+  const ends = (w, list) => list.find(x => w === x || (w.endsWith(x) && w.length > x.length));
+  const sib = s => /[sßzx]$/.test(s);
+  const needE = s => /[td]$/.test(s) || /[^aeiouäöülrhmn][mn]$/.test(s);
+  const umlaut = s => {
+    const m = s.match(/^(.*?)(au|a|o|u)([^aeiouäöü]*)$/);
+    if (!m || (m[2] === 'u' && /[ea]$/.test(m[1]))) return s;
+    return m[1] + ({ au: 'äu', a: 'ä', o: 'ö', u: 'ü' })[m[2]] + m[3];
+  };
+
+  function parse(e) {
+    let f = String(e.forms || '');
+    const VAR = /[（(；;／]|\s\/\s/;
+    const variants = VAR.test(f);
+    f = f.split(VAR)[0];
+    const parts = f.split('·').map(s => s.trim()).filter(Boolean);
+    if (parts.length !== 3) return null;
+    const t3 = parts[0].split(/\s+/), tp = parts[1].split(/\s+/), tpp = parts[2].split(/\s+/).filter(x => x !== 'sich');
+    const aux = tpp[0];
+    if (!/^(hat|ist)(\/(hat|ist))?$/.test(aux) || tpp.length < 2) return null;
+    const refl = /^sich\s/.test(e.w);
+    const base = e.w.replace(/^sich\s+/, '');
+    if (/\s/.test(base)) return null;
+    const particle = t3.slice(1).filter(x => x !== 'sich').join(' ');
+    let main = base;
+    if (particle) { const p = particle.replace(/\s/g, ''); if (!base.startsWith(p)) return null; main = base.slice(p.length); }
+    let stem, type = '';
+    if (/(eln|ern)$/.test(main)) { stem = main.slice(0, -1); type = main.slice(-3); }
+    else if (main.endsWith('en')) stem = main.slice(0, -2);
+    else if (main.endsWith('n')) stem = main.slice(0, -1);
+    else return null;
+    const dat = refl && /sich\s*\(D\)|sich³|sich\s*\(Dat/i.test(JSON.stringify([e.use, e.senses, e.tip]));
+    return { base, main, stem, type, refl, dat, particle, f3: t3[0], fp: tp[0], aux, pp: tpp[1], variants };
+  }
+
+  function build(e) {
+    const p = parse(e); if (!p) return null;
+    const { main, stem, type, f3, fp } = p;
+    let pres, prat, konj, imp;
+    if (main === 'sein') {
+      pres = ['bin', 'bist', 'ist', 'sind', 'seid', 'sind'];
+      prat = ['war', 'warst', 'war', 'waren', 'wart', 'waren'];
+      konj = ['wäre', 'wärst', 'wäre', 'wären', 'wärt', 'wären'];
+      imp = ['sei', 'seid', 'seien Sie'];
+    } else {
+      const modalLike = !f3.endsWith('t') || main === 'werden';
+      const ich = main === 'werden' ? 'werde' : !f3.endsWith('t') ? f3 : type === 'eln' ? stem.slice(0, -2) + 'le' : stem + 'e';
+      let du;
+      if (main === 'werden') du = 'wirst';
+      else if (!f3.endsWith('t')) du = sib(f3) ? f3 + 't' : f3 + 'st';
+      else if (f3 === stem + 'et') du = stem + 'est';
+      else if (stem.endsWith('t')) du = f3 + 'st';
+      else { const b = f3.slice(0, -1); du = sib(b) ? b + 't' : b + 'st'; }
+      const ihr = needE(stem) && !type ? stem + 'et' : stem + 't';
+      pres = [ich, du, f3, main, ihr, main];
+
+      if (fp.endsWith('e')) prat = [fp, fp + 'st', fp, fp + 'n', fp + 't', fp];
+      else prat = [fp, fp + (sib(fp) ? 'est' : 'st'), fp, fp + 'en', fp + (/[td]$/.test(fp) ? 'et' : 't'), fp + 'en'];
+      prat[5] = prat[3];
+
+      const strong = /n$/.test(p.pp) && !/te$/.test(fp);
+      let ks = null;
+      const exc = ends(main, Object.keys(KONJ_EXC));
+      if (exc) ks = main.slice(0, main.length - exc.length) + KONJ_EXC[exc].slice(0, -1);
+      else if (strong) ks = umlaut(fp.replace(/e$/, ''));
+      else if (MODAL_UML.includes(main) || ends(main, UML_WEAK)) ks = umlaut(fp.replace(/e$/, ''));
+      if (ks) konj = [ks + 'e', ks + 'est', ks + 'e', ks + 'en', ks + 'et', ks + 'en'];
+      else if (ends(main, MIXED_PLAIN)) { const t = stem + (needE(stem) ? 'ete' : 'te'); konj = [t, t + 'st', t, t + 'n', t + 't', t + 'n']; }
+      else konj = prat.slice();
+
+      if (MODAL.includes(main)) imp = null;
+      else if (main === 'werden') imp = ['werde', 'werdet', 'werden Sie'];
+      else {
+        let b = stem.endsWith('t') && f3 !== stem + 'et' ? f3 : f3.slice(0, -1), ei = false;
+        for (let i = 0; i < Math.min(b.length, stem.length); i++) if (b[i] !== stem[i]) { ei = stem[i] === 'e' && b[i] === 'i'; break; }
+        const du2 = !modalLike && ei ? b : type === 'eln' ? stem.slice(0, -2) + 'le' : type === 'ern' ? stem + 'e' : needE(stem) ? stem + 'e' : stem + '(e)';
+        imp = [du2, ihr, main + ' Sie'];
+      }
+    }
+    const rp = p.refl ? (p.dat ? RDAT : RACC) : null;
+    const tail = i => (rp ? ' ' + rp[i] : '') + (p.particle ? ' ' + p.particle : '');
+    const fin = arr => arr.map((v, i) => ({ who: PRON[i], form: v + tail(i), key: v }));
+    const auxs = p.aux.split('/').map(a => a === 'ist' ? SEIN : HABEN);
+    const perf = PRON.map((who, i) => ({ who, form: auxs.map(a => a[i]).join('/') + (rp ? ' ' + rp[i] : '') + ' ' + p.pp }));
+    const fut = PRON.map((who, i) => ({ who, form: WERDEN[i] + (rp ? ' ' + rp[i] : '') + ' ' + p.base }));
+    const p1 = (/[^e]n$/.test(p.base) && !/(eln|ern)$/.test(p.base) ? p.base.slice(0, -1) + 'end' : p.base + 'd');
+    let impRows = null;
+    if (imp) {
+      const r = p.refl ? [p.dat ? 'dir' : 'dich', 'euch', 'sich'] : ['', '', ''];
+      impRows = [['du', imp[0]], ['ihr', imp[1]], ['Sie', imp[2]]].map(([who, v], i) => {
+        const [verb, sie] = v.split(' ');
+        return { who, form: verb + (sie ? ' Sie' : '') + (r[i] ? ' ' + r[i] : '') + (p.particle ? ' ' + p.particle : '') , key: verb };
+      });
+    }
+    const tables = [
+      { name: '现在时 Präsens', rows: fin(pres) },
+      { name: '过去时 Präteritum', rows: fin(prat) },
+      { name: '现在完成时 Perfekt', rows: perf },
+      { name: '将来时 Futur I', rows: fut },
+      { name: '第二虚拟式 Konjunktiv II', rows: fin(konj), note: konj.join() === prat.join() ? '与过去时同形，口语里多用 würde + 不定式。' : '' },
+    ];
+    if (impRows) tables.push({ name: '命令式 Imperativ', rows: impRows });
+    return { tables, p1, p2: p.pp, aux: p.aux, refl: p.refl, particle: p.particle, variants: p.variants, pres, prat, konj, imp };
+  }
+
+  // Every inflected form of a verb, with a Chinese label, for the search index.
+  function formsOf(e, c) {
+    const out = [];
+    const add = (form, label) => { if (form && form !== e.w) out.push([form, label]); };
+    const who = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie'];
+    const tense = [['pres', '现在时'], ['prat', '过去时'], ['konj', '第二虚拟式']];
+    // Separable verbs are only indexed with their particle ("fängst an"), so a bare "gibst" finds geben, not angeben.
+    const fin = v => c.particle ? v + ' ' + c.particle : v;
+    for (const [k, name] of tense) c[k].forEach((v, i) => add(fin(v), `${name} · ${who[i]}`));
+    if (c.imp) [['du', 0], ['ihr', 1]].forEach(([w, i]) => {
+      const v = c.imp[i].replace('(e)', ''); add(fin(v), `命令式 · ${w}`); if (c.imp[i].includes('(e)')) add(fin(v + 'e'), `命令式 · ${w}`);
+    });
+    add(c.p2, '第二分词（完成时用）');
+    add(c.p1, '第一分词');
+    return out;
+  }
+  return { build, formsOf };
+})();
+// CONJ-END
+
+let FORMMAP = new Map(), CONJCACHE = new Map();
+function conjOf(e) { if (e.pos !== 'v') return null; if (!CONJCACHE.has(e.w)) CONJCACHE.set(e.w, CONJ.build(e)); return CONJCACHE.get(e.w); }
+// "des Abbau(e)s" -> ["Abbaus", "Abbaues"]
+const expandParen = s => { const m = s.match(/^(.*?)\(([^)]*)\)(.*)$/); return m ? [...expandParen(m[1] + m[3]), ...expandParen(m[1] + m[2] + m[3])] : [s]; };
+function inflections(e) {
+  const out = [];
+  const clean = v => String(v || '').replace(/（[^）]*）|\([^)]*少[^)]*\)/g, '').trim();
+  if (e.pos === 'n') {
+    if (e.pl && e.pl !== '—') clean(e.pl).split(/[\/,，]/).forEach(v => { v = v.replace(/^die\s+/, '').trim(); if (v && !v.startsWith('-')) out.push([v, '复数']); });
+    if (e.gs) clean(e.gs).split(/[\/,，]/).forEach(v => expandParen(v.replace(/^(des|der)\s+/, '').trim()).forEach(x => x && out.push([x, '单数第二格'])));
+  } else if (e.pos === 'adj' && e.forms && e.forms !== '—') {
+    const [c, sup] = clean(e.forms).split('·').map(x => x.trim());
+    if (c) out.push([c, '比较级']);
+    if (sup) { out.push([sup, '最高级']); out.push([sup.replace(/^am\s+/, ''), '最高级']); }
+  } else if (e.pos === 'v') {
+    const c = conjOf(e); if (c) out.push(...CONJ.formsOf(e, c));
+  }
+  return out.filter(([f]) => f && fold(f) !== fold(e.w));
+}
+
 function buildIndex() {
-  byKey = new Map(); INDEX = DICT.entries.map(e => {
+  byKey = new Map(); FORMMAP = new Map(); CONJCACHE = new Map();
+  INDEX = DICT.entries.map(e => {
     byKey.set(keyOf(e), e);
     const forms = [e.w, e.pl, e.gs, ...(String(e.forms || '').split(/[·,;\/]/))].filter(Boolean)
       .flatMap(f => String(f).replace(/^(der|die|das|des|hat|ist|sich)\s+/g, '').split(/\s+/)).filter(x => x.length > 2 && x !== '—');
     String(e.forms || '').split(/[·,;\/（）()]/).forEach(f => { f = f.replace(/^\s*(hat|ist|sich)\s+/, '').trim(); if (f.includes(' ')) forms.push(f); });
+    for (const [f, label] of inflections(e)) {
+      const k = fold(f); forms.push(f);
+      let hits = FORMMAP.get(k); if (!hits) FORMMAP.set(k, hits = []);
+      let h = hits.find(x => x.key === e.w); if (!h) hits.push(h = { key: e.w, items: [] });
+      if (!h.items.some(([a, b]) => a === f && b === label)) h.items.push([f, label]);
+    }
     const zh = (e.senses || []).map(s => s.zh).join('；');
-    return { e, k: fold(e.w), forms: [...new Set(forms.map(fold))], zh };
+    return { e, k: fold(e.w), forms: [...new Set(forms.map(fold))], exact: new Set(forms.map(f => String(f).toLowerCase())), zh };
   });
   $('#count').textContent = DICT.entries.length + ' 词 · ' + (DICT.version || '');
+}
+// If the query is an inflected form of e (not e itself), say which form it is.
+function hitFor(e, raw) {
+  const f = fold(raw || ''); if (!f || f === fold(e.w)) return null;
+  const h = (FORMMAP.get(f) || []).find(h => h.key === e.w); if (!h) return null;
+  const lo = raw.trim().toLowerCase(), ex = h.items.filter(([a]) => a.toLowerCase() === lo), use = ex.length ? ex : h.items;
+  // "过去时 · ich" + "过去时 · er/sie/es" -> "过去时 · ich / er/sie/es"
+  const g = new Map(); for (const [, b] of use) { const [t, who] = b.split(' · '); if (!g.has(t)) g.set(t, []); if (who && !g.get(t).includes(who)) g.get(t).push(who); }
+  return { form: use[0][0], labels: [...g].map(([t, w]) => w.length ? `${t} · ${w.join(' / ')}` : t) };
 }
 
 function lev(a, b) { if (Math.abs(a.length - b.length) > 2) return 9; const d = Array.from({length: a.length + 1}, (_, i) => [i]); for (let j = 1; j <= b.length; j++) d[0][j] = j; for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + (a[i-1] === b[j-1] ? 0 : 1)); return d[a.length][b.length]; }
@@ -185,12 +383,13 @@ function lev(a, b) { if (Math.abs(a.length - b.length) > 2) return 9; const d = 
 function search(raw) {
   const s = raw.trim(); if (!s) return [];
   if (/[一-鿿]/.test(s)) return INDEX.filter(x => x.zh.includes(s)).map(x => x.e).slice(0, 60);
-  const f = fold(s); const out = [];
+  const f = fold(s), lo = s.toLowerCase(); const out = [];
   for (const x of INDEX) {
-    let r = -1;
-    if (x.k === f) r = 0; else if (x.forms.includes(f)) r = 1; else if (x.k.startsWith(f)) r = 2;
+    let r = null;
+    if (x.e.w.toLowerCase() === lo) r = -2; else if (x.exact.has(lo)) r = -1;
+    else if (x.k === f) r = 0; else if (x.forms.includes(f)) r = 1; else if (x.k.startsWith(f)) r = 2;
     else if (f.length >= 3 && x.forms.some(y => y.startsWith(f))) r = 3; else if (f.length >= 4 && x.k.includes(f)) r = 4;
-    if (r >= 0) out.push([r, x.k.length, x.e]);
+    if (r !== null) out.push([r, x.k.length, x.e]);
   }
   out.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
   return out.slice(0, 60).map(x => x[2]);
@@ -198,7 +397,11 @@ function search(raw) {
 function suggest(raw) { const f = fold(raw); return INDEX.map(x => [lev(f, x.k), x.e]).filter(x => x[0] <= 2).sort((a, b) => a[0] - b[0]).slice(0, 6).map(x => x[1]); }
 
 function hwHtml(e) { return (e.pos === 'n' && e.gen ? `<span class="art g-${e.gen}">${ART[e.gen]}</span>` : '') + esc(e.w); }
-function rowHtml(e) { return `<li><button class="row" data-open="${esc(keyOf(e))}"><span class="hw">${hwHtml(e)}</span><span class="gl">${esc((e.senses?.[0]?.zh) || '')}</span></button></li>`; }
+function rowHtml(e, raw) {
+  const h = raw ? hitFor(e, raw) : null;
+  const hint = h ? `<span class="hint">${esc(h.form)}：${esc(h.labels.join('；'))}</span> · ` : '';
+  return `<li><button class="row" data-open="${esc(keyOf(e))}"><span class="hw">${hwHtml(e)}</span><span class="gl">${hint}${esc((e.senses?.[0]?.zh) || '')}</span></button></li>`;
+}
 
 function renderHome() {
   const recent = history.map(k => byKey.get(k)).filter(Boolean).slice(0, 12);
@@ -213,7 +416,7 @@ function dayNum() { return Math.floor(Date.now() / 864e5); }
 
 function renderResults(s) {
   const res = search(s);
-  if (res.length) { view.innerHTML = `<ul class="list">${res.map(rowHtml).join('')}</ul>`; return; }
+  if (res.length) { view.innerHTML = `<ul class="list">${res.map(e => rowHtml(e, s)).join('')}</ul>`; return; }
   const sug = /[一-鿿]/.test(s) ? [] : suggest(s);
   view.innerHTML = `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : '可以在“词库”页导入更大的词库文件。'}</div>
     ${sug.length ? `<ul class="list">${sug.map(rowHtml).join('')}</ul>` : ''}`;
@@ -224,6 +427,10 @@ function renderEntry(e) {
   history = [keyOf(e), ...history.filter(k => k !== keyOf(e))].slice(0, 40); store.set('history', history);
   const starred = book.includes(keyOf(e));
   const nounInfo = e.pos === 'n' ? [e.gs && `单数二格 ${esc(e.gs)}`, e.pl && `复数 ${e.pl === '—' ? '无' : esc(e.pl)}`].filter(Boolean).join(' · ') : '';
+  const hit = hitFor(e, q.value);
+  const KIND = { n: '的变格形式', adj: '的比较形式', v: '的变位形式' };
+  const hitHtml = hit ? `<div class="hitbar">你查的 <b>${esc(hit.form)}</b> 是 <b>${esc(e.w)}</b> ${KIND[e.pos] || '的屈折形式'}：${esc(hit.labels.join('；'))}</div>` : '';
+  const conjHtml = conjSection(e, hit);
   const formsLabel = e.pos === 'v' ? '现在时三单 · 过去时 · 完成时' + (e.sep === true ? ' · 可分动词' : e.sep === false ? ' · 不可分动词' : '') : (e.pos === 'adj' ? '比较级 · 最高级' : '');
   view.innerHTML = `<article class="entry">
     <div class="ehead">
@@ -231,10 +438,12 @@ function renderEntry(e) {
         <button class="iconbtn speak" id="say" aria-label="朗读"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg></button>
         <button class="iconbtn star" id="star" aria-label="加入生词本" aria-pressed="${starred}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></button>
       </div>
-      <div class="meta">${e.ipa ? `<span class="ipa">[${esc(e.ipa)}]</span>` : ''}<span class="pos">${POS[e.pos] || esc(e.pos || '')}</span>${e.lvl ? `<span class="lvl">${esc(e.lvl)}</span>` : ''}</div>
+      <div class="meta">${e.ipa ? `<span class="ipa">[${esc(e.ipa)}]</span>` : ''}<span class="pos">${POS[e.pos] || esc(e.pos || '')}</span>${e.lvl ? `<span class="lvl">级别 ${esc(String(e.lvl).replace(/\s*[\/~-]\s*/g, '–'))}</span>` : ''}</div>
     </div>
+    ${hitHtml}
     ${nounInfo ? `<div class="forms">${nounInfo}</div>` : ''}
     ${e.forms ? `<div class="forms"><small>${formsLabel}</small>${esc(e.forms)}</div>` : ''}
+    ${conjHtml}
     ${(e.senses || []).length ? `<section class="sec"><h2>释义</h2>${e.senses.map((s, i) => `<div class="sense"><span class="n">${i + 1}</span><div>
         <div class="zh">${esc(s.zh)}</div>${s.de ? `<div class="de">${esc(s.de)}</div>` : ''}
         ${(s.ex || []).map(x => `<div class="ex"><div class="d">${esc(x.de)}</div><div class="z">${esc(x.zh)}</div></div>`).join('')}
@@ -248,6 +457,19 @@ function renderEntry(e) {
   main.scrollTop = 0;
 }
 
+function conjSection(e, hit) {
+  const c = conjOf(e); if (!c) return '';
+  const on = v => hit && fold(v) === fold(hit.form);
+  const auxName = c.aux.split('/').map(a => a === 'ist' ? 'sein' : 'haben').join(' / ');
+  return `<section class="sec conj"><h2>变位</h2>
+    <div class="parts">第二分词 <b>${esc(c.p2)}</b> · 助动词 <b>${esc(auxName)}</b> · 第一分词 <b>${esc(c.p1)}</b>${c.particle ? ` · 可分前缀 <b>${esc(c.particle)}</b>` : ''}</div>
+    ${c.variants ? '<div class="note">这个词有不止一套变位（见上方说明），下表按第一种。</div>' : ''}
+    ${c.tables.map((t, i) => `<details${i === 0 || (hit && t.rows.some(r => on(r.key || '') || on(r.form))) ? ' open' : ''}><summary>${esc(t.name)}</summary>
+      <div class="cj" lang="de">${t.rows.map(r => `<span class="who">${esc(r.who)}</span><span class="f"><span class="${on(r.key || '') || on(r.form) ? 'on' : ''}">${esc(r.form)}</span></span>`).join('')}</div>
+      ${t.note ? `<div class="note">${esc(t.note)}</div>` : ''}</details>`).join('')}
+  </section>`;
+}
+
 function renderBook() {
   const items = book.map(k => byKey.get(k)).filter(Boolean);
   view.innerHTML = `<div class="stack"><div class="label">生词本 · ${items.length} 词（保存在本机浏览器）</div>
@@ -256,11 +478,12 @@ function renderBook() {
 }
 
 function renderLib() {
-  const custom = store.get('customDict', null);
+  const custom = CUSTOM;
   view.innerHTML = `<div class="stack">
     <section class="card"><h3>当前词库</h3>
-      <dl class="kv"><dt>名称</dt><dd>${esc(DICT.name || '')}</dd><dt>版本</dt><dd>${esc(DICT.version || '')}</dd><dt>词条数</dt><dd>${DICT.entries.length}</dd><dt>来源</dt><dd>${custom ? '你导入的文件' : (EMBED ? '本文件内置（离线）' : '在线内置词库')}</dd></dl>
-      <div class="note">词库已缓存在本机，断网后再打开这个页面也能查。</div>
+      <dl class="kv"><dt>名称</dt><dd>${esc(DICT.name || '')}</dd><dt>版本</dt><dd>${esc(DICT.version || '')}</dd><dt>词条数</dt><dd>${DICT.entries.length}</dd><dt>来源</dt><dd>${custom ? '你导入的文件' : SRC}</dd></dl>
+      <div class="note">${STALE ? '这次没有连上网，用的是本机缓存的旧词库。联网后点下面的按钮重新下载。' : '词库已缓存在本机，断网后再打开这个页面也能查。'}</div>
+      ${EMBED || custom ? '' : '<div class="btns"><button class="btn ghost" id="refetch">重新下载最新词库</button></div>'}
     </section>
     <section class="card"><h3>导入词库文件</h3>
       <div>选择一个 Wortwurzel 格式的 <b>.json</b> 词库文件。新词会合并进来，同名词条以文件为准。</div>
@@ -301,7 +524,8 @@ view.addEventListener('click', async ev => {
   if (t.id === 'star') { const k = keyOf(current); book = book.includes(k) ? book.filter(x => x !== k) : [k, ...book]; store.set('book', book); t.setAttribute('aria-pressed', book.includes(k)); toast(book.includes(k) ? '已加入生词本' : '已移出生词本'); return; }
   if (t.id === 'say') { try { const u = new SpeechSynthesisUtterance(current.w); u.lang = 'de-DE'; u.rate = .9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch { toast('这个浏览器不支持朗读'); } return; }
   if (t.id === 'import') return $('#file').click();
-  if (t.id === 'reset') { store.set('customDict', null); await load(); toast('已恢复内置词库'); return render(); }
+  if (t.id === 'refetch') { toast('正在下载最新词库…'); const d = await fetchBase(); if (!d) return toast('没有连上网，稍后再试'); BASE = d; SRC = '在线词库（最新）'; STALE = false; idb.set('cache', d); if (!CUSTOM) { DICT = d; buildIndex(); } toast(`已更新：${d.entries.length} 词`); return render(); }
+  if (t.id === 'reset') { await idb.set('customDict', null); await load(); toast('已恢复内置词库'); return render(); }
   if (t.id === 'copybook') { const txt = book.map(k => { const e = byKey.get(k); return e ? `${e.gen ? ART[e.gen] + ' ' : ''}${e.w}\t${e.senses?.[0]?.zh || ''}` : k; }).join('\n'); try { await navigator.clipboard.writeText(txt); toast('已复制 ' + book.length + ' 个词'); } catch { toast('复制失败，请手动选择'); } return; }
   if ('themeSet' in t.dataset) { const v = t.dataset.themeSet; if (v) document.documentElement.dataset.theme = v; else delete document.documentElement.dataset.theme; store.set('theme', v); return; }
 });
@@ -311,24 +535,31 @@ $('#file').addEventListener('change', async ev => {
   try {
     const data = JSON.parse(await f.text()); const entries = Array.isArray(data) ? data : data.entries;
     if (!Array.isArray(entries) || !entries.every(e => e && e.w)) throw new Error('格式不对');
-    const prev = store.get('customDict', null);
+    const prev = CUSTOM;
     const merged = new Map((prev?.entries || BASE.entries).map(e => [e.w, e])); entries.forEach(e => merged.set(e.w, e));
     const dict = { name: data.name || BASE.name, version: (data.version || '') + ' + 导入', entries: [...merged.values()].sort((a, b) => a.w.localeCompare(b.w, 'de')) };
-    if (!store.set('customDict', dict)) toast('导入成功，但浏览器不允许保存，刷新后会失效');
+    CUSTOM = dict; if (!(await idb.set('customDict', dict))) toast('导入成功，但浏览器不允许保存，刷新后会失效');
     DICT = dict; buildIndex(); toast(`导入了 ${entries.length} 个词条`); render();
   } catch (err) { toast('导入失败：文件不是有效的词库 JSON'); }
 });
 
-let BASE = null, EMBED = false;
+let BASE = null, EMBED = false, SRC = '', STALE = false;
+async function fetchBase() {
+  for (let i = 0; i < 2; i++) {
+    try { const r = await fetch('wortwurzel.json?v=' + Date.now(), { cache: 'no-store' }); if (!r.ok) throw 0; const d = await r.json(); if (d && d.entries && d.entries.length) return d; } catch {}
+  }
+  return null;
+}
 async function load() {
   const emb = JSON.parse(document.getElementById('embedded-dict').textContent);
-  if (emb) { BASE = emb; EMBED = true; }
+  if (emb) { BASE = emb; EMBED = true; SRC = '本文件内置（离线）'; }
   else {
-    try { const r = await fetch('wortwurzel.json', { cache: 'no-cache' }); BASE = await r.json(); store.set('cache', BASE); }
-    catch { BASE = store.get('cache', null); }
+    BASE = await fetchBase();
+    if (BASE) { SRC = '在线词库（最新）'; idb.set('cache', BASE); }
+    else { BASE = await idb.get('cache'); STALE = !!BASE; SRC = '本机缓存（未联网）'; }
   }
   if (!BASE) { view.innerHTML = '<div class="empty">词库没有加载成功。请联网后刷新，或在“词库”页导入词库文件。</div>'; BASE = { entries: [] }; }
-  DICT = store.get('customDict', null) || BASE; buildIndex();
+  CUSTOM = await idb.get('customDict'); DICT = CUSTOM || BASE; buildIndex();
 }
 const th = store.get('theme', ''); if (th) document.documentElement.dataset.theme = th;
 load().then(() => { const h = location.hash.slice(1); if (h && byKey.get(decodeURIComponent(h))) open(decodeURIComponent(h)); else render(); });

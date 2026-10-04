@@ -1,0 +1,2298 @@
+[
+ {
+  "w": "ungefährlich",
+  "pos": "adj",
+  "ipa": "ˈʊnɡəfɛːɐ̯lɪç",
+  "lvl": "B1",
+  "forms": "ungefährlicher · am ungefährlichsten",
+  "senses": [
+   {
+    "zh": "无危险的，安全的；无害的",
+    "de": "ohne Gefahr, harmlos",
+    "ex": [
+     {
+      "de": "Der Eingriff ist relativ ungefährlich und dauert nur eine halbe Stunde.",
+      "zh": "这个手术风险相对较小，只需半小时。"
+     },
+     {
+      "de": "Die Lage an der Grenze ist alles andere als ungefährlich.",
+      "zh": "边境局势绝非没有危险。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nicht ungefährlich sein — 并非没有危险（委婉的否定，实指“相当危险”）",
+   "für jdn. ungefährlich sein — 对某人无害",
+   "ein ungefährlicher Virus / Stoff — 无害的病毒/物质"
+  ],
+  "root": "un·ge·fähr·lich：un-（否定）+ Gefahr（危险）+ -lich（形容词后缀，变元音 a→ä）→“不带危险的”",
+  "fam": [
+   "gefährlich",
+   "Gefahr",
+   "gefährden",
+   "Gefährdung"
+  ],
+  "ety": "Gefahr < 中古高地德语 gevāre（埋伏，伺机加害），参古高地德语 fāra（追捕，陷害）；gefährlich 中古高地德语作 geværlich。",
+  "cog": "英 fear（古英语 fǣr“突发的危险”）",
+  "tip": "“nicht ungefährlich”是德语常见的弱化说法，语气上等于“颇有危险”，不要理解为“安全”。"
+ },
+ {
+  "w": "ungewiss",
+  "pos": "adj",
+  "ipa": "ˈʊnɡəvɪs",
+  "lvl": "B2",
+  "forms": "ungewisser · am ungewissesten",
+  "senses": [
+   {
+    "zh": "不确定的，未知的，前途未卜的",
+    "de": "noch nicht feststehend, unsicher",
+    "ex": [
+     {
+      "de": "Ob das Projekt fortgesetzt wird, ist derzeit ungewiss.",
+      "zh": "该项目是否会继续，目前尚不确定。"
+     },
+     {
+      "de": "Viele Beschäftigte blicken einer ungewissen Zukunft entgegen.",
+      "zh": "许多员工面临着前途未卜的未来。"
+     }
+    ]
+   },
+   {
+    "zh": "（对某事）没把握的，拿不准的",
+    "de": "sich über etw. nicht im Klaren",
+    "ex": [
+     {
+      "de": "Er war sich ungewiss, ob er die Stelle annehmen sollte.",
+      "zh": "他拿不准是否该接受这份工作。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "es ist ungewiss, ob ... — ……尚不确定",
+   "jdn. im Ungewissen lassen — 让某人蒙在鼓里，不给某人确切答复",
+   "sich (D) über etw. (A) im Ungewissen sein — 对某事心中无数",
+   "ins Ungewisse — 走向未知（如 eine Reise ins Ungewisse）"
+  ],
+  "root": "un·ge·wiss：un-（否定）+ gewiss（确定的）→“不确定的”；gewiss 与 wissen（知道）同根",
+  "fam": [
+   "gewiss",
+   "Ungewissheit",
+   "Gewissheit",
+   "wissen",
+   "Gewissen"
+  ],
+  "ety": "gewiss < 中古高地德语 gewis < 古高地德语 giwis（确定的），与 wissen 同源。",
+  "cog": "英 wit, wise（与 wissen 同源）",
+  "tip": "ungewiss 指“结果尚未确定”，unsicher 更宽泛（还可指“不安全、不自信”）。正字法改革后写 ungewiss，旧写法 ungewiß。"
+ },
+ {
+  "w": "uralt",
+  "pos": "adj",
+  "ipa": "ˈuːɐ̯ʔalt",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "非常古老的，年代久远的；年纪极大的",
+    "de": "sehr alt",
+    "ex": [
+     {
+      "de": "In der Altstadt stehen noch uralte Fachwerkhäuser.",
+      "zh": "老城区里还矗立着古老的桁架房屋。"
+     },
+     {
+      "de": "Das ist doch ein uralter Witz!",
+      "zh": "这可是个老掉牙的笑话！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "seit uralten Zeiten — 自古以来",
+   "ein uralter Mann / Baum — 年迈的老人/古树",
+   "口语中带夸张、贬义：uralte Technik — 过时的技术"
+  ],
+  "root": "ur·alt：ur-（原初的；表强调，“极其”）+ alt（老的）→“极老的”",
+  "fam": [
+   "alt",
+   "Urahn",
+   "Urwald",
+   "Urzeit",
+   "Alter"
+  ],
+  "ety": "alt < 中古高地德语、古高地德语 alt < 原始日耳曼语 *aldaz；前缀 ur- < 古高地德语 ur-（出自，原初）。",
+  "cog": "英 old（古英语 eald）",
+  "tip": "ur- 作形容词前缀时重音落在 ur- 上：ˈuralt。一般不比较，不说 *uralter。"
+ },
+ {
+  "w": "Ventil",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Ventile",
+  "gs": "des Ventils",
+  "ipa": "vɛnˈtiːl",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "阀，阀门；（轮胎的）气门；（铜管乐器的）活塞",
+    "de": "Vorrichtung zum Regeln des Durchflusses von Gasen oder Flüssigkeiten",
+    "ex": [
+     {
+      "de": "Das Ventil am Fahrradreifen ist undicht.",
+      "zh": "自行车轮胎的气门漏气了。"
+     }
+    ]
+   },
+   {
+    "zh": "（情绪的）发泄渠道，出口",
+    "de": "Möglichkeit, Gefühle oder Spannungen abzubauen",
+    "ex": [
+     {
+      "de": "Sport ist für viele ein Ventil, um Stress abzubauen.",
+      "zh": "运动对许多人来说是释放压力的出口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Ventil öffnen / schließen — 开/关阀门",
+   "ein Ventil für etw. (A) sein / brauchen — 是/需要……的发泄渠道",
+   "Sicherheitsventil / Überdruckventil — 安全阀/泄压阀"
+  ],
+  "root": "Vent·il：源自拉丁语 ventus（风）→ 中古拉丁语 ventile（水闸）→“控制流动的装置”",
+  "fam": [
+   "Ventilator",
+   "Ventilation",
+   "ventilieren"
+  ],
+  "ety": "借自中古拉丁语 ventile（水闸，闸门），与拉丁语 ventus（风）有关。",
+  "cog": "英 ventilate；拉 ventus",
+  "tip": "重音在第二音节 venˈtil，v 读 [v]，不读 [f]。"
+ },
+ {
+  "w": "verabreichen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈʔapʁaɪ̯çn̩",
+  "lvl": "C1",
+  "forms": "verabreicht · verabreichte · hat verabreicht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "给（药），施用（药物、疫苗等）",
+    "de": "(ein Medikament) geben, verordnen",
+    "ex": [
+     {
+      "de": "Dem Patienten wurde ein starkes Schmerzmittel verabreicht.",
+      "zh": "给病人用了一种强效止痛药。"
+     },
+     {
+      "de": "Der Impfstoff wird in zwei Dosen verabreicht.",
+      "zh": "疫苗分两剂接种。"
+     }
+    ]
+   },
+   {
+    "zh": "（戏谑）给予（打击等）",
+    "de": "(scherzhaft) erteilen, zukommen lassen",
+    "ex": [
+     {
+      "de": "Er verabreichte ihm eine Ohrfeige.",
+      "zh": "他赏了对方一记耳光。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. etw. (A) verabreichen — 给某人服用/注射某物",
+   "ein Medikament oral / intravenös verabreichen — 口服/静脉给药",
+   "医疗文本中多用被动：wird verabreicht"
+  ],
+  "root": "ver·ab·reich·en：ver-（完成，转交）+ ab-（离开）+ reichen（递，伸手给）→“递出去给人” → 给药",
+  "fam": [
+   "reichen",
+   "Verabreichung",
+   "überreichen",
+   "erreichen"
+  ],
+  "ety": "reichen < 中古高地德语 reichen < 古高地德语 reihhen（伸及，递给）。verabreichen 为近代复合构词，原有“分发、给予”义。",
+  "cog": "英 reach",
+  "tip": "虽含 ab，但 verabreichen 不可分：verabreicht（不是 *verabgereicht）。日常说“吃药”用 einnehmen，verabreichen 是医护人员“给药”。"
+ },
+ {
+  "w": "verbuchen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈbuːxn̩",
+  "lvl": "C1",
+  "forms": "verbucht · verbuchte · hat verbucht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "记账，入账，登记",
+    "de": "in die Bücher eintragen, buchen",
+    "ex": [
+     {
+      "de": "Die Zahlung wurde noch nicht auf Ihrem Konto verbucht.",
+      "zh": "该笔款项尚未记入您的账户。"
+     }
+    ]
+   },
+   {
+    "zh": "取得，获得（成绩、收益）；把……算作",
+    "de": "(einen Erfolg o. Ä.) erzielen; als etw. werten",
+    "ex": [
+     {
+      "de": "Das Unternehmen konnte im dritten Quartal einen Rekordgewinn verbuchen.",
+      "zh": "公司第三季度取得了创纪录的利润。"
+     },
+     {
+      "de": "Die Opposition verbuchte das Ergebnis als Erfolg.",
+      "zh": "反对党把这一结果视为一次胜利。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. auf ein Konto verbuchen — 把某款记入某账户",
+   "einen Erfolg / Gewinne / Verluste verbuchen — 取得成功/获利/出现亏损",
+   "etw. als Erfolg / Niederlage verbuchen — 把某事算作成功/失败",
+   "etw. für sich verbuchen — 把某事记在自己功劳簿上"
+  ],
+  "root": "ver·buch·en：ver-（使完成）+ buchen（登记入账）< Buch（账簿）→“记入账簿”，引申为“记下一笔成绩”",
+  "fam": [
+   "buchen",
+   "Buchung",
+   "Buchhaltung",
+   "Buch"
+  ],
+  "ety": "Buch < 中古高地德语 buoch < 古高地德语 buoh；一般认为与 Buche（山毛榉）有关（古代刻字于山毛榉木板），此说未完全定论。",
+  "cog": "英 book",
+  "tip": "新闻经济报道高频：Gewinne / Zuwächse verbuchen。不要和 buchen（预订）混淆：eine Reise buchen（订旅行），不说 *verbuchen。"
+ },
+ {
+  "w": "verfassungswidrig",
+  "pos": "adj",
+  "ipa": "fɛɐ̯ˈfasʊŋsviːdʁɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "违宪的",
+    "de": "gegen die Verfassung verstoßend",
+    "ex": [
+     {
+      "de": "Das Bundesverfassungsgericht erklärte das Gesetz für verfassungswidrig.",
+      "zh": "联邦宪法法院宣布该法律违宪。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. für verfassungswidrig erklären — 宣布某事违宪",
+   "eine verfassungswidrige Partei — 违宪政党（可被禁止）",
+   "反义：verfassungskonform / verfassungsgemäß — 合宪的"
+  ],
+  "root": "Verfass·ung·s·widr·ig：Verfassung（宪法）+ 连接音 -s- + widrig（违背的，< wider“反对”）→“违背宪法的”",
+  "fam": [
+   "Verfassung",
+   "Verfassungsgericht",
+   "widrig",
+   "rechtswidrig",
+   "verfassungsfeindlich"
+  ],
+  "ety": "Verfassung 派生自 verfassen（拟定，起草）；widrig < 中古高地德语 widerec，源自 wider（对着，反对）。",
+  "cog": "英 with（古义“对抗”，与 wider 同源）",
+  "tip": "verfassungswidrig 是法律判定（违宪）；verfassungsfeindlich 指“敌视宪法秩序的”（政治立场），两者不同。"
+ },
+ {
+  "w": "Vergeltung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Vergeltungen",
+  "gs": "der Vergeltung",
+  "ipa": "fɛɐ̯ˈɡɛltʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "报复，报仇",
+    "de": "Rache, Bestrafung für ein Unrecht",
+    "ex": [
+     {
+      "de": "Die Regierung kündigte Vergeltung für den Angriff an.",
+      "zh": "政府宣布将对此次袭击进行报复。"
+     },
+     {
+      "de": "Aus Angst vor Vergeltung schwiegen die Zeugen.",
+      "zh": "证人们因害怕遭到报复而保持沉默。"
+     }
+    ]
+   },
+   {
+    "zh": "（雅）报答，回报",
+    "de": "(gehoben) Lohn, Belohnung",
+    "ex": [
+     {
+      "de": "Er erwartete keine Vergeltung für seine Hilfe.",
+      "zh": "他帮忙并不图回报。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Vergeltung üben (an jdm.) — （对某人）进行报复",
+   "als Vergeltung für etw. (A) — 作为对……的报复",
+   "Vergeltungsschlag / Vergeltungsmaßnahme — 报复性打击/报复措施"
+  ],
+  "root": "ver·gelt·ung：ver- + gelten（古义“偿付”）→ vergelten（回报，以……还……）+ -ung →“偿还” → 报复/报答",
+  "fam": [
+   "vergelten",
+   "gelten",
+   "Geld",
+   "Entgelt"
+  ],
+  "ety": "vergelten < 中古高地德语 vergelten；gelten < 古高地德语 geltan（偿付，献祭），Geld 同源。",
+  "cog": "英 yield（古英语 gieldan“偿付”）",
+  "tip": "vergelten 强变化：vergilt · vergalt · hat vergolten。谚语：Gleiches mit Gleichem vergelten（以牙还牙）。"
+ },
+ {
+  "w": "violett",
+  "pos": "adj",
+  "ipa": "viˈolɛt",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "紫色的，紫罗兰色的",
+    "de": "von der Farbe des Veilchens, zwischen Blau und Rot",
+    "ex": [
+     {
+      "de": "Am Abend färbte sich der Himmel violett.",
+      "zh": "傍晚天空染成了紫色。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein violettes Kleid — 一条紫色连衣裙（violett 可正常变格）",
+   "das Violett（名词，中性）— 紫色",
+   "ultraviolett — 紫外的"
+  ],
+  "root": "viol·ett：法语 violette（紫罗兰）< 拉丁语 viola（堇菜）+ 指小后缀 -ette →“紫罗兰的颜色”",
+  "fam": [
+   "Violett",
+   "ultraviolett",
+   "Viola",
+   "Veilchen"
+  ],
+  "ety": "借自法语 violet（紫色的），源于 violette（紫罗兰）< 拉丁语 viola。",
+  "cog": "英 violet；法 violet",
+  "tip": "violett 是书面/标准说法，lila 更口语；lila 在规范语中不变格（ein lila Kleid），violett 要变格（ein violettes Kleid）。"
+ },
+ {
+  "w": "Vollidiot",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Vollidioten",
+  "gs": "des Vollidioten",
+  "ipa": "ˈfɔlʔidi̯oːt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（粗，骂人话）十足的白痴，大傻瓜",
+    "de": "(derb, abwertend) völlig dummer Mensch",
+    "ex": [
+     {
+      "de": "Ich habe mich wie ein Vollidiot benommen.",
+      "zh": "我当时表现得像个十足的傻瓜。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化名词：den/dem/des Vollidioten",
+   "sich wie ein Vollidiot fühlen / benehmen — 觉得自己/表现得像个大傻瓜",
+   "属粗俗用语，当面称呼他人可构成侮辱（Beleidigung）"
+  ],
+  "root": "Voll·idiot：voll（满的，完全的）+ Idiot（白痴）→“彻头彻尾的白痴”",
+  "fam": [
+   "Idiot",
+   "idiotisch",
+   "Idiotie",
+   "voll"
+  ],
+  "ety": "Idiot 经拉丁语 idiota 借自希腊语 idiṓtēs（平民，外行，原指不担任公职的私人）。",
+  "cog": "英 idiot；希 idiṓtēs",
+  "tip": "voll- 作前缀表“完全”（Vollzeit, Vollmond）；口语中 Voll- 也加在骂人话前加强语气。正式场合避免使用。"
+ },
+ {
+  "w": "Vollmond",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Vollmonde",
+  "gs": "des Vollmond(e)s",
+  "ipa": "ˈfɔlmoːnt",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "满月",
+    "de": "Mond, der als volle runde Scheibe zu sehen ist",
+    "ex": [
+     {
+      "de": "Heute Nacht ist Vollmond.",
+      "zh": "今晚是满月。"
+     },
+     {
+      "de": "Bei Vollmond schlafen manche Menschen schlechter.",
+      "zh": "满月时有些人睡得不好。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "es ist Vollmond / wir haben Vollmond — 今天是满月",
+   "bei Vollmond — 在满月时",
+   "反义：Neumond（新月）；zunehmender / abnehmender Mond（上弦/下弦）"
+  ],
+  "root": "Voll·mond：voll（满的）+ Mond（月亮）→“满月”",
+  "fam": [
+   "Mond",
+   "Neumond",
+   "Halbmond",
+   "Monat"
+  ],
+  "ety": "Mond < 中古高地德语 māne, mānde < 古高地德语 māno < 原始日耳曼语 *mēnô；Monat 同源。",
+  "cog": "英 full moon, month",
+  "tip": "“今天是满月”说 Heute ist Vollmond，不加冠词。"
+ },
+ {
+  "w": "vormals",
+  "pos": "adv",
+  "ipa": "ˈfoːɐ̯maːls",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（书面）从前，以前；原为（常用于机构、公司旧称）",
+    "de": "früher, ehemals",
+    "ex": [
+     {
+      "de": "Das Museum befindet sich im vormals königlichen Schloss.",
+      "zh": "博物馆位于昔日的王室宫殿内。"
+     },
+     {
+      "de": "Die Firma Meier AG, vormals Müller & Söhne, wurde 1890 gegründet.",
+      "zh": "迈尔股份公司（原名米勒父子公司）成立于1890年。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "公司/机构名中“原……”，缩写 vorm.",
+   "形容词 vormalig：der vormalige Präsident — 前总统",
+   "近义：ehemals, früher, einst"
+  ],
+  "root": "vor·mal·s：vor（之前）+ Mal（次，时）+ 副词后缀 -s →“前一个时候”",
+  "fam": [
+   "vormalig",
+   "ehemals",
+   "damals",
+   "niemals",
+   "Mal"
+  ],
+  "ety": "由 vor + Mal 加副词性属格词尾 -s 构成；Mal < 古高地德语 māl（时间点，标记）。",
+  "cog": "英 meal（古义“规定的时刻”，与 Mal 同源）",
+  "tip": "vormals 比 früher 书面；修饰形容词时直接放前面：die vormals staatliche Post。"
+ },
+ {
+  "w": "Votum",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Voten / Vota",
+  "gs": "des Votums",
+  "ipa": "ˈvoːtʊm",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "表决结果，投票；（选民的）意志表达",
+    "de": "Entscheidung durch Abstimmung; Stimme",
+    "ex": [
+     {
+      "de": "Das Votum der Mitglieder fiel eindeutig aus.",
+      "zh": "成员们的表决结果十分明确。"
+     },
+     {
+      "de": "Die Wahl gilt als klares Votum gegen die Regierung.",
+      "zh": "这次选举被视为对政府的明确否定。"
+     }
+    ]
+   },
+   {
+    "zh": "（专家、机构的）意见，鉴定意见",
+    "de": "Stellungnahme, Gutachten",
+    "ex": [
+     {
+      "de": "Der Ausschuss gab ein positives Votum zu dem Antrag ab.",
+      "zh": "委员会对该提案出具了赞成意见。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Votum abgeben — 表态，投票",
+   "ein klares Votum für / gegen etw. (A) — 对……明确支持/反对",
+   "Mitgliedervotum — 党员投票"
+  ],
+  "root": "Vot·um：拉丁语 votum（誓愿，愿望），源自 vovere（立誓）→ 中世纪起引申为“（表决时的）意见、票”",
+  "fam": [
+   "votieren",
+   "Votivbild"
+  ],
+  "ety": "借自拉丁语 vōtum（誓约，愿望），中世纪拉丁语引申出“意见、投票”义。",
+  "cog": "英 vote, vow；拉 votum",
+  "tip": "复数 Voten 与 Vota 都可用。“选票”的具体纸张是 Stimmzettel，“一票”常说 Stimme；Votum 指整体意见或表决结果。"
+ },
+ {
+  "w": "Wehrpflicht",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Wehrpflicht",
+  "ipa": "ˈveːɐ̯p͡flɪçt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "兵役义务，义务兵役制",
+    "de": "gesetzliche Pflicht, Militärdienst zu leisten",
+    "ex": [
+     {
+      "de": "In Deutschland wurde die Wehrpflicht 2011 ausgesetzt.",
+      "zh": "德国于2011年暂停了义务兵役制。"
+     },
+     {
+      "de": "Die Debatte über eine Rückkehr zur Wehrpflicht ist neu entbrannt.",
+      "zh": "关于恢复义务兵役制的讨论再度升温。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die allgemeine Wehrpflicht — 普遍义务兵役制",
+   "die Wehrpflicht aussetzen / abschaffen / wieder einführen — 暂停/废除/恢复义务兵役",
+   "wehrpflichtig — 有服兵役义务的；der Wehrpflichtige — 适龄应征者"
+  ],
+  "root": "Wehr·pflicht：Wehr（防御，军备）+ Pflicht（义务）→“保卫国家的义务”",
+  "fam": [
+   "Wehrdienst",
+   "Bundeswehr",
+   "wehren",
+   "Pflicht",
+   "verpflichten"
+  ],
+  "ety": "Wehr < 古高地德语 werī（防御）；Pflicht < 中古高地德语 pfliht < 古高地德语 pfliht（照料，责任）。",
+  "cog": "英 plight（与 Pflicht 同源，义已分化）",
+  "tip": "德国的 Wehrpflicht 法律上是“暂停”（ausgesetzt），并未从基本法中删除；Wehrdienst 指实际服的兵役。"
+ },
+ {
+  "w": "Weingut",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Weingüter",
+  "gs": "des Weingut(e)s",
+  "ipa": "ˈvaɪ̯nɡuːt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "葡萄酒庄，酿酒葡萄园",
+    "de": "landwirtschaftlicher Betrieb, der Wein anbaut und herstellt",
+    "ex": [
+     {
+      "de": "Das Weingut ist seit vier Generationen in Familienbesitz.",
+      "zh": "这座酒庄四代以来一直为家族所有。"
+     },
+     {
+      "de": "Viele Weingüter an der Mosel bieten Weinproben an.",
+      "zh": "摩泽尔河畔许多酒庄提供品酒活动。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Weingut besichtigen / führen — 参观/经营酒庄",
+   "auf einem Weingut arbeiten — 在酒庄工作",
+   "相关：Winzer（酿酒葡萄种植者），Weinberg（葡萄山）"
+  ],
+  "root": "Wein·gut：Wein（葡萄酒）+ Gut（庄园，地产）→“葡萄酒庄园”",
+  "fam": [
+   "Wein",
+   "Winzer",
+   "Gut",
+   "Landgut",
+   "Weinberg"
+  ],
+  "ety": "Wein < 古高地德语 wīn，很早从拉丁语 vīnum 借入日耳曼语；Gut < 古高地德语 guot（好的；财物）。",
+  "cog": "英 wine, good；拉 vinum",
+  "tip": "Gut 作“庄园”义时复数是 Güter：Weingüter, Landgüter。"
+ },
+ {
+  "w": "Windel",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Windeln",
+  "gs": "der Windel",
+  "ipa": "ˈvɪndl̩",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "尿布，纸尿裤",
+    "de": "Tuch oder Höschen aus saugfähigem Material für Säuglinge",
+    "ex": [
+     {
+      "de": "Kannst du dem Baby bitte die Windel wechseln?",
+      "zh": "你能给宝宝换一下尿布吗？"
+     },
+     {
+      "de": "Wegwerfwindeln verursachen viel Müll.",
+      "zh": "一次性纸尿裤会产生大量垃圾。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Windeln wechseln — 换尿布",
+   "noch in den Windeln liegen / stecken — （事物）尚处于萌芽阶段",
+   "动词 windeln（少用）= wickeln：ein Baby windeln — 给婴儿包尿布"
+  ],
+  "root": "Wind·el：winden（缠绕）+ 指小/工具后缀 -el →“缠裹用的布”",
+  "fam": [
+   "winden",
+   "wickeln",
+   "Wickeltisch",
+   "Stoffwindel"
+  ],
+  "ety": "中古高地德语 windel < 古高地德语 windila，派生自 winden（缠，绕）。",
+  "cog": "英 wind（缠绕）",
+  "tip": "日常说“给孩子换尿布”多说 wickeln（den Säugling wickeln）。比喻用法：Die Technik steckt noch in den Windeln（这项技术还在起步阶段）。"
+ },
+ {
+  "w": "wohingegen",
+  "pos": "konj",
+  "ipa": "voːhɪnˈɡeːɡn̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（从属连词）而，然而（表对比）",
+    "de": "während dagegen; leitet einen Gegensatz ein",
+    "ex": [
+     {
+      "de": "Im Norden regnete es, wohingegen der Süden sonnig blieb.",
+      "zh": "北方下雨，而南方依旧阳光明媚。"
+     },
+     {
+      "de": "Er spricht fließend Französisch, wohingegen sein Bruder kaum ein Wort versteht.",
+      "zh": "他法语说得很流利，而他弟弟几乎一个词也听不懂。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "引导从句，动词位于句末：..., wohingegen X kaum Y hat.",
+   "主句在前，从句在后，前面用逗号",
+   "近义：während（对比义）, wogegen；并列连词 aber / jedoch 不改变语序"
+  ],
+  "root": "wo·hin·gegen：wo（关系/疑问成分）+ hingegen（相反）→“与之相反的是”",
+  "fam": [
+   "hingegen",
+   "wogegen",
+   "dagegen",
+   "gegen"
+  ],
+  "ety": "由 wo 与 hingegen 复合而成；gegen < 古高地德语 gagan, gegin（对着）。",
+  "cog": "英 again, against（与 gegen 同源）",
+  "tip": "wohingegen 是从属连词（动词放末尾）；hingegen 是副词（可占第一位，后接动词：Der Süden hingegen blieb sonnig）。"
+ },
+ {
+  "w": "wählbar",
+  "pos": "adj",
+  "ipa": "ˈvɛːlbaːɐ̯",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "有被选举资格的",
+    "de": "berechtigt, gewählt zu werden",
+    "ex": [
+     {
+      "de": "Wählbar ist, wer das 18. Lebensjahr vollendet hat.",
+      "zh": "年满18周岁者具有被选举资格。"
+     }
+    ]
+   },
+   {
+    "zh": "可选择的，可选的",
+    "de": "auswählbar",
+    "ex": [
+     {
+      "de": "Die Sprache ist im Menü frei wählbar.",
+      "zh": "语言可在菜单中自由选择。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in ein Amt wählbar sein — 可当选某职",
+   "frei wählbar — 可自由选择",
+   "相关：passives Wahlrecht（被选举权）↔ aktives Wahlrecht（选举权）"
+  ],
+  "root": "wähl·bar：wählen（选择，选举）+ -bar（能……的）→“能被选的”",
+  "fam": [
+   "wählen",
+   "Wahl",
+   "Wähler",
+   "auswählen",
+   "Wahlrecht"
+  ],
+  "ety": "wählen < 中古高地德语 wel(e)n < 古高地德语 wellen（选择）；一般认为与 wollen（想要）同源。",
+  "cog": "英 will（与 wollen 同源）",
+  "tip": "wählbar 表示“可被选”（被动），不是“能投票的”；有投票权说 wahlberechtigt。"
+ },
+ {
+  "w": "Zeitlang",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "—",
+  "ipa": "ˈt͡saɪ̯tlaŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（仅用于 eine Zeitlang）一段时间，一阵子",
+    "de": "nur in: eine Zeitlang = eine gewisse Zeit",
+    "ex": [
+     {
+      "de": "Ich habe eine Zeitlang in Wien gewohnt.",
+      "zh": "我曾在维也纳住过一段时间。"
+     },
+     {
+      "de": "Es dauerte eine Zeitlang, bis sich alle an die neuen Regeln gewöhnt hatten.",
+      "zh": "大家花了一段时间才适应新规则。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "只用于 eine Zeitlang（作时间状语，第四格）",
+   "也可分写：eine Zeit lang（两种写法均正确）",
+   "近义：eine Weile, einige Zeit"
+  ],
+  "root": "Zeit·lang：Zeit（时间）+ lang（长）→ eine Zeit lang“一段时间长”→ 一阵子",
+  "fam": [
+   "Zeit",
+   "lang",
+   "jahrelang",
+   "stundenlang",
+   "Weile"
+  ],
+  "ety": "由短语 eine Zeit lang 合写而成；Zeit < 古高地德语 zīt（时间，时段）。",
+  "cog": "英 tide, time（与 Zeit 同源）",
+  "tip": "不能单用 Zeitlang，也没有其他格变化；表示“很长一段时间”说 eine ganze Zeitlang / lange Zeit。"
+ },
+ {
+  "w": "zärtlich",
+  "pos": "adj",
+  "ipa": "ˈt͡sɛːɐ̯tlɪç",
+  "lvl": "B2",
+  "forms": "zärtlicher · am zärtlichsten",
+  "senses": [
+   {
+    "zh": "温柔的，柔情的，充满爱意的",
+    "de": "liebevoll und sanft",
+    "ex": [
+     {
+      "de": "Sie strich ihm zärtlich über das Haar.",
+      "zh": "她温柔地抚摸他的头发。"
+     },
+     {
+      "de": "Er schrieb ihr einen zärtlichen Brief.",
+      "zh": "他给她写了一封柔情的信。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zärtlich zu jdm. sein — 对某人温柔",
+   "jdn. zärtlich küssen / umarmen — 温柔地亲吻/拥抱某人",
+   "名词 Zärtlichkeit：常指爱抚、亲昵举动（多用复数 Zärtlichkeiten austauschen）"
+  ],
+  "root": "zärt·lich：zart（柔嫩的，娇柔的）+ -lich（形容词后缀，a→ä）→“柔情的”",
+  "fam": [
+   "zart",
+   "Zärtlichkeit",
+   "zartfühlend"
+  ],
+  "ety": "zart < 中古高地德语、古高地德语 zart（亲爱的，柔嫩的），更早的来源不详。",
+  "cog": "—",
+  "tip": "zärtlich 用于人际情感（爱抚、语气），zart 用于质地、外形（zartes Fleisch, zarte Haut）。"
+ },
+ {
+  "w": "übersichtlich",
+  "pos": "adj",
+  "ipa": "ˈyːbɐzɪçtlɪç",
+  "lvl": "B2",
+  "forms": "übersichtlicher · am übersichtlichsten",
+  "senses": [
+   {
+    "zh": "一目了然的，清晰明了的，条理分明的",
+    "de": "leicht zu überblicken, klar gegliedert",
+    "ex": [
+     {
+      "de": "Die neue Website ist deutlich übersichtlicher.",
+      "zh": "新网站明显更清晰易用了。"
+     },
+     {
+      "de": "Die Ergebnisse sind in einer übersichtlichen Tabelle zusammengefasst.",
+      "zh": "结果汇总在一张一目了然的表格中。"
+     }
+    ]
+   },
+   {
+    "zh": "（地形）视野开阔的；（数量）不多的",
+    "de": "gut zu überschauen; (scherzhaft) gering",
+    "ex": [
+     {
+      "de": "Die Zahl der Besucher war eher übersichtlich.",
+      "zh": "来访者人数不算多。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. übersichtlich darstellen / gestalten — 清晰地呈现/设计某物",
+   "eine übersichtliche Kreuzung — 视野开阔的路口",
+   "口语委婉：überschaubar / übersichtlich = 少得可怜"
+  ],
+  "root": "über·sicht·lich：über（在上方）+ Sicht（视野）→ Übersicht（概览）+ -lich →“能一眼看全的”",
+  "fam": [
+   "Übersicht",
+   "überblicken",
+   "Sicht",
+   "sehen",
+   "unübersichtlich"
+  ],
+  "ety": "Sicht < 中古高地德语 siht，派生自 sehen（看）。",
+  "cog": "英 sight（与 Sicht 同源）",
+  "tip": "重音在首音节 ˈüber-。反义 unübersichtlich（杂乱、看不清的），如 eine unübersichtliche Lage（局势不明）。"
+ },
+ {
+  "w": "Abnehmer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Abnehmer",
+  "gs": "des Abnehmers",
+  "ipa": "ˈapneːmɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "买主，采购方，客户",
+    "de": "Käufer, Kunde (bes. im Handel)",
+    "ex": [
+     {
+      "de": "China ist der wichtigste Abnehmer deutscher Autos.",
+      "zh": "中国是德国汽车最重要的买家。"
+     },
+     {
+      "de": "Für die alten Maschinen fand sich kein Abnehmer.",
+      "zh": "这些旧机器找不到买主。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Abnehmer für etw. (A) finden — 为某物找到买主",
+   "Hauptabnehmer / Großabnehmer — 主要客户/大宗买家",
+   "阴性：Abnehmerin"
+  ],
+  "root": "Ab·nehm·er：abnehmen（接过，买下）+ -er（施动者）→“把货接走的人” → 买方",
+  "fam": [
+   "abnehmen",
+   "Abnahme",
+   "nehmen",
+   "Unternehmen"
+  ],
+  "ety": "派生自 abnehmen；nehmen < 古高地德语 neman。",
+  "cog": "英 nimble（古英语 niman“拿”，与 nehmen 同源）",
+  "tip": "Abnehmer 多用于贸易、企业层面（批量购买）；零售顾客一般说 Kunde。"
+ },
+ {
+  "w": "Abtei",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Abteien",
+  "gs": "der Abtei",
+  "ipa": "apˈtaɪ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（由修道院院长管辖的）修道院，大修道院",
+    "de": "Kloster, das von einem Abt oder einer Äbtissin geleitet wird",
+    "ex": [
+     {
+      "de": "Die Abtei wurde im 11. Jahrhundert gegründet.",
+      "zh": "这座修道院建于11世纪。"
+     },
+     {
+      "de": "Die Mönche der Abtei brauen bis heute Bier.",
+      "zh": "修道院的修士至今仍在酿造啤酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Benediktinerabtei — 本笃会修道院",
+   "in der Abtei leben — 在修道院生活",
+   "相关：Abt（男修道院长），Äbtissin（女修道院长），Kloster（修道院，泛称）"
+  ],
+  "root": "Abt·ei：Abt（修道院院长）+ -ei（表场所/机构的后缀）→“院长管辖之所”",
+  "fam": [
+   "Abt",
+   "Äbtissin",
+   "Kloster"
+  ],
+  "ety": "中古高地德语 abbeteie < 中古拉丁语 abbatia，派生自教会拉丁语 abbas（院长）；abbas 经希腊语源自阿拉米语 abba（父亲）。",
+  "cog": "英 abbey, abbot；拉 abbatia",
+  "tip": "重音在 -tei：apˈtai。Kloster 是泛称，Abtei 特指由 Abt/Äbtissin 领导、地位较高的修道院。"
+ },
+ {
+  "w": "Adel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Adels",
+  "ipa": "ˈaːdl̩",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "贵族（阶层）",
+    "de": "Stand der Adligen, Aristokratie",
+    "ex": [
+     {
+      "de": "Der Adel verlor 1919 in Deutschland seine Privilegien.",
+      "zh": "1919年德国贵族失去了特权。"
+     },
+     {
+      "de": "Sie stammt aus altem Adel.",
+      "zh": "她出身古老的贵族世家。"
+     }
+    ]
+   },
+   {
+    "zh": "（雅）高贵，崇高",
+    "de": "(gehoben) Vornehmheit, edle Gesinnung",
+    "ex": [
+     {
+      "de": "Der Adel seiner Gesinnung beeindruckte alle.",
+      "zh": "他品格之高尚打动了所有人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "dem Adel angehören — 属于贵族阶层",
+   "von Adel sein — 出身贵族",
+   "der Hochadel / niedere Adel — 高级/低级贵族",
+   "形容词 adlig / adelig；动词 adeln（封为贵族；使高尚）"
+  ],
+  "root": "Adel：古高地德语 adal（家族，世系）→“出身名门”→ 贵族",
+  "fam": [
+   "adlig",
+   "adeln",
+   "edel",
+   "Adlige"
+  ],
+  "ety": "中古高地德语 adel < 古高地德语 adal（家族，高贵出身）；edel（高贵的）同源。",
+  "cog": "古英语 æþele（高贵的），见于人名 Æthelred",
+  "tip": "Adel 是集合名词（贵族阶层），个人说 der/die Adlige。德国1919年废除贵族特权，“von”成为姓氏的一部分。"
+ },
+ {
+  "w": "Akustik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Akustik",
+  "ipa": "aˈkʊstɪk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "音响效果，音质（指场所）",
+    "de": "Klangwirkung eines Raumes",
+    "ex": [
+     {
+      "de": "Der Saal hat eine hervorragende Akustik.",
+      "zh": "这个大厅的音响效果极佳。"
+     }
+    ]
+   },
+   {
+    "zh": "声学",
+    "de": "Lehre vom Schall",
+    "ex": [
+     {
+      "de": "Sie hat sich in ihrer Doktorarbeit mit Akustik beschäftigt.",
+      "zh": "她的博士论文研究声学。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine gute / schlechte Akustik haben — 音响效果好/差",
+   "Raumakustik — 室内声学",
+   "形容词 akustisch：akustische Gitarre（原声吉他），etw. akustisch nicht verstehen（没听清）"
+  ],
+  "root": "Akust·ik：希腊语 akoúein（听）→ akoustikós（听觉的）+ -ik（学科后缀）→“关于听的学问”",
+  "fam": [
+   "akustisch",
+   "Akustiker"
+  ],
+  "ety": "近代借词，源于希腊语 akoustikós（与听有关的），akoúein（听）。",
+  "cog": "英 acoustics；希 akoúein",
+  "tip": "Ich habe Sie akustisch nicht verstanden（我没听清您说的）是常见礼貌说法，指“声音上没听清”，而非没理解内容。"
+ },
+ {
+  "w": "Alleingang",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Alleingänge",
+  "gs": "des Alleingang(e)s",
+  "ipa": "aˈlaɪ̯nɡaŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "单独行动，单干；擅自行动",
+    "de": "Handeln ohne Absprache mit anderen",
+    "ex": [
+     {
+      "de": "Der Minister wurde für seinen Alleingang scharf kritisiert.",
+      "zh": "部长因擅自行动受到严厉批评。"
+     },
+     {
+      "de": "Einen nationalen Alleingang in der Klimapolitik lehnt die Regierung ab.",
+      "zh": "政府反对在气候政策上一国单干。"
+     }
+    ]
+   },
+   {
+    "zh": "（体育）单刀突破，个人突破",
+    "de": "(Sport) Aktion eines einzelnen Spielers",
+    "ex": [
+     {
+      "de": "Nach einem Alleingang über das halbe Feld traf er zum 1:0.",
+      "zh": "他带球突破半场后打进一球，1比0。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. im Alleingang tun / schaffen — 独自完成某事",
+   "ein nationaler Alleingang — 一国单独行动（欧盟语境常见）",
+   "einen Alleingang wagen — 冒险单干"
+  ],
+  "root": "Allein·gang：allein（独自）+ Gang（行走，行动）→“独自走的路” → 单独行动",
+  "fam": [
+   "allein",
+   "Gang",
+   "gehen",
+   "Eingang"
+  ],
+  "ety": "由 allein 与 Gang 复合；allein < 中古高地德语 al ein（完全独自）。",
+  "cog": "英 alone（all + one，构词与 allein 平行）",
+  "tip": "政治语境中常带贬义（未与伙伴协商）；但 im Alleingang 也可表示赞赏地“凭一己之力”。"
+ },
+ {
+  "w": "Analogie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Analogien",
+  "gs": "der Analogie",
+  "ipa": "analoˈɡiː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "类似，相似；类比",
+    "de": "Ähnlichkeit, Entsprechung; Vergleich aufgrund von Ähnlichkeit",
+    "ex": [
+     {
+      "de": "Zwischen beiden Krisen gibt es auffällige Analogien.",
+      "zh": "两次危机之间有明显的相似之处。"
+     },
+     {
+      "de": "In Analogie zum Strommarkt soll auch der Gasmarkt reformiert werden.",
+      "zh": "天然气市场也将仿照电力市场进行改革。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Analogie ziehen (zwischen ... und ...) — 在……之间作类比",
+   "in Analogie zu etw. (D) — 仿照……，类比于……",
+   "Analogieschluss — 类推，类比推理",
+   "形容词 analog：类似的；模拟的（↔ digital）"
+  ],
+  "root": "Ana·log·ie：希腊语 ana-（按照）+ lógos（比例，道理）→ analogía（比例相称）+ -ie →“按比例对应” → 类比",
+  "fam": [
+   "analog",
+   "Logik",
+   "Dialog"
+  ],
+  "ety": "经拉丁语 analogia 借自希腊语 analogía（比例，相称）。",
+  "cog": "英 analogy；希 analogía",
+  "tip": "复数读 -ˈgiːən。analog 有两义：“类似的”和“模拟的、非数字的”（analoge Fotografie）。"
+ },
+ {
+  "w": "anrechnen",
+  "pos": "v",
+  "ipa": "ˈanʁɛçnən",
+  "lvl": "C1",
+  "forms": "rechnet an · rechnete an · hat angerechnet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "计入，折算，抵扣",
+    "de": "bei einer Berechnung berücksichtigen",
+    "ex": [
+     {
+      "de": "Die Studienzeit im Ausland wird auf das Studium angerechnet.",
+      "zh": "在国外学习的时间可计入学业。"
+     },
+     {
+      "de": "Die Anzahlung wird auf den Kaufpreis angerechnet.",
+      "zh": "定金将从购价中扣除。"
+     }
+    ]
+   },
+   {
+    "zh": "（给某人）记账，收费",
+    "de": "jdm. etw. in Rechnung stellen",
+    "ex": [
+     {
+      "de": "Die Werkstatt hat uns die Ersatzteile nicht angerechnet.",
+      "zh": "修车厂没有向我们收零件费。"
+     }
+    ]
+   },
+   {
+    "zh": "（对某人的行为）给予评价，记在某人名下",
+    "de": "jdm. etw. als Verdienst oder Schuld zurechnen",
+    "ex": [
+     {
+      "de": "Ich rechne Ihnen Ihre Hilfe hoch an.",
+      "zh": "我非常感激/看重您的帮助。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. auf etw. (A) anrechnen — 把某事计入/抵扣某事",
+   "jdm. etw. (A) anrechnen — 向某人收取某费用",
+   "jdm. etw. hoch anrechnen — 高度评价/非常感激某人某事",
+   "sich (D) etw. als Verdienst anrechnen — 把某事算作自己的功劳"
+  ],
+  "root": "an·rechn·en：an-（附加到……上）+ rechnen（计算）→“算到某物上去” → 计入、记在名下",
+  "fam": [
+   "rechnen",
+   "Anrechnung",
+   "Rechnung",
+   "berechnen"
+  ],
+  "ety": "rechnen < 中古高地德语 rechenen < 古高地德语 rehhanōn（计算，整理）。",
+  "cog": "英 reckon",
+  "tip": "jdm. etw. hoch anrechnen 是固定说法，表示感激/赞赏，常见于正式感谢。注意第三格人、第四格物。"
+ },
+ {
+  "w": "Anschrift",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Anschriften",
+  "gs": "der Anschrift",
+  "ipa": "ˈanʃʁɪft",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（邮政）地址，通讯地址",
+    "de": "Adresse (Straße, Ort usw.)",
+    "ex": [
+     {
+      "de": "Bitte geben Sie Ihre vollständige Anschrift an.",
+      "zh": "请填写您的完整地址。"
+     },
+     {
+      "de": "Die Rechnung wurde an eine falsche Anschrift geschickt.",
+      "zh": "账单被寄到了错误的地址。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Anschrift angeben / ändern — 填写/更改地址",
+   "unter folgender Anschrift — 按以下地址",
+   "近义：Adresse（更常用）；Wohnanschrift / Postanschrift"
+  ],
+  "root": "An·schrift：an-（在……上）+ Schrift（书写）→“写在（信封）上的字” → 地址",
+  "fam": [
+   "Schrift",
+   "schreiben",
+   "Unterschrift",
+   "Inschrift",
+   "Zuschrift"
+  ],
+  "ety": "Schrift < 古高地德语 scrift，派生自 scrīban（写），后者借自拉丁语 scrībere。",
+  "cog": "英 script；拉 scribere",
+  "tip": "Anschrift 多见于表格、公文；口语说 Adresse。电子邮箱地址只说 E-Mail-Adresse，不说 *E-Mail-Anschrift。"
+ },
+ {
+  "w": "Anwender",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Anwender",
+  "gs": "des Anwenders",
+  "ipa": "ˈanvɛndɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "用户，使用者（尤指软件、技术）",
+    "de": "Benutzer (bes. von Software oder Technik)",
+    "ex": [
+     {
+      "de": "Die Software richtet sich an Anwender ohne Programmierkenntnisse.",
+      "zh": "这款软件面向没有编程知识的用户。"
+     },
+     {
+      "de": "Viele Anwender beschwerten sich über das Update.",
+      "zh": "许多用户抱怨此次更新。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "anwenderfreundlich — 易用的，用户友好的",
+   "Endanwender — 终端用户",
+   "阴性：Anwenderin；近义：Nutzer, Benutzer, User"
+  ],
+  "root": "An·wend·er：anwenden（应用，使用）+ -er（施动者）→“应用（某技术）的人”",
+  "fam": [
+   "anwenden",
+   "Anwendung",
+   "wenden",
+   "verwenden"
+  ],
+  "ety": "派生自 anwenden；wenden < 古高地德语 wenten（使转动），是 winden 的使役形式。",
+  "cog": "英 wend, went（与 wenden 同源）",
+  "tip": "anwenden 的过去时/完成时有两套：wandte an / wendete an，hat angewandt / angewendet。"
+ },
+ {
+  "w": "Arbeitsstelle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Arbeitsstellen",
+  "gs": "der Arbeitsstelle",
+  "ipa": "ˈaʁbaɪ̯t͡sˌʃtɛlə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "工作岗位，职位",
+    "de": "Arbeitsplatz, Stelle",
+    "ex": [
+     {
+      "de": "Er hat eine neue Arbeitsstelle in München gefunden.",
+      "zh": "他在慕尼黑找到了一份新工作。"
+     }
+    ]
+   },
+   {
+    "zh": "工作地点，单位",
+    "de": "Ort, an dem man arbeitet",
+    "ex": [
+     {
+      "de": "Ihre Arbeitsstelle liegt nur zehn Minuten von der Wohnung entfernt.",
+      "zh": "她的工作单位离家只有十分钟路程。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Arbeitsstelle suchen / finden / verlieren — 找/找到/失去工作",
+   "die Arbeitsstelle wechseln — 换工作",
+   "近义：Arbeitsplatz, Stelle, Job"
+  ],
+  "root": "Arbeit·s·stelle：Arbeit（工作）+ 连接音 -s- + Stelle（位置）→“工作的位置”",
+  "fam": [
+   "Arbeit",
+   "Stelle",
+   "Arbeitsplatz",
+   "Stellenangebot"
+  ],
+  "ety": "Arbeit < 古高地德语 ar(a)beit（辛劳，困苦）；Stelle < 中古高地德语 stelle。",
+  "cog": "—",
+  "tip": "注意中间两个 s：Arbeit-s-stelle。Arbeitsplatz 也可指具体的工位，Arbeitsstelle 更偏“职位/单位”。"
+ },
+ {
+  "w": "Asthma",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Asthmas",
+  "ipa": "ˈastma",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "哮喘",
+    "de": "Krankheit mit anfallsweiser Atemnot",
+    "ex": [
+     {
+      "de": "Mein Sohn leidet seit seiner Kindheit an Asthma.",
+      "zh": "我儿子从小就患有哮喘。"
+     },
+     {
+      "de": "Pollen können bei Allergikern Asthma auslösen.",
+      "zh": "花粉可能诱发过敏者的哮喘。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an Asthma leiden / Asthma haben — 患哮喘",
+   "ein Asthmaanfall — 哮喘发作",
+   "Asthmatiker(in) — 哮喘病人；asthmatisch — 哮喘的"
+  ],
+  "root": "Asthma：希腊语 ásthma（喘息，呼吸困难）",
+  "fam": [
+   "Asthmatiker",
+   "asthmatisch",
+   "Asthmaspray"
+  ],
+  "ety": "经拉丁语借自希腊语 ásthma（呼吸急促）。",
+  "cog": "英 asthma；希 ásthma",
+  "tip": "th 读 [t]，不读英语的 [θ]；德语多不发 h 音：[ˈastma]。"
+ },
+ {
+  "w": "Asylant",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Asylanten",
+  "gs": "des Asylanten",
+  "ipa": "azyˈlant",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（常含贬义，已渐被避免）避难者，申请庇护者",
+    "de": "(oft abwertend) jmd., der Asyl beantragt oder erhalten hat",
+    "ex": [
+     {
+      "de": "Der Begriff „Asylant“ wird heute wegen seines abwertenden Klangs meist vermieden.",
+      "zh": "“Asylant”一词因带贬义，如今大多被避免使用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化名词：den/dem/des Asylanten",
+   "中性替代说法：Asylbewerber(in), Asylsuchende, Geflüchtete",
+   "Asyl beantragen / gewähren — 申请/给予庇护"
+  ],
+  "root": "Asyl·ant：Asyl（庇护）+ -ant（表人后缀）→“寻求庇护的人”",
+  "fam": [
+   "Asyl",
+   "Asylbewerber",
+   "Asylrecht",
+   "Asylantrag"
+  ],
+  "ety": "Asyl 经拉丁语 asylum 借自希腊语 ásylon（不可侵犯的避难所，a-“不”+ sylē“掠夺”）；Asylant 为20世纪德语派生词。",
+  "cog": "英 asylum；希 ásylon",
+  "tip": "Asylant 在当代德语中常被视为贬义或带政治色彩，新闻和正式场合推荐用 Asylbewerber 或 Geflüchtete。"
+ },
+ {
+  "w": "auffassen",
+  "pos": "v",
+  "ipa": "ˈaʊ̯fˌfasn̩",
+  "lvl": "C1",
+  "forms": "fasst auf · fasste auf · hat aufgefasst",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "把……理解为，看作",
+    "de": "etw. in bestimmter Weise verstehen, deuten",
+    "ex": [
+     {
+      "de": "Er hat meine Bemerkung als Kritik aufgefasst.",
+      "zh": "他把我的话理解成了批评。"
+     },
+     {
+      "de": "Bitte fassen Sie das nicht falsch auf.",
+      "zh": "请不要误会。"
+     }
+    ]
+   },
+   {
+    "zh": "领会，理解（新知识）",
+    "de": "geistig erfassen, begreifen",
+    "ex": [
+     {
+      "de": "Das Kind fasst sehr schnell auf.",
+      "zh": "这孩子领悟力很强。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. als etw. (A) auffassen — 把某事理解为……",
+   "etw. falsch / richtig auffassen — 误解/正确理解某事",
+   "名词 Auffassung：观点（nach meiner Auffassung；die Auffassung vertreten, dass ...）",
+   "Auffassungsgabe — 理解力"
+  ],
+  "root": "auf·fass·en：auf-（向上，拿起）+ fassen（抓住）→“把（意思）抓起来” → 领会、理解",
+  "fam": [
+   "fassen",
+   "Auffassung",
+   "erfassen",
+   "verfassen",
+   "Fassung"
+  ],
+  "ety": "fassen < 中古高地德语 vaʒʒen < 古高地德语 faʒʒōn（装入，抓住），一般认为与 Fass（桶）有关。",
+  "cog": "英 vat（与 Fass 同源）",
+  "tip": "auffassen 侧重“对含义的解读”，常与 als 连用；verstehen 更泛。名词 Auffassung 在议论文中极常用：Ich bin der Auffassung, dass ...（我认为……）。"
+ },
+ {
+  "w": "ausbeuten",
+  "pos": "v",
+  "ipa": "ˈaʊ̯sˌbɔɪ̯tn̩",
+  "lvl": "C1",
+  "forms": "beutet aus · beutete aus · hat ausgebeutet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "剥削，压榨",
+    "de": "jdn. rücksichtslos für den eigenen Vorteil arbeiten lassen",
+    "ex": [
+     {
+      "de": "In vielen Textilfabriken werden die Arbeiterinnen ausgebeutet.",
+      "zh": "许多纺织厂的女工遭受剥削。"
+     },
+     {
+      "de": "Er fühlt sich von seinem Chef ausgebeutet.",
+      "zh": "他觉得自己被老板压榨了。"
+     }
+    ]
+   },
+   {
+    "zh": "开采（资源）；（充分）利用",
+    "de": "Bodenschätze abbauen; etw. (übermäßig) nutzen",
+    "ex": [
+     {
+      "de": "Die Kolonialmächte beuteten die Rohstoffe der Region aus.",
+      "zh": "殖民列强开采掠夺了该地区的原料。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Arbeitskräfte / die Natur ausbeuten — 剥削劳动力/掠夺自然",
+   "名词 Ausbeutung：剥削；Ausbeuter：剥削者",
+   "中性义“产量、收获”：Ausbeute（eine reiche Ausbeute）"
+  ],
+  "root": "aus·beut·en：aus-（彻底，取尽）+ Beute（战利品，掠获物）→“把（资源、人力）当战利品取尽” → 剥削",
+  "fam": [
+   "Beute",
+   "Ausbeute",
+   "Ausbeutung",
+   "erbeuten"
+  ],
+  "ety": "Beute 于中古德语时期从中低地德语 būte（分配，交换；战利品）借入；ausbeuten 原为矿业用语“开采”。",
+  "cog": "英 booty（经法语 butin，最终源于中低地德语）",
+  "tip": "ausbeuten 对人时是强烈贬义（剥削）；中性表达“充分利用”请用 ausnutzen / nutzen，但 ausnutzen 对人同样含贬义。"
+ },
+ {
+  "w": "Ausmaß",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Ausmaße",
+  "gs": "des Ausmaßes",
+  "ipa": "ˈaʊ̯smaːs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "规模，程度，范围",
+    "de": "Umfang, Größenordnung",
+    "ex": [
+     {
+      "de": "Das Ausmaß der Schäden ist noch nicht absehbar.",
+      "zh": "损失的程度目前尚无法估计。"
+     },
+     {
+      "de": "Die Proteste nahmen ungeahnte Ausmaße an.",
+      "zh": "抗议活动达到了意想不到的规模。"
+     }
+    ]
+   },
+   {
+    "zh": "（多用复数）尺寸，大小",
+    "de": "(meist Plural) Abmessungen",
+    "ex": [
+     {
+      "de": "Ein Schiff dieser Ausmaße passt nicht durch den Kanal.",
+      "zh": "这么大尺寸的船通不过运河。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in großem / geringem Ausmaß — 大/小规模地",
+   "bedrohliche / gewaltige Ausmaße annehmen — 达到令人担忧/巨大的程度",
+   "das volle Ausmaß der Katastrophe — 灾难的全部规模"
+  ],
+  "root": "Aus·maß：aus-（向外，全部）+ Maß（尺度）→“向外量出的尺寸” → 范围、规模",
+  "fam": [
+   "Maß",
+   "messen",
+   "Maßnahme",
+   "ermessen",
+   "maßlos"
+  ],
+  "ety": "Maß < 中古高地德语 māʒe < 古高地德语 māʒa（尺度），与 messen 同源。",
+  "cog": "英 mete（量出，与 messen 同源）",
+  "tip": "瑞士写法 Ausmass（瑞士不用 ß）。“达到……程度”固定用 Ausmaße annehmen（复数）。"
+ },
+ {
+  "w": "baggern",
+  "pos": "v",
+  "ipa": "ˈbaɡɐn",
+  "lvl": "C1",
+  "forms": "baggert · baggerte · hat gebaggert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "用挖掘机挖，疏浚",
+    "de": "mit einem Bagger arbeiten, ausheben",
+    "ex": [
+     {
+      "de": "Seit Wochen wird an der Baustelle gebaggert.",
+      "zh": "工地上几个星期以来一直在挖土。"
+     }
+    ]
+   },
+   {
+    "zh": "（排球）垫球",
+    "de": "(Volleyball) den Ball mit den Unterarmen spielen",
+    "ex": [
+     {
+      "de": "Sie baggerte den Aufschlag sauber zur Zuspielerin.",
+      "zh": "她干净利落地把发球垫给二传手。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语）搭讪，撩（异性）",
+    "de": "(ugs.) flirten, versuchen, jdn. für sich zu gewinnen",
+    "ex": [
+     {
+      "de": "Er baggert den ganzen Abend schon an der Bar.",
+      "zh": "他整晚都在吧台那儿搭讪。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an jdm. baggern / jdn. anbaggern（口语）— 撩某人",
+   "名词 Bagger：挖掘机；Schaufelbagger — 铲斗挖掘机",
+   "排球：baggern（垫球）↔ pritschen（上手传球）"
+  ],
+  "root": "bagger·n：Bagger（挖掘机）+ 动词词尾 -n →“用挖掘机作业”",
+  "fam": [
+   "Bagger",
+   "anbaggern",
+   "ausbaggern",
+   "Baggersee"
+  ],
+  "ety": "Bagger 借自荷兰语 baggermolen（挖泥机），bagger 意为“淤泥”。",
+  "cog": "荷 bagger（淤泥）",
+  "tip": "“搭讪”义更常用可分动词 anbaggern：Er hat sie angebaggert。"
+ },
+ {
+  "w": "Bauarbeiter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Bauarbeiter",
+  "gs": "des Bauarbeiters",
+  "ipa": "ˈbaʊ̯ʔaʁbaɪ̯tɐ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "建筑工人",
+    "de": "jmd., der auf dem Bau arbeitet",
+    "ex": [
+     {
+      "de": "Die Bauarbeiter beginnen schon um sieben Uhr morgens.",
+      "zh": "建筑工人早上七点就开工了。"
+     },
+     {
+      "de": "Auf der Baustelle fehlen qualifizierte Bauarbeiter.",
+      "zh": "工地上缺少合格的建筑工人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf dem Bau arbeiten — 在工地干活",
+   "阴性：Bauarbeiterin",
+   "相关：Baustelle（工地），Maurer（泥瓦匠）"
+  ],
+  "root": "Bau·arbeit·er：Bau（建筑）+ Arbeiter（工人）",
+  "fam": [
+   "Bau",
+   "bauen",
+   "Arbeiter",
+   "Baustelle"
+  ],
+  "ety": "透明复合词；bauen < 古高地德语 būan（居住，耕种）。",
+  "cog": "—",
+  "tip": "Bauer（农民）也源自 bauen，但与 Bauarbeiter 无关，别混淆。"
+ },
+ {
+  "w": "Bauart",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bauarten",
+  "gs": "der Bauart",
+  "ipa": "ˈbaʊ̯ʔaːɐ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "构造方式，结构；型式，型号",
+    "de": "Art und Weise, wie etw. gebaut ist; Typ, Konstruktion",
+    "ex": [
+     {
+      "de": "Die Häuser in diesem Viertel sind von einheitlicher Bauart.",
+      "zh": "这个街区的房子结构样式统一。"
+     },
+     {
+      "de": "Fahrzeuge dieser Bauart dürfen nicht mehr zugelassen werden.",
+      "zh": "这种型式的车辆不能再获准上牌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "von gleicher / ähnlicher Bauart — 结构相同/相似的",
+   "je nach Bauart — 视构造而定",
+   "bauartbedingt — 由构造决定的"
+  ],
+  "root": "Bau·art：Bau（建造）+ Art（方式，种类）→“建造的方式”",
+  "fam": [
+   "Bau",
+   "Art",
+   "Bauweise",
+   "Bauform"
+  ],
+  "ety": "透明复合词；Art < 中古高地德语 art（出身，天性）。",
+  "cog": "—",
+  "tip": "Bauweise 侧重“建造方法”（Holzbauweise），Bauart 更偏“结构类型、型式”，技术与法规文本常用。"
+ },
+ {
+  "w": "befallen",
+  "pos": "v",
+  "ipa": "bəˈfalən",
+  "lvl": "C1",
+  "forms": "befällt · befiel · hat befallen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（疾病、情绪等）侵袭，袭上心头",
+    "de": "(von Krankheit, Gefühl) plötzlich ergreifen",
+    "ex": [
+     {
+      "de": "Plötzlich befiel ihn große Angst.",
+      "zh": "他突然感到一阵巨大的恐惧。"
+     },
+     {
+      "de": "Im Winter werden viele Menschen von der Grippe befallen.",
+      "zh": "冬季很多人会染上流感。"
+     }
+    ]
+   },
+   {
+    "zh": "（害虫、病菌）侵害，侵染",
+    "de": "(von Schädlingen) heimsuchen",
+    "ex": [
+     {
+      "de": "Die Bäume sind von einem Pilz befallen.",
+      "zh": "这些树遭到真菌侵染。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. befällt Angst / Müdigkeit / Zweifel — 某人突然感到恐惧/疲倦/怀疑（情绪作主语）",
+   "von etw. (D) befallen sein / werden — 受……侵袭",
+   "名词 Befall：（虫害、病害的）侵染（Schädlingsbefall）"
+  ],
+  "root": "be·fall·en：be-（使及物，加于……之上）+ fallen（落下）→“落到某人/某物身上” → 侵袭",
+  "fam": [
+   "fallen",
+   "Befall",
+   "Fall",
+   "Unfall",
+   "Zufall"
+  ],
+  "ety": "中古高地德语 bevallen < 古高地德语 bifallan；fallen < 原始日耳曼语 *fallaną。",
+  "cog": "英 befall, fall",
+  "tip": "befallen 是及物的，人作第四格宾语：Ihn befiel Panik（不是 *ihm）。完成时用 haben，而 fallen 用 sein。"
+ },
+ {
+  "w": "befreundet",
+  "pos": "adj",
+  "ipa": "bəˈfʁɔɪ̯ndət",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（与某人）是朋友的，交好的",
+    "de": "mit jdm. in Freundschaft verbunden",
+    "ex": [
+     {
+      "de": "Wir sind seit der Schulzeit eng befreundet.",
+      "zh": "我们从上学时起就是好朋友。"
+     },
+     {
+      "de": "Ist sie mit ihm befreundet oder sind die beiden ein Paar?",
+      "zh": "她和他只是朋友，还是一对情侣？"
+     }
+    ]
+   },
+   {
+    "zh": "友好的（国家、机构）",
+    "de": "(von Staaten, Organisationen) freundschaftlich verbunden",
+    "ex": [
+     {
+      "de": "Vertreter befreundeter Staaten nahmen an der Zeremonie teil.",
+      "zh": "友好国家的代表出席了仪式。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit jdm. befreundet sein — 和某人是朋友",
+   "eng / gut befreundet — 关系很好的",
+   "ein befreundetes Paar — 一对朋友夫妇",
+   "miteinander befreundet sein — 互为朋友"
+  ],
+  "root": "be·freund·et：be- + Freund（朋友）→ sich befreunden（结交）的第二分词，已词汇化为形容词 →“结为朋友的”",
+  "fam": [
+   "Freund",
+   "Freundschaft",
+   "sich befreunden",
+   "freundlich"
+  ],
+  "ety": "Freund < 中古高地德语 vriunt < 古高地德语 friunt，原为 frī(j)ōn（爱）的现在分词“爱着的人”。",
+  "cog": "英 friend；荷 vriend",
+  "tip": "“我和他是朋友”地道说法是 Ich bin mit ihm befreundet，而不是 *Ich bin sein Freund（后者易被理解为“男朋友”）。"
+ },
+ {
+  "w": "Bekanntgabe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bekanntgaben（少用）",
+  "gs": "der Bekanntgabe",
+  "ipa": "bəˈkantɡaːbə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "宣布，公布，公告",
+    "de": "offizielle Mitteilung, Veröffentlichung",
+    "ex": [
+     {
+      "de": "Nach der Bekanntgabe der Ergebnisse brach Jubel aus.",
+      "zh": "结果公布后爆发出一片欢呼。"
+     },
+     {
+      "de": "Die Bekanntgabe des neuen Trainers wird für Montag erwartet.",
+      "zh": "新教练人选预计将于周一公布。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Bekanntgabe der Ergebnisse / des Termins — 结果/日期的公布",
+   "bis zur Bekanntgabe — 在公布之前",
+   "动词：etw. bekannt geben（gibt bekannt · gab bekannt · hat bekannt gegeben）"
+  ],
+  "root": "Bekannt·gabe：bekannt（已知的）+ Gabe（给予，< geben）→ bekannt geben（公布）的名词化",
+  "fam": [
+   "bekannt geben",
+   "bekannt",
+   "Gabe",
+   "Angabe",
+   "Ausgabe"
+  ],
+  "ety": "由短语 bekannt geben 名词化而来；Gabe 派生自 geben（古高地德语 geban）。",
+  "cog": "英 give（与 geben 同源）",
+  "tip": "动词 bekannt geben 现行正字法推荐分写；名词 Bekanntgabe 合写。近义 Bekanntmachung 多指官方书面公告。"
+ },
+ {
+  "w": "Berg",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Berge",
+  "gs": "des Berg(e)s",
+  "ipa": "bɛʁk",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "山，山峰",
+    "de": "große Erhebung im Gelände",
+    "ex": [
+     {
+      "de": "Am Wochenende fahren wir in die Berge.",
+      "zh": "周末我们去山里。"
+     },
+     {
+      "de": "Die Zugspitze ist der höchste Berg Deutschlands.",
+      "zh": "楚格峰是德国最高的山。"
+     }
+    ]
+   },
+   {
+    "zh": "（大量的）一大堆",
+    "de": "große Menge",
+    "ex": [
+     {
+      "de": "Auf meinem Schreibtisch liegt ein Berg von Akten.",
+      "zh": "我桌上堆着一大摞文件。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in die Berge fahren / in den Bergen wandern — 去山区/在山里徒步",
+   "über den Berg sein — 渡过了难关",
+   "über alle Berge sein — 逃之夭夭",
+   "mit etw. (D) hinter dem Berg halten — 隐瞒（意见、真相）"
+  ],
+  "root": "Berg：单一词根，古高地德语 berg（山）",
+  "fam": [
+   "Gebirge",
+   "bergig",
+   "Bergsteiger",
+   "bergab",
+   "Bergwerk"
+  ],
+  "ety": "中古高地德语、古高地德语 berg < 原始日耳曼语 *bergaz（高地，山）。",
+  "cog": "英 barrow（古坟丘）, iceberg（借自荷兰语 ijsberg）；荷 berg",
+  "tip": "末尾 g 读 [k]：[bɛʁk]。“去山里”用复数：in die Berge；Gebirge 指山脉。"
+ },
+ {
+  "w": "Biergarten",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Biergärten",
+  "gs": "des Biergartens",
+  "ipa": "ˈbiːɐ̯ɡaʁtn̩",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "露天啤酒园",
+    "de": "Gartenlokal unter freiem Himmel, in dem Bier ausgeschenkt wird",
+    "ex": [
+     {
+      "de": "An Sommerabenden sind die Biergärten in München voll.",
+      "zh": "夏日傍晚，慕尼黑的啤酒园里座无虚席。"
+     },
+     {
+      "de": "In vielen bayerischen Biergärten darf man sein Essen mitbringen.",
+      "zh": "在巴伐利亚许多啤酒园里可以自带食物。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in den Biergarten gehen — 去啤酒园",
+   "im Biergarten sitzen — 坐在啤酒园里",
+   "典型：Maß（一升杯啤酒），Brezel，Brotzeit"
+  ],
+  "root": "Bier·garten：Bier（啤酒）+ Garten（花园）→“喝啤酒的花园”",
+  "fam": [
+   "Bier",
+   "Garten",
+   "Bierzelt",
+   "Gartenlokal"
+  ],
+  "ety": "Bier < 古高地德语 bior，来源有争议（一说借自通俗拉丁语 biber“饮料”）；Garten < 古高地德语 garto。",
+  "cog": "英 beer, garden",
+  "tip": "Biergarten 是巴伐利亚传统，已进入英语（beer garden）。复数元音变化：Biergärten。"
+ },
+ {
+  "w": "Buddhismus",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Buddhismus",
+  "ipa": "bʊˈdɪsmʊs",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "佛教",
+    "de": "auf Buddha zurückgehende Religion und Lehre",
+    "ex": [
+     {
+      "de": "Der Buddhismus entstand vor rund 2500 Jahren in Indien.",
+      "zh": "佛教大约2500年前起源于印度。"
+     },
+     {
+      "de": "Sie interessiert sich seit Jahren für den Buddhismus.",
+      "zh": "她多年来一直对佛教感兴趣。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der tibetische / Zen-Buddhismus — 藏传佛教/禅宗",
+   "sich zum Buddhismus bekennen — 信奉佛教",
+   "Buddhist(in) — 佛教徒（弱变化：des Buddhisten）；buddhistisch — 佛教的"
+  ],
+  "root": "Buddh·ismus：Buddha（佛陀，梵语“觉悟者”）+ -ismus（主义、宗教学说后缀）",
+  "fam": [
+   "Buddha",
+   "Buddhist",
+   "buddhistisch"
+  ],
+  "ety": "源于梵语 buddha（觉悟者），加拉丁-希腊式后缀 -ismus 构成的近代词。",
+  "cog": "英 Buddhism",
+  "tip": "宗教名称前通常加定冠词：der Buddhismus, der Islam, das Christentum。注意拼写 dd + h。"
+ },
+ {
+  "w": "Dichter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Dichter",
+  "gs": "des Dichters",
+  "ipa": "ˈdɪçtɐ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "诗人；文学家，作家（尤指有声望的）",
+    "de": "Verfasser literarischer Werke, bes. von Gedichten",
+    "ex": [
+     {
+      "de": "Goethe gilt als der bedeutendste deutsche Dichter.",
+      "zh": "歌德被视为最重要的德语诗人。"
+     },
+     {
+      "de": "Deutschland wird oft als „Land der Dichter und Denker“ bezeichnet.",
+      "zh": "德国常被称为“诗人与思想家之国”。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Land der Dichter und Denker — 诗人与思想家之国",
+   "阴性：Dichterin",
+   "dichterische Freiheit — 诗的破格，艺术自由"
+  ],
+  "root": "Dicht·er：dichten（创作诗歌）+ -er（施动者）→“作诗的人”",
+  "fam": [
+   "dichten",
+   "Gedicht",
+   "Dichtung",
+   "Dichtkunst"
+  ],
+  "ety": "dichten < 中古高地德语 tihten < 古高地德语 tihtōn（写作，构思），借自拉丁语 dictāre（口授，撰写）。",
+  "cog": "英 dictate；拉 dictare",
+  "tip": "Dichter 带有崇高色彩，普通作者说 Autor 或 Schriftsteller。dichten（作诗）与形容词 dicht（密的）词源无关。"
+ },
+ {
+  "w": "diskriminieren",
+  "pos": "v",
+  "ipa": "dɪskʁimiˈniːʁən",
+  "lvl": "B2",
+  "forms": "diskriminiert · diskriminierte · hat diskriminiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "歧视，不公平对待",
+    "de": "jdn. benachteiligen, herabsetzen",
+    "ex": [
+     {
+      "de": "Niemand darf wegen seiner Herkunft diskriminiert werden.",
+      "zh": "任何人都不得因出身而受到歧视。"
+     },
+     {
+      "de": "Viele Frauen fühlen sich im Beruf diskriminiert.",
+      "zh": "许多女性觉得自己在职场上受到歧视。"
+     }
+    ]
+   },
+   {
+    "zh": "（专业）区分，辨别",
+    "de": "(Fachsprache) unterscheiden",
+    "ex": [
+     {
+      "de": "Der Test kann zwischen den beiden Gruppen gut diskriminieren.",
+      "zh": "这项测试能很好地区分两组。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. wegen etw. (G/D) diskriminieren — 因……歧视某人",
+   "diskriminierend — 歧视性的（eine diskriminierende Äußerung）",
+   "名词 Diskriminierung：Diskriminierung am Arbeitsplatz"
+  ],
+  "root": "dis·krimin·ier·en：拉丁语 discrīmināre（分开，区分），dis-（分开）+ crīmen（判别，决定）+ 外来动词后缀 -ieren",
+  "fam": [
+   "Diskriminierung",
+   "diskriminierend",
+   "Antidiskriminierungsstelle"
+  ],
+  "ety": "借自拉丁语 discrīmināre（区分），“歧视”义19–20世纪受英语、法语影响形成。",
+  "cog": "英 discriminate；拉 discriminare",
+  "tip": "-ieren 动词第二分词不加 ge-：hat diskriminiert。中文“歧视某人”直接用第四格：jdn. diskriminieren（不用介词）。"
+ },
+ {
+  "w": "durchdacht",
+  "pos": "adj",
+  "ipa": "dʊʁçˈdaxt",
+  "lvl": "C1",
+  "forms": "durchdachter · am durchdachtesten",
+  "senses": [
+   {
+    "zh": "经过周密考虑的，深思熟虑的",
+    "de": "gründlich überlegt, sorgfältig geplant",
+    "ex": [
+     {
+      "de": "Das Konzept ist gut durchdacht.",
+      "zh": "这个方案经过了周密考虑。"
+     },
+     {
+      "de": "Die Reform wirkt wenig durchdacht.",
+      "zh": "这项改革显得考虑欠周。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gut / bis ins Detail durchdacht — 周密的/考虑到每个细节的",
+   "schlecht / nicht durchdacht — 考虑不周的",
+   "动词 durchdenken（不可分）：durchdenkt · durchdachte · hat durchdacht"
+  ],
+  "root": "durch·dacht：durchdenken（彻底思考）的第二分词，已词汇化为形容词；durch-（穿透，彻底）+ denken（想）",
+  "fam": [
+   "durchdenken",
+   "denken",
+   "Gedanke",
+   "bedacht"
+  ],
+  "ety": "denken < 古高地德语 denken；过去分词 gedacht/-dacht 保留了古老的不规则形式。",
+  "cog": "英 think, thought（与 denken, dacht 同源）",
+  "tip": "重音在 -dacht（不可分动词 durchˈdenken）。“想一遍”的可分用法 ˈdurchdenken 罕见，日常用不可分形式。"
+ },
+ {
+  "w": "Dach",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Dächer",
+  "gs": "des Dach(e)s",
+  "ipa": "dax",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "屋顶，房顶；车顶",
+    "de": "oberer Abschluss eines Gebäudes oder Fahrzeugs",
+    "ex": [
+     {
+      "de": "Der Sturm hat das Dach des Hauses beschädigt.",
+      "zh": "暴风损坏了房屋的屋顶。"
+     },
+     {
+      "de": "Auf dem Dach wurde eine Solaranlage installiert.",
+      "zh": "屋顶上安装了太阳能设备。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）庇护，统一机构",
+    "de": "Schutz; übergeordnete Organisation",
+    "ex": [
+     {
+      "de": "Unter dem Dach der Stiftung arbeiten mehrere Projekte.",
+      "zh": "该基金会旗下有多个项目在运作。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "unter einem Dach wohnen — 住在同一屋檐下",
+   "etw. unter Dach und Fach bringen — 把某事办妥/敲定",
+   "jdm. aufs Dach steigen（口）— 训斥某人",
+   "eins aufs Dach bekommen（口）— 挨骂"
+  ],
+  "root": "Dach：单一词根，古高地德语 dah（覆盖物）",
+  "fam": [
+   "Dachboden",
+   "Dachgeschoss",
+   "Obdach",
+   "obdachlos",
+   "überdachen"
+  ],
+  "ety": "中古高地德语 dach < 古高地德语 dah < 原始日耳曼语 *þaką（覆盖物）。",
+  "cog": "英 thatch（茅草屋顶）；荷 dak",
+  "tip": "复数有元音变化 Dächer。unter Dach und Fach 是高频惯用语，指合同、协议“已敲定”。"
+ },
+ {
+  "w": "Ehrenamt",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Ehrenämter",
+  "gs": "des Ehrenamt(e)s",
+  "ipa": "ˈeːʁənʔamt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "义务工作，志愿职务，荣誉职位（无报酬）",
+    "de": "unbezahlte Tätigkeit im Dienst der Allgemeinheit",
+    "ex": [
+     {
+      "de": "Sie engagiert sich im Ehrenamt bei der Tafel.",
+      "zh": "她在食物救济站做志愿者。"
+     },
+     {
+      "de": "Ohne das Ehrenamt würden viele Sportvereine nicht funktionieren.",
+      "zh": "没有志愿工作，许多体育俱乐部将无法运转。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Ehrenamt ausüben / übernehmen — 担任义务职务",
+   "ehrenamtlich tätig sein — 从事志愿工作",
+   "Ehrenamtliche — 志愿者（形容词名词化）"
+  ],
+  "root": "Ehr·en·amt：Ehre（荣誉）+ 连接成分 -en- + Amt（职务）→“出于荣誉而担任的职务”（无报酬）",
+  "fam": [
+   "ehrenamtlich",
+   "Ehre",
+   "Amt",
+   "Freiwillige"
+  ],
+  "ety": "Ehre < 古高地德语 ēra（尊敬）；Amt < 古高地德语 ambaht（服务，职务），一般认为最终源自凯尔特语。",
+  "cog": "古英语 ār（荣誉，与 Ehre 同源）",
+  "tip": "德国社会非常重视 Ehrenamt；简历中 ehrenamtliches Engagement 是加分项。“志愿者”常说 Ehrenamtliche 或 Freiwillige。"
+ },
+ {
+  "w": "einspielen",
+  "pos": "v",
+  "ipa": "ˈaɪ̯nʃpiːlən",
+  "lvl": "C1",
+  "forms": "spielt ein · spielte ein · hat eingespielt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（电影、演出）赚回，带来（收入）",
+    "de": "(Geld) einbringen",
+    "ex": [
+     {
+      "de": "Der Film hat weltweit über eine Milliarde Dollar eingespielt.",
+      "zh": "这部电影全球票房超过十亿美元。"
+     }
+    ]
+   },
+   {
+    "zh": "录制（音乐）；（广播电视中）插播",
+    "de": "(Musik) aufnehmen; (Beitrag) einblenden",
+    "ex": [
+     {
+      "de": "Das Orchester hat alle Sinfonien neu eingespielt.",
+      "zh": "乐团重新录制了全部交响曲。"
+     }
+    ]
+   },
+   {
+    "zh": "sich ~：（经磨合）运转顺畅；热身",
+    "de": "sich ~: sich aufeinander einstellen; sich warm spielen",
+    "ex": [
+     {
+      "de": "Die neuen Abläufe haben sich inzwischen gut eingespielt.",
+      "zh": "新流程现在已经磨合得很顺畅了。"
+     },
+     {
+      "de": "Die beiden Kollegen sind ein eingespieltes Team.",
+      "zh": "这两位同事是配合默契的搭档。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Geld / Kosten einspielen — 赚回钱/收回成本",
+   "sich aufeinander einspielen — 相互磨合",
+   "ein eingespieltes Team — 配合默契的团队",
+   "名词 Einspielergebnis — 票房收入"
+  ],
+  "root": "ein·spiel·en：ein-（进入）+ spielen（演奏，表演）→“演出带进来（钱）”/“演奏进（录音）”/“玩进状态”",
+  "fam": [
+   "spielen",
+   "Spiel",
+   "abspielen",
+   "vorspielen"
+  ],
+  "ety": "spielen < 中古高地德语 spiln < 古高地德语 spilōn（嬉戏，舞动），更早来源不详。",
+  "cog": "荷 spelen",
+  "tip": "ein eingespieltes Team 是职场高频表达。反身 sich einspielen（磨合）主语多为流程、制度或人员。"
+ },
+ {
+  "w": "Entfaltung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Entfaltungen",
+  "gs": "der Entfaltung",
+  "ipa": "ɛntˈfaltʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "发展，发挥，施展",
+    "de": "Entwicklung, volle Ausbildung von Fähigkeiten",
+    "ex": [
+     {
+      "de": "Jeder hat das Recht auf die freie Entfaltung seiner Persönlichkeit.",
+      "zh": "人人有自由发展其人格的权利。（《基本法》第2条）"
+     },
+     {
+      "de": "Die Firma bietet jungen Talenten viel Raum zur Entfaltung.",
+      "zh": "公司为年轻人才提供了很大的发展空间。"
+     }
+    ]
+   },
+   {
+    "zh": "展开，打开",
+    "de": "das Auseinanderfalten",
+    "ex": [
+     {
+      "de": "Der Airbag benötigt zur Entfaltung nur Millisekunden.",
+      "zh": "安全气囊展开只需几毫秒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die freie Entfaltung der Persönlichkeit — 人格的自由发展（法律用语）",
+   "zur Entfaltung kommen / gelangen — 得以发挥/施展",
+   "Raum zur Entfaltung haben — 有施展空间",
+   "动词 sich entfalten：Talente entfalten sich"
+  ],
+  "root": "ent·falt·ung：ent-（表“打开、去除”）+ falten（折叠）→ entfalten（展开）+ -ung →“把折起的展开” → 发展、施展",
+  "fam": [
+   "entfalten",
+   "falten",
+   "Falte",
+   "vielfältig",
+   "Einfalt"
+  ],
+  "ety": "falten < 中古高地德语 valten < 古高地德语 faldan（折叠）。",
+  "cog": "英 fold, unfold",
+  "tip": "Entfaltung 强调潜能“充分展开”；Entwicklung 是一般意义的“发展”。Persönlichkeitsentfaltung 是教育学、法律中的常用词。"
+ }
+]

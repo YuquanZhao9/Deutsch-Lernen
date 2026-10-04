@@ -1,0 +1,3167 @@
+[
+ {
+  "w": "dafür",
+  "pos": "adv",
+  "ipa": "daˈfyːɐ̯",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "为此，为了这个；对此（代替 für + 指物名词/从句）",
+    "de": "für das/diese Sache; zu diesem Zweck",
+    "ex": [
+     {
+      "de": "Ich interessiere mich sehr dafür, wie das System funktioniert.",
+      "zh": "我对这个系统如何运作很感兴趣。"
+     },
+     {
+      "de": "Die Regierung muss dafür sorgen, dass die Mieten bezahlbar bleiben.",
+      "zh": "政府必须确保房租保持在可负担的水平。"
+     }
+    ]
+   },
+   {
+    "zh": "赞成，支持",
+    "de": "zustimmend, befürwortend",
+    "ex": [
+     {
+      "de": "Die Mehrheit der Abgeordneten war dafür.",
+      "zh": "大多数议员表示赞成。"
+     }
+    ]
+   },
+   {
+    "zh": "作为交换/补偿；相应地；考虑到（dafür, dass …）",
+    "de": "als Ausgleich, im Gegenzug; wenn man bedenkt, dass …",
+    "ex": [
+     {
+      "de": "Die Arbeit ist anstrengend, dafür wird sie gut bezahlt.",
+      "zh": "这份工作很累，但报酬相应不错。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich dafür interessieren / entscheiden / einsetzen — 对此感兴趣/为此做决定/为此努力（对应 für + A 的动词）",
+   "dafür sorgen, dass … — 确保……",
+   "dafür / dagegen sein — 赞成/反对",
+   "dafür, dass … — 考虑到……（Dafür, dass er neu ist, macht er das gut.）"
+  ],
+  "root": "da·für：da（指示，那）+ für（为了）→“为了那个” → 代替介词短语 für + 事物",
+  "fam": [
+   "dagegen",
+   "wofür",
+   "hierfür",
+   "Dafürhalten"
+  ],
+  "ety": "da < 中古高地德语 dā < 古高地德语 dār（那里）；für < 中古高地德语 vür < 古高地德语 furi。",
+  "cog": "构词平行于英 therefor / therefore（there + for）",
+  "tip": "指人时不用 dafür：Ich interessiere mich für ihn（不说 *dafür）。强调时重音前移：ˈdafür。"
+ },
+ {
+  "w": "ins",
+  "pos": "präp",
+  "ipa": "ɪns",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "进入……（= in + das，表方向，支配第四格中性名词）",
+    "de": "Verschmelzung von „in“ und „das“ (Richtung, Akkusativ)",
+    "ex": [
+     {
+      "de": "Am Wochenende gehen wir ins Kino.",
+      "zh": "周末我们去看电影。"
+     },
+     {
+      "de": "Der Text wurde ins Chinesische übersetzt.",
+      "zh": "这篇文章被译成了中文。"
+     }
+    ]
+   },
+   {
+    "zh": "（固定搭配中必须用 ins）",
+    "de": "in festen Wendungen obligatorisch",
+    "ex": [
+     {
+      "de": "Diese Kosten fallen kaum ins Gewicht.",
+      "zh": "这些费用几乎无足轻重。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in + das → ins（只用于第四格中性单数）；第三格中性用 im（in + dem）",
+   "ins Bett / ins Büro / ins Ausland — 上床/去办公室/出国",
+   "固定搭配：ins Detail gehen（深入细节）、etw. ins Leben rufen（创立）、ins Gewicht fallen（举足轻重）",
+   "das 为指示代词或带强调的关系从句时不缩合：in das Haus, das wir gekauft haben"
+  ],
+  "root": "ins = in + das 的缩合形式",
+  "fam": [
+   "in",
+   "im",
+   "hinein",
+   "herein"
+  ],
+  "ety": "介词 in 与冠词 das 的缩合；in < 古高地德语 in，与拉丁语 in 同源。",
+  "cog": "英 in；拉 in",
+  "tip": "表示位置（静态）用 im：Ich bin im Kino；表示方向（动态）用 ins：Ich gehe ins Kino。"
+ },
+ {
+  "w": "sagen",
+  "pos": "v",
+  "ipa": "ˈzaːɡn̩",
+  "lvl": "A1",
+  "forms": "sagt · sagte · hat gesagt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "说，讲；告诉",
+    "de": "etw. mündlich äußern, mitteilen",
+    "ex": [
+     {
+      "de": "Sie hat mir nicht gesagt, dass sie kündigen will.",
+      "zh": "她没告诉我她想辞职。"
+     },
+     {
+      "de": "Was sagst du zu dem Vorschlag?",
+      "zh": "你对这个建议怎么看？"
+     }
+    ]
+   },
+   {
+    "zh": "表明，意味着",
+    "de": "bedeuten, erkennen lassen",
+    "ex": [
+     {
+      "de": "Die Zahlen allein sagen wenig über die Qualität aus.",
+      "zh": "光看数字很难说明质量如何。"
+     }
+    ]
+   },
+   {
+    "zh": "有发言权，能做主（etw./nichts zu sagen haben）",
+    "de": "Befugnis haben, bestimmen können",
+    "ex": [
+     {
+      "de": "In dieser Firma hat der Chef allein das Sagen.",
+      "zh": "在这家公司里，只有老板说了算。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm.(D) etw.(A) sagen — 告诉某人某事",
+   "etw. zu jmdm. sagen；etw. zu etw. sagen — 对某人说某话；对某事发表看法",
+   "jmdm. Bescheid sagen — 通知某人",
+   "sagen wir (mal) … — 比方说/大概……；das Sagen haben — 说了算"
+  ],
+  "root": "sag·en：词根 sag-（说）+ -en（不定式词尾）",
+  "fam": [
+   "Sage",
+   "Aussage",
+   "absagen",
+   "versagen",
+   "ansagen"
+  ],
+  "ety": "< 中古高地德语 sagen < 古高地德语 sagēn < 原始日耳曼语 *sagjan-/*sagēn-。",
+  "cog": "英 say；荷 zeggen；丹 sige",
+  "tip": "sagen 后面要有说的内容（Er sagt, dass … / Er sagt nichts）；单纯“讲话、交谈”用 sprechen/reden。"
+ },
+ {
+  "w": "stehen",
+  "pos": "v",
+  "ipa": "ˈʃteːən",
+  "lvl": "A1",
+  "forms": "steht · stand · hat gestanden（南德/奥/瑞：ist gestanden）",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "站，站立；（直立物）立着，位于",
+    "de": "aufrecht auf den Füßen sein; sich in senkrechter Lage an einem Ort befinden",
+    "ex": [
+     {
+      "de": "Wir haben eine Stunde in der Schlange gestanden.",
+      "zh": "我们排了一个小时的队。"
+     },
+     {
+      "de": "Die Flasche steht im Kühlschrank.",
+      "zh": "瓶子（立着）放在冰箱里。"
+     }
+    ]
+   },
+   {
+    "zh": "写着，登载着",
+    "de": "geschrieben, gedruckt sein",
+    "ex": [
+     {
+      "de": "In der Zeitung steht, dass die Preise weiter steigen.",
+      "zh": "报上说价格还会继续上涨。"
+     }
+    ]
+   },
+   {
+    "zh": "（衣服等）适合某人；支持，承认（zu）",
+    "de": "jmdm. gut passen; sich zu jmdm./etw. bekennen",
+    "ex": [
+     {
+      "de": "Die neue Brille steht dir wirklich gut.",
+      "zh": "这副新眼镜你戴着真好看。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm.(D) (gut) stehen — 适合某人",
+   "zu jmdm./etw.(D) stehen — 支持某人；坚持/承认某事",
+   "vor einem Problem / einer Entscheidung stehen — 面临问题/抉择",
+   "Es steht fest, dass … — ……已确定；Wie steht es mit …? — ……情况如何？"
+  ],
+  "root": "steh·en：词根 steh-（站立），过去式词干 stand-（参见 Stand、verstehen）",
+  "fam": [
+   "Stand",
+   "Zustand",
+   "verstehen",
+   "entstehen",
+   "ständig"
+  ],
+  "ety": "< 中古高地德语 stān/stēn < 古高地德语 stān/stēn；过去式 stand 来自另一同义词干（哥特语 standan）。印欧词根 *steh₂-（站立），与拉丁语 stare 同源。",
+  "cog": "英 stand, stead；拉 stare；希 histēmi",
+  "tip": "立着放用 stehen，躺着放用 liegen：Das Buch steht im Regal / liegt auf dem Tisch。及物“放置（使立着）”是 stellen。"
+ },
+ {
+  "w": "während",
+  "pos": "präp",
+  "ipa": "ˈvɛːʁənt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（介词，支配第二格）在……期间",
+    "de": "im Verlauf von (mit Genitiv)",
+    "ex": [
+     {
+      "de": "Während des Studiums hat sie in einer Kanzlei gejobbt.",
+      "zh": "读书期间她在一家律所打工。"
+     },
+     {
+      "de": "Während der Sitzung bitte keine Handys benutzen.",
+      "zh": "会议期间请勿使用手机。"
+     }
+    ]
+   },
+   {
+    "zh": "（从属连词）当……的时候",
+    "de": "(Konjunktion) zur gleichen Zeit, als",
+    "ex": [
+     {
+      "de": "Während ich koche, kannst du den Tisch decken.",
+      "zh": "我做饭的时候，你可以摆桌子。"
+     }
+    ]
+   },
+   {
+    "zh": "（从属连词）而，然而（表对比）",
+    "de": "(Konjunktion) wohingegen",
+    "ex": [
+     {
+      "de": "Während die Exporte gestiegen sind, ist die Inlandsnachfrage gesunken.",
+      "zh": "出口增长了，而国内需求却下降了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "während + G（口语常用 D）：während des Urlaubs",
+   "复数名词无冠词、第二格不可辨认时用第三格：während fünf Jahren",
+   "作连词引导从句，动词位于句末",
+   "比较：während（同时进行）vs. als（过去某一时刻）vs. solange（只要/在……期间一直）"
+  ],
+  "root": "währ·end：währen（持续）的现在分词 → “持续着的” → 在……期间",
+  "fam": [
+   "währen",
+   "fortwährend",
+   "immerwährend"
+  ],
+  "ety": "原为 währen（持续；中古高地德语 wern）的现在分词。一般认为源自独立分词结构（如 währendes Krieges / in währendem Kriege “在战争持续期间”），分词随后被重新分析为介词：während des Krieges。",
+  "cog": "—",
+  "tip": "表对比的 während 相当于 wohingegen；注意不要与 wahrend（保持，wahren 的分词）混淆。"
+ },
+ {
+  "w": "bereits",
+  "pos": "adv",
+  "ipa": "bəˈʁaɪ̯t͡s",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "已经（比 schon 更书面）",
+    "de": "schon (gehobener)",
+    "ex": [
+     {
+      "de": "Die Tickets sind bereits ausverkauft.",
+      "zh": "票已经卖完了。"
+     },
+     {
+      "de": "Wie bereits erwähnt, verzögert sich das Projekt.",
+      "zh": "如前所述，该项目将推迟。"
+     }
+    ]
+   },
+   {
+    "zh": "早在；仅仅（强调时间早或量少）",
+    "de": "schon (betont frühen Zeitpunkt oder geringes Maß)",
+    "ex": [
+     {
+      "de": "Bereits im 19. Jahrhundert wurde hier Kohle abgebaut.",
+      "zh": "早在十九世纪，这里就开采煤炭了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bereits jetzt / bereits damals — 现在已经/当时就已",
+   "wie bereits erwähnt / gesagt — 如前所述",
+   "bereits + 时间/数量：bereits nach zwei Tagen — 仅仅两天后就……"
+  ],
+  "root": "bereit·s：bereit（准备好的）+ -s（副词化后缀，原为第二格词尾）→“已准备好地” → 已经",
+  "fam": [
+   "bereit",
+   "Bereitschaft",
+   "bereiten",
+   "vorbereiten"
+  ],
+  "ety": "由形容词 bereit 加副词后缀 -s 构成；bereit < 中古高地德语 bereit(e) < 古高地德语 (bi)reiti，一说与 reiten 有关。",
+  "cog": "英 ready（同源）",
+  "tip": "bereits 只表时间“已经”，不能替代 schon 的语气词用法：Das wird schon klappen 中不能换成 bereits。"
+ },
+ {
+  "w": "deutsch",
+  "pos": "adj",
+  "ipa": "dɔɪ̯t͡ʃ",
+  "lvl": "A1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "德国的；德意志的；德国人的",
+    "de": "Deutschland bzw. die Deutschen betreffend",
+    "ex": [
+     {
+      "de": "Die deutsche Wirtschaft hängt stark vom Export ab.",
+      "zh": "德国经济严重依赖出口。"
+     },
+     {
+      "de": "Sie hat die deutsche Staatsangehörigkeit.",
+      "zh": "她拥有德国国籍。"
+     }
+    ]
+   },
+   {
+    "zh": "德语的",
+    "de": "die deutsche Sprache betreffend",
+    "ex": [
+     {
+      "de": "Das Buch ist in deutscher Sprache erschienen.",
+      "zh": "这本书以德语出版。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf Deutsch（大写，名词）— 用德语；Deutsch lernen / sprechen — 学/说德语",
+   "im Deutschen — 在德语里",
+   "der/die Deutsche, ein Deutscher — 德国人（形容词名词化，按形容词变格）",
+   "die Deutsche Bahn / der Deutsche Bundestag — 专有名称中大写"
+  ],
+  "root": "deut·sch：古高地德语 diot（民众）+ -isc（形容词后缀，今 -isch）→“民众的、本族语言的” → 德意志的",
+  "fam": [
+   "Deutschland",
+   "Deutsche",
+   "verdeutschen"
+  ],
+  "ety": "< 中古高地德语 diutsch, tiutsch < 古高地德语 diutisc（民众的，用本族语的）< diot（民众）；中世纪拉丁语作 theodiscus，用以指与拉丁语相对的民间语言。",
+  "cog": "英 Dutch（原泛指德意志人）；意 tedesco",
+  "tip": "形容词小写（ein deutsches Auto），语言名称作名词时大写（Ich spreche Deutsch / auf Deutsch）。"
+ },
+ {
+  "w": "Ende",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Enden",
+  "gs": "des Endes",
+  "ipa": "ˈɛndə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "结束，结尾，末尾",
+    "de": "Schluss, letzter Zeitpunkt",
+    "ex": [
+     {
+      "de": "Am Ende des Jahres wird abgerechnet.",
+      "zh": "年底结算。"
+     },
+     {
+      "de": "Der Film war zu Ende, bevor ich eingeschlafen bin.",
+      "zh": "我还没睡着电影就结束了。"
+     }
+    ]
+   },
+   {
+    "zh": "（空间的）尽头，末端",
+    "de": "letzter Teil einer räumlichen Ausdehnung",
+    "ex": [
+     {
+      "de": "Die Toiletten sind am Ende des Flurs.",
+      "zh": "洗手间在走廊尽头。"
+     }
+    ]
+   },
+   {
+    "zh": "（书面）终结，死亡",
+    "de": "(geh.) Tod, Untergang",
+    "ex": [
+     {
+      "de": "Er hat ein tragisches Ende gefunden.",
+      "zh": "他落得个悲惨的结局。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "am Ende — 最后；zu Ende sein / gehen — 结束",
+   "Ende Mai / Ende der Woche（无介词）— 五月底/周末",
+   "etw.(D) ein Ende setzen / machen — 结束某事",
+   "letzten Endes — 归根到底"
+  ],
+  "root": "End·e：词根 end-（终点）+ -e",
+  "fam": [
+   "enden",
+   "beenden",
+   "endlich",
+   "unendlich",
+   "Endung"
+  ],
+  "ety": "< 中古高地德语 ende < 古高地德语 enti, anti < 原始日耳曼语 *andja-。",
+  "cog": "英 end；荷 einde；瑞典 ände",
+  "tip": "复数 Enden 多用于空间义（beide Enden des Seils）；时间点说“Ende Juni”，不说 *am Ende von Juni（虽可懂但不地道）。"
+ },
+ {
+  "w": "nie",
+  "pos": "adv",
+  "ipa": "niː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "从不，从来没有；永远不",
+    "de": "zu keiner Zeit, niemals",
+    "ex": [
+     {
+      "de": "Ich war noch nie in Japan.",
+      "zh": "我从来没去过日本。"
+     },
+     {
+      "de": "So etwas darf nie wieder passieren.",
+      "zh": "这种事决不能再发生。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "noch nie — 从未（迄今为止）",
+   "nie wieder / nie mehr — 再也不",
+   "nie und nimmer — 决不",
+   "fast nie — 几乎从不"
+  ],
+  "root": "n·ie：否定词 ni（不）+ io（任何时候，今 je）→“任何时候都不”",
+  "fam": [
+   "niemals",
+   "niemand",
+   "je",
+   "jemals",
+   "nirgends"
+  ],
+  "ety": "< 中古高地德语 nie < 古高地德语 nio, nieo < ni（不）+ io（曾经，任何时候）。",
+  "cog": "构词类似英 never（ne + ever）",
+  "tip": "nie 位于中场，通常在被否定成分之前：Er kommt nie pünktlich。niemals 语气更强。"
+ },
+ {
+  "w": "Uhr",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Uhren",
+  "gs": "der Uhr",
+  "ipa": "uːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "钟，表",
+    "de": "Gerät zur Zeitmessung",
+    "ex": [
+     {
+      "de": "Meine Uhr geht fünf Minuten nach.",
+      "zh": "我的表慢五分钟。"
+     }
+    ]
+   },
+   {
+    "zh": "（报钟点）……点（钟）",
+    "de": "(bei Zeitangaben, ohne Plural) Stunde der Uhrzeit",
+    "ex": [
+     {
+      "de": "Die Sitzung beginnt um 9 Uhr.",
+      "zh": "会议九点开始。"
+     },
+     {
+      "de": "Wie viel Uhr ist es?",
+      "zh": "几点了？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "um 8 Uhr — 八点；gegen 8 Uhr — 八点左右",
+   "Wie viel Uhr ist es? / Wie spät ist es? — 几点了？",
+   "rund um die Uhr — 全天候、二十四小时",
+   "die Uhr stellen — 调表"
+  ],
+  "root": "Uhr：源自拉丁语 hora（小时）的借词",
+  "fam": [
+   "Uhrzeit",
+   "Armbanduhr",
+   "Uhrmacher",
+   "Sanduhr"
+  ],
+  "ety": "< 中古高地德语 ūr(e), ōr(e)（小时）< 中古荷兰语 ure < 古法语 (h)ore < 拉丁语 hōra（小时）< 希腊语 hṓra（时节）。",
+  "cog": "英 hour；法 heure；拉 hora",
+  "tip": "时刻用 Uhr（drei Uhr，三点），时长用 Stunde（drei Stunden，三小时）。"
+ },
+ {
+  "w": "weg",
+  "pos": "adv",
+  "ipa": "vɛk",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "离开，走开；去掉",
+    "de": "fort, von einem Ort entfernt",
+    "ex": [
+     {
+      "de": "Geh weg von der Straße!",
+      "zh": "离马路远点！"
+     },
+     {
+      "de": "Wir wohnen ziemlich weit weg vom Zentrum.",
+      "zh": "我们住得离市中心相当远。"
+     }
+    ]
+   },
+   {
+    "zh": "不见了，没了；不在",
+    "de": "verschwunden, nicht mehr da; abwesend",
+    "ex": [
+     {
+      "de": "Mein Schlüssel ist weg!",
+      "zh": "我的钥匙不见了！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "weg sein — 不在/不见了/（口）昏过去、着迷",
+   "Hände weg! — 别碰！",
+   "weit weg — 很远",
+   "可分前缀 weg-：weggehen, wegwerfen, wegnehmen"
+  ],
+  "root": "weg：由 in wec / enwec（在路上）缩略而来 → “上路而去” → 离开",
+  "fam": [
+   "Weg",
+   "weggehen",
+   "wegwerfen",
+   "unterwegs",
+   "wegen"
+  ],
+  "ety": "< 中古高地德语 enwec（在路上，离去）< in + wec（路，今 Weg）。",
+  "cog": "英 away（< 古英 on weg，构词完全平行）",
+  "tip": "副词 weg 读短元音 [vɛk]，名词 Weg 读长元音 [veːk]。"
+ },
+ {
+  "w": "wegen",
+  "pos": "präp",
+  "ipa": "ˈveːɡn̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "由于，因为（支配第二格，口语常用第三格）",
+    "de": "aufgrund von (mit Genitiv, ugs. Dativ)",
+    "ex": [
+     {
+      "de": "Wegen des Streiks fallen heute viele Züge aus.",
+      "zh": "由于罢工，今天许多列车停运。"
+     },
+     {
+      "de": "Das Spiel wurde wegen starken Regens abgesagt.",
+      "zh": "比赛因大雨被取消。"
+     }
+    ]
+   },
+   {
+    "zh": "为了，就……而言",
+    "de": "um … willen, mit Rücksicht auf",
+    "ex": [
+     {
+      "de": "Er ist nur wegen der Kinder geblieben.",
+      "zh": "他只是为了孩子才留下的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wegen + G：wegen des Wetters（口语 wegen dem Wetter）",
+   "无冠词单数名词常不变格：wegen Umbau geschlossen",
+   "人称代词用 meinetwegen / deinetwegen / seinetwegen 等（口语 wegen mir）",
+   "von … wegen：von Amts wegen（依职权）；书面可后置：des Geldes wegen"
+  ],
+  "root": "weg·en：原为 Weg 的复数第三格，出自 von … wegen（从……方面）",
+  "fam": [
+   "Weg",
+   "deswegen",
+   "meinetwegen",
+   "von Amts wegen"
+  ],
+  "ety": "< 中古高地德语 von … wegen（从……方面）——wegen 为 wec（路，方面）的复数第三格；后脱落 von，成为独立介词。",
+  "cog": "英 way（与 Weg 同源）",
+  "tip": "规范书面语用第二格；考试与正式写作中避免 wegen dem。meinetwegen 还有“随你、我无所谓”之意。"
+ },
+ {
+  "w": "einmal",
+  "pos": "adv",
+  "ipa": "ˈaɪ̯nmaːl",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "一次",
+    "de": "ein einziges Mal",
+    "ex": [
+     {
+      "de": "Ich gehe einmal pro Woche schwimmen.",
+      "zh": "我每周游一次泳。"
+     },
+     {
+      "de": "Kannst du das bitte noch einmal erklären?",
+      "zh": "你能再解释一遍吗？"
+     }
+    ]
+   },
+   {
+    "zh": "曾经，有一次；将来有一天",
+    "de": "irgendwann (in Vergangenheit oder Zukunft)",
+    "ex": [
+     {
+      "de": "Ich war schon einmal in Wien.",
+      "zh": "我曾去过一次维也纳。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，常略作 mal）缓和语气；与 nicht 连用：甚至……也不",
+    "de": "(Partikel) abschwächend; nicht einmal = sogar nicht",
+    "ex": [
+     {
+      "de": "Er hat sich nicht einmal bedankt.",
+      "zh": "他连声谢谢都没说。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "noch einmal — 再一次",
+   "auf einmal — 突然；一下子（同时）",
+   "erst einmal — 首先、先",
+   "Es war einmal … — 从前……（童话开头）"
+  ],
+  "root": "ein·mal：ein（一）+ Mal（次，时刻）",
+  "fam": [
+   "Mal",
+   "zweimal",
+   "manchmal",
+   "damals",
+   "jedes Mal"
+  ],
+  "ety": "ein + Mal；Mal < 中古高地德语 māl（时刻，标记）< 古高地德语 māl < 原始日耳曼语 *mēla-。",
+  "cog": "英 meal（原义“固定的时刻”，与 Mal 同源）",
+  "tip": "口语中语气词 einmal 多说成 mal：Komm mal her!。auf einmal 表“突然”时等于 plötzlich。"
+ },
+ {
+  "w": "Frau",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Frauen",
+  "gs": "der Frau",
+  "ipa": "fʁaʊ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "女人，妇女",
+    "de": "erwachsene weibliche Person",
+    "ex": [
+     {
+      "de": "Immer mehr Frauen übernehmen Führungspositionen.",
+      "zh": "越来越多的女性担任领导职位。"
+     },
+     {
+      "de": "Die Frau am Schalter war sehr hilfsbereit.",
+      "zh": "柜台那位女士非常乐于助人。"
+     }
+    ]
+   },
+   {
+    "zh": "妻子",
+    "de": "Ehefrau",
+    "ex": [
+     {
+      "de": "Darf ich Ihnen meine Frau vorstellen?",
+      "zh": "请允许我向您介绍我的妻子。"
+     }
+    ]
+   },
+   {
+    "zh": "（称呼）女士，夫人",
+    "de": "Anrede für eine erwachsene Frau",
+    "ex": [
+     {
+      "de": "Frau Schneider, Sie haben einen Anruf.",
+      "zh": "施奈德女士，您有电话。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "meine/seine Frau — 我/他的妻子",
+   "Frau + 姓 — 某某女士（不论婚否）",
+   "Frau Doktor / Frau Professorin — 对有头衔女性的称呼",
+   "Mann und Frau — 夫妻"
+  ],
+  "root": "Frau：古高地德语 frouwa（女主人），为 frō（主人）的阴性形式",
+  "fam": [
+   "Ehefrau",
+   "Hausfrau",
+   "Fräulein",
+   "fraulich"
+  ],
+  "ety": "< 中古高地德语 vrouwe（贵妇，女主人）< 古高地德语 frouwa，为 frō（主人）的阴性形式（比较 Fronleichnam）；原义为“女主人”，后泛指成年女性。",
+  "cog": "古诺尔斯 Freyja（女神名，原义“女主人”）；古英 frēa（主人）",
+  "tip": "称呼成年女性一律用 Frau，Fräulein 已过时且可能冒犯。"
+ },
+ {
+  "w": "Stadt",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Städte",
+  "gs": "der Stadt",
+  "ipa": "ʃtat",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "城市，城镇",
+    "de": "größere geschlossene Siedlung",
+    "ex": [
+     {
+      "de": "München ist eine der teuersten Städte Deutschlands.",
+      "zh": "慕尼黑是德国最昂贵的城市之一。"
+     },
+     {
+      "de": "Sie ist in einer kleinen Stadt aufgewachsen.",
+      "zh": "她在一座小城长大。"
+     }
+    ]
+   },
+   {
+    "zh": "市中心，市区",
+    "de": "Innenstadt, Zentrum",
+    "ex": [
+     {
+      "de": "Ich fahre heute Nachmittag in die Stadt.",
+      "zh": "我今天下午进城。"
+     }
+    ]
+   },
+   {
+    "zh": "市政当局",
+    "de": "Stadtverwaltung",
+    "ex": [
+     {
+      "de": "Die Stadt hat beschlossen, mehr Radwege zu bauen.",
+      "zh": "市政府决定修建更多自行车道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Stadt wohnen — 住在城里；in die Stadt gehen — 进城",
+   "die Stadt Hamburg（同位语，不加 von）— 汉堡市",
+   "die Hauptstadt / Großstadt / Altstadt — 首都/大城市/老城"
+  ],
+  "root": "Stadt：与 Statt、Stätte（地方）同源，原义“地点” → 聚居地 → 城市",
+  "fam": [
+   "Städter",
+   "städtisch",
+   "Hauptstadt",
+   "Stadtteil",
+   "Werkstatt"
+  ],
+  "ety": "< 中古高地德语 stat（地方，处所；城镇）< 古高地德语 stat（地点）；与 stehen 同族。拼写 Stadt 约在近代早期才与 Statt 区分开。",
+  "cog": "英 stead（instead, homestead）",
+  "tip": "复数 Städte 元音变化：[ˈʃtɛːtə]（也读 [ˈʃtɛtə]）。说“北京市”是 die Stadt Peking，不说 *die Stadt von Peking。"
+ },
+ {
+  "w": "Welt",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Welten",
+  "gs": "der Welt",
+  "ipa": "vɛlt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "世界；地球",
+    "de": "die Erde und alles Leben darauf",
+    "ex": [
+     {
+      "de": "Das Unternehmen hat Standorte auf der ganzen Welt.",
+      "zh": "该公司在全世界都有分支机构。"
+     },
+     {
+      "de": "Sie ist schon viel in der Welt herumgekommen.",
+      "zh": "她已经走遍了世界许多地方。"
+     }
+    ]
+   },
+   {
+    "zh": "（某一）领域，圈子；天地",
+    "de": "Lebensbereich, Sphäre",
+    "ex": [
+     {
+      "de": "In der Welt der Mode zählt vor allem das Image.",
+      "zh": "在时尚圈，形象最重要。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf der Welt — 在世界上；in aller Welt — 在世界各地/到底（Was in aller Welt …?）",
+   "zur Welt kommen — 出生；ein Kind zur Welt bringen — 生孩子",
+   "die ganze Welt — 全世界",
+   "die Dritte Welt — 第三世界"
+  ],
+  "root": "Welt：古高地德语 wer（人）+ alt（时代）→“人的时代、人世” → 世界",
+  "fam": [
+   "weltweit",
+   "Umwelt",
+   "Weltall",
+   "weltlich",
+   "Weltkrieg"
+  ],
+  "ety": "< 中古高地德语 werlt, welt < 古高地德语 weralt < 原始日耳曼语 *wira-aldi-（人的时代，人世），由 *wiraz（男人，比较 Werwolf）+ *aldiz（时代）构成。",
+  "cog": "英 world；荷 wereld",
+  "tip": "“世界上最……的”用第二格：das höchste Gebäude der Welt（不说 *von der Welt）；“在全世界”可说 auf der ganzen Welt 或 in der ganzen Welt。"
+ },
+ {
+  "w": "genau",
+  "pos": "adj",
+  "ipa": "ɡəˈnaʊ̯",
+  "lvl": "A1",
+  "forms": "genauer · am genau(e)sten",
+  "senses": [
+   {
+    "zh": "精确的，准确的；仔细的",
+    "de": "exakt, präzise; sorgfältig",
+    "ex": [
+     {
+      "de": "Wir brauchen genaue Angaben zu den Kosten.",
+      "zh": "我们需要关于费用的确切信息。"
+     },
+     {
+      "de": "Lies dir den Vertrag genau durch.",
+      "zh": "把合同仔细读一遍。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）恰好，正好",
+    "de": "gerade, exakt (verstärkend)",
+    "ex": [
+     {
+      "de": "Das ist genau das, was ich meine.",
+      "zh": "这正是我的意思。"
+     }
+    ]
+   },
+   {
+    "zh": "（作答语）对，正是",
+    "de": "(als Antwort) richtig, so ist es",
+    "ex": [
+     {
+      "de": "„Du meinst also, wir sollten warten?“ – „Genau.“",
+      "zh": "“所以你是说我们应该等？”——“没错。”"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "es mit etw.(D) genau nehmen — 对某事很较真",
+   "genau genommen — 严格来说",
+   "genau um 8 Uhr / genau richtig — 正好八点/正合适",
+   "genauso (wie) — 和……完全一样"
+  ],
+  "root": "ge·nau：中古高地德语 genou(we)（紧密的、精细的）",
+  "fam": [
+   "Genauigkeit",
+   "ungenau",
+   "genauso"
+  ],
+  "ety": "< 中古高地德语 genou(we)（紧密的，精细的，仔细的）；更早的来源不详。",
+  "cog": "—",
+  "tip": "口语中“Genau!”作应答非常常见，相当于“对、就是”；但书面中不宜滥用。"
+ },
+ {
+  "w": "danken",
+  "pos": "v",
+  "ipa": "ˈdaŋkn̩",
+  "lvl": "A1",
+  "forms": "dankt · dankte · hat gedankt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "感谢，道谢",
+    "de": "jmdm. seinen Dank aussprechen",
+    "ex": [
+     {
+      "de": "Ich danke Ihnen für Ihre Geduld.",
+      "zh": "感谢您的耐心。"
+     },
+     {
+      "de": "Wir danken allen, die zum Erfolg beigetragen haben.",
+      "zh": "我们感谢所有为成功作出贡献的人。"
+     }
+    ]
+   },
+   {
+    "zh": "（书面）把……归功于（= verdanken）；报答",
+    "de": "(geh.) jmdm. etw. zu verdanken haben; vergelten",
+    "ex": [
+     {
+      "de": "Wie soll ich dir das jemals danken?",
+      "zh": "我该怎么报答你呢？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm.(D) für etw.(A) danken — 为某事感谢某人",
+   "Danke (schön)! / Vielen Dank! — 谢谢！",
+   "Nichts zu danken. — 不用谢。",
+   "比较：sich bei jmdm. für etw. bedanken"
+  ],
+  "root": "dank·en：Dank（感谢）+ -en；Dank 原与 denken 同源，“记在心里” → 感激",
+  "fam": [
+   "Dank",
+   "dankbar",
+   "sich bedanken",
+   "verdanken",
+   "Gedanke"
+  ],
+  "ety": "< 中古高地德语 danken < 古高地德语 dankōn < 原始日耳曼语 *þankōn-，由 Dank 派生；Dank 与 denken 同源（原义“思念、记念”）。",
+  "cog": "英 thank, think；荷 danken",
+  "tip": "danken 支配第三格：Ich danke dir（不说 *dich）；而 sich bedanken 用 bei + D。"
+ },
+ {
+  "w": "gar",
+  "pos": "part",
+  "ipa": "ɡaːɐ̯",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（加强否定）根本（不），一点也（不）",
+    "de": "verstärkt Verneinungen: überhaupt",
+    "ex": [
+     {
+      "de": "Das stimmt gar nicht.",
+      "zh": "这根本不对。"
+     },
+     {
+      "de": "Ich habe gar keine Zeit.",
+      "zh": "我一点时间都没有。"
+     }
+    ]
+   },
+   {
+    "zh": "甚至，竟然；或许",
+    "de": "sogar; womöglich",
+    "ex": [
+     {
+      "de": "Er hat den Termin vergessen, oder gar absichtlich verpasst.",
+      "zh": "他忘了约定，甚至可能是故意错过的。"
+     }
+    ]
+   },
+   {
+    "zh": "（形容词）（食物）熟了，煮好的",
+    "de": "(Adjektiv) fertig gekocht",
+    "ex": [
+     {
+      "de": "Die Kartoffeln sind noch nicht gar.",
+      "zh": "土豆还没煮熟。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gar nicht / gar nichts / gar kein — 根本不/什么都没有/一个也没有",
+   "ganz und gar — 完完全全",
+   "gar nicht so schlecht — 还真不错",
+   "etw. gar kochen / garen — 把……煮熟"
+  ],
+  "root": "gar：古高地德语 garo（准备好的，完成的）→“完全地” → 加强否定；“完成” → 煮熟",
+  "fam": [
+   "garen",
+   "gerben",
+   "sogar"
+  ],
+  "ety": "< 中古高地德语 gar(e)（准备好的；完全）< 古高地德语 garo（备好的）< 原始日耳曼语 *garwa-。",
+  "cog": "古英 gearo（准备好的，今英 yare）",
+  "tip": "gar nicht 比 nicht 语气强得多；与 sogar 不同，gar 单独作“甚至”属书面用法。"
+ },
+ {
+  "w": "Leute",
+  "pos": "n",
+  "gen": "pl",
+  "pl": "Leute",
+  "gs": "der Leute",
+  "ipa": "ˈlɔɪ̯tə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "人们，人（只有复数）",
+    "de": "Menschen (unbestimmte Mehrzahl)",
+    "ex": [
+     {
+      "de": "Auf dem Platz waren viele Leute.",
+      "zh": "广场上有很多人。"
+     },
+     {
+      "de": "Was sollen die Leute denken?",
+      "zh": "别人会怎么想？"
+     }
+    ]
+   },
+   {
+    "zh": "（某人的）手下，员工；同伴",
+    "de": "Mitarbeiter, Untergebene; Angehörige einer Gruppe",
+    "ex": [
+     {
+      "de": "Der Trainer steht hinter seinen Leuten.",
+      "zh": "教练力挺他的队员。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "junge / ältere Leute — 年轻人/老年人",
+   "Leute, hört mal zu! — （口）各位，听着！",
+   "Land und Leute kennenlernen — 了解当地风土人情",
+   "复合词中替代 -mann 的复数：Fachleute, Kaufleute, Landsleute"
+  ],
+  "root": "Leut·e：古高地德语 liut（民众）的复数",
+  "fam": [
+   "Fachleute",
+   "Landsleute",
+   "Kaufleute",
+   "leutselig"
+  ],
+  "ety": "< 中古高地德语 liute < 古高地德语 liuti，为 liut（民众，人）的复数 < 原始日耳曼语 *leudi-。",
+  "cog": "古英 lēode（人们，民族）",
+  "tip": "Leute 只有复数，没有单数；与精确数字连用时正式语体多用 Personen：drei Personen。"
+ },
+ {
+  "w": "unser",
+  "pos": "pron",
+  "ipa": "ˈʊnzɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（物主代词）我们的",
+    "de": "Possessivpronomen der 1. Person Plural",
+    "ex": [
+     {
+      "de": "Unsere Firma hat ihren Sitz in Hamburg.",
+      "zh": "我们公司总部在汉堡。"
+     },
+     {
+      "de": "Das ist nicht unser Problem.",
+      "zh": "这不是我们的问题。"
+     }
+    ]
+   },
+   {
+    "zh": "（独立使用）我们的那个",
+    "de": "(substantivisch) der/die/das uns Gehörende",
+    "ex": [
+     {
+      "de": "Euer Garten ist größer als unserer.",
+      "zh": "你们的花园比我们的大。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 ein/mein：m. unser – unseren – unserem – unseres；f. unsere – unsere – unserer – unserer；n. unser – unser – unserem – unseres；pl. unsere – unsere – unseren – unserer",
+   "口语/书面常省略 -e-：unsre, unsrem, unsern",
+   "独立用：unserer, unsere, unser(e)s",
+   "（书面）也是 wir 的第二格：Gedenke unser!"
+  ],
+  "root": "uns·er：uns（我们，宾格/与格）+ -er（物主后缀）",
+  "fam": [
+   "wir",
+   "uns",
+   "unseretwegen",
+   "unsereiner",
+   "unseresgleichen"
+  ],
+  "ety": "< 中古高地德语 unser < 古高地德语 unsēr < 原始日耳曼语 *unsara-。",
+  "cog": "英 our（古英 ūre）, us；荷 ons",
+  "tip": "unser 中的 -er 是词干的一部分，不是词尾：unser Vater（阳性第一格无词尾），不要写成 *unserer Vater。"
+ },
+ {
+  "w": "etwa",
+  "pos": "adv",
+  "ipa": "ˈɛtva",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "大约，大概",
+    "de": "ungefähr, circa",
+    "ex": [
+     {
+      "de": "Die Fahrt dauert etwa zwei Stunden.",
+      "zh": "车程大约两个小时。"
+     },
+     {
+      "de": "Die Kosten liegen bei etwa 5000 Euro.",
+      "zh": "费用约为五千欧元。"
+     }
+    ]
+   },
+   {
+    "zh": "例如，比如",
+    "de": "zum Beispiel",
+    "ex": [
+     {
+      "de": "Manche Länder, wie etwa Dänemark, setzen stark auf Windkraft.",
+      "zh": "有些国家，例如丹麦，大力发展风能。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，用于疑问句）难道，莫非；（条件句）或许",
+    "de": "(Partikel) etwa in Fragen: womöglich (erwartet Verneinung)",
+    "ex": [
+     {
+      "de": "Bist du etwa schon müde?",
+      "zh": "你不会已经累了吧？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etwa + 数量 — 大约（= ungefähr, circa）",
+   "in etwa — 大致上",
+   "wie etwa — 例如",
+   "nicht etwa … , sondern … — 并非……而是……"
+  ],
+  "root": "et·wa：中古高地德语 ete-（某，不定）+ wā（哪里）→“某处、某时” → 大约",
+  "fam": [
+   "etwas",
+   "etwaig"
+  ],
+  "ety": "< 中古高地德语 etewā（某处，某时）< ete-（不定前缀，比较 etwas）+ wā（哪里，今 wo）。",
+  "cog": "—",
+  "tip": "作语气词时带“不希望如此”的意味：Hast du etwa mein Handy genommen?（你不会拿了我手机吧？）。与 etwas 不同，etwa 不是代词。"
+ },
+ {
+  "w": "jeder",
+  "pos": "pron",
+  "ipa": "ˈjeːdɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "每一个，各个",
+    "de": "alle einzeln genommen",
+    "ex": [
+     {
+      "de": "Jeder Teilnehmer erhält ein Zertifikat.",
+      "zh": "每位参加者都会获得证书。"
+     },
+     {
+      "de": "Ich fahre jeden Tag mit dem Rad zur Arbeit.",
+      "zh": "我每天骑车上班。"
+     }
+    ]
+   },
+   {
+    "zh": "任何（一个），无论哪个",
+    "de": "beliebig, jeglich",
+    "ex": [
+     {
+      "de": "Das kann jeder lernen.",
+      "zh": "这谁都能学会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 dieser（只有单数）：m. jeder – jeden – jedem – jedes；f. jede – jede – jeder – jeder；n. jedes – jedes – jedem – jedes",
+   "复数用 alle；jeden Tag / jedes Jahr（第四格表时间）",
+   "auf jeden Fall — 无论如何；jedes Mal — 每次；jeder Zweite — 每两个中一个",
+   "ohne jeden Zweifel — 毫无疑问；ein jeder（书面）"
+  ],
+  "root": "jed·er：古高地德语 io（总是，今 je）+ wedar（两者中哪个）→“两者中的每一个” → 每个",
+  "fam": [
+   "jedermann",
+   "jederzeit",
+   "jedenfalls",
+   "weder"
+  ],
+  "ety": "< 中古高地德语 ieweder, ieder < 古高地德语 iowedar（两者中的每一个）< io（总是，曾经）+ wedar（两者中哪一个）。",
+  "cog": "英 either（古英 ǣg-hwæþer，构词平行）",
+  "tip": "jeder 后接单数名词和单数动词：Jeder Mitarbeiter hat …（不说 *jede Mitarbeiter）。泛指“人人”时用 jeder，不用 alle + 单数。"
+ },
+ {
+  "w": "natürlich",
+  "pos": "adj",
+  "ipa": "naˈtyːɐ̯lɪç",
+  "lvl": "A1",
+  "forms": "natürlicher · am natürlichsten",
+  "senses": [
+   {
+    "zh": "（副词）当然",
+    "de": "selbstverständlich",
+    "ex": [
+     {
+      "de": "Natürlich helfe ich dir beim Umzug.",
+      "zh": "我当然会帮你搬家。"
+     },
+     {
+      "de": "Das ist natürlich nur eine Schätzung.",
+      "zh": "当然，这只是一个估计。"
+     }
+    ]
+   },
+   {
+    "zh": "自然的，天然的",
+    "de": "der Natur entsprechend, nicht künstlich",
+    "ex": [
+     {
+      "de": "Das Produkt enthält nur natürliche Zutaten.",
+      "zh": "该产品只含天然成分。"
+     }
+    ]
+   },
+   {
+    "zh": "自然的，不做作的；合乎常理的",
+    "de": "ungekünstelt; normal, verständlich",
+    "ex": [
+     {
+      "de": "Sie wirkt auf der Bühne ganz natürlich.",
+      "zh": "她在台上显得非常自然。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Aber natürlich! — 当然啦！",
+   "eines natürlichen Todes sterben — 自然死亡",
+   "natürliche Ressourcen — 自然资源",
+   "Es ist ganz natürlich, dass … — ……是很自然的"
+  ],
+  "root": "natür·lich：Natur（自然，源自拉丁语 natura）+ -lich（形容词后缀）",
+  "fam": [
+   "Natur",
+   "unnatürlich",
+   "Natürlichkeit",
+   "Naturwissenschaft"
+  ],
+  "ety": "< 中古高地德语 natiurlich，由 natūre（自然）+ -lich 构成；Natur < 拉丁语 natura（本性，自然）< nasci（出生）。",
+  "cog": "英 natural, nature；拉 naturalis",
+  "tip": "表“当然”的副词用法最常用，可放句首（后接动词）或中场；与 selbstverständlich 近义。"
+ },
+ {
+  "w": "recht",
+  "pos": "adj",
+  "ipa": "ʁɛçt",
+  "lvl": "B1",
+  "forms": "—（“合适”义可比较：rechter · am rechtesten）",
+  "senses": [
+   {
+    "zh": "右边的",
+    "de": "auf der Seite befindlich, auf der das Herz nicht ist",
+    "ex": [
+     {
+      "de": "Er hat sich die rechte Hand gebrochen.",
+      "zh": "他右手骨折了。"
+     }
+    ]
+   },
+   {
+    "zh": "合适的，恰当的；合意的",
+    "de": "passend, richtig; willkommen",
+    "ex": [
+     {
+      "de": "Ist es dir recht, wenn wir morgen anfangen?",
+      "zh": "我们明天开始，你看行吗？"
+     },
+     {
+      "de": "Er kam genau zur rechten Zeit.",
+      "zh": "他来得正是时候。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）相当，颇",
+    "de": "ziemlich, ganz",
+    "ex": [
+     {
+      "de": "Die Ergebnisse sind recht ordentlich.",
+      "zh": "结果相当不错。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm. recht sein — 合某人意",
+   "recht haben（也作 Recht haben）— 有理，说得对",
+   "recht gut / recht viel — 相当好/相当多",
+   "Recht（名词）：das Recht auf + A — ……的权利"
+  ],
+  "root": "recht：原义“直的” → 正确的、合适的；“右”源于“正、好的一边”",
+  "fam": [
+   "Recht",
+   "richtig",
+   "rechts",
+   "gerecht",
+   "richten"
+  ],
+  "ety": "< 中古高地德语 reht < 古高地德语 reht < 原始日耳曼语 *rehta-；与拉丁语 rectus（直的，正确的）同源。",
+  "cog": "英 right；拉 rectus",
+  "tip": "“右边”作副词是 rechts（nach rechts），作定语是 rechte（die rechte Seite）。recht 作“相当”时语气比 sehr 弱。"
+ },
+ {
+  "w": "finden",
+  "pos": "v",
+  "ipa": "ˈfɪndn̩",
+  "lvl": "A1",
+  "forms": "findet · fand · hat gefunden",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "找到，发现",
+    "de": "auf jmdn./etw. stoßen; etw. Gesuchtes entdecken",
+    "ex": [
+     {
+      "de": "Ich kann meinen Schlüssel nicht finden.",
+      "zh": "我找不到钥匙了。"
+     },
+     {
+      "de": "Nach langer Suche hat sie endlich eine Wohnung gefunden.",
+      "zh": "找了很久，她终于找到了一套房子。"
+     }
+    ]
+   },
+   {
+    "zh": "认为，觉得",
+    "de": "meinen, einer Ansicht sein",
+    "ex": [
+     {
+      "de": "Ich finde, wir sollten das noch einmal diskutieren.",
+      "zh": "我觉得我们应该再讨论一下。"
+     },
+     {
+      "de": "Wie findest du den neuen Kollegen?",
+      "zh": "你觉得新同事怎么样？"
+     }
+    ]
+   },
+   {
+    "zh": "（功能动词）得到，获得",
+    "de": "(Funktionsverb) erhalten, bekommen",
+    "ex": [
+     {
+      "de": "Das Verfahren findet in der Medizin breite Anwendung.",
+      "zh": "这种方法在医学中得到广泛应用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw./jmdn. + 形容词 + finden — 觉得某物/某人怎样（Ich finde ihn nett.）",
+   "Ich finde, (dass) … — 我认为……",
+   "Zeit / Ruhe / Anerkennung finden — 抽出时间/得到安宁/获得认可",
+   "sich finden — 出现，会解决（Das wird sich finden.）"
+  ],
+  "root": "find·en：词根 find-（找到）；过去式 fand，分词 gefunden（强变化）",
+  "fam": [
+   "Fund",
+   "erfinden",
+   "empfinden",
+   "befinden",
+   "stattfinden"
+  ],
+  "ety": "< 中古高地德语 vinden < 古高地德语 findan < 原始日耳曼语 *finþan-。",
+  "cog": "英 find；荷 vinden",
+  "tip": "表达主观看法时 finden 比 denken 更自然：Ich finde das gut（不说 *Ich denke das gut）。"
+ },
+ {
+  "w": "Kind",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Kinder",
+  "gs": "des Kind(e)s",
+  "ipa": "kɪnt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "孩子，儿童",
+    "de": "junger Mensch bis etwa 14 Jahre",
+    "ex": [
+     {
+      "de": "Die Kinder spielen im Hof.",
+      "zh": "孩子们在院子里玩。"
+     },
+     {
+      "de": "Schon als Kind wollte sie Ärztin werden.",
+      "zh": "她从小就想当医生。"
+     }
+    ]
+   },
+   {
+    "zh": "子女（不论年龄）",
+    "de": "Sohn oder Tochter",
+    "ex": [
+     {
+      "de": "Sie haben drei erwachsene Kinder.",
+      "zh": "他们有三个成年子女。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Kind bekommen / erwarten — 生孩子/怀孕",
+   "von Kind an / auf — 从小",
+   "kein Kind von Traurigkeit sein — 是个乐天派",
+   "mit Kind und Kegel — 拖家带口"
+  ],
+  "root": "Kind：原义“被生出来的”，与“生育”词根相关",
+  "fam": [
+   "Kindheit",
+   "kindlich",
+   "kindisch",
+   "Kindergarten"
+  ],
+  "ety": "< 中古高地德语 kint < 古高地德语 kind < 原始日耳曼语 *kinþa-；一般认为与拉丁语 gignere（生）、genus（种族）同属一个印欧词根（义为“生育”）。",
+  "cog": "英 kin, kind（种类）",
+  "tip": "kindlich（孩子般的，中性/褒义）与 kindisch（幼稚的，贬义）要区分。"
+ },
+ {
+  "w": "Geld",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gelder",
+  "gs": "des Geld(e)s",
+  "ipa": "ɡɛlt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "钱，金钱，货币",
+    "de": "Zahlungsmittel",
+    "ex": [
+     {
+      "de": "Er verdient gut, gibt aber auch viel Geld aus.",
+      "zh": "他挣得多，但花得也多。"
+     },
+     {
+      "de": "Ich muss noch Geld abheben.",
+      "zh": "我还得去取钱。"
+     }
+    ]
+   },
+   {
+    "zh": "（复数）资金，款项",
+    "de": "(Plural) größere Geldsummen, Mittel",
+    "ex": [
+     {
+      "de": "Öffentliche Gelder müssen sparsam verwendet werden.",
+      "zh": "公共资金必须节约使用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Geld verdienen / ausgeben / sparen / abheben — 挣钱/花钱/存钱/取钱",
+   "ins Geld gehen — 很费钱",
+   "Zeit ist Geld. — 时间就是金钱",
+   "öffentliche Gelder / Fördergelder — 公共资金/资助款"
+  ],
+  "root": "Geld：古高地德语 gelt（报偿、付款），与 gelten（有价值）同源",
+  "fam": [
+   "gelten",
+   "Entgelt",
+   "vergelten",
+   "Geldbeutel"
+  ],
+  "ety": "< 中古高地德语 gelt（付款，报偿）< 古高地德语 gelt（报偿，祭品）；与 gelten 同源，原义“偿付之物”。",
+  "cog": "英 yield（< 古英 gieldan，偿付）",
+  "tip": "Geld 作“钱”时不可数：viel Geld（不说 *viele Gelder）；复数 Gelder 仅指“资金、款项”。"
+ },
+ {
+  "w": "gleich",
+  "pos": "adj",
+  "ipa": "ɡlaɪ̯ç",
+  "lvl": "A1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "相同的，一样的；同等的",
+    "de": "übereinstimmend, identisch; gleichwertig",
+    "ex": [
+     {
+      "de": "Wir haben den gleichen Geschmack.",
+      "zh": "我们品味相同。"
+     },
+     {
+      "de": "Männer und Frauen sollen für gleiche Arbeit gleich bezahlt werden.",
+      "zh": "男女同工应当同酬。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）马上，立刻",
+    "de": "sofort, in Kürze",
+    "ex": [
+     {
+      "de": "Ich bin gleich wieder da.",
+      "zh": "我马上回来。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）紧挨着，就在",
+    "de": "unmittelbar (räumlich)",
+    "ex": [
+     {
+      "de": "Die Apotheke ist gleich um die Ecke.",
+      "zh": "药店就在拐角处。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm.(D) gleich sein — 对某人无所谓（Das ist mir gleich.）",
+   "gleich groß / alt wie … — 和……一样大",
+   "Bis gleich! — 一会儿见！",
+   "（语气词）Wie hieß sie gleich? — 她叫什么来着？"
+  ],
+  "root": "g·leich：ge-（共同）+ līh（形体，比较 Leiche）→“形体相同” → 相同的",
+  "fam": [
+   "vergleichen",
+   "Gleichung",
+   "gleichzeitig",
+   "Gleichheit",
+   "ungleich"
+  ],
+  "ety": "< 中古高地德语 gelīch < 古高地德语 gilīh < 原始日耳曼语 *ga-līka-（形体相同的），*līka-（身体，形体）亦见于 Leiche。",
+  "cog": "英 like, alike；荷 gelijk",
+  "tip": "der gleiche（同类的）与 derselbe（同一个）严格区分时意义不同，但口语中常混用。"
+ },
+ {
+  "w": "lange",
+  "pos": "adv",
+  "ipa": "ˈlaŋə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "长时间地，很久",
+    "de": "eine lange Zeit",
+    "ex": [
+     {
+      "de": "Wie lange dauert der Kurs?",
+      "zh": "这门课持续多久？"
+     },
+     {
+      "de": "Ich habe dich lange nicht gesehen.",
+      "zh": "好久没见到你了。"
+     }
+    ]
+   },
+   {
+    "zh": "（noch lange nicht）远未，远远不",
+    "de": "(noch lange nicht) bei Weitem nicht",
+    "ex": [
+     {
+      "de": "Damit ist das Problem noch lange nicht gelöst.",
+      "zh": "这远远没有解决问题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "比较级 länger，最高级 am längsten",
+   "wie lange? — 多久？；schon lange — 早就、很久了",
+   "seit Langem / langem — 很久以来",
+   "lange vor / nach … — 远在……之前/之后"
+  ],
+  "root": "lang·e：形容词 lang（长的）+ 副词词尾 -e",
+  "fam": [
+   "lang",
+   "Länge",
+   "längst",
+   "verlängern",
+   "langweilig"
+  ],
+  "ety": "< 中古高地德语 lange < 古高地德语 lango，为形容词 lang（< 原始日耳曼语 *langa-）的副词形式。",
+  "cog": "英 long；荷 lang",
+  "tip": "表时间的副词规范用 lange（Ich warte schon lange），口语中也说 lang；形容词“长的”只用 lang（ein langer Tag）。"
+ },
+ {
+  "w": "Teil",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Teile",
+  "gs": "des Teil(e)s",
+  "ipa": "taɪ̯l",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（der Teil）部分",
+    "de": "(der) Stück eines Ganzen",
+    "ex": [
+     {
+      "de": "Ein großer Teil der Bevölkerung lebt in Städten.",
+      "zh": "大部分人口居住在城市。"
+     },
+     {
+      "de": "Der erste Teil des Films war etwas langweilig.",
+      "zh": "电影的前半部分有点无聊。"
+     }
+    ]
+   },
+   {
+    "zh": "（das Teil）零件，部件；（口）东西，玩意儿",
+    "de": "(das) Einzelstück, Bauteil; (ugs.) Ding, Gegenstand",
+    "ex": [
+     {
+      "de": "Für das alte Modell gibt es keine Ersatzteile mehr.",
+      "zh": "这款旧型号已经没有备件了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Teil — 部分地；zum größten Teil — 大部分",
+   "ein (großer) Teil + G — ……的（大）部分",
+   "ich für meinen Teil — 就我而言",
+   "可分前缀 teil-：teilnehmen (an + D), teilhaben"
+  ],
+  "root": "Teil：古高地德语 teil（份，部分）",
+  "fam": [
+   "teilen",
+   "teilnehmen",
+   "Anteil",
+   "Vorteil",
+   "Urteil"
+  ],
+  "ety": "< 中古高地德语 teil < 古高地德语 teil < 原始日耳曼语 *daili-。",
+  "cog": "英 deal（原义“份额”）, dole；荷 deel",
+  "tip": "整体的“一部分”是 der Teil；可单独存在的“零件、物件”多用 das Teil（das Ersatzteil, das Einzelteil）。teil 小写只出现在可分动词中（ich nehme teil）。"
+ },
+ {
+  "w": "beide",
+  "pos": "pron",
+  "ipa": "ˈbaɪ̯də",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "两个（都），双方",
+    "de": "die zwei (zusammen)",
+    "ex": [
+     {
+      "de": "Beide Seiten wollen weiter verhandeln.",
+      "zh": "双方都想继续谈判。"
+     },
+     {
+      "de": "Die beiden haben sich im Studium kennengelernt.",
+      "zh": "他俩是在大学里认识的。"
+     }
+    ]
+   },
+   {
+    "zh": "（beides，单数中性）两样（事物）都",
+    "de": "(beides) das eine und das andere",
+    "ex": [
+     {
+      "de": "Kaffee oder Tee? – Beides ist mir recht.",
+      "zh": "咖啡还是茶？——都行。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "无冠词时强变化：beide – beide – beiden – beider；冠词后弱变化：die beiden, der beiden",
+   "alle beide — 两个都；keiner von beiden — 两个都不",
+   "wir beide（也作 wir beiden）— 我们俩",
+   "beides 指两件事物/两种情况（中性单数）"
+  ],
+  "root": "bei·de：日耳曼语 *bai-（二者，两个都）",
+  "fam": [
+   "beiderseits",
+   "beidseitig",
+   "beiderlei"
+  ],
+  "ety": "< 中古高地德语 beide, bēde < 古高地德语 bēde, beide < 原始日耳曼语 *bai-（两者）；一说后半部分与指示代词融合而成。",
+  "cog": "英 both（同源，其形式受古诺尔斯语 báðir 影响）；荷 beide",
+  "tip": "beide 指“两个都”，强调整体；指两个中的任一个用 einer von beiden。注意 die beiden（他俩）比 beide 更常用于指已提到的两人。"
+ },
+ {
+  "w": "davon",
+  "pos": "adv",
+  "ipa": "daˈfɔn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "关于这个；从中（代替 von + 事物）",
+    "de": "von dieser Sache; darüber",
+    "ex": [
+     {
+      "de": "Davon habe ich nichts gewusst.",
+      "zh": "这件事我一点都不知道。"
+     },
+     {
+      "de": "Es hängt davon ab, wie viel Zeit wir haben.",
+      "zh": "这取决于我们有多少时间。"
+     }
+    ]
+   },
+   {
+    "zh": "其中（的一部分）",
+    "de": "von einer Menge, einem Ganzen",
+    "ex": [
+     {
+      "de": "Wir haben 50 Bewerbungen bekommen, zehn davon sind gut.",
+      "zh": "我们收到了五十份申请，其中十份不错。"
+     }
+    ]
+   },
+   {
+    "zh": "离那里；由此（原因）",
+    "de": "von dieser Stelle entfernt; als Folge davon",
+    "ex": [
+     {
+      "de": "Ich habe zu viel Kaffee getrunken und bekomme davon Kopfschmerzen.",
+      "zh": "我咖啡喝多了，因此头疼。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "davon abhängen, ob … — 取决于是否……",
+   "davon ausgehen, dass … — 以……为前提，认为……",
+   "davon überzeugt sein — 对此深信",
+   "Was habe ich davon? — 这对我有什么好处？"
+  ],
+  "root": "da·von：da（那）+ von（从，关于）",
+  "fam": [
+   "wovon",
+   "hiervon",
+   "davonlaufen",
+   "davonkommen"
+  ],
+  "ety": "da（< 古高地德语 dār，那里）与介词 von 的组合。",
+  "cog": "—",
+  "tip": "指人时用 von + 代词：Ich habe von ihm gehört（不说 *davon）。强调时重音前移：ˈdavon。"
+ },
+ {
+  "w": "eigentlich",
+  "pos": "adj",
+  "ipa": "ˈaɪ̯ɡn̩tlɪç",
+  "lvl": "A2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（副词）其实，实际上；本来",
+    "de": "in Wirklichkeit; ursprünglich",
+    "ex": [
+     {
+      "de": "Eigentlich wollte ich heute früher gehen.",
+      "zh": "我本来今天想早点走的。"
+     },
+     {
+      "de": "Das ist eigentlich ganz einfach.",
+      "zh": "这其实很简单。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，疑问句）到底，究竟",
+    "de": "(Partikel in Fragen) überhaupt, denn",
+    "ex": [
+     {
+      "de": "Was willst du eigentlich?",
+      "zh": "你到底想要什么？"
+     }
+    ]
+   },
+   {
+    "zh": "（形容词）真正的，原来的",
+    "de": "tatsächlich, wirklich; ursprünglich",
+    "ex": [
+     {
+      "de": "Die eigentliche Ursache des Problems ist noch unklar.",
+      "zh": "问题的真正原因尚不清楚。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Eigentlich schon, aber … — 本来是的，不过……",
+   "Wie heißt du eigentlich? — 你到底叫什么来着？（缓和、随口一问）",
+   "die eigentliche Frage / Bedeutung — 真正的问题/本义"
+  ],
+  "root": "eigen·t·lich：eigen（自己的）+ -lich（形容词后缀），中间 -t- 为插音",
+  "fam": [
+   "eigen",
+   "Eigentum",
+   "Eigenschaft",
+   "sich eignen"
+  ],
+  "ety": "< 中古高地德语 eigenlich（自有的，本来的），由 eigen + -lich 构成；-t- 为后来插入的过渡音（比较 wesentlich, ordentlich）。",
+  "cog": "英 own（古英 āgen，与 eigen 同源）",
+  "tip": "eigentlich 常用来委婉地表示与实际情况相反：Eigentlich habe ich keine Zeit（言下之意：但我还是会做）。"
+ },
+ {
+  "w": "fast",
+  "pos": "adv",
+  "ipa": "fast",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "几乎，差不多",
+    "de": "beinahe, nahezu",
+    "ex": [
+     {
+      "de": "Ich bin fast fertig.",
+      "zh": "我快做完了。"
+     },
+     {
+      "de": "Fast alle Teilnehmer waren zufrieden.",
+      "zh": "几乎所有参与者都很满意。"
+     }
+    ]
+   },
+   {
+    "zh": "（与第二虚拟式连用）差点儿",
+    "de": "(mit Konjunktiv II) um ein Haar",
+    "ex": [
+     {
+      "de": "Fast hätte ich den Zug verpasst.",
+      "zh": "我差点没赶上火车。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "fast immer / fast nie / fast alle — 几乎总是/几乎从不/几乎所有",
+   "fast + 数量：fast 100 Euro — 将近一百欧",
+   "Fast hätte ich … — 我差点就……（虚拟式）"
+  ],
+  "root": "fast：由 fest（牢固的）的副词形式 vaste 演变而来：“牢牢地、非常” → “几乎”",
+  "fam": [
+   "fest",
+   "festigen",
+   "Festung"
+  ],
+  "ety": "< 中古高地德语 vaste（牢固地；非常）< 古高地德语 fasto，为 fest 的副词形式；近代才发展出“几乎”义。",
+  "cog": "英 fast（牢固的，如 hold fast；fast asleep）",
+  "tip": "德语 fast 不表示“快”（快是 schnell）；fast 与 beinahe 同义，beinahe 稍书面。"
+ },
+ {
+  "w": "richtig",
+  "pos": "adj",
+  "ipa": "ˈʁɪçtɪç",
+  "lvl": "A1",
+  "forms": "richtiger · am richtigsten",
+  "senses": [
+   {
+    "zh": "正确的，对的",
+    "de": "zutreffend, ohne Fehler",
+    "ex": [
+     {
+      "de": "Die Antwort ist richtig.",
+      "zh": "答案是对的。"
+     },
+     {
+      "de": "Habe ich das richtig verstanden?",
+      "zh": "我理解得对吗？"
+     }
+    ]
+   },
+   {
+    "zh": "合适的，恰当的",
+    "de": "passend, geeignet",
+    "ex": [
+     {
+      "de": "Jetzt ist nicht der richtige Zeitpunkt für Kritik.",
+      "zh": "现在不是提批评的合适时机。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）真正的；（副词）真的，非常",
+    "de": "(ugs.) echt, wirklich; sehr",
+    "ex": [
+     {
+      "de": "Das Konzert war richtig gut.",
+      "zh": "音乐会真的很棒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit etw.(D) richtig liegen — 在……上判断正确",
+   "etw. richtigstellen — 更正",
+   "der/die richtige … — 合适的……",
+   "Richtig! — 对！"
+  ],
+  "root": "richt·ig：recht/richten（正、直）+ -ig（形容词后缀）",
+  "fam": [
+   "recht",
+   "richten",
+   "Richtung",
+   "berichtigen",
+   "Richtigkeit"
+  ],
+  "ety": "< 中古高地德语 rihtec < 古高地德语 rihtīg，由 reht（直，正）派生。",
+  "cog": "英 right",
+  "tip": "richtig 指“正确无误”，recht 多指“合适、合意”；口语中 richtig 常作强调副词（richtig teuer）。"
+ },
+ {
+  "w": "tun",
+  "pos": "v",
+  "ipa": "tuːn",
+  "lvl": "A1",
+  "forms": "tut · tat · hat getan",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "做，干",
+    "de": "machen, handeln",
+    "ex": [
+     {
+      "de": "Was kann ich für Sie tun?",
+      "zh": "我能为您做什么？"
+     },
+     {
+      "de": "Wir müssen etwas gegen den Klimawandel tun.",
+      "zh": "我们必须为应对气候变化做些什么。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）放，放置",
+    "de": "(ugs.) irgendwohin bringen, legen",
+    "ex": [
+     {
+      "de": "Tu die Milch bitte in den Kühlschrank.",
+      "zh": "请把牛奶放进冰箱。"
+     }
+    ]
+   },
+   {
+    "zh": "装作（so tun, als ob）",
+    "de": "(so tun, als ob) vortäuschen",
+    "ex": [
+     {
+      "de": "Er tut so, als ob er nichts wüsste.",
+      "zh": "他装作什么都不知道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Es tut mir leid. — 我很抱歉。；Das tut weh. — 这很疼。",
+   "mit etw.(D) zu tun haben — 与……有关；es mit jmdm. zu tun bekommen — 得跟某人打交道",
+   "so tun, als ob/als + 第二虚拟式 — 假装",
+   "Das tut nichts zur Sache. — 这无关紧要。"
+  ],
+  "root": "tun：原义“放置、使成为”（与 Tat 同源）",
+  "fam": [
+   "Tat",
+   "Täter",
+   "tätig",
+   "getan",
+   "Untat"
+  ],
+  "ety": "< 中古高地德语 tuon < 古高地德语 tuon < 原始日耳曼语 *dōn-；印欧词根 *dʰeh₁-（放置），与希腊语 tithēmi 同源。",
+  "cog": "英 do；荷 doen；希 tithēmi（放置）",
+  "tip": "现在时变位：ich tue, du tust, er tut, wir tun, ihr tut, sie tun。口语中 machen 比 tun 更常用，但固定搭配（leidtun, wehtun, gut tun）只用 tun。"
+ },
+ {
+  "w": "abarbeiten",
+  "pos": "v",
+  "ipa": "ˈapʔaʁbaɪ̯tn̩",
+  "lvl": "B2",
+  "forms": "arbeitet ab · arbeitete ab · hat abgearbeitet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（逐项）处理完，完成（任务、清单等）",
+    "de": "(Aufgaben, Liste usw.) nach und nach erledigen",
+    "ex": [
+     {
+      "de": "Bis Freitag müssen wir alle offenen Anfragen abarbeiten.",
+      "zh": "周五之前我们必须处理完所有待办询问。"
+     },
+     {
+      "de": "Das Programm arbeitet die Befehle der Reihe nach ab.",
+      "zh": "程序按顺序执行这些指令。"
+     }
+    ]
+   },
+   {
+    "zh": "以劳动抵偿（债务等）",
+    "de": "durch Arbeit tilgen",
+    "ex": [
+     {
+      "de": "Er musste seine Schulden in der Werkstatt abarbeiten.",
+      "zh": "他不得不在作坊里干活抵债。"
+     }
+    ]
+   },
+   {
+    "zh": "（sich abarbeiten）累坏，苦干；（an etw.）同……较劲",
+    "de": "(sich) sich durch Arbeit erschöpfen; sich mühevoll mit etw. auseinandersetzen",
+    "ex": [
+     {
+      "de": "Sie hat sich jahrelang für die Familie abgearbeitet.",
+      "zh": "她多年来为家庭操劳。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Liste / Aufträge / Rückstände abarbeiten — 处理清单/订单/积压事务",
+   "Schulden abarbeiten — 干活还债",
+   "sich an etw./jmdm.(D) abarbeiten — 与……较劲、费尽心力对付"
+  ],
+  "root": "ab·arbeit·en：ab（离开，去除；完成）+ arbeiten（工作）→“通过工作把东西消掉” → 处理完、抵偿",
+  "fam": [
+   "Arbeit",
+   "bearbeiten",
+   "erarbeiten",
+   "verarbeiten",
+   "überarbeiten"
+  ],
+  "ety": "arbeiten < 中古高地德语 arbeiten < 古高地德语 arbeitōn，由 Arbeit（古高地德语 ar(a)beit，原义“辛劳、困苦”）派生 < 原始日耳曼语 *arbaiþi-。",
+  "cog": "古英 earfoþe（辛劳）；荷 arbeid",
+  "tip": "及物用法强调“把积压的事项一件件做完”，常见于职场；不要与 bearbeiten（处理、加工、编辑）混淆。"
+ },
+ {
+  "w": "fragen",
+  "pos": "v",
+  "ipa": "ˈfʁaːɡn̩",
+  "lvl": "A1",
+  "forms": "fragt · fragte · hat gefragt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "问，询问",
+    "de": "eine Frage stellen",
+    "ex": [
+     {
+      "de": "Darf ich Sie etwas fragen?",
+      "zh": "我可以问您一件事吗？"
+     },
+     {
+      "de": "Sie hat mich nach meiner Telefonnummer gefragt.",
+      "zh": "她问了我的电话号码。"
+     }
+    ]
+   },
+   {
+    "zh": "（sich fragen）自问，想知道",
+    "de": "(sich) über etw. nachdenken, etw. gern wissen wollen",
+    "ex": [
+     {
+      "de": "Ich frage mich, ob das wirklich nötig ist.",
+      "zh": "我在想这是否真有必要。"
+     }
+    ]
+   },
+   {
+    "zh": "（gefragt sein）受欢迎，有需求",
+    "de": "(gefragt sein) begehrt sein",
+    "ex": [
+     {
+      "de": "IT-Fachkräfte sind auf dem Arbeitsmarkt sehr gefragt.",
+      "zh": "IT 专业人才在就业市场上非常抢手。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn.(A) etw.(A) fragen — 问某人某事（双第四格）",
+   "jmdn. nach etw./jmdm.(D) fragen — 向某人打听某事/某人",
+   "jmdn. um Rat / Erlaubnis fragen — 向某人征求意见/许可",
+   "Es fragt sich, ob … — 问题在于是否……"
+  ],
+  "root": "frag·en：词根 frag-（问）",
+  "fam": [
+   "Frage",
+   "befragen",
+   "Anfrage",
+   "Nachfrage",
+   "fraglich"
+  ],
+  "ety": "< 中古高地德语 vrāgen < 古高地德语 frāgēn < 原始日耳曼语 *frēgōn-；一般认为与 forschen 及拉丁语 precari（祈求）属同一印欧词根（义为“问”）。",
+  "cog": "荷 vragen；拉 precari",
+  "tip": "fragen 支配第四格：Ich frage dich（不说 *dir）。现代为弱变化，过去式 frug 已过时。"
+ },
+ {
+  "w": "zurück",
+  "pos": "adv",
+  "ipa": "t͡suˈʁʏk",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "回，返回；归还",
+    "de": "wieder an den Ausgangspunkt",
+    "ex": [
+     {
+      "de": "Wann bist du wieder zurück?",
+      "zh": "你什么时候回来？"
+     },
+     {
+      "de": "Hin und zurück, bitte.",
+      "zh": "请给我一张往返票。"
+     }
+    ]
+   },
+   {
+    "zh": "向后，往后；落后",
+    "de": "nach hinten; im Rückstand",
+    "ex": [
+     {
+      "de": "Bitte einen Schritt zurück!",
+      "zh": "请往后退一步！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zurück sein — 回来了",
+   "hin und zurück — 往返",
+   "可分前缀 zurück-：zurückkommen, zurückgeben, zurückgehen（下降）",
+   "in der Entwicklung zurück sein — 发展落后"
+  ],
+  "root": "zu·rück：zu（向）+ Rücken（背）→“朝背后” → 向后、返回",
+  "fam": [
+   "Rücken",
+   "Rückkehr",
+   "rückwärts",
+   "zurückkommen"
+  ],
+  "ety": "< 中古高地德语 ze rucke（向后，朝背的方向）< ze（zu）+ rucke（Rücken 的第三格）。",
+  "cog": "英 ridge（与 Rücken 同源）",
+  "tip": "zurück- 作可分前缀时，整个动词的重音落在 -rück 上（zuˈrückkommen）。zurück 指“回到原处”，rückwärts 指“倒着、朝后方向”。"
+ },
+ {
+  "w": "dein",
+  "pos": "pron",
+  "ipa": "daɪ̯n",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（物主代词）你的",
+    "de": "Possessivpronomen der 2. Person Singular",
+    "ex": [
+     {
+      "de": "Ist das dein Fahrrad?",
+      "zh": "这是你的自行车吗？"
+     },
+     {
+      "de": "Danke für deine Hilfe!",
+      "zh": "谢谢你的帮助！"
+     }
+    ]
+   },
+   {
+    "zh": "（独立使用）你的那个",
+    "de": "(substantivisch) der/die/das dir Gehörende",
+    "ex": [
+     {
+      "de": "Mein Handy ist leer – kann ich deins benutzen?",
+      "zh": "我手机没电了——能用一下你的吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 ein：m. dein – deinen – deinem – deines；f. deine – deine – deiner – deiner；n. dein – dein – deinem – deines；pl. deine – deine – deinen – deiner",
+   "独立用：deiner, deine, dein(e)s（口语 deins）",
+   "书信中可大写 Dein 表礼貌（非必须）"
+  ],
+  "root": "dein：du（你）的物主形式",
+  "fam": [
+   "du",
+   "dich",
+   "dir",
+   "deinetwegen",
+   "deinesgleichen"
+  ],
+  "ety": "< 中古高地德语 dīn < 古高地德语 dīn < 原始日耳曼语 *þīna-。",
+  "cog": "英 thy, thine",
+  "tip": "只用于以 du 相称的对象；以 Sie 相称时用 Ihr（大写）。"
+ },
+ {
+  "w": "jedoch",
+  "pos": "konj",
+  "ipa": "jeˈdɔx",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "然而，但是（比 aber 书面）",
+    "de": "aber, doch (gehoben)",
+    "ex": [
+     {
+      "de": "Das Angebot klingt gut, jedoch fehlen noch wichtige Details.",
+      "zh": "这个报价听起来不错，但还缺少重要细节。"
+     },
+     {
+      "de": "Die Mieten steigen, die Löhne jedoch kaum.",
+      "zh": "房租在涨，工资却几乎没涨。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "句首占第一位（后接动词）：Jedoch ist das nicht alles.",
+   "可置于中场：Das ist jedoch nicht alles.",
+   "也可作并列连词（不占位，较少见）：…, jedoch er kam nicht."
+  ],
+  "root": "je·doch：je（总是，无论如何）+ doch（但是）",
+  "fam": [
+   "doch",
+   "je",
+   "dennoch"
+  ],
+  "ety": "由 je（总是，无论如何）+ doch（但是）组合而成。",
+  "cog": "—",
+  "tip": "jedoch 比 aber 更书面，位置更灵活；aber 作连词时不占位（Aber das ist …），jedoch 通常占位（Jedoch ist das …）。"
+ },
+ {
+  "w": "klar",
+  "pos": "adj",
+  "ipa": "klaːɐ̯",
+  "lvl": "A2",
+  "forms": "klarer · am klarsten",
+  "senses": [
+   {
+    "zh": "清楚的，明白的；明确的",
+    "de": "verständlich, eindeutig",
+    "ex": [
+     {
+      "de": "Die Regeln sind klar und einfach.",
+      "zh": "规则清楚简单。"
+     },
+     {
+      "de": "Mir ist nicht klar, was er will.",
+      "zh": "我不明白他想要什么。"
+     }
+    ]
+   },
+   {
+    "zh": "清澈的，晴朗的",
+    "de": "durchsichtig, rein; wolkenlos",
+    "ex": [
+     {
+      "de": "Das Wasser im See ist ganz klar.",
+      "zh": "湖水十分清澈。"
+     }
+    ]
+   },
+   {
+    "zh": "（应答）当然",
+    "de": "(Antwort) selbstverständlich",
+    "ex": [
+     {
+      "de": "„Kommst du mit?“ – „Klar!“",
+      "zh": "“你一起去吗？”——“当然！”"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich(D) über etw.(A) im Klaren sein — 对某事心中有数",
+   "jmdm. etw. klarmachen — 向某人讲清楚某事",
+   "mit jmdm./etw. klarkommen — 与……相处融洽/能应付",
+   "Alles klar! — 明白了！好的！"
+  ],
+  "root": "klar：借自拉丁语 clarus（明亮的，清楚的）",
+  "fam": [
+   "erklären",
+   "klären",
+   "Klarheit",
+   "aufklären",
+   "Erklärung"
+  ],
+  "ety": "< 中古高地德语 klār，借自拉丁语 clārus（明亮的，响亮的，清楚的）。",
+  "cog": "英 clear（经古法语）；法 clair；拉 clarus",
+  "tip": "Ist das klar?（明白了吗？）语气较强硬；礼貌说法用 Ist das verständlich?"
+ },
+ {
+  "w": "paar",
+  "pos": "pron",
+  "ipa": "paːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（ein paar）几个，一些（不变格）",
+    "de": "(ein paar) einige, wenige",
+    "ex": [
+     {
+      "de": "Ich brauche noch ein paar Minuten.",
+      "zh": "我还需要几分钟。"
+     },
+     {
+      "de": "Vor ein paar Jahren habe ich in Wien gewohnt.",
+      "zh": "几年前我住在维也纳。"
+     }
+    ]
+   },
+   {
+    "zh": "（die paar）仅有的这几个",
+    "de": "(die paar) die wenigen",
+    "ex": [
+     {
+      "de": "Wegen der paar Euro streite ich mich nicht.",
+      "zh": "为这几欧元我才不跟人争。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein paar + 复数名词（不变格）：mit ein paar Freunden",
+   "alle paar Minuten / Tage — 每隔几分钟/几天",
+   "ein paar Mal — 几次",
+   "区分：ein Paar（大写名词）= 一双、一对：ein Paar Schuhe"
+  ],
+  "root": "paar：源自名词 Paar（对，双），借自拉丁语 par（相等的）",
+  "fam": [
+   "Paar",
+   "paarweise",
+   "Pärchen",
+   "sich paaren"
+  ],
+  "ety": "源自名词 Paar < 中古高地德语 pār < 拉丁语 pār（相等的；一对）；“几个”义由“一对、两三个”泛化而来。",
+  "cog": "英 pair, par；法 paire",
+  "tip": "ein paar（小写，几个）≠ ein Paar（大写，一对/一双）。ein paar 与 einige 意思相近，但更口语。"
+ },
+ {
+  "w": "groß",
+  "pos": "adj",
+  "ipa": "ɡʁoːs",
+  "lvl": "A1",
+  "forms": "größer · am größten",
+  "senses": [
+   {
+    "zh": "大的；（人）高的",
+    "de": "umfangreich, ausgedehnt; hochgewachsen",
+    "ex": [
+     {
+      "de": "Sie wohnen in einer großen Wohnung im Zentrum.",
+      "zh": "他们住在市中心的一套大公寓里。"
+     },
+     {
+      "de": "Wie groß bist du?",
+      "zh": "你多高？"
+     }
+    ]
+   },
+   {
+    "zh": "年长的；成年的",
+    "de": "älter; erwachsen",
+    "ex": [
+     {
+      "de": "Mein großer Bruder studiert in Leipzig.",
+      "zh": "我哥哥在莱比锡上大学。"
+     }
+    ]
+   },
+   {
+    "zh": "重大的；伟大的",
+    "de": "bedeutend; berühmt",
+    "ex": [
+     {
+      "de": "Das war ein großer Fehler.",
+      "zh": "那是一个大错误。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "groß werden — 长大；groß sein — 长大了/身材高",
+   "im Großen und Ganzen — 总的来说",
+   "groß schreiben / großschreiben — 大写；（口）非常重视",
+   "Groß und Klein — 男女老少"
+  ],
+  "root": "groß：西日耳曼语 *grauta-（粗的、厚的）→ 大的",
+  "fam": [
+   "Größe",
+   "vergrößern",
+   "Großstadt",
+   "großartig",
+   "Großeltern"
+  ],
+  "ety": "< 中古高地德语 grōʒ < 古高地德语 grōʒ（粗大的，厚的）< 西日耳曼语 *grauta-。",
+  "cog": "英 great；荷 groot",
+  "tip": "瑞士德语拼写为 gross（不用 ß）。比较级 größer 变音，最高级 am größten（不是 *größesten）。"
+ },
+ {
+  "w": "liegen",
+  "pos": "v",
+  "ipa": "ˈliːɡn̩",
+  "lvl": "A1",
+  "forms": "liegt · lag · hat gelegen（南德/奥/瑞：ist gelegen）",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "躺，卧；（平放的物体）放着",
+    "de": "sich in waagerechter Lage befinden",
+    "ex": [
+     {
+      "de": "Er liegt noch im Bett.",
+      "zh": "他还躺在床上。"
+     },
+     {
+      "de": "Die Unterlagen liegen auf meinem Schreibtisch.",
+      "zh": "资料放在我的书桌上。"
+     }
+    ]
+   },
+   {
+    "zh": "位于，坐落",
+    "de": "sich an einem Ort befinden (geografisch)",
+    "ex": [
+     {
+      "de": "Das Hotel liegt direkt am Meer.",
+      "zh": "酒店就在海边。"
+     }
+    ]
+   },
+   {
+    "zh": "原因在于（an + D）；对某人重要/适合某人",
+    "de": "(an etw.) seine Ursache haben; (jmdm.) wichtig sein, jmdm. entsprechen",
+    "ex": [
+     {
+      "de": "Woran liegt es, dass das Projekt so teuer ist?",
+      "zh": "这个项目为什么这么贵？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "es liegt an + D — 原因在于……；Das liegt an dir. — 这取决于你/怪你",
+   "jmdm.(D) liegt viel / nichts an etw.(D) — 某人很在乎/不在乎某事",
+   "Das liegt mir nicht. — 这不适合我/我不擅长",
+   "liegen bleiben / liegen lassen — 留在原处；被遗忘"
+  ],
+  "root": "lieg·en：词根 lieg-（躺）；使役动词 legen（使躺 → 放平）",
+  "fam": [
+   "legen",
+   "Lage",
+   "Lager",
+   "gelegen",
+   "Gelegenheit"
+  ],
+  "ety": "< 中古高地德语 ligen < 古高地德语 liggen < 原始日耳曼语 *ligjan-；印欧词根 *legʰ-（躺）。",
+  "cog": "英 lie（躺）, lay；荷 liggen；俄 лежать",
+  "tip": "liegen（不及物，强变化：lag, gelegen）与 legen（及物，弱变化：legte, gelegt）不要混淆：Ich lege das Buch auf den Tisch → Das Buch liegt auf dem Tisch。"
+ },
+ {
+  "w": "welcher",
+  "pos": "pron",
+  "ipa": "ˈvɛlçɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（疑问代词）哪个，哪些",
+    "de": "(Interrogativpronomen) fragt nach einer Auswahl",
+    "ex": [
+     {
+      "de": "Welche Sprachen sprichst du?",
+      "zh": "你会说哪些语言？"
+     },
+     {
+      "de": "Welches Kleid gefällt dir besser?",
+      "zh": "你更喜欢哪条裙子？"
+     }
+    ]
+   },
+   {
+    "zh": "（关系代词，书面）= der/die/das",
+    "de": "(Relativpronomen, gehoben) der, die, das",
+    "ex": [
+     {
+      "de": "Die Maßnahmen, welche beschlossen wurden, treten sofort in Kraft.",
+      "zh": "已通过的措施立即生效。"
+     }
+    ]
+   },
+   {
+    "zh": "（不定代词，口）一些",
+    "de": "(Indefinitpronomen, ugs.) einige, etwas",
+    "ex": [
+     {
+      "de": "Haben wir noch Milch? – Ja, im Kühlschrank ist noch welche.",
+      "zh": "我们还有牛奶吗？——有，冰箱里还有一些。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 dieser：m. welcher – welchen – welchem – welches；f. welche – welche – welcher – welcher；n. welches – welches – welchem – welches；pl. welche – welche – welchen – welcher",
+   "Welcher von beiden? — 两个中的哪一个？",
+   "感叹：Welch ein Glück! — 多么幸运！（welch 不变格）",
+   "作关系代词时无第二格，第二格用 dessen/deren"
+  ],
+  "root": "wel·cher：疑问词干 hw-（比较 wer）+ -līh（形状）→“什么样的” → 哪个",
+  "fam": [
+   "wer",
+   "was",
+   "solcher",
+   "irgendwelche"
+  ],
+  "ety": "< 中古高地德语 welch < 古高地德语 (h)welīh < 原始日耳曼语 *hwa-līka-（何种形状的）。",
+  "cog": "英 which；荷 welk",
+  "tip": "was für ein 问“什么样的（性质）”，welcher 问“哪一个（在已知范围中选择）”。"
+ },
+ {
+  "w": "zusammen",
+  "pos": "adv",
+  "ipa": "t͡suˈzamən",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "一起，共同",
+    "de": "gemeinsam, miteinander",
+    "ex": [
+     {
+      "de": "Wir haben zusammen studiert.",
+      "zh": "我们是大学同学。"
+     },
+     {
+      "de": "Zusammen mit unseren Partnern entwickeln wir neue Lösungen.",
+      "zh": "我们与合作伙伴共同开发新方案。"
+     }
+    ]
+   },
+   {
+    "zh": "总共，合计",
+    "de": "insgesamt",
+    "ex": [
+     {
+      "de": "Das macht zusammen 23 Euro.",
+      "zh": "一共二十三欧元。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zusammen mit + D — 与……一起",
+   "zusammen sein — （恋人）在一起",
+   "Zusammen oder getrennt? — （餐馆结账）一起付还是分开付？",
+   "可分前缀：zusammenarbeiten, zusammenfassen, zusammenhängen"
+  ],
+  "root": "zu·sammen：zu（向）+ samen（一起，比较 sammeln、samt）",
+  "fam": [
+   "sammeln",
+   "samt",
+   "insgesamt",
+   "Zusammenarbeit",
+   "Zusammenhang"
+  ],
+  "ety": "< 中古高地德语 zesamene < 古高地德语 zisamane < zi（zu）+ saman（一起）。",
+  "cog": "英 same（与 saman 同源）",
+  "tip": "作可分前缀、重音在 zusammen 上时与动词连写（zusammenarbeiten 合作）；单纯表示“一起”、重音在动词上时分写（Wir wollen zusammen essen）。"
+ },
+ {
+  "w": "einige",
+  "pos": "pron",
+  "ipa": "ˈaɪ̯nɪɡə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（复数）一些，几个",
+    "de": "(Plural) mehrere, ein paar",
+    "ex": [
+     {
+      "de": "Einige Kollegen arbeiten heute im Homeoffice.",
+      "zh": "有几位同事今天居家办公。"
+     },
+     {
+      "de": "Vor einigen Jahren war hier noch ein Feld.",
+      "zh": "几年前这里还是一片田地。"
+     }
+    ]
+   },
+   {
+    "zh": "（单数）相当的，不少的",
+    "de": "(Singular) beträchtlich, ziemlich viel",
+    "ex": [
+     {
+      "de": "Das hat einige Zeit gedauert.",
+      "zh": "这花了不少时间。"
+     }
+    ]
+   },
+   {
+    "zh": "（einiges）一些事情；不少（东西）",
+    "de": "(einiges) manches; ziemlich viel",
+    "ex": [
+     {
+      "de": "Ich habe noch einiges zu erledigen.",
+      "zh": "我还有好些事要办。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 dieser（强变化）：pl. einige – einige – einigen – einiger",
+   "后接形容词也用强变化：einige gute Freunde, mit einigen guten Freunden",
+   "einige Male — 好几次；einige hundert — 几百",
+   "einiges（中性单数）— 一些事；不少"
+  ],
+  "root": "ein·ig·e：ein（一）+ -ig（形容词后缀）",
+  "fam": [
+   "ein",
+   "einig",
+   "sich einigen",
+   "Einigung",
+   "einzig"
+  ],
+  "ety": "< 中古高地德语 einec（唯一的；某些）< 古高地德语 einag，由 ein 派生；“一些”义为后起。",
+  "cog": "英 any（古英 ǣnig，同源）",
+  "tip": "einige 比 ein paar 正式；单数用法 einige Zeit / einiges Geld 意为“相当多”，并非“一点点”。"
+ },
+ {
+  "w": "fallen",
+  "pos": "v",
+  "ipa": "ˈfalən",
+  "lvl": "A2",
+  "forms": "fällt · fiel · ist gefallen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "落下，掉下；摔倒",
+    "de": "sich durch die Schwerkraft nach unten bewegen; stürzen",
+    "ex": [
+     {
+      "de": "Mir ist das Handy auf den Boden gefallen.",
+      "zh": "我的手机掉到地上了。"
+     },
+     {
+      "de": "Sie ist auf dem Eis gefallen.",
+      "zh": "她在冰上摔倒了。"
+     }
+    ]
+   },
+   {
+    "zh": "下降，下跌",
+    "de": "sinken, niedriger werden",
+    "ex": [
+     {
+      "de": "Die Temperaturen fallen nachts unter null.",
+      "zh": "夜间气温降到零度以下。"
+     }
+    ]
+   },
+   {
+    "zh": "（决定）作出；（话）被说出；（进球）发生；（士兵）阵亡",
+    "de": "(Entscheidung) getroffen werden; (Wort) geäußert werden; (Tor) erzielt werden; im Krieg sterben",
+    "ex": [
+     {
+      "de": "Die Entscheidung ist noch nicht gefallen.",
+      "zh": "决定还没有做出。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm.(D) leichtfallen / schwerfallen — 对某人来说容易/困难",
+   "ins Gewicht fallen — 至关重要",
+   "jmdm. ins Wort fallen — 打断某人说话",
+   "auf einen Tag fallen — （节日）恰逢某天"
+  ],
+  "root": "fall·en：词根 fall-（落下）；使役动词 fällen（使倒下 → 砍伐）",
+  "fam": [
+   "Fall",
+   "Unfall",
+   "Zufall",
+   "gefallen",
+   "auffallen"
+  ],
+  "ety": "< 中古高地德语 vallen < 古高地德语 fallan < 原始日耳曼语 *fallan-。",
+  "cog": "英 fall；荷 vallen",
+  "tip": "完成时用 sein：Er ist gefallen。不要与 gefallen（喜欢，hat gefallen）和 fällen（砍伐，弱变化）混淆。"
+ },
+ {
+  "w": "sicher",
+  "pos": "adj",
+  "ipa": "ˈzɪçɐ",
+  "lvl": "A2",
+  "forms": "sicherer · am sichersten",
+  "senses": [
+   {
+    "zh": "安全的",
+    "de": "ohne Gefahr, geschützt",
+    "ex": [
+     {
+      "de": "Bewahren Sie Ihr Passwort an einem sicheren Ort auf.",
+      "zh": "请将密码保存在安全的地方。"
+     }
+    ]
+   },
+   {
+    "zh": "确定的，有把握的",
+    "de": "gewiss, zweifelsfrei",
+    "ex": [
+     {
+      "de": "Bist du sicher, dass die Tür abgeschlossen ist?",
+      "zh": "你确定门锁上了吗？"
+     },
+     {
+      "de": "Eins ist sicher: So geht es nicht weiter.",
+      "zh": "有一点是肯定的：不能再这样下去了。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）肯定，一定；可靠的，熟练的",
+    "de": "(Adverb) bestimmt; zuverlässig, geübt",
+    "ex": [
+     {
+      "de": "Sie hat sicher schon davon gehört.",
+      "zh": "她肯定已经听说了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich(D) einer Sache(G) sicher sein / sich(D) sicher sein, dass … — 对某事有把握",
+   "sicher vor + D — 免于……的危险",
+   "auf Nummer sicher gehen — 求稳妥",
+   "Sicher ist sicher. — 小心为妙。"
+  ],
+  "root": "sicher：借自拉丁语 securus（se- 无 + cura 忧虑 → 无忧的）",
+  "fam": [
+   "Sicherheit",
+   "sichern",
+   "versichern",
+   "Versicherung",
+   "unsicher"
+  ],
+  "ety": "< 中古高地德语 sicher < 古高地德语 sihhur，早期借自拉丁语 sēcūrus（无忧的，安全的），可能经法律用语进入。",
+  "cog": "英 secure, sure（经法语）；拉 securus",
+  "tip": "表达“我确定”说 Ich bin (mir) sicher；“肯定会”可用副词 sicher，但语气比 bestimmt 略弱。"
+ },
+ {
+  "w": "darauf",
+  "pos": "adv",
+  "ipa": "daˈʁaʊ̯f",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "对此，在这上面（代替 auf + 事物）",
+    "de": "auf das/diese Sache",
+    "ex": [
+     {
+      "de": "Ich freue mich schon darauf, euch zu sehen.",
+      "zh": "我很期待见到你们。"
+     },
+     {
+      "de": "Es kommt darauf an, wie man es macht.",
+      "zh": "关键在于怎么做。"
+     }
+    ]
+   },
+   {
+    "zh": "在那上面（空间）",
+    "de": "auf etw. (räumlich)",
+    "ex": [
+     {
+      "de": "Da ist ein Stuhl – setz dich darauf.",
+      "zh": "那儿有把椅子——坐上去吧。"
+     }
+    ]
+   },
+   {
+    "zh": "随后，之后",
+    "de": "danach, anschließend",
+    "ex": [
+     {
+      "de": "Kurz darauf klingelte das Telefon.",
+      "zh": "不久之后电话响了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich darauf freuen, dass/zu … — 期待……",
+   "Es kommt darauf an, ob … — 取决于是否……",
+   "darauf achten / bestehen / warten, dass … — 注意/坚持/等待……",
+   "am Tag darauf / kurz darauf — 次日/不久后"
+  ],
+  "root": "da·r·auf：da（那）+ auf（在……上），元音前插入 -r-",
+  "fam": [
+   "worauf",
+   "hierauf",
+   "daraufhin",
+   "drauf"
+  ],
+  "ety": "da（< 古高地德语 dār）与介词 auf 的组合；介词以元音开头时保留 dar- 形式。",
+  "cog": "—",
+  "tip": "口语常缩为 drauf。指人不用 darauf：Ich warte auf ihn（不说 *darauf）。"
+ },
+ {
+  "w": "letzte",
+  "pos": "adj",
+  "ipa": "ˈlɛt͡stə",
+  "lvl": "A2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "最后的",
+    "de": "am Ende einer Reihe stehend",
+    "ex": [
+     {
+      "de": "Der letzte Zug fährt um Mitternacht.",
+      "zh": "末班车在午夜发车。"
+     },
+     {
+      "de": "Das ist meine letzte Chance.",
+      "zh": "这是我最后的机会。"
+     }
+    ]
+   },
+   {
+    "zh": "上一个的，最近的",
+    "de": "unmittelbar vorausgehend; jüngst",
+    "ex": [
+     {
+      "de": "Letzte Woche war ich krank.",
+      "zh": "上周我病了。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）最差的，最糟糕的",
+    "de": "(ugs.) schlechteste",
+    "ex": [
+     {
+      "de": "Das ist doch das Letzte!",
+      "zh": "这也太差劲了！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "letzte Woche / letztes Jahr（第四格，无介词）— 上周/去年",
+   "in letzter Zeit — 近来",
+   "zum letzten Mal — 最后一次；als Letzter — 最后一个",
+   "letzten Endes — 归根结底"
+  ],
+  "root": "letz·t·e：原为古高地德语 laz（迟缓的）的最高级 lezzisto",
+  "fam": [
+   "zuletzt",
+   "letztens",
+   "letztendlich",
+   "vorletzte"
+  ],
+  "ety": "< 中古高地德语 lezzist, lest < 古高地德语 lezzisto，为 laz（迟缓的，懒惰的；比较 lass）的最高级。",
+  "cog": "英 last, late；荷 laatst",
+  "tip": "本身是最高级，不能再比较。“上周”说 letzte Woche（第四格作状语，无冠词无介词）；in der letzten Woche 多指“过去的这一周”。"
+ },
+ {
+  "w": "nein",
+  "pos": "part",
+  "ipa": "naɪ̯n",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "不，不是（否定回答）",
+    "de": "Ausdruck der Verneinung",
+    "ex": [
+     {
+      "de": "Kommst du heute mit? – Nein, ich habe keine Zeit.",
+      "zh": "你今天一起去吗？——不，我没时间。"
+     },
+     {
+      "de": "Sie hat einfach Nein gesagt.",
+      "zh": "她干脆拒绝了。"
+     }
+    ]
+   },
+   {
+    "zh": "（表惊讶）不会吧，天哪",
+    "de": "Ausdruck der Überraschung",
+    "ex": [
+     {
+      "de": "Nein, so ein Zufall!",
+      "zh": "天哪，真巧！"
+     }
+    ]
+   },
+   {
+    "zh": "（递进）不，甚至（是）",
+    "de": "zur Steigerung: ja sogar",
+    "ex": [
+     {
+      "de": "Hunderte, nein Tausende kamen zur Demonstration.",
+      "zh": "数百人，不，数千人前来参加示威。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Nein / nein sagen — 拒绝",
+   "mit Nein stimmen — 投反对票",
+   "…, oder nein? / nicht wahr? — ……，对吧？",
+   "否定问句的肯定回答用 doch 而不是 ja"
+  ],
+  "root": "n·ein：ni（不）+ ein（一）→“一个也不” → 不",
+  "fam": [
+   "nicht",
+   "kein",
+   "nie",
+   "verneinen"
+  ],
+  "ety": "< 中古高地德语 nein < 古高地德语 nein < ni（不）+ ein（一）。",
+  "cog": "构词同英 none（ne + one）",
+  "tip": "回答否定疑问句时：Hast du keine Zeit? – Doch!（我有时间）/ Nein.（我没时间）。中文“不是/是”容易混淆。"
+ },
+ {
+  "w": "schön",
+  "pos": "adj",
+  "ipa": "ʃøːn",
+  "lvl": "A1",
+  "forms": "schöner · am schönsten",
+  "senses": [
+   {
+    "zh": "美丽的，漂亮的",
+    "de": "ästhetisch ansprechend",
+    "ex": [
+     {
+      "de": "Von hier hat man eine schöne Aussicht.",
+      "zh": "从这里看风景很美。"
+     }
+    ]
+   },
+   {
+    "zh": "好的，愉快的；令人高兴的",
+    "de": "angenehm, erfreulich",
+    "ex": [
+     {
+      "de": "Schönes Wochenende!",
+      "zh": "周末愉快！"
+     },
+     {
+      "de": "Es ist schön, dass du gekommen bist.",
+      "zh": "你能来真好。"
+     }
+    ]
+   },
+   {
+    "zh": "（口，副词）相当，挺；（反讽）好一个",
+    "de": "(ugs.) ziemlich; (ironisch) schlimm",
+    "ex": [
+     {
+      "de": "Das ist ganz schön teuer.",
+      "zh": "这可真够贵的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Danke schön! / Bitte schön! — 多谢！/不客气！",
+   "ganz schön + 形容词 — 相当……",
+   "Schön! — 好！行！",
+   "Das ist ja eine schöne Bescherung! — （反讽）真是一团糟！"
+  ],
+  "root": "schön：古高地德语 scōni（显眼的、好看的），与 schauen 相关 →“值得看的” → 美丽的",
+  "fam": [
+   "Schönheit",
+   "verschönern",
+   "beschönigen",
+   "schonen"
+  ],
+  "ety": "< 中古高地德语 schœne < 古高地德语 scōni（光彩的，好看的）< 原始日耳曼语 *skauni-；一般认为与 schauen 同源，原义“显眼的、值得一看的”。",
+  "cog": "英 sheen（古英 scīene，美丽的）；荷 schoon（干净的）",
+  "tip": "schön 用途比中文“美”宽得多，常表“好、愉快”。schön warm / schön brav 中的 schön 是加强语气。"
+ },
+ {
+  "w": "sogar",
+  "pos": "part",
+  "ipa": "zoˈɡaːɐ̯",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "甚至，连……都",
+    "de": "betont etw. Unerwartetes; selbst",
+    "ex": [
+     {
+      "de": "Sogar der Chef war überrascht.",
+      "zh": "连老板都很惊讶。"
+     },
+     {
+      "de": "Er spricht fünf Sprachen, sogar Chinesisch.",
+      "zh": "他会说五种语言，甚至包括中文。"
+     }
+    ]
+   },
+   {
+    "zh": "（递进）而且甚至，更",
+    "de": "(steigernd) ja, mehr noch",
+    "ex": [
+     {
+      "de": "Das Wetter war gut, sogar sehr gut.",
+      "zh": "天气很好，甚至可以说非常好。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sogar 置于被强调成分之前：Sogar ich habe es verstanden.",
+   "nicht nur …, sondern sogar … — 不仅……而且甚至……",
+   "ja sogar — 甚至"
+  ],
+  "root": "so·gar：so（如此）+ gar（完全）",
+  "fam": [
+   "gar",
+   "so"
+  ],
+  "ety": "由 so（如此）+ gar（完全，见 gar）组合而成。",
+  "cog": "—",
+  "tip": "sogar 强调“出乎意料”；与 selbst（甚至）同义，但 selbst 还可作“亲自、自己”，易混淆。"
+ },
+ {
+  "w": "zwar",
+  "pos": "adv",
+  "ipa": "t͡svaːɐ̯",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（zwar …, aber …）虽然……但是……",
+    "de": "(zwar …, aber) einräumend",
+    "ex": [
+     {
+      "de": "Die Wohnung ist zwar klein, aber sehr gemütlich.",
+      "zh": "这套房子虽然小，但很舒适。"
+     },
+     {
+      "de": "Er hat zwar recht, doch der Ton war unangemessen.",
+      "zh": "他虽然说得对，但语气不妥。"
+     }
+    ]
+   },
+   {
+    "zh": "（und zwar）具体来说，也就是",
+    "de": "(und zwar) genauer gesagt",
+    "ex": [
+     {
+      "de": "Ich muss los, und zwar sofort.",
+      "zh": "我得走了，而且是马上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zwar …, aber / doch / jedoch … — 虽然……但是……（zwar 在中场，不引导从句）",
+   "und zwar — 具体地说，即",
+   "比较：obwohl 引导从句，动词后置；zwar 为副词，主句语序不变"
+  ],
+  "root": "z·war：ze（zu）+ wāre（真实）→“确实地” → 固然",
+  "fam": [
+   "wahr",
+   "Wahrheit",
+   "wahrlich"
+  ],
+  "ety": "< 中古高地德语 ze wāre（确实，真的）< ze（zu）+ wāre（wār“真实”的第三格）。",
+  "cog": "wahr 与拉丁语 verus（真实的）同源",
+  "tip": "zwar 后面必须有 aber/doch 等转折，单独使用意思不完整（und zwar 除外）。"
+ },
+ {
+  "w": "Art",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Arten",
+  "gs": "der Art",
+  "ipa": "aːɐ̯t",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "方式，方法",
+    "de": "Weise, Methode",
+    "ex": [
+     {
+      "de": "Auf diese Art lässt sich viel Zeit sparen.",
+      "zh": "用这种方式可以节省很多时间。"
+     }
+    ]
+   },
+   {
+    "zh": "种类，类型；（生物）物种",
+    "de": "Sorte, Typ; (Biologie) Spezies",
+    "ex": [
+     {
+      "de": "Viele Arten sind vom Aussterben bedroht.",
+      "zh": "许多物种濒临灭绝。"
+     },
+     {
+      "de": "Er ist eine Art Berater für das Team.",
+      "zh": "他算是团队的一种顾问。"
+     }
+    ]
+   },
+   {
+    "zh": "本性，性情；作风",
+    "de": "Wesen, Charakter; Benehmen",
+    "ex": [
+     {
+      "de": "So etwas ist nicht ihre Art.",
+      "zh": "她不是那种会做这种事的人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf diese Art (und Weise) — 用这种方式",
+   "eine Art + 名词（不变格）— 一种……，类似……的东西",
+   "Art und Weise — 方式方法",
+   "Das ist keine Art! — 这样做太不像话了！"
+  ],
+  "root": "Art：中古高地德语 art（出身、本性）",
+  "fam": [
+   "artig",
+   "Unart",
+   "Abart",
+   "Artenvielfalt",
+   "entarten"
+  ],
+  "ety": "< 中古高地德语 art（出身，本性，方式）；更早的来源有争议，一说与古高地德语 art（耕作）有关。",
+  "cog": "—",
+  "tip": "德语 Art 不是英语 art（艺术，德语为 Kunst）。eine Art 后的名词通常不加 von：eine Art Museum。"
+ }
+]

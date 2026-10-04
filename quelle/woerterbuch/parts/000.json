@@ -1,0 +1,3314 @@
+[
+ {
+  "w": "der",
+  "pos": "art",
+  "ipa": "deːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（定冠词，阳性单数第一格；阴性单数第二、三格；复数第二格）这个，那个（特指已知事物）",
+    "de": "bestimmter Artikel",
+    "ex": [
+     {
+      "de": "Der Zug nach Berlin hat zwanzig Minuten Verspätung.",
+      "zh": "开往柏林的火车晚点二十分钟。"
+     },
+     {
+      "de": "Sie hat der Kollegin das Ergebnis der Umfrage geschickt.",
+      "zh": "她把调查结果发给了那位女同事。"
+     }
+    ]
+   },
+   {
+    "zh": "（指示代词，重读）这个人，那个人；这个，那个",
+    "de": "Demonstrativpronomen: dieser, jener",
+    "ex": [
+     {
+      "de": "Der? Den kenne ich überhaupt nicht.",
+      "zh": "他？我根本不认识他。"
+     }
+    ]
+   },
+   {
+    "zh": "（关系代词）……的那个（人/物）",
+    "de": "Relativpronomen",
+    "ex": [
+     {
+      "de": "Das ist der Kollege, der mir beim Umzug geholfen hat.",
+      "zh": "这就是帮我搬家的那位同事。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "定冠词变格 m/f/n/pl：N der/die/das/die · A den/die/das/die · D dem/der/dem/den · G des/der/des/der — 定冠词",
+   "指示/关系代词与冠词大体同形，但 G：dessen/deren/dessen/deren（指示代词复数也作 derer），D 复数：denen — 代词形式",
+   "阳性/中性单数第二格名词加 -(e)s：des Mannes, des Kindes；复数第三格名词加 -n：den Kindern — 名词词尾",
+   "与介词缩合：im, ins, am, ans, zum, zur, vom, beim — 介词缩合形式"
+  ],
+  "root": "单音节功能词，不可再拆；der / die / das 是同一指示词干的阳、阴、中性形式",
+  "fam": [
+   "dieser",
+   "da",
+   "dass",
+   "dort",
+   "dann"
+  ],
+  "ety": "< 中古高地德语 der, diu, daz < 古高地德语 der, diu, daz，原为指示代词，后弱化为定冠词；与 da, dort, dann, dass 同属日耳曼语的指示词干。",
+  "cog": "英 the, that；荷 de, dat",
+  "tip": "关系代词的性和数取决于先行词，格取决于它在从句中的作用：der Mann, dem ich geholfen habe。指具体名词时不能用 was 作关系代词（✗ das Buch, was ich lese）。"
+ },
+ {
+  "w": "und",
+  "pos": "konj",
+  "ipa": "ʊnt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "和，与；并且，而且",
+    "de": "verbindet Wörter, Satzteile oder Sätze",
+    "ex": [
+     {
+      "de": "Wir haben bis spät in die Nacht gegessen und getrunken.",
+      "zh": "我们吃吃喝喝到深夜。"
+     },
+     {
+      "de": "Er ist erkältet, und trotzdem geht er zur Arbeit.",
+      "zh": "他感冒了，可还是去上班。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语，计算）加",
+    "de": "plus",
+    "ex": [
+     {
+      "de": "Zwei und drei ist fünf.",
+      "zh": "二加三等于五。"
+     }
+    ]
+   },
+   {
+    "zh": "（单用，反问）那又怎样？然后呢？",
+    "de": "als Frage: Na und? / Und dann?",
+    "ex": [
+     {
+      "de": "Ich habe die Prüfung nicht bestanden. – Und? Du kannst sie ja wiederholen.",
+      "zh": "我考试没过。——那又怎样？你可以重考嘛。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "并列连词，占“零位”，不影响后面的语序：..., und dann gehen wir nach Hause. — 然后我们回家",
+   "und zwar — 而且是，具体来说：Ich komme, und zwar morgen. — 我会来，就在明天",
+   "und so weiter (usw.) — 等等；Na und? — 那又怎样？",
+   "两个主句用 und 连接时可以不加逗号，加逗号可使结构更清楚"
+  ],
+  "root": "单音节功能词，不可再拆",
+  "fam": [
+   "und zwar",
+   "und so weiter",
+   "Na und?"
+  ],
+  "ety": "< 中古高地德语 unde, und < 古高地德语 unti, enti。",
+  "cog": "英 and；荷 en",
+  "tip": "und 后接主句时，主语照常放在动词前：..., und ich bin müde（✗ und bin ich müde）。"
+ },
+ {
+  "w": "in",
+  "pos": "präp",
+  "ipa": "ɪn",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）在……里面，在……之内",
+    "de": "Lage: innerhalb von etw. (wo?)",
+    "ex": [
+     {
+      "de": "Sie wohnt in einer kleinen Wohnung in Leipzig.",
+      "zh": "她住在莱比锡的一套小公寓里。"
+     },
+     {
+      "de": "Im Büro ist es heute ziemlich ruhig.",
+      "zh": "今天办公室里挺安静。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）到……里面去",
+    "de": "Richtung: hinein (wohin?)",
+    "ex": [
+     {
+      "de": "Im Sommer fahren wir in die Schweiz.",
+      "zh": "夏天我们去瑞士。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D，时间）在……时候；……之后（将来）",
+    "de": "zeitlich: während; nach Ablauf von",
+    "ex": [
+     {
+      "de": "In zwei Wochen beginnt das Semester.",
+      "zh": "两周后学期开始。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in + D（位置，wo?）/ in + A（方向，wohin?）— 双向介词",
+   "缩合：in dem → im，in das → ins",
+   "国家名带冠词用 in：in die Türkei, in den Iran, in die USA；不带冠词用 nach：nach Frankreich",
+   "时间：im Mai, im Jahr 2020, in der Nacht；in zwei Tagen — 两天后（不是“两天内”）"
+  ],
+  "root": "单音节介词，不可再拆；派生出 innen, inner, Inhalt 等",
+  "fam": [
+   "innen",
+   "inner",
+   "innerhalb",
+   "hinein",
+   "Inhalt"
+  ],
+  "ety": "< 中古高地德语、古高地德语 in；为印欧语共有的古老介词。",
+  "cog": "英 in；拉 in；希腊 en",
+  "tip": "in zwei Tagen = 两天后；“两天之内”是 innerhalb von zwei Tagen。im 是 in dem 的缩合（无需单独查）。"
+ },
+ {
+  "w": "ich",
+  "pos": "pron",
+  "ipa": "ɪç",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "我",
+    "de": "Personalpronomen der 1. Person Singular",
+    "ex": [
+     {
+      "de": "Ich arbeite seit drei Jahren bei dieser Firma.",
+      "zh": "我在这家公司工作三年了。"
+     },
+     {
+      "de": "Das weiß ich leider auch nicht.",
+      "zh": "这个我也不知道，抱歉。"
+     }
+    ]
+   },
+   {
+    "zh": "（名词化 das Ich）自我",
+    "de": "das Ich: das eigene Selbst",
+    "ex": [
+     {
+      "de": "In der Pubertät sucht man oft nach dem eigenen Ich.",
+      "zh": "青春期的人常常在寻找自我。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格：N ich · A mich · D mir · G meiner（罕用：Vergiss meiner nicht）",
+   "ich + 动词词尾 -e：ich gehe（口语常省去 -e：ich geh）",
+   "ich selbst — 我自己；物主代词 mein — 我的",
+   "名词化：das Ich, die Ichs / Ich — 自我"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "mich",
+   "mir",
+   "mein",
+   "das Ich",
+   "Ichform"
+  ],
+  "ety": "< 中古高地德语 ich < 古高地德语 ih；为印欧语共有的第一人称代词。",
+  "cog": "英 I（古英语 ic）；荷 ik；拉 ego；希腊 egṓ",
+  "tip": "mir（第三格）与 mich（第四格）易混：Das gefällt mir / Er hat mich angerufen。表语用第一格：Das bin ich（✗ mich）。"
+ },
+ {
+  "w": "sein",
+  "pos": "v",
+  "ipa": "zaɪ̯n",
+  "lvl": "A1",
+  "forms": "ist · war · ist gewesen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "是；处于（某种状态）",
+    "de": "Kopula: etw./jmd. sein; sich in einem Zustand befinden",
+    "ex": [
+     {
+      "de": "Mein Bruder ist Ingenieur.",
+      "zh": "我哥哥是工程师。"
+     },
+     {
+      "de": "Das Wetter war gestern herrlich.",
+      "zh": "昨天天气好极了。"
+     }
+    ]
+   },
+   {
+    "zh": "在（某处）；存在",
+    "de": "sich befinden; existieren",
+    "ex": [
+     {
+      "de": "Wo bist du gerade? – Ich bin noch im Büro.",
+      "zh": "你现在在哪儿？——我还在办公室。"
+     }
+    ]
+   },
+   {
+    "zh": "（助动词）构成完成时；构成状态被动",
+    "de": "Hilfsverb für Perfekt und Zustandspassiv",
+    "ex": [
+     {
+      "de": "Sie ist gestern nach Wien geflogen.",
+      "zh": "她昨天飞去了维也纳。"
+     },
+     {
+      "de": "Die Bibliothek ist am Sonntag geschlossen.",
+      "zh": "图书馆周日闭馆。"
+     }
+    ]
+   },
+   {
+    "zh": "（sein + zu + 不定式）可以被……；必须被……",
+    "de": "modal: kann/muss getan werden",
+    "ex": [
+     {
+      "de": "Der Antrag ist bis Freitag einzureichen.",
+      "zh": "申请须在周五前提交。"
+     }
+    ]
+   },
+   {
+    "zh": "（同形的另一词：物主代词）他的；它的",
+    "de": "Possessivpronomen zu er / es",
+    "ex": [
+     {
+      "de": "Er hat sein Fahrrad vor dem Bahnhof abgestellt.",
+      "zh": "他把自行车停在了火车站前面。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "现在时：bin, bist, ist, sind, seid, sind；过去时：war, warst, war, waren, wart, waren；虚拟式 I：sei；虚拟式 II：wäre",
+   "完成时用 sein 的动词：位置移动（gehen, fahren）、状态变化（werden, sterben）以及 sein, bleiben 本身",
+   "表语用第一格：Er ist ein guter Lehrer. — 他是位好老师",
+   "物主代词 sein 按 ein 变格：sein Vater, seine Mutter, seines Vaters"
+  ],
+  "root": "不可再拆；变位形式来自三个不同词根（异干互补）：sein/sind/ist、bin/bist、war/gewesen",
+  "fam": [
+   "Sein",
+   "Dasein",
+   "Wesen",
+   "anwesend",
+   "gewesen"
+  ],
+  "ety": "异干动词：ist, sind 与不定式 sein（中古高地德语、古高地德语 sīn）同拉丁语 est, sunt 同源；bin, bist 来自另一词根（与英语 be 同源）；war, gewesen 来自古高地德语 wesan（存在，与英语 was, were 同源，名词 Wesen 亦源于此）。物主代词 sein 一般认为由反身代词的属格形式发展而来。",
+  "cog": "英 is, be, was；荷 zijn；拉 est, esse",
+  "tip": "完成时 ist gewesen（✗ hat gewesen）。北德口语多用过去时 war 代替完成时，南德则常说 ist gewesen。"
+ },
+ {
+  "w": "nicht",
+  "pos": "part",
+  "ipa": "nɪçt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "不，没有（否定）",
+    "de": "Negation",
+    "ex": [
+     {
+      "de": "Ich kann heute leider nicht kommen.",
+      "zh": "我今天很遗憾来不了。"
+     },
+     {
+      "de": "Das ist nicht mein Problem.",
+      "zh": "这不是我的问题。"
+     }
+    ]
+   },
+   {
+    "zh": "（句末附加问）不是吗？对吧？",
+    "de": "Rückversicherung am Satzende",
+    "ex": [
+     {
+      "de": "Du kommst doch morgen mit, nicht?",
+      "zh": "你明天一起去，对吧？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "全句否定：nicht 尽量后置，放在动词的第二部分前：Ich habe ihn nicht gesehen.",
+   "部分否定：nicht 放在被否定成分前，常接 sondern：nicht heute, sondern morgen — 不是今天，而是明天",
+   "否定带不定冠词或无冠词的名词用 kein：Ich habe kein Auto（✗ nicht ein Auto）",
+   "nicht mehr — 不再；noch nicht — 还没；gar nicht / überhaupt nicht — 根本不"
+  ],
+  "root": "ni（不）+ wiht（东西）→“没有任何东西”→ 一般否定词",
+  "fam": [
+   "nichts",
+   "vernichten",
+   "zunichte",
+   "Nichtraucher",
+   "Wicht"
+  ],
+  "ety": "< 中古高地德语 niht < 古高地德语 niowiht, niwiht（无物）：nio（从不）+ wiht（东西、生灵，即今 Wicht）。原义同 nichts，后弱化为一般否定词。",
+  "cog": "英 not, naught（古英语 nāwiht，构成相同）",
+  "tip": "nicht 和 kein 的分工是中国学习者常错点：Ich habe keine Zeit（✗ nicht Zeit）；带定冠词或物主代词的名词才用 nicht：Ich finde den Schlüssel nicht。"
+ },
+ {
+  "w": "zu",
+  "pos": "präp",
+  "ipa": "t͡suː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）到……那里，向，往",
+    "de": "Richtung, Ziel (zu Personen, Institutionen, Orten)",
+    "ex": [
+     {
+      "de": "Ich muss morgen früh zum Arzt.",
+      "zh": "我明天早上得去看医生。"
+     },
+     {
+      "de": "Wie komme ich am schnellsten zur Universität?",
+      "zh": "去大学最快怎么走？"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）为了；在……之际，作为",
+    "de": "Zweck, Anlass",
+    "ex": [
+     {
+      "de": "Zum Geburtstag hat sie ein Fahrrad bekommen.",
+      "zh": "她过生日时收到了一辆自行车。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词，+形容词/副词）太，过于",
+    "de": "übermäßig",
+    "ex": [
+     {
+      "de": "Die Wohnung ist leider zu teuer für uns.",
+      "zh": "这套房子对我们来说太贵了。"
+     }
+    ]
+   },
+   {
+    "zh": "（不定式小品词）",
+    "de": "Partikel vor dem Infinitiv",
+    "ex": [
+     {
+      "de": "Es ist schwer, in München eine bezahlbare Wohnung zu finden.",
+      "zh": "在慕尼黑很难找到负担得起的房子。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词，口语）关着的",
+    "de": "geschlossen",
+    "ex": [
+     {
+      "de": "Die Apotheke ist sonntags zu.",
+      "zh": "药店周日关门。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zu + D（始终第三格）；缩合：zu dem → zum，zu der → zur",
+   "zu + 不定式：可分动词中 zu 插在中间（anzufangen）；um ... zu / ohne ... zu / statt ... zu",
+   "zu Hause — 在家；nach Hause — 回家；zu Fuß — 步行",
+   "zu + 形容词（太，含负面）≠ sehr（很）：Der Kaffee ist zu heiß. — 咖啡太烫了"
+  ],
+  "root": "单音节功能词；作可分前缀 zu-（zumachen, zuhören, zunehmen）表示“朝向、关闭、增加”",
+  "fam": [
+   "zurück",
+   "zuerst",
+   "dazu",
+   "Zugang",
+   "zunehmen"
+  ],
+  "ety": "< 中古高地德语 zuo < 古高地德语 zuo, zō。",
+  "cog": "英 to, too；荷 toe",
+  "tip": "去某人那里用 zu（zu meiner Mutter），不用 nach；表“太”时不能代替 sehr。zum = zu dem，zur = zu der（无需单独查）。"
+ },
+ {
+  "w": "von",
+  "pos": "präp",
+  "ipa": "fɔn",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）从，自（起点）",
+    "de": "Ausgangspunkt (räumlich/zeitlich)",
+    "ex": [
+     {
+      "de": "Der Zug kommt von Hamburg und fährt weiter nach München.",
+      "zh": "这趟火车从汉堡开来，继续开往慕尼黑。"
+     },
+     {
+      "de": "Von Montag an bin ich im Urlaub.",
+      "zh": "从周一起我休假。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）……的（表所属，代替第二格）",
+    "de": "Zugehörigkeit (statt Genitiv)",
+    "ex": [
+     {
+      "de": "Das ist das Auto von meinem Vater.",
+      "zh": "这是我爸爸的车。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D，被动句）被，由（施动者）",
+    "de": "Urheber im Passiv",
+    "ex": [
+     {
+      "de": "Das Gesetz wurde vom Parlament verabschiedet.",
+      "zh": "该法律已由议会通过。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "von + D；缩合：von dem → vom",
+   "von ... bis ... / von ... an (ab) — 从……到……/从……起",
+   "被动：von 引出施动者，durch 引出手段或原因",
+   "搭配：abhängen von, erzählen von, träumen von, sich erholen von"
+  ],
+  "root": "单音节介词，不可再拆",
+  "fam": [
+   "davon",
+   "wovon",
+   "voneinander",
+   "vonseiten"
+  ],
+  "ety": "< 中古高地德语 von < 古高地德语 fona, fon；更早的来源不详。",
+  "cog": "荷 van",
+  "tip": "von 后永远第三格：von dem Lehrer / vom Lehrer。贵族姓氏中的 von 表示出身（Johann Wolfgang von Goethe）。"
+ },
+ {
+  "w": "mit",
+  "pos": "präp",
+  "ipa": "mɪt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）和……一起",
+    "de": "in Begleitung von",
+    "ex": [
+     {
+      "de": "Ich fahre mit meinen Kollegen nach München.",
+      "zh": "我和同事们一起去慕尼黑。"
+     },
+     {
+      "de": "Mit wem hast du gerade telefoniert?",
+      "zh": "你刚才和谁打电话？"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）用，借助；乘坐",
+    "de": "Mittel, Werkzeug, Verkehrsmittel",
+    "ex": [
+     {
+      "de": "Wir fahren mit dem Bus zur Arbeit.",
+      "zh": "我们坐公交车上班。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）带有，具有",
+    "de": "versehen mit",
+    "ex": [
+     {
+      "de": "Wir suchen eine Wohnung mit Balkon.",
+      "zh": "我们在找一套带阳台的房子。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit + D（始终第三格）：mit mir, mit den Kindern",
+   "交通工具：mit dem Zug/Bus/Fahrrad fahren（但 zu Fuß gehen）",
+   "mit 18 (Jahren) — 在18岁时",
+   "可分前缀 mit-（一起）：mitkommen, mitnehmen, mitmachen"
+  ],
+  "root": "单音节介词；作前缀 mit- 表“共同、一起”",
+  "fam": [
+   "damit",
+   "miteinander",
+   "Mitglied",
+   "mitteilen",
+   "Mitleid"
+  ],
+  "ety": "< 中古高地德语 mit(e) < 古高地德语 mit(i)；与哥特语 miþ 同源。",
+  "cog": "古英语 mid（英 midwife 中的 mid-）；荷 met；一般认为与希腊 metá 同源",
+  "tip": "mit 后复数第三格名词加 -n：mit den Freunden。表工具不要用 durch：mit dem Messer schneiden。"
+ },
+ {
+  "w": "es",
+  "pos": "pron",
+  "ipa": "ɛs",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "它（指中性名词）",
+    "de": "Personalpronomen, Neutrum",
+    "ex": [
+     {
+      "de": "Wo ist das Buch? – Es liegt auf dem Tisch.",
+      "zh": "书在哪儿？——在桌上。"
+     }
+    ]
+   },
+   {
+    "zh": "（形式主语，无人称）",
+    "de": "unpersönliches Subjekt",
+    "ex": [
+     {
+      "de": "Es regnet schon seit Stunden.",
+      "zh": "已经下了好几个小时的雨。"
+     },
+     {
+      "de": "In dem Gespräch ging es um die neuen Arbeitszeiten.",
+      "zh": "谈话涉及新的工作时间。"
+     }
+    ]
+   },
+   {
+    "zh": "（占位词，置于句首）；（指代整句或事情）",
+    "de": "Platzhalter im Vorfeld; Verweis auf einen Sachverhalt",
+    "ex": [
+     {
+      "de": "Es haben sich über hundert Bewerber gemeldet.",
+      "zh": "有一百多名申请者报了名。"
+     },
+     {
+      "de": "Ich weiß es nicht.",
+      "zh": "我不知道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格：N es · A es · D ihm · G seiner（罕用）",
+   "无人称结构：es regnet, es gibt + A, es geht um + A, es handelt sich um + A",
+   "句首占位 es 在倒装时消失：Viele Leute haben sich gemeldet.",
+   "口语缩略：geht's, gibt's, wie geht's?"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "er",
+   "sie",
+   "ihm",
+   "sein"
+  ],
+  "ety": "< 中古高地德语 ez < 古高地德语 ez；与哥特语 ita、拉丁语 id 同源。",
+  "cog": "拉 id；哥特 ita",
+  "tip": "es gibt 后接第四格：Es gibt einen Grund（✗ ein Grund）。指 das Mädchen 时语法上用 es，口语中也常用 sie。"
+ },
+ {
+  "w": "ein",
+  "pos": "art",
+  "ipa": "aɪ̯n",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（不定冠词）一个，某个",
+    "de": "unbestimmter Artikel",
+    "ex": [
+     {
+      "de": "Ich suche eine Wohnung in der Nähe der Uni.",
+      "zh": "我在找一套大学附近的房子。"
+     },
+     {
+      "de": "Er hat einen neuen Job bei einer Bank.",
+      "zh": "他在一家银行找到了新工作。"
+     }
+    ]
+   },
+   {
+    "zh": "（数词，重读）一",
+    "de": "Zahlwort: eins",
+    "ex": [
+     {
+      "de": "Wir haben nur einen Tag Zeit.",
+      "zh": "我们只有一天时间。"
+     }
+    ]
+   },
+   {
+    "zh": "（不定代词 einer/eine/eins）某人；其中一个",
+    "de": "Indefinitpronomen",
+    "ex": [
+     {
+      "de": "Einer der Teilnehmer hat sich beschwert.",
+      "zh": "有一位参与者投诉了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格 m/f/n：N ein/eine/ein · A einen/eine/ein · D einem/einer/einem · G eines/einer/eines；无复数",
+   "代词形式：einer, eine, eins (eines)：Ich brauche einen Stift. – Hier ist einer.",
+   "单独计数用 eins：eins, zwei, drei；um eins / um ein Uhr",
+   "否定形式为 kein；可分前缀 ein-（进入）：einsteigen, einladen"
+  ],
+  "root": "单音节词，不可再拆；由数词“一”弱化为不定冠词",
+  "fam": [
+   "eins",
+   "einzeln",
+   "einig",
+   "allein",
+   "einmal"
+  ],
+  "ety": "< 中古高地德语、古高地德语 ein（数词“一”），后弱化为不定冠词。",
+  "cog": "英 one, a/an；荷 een；拉 ūnus",
+  "tip": "ein 在阳性第一格和中性第一、四格没有词尾，后面的形容词须带强变化词尾：ein neuer Computer, ein neues Handy。"
+ },
+ {
+  "w": "auf",
+  "pos": "präp",
+  "ipa": "aʊ̯f",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）在……上面（接触表面）",
+    "de": "Lage auf einer Oberfläche (wo?)",
+    "ex": [
+     {
+      "de": "Das Handy liegt auf dem Tisch.",
+      "zh": "手机在桌子上。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）到……上面",
+    "de": "Richtung auf eine Oberfläche (wohin?)",
+    "ex": [
+     {
+      "de": "Leg die Unterlagen bitte auf meinen Schreibtisch.",
+      "zh": "请把材料放到我的办公桌上。"
+     }
+    ]
+   },
+   {
+    "zh": "在/去（某场所、活动）；用（某种语言）",
+    "de": "bei Veranstaltungen, öffentlichen Einrichtungen; Sprache",
+    "ex": [
+     {
+      "de": "Wir waren am Samstag auf einer Hochzeit.",
+      "zh": "我们周六去参加了一场婚礼。"
+     },
+     {
+      "de": "Können wir das Meeting auf Englisch machen?",
+      "zh": "我们能用英语开会吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（副词，口语）开着的",
+    "de": "geöffnet",
+    "ex": [
+     {
+      "de": "Das Fenster ist noch auf.",
+      "zh": "窗户还开着。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf + D（位置）/ auf + A（方向），指水平面上的接触",
+   "大量固定搭配接第四格：warten auf, sich freuen auf, achten auf, hoffen auf, sich verlassen auf",
+   "auf Deutsch — 用德语；auf einmal — 突然；auf jeden Fall — 无论如何",
+   "可分前缀 auf-（向上、打开）：aufstehen, aufmachen, aufhören"
+  ],
+  "root": "单音节介词；作前缀 auf- 表“向上、打开、开始”",
+  "fam": [
+   "darauf",
+   "hinauf",
+   "Aufgabe",
+   "Auftrag",
+   "aufmachen"
+  ],
+  "ety": "< 中古高地德语 ūf < 古高地德语 ūf。",
+  "cog": "英 up；荷 op",
+  "tip": "warten auf + A（✗ warten für）。sich freuen auf（期待将来的事）≠ sich freuen über（对已发生的事高兴）。"
+ },
+ {
+  "w": "für",
+  "pos": "präp",
+  "ipa": "fyːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+A）为了，给",
+    "de": "Zweck, Empfänger",
+    "ex": [
+     {
+      "de": "Das Geschenk ist für meine Schwester.",
+      "zh": "这份礼物是给我妹妹的。"
+     },
+     {
+      "de": "Für die Prüfung muss ich noch viel lernen.",
+      "zh": "为了考试我还得学很多。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）对……来说",
+    "de": "aus der Sicht von",
+    "ex": [
+     {
+      "de": "Für mich ist das kein Problem.",
+      "zh": "对我来说这不是问题。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）赞成，支持",
+    "de": "zugunsten von",
+    "ex": [
+     {
+      "de": "Die Mehrheit hat für den Vorschlag gestimmt.",
+      "zh": "多数人投票赞成该提案。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）为期（计划的时长）；以……价格",
+    "de": "Zeitdauer (geplant); Preis",
+    "ex": [
+     {
+      "de": "Sie geht für ein Jahr nach Kanada.",
+      "zh": "她要去加拿大待一年。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "für + A：für dich, für den Kunden",
+   "für etw. sein — 赞成（反义 gegen etw. sein）",
+   "搭配：sich interessieren für, danken für, sich entscheiden für, sorgen für",
+   "Was für ein ...? — 什么样的……？（ein 的格由句中作用决定，不由 für 决定）"
+  ],
+  "root": "单音节介词，不可再拆；与 vor 同源",
+  "fam": [
+   "dafür",
+   "wofür",
+   "Fürsorge",
+   "Fürsprache",
+   "vor"
+  ],
+  "ety": "< 中古高地德语 vür(e) < 古高地德语 furi；与 vor（古高地德语 fora）同源，早期两者用法有交叉。",
+  "cog": "英 for, fore；荷 voor",
+  "tip": "已持续的时间用 seit，不用 für：Ich wohne seit drei Jahren hier（✗ für drei Jahre）。"
+ },
+ {
+  "w": "sie",
+  "pos": "pron",
+  "ipa": "ziː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "她；它（指阴性名词）",
+    "de": "Personalpronomen, 3. Person Singular Femininum",
+    "ex": [
+     {
+      "de": "Meine Chefin ist im Urlaub, sie kommt am Montag zurück.",
+      "zh": "我的上司在休假，她周一回来。"
+     },
+     {
+      "de": "Die Tür klemmt, sie geht nicht auf.",
+      "zh": "门卡住了，打不开。"
+     }
+    ]
+   },
+   {
+    "zh": "他们，她们，它们",
+    "de": "Personalpronomen, 3. Person Plural",
+    "ex": [
+     {
+      "de": "Die Studierenden protestieren, weil sie höhere Gebühren zahlen sollen.",
+      "zh": "大学生们在抗议，因为他们要交更高的费用。"
+     }
+    ]
+   },
+   {
+    "zh": "（大写 Sie）您；您们（尊称）",
+    "de": "Höflichkeitsform",
+    "ex": [
+     {
+      "de": "Können Sie mir bitte kurz helfen?",
+      "zh": "您能帮我一下吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "单数：N sie · A sie · D ihr · G ihrer",
+   "复数：N sie · A sie · D ihnen · G ihrer；尊称 Sie 同复数，大写：Sie · Sie · Ihnen · Ihrer",
+   "动词：sie（她）+ 三单（sie geht）；sie（他们）/ Sie（您）+ 复数（sie gehen）",
+   "物主代词：ihr（她的/他们的），Ihr（您的）；siezen — 以 Sie 相称"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "ihr",
+   "ihnen",
+   "siezen"
+  ],
+  "ety": "< 中古高地德语 sie, si < 古高地德语 siu, sī（阴性单数）/ sie（复数）。尊称 Sie 约自17、18世纪起由第三人称复数转用而来。",
+  "cog": "荷 zij",
+  "tip": "区分三种 sie 看动词和大小写：sie kommt（她）/ sie kommen（他们）/ Sie kommen（您）。句首时只能靠语境区分 sie 与 Sie。"
+ },
+ {
+  "w": "sich",
+  "pos": "pron",
+  "ipa": "zɪç",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（反身代词）自己",
+    "de": "Reflexivpronomen der 3. Person und der Höflichkeitsform",
+    "ex": [
+     {
+      "de": "Er hat sich beim Fußballspielen verletzt.",
+      "zh": "他踢球时受伤了。"
+     }
+    ]
+   },
+   {
+    "zh": "（构成反身动词，无“自己”之义）",
+    "de": "Teil reflexiver Verben",
+    "ex": [
+     {
+      "de": "Die Lage hat sich deutlich verbessert.",
+      "zh": "形势明显好转了。"
+     },
+     {
+      "de": "Bitte beeilen Sie sich!",
+      "zh": "请您快一点！"
+     }
+    ]
+   },
+   {
+    "zh": "（复数）相互，彼此",
+    "de": "reziprok: einander",
+    "ex": [
+     {
+      "de": "Die beiden kennen sich seit der Schulzeit.",
+      "zh": "他俩上学时就认识了。"
+     }
+    ]
+   },
+   {
+    "zh": "（sich lassen + 不定式）可以被……",
+    "de": "Passiversatz: lässt sich + Infinitiv",
+    "ex": [
+     {
+      "de": "Das Problem lässt sich leicht lösen.",
+      "zh": "这个问题很容易解决。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich 只用于第三人称和尊称 Sie，第三、四格同形；其他人称：mich/mir, dich/dir, uns, euch",
+   "另有宾语时反身代词用第三格：Ich wasche mir die Hände（但 Ich wasche mich）",
+   "an sich — 本身；von sich aus — 主动地；etw. bei sich haben — 随身带着",
+   "反身动词完成时一般用 haben：Er hat sich geirrt."
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "mich",
+   "dich",
+   "uns",
+   "euch"
+  ],
+  "ety": "< 中古高地德语 sich < 古高地德语 sih；与哥特语 sik、拉丁语 sē 同源。",
+  "cog": "拉 sē, sibi；荷 zich",
+  "tip": "尊称也用 sich：Setzen Sie sich bitte!（✗ Setzen Sie Sie）。词典中的反身动词写作 sich + 不定式，学习时要连同 sich 一起记。"
+ },
+ {
+  "w": "auch",
+  "pos": "adv",
+  "ipa": "aʊ̯x",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "也，同样",
+    "de": "ebenfalls",
+    "ex": [
+     {
+      "de": "Meine Frau arbeitet auch im Krankenhaus.",
+      "zh": "我妻子也在医院工作。"
+     },
+     {
+      "de": "Ich bin müde. – Ich auch.",
+      "zh": "我累了。——我也是。"
+     }
+    ]
+   },
+   {
+    "zh": "甚至，连……也",
+    "de": "sogar",
+    "ex": [
+     {
+      "de": "Auch ein Experte kann sich irren.",
+      "zh": "即使是专家也会出错。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词）真的，确实；到底",
+    "de": "Modalpartikel (Bekräftigung, Nachfrage)",
+    "ex": [
+     {
+      "de": "Hast du auch wirklich alles eingepackt?",
+      "zh": "你真的都装好了吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auch 位置影响意思：Auch Peter hat das gesagt（连 Peter 也说了）/ Peter hat das auch gesagt（Peter 也说了）",
+   "auch nicht / auch kein — 也不：Ich auch nicht. — 我也不",
+   "auch wenn — 即使；nicht nur ..., sondern auch ... — 不仅……而且……",
+   "wer / was / wie auch immer — 无论谁/什么/怎样"
+  ],
+  "root": "单音节副词，不可再拆",
+  "fam": [
+   "auch wenn",
+   "wenn auch",
+   "sowieso"
+  ],
+  "ety": "< 中古高地德语 ouch < 古高地德语 ouh。",
+  "cog": "英 eke（古义“也”）；荷 ook",
+  "tip": "“我也不”是 Ich auch nicht（✗ Ich auch kein）。"
+ },
+ {
+  "w": "als",
+  "pos": "konj",
+  "ipa": "als",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "当……时（过去一次性事件）",
+    "de": "temporal: zu dem Zeitpunkt, da (einmalig, Vergangenheit)",
+    "ex": [
+     {
+      "de": "Als ich in Berlin ankam, regnete es in Strömen.",
+      "zh": "我到柏林时下着倾盆大雨。"
+     },
+     {
+      "de": "Als Kind wollte er Pilot werden.",
+      "zh": "小时候他想当飞行员。"
+     }
+    ]
+   },
+   {
+    "zh": "比（用于比较级后）",
+    "de": "nach Komparativ",
+    "ex": [
+     {
+      "de": "Die Miete ist höher als erwartet.",
+      "zh": "房租比预想的高。"
+     }
+    ]
+   },
+   {
+    "zh": "作为，以……身份",
+    "de": "in der Funktion/Rolle von",
+    "ex": [
+     {
+      "de": "Sie arbeitet als Ärztin in einer Klinik in Hamburg.",
+      "zh": "她在汉堡一家医院当医生。"
+     }
+    ]
+   },
+   {
+    "zh": "（als ob / als wenn）仿佛，好像",
+    "de": "irrealer Vergleich",
+    "ex": [
+     {
+      "de": "Er tut so, als ob er nichts davon wüsste.",
+      "zh": "他装作对此一无所知。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "als 引导时间从句只用于过去一次性事件，动词在句末；过去多次或现在、将来用 wenn",
+   "比较级 + als；同级比较用 so ... wie",
+   "als + 名词与所指成分同格：Ich kenne ihn als guten Kollegen.",
+   "als ob / als wenn + 虚拟式 II；也可 als + 动词直接接：als wäre nichts passiert；sowohl ... als auch ... — 既……又……"
+  ],
+  "root": "al（全部）+ so（如此）→“完全如此”→ 如同、作为、比",
+  "fam": [
+   "also",
+   "sowohl",
+   "als ob"
+  ],
+  "ety": "< 中古高地德语 als(e), alsō < 古高地德语 alsō（al + sō，“完全如此”），与 also 同源。",
+  "cog": "英 as, also（同样由 all + so 构成）",
+  "tip": "✗ Wenn ich ein Kind war → Als ich ein Kind war。比较级后用 als，✗ größer wie（口语有但不规范）。"
+ },
+ {
+  "w": "er",
+  "pos": "pron",
+  "ipa": "eːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "他",
+    "de": "Personalpronomen, 3. Person Singular Maskulinum",
+    "ex": [
+     {
+      "de": "Mein Nachbar ist Arzt, er arbeitet im Klinikum.",
+      "zh": "我的邻居是医生，他在医院工作。"
+     }
+    ]
+   },
+   {
+    "zh": "它（指阳性名词）",
+    "de": "Verweis auf ein maskulines Nomen",
+    "ex": [
+     {
+      "de": "Der Laptop ist alt, aber er funktioniert noch.",
+      "zh": "这台笔记本电脑很旧了，但还能用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格：N er · A ihn · D ihm · G seiner（罕用）",
+   "指物时按语法性别：der Tisch → er, die Lampe → sie, das Buch → es",
+   "物主代词：sein（他的，它的）"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "ihn",
+   "ihm",
+   "sein"
+  ],
+  "ety": "< 中古高地德语 er < 古高地德语 er, ir；与哥特语 is、拉丁语 is 同源。",
+  "cog": "哥特 is；拉 is",
+  "tip": "德语的“它”按名词的性分为 er/sie/es，不要一律用 es：Wo ist der Schlüssel? – Er liegt auf dem Tisch。"
+ },
+ {
+  "w": "an",
+  "pos": "präp",
+  "ipa": "an",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）在……旁边，在……边上（贴近垂直面或边缘）",
+    "de": "Lage: dicht bei, an einer Seite (wo?)",
+    "ex": [
+     {
+      "de": "Das Bild hängt an der Wand.",
+      "zh": "画挂在墙上。"
+     },
+     {
+      "de": "Wir wohnen direkt am Rhein.",
+      "zh": "我们就住在莱茵河边。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）到……旁边/上",
+    "de": "Richtung (wohin?)",
+    "ex": [
+     {
+      "de": "Häng den Kalender bitte an die Wand.",
+      "zh": "请把日历挂到墙上。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D，时间）在（某日、某个时段）",
+    "de": "zeitlich: an Tagen, Tageszeiten, Daten",
+    "ex": [
+     {
+      "de": "Am Montag habe ich frei.",
+      "zh": "我周一休息。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词，口语）开着（电器、灯）",
+    "de": "eingeschaltet",
+    "ex": [
+     {
+      "de": "Im Büro ist das Licht noch an.",
+      "zh": "办公室的灯还亮着。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an + D（位置）/ an + A（方向）；缩合：an dem → am，an das → ans",
+   "时间：am Montag, am Abend, am 3. Oktober；最高级：am schnellsten",
+   "搭配：denken an + A, glauben an + A, sich erinnern an + A, teilnehmen an + D",
+   "an der Uni studieren — 在大学读书；可分前缀 an-：anfangen, anrufen, ankommen"
+  ],
+  "root": "单音节介词；作前缀 an- 表“接近、开始、附着”",
+  "fam": [
+   "daran",
+   "heran",
+   "Anfang",
+   "Anzahl",
+   "anfangen"
+  ],
+  "ety": "< 中古高地德语 an(e) < 古高地德语 ana。",
+  "cog": "英 on；荷 aan；希腊 aná",
+  "tip": "an 与 auf：贴近垂直面或边缘用 an（an der Wand），水平面上用 auf（auf dem Tisch）。am = an dem（无需单独查）。"
+ },
+ {
+  "w": "dass",
+  "pos": "konj",
+  "ipa": "das",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（引导主语/宾语从句）……这件事，说……",
+    "de": "leitet Inhaltssätze ein",
+    "ex": [
+     {
+      "de": "Ich hoffe, dass du bald wieder gesund bist.",
+      "zh": "我希望你早日康复。"
+     },
+     {
+      "de": "Dass er gekündigt hat, überrascht niemanden.",
+      "zh": "他辞职了，这并不让人意外。"
+     }
+    ]
+   },
+   {
+    "zh": "（so dass / sodass）以至于",
+    "de": "konsekutiv",
+    "ex": [
+     {
+      "de": "Es regnete so stark, dass das Spiel abgesagt wurde.",
+      "zh": "雨下得太大，比赛被取消了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "从属连词，从句动词在句末：..., dass er morgen kommt.",
+   "常用 es 或 da(r)-词预指：Es freut mich, dass ... / Ich freue mich darauf, dass ...",
+   "sodass / so ..., dass — 以至于；ohne dass — 而没有；anstatt dass — 而不是",
+   "dass 从句前必须加逗号"
+  ],
+  "root": "与冠词、代词 das 原为同一词，后在拼写上分化",
+  "fam": [
+   "das",
+   "sodass",
+   "damit",
+   "dafür"
+  ],
+  "ety": "与中性冠词/代词 das 同源；作为连词与代词在拼写上的区分自16世纪起逐渐确立。1996年正字法改革前写作 daß。",
+  "cog": "英 that；荷 dat",
+  "tip": "das 与 dass 的区分：能用 dieses 或 welches 替换的是 das（冠词/代词），否则是连词 dass。"
+ },
+ {
+  "w": "so",
+  "pos": "adv",
+  "ipa": "zoː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "这样，如此（方式）",
+    "de": "auf diese Weise",
+    "ex": [
+     {
+      "de": "So funktioniert das neue System.",
+      "zh": "新系统就是这样运作的。"
+     }
+    ]
+   },
+   {
+    "zh": "这么，那么（程度）",
+    "de": "in solchem Maße",
+    "ex": [
+     {
+      "de": "Ich bin heute so müde.",
+      "zh": "我今天好累。"
+     },
+     {
+      "de": "Es war so laut, dass wir nichts verstanden haben.",
+      "zh": "太吵了，我们什么也没听懂。"
+     }
+    ]
+   },
+   {
+    "zh": "（so ... wie）和……一样",
+    "de": "Vergleich: gleich",
+    "ex": [
+     {
+      "de": "Er ist fast so groß wie sein Vater.",
+      "zh": "他几乎和他父亲一样高。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语）大约；好了，那么（引出新话题）",
+    "de": "ungefähr; Gliederungssignal",
+    "ex": [
+     {
+      "de": "So, jetzt fangen wir an.",
+      "zh": "好，现在我们开始吧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "so ... wie — 和……一样；nicht so ... wie — 不如……",
+   "so ..., dass — 如此……以至于；sodass — 因此",
+   "und so weiter (usw.) — 等等；oder so — 之类的",
+   "so gut wie — 几乎：Das Projekt ist so gut wie fertig."
+  ],
+  "root": "单音节副词，不可再拆",
+  "fam": [
+   "also",
+   "als",
+   "ebenso",
+   "sogar",
+   "sowieso"
+  ],
+  "ety": "< 中古高地德语、古高地德语 sō。",
+  "cog": "英 so；荷 zo",
+  "tip": "同级比较用 so ... wie，比较级用 als：so alt wie ich / älter als ich。"
+ },
+ {
+  "w": "bei",
+  "pos": "präp",
+  "ipa": "baɪ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）在……附近",
+    "de": "in der Nähe von",
+    "ex": [
+     {
+      "de": "Potsdam liegt bei Berlin.",
+      "zh": "波茨坦在柏林附近。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）在某人处；在某机构/公司",
+    "de": "im Bereich einer Person, Firma",
+    "ex": [
+     {
+      "de": "Ich wohne noch bei meinen Eltern.",
+      "zh": "我还住在父母家。"
+     },
+     {
+      "de": "Sie arbeitet seit Jahren bei Siemens.",
+      "zh": "她多年来一直在西门子工作。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）在……时候；在……情况下",
+    "de": "zeitlich/konditional: während, im Fall von",
+    "ex": [
+     {
+      "de": "Bei schlechtem Wetter fällt das Konzert aus.",
+      "zh": "天气不好时音乐会取消。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bei + D；缩合：bei dem → beim",
+   "beim + 名词化不定式 — 在做……时：beim Kochen, beim Autofahren",
+   "bei 只表位置，不表方向：去某人那里用 zu（Ich gehe zum Arzt / Ich bin beim Arzt）",
+   "bei Weitem — 远远；bei Bedarf — 必要时"
+  ],
+  "root": "单音节介词；作前缀 bei- 表“在旁、附加”",
+  "fam": [
+   "dabei",
+   "vorbei",
+   "Beispiel",
+   "Beitrag",
+   "beinahe"
+  ],
+  "ety": "< 中古高地德语、古高地德语 bī。",
+  "cog": "英 by；荷 bij",
+  "tip": "Ich bin bei dir（在你那里）vs. Ich komme zu dir（到你那里去）。"
+ },
+ {
+  "w": "wie",
+  "pos": "adv",
+  "ipa": "viː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（疑问）怎样，如何；多（少、久……）",
+    "de": "Frage nach Art und Weise oder Maß",
+    "ex": [
+     {
+      "de": "Wie komme ich am besten zum Bahnhof?",
+      "zh": "去火车站怎么走最好？"
+     },
+     {
+      "de": "Wie lange dauert die Fahrt?",
+      "zh": "路上要多久？"
+     }
+    ]
+   },
+   {
+    "zh": "（感叹）多么",
+    "de": "Ausruf",
+    "ex": [
+     {
+      "de": "Wie schön, dass ihr gekommen seid!",
+      "zh": "你们来了真是太好了！"
+     }
+    ]
+   },
+   {
+    "zh": "（连词）像，如同；（so ... wie）和……一样",
+    "de": "Vergleich",
+    "ex": [
+     {
+      "de": "Er spricht Deutsch wie ein Muttersprachler.",
+      "zh": "他德语说得像母语者一样。"
+     }
+    ]
+   },
+   {
+    "zh": "（连词）正如；（感知动词后）……的情形",
+    "de": "wie bereits gesagt; nach Wahrnehmungsverben",
+    "ex": [
+     {
+      "de": "Ich habe gesehen, wie er aus dem Auto gestiegen ist.",
+      "zh": "我看见他从车上下来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wie + 形容词/副词：wie alt, wie lange, wie viel(e), wie oft",
+   "so ... wie — 同级比较；wie z. B. — 例如",
+   "Wie bitte? — 请再说一遍？；Wie geht's? — 你好吗？",
+   "wie 引导的从句动词在句末：Ich weiß nicht, wie das funktioniert."
+  ],
+  "root": "单音节疑问词，与 wer, was, wo 同属疑问词干",
+  "fam": [
+   "wieso",
+   "irgendwie",
+   "sowie",
+   "wer",
+   "was"
+  ],
+  "ety": "< 中古高地德语 wie < 古高地德语 wio, hwio；与 wer, was 同属疑问词干。",
+  "cog": "一般认为与英 how 同源；荷 hoe",
+  "tip": "“你叫什么名字”是 Wie heißt du?（✗ Was heißt du?）；比较级后用 als，不用 wie。"
+ },
+ {
+  "w": "aber",
+  "pos": "konj",
+  "ipa": "ˈaːbɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "但是，可是，然而",
+    "de": "adversativ: jedoch",
+    "ex": [
+     {
+      "de": "Das Hotel war teuer, aber sehr schön.",
+      "zh": "酒店很贵，但很漂亮。"
+     },
+     {
+      "de": "Er wollte kommen, hatte aber keine Zeit.",
+      "zh": "他本想来，但没有时间。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，表惊讶、加强）真，可真",
+    "de": "Modalpartikel: Verstärkung, Erstaunen",
+    "ex": [
+     {
+      "de": "Du bist aber groß geworden!",
+      "zh": "你可真长高了！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "并列连词，占零位，不影响语序：..., aber ich habe keine Zeit.",
+   "也可置于句中：Er wollte kommen, hatte aber keine Zeit.",
+   "否定之后表纠正用 sondern：nicht er, sondern sie（✗ aber）",
+   "aber ja / aber sicher — 当然；das Aber — 异议（ohne Wenn und Aber — 毫无保留）"
+  ],
+  "root": "不可再拆；原义“再、又”（见 abermals）",
+  "fam": [
+   "abermals",
+   "Abertausende",
+   "das Aber"
+  ],
+  "ety": "< 中古高地德语 aber, aver < 古高地德语 abur, avur，原义“又、再次”，由此转为表示转折。",
+  "cog": "哥特 afar（之后）",
+  "tip": "aber（转折）≠ sondern（否定后纠正）：Das ist nicht billig, aber gut / Das ist nicht billig, sondern teuer。"
+ },
+ {
+  "w": "aus",
+  "pos": "präp",
+  "ipa": "aʊ̯s",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）从……里面出来",
+    "de": "Bewegung von innen nach außen",
+    "ex": [
+     {
+      "de": "Sie kommt gerade aus dem Büro.",
+      "zh": "她刚从办公室出来。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）来自（出身、来源）",
+    "de": "Herkunft",
+    "ex": [
+     {
+      "de": "Mein Kollege kommt aus Shanghai.",
+      "zh": "我的同事来自上海。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）由……制成",
+    "de": "Material",
+    "ex": [
+     {
+      "de": "Der Tisch ist aus massivem Holz.",
+      "zh": "这张桌子是实木做的。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）出于（某种原因）",
+    "de": "Grund, Motiv",
+    "ex": [
+     {
+      "de": "Aus Angst hat er nichts gesagt.",
+      "zh": "他出于害怕什么也没说。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）结束；关着",
+    "de": "zu Ende; ausgeschaltet",
+    "ex": [
+     {
+      "de": "Das Spiel ist aus.",
+      "zh": "比赛结束了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus + D（始终第三格）",
+   "aus 与 von：aus 表从内部出来、出身；von 表离开某处或某人",
+   "aus + 无冠词抽象名词表原因：aus Liebe, aus Versehen, aus Neugier",
+   "可分前缀 aus-（向外、结束、关闭）：aussteigen, ausmachen, ausgeben"
+  ],
+  "root": "单音节介词；作前缀 aus- 表“向外、完全、结束”",
+  "fam": [
+   "außen",
+   "außer",
+   "heraus",
+   "Ausgang",
+   "Ausland"
+  ],
+  "ety": "< 中古高地德语 ūz < 古高地德语 ūz。",
+  "cog": "英 out；荷 uit",
+  "tip": "“来自中国”是 aus China；“从家里出发”是 von zu Hause。"
+ },
+ {
+  "w": "haben",
+  "pos": "v",
+  "ipa": "ˈhaːbn̩",
+  "lvl": "A1",
+  "forms": "hat · hatte · hat gehabt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "有，拥有；具有（感觉、状态）",
+    "de": "besitzen; sich in einem Zustand befinden",
+    "ex": [
+     {
+      "de": "Wir haben zwei Kinder.",
+      "zh": "我们有两个孩子。"
+     },
+     {
+      "de": "Hast du morgen Abend Zeit?",
+      "zh": "你明天晚上有空吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（助动词）构成完成时",
+    "de": "Hilfsverb für Perfekt und Plusquamperfekt",
+    "ex": [
+     {
+      "de": "Ich habe den Bericht schon geschrieben.",
+      "zh": "我已经写好报告了。"
+     }
+    ]
+   },
+   {
+    "zh": "（haben + zu + 不定式）必须",
+    "de": "müssen",
+    "ex": [
+     {
+      "de": "Sie haben den Raum bis 18 Uhr zu verlassen.",
+      "zh": "您必须在18点前离开房间。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "现在时：habe, hast, hat, haben, habt, haben；虚拟式 II：hätte",
+   "大多数及物、反身动词以及情态动词的完成时用 haben",
+   "Hunger / Durst / Angst / Zeit / Recht haben — 饿/渴/害怕/有空/有道理（无冠词）",
+   "es eilig haben — 赶时间；etw. gegen jmdn. haben — 对某人有意见"
+  ],
+  "root": "不可再拆",
+  "fam": [
+   "Habe",
+   "Habseligkeiten",
+   "handhaben",
+   "Haben (Soll und Haben)"
+  ],
+  "ety": "< 中古高地德语 haben, hān < 古高地德语 habēn。",
+  "cog": "英 have；荷 hebben；与拉丁 habēre 形近，但一般认为并不同源",
+  "tip": "“我饿了”是 Ich habe Hunger（✗ Ich bin Hunger）；“你说得对”是 Du hast Recht（也写 recht）。"
+ },
+ {
+  "w": "nach",
+  "pos": "präp",
+  "ipa": "naːx",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）往，去（城市、国家、方向）",
+    "de": "Richtung, Ziel (Orte ohne Artikel)",
+    "ex": [
+     {
+      "de": "Nächste Woche fliegen wir nach Spanien.",
+      "zh": "下周我们飞去西班牙。"
+     },
+     {
+      "de": "Biegen Sie an der Ampel nach links ab.",
+      "zh": "在红绿灯处向左转。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D）在……之后",
+    "de": "zeitlich: später als",
+    "ex": [
+     {
+      "de": "Nach dem Studium hat sie zwei Jahre in London gearbeitet.",
+      "zh": "毕业后她在伦敦工作了两年。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D，常后置）按照，根据",
+    "de": "gemäß",
+    "ex": [
+     {
+      "de": "Meiner Meinung nach ist der Plan unrealistisch.",
+      "zh": "在我看来，这个计划不现实。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nach + D；nach Hause — 回家",
+   "无冠词地名用 nach（nach China, nach Berlin），带冠词国名用 in（in die USA）",
+   "钟点：zehn nach acht — 八点十分；nach und nach — 逐渐",
+   "搭配：fragen nach, suchen nach, riechen nach, sich sehnen nach"
+  ],
+  "root": "单音节介词；与形容词 nah 同源；作前缀 nach- 表“跟随、事后、模仿”",
+  "fam": [
+   "nah",
+   "nachdem",
+   "nachher",
+   "danach",
+   "Nachbar"
+  ],
+  "ety": "< 中古高地德语 nāch < 古高地德语 nāh（近，副词），与 nah 同源。",
+  "cog": "英 nigh, near；荷 na",
+  "tip": "去某人/机构处用 zu（zum Arzt），nach 只用于无冠词地名和方向。nach（介词）≠ nachdem（连词）。"
+ },
+ {
+  "w": "noch",
+  "pos": "adv",
+  "ipa": "nɔx",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "还，仍然",
+    "de": "weiterhin",
+    "ex": [
+     {
+      "de": "Er wohnt noch bei seinen Eltern.",
+      "zh": "他还住在父母家。"
+     }
+    ]
+   },
+   {
+    "zh": "再，另外，还要",
+    "de": "zusätzlich",
+    "ex": [
+     {
+      "de": "Möchten Sie noch einen Kaffee?",
+      "zh": "您还要一杯咖啡吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（+比较级）更",
+    "de": "verstärkt Komparativ",
+    "ex": [
+     {
+      "de": "Die neue Version ist noch besser.",
+      "zh": "新版本更好。"
+     }
+    ]
+   },
+   {
+    "zh": "（weder ... noch）也不",
+    "de": "in weder ... noch",
+    "ex": [
+     {
+      "de": "Er hat weder Zeit noch Geld.",
+      "zh": "他既没时间也没钱。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "noch nicht — 还没（schon 的否定）；noch nie — 从来没有",
+   "noch ein(e) / noch mehr — 再一个/更多",
+   "weder ... noch ... — 既不……也不……",
+   "Wie hieß er noch? — 他叫什么来着？（回想）"
+  ],
+  "root": "单音节副词，不可再拆",
+  "fam": [
+   "dennoch",
+   "nochmals",
+   "noch einmal"
+  ],
+  "ety": "< 中古高地德语 noch < 古高地德语 noh。",
+  "cog": "哥特 nauh；荷 nog",
+  "tip": "noch 的否定是 nicht mehr（不再），schon 的否定是 noch nicht（还没）：Bist du schon fertig? – Nein, noch nicht。"
+ },
+ {
+  "w": "wir",
+  "pos": "pron",
+  "ipa": "viːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "我们",
+    "de": "Personalpronomen der 1. Person Plural",
+    "ex": [
+     {
+      "de": "Wir treffen uns morgen um zehn vor dem Kino.",
+      "zh": "我们明天十点在电影院前见。"
+     },
+     {
+      "de": "Wir Deutschen trinken viel Mineralwasser.",
+      "zh": "我们德国人喝很多矿泉水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格：N wir · A uns · D uns · G unser",
+   "动词用复数：wir gehen, wir sind",
+   "wir + 名词同位：wir Studierenden, wir Deutschen（也作 wir Deutsche）",
+   "物主代词：unser — 我们的"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "uns",
+   "unser",
+   "Wirgefühl"
+  ],
+  "ety": "< 中古高地德语、古高地德语 wir。",
+  "cog": "英 we；荷 wij",
+  "tip": "uns 同时是第三格和第四格：Er hilft uns / Er sieht uns。"
+ },
+ {
+  "w": "du",
+  "pos": "pron",
+  "ipa": "duː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "你",
+    "de": "Personalpronomen der 2. Person Singular (vertraut)",
+    "ex": [
+     {
+      "de": "Kannst du mir kurz helfen?",
+      "zh": "你能帮我一下吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（口语，泛指）人，任何人",
+    "de": "umgangssprachlich: man",
+    "ex": [
+     {
+      "de": "Da kannst du nichts machen.",
+      "zh": "这种事谁也没办法。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格：N du · A dich · D dir · G deiner",
+   "用于家人、朋友、儿童、同学及许多公司内部和网络环境；对陌生成年人用 Sie",
+   "duzen — 以 du 相称；jmdm. das Du anbieten — 提议以 du 相称",
+   "书信中 du / dich / dein 可大写（Du）"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "dich",
+   "dir",
+   "dein",
+   "duzen",
+   "Duzfreund"
+  ],
+  "ety": "< 中古高地德语 dū < 古高地德语 dū, du；为印欧语共有的第二人称代词。",
+  "cog": "英 thou（古）；拉 tū；希腊 sý",
+  "tip": "从 Sie 改为 du 一般由年长者或上级提出。dir（第三格）与 dich（第四格）别混：Ich helfe dir / Ich sehe dich。"
+ },
+ {
+  "w": "nur",
+  "pos": "adv",
+  "ipa": "nuːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "只，仅仅",
+    "de": "nicht mehr als; ausschließlich",
+    "ex": [
+     {
+      "de": "Ich habe nur zehn Minuten Zeit.",
+      "zh": "我只有十分钟时间。"
+     },
+     {
+      "de": "Das Angebot gilt nur für Neukunden.",
+      "zh": "此优惠仅限新客户。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词）到底，究竟；（命令句）尽管",
+    "de": "Modalpartikel in Fragen und Aufforderungen",
+    "ex": [
+     {
+      "de": "Was hat er nur?",
+      "zh": "他到底怎么了？"
+     },
+     {
+      "de": "Komm nur herein!",
+      "zh": "尽管进来吧！"
+     }
+    ]
+   },
+   {
+    "zh": "（wenn ... nur + 虚拟式 II）但愿",
+    "de": "Wunschsatz",
+    "ex": [
+     {
+      "de": "Wenn ich nur mehr Zeit hätte!",
+      "zh": "要是我有更多时间就好了！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nur 放在所限定的成分前：Nur Anna kommt morgen / Anna kommt nur morgen",
+   "nicht nur ..., sondern auch ... — 不但……而且……",
+   "nur noch — 只剩下：Es gibt nur noch zwei Karten.",
+   "表示“才”（比预期晚/少）多用 erst：Es ist erst acht Uhr."
+  ],
+  "root": "ne（不）+ wäre（是，虚拟式）→“若不是（这样）”→ 除此之外 → 只",
+  "fam": [
+   "nur noch",
+   "nicht nur",
+   "nurmehr"
+  ],
+  "ety": "< 中古高地德语 newære, niuwer, nuor 等 < 古高地德语 niwāri（“若非如此”：ni 不 + wāri 是，虚拟式），经缩略而成。",
+  "cog": "无直接的英语同源词",
+  "tip": "nur 与 erst：Er ist erst fünf（他才五岁，还会长大）vs. Ich habe nur fünf Euro（我只有五欧元）。"
+ },
+ {
+  "w": "wenn",
+  "pos": "konj",
+  "ipa": "vɛn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "如果，假如",
+    "de": "konditional: falls",
+    "ex": [
+     {
+      "de": "Wenn du Zeit hast, ruf mich an.",
+      "zh": "你有空就给我打电话。"
+     },
+     {
+      "de": "Wenn ich mehr Geld hätte, würde ich eine Weltreise machen.",
+      "zh": "如果我有更多钱，我会环游世界。"
+     }
+    ]
+   },
+   {
+    "zh": "当……时（现在/将来；过去反复发生）",
+    "de": "temporal: sobald; jedes Mal, als",
+    "ex": [
+     {
+      "de": "Immer wenn ich in Berlin war, habe ich sie besucht.",
+      "zh": "每次我在柏林都会去看她。"
+     }
+    ]
+   },
+   {
+    "zh": "（wenn auch / auch wenn）即使，虽然",
+    "de": "konzessiv",
+    "ex": [
+     {
+      "de": "Das Ergebnis ist gut, wenn auch nicht perfekt.",
+      "zh": "结果不错，虽然不算完美。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "从属连词，从句动词在句末；从句在前时主句倒装：Wenn es regnet, bleiben wir zu Hause.",
+   "wenn + 虚拟式 II — 非真实条件",
+   "过去一次性事件用 als；“是否”用 ob；“何时”用 wann",
+   "selbst wenn / auch wenn — 即使；wenn ... doch nur — 但愿"
+  ],
+  "root": "与疑问副词 wann 原为同一词，后分化",
+  "fam": [
+   "wann",
+   "wenngleich",
+   "wennschon"
+  ],
+  "ety": "< 中古高地德语 wenne, wanne < 古高地德语 hwanne, wanne（何时）；与 wann 同源，后在形式和功能上分化为连词 wenn 与疑问副词 wann。",
+  "cog": "英 when；荷 wanneer",
+  "tip": "✗ Ich weiß nicht, wenn er kommt → ob er kommt（是否）/ wann er kommt（何时）。"
+ },
+ {
+  "w": "oder",
+  "pos": "konj",
+  "ipa": "ˈoːdɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "或者，还是",
+    "de": "Alternative",
+    "ex": [
+     {
+      "de": "Möchten Sie Tee oder Kaffee?",
+      "zh": "您要茶还是咖啡？"
+     }
+    ]
+   },
+   {
+    "zh": "否则，不然",
+    "de": "sonst",
+    "ex": [
+     {
+      "de": "Beeil dich, oder wir verpassen den Zug!",
+      "zh": "快点，不然我们就赶不上火车了！"
+     }
+    ]
+   },
+   {
+    "zh": "（句末附加问）对吧？是不是？",
+    "de": "Rückfrage am Satzende",
+    "ex": [
+     {
+      "de": "Du kommst morgen auch, oder?",
+      "zh": "你明天也来，对吧？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "并列连词，占零位，不影响语序：..., oder wir nehmen den Bus.",
+   "entweder ... oder ... — 要么……要么……",
+   "oder so — 之类的；oder auch — 或者也"
+  ],
+  "root": "单音节连词，不可再拆",
+  "fam": [
+   "entweder ... oder"
+  ],
+  "ety": "< 中古高地德语 oder < 古高地德语 odar, eddo；词形一般认为受 aber、weder 影响。",
+  "cog": "古英语 oþþe、哥特 aiþþau（一般认为同源）",
+  "tip": "oder 不引起倒装：Wir gehen ins Kino, oder wir bleiben zu Hause（✗ oder bleiben wir）。"
+ },
+ {
+  "w": "werden",
+  "pos": "v",
+  "ipa": "ˈveːɐ̯dn̩",
+  "lvl": "A1",
+  "forms": "wird · wurde · ist geworden",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "变成，成为",
+    "de": "in einen Zustand kommen; einen Beruf ergreifen",
+    "ex": [
+     {
+      "de": "Im Herbst wird es früh dunkel.",
+      "zh": "秋天天黑得早。"
+     },
+     {
+      "de": "Sie möchte später Ärztin werden.",
+      "zh": "她以后想当医生。"
+     }
+    ]
+   },
+   {
+    "zh": "（助动词）构成将来时；表示推测",
+    "de": "Futur; Vermutung",
+    "ex": [
+     {
+      "de": "Morgen wird es wahrscheinlich regnen.",
+      "zh": "明天可能会下雨。"
+     },
+     {
+      "de": "Er wird wohl im Stau stehen.",
+      "zh": "他大概是堵在路上了。"
+     }
+    ]
+   },
+   {
+    "zh": "（助动词）构成被动态",
+    "de": "Vorgangspassiv",
+    "ex": [
+     {
+      "de": "Das Gebäude wird gerade renoviert.",
+      "zh": "这栋楼正在翻修。"
+     }
+    ]
+   },
+   {
+    "zh": "（würde + 不定式）会，将会（虚拟式 II）",
+    "de": "Konjunktiv II: würde",
+    "ex": [
+     {
+      "de": "Ich würde gern mitkommen, aber ich muss arbeiten.",
+      "zh": "我很想一起去，但我得工作。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "现在时：werde, wirst, wird, werden, werdet, werden；过去时：wurde；虚拟式 II：würde",
+   "完成时：ist geworden（实义动词）/ ist ... worden（被动）：Das Haus ist 1900 gebaut worden.",
+   "werden + 第一格：Er wird Lehrer（职业不加冠词）；zu etw. werden — 变成某物",
+   "werden + 不定式 + wohl — 表推测"
+  ],
+  "root": "不可再拆；原义“转向”→ 变成",
+  "fam": [
+   "Werdegang",
+   "das Werden",
+   "vorwärts（-wärts 同源）"
+  ],
+  "ety": "< 中古高地德语 werden < 古高地德语 werdan；与拉丁语 vertere（转动）同源，原义“转向、转变”。",
+  "cog": "古英语 weorþan；荷 worden；拉 vertere",
+  "tip": "被动完成时用 worden，不用 geworden：Er ist operiert worden。werden 本身的完成时用 sein。"
+ },
+ {
+  "w": "man",
+  "pos": "pron",
+  "ipa": "man",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（泛指）人们，有人",
+    "de": "Indefinitpronomen: jeder, die Leute",
+    "ex": [
+     {
+      "de": "In Deutschland trennt man den Müll.",
+      "zh": "在德国人们会垃圾分类。"
+     },
+     {
+      "de": "Hier darf man nicht rauchen.",
+      "zh": "这里不准吸烟。"
+     }
+    ]
+   },
+   {
+    "zh": "（代替 ich/wir，委婉）自己，我们",
+    "de": "statt ich/wir",
+    "ex": [
+     {
+      "de": "Man tut eben, was man kann.",
+      "zh": "能做的也就这些了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "只有第一格；第四格用 einen，第三格用 einem：Das kann einen nerven / Das tut einem gut.",
+   "动词用第三人称单数；反身代词 sich，物主代词 sein",
+   "不能用 er 复指 man：Wenn man müde ist, sollte man (✗ er) schlafen.",
+   "常代替被动：Man hat den Fehler sofort bemerkt."
+  ],
+  "root": "即名词 Mann（人）的弱化用法",
+  "fam": [
+   "Mann",
+   "jemand",
+   "niemand",
+   "jedermann"
+  ],
+  "ety": "< 中古高地德语、古高地德语 man，原为名词 man（人）的非重读用法。",
+  "cog": "古英语 man 亦有泛指用法；法 on（< 拉 homo）功能相同",
+  "tip": "man（代词，小写，一个 n）≠ der Mann（男人）。"
+ },
+ {
+  "w": "um",
+  "pos": "präp",
+  "ipa": "ʊm",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+A）围绕，环绕",
+    "de": "räumlich: rings um",
+    "ex": [
+     {
+      "de": "Die Erde dreht sich um die Sonne.",
+      "zh": "地球绕着太阳转。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）（钟点）在……点",
+    "de": "Uhrzeit",
+    "ex": [
+     {
+      "de": "Der Kurs beginnt um neun Uhr.",
+      "zh": "课九点开始。"
+     }
+    ]
+   },
+   {
+    "zh": "（um ... zu + 不定式）为了",
+    "de": "final",
+    "ex": [
+     {
+      "de": "Sie spart, um sich ein Auto zu kaufen.",
+      "zh": "她攒钱是为了买辆车。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）（表差额）相差，增减了",
+    "de": "Differenz",
+    "ex": [
+     {
+      "de": "Die Preise sind um fünf Prozent gestiegen.",
+      "zh": "价格上涨了百分之五。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "um + A：um den See, um mich herum",
+   "钟点用 um（um 8 Uhr），但 am Montag, im Mai",
+   "um ... zu 用于主语相同时；主语不同用 damit",
+   "搭配：es geht um + A, sich kümmern um, bitten um, sich bewerben um"
+  ],
+  "root": "单音节介词；作前缀 um- 表“环绕、转变、倒”",
+  "fam": [
+   "darum",
+   "warum",
+   "herum",
+   "Umwelt",
+   "umsonst"
+  ],
+  "ety": "< 中古高地德语 umbe < 古高地德语 umbi。",
+  "cog": "古英语 ymb(e)；拉 ambi-；希腊 amphí",
+  "tip": "✗ Ich gebe dir Geld, um du ein Buch zu kaufen → damit du ein Buch kaufst。"
+ },
+ {
+  "w": "können",
+  "pos": "v",
+  "ipa": "ˈkœnən",
+  "lvl": "A1",
+  "forms": "kann · konnte · hat gekonnt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "能，会（能力）",
+    "de": "fähig sein",
+    "ex": [
+     {
+      "de": "Sie kann sehr gut Chinesisch.",
+      "zh": "她中文很好。"
+     },
+     {
+      "de": "Kannst du schwimmen?",
+      "zh": "你会游泳吗？"
+     }
+    ]
+   },
+   {
+    "zh": "可以（许可、可能性）",
+    "de": "dürfen; möglich sein",
+    "ex": [
+     {
+      "de": "Sie können hier kostenlos parken.",
+      "zh": "您可以在这里免费停车。"
+     }
+    ]
+   },
+   {
+    "zh": "可能（推测）",
+    "de": "Vermutung",
+    "ex": [
+     {
+      "de": "Das kann schon sein.",
+      "zh": "这倒有可能。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "现在时：kann, kannst, kann, können, könnt, können（单数第一、三人称无词尾）；虚拟式 II：könnte",
+   "情态动词 + 不带 zu 的不定式：Ich kann morgen kommen.",
+   "与不定式连用时完成时用替代不定式：Ich habe nicht kommen können（✗ gekonnt）",
+   "单独使用：Ich kann Deutsch. — 我会德语；Könnten Sie ...? — 礼貌请求"
+  ],
+  "root": "不可再拆；原义“知道、懂得”",
+  "fam": [
+   "kennen",
+   "Kunst",
+   "Kunde",
+   "Können"
+  ],
+  "ety": "< 中古高地德语 kunnen, künnen < 古高地德语 kunnan（知道、懂得），属过去现在动词（现在时形式源自古老的过去时）。",
+  "cog": "英 can；荷 kunnen；一般认为与英 know 同一词根",
+  "tip": "könnte 表推测时语气比 kann 弱。表“许可”在正式场合用 dürfen。"
+ },
+ {
+  "w": "über",
+  "pos": "präp",
+  "ipa": "ˈyːbɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）在……上方（不接触）",
+    "de": "Lage oberhalb (wo?)",
+    "ex": [
+     {
+      "de": "Über dem Sofa hängt ein großes Bild.",
+      "zh": "沙发上方挂着一幅大画。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）越过；经由",
+    "de": "Richtung: hinüber; via",
+    "ex": [
+     {
+      "de": "Wir sind über die Brücke gegangen.",
+      "zh": "我们走过了桥。"
+     },
+     {
+      "de": "Der Zug fährt über Köln nach Brüssel.",
+      "zh": "火车经科隆开往布鲁塞尔。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）关于",
+    "de": "Thema",
+    "ex": [
+     {
+      "de": "Wir haben lange über das Problem gesprochen.",
+      "zh": "我们就这个问题谈了很久。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词用法，接数字）超过",
+    "de": "mehr als",
+    "ex": [
+     {
+      "de": "Das Projekt hat über eine Million Euro gekostet.",
+      "zh": "这个项目花了一百多万欧元。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "über + D（位置）/ über + A（方向、越过）",
+   "表“关于”接第四格：sprechen / nachdenken / sich freuen / sich ärgern über + A",
+   "über + 数字（不支配格）：über 50 Menschen",
+   "作前缀：übersetzen（翻译，不可分）/ übersetzen（摆渡，可分）"
+  ],
+  "root": "单音节介词；作前缀 über- 表“越过、过度、转移”",
+  "fam": [
+   "darüber",
+   "überall",
+   "übrig",
+   "Übersicht",
+   "überlegen"
+  ],
+  "ety": "< 中古高地德语 über < 古高地德语 ubar, ubiri。",
+  "cog": "英 over；荷 over；拉 super；希腊 hypér",
+  "tip": "über（上方，不接触）vs. auf（上面，接触）。sich freuen über（对已有之事）≠ sich freuen auf（期待）。"
+ },
+ {
+  "w": "da",
+  "pos": "adv",
+  "ipa": "daː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "那里，这里",
+    "de": "an diesem/jenem Ort",
+    "ex": [
+     {
+      "de": "Da drüben ist der Eingang.",
+      "zh": "入口在那边。"
+     }
+    ]
+   },
+   {
+    "zh": "在场，在",
+    "de": "anwesend",
+    "ex": [
+     {
+      "de": "Ist Frau Müller heute da?",
+      "zh": "米勒女士今天在吗？"
+     }
+    ]
+   },
+   {
+    "zh": "那时，这时",
+    "de": "zu diesem Zeitpunkt",
+    "ex": [
+     {
+      "de": "Da klingelte plötzlich das Telefon.",
+      "zh": "这时电话突然响了。"
+     }
+    ]
+   },
+   {
+    "zh": "（连词）因为，既然（原因已知）",
+    "de": "kausal: weil (bekannter Grund)",
+    "ex": [
+     {
+      "de": "Da es stark regnete, blieben wir zu Hause.",
+      "zh": "因为雨下得很大，我们待在家里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "da + 介词 → 代副词：damit, dafür, davon；元音开头的介词前加 r：darauf, darüber, daran",
+   "da 作连词时从句动词在句末，多放在句首，表已知原因；回答 warum 用 weil",
+   "da sein — 在场；dableiben — 留下",
+   "hier und da — 到处，偶尔"
+  ],
+  "root": "单音节副词；与 der/das 同属指示词干",
+  "fam": [
+   "dabei",
+   "dafür",
+   "daher",
+   "dort",
+   "dann"
+  ],
+  "ety": "< 中古高地德语 dā < 古高地德语 dār, dā；与 der, das 同属指示词干。",
+  "cog": "英 there；荷 daar",
+  "tip": "Warum? – Weil ...（✗ Da ...）；da 从句常前置：Da ich krank war, konnte ich nicht kommen。"
+ },
+ {
+  "w": "dann",
+  "pos": "adv",
+  "ipa": "dan",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "然后，接着",
+    "de": "danach",
+    "ex": [
+     {
+      "de": "Zuerst gehen wir einkaufen, dann kochen wir zusammen.",
+      "zh": "我们先去买东西，然后一起做饭。"
+     }
+    ]
+   },
+   {
+    "zh": "那么，那样的话",
+    "de": "in diesem Fall",
+    "ex": [
+     {
+      "de": "Wenn du Hilfe brauchst, dann ruf mich an.",
+      "zh": "如果你需要帮助，那就给我打电话。"
+     }
+    ]
+   },
+   {
+    "zh": "到那时",
+    "de": "zu dem Zeitpunkt",
+    "ex": [
+     {
+      "de": "Ich bin bis Mittwoch weg, dann können wir reden.",
+      "zh": "我到周三都不在，到时候我们再谈。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "dann 在句首时倒装：Dann gehen wir.",
+   "wenn ..., dann ... — 如果……那么……",
+   "Bis dann! — 回头见！；dann und wann — 有时"
+  ],
+  "root": "单音节副词；与 denn 原为同一词",
+  "fam": [
+   "denn",
+   "da",
+   "damals"
+  ],
+  "ety": "< 中古高地德语 danne, denne < 古高地德语 danne, denne；dann 与 denn 原为同一词，后在形式和功能上分化。",
+  "cog": "英 then, than（两者也同源）",
+  "tip": "dann（然后，那么）≠ denn（因为；语气词）。"
+ },
+ {
+  "w": "schon",
+  "pos": "adv",
+  "ipa": "ʃoːn",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "已经",
+    "de": "bereits",
+    "ex": [
+     {
+      "de": "Bist du schon fertig?",
+      "zh": "你已经好了吗？"
+     },
+     {
+      "de": "Ich warte schon seit einer Stunde.",
+      "zh": "我已经等了一个小时了。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，安慰、肯定）一定会，肯定",
+    "de": "Modalpartikel: Zuversicht",
+    "ex": [
+     {
+      "de": "Keine Sorge, das schaffst du schon!",
+      "zh": "别担心，你肯定能行！"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，让步）确实，倒是（但……）",
+    "de": "Modalpartikel: Einräumung",
+    "ex": [
+     {
+      "de": "Das ist schon richtig, aber es ist zu teuer.",
+      "zh": "这倒是没错，但太贵了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "否定：noch nicht — 还没（✗ schon nicht）",
+   "schon mal — 曾经：Warst du schon mal in China?",
+   "schon wieder — 又（不满）；Komm schon! — 快点！",
+   "schon + 时间：表示比预期早或多：Es ist schon zehn Uhr."
+  ],
+  "root": "由形容词 schön 的副词形式演变而来",
+  "fam": [
+   "schön",
+   "schonen",
+   "verschonen",
+   "Schönheit"
+  ],
+  "ety": "< 中古高地德语 schōne < 古高地德语 scōno，形容词 schön 的副词（美好地、完全地），由“完全”引申为“已经”。",
+  "cog": "荷 schoon；一般认为与英 sheen 同源",
+  "tip": "schon 与 erst：Er ist schon 30（已经30岁，嫌大）vs. Er ist erst 30（才30岁，嫌小）。"
+ },
+ {
+  "w": "ja",
+  "pos": "part",
+  "ipa": "jaː",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "是，对（肯定回答）",
+    "de": "Antwortpartikel: Zustimmung",
+    "ex": [
+     {
+      "de": "Kommst du mit? – Ja, gern.",
+      "zh": "你一起去吗？——好啊。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，不重读）不是吗，毕竟（表示双方已知）",
+    "de": "Modalpartikel: Bekanntes",
+    "ex": [
+     {
+      "de": "Du weißt ja, dass ich kein Fleisch esse.",
+      "zh": "你知道的，我不吃肉。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，表惊讶）竟然，原来",
+    "de": "Modalpartikel: Erstaunen",
+    "ex": [
+     {
+      "de": "Da bist du ja endlich!",
+      "zh": "你可算来了！"
+     }
+    ]
+   },
+   {
+    "zh": "（重读，用于命令）千万，一定",
+    "de": "betont: unbedingt",
+    "ex": [
+     {
+      "de": "Sei ja pünktlich!",
+      "zh": "你可千万要准时！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "回答否定疑问句时，肯定用 doch，不用 ja：Kommst du nicht? – Doch!",
+   "语气词 ja 不重读，位于变位动词之后的中场",
+   "ja sogar — 甚至；na ja — 嗯，好吧（迟疑）",
+   "bejahen — 肯定；das Jawort geben — 答应求婚"
+  ],
+  "root": "单音节小品词，不可再拆",
+  "fam": [
+   "bejahen",
+   "jawohl",
+   "Jawort"
+  ],
+  "ety": "< 中古高地德语、古高地德语 jā。",
+  "cog": "英 yea, yes；荷 ja",
+  "tip": "Hast du keine Zeit? – Doch（有）/ Nein（没有）；此处回答 Ja 是错误的。"
+ },
+ {
+  "w": "mehr",
+  "pos": "pron",
+  "ipa": "meːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "更多的（viel 的比较级，不变格）",
+    "de": "Komparativ zu viel",
+    "ex": [
+     {
+      "de": "Für dieses Projekt brauche ich mehr Zeit.",
+      "zh": "这个项目我需要更多时间。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）更，更多地",
+    "de": "in höherem Maß",
+    "ex": [
+     {
+      "de": "Du solltest mehr Sport treiben.",
+      "zh": "你应该多运动。"
+     }
+    ]
+   },
+   {
+    "zh": "（nicht mehr / kein ... mehr）不再",
+    "de": "Negation: nicht länger",
+    "ex": [
+     {
+      "de": "Ich rauche seit einem Jahr nicht mehr.",
+      "zh": "我已经一年不抽烟了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mehr 不变格：mehr Geld, mehr Leute",
+   "mehr als — 多于；immer mehr — 越来越多",
+   "nicht mehr / kein ... mehr / nie mehr — 不再",
+   "最高级：am meisten / die meisten；mehr oder weniger — 或多或少"
+  ],
+  "root": "viel 的异干比较级；最高级 meist",
+  "fam": [
+   "meist",
+   "mehrere",
+   "Mehrheit",
+   "vermehren",
+   "mehrfach"
+  ],
+  "ety": "< 中古高地德语 mēr(e) < 古高地德语 mēr(o)，作为 viel 的异干比较级。",
+  "cog": "英 more；荷 meer",
+  "tip": "mehr 不加词尾（✗ mehre Leute）；“几个”是 mehrere。"
+ },
+ {
+  "w": "vor",
+  "pos": "präp",
+  "ipa": "foːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（+D）在……前面",
+    "de": "Lage (wo?)",
+    "ex": [
+     {
+      "de": "Vor dem Bahnhof wartet ein Taxi.",
+      "zh": "火车站前有一辆出租车在等。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）到……前面",
+    "de": "Richtung (wohin?)",
+    "ex": [
+     {
+      "de": "Stell den Stuhl bitte vor das Fenster.",
+      "zh": "请把椅子放到窗前。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D，时间）在……之前；（+时间段）……以前",
+    "de": "zeitlich: früher als; vor ... Jahren",
+    "ex": [
+     {
+      "de": "Ich habe ihn vor zwei Jahren in Wien kennengelernt.",
+      "zh": "我两年前在维也纳认识了他。"
+     }
+    ]
+   },
+   {
+    "zh": "（+D，无冠词）由于（不由自主的原因）",
+    "de": "Ursache (unwillkürlich)",
+    "ex": [
+     {
+      "de": "Die Kinder zitterten vor Kälte.",
+      "zh": "孩子们冻得发抖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "vor + D（位置、时间）/ vor + A（方向）",
+   "vor + 时间段 — ……以前：vor drei Tagen；钟点：zehn vor acht — 差十分八点",
+   "vor + 无冠词名词表不由自主的原因：vor Angst, vor Freude（对比 aus Angst — 出于顾虑）",
+   "搭配：Angst haben vor + D, warnen vor + D, schützen vor + D"
+  ],
+  "root": "单音节介词；与 für 同源；作前缀 vor- 表“在前、预先”",
+  "fam": [
+   "vorher",
+   "bevor",
+   "Vorteil",
+   "vorne",
+   "zuvor"
+  ],
+  "ety": "< 中古高地德语 vor < 古高地德语 fora；与 für 同源。",
+  "cog": "英 fore, before；荷 voor",
+  "tip": "vor zwei Jahren（两年前）≠ seit zwei Jahren（两年来）。"
+ },
+ {
+  "w": "mal",
+  "pos": "part",
+  "ipa": "maːl",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（语气词，缓和请求或命令）……一下",
+    "de": "Modalpartikel in Aufforderungen",
+    "ex": [
+     {
+      "de": "Kannst du mal kurz kommen?",
+      "zh": "你能过来一下吗？"
+     },
+     {
+      "de": "Hör mal, wir müssen reden.",
+      "zh": "听着，我们得谈谈。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语，= einmal）一次；曾经；将来某时",
+    "de": "umgangssprachlich: einmal",
+    "ex": [
+     {
+      "de": "Warst du schon mal in Wien?",
+      "zh": "你去过维也纳吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（乘法）乘以",
+    "de": "multipliziert mit",
+    "ex": [
+     {
+      "de": "Drei mal vier ist zwölf.",
+      "zh": "三乘四等于十二。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mal 软化请求：Gib mir mal das Salz.",
+   "schon mal — 曾经；noch mal — 再一次；nicht mal — 连……都不",
+   "名词 das Mal（次）大写分写：zum ersten Mal, jedes Mal；复合副词连写：einmal, manchmal, diesmal"
+  ],
+  "root": "由名词 Mal（时刻、次）及 einmal 缩略而来",
+  "fam": [
+   "Mal",
+   "einmal",
+   "manchmal",
+   "damals",
+   "diesmal"
+  ],
+  "ety": "< 名词 Mal < 中古高地德语、古高地德语 māl（时间点）；语气词 mal 由 einmal 缩略而来。",
+  "cog": "英 meal（原义“固定的时刻”→ 一餐）",
+  "tip": "mal 是口语中最常用的语气词之一，去掉 mal 的命令句会显得生硬。"
+ },
+ {
+  "w": "durch",
+  "pos": "präp",
+  "ipa": "dʊʁç",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（+A）穿过，通过",
+    "de": "räumlich: von einer Seite zur anderen",
+    "ex": [
+     {
+      "de": "Wir sind durch den Park nach Hause gelaufen.",
+      "zh": "我们穿过公园走回家。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A）通过，借助（手段、中介）",
+    "de": "Mittel, Vermittlung",
+    "ex": [
+     {
+      "de": "Ich habe die Stelle durch einen Freund gefunden.",
+      "zh": "我是通过一个朋友找到这份工作的。"
+     }
+    ]
+   },
+   {
+    "zh": "（+A，被动句）由于，因（原因、手段）",
+    "de": "Ursache im Passiv",
+    "ex": [
+     {
+      "de": "Die Altstadt wurde durch ein Erdbeben zerstört.",
+      "zh": "老城毁于一场地震。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "durch + A（始终第四格）：durch den Tunnel, durch dich",
+   "被动：von 引出施动者，durch 引出手段或原因",
+   "数学：zehn durch zwei ist fünf — 十除以二等于五",
+   "作前缀：durchlesen（读完，可分）/ durchsuchen（搜查，不可分）；die ganze Nacht durch — 整夜"
+  ],
+  "root": "单音节介词；作前缀 durch- 表“穿过、彻底”",
+  "fam": [
+   "dadurch",
+   "durchaus",
+   "Durchschnitt",
+   "Durchfall",
+   "durchschnittlich"
+  ],
+  "ety": "< 中古高地德语 durch < 古高地德语 duruh。",
+  "cog": "英 through, thorough；荷 door",
+  "tip": "durch 只接第四格（✗ durch dem Wald）。"
+ },
+ {
+  "w": "hier",
+  "pos": "adv",
+  "ipa": "hiːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "这里，在此",
+    "de": "an diesem Ort",
+    "ex": [
+     {
+      "de": "Wohnen Sie schon lange hier?",
+      "zh": "您在这里住很久了吗？"
+     },
+     {
+      "de": "Hier, bitte – Ihr Wechselgeld.",
+      "zh": "给，这是找您的零钱。"
+     }
+    ]
+   },
+   {
+    "zh": "在这一点上；此时",
+    "de": "in diesem Punkt; jetzt",
+    "ex": [
+     {
+      "de": "Hier muss ich Ihnen widersprechen.",
+      "zh": "在这一点上我必须反驳您。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "hier 表位置，方向用 hierher：Komm mal hierher!",
+   "Hier ist Anna. — （电话）我是安娜",
+   "hiermit（正式书信）— 特此：Hiermit kündige ich meinen Vertrag.",
+   "von hier aus — 从这里；hier und da — 偶尔"
+  ],
+  "root": "单音节副词，不可再拆",
+  "fam": [
+   "hierher",
+   "hiermit",
+   "hiesig",
+   "hierzulande"
+  ],
+  "ety": "< 中古高地德语、古高地德语 hier。",
+  "cog": "英 here；荷 hier",
+  "tip": "hier 不表方向：✗ Komm hier → Komm her / Komm hierher。"
+ },
+ {
+  "w": "bis",
+  "pos": "präp",
+  "ipa": "bɪs",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（时间）直到，到……为止",
+    "de": "zeitliches Ende",
+    "ex": [
+     {
+      "de": "Das Geschäft ist bis 20 Uhr geöffnet.",
+      "zh": "商店营业到晚上八点。"
+     },
+     {
+      "de": "Bis morgen!",
+      "zh": "明天见！"
+     }
+    ]
+   },
+   {
+    "zh": "（地点）直到，到",
+    "de": "räumliches Ende",
+    "ex": [
+     {
+      "de": "Der Zug fährt heute nur bis Frankfurt.",
+      "zh": "这趟火车今天只开到法兰克福。"
+     }
+    ]
+   },
+   {
+    "zh": "（连词）直到……为止",
+    "de": "Konjunktion",
+    "ex": [
+     {
+      "de": "Warte hier, bis ich zurückkomme.",
+      "zh": "在这儿等着，直到我回来。"
+     }
+    ]
+   },
+   {
+    "zh": "（数字之间）至",
+    "de": "zwischen Zahlen",
+    "ex": [
+     {
+      "de": "Die Lieferung dauert zwei bis drei Wochen.",
+      "zh": "送货需要两到三周。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "单独使用时接无冠词名词（第四格）：bis Montag, bis nächsten Freitag, bis Berlin",
+   "有冠词时与其他介词连用，格由后一介词决定：bis zum Bahnhof, bis an die Grenze",
+   "von ... bis ... — 从……到……；bis auf + A — 除……之外：Alle bis auf einen kamen.",
+   "bis 作连词时从句动词在句末"
+  ],
+  "root": "单音节词；一说由 bei + zu 缩合而成",
+  "fam": [
+   "bisher",
+   "bislang",
+   "bisweilen"
+  ],
+  "ety": "< 中古高地德语 biz；更早来源不确定，一说由 bī（bei）+ ze（zu）缩合而成。",
+  "cog": "无确定的英语同源词",
+  "tip": "✗ bis die Brücke → bis zur Brücke。"
+ },
+ {
+  "w": "doch",
+  "pos": "part",
+  "ipa": "dɔx",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（对否定问句的肯定回答）不，……的（是）",
+    "de": "Antwortpartikel: Widerspruch gegen eine verneinte Frage",
+    "ex": [
+     {
+      "de": "Hast du keinen Hunger? – Doch, ein bisschen.",
+      "zh": "你不饿吗？——饿，有一点。"
+     }
+    ]
+   },
+   {
+    "zh": "（连词/副词）但是，然而；还是",
+    "de": "aber, dennoch",
+    "ex": [
+     {
+      "de": "Er wollte kommen, doch dann wurde er krank.",
+      "zh": "他本想来，可后来生病了。"
+     },
+     {
+      "de": "Am Ende hat es doch geklappt.",
+      "zh": "最后还是成功了。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词）不是……吗（提醒、反驳、不满）；（命令句）……吧（劝说）",
+    "de": "Modalpartikel",
+    "ex": [
+     {
+      "de": "Das habe ich dir doch gestern gesagt!",
+      "zh": "我昨天不是跟你说过了吗！"
+     },
+     {
+      "de": "Komm doch einfach mit!",
+      "zh": "你就一起来吧！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "回答否定疑问句：doch（肯定）/ nein（否定）",
+   "作连词占零位：..., doch er kam nicht；作副词引起倒装：..., doch kam er nicht",
+   "wenn ... doch nur + 虚拟式 II — 但愿",
+   "jedoch — 然而（较书面）"
+  ],
+  "root": "单音节词，不可再拆",
+  "fam": [
+   "jedoch",
+   "doch noch"
+  ],
+  "ety": "< 中古高地德语 doch < 古高地德语 doh。",
+  "cog": "英 though；荷 toch",
+  "tip": "Hast du keine Zeit? 要回答“有”时说 Doch!，说 Ja 是错误的。"
+ },
+ {
+  "w": "ihr",
+  "pos": "pron",
+  "ipa": "iːɐ̯",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "你们",
+    "de": "Personalpronomen der 2. Person Plural",
+    "ex": [
+     {
+      "de": "Habt ihr am Wochenende schon etwas vor?",
+      "zh": "你们周末有安排了吗？"
+     }
+    ]
+   },
+   {
+    "zh": "她（sie 的第三格）",
+    "de": "Dativ von sie (Singular)",
+    "ex": [
+     {
+      "de": "Ich habe ihr gestern eine Nachricht geschickt.",
+      "zh": "我昨天给她发了条消息。"
+     }
+    ]
+   },
+   {
+    "zh": "（物主代词）她的；他们的；（大写 Ihr）您的",
+    "de": "Possessivpronomen zu sie / Sie",
+    "ex": [
+     {
+      "de": "Die Firma hat ihren Sitz in München.",
+      "zh": "这家公司的总部在慕尼黑。"
+     },
+     {
+      "de": "Ist das Ihr Koffer?",
+      "zh": "这是您的箱子吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "人称代词（你们）：N ihr · A euch · D euch · G euer；动词词尾 -t：ihr geht, ihr seid",
+   "sie（她）的第三格：mit ihr, von ihr",
+   "物主代词按 ein 变格：ihr Sohn, ihre Tochter, ihrem Mann；Ihr（您的）大写"
+  ],
+  "root": "单音节代词，不可再拆",
+  "fam": [
+   "euch",
+   "euer",
+   "ihnen",
+   "ihrerseits"
+  ],
+  "ety": "人称代词 ihr < 中古高地德语、古高地德语 ir（你们）；物主代词 ihr 源自 sie 的属格形式。",
+  "cog": "哥特 jus；英 ye（古，“你们”义同源）",
+  "tip": "三个 ihr：你们（ihr kommt）、她（第三格 mit ihr）、她的/他们的（ihr Auto）——靠动词变位和上下文区分。"
+ },
+ {
+  "w": "immer",
+  "pos": "adv",
+  "ipa": "ˈɪmɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "总是，一直，每次",
+    "de": "jedes Mal; ständig",
+    "ex": [
+     {
+      "de": "Er kommt immer zu spät.",
+      "zh": "他总是迟到。"
+     }
+    ]
+   },
+   {
+    "zh": "（+比较级）越来越",
+    "de": "vor Komparativ: zunehmend",
+    "ex": [
+     {
+      "de": "Die Mieten in den Großstädten werden immer teurer.",
+      "zh": "大城市的房租越来越贵。"
+     }
+    ]
+   },
+   {
+    "zh": "（wer / was / wo ... auch immer）无论",
+    "de": "verallgemeinernd",
+    "ex": [
+     {
+      "de": "Wo auch immer du bist, ruf mich an.",
+      "zh": "无论你在哪儿，都给我打电话。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "immer noch / noch immer — 仍然；immer wieder — 一再",
+   "immer + 比较级 — 越来越：immer besser",
+   "für immer — 永远；wie immer — 像往常一样；nicht immer — 并不总是"
+  ],
+  "root": "ie（曾经、总是）+ mehr（更多）→“从此往后”→ 总是",
+  "fam": [
+   "immerhin",
+   "immerzu",
+   "nimmer",
+   "nimmermehr"
+  ],
+  "ety": "< 中古高地德语 iemer < 古高地德语 iomēr（io“总是、曾经”+ mēr“更多”），原义“从此以后，永远”。",
+  "cog": "无直接对应的英语词；io 一般认为与英 aye（永远）同源",
+  "tip": "“越来越贵”说 immer teurer（✗ mehr und mehr teuer）。"
+ },
+ {
+  "w": "jetzt",
+  "pos": "adv",
+  "ipa": "jɛt͡st",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "现在，此刻",
+    "de": "in diesem Augenblick",
+    "ex": [
+     {
+      "de": "Ich habe jetzt leider keine Zeit.",
+      "zh": "我现在没时间，抱歉。"
+     },
+     {
+      "de": "Jetzt ist es zu spät.",
+      "zh": "现在已经太晚了。"
+     }
+    ]
+   },
+   {
+    "zh": "（语气词，口语）到底",
+    "de": "Modalpartikel in Fragen",
+    "ex": [
+     {
+      "de": "Was ist denn jetzt los?",
+      "zh": "到底怎么了？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bis jetzt — 到目前为止；ab jetzt / von jetzt an — 从现在起",
+   "jetzt gleich — 马上；gerade jetzt — 偏偏现在",
+   "jetzig（形容词）— 目前的：die jetzige Lage"
+  ],
+  "root": "ie（总是）+ zuo（到）构成，词尾 -t 为后来附加",
+  "fam": [
+   "jetzig",
+   "Jetztzeit"
+  ],
+  "ety": "< 中古高地德语 ieze(t), iezuo（ie + zuo），词尾 -t 为后来附加。",
+  "cog": "无直接的英语同源词",
+  "tip": "jetzt 与 nun：nun 较书面，也可作话语标记“那么”。"
+ },
+ {
+  "w": "dieser",
+  "pos": "pron",
+  "ipa": "ˈdiːzɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "这个，这些（指近处或刚提到的）",
+    "de": "Demonstrativartikel",
+    "ex": [
+     {
+      "de": "Dieses Jahr fahren wir nicht in den Urlaub.",
+      "zh": "今年我们不去度假了。"
+     },
+     {
+      "de": "Diese Frage kann ich nicht beantworten.",
+      "zh": "这个问题我回答不了。"
+     }
+    ]
+   },
+   {
+    "zh": "（独立使用）这个人，这个；后者",
+    "de": "Demonstrativpronomen; der Letztgenannte",
+    "ex": [
+     {
+      "de": "Ich sprach mit dem Chef, und dieser war sofort einverstanden.",
+      "zh": "我和老板谈了，他马上就同意了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "按定冠词变格：N dieser/diese/dieses/diese · A diesen/diese/dieses/diese · D diesem/dieser/diesem/diesen · G dieses/dieser/dieses/dieser",
+   "后接形容词弱变化：dieser neue Plan, in diesem großen Haus",
+   "dies — dieses 的短形：Dies ist richtig.",
+   "diesen Monat / dieses Jahr — 本月/今年（第四格表时间）"
+  ],
+  "root": "指示词干 d- + 强调成分（一般认为）",
+  "fam": [
+   "dies",
+   "diesmal",
+   "diesseits",
+   "diesjährig"
+  ],
+  "ety": "< 中古高地德语 dirre, diser < 古高地德语 desêr；一般认为由指示词干与强调成分构成。",
+  "cog": "英 this；荷 deze",
+  "tip": "dieser 后形容词用弱变化，与定冠词相同：dieses alte Buch（✗ dieses altes Buch）。"
+ },
+ {
+  "w": "wieder",
+  "pos": "adv",
+  "ipa": "ˈviːdɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "又，再次",
+    "de": "noch einmal, erneut",
+    "ex": [
+     {
+      "de": "Er hat schon wieder verschlafen.",
+      "zh": "他又睡过头了。"
+     }
+    ]
+   },
+   {
+    "zh": "（恢复原状）重新，回到",
+    "de": "zurück in den früheren Zustand",
+    "ex": [
+     {
+      "de": "Nach der Operation ist sie wieder gesund.",
+      "zh": "手术后她又恢复健康了。"
+     },
+     {
+      "de": "Ich bin gleich wieder da.",
+      "zh": "我马上回来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "schon wieder — 又（不满）；immer wieder — 一再；nie wieder — 再也不",
+   "作前缀：wiederholen（重复，不可分）/ wiederkommen（回来，可分）",
+   "Auf Wiedersehen / Auf Wiederhören — 再见（面谈/电话）",
+   "wieder（又）≠ wider（反对，介词 + A）"
+  ],
+  "root": "与 wider（反对）原为同一词，后在拼写上分化",
+  "fam": [
+   "wiederholen",
+   "Wiedersehen",
+   "wider",
+   "erwidern",
+   "Widerstand"
+  ],
+  "ety": "< 中古高地德语、古高地德语 widar（反向、回）；约自17世纪起拼写分化：wieder 表“再、回”，wider 表“反对”。",
+  "cog": "英 with（古英语 wiþ“对抗”）；荷 weer",
+  "tip": "wieder 与 wider 读音相同、意义不同：wiederholen（重复）/ widersprechen（反驳）。"
+ },
+ {
+  "w": "kein",
+  "pos": "art",
+  "ipa": "kaɪ̯n",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "没有，无，不是（否定名词）",
+    "de": "Negativartikel",
+    "ex": [
+     {
+      "de": "Ich habe heute keine Zeit.",
+      "zh": "我今天没时间。"
+     },
+     {
+      "de": "Das ist kein Problem.",
+      "zh": "这不是问题。"
+     }
+    ]
+   },
+   {
+    "zh": "（独立代词 keiner / keine / keins）没有人；一个也没有",
+    "de": "Indefinitpronomen",
+    "ex": [
+     {
+      "de": "Keiner hat mir geholfen.",
+      "zh": "没有人帮我。"
+     }
+    ]
+   },
+   {
+    "zh": "（+数字，口语）不到",
+    "de": "nicht einmal",
+    "ex": [
+     {
+      "de": "Das dauert keine zehn Minuten.",
+      "zh": "这要不了十分钟。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "单数按 ein 变格：N kein/keine/kein · A keinen/keine/kein · D keinem/keiner/keinem · G keines/keiner/keines；复数：keine/keine/keinen/keiner",
+   "否定带不定冠词或无冠词的名词：ein Auto → kein Auto；带定冠词/物主代词的用 nicht",
+   "代词形式：keiner, keine, keins (keines)",
+   "kein ... mehr — 不再有；gar kein — 根本没有；auf keinen Fall — 绝不"
+  ],
+  "root": "含否定成分 ne + ein（一）",
+  "fam": [
+   "ein",
+   "keinesfalls",
+   "keineswegs",
+   "keinerlei"
+  ],
+  "ety": "< 中古高地德语 kein，由 nehein, dehein 等含 ein（一）的形式演变而来；词首 k- 的来历有不同说法。",
+  "cog": "英 none（ne + one）构词相似",
+  "tip": "✗ Ich habe nicht Zeit → keine Zeit。职业名词两种都可：Ich bin kein Lehrer / Ich bin nicht Lehrer, sondern ...。"
+ },
+ {
+  "w": "alle",
+  "pos": "pron",
+  "ipa": "ˈalə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "所有的，全部（复数）；大家",
+    "de": "die Gesamtheit (Plural)",
+    "ex": [
+     {
+      "de": "Alle Teilnehmer erhalten ein Zertifikat.",
+      "zh": "所有参加者都会获得证书。"
+     },
+     {
+      "de": "Wir waren alle ziemlich müde.",
+      "zh": "我们大家都挺累的。"
+     }
+    ]
+   },
+   {
+    "zh": "（单数 alles）一切，所有东西",
+    "de": "Singular Neutrum: alles",
+    "ex": [
+     {
+      "de": "Ist alles in Ordnung?",
+      "zh": "一切都好吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（+时间段）每隔",
+    "de": "in Abständen von",
+    "ex": [
+     {
+      "de": "Der Bus fährt alle zehn Minuten.",
+      "zh": "公交车每十分钟一班。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语，作表语）用完了",
+    "de": "umgangssprachlich: aufgebraucht",
+    "ex": [
+     {
+      "de": "Die Milch ist alle.",
+      "zh": "牛奶喝完了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "按定冠词变格：复数 alle/alle/allen/aller；单数 aller/alle/alles，常见 alles, allem, mit aller Kraft",
+   "后接形容词弱变化：alle neuen Mitarbeiter",
+   "与冠词、物主代词连用：all die Leute（all 不变格）/ alle meine Freunde",
+   "vor allem — 尤其；trotz allem — 尽管如此；Alles Gute! — 祝一切顺利！"
+  ],
+  "root": "词根 all-（全部）",
+  "fam": [
+   "allein",
+   "allgemein",
+   "allerdings",
+   "überall",
+   "also"
+  ],
+  "ety": "< 中古高地德语、古高地德语 al（全部）。",
+  "cog": "英 all；荷 al",
+  "tip": "alles 指物（单数，不可数），alle 指人或复数：Alle sind da（大家都在）/ Alles ist da（东西都在）。"
+ }
+]

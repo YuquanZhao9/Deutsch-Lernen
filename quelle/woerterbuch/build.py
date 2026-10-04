@@ -1,7 +1,7 @@
 import json, glob, sys, os, re
 from collections import Counter
 ents = []
-for p in sorted(glob.glob('parts/[A-D][12].json')):
+for p in sorted(glob.glob('parts/[A-D][12].json'))+sorted(glob.glob('parts/[0-9][0-9][0-9].json')):
     d = json.load(open(p)); print(p, len(d)); ents += d
 seen = {}
 probs = []
@@ -18,12 +18,17 @@ for e in ents:
         if not e.get(k): probs.append(f'{w}: missing {k}')
     for s in e.get('senses', []):
         if not s.get('zh'): probs.append(f'{w}: sense without zh')
+LV = {}
+for p in sorted(glob.glob('lv/[0-9][0-9].json')): LV.update(json.load(open(p)))
 for e in seen.values():
     if e.get('ipa'): e['ipa'] = e['ipa'].replace('r','ʁ')
+    lv = LV.get(e['w'])
+    if lv: e['lvl'] = re.sub(r'\s*[-/~—]\s*', '–', lv)
+print('levels from lv/:', sum(1 for e in seen.values() if e['w'] in LV))
 entries = sorted(seen.values(), key=lambda e: e['w'].replace('sich ','').lower())
-dic = {"name": "Wortwurzel 德语词典（B2–C1）", "version": "2026.10.03", "format": "wortwurzel-1", "entries": entries}
+dic = {"name": "Wortwurzel 德语词典", "version": __import__("datetime").date.today().strftime("%Y.%m.%d"), "format": "wortwurzel-1", "entries": entries}
 json.dump(dic, open('wortwurzel.json','w'), ensure_ascii=False, separators=(',',':'))
-print('entries', len(entries)); print('\n'.join(probs) or 'no problems')
+print('entries', len(entries)); print(len(probs), 'problems'); print('\n'.join([p for p in probs if not p.startswith('dup')][:40] or probs[:5]))
 print(Counter(e.get('pos') for e in entries))
 # offline standalone
 page = open('index.html').read()
