@@ -21,7 +21,9 @@ HEAD = ('<link rel="manifest" href="../manifest.webmanifest">'
 
 # Texts in the Artifact page that only make sense inside claude.ai
 TAEGLICH_REPLACE = [
-    ("ok:['ok','已同步 · 手机电脑通用','已同步']", "ok:['ok','进度保存在这台设备上','本机']"),
+    # signed in to a site account (konto/sync.js): synced; otherwise kept on this device. Tapping the line opens konto/
+    ("ok:['ok','已同步 · 手机电脑通用','已同步']",
+     "ok:window.DLSync&&DLSync.user()?['ok','已同步 · '+DLSync.user(),'已同步']:['ok','保存在本机 · 点此登录同步','登录']"),
     ("'正在连接云端…','连接中'", "'正在载入…','载入中'"),
     ("<span id=\"sync-txt\">正在连接云端…</span>", "<span id=\"sync-txt\">正在载入…</span>"),
     ("warn:['warn','云端不可用，仅保存在本次打开','未同步']", "warn:['warn','本机存储不可用，进度只保留在本次打开','未保存']"),
@@ -32,7 +34,8 @@ TAEGLICH_REPLACE = [
     ("Claude 会按你的水平提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，打开页面就能直接开始。如果打开时还没出好，可以点“现在就在页面里生成”。",
      "Claude 会提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，发布到这个网站，打开页面就能直接开始。如果打开时还没出好，稍后刷新即可。"),
     ("'题目、进度、打卡记录和生词本都保存在云端。手机和电脑打开同一个链接、登录同一个 claude.ai 账号即可同步；切回这个页面时会自动拉取最新内容。'",
-     "'这是网页版：每天的题目从网站读取，你的进度、打卡记录和生词本保存在这台设备的浏览器里，手机和电脑各自记录，不互相同步。需要跨设备同步时，请用 claude.ai 上的版本。'"),
+     "(window.DLSync&&DLSync.user() ? '已登录 ' + esc(DLSync.user()) + '。进度、打卡记录和生词本保存在你的账号里，手机和电脑登录同一个账号即可同步；换了设备后刷新一下页面就是最新的。<a href=\"../konto/\">账号设置</a>'"
+     " : '还没有登录：进度、打卡记录和生词本只保存在这台设备的浏览器里。<a href=\"../konto/\">注册或登录</a>后，手机和电脑的记录会自动同步。')"),
     ("简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。",
      "网页版不调用 Claude：选择题自动判分，简答题显示参考答案供你自查。"),
     # 查词典 opens the site's own dictionary (claude.ai is not reachable everywhere, e.g. mainland China)
@@ -52,7 +55,7 @@ def build_taeglich():
     # hide the "re-generate today with another level" controls: they need Claude
     s = re.sub(r'(<button class="btn" data-act="ask-regen">)', r'<button class="btn" data-act="ask-regen" hidden>', s)
     s = s.replace('<html>', '<html lang="zh-CN">', 1)
-    s = must_replace(s, '<body>', '<body>\n' + HEAD + '<meta name="theme-color" content="#f2c200">\n<script src="shim.js"></script>', 'taeglich')
+    s = must_replace(s, '<body>', '<body>\n' + HEAD + '<meta name="theme-color" content="#f2c200">\n<script src="../konto/sync.js"></script>\n<script src="shim.js"></script>', 'taeglich')
     os.makedirs('taeglich/content', exist_ok=True)
     open('taeglich/index.html', 'w', encoding='utf-8').write(s)
     shutil.copy('tools/shim.js', 'taeglich/shim.js')
@@ -68,8 +71,18 @@ def build_index():
 
 def build_woerterbuch():
     page = open('quelle/woerterbuch/index.html', encoding='utf-8').read()
+    # account sync (konto/sync.js) updates ww.book / ww.history after the page has read them: let it re-read
+    page = must_replace(page, "history = store.get('history', []), book = store.get('book', []);",
+                        "history = store.get('history', []), book = store.get('book', []);\n"
+                        "window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []); };", 'woerterbuch')
+    # 登录 / 已同步 link in the header (label kept current by konto/sync.js)
+    page = must_replace(page, '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>',
+                        '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span>'
+                        '<a href="../konto/" data-dl-account style="margin-left:auto;font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap">登录</a></div>', 'woerterbuch')
+    page = must_replace(page, '词（保存在本机浏览器）', "词（${window.DLSync && DLSync.user() ? '已同步到你的账号' : '保存在本机浏览器，登录后可同步'}）", 'woerterbuch')
     full = ('<!doctype html>\n<html lang="zh-CN"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' + HEAD +
+            '\n<script src="../konto/sync.js"></script>' +
             '\n<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>\n'
             + page.replace('<div class="app">', '</head><body>\n<div class="app">', 1) + '\n</body></html>')
     open('woerterbuch/index.html', 'w', encoding='utf-8').write(full)

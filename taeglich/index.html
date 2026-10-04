@@ -1,5 +1,6 @@
 <!doctype html><html lang="zh-CN"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#f2c200">
+<script src="../konto/sync.js"></script>
 <script src="shim.js"></script>
 <title>Deutsch täglich</title>
 <link rel="stylesheet" href="../fonts/bab05cd78a.css">
@@ -424,7 +425,7 @@ function save(ref, patch, full) {
 }
 function setCloud(s) {
   S.cloud = s;
-  const map = {connecting:['', '正在载入…','载入中'], ok:['ok','进度保存在这台设备上','本机'], warn:['warn','本机存储不可用，进度只保留在本次打开','未保存']};
+  const map = {connecting:['', '正在载入…','载入中'], ok:window.DLSync&&DLSync.user()?['ok','已同步 · '+DLSync.user(),'已同步']:['ok','保存在本机 · 点此登录同步','登录'], warn:['warn','本机存储不可用，进度只保留在本次打开','未保存']};
   const [c, t, m] = map[s];
   for (const id of ['sync-dot','sync-dot-m']) $('#'+id).className = 'dot ' + c;
   $('#sync-txt').textContent = t; $('#sync-txt-m').textContent = m;
@@ -1236,7 +1237,7 @@ function vSet() {
     <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
     <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
     <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
-    <section class="sec"><h3>同步</h3><p>${S.db ? '这是网页版：每天的题目从网站读取，你的进度、打卡记录和生词本保存在这台设备的浏览器里，手机和电脑各自记录，不互相同步。需要跨设备同步时，请用 claude.ai 上的版本。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
+    <section class="sec"><h3>同步</h3><p>${S.db ? (window.DLSync&&DLSync.user() ? '已登录 ' + esc(DLSync.user()) + '。进度、打卡记录和生词本保存在你的账号里，手机和电脑登录同一个账号即可同步；换了设备后刷新一下页面就是最新的。<a href="../konto/">账号设置</a>' : '还没有登录：进度、打卡记录和生词本只保存在这台设备的浏览器里。<a href="../konto/">注册或登录</a>后，手机和电脑的记录会自动同步。') : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
     <section class="sec"><h3>说明</h3><p>网页版不调用 Claude：选择题自动判分，简答题显示参考答案供你自查。</p></section></div>`;
 }
 
