@@ -36,6 +36,8 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
 .me{font-size:15px;margin:0 0 4px}.me b{word-break:break-all}
 .nav{display:flex;gap:8px;margin-top:16px}.nav a{flex:1;text-align:center;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 0;background:var(--card);font-size:14px}
 [hidden]{display:none!important}
+.box{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:14px}
+.box p{margin:0 0 10px}.box .acts{display:flex;gap:8px}.box .btn{margin:0;padding:10px}
 </style>
 </head>
 <body>
@@ -53,7 +55,7 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
       <label for="l-email">邮箱</label><input id="l-email" name="email" type="email" autocomplete="username" required>
       <label for="l-pw">密码</label><input id="l-pw" name="password" type="password" autocomplete="current-password" required>
       <button class="btn" type="submit">登录</button>
-      <button class="link" type="button" data-tab="reset">忘记密码？</button>
+      <button class="link" type="button" data-tab="reset">忘记密码？发送重置邮件</button>
     </form>
 
     <form id="f-register" data-form="register" hidden>
@@ -61,18 +63,25 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
       <label for="r-pw">密码（至少 8 位）</label><input id="r-pw" name="password" type="password" autocomplete="new-password" minlength="8" required>
       <label for="r-pw2">再输一次密码</label><input id="r-pw2" name="password2" type="password" autocomplete="new-password" minlength="8" required>
       <button class="btn" type="submit">注册</button>
-      <p class="note">请填常用邮箱，忘记密码时验证码会发到这里。这台设备上已有的学习记录会一起存进新账号。</p>
+      <div class="box" id="exists" hidden>
+        <p>该邮箱已被注册。是否发送重置密码邮件？</p>
+        <div class="acts"><button class="btn" type="button" id="exists-send">发送重置邮件</button><button class="btn ghost" type="button" id="exists-no">暂不</button></div>
+      </div>
+      <p class="note">请填常用邮箱，忘记密码时重置邮件会发到这里。</p>
     </form>
 
     <form id="f-reset" data-form="reset" hidden>
-      <p class="me" style="font-weight:600">重设密码</p>
-      <label for="p-email">注册时用的邮箱</label>
-      <div class="row"><input id="p-email" name="email" type="email" autocomplete="username" required><button class="btn small" type="button" id="send-code">发送验证码</button></div>
-      <label for="p-code">邮件里的 6 位验证码</label><input id="p-code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required>
+      <p class="me" style="font-weight:600" id="reset-title">重设密码</p>
+      <div id="reset-ask">
+        <label for="p-email">注册时用的邮箱</label>
+        <div class="row"><input id="p-email" name="email" type="email" autocomplete="username" required><button class="btn small" type="button" id="send-code">发送重置邮件</button></div>
+        <label for="p-code">邮件里的 6 位验证码（或直接点邮件里的链接）</label><input id="p-code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required>
+      </div>
       <label for="p-pw">新密码（至少 8 位）</label><input id="p-pw" name="password" type="password" autocomplete="new-password" minlength="8" required>
-      <button class="btn" type="submit">重设并登录</button>
+      <label for="p-pw2">再输一次新密码</label><input id="p-pw2" name="password2" type="password" autocomplete="new-password" minlength="8" required>
+      <button class="btn" type="submit">保存新密码并登录</button>
       <button class="link" type="button" data-tab="login">返回登录</button>
-      <p class="note">没收到邮件的话，看看垃圾邮件文件夹。</p>
+      <p class="note" id="reset-note">没收到邮件的话，看看垃圾邮件文件夹。原密码无法查看，只能设置新密码。</p>
     </form>
     <p class="msg" id="msg" role="status"></p>
   </div>
@@ -80,18 +89,22 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
   <div class="card" id="in" hidden>
     <p class="me">已登录：<b id="me"></b></p>
     <p class="note" id="sync-state" style="margin-top:0"></p>
+    <div class="box" id="merge" hidden>
+      <p>这台设备上还有未登录时记下的学习记录（进度、打卡、生词本）。要并入此账号吗？账号里已有的同一条记录以账号为准。</p>
+      <div class="acts"><button class="btn" type="button" id="merge-yes">并入此账号</button><button class="btn ghost" type="button" id="merge-no">暂不</button></div>
+    </div>
     <a class="btn" id="back" href="../">继续学习</a>
     <details style="margin-top:18px">
       <summary style="cursor:pointer;color:var(--muted);font-size:14px">修改密码</summary>
       <form data-form="password">
-        <label for="c-old">原密码</label><input id="c-old" name="old" type="password" autocomplete="current-password" required>
         <label for="c-pw">新密码（至少 8 位）</label><input id="c-pw" name="password" type="password" autocomplete="new-password" minlength="8" required>
+        <label for="c-pw2">再输一次新密码</label><input id="c-pw2" name="password2" type="password" autocomplete="new-password" minlength="8" required>
         <button class="btn ghost" type="submit">修改密码</button>
-        <p class="note">修改后，其他设备需要重新登录。</p>
+        <p class="note">修改后账号和学习记录不变，其他设备需要用新密码重新登录。</p>
       </form>
     </details>
     <button class="btn ghost" id="logout" type="button">退出登录</button>
-    <p class="note">退出后，这台设备上的学习记录会被清除，账号里的记录不受影响，再次登录即可恢复。</p>
+    <p class="note">只退出这台设备。这台设备上保存的该账号记录会保留，下次登录接着用；云端记录和其他设备不受影响。</p>
     <p class="msg" id="msg2" role="status"></p>
   </div>
 
@@ -103,8 +116,9 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
 (() => {
   const $ = s => document.querySelector(s);
   const S = window.DLSync;
+  const params = new URLSearchParams(location.search);
   const next = (() => {
-    const n = new URLSearchParams(location.search).get('next');
+    const n = params.get('next');
     return n && n.startsWith('/') && !n.startsWith('//') && !/\/konto\/?$/.test(n.split('?')[0]) ? n : null;
   })();
   if (next) $('#back').href = next;
@@ -113,17 +127,22 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
   function tab(name) {
     for (const b of document.querySelectorAll('.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === name);
     for (const f of ['login', 'register', 'reset']) $('#f-' + f).hidden = f !== name;
-    const email = ($('#f-login').email.value || $('#f-register').email.value || $('#p-email').value).trim();
+    const email = ($('#l-email').value || $('#r-email').value || $('#p-email').value).trim();
     if (email) for (const id of ['#l-email', '#r-email', '#p-email']) if (!$(id).value) $(id).value = email;
+    $('#exists').hidden = true;
     say('');
   }
   document.addEventListener('click', e => { const t = e.target.closest('[data-tab]'); if (t) tab(t.dataset.tab); });
 
-  const STATES = { syncing: '正在同步…', ok: '记录已同步。', offline: '暂时连不上服务器，记录先保存在本机，联网后会自动同步。', error: '同步出了问题，稍后会再试。', idle: '' };
+  const STATES = { syncing: '正在同步…', ok: '记录已同步。', offline: '无法连接同步服务；本机记录仍已保留，联网后会自动同步。', error: '同步出了问题，稍后会再试。', idle: '' };
+  let mergeAsked = false;
   function show() {
     const u = S.user();
     $('#out').hidden = !!u; $('#in').hidden = !u;
-    if (u) { $('#me').textContent = u; $('#sync-state').textContent = STATES[S.state()] || ''; }
+    if (u) {
+      $('#me').textContent = u; $('#sync-state').textContent = STATES[S.state()] || '';
+      $('#merge').hidden = mergeAsked || !S.localPending();
+    }
   }
   S.onChange(show);
 
@@ -132,7 +151,9 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
     try { await fn(); } catch (e) { say(e.message, 'err', form.closest('#in') ? '#msg2' : '#msg'); }
     finally { btns.forEach(b => b.disabled = false); }
   }
-  const done = () => { if (next) location.href = next; else { show(); S.pull(); } };
+  // after signing in: go back to the page that sent us here, unless there is signed-out data to decide about
+  const done = () => { if (next && !S.localPending()) location.href = next; else { show(); S.pull(); } };
+  const samePw = f => { if (f.password.value !== f.password2.value) throw new Error('两次输入的密码不一样'); };
 
   document.addEventListener('submit', e => {
     const f = e.target; e.preventDefault();
@@ -140,35 +161,57 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
     busy(f, async () => {
       if (f.dataset.form === 'login') { await S.login(v('email'), f.password.value); done(); }
       if (f.dataset.form === 'register') {
-        if (f.password.value !== f.password2.value) throw new Error('两次输入的密码不一样');
-        await S.register(v('email'), f.password.value); done();
+        samePw(f);
+        try { await S.register(v('email'), f.password.value); }
+        catch (err) { if (err.code === 'exists') { $('#exists').hidden = false; say(''); return; } throw err; }
+        done();
       }
-      if (f.dataset.form === 'reset') { await S.confirmReset(v('email'), v('code'), f.password.value); done(); }
-      if (f.dataset.form === 'password') { await S.changePassword(f.old.value, f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
+      if (f.dataset.form === 'reset') {
+        samePw(f);
+        await S.confirmReset(v('email'), v('code'), f.password.value);
+        history.replaceState(null, '', location.pathname + (next ? '?next=' + encodeURIComponent(next) : ''));
+        done();
+      }
+      if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
     });
   });
 
   let cool = 0;
+  async function sendReset(email) {
+    await S.requestReset(email);
+    tab('reset'); $('#p-email').value = email;
+    say('重置邮件已发到 ' + email + '，点邮件里的链接，或在下面输入验证码。15 分钟内有效。', 'ok');
+    cool = 60;
+    const b = $('#send-code'), t = setInterval(() => {
+      b.textContent = --cool > 0 ? cool + ' 秒后重发' : '重新发送'; b.disabled = cool > 0;
+      if (cool <= 0) clearInterval(t);
+    }, 1000);
+  }
   $('#send-code').addEventListener('click', () => {
-    const f = $('#f-reset'), email = $('#p-email').value.trim();
+    const email = $('#p-email').value.trim();
     if (!email) { say('先填邮箱', 'err'); return; }
-    busy(f, async () => {
-      await S.requestReset(email);
-      say('验证码已发到 ' + email + '，15 分钟内有效。', 'ok');
-      $('#p-code').focus();
-      cool = 60;
-      const b = $('#send-code'), t = setInterval(() => {
-        b.textContent = --cool > 0 ? cool + ' 秒后重发' : '重新发送'; b.disabled = cool > 0;
-        if (cool <= 0) clearInterval(t);
-      }, 1000);
-    }).then(() => { if (cool > 0) $('#send-code').disabled = true; });
+    busy($('#f-reset'), () => sendReset(email)).then(() => { if (cool > 0) $('#send-code').disabled = true; });
   });
+  $('#exists-send').addEventListener('click', () => busy($('#f-register'), () => sendReset($('#r-email').value.trim())));
+  $('#exists-no').addEventListener('click', () => { $('#exists').hidden = true; });
 
-  $('#logout').addEventListener('click', async () => {
-    if (!confirm('退出后，这台设备上的学习记录会被清除（账号里的不受影响）。确定退出？')) return;
-    await S.logout(); show(); tab('login');
-  });
+  $('#merge-yes').addEventListener('click', () => busy($('#in'), async () => {
+    await S.mergeLocal(); mergeAsked = true; show(); say('已并入此账号。', 'ok', '#msg2');
+  }));
+  $('#merge-no').addEventListener('click', () => { mergeAsked = true; show(); });
 
+  $('#logout').addEventListener('click', async () => { await S.logout(); show(); tab('login'); });
+
+  // opened from the reset email: email and code come in the link, only the new password is asked
+  if (params.get('password-reset') === '1' && !S.user()) {
+    tab('reset');
+    $('#p-email').value = params.get('email') || ''; $('#p-code').value = params.get('code') || '';
+    if ($('#p-email').value && $('#p-code').value) {
+      $('#reset-ask').hidden = true; $('#reset-title').textContent = '设置新密码 · ' + $('#p-email').value;
+      $('#reset-note').textContent = '原密码无法查看，只能设置新密码。保存后账号和学习记录不变。';
+      $('#p-pw').focus();
+    }
+  }
   show();
 })();
 </script>

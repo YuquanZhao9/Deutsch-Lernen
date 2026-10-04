@@ -87,7 +87,6 @@
       if (data == null) delete mem[path]; else mem[path] = data;
       persist(); emit(path);
     },
-    dump: () => mem,
   });
 
   const db = { doc };

@@ -3,10 +3,15 @@
    from GitHub Pages the pages call the mirror's API (CORS + bearer token).
 
    Pages register an adapter for the data they keep:
-     DLSync.bind(prefix, { apply(path, data), dump() -> {path: data} })
+     DLSync.bind(prefix, { apply(path, data) })
    and report each local change with DLSync.changed(prefix + path, data). Changes are queued in
    localStorage, sent in batches, and pulled from the server when a page opens or comes back into view.
-   Conflicts: the last write to reach the server wins, per document. */
+   Conflicts: the last write to reach the server wins, per document.
+
+   Local data spaces (as in 昱时): the learner data the pages keep in localStorage (LOCAL_KEYS) belongs to the
+   space that is active on this device: "local" while signed out, "u:<user id>" for each account. Signing in
+   or out swaps the active space; the inactive ones are kept under "dl-space:<id>". Nothing from the signed-out
+   space goes into an account unless the learner chooses to (DLSync.mergeLocal). */
 (() => {
   'use strict';
   if (window.DLSync) return;
@@ -16,13 +21,14 @@
     : (h.endsWith('.pages.dev') || h === 'localhost' || h === '127.0.0.1') ? '' : MIRROR) + '/api';
   const ROOT = (() => { const s = document.currentScript && document.currentScript.src; return s ? s.replace(/konto\/sync\.js.*$/, '') : '../'; })();
 
-  const SK = 'dl-account', QK = 'dl-sync-queue';
-  // everything the site keeps per learner; cleared when a different account signs in on this device
-  const LOCAL_KEYS = ['deutsch-taeglich-db-v1', 'deutsch-taeglich-cache-v1', 'ww.book', 'ww.history'];
+  const SK = 'dl-account', QK = 'dl-sync-queue', CUR = 'dl-space';
+  // everything the site keeps per learner (plus the upload queue): swapped as one space
+  const TK = 'deutsch-taeglich-db-v1';
+  const LOCAL_KEYS = [TK, 'deutsch-taeglich-cache-v1', 'ww.book', 'ww.history', QK];
   const rawSet = Storage.prototype.setItem;
   const load = (k, d) => { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } };
   const save = (k, v) => { try { rawSet.call(localStorage, k, JSON.stringify(v)); } catch (e) {} };
-  let acct = load(SK, {}); // {token, email, since, owner, fresh}
+  let acct = load(SK, {}); // {token, email, id, since, fresh}
   let queue = load(QK, {}); // {path: data}
   const saveAcct = () => save(SK, acct);
 
@@ -34,11 +40,11 @@
         headers: Object.assign(payload ? { 'Content-Type': 'application/json' } : {}, token ? { Authorization: 'Bearer ' + token } : {}),
         body: payload ? JSON.stringify(payload) : undefined,
       });
-    } catch (e) { throw Object.assign(new Error('连不上服务器，请检查网络后再试'), { offline: true }); }
+    } catch (e) { throw Object.assign(new Error('无法连接同步服务；本机记录仍已保留。'), { offline: true }); }
     const j = await r.json().catch(() => ({}));
     if (!r.ok) {
-      if (r.status === 401 && token && token === acct.token) { acct = { owner: acct.owner }; saveAcct(); fire(); }
-      throw Object.assign(new Error(j.error || ('服务器出错（' + r.status + '）')), { status: r.status });
+      if (r.status === 401 && token && token === acct.token) expired();
+      throw Object.assign(new Error(j.error || (r.status === 429 ? '操作太频繁，请稍后再试。' : '服务器出错（' + r.status + '）')), { status: r.status, code: j.code });
     }
     return j;
   }
@@ -66,13 +72,6 @@
         const fresh = acct.fresh;
         const r = await call('GET', '/data?since=' + (fresh ? 0 : (acct.since || 0)), null, acct.token);
         applyRemote(r.docs);
-        if (fresh) {
-          // first sync on this device: upload what was kept here and is not in the account yet
-          const remote = new Set(r.docs.map(d => d.path));
-          for (const [p, a] of Object.entries(adapters))
-            for (const [k, v] of Object.entries(a.dump() || {})) if (!remote.has(p + k) && v != null) queue[p + k] = v;
-          save(QK, queue);
-        }
         acct.since = r.now; if (fresh) delete acct.fresh; saveAcct();
         await push();
         setState('ok');
@@ -97,15 +96,89 @@
   }
   const schedule = () => { clearTimeout(timer); timer = setTimeout(() => push().catch(() => {}), 1200); };
 
-  function clearLocal() {
-    for (const k of LOCAL_KEYS) try { localStorage.removeItem(k); } catch (e) {}
-    queue = {}; save(QK, queue);
+  const curSpace = () => localStorage.getItem(CUR) || 'local';
+  function switchSpace(to) {
+    const from = curSpace();
+    if (from === to) return;
+    const stash = {};
+    for (const k of LOCAL_KEYS) { const v = localStorage.getItem(k); if (v != null) stash[k] = v; localStorage.removeItem(k); }
+    if (Object.keys(stash).length) save('dl-space:' + from, stash); else localStorage.removeItem('dl-space:' + from);
+    const next = load('dl-space:' + to, {});
+    for (const [k, v] of Object.entries(next)) try { rawSet.call(localStorage, k, v); } catch (e) {}
+    localStorage.removeItem('dl-space:' + to);
+    rawSet.call(localStorage, CUR, to);
+    queue = load(QK, {});
   }
   function signedIn(r) {
-    if (acct.owner && acct.owner !== r.email) clearLocal(); // this device held another account's data
-    acct = { token: r.token, email: r.email, owner: r.email, since: 0, fresh: true };
-    saveAcct(); fire();
+    acct = { token: r.token, email: r.email, id: r.id, since: 0, fresh: true };
+    saveAcct();
+    switchSpace('u:' + r.id);
+    fire();
     return r.email;
+  }
+  function expired() {
+    acct = {}; saveAcct();
+    switchSpace('local');
+    fire();
+    // a page that already read the account's data must reload into the signed-out space
+    if (Object.keys(adapters).some(p => p !== 'w/') || window.__wwReload) location.reload();
+  }
+  // signed in, and this browser also holds learner data from while it was signed out?
+  function localPending() {
+    if (!acct.token) return false;
+    const sp = load('dl-space:local', {});
+    const has = v => { try { const x = JSON.parse(v); return Array.isArray(x) ? x.length > 0 : x && typeof x === 'object' && Object.keys(x).length > 0; } catch (e) { return false; } };
+    return [TK, 'ww.book', 'ww.history'].some(k => sp[k] != null && has(sp[k]));
+  }
+  const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
+  // values from b win; objects are merged key by key
+  const deepMerge = (a, b) => {
+    if (!isObj(a) || !isObj(b)) return b === undefined ? a : b;
+    const out = { ...a };
+    for (const [k, v] of Object.entries(b)) out[k] = deepMerge(a[k], v);
+    return out;
+  };
+  const histNorm = a => (Array.isArray(a) ? a : []).map(h => typeof h === 'string' ? { k: h, n: 1, t: 0 } : h).filter(h => h && (h.k || h.q));
+  const histKey = h => h.k ? 'k:' + h.k : 'q:' + h.q;
+  function histMerge(a, b) {
+    const m = new Map();
+    for (const h of histNorm(a).concat(histNorm(b))) {
+      const o = m.get(histKey(h));
+      m.set(histKey(h), !o ? h : { ...(h.t >= o.t ? h : o), n: Math.max(h.n || 1, o.n || 1), t: Math.max(h.t || 0, o.t || 0) });
+    }
+    return [...m.values()].sort((x, y) => (y.t || 0) - (x.t || 0)).slice(0, 200);
+  }
+  // 把未登录时的学习记录并入此账号: the account's own records win where both have the same item
+  async function mergeLocal() {
+    if (!acct.token) throw new Error('请先登录');
+    const sp = load('dl-space:local', {});
+    const parse = (v, d) => { try { return v == null ? d : JSON.parse(v); } catch (e) { return d; } };
+    const r = await call('GET', '/data?since=0', null, acct.token);
+    const server = {};
+    for (const d of r.docs) server[d.path] = d.data;
+    const own = (path, live) => Object.prototype.hasOwnProperty.call(queue, path) ? queue[path]
+      : Object.prototype.hasOwnProperty.call(server, path) ? server[path] : live;
+    const mem = load(TK, {});
+    for (const [path, doc] of Object.entries(parse(sp[TK], {}))) {
+      const mine = own('t/' + path, mem[path]);
+      mem[path] = mine == null ? doc : deepMerge(doc, mine);
+      queue['t/' + path] = mem[path];
+    }
+    save(TK, mem);
+    const lb = parse(sp['ww.book'], []);
+    if (lb.length) {
+      const mine = own('w/book', load('ww.book', [])) || [];
+      const book = mine.concat(lb.filter(k => !mine.includes(k)));
+      save('ww.book', book); queue['w/book'] = book;
+    }
+    const lh = parse(sp['ww.history'], []);
+    if (lh.length) {
+      const hist = histMerge(own('w/history', load('ww.history', [])), lh);
+      save('ww.history', hist); queue['w/history'] = hist;
+    }
+    save(QK, queue);
+    localStorage.removeItem('dl-space:local');
+    await push();
   }
 
   // first pull: pages wait for it (briefly) before reading their data
@@ -138,7 +211,7 @@
     onChange(f) { listeners.push(f); },
     bind(prefix, adapter) { adapters[prefix] = adapter; },
     changed(path, data) {
-      if (!acct.token && !acct.owner) return; // never signed in here: nothing to sync
+      if (!acct.token) return; // signed out: the data stays in this device's signed-out space
       queue[path] = data === undefined ? null : JSON.parse(JSON.stringify(data));
       save(QK, queue);
       if (acct.token) schedule();
@@ -148,11 +221,13 @@
     login: (email, password) => call('POST', '/login', { email, password }).then(signedIn),
     requestReset: email => call('POST', '/reset/request', { email }),
     confirmReset: (email, code, password) => call('POST', '/reset/confirm', { email, code, password }).then(signedIn),
-    changePassword: (old, password) => call('POST', '/password', { old, password }, acct.token).then(r => { acct.token = r.token; saveAcct(); }),
+    changePassword: password => call('POST', '/password', { password }, acct.token).then(r => { acct.token = r.token; saveAcct(); }),
+    localPending, mergeLocal,
+    // signs out this device only; the account's copy on this device is kept for the next sign-in
     async logout() {
       try { await push(); } catch (e) {}
       const t = acct.token;
-      acct = {}; saveAcct(); clearLocal(); fire();
+      acct = {}; saveAcct(); switchSpace('local'); fire();
       if (t) call('POST', '/logout', null, t).catch(() => {});
     },
   };
@@ -169,24 +244,12 @@
       if (!WWINV[path]) return;
       if (path === 'history' && Array.isArray(data)) {
         // merge with this device's history by entry ({k} headword or {q} text): keep the higher count and the latest time
-        const norm = a => (Array.isArray(a) ? a : []).map(h => typeof h === 'string' ? { k: h, n: 1, t: 0 } : h).filter(h => h && (h.k || h.q));
-        const key = h => h.k ? 'k:' + h.k : 'q:' + h.q;
-        const m = new Map();
-        for (const h of norm(data).concat(norm(load('ww.history', [])))) {
-          const o = m.get(key(h));
-          m.set(key(h), !o ? h : { ...(h.t >= o.t ? h : o), n: Math.max(h.n || 1, o.n || 1), t: Math.max(h.t || 0, o.t || 0) });
-        }
-        const merged = [...m.values()].sort((a, b) => (b.t || 0) - (a.t || 0)).slice(0, 200);
+        const merged = histMerge(data, load('ww.history', []));
         if (JSON.stringify(merged) !== JSON.stringify(data)) setTimeout(() => window.DLSync.changed('w/history', merged), 0);
         data = merged;
       }
       if (data == null) localStorage.removeItem(WWINV[path]); else rawSet.call(localStorage, WWINV[path], JSON.stringify(data));
       if (typeof window.__wwReload === 'function') window.__wwReload();
-    },
-    dump() {
-      const out = {};
-      for (const [k, p] of Object.entries(WW)) { const v = load(k, null); if (v != null) out[p] = v; }
-      return out;
     },
   });
 

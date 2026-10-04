@@ -6,15 +6,16 @@
 //   variable    MAIL_FROM       -> the sender address verified in Brevo
 //   variable    MAIL_NAME       -> optional sender name (default "Deutsch lernen")
 //   variable    ALLOWED_ORIGINS -> optional, extra comma-separated origins allowed to call the API
+//   variable    SITE_URL        -> optional, site root used in the reset link (default: this deployment's origin)
 //
 // Routes (JSON in, JSON out; auth = "Authorization: Bearer <token>"):
-//   POST /api/register        {email, password}            -> {token, email}
-//   POST /api/login           {email, password}            -> {token, email}
-//   POST /api/logout          (auth)
-//   GET  /api/me              (auth)                       -> {email}
-//   POST /api/password        (auth) {old, password}       -> {token}  (other devices are signed out)
-//   POST /api/reset/request   {email}                      -> {ok}     (emails a 6-digit code)
-//   POST /api/reset/confirm   {email, code, password}      -> {token, email}
+//   POST /api/register        {email, password}            -> {token, email, id}   (409 code "exists" if taken)
+//   POST /api/login           {email, password}            -> {token, email, id}
+//   POST /api/logout          (auth)                                                (this device only)
+//   GET  /api/me              (auth)                       -> {email, id}
+//   POST /api/password        (auth) {password}            -> {token, email, id}   (other devices are signed out)
+//   POST /api/reset/request   {email}                      -> {ok}     (emails a reset link + 6-digit code)
+//   POST /api/reset/confirm   {email, code, password}      -> {token, email, id}
 //   GET  /api/data?since=T    (auth)                       -> {docs:[{path,data,t}], now}
 //   POST /api/data            (auth) {docs:[{path,data}]}  -> {now}    (data null deletes)
 
@@ -39,8 +40,8 @@ const SCHEMA = [
 let schemaReady = null;
 const ensureSchema = db => schemaReady || (schemaReady = db.batch(SCHEMA.map(s => db.prepare(s))).catch(e => { schemaReady = null; throw e; }));
 
-class HttpError extends Error { constructor(status, msg) { super(msg); this.status = status; } }
-const fail = (status, msg) => { throw new HttpError(status, msg); };
+class HttpError extends Error { constructor(status, msg, code) { super(msg); this.status = status; this.code = code; } }
+const fail = (status, msg, code) => { throw new HttpError(status, msg, code); };
 
 const enc = new TextEncoder();
 const b64 = buf => btoa(String.fromCharCode(...new Uint8Array(buf)));
@@ -115,24 +116,24 @@ const routes = {
   async 'POST /api/register'({ request, db }) {
     const b = await body(request), email = normEmail(b.email);
     checkEmail(email); checkNewPassword(b.password);
-    if (await db.prepare('SELECT 1 FROM users WHERE email = ?').bind(email).first()) fail(409, '这个邮箱已经注册过了，可以直接登录或找回密码');
+    if (await db.prepare('SELECT 1 FROM users WHERE email = ?').bind(email).first()) fail(409, '此邮箱已经注册，请直接登录。', 'exists');
     const id = crypto.randomUUID();
     await db.prepare('INSERT INTO users (id, email, pw, created) VALUES (?, ?, ?, ?)').bind(id, email, await hashPassword(b.password), Date.now()).run();
-    return { token: await newSession(db, id), email };
+    return { token: await newSession(db, id), email, id };
   },
 
   async 'POST /api/login'({ request, db }) {
     const b = await body(request), email = normEmail(b.email), now = Date.now();
     const u = await db.prepare('SELECT * FROM users WHERE email = ?').bind(email).first();
-    if (!u) fail(401, '邮箱或密码不对');
+    if (!u) fail(401, '邮箱或密码不正确。');
     if (u.locked_until > now) fail(429, `密码错误次数太多，请 ${Math.ceil((u.locked_until - now) / 6e4)} 分钟后再试，或用“忘记密码”`);
     if (!(await checkPassword(String(b.password || ''), u.pw))) {
       const fails = u.fails + 1;
       await db.prepare('UPDATE users SET fails = ?, locked_until = ? WHERE id = ?').bind(fails >= 5 ? 0 : fails, fails >= 5 ? now + 15 * 6e4 : 0, u.id).run();
-      fail(401, '邮箱或密码不对');
+      fail(401, '邮箱或密码不正确。');
     }
     if (u.fails) await db.prepare('UPDATE users SET fails = 0 WHERE id = ?').bind(u.id).run();
-    return { token: await newSession(db, u.id), email };
+    return { token: await newSession(db, u.id), email, id: u.id };
   },
 
   async 'POST /api/logout'({ request, db }) {
@@ -143,22 +144,20 @@ const routes = {
 
   async 'GET /api/me'({ request, db }) {
     const u = await auth(request, db);
-    return { email: u.email };
+    return { email: u.email, id: u.id };
   },
 
   async 'POST /api/password'({ request, db }) {
     const u = await auth(request, db), b = await body(request);
     checkNewPassword(b.password);
-    const row = await db.prepare('SELECT pw FROM users WHERE id = ?').bind(u.id).first();
-    if (!(await checkPassword(String(b.old || ''), row.pw))) fail(401, '原密码不对');
     await db.batch([
       db.prepare('UPDATE users SET pw = ?, fails = 0, locked_until = 0 WHERE id = ?').bind(await hashPassword(b.password), u.id),
       db.prepare('DELETE FROM sessions WHERE user_id = ?').bind(u.id),
     ]);
-    return { token: await newSession(db, u.id), email: u.email };
+    return { token: await newSession(db, u.id), email: u.email, id: u.id };
   },
 
-  async 'POST /api/reset/request'({ request, db, env }) {
+  async 'POST /api/reset/request'({ request, db, env, url }) {
     const b = await body(request), email = normEmail(b.email), now = Date.now();
     checkEmail(email);
     const u = await db.prepare('SELECT id FROM users WHERE email = ?').bind(email).first();
@@ -169,8 +168,9 @@ const routes = {
     const dayCount = r && r.day === day ? r.day_count : 0;
     if (dayCount >= 10) fail(429, '今天发送次数太多了，请明天再试');
     const code = String(crypto.getRandomValues(new Uint32Array(1))[0] % 1e6).padStart(6, '0');
-    await sendMail(env, email, `验证码 ${code} · Deutsch lernen 重设密码`,
-      `你好！\n\n你正在重设 Deutsch lernen 的登录密码，验证码是：\n\n    ${code}\n\n15 分钟内有效。如果不是你本人操作，忽略这封邮件即可，密码不会改变。\n\nDeutsch lernen`);
+    const link = `${String(env.SITE_URL || url.origin).replace(/\/+$/, '')}/konto/?password-reset=1&email=${encodeURIComponent(email)}&code=${code}`;
+    await sendMail(env, email, `重设 Deutsch lernen 密码（验证码 ${code}）`,
+      `你好！\n\n你正在重设 Deutsch lernen 的登录密码。打开下面的链接设置新密码：\n\n${link}\n\n也可以在重设密码页面输入验证码：${code}\n\n15 分钟内有效。如果不是你本人操作，忽略这封邮件即可，密码不会改变。\n\nDeutsch lernen`);
     await db.prepare(`INSERT INTO resets (email, code, expires, tries, sent, day, day_count) VALUES (?, ?, ?, 0, ?, ?, ?)
       ON CONFLICT(email) DO UPDATE SET code = excluded.code, expires = excluded.expires, tries = 0, sent = excluded.sent, day = excluded.day, day_count = excluded.day_count`)
       .bind(email, await sha256(email + ':' + code), now + 15 * 6e4, now, day, dayCount + 1).run();
@@ -193,7 +193,7 @@ const routes = {
       db.prepare('DELETE FROM sessions WHERE user_id = ?').bind(u.id),
       db.prepare('DELETE FROM resets WHERE email = ?').bind(email),
     ]);
-    return { token: await newSession(db, u.id), email };
+    return { token: await newSession(db, u.id), email, id: u.id };
   },
 
   async 'GET /api/data'({ request, db, url }) {
@@ -250,7 +250,7 @@ export async function onRequest({ request, env }) {
     await ensureSchema(env.DB);
     return json(await route({ request, env, db: env.DB, url }));
   } catch (e) {
-    if (e instanceof HttpError) return json({ error: e.message }, e.status);
+    if (e instanceof HttpError) return json(e.code ? { error: e.message, code: e.code } : { error: e.message }, e.status);
     console.error(e);
     return json({ error: '服务器出错了，请稍后再试' }, 500);
   }
