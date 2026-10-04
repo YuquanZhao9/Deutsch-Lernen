@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>账号 · Deutsch lernen</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#f2c200">
+<style>
+:root{--bg:#f7f5ef;--card:#fff;--ink:#1d1d1b;--muted:#6b6a64;--line:#e4e1d8;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#b3261e;--ok:#1e7a3c;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme=light]){--bg:#161614;--card:#21211e;--ink:#f1efe8;--muted:#a3a198;--line:#34332f;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#ff8a80;--ok:#7ad59a;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#161614;--card:#21211e;--ink:#f1efe8;--muted:#a3a198;--line:#34332f;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#ff8a80;--ok:#7ad59a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  padding:calc(env(safe-area-inset-top,0px) + 24px) 16px calc(env(safe-area-inset-bottom,0px) + 24px);display:flex;justify-content:center}
+.wrap{width:100%;max-width:400px}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.01em;margin:0 0 4px}
+.brand .tag{background:var(--accent);color:var(--accent-ink);border-radius:6px;padding:0 6px;font-size:15px;vertical-align:2px;margin-left:4px}
+.lead{color:var(--muted);margin:0 0 20px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.tabs{display:flex;gap:4px;background:var(--bg);border-radius:10px;padding:4px;margin-bottom:18px}
+.tabs button{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-size:15px;padding:8px 0;border-radius:7px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--card);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+label{display:block;font-size:13px;color:var(--muted);margin:12px 0 4px}
+input{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
+input:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.row{display:flex;gap:8px}.row input{flex:1;min-width:0}
+.btn{display:block;width:100%;text-align:center;text-decoration:none;margin-top:18px;border:0;border-radius:10px;padding:12px;font:inherit;font-weight:600;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--ink);font-weight:500}
+.btn.small{display:inline-block;width:auto;margin:0;padding:10px 14px;white-space:nowrap}
+.btn:disabled{opacity:.55;cursor:default}
+.msg{margin:14px 0 0;font-size:14px;min-height:1px}.msg.err{color:var(--err)}.msg.ok{color:var(--ok)}
+.link{background:none;border:0;padding:0;color:var(--muted);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer;margin-top:14px}
+.note{font-size:13px;color:var(--muted);margin:14px 0 0}
+.me{font-size:15px;margin:0 0 4px}.me b{word-break:break-all}
+.nav{display:flex;gap:8px;margin-top:16px}.nav a{flex:1;text-align:center;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 0;background:var(--card);font-size:14px}
+[hidden]{display:none!important}
+html.embed body{padding:0;background:transparent;min-height:0;display:block}html.embed .wrap{max-width:none}
+html.embed .brand,html.embed .lead,html.embed .nav,html.embed #back{display:none}
+
+html.embed .card{border-radius:12px}
+.box{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:14px}
+.box p{margin:0 0 10px}.box .acts{display:flex;gap:8px}.box .btn{margin:0;padding:10px}
+</style>
+</head>
+<body>
+<script>
+// embedded in the dictionary's 设置: follow its 外观 choice (ww.theme: '' | 'light' | 'dark')
+if (new URLSearchParams(location.search).get('embed') === '1') {
+  document.documentElement.classList.add('embed');
+  const theme = () => { let t = ''; try { t = JSON.parse(localStorage.getItem('ww.theme') || '""'); } catch (e) {}
+    if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
+  theme(); addEventListener('storage', e => { if (e.key === 'ww.theme') theme(); });
+}
+</script>
+<div class="wrap">
+  <p class="brand">Deutsch <span class="tag">lernen</span></p>
+  <p class="lead">注册后，每日学习的进度、打卡记录、生词本、词典的收藏和翻译设置会保存在你的账号里，手机和电脑登录同一个账号就能同步。</p>
+
+  <div class="card" id="out">
+    <div class="tabs" role="tablist">
+      <button role="tab" data-tab="login" aria-selected="true">登录</button>
+      <button role="tab" data-tab="register" aria-selected="false">注册</button>
+    </div>
+
+    <form id="f-login" data-form="login">
+      <label for="l-email">邮箱</label><input id="l-email" name="email" type="email" autocomplete="username" required>
+      <label for="l-pw">密码</label><input id="l-pw" name="password" type="password" autocomplete="current-password" required>
+      <button class="btn" type="submit">登录</button>
+      <button class="link" type="button" data-tab="reset">忘记密码？发送重置邮件</button>
+    </form>
+
+    <form id="f-register" data-form="register" hidden>
+      <label for="r-email">邮箱</label><input id="r-email" name="email" type="email" autocomplete="username" required>
+      <label for="r-pw">密码（至少 8 位）</label><input id="r-pw" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      <label for="r-pw2">再输一次密码</label><input id="r-pw2" name="password2" type="password" autocomplete="new-password" minlength="8" required>
+      <button class="btn" type="submit">注册</button>
+      <div class="box" id="exists" hidden>
+        <p>该邮箱已被注册。是否发送重置密码邮件？</p>
+        <div class="acts"><button class="btn" type="button" id="exists-send">发送重置邮件</button><button class="btn ghost" type="button" id="exists-no">暂不</button></div>
+      </div>
+      <p class="note">请填常用邮箱。注册后要先点确认邮件里的链接才能登录，忘记密码时重置邮件也会发到这里。</p>
+    </form>
+
+    <div id="f-pending" hidden>
+      <p class="me" style="font-weight:600">请查收确认邮件</p>
+      <p class="note" style="margin-top:4px">确认邮件已发到 <b id="pend-email"></b>。打开邮件里的链接就完成注册并自动登录。链接 24 小时内有效；没收到的话看看垃圾邮件文件夹。</p>
+      <button class="btn ghost" type="button" id="pend-resend">重新发送确认邮件</button>
+      <button class="link" type="button" data-tab="login">已经确认了？去登录</button>
+    </div>
+
+    <form id="f-reset" data-form="reset" hidden>
+      <p class="me" style="font-weight:600" id="reset-title">重设密码</p>
+      <div id="reset-ask">
+        <label for="p-email">注册时用的邮箱</label>
+        <div class="row"><input id="p-email" name="email" type="email" autocomplete="username" required><button class="btn small" type="button" id="send-code">发送重置邮件</button></div>
+        <label for="p-code">邮件里的 6 位验证码（或直接点邮件里的链接）</label><input id="p-code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required>
+      </div>
+      <label for="p-pw">新密码（至少 8 位）</label><input id="p-pw" name="password" type="password" autocomplete="new-password" minlength="8" required>
+      <label for="p-pw2">再输一次新密码</label><input id="p-pw2" name="password2" type="password" autocomplete="new-password" minlength="8" required>
+      <button class="btn" type="submit">保存新密码并登录</button>
+      <button class="link" type="button" data-tab="login">返回登录</button>
+      <p class="note" id="reset-note">没收到邮件的话，看看垃圾邮件文件夹。原密码无法查看，只能设置新密码。</p>
+    </form>
+    <p class="msg" id="msg" role="status"></p>
+  </div>
+
+  <div class="card" id="in" hidden>
+    <p class="me">已登录：<b id="me"></b></p>
+    <p class="note" id="sync-state" style="margin-top:0"></p>
+    <div class="box" id="merge" hidden>
+      <p>这台设备上还有未登录时记下的学习记录（进度、打卡、生词本）。要并入此账号吗？账号里已有的同一条记录以账号为准。</p>
+      <div class="acts"><button class="btn" type="button" id="merge-yes">并入此账号</button><button class="btn ghost" type="button" id="merge-no">暂不</button></div>
+    </div>
+    <a class="btn" id="back" href="../">继续学习</a>
+    <details style="margin-top:18px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:14px">修改密码</summary>
+      <form data-form="password">
+        <label for="c-pw">新密码（至少 8 位）</label><input id="c-pw" name="password" type="password" autocomplete="new-password" minlength="8" required>
+        <label for="c-pw2">再输一次新密码</label><input id="c-pw2" name="password2" type="password" autocomplete="new-password" minlength="8" required>
+        <button class="btn ghost" type="submit">修改密码</button>
+        <p class="note">修改后账号和学习记录不变，其他设备需要用新密码重新登录。</p>
+      </form>
+    </details>
+    <button class="btn ghost" id="logout" type="button">退出登录</button>
+    <p class="note">只退出这台设备。这台设备上保存的该账号记录会保留，下次登录接着用；云端记录和其他设备不受影响。</p>
+    <p class="msg" id="msg2" role="status"></p>
+  </div>
+
+  <div class="nav"><a href="../taeglich/">每日学习</a><a href="../woerterbuch/">词典</a></div>
+</div>
+
+<script src="sync.js"></script>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const S = window.DLSync;
+  const params = new URLSearchParams(location.search);
+  const next = (() => {
+    const n = params.get('next');
+    return n && n.startsWith('/') && !n.startsWith('//') && !/\/konto\/?$/.test(n.split('?')[0]) ? n : null;
+  })();
+  if (next) $('#back').href = next;
+
+  const say = (t, kind, el = '#msg') => { const m = $(el); m.textContent = t || ''; m.className = 'msg ' + (kind || ''); };
+  function tab(name) {
+    for (const b of document.querySelectorAll('.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === name);
+    for (const f of ['login', 'register', 'reset', 'pending']) $('#f-' + f).hidden = f !== name;
+    const email = ($('#l-email').value || $('#r-email').value || $('#p-email').value).trim();
+    if (email) for (const id of ['#l-email', '#r-email', '#p-email']) if (!$(id).value) $(id).value = email;
+    $('#exists').hidden = true;
+    say('');
+  }
+  document.addEventListener('click', e => { const t = e.target.closest('[data-tab]'); if (t) tab(t.dataset.tab); });
+
+  const STATES = { syncing: '正在同步…', ok: '记录已同步。', offline: '无法连接同步服务；本机记录仍已保留，联网后会自动同步。', error: '同步出了问题，稍后会再试。', idle: '' };
+  let mergeAsked = false;
+  function show() {
+    const u = S.user();
+    $('#out').hidden = !!u; $('#in').hidden = !u;
+    if (u) {
+      $('#me').textContent = u; $('#sync-state').textContent = STATES[S.state()] || '';
+      $('#merge').hidden = mergeAsked || !S.localPending();
+    }
+  }
+  S.onChange(show);
+
+  async function busy(form, fn) {
+    const btns = form.querySelectorAll('button'); btns.forEach(b => b.disabled = true);
+    try { await fn(); } catch (e) { say(e.message, 'err', form.closest('#in') ? '#msg2' : '#msg'); }
+    finally { btns.forEach(b => b.disabled = false); }
+  }
+  // after signing in: go back to the page that sent us here, unless there is signed-out data to decide about
+  const done = () => { if (next && !S.localPending()) location.href = next; else { show(); S.pull(); } };
+  const samePw = f => { if (f.password.value !== f.password2.value) throw new Error('两次输入的密码不一样'); };
+
+  document.addEventListener('submit', e => {
+    const f = e.target; e.preventDefault();
+    const v = n => (f[n] && f[n].value || '').trim();
+    busy(f, async () => {
+      if (f.dataset.form === 'login') {
+        try { await S.login(v('email'), f.password.value); }
+        catch (err) { if (err.code === 'unverified') { pending(v('email')); say(err.message, 'err'); return; } throw err; }
+        done();
+      }
+      if (f.dataset.form === 'register') {
+        samePw(f);
+        try { await S.register(v('email'), f.password.value); }
+        catch (err) { if (err.code === 'exists') { $('#exists').hidden = false; say(''); return; } throw err; }
+        pending(v('email'));
+      }
+      if (f.dataset.form === 'reset') {
+        samePw(f);
+        await S.confirmReset(v('email'), v('code'), f.password.value);
+        history.replaceState(null, '', location.pathname + (next ? '?next=' + encodeURIComponent(next) : ''));
+        done();
+      }
+      if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
+    });
+  });
+
+  function pending(email) {
+    tab('pending'); $('#pend-email').textContent = email; $('#l-email').value = email;
+    say('');
+  }
+  $('#pend-resend').addEventListener('click', () => busy($('#f-pending'), async () => {
+    await S.resendVerify($('#pend-email').textContent);
+    say('确认邮件已重新发送。', 'ok');
+  }));
+
+  let cool = 0;
+  async function sendReset(email) {
+    await S.requestReset(email);
+    tab('reset'); $('#p-email').value = email;
+    say('重置邮件已发到 ' + email + '，点邮件里的链接，或在下面输入验证码。15 分钟内有效。', 'ok');
+    cool = 60;
+    const b = $('#send-code'), t = setInterval(() => {
+      b.textContent = --cool > 0 ? cool + ' 秒后重发' : '重新发送'; b.disabled = cool > 0;
+      if (cool <= 0) clearInterval(t);
+    }, 1000);
+  }
+  $('#send-code').addEventListener('click', () => {
+    const email = $('#p-email').value.trim();
+    if (!email) { say('先填邮箱', 'err'); return; }
+    busy($('#f-reset'), () => sendReset(email)).then(() => { if (cool > 0) $('#send-code').disabled = true; });
+  });
+  $('#exists-send').addEventListener('click', () => busy($('#f-register'), () => sendReset($('#r-email').value.trim())));
+  $('#exists-no').addEventListener('click', () => { $('#exists').hidden = true; });
+
+  $('#merge-yes').addEventListener('click', () => busy($('#in'), async () => {
+    await S.mergeLocal(); mergeAsked = true; show(); say('已并入此账号。', 'ok', '#msg2');
+  }));
+  $('#merge-no').addEventListener('click', () => { mergeAsked = true; show(); });
+
+  $('#logout').addEventListener('click', async () => { await S.logout(); show(); tab('login'); });
+
+  // opened from the reset email: email and code come in the link, only the new password is asked
+  if (params.get('password-reset') === '1' && !S.user()) {
+    tab('reset');
+    $('#p-email').value = params.get('email') || ''; $('#p-code').value = params.get('code') || '';
+    if ($('#p-email').value && $('#p-code').value) {
+      $('#reset-ask').hidden = true; $('#reset-title').textContent = '设置新密码 · ' + $('#p-email').value;
+      $('#reset-note').textContent = '原密码无法查看，只能设置新密码。保存后账号和学习记录不变。';
+      $('#p-pw').focus();
+    }
+  }
+  // embedded in a page's 设置 (konto/sync.js data-dl-settings): report the height, links open outside the frame
+  if (params.get('embed') === '1' && window.parent !== window) {
+    const post = () => window.parent.postMessage({ type: 'dl-konto-height', h: document.documentElement.scrollHeight }, location.origin);
+    new ResizeObserver(post).observe(document.body);
+  }
+  show();
+  // opened from the confirmation email
+  if (params.get('verify')) {
+    const t = params.get('verify');
+    history.replaceState(null, '', location.pathname);
+    if (!S.user()) S.verify(t).then(() => { say(''); show(); say('邮箱已确认，欢迎！', 'ok', '#msg2'); }, e => say(e.message, 'err'));
+  }
+})();
+</script>
+</body>
+</html>

@@ -10,7 +10,7 @@
 每日学习页原本是 claude.ai 上的 Artifact（https://claude.ai/artifact/Q59g6KiDtPyirydA3PfDTo），那里的进度在手机和电脑间同步，简答题由 Claude 批改。网页版：
 
 - 每天的题目从 `taeglich/content/<日期>.json` 读取，由每日任务出好后发布到这里。
-- 进度、打卡记录和生词本保存在当前设备的浏览器里，不跨设备同步。
+- 进度、打卡记录和生词本保存在当前设备的浏览器里；在 `konto/` 注册登录后，会同步到账号里（手机和电脑通用），词典的生词本和查词历史也一起同步。
 - 选择题自动判分；简答题显示参考答案供自查，不自动批改。
 
 ## 目录
@@ -21,6 +21,8 @@
 - `quelle/taeglich/artifact.html`：每日学习页的 claude.ai 原版源码；`Deutsch-taeglich.bat` 是打开 claude.ai 版的 Windows 启动器
 - `quelle/woerterbuch/`：词典源文件（SCHEMA.md、页面模板、build.py、分批词条 parts/）
 - `fonts/`：网页用的字体（本地副本，国内打不开 Google Fonts）；`tools/fonts.py` 重新下载它们
+- `konto/`：账号页（注册、登录、忘记密码、自己的句子翻译接口）和同步脚本 `sync.js`
+- `functions/api/`：账号和同步的后端，运行在 Cloudflare Pages（https://deutsch-lernen-1ca.pages.dev），数据存在 Cloudflare D1；GitHub Pages 上的网页也调用这个后端
 - `tools/build_site.py`：从 `quelle/` 生成网页；`tools/shim.js`：让原版页面脱离 claude.ai 运行的本地存储层
 
 更新网页：改 `quelle/` 里的源文件后运行 `python3 tools/build_site.py`，提交推送即可。

@@ -1,6 +1,7 @@
 /* Stand-in for the claude.ai runtime (window.claude) so the Deutsch täglich page runs as a plain website.
    - Daily content (content/<date>) is read from content/<date>.json published next to this page.
-   - Everything the learner writes (progress, calendar, wordbook, settings) is kept in this browser's localStorage.
+   - Everything the learner writes (progress, calendar, wordbook, settings) is kept in this browser's localStorage,
+     and, when signed in to a site account, synced through ../konto/sync.js (window.DLSync, paths "t/<doc path>").
    - There is no Claude here: use('sample') resolves to null, so the page falls back to its no-Claude behaviour. */
 (() => {
   'use strict';
@@ -8,6 +9,9 @@
   let mem = {};
   try { mem = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
   const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(mem)); } catch (e) {} };
+  const sync = window.DLSync;
+  const changed = path => { if (sync) sync.changed('t/' + path, mem[path] == null ? null : mem[path]); };
+  const ready = () => sync ? sync.ready : Promise.resolve();
   const clone = o => o == null ? o : JSON.parse(JSON.stringify(o));
   const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
   const merge = (a, b) => {
@@ -38,6 +42,7 @@
     return {
       id: path.split('/').pop(), path,
       async get() {
+        await ready();
         let data = mem[path];
         if (path.startsWith('content/')) { const r = await getRemote(path); if (r) data = data && data.source === 'page' ? data : r; }
         if (path === 'settings/main') {
@@ -49,12 +54,13 @@
         }
         return snap(this.id, data);
       },
-      async set(data) { mem[path] = clone(data); persist(); emit(path); },
+      async set(data) { mem[path] = clone(data); persist(); changed(path); emit(path); },
       async update(patch) {
+        await ready();
         if (mem[path] == null && !path.startsWith('content/') && path !== 'settings/main') throw { code: 'not_found' };
-        mem[path] = merge(mem[path], patch); persist(); emit(path);
+        mem[path] = merge(mem[path], patch); persist(); changed(path); emit(path);
       },
-      async delete() { delete mem[path]; persist(); emit(path); },
+      async delete() { delete mem[path]; persist(); changed(path); emit(path); },
       onSnapshot(cb) { (listeners[path] = listeners[path] || []).push(cb); return () => { listeners[path] = listeners[path].filter(f => f !== cb); }; },
       collection: name => collection(path + '/' + name)
     };
@@ -65,6 +71,7 @@
       orderBy: (f, dir) => collection(path, [f, dir || 'asc'], lim),
       limit: n => collection(path, order, n),
       async get() {
+        await ready();
         const pre = path + '/';
         let docs = Object.keys(mem).filter(k => k.startsWith(pre) && !k.slice(pre.length).includes('/'))
           .map(k => ({ id: k.slice(pre.length), d: mem[k] }));
@@ -74,6 +81,13 @@
       }
     };
   }
+
+  if (sync) sync.bind('t/', {
+    apply(path, data) {
+      if (data == null) delete mem[path]; else mem[path] = data;
+      persist(); emit(path);
+    },
+  });
 
   const db = { doc };
   const user = { id: async () => 'local' };
