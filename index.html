@@ -8,37 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#f2c200">
-<link rel="stylesheet" href="fonts/a65a5a2d7f.css">
-<style>
-:root{--bg:#f6f4ee;--paper:#fffdf7;--ink:#1d1f24;--muted:#6a6a64;--line:#e3dfd2;--accent:#f2c200;--accent-ink:#2a2300;--accent-soft:#fbefb8}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15161a;--paper:#1d1f24;--ink:#ecebe6;--muted:#9a9a92;--line:#2e3037;--accent-soft:#3a3214;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#15161a;--paper:#1d1f24;--ink:#ecebe6;--muted:#9a9a92;--line:#2e3037;--accent-soft:#3a3214;color-scheme:dark}
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
-  padding:calc(env(safe-area-inset-top,0px) + 40px) 16px calc(env(safe-area-inset-bottom,0px) + 32px)}
-main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-h1{margin:0;font-family:"Zilla Slab",Georgia,serif;font-size:40px;line-height:1.05}
-h1 span{background:var(--accent);color:var(--accent-ink);padding:0 8px;border-radius:4px}
-.sub{margin:6px 0 0;color:var(--muted)}
-.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-a.app{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 20px;transition:border-color .15s,transform .15s}
-a.app:hover{border-color:var(--accent);transform:translateY(-2px)}
-a.app b{font-family:"Zilla Slab",Georgia,serif;font-size:26px}
-a.app .tag{align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.06em;background:var(--accent-soft);border-radius:999px;padding:2px 10px}
-a.app p{margin:0;color:var(--muted);font-size:15px}
-.note{font-size:14px;color:var(--muted);border-top:1px dashed var(--line);padding-top:16px}
-.note p{margin:0 0 6px}
-@media (prefers-reduced-motion: reduce){a.app{transition:none}a.app:hover{transform:none}}
-</style></head><body>
-<main>
-  <header><h1>Deutsch <span>lernen</span></h1><p class="sub">每日德语和德汉词典 · B2–C1</p></header>
-  <div class="apps">
-    <a class="app" href="taeglich/"><span class="tag">每天</span><b>Deutsch täglich</b><p>每天 30 个词（释义、用法、词根、词源）和一篇阅读，配打卡日历和生词本。</p></a>
-    <a class="app" href="woerterbuch/"><span class="tag">查词</span><b>Wortwurzel</b><p>德汉词典：变位、例句、构词和词源，可以输德语或中文，打开过一次后断网也能查。</p></a>
-  </div>
-  <div class="note">
-    <p>手机上用 Safari 打开，点分享 → 添加到主屏幕，就能像 App 一样使用。</p>
-    <p>学习进度保存在各自设备的浏览器里。</p>
-  </div>
-</main>
+<meta http-equiv="refresh" content="0; url=woerterbuch/">
+<script>location.replace('woerterbuch/' + location.hash);</script>
+</head><body style="font-family:system-ui,sans-serif;padding:24px">
+<p>正在打开词典… 如果没有自动跳转，请点 <a href="woerterbuch/">Wortwurzel 词典</a>（每日学习在 <a href="taeglich/">Deutsch täglich</a>）。</p>
 </body></html>

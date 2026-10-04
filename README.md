@@ -1,6 +1,6 @@
 # Deutsch lernen
 
-网页版：https://yuquanzhao9.github.io/Deutsch-Lernen/ （手机用 Safari 打开，点分享 → 添加到主屏幕）
+网页版：https://yuquanzhao9.github.io/Deutsch-Lernen/ （打开就是词典，底部「每日学习」切到 Deutsch täglich；手机用 Safari 打开，点分享 → 添加到主屏幕）
 
 - **Deutsch täglich**（`taeglich/`）：每天 30 个词（释义、用法、词根、词源）+ 一篇阅读和 5 道德语题，打卡日历，生词本。
 - **Wortwurzel**（`woerterbuch/`）：德汉词典（14162 词），可输德语或中文，打开过一次后可离线使用。`Wortwurzel离线版.html` 下载后直接打开也能用。
