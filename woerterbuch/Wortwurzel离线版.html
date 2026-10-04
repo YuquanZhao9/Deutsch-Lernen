@@ -56,7 +56,7 @@ header.top { flex: none; padding: 10px 16px 10px; background: var(--bg); border-
 main { flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 .pad { padding: 12px 16px 24px; }
 
-nav.tabs { flex: none; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); background: var(--surface); padding-bottom: env(safe-area-inset-bottom, 0px); }
+nav.tabs { flex: none; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); background: var(--surface); padding-bottom: env(safe-area-inset-bottom, 0px); }
 nav.tabs button { border: 0; background: transparent; padding: 8px 0 6px; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12px; color: var(--muted); }
 nav.tabs button svg { width: 22px; height: 22px; }
 nav.tabs button[aria-selected="true"] { color: var(--accent); font-weight: 600; }
@@ -136,6 +136,18 @@ ul.use li { font-size: 15px; }
 .note { font-size: 13px; color: var(--muted); }
 .toast { position: fixed; left: 50%; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 10px; font-size: 14px; z-index: 9; max-width: calc(100% - 32px); }
 .legend { display: flex; gap: 14px; font-size: 13px; }
+/* sentence translation */
+textarea.trin { width: 100%; min-height: 92px; resize: vertical; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--bg); color: var(--ink); font: inherit; font-size: 16px; line-height: 1.5; outline: none; }
+textarea.trin:focus { border-color: var(--accent); }
+textarea.trin[lang="de"] { font-family: var(--f-head); }
+.trout { font-size: 17px; line-height: 1.7; }
+.trout[lang="de"] { font-family: var(--f-head); }
+.trw { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.trw .w { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.trw .w .chip { font-size: 16px; }
+.trw .w .frm { color: var(--muted); font-size: 13px; }
+.trw .w .m { flex-basis: 100%; font-size: 15px; }
+.note a { color: var(--accent); }
 @media (prefers-reduced-motion: no-preference) { main { scroll-behavior: smooth; } }
 </style>
 
@@ -155,6 +167,7 @@ ul.use li { font-size: 15px; }
   <main id="main"><div class="pad" id="view"></div></main>
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="search" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h11a4 4 0 0 1 4 4v10H8a4 4 0 0 1-4-4z"/><path d="M8 9h7M8 13h5"/></svg>查词</button>
+    <button role="tab" data-tab="tr" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h8M8 4v2M6 6c0 4 3 7 6 8M10 6c-1 4-4 7-6 8"/><path d="m13 20 3.5-9L20 20M14.3 17h4.4"/></svg>翻译</button>
     <button role="tab" data-tab="book" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>生词本</button>
     <button role="tab" data-tab="lib" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v3h16v-3"/></svg>词库</button>
   </nav>
@@ -413,10 +426,12 @@ function renderHome() {
 function dayNum() { return Math.floor(Date.now() / 864e5); }
 
 function renderResults(s) {
+  // three or more words in the search box: offer the sentence tab
+  const sent = s.trim().split(/\s+/).length >= 3 ? `<div class="btns" style="margin-bottom:10px"><button class="btn ghost" data-tr="1">翻译这句话 →</button></div>` : '';
   const res = search(s);
-  if (res.length) { view.innerHTML = `<ul class="list">${res.map(e => rowHtml(e, s)).join('')}</ul>`; return; }
+  if (res.length) { view.innerHTML = sent + `<ul class="list">${res.map(e => rowHtml(e, s)).join('')}</ul>`; return; }
   const sug = /[一-鿿]/.test(s) ? [] : suggest(s);
-  view.innerHTML = `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : '可以在“词库”页导入更大的词库文件。'}</div>
+  view.innerHTML = sent + `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : sent ? '' : '可以在“词库”页导入更大的词库文件。'}</div>
     ${sug.length ? `<ul class="list">${sug.map(rowHtml).join('')}</ul>` : ''}`;
 }
 
@@ -495,11 +510,77 @@ function renderLib() {
   </div>`;
 }
 
+// ---- sentence translation: Claude (via the artifact's `sample` capability) when the page runs on claude.ai; everywhere else only word-by-word lookup + a DeepL link.
+let SAMPLE = null, trText = store.get('trText', ''), trLast = store.get('trLast', null), trBusy = false, trCtl = null;
+(async () => { try { if (window.claude && typeof claude.use === 'function') SAMPLE = await claude.use('sample'); } catch {} if (tab === 'tr') render(); })();
+const isZh = s => /[一-鿿]/.test(s);
+function tokens(s) { return [...new Set((String(s).match(/[A-Za-zÄÖÜäöüß]+(?:-[A-Za-zÄÖÜäöüß]+)*/g) || []).filter(w => w.length > 1))]; }
+// exact headword / listed form only (no prefix matches) so the word list stays honest
+function wordEntry(w) {
+  const f = fold(w), lo = w.toLowerCase();
+  const x = INDEX.find(x => x.e.w.toLowerCase() === lo || x.k === f); if (x) return x.e;
+  // an inflected form: search() already ranks the base word (gehen) before prefixed ones (abgehen)
+  const r = search(w)[0], y = r && INDEX.find(x => x.e === r); return y && (y.exact.has(lo) || y.forms.includes(f)) ? r : null;
+}
+const headOf = s => String(s).replace(/^(der|die|das|sich)\s+/i, '').replace(/\s*\(.*?\)\s*/g, '').trim();
+function trPrompt(t, dir) {
+  const shape = '{"tr": "译文", "alt": "另一种自然说法或空字符串", "words": [{"de": "词典原形（名词带 der/die/das，反身动词带 sich）", "form": "句中出现的形式", "zh": "在这句话里的意思"}], "notes": ["最多 3 条，每条一句话"]}';
+  return (dir === 'de2zh'
+    ? '你是德语教师，学生是母语为中文的 B2–C1 水平学习者。把下面这句德语翻译成准确、自然的中文；words 列出 4–8 个值得学的关键词（动词、名词、形容词、固定搭配，不列冠词和代词）；notes 说明句子里重要的语法点、搭配或易错点。'
+    : '你是德语教师，学生是母语为中文的 B2–C1 水平学习者。把下面这句中文翻译成地道、符合书面规范的德语（tr 给最自然的译法，alt 给另一种常见说法）；words 列出译文里 4–8 个关键词（动词、名词、形容词、固定搭配）；notes 说明用到的语法点、搭配或中国学习者容易出错的地方。')
+    + '\n只回复一个 JSON 对象，格式：' + shape + '\n\n句子：' + t;
+}
+async function translate(t) {
+  t = String(t || '').trim(); if (!t) return; trText = t; store.set('trText', t); tab = 'tr'; current = null;
+  if (!SAMPLE || trBusy) return render();
+  const dir = isZh(t) ? 'zh2de' : 'de2zh';
+  trBusy = true; trCtl = new AbortController(); render();
+  try {
+    const r = await SAMPLE.json(trPrompt(t, dir), { modelTier: 'quick', signal: trCtl.signal }) || {};
+    trLast = { src: t, dir, tr: String(r.tr || ''), alt: String(r.alt || ''),
+      words: (Array.isArray(r.words) ? r.words : []).slice(0, 10).map(w => ({ de: String(w?.de || ''), form: String(w?.form || ''), zh: String(w?.zh || '') })).filter(w => w.de),
+      notes: (Array.isArray(r.notes) ? r.notes : []).slice(0, 4).map(n => String(n)) };
+    store.set('trLast', trLast);
+  } catch (e) {
+    const c = e && e.code;
+    if (c === 'not_granted' || c === 'sampling_disabled' || c === 'not_declared' || c === 'capability_disabled') { SAMPLE = null; toast('这个页面没有获得使用 Claude 的许可'); }
+    else if (c === 'rate_limited') toast('请求太频繁，稍后再试');
+    else if (c === 'invalid_json' || c === 'empty_completion') toast('没有得到有效结果，再点一次翻译');
+    else if (c !== 'cancelled') toast('翻译失败，稍后再试');
+  }
+  trBusy = false; trCtl = null; render();
+}
+function trResultHtml(r) {
+  const de = r.dir === 'zh2de';
+  return `<section class="sec"><h2>译文</h2><div class="trout" lang="${de ? 'de' : 'zh'}">${esc(r.tr)}</div>${r.alt ? `<div class="note">也可以说：<span lang="de">${esc(r.alt)}</span></div>` : ''}${de ? '<div class="btns"><button class="btn ghost" id="trsay">朗读德语</button></div>' : ''}</section>
+    ${r.words.length ? `<section class="sec"><h2>重点词</h2><div class="trw">${r.words.map(w => { const e = wordEntry(headOf(w.de)); return `<div class="w"><button class="chip" data-find="${esc(headOf(w.de))}" lang="de">${esc(w.de)}</button>${w.form && fold(w.form) !== fold(headOf(w.de)) ? `<span class="frm">句中 ${esc(w.form)}</span>` : ''}${e ? '' : '<span class="frm">（词库里暂无）</span>'}<span class="m">${esc(w.zh)}</span></div>`; }).join('')}</div></section>` : ''}
+    ${r.notes.length ? `<section class="sec"><h2>语法与用法</h2><ul class="use">${r.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : ''}`;
+}
+function renderTr() {
+  const t = trText, zh = isZh(t);
+  const words = zh ? [] : tokens(t).map(w => [w, wordEntry(w)]);
+  const deepl = `https://www.deepl.com/translator#${zh ? 'zh/de' : 'de/zh'}/${encodeURIComponent(t)}`;
+  view.innerHTML = `<div class="stack">
+    <section class="card"><h3>句子翻译</h3>
+      <textarea class="trin" id="trin" rows="3" lang="${zh ? 'zh' : 'de'}" placeholder="输入一句德语或中文，德→中、中→德都可以" autocapitalize="off" spellcheck="false">${esc(t)}</textarea>
+      <div class="btns"><button class="btn" id="trgo"${trBusy ? ' disabled' : ''}>${trBusy ? '翻译中…' : '翻译'}</button>${trBusy ? '<button class="btn ghost" id="trstop">停止</button>' : ''}<button class="btn ghost" id="trclr">清空</button></div>
+      <div class="note">${SAMPLE ? '翻译由 Claude 完成，会给出重点词和语法提示；点重点词可以直接查词典。' : `这个版本连不上 Claude，所以只能逐词查词典。完整翻译请在 claude.ai 里打开词典页，或 <a href="${esc(deepl)}" target="_blank" rel="noopener">用 DeepL 翻译这句</a>。`}</div>
+    </section>
+    ${trLast && trLast.src === t && !trBusy ? trResultHtml(trLast) : ''}
+    ${words.length ? `<section class="sec"><h2>逐词查词典</h2><ul class="list">${words.map(([w, e]) => e ? rowHtml(e, w) : `<li><div class="row"><span class="hw" lang="de">${esc(w)}</span><span class="gl">词库里暂无</span></div></li>`).join('')}</ul></section>` : ''}
+  </div>`;
+  const ta = $('#trin'); if (ta) {
+    ta.addEventListener('input', () => { trText = ta.value; store.set('trText', trText); });
+    ta.addEventListener('keydown', ev => { if (ev.key === 'Enter' && (ev.metaKey || ev.ctrlKey)) { ev.preventDefault(); translate(ta.value); } });
+  }
+}
+
 function render() {
   for (const b of document.querySelectorAll('nav.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === tab);
   $('#clear').hidden = !q.value;
   if (tab === 'book') return renderBook();
   if (tab === 'lib') return renderLib();
+  if (tab === 'tr') return renderTr();
   if (current) return renderEntry(current);
   if (q.value.trim()) return renderResults(q.value);
   renderHome();
@@ -519,6 +600,11 @@ view.addEventListener('click', async ev => {
   if (t.dataset.open) return open(t.dataset.open);
   if (t.dataset.find) { const r = search(t.dataset.find); if (r.length && fold(r[0].w) === fold(t.dataset.find)) return open(keyOf(r[0])); q.value = t.dataset.find; current = null; return render(); }
   if (t.id === 'back') { current = null; return render(); }
+  if (t.dataset.tr) { const s = q.value.trim(); q.value = ''; return translate(s); }
+  if (t.id === 'trgo') return translate($('#trin').value);
+  if (t.id === 'trstop') { trCtl?.abort(); return; }
+  if (t.id === 'trclr') { trText = ''; store.set('trText', ''); return render(); }
+  if (t.id === 'trsay') { try { const u = new SpeechSynthesisUtterance(trLast?.tr || ''); u.lang = 'de-DE'; u.rate = .9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch { toast('这个浏览器不支持朗读'); } return; }
   if (t.id === 'star') { const k = keyOf(current); book = book.includes(k) ? book.filter(x => x !== k) : [k, ...book]; store.set('book', book); t.setAttribute('aria-pressed', book.includes(k)); toast(book.includes(k) ? '已加入生词本' : '已移出生词本'); return; }
   if (t.id === 'say') { try { const u = new SpeechSynthesisUtterance(current.w); u.lang = 'de-DE'; u.rate = .9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch { toast('这个浏览器不支持朗读'); } return; }
   if (t.id === 'import') return $('#file').click();
