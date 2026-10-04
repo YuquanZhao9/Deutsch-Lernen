@@ -37,6 +37,8 @@ TAEGLICH_REPLACE = [
      "网页版不调用 Claude：选择题自动判分，简答题显示参考答案供你自查。"),
     # 查词典 opens the site's own dictionary (claude.ai is not reachable everywhere, e.g. mainland China)
     ("const DICT_URL = 'https://claude.ai/artifact/Fkmyc6Kp1nx7QRgFyZ54RM';", "const DICT_URL = '../woerterbuch/';"),
+    # bottom 词典 switch: same tab, the site's own dictionary
+    ('<a class="tab ext" href="https://claude.ai/artifact/Fkmyc6Kp1nx7QRgFyZ54RM" target="_blank" rel="noopener"', '<a class="tab ext" href="../woerterbuch/"'),
 ]
 
 def must_replace(s, old, new, name):
