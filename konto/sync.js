@@ -217,7 +217,9 @@
       if (acct.token) schedule();
     },
     pull,
-    register: (email, password) => call('POST', '/register', { email, password }).then(signedIn),
+    register: (email, password) => call('POST', '/register', { email, password }), // -> {pending, email}: confirm by email first
+    verify: token => call('POST', '/verify', { token }).then(signedIn),
+    resendVerify: email => call('POST', '/verify/resend', { email }),
     login: (email, password) => call('POST', '/login', { email, password }).then(signedIn),
     requestReset: email => call('POST', '/reset/request', { email }),
     confirmReset: (email, code, password) => call('POST', '/reset/confirm', { email, code, password }).then(signedIn),
@@ -257,6 +259,37 @@
       if (typeof window.__wwReload === 'function') window.__wwReload();
     },
   });
+
+  // signed in or out in another tab, or in the embedded account panel (iframe): follow along
+  window.addEventListener('storage', e => {
+    if (e.key !== SK) return;
+    const was = acct.token;
+    acct = load(SK, {}); queue = load(QK, {});
+    if (was === acct.token) return;
+    if (Object.keys(adapters).some(p => p !== 'w/')) { location.reload(); return; } // the daily page holds the old space in memory
+    if (typeof window.__wwReload === 'function') window.__wwReload();
+    fire();
+    if (acct.token) pull();
+  });
+
+  // account panel inside a page: <div data-dl-settings></div> (or data-dl-settings="translate" to open 句子翻译设置)
+  function embedPanels() {
+    document.querySelectorAll('[data-dl-settings]:not([data-dl-filled])').forEach(el => {
+      el.setAttribute('data-dl-filled', '');
+      const f = document.createElement('iframe');
+      f.src = ROOT + 'konto/?embed=1' + (el.getAttribute('data-dl-settings') === 'translate' ? '&setup=translate' : '');
+      f.title = '账号与同步';
+      f.style.cssText = 'width:100%;border:0;display:block;height:420px;background:transparent';
+      f.setAttribute('allowtransparency', 'true');
+      el.appendChild(f);
+    });
+  }
+  window.addEventListener('message', e => {
+    if (e.origin !== location.origin || !e.data || e.data.type !== 'dl-konto-height') return;
+    document.querySelectorAll('[data-dl-settings] iframe').forEach(f => { if (f.contentWindow === e.source) f.style.height = e.data.h + 'px'; });
+  });
+  const startEmbeds = () => { embedPanels(); new MutationObserver(embedPanels).observe(document.body, { childList: true, subtree: true }); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startEmbeds); else startEmbeds();
 
   // "登录 / 同步" link: any element with class .sync (the daily page's status line) or [data-dl-account]
   const kontoUrl = () => ROOT + 'konto/?next=' + encodeURIComponent(location.pathname + location.search + location.hash);

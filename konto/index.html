@@ -10,7 +10,8 @@
 <meta name="theme-color" content="#f2c200">
 <style>
 :root{--bg:#f7f5ef;--card:#fff;--ink:#1d1d1b;--muted:#6b6a64;--line:#e4e1d8;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#b3261e;--ok:#1e7a3c;color-scheme:light}
-@media (prefers-color-scheme: dark){:root{--bg:#161614;--card:#21211e;--ink:#f1efe8;--muted:#a3a198;--line:#34332f;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#ff8a80;--ok:#7ad59a;color-scheme:dark}}
+@media (prefers-color-scheme: dark){:root:not([data-theme=light]){--bg:#161614;--card:#21211e;--ink:#f1efe8;--muted:#a3a198;--line:#34332f;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#ff8a80;--ok:#7ad59a;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#161614;--card:#21211e;--ink:#f1efe8;--muted:#a3a198;--line:#34332f;--accent:#f2c200;--accent-ink:#1d1d1b;--err:#ff8a80;--ok:#7ad59a;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
   padding:calc(env(safe-area-inset-top,0px) + 24px) 16px calc(env(safe-area-inset-bottom,0px) + 24px);display:flex;justify-content:center}
@@ -36,11 +37,23 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
 .me{font-size:15px;margin:0 0 4px}.me b{word-break:break-all}
 .nav{display:flex;gap:8px;margin-top:16px}.nav a{flex:1;text-align:center;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 0;background:var(--card);font-size:14px}
 [hidden]{display:none!important}
+html.embed body{padding:0;background:transparent;min-height:0;display:block}html.embed .wrap{max-width:none}
+html.embed .brand,html.embed .lead,html.embed .nav,html.embed #back{display:none}
+html.embed .card{border-radius:12px}
 .box{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:14px}
 .box p{margin:0 0 10px}.box .acts{display:flex;gap:8px}.box .btn{margin:0;padding:10px}
 </style>
 </head>
 <body>
+<script>
+// embedded in the dictionary's 设置: follow its 外观 choice (ww.theme: '' | 'light' | 'dark')
+if (new URLSearchParams(location.search).get('embed') === '1') {
+  document.documentElement.classList.add('embed');
+  const theme = () => { let t = ''; try { t = JSON.parse(localStorage.getItem('ww.theme') || '""'); } catch (e) {}
+    if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
+  theme(); addEventListener('storage', e => { if (e.key === 'ww.theme') theme(); });
+}
+</script>
 <div class="wrap">
   <p class="brand">Deutsch <span class="tag">lernen</span></p>
   <p class="lead">注册后，每日学习的进度、打卡记录、生词本和词典的收藏会保存在你的账号里，手机和电脑登录同一个账号就能同步。</p>
@@ -67,8 +80,15 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
         <p>该邮箱已被注册。是否发送重置密码邮件？</p>
         <div class="acts"><button class="btn" type="button" id="exists-send">发送重置邮件</button><button class="btn ghost" type="button" id="exists-no">暂不</button></div>
       </div>
-      <p class="note">请填常用邮箱，忘记密码时重置邮件会发到这里。</p>
+      <p class="note">请填常用邮箱。注册后要先点确认邮件里的链接才能登录，忘记密码时重置邮件也会发到这里。</p>
     </form>
+
+    <div id="f-pending" hidden>
+      <p class="me" style="font-weight:600">请查收确认邮件</p>
+      <p class="note" style="margin-top:4px">确认邮件已发到 <b id="pend-email"></b>。打开邮件里的链接就完成注册并自动登录。链接 24 小时内有效；没收到的话看看垃圾邮件文件夹。</p>
+      <button class="btn ghost" type="button" id="pend-resend">重新发送确认邮件</button>
+      <button class="link" type="button" data-tab="login">已经确认了？去登录</button>
+    </div>
 
     <form id="f-reset" data-form="reset" hidden>
       <p class="me" style="font-weight:600" id="reset-title">重设密码</p>
@@ -158,7 +178,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
   const say = (t, kind, el = '#msg') => { const m = $(el); m.textContent = t || ''; m.className = 'msg ' + (kind || ''); };
   function tab(name) {
     for (const b of document.querySelectorAll('.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === name);
-    for (const f of ['login', 'register', 'reset']) $('#f-' + f).hidden = f !== name;
+    for (const f of ['login', 'register', 'reset', 'pending']) $('#f-' + f).hidden = f !== name;
     const email = ($('#l-email').value || $('#r-email').value || $('#p-email').value).trim();
     if (email) for (const id of ['#l-email', '#r-email', '#p-email']) if (!$(id).value) $(id).value = email;
     $('#exists').hidden = true;
@@ -191,12 +211,16 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     const f = e.target; e.preventDefault();
     const v = n => (f[n] && f[n].value || '').trim();
     busy(f, async () => {
-      if (f.dataset.form === 'login') { await S.login(v('email'), f.password.value); done(); }
+      if (f.dataset.form === 'login') {
+        try { await S.login(v('email'), f.password.value); }
+        catch (err) { if (err.code === 'unverified') { pending(v('email')); say(err.message, 'err'); return; } throw err; }
+        done();
+      }
       if (f.dataset.form === 'register') {
         samePw(f);
         try { await S.register(v('email'), f.password.value); }
         catch (err) { if (err.code === 'exists') { $('#exists').hidden = false; say(''); return; } throw err; }
-        done();
+        pending(v('email'));
       }
       if (f.dataset.form === 'reset') {
         samePw(f);
@@ -208,6 +232,15 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
       if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
     });
   });
+
+  function pending(email) {
+    tab('pending'); $('#pend-email').textContent = email; $('#l-email').value = email;
+    say('');
+  }
+  $('#pend-resend').addEventListener('click', () => busy($('#f-pending'), async () => {
+    await S.resendVerify($('#pend-email').textContent);
+    say('确认邮件已重新发送。', 'ok');
+  }));
 
   let cool = 0;
   async function sendReset(email) {
@@ -310,7 +343,19 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
       $('#p-pw').focus();
     }
   }
+  // embedded in a page's 设置 (konto/sync.js data-dl-settings): report the height, links open outside the frame
+  if (params.get('embed') === '1' && window.parent !== window) {
+    const post = () => window.parent.postMessage({ type: 'dl-konto-height', h: document.documentElement.scrollHeight }, location.origin);
+    new ResizeObserver(post).observe(document.body);
+    document.querySelectorAll('.lead + .card a, #t-guide a').forEach(a => a.target = '_blank');
+  }
   show();
+  // opened from the confirmation email
+  if (params.get('verify')) {
+    const t = params.get('verify');
+    history.replaceState(null, '', location.pathname);
+    if (!S.user()) S.verify(t).then(() => { say(''); show(); say('邮箱已确认，欢迎！', 'ok', '#msg2'); }, e => say(e.message, 'err'));
+  }
   if (params.get('setup') === 'translate') {
     if (S.user()) openTr(params.get('preset'));
     else say('先登录或注册，登录后会自动打开句子翻译设置。', 'ok');

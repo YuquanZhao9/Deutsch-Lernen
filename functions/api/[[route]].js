@@ -10,8 +10,10 @@
 //   AI binding  AI              -> optional, Workers AI: default sentence translation for users without their own link
 //
 // Routes (JSON in, JSON out; auth = "Authorization: Bearer <token>"):
-//   POST /api/register        {email, password}            -> {token, email, id}   (409 code "exists" if taken)
-//   POST /api/login           {email, password}            -> {token, email, id}
+//   POST /api/register        {email, password}            -> {pending, email}  (emails a confirmation link; 409 code "exists")
+//   POST /api/verify          {token}                      -> {token, email, id}   (the link from that email; signs in)
+//   POST /api/verify/resend   {email}                      -> {ok}
+//   POST /api/login           {email, password}            -> {token, email, id}   (403 code "unverified" before confirming)
 //   POST /api/logout          (auth)                                                (this device only)
 //   GET  /api/me              (auth)                       -> {email, id}
 //   POST /api/password        (auth) {password}            -> {token, email, id}   (other devices are signed out)
@@ -42,9 +44,16 @@ const SCHEMA = [
      PRIMARY KEY (user_id, path))`,
   `CREATE INDEX IF NOT EXISTS docs_user_t ON docs(user_id, t)`,
   `CREATE TABLE IF NOT EXISTS settings (user_id TEXT PRIMARY KEY, translate TEXT)`,
+  `CREATE TABLE IF NOT EXISTS verifies (user_id TEXT PRIMARY KEY, token TEXT NOT NULL, expires INTEGER NOT NULL, sent INTEGER NOT NULL)`,
+  `CREATE INDEX IF NOT EXISTS verifies_token ON verifies(token)`,
 ];
 let schemaReady = null;
-const ensureSchema = db => schemaReady || (schemaReady = db.batch(SCHEMA.map(s => db.prepare(s))).catch(e => { schemaReady = null; throw e; }));
+// columns added after the first release: ALTER fails harmlessly once they exist
+const MIGRATIONS = [`ALTER TABLE users ADD COLUMN verified INTEGER NOT NULL DEFAULT 0`];
+const ensureSchema = db => schemaReady || (schemaReady = (async () => {
+  await db.batch(SCHEMA.map(s => db.prepare(s)));
+  for (const m of MIGRATIONS) try { await db.prepare(m).run(); } catch (e) { if (!/duplicate column/i.test(String(e.message || e))) throw e; }
+})().catch(e => { schemaReady = null; throw e; }));
 
 class HttpError extends Error { constructor(status, msg, code) { super(msg); this.status = status; this.code = code; } }
 const fail = (status, msg, code) => { throw new HttpError(status, msg, code); };
@@ -178,7 +187,7 @@ async function body(request) {
 }
 
 async function sendMail(env, to, subject, text) {
-  if (!env.BREVO_API_KEY || !env.MAIL_FROM) fail(503, '邮件服务还没有配置，暂时不能找回密码');
+  if (!env.BREVO_API_KEY || !env.MAIL_FROM) fail(503, '邮件服务还没有配置，暂时不能发送邮件');
   const r = await fetch(env.MAIL_API_URL || 'https://api.brevo.com/v3/smtp/email', {
     method: 'POST',
     headers: { 'api-key': env.BREVO_API_KEY, 'content-type': 'application/json', accept: 'application/json' },
@@ -186,18 +195,63 @@ async function sendMail(env, to, subject, text) {
   });
   if (!r.ok) {
     console.error('brevo', r.status, await r.text());
-    fail(502, '验证码邮件没有发出去，请稍后再试');
+    fail(502, '邮件没有发出去，请稍后再试');
   }
+}
+const siteUrl = (env, url) => String(env.SITE_URL || url.origin).replace(/\/+$/, '');
+
+// registration confirmation: a link valid for 24 hours; resend at most once a minute
+async function sendVerify(db, env, url, userId, email) {
+  const now = Date.now();
+  const v = await db.prepare('SELECT sent FROM verifies WHERE user_id = ?').bind(userId).first();
+  if (v && now - v.sent < 60e3) fail(429, '确认邮件刚发过，请 1 分钟后再试');
+  const token = randomHex(32);
+  await sendMail(env, email, '请确认你的 Deutsch lernen 账号',
+    `你好！\n\n欢迎注册 Deutsch lernen。打开下面的链接确认邮箱，就能登录了：\n\n${siteUrl(env, url)}/konto/?verify=${token}\n\n链接 24 小时内有效。如果不是你本人注册，忽略这封邮件即可。\n\nDeutsch lernen`);
+  await db.prepare(`INSERT INTO verifies (user_id, token, expires, sent) VALUES (?, ?, ?, ?)
+    ON CONFLICT(user_id) DO UPDATE SET token = excluded.token, expires = excluded.expires, sent = excluded.sent`)
+    .bind(userId, await sha256(token), now + 864e5, now).run();
 }
 
 const routes = {
-  async 'POST /api/register'({ request, db }) {
+  async 'POST /api/register'({ request, db, env, url }) {
     const b = await body(request), email = normEmail(b.email);
     checkEmail(email); checkNewPassword(b.password);
-    if (await db.prepare('SELECT 1 FROM users WHERE email = ?').bind(email).first()) fail(409, '此邮箱已经注册，请直接登录。', 'exists');
-    const id = crypto.randomUUID();
-    await db.prepare('INSERT INTO users (id, email, pw, created) VALUES (?, ?, ?, ?)').bind(id, email, await hashPassword(b.password), Date.now()).run();
-    return { token: await newSession(db, id), email, id };
+    const old = await db.prepare('SELECT id, verified FROM users WHERE email = ?').bind(email).first();
+    if (old && old.verified) fail(409, '此邮箱已经注册，请直接登录。', 'exists');
+    if (!env.BREVO_API_KEY || !env.MAIL_FROM) fail(503, '邮件服务还没有配置，暂时不能注册');
+    let id = old && old.id;
+    // registering again before confirming: take the new password and send a fresh link
+    if (id) await db.prepare('UPDATE users SET pw = ? WHERE id = ?').bind(await hashPassword(b.password), id).run();
+    else {
+      id = crypto.randomUUID();
+      await db.prepare('INSERT INTO users (id, email, pw, created, verified) VALUES (?, ?, ?, ?, 0)').bind(id, email, await hashPassword(b.password), Date.now()).run();
+    }
+    await sendVerify(db, env, url, id, email);
+    return { pending: true, email };
+  },
+
+  async 'POST /api/verify'({ request, db }) {
+    const b = await body(request), now = Date.now();
+    const v = /^[0-9a-f]{64}$/.test(b.token || '') && await db.prepare('SELECT * FROM verifies WHERE token = ?').bind(await sha256(b.token)).first();
+    if (!v) fail(400, '确认链接无效或已经用过。直接登录试试，或者重新发送确认邮件。');
+    if (v.expires < now) fail(400, '确认链接已过期，请重新发送确认邮件。');
+    const u = await db.prepare('SELECT id, email FROM users WHERE id = ?').bind(v.user_id).first();
+    await db.batch([
+      db.prepare('UPDATE users SET verified = 1 WHERE id = ?').bind(u.id),
+      db.prepare('DELETE FROM verifies WHERE user_id = ?').bind(u.id),
+    ]);
+    return { token: await newSession(db, u.id), email: u.email, id: u.id };
+  },
+
+  async 'POST /api/verify/resend'({ request, db, env, url }) {
+    const b = await body(request), email = normEmail(b.email);
+    checkEmail(email);
+    const u = await db.prepare('SELECT id, verified FROM users WHERE email = ?').bind(email).first();
+    if (!u) fail(404, '这个邮箱还没有注册');
+    if (u.verified) fail(409, '这个邮箱已经确认过了，可以直接登录。');
+    await sendVerify(db, env, url, u.id, email);
+    return { ok: true };
   },
 
   async 'POST /api/login'({ request, db }) {
@@ -211,6 +265,7 @@ const routes = {
       fail(401, '邮箱或密码不正确。');
     }
     if (u.fails) await db.prepare('UPDATE users SET fails = 0 WHERE id = ?').bind(u.id).run();
+    if (!u.verified) fail(403, '请先打开邮箱中的确认邮件，再登录。', 'unverified');
     return { token: await newSession(db, u.id), email, id: u.id };
   },
 
@@ -246,7 +301,7 @@ const routes = {
     const dayCount = r && r.day === day ? r.day_count : 0;
     if (dayCount >= 10) fail(429, '今天发送次数太多了，请明天再试');
     const code = String(crypto.getRandomValues(new Uint32Array(1))[0] % 1e6).padStart(6, '0');
-    const link = `${String(env.SITE_URL || url.origin).replace(/\/+$/, '')}/konto/?password-reset=1&email=${encodeURIComponent(email)}&code=${code}`;
+    const link = `${siteUrl(env, url)}/konto/?password-reset=1&email=${encodeURIComponent(email)}&code=${code}`;
     await sendMail(env, email, `重设 Deutsch lernen 密码（验证码 ${code}）`,
       `你好！\n\n你正在重设 Deutsch lernen 的登录密码。打开下面的链接设置新密码：\n\n${link}\n\n也可以在重设密码页面输入验证码：${code}\n\n15 分钟内有效。如果不是你本人操作，忽略这封邮件即可，密码不会改变。\n\nDeutsch lernen`);
     await db.prepare(`INSERT INTO resets (email, code, expires, tries, sent, day, day_count) VALUES (?, ?, ?, 0, ?, ?, ?)
@@ -267,7 +322,8 @@ const routes = {
     const u = await db.prepare('SELECT id FROM users WHERE email = ?').bind(email).first();
     if (!u) fail(404, '这个邮箱还没有注册');
     await db.batch([
-      db.prepare('UPDATE users SET pw = ?, fails = 0, locked_until = 0 WHERE id = ?').bind(await hashPassword(b.password), u.id),
+      // the reset code came by email, so this also confirms the address
+      db.prepare('UPDATE users SET pw = ?, fails = 0, locked_until = 0, verified = 1 WHERE id = ?').bind(await hashPassword(b.password), u.id),
       db.prepare('DELETE FROM sessions WHERE user_id = ?').bind(u.id),
       db.prepare('DELETE FROM resets WHERE email = ?').bind(email),
     ]);
