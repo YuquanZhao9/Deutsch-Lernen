@@ -167,7 +167,7 @@ a.btn { text-decoration: none; display: inline-block; }
     <div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>
     <div class="search">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muted);flex:none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" placeholder="查词或整句翻译：Ansatz / 影响 / 一句话" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+      <input id="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
       <button class="iconbtn" id="clear" aria-label="清空" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="umlauts" id="uml">
@@ -444,11 +444,7 @@ function histRow(h) {
 function renderHome() {
   const rows = history.map(histRow).filter(Boolean);
   view.innerHTML = `<div class="stack">
-    <section class="card"><h3>句子翻译</h3>
-      <textarea class="trin" id="hin" rows="2" style="resize:vertical;min-height:64px" placeholder="输入一句德语或中文，德→中、中→德都可以" autocapitalize="off" spellcheck="false"></textarea>
-      <div class="btns"><button class="btn" id="hgo">翻译</button></div>
-      ${canTranslate() ? '' : `<div class="note">这个版本连不上翻译服务，只能逐词查词典${TRANSLATE_API ? '' : '；在网站或 claude.ai 里打开可以翻译整句'}。</div>`}
-    </section>
+
     ${rows.length ? `<section><div class="label">查词记录 · ${rows.length}</div><ul class="list">${rows.join('')}</ul></section>
     <div class="btns"><button class="btn ghost" id="clearhist">清空记录</button></div>` : `<div class="empty">查过的词和翻译过的句子会按时间列在这里。</div>`}
     <section class="legend"><span class="g-m">■ der 阳性</span><span class="g-f">■ die 阴性</span><span class="g-n">■ das 中性</span></section>
@@ -631,7 +627,8 @@ function trPrompt(t, dir) {
 // the website backend: Workers AI, or the user's own OpenAI-compatible model relayed by the site (see the 设置 tab)
 async function apiTranslate(t, dir, signal) {
   const body = { text: t, dir, prompt: trPrompt(t, dir) }; if (MODEL) body.model = MODEL;
-  const res = await fetch(TRANSLATE_API, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal });
+  const auth = window.DLSync && typeof DLSync.authHeaders === 'function' ? DLSync.authHeaders() : {}; // signed-in users on the site: the account's saved model applies server-side
+  const res = await fetch(TRANSLATE_API, { method: 'POST', headers: { 'content-type': 'application/json', ...auth }, body: JSON.stringify(body), signal });
   if (!res.ok) throw { code: 'upstream_error', message: 'HTTP ' + res.status };
   const j = await res.json();
   if (!j || j.ok === false) throw { code: 'api_error', message: (j && j.error) || '翻译服务没有返回结果' };
@@ -710,7 +707,6 @@ view.addEventListener('click', async ev => {
   if (t.id === 'back') { current = null; return render(); }
   if (t.id === 'trgo') { if (trLast && trLast.src === q.value.trim()) trLast = null; return translate(q.value); }
   if (t.id === 'trstop') { trCtl?.abort(); return; }
-  if (t.id === 'hgo') { const v = $('#hin').value.trim(); if (!v) return; q.value = v; current = null; render(); if (isSentence(v)) translate(v); else { const r = search(v); if (r.length) open(keyOf(r[0])); } return; }
   if (t.dataset.setup) { setupOpen = true; setupPick = null; tab = 'lib'; render(); main.scrollTop = 0; return; }
   if (t.id === 'setup-back') { setupOpen = false; render(); main.scrollTop = 0; return; }
   if (t.dataset.preset) { setupPick = t.dataset.preset; return render(); }

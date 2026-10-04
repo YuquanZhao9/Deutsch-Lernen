@@ -14,8 +14,9 @@ const txt = async (p, sel = '#view') => (await p.textContent(sel)).replace(/\s+/
   await p.goto('http://localhost:8766/papi.html'); await p.waitForTimeout(3500);
   console.log('home:', (await txt(p)).slice(0, 120));
   // home sentence box → translation
-  await p.fill('#hin', 'Er überwand seine Vorurteile.'); await p.click('#hgo'); await p.waitForTimeout(500);
-  console.log('from home box:', await p.inputValue('#q'), '|', (await txt(p)).slice(0, 110));
+  console.log('placeholder:', JSON.stringify(await p.getAttribute('#q', 'placeholder')), '| home card:', await p.$('#hin') !== null);
+  await p.fill('#q', 'Er überwand seine Vorurteile.'); await p.press('#q', 'Enter'); await p.waitForTimeout(500);
+  console.log('from search box:', await p.inputValue('#q'), '|', (await txt(p)).slice(0, 110));
   console.log('button under box:', await p.$('[data-setup]') !== null);
   // 设置 tab → 立即设置 → guide
   await p.click('nav.tabs button[data-tab="lib"]'); await p.waitForTimeout(100); await p.click('[data-setup]'); await p.waitForTimeout(150);
