@@ -106,6 +106,19 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .pairs b{font-weight:600}
 .pairs span{color:var(--muted);font-size:14px}
 .tip{background:var(--accent-soft);border-radius:var(--r);padding:12px 16px;font-size:14px}
+.dictlink{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:5px;flex:none;font-family:var(--ui);font-size:13px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 11px;background:var(--paper)}
+.dictlink:hover{border-color:var(--accent);background:var(--accent-soft)}
+.dictlink svg{width:12px;height:12px}
+.pop-a .dictlink{margin-left:0;padding:5px 12px}
+.lvl{font-style:normal;font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;align-self:center}
+.senses{margin:0;padding:0;list-style:none;display:grid;gap:12px;counter-reset:sn}
+.senses li{display:grid;gap:3px;min-width:0}
+.senses.multi li{position:relative;padding-left:28px;counter-increment:sn}
+.senses.multi li::before{content:counter(sn);position:absolute;left:0;top:3px;width:19px;height:19px;border-radius:50%;background:var(--accent-soft);color:var(--ink);font-size:12px;font-weight:600;display:grid;place-items:center}
+.s-zh{font-size:18px;font-weight:600;line-height:1.45}
+.senses:not(.multi) .s-zh{font-size:20px}
+.s-de{font-family:var(--read);font-size:15.5px;color:var(--muted);font-style:italic}
+.tip.note{background:transparent;border:1px dashed var(--line)}
 .skeleton{color:var(--muted);font-size:14px}
 .empty-detail{border:1px dashed var(--line);border-radius:var(--r);padding:28px 22px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 .empty-detail b{color:var(--ink);font-family:var(--display);font-size:18px}
@@ -143,6 +156,11 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .rseg button:first-child{border-radius:10px 0 0 10px} .rseg button:last-child{border-radius:0 10px 10px 0;border-left:0}
 .rseg button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .to-q{align-self:stretch;margin-top:6px}
+/* new words / review switch (both layouts) */
+.wseg{position:static;max-width:440px;padding-block:0}
+.nextrev{margin:0;font-size:13px;color:var(--muted)}
+.nextrev b{color:var(--ink);font-weight:600}
+.srcday{color:var(--muted)}
 @media (min-width: 821px){.only-m{display:none !important}}
 /* done summary */
 .summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -330,6 +348,7 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
   .sec{scroll-margin-top:calc(var(--mtop-h) + 58px)}
   #detail{scroll-margin-top:var(--mtop-h)}
   .sec{padding:16px}
+  .wseg{max-width:none}
   .reading.pane-art .qs{display:none}
   .reading.pane-q .article{display:none}
   .study,.reading{grid-template-columns:minmax(0,1fr)}
@@ -344,7 +363,7 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
 
 <div class="app">
   <nav class="rail" aria-label="主导航">
-    <div class="brand">Deutsch <span><span class="tag">täglich</span></span><small>每日德语 · 30 词 + 1 篇阅读</small></div>
+    <div class="brand">Deutsch <span><span class="tag">täglich</span></span><small>每日德语 · 新词 + 复习 + 阅读</small></div>
     <div class="tabs" role="tablist">
       <button class="tab" data-view="words" title="单词" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>单词<span class="badge" id="b-words"></span></button>
       <button class="tab" data-view="read" title="阅读"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h7a3 3 0 0 1 2 1 3 3 0 0 1 2-1h7v14h-7a3 3 0 0 0-2 1 3 3 0 0 0-2-1H3z"/><path d="M12 6v14"/></svg>阅读<span class="badge" id="b-read"></span></button>
@@ -379,6 +398,11 @@ const fmtShort = s => { const d = parseD(s); return (d.getMonth() + 1) + '月' +
 const LEVELS = [['A1','入门'],['A2','初级'],['B1','中级'],['B2','中高级'],['B2–C1','中高级到高级'],['C1','高级']];
 const DEFAULT_LEVEL = 'B2–C1';
 const SCHEDULE_TIME = '北京时间每天凌晨 2:30 左右';
+// spaced review: interval in days for each level; first review depends on the first answer
+const LADDER = [1, 2, 4, 7, 15, 30, 60, 120];
+const INIT_L = { u: 0, f: 1, k: 3 };
+const REV_CAPS = [[20, '20 个'], [40, '40 个'], [60, '60 个'], [100, '100 个'], [0, '不限']];
+const REVL = ['记得', '模糊', '忘了'];
 const LEVEL_HINT = {
   'B2–C1': '水平介于 B2 和 C1 之间：选 B2 后段到 C1 的词，偏新闻、职场、社会议题和书面表达中常见的词，例如抽象名词、带固定介词的动词、可分动词、书面连接词和副词；不要选 A1–B1 的基础词。',
   'C1': '水平 C1：选高级、书面和学术语境中常用的词，包括固定搭配和较抽象的表达。'
@@ -388,7 +412,7 @@ const emptyProg = () => ({ marks: {}, pos: 0, answers: {}, grading: null, notes:
 const S = { db:null, sample:null, uid:null, profileRef:null, settingsRef:null, contentRef:null, dayRef:null, unsub:null,
   settings:{ level: DEFAULT_LEVEL, seen: [], dates: [] }, profile:{ cal: {} },
   date: today(), day:null, content:null, calMonth: today().slice(0, 7),
-  view:'words', idx:0, gen:{ words:null, read:null }, err:{}, book:[], bookFilter:'all', openBook:null, showTr:false, showGl:true, readPane:'art', slide:null, pop:null, lookup:{}, lookingUp:null, bookGen:null,
+  view:'words', idx:0, gen:{ words:null, read:null }, err:{}, book:[], bookFilter:'all', openBook:null, showTr:false, showGl:true, readPane:'art', slide:null, wmode:null, ridx:0, ridxDate:null, srs:{}, cards:{}, revBuilding:null, pop:null, lookup:{}, lookingUp:null, bookGen:null,
   cloud:'connecting', justDone:false, confirmRegen:false };
 
 /* ---------------- storage ---------------- */
@@ -417,7 +441,7 @@ function scheduleCache() {
     try {
       if (!S.day || !S.content) return;
       const c = cacheRead(); c.days = c.days || {};
-      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [] } };
+      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0 } };
       const keep = Object.keys(c.days).sort().slice(-4); for (const k of Object.keys(c.days)) if (!keep.includes(k)) delete c.days[k];
       c.settings = S.settings; c.cal = S.profile.cal;
       localStorage.setItem(CK, JSON.stringify(c));
@@ -441,6 +465,7 @@ async function boot() {
     applyContent(cd.content);
     const n = S.day.lemmas.length;
     S.idx = n && Object.keys(S.day.marks).length >= n ? n : Math.min(S.day.pos || 0, Math.max(0, n - 1));
+    initRev();
   }
   render();
   const [db, user, sample] = await Promise.all([claude.use('db'), claude.use('user'), claude.use('sample')]).catch(() => [null,null,null]);
@@ -507,12 +532,14 @@ async function openDate(date, refresh) {
     save(S.dayRef, p, true);
   }
   const keep = refresh && S.day && S.day.date === date && (!c || JSON.stringify(c.lemmas) === JSON.stringify(S.day.lemmas || []) || !(S.day.lemmas || []).length);
-  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [] } : emptyProg());
+  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks, rpos: S.day.rpos } : emptyProg());
   S.day = { date, ...prog };
   applyContent(c);
   const n = S.day.lemmas.length;
   if (!keep || S.idx > n) S.idx = n && Object.keys(S.day.marks).length >= n ? n : Math.min(S.day.pos || 0, Math.max(0, n - 1));
+  initRev();
   syncCal();
+  if (date === today()) buildReview();
   if (!S.unsub) S.unsub = S.contentRef.onSnapshot(snap => {
     if (!snap.exists || snap.metadata.hasPendingWrites || S.gen.words === S.date || S.gen.read === S.date) return;
     const nc = clone(snap.data());
@@ -535,10 +562,127 @@ async function loadBook() {
   } catch (e) {}
 }
 
+/* ---------------- review (spaced repetition) ---------------- */
+// data/users/<id>/profile/srs/<date of the words> = { date, items: { <index>: { l, g, L, due, n, x, rd, pL, pX } }, minDue }
+// L = level in LADDER, due = next review day, n = reviews done, x = times forgotten; rd/pL/pX remember today's starting point so a changed answer recomputes from it
+const srsRef = date => S.profileRef.collection('srs').doc(date);
+const minDueOf = doc => Object.values(doc.items || {}).reduce((a, it) => (it.due && (!a || it.due < a) ? it.due : a), null);
+const revCap = () => (S.profile.revCap ?? 40);
+async function srsDoc(date) {
+  if (S.srs[date]) return S.srs[date];
+  let doc = null;
+  try { const x = await srsRef(date).get(); if (x.exists) doc = clone(x.data()); } catch (e) {}
+  return S.srs[date] = S.srs[date] || doc || { date, items: {}, minDue: null };
+}
+function srsPut(date, i) {
+  const doc = S.srs[date]; doc.minDue = minDueOf(doc);
+  return save(srsRef(date), { date, items: { [i]: doc.items[i] }, minDue: doc.minDue });
+}
+async function srsLearn(date, i, m, l, g) {
+  if (!S.profileRef) return;
+  const doc = await srsDoc(date), old = doc.items[i];
+  if (old && old.n > 0) return; // already in review: the first answer no longer decides the schedule
+  const L = INIT_L[m] ?? 0;
+  doc.items[i] = { l, g: g || null, L, due: addDays(today(), LADDER[L]), n: 0, x: 0 };
+  srsPut(date, i);
+}
+async function srsMigrate() {
+  // words answered before reviews existed: schedule them from the day they were learned
+  if (!S.profileRef || S.profile.srsV) return;
+  try {
+    for (const date of Object.keys(S.profile.cal || {}).sort()) {
+      const x = await srsRef(date).get(); if (x.exists) { S.srs[date] = clone(x.data()); continue; }
+      const [ps, cs] = await Promise.all([S.profileRef.collection('days').doc(date).get(), S.db.doc('content/' + date).get()]);
+      const marks = ps.exists ? (ps.data().marks || {}) : {}, c = cs.exists ? cs.data() : null;
+      if (!c || !Object.keys(marks).length) continue;
+      const doc = { date, items: {}, minDue: null };
+      Object.entries(marks).forEach(([i, m]) => { const L = INIT_L[m] ?? 0; doc.items[i] = { l: (c.lemmas || [])[i] || '', g: artCls(c.words?.[i]?.gender) || null, L, due: addDays(date, LADDER[L]), n: 0, x: 0 }; });
+      doc.minDue = minDueOf(doc); S.srs[date] = doc;
+      await srsRef(date).set(doc);
+    }
+    S.profile.srsV = 1; save(S.profileRef, { srsV: 1 });
+  } catch (e) { console.warn('srs migrate', e); }
+}
+async function buildReview() {
+  // today's review list is fixed once per day: due words, oldest first, up to the daily cap
+  const t = today();
+  if (!S.profileRef || S.date !== t || !S.day || Array.isArray(S.day.review)) return;
+  if (S.revBuilding) return S.revBuilding;
+  S.revBuilding = (async () => {
+    await srsMigrate();
+    let due = [];
+    try {
+      const q = await S.profileRef.collection('srs').where('minDue', '<=', t).get();
+      q.docs.forEach(x => {
+        const doc = clone(x.data()); if (!doc.date || doc.date >= t) return;
+        S.srs[doc.date] = doc;
+        Object.entries(doc.items || {}).forEach(([i, it]) => { if (it.due && it.due <= t) due.push({ d: doc.date, i: Number(i), l: it.l, g: it.g || null, due: it.due, L: it.L || 0 }); });
+      });
+    } catch (e) { return; }
+    due.sort((a, b) => (a.due > b.due) - (a.due < b.due) || a.L - b.L || (a.d > b.d) - (a.d < b.d) || a.i - b.i);
+    const cap = revCap(); if (cap) due = due.slice(0, cap);
+    if (S.date !== t || !S.day || Array.isArray(S.day.review)) return;
+    S.day.review = due.map(({ d, i, l, g }) => ({ d, i, l, g }));
+    S.day.rmarks = {}; S.day.rpos = 0;
+    save(S.dayRef, { review: S.day.review, rmarks: {}, rpos: 0 });
+    initRev(); syncCal(); render();
+  })();
+  try { await S.revBuilding; } finally { S.revBuilding = null; }
+}
+function initRev() {
+  const d = S.day; if (!d) return;
+  const R = d.review || [], n = R.length, done = Object.keys(d.rmarks || {}).length;
+  if (S.ridxDate !== d.date) { S.ridxDate = d.date; S.wmode = null; S.ridx = 0; }
+  if (S.ridx === 0 && n) S.ridx = done >= n ? n : Math.min(d.rpos || 0, n - 1);
+  if (S.wmode == null && n) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : done < n ? 'rev' : 'new'; }
+}
+const wmode = () => ((S.day && S.day.review || []).length && S.wmode === 'rev' ? 'rev' : 'new');
+async function ensureCards() {
+  // the full card of a review word lives in that day's shared content; fetch each day once
+  const R = (S.day && S.day.review) || [];
+  const need = [...new Set(R.map(r => r.d))].filter(d => !(d in S.cards));
+  if (!need.length || !S.db) return;
+  need.forEach(d => { S.cards[d] = undefined; });
+  await Promise.all(need.map(async d => {
+    try { const x = await S.db.doc('content/' + d).get(); S.cards[d] = x.exists ? (x.data().words || []) : []; }
+    catch (e) { S.cards[d] = false; }
+  }));
+  if (S.view === 'words' && wmode() === 'rev') render();
+}
+async function rmark(j, m) {
+  const d = S.day, r = (d.review || [])[j]; if (!r) return;
+  d.rmarks = { ...(d.rmarks || {}), [j]: m }; d.rpos = j;
+  save(S.dayRef, { rmarks: { [j]: m }, rpos: j });
+  if (S.profileRef) {
+    const t = today(), doc = await srsDoc(r.d);
+    const it = doc.items[r.i] || { l: r.l, g: r.g, L: 0, due: t, n: 0, x: 0 };
+    const first = it.rd !== t, base = first ? (it.L || 0) : (it.pL ?? it.L ?? 0), bx = first ? (it.x || 0) : (it.pX ?? it.x ?? 0);
+    const L = m === 'k' ? Math.min(base + 1, LADDER.length - 1) : m === 'f' ? Math.max(base - 1, 0) : 0;
+    doc.items[r.i] = { ...it, rd: t, pL: base, pX: bx, L, due: addDays(t, LADDER[L]), n: (it.n || 0) + (first ? 1 : 0), x: bx + (m === 'u' ? 1 : 0) };
+    srsPut(r.d, r.i);
+    const w = S.cards[r.d] && S.cards[r.d][r.i], key = bookKey(r.l);
+    if (w && key && m !== 'k') {
+      const entry = { word: w, mark: m, date: r.d, added: Date.now() };
+      save(S.profileRef.collection('wordbook').doc(key), entry, true);
+      S.book = [{ id: key, ...entry }].concat(S.book.filter(b => b.id !== key));
+    }
+  }
+  syncCal();
+  render();
+}
+function rgo(j) {
+  const n = (S.day.review || []).length, nj = Math.max(0, Math.min(n, j));
+  S.slide = nj > S.ridx ? 'nx' : nj < S.ridx ? 'pv' : null;
+  S.ridx = nj;
+  if (nj < n) { S.day.rpos = nj; save(S.dayRef, { rpos: nj }); }
+  render(); window.scrollTo({ top: 0 });
+}
+
 /* ---------------- check-in ---------------- */
 function dayStatus(d) {
-  const t = d.lemmas.length, n = Math.min(Object.keys(d.marks || {}).length, t), r = !!(d.grading && !d.grading.pending);
-  return { n, t, r, done: t > 0 && n >= t && r };
+  const R = d.review || [], nl = d.lemmas.length;
+  const t = nl + R.length, n = Math.min(Object.keys(d.marks || {}).length, nl) + Math.min(Object.keys(d.rmarks || {}).length, R.length), r = !!(d.grading && !d.grading.pending);
+  return { n, t, r, done: nl > 0 && n >= t && r };
 }
 function syncCal() {
   const d = S.day; if (!d || !d.lemmas.length) return;
@@ -711,6 +855,7 @@ function mark(i, m) {
   const d = S.day; d.marks[i] = m; d.pos = i;
   save(S.dayRef, { marks: { [i]: m }, pos: i });
   const w = d.words[i], key = bookKey(d.lemmas[i]) || ('w' + i);
+  srsLearn(d.date, i, m, d.lemmas[i], artCls(w?.gender));
   if (S.profileRef && w) {
     const ref = S.profileRef.collection('wordbook').doc(key);
     if (m === 'k') { if ((S.book.find(b => b.id === key) || {}).mark !== 'r') { wq = wq.then(() => ref.delete()).catch(() => {}); S.book = S.book.filter(b => b.id !== key); } }
@@ -732,7 +877,7 @@ function go(i) {
 }
 async function goDate(date) {
   if (date > today()) return;
-  S.confirmRegen = false; S.justDone = false; S.readPane = 'art';
+  S.confirmRegen = false; S.justDone = false; S.readPane = 'art'; S.wmode = null;
   if (S.view === 'cal' || S.view === 'book' || S.view === 'set') S.view = 'words';
   S.day = null; render();
   await openDate(date);
@@ -743,14 +888,14 @@ async function goDate(date) {
 function updateBadges() {
   const d = S.day;
   if (d) {
-    const done = Object.keys(d.marks || {}).length;
-    $('#b-words').textContent = d.lemmas.length ? done + '/' + d.lemmas.length : '';
+    const st = dayStatus(d);
+    $('#b-words').textContent = d.lemmas.length ? st.n + '/' + st.t : '';
     $('#b-read').textContent = d.grading && !d.grading.pending ? '✓' : '';
   }
   $('#b-book').textContent = S.book.length || '';
   const k = streak();
   $('#b-cal').textContent = k ? k + ' 天' : '';
-  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成 30 词和阅读即可打卡';
+  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成新词、复习和阅读即可打卡';
 }
 function render() {
   scheduleCache();
@@ -797,6 +942,20 @@ function dateBar() {
 const dayName = () => S.date === today() ? '今日' : fmtShort(S.date);
 
 const artCls = g => (g === 'der' || g === 'die' || g === 'das') ? g : '';
+/* Wortwurzel dictionary deep link. The artifact host only passes [A-Za-z0-9._~-] in the hash,
+   so every other UTF-8 byte is written as ~XX (the dictionary decodes it back). */
+const DICT_URL = 'https://claude.ai/artifact/Fkmyc6Kp1nx7QRgFyZ54RM';
+function dictHash(word) {
+  let o = '';
+  for (const b of new TextEncoder().encode(String(word).trim())) o += /[A-Za-z0-9.\-]/.test(String.fromCharCode(b)) && b < 128 ? String.fromCharCode(b) : '~' + b.toString(16).toUpperCase().padStart(2, '0');
+  return o;
+}
+const EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>';
+function dictLink(word, label) {
+  if (!word) return '';
+  return `<a class="dictlink" href="${DICT_URL}#${dictHash(word)}" target="_blank" rel="noopener" title="在 Wortwurzel 词典里打开 ${esc(word)}">${label || '查词典'}${EXT}</a>`;
+}
+const dictKey = w => w && (w.dict || w.word);
 function wordHead(w, lemma) {
   const g = w && artCls(w.gender);
   return `<div class="word-row">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="lemma" lang="de">${esc(w?.word || lemma)}</span>
@@ -814,18 +973,21 @@ function detailHTML(w) {
   const ety = typeof w.etymology === 'string' ? w.etymology : w.etymology?.story;
   const cog = (w.cognates || []).map(c => `<div><b>${esc(c.word)}</b><span>${esc(c.lang)}${c.note ? ' · ' + esc(c.note) : ''}</span></div>`).join('');
   const fam = (w.family || []).map(c => `<div><b>${esc(c.de)}</b><span>${esc(c.zh)}</span></div>`).join('');
+  const sn = Array.isArray(w.senses) ? w.senses.filter(x => x && x.zh) : [];
+  const mean = sn.length ? `<ol class="senses ${sn.length > 1 ? 'multi' : ''}">${sn.map(x => `<li><span class="s-zh">${esc(x.zh)}</span>${x.de ? `<span class="s-de" lang="de">${esc(x.de)}</span>` : ''}</li>`).join('')}</ol>` : `<p class="big-mean">${esc(w.meaning)}</p>`;
   return `
-  <section class="sec" data-s="mean"><h3>词意</h3><p class="big-mean">${esc(w.meaning)}</p>${wordMeta(w)}</section>
-  <section class="sec" data-s="use"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}</section>
+  <section class="sec" data-s="mean"><h3>词意${w.lvl ? `<em class="lvl">${esc(w.lvl)}</em>` : ''}${dictLink(dictKey(w))}</h3>${mean}${wordMeta(w)}</section>
+  <section class="sec" data-s="use"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}${w.tip ? `<div class="tip note"><b>提示：</b>${esc(w.tip)}</div>` : ''}</section>
   <section class="sec" data-s="root"><h3>词根 <span>Wortbildung</span></h3>${parts ? `<div class="parts">${parts}</div>` : ''}<p>${esc(w.root?.explain)}</p>${fam ? `<div class="eyebrow" style="margin-top:4px">同族词</div><div class="pairs">${fam}</div>` : ''}</section>
   <section class="sec" data-s="ety"><h3>词源 <span>Herkunft</span></h3>${chain ? `<div class="chain">${chain}</div>` : ''}<p class="ety">${esc(ety)}</p>${cog ? `<div class="eyebrow" style="margin-top:4px">同源词</div><div class="pairs">${cog}</div>` : ''}</section>
   ${w.mnemonic ? `<div class="tip"><b>记忆提示：</b>${esc(w.mnemonic)}</div>` : ''}`;
 }
-function progBar() {
-  const d = S.day, n = d.lemmas.length || 30;
-  const c = { k: 0, f: 0, u: 0 }; Object.values(d.marks).forEach(m => c[m]++);
+function progBar(marks, total, lab) {
+  const d = S.day, n = total || d.lemmas.length || 30;
+  lab = lab || ['认识', '模糊', '不认识'];
+  const c = { k: 0, f: 0, u: 0 }; Object.values(marks || d.marks).forEach(m => c[m]++);
   const done = c.k + c.f + c.u;
-  return `<div class="prog"><span>${done} / ${n}</span><div class="bar">${['k','f','u'].map(k => `<i class="${k}" style="width:${c[k] / n * 100}%"></i>`).join('')}</div><span>认识 ${c.k} · 模糊 ${c.f} · 不认识 ${c.u}</span></div>`;
+  return `<div class="prog"><span>${done} / ${n}</span><div class="bar">${['k','f','u'].map(k => `<i class="${k}" style="width:${c[k] / n * 100}%"></i>`).join('')}</div><span>${lab[0]} ${c.k} · ${lab[1]} ${c.f} · ${lab[2]} ${c.u}</span></div>`;
 }
 function noContent(what) {
   const isT = S.date === today();
@@ -835,7 +997,17 @@ function noContent(what) {
     <div style="margin-top:12px"><button class="btn" onclick="location.reload()">刷新看看</button></div></div>`;
 }
 
+function secnavHTML(w) {
+  const g = artCls(w.gender);
+  return `<nav class="secnav" aria-label="讲解目录"><b class="sw only-m">${g ? `<span class="art ${g}">${g}</span>` : ''}${esc(w.word)}</b>${[['mean','词意'],['use','用法'],['root','词根'],['ety','词源']].map(([k, l]) => `<button data-sec="${k}">${l}</button>`).join('')}</nav>`;
+}
+function wseg() {
+  const d = S.day, R = d.review || []; if (!R.length) return '';
+  const mode = wmode(), nl = d.lemmas.length, nm = Math.min(Object.keys(d.marks || {}).length, nl), rm = Object.keys(d.rmarks || {}).length;
+  return `<div class="rseg wseg" role="tablist" aria-label="新词和复习"><button role="tab" data-wmode="new" aria-selected="${mode === 'new'}">新词 ${nm}/${nl}</button><button role="tab" data-wmode="rev" aria-selected="${mode === 'rev'}">复习 ${rm}/${R.length}</button></div>`;
+}
 function vWords() {
+  if (wmode() === 'rev') return vReview();
   const d = S.day, n = d.lemmas.length;
   const errBox = S.err.words ? `<div class="notice err">${esc(S.err.words)} <button class="btn sm" data-act="retry-words" style="margin-left:8px">重试</button></div>` : '';
   const head = `<div class="head hm"><div><h1>${esc(dayName())} 30 词</h1></div>${S.gen.words === S.date && n ? `<span class="skeleton"><span class="spin"></span>后面的词还在生成</span>` : ''}</div>`;
@@ -846,10 +1018,7 @@ function vWords() {
   if (!w) right = S.gen.words === S.date
     ? `<div class="empty-detail"><span><span class="spin"></span>这个词的讲解还在生成…</span><span>生成完会自动出现，可以先判断认不认识。</span></div>`
     : `<div class="empty-detail"><b>这个词的讲解还没生成</b><span>可以先判断认不认识。</span><div><button class="btn sm" data-act="retry-words">补全讲解</button></div></div>`;
-  else if (m) {
-    const g = artCls(w.gender);
-    right = `<nav class="secnav" aria-label="讲解目录"><b class="sw only-m">${g ? `<span class="art ${g}">${g}</span>` : ''}${esc(w.word)}</b>${[['mean','词意'],['use','用法'],['root','词根'],['ety','词源']].map(([k, l]) => `<button data-sec="${k}">${l}</button>`).join('')}</nav>` + detailHTML(w);
-  }
+  else if (m) right = secnavHTML(w) + detailHTML(w);
   else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span class="only-d">选好之后，这里会展开词意、用法、词根和词源。</span><span class="only-m">在下面选认识、模糊或不认识，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
   const wmap = `<div class="wmap only-d" aria-label="30 个词">${d.lemmas.map((l, k) => `<button class="${d.marks[k] || ''}" data-go="${k}" title="${k + 1}. ${esc(d.words[k]?.word || l)}" aria-label="第 ${k + 1} 个" ${k === i ? 'aria-current="true"' : ''}></button>`).join('')}</div>`;
   const dock = `<div class="dock only-m" role="group" aria-label="认识程度">
@@ -858,7 +1027,7 @@ function vWords() {
     <button class="dk f ${m === 'f' ? 'sel' : ''}" data-mark="f">模糊</button>
     <button class="dk u ${m === 'u' ? 'sel' : ''}" data-mark="u">不认识</button>
     <button class="dk nav ${i === n - 1 ? 'txt' : ''} ${m ? 'go' : ''}" data-go="${i + 1}" aria-label="${i === n - 1 ? '完成' : '下一个'}">${i === n - 1 ? '完成' : '›'}</button></div>`;
-  return `<div class="view">${dateBar()}${head}
+  return `<div class="view">${dateBar()}${head}${wseg()}
     ${progBar()}${errBox}
     <div class="study">
       <div class="card ${S.slide || ''}">
@@ -877,14 +1046,72 @@ function vWords() {
       <div class="detail" id="detail">${right}</div>
     </div>${dock}<div class="dock-sp only-m"></div></div>`;
 }
+function vReview() {
+  const d = S.day, R = d.review, n = R.length, rm = d.rmarks || {};
+  if (S.ridx >= n) return vReviewDone();
+  ensureCards();
+  const j = S.ridx, r = R[j], m = rm[j], cs = S.cards[r.d], w = cs ? cs[r.i] : null;
+  const it = S.srs[r.d] && S.srs[r.d].items && S.srs[r.d].items[r.i];
+  let right;
+  if (!m) right = `<div class="empty-detail"><b>先回想它的意思</b><span class="only-d">想好以后选“记得、模糊或忘了”，这里会展开完整讲解。</span><span class="only-m">在下面选记得、模糊或忘了，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 记得 · 2 模糊 · 3 忘了 · ← → 翻页</span></div>`;
+  else if (cs === undefined) right = `<div class="empty-detail"><span><span class="spin"></span>正在载入这个词的讲解…</span></div>`;
+  else if (!w) right = `<div class="empty-detail"><b>讲解没有载入</b><span>可能是网络问题。</span><div><button class="btn sm" data-act="load-cards">重试</button></div></div>`;
+  else right = secnavHTML(w) + detailHTML(w);
+  const next = m && it && it.rd === today() ? `<p class="nextrev">下次复习：<b>${esc(fmtShort(it.due))}</b>（${LADDER[it.L]} 天后）</p>` : '';
+  const rmap = `<div class="wmap only-d" aria-label="今天的复习词">${R.map((x, k) => `<button class="${rm[k] || ''}" data-rgo="${k}" title="${k + 1}. ${esc(x.l)}" aria-label="复习第 ${k + 1} 个" ${k === j ? 'aria-current="true"' : ''}></button>`).join('')}</div>`;
+  const dock = `<div class="dock only-m" role="group" aria-label="还记得吗">
+    <button class="dk nav" data-rgo="${j - 1}" ${j === 0 ? 'disabled' : ''} aria-label="上一个">‹</button>
+    <button class="dk k ${m === 'k' ? 'sel' : ''}" data-rmark="k">记得</button>
+    <button class="dk f ${m === 'f' ? 'sel' : ''}" data-rmark="f">模糊</button>
+    <button class="dk u ${m === 'u' ? 'sel' : ''}" data-rmark="u">忘了</button>
+    <button class="dk nav ${j === n - 1 ? 'txt' : ''} ${m ? 'go' : ''}" data-rgo="${j + 1}" aria-label="${j === n - 1 ? '完成' : '下一个'}">${j === n - 1 ? '完成' : '›'}</button></div>`;
+  return `<div class="view">${dateBar()}<div class="head hm"><div><h1>${esc(dayName())}复习</h1></div></div>${wseg()}
+    ${progBar(rm, n, REVL)}
+    <div class="study">
+      <div class="card ${S.slide || ''}">
+        <span class="num">复习 第 ${j + 1} 个 · 共 ${n} 个 · <span class="srcday">${esc(fmtShort(r.d))}学的</span></span>
+        ${wordHead(w || { word: r.l, gender: r.g }, r.l)}
+        ${m ? wordMeta(w) : ''}
+        <div class="ask">还记得它的意思吗？</div>
+        <div class="choices only-d">
+          <button class="choice k ${m === 'k' ? 'sel' : ''}" data-rmark="k">记得<small>想起来了</small></button>
+          <button class="choice f ${m === 'f' ? 'sel' : ''}" data-rmark="f">模糊<small>有点印象</small></button>
+          <button class="choice u ${m === 'u' ? 'sel' : ''}" data-rmark="u">忘了<small>看讲解</small></button>
+        </div>
+        ${next}
+        <div class="navrow only-d"><button class="btn" data-rgo="${j - 1}" ${j === 0 ? 'disabled' : ''}>上一个</button><button class="btn ${m ? 'primary' : ''}" data-rgo="${j + 1}">${j === n - 1 ? '完成' : '下一个'}</button></div>
+        ${rmap}
+      </div>
+      <div class="detail" id="detail">${right}</div>
+    </div>${dock}<div class="dock-sp only-m"></div></div>`;
+}
+function vReviewDone() {
+  const d = S.day, R = d.review, rm = d.rmarks || {}, c = { k: [], f: [], u: [] };
+  R.forEach((r, j) => { const m = rm[j]; if (m) c[m].push(j); });
+  const left = R.length - c.k.length - c.f.length - c.u.length, newLeft = d.lemmas.length - Object.keys(d.marks || {}).length;
+  const graded = d.grading && !d.grading.pending;
+  const pills = arr => arr.map(j => { const r = R[j], w = S.cards[r.d] && S.cards[r.d][r.i]; return `<button class="wpill ${rm[j]}" data-rgo="${j}">${esc(r.l)}${w && w.meaning ? ' · ' + esc(String(w.meaning).split(/[；;，,]/)[0]) : ''}</button>`; }).join('');
+  const cta = newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续学新词（还剩 ${newLeft} 个）</button>` : graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`;
+  return `<div class="view">${dateBar()}
+    <div class="head"><div><h1>${left ? '还有 ' + left + ' 个复习词没选' : esc(dayName()) + '的复习完成了'}</h1></div>${cta}</div>${wseg()}
+    ${progBar(rm, R.length, REVL)}
+    <div class="summary"><div class="stat k"><b>${c.k.length}</b>记得</div><div class="stat f"><b>${c.f.length}</b>模糊</div><div class="stat u"><b>${c.u.length}</b>忘了</div></div>
+    ${c.u.length + c.f.length ? `<section class="sec"><h3>还没记牢（很快会再出现）</h3><div class="wlist">${pills(c.u.concat(c.f))}</div></section>` : ''}
+    ${c.k.length ? `<section class="sec"><h3>记得的词（下次间隔会拉长）</h3><div class="wlist">${pills(c.k)}</div></section>` : ''}
+    <div><button class="btn" data-rgo="0">从头再看一遍</button></div>
+  </div>`;
+}
 function vWordsDone() {
   const d = S.day, c = { k: [], f: [], u: [] };
   d.lemmas.forEach((l, i) => { const m = d.marks[i]; if (m) c[m].push(i); });
   const pills = arr => arr.map(i => `<button class="wpill ${d.marks[i]}" data-go="${i}">${esc(d.words[i]?.word || d.lemmas[i])}${d.words[i]?.meaning ? ' · ' + esc(String(d.words[i].meaning).split(/[；;，,]/)[0]) : ''}</button>`).join('');
   const left = d.lemmas.length - c.k.length - c.f.length - c.u.length;
   const graded = d.grading && !d.grading.pending;
+  const R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length;
+  const need = [rleft > 0 ? '复习' : '', graded ? '' : '阅读题'].filter(Boolean).join('和');
+  const btns = (rleft > 0 ? `<button class="btn primary" data-wmode="rev">开始复习（${rleft} 个）</button>` : '') + (graded ? '' : `<button class="btn ${rleft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`);
   return `<div class="view">${dateBar()}
-    <div class="head"><div><h1>${left ? '还有 ' + left + ' 个词没选' : esc(dayName()) + '的单词完成了'}</h1>${!left && !graded ? '<p class="sub">再做完阅读题就能打卡。</p>' : ''}</div>${graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`}</div>
+    <div class="head"><div><h1>${left ? '还有 ' + left + ' 个词没选' : esc(dayName()) + '的新词完成了'}</h1>${!left && need ? `<p class="sub">再做完${need}就能打卡。</p>` : ''}</div>${btns ? `<div style="display:flex;gap:8px;flex-wrap:wrap">${btns}</div>` : ''}</div>${wseg()}
     ${progBar()}
     <div class="summary"><div class="stat k"><b>${c.k.length}</b>认识</div><div class="stat f"><b>${c.f.length}</b>模糊</div><div class="stat u"><b>${c.u.length}</b>不认识</div></div>
     ${c.u.length + c.f.length ? `<section class="sec"><h3>需要复习（已加入生词本）</h3><div class="wlist">${pills(c.u.concat(c.f))}</div></section>` : ''}
@@ -936,7 +1163,7 @@ function vRead() {
     r.questions.forEach((q, i) => { tot += 2; got += q.type === 'mc' ? (g[i]?.ok ? 2 : 0) : (g[i]?.score || 0); });
     const st = dayStatus(d);
     scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">选择题每题 2 分，简答题按内容和语法打 0–2 分。</span></div>
-      ${isDone(d.date) ? stamp(d.date, S.justDone) : `<span class="sub">还有 ${st.t - st.n} 个单词没选，选完就能打卡。</span>`}</div>`;
+      ${isDone(d.date) ? stamp(d.date, S.justDone) : `<span class="sub">还有 ${st.t - st.n} 个词没选（新词和复习），选完就能打卡。</span>`}</div>`;
   }
   const pane = S.readPane === 'q' ? 'q' : 'art';
   const rseg = `<div class="rseg only-m" role="tablist"><button role="tab" data-pane="art" aria-selected="${pane === 'art'}">文章</button><button role="tab" data-pane="q" aria-selected="${pane === 'q'}">${g && !g.pending ? `题目 · ${got}/${tot} 分` : `题目 ${na}/${nq}`}</button></div>`;
@@ -976,7 +1203,7 @@ function vCal() {
       <div class="calnav"><button class="btn sm" data-month="${prevM}">‹ 上个月</button><button class="btn sm" data-month="${t.slice(0, 7)}">本月</button><button class="btn sm" data-month="${nextM}" ${nextM > t.slice(0, 7) ? 'disabled' : ''}>下个月 ›</button></div></div>
     <div class="calstats"><span><b>${doneN}</b> 天本月打卡</span><span><b>${streak()}</b> 天连续打卡</span></div>
     <div class="calgrid">${['一','二','三','四','五','六','日'].map(w => `<span class="wd">周${w}</span>`).join('')}${cells}</div>
-    <div class="legend"><span><i class="lg done"></i>已打卡（30 词 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
+    <div class="legend"><span><i class="lg done"></i>已打卡（新词 + 复习 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
     <p class="sub">点任意一天可以打开那天的单词和阅读。每天的题和你的答题记录都会保留。</p>
   </div>`;
 }
@@ -986,7 +1213,7 @@ function vBook() {
   const items = list.map(b => {
     const w = b.word || {}, open = S.openBook === b.id, g = artCls(w.gender);
     const body = w.mini
-      ? `<div class="wb-mini">${wordHead(w, w.word)}${w.pos ? `<div class="meta"><span class="chip">${esc(w.pos)}</span></div>` : ''}${w.meaning ? `<p class="big-mean">${esc(w.meaning)}</p>` : ''}${w.de ? `<p class="de-gloss">${esc(w.de)}</p>` : ''}${b.ctx ? `<p class="ctx">原句：${esc(b.ctx)}</p>` : ''}
+      ? `<div class="wb-mini">${wordHead(w, w.word)}<div class="meta">${w.pos ? `<span class="chip">${esc(w.pos)}</span>` : ''}${dictLink(w.word)}</div>${w.meaning ? `<p class="big-mean">${esc(w.meaning)}</p>` : ''}${w.de ? `<p class="de-gloss">${esc(w.de)}</p>` : ''}${b.ctx ? `<p class="ctx">原句：${esc(b.ctx)}</p>` : ''}
           ${S.bookGen === b.id ? `<p class="muted"><span class="spin"></span>正在写完整讲解…</p>` : `<p class="muted">这个词是从阅读里收藏的，现在只有简要释义。</p><div><button class="btn sm" data-book-full="${esc(b.id)}">让 Claude 写完整讲解（用法、词根、词源）</button></div>`}
           ${S.err.book && S.openBook === b.id ? `<div class="notice err">${esc(S.err.book)}</div>` : ''}</div>`
       : `${wordHead(w, w.word)}${detailHTML(w)}${b.ctx ? `<p class="ctx">原句：${esc(b.ctx)}</p>` : ''}`;
@@ -1008,6 +1235,9 @@ function vSet() {
       : `<button class="btn" data-act="ask-regen" hidden>现在按 ${esc(lv)} 重出今天的题</button>`}</div>
     <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，发布到这个网站，打开页面就能直接开始。如果打开时还没出好，稍后刷新即可。</p>
     <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
+    <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
+    <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
+    <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
     <section class="sec"><h3>同步</h3><p>${S.db ? '这是网页版：每天的题目从网站读取，你的进度、打卡记录和生词本保存在这台设备的浏览器里，手机和电脑各自记录，不互相同步。需要跨设备同步时，请用 claude.ai 上的版本。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
     <section class="sec"><h3>说明</h3><p>网页版不调用 Claude：选择题自动判分，简答题显示参考答案供你自查。</p></section></div>`;
 }
@@ -1116,7 +1346,7 @@ function wordPopHTML(P) {
     ${note && note.n ? `<div class="pop-note">✎ ${esc(note.n)}</div>` : ''}
     <div class="pop-a">
       ${x.li >= 0 ? `<button class="btn sm" data-pop="card" data-i="${x.li}">看完整讲解</button>` : ''}
-      ${inBook ? `<span class="ok">✓ 已在生词本</span><button class="linkish" data-pop="unbook">移出</button>` : `<button class="btn sm primary" data-pop="book">加入生词本</button>`}
+      ${inBook ? `<span class="ok">✓ 已在生词本</span><button class="linkish" data-pop="unbook">移出</button>` : `<button class="btn sm primary" data-pop="book">加入生词本</button>`}${x.single ? dictLink(x.li >= 0 ? dictKey(S.day.words[x.li]) || x.lemma : x.lemma) : ''}
       ${note ? `<button class="btn sm" data-pop="note">${note.n ? '改笔记' : '加笔记'}</button><button class="btn sm" data-pop="unhl">取消高亮</button>` : `<button class="btn sm" data-pop="hl">高亮</button><button class="btn sm" data-pop="note">加笔记</button>`}
     </div>`;
 }
@@ -1241,6 +1471,15 @@ document.addEventListener('click', e => {
   if (t.dataset.speak) { speak(t.dataset.speak); return; }
   if (t.dataset.mark) { mark(S.idx, t.dataset.mark); if (innerWidth <= 820) setTimeout(() => $('#detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30); return; }
   if (t.dataset.go !== undefined) { go(Number(t.dataset.go)); return; }
+  if (t.dataset.rmark) { const m = t.dataset.rmark; rmark(S.ridx, m).then(() => { if (innerWidth <= 820) setTimeout(() => $('#detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30); }); return; }
+  if (t.dataset.rgo !== undefined) { rgo(Number(t.dataset.rgo)); return; }
+  if (t.dataset.wmode) { S.wmode = t.dataset.wmode; S.slide = null; render(); window.scrollTo({ top: 0 }); return; }
+  if (t.dataset.revcap !== undefined) {
+    const v = Number(t.dataset.revcap); S.profile.revCap = v; save(S.profileRef, { revCap: v });
+    const d = S.day;
+    if (d && d.date === today() && Array.isArray(d.review) && !Object.keys(d.rmarks || {}).length) { delete d.review; S.ridx = 0; S.wmode = null; S.ridxDate = null; buildReview(); }
+    render(); return;
+  }
   if (t.dataset.filter) { S.bookFilter = t.dataset.filter; render(); return; }
   if (t.dataset.book) { S.openBook = S.openBook === t.dataset.book ? null : t.dataset.book; render(); return; }
   if (t.dataset.unbook) { unbook(t.dataset.unbook); render(); return; }
@@ -1250,6 +1489,7 @@ document.addEventListener('click', e => {
   else if (act === 'gen-read' || act === 'new-read') { if (S.gen.read !== S.date) { S.day.reading = null; generateReading(); } }
   else if (act === 'grade') gradeReading();
   else if (act === 'redo') { S.day.grading = null; S.day.answers = {}; S.justDone = false; save(S.dayRef, { grading: null, answers: {} }); syncCal(); render(); }
+  else if (act === 'load-cards') { Object.keys(S.cards).forEach(k => { if (S.cards[k] === false) delete S.cards[k]; }); ensureCards(); render(); }
   else if (act === 'stop-speak') { try { speechSynthesis.cancel(); } catch (e) {} }
   else if (act === 'ask-regen') { S.confirmRegen = true; render(); }
   else if (act === 'cancel-regen') { S.confirmRegen = false; render(); }
@@ -1260,7 +1500,7 @@ document.addEventListener('click', e => {
       await openDate(today());
       Object.assign(S.day, emptyProg(), { lemmas: [], words: [], reading: null, level: S.settings.level });
       S.content = null; S.idx = 0; S.view = 'words';
-      save(S.dayRef, emptyProg(), true);
+      save(S.dayRef, { ...emptyProg(), ...(Array.isArray(S.day.review) ? { review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0 } : {}) }, true);
       generateWords();
     })();
   }
@@ -1293,6 +1533,7 @@ document.addEventListener('touchend', e => {
   const p = e.changedTouches[0], dx = p.clientX - sw.x, dy = p.clientY - sw.y, dt = Date.now() - sw.t; sw = null;
   if (dt > 700 || Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
   const sel = getSelection(); if (sel && !sel.isCollapsed) return;
+  if (wmode() === 'rev') { const nj = S.ridx + (dx < 0 ? 1 : -1); if (nj >= 0 && S.ridx < S.day.review.length) rgo(nj); return; }
   const ni = S.idx + (dx < 0 ? 1 : -1);
   if (ni >= 0 && S.idx < S.day.lemmas.length) go(ni);
 }, { passive: true });
@@ -1318,6 +1559,12 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && !pop.hidden) { closePop(); return; }
   if (S.view !== 'words' || !S.day || e.target.closest('textarea,input')) return;
   const map = { '1': 'k', '2': 'f', '3': 'u' };
+  if (wmode() === 'rev') {
+    if (map[e.key] && S.ridx < S.day.review.length) rmark(S.ridx, map[e.key]);
+    else if (e.key === 'ArrowRight') rgo(S.ridx + 1);
+    else if (e.key === 'ArrowLeft') rgo(S.ridx - 1);
+    return;
+  }
   if (map[e.key] && S.idx < S.day.lemmas.length) mark(S.idx, map[e.key]);
   else if (e.key === 'ArrowRight') go(S.idx + 1);
   else if (e.key === 'ArrowLeft') go(S.idx - 1);
