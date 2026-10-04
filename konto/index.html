@@ -24,8 +24,8 @@ body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1
 .tabs button{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-size:15px;padding:8px 0;border-radius:7px;cursor:pointer}
 .tabs button[aria-selected=true]{background:var(--card);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
 label{display:block;font-size:13px;color:var(--muted);margin:12px 0 4px}
-input,select{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
-input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
+input{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
+input:focus{outline:2px solid var(--accent);outline-offset:-1px}
 .row{display:flex;gap:8px}.row input{flex:1;min-width:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;margin-top:18px;border:0;border-radius:10px;padding:12px;font:inherit;font-weight:600;background:var(--accent);color:var(--accent-ink);cursor:pointer}
 .btn.ghost{background:none;border:1px solid var(--line);color:var(--ink);font-weight:500}
@@ -39,8 +39,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
 [hidden]{display:none!important}
 html.embed body{padding:0;background:transparent;min-height:0;display:block}html.embed .wrap{max-width:none}
 html.embed .brand,html.embed .lead,html.embed .nav,html.embed #back{display:none}
-/* the dictionary's 设置 has its own 整句翻译来源 card; ?embed=1&setup=translate still shows this one */
-html.embed:not(.tr) #tr{display:none}
+
 html.embed .card{border-radius:12px}
 .box{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:14px}
 .box p{margin:0 0 10px}.box .acts{display:flex;gap:8px}.box .btn{margin:0;padding:10px}
@@ -51,7 +50,6 @@ html.embed .card{border-radius:12px}
 // embedded in the dictionary's 设置: follow its 外观 choice (ww.theme: '' | 'light' | 'dark')
 if (new URLSearchParams(location.search).get('embed') === '1') {
   document.documentElement.classList.add('embed');
-  if (new URLSearchParams(location.search).get('setup') === 'translate') document.documentElement.classList.add('tr');
   const theme = () => { let t = ''; try { t = JSON.parse(localStorage.getItem('ww.theme') || '""'); } catch (e) {}
     if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
   theme(); addEventListener('storage', e => { if (e.key === 'ww.theme') theme(); });
@@ -59,7 +57,7 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
 </script>
 <div class="wrap">
   <p class="brand">Deutsch <span class="tag">lernen</span></p>
-  <p class="lead">注册后，每日学习的进度、打卡记录、生词本和词典的收藏会保存在你的账号里，手机和电脑登录同一个账号就能同步。</p>
+  <p class="lead">注册后，每日学习的进度、打卡记录、生词本、词典的收藏和翻译设置会保存在你的账号里，手机和电脑登录同一个账号就能同步。</p>
 
   <div class="card" id="out">
     <div class="tabs" role="tablist">
@@ -117,38 +115,6 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
       <div class="acts"><button class="btn" type="button" id="merge-yes">并入此账号</button><button class="btn ghost" type="button" id="merge-no">暂不</button></div>
     </div>
     <a class="btn" id="back" href="../">继续学习</a>
-    <details style="margin-top:18px" id="tr">
-      <summary style="cursor:pointer;color:var(--muted);font-size:14px">句子翻译设置 <span id="tr-state"></span></summary>
-      <form data-form="translate">
-        <p class="note">词典里翻译整句时，默认用网站自带的免费翻译（Cloudflare Workers AI），不用设置。想要更准的翻译，可以接上你自己的翻译源，之后整句翻译都走它。密钥只保存在服务器上，网页里看不到。</p>
-        <label for="t-preset">翻译源</label>
-        <select id="t-preset">
-          <option value="default">网站自带（免费，不用设置）</option>
-          <optgroup label="推荐 · 有免费额度">
-            <option value="zhipu">智谱 GLM-4-Flash（免费）</option>
-            <option value="silicon">硅基流动 Qwen2.5-7B（免费）</option>
-            <option value="deepl">DeepL 免费版（每月 50 万字符）</option>
-          </optgroup>
-          <optgroup label="更准 · 按量付费，很便宜">
-            <option value="deepseek">DeepSeek</option>
-            <option value="qwen">通义千问（阿里云百炼）</option>
-            <option value="kimi">Kimi（月之暗面）</option>
-            <option value="openai">OpenAI</option>
-          </optgroup>
-          <option value="other">其他（填任意兼容 OpenAI 格式的 API）</option>
-        </select>
-        <div class="box" id="t-guide" hidden></div>
-        <input type="hidden" name="provider">
-        <div id="t-openai" hidden>
-          <label for="t-url">接口地址</label><input id="t-url" name="url" type="url" placeholder="https://api.example.com/v1" autocomplete="off">
-          <label for="t-model">模型名</label><input id="t-model" name="model" autocomplete="off">
-        </div>
-        <div id="t-keyrow" hidden>
-          <label for="t-key">API 密钥</label><input id="t-key" name="key" type="password" autocomplete="off">
-        </div>
-        <div class="row" style="margin-top:18px"><button class="btn ghost" type="submit" style="margin:0">保存</button><button class="btn ghost" type="button" id="t-test" style="margin:0">测试翻译</button></div>
-      </form>
-    </details>
     <details style="margin-top:18px">
       <summary style="cursor:pointer;color:var(--muted);font-size:14px">修改密码</summary>
       <form data-form="password">
@@ -207,7 +173,7 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
     finally { btns.forEach(b => b.disabled = false); }
   }
   // after signing in: go back to the page that sent us here, unless there is signed-out data to decide about
-  const done = () => { if (next && !S.localPending() && params.get('setup') !== 'translate') location.href = next; else { show(); S.pull(); } };
+  const done = () => { if (next && !S.localPending()) location.href = next; else { show(); S.pull(); } };
   const samePw = f => { if (f.password.value !== f.password2.value) throw new Error('两次输入的密码不一样'); };
 
   document.addEventListener('submit', e => {
@@ -231,7 +197,6 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
         history.replaceState(null, '', location.pathname + (next ? '?next=' + encodeURIComponent(next) : ''));
         done();
       }
-      if (f.dataset.form === 'translate') { await saveTr(); say(tf.provider.value ? '翻译源已保存。' : '已改回网站自带的免费翻译。', 'ok', '#msg2'); }
       if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
     });
   });
@@ -269,71 +234,6 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
   }));
   $('#merge-no').addEventListener('click', () => { mergeAsked = true; show(); });
 
-  // ---- 句子翻译接口. Presets fill provider/url/model; the dictionary's 立即设置 links here as ?setup=translate[&preset=id]
-  const PRESETS = {
-    default: { provider: '' },
-    zhipu: { provider: 'openai', url: 'https://open.bigmodel.cn/api/paas/v4', model: 'glm-4-flash', site: 'https://open.bigmodel.cn', name: '智谱开放平台',
-      steps: ['打开 open.bigmodel.cn，用手机号注册并登录（需要实名认证）。', '右上角头像 →“API Keys”→“添加新的 API Key”，复制密钥。', 'GLM-4-Flash 是免费模型，不用充值。'] },
-    silicon: { provider: 'openai', url: 'https://api.siliconflow.cn/v1', model: 'Qwen/Qwen2.5-7B-Instruct', site: 'https://cloud.siliconflow.cn', name: '硅基流动',
-      steps: ['打开 cloud.siliconflow.cn，用手机号注册并登录。', '左侧“API 密钥”→“新建 API 密钥”，复制以 sk- 开头的密钥。', 'Qwen2.5-7B-Instruct 是免费模型，不用充值。'] },
-    deepl: { provider: 'deepl', site: 'https://www.deepl.com/pro-api', name: 'DeepL API',
-      steps: ['打开 deepl.com/pro-api，注册“DeepL API Free”（需要绑一张银行卡做验证，不扣费）。', '账户页 →“API Keys”，复制以 :fx 结尾的密钥。', '每月 50 万字符免费，翻译质量很好。'] },
-    deepseek: { provider: 'openai', url: 'https://api.deepseek.com', model: 'deepseek-chat', site: 'https://platform.deepseek.com', name: 'DeepSeek 开放平台',
-      steps: ['打开 platform.deepseek.com，用手机号注册并登录，充值几块钱（翻译用量很小）。', '左侧“API keys”→“创建 API key”，复制以 sk- 开头的密钥。'] },
-    qwen: { provider: 'openai', url: 'https://dashscope.aliyuncs.com/compatible-mode/v1', model: 'qwen-plus', site: 'https://bailian.console.aliyun.com', name: '阿里云百炼',
-      steps: ['打开阿里云百炼控制台，用阿里云账号登录并开通服务（新用户有免费额度）。', '右上角“API-KEY”→“创建 API-KEY”，复制密钥。'] },
-    kimi: { provider: 'openai', url: 'https://api.moonshot.cn/v1', model: 'moonshot-v1-8k', site: 'https://platform.moonshot.cn', name: 'Kimi 开放平台',
-      steps: ['打开 platform.moonshot.cn，注册登录并充值。', '“API Key 管理”→“新建”，复制以 sk- 开头的密钥。'] },
-    openai: { provider: 'openai', url: 'https://api.openai.com/v1', model: 'gpt-4o-mini', site: 'https://platform.openai.com/api-keys', name: 'OpenAI（国内需要代理）',
-      steps: ['在 platform.openai.com 创建 API key 并绑定付款方式。'] },
-    other: { provider: 'openai', url: '', model: '',
-      steps: ['填任何兼容 OpenAI 格式（/chat/completions）的服务：接口地址一般以 /v1 结尾，再填模型名和密钥。', '例如自建的 One API / New API 中转、火山方舟、讯飞星火、OpenRouter 等。'] },
-  };
-  const tf = $('form[data-form=translate]');
-  let trLoaded = false, saved = {};
-  const presetOf = c => !c.provider ? 'default' : c.provider === 'deepl' ? 'deepl'
-    : Object.keys(PRESETS).find(k => PRESETS[k].url && PRESETS[k].url === c.url && PRESETS[k].model === c.model) || 'other';
-  function showPreset(id, keep) {
-    const p = PRESETS[id] || PRESETS.default;
-    $('#t-preset').value = id;
-    tf.provider.value = p.provider;
-    if (!keep && p.provider === 'openai') { tf.url.value = p.url || ''; tf.model.value = p.model || ''; }
-    $('#t-openai').hidden = p.provider !== 'openai';
-    $('#t-keyrow').hidden = !p.provider;
-    // a saved key only carries over to the same service
-    const same = saved.provider === p.provider && (p.provider === 'deepl' || keep || saved.url === tf.url.value);
-    tf.key.placeholder = same && saved.keyHint ? '已保存（' + saved.keyHint + '），不改就留空' : '粘贴你的 API 密钥';
-    const g = $('#t-guide');
-    g.hidden = !p.steps;
-    if (p.steps) g.innerHTML = '<p style="font-weight:600">怎么设置</p><ol style="padding-left:18px;margin:0">'
-      + p.steps.map(t => '<li>' + t + '</li>').join('')
-      + '<li>把密钥粘到下面的“API 密钥”，点“测试翻译”，看到译文就成功了。</li></ol>'
-      + (p.site ? '<p style="margin:8px 0 0"><a href="' + p.site + '" target="_blank" rel="noopener">打开' + p.name + ' ↗</a></p>' : '');
-  }
-  function trForm(c) {
-    saved = c;
-    tf.url.value = c.url || ''; tf.model.value = c.model || ''; tf.key.value = '';
-    showPreset(presetOf(c), true);
-    $('#tr-state').textContent = c.provider ? '· 用你自己的翻译源' : '· 网站自带';
-  }
-  $('#t-preset').addEventListener('change', e => showPreset(e.target.value, false));
-  function openTr(preset) {
-    $('#tr').open = true;
-    if (!trLoaded) { trLoaded = true; S.getTranslateConfig().then(c => { trForm(c); if (preset && PRESETS[preset]) showPreset(preset, false); }, e => say(e.message, 'err', '#msg2')); }
-    $('#tr').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-  $('#tr').addEventListener('toggle', () => { if ($('#tr').open && !trLoaded) openTr(); });
-  async function saveTr() {
-    const c = await S.setTranslateConfig({ provider: tf.provider.value, url: tf.url.value.trim(), model: tf.model.value.trim(), key: tf.key.value.trim() });
-    trForm(c);
-  }
-  $('#t-test').addEventListener('click', () => busy(tf, async () => {
-    await saveTr();
-    say('正在测试…', '', '#msg2');
-    const r = await S.translate('Wer rastet, der rostet.');
-    say('测试成功（' + (r.source === 'custom' ? '你的翻译源' : '网站自带翻译') + '）：Wer rastet, der rostet. → ' + r.text, 'ok', '#msg2');
-  }));
-
   $('#logout').addEventListener('click', async () => { await S.logout(); show(); tab('login'); });
 
   // opened from the reset email: email and code come in the link, only the new password is asked
@@ -350,7 +250,6 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
   if (params.get('embed') === '1' && window.parent !== window) {
     const post = () => window.parent.postMessage({ type: 'dl-konto-height', h: document.documentElement.scrollHeight }, location.origin);
     new ResizeObserver(post).observe(document.body);
-    document.querySelectorAll('.lead + .card a, #t-guide a').forEach(a => a.target = '_blank');
   }
   show();
   // opened from the confirmation email
@@ -359,11 +258,6 @@ if (new URLSearchParams(location.search).get('embed') === '1') {
     history.replaceState(null, '', location.pathname);
     if (!S.user()) S.verify(t).then(() => { say(''); show(); say('邮箱已确认，欢迎！', 'ok', '#msg2'); }, e => say(e.message, 'err'));
   }
-  if (params.get('setup') === 'translate') {
-    if (S.user()) openTr(params.get('preset'));
-    else say('先登录或注册，登录后会自动打开句子翻译设置。', 'ok');
-  }
-  S.onChange(() => { if (params.get('setup') === 'translate' && S.user() && !trLoaded) openTr(params.get('preset')); });
 })();
 </script>
 </body>

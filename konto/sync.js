@@ -24,7 +24,7 @@
   const SK = 'dl-account', QK = 'dl-sync-queue', CUR = 'dl-space';
   // everything the site keeps per learner (plus the upload queue): swapped as one space
   const TK = 'deutsch-taeglich-db-v1';
-  const LOCAL_KEYS = [TK, 'deutsch-taeglich-cache-v1', 'ww.book', 'ww.history', QK];
+  const LOCAL_KEYS = [TK, 'deutsch-taeglich-cache-v1', 'ww.book', 'ww.history', 'ww.model', QK];
   const rawSet = Storage.prototype.setItem;
   const load = (k, d) => { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } };
   const save = (k, v) => { try { rawSet.call(localStorage, k, JSON.stringify(v)); } catch (e) {} };
@@ -241,13 +241,13 @@
     },
   };
 
-  // the dictionary keeps 生词本 and 查词历史 in localStorage (ww.book / ww.history)
-  const WW = { 'ww.book': 'book', 'ww.history': 'history' };
+  // the dictionary keeps 生词本, 查词历史 and its 整句翻译 model ({url, name, key}) in localStorage
+  const WW = { 'ww.book': 'book', 'ww.history': 'history', 'ww.model': 'model' };
   Storage.prototype.setItem = function (k, v) {
     rawSet.call(this, k, v);
     if (this === localStorage && WW[k]) { try { window.DLSync.changed('w/' + WW[k], JSON.parse(v)); } catch (e) {} }
   };
-  const WWINV = { book: 'ww.book', history: 'ww.history' };
+  const WWINV = { book: 'ww.book', history: 'ww.history', model: 'ww.model' };
   window.DLSync.bind('w/', {
     apply(path, data) {
       if (!WWINV[path]) return;
@@ -274,12 +274,15 @@
     if (acct.token) pull();
   });
 
-  // account panel inside a page: <div data-dl-settings></div> (or data-dl-settings="translate" to open 句子翻译设置)
+  // account panel inside a page: <div data-dl-settings></div>, or the dictionary's 设置 tab slot #konto-slot
+  // (re-rendered by the page, which then dispatches 'ww:settings')
   function embedPanels() {
+    const slot = document.getElementById('konto-slot');
+    if (slot && !slot.querySelector('[data-dl-settings]')) { slot.innerHTML = ''; const d = document.createElement('div'); d.setAttribute('data-dl-settings', ''); slot.appendChild(d); }
     document.querySelectorAll('[data-dl-settings]:not([data-dl-filled])').forEach(el => {
       el.setAttribute('data-dl-filled', '');
       const f = document.createElement('iframe');
-      f.src = ROOT + 'konto/?embed=1' + (el.getAttribute('data-dl-settings') === 'translate' ? '&setup=translate' : '');
+      f.src = ROOT + 'konto/?embed=1';
       f.title = '账号与同步';
       f.style.cssText = 'width:100%;border:0;display:block;height:420px;background:transparent';
       f.setAttribute('allowtransparency', 'true');
@@ -290,6 +293,7 @@
     if (e.origin !== location.origin || !e.data || e.data.type !== 'dl-konto-height') return;
     document.querySelectorAll('[data-dl-settings] iframe').forEach(f => { if (f.contentWindow === e.source) f.style.height = e.data.h + 'px'; });
   });
+  document.addEventListener('ww:settings', embedPanels);
   const startEmbeds = () => { embedPanels(); new MutationObserver(embedPanels).observe(document.body, { childList: true, subtree: true }); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startEmbeds); else startEmbeds();
 
