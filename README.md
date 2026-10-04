@@ -20,6 +20,7 @@
 - `woerterbuch/`：词典页（由构建脚本生成）、词库 `wortwurzel.json`、离线版
 - `quelle/taeglich/artifact.html`：每日学习页的 claude.ai 原版源码；`Deutsch-taeglich.bat` 是打开 claude.ai 版的 Windows 启动器
 - `quelle/woerterbuch/`：词典源文件（SCHEMA.md、页面模板、build.py、分批词条 parts/）
+- `fonts/`：网页用的字体（本地副本，国内打不开 Google Fonts）；`tools/fonts.py` 重新下载它们
 - `tools/build_site.py`：从 `quelle/` 生成网页；`tools/shim.js`：让原版页面脱离 claude.ai 运行的本地存储层
 
 更新网页：改 `quelle/` 里的源文件后运行 `python3 tools/build_site.py`，提交推送即可。
