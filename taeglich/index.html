@@ -2,9 +2,7 @@
 <link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#f2c200">
 <script src="shim.js"></script>
 <title>Deutsch täglich</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../fonts/bab05cd78a.css">
 <style>
 /* Layout: Reclam-yellow study booklet. Desktop = left rail + card/detail columns; phone = top bar + bottom tab bar, one column. */
 :root{
@@ -944,7 +942,7 @@ const dayName = () => S.date === today() ? '今日' : fmtShort(S.date);
 const artCls = g => (g === 'der' || g === 'die' || g === 'das') ? g : '';
 /* Wortwurzel dictionary deep link. The artifact host only passes [A-Za-z0-9._~-] in the hash,
    so every other UTF-8 byte is written as ~XX (the dictionary decodes it back). */
-const DICT_URL = 'https://claude.ai/artifact/Fkmyc6Kp1nx7QRgFyZ54RM';
+const DICT_URL = '../woerterbuch/';
 function dictHash(word) {
   let o = '';
   for (const b of new TextEncoder().encode(String(word).trim())) o += /[A-Za-z0-9.\-]/.test(String.fromCharCode(b)) && b < 128 ? String.fromCharCode(b) : '~' + b.toString(16).toUpperCase().padStart(2, '0');

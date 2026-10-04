@@ -35,6 +35,8 @@ TAEGLICH_REPLACE = [
      "'这是网页版：每天的题目从网站读取，你的进度、打卡记录和生词本保存在这台设备的浏览器里，手机和电脑各自记录，不互相同步。需要跨设备同步时，请用 claude.ai 上的版本。'"),
     ("简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。",
      "网页版不调用 Claude：选择题自动判分，简答题显示参考答案供你自查。"),
+    # 查词典 opens the site's own dictionary (claude.ai is not reachable everywhere, e.g. mainland China)
+    ("const DICT_URL = 'https://claude.ai/artifact/Fkmyc6Kp1nx7QRgFyZ54RM';", "const DICT_URL = '../woerterbuch/';"),
 ]
 
 def must_replace(s, old, new, name):
@@ -72,7 +74,35 @@ def build_woerterbuch():
             + page.replace('<div class="app">', '</head><body>\n<div class="app">', 1) + '\n</body></html>')
     open('woerterbuch/index.html', 'w', encoding='utf-8').write(full)
 
+GFONTS = re.compile(r'<link rel="stylesheet" href="(https://fonts\.googleapis\.com/css2\?[^"]+)">')
+PRECONNECT = re.compile(r'<link rel="preconnect" href="https://fonts\.g[^"]*"( crossorigin)?>\n?')
+
+def nonblocking(m):
+    return f'<link rel="stylesheet" href="{m.group(1)}" media="print" onload="this.media=\'all\'">'
+
+def localize_fonts():
+    """Point the pages at the fonts copied into fonts/ (tools/fonts.py). fonts.googleapis.com
+    is blocked in mainland China and a blocked stylesheet keeps the page blank until it times out."""
+    fmap = json.load(open('fonts/map.json', encoding='utf-8'))
+    def local(prefix):
+        def sub(m):
+            css = fmap.get(m.group(1).replace('&amp;', '&'))
+            if not css:
+                print(f'WARNING fonts: {m.group(1)[:70]}… not in fonts/map.json (run tools/fonts.py); loading it non-blocking', file=sys.stderr)
+                return nonblocking(m)
+            return f'<link rel="stylesheet" href="{prefix}fonts/{css}">'
+        return sub
+    for page, prefix in [('index.html', ''), ('taeglich/index.html', '../'), ('woerterbuch/index.html', '../')]:
+        s = open(page, encoding='utf-8').read()
+        open(page, 'w', encoding='utf-8').write(GFONTS.sub(local(prefix), PRECONNECT.sub('', s)))
+    # the offline file is opened on its own (no fonts/ next to it): load the web fonts without blocking
+    off = 'woerterbuch/Wortwurzel离线版.html'
+    if os.path.exists(off):
+        s = open(off, encoding='utf-8').read()
+        open(off, 'w', encoding='utf-8').write(GFONTS.sub(nonblocking, PRECONNECT.sub('', s)))
+
 build_taeglich()
 build_index()
 build_woerterbuch()
+localize_fonts()
 print('ok')
