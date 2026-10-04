@@ -79,6 +79,7 @@ def build_woerterbuch():
     page = must_replace(page, "history = store.get('history', []), book = store.get('book', []);",
                         "history = store.get('history', []), book = store.get('book', []);\n"
                         "window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []);"
+                        " history = (Array.isArray(history) ? history : []).map(h => typeof h === 'string' ? { k: h, n: 1, t: 0 } : h).filter(h => h && (h.k || h.q));"
                         " if (tab === 'book') renderBook(); else if (tab === 'search' && !current && !q.value.trim()) renderHome(); };", 'woerterbuch')
     # 登录 / 已同步 link in the header (label kept current by konto/sync.js)
     page = must_replace(page, '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>',

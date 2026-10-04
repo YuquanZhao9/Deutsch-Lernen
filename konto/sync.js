@@ -167,6 +167,19 @@
   window.DLSync.bind('w/', {
     apply(path, data) {
       if (!WWINV[path]) return;
+      if (path === 'history' && Array.isArray(data)) {
+        // merge with this device's history by entry ({k} headword or {q} text): keep the higher count and the latest time
+        const norm = a => (Array.isArray(a) ? a : []).map(h => typeof h === 'string' ? { k: h, n: 1, t: 0 } : h).filter(h => h && (h.k || h.q));
+        const key = h => h.k ? 'k:' + h.k : 'q:' + h.q;
+        const m = new Map();
+        for (const h of norm(data).concat(norm(load('ww.history', [])))) {
+          const o = m.get(key(h));
+          m.set(key(h), !o ? h : { ...(h.t >= o.t ? h : o), n: Math.max(h.n || 1, o.n || 1), t: Math.max(h.t || 0, o.t || 0) });
+        }
+        const merged = [...m.values()].sort((a, b) => (b.t || 0) - (a.t || 0)).slice(0, 200);
+        if (JSON.stringify(merged) !== JSON.stringify(data)) setTimeout(() => window.DLSync.changed('w/history', merged), 0);
+        data = merged;
+      }
       if (data == null) localStorage.removeItem(WWINV[path]); else rawSet.call(localStorage, WWINV[path], JSON.stringify(data));
       if (typeof window.__wwReload === 'function') window.__wwReload();
     },
