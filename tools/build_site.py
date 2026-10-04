@@ -68,6 +68,8 @@ def build_index():
 
 def build_woerterbuch():
     page = open('quelle/woerterbuch/index.html', encoding='utf-8').read()
+    # 每日学习 switches to the site's own daily page
+    page = must_replace(page, "const DAILY_URL = 'https://claude.ai/artifact/Q59g6KiDtPyirydA3PfDTo';", "const DAILY_URL = '../taeglich/';", 'woerterbuch')
     full = ('<!doctype html>\n<html lang="zh-CN"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' + HEAD +
             '\n<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>\n'
