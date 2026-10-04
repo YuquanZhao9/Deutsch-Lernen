@@ -1,0 +1,2154 @@
+[
+{
+"w": "Stimme",
+"pos": "n",
+"gen": "f",
+"pl": "Stimmen",
+"gs": "der Stimme",
+"ipa": "ˈʃtɪmə",
+"lvl": "A2",
+"senses": [
+{
+"zh": "嗓音，声音；（音乐）声部",
+"de": "Fähigkeit zu sprechen und zu singen; Klang der Stimme; Stimmlage",
+"ex": [
+{
+"de": "Sie hat eine sehr angenehme Stimme.",
+"zh": "她的嗓音很好听。"
+},
+{
+"de": "Nach dem Konzert war seine Stimme völlig heiser.",
+"zh": "音乐会后他的嗓子完全哑了。"
+}
+]
+},
+{
+"zh": "（选举、表决中的）票，选票；表决权",
+"de": "Votum bei einer Wahl oder Abstimmung",
+"ex": [
+{
+"de": "Die Partei hat bei der Wahl viele Stimmen verloren.",
+"zh": "该党在选举中丢了很多票。"
+}
+]
+},
+{
+"zh": "（公众中的）意见，声音",
+"de": "Meinung, Äußerung",
+"ex": [
+{
+"de": "Es werden immer mehr kritische Stimmen laut.",
+"zh": "批评的声音越来越多。"
+}
+]
+}
+],
+"use": [
+"mit lauter / leiser Stimme sprechen — 大声 / 小声说话",
+"seine Stimme abgeben — 投票；sich der Stimme enthalten — 投弃权票",
+"die Stimme heben / senken — 提高 / 压低嗓门",
+"die innere Stimme — 内心的声音"
+],
+"root": "Stimm·e：单纯词词干 stimm- + -e；动词 stimmen（原义“出声、命名”，后引申为“定音、相符、投票”）由此派生",
+"fam": [
+"stimmen",
+"abstimmen",
+"Stimmung",
+"einstimmig",
+"Bestimmung"
+],
+"ety": "中古高地德语 stimme < 古高地德语 stimma, stimna；哥特语 stibna。",
+"cog": "古英 stefn（声音）；荷 stem",
+"tip": "“声音”泛指响声时用 Geräusch / Klang / Laut，Stimme 只指人或动物发出的嗓音；“投票”是 seine Stimme abgeben，不说 *eine Stimme geben。"
+},
+{
+"w": "Spende",
+"pos": "n",
+"gen": "f",
+"pl": "Spenden",
+"gs": "der Spende",
+"ipa": "ˈʃpɛndə",
+"lvl": "B1",
+"senses": [
+{
+"zh": "捐款，捐赠；捐献（物）",
+"de": "freiwillige Gabe von Geld oder Sachen für einen guten Zweck",
+"ex": [
+{
+"de": "Die Organisation finanziert sich ausschließlich durch Spenden.",
+"zh": "这个组织完全依靠捐款维持运作。"
+},
+{
+"de": "Jede Spende, auch eine kleine, hilft.",
+"zh": "每一笔捐款，哪怕再少，都有帮助。"
+}
+]
+}
+],
+"use": [
+"eine Spende für + A / an + A — 为……的捐款 / 捐给……",
+"Spenden sammeln — 募捐；um Spenden bitten — 请求捐助",
+"Blutspende / Organspende / Sachspende — 献血 / 器官捐献 / 实物捐赠",
+"Spendenkonto, Spendenquittung — 捐款账户、捐款收据（可抵税）"
+],
+"root": "Spend·e：由 spenden（捐赠）派生的名词",
+"fam": [
+"spenden",
+"Spender",
+"Spendenaktion",
+"spendabel"
+],
+"ety": "中古高地德语 spende < 古高地德语 spenta, spenda < 中古拉丁语 spenda，属 spendere（支出）< 拉丁语 expendere（付出，花费）。",
+"cog": "英 spend；拉 expendere",
+"tip": "Spende 是自愿捐款；“捐助、资助”企业行为常用 Sponsoring；“献血者、捐献者”是 der Spender。"
+},
+{
+"w": "Export",
+"pos": "n",
+"gen": "m",
+"pl": "Exporte",
+"gs": "des Export(e)s",
+"ipa": "ɛksˈpɔʁt",
+"lvl": "B1",
+"senses": [
+{
+"zh": "出口，输出（不可数）",
+"de": "Ausfuhr von Waren ins Ausland",
+"ex": [
+{
+"de": "Deutschland lebt zu einem großen Teil vom Export.",
+"zh": "德国很大程度上依赖出口。"
+},
+{
+"de": "Der Export von Waffen ist streng reguliert.",
+"zh": "武器出口受到严格管制。"
+}
+]
+},
+{
+"zh": "出口商品；（计算机）导出",
+"de": "ausgeführte Ware; Ausgabe von Daten in ein anderes Format",
+"ex": [
+{
+"de": "Die Exporte nach China sind im letzten Quartal gesunken.",
+"zh": "上季度对华出口有所下降。"
+}
+]
+}
+],
+"use": [
+"der Export von etw. (D) in / nach … — 某物向……的出口",
+"vom Export abhängig sein — 依赖出口",
+"Exportweltmeister, Exportüberschuss — 出口冠军、出口顺差",
+"动词 exportieren；同义德语词 die Ausfuhr"
+],
+"root": "Ex·port：拉丁语 ex-（向外）+ portare（搬运）→“运出去”",
+"fam": [
+"exportieren",
+"Import",
+"Exporteur",
+"Ausfuhr"
+],
+"ety": "借自英语 export（动词 to export），后者 < 拉丁语 exportare（运出）。",
+"cog": "英 export；法 exportation；拉 exportare",
+"tip": "重音在第二音节 ɛksˈpɔʁt；复数 die Exporte 指出口额或出口货物。"
+},
+{
+"w": "Import",
+"pos": "n",
+"gen": "m",
+"pl": "Importe",
+"gs": "des Import(e)s",
+"ipa": "ɪmˈpɔʁt",
+"lvl": "B1",
+"senses": [
+{
+"zh": "进口，输入（不可数）",
+"de": "Einfuhr von Waren aus dem Ausland",
+"ex": [
+{
+"de": "Das Land ist beim Erdgas stark vom Import abhängig.",
+"zh": "该国天然气严重依赖进口。"
+},
+{
+"de": "Der Import bestimmter Lebensmittel ist verboten.",
+"zh": "某些食品禁止进口。"
+}
+]
+},
+{
+"zh": "进口商品；（计算机）导入",
+"de": "eingeführte Ware; Übernahme von Daten",
+"ex": [
+{
+"de": "Billige Importe setzen die heimischen Hersteller unter Druck.",
+"zh": "廉价进口商品给本国厂商带来压力。"
+}
+]
+}
+],
+"use": [
+"der Import von etw. (D) aus … — 从……进口某物",
+"Importzoll, Importverbot — 进口关税、进口禁令",
+"动词 importieren；同义德语词 die Einfuhr",
+"Import / Export — 进出口（常并列）"
+],
+"root": "Im·port：拉丁语 in-（向内，在 p 前同化为 im-）+ portare（搬运）→“运进来”",
+"fam": [
+"importieren",
+"Export",
+"Importeur",
+"Einfuhr"
+],
+"ety": "借自英语 import，后者 < 拉丁语 importare（运进，带入）。",
+"cog": "英 import；拉 importare",
+"tip": "重音在第二音节 ɪmˈpɔʁt；英语 import 还有“重要性”之义，德语 Import 没有。"
+},
+{
+"w": "okay",
+"pos": "part",
+"ipa": "oˈkeː",
+"lvl": "A1–A2",
+"senses": [
+{
+"zh": "好的，行（表示同意）",
+"de": "einverstanden, in Ordnung",
+"ex": [
+{
+"de": "Wir treffen uns um acht. – Okay, bis dann!",
+"zh": "我们八点见。——好的，回头见！"
+},
+{
+"de": "Okay, dann machen wir es so.",
+"zh": "好吧，那我们就这么办。"
+}
+]
+},
+{
+"zh": "（作表语）还行，没问题；不错",
+"de": "(ugs.) gut, akzeptabel",
+"ex": [
+{
+"de": "Das Essen war okay, aber nichts Besonderes.",
+"zh": "饭菜还行，但没什么特别的。"
+}
+]
+}
+],
+"use": [
+"Ist das okay für dich? — 你觉得这样可以吗？",
+"Mir geht's okay. — 我还行。",
+"写法：okay / o. k. / O. K.",
+"名词 das Okay：sein Okay geben — 同意、批准"
+],
+"root": "借自美式英语的缩写词，不可再拆",
+"fam": [
+"das Okay",
+"okay sein"
+],
+"ety": "借自美式英语 OK / okay；起源说法很多，一般认为源自 19 世纪 30 年代美国报刊对 all correct 的戏谑拼写 oll korrect 的缩写。",
+"cog": "英 OK, okay",
+"tip": "口语中极常用，但正式书信、商务邮件中宜换成 einverstanden / in Ordnung；一般只作表语或独立使用，作定语（ein okayer Preis）属很随便的口语。"
+},
+{
+"w": "na",
+"pos": "part",
+"ipa": "na",
+"lvl": "A1–A2",
+"senses": [
+{
+"zh": "（打招呼、开启话题）嗯，那么，怎么样",
+"de": "(ugs.) einleitend bei Begrüßung oder Frage",
+"ex": [
+{
+"de": "Na, wie war dein Urlaub?",
+"zh": "怎么样，假期过得好吗？"
+},
+{
+"de": "Na, alles klar?",
+"zh": "嘿，一切都好吧？"
+}
+]
+},
+{
+"zh": "（催促、安慰、不耐烦）好啦，喂",
+"de": "Aufforderung, Beschwichtigung, Ungeduld",
+"ex": [
+{
+"de": "Na komm, wir sind schon spät dran!",
+"zh": "快点来吧，我们已经晚了！"
+}
+]
+},
+{
+"zh": "（表示让步、怀疑、终于如愿）好吧；瞧，我说吧",
+"de": "Ausdruck von Zögern, Zweifel, Bestätigung",
+"ex": [
+{
+"de": "Na also, es geht doch!",
+"zh": "瞧，这不是行了嘛！"
+}
+]
+}
+],
+"use": [
+"Na ja … — 嗯，还行吧 / 好吧（迟疑、保留）",
+"Na und? — 那又怎样？",
+"Na also! / Na bitte! — 瞧，我说吧！",
+"Na gut. — 那好吧（勉强同意）；Na, na! — 喂喂（警告、劝阻）"
+],
+"root": "口语感叹小品词，不可再拆",
+"fam": [
+"na ja",
+"na also",
+"nanu"
+],
+"ety": "口语感叹词，词源不详；一说与 nun 或 nein 有关。",
+"cog": "荷 nou（用法相近，并非确证同源）",
+"tip": "na 几乎只用于口语，语义完全靠语调：升调 Na? 是打招呼，降调 Na ja 表示保留。Na? 作为问候只对熟人用。"
+},
+{
+"w": "tja",
+"pos": "part",
+"ipa": "tja",
+"lvl": "B1",
+"senses": [
+{
+"zh": "（表示无奈、遗憾）唉，没办法",
+"de": "(ugs.) Ausdruck der Resignation",
+"ex": [
+{
+"de": "Tja, da kann man nichts machen.",
+"zh": "唉，这也没办法。"
+},
+{
+"de": "Tja, Pech gehabt.",
+"zh": "唉，算你倒霉。"
+}
+]
+},
+{
+"zh": "（表示犹豫、思考）这个嘛，嗯",
+"de": "Ausdruck des Zögerns, Nachdenkens",
+"ex": [
+{
+"de": "Was machen wir jetzt? – Tja, gute Frage.",
+"zh": "我们现在怎么办？——这个嘛，问得好。"
+}
+]
+}
+],
+"use": [
+"多位于句首，后加逗号",
+"Tja, so ist das Leben. — 唉，生活就是这样。",
+"与 na ja 近义，但 tja 更强调无奈或耸肩的态度"
+],
+"root": "口语感叹小品词，不可再拆",
+"fam": [
+"ja",
+"na ja"
+],
+"ety": "口语感叹词，一般认为是 ja 的变体（前加 t- 音），具体来历不详。",
+"cog": "—",
+"tip": "tja 带有“耸耸肩”的意味，对别人的不幸说 Tja 可能显得幸灾乐祸或冷漠，要注意场合。"
+},
+{
+"w": "ach",
+"pos": "part",
+"ipa": "ax",
+"lvl": "A1–A2",
+"senses": [
+{
+"zh": "（恍然大悟）啊，噢",
+"de": "Ausdruck plötzlicher Erkenntnis",
+"ex": [
+{
+"de": "Ach so, jetzt verstehe ich!",
+"zh": "啊，原来如此，现在我明白了！"
+},
+{
+"de": "Ach, du bist das!",
+"zh": "噢，是你呀！"
+}
+]
+},
+{
+"zh": "（表示惊讶、遗憾、痛苦、叹息）唉，哎呀",
+"de": "Ausdruck von Bedauern, Schmerz, Erstaunen",
+"ex": [
+{
+"de": "Ach, wie schade!",
+"zh": "唉，真可惜！"
+}
+]
+},
+{
+"zh": "（表示不以为然）哪儿的话，算了吧",
+"de": "Ausdruck der Ablehnung, Abwehr",
+"ex": [
+{
+"de": "Ach was, das ist doch nicht so schlimm.",
+"zh": "哪儿的话，没那么糟。"
+}
+]
+}
+],
+"use": [
+"Ach so! — 原来如此！",
+"Ach was! / Ach wo! — 哪里，哪儿的话（否定对方的担心）",
+"Ach je! / Ach du liebe Zeit! — 哎呀！天哪！",
+"mit Ach und Krach — 好不容易，勉强（如 die Prüfung mit Ach und Krach bestehen）"
+],
+"root": "拟声感叹词，不可再拆",
+"fam": [
+"ach so",
+"ächzen",
+"Ach und Weh"
+],
+"ety": "中古高地德语 ach，拟声感叹词。",
+"cog": "英 ah（拟声，平行形成）",
+"tip": "Ach so 是中国学习者最该掌握的反馈语：听懂对方解释时说 Ach so!，比单说 Ja 更自然。"
+},
+{
+"w": "oh",
+"pos": "part",
+"ipa": "oː",
+"lvl": "A1",
+"senses": [
+{
+"zh": "（表示惊讶、喜悦、遗憾等）哦，啊，噢",
+"de": "Ausdruck von Überraschung, Freude, Bedauern",
+"ex": [
+{
+"de": "Oh, das ist aber eine schöne Überraschung!",
+"zh": "哦，这可真是个惊喜！"
+},
+{
+"de": "Oh nein, ich habe meinen Schlüssel vergessen!",
+"zh": "哎呀不好，我忘带钥匙了！"
+}
+]
+}
+],
+"use": [
+"Oh je! / Oje! — 哎呀（表示遗憾、担心）",
+"Oh nein! — 哦不！",
+"Oh, Entschuldigung! — 哦，对不起！",
+"写法：单独感叹多写 oh，呼语前（诗歌、宗教）多写 o：O Gott!"
+],
+"root": "拟声感叹词，不可再拆",
+"fam": [
+"oje",
+"ach"
+],
+"ety": "拟声感叹词，中古高地德语已有 ō；一般认为也受拉丁语 o 影响。",
+"cog": "英 oh, O；拉 o",
+"tip": "德语 oh 读长音 [oː]，不是英语的双元音 [oʊ]。"
+},
+{
+"w": "Handyhülle",
+"pos": "n",
+"gen": "f",
+"pl": "Handyhüllen",
+"gs": "der Handyhülle",
+"ipa": "ˈhɛndiˌhʏlə",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "手机壳，手机套",
+"de": "Schutzhülle für ein Mobiltelefon",
+"ex": [
+{
+"de": "Die Handyhülle hat das Display beim Sturz geschützt.",
+"zh": "手机摔落时手机壳保护了屏幕。"
+},
+{
+"de": "Ich hätte gern eine durchsichtige Handyhülle.",
+"zh": "我想要一个透明的手机壳。"
+}
+]
+}
+],
+"use": [
+"eine Handyhülle aus Silikon / Leder — 硅胶 / 皮质手机壳",
+"Klapphülle — 翻盖式手机套；Panzerglas / Schutzfolie — 钢化膜 / 保护膜",
+"同义：Handytasche（多指袋式）、Schutzhülle"
+],
+"root": "Handy（手机）+ Hülle（套，外壳）",
+"fam": [
+"Handy",
+"Hülle",
+"verhüllen",
+"enthüllen"
+],
+"ety": "复合词：Handy 是德语中借英语成分构成的“伪英语词”（英语说 mobile phone / cell phone）；Hülle < 中古高地德语 hülle，属 hüllen（包裹）。",
+"cog": "英 hull（壳，一般认为与 Hülle 同源）",
+"tip": "Handy 读 [ˈhɛndi]；英国人、美国人不说 handy 指手机。"
+},
+{
+"w": "Ladegerät",
+"pos": "n",
+"gen": "n",
+"pl": "Ladegeräte",
+"gs": "des Ladegerät(e)s",
+"ipa": "ˈlaːdəɡəˌʁɛːt",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "充电器",
+"de": "Gerät zum Aufladen von Akkus",
+"ex": [
+{
+"de": "Hast du ein Ladegerät für mein Handy?",
+"zh": "你有能给我手机充电的充电器吗？"
+},
+{
+"de": "Ich habe mein Ladegerät im Hotel vergessen.",
+"zh": "我把充电器落在酒店了。"
+}
+]
+}
+],
+"use": [
+"das Handy (auf)laden — 给手机充电",
+"Ladekabel — 充电线；Netzteil — 电源适配器；Powerbank — 充电宝",
+"Der Akku ist leer. — 电池没电了。"
+],
+"root": "lad(en)（装载；充电）+ -e-（连接）+ Gerät（器具）",
+"fam": [
+"laden",
+"aufladen",
+"Ladekabel",
+"Gerät"
+],
+"ety": "复合词：laden < 古高地德语 hladan（装载）；Gerät < 中古高地德语 geræte（器具）。",
+"cog": "英 load（与 laden 意义相近，词源关系有争议）；英 lade（同源）",
+"tip": "“充电”用 laden / aufladen，不说 *das Handy elektrisieren；“插上电源”是 einstecken / ans Netz hängen。"
+},
+{
+"w": "Gefrierschrank",
+"pos": "n",
+"gen": "m",
+"pl": "Gefrierschränke",
+"gs": "des Gefrierschrank(e)s",
+"ipa": "ɡəˈfʁiːɐ̯ʃʁaŋk",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "冷冻柜，冰柜（立式）",
+"de": "Schrank zum Tiefgefrieren von Lebensmitteln",
+"ex": [
+{
+"de": "Das Fleisch kommt sofort in den Gefrierschrank.",
+"zh": "肉马上放进冰柜。"
+},
+{
+"de": "Im Keller steht ein zweiter Gefrierschrank.",
+"zh": "地下室里还有一台冰柜。"
+}
+]
+}
+],
+"use": [
+"etw. einfrieren / auftauen — 冷冻 / 解冻某物",
+"Gefrierfach — 冰箱冷冻室；Gefriertruhe — 卧式冰柜",
+"Kühlschrank — 冰箱（冷藏）；Kühl-Gefrier-Kombination — 冷藏冷冻一体冰箱"
+],
+"root": "gefrier(en)（冻结）+ Schrank（柜子）",
+"fam": [
+"gefrieren",
+"frieren",
+"Gefrierfach",
+"Kühlschrank",
+"Schrank"
+],
+"ety": "复合词：gefrieren 由前缀 ge- + frieren（冷，冻）构成；Schrank < 中古高地德语 schranc（栅栏，隔间）。",
+"cog": "英 freeze（与 frieren 同源）",
+"tip": "Kühlschrank 是冷藏（约 4 °C），Gefrierschrank 是冷冻（约 −18 °C），不可混用。"
+},
+{
+"w": "Wasserkocher",
+"pos": "n",
+"gen": "m",
+"pl": "Wasserkocher",
+"gs": "des Wasserkochers",
+"ipa": "ˈvasɐˌkɔxɐ",
+"lvl": "A2",
+"senses": [
+{
+"zh": "电热水壶，烧水壶",
+"de": "elektrisches Gerät zum Erhitzen von Wasser",
+"ex": [
+{
+"de": "Ich mache schnell den Wasserkocher an, dann gibt es Tee.",
+"zh": "我快去把热水壶打开，马上就有茶喝了。"
+},
+{
+"de": "Der Wasserkocher muss regelmäßig entkalkt werden.",
+"zh": "电热水壶需要定期除水垢。"
+}
+]
+}
+],
+"use": [
+"Wasser kochen — 烧水；Das Wasser kocht. — 水开了",
+"den Wasserkocher an- / ausschalten — 打开 / 关闭热水壶",
+"entkalken — 除水垢"
+],
+"root": "Wasser（水）+ Koch-er（烧煮的器具；-er 表工具）",
+"fam": [
+"kochen",
+"Koch",
+"Kocher",
+"Wasser"
+],
+"ety": "复合词：kochen < 古高地德语 kochōn，借自拉丁语 coquere（烹煮）；Wasser < 古高地德语 wazzar。",
+"cog": "英 water, cook",
+"tip": "单复数同形：ein Wasserkocher, zwei Wasserkocher。"
+},
+{
+"w": "Teelöffel",
+"pos": "n",
+"gen": "m",
+"pl": "Teelöffel",
+"gs": "des Teelöffels",
+"ipa": "ˈteːˌlœfl̩",
+"lvl": "A2",
+"senses": [
+{
+"zh": "茶匙，小勺；（菜谱计量）一茶匙",
+"de": "kleiner Löffel; Maßangabe in Rezepten (Abk. TL)",
+"ex": [
+{
+"de": "Geben Sie einen Teelöffel Salz dazu.",
+"zh": "加入一茶匙盐。"
+},
+{
+"de": "Ich brauche noch einen Teelöffel für den Kaffee.",
+"zh": "我还需要一把小勺搅咖啡。"
+}
+]
+}
+],
+"use": [
+"缩写 TL：1 TL Backpulver — 一茶匙泡打粉",
+"ein gestrichener / gehäufter Teelöffel — 平平的 / 堆尖的一茶匙",
+"Esslöffel (EL) — 汤匙"
+],
+"root": "Tee（茶）+ Löffel（勺）",
+"fam": [
+"Löffel",
+"Esslöffel",
+"Tee"
+],
+"ety": "复合词：Tee 经荷兰语 thee、马来语 te(h) 借自闽南语“茶”(te)；Löffel < 古高地德语 leffil。",
+"cog": "英 teaspoon",
+"tip": "计量时不用 von：ein Teelöffel Zucker（不说 *ein Teelöffel von Zucker）。"
+},
+{
+"w": "Esslöffel",
+"pos": "n",
+"gen": "m",
+"pl": "Esslöffel",
+"gs": "des Esslöffels",
+"ipa": "ˈɛsˌlœfl̩",
+"lvl": "A2",
+"senses": [
+{
+"zh": "汤匙，大勺；（菜谱计量）一汤匙",
+"de": "großer Löffel zum Essen; Maßangabe in Rezepten (Abk. EL)",
+"ex": [
+{
+"de": "Zwei Esslöffel Öl in der Pfanne erhitzen.",
+"zh": "在平底锅中加热两汤匙油。"
+},
+{
+"de": "Die Suppe isst man mit dem Esslöffel.",
+"zh": "喝汤用汤匙。"
+}
+]
+}
+],
+"use": [
+"缩写 EL：3 EL Mehl — 三汤匙面粉",
+"ein gehäufter Esslöffel — 堆尖的一汤匙",
+"Teelöffel (TL) — 茶匙"
+],
+"root": "ess(en)（吃）+ Löffel（勺）",
+"fam": [
+"Löffel",
+"Teelöffel",
+"essen"
+],
+"ety": "复合词：essen < 古高地德语 ezzan；Löffel < 古高地德语 leffil。",
+"cog": "英 eat；英 tablespoon（意义对应）",
+"tip": "注意拼写 Esslöffel 为双 s（旧拼写 Eßlöffel）。"
+},
+{
+"w": "Schneidebrett",
+"pos": "n",
+"gen": "n",
+"pl": "Schneidebretter",
+"gs": "des Schneidebrett(e)s",
+"ipa": "ˈʃnaɪ̯dəˌbʁɛt",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "砧板，切菜板",
+"de": "Brett, auf dem man Lebensmittel schneidet",
+"ex": [
+{
+"de": "Leg die Zwiebeln auf das Schneidebrett und schneide sie klein.",
+"zh": "把洋葱放到砧板上切碎。"
+},
+{
+"de": "Für rohes Fleisch nehme ich ein eigenes Schneidebrett.",
+"zh": "生肉我用单独的砧板。"
+}
+]
+}
+],
+"use": [
+"etw. auf dem Schneidebrett schneiden / hacken — 在砧板上切 / 剁",
+"ein Schneidebrett aus Holz / Kunststoff — 木质 / 塑料砧板",
+"同义：Brettchen（小砧板，早餐用）"
+],
+"root": "schneid(en)（切）+ -e-（连接）+ Brett（板）",
+"fam": [
+"schneiden",
+"Brett",
+"Messer",
+"Frühstücksbrett"
+],
+"ety": "复合词：schneiden < 古高地德语 snīdan；Brett < 古高地德语 bret。",
+"cog": "古英 snīþan（切，与 schneiden 同源）",
+"tip": "Brett 的复数是 Bretter（不是 *Brette）。"
+},
+{
+"w": "Spülmittel",
+"pos": "n",
+"gen": "n",
+"pl": "Spülmittel",
+"gs": "des Spülmittels",
+"ipa": "ˈʃpyːlˌmɪtl̩",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "洗洁精，洗碗液",
+"de": "Reinigungsmittel zum Geschirrspülen",
+"ex": [
+{
+"de": "Ein paar Tropfen Spülmittel reichen völlig.",
+"zh": "几滴洗洁精就足够了。"
+},
+{
+"de": "Wir brauchen neues Spülmittel und Schwämme.",
+"zh": "我们需要新的洗洁精和海绵。"
+}
+]
+}
+],
+"use": [
+"(das) Geschirr spülen / abwaschen — 洗碗",
+"Spülmaschine / Geschirrspüler — 洗碗机；Spültabs — 洗碗机洗涤块",
+"Spülbecken / Spüle — 水槽"
+],
+"root": "spül(en)（冲洗）+ Mittel（剂，手段）",
+"fam": [
+"spülen",
+"Spüle",
+"Spülmaschine",
+"Mittel",
+"Waschmittel"
+],
+"ety": "复合词：spülen < 中古高地德语 spüelen；Mittel < 中古高地德语 mittel（中间物 → 手段）。",
+"cog": "—",
+"tip": "Mittel 在复合词中常译为“剂”：Spülmittel, Waschmittel, Putzmittel, Arzneimittel；单复数同形。"
+},
+{
+"w": "Waschmittel",
+"pos": "n",
+"gen": "n",
+"pl": "Waschmittel",
+"gs": "des Waschmittels",
+"ipa": "ˈvaʃˌmɪtl̩",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "洗衣粉，洗衣液，洗涤剂",
+"de": "Mittel zum Waschen von Wäsche",
+"ex": [
+{
+"de": "Für Wolle brauchst du ein spezielles Waschmittel.",
+"zh": "洗羊毛制品需要专门的洗涤剂。"
+},
+{
+"de": "Zu viel Waschmittel schadet der Umwelt.",
+"zh": "洗涤剂用得太多会污染环境。"
+}
+]
+}
+],
+"use": [
+"Waschpulver / Flüssigwaschmittel — 洗衣粉 / 洗衣液",
+"Weichspüler — 衣物柔顺剂",
+"Wäsche waschen — 洗衣服；die Waschmaschine anstellen — 开洗衣机"
+],
+"root": "wasch(en)（洗）+ Mittel（剂）",
+"fam": [
+"waschen",
+"Wäsche",
+"Waschmaschine",
+"Spülmittel"
+],
+"ety": "复合词：waschen < 古高地德语 waskan。",
+"cog": "英 wash",
+"tip": "Waschmittel 专指洗衣用；洗手用 Seife，洗碗用 Spülmittel。"
+},
+{
+"w": "Putzmittel",
+"pos": "n",
+"gen": "n",
+"pl": "Putzmittel",
+"gs": "des Putzmittels",
+"ipa": "ˈpʊt͡sˌmɪtl̩",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "清洁剂",
+"de": "Reinigungsmittel für den Haushalt",
+"ex": [
+{
+"de": "Putzmittel gehören nicht in die Hände von Kindern.",
+"zh": "清洁剂不应让儿童接触。"
+},
+{
+"de": "Mit diesem Putzmittel wird das Bad wieder sauber.",
+"zh": "用这种清洁剂浴室又会干干净净。"
+}
+]
+}
+],
+"use": [
+"putzen — 打扫，擦洗（南德、奥地利常用；北德也说 sauber machen）",
+"Allzweckreiniger — 多用途清洁剂；Glasreiniger — 玻璃清洁剂",
+"Putzfrau / Reinigungskraft — 清洁工"
+],
+"root": "putz(en)（清洁，擦拭）+ Mittel（剂）",
+"fam": [
+"putzen",
+"Putzfrau",
+"Spülmittel",
+"Waschmittel"
+],
+"ety": "复合词：putzen 由中古高地德语 butze（污物、团块）派生，原义“去除污物”；该来历一般如此解释，细节不详。",
+"cog": "—",
+"tip": "同义的 Reinigungsmittel 更正式，常见于商品标签。"
+},
+{
+"w": "Bürste",
+"pos": "n",
+"gen": "f",
+"pl": "Bürsten",
+"gs": "der Bürste",
+"ipa": "ˈbʏʁstə",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "刷子",
+"de": "Gegenstand mit Borsten zum Reinigen oder Kämmen",
+"ex": [
+{
+"de": "Die Schuhe putzt man am besten mit einer weichen Bürste.",
+"zh": "擦鞋最好用软刷子。"
+},
+{
+"de": "Ich habe meine Bürste zu Hause vergessen.",
+"zh": "我把梳子（发刷）忘在家里了。"
+}
+]
+}
+],
+"use": [
+"Haarbürste / Zahnbürste / Klobürste — 发刷 / 牙刷 / 马桶刷",
+"bürsten — 刷：sich die Haare bürsten",
+"Kamm — 梳子（有齿无毛）"
+],
+"root": "Bürst·e：与 Borste（鬃毛）同源，“用鬃毛做成的工具”",
+"fam": [
+"bürsten",
+"Borste",
+"Zahnbürste",
+"Haarbürste"
+],
+"ety": "中古高地德语 bürste，属 Borste（鬃毛）。",
+"cog": "英 bristle（与 Borste 有亲缘关系，一般认为如此）",
+"tip": "梳头用的发刷是 Haarbürste，有齿的梳子是 Kamm。"
+},
+{
+"w": "Föhn",
+"pos": "n",
+"gen": "m",
+"pl": "Föhne",
+"gs": "des Föhn(e)s",
+"ipa": "føːn",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "吹风机",
+"de": "elektrisches Gerät zum Trocknen der Haare",
+"ex": [
+{
+"de": "Im Hotelzimmer gibt es einen Föhn.",
+"zh": "酒店房间里有吹风机。"
+},
+{
+"de": "Kannst du mir mal deinen Föhn leihen?",
+"zh": "能借我用一下你的吹风机吗？"
+}
+]
+},
+{
+"zh": "焚风（阿尔卑斯山北麓干暖的下坡风）",
+"de": "warmer, trockener Fallwind, bes. am Nordrand der Alpen",
+"ex": [
+{
+"de": "Bei Föhn kann man von München aus die Alpen sehen.",
+"zh": "刮焚风时从慕尼黑能看到阿尔卑斯山。"
+}
+]
+}
+],
+"use": [
+"sich die Haare föhnen — 吹干头发",
+"Föhnwetter / Föhnlage — 焚风天气",
+"an Föhn leiden / föhnfühlig sein — 对焚风敏感（头痛等）",
+"拼写：Fön 作为商标写法仍可见；通用写法为 Föhn"
+],
+"root": "单纯词：源自风名；吹风机义由“吹出暖风的器具”引申而来",
+"fam": [
+"föhnen",
+"Föhnwetter",
+"Haartrockner"
+],
+"ety": "焚风义：中古高地德语 phönne < 古高地德语 phōnno < 通俗拉丁语 *faonius < 拉丁语 favonius（温和的西风）。吹风机义源自以该风命名的商标 Fön，现通用 Föhn。",
+"cog": "拉 favonius",
+"tip": "“吹干头发”说 (sich) die Haare föhnen，正式也可说 Haartrockner。"
+},
+{
+"w": "Rasierer",
+"pos": "n",
+"gen": "m",
+"pl": "Rasierer",
+"gs": "des Rasierers",
+"ipa": "ʁaˈziːʁɐ",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "剃须刀（尤指电动剃须刀）",
+"de": "(ugs.) Rasierapparat, bes. elektrischer",
+"ex": [
+{
+"de": "Er hat zum Geburtstag einen neuen Rasierer bekommen.",
+"zh": "他生日收到了一把新剃须刀。"
+},
+{
+"de": "Der Akku vom Rasierer ist leer.",
+"zh": "剃须刀的电池没电了。"
+}
+]
+}
+],
+"use": [
+"Elektrorasierer / Nassrasierer — 电动剃须刀 / 手动剃须刀",
+"sich rasieren — 刮胡子；sich (D) die Beine rasieren — 刮腿毛",
+"Rasierklinge, Rasierschaum — 剃须刀片、剃须泡沫"
+],
+"root": "rasier(en)（剃，刮）+ -er（工具后缀）",
+"fam": [
+"rasieren",
+"Rasur",
+"Rasierklinge",
+"Rasierapparat"
+],
+"ety": "rasieren < 荷兰语 raseren < 法语 raser（刮，剃），经通俗拉丁语来自拉丁语 radere（刮，削；过去分词 rasum）。",
+"cog": "英 razor, erase；法 raser",
+"tip": "rasieren 的重音在 -ier-：raˈziːʁən；“刮胡子”须用反身：Ich rasiere mich。"
+},
+{
+"w": "Taschentuch",
+"pos": "n",
+"gen": "n",
+"pl": "Taschentücher",
+"gs": "des Taschentuch(e)s",
+"ipa": "ˈtaʃn̩ˌtuːx",
+"lvl": "A2",
+"senses": [
+{
+"zh": "手帕；纸巾（多为 Papiertaschentuch）",
+"de": "kleines Tuch aus Stoff oder Papier zum Naseputzen",
+"ex": [
+{
+"de": "Hast du mal ein Taschentuch für mich?",
+"zh": "你有纸巾吗？给我一张。"
+},
+{
+"de": "Sie wischte sich mit einem Taschentuch die Tränen ab.",
+"zh": "她用手帕擦去眼泪。"
+}
+]
+}
+],
+"use": [
+"sich (D) die Nase putzen — 擤鼻涕",
+"Papiertaschentuch / Stofftaschentuch — 纸巾 / 布手帕",
+"口语常以品牌名 Tempo 泛指纸巾",
+"Serviette — 餐巾（纸）；Küchenrolle — 厨房纸"
+],
+"root": "Tasche（口袋）+ -n-（连接）+ Tuch（布）→“放在口袋里的布”",
+"fam": [
+"Tasche",
+"Tuch",
+"Handtuch",
+"Halstuch"
+],
+"ety": "复合词：Tasche < 古高地德语 tasca（来历不详）；Tuch < 古高地德语 tuoh。",
+"cog": "—",
+"tip": "擦嘴用的餐巾纸是 Serviette，擦鼻涕的才是 Taschentuch；Tuch 复数 Tücher（变元音）。"
+},
+{
+"w": "Pausenbrot",
+"pos": "n",
+"gen": "n",
+"pl": "Pausenbrote",
+"gs": "des Pausenbrot(e)s",
+"ipa": "ˈpaʊ̯zn̩ˌbʁoːt",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "（学校或工作间歇吃的）课间面包，夹心面包便当",
+"de": "belegtes Brot, das man für die Pause mitnimmt",
+"ex": [
+{
+"de": "Die Mutter packt den Kindern jeden Morgen ein Pausenbrot ein.",
+"zh": "妈妈每天早上给孩子们装好课间吃的面包。"
+},
+{
+"de": "Er hat sein Pausenbrot zu Hause liegen lassen.",
+"zh": "他把午间点心落在家里了。"
+}
+]
+}
+],
+"use": [
+"Brotdose / Brotbox — 饭盒（装面包的盒子）",
+"ein Brot schmieren / belegen — 抹面包 / 做夹心面包",
+"地区变体：Stulle（柏林）、Jause（奥地利，泛指点心）、Znüni（瑞士）"
+],
+"root": "Pause（休息）+ -n-（连接）+ Brot（面包）",
+"fam": [
+"Pause",
+"Brot",
+"Butterbrot",
+"Brotdose"
+],
+"ety": "复合词：Pause < 拉丁语 pausa < 希腊语 paûsis（停止）；Brot < 古高地德语 brōt。",
+"cog": "英 pause, bread",
+"tip": "德国学生课间（große Pause）通常自带 Pausenbrot，学校午餐另称 Mittagessen / Mensa。"
+},
+{
+"w": "einwerfen",
+"pos": "v",
+"ipa": "ˈaɪ̯nˌvɛʁfn̩",
+"lvl": "B1",
+"forms": "wirft ein · warf ein · hat eingeworfen",
+"sep": true,
+"senses": [
+{
+"zh": "投入（信件入信箱、硬币入投币口）",
+"de": "in eine Öffnung werfen",
+"ex": [
+{
+"de": "Kannst du bitte den Brief einwerfen?",
+"zh": "你能把这封信投进信箱吗？"
+},
+{
+"de": "Bitte zwei Euro einwerfen.",
+"zh": "请投入两欧元。"
+}
+]
+},
+{
+"zh": "（扔东西）砸破（玻璃窗）",
+"de": "durch Werfen zerbrechen",
+"ex": [
+{
+"de": "Jugendliche haben die Fensterscheibe eingeworfen.",
+"zh": "几个年轻人把窗玻璃砸破了。"
+}
+]
+},
+{
+"zh": "插话，（插嘴）提出",
+"de": "als Bemerkung dazwischen sagen",
+"ex": [
+{
+"de": "„Das ist zu teuer“, warf sie ein.",
+"zh": "“这太贵了，”她插话说。"
+}
+]
+}
+],
+"use": [
+"einen Brief in den Briefkasten einwerfen — 把信投入信箱",
+"eine Münze in den Automaten einwerfen — 往机器里投硬币",
+"jmdm. die Fenster einwerfen — 砸某人的窗户",
+"(Fußball) den Ball einwerfen — 掷界外球；名词 der Einwurf"
+],
+"root": "ein-（入内）+ werfen（扔）",
+"fam": [
+"werfen",
+"Einwurf",
+"Einwand",
+"Wurf"
+],
+"ety": "werfen < 中古高地德语 werfen < 古高地德语 werfan。",
+"cog": "英 warp（原义“扔”，一般认为同源）",
+"tip": "wirft ein（三单变元音 e→i）；插话义常见于直接引语后：…, warf er ein。表示“反对意见”用名词 Einwand（einwenden）。"
+},
+{
+"w": "gähnen",
+"pos": "v",
+"ipa": "ˈɡɛːnən",
+"lvl": "B1",
+"forms": "gähnt · gähnte · hat gegähnt",
+"sep": false,
+"senses": [
+{
+"zh": "打哈欠",
+"de": "den Mund weit öffnen und tief einatmen, z. B. aus Müdigkeit",
+"ex": [
+{
+"de": "Er gähnte während der ganzen Besprechung.",
+"zh": "他整个会议期间都在打哈欠。"
+},
+{
+"de": "Gähnen ist ansteckend.",
+"zh": "打哈欠是会传染的。"
+}
+]
+},
+{
+"zh": "（书面）（深渊等）张着大口；空荡荡",
+"de": "(geh.) weit offen sein; leer sein",
+"ex": [
+{
+"de": "Im Stadion herrschte gähnende Leere.",
+"zh": "体育场里空空荡荡。"
+}
+]
+}
+],
+"use": [
+"herzhaft gähnen — 大大地打个哈欠",
+"sich (D) die Hand vor den Mund halten — 用手捂嘴（礼貌）",
+"gähnende Leere — 空无一人",
+"ein gähnender Abgrund — 张着大口的深渊"
+],
+"root": "单纯动词词干 gähn- + -en",
+"fam": [
+"Gähnen",
+"Gähnerei",
+"gähnend"
+],
+"ety": "中古高地德语 ginen, genen < 古高地德语 ginēn；ä 和 h 为近代拼写。",
+"cog": "英 yawn（一般认为同源）",
+"tip": "拼写 gähnen 带 h，读长音 [ɛː]；注意与 Gänse（鹅）读音区别。"
+},
+{
+"w": "hinfallen",
+"pos": "v",
+"ipa": "ˈhɪnˌfalən",
+"lvl": "A2",
+"forms": "fällt hin · fiel hin · ist hingefallen",
+"sep": true,
+"senses": [
+{
+"zh": "摔倒，跌倒",
+"de": "zu Boden fallen, stürzen",
+"ex": [
+{
+"de": "Das Kind ist hingefallen und hat sich das Knie aufgeschlagen.",
+"zh": "孩子摔倒了，磕破了膝盖。"
+},
+{
+"de": "Pass auf, dass du auf dem Eis nicht hinfällst!",
+"zh": "小心别在冰上摔倒！"
+}
+]
+},
+{
+"zh": "（东西）掉到地上",
+"de": "zu Boden fallen (Gegenstand)",
+"ex": [
+{
+"de": "Mir ist die Tasse hingefallen.",
+"zh": "我的杯子掉地上了。"
+}
+]
+}
+],
+"use": [
+"完成时用 sein：Ich bin hingefallen.",
+"jmdm. fällt etw. hin — 某人的某物掉了（三格表示“谁的”）",
+"近义：stürzen（较正式）、umfallen（翻倒，倒下）、ausrutschen（滑倒）"
+],
+"root": "hin-（向那边、向下）+ fallen（落下）",
+"fam": [
+"fallen",
+"umfallen",
+"Fall",
+"herunterfallen"
+],
+"ety": "fallen < 中古高地德语 vallen < 古高地德语 fallan。",
+"cog": "英 fall；荷 vallen",
+"tip": "强变化：fällt · fiel · ist gefallen；“摔倒”是 hinfallen，“滑倒”是 ausrutschen，“（站着的东西）倒下”是 umfallen。"
+},
+{
+"w": "jobben",
+"pos": "v",
+"ipa": "ˈd͡ʒɔbn̩",
+"lvl": "B1",
+"forms": "jobbt · jobbte · hat gejobbt",
+"sep": false,
+"senses": [
+{
+"zh": "（口）打零工，做兼职",
+"de": "(ugs.) vorübergehend gegen Bezahlung arbeiten",
+"ex": [
+{
+"de": "In den Semesterferien jobbt sie in einem Café.",
+"zh": "学期假期里她在一家咖啡馆打工。"
+},
+{
+"de": "Viele Studierende müssen neben dem Studium jobben.",
+"zh": "很多大学生得一边读书一边打工。"
+}
+]
+}
+],
+"use": [
+"als Kellner / bei einer Firma jobben — 当服务员 / 在某公司打工",
+"Nebenjob, Ferienjob, Minijob — 副业、假期工、迷你工作（低薪兼职）",
+"正式说法：eine Nebentätigkeit ausüben"
+],
+"root": "Job（工作）+ -en（动词词尾），辅音字母重叠",
+"fam": [
+"Job",
+"Nebenjob",
+"Minijob",
+"Jobber"
+],
+"ety": "由 Job 派生；Job 借自英语 job。",
+"cog": "英 job",
+"tip": "读 [ˈdʒɔbn̩]，j 按英语发音；jobben 指临时打工，正式就业用 arbeiten / tätig sein。"
+},
+{
+"w": "pflücken",
+"pos": "v",
+"ipa": "ˈp͡flʏkn̩",
+"lvl": "B1",
+"forms": "pflückt · pflückte · hat gepflückt",
+"sep": false,
+"senses": [
+{
+"zh": "采，摘（花、果实、茶叶等）",
+"de": "Blumen, Obst o. Ä. abreißen und sammeln",
+"ex": [
+{
+"de": "Im Herbst pflücken wir Äpfel im Garten.",
+"zh": "秋天我们在花园里摘苹果。"
+},
+{
+"de": "Die Kinder haben ihr einen Strauß Blumen gepflückt.",
+"zh": "孩子们给她采了一束花。"
+}
+]
+}
+],
+"use": [
+"Blumen / Obst / Erdbeeren pflücken — 采花 / 摘水果 / 摘草莓",
+"jmdm. etw. pflücken — 为某人摘某物",
+"Erdbeeren zum Selbstpflücken — 自采草莓（农场）"
+],
+"root": "单纯动词词干 pflück- + -en",
+"fam": [
+"Pflücker",
+"Erntehelfer",
+"zupfen"
+],
+"ety": "中古高地德语 pflücken < 古高地德语 pflukken；一说经通俗拉丁语 *piluccare（拔毛）借入，最终与拉丁语 pilus（毛发）有关。",
+"cog": "英 pluck（一般认为同源或同出一源）",
+"tip": "pf 要发成塞擦音 [pf]，不要读成 [f]；“采蘑菇”多说 Pilze sammeln，不用 pflücken。"
+},
+{
+"w": "verreisen",
+"pos": "v",
+"ipa": "fɛɐ̯ˈʁaɪ̯zn̩",
+"lvl": "A2",
+"forms": "verreist · verreiste · ist verreist",
+"sep": false,
+"senses": [
+{
+"zh": "出门旅行，外出（离开家一段时间）",
+"de": "eine Reise machen, für einige Zeit wegfahren",
+"ex": [
+{
+"de": "Wir verreisen über Ostern nach Italien.",
+"zh": "复活节期间我们去意大利旅行。"
+},
+{
+"de": "Herr Braun ist zurzeit geschäftlich verreist.",
+"zh": "布劳恩先生目前出差在外。"
+}
+]
+}
+],
+"use": [
+"verreist sein — 出门在外，不在家",
+"geschäftlich / privat verreisen — 出差 / 私人旅行",
+"与 reisen 区别：verreisen 强调“离开家去某处”，reisen 指旅行这一活动本身"
+],
+"root": "ver-（离开，远去）+ reisen（旅行）",
+"fam": [
+"reisen",
+"Reise",
+"abreisen",
+"Reisebüro"
+],
+"ety": "reisen < 中古高地德语 reisen < 古高地德语 reisōn（准备出发）。",
+"cog": "英 rise（一般认为与 reisen 同源）",
+"tip": "完成时用 sein：Sie ist verreist；不可分动词，过去分词无 ge-。"
+},
+{
+"w": "alkoholfrei",
+"pos": "adj",
+"ipa": "ˈalkohoːlˌfʁaɪ̯",
+"lvl": "A2",
+"forms": "—",
+"senses": [
+{
+"zh": "不含酒精的，无醇的",
+"de": "keinen Alkohol enthaltend",
+"ex": [
+{
+"de": "Haben Sie auch alkoholfreies Bier?",
+"zh": "你们也有无醇啤酒吗？"
+},
+{
+"de": "Auf der Feier gab es nur alkoholfreie Getränke.",
+"zh": "庆祝会上只有不含酒精的饮料。"
+}
+]
+}
+],
+"use": [
+"alkoholfreie Getränke — 软饮料",
+"alkoholfreies Bier — 无醇啤酒（法律上可含微量酒精，≤ 0,5 %）",
+"反义：alkoholisch, alkoholhaltig"
+],
+"root": "Alkohol（酒精）+ -frei（无……的）",
+"fam": [
+"Alkohol",
+"alkoholisch",
+"frei",
+"bleifrei"
+],
+"ety": "复合词：Alkohol 经西班牙语、中古拉丁语 alcohol 借自阿拉伯语 al-kuḥl（锑粉，眼影粉），后义转为“提纯物、酒精”；-frei 表“无……”。",
+"cog": "英 alcohol-free",
+"tip": "-frei 结尾的形容词表示“不含……”：zuckerfrei, glutenfrei, rauchfrei；不可比较。"
+},
+{
+"w": "berufstätig",
+"pos": "adj",
+"ipa": "bəˈʁuːfsˌtɛːtɪç",
+"lvl": "A2–B1",
+"forms": "—",
+"senses": [
+{
+"zh": "有职业的，在职的，上班的",
+"de": "einen Beruf ausübend, erwerbstätig",
+"ex": [
+{
+"de": "Beide Eltern sind berufstätig.",
+"zh": "父母都上班。"
+},
+{
+"de": "Für berufstätige Mütter gibt es flexible Arbeitszeiten.",
+"zh": "为在职母亲提供弹性工作时间。"
+}
+]
+}
+],
+"use": [
+"berufstätig sein — 有工作",
+"名词化：der/die Berufstätige — 在职人员",
+"近义：erwerbstätig（统计用语）、beschäftigt；反义：arbeitslos, nicht berufstätig"
+],
+"root": "Beruf（职业）+ -s-（连接）+ tätig（活跃的，从事的）",
+"fam": [
+"Beruf",
+"tätig",
+"Tätigkeit",
+"beruflich"
+],
+"ety": "复合词：Beruf < 中古高地德语 beruof（召唤；路德译经时转义为“天职、职业”）；tätig 属 Tat（行为）。",
+"cog": "—",
+"tip": "berufstätig 作表语或定语，不可比较；“职业的”作定语用 beruflich。"
+},
+{
+"w": "beschäftigt",
+"pos": "adj",
+"ipa": "bəˈʃɛftɪçt",
+"lvl": "A2",
+"forms": "beschäftigter · am beschäftigtsten（少用，多说 sehr beschäftigt）",
+"senses": [
+{
+"zh": "忙的，忙碌的",
+"de": "viel zu tun habend",
+"ex": [
+{
+"de": "Tut mir leid, ich bin gerade sehr beschäftigt.",
+"zh": "抱歉，我现在很忙。"
+},
+{
+"de": "Sie ist eine viel beschäftigte Anwältin.",
+"zh": "她是一位非常忙碌的律师。"
+}
+]
+},
+{
+"zh": "受雇的，就职的",
+"de": "angestellt, in einem Arbeitsverhältnis stehend",
+"ex": [
+{
+"de": "Er ist bei einer Versicherung beschäftigt.",
+"zh": "他在一家保险公司工作。"
+}
+]
+}
+],
+"use": [
+"mit etw. (D) beschäftigt sein — 忙于某事：Ich bin mit dem Umzug beschäftigt.",
+"bei + D beschäftigt sein — 在某单位工作",
+"名词化：der/die Beschäftigte — 雇员，从业人员",
+"动词 beschäftigen（雇用；使忙碌）/ sich mit etw. beschäftigen（研究，从事）"
+],
+"root": "由动词 beschäftigen 的过去分词形容词化：be- + Geschäft（事务）+ -ig + -en",
+"fam": [
+"beschäftigen",
+"Beschäftigung",
+"Beschäftigte",
+"Geschäft",
+"schaffen"
+],
+"ety": "beschäftigen 派生自 Geschäft（事务，生意）；Geschäft < 中古高地德语 gescheft，属 schaffen（做，创造）。",
+"cog": "—",
+"tip": "“我很忙”最常说 Ich habe viel zu tun 或 Ich bin beschäftigt；Ich bin busy 是口语中的英语夹杂。注意介词 mit + D，不用 *für。"
+},
+{
+"w": "sich erkälten",
+"pos": "v",
+"ipa": "ɛɐ̯ˈkɛltn̩",
+"lvl": "A2",
+"forms": "erkältet sich · erkältete sich · hat sich erkältet",
+"sep": false,
+"senses": [
+{
+"zh": "着凉，感冒",
+"de": "sich eine Erkältung zuziehen",
+"ex": [
+{
+"de": "Zieh dich warm an, sonst erkältest du dich!",
+"zh": "穿暖和点，不然会感冒的！"
+},
+{
+"de": "Ich bin erkältet und bleibe heute zu Hause.",
+"zh": "我感冒了，今天待在家里。"
+}
+]
+}
+],
+"use": [
+"erkältet sein — 感冒了（状态，最常用）",
+"sich (D) etw. erkälten — 某部位受凉：sich die Blase erkälten",
+"名词 die Erkältung：eine Erkältung haben / bekommen",
+"Grippe — 流感（比 Erkältung 严重）"
+],
+"root": "er-（使成为）+ kalt（冷）+ -en（动词词尾），元音 a→ä 变音 →“使受冷”",
+"fam": [
+"kalt",
+"Kälte",
+"Erkältung",
+"erkältet"
+],
+"ety": "由 kalt 派生（er- 前缀动词）；kalt < 古高地德语 kalt。",
+"cog": "英 cold；荷 koud",
+"tip": "“我感冒了”说 Ich bin erkältet / Ich habe mich erkältet，不说 *Ich habe kalt。Erkältung 是普通感冒，Grippe 是流感。"
+},
+{
+"w": "fair",
+"pos": "adj",
+"ipa": "fɛːɐ̯",
+"lvl": "B1",
+"forms": "fairer · am fairsten",
+"senses": [
+{
+"zh": "公平的，公正的；光明正大的",
+"de": "anständig, gerecht, den Regeln entsprechend",
+"ex": [
+{
+"de": "Das ist nicht fair, du hast mehr bekommen als ich!",
+"zh": "这不公平，你得到的比我多！"
+},
+{
+"de": "Die Wahl verlief frei und fair.",
+"zh": "选举自由公正地进行。"
+}
+]
+}
+],
+"use": [
+"fair zu jmdm. sein / jmdn. fair behandeln — 公平对待某人",
+"ein fairer Preis / Wettbewerb — 公道的价格 / 公平竞争",
+"fair gehandelt — 公平贸易的（如咖啡）；名词 die Fairness, das Fairplay",
+"反义：unfair"
+],
+"root": "借自英语的单纯形容词",
+"fam": [
+"Fairness",
+"unfair",
+"Fairplay",
+"Fair Trade"
+],
+"ety": "借自英语 fair（公平的）；英语 fair < 古英语 fæger（美丽的）。",
+"cog": "英 fair",
+"tip": "读 [fɛːɐ̯]，类似德语 fähr；德语中只有“公平”义，没有英语 fair 的“金发的、尚可的”等义。"
+},
+{
+"w": "getrennt",
+"pos": "adj",
+"ipa": "ɡəˈtʁɛnt",
+"lvl": "A1–A2",
+"forms": "—",
+"senses": [
+{
+"zh": "分开的，各自的（尤用作副词：分开地）",
+"de": "voneinander geschieden, separat",
+"ex": [
+{
+"de": "Zusammen oder getrennt? – Getrennt, bitte.",
+"zh": "（服务员）一起付还是分开付？——分开付，谢谢。"
+},
+{
+"de": "Den Müll trennen wir: Papier und Plastik kommen getrennt in die Tonnen.",
+"zh": "我们垃圾分类：纸和塑料分别放进不同的桶里。"
+}
+]
+},
+{
+"zh": "（夫妻）分居的",
+"de": "(von Ehepartnern) nicht mehr zusammenlebend",
+"ex": [
+{
+"de": "Ihre Eltern leben seit zwei Jahren getrennt.",
+"zh": "她父母已经分居两年了。"
+}
+]
+}
+],
+"use": [
+"getrennt zahlen / bezahlen — 分开付账（AA）",
+"getrennt leben — 分居；getrennte Kassen — 各管各的钱",
+"getrennt schreiben — 分开写（正字法）；反义 zusammenschreiben",
+"动词 trennen / sich trennen von + D — 分开，分手"
+],
+"root": "trenn(en)（分开）的过去分词 ge-trenn-t 形容词化",
+"fam": [
+"trennen",
+"Trennung",
+"Mülltrennung",
+"sich trennen"
+],
+"ety": "trennen < 中古高地德语 trennen；古高地德语见于 zatrennen 等前缀形式。",
+"cog": "—",
+"tip": "在德国餐馆结账，服务员常问 Zusammen oder getrennt?，回答 getrennt 即各付各的。"
+},
+{
+"w": "krumm",
+"pos": "adj",
+"ipa": "kʁʊm",
+"lvl": "B1",
+"forms": "krummer (auch krümmer) · am krummsten (auch am krümmsten)",
+"senses": [
+{
+"zh": "弯的，弯曲的；歪的",
+"de": "nicht gerade, gebogen",
+"ex": [
+{
+"de": "Der Nagel ist krumm, den kann man nicht mehr verwenden.",
+"zh": "这颗钉子弯了，不能再用了。"
+},
+{
+"de": "Sitz nicht so krumm am Schreibtisch!",
+"zh": "别在书桌前弓着背坐！"
+}
+]
+},
+{
+"zh": "（口）不正当的，歪门邪道的",
+"de": "(ugs.) unredlich, nicht legal",
+"ex": [
+{
+"de": "Der Mann hat schon einige krumme Dinger gedreht.",
+"zh": "这家伙已经干过几桩见不得人的勾当。"
+}
+]
+}
+],
+"use": [
+"eine krumme Nase / ein krummer Rücken — 鹰钩鼻 / 驼背",
+"jmdm. etw. krummnehmen（口）— 因某事生某人的气",
+"krumme Geschäfte machen — 做违法生意；eine krumme Tour — 骗局",
+"sich krumm (und schief) lachen — 笑弯了腰"
+],
+"root": "单纯形容词",
+"fam": [
+"krümmen",
+"Krümmung",
+"verkrümmt",
+"Krummstab"
+],
+"ety": "中古高地德语 krump < 古高地德语 krumb。",
+"cog": "荷 krom；古英 crumb（弯曲的）",
+"tip": "Nimm's mir nicht krumm! — 别生我的气！（口语常用）；比较级 krummer 更常用。"
+},
+{
+"w": "mild",
+"pos": "adj",
+"ipa": "mɪlt",
+"lvl": "B1",
+"forms": "milder · am mildesten",
+"senses": [
+{
+"zh": "（气候、天气）温和的，暖和的",
+"de": "nicht kalt, angenehm warm",
+"ex": [
+{
+"de": "Am Bodensee herrscht ein mildes Klima.",
+"zh": "博登湖地区气候温和。"
+},
+{
+"de": "Für Dezember ist es ungewöhnlich mild.",
+"zh": "对十二月来说，今天格外暖和。"
+}
+]
+},
+{
+"zh": "（味道）清淡的，不辣的；（洗护品）温和的",
+"de": "nicht scharf; schonend",
+"ex": [
+{
+"de": "Ich nehme das Curry bitte mild.",
+"zh": "咖喱请给我做不辣的。"
+}
+]
+},
+{
+"zh": "宽厚的，从轻的",
+"de": "nachsichtig, nicht streng",
+"ex": [
+{
+"de": "Das Gericht verhängte eine milde Strafe.",
+"zh": "法院从轻判罚。"
+}
+]
+}
+],
+"use": [
+"ein milder Winter / Abend — 温和的冬天 / 傍晚",
+"mild gewürzt — 调味清淡；milde Seife — 温和的肥皂",
+"ein mildes Urteil — 从轻判决；milde gesagt — 说得客气点",
+"变体 milde（多见于书面，如 milde Gaben 施舍）"
+],
+"root": "单纯形容词",
+"fam": [
+"Milde",
+"mildern",
+"mildernde Umstände",
+"mildtätig"
+],
+"ety": "中古高地德语 milte, milde < 古高地德语 milti（仁慈的，慷慨的）。",
+"cog": "英 mild；荷 mild",
+"tip": "点菜时“不辣”说 mild 或 nicht scharf；milde gesagt 相当于“说得委婉点”。"
+},
+{
+"w": "möbliert",
+"pos": "adj",
+"ipa": "møˈbliːɐ̯t",
+"lvl": "B1",
+"forms": "—",
+"senses": [
+{
+"zh": "带家具的，配有家具的",
+"de": "mit Möbeln ausgestattet",
+"ex": [
+{
+"de": "Ich suche ein möbliertes Zimmer in Uni-Nähe.",
+"zh": "我在找一间大学附近带家具的房间。"
+},
+{
+"de": "Die Wohnung wird möbliert vermietet.",
+"zh": "这套公寓带家具出租。"
+}
+]
+}
+],
+"use": [
+"möbliert wohnen — 住带家具的房子",
+"möbliertes Zimmer / möblierte Wohnung — 带家具的房间 / 公寓",
+"teilmöbliert — 部分带家具；反义 unmöbliert, leer",
+"动词 möblieren — 布置家具（较少用，常说 einrichten）"
+],
+"root": "möblier(en)（配备家具）的过去分词：Möbel + -ieren",
+"fam": [
+"Möbel",
+"möblieren",
+"Mobiliar",
+"unmöbliert"
+],
+"ety": "möblieren 借自法语 meubler（配备家具），属 meuble（家具）< 中古拉丁语 mobile（可移动的财产）< 拉丁语 mobilis（可移动的）。",
+"cog": "法 meubler, meuble；英 mobile",
+"tip": "租房广告里常缩写 möbl.；读音重音在 -blier-：møˈbliːɐ̯t。"
+},
+{
+"w": "neutral",
+"pos": "adj",
+"ipa": "nɔɪ̯ˈtʁaːl",
+"lvl": "B1",
+"forms": "neutraler · am neutralsten",
+"senses": [
+{
+"zh": "中立的，不偏不倚的",
+"de": "unparteiisch; keinem Bündnis angehörend",
+"ex": [
+{
+"de": "Die Schweiz ist seit Langem ein neutraler Staat.",
+"zh": "瑞士长期以来是中立国。"
+},
+{
+"de": "Als Moderatorin muss sie neutral bleiben.",
+"zh": "作为主持人，她必须保持中立。"
+}
+]
+},
+{
+"zh": "（颜色、风格）素净的，不显眼的；（化学）中性的",
+"de": "unauffällig; weder sauer noch basisch",
+"ex": [
+{
+"de": "Für das Vorstellungsgespräch wählte er neutrale Farben.",
+"zh": "面试时他选了素净的颜色。"
+}
+]
+}
+],
+"use": [
+"sich neutral verhalten — 保持中立",
+"eine neutrale Haltung / Position — 中立态度 / 立场",
+"ein neutrales Wort（语法）— 中性词；das Neutrum — 中性名词",
+"名词 die Neutralität"
+],
+"root": "neutr-（拉丁语 neuter：两者都不）+ -al（形容词后缀）",
+"fam": [
+"Neutralität",
+"neutralisieren",
+"Neutrum"
+],
+"ety": "借自中古拉丁语 neutralis，属拉丁语 neuter（两者都不是；由 ne- 不 + uter 二者之一构成）。",
+"cog": "英 neutral；法 neutre",
+"tip": "读 nɔɪ̯ˈtʁaːl，eu 发 [ɔɪ̯]，重音在后。"
+},
+{
+"w": "still",
+"pos": "adj",
+"ipa": "ʃtɪl",
+"lvl": "A2",
+"forms": "stiller · am stillsten",
+"senses": [
+{
+"zh": "安静的，寂静的；沉默的",
+"de": "ruhig, ohne Geräusche; schweigsam",
+"ex": [
+{
+"de": "Seid bitte still, das Baby schläft!",
+"zh": "请安静，宝宝在睡觉！"
+},
+{
+"de": "Er ist ein stiller Mensch, aber sehr freundlich.",
+"zh": "他话不多，但很友善。"
+}
+]
+},
+{
+"zh": "静止的，不动的；（水）不含气的",
+"de": "unbewegt; ohne Kohlensäure",
+"ex": [
+{
+"de": "Möchten Sie stilles Wasser oder Sprudel?",
+"zh": "您要不含气的水还是气泡水？"
+}
+]
+},
+{
+"zh": "暗中的，不声张的",
+"de": "heimlich, nicht offen gezeigt",
+"ex": [
+{
+"de": "Sie hatte die stille Hoffnung, dass er zurückkommt.",
+"zh": "她暗暗希望他会回来。"
+}
+]
+}
+],
+"use": [
+"still sitzen / stillhalten — 坐着不动 / 保持不动",
+"im Stillen — 暗地里，悄悄地",
+"stilles Wasser — 无气矿泉水；Stille Wasser sind tief. — 沉默的人城府深（谚语）",
+"der Stille Ozean — 太平洋"
+],
+"root": "单纯形容词；名词 Stille、动词 stillen（使平静；哺乳）由此派生",
+"fam": [
+"Stille",
+"stillen",
+"Stillstand",
+"stillschweigend",
+"stillhalten"
+],
+"ety": "中古高地德语 stille < 古高地德语 stilli。",
+"cog": "英 still；荷 stil",
+"tip": "德国点水时 still = 无气，mit Kohlensäure / Sprudel = 有气；Sei still! 语气较强（闭嘴），礼貌说 Bitte etwas leiser。"
+},
+{
+"w": "verboten",
+"pos": "adj",
+"ipa": "fɛɐ̯ˈboːtn̩",
+"lvl": "A2",
+"forms": "—",
+"senses": [
+{
+"zh": "被禁止的，不许的",
+"de": "nicht erlaubt, untersagt",
+"ex": [
+{
+"de": "Rauchen ist hier verboten.",
+"zh": "此处禁止吸烟。"
+},
+{
+"de": "Es ist verboten, auf dem Rasen zu parken.",
+"zh": "禁止在草坪上停车。"
+}
+]
+},
+{
+"zh": "（口）（样子）难看极了，不像话",
+"de": "(ugs.) unmöglich, sehr unvorteilhaft aussehend",
+"ex": [
+{
+"de": "Mit dieser Frisur siehst du echt verboten aus.",
+"zh": "你这个发型简直没法看。"
+}
+]
+}
+],
+"use": [
+"Betreten verboten! / Parken verboten! — 禁止入内！/ 禁止停车！",
+"es ist verboten, … zu + Inf. — 禁止做……",
+"die verbotene Frucht — 禁果",
+"动词 verbieten（verbietet · verbot · hat verboten）：jmdm. etw. verbieten"
+],
+"root": "verbieten（禁止）的过去分词形容词化：ver-（反向）+ bieten（提供）",
+"fam": [
+"verbieten",
+"Verbot",
+"bieten",
+"erlaubt"
+],
+"ety": "verbieten < 中古高地德语 verbieten < 古高地德语 farbiotan；bieten < 古高地德语 biotan。",
+"cog": "英 forbid（同源对应：for- + bid）",
+"tip": "verbieten 是强变化动词，过去分词为 verboten（不是 *verbietet）；反义 erlaubt / gestattet。"
+},
+{
+"w": "extra",
+"pos": "adv",
+"ipa": "ˈɛkstʁa",
+"lvl": "A2",
+"forms": "—",
+"senses": [
+{
+"zh": "额外地，另外地；单独地",
+"de": "zusätzlich; gesondert",
+"ex": [
+{
+"de": "Das Frühstück kostet extra.",
+"zh": "早餐另外收费。"
+},
+{
+"de": "Die Getränke müssen extra bezahlt werden.",
+"zh": "饮料需要另行付费。"
+}
+]
+},
+{
+"zh": "特意，专门",
+"de": "eigens, nur zu diesem Zweck",
+"ex": [
+{
+"de": "Ich habe den Kuchen extra für dich gebacken.",
+"zh": "这个蛋糕是我特意为你烤的。"
+}
+]
+},
+{
+"zh": "（口）故意地；（口）特别地",
+"de": "(ugs.) absichtlich; besonders",
+"ex": [
+{
+"de": "Das hat er doch extra gemacht, um mich zu ärgern!",
+"zh": "他明明是故意这么做来气我的！"
+}
+]
+}
+],
+"use": [
+"extra bezahlen / berechnen — 另付 / 另计费",
+"extra für jmdn. — 专门为某人",
+"extra groß / extra stark — 特大 / 特浓",
+"作不变格定语（口）：ein extra Zimmer；复合：Extrawurst（特殊待遇）"
+],
+"root": "借自拉丁语介词 extra（在……之外）",
+"fam": [
+"Extra",
+"extrem",
+"Extrawurst",
+"extern"
+],
+"ety": "借自拉丁语 extra（在外，除……之外），属 exter（外面的）。",
+"cog": "英 extra；拉 extra",
+"tip": "“故意”义口语常用，正式说 absichtlich；jmdm. eine Extrawurst braten — 给某人开小灶、特殊照顾。"
+},
+{
+"w": "ferner",
+"pos": "adv",
+"ipa": "ˈfɛʁnɐ",
+"lvl": "B2",
+"forms": "—",
+"senses": [
+{
+"zh": "（书面）此外，再者，还有",
+"de": "außerdem, weiterhin (in Aufzählungen)",
+"ex": [
+{
+"de": "Ferner ist zu berücksichtigen, dass die Kosten steigen.",
+"zh": "此外还须考虑到成本在上涨。"
+},
+{
+"de": "Teilnehmen werden der Bürgermeister, ferner Vertreter der Vereine.",
+"zh": "出席的有市长，另有各协会的代表。"
+}
+]
+}
+],
+"use": [
+"多用于公文、学术、列举：ferner gilt … / ferner wird …",
+"unter „ferner liefen“ — 无足轻重的，陪跑的（源自赛马成绩表）",
+"近义：außerdem（口语）、des Weiteren、zudem",
+"比较级形容词 ferner（更远的）：in fernerer Zukunft"
+],
+"root": "fern（远）的比较级 fern-er，副词化为“更进一步 → 此外”",
+"fam": [
+"fern",
+"Ferne",
+"entfernt",
+"fernsehen"
+],
+"ety": "源自 fern 的比较级；fern < 中古高地德语 verre < 古高地德语 ferro（远）。",
+"cog": "英 far（与 fern 同源）",
+"tip": "ferner 偏书面，口语多用 außerdem；位于句首时动词第二位：Ferner wurde beschlossen, …"
+},
+{
+"w": "vielmals",
+"pos": "adv",
+"ipa": "ˈfiːlmaːls",
+"lvl": "A2",
+"forms": "—",
+"senses": [
+{
+"zh": "（用于礼貌套语）非常，多多，再三",
+"de": "sehr, herzlich (in Höflichkeitsformeln)",
+"ex": [
+{
+"de": "Danke vielmals für Ihre Hilfe!",
+"zh": "非常感谢您的帮助！"
+},
+{
+"de": "Entschuldigen Sie vielmals die Verspätung.",
+"zh": "非常抱歉来晚了。"
+}
+]
+}
+],
+"use": [
+"Danke vielmals! — 多谢！",
+"Ich bitte vielmals um Entschuldigung. — 万分抱歉。",
+"Grüßen Sie Ihre Frau vielmals! — 代我向您夫人问好！",
+"几乎只与 danken, entschuldigen, grüßen 连用"
+],
+"root": "viel（多）+ -mal（次）+ -s（副词词尾）",
+"fam": [
+"viel",
+"mal",
+"mehrmals",
+"oftmals"
+],
+"ety": "由 viel 与 Mal（次）构成的副词，-s 为副词性属格词尾；viel < 古高地德语 filu。",
+"cog": "—",
+"tip": "vielmals 不能泛指“多次”，表示“多次”用 oft / mehrmals。"
+},
+{
+"w": "solch",
+"pos": "pron",
+"ipa": "zɔlç",
+"lvl": "B1",
+"senses": [
+{
+"zh": "这样的，如此的（指示代词）",
+"de": "so beschaffen, derartig",
+"ex": [
+{
+"de": "Solche Fehler dürfen nicht noch einmal passieren.",
+"zh": "这样的错误不能再犯了。"
+},
+{
+"de": "Ich habe noch nie einen solchen Sturm erlebt.",
+"zh": "我从没经历过这样的风暴。"
+}
+]
+},
+{
+"zh": "（加强语气）这么大的，如此强烈的",
+"de": "(verstärkend) so groß, so stark",
+"ex": [
+{
+"de": "Ich hatte solchen Hunger!",
+"zh": "我当时饿极了！"
+}
+]
+}
+],
+"use": [
+"单独使用按 dieser 变格：solcher, solche, solches / solchen Hunger",
+"ein- 之后按形容词混合变格：ein solcher Fall, eine solche Frage, mit einem solchen Auto",
+"不变格形式 solch 用于 ein 或形容词前（偏书面）：solch ein Unsinn, solch schönes Wetter",
+"als solche(r) — 本身：Die Idee als solche ist gut."
+],
+"root": "一般认为由 so（如此）+ 表“形状、样子”的成分（同 welch, gleich 中的 -lch）构成",
+"fam": [
+"so",
+"welch",
+"solcherart",
+"solchermaßen"
+],
+"ety": "中古高地德语 solch, sölch < 古高地德语 solīh；一般认为由 so 与表“形体”的 -līh 构成（同 gleich, welch）。",
+"cog": "英 such（同源）",
+"tip": "口语中 so ein / so eine 远比 ein solcher 常用：so ein schönes Haus；复数无冠词时用 solche：solche Leute。"
+},
+{
+"w": "zwanzigste",
+"pos": "adj",
+"ipa": "ˈt͡svant͡sɪçstə",
+"lvl": "A1–A2",
+"forms": "—",
+"senses": [
+{
+"zh": "第二十（序数词）",
+"de": "Ordinalzahl zu zwanzig",
+"ex": [
+{
+"de": "Heute ist der zwanzigste Mai.",
+"zh": "今天是五月二十日。"
+},
+{
+"de": "Die Firma feiert ihr zwanzigstes Jubiläum.",
+"zh": "公司庆祝成立二十周年。"
+}
+]
+}
+],
+"use": [
+"按形容词变格：am zwanzigsten Juni, zum zwanzigsten Mal",
+"书写：der 20. (zwanzigste)，数字后加点",
+"das 20. Jahrhundert — 二十世纪",
+"das Zwanzigstel — 二十分之一"
+],
+"root": "zwanzig（二十）+ -ste（序数后缀；20 及以上用 -st-）",
+"fam": [
+"zwanzig",
+"Zwanzigstel",
+"zwanzigstens",
+"hundertste"
+],
+"ety": "由 zwanzig 加序数后缀 -st- 构成；zwanzig < 古高地德语 zweinzug。",
+"cog": "英 twentieth",
+"tip": "1–19 的序数加 -t-（vierte, neunzehnte），20 及以上加 -st-（zwanzigste, einundzwanzigste）。"
+},
+{
+"w": "hundertste",
+"pos": "adj",
+"ipa": "ˈhʊndɐtstə",
+"lvl": "A2",
+"forms": "—",
+"senses": [
+{
+"zh": "第一百（序数词）",
+"de": "Ordinalzahl zu hundert",
+"ex": [
+{
+"de": "Die Großmutter feiert nächste Woche ihren hundertsten Geburtstag.",
+"zh": "祖母下周过一百岁生日。"
+},
+{
+"de": "Das habe ich dir jetzt schon zum hundertsten Mal gesagt!",
+"zh": "这话我已经跟你说了一百遍了！"
+}
+]
+}
+],
+"use": [
+"zum hundertsten Mal — 第一百次（夸张：无数次）",
+"vom Hundertsten ins Tausendste kommen — 东拉西扯，越扯越远",
+"das Hundertstel — 百分之一；eine Hundertstelsekunde — 百分之一秒",
+"der 100. Geburtstag / Todestag — 一百周年诞辰 / 忌辰"
+],
+"root": "hundert（一百）+ -ste（序数后缀）",
+"fam": [
+"hundert",
+"Hundertstel",
+"Jahrhundert",
+"zwanzigste"
+],
+"ety": "由 hundert 加序数后缀 -st- 构成；hundert < 中古高地德语 hundert，古高地德语 hunt, hundert。",
+"cog": "英 hundredth",
+"tip": "注意辅音丛 -rtst-：ˈhʊndɐtstə；序数在数字后加点：der 100. Geburtstag。"
+}
+]

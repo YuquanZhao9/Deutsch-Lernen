@@ -3,7 +3,7 @@
 网页版：https://yuquanzhao9.github.io/Deutsch-Lernen/ （手机用 Safari 打开，点分享 → 添加到主屏幕）
 
 - **Deutsch täglich**（`taeglich/`）：每天 30 个词（释义、用法、词根、词源）+ 一篇阅读和 5 道德语题，打卡日历，生词本。
-- **Wortwurzel**（`woerterbuch/`）：德汉词典（约 9400 词，正在扩充到 10000），可输德语或中文，打开过一次后可离线使用。`Wortwurzel离线版.html` 下载后直接打开也能用。
+- **Wortwurzel**（`woerterbuch/`）：德汉词典（10371 词），可输德语或中文，打开过一次后可离线使用。`Wortwurzel离线版.html` 下载后直接打开也能用。
 
 ## 网页版和 claude.ai 版的区别
 

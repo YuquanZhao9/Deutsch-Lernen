@@ -1,0 +1,2407 @@
+[
+ {
+  "w": "Post",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Posten（少用）",
+  "gs": "der Post",
+  "ipa": "pɔst",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "邮局；邮政（公司）",
+    "de": "Einrichtung, die Briefe und Pakete befördert; Postamt",
+    "ex": [
+     {
+      "de": "Ich muss noch schnell zur Post, das Paket abschicken.",
+      "zh": "我还得赶紧去趟邮局，把包裹寄出去。"
+     },
+     {
+      "de": "Die Post streikt, deshalb kommen die Briefe später.",
+      "zh": "邮政罢工了，所以信件会晚到。"
+     }
+    ]
+   },
+   {
+    "zh": "邮件，信件（集合名词）",
+    "de": "zugestellte Briefe, Karten, Pakete",
+    "ex": [
+     {
+      "de": "Ist heute Post für mich gekommen?",
+      "zh": "今天有我的信吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zur Post / auf die Post gehen — 去邮局（auf die Post 多用于南德/奥地利）",
+   "etw. mit der Post / per Post schicken — 邮寄某物",
+   "die Post öffnen / durchsehen — 拆看/翻看信件",
+   "Post bekommen — 收到信件（不加冠词）"
+  ],
+  "root": "Post：外来词，原义“驿站”",
+  "fam": [
+   "Postamt",
+   "Postkarte",
+   "Postleitzahl",
+   "Postbote",
+   "posten"
+  ],
+  "ety": "15–16 世纪借自意大利语 posta（驿站），来自晚期拉丁语 posita（statio）“设置好的（驿站）”，为 ponere（放置）的过去分词。",
+  "cog": "英 post；法 poste；意 posta",
+  "tip": "表示“信件”时是不可数集合名词：Ich habe viel Post bekommen（不说 *viele Posten）。网络上“发帖”是 der Post / posten，词源来自英语。"
+ },
+ {
+  "w": "Metzgerei",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Metzgereien",
+  "gs": "der Metzgerei",
+  "ipa": "mɛt͡sɡəˈʁaɪ̯",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "肉铺，肉店（兼营香肠、熟肉）",
+    "de": "Geschäft (und Betrieb) eines Metzgers",
+    "ex": [
+     {
+      "de": "In der Metzgerei an der Ecke gibt es die beste Leberwurst.",
+      "zh": "街角那家肉铺的肝肠最好吃。"
+     },
+     {
+      "de": "Die kleine Metzgerei musste wegen der Konkurrenz der Supermärkte schließen.",
+      "zh": "这家小肉铺因为超市的竞争不得不关门。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Metzgerei einkaufen — 在肉铺买东西",
+   "zum Metzger gehen — 去肉铺（口语常用店主代指店铺）",
+   "地区差异：Metzgerei（南德、西德、瑞士）≈ Fleischerei（北德、东德）≈ Schlachterei（北德）"
+  ],
+  "root": "Metzger·ei：Metzger（屠夫，肉商）+ -ei（表示店铺、作坊的名词后缀）",
+  "fam": [
+   "Metzger",
+   "Metzgerin",
+   "metzgen"
+  ],
+  "ety": "Metzger < 中古高地德语 metzjære；进一步来源不详，一说源自中古拉丁语 matiarius（香肠商）。",
+  "cog": "—",
+  "tip": "奥地利常说 Fleischhauerei / Fleischhauer。Metzgerei 重音在 -rei 上。"
+ },
+ {
+  "w": "Stadtplan",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Stadtpläne",
+  "gs": "des Stadtplan(e)s",
+  "ipa": "ˈʃtatˌplaːn",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "城市地图",
+    "de": "Karte einer Stadt mit Straßen und wichtigen Gebäuden",
+    "ex": [
+     {
+      "de": "Können Sie mir das auf dem Stadtplan zeigen?",
+      "zh": "您能在城市地图上指给我看吗？"
+     },
+     {
+      "de": "Heute benutzen die meisten Touristen statt eines Stadtplans ihr Handy.",
+      "zh": "如今大多数游客用手机代替城市地图。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf dem Stadtplan nachsehen / etw. suchen — 在地图上查看/找某处",
+   "einen Stadtplan kaufen / bekommen — 买/拿一份城市地图",
+   "区别：Landkarte（地区/国家地图），Fahrplan（时刻表）"
+  ],
+  "root": "Stadt·plan：Stadt（城市）+ Plan（平面图）",
+  "fam": [
+   "Stadt",
+   "Plan",
+   "Fahrplan",
+   "Lageplan"
+  ],
+  "ety": "复合词。Stadt < 古高地德语 stat（地方，处所）；Plan 借自法语 plan（平面图）。",
+  "cog": "英 city map / street map；Plan 对应英 plan",
+  "tip": "Stadt 中的 dt 读 [t]，且 a 为短音：[ʃtat]。"
+ },
+ {
+  "w": "Grenze",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Grenzen",
+  "gs": "der Grenze",
+  "ipa": "ˈɡʁɛnt͡sə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "边界，国界，边境",
+    "de": "Linie, die zwei Staaten oder Gebiete trennt",
+    "ex": [
+     {
+      "de": "An der Grenze wurden unsere Pässe kontrolliert.",
+      "zh": "在边境我们的护照被检查了。"
+     },
+     {
+      "de": "Das Dorf liegt direkt an der Grenze zu Polen.",
+      "zh": "这个村子紧挨着与波兰的边界。"
+     }
+    ]
+   },
+   {
+    "zh": "界限，限度",
+    "de": "äußerstes Maß, Limit",
+    "ex": [
+     {
+      "de": "Meine Geduld hat auch ihre Grenzen.",
+      "zh": "我的耐心也是有限度的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "über die Grenze fahren / gehen — 越过边境",
+   "die Grenze zu + 国名(D) — 与……的边界",
+   "an seine Grenzen stoßen — 达到极限",
+   "an etw.(A) grenzen — 与……接壤；近乎……"
+  ],
+  "root": "Grenz·e：词根 grenz-（边界），斯拉夫语借词",
+  "fam": [
+   "grenzen",
+   "begrenzen",
+   "grenzenlos",
+   "Grenzwert",
+   "Landesgrenze"
+  ],
+  "ety": "中古高地德语 greniz(e)，13 世纪借自西斯拉夫语（古波兰语 granica，“边界”），在东部边疆地区进入德语，后取代了本土词 Mark（边区）。",
+  "cog": "波兰语 granica；俄 граница",
+  "tip": "“在边境”说 an der Grenze，不说 *auf der Grenze。grenzenlos = 无边无际的。"
+ },
+ {
+  "w": "S-Bahn",
+  "pos": "n",
+  "gen": "f",
+  "pl": "S-Bahnen",
+  "gs": "der S-Bahn",
+  "ipa": "ˈɛsˌbaːn",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "城市快铁，市郊铁路",
+    "de": "Schnellbahn, die eine Stadt mit ihrem Umland verbindet",
+    "ex": [
+     {
+      "de": "Ich fahre jeden Morgen mit der S-Bahn zur Arbeit.",
+      "zh": "我每天早上坐城市快铁去上班。"
+     },
+     {
+      "de": "Die S-Bahn zum Flughafen fährt alle zehn Minuten.",
+      "zh": "去机场的快铁每十分钟一班。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit der S-Bahn fahren — 坐快铁",
+   "die S-Bahn nehmen / verpassen — 搭乘/错过快铁",
+   "in die S-Bahn einsteigen / aus der S-Bahn aussteigen — 上/下快铁",
+   "线路名：die S1, die S8（阴性）"
+  ],
+  "root": "S-Bahn：S = Schnellbahn / Stadtschnellbahn（快速城铁）+ Bahn（轨道，铁路）",
+  "fam": [
+   "Bahn",
+   "U-Bahn",
+   "Straßenbahn",
+   "Bahnhof"
+  ],
+  "ety": "20 世纪 30 年代起于柏林使用的名称。Bahn < 中古高地德语 ban(e)（道路，轨迹），更早来源不详。",
+  "cog": "—",
+  "tip": "S-Bahn 一般在地面或高架运行、连接郊区；U-Bahn（地铁）主要在市区地下运行。"
+ },
+ {
+  "w": "Boot",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Boote",
+  "gs": "des Boot(e)s",
+  "ipa": "boːt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "小船，艇",
+    "de": "kleines Wasserfahrzeug",
+    "ex": [
+     {
+      "de": "Am Wochenende sind wir auf dem See Boot gefahren.",
+      "zh": "周末我们在湖上划船了。"
+     },
+     {
+      "de": "Das Boot ist voll beladen und liegt tief im Wasser.",
+      "zh": "这条船装得满满的，吃水很深。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Boot fahren — 划船，乘船游玩（不加冠词）",
+   "mit dem Boot fahren / übersetzen — 坐船去/渡河",
+   "Wir sitzen alle in einem / im selben Boot. — 我们同舟共济（处境相同）",
+   "Ruderboot / Segelboot / Schlauchboot — 划艇/帆船/橡皮艇"
+  ],
+  "root": "Boot：单纯词，源自低地德语",
+  "fam": [
+   "Ruderboot",
+   "Segelboot",
+   "Motorboot",
+   "Rettungsboot"
+  ],
+  "ety": "近代（约 16–17 世纪）由低地德语 bōt 进入高地德语；与古英语 bāt 同源，具体传播路径（英语→低地德语或反之）有争议。",
+  "cog": "英 boat；荷 boot；瑞典 båt",
+  "tip": "复数是 Boote，地区性的 Böte 不是标准语。大船一般说 Schiff。"
+ },
+ {
+  "w": "Fahrschein",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Fahrscheine",
+  "gs": "des Fahrschein(e)s",
+  "ipa": "ˈfaːɐ̯ˌʃaɪ̯n",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "车票（尤指公共交通）",
+    "de": "Ausweis, der zur Fahrt mit einem Verkehrsmittel berechtigt",
+    "ex": [
+     {
+      "de": "Den Fahrschein bekommen Sie am Automaten oder in der App.",
+      "zh": "车票可以在自动售票机或应用程序里买。"
+     },
+     {
+      "de": "Ihren Fahrschein bitte! – Moment, ich habe ihn hier irgendwo.",
+      "zh": "请出示车票！——稍等，就在我身上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Fahrschein kaufen / lösen — 买票",
+   "den Fahrschein entwerten / stempeln — 打票（让车票生效）",
+   "ohne gültigen Fahrschein fahren — 无有效车票乘车（= schwarzfahren）"
+  ],
+  "root": "Fahr·schein：fahren（乘车）+ Schein（凭证）",
+  "fam": [
+   "Fahrkarte",
+   "fahren",
+   "Schein",
+   "Führerschein"
+  ],
+  "ety": "复合词。fahren < 古高地德语 faran（行进）；Schein < 古高地德语 scīn（光；此处引申为凭证）。",
+  "cog": "fahren ~ 英 fare；Schein ~ 英 shine",
+  "tip": "Fahrschein、Fahrkarte、Ticket 基本同义；Fahrschein 多见于城市交通公司的官方用语。"
+ },
+ {
+  "w": "Abfahrt",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Abfahrten",
+  "gs": "der Abfahrt",
+  "ipa": "ˈapˌfaːɐ̯t",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "出发，开车，发车",
+    "de": "das Wegfahren, Beginn einer Fahrt",
+    "ex": [
+     {
+      "de": "Die Abfahrt des Zuges verzögert sich um etwa zehn Minuten.",
+      "zh": "列车发车将延误约十分钟。"
+     },
+     {
+      "de": "Wir müssen eine Stunde vor der Abfahrt am Bahnhof sein.",
+      "zh": "我们必须在发车前一小时到火车站。"
+     }
+    ]
+   },
+   {
+    "zh": "（滑雪）下坡滑道；速降赛",
+    "de": "Fahrt / Strecke bergab beim Skifahren",
+    "ex": [
+     {
+      "de": "Die Abfahrt ins Tal ist steil, aber gut präpariert.",
+      "zh": "通往山谷的滑道很陡，但雪道压得很好。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语）高速公路出口",
+    "de": "(ugs.) Autobahnausfahrt",
+    "ex": [
+     {
+      "de": "Wir haben die Abfahrt verpasst.",
+      "zh": "我们错过了出口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Abfahrt um 8 Uhr — 8 点出发/发车",
+   "bei der Abfahrt — 出发时",
+   "Abfahrt ↔ Ankunft — 出发 ↔ 到达（时刻表用语）",
+   "高速公路出口的标准说法是 Ausfahrt"
+  ],
+  "root": "Ab·fahr·t：ab-（离开）+ fahr-（行驶）+ -t（名词后缀）→ 开走、出发",
+  "fam": [
+   "abfahren",
+   "Fahrt",
+   "Ausfahrt",
+   "Ankunft"
+  ],
+  "ety": "abfahren 的名词。fahren < 中古高地德语 varn < 古高地德语 faran。",
+  "cog": "英 fare；荷 afvaart",
+  "tip": "车站显示屏上 Abfahrt 是“出发”，Ankunft 是“到达”。"
+ },
+ {
+  "w": "Reise",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Reisen",
+  "gs": "der Reise",
+  "ipa": "ˈʁaɪ̯zə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "旅行，旅游；出行",
+    "de": "Fahrt an einen anderen, weiter entfernten Ort",
+    "ex": [
+     {
+      "de": "Wir planen eine Reise nach Japan im Herbst.",
+      "zh": "我们计划秋天去日本旅行。"
+     },
+     {
+      "de": "Die Reise mit dem Zug dauert gut sechs Stunden.",
+      "zh": "坐火车的行程要六个多小时。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Reise machen / unternehmen — 去旅行",
+   "auf Reisen sein / gehen — 在旅途中/出门旅行",
+   "eine Reise nach + 地名 / in die + 国名 — 去某地旅行",
+   "Gute Reise! — 一路顺风！"
+  ],
+  "root": "Reis·e：词根 reis-（起程，出发）",
+  "fam": [
+   "reisen",
+   "Reisende",
+   "Geschäftsreise",
+   "Reisebüro",
+   "verreisen"
+  ],
+  "ety": "中古高地德语 reise（出发，出征）< 古高地德语 reisa（出发，旅程），与 ahd. rīsan（起身，升起）相关。",
+  "cog": "英 rise；荷 reis",
+  "tip": "eine Reise machen 常用；Urlaub 指“休假”，不一定出远门。复合词：Dienstreise（公差），Rundreise（环游）。"
+ },
+ {
+  "w": "Pass",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Pässe",
+  "gs": "des Passes",
+  "ipa": "pas",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "护照",
+    "de": "Reisepass, amtlicher Ausweis für Reisen",
+    "ex": [
+     {
+      "de": "Mein Pass ist abgelaufen, ich muss einen neuen beantragen.",
+      "zh": "我的护照过期了，我得申请新的。"
+     },
+     {
+      "de": "Bitte zeigen Sie Ihren Pass und Ihre Bordkarte.",
+      "zh": "请出示您的护照和登机牌。"
+     }
+    ]
+   },
+   {
+    "zh": "山口，隘口",
+    "de": "Übergang über ein Gebirge",
+    "ex": [
+     {
+      "de": "Im Winter ist der Pass oft wegen Schnee gesperrt.",
+      "zh": "冬天这个山口常因积雪封闭。"
+     }
+    ]
+   },
+   {
+    "zh": "（足球等）传球",
+    "de": "Zuspiel des Balles",
+    "ex": [
+     {
+      "de": "Nach einem langen Pass schoss er das Tor.",
+      "zh": "一记长传之后，他射门得分。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Pass beantragen / verlängern — 申请/延期护照",
+   "der Pass ist gültig / abgelaufen — 护照有效/已过期",
+   "über den Pass fahren — 翻过山口",
+   "区别：Personalausweis（德国身份证）"
+  ],
+  "root": "Pass：外来词，“通过、步”之义",
+  "fam": [
+   "Reisepass",
+   "Passkontrolle",
+   "passen",
+   "passieren",
+   "Passfoto"
+  ],
+  "ety": "“护照”义为 Passport 的缩略，借自法语 passeport（“通过港口”的许可）；“山口”义借自法语 pas（步；通道）< 拉丁语 passus（步）；“传球”义借自英语 pass。",
+  "cog": "英 pass, passport, pace；法 pas, passeport",
+  "tip": "ss 结尾、短元音；1996 年正字法改革前写作 Paß。"
+ },
+ {
+  "w": "Jugendherberge",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Jugendherbergen",
+  "gs": "der Jugendherberge",
+  "ipa": "ˈjuːɡn̩tˌhɛʁbɛʁɡə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "青年旅舍",
+    "de": "einfache, preiswerte Unterkunft besonders für junge Leute und Gruppen",
+    "ex": [
+     {
+      "de": "Auf der Klassenfahrt haben wir in einer Jugendherberge übernachtet.",
+      "zh": "班级旅行时我们住在一家青年旅舍。"
+     },
+     {
+      "de": "Die Jugendherberge liegt direkt am See und ist sehr günstig.",
+      "zh": "这家青年旅舍就在湖边，价格很便宜。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in einer Jugendherberge übernachten — 在青年旅舍过夜",
+   "ein Bett in der Jugendherberge buchen — 预订青旅床位",
+   "Mitglied im Jugendherbergswerk — 青年旅舍协会会员"
+  ],
+  "root": "Jugend·herberge：Jugend（青年）+ Herberge（旅店，投宿处）",
+  "fam": [
+   "Herberge",
+   "beherbergen",
+   "Jugend",
+   "jung"
+  ],
+  "ety": "1909 年德国教师 Richard Schirrmann 创办了第一家青年旅舍。Herberge < 古高地德语 heriberga，原义“军队的驻扎处”（heri 军队 + bergan 庇护）。",
+  "cog": "英 harbour（< 古英 herebeorg）；法 auberge（借自日耳曼语）",
+  "tip": "口语常说 Hostel；Jugendherberge 一般指加入 DJH（德国青年旅舍协会）的旅舍。"
+ },
+ {
+  "w": "Einzelzimmer",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Einzelzimmer",
+  "gs": "des Einzelzimmers",
+  "ipa": "ˈaɪ̯nt͡sl̩ˌt͡sɪmɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "单人间",
+    "de": "Zimmer für eine Person (im Hotel, Krankenhaus)",
+    "ex": [
+     {
+      "de": "Ich hätte gern ein Einzelzimmer für zwei Nächte.",
+      "zh": "我想要一间单人间，住两晚。"
+     },
+     {
+      "de": "Für ein Einzelzimmer zahlt man einen Zuschlag.",
+      "zh": "住单人间要付附加费。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Einzelzimmer buchen / reservieren — 预订单人间",
+   "Einzelzimmer mit Dusche / mit Frühstück — 带淋浴/含早餐的单人间",
+   "Einzelzimmerzuschlag — 单人间附加费"
+  ],
+  "root": "Einzel·zimmer：einzeln（单个的）+ Zimmer（房间）",
+  "fam": [
+   "Doppelzimmer",
+   "Zimmer",
+   "einzeln",
+   "Einzelkind"
+  ],
+  "ety": "复合词。Zimmer < 古高地德语 zimbar（木材；木结构的房屋）。",
+  "cog": "Zimmer ~ 英 timber",
+  "tip": "缩写 EZ，Doppelzimmer 缩写 DZ。"
+ },
+ {
+  "w": "Doppelzimmer",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Doppelzimmer",
+  "gs": "des Doppelzimmers",
+  "ipa": "ˈdɔpl̩ˌt͡sɪmɐ",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "双人间",
+    "de": "Zimmer für zwei Personen (im Hotel)",
+    "ex": [
+     {
+      "de": "Haben Sie noch ein Doppelzimmer frei?",
+      "zh": "您还有空的双人间吗？"
+     },
+     {
+      "de": "Das Doppelzimmer kostet 120 Euro pro Nacht inklusive Frühstück.",
+      "zh": "双人间每晚 120 欧元，含早餐。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Doppelzimmer buchen — 预订双人间",
+   "ein Doppelzimmer zur Einzelnutzung — 双人间单人入住",
+   "区别：Zweibettzimmer（两张单人床的房间）"
+  ],
+  "root": "Doppel·zimmer：Doppel-（双的）+ Zimmer（房间）",
+  "fam": [
+   "Einzelzimmer",
+   "doppelt",
+   "Zimmer",
+   "Doppelbett"
+  ],
+  "ety": "复合词。Doppel- 来自 doppelt，借自法语 double < 拉丁语 duplus（双倍的）。",
+  "cog": "英 double；法 double",
+  "tip": "Doppelzimmer 通常是一张双人床；要两张床时说 Zweibettzimmer。"
+ },
+ {
+  "w": "Tourist",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Touristen",
+  "gs": "des Touristen",
+  "ipa": "tuˈʁɪst",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "游客，旅游者",
+    "de": "jmd., der zum Vergnügen reist und Orte besichtigt",
+    "ex": [
+     {
+      "de": "Im Sommer ist die Altstadt voller Touristen.",
+      "zh": "夏天老城里满是游客。"
+     },
+     {
+      "de": "Viele Einheimische ärgern sich über die vielen Touristen.",
+      "zh": "很多当地人对游客太多感到恼火。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化（n-变格）：den / dem / des Touristen",
+   "阴性：die Touristin, -nen",
+   "Touristeninformation — 游客咨询处"
+  ],
+  "root": "Tour·ist：Tour（旅行，环游）+ -ist（表人后缀）",
+  "fam": [
+   "Tourismus",
+   "Touristin",
+   "touristisch",
+   "Tour"
+  ],
+  "ety": "19 世纪借自英语 tourist，来自 tour < 法语 tour（转圈，巡游）。",
+  "cog": "英 tourist；法 touriste",
+  "tip": "常见错误：*den Tourist、*dem Tourist；正确为 den/dem Touristen。"
+ },
+ {
+  "w": "Cent",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Cent（数词后）/ Cents（指硬币）",
+  "gs": "des Cent(s)",
+  "ipa": "sɛnt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "欧分；分（货币单位，1/100 欧元或美元）",
+    "de": "Untereinheit des Euro und anderer Währungen (1/100)",
+    "ex": [
+     {
+      "de": "Die Brezel kostet 90 Cent.",
+      "zh": "这个椒盐卷饼九十欧分。"
+     },
+     {
+      "de": "Ich habe keinen Cent mehr in der Tasche.",
+      "zh": "我兜里一分钱都没有了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "数词后用单数形式：50 Cent, 2 Euro 20 (Cent)",
+   "keinen Cent haben — 一分钱都没有",
+   "die Ein-Cent-Münze — 一分硬币"
+  ],
+  "root": "Cent：拉丁语词根 cent-（百）",
+  "fam": [
+   "Prozent",
+   "Zentimeter",
+   "Jahrhundert"
+  ],
+  "ety": "借自英语/法语 cent，来自拉丁语 centum（一百）。",
+  "cog": "英 cent, century；法 cent",
+  "tip": "也有人读作 [t͡sɛnt]，但标准读音为 [sɛnt]。说价格时常省略：2,50 € 读作 zwei Euro fünfzig。"
+ },
+ {
+  "w": "Sonderangebot",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Sonderangebote",
+  "gs": "des Sonderangebot(e)s",
+  "ipa": "ˈzɔndɐˌʔanɡəboːt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "特价（商品），特惠",
+    "de": "Ware, die für kurze Zeit billiger verkauft wird",
+    "ex": [
+     {
+      "de": "Die Erdbeeren sind diese Woche im Sonderangebot.",
+      "zh": "草莓这周特价。"
+     },
+     {
+      "de": "Das Sonderangebot gilt nur, solange der Vorrat reicht.",
+      "zh": "特惠仅限存货售完为止。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Sonderangebot sein / etw. im Sonderangebot kaufen — 正在特价/买特价货",
+   "ein Sonderangebot nutzen — 利用特价优惠",
+   "近义：Angebot（口语中 im Angebot 也指特价）"
+  ],
+  "root": "Sonder·angebot：sonder-（特别的）+ Angebot（供应，报价）",
+  "fam": [
+   "Angebot",
+   "anbieten",
+   "besonders",
+   "Sonderpreis"
+  ],
+  "ety": "复合词。sonder < 中古高地德语 sunder（单独的，特别的）；Angebot 为 anbieten 的名词。",
+  "cog": "sonder ~ 英 asunder；bieten ~ 英 bid",
+  "tip": "介词用 im：im Sonderangebot（不说 *in Sonderangebot）。"
+ },
+ {
+  "w": "Bar",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bars",
+  "gs": "der Bar",
+  "ipa": "baːɐ̯",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "酒吧",
+    "de": "Lokal, in dem man vor allem (alkoholische) Getränke bekommt",
+    "ex": [
+     {
+      "de": "Nach dem Konzert sind wir noch in eine Bar gegangen.",
+      "zh": "音乐会后我们又去了一家酒吧。"
+     },
+     {
+      "de": "Die Bar im Hotel ist bis zwei Uhr nachts geöffnet.",
+      "zh": "酒店的酒吧营业到凌晨两点。"
+     }
+    ]
+   },
+   {
+    "zh": "吧台",
+    "de": "Theke, an der Getränke ausgeschenkt werden",
+    "ex": [
+     {
+      "de": "Wir haben an der Bar einen Cocktail getrunken.",
+      "zh": "我们在吧台喝了一杯鸡尾酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in eine Bar gehen / in einer Bar sitzen — 去酒吧/坐在酒吧",
+   "an der Bar — 在吧台边",
+   "Hotelbar / Cocktailbar / Saftbar — 酒店酒吧/鸡尾酒吧/果汁吧"
+  ],
+  "root": "Bar：英语借词，原义“横杆，栏杆”",
+  "fam": [
+   "Barkeeper",
+   "Minibar",
+   "Hotelbar"
+  ],
+  "ety": "19 世纪借自英语 bar（横木 → 柜台 → 酒吧），英语词来自古法语 barre。",
+  "cog": "英 bar；法 barre",
+  "tip": "与形容词 bar（现金的）同形不同源。"
+ },
+ {
+  "w": "bar",
+  "pos": "adj",
+  "ipa": "baːɐ̯",
+  "lvl": "A2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "现金的；用现金",
+    "de": "in Form von Münzen und Banknoten",
+    "ex": [
+     {
+      "de": "Kann ich auch mit Karte zahlen, oder nur bar?",
+      "zh": "我能刷卡吗，还是只能付现金？"
+     },
+     {
+      "de": "Er hat das Auto bar bezahlt.",
+      "zh": "他用现金买下了这辆车。"
+     }
+    ]
+   },
+   {
+    "zh": "（书）完全没有……的（+ 第二格）",
+    "de": "(geh.) ohne, frei von",
+    "ex": [
+     {
+      "de": "Diese Behauptung ist bar jeder Grundlage.",
+      "zh": "这种说法毫无根据。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bar bezahlen / in bar zahlen — 付现金",
+   "das Bargeld — 现金",
+   "bar jeder Vernunft (G) — 毫无理智（书面）",
+   "barfuß — 赤脚"
+  ],
+  "root": "bar：单纯词，本义“赤裸的，光的”→ 不加遮掩的、直接的（钱）→ 现金",
+  "fam": [
+   "Bargeld",
+   "barfuß",
+   "Barzahlung",
+   "offenbar"
+  ],
+  "ety": "中古高地德语 bar < 古高地德语 bar（赤裸的，空的）。",
+  "cog": "英 bare；荷 baar",
+  "tip": "“现金支付”最常说 bar zahlen 或 in bar zahlen；Bargeld 是名词。与名词 Bar（酒吧）无关。"
+ },
+ {
+  "w": "Schein",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Scheine",
+  "gs": "des Schein(e)s",
+  "ipa": "ʃaɪ̯n",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "纸币，钞票",
+    "de": "Geldschein, Banknote",
+    "ex": [
+     {
+      "de": "Können Sie mir einen Fünfzig-Euro-Schein wechseln?",
+      "zh": "您能帮我把这张五十欧元的钞票换开吗？"
+     },
+     {
+      "de": "Am Automaten kann man nur mit Münzen oder kleinen Scheinen zahlen.",
+      "zh": "自动售货机只能用硬币或小面额纸币付款。"
+     }
+    ]
+   },
+   {
+    "zh": "证明，证书，凭证；（大学）学分证明",
+    "de": "Bescheinigung, Formular",
+    "ex": [
+     {
+      "de": "Für das Seminar bekommt man einen Schein, wenn man ein Referat hält.",
+      "zh": "在这门研讨课上做一次报告就能拿到学分证明。"
+     }
+    ]
+   },
+   {
+    "zh": "光，光亮；外表，假象",
+    "de": "Lichtschein; äußeres Bild, das nicht der Wirklichkeit entspricht",
+    "ex": [
+     {
+      "de": "Der Schein trügt: Die Firma steckt in großen Schwierigkeiten.",
+      "zh": "表象具有欺骗性：这家公司其实陷入了很大困境。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Der Schein trügt. — 外表是靠不住的。",
+   "zum Schein — 假装地，做样子",
+   "den Schein wahren — 维持体面/表面",
+   "Geldschein / Führerschein / Krankenschein — 纸币/驾照/病假证明"
+  ],
+  "root": "Schein：由动词 scheinen（照耀；显得）派生",
+  "fam": [
+   "scheinen",
+   "Führerschein",
+   "Fahrschein",
+   "Bescheinigung",
+   "wahrscheinlich"
+  ],
+  "ety": "中古高地德语 schīn < 古高地德语 scīn（光，光亮），与 scheinen 同源；“证明、单据”义为后起引申。",
+  "cog": "英 shine, sheen；荷 schijn",
+  "tip": "“照亮/表面”与“证明”两义都常用；Schein 和 Anschein（迹象）、Erscheinung（现象）注意区分。"
+ },
+ {
+  "w": "Wechselgeld",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Wechselgeld(e)s",
+  "ipa": "ˈvɛksl̩ˌɡɛlt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "找回的零钱，找零；（备用的）零钱",
+    "de": "Geld, das man beim Bezahlen zurückbekommt; Kleingeld zum Wechseln",
+    "ex": [
+     {
+      "de": "Sie haben mir zu wenig Wechselgeld gegeben.",
+      "zh": "您少找了我钱。"
+     },
+     {
+      "de": "Der Busfahrer hat kein Wechselgeld für einen Hunderter.",
+      "zh": "公交司机没有零钱找开一百欧元的钞票。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Wechselgeld zählen / nachzählen — 点/核对找零",
+   "Stimmt so! — 不用找了（付小费时）",
+   "近义：Kleingeld（零钱）"
+  ],
+  "root": "Wechsel·geld：wechseln（换）+ Geld（钱）",
+  "fam": [
+   "wechseln",
+   "Wechsel",
+   "Geld",
+   "Kleingeld"
+  ],
+  "ety": "复合词。Wechsel < 古高地德语 wehsal（交换）；Geld < 古高地德语 gelt（报酬，偿付）。",
+  "cog": "Geld ~ 英 yield",
+  "tip": "收银时说：Hier ist Ihr Wechselgeld / Ihr Rückgeld。"
+ },
+ {
+  "w": "Student",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Studenten",
+  "gs": "des Studenten",
+  "ipa": "ʃtuˈdɛnt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "大学生",
+    "de": "jmd., der an einer Hochschule studiert",
+    "ex": [
+     {
+      "de": "Er ist Student im dritten Semester und studiert Informatik.",
+      "zh": "他是三年级（第三学期）的大学生，学计算机。"
+     },
+     {
+      "de": "Viele Studenten jobben neben dem Studium.",
+      "zh": "很多大学生课余打工。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化（n-变格）：den / dem / des Studenten",
+   "阴性 die Studentin, -nen；性别中立 die Studierenden",
+   "Student an der Universität X — 某大学的学生"
+  ],
+  "root": "Stud·ent：拉丁语 studere（努力，致力于）+ -ent（现在分词词尾，表人）",
+  "fam": [
+   "studieren",
+   "Studium",
+   "Studentin",
+   "Studierende",
+   "Studentenwohnheim"
+  ],
+  "ety": "中世纪借自中古拉丁语 studens（求学者），为拉丁语 studere（努力，钻研）的现在分词。",
+  "cog": "英 student, study；法 étudiant",
+  "tip": "Student 只指大学生；中小学生是 Schüler。说“我是学生”不加冠词：Ich bin Student。"
+ },
+ {
+  "w": "Test",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Tests（少用 Teste）",
+  "gs": "des Test(e)s",
+  "ipa": "tɛst",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "测验，考试；检测，检验",
+    "de": "Prüfung, Untersuchung, Versuch",
+    "ex": [
+     {
+      "de": "Morgen schreiben wir einen Test in Mathe.",
+      "zh": "明天我们有一场数学测验。"
+     },
+     {
+      "de": "Der Test war positiv, ich muss zu Hause bleiben.",
+      "zh": "检测结果是阳性，我得待在家里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Test machen / schreiben / bestehen — 参加/做/通过测验",
+   "einen Test durchführen — 进行测试/检测",
+   "Sehtest / Bluttest / Einstufungstest — 视力检查/验血/分级测试"
+  ],
+  "root": "Test：英语借词",
+  "fam": [
+   "testen",
+   "Tester",
+   "Testergebnis"
+  ],
+  "ety": "20 世纪借自英语 test；英语词来自古法语 test（熔炼金属用的陶罐），源自拉丁语 testum（陶盖，陶罐）。",
+  "cog": "英 test",
+  "tip": "Test 偏小测验或检测；正式考试多用 Prüfung，学校里的小测也叫 Klassenarbeit / Klausur（不同场合）。"
+ },
+ {
+  "w": "Note",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Noten",
+  "gs": "der Note",
+  "ipa": "ˈnoːtə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "分数，成绩",
+    "de": "Bewertung einer Leistung (in Deutschland von 1 bis 6)",
+    "ex": [
+     {
+      "de": "Sie hat in der Prüfung eine sehr gute Note bekommen.",
+      "zh": "她这次考试得了很好的分数。"
+     },
+     {
+      "de": "Eine Eins ist die beste Note, eine Sechs die schlechteste.",
+      "zh": "一分是最好的成绩，六分是最差的。"
+     }
+    ]
+   },
+   {
+    "zh": "音符；（复数）乐谱",
+    "de": "Zeichen für einen Ton; (Pl.) Notenblätter",
+    "ex": [
+     {
+      "de": "Kannst du Noten lesen?",
+      "zh": "你会看乐谱吗？"
+     }
+    ]
+   },
+   {
+    "zh": "特色，格调",
+    "de": "besondere Eigenart",
+    "ex": [
+     {
+      "de": "Die Gewürze geben dem Gericht eine orientalische Note.",
+      "zh": "这些香料给菜肴增添了东方风味。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine gute / schlechte Note bekommen — 得到好/差的分数",
+   "Noten lesen / nach Noten spielen — 看谱/照谱演奏",
+   "eine persönliche Note — 个人特色",
+   "（外交）照会；Banknote — 纸币"
+  ],
+  "root": "Not·e：拉丁语 nota（记号，标记）",
+  "fam": [
+   "notieren",
+   "Notiz",
+   "Banknote",
+   "Notenschnitt"
+  ],
+  "ety": "中古高地德语 note，借自拉丁语 nota（记号，标记）。",
+  "cog": "英 note；法 note",
+  "tip": "德国学校评分 1 最好（sehr gut），6 最差（ungenügend），与中国百分制方向相反。"
+ },
+ {
+  "w": "Frage",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fragen",
+  "gs": "der Frage",
+  "ipa": "ˈfʁaːɡə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "问题，提问",
+    "de": "Äußerung, mit der man eine Antwort erbitten will",
+    "ex": [
+     {
+      "de": "Darf ich Ihnen eine Frage stellen?",
+      "zh": "我可以问您一个问题吗？"
+     },
+     {
+      "de": "Auf diese Frage weiß ich leider keine Antwort.",
+      "zh": "这个问题我很遗憾答不上来。"
+     }
+    ]
+   },
+   {
+    "zh": "（待解决的）问题，事情",
+    "de": "Angelegenheit, Problem",
+    "ex": [
+     {
+      "de": "Das ist nur noch eine Frage der Zeit.",
+      "zh": "这只是时间问题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Frage stellen / beantworten — 提出/回答问题（不说 *eine Frage fragen）",
+   "die Frage nach etw.(D) — 关于……的问题",
+   "in Frage / infrage kommen — 可以考虑；Das kommt nicht infrage! — 不可能！",
+   "ohne Frage — 毫无疑问"
+  ],
+  "root": "Frag·e：由 fragen（问）派生",
+  "fam": [
+   "fragen",
+   "Anfrage",
+   "Nachfrage",
+   "fraglich",
+   "Fragebogen"
+  ],
+  "ety": "中古高地德语 vrāge < 古高地德语 frāga，与动词 fragen 同源。",
+  "cog": "荷 vraag",
+  "tip": "“提问”用 stellen：eine Frage stellen。Frage 指的是“提问”，“难题”多用 Problem。"
+ },
+ {
+  "w": "Antwort",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Antworten",
+  "gs": "der Antwort",
+  "ipa": "ˈantvɔʁt",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "回答，答复；答案",
+    "de": "Äußerung, die auf eine Frage oder ein Schreiben reagiert",
+    "ex": [
+     {
+      "de": "Ich warte immer noch auf eine Antwort auf meine E-Mail.",
+      "zh": "我还在等我那封邮件的回复。"
+     },
+     {
+      "de": "Kreuzen Sie die richtige Antwort an.",
+      "zh": "请勾选正确答案。"
+     }
+    ]
+   },
+   {
+    "zh": "反应，回应",
+    "de": "Reaktion",
+    "ex": [
+     {
+      "de": "Als Antwort auf die Proteste kündigte die Regierung Reformen an.",
+      "zh": "作为对抗议的回应，政府宣布了改革。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Antwort auf etw.(A) — 对……的回答（介词用 auf）",
+   "jmdm. (eine) Antwort geben — 答复某人",
+   "als Antwort auf etw.(A) — 作为对……的回应",
+   "um Antwort wird gebeten (u. A. w. g.) — 敬请回复（请柬用语）"
+  ],
+  "root": "Ant·wort：ant-（相对，回应；与 ent- 同源）+ Wort（话）→“回过来的话”",
+  "fam": [
+   "antworten",
+   "beantworten",
+   "verantworten",
+   "Verantwortung",
+   "Wort"
+  ],
+  "ety": "中古高地德语 antwürte < 古高地德语 antwurti，由前缀 ant-（对着）与 wort（话）构成。",
+  "cog": "Wort ~ 英 word；英 answer（古英语 andswaru）是平行构词",
+  "tip": "介词用 auf + 第四格：die Antwort auf die Frage（不说 *zu der Frage）。"
+ },
+ {
+  "w": "Lehre",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Lehren",
+  "gs": "der Lehre",
+  "ipa": "ˈleːʁə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "学徒培训，学徒期",
+    "de": "Berufsausbildung in einem Betrieb",
+    "ex": [
+     {
+      "de": "Nach der Schule hat er eine Lehre als Elektriker gemacht.",
+      "zh": "中学毕业后他当了电工学徒。"
+     },
+     {
+      "de": "Sie ist im zweiten Lehrjahr.",
+      "zh": "她在学徒培训的第二年。"
+     }
+    ]
+   },
+   {
+    "zh": "教训",
+    "de": "Erfahrung, aus der man etw. lernt",
+    "ex": [
+     {
+      "de": "Das soll dir eine Lehre sein!",
+      "zh": "这该给你一个教训！"
+     }
+    ]
+   },
+   {
+    "zh": "学说，教义；（大学）教学",
+    "de": "System von Lehrsätzen; das Lehren",
+    "ex": [
+     {
+      "de": "Die Universität verbindet Forschung und Lehre.",
+      "zh": "大学将科研与教学结合起来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Lehre (als …) machen / beginnen — 做（某职业的）学徒",
+   "in der Lehre sein — 在当学徒",
+   "eine Lehre aus etw.(D) ziehen — 从某事中吸取教训",
+   "die Lehre von … — 关于……的学说"
+  ],
+  "root": "Lehr·e：由 lehren（教）派生",
+  "fam": [
+   "lehren",
+   "Lehrer",
+   "Lehrling",
+   "gelehrt",
+   "Lehrstelle"
+  ],
+  "ety": "中古高地德语 lēre < 古高地德语 lēra（教导，学说），与 lehren、lernen 同源。",
+  "cog": "英 lore；荷 leer",
+  "tip": "现代正式用语多说 Ausbildung，Lehre 更口语、传统；学徒叫 Auszubildende(r)/Azubi 或 Lehrling。"
+ },
+ {
+  "w": "Job",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Jobs",
+  "gs": "des Jobs",
+  "ipa": "d͡ʒɔp",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（口）工作，职位；零工，兼职",
+    "de": "(ugs.) Arbeitsstelle; Gelegenheitsarbeit",
+    "ex": [
+     {
+      "de": "Sie hat einen neuen Job bei einer Bank gefunden.",
+      "zh": "她在一家银行找到了新工作。"
+     },
+     {
+      "de": "In den Ferien suche ich mir einen Job im Café.",
+      "zh": "假期里我要在咖啡馆找份零工。"
+     }
+    ]
+   },
+   {
+    "zh": "任务，活儿",
+    "de": "Aufgabe",
+    "ex": [
+     {
+      "de": "Du hast einen guten Job gemacht.",
+      "zh": "你干得很好。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Job suchen / finden / verlieren — 找/找到/失去工作",
+   "Nebenjob / Ferienjob / Minijob — 兼职/假期工/迷你工作（低薪兼职）",
+   "jobben — （口）打零工"
+  ],
+  "root": "Job：英语借词",
+  "fam": [
+   "jobben",
+   "Nebenjob",
+   "Jobcenter",
+   "Ferienjob"
+  ],
+  "ety": "20 世纪借自英语 job；英语词来源不详。",
+  "cog": "英 job",
+  "tip": "Job 偏口语；正式场合用 Stelle、Arbeitsplatz；Beruf 指职业（Was sind Sie von Beruf?）。"
+ },
+ {
+  "w": "Stelle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Stellen",
+  "gs": "der Stelle",
+  "ipa": "ˈʃtɛlə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "地方，位置；部位",
+    "de": "Ort, Platz, Punkt",
+    "ex": [
+     {
+      "de": "An dieser Stelle ist der Fluss besonders tief.",
+      "zh": "河在这个地方特别深。"
+     },
+     {
+      "de": "Ich an deiner Stelle würde das Angebot annehmen.",
+      "zh": "如果我是你，我会接受这个提议。"
+     }
+    ]
+   },
+   {
+    "zh": "职位，工作岗位",
+    "de": "Arbeitsplatz, Position",
+    "ex": [
+     {
+      "de": "Er hat sich auf eine Stelle als Ingenieur beworben.",
+      "zh": "他申请了一个工程师的职位。"
+     }
+    ]
+   },
+   {
+    "zh": "（文章）段落，处；机关，部门；（数）位",
+    "de": "Textabschnitt; Behörde; Ziffernposition",
+    "ex": [
+     {
+      "de": "Wenden Sie sich bitte an die zuständige Stelle.",
+      "zh": "请向主管部门咨询。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an jmds. Stelle — 如果我是某人；代替某人",
+   "auf der Stelle — 立刻，当场",
+   "eine Stelle suchen / antreten — 找工作/就职；offene Stelle — 空缺职位",
+   "an erster Stelle stehen — 居首位"
+  ],
+  "root": "Stell·e：与 stellen（放置）同源",
+  "fam": [
+   "stellen",
+   "Stellung",
+   "Arbeitsstelle",
+   "Haltestelle",
+   "Stellenanzeige"
+  ],
+  "ety": "中古高地德语 stelle < 古高地德语 stella（位置），与 stellen 同源。",
+  "cog": "一般认为与英 stall 同源",
+  "tip": "“立刻”auf der Stelle；“如果我是你”Ich an deiner Stelle …（用第二虚拟式）。"
+ },
+ {
+  "w": "regnerisch",
+  "pos": "adj",
+  "ipa": "ˈʁeːɡnəʁɪʃ",
+  "lvl": "A2",
+  "forms": "regnerischer · am regnerischsten",
+  "senses": [
+   {
+    "zh": "多雨的，阴雨的",
+    "de": "mit häufigem Regen",
+    "ex": [
+     {
+      "de": "Für das Wochenende ist regnerisches Wetter angesagt.",
+      "zh": "预报周末有雨。"
+     },
+     {
+      "de": "Der Sommer war kühl und regnerisch.",
+      "zh": "这个夏天又凉又多雨。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "regnerisches Wetter / ein regnerischer Tag — 阴雨天气/阴雨的一天",
+   "Es ist regnerisch. — 天气多雨。",
+   "近义：verregnet（被雨毁了的，如 ein verregneter Urlaub）"
+  ],
+  "root": "regn·er·isch：Regen（雨）+ -isch（形容词后缀）",
+  "fam": [
+   "Regen",
+   "regnen",
+   "verregnet",
+   "Regenschirm"
+  ],
+  "ety": "由 Regen 派生。Regen < 古高地德语 regan。",
+  "cog": "Regen ~ 英 rain；荷 regen",
+  "tip": "天气形容词：sonnig, windig, wolkig, neblig, regnerisch（注意不是 *regnig）。"
+ },
+ {
+  "w": "windig",
+  "pos": "adj",
+  "ipa": "ˈvɪndɪç",
+  "lvl": "A2",
+  "forms": "windiger · am windigsten",
+  "senses": [
+   {
+    "zh": "有风的，刮风的",
+    "de": "mit viel Wind",
+    "ex": [
+     {
+      "de": "Heute ist es sehr windig, nimm eine Jacke mit.",
+      "zh": "今天风很大，带件外套吧。"
+     },
+     {
+      "de": "An der Küste ist es oft windig und kühl.",
+      "zh": "海边常常风大、凉爽。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）靠不住的，可疑的",
+    "de": "(ugs.) unseriös, zweifelhaft",
+    "ex": [
+     {
+      "de": "Das klingt nach einem ziemlich windigen Geschäft.",
+      "zh": "这听起来像是一桩很不靠谱的生意。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Es ist windig. — 有风。",
+   "ein windiger Tag — 刮风的一天",
+   "ein windiger Typ / windige Geschäfte — 不靠谱的人/可疑的生意"
+  ],
+  "root": "wind·ig：Wind（风）+ -ig（形容词后缀）",
+  "fam": [
+   "Wind",
+   "Windstille",
+   "windstill",
+   "Windrad"
+  ],
+  "ety": "由 Wind 派生。Wind < 古高地德语 wint。",
+  "cog": "英 windy；荷 winderig",
+  "tip": "词尾 -ig 按标准音读 [ɪç]：[ˈvɪndɪç]。"
+ },
+ {
+  "w": "Wiese",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wiesen",
+  "gs": "der Wiese",
+  "ipa": "ˈviːzə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "草地，草坪；牧草地",
+    "de": "mit Gras bewachsene Fläche",
+    "ex": [
+     {
+      "de": "Im Sommer liegen wir oft auf der Wiese im Park.",
+      "zh": "夏天我们常常躺在公园的草地上。"
+     },
+     {
+      "de": "Auf der Wiese hinter dem Haus grasen Kühe.",
+      "zh": "屋后的草地上有奶牛在吃草。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf der Wiese liegen / spielen — 躺/玩在草地上",
+   "über die Wiese gehen — 穿过草地",
+   "Blumenwiese — 野花草地；Liegewiese — （泳池等）休息草坪"
+  ],
+  "root": "Wies·e：单纯词",
+  "fam": [
+   "Wiesenblume",
+   "Liegewiese",
+   "Blumenwiese"
+  ],
+  "ety": "中古高地德语 wise < 古高地德语 wisa（草地），更早来源不详。",
+  "cog": "—",
+  "tip": "Wiese 是自然草地；修剪过的草坪更常说 Rasen。慕尼黑人把啤酒节场地叫 die Wiesn（巴伐利亚方言）。"
+ },
+ {
+  "w": "Liebe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Lieben（少用）",
+  "gs": "der Liebe",
+  "ipa": "ˈliːbə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "爱，爱情",
+    "de": "starkes Gefühl der Zuneigung",
+    "ex": [
+     {
+      "de": "Es war Liebe auf den ersten Blick.",
+      "zh": "那是一见钟情。"
+     },
+     {
+      "de": "Die Liebe zu ihren Kindern gibt ihr Kraft.",
+      "zh": "对孩子的爱给了她力量。"
+     }
+    ]
+   },
+   {
+    "zh": "爱人，恋人；恋情",
+    "de": "geliebte Person; Liebesbeziehung",
+    "ex": [
+     {
+      "de": "Sie war seine große Liebe.",
+      "zh": "她是他一生的挚爱。"
+     }
+    ]
+   },
+   {
+    "zh": "热爱，爱好",
+    "de": "starkes Interesse, Leidenschaft",
+    "ex": [
+     {
+      "de": "Aus Liebe zur Musik hat er Klavier studiert.",
+      "zh": "出于对音乐的热爱，他学了钢琴专业。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Liebe zu jmdm. / etw.(D) — 对……的爱",
+   "aus Liebe — 出于爱",
+   "Liebe auf den ersten Blick — 一见钟情",
+   "注意：信件开头 Liebe Anna, … 中的 Liebe 是形容词 lieb 的变格形式"
+  ],
+  "root": "Lieb·e：词根 lieb-（喜爱的，亲爱的）",
+  "fam": [
+   "lieben",
+   "lieb",
+   "verliebt",
+   "beliebt",
+   "Liebling"
+  ],
+  "ety": "中古高地德语 liebe < 古高地德语 liubī；与拉丁语 libet（令人喜欢）、libido 同属一个印欧词根。",
+  "cog": "英 love（古英 lufu）；拉 libet, libido",
+  "tip": "“对……的爱”用 zu + 第三格，不说 *für。“谈恋爱”可说 verliebt sein / eine Beziehung haben。"
+ },
+ {
+  "w": "Sorge",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Sorgen",
+  "gs": "der Sorge",
+  "ipa": "ˈzɔʁɡə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "担心，忧虑；烦恼",
+    "de": "Unruhe, Angst um jmdn. oder etw.",
+    "ex": [
+     {
+      "de": "Mach dir keine Sorgen, ich komme schon zurecht.",
+      "zh": "别担心，我能应付。"
+     },
+     {
+      "de": "Die steigenden Mieten bereiten vielen Familien große Sorgen.",
+      "zh": "不断上涨的房租让许多家庭忧心忡忡。"
+     }
+    ]
+   },
+   {
+    "zh": "照料，操心",
+    "de": "Bemühung, Fürsorge",
+    "ex": [
+     {
+      "de": "Wir tragen Sorge dafür, dass alle Daten geschützt sind.",
+      "zh": "我们负责确保所有数据都受到保护。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich(D) Sorgen um jmdn. / etw.(A) machen — 为……担心",
+   "Keine Sorge! — 别担心！",
+   "jmdm. Sorgen machen / bereiten — 使某人担忧",
+   "für etw.(A) Sorge tragen（书）— 负责、确保某事"
+  ],
+  "root": "Sorg·e：单纯词",
+  "fam": [
+   "sorgen",
+   "besorgt",
+   "versorgen",
+   "Fürsorge",
+   "sorgfältig"
+  ],
+  "ety": "中古高地德语 sorge < 古高地德语 sorga。",
+  "cog": "英 sorrow（古英 sorg）；荷 zorg",
+  "tip": "常见错误：*Ich mache Sorgen für dich。正确：Ich mache mir Sorgen um dich。"
+ },
+ {
+  "w": "wütend",
+  "pos": "adj",
+  "ipa": "ˈvyːtn̩t",
+  "lvl": "A2",
+  "forms": "wütender · am wütendsten",
+  "senses": [
+   {
+    "zh": "愤怒的，发怒的，气愤的",
+    "de": "voller Wut, sehr zornig",
+    "ex": [
+     {
+      "de": "Sie war wütend auf ihren Bruder, weil er ihr Handy kaputt gemacht hatte.",
+      "zh": "她很生她哥哥的气，因为他把她的手机弄坏了。"
+     },
+     {
+      "de": "Wütende Fans protestierten vor dem Stadion.",
+      "zh": "愤怒的球迷在体育场前抗议。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wütend auf jmdn.(A) sein — 生某人的气",
+   "wütend über etw.(A) sein — 对某事感到愤怒",
+   "jmdn. wütend machen — 让某人发火"
+  ],
+  "root": "wüt·end：wüten（狂怒，肆虐）的现在分词 → 形容词",
+  "fam": [
+   "Wut",
+   "wüten",
+   "Wutanfall",
+   "wutentbrannt"
+  ],
+  "ety": "由 wüten 的现在分词而来。Wut < 中古高地德语 wuot < 古高地德语 wuot（狂怒，疯狂）；一般认为与神名 Wodan / Odin 同源。",
+  "cog": "古英 wōd（疯狂的）",
+  "tip": "近义：sauer（口语）、zornig（书面）、ärgerlich（较轻）。“对人”用 auf，“对事”用 über。"
+ },
+ {
+  "w": "Fußball",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Fußbälle",
+  "gs": "des Fußball(e)s",
+  "ipa": "ˈfuːsˌbal",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "足球运动",
+    "de": "Mannschaftsspiel, bei dem der Ball mit dem Fuß ins Tor geschossen wird",
+    "ex": [
+     {
+      "de": "Am Samstag spielen wir im Park Fußball.",
+      "zh": "星期六我们在公园踢足球。"
+     },
+     {
+      "de": "Fußball ist in Deutschland die beliebteste Sportart.",
+      "zh": "足球是德国最受欢迎的运动。"
+     }
+    ]
+   },
+   {
+    "zh": "足球（球）",
+    "de": "Ball für dieses Spiel",
+    "ex": [
+     {
+      "de": "Er hat zum Geburtstag einen neuen Fußball bekommen.",
+      "zh": "他生日收到了一个新足球。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Fußball spielen — 踢足球（不加冠词）",
+   "Fußball gucken / schauen — 看足球比赛",
+   "zum Fußball gehen — 去看球赛",
+   "Fußballspiel / Fußballverein / Fußballplatz — 足球赛/足球俱乐部/足球场"
+  ],
+  "root": "Fuß·ball：Fuß（脚）+ Ball（球）",
+  "fam": [
+   "Fuß",
+   "Ball",
+   "Fußballer",
+   "Fußballspiel"
+  ],
+  "ety": "19 世纪仿英语 football 构成（仿译词）。",
+  "cog": "英 football；荷 voetbal",
+  "tip": "ß 前是长元音 [uː]。"
+ },
+ {
+  "w": "Party",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Partys",
+  "gs": "der Party",
+  "ipa": "ˈpaːɐ̯ti",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "聚会，派对",
+    "de": "privates Fest, meist mit Musik und Tanz",
+    "ex": [
+     {
+      "de": "Am Samstag gebe ich eine Party, kommst du?",
+      "zh": "星期六我办个派对，你来吗？"
+     },
+     {
+      "de": "Auf der Party habe ich viele nette Leute kennengelernt.",
+      "zh": "我在派对上认识了很多不错的人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Party geben / machen / feiern — 举办派对",
+   "auf eine Party gehen / auf der Party sein — 去/在派对上",
+   "Geburtstagsparty / Abschiedsparty — 生日派对/告别派对"
+  ],
+  "root": "Party：英语借词",
+  "fam": [
+   "Partyraum",
+   "Gartenparty",
+   "Feier"
+  ],
+  "ety": "20 世纪借自英语 party；英语词来自古法语 partie（部分，一方）。",
+  "cog": "英 party；法 partie",
+  "tip": "复数按德语正字法写 Partys，不写 *Parties。介词用 auf：auf einer Party。"
+ },
+ {
+  "w": "Feier",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Feiern",
+  "gs": "der Feier",
+  "ipa": "ˈfaɪ̯ɐ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "庆祝活动，庆典；聚会",
+    "de": "festliche Veranstaltung",
+    "ex": [
+     {
+      "de": "Zur Feier ihres 80. Geburtstags kam die ganze Familie.",
+      "zh": "全家人都来参加她的八十大寿庆祝。"
+     },
+     {
+      "de": "Nach der Feier haben wir noch lange aufgeräumt.",
+      "zh": "庆祝活动结束后，我们收拾了很久。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Feier veranstalten / organisieren — 举办庆祝活动",
+   "zur Feier des Tages — 为了庆祝今天（常含幽默意味）",
+   "Geburtstagsfeier / Weihnachtsfeier / Trauerfeier — 生日会/圣诞联欢/追悼会"
+  ],
+  "root": "Feier：拉丁语借词，原义“节日”",
+  "fam": [
+   "feiern",
+   "feierlich",
+   "Feierabend",
+   "Feiertag",
+   "Ferien"
+  ],
+  "ety": "中古高地德语 vīre < 古高地德语 fīra，借自拉丁语 fēria（节日，假日；复数 fēriae），与 Ferien 同源。",
+  "cog": "英 fair（集市，经古法语来自同一拉丁词）；拉 feriae",
+  "tip": "Feier 比 Party 正式，可指家庭庆祝、单位聚会、典礼；Fest 规模更大。"
+ },
+ {
+  "w": "möchten",
+  "pos": "v",
+  "ipa": "ˈmœçtn̩",
+  "lvl": "A1",
+  "forms": "möchte · （无过去时，用 wollte）· （无完成时，用 hat … wollen / hat gewollt）",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "想要，希望（礼貌的愿望表达）",
+    "de": "höflich einen Wunsch ausdrücken",
+    "ex": [
+     {
+      "de": "Ich möchte bitte zwei Kaffee und ein Stück Kuchen.",
+      "zh": "我要两杯咖啡和一块蛋糕。"
+     },
+     {
+      "de": "Wir möchten im Sommer nach Italien fahren.",
+      "zh": "我们夏天想去意大利。"
+     }
+    ]
+   },
+   {
+    "zh": "（问句中表邀请、提供）您/你要不要……",
+    "de": "in Fragen: höfliches Angebot",
+    "ex": [
+     {
+      "de": "Möchten Sie etwas trinken?",
+      "zh": "您想喝点什么吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（转述请求）请（某人）……",
+    "de": "in indirekter Rede: sollen",
+    "ex": [
+     {
+      "de": "Sagen Sie ihm bitte, er möchte mich zurückrufen.",
+      "zh": "请转告他给我回个电话。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "现在时：ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
+   "möchte + 不定式（句末，不加 zu）：Ich möchte schlafen.",
+   "möchte + 第四格名词：Ich möchte einen Tee.",
+   "过去时用 wollte：Ich wollte dich gestern anrufen."
+  ],
+  "root": "möcht·en：形式上是 mögen 的第二虚拟式（mochte → möchte，变音），现已作为独立情态动词使用",
+  "fam": [
+   "mögen",
+   "möglich",
+   "Macht",
+   "vermögen"
+  ],
+  "ety": "mögen < 中古高地德语 mügen / mugen < 古高地德语 mugan（能够）；möchte 原为其虚拟式形式，后词汇化为独立动词。",
+  "cog": "英 may, might；荷 mogen",
+  "tip": "Ich will … 语气直接、生硬；点餐、请求时用 Ich möchte … 或 Ich hätte gern …。第三人称单数无 -t：er möchte（不是 *möchtet）。"
+ },
+ {
+  "w": "buchstabieren",
+  "pos": "v",
+  "ipa": "buːxʃtaˈbiːʁən",
+  "lvl": "A1",
+  "forms": "buchstabiert · buchstabierte · hat buchstabiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "拼读，逐个字母地念出",
+    "de": "die Buchstaben eines Wortes einzeln nennen",
+    "ex": [
+     {
+      "de": "Können Sie Ihren Nachnamen bitte buchstabieren?",
+      "zh": "您能拼一下您的姓吗？"
+     },
+     {
+      "de": "Am Telefon buchstabiert man oft mit Namen: A wie Anton, B wie Berta.",
+      "zh": "打电话时常用人名来拼读：A 像 Anton，B 像 Berta。"
+     }
+    ]
+   },
+   {
+    "zh": "一个字一个字地费力阅读",
+    "de": "mühsam Buchstabe für Buchstabe lesen",
+    "ex": [
+     {
+      "de": "Das Kind buchstabiert sich langsam durch den Text.",
+      "zh": "孩子一个字母一个字母地慢慢读这篇课文。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Wort / seinen Namen buchstabieren — 拼读单词/名字",
+   "Wie buchstabiert man das? — 这个怎么拼？",
+   "die Buchstabiertafel — 字母拼读表（A wie Anton …）"
+  ],
+  "root": "buch·stab·ier·en：Buchstabe（字母）+ -ieren（动词后缀）",
+  "fam": [
+   "Buchstabe",
+   "Buch",
+   "Stab",
+   "Buchstabiertafel"
+  ],
+  "ety": "由 Buchstabe 派生。Buchstabe < 古高地德语 buohstab，由 buoh-（山毛榉 / 书）与 stab（棍）构成；一般认为源于在木棍（一说山毛榉木棍）上刻写符号的做法。",
+  "cog": "古英 bōcstæf（字母）；英 book, staff",
+  "tip": "注意拼写 -stab-ieren，不是 *buchstaben-ieren；重音在 -bie-。"
+ },
+ {
+  "w": "abmelden",
+  "pos": "v",
+  "ipa": "ˈapˌmɛldn̩",
+  "lvl": "A2",
+  "forms": "meldet ab · meldete ab · hat abgemeldet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（向机关）注销登记；退订，退选",
+    "de": "bei einer Behörde / Stelle melden, dass etw. endet",
+    "ex": [
+     {
+      "de": "Vor dem Umzug ins Ausland muss man sich beim Bürgeramt abmelden.",
+      "zh": "搬去国外之前必须到市民局注销户籍登记。"
+     },
+     {
+      "de": "Ich habe mein Auto abgemeldet, weil ich es verkauft habe.",
+      "zh": "我把车注销了，因为已经卖掉了。"
+     }
+    ]
+   },
+   {
+    "zh": "（sich abmelden）请假离开；（网络）退出登录",
+    "de": "Bescheid geben, dass man weggeht; sich ausloggen",
+    "ex": [
+     {
+      "de": "Vergessen Sie nicht, sich am Ende abzumelden.",
+      "zh": "最后别忘了退出登录。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich (bei jmdm. / beim Amt) abmelden — （向某人/机关）注销、告退",
+   "jmdn. / etw. abmelden — 为某人/某物注销（如 das Kind vom Kurs abmelden）",
+   "sich von etw.(D) abmelden — 退出（课程、邮件列表等）",
+   "↔ (sich) anmelden — 登记、报名、登录"
+  ],
+  "root": "ab·meld·en：ab-（离开，取消）+ melden（报告，通报）→ 报告离开、注销",
+  "fam": [
+   "anmelden",
+   "melden",
+   "Abmeldung",
+   "Meldung",
+   "ummelden"
+  ],
+  "ety": "melden < 中古高地德语 melden < 古高地德语 meldōn（告知，揭发），更早来源不详。",
+  "cog": "—",
+  "tip": "德国搬家需 an-/ab-/ummelden；注意可分：Ich melde mich ab / Ich habe mich abgemeldet。"
+ },
+ {
+  "w": "besetzt",
+  "pos": "adj",
+  "ipa": "bəˈzɛt͡st",
+  "lvl": "A2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（座位、厕所等）有人占用的；（电话）占线的",
+    "de": "nicht frei, belegt",
+    "ex": [
+     {
+      "de": "Entschuldigung, ist dieser Platz besetzt?",
+      "zh": "请问这个座位有人吗？"
+     },
+     {
+      "de": "Ich habe dreimal angerufen, aber es war immer besetzt.",
+      "zh": "我打了三次电话，但一直占线。"
+     }
+    ]
+   },
+   {
+    "zh": "（职位）已有人担任；（地区）被占领的",
+    "de": "(Stelle) vergeben; (Gebiet) von Truppen eingenommen",
+    "ex": [
+     {
+      "de": "Die Stelle ist leider schon besetzt.",
+      "zh": "很遗憾，这个职位已经有人了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "besetzt sein ↔ frei sein — 有人/占线 ↔ 空着",
+   "Hier ist besetzt. — 这里有人坐了。",
+   "mit etw.(D) besetzt — 镶有……的（mit Steinen besetzt）"
+  ],
+  "root": "be·setz·t：动词 besetzen（占据）的第二分词 → 形容词",
+  "fam": [
+   "besetzen",
+   "Besetzung",
+   "setzen",
+   "unbesetzt"
+  ],
+  "ety": "besetzen 的过去分词。setzen < 古高地德语 sezzen，为 sitzen 的使役形式（“使坐下”）。",
+  "cog": "英 set, sit",
+  "tip": "酒店客满说 ausgebucht，餐厅订满说 voll / ausgebucht，不说 *besetzt。"
+ },
+ {
+  "w": "ledig",
+  "pos": "adj",
+  "ipa": "ˈleːdɪç",
+  "lvl": "A1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "未婚的，单身的",
+    "de": "nicht verheiratet",
+    "ex": [
+     {
+      "de": "Familienstand: ledig.",
+      "zh": "婚姻状况：未婚。"
+     },
+     {
+      "de": "Mein Bruder ist 35 und immer noch ledig.",
+      "zh": "我哥哥 35 岁了还没结婚。"
+     }
+    ]
+   },
+   {
+    "zh": "（书）摆脱了……的（+ 第二格）",
+    "de": "(geh.) frei von etw.",
+    "ex": [
+     {
+      "de": "Endlich war er aller Sorgen ledig.",
+      "zh": "他终于摆脱了一切烦恼。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ledig sein — 未婚",
+   "Familienstand: ledig / verheiratet / geschieden / verwitwet — 婚姻状况：未婚/已婚/离异/丧偶",
+   "einer Sache(G) ledig sein（书）— 摆脱某事"
+  ],
+  "root": "led·ig：单纯词，本义“自由的，无拘束的”",
+  "fam": [
+   "lediglich",
+   "erledigen",
+   "Ledige"
+  ],
+  "ety": "中古高地德语 ledec / ledic（自由的，无拘束的），更早来源不详。",
+  "cog": "—",
+  "tip": "ledig 偏表格、官方用语；口语说“单身”多用 single 或 Ich bin nicht verheiratet。erledigen（办完）与之同源。"
+ },
+ {
+  "w": "geschieden",
+  "pos": "adj",
+  "ipa": "ɡəˈʃiːdn̩",
+  "lvl": "A1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "离了婚的，离异的",
+    "de": "nicht mehr verheiratet, weil die Ehe gerichtlich aufgelöst ist",
+    "ex": [
+     {
+      "de": "Meine Eltern sind seit fünf Jahren geschieden.",
+      "zh": "我父母离婚五年了。"
+     },
+     {
+      "de": "Er ist geschieden und hat zwei Kinder.",
+      "zh": "他离异，有两个孩子。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "geschieden sein — 已离婚（状态）",
+   "sich scheiden lassen — 办离婚（动作）",
+   "von jmdm. geschieden sein — 与某人离了婚",
+   "der / die Geschiedene — 离婚者（形容词名词化）"
+  ],
+  "root": "ge·schied·en：动词 scheiden（分开；离婚）的第二分词 → 形容词",
+  "fam": [
+   "scheiden",
+   "Scheidung",
+   "unterscheiden",
+   "Abschied"
+  ],
+  "ety": "scheiden 的过去分词。scheiden < 中古高地德语 scheiden < 古高地德语 sceidan（分开）。",
+  "cog": "英 shed（原义“分开”）；荷 scheiden",
+  "tip": "“他们离婚了”可说 Sie haben sich scheiden lassen 或 Sie sind geschieden；不说 *Sie haben geschieden。"
+ },
+ {
+  "w": "modern",
+  "pos": "adj",
+  "ipa": "moˈdɛʁn",
+  "lvl": "A2",
+  "forms": "moderner · am modernsten",
+  "senses": [
+   {
+    "zh": "现代的，现代化的，新式的",
+    "de": "dem neuesten Stand entsprechend; der heutigen Zeit gemäß",
+    "ex": [
+     {
+      "de": "Die Küche ist hell und modern eingerichtet.",
+      "zh": "厨房明亮，装修得很现代。"
+     },
+     {
+      "de": "Das Krankenhaus verfügt über modernste Technik.",
+      "zh": "这家医院拥有最先进的技术。"
+     }
+    ]
+   },
+   {
+    "zh": "时髦的，流行的",
+    "de": "der Mode entsprechend",
+    "ex": [
+     {
+      "de": "Solche Hüte sind wieder modern.",
+      "zh": "这种帽子又流行起来了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "moderne Kunst / Architektur — 现代艺术/建筑",
+   "die Moderne — 现代（时期），现代派",
+   "modernisieren — 使现代化"
+  ],
+  "root": "mod·ern：拉丁语 modo（刚才，现在）+ -ernus（形容词后缀）→“当今的”",
+  "fam": [
+   "Moderne",
+   "modernisieren",
+   "Modernisierung",
+   "Mode"
+  ],
+  "ety": "借自法语 moderne < 晚期拉丁语 modernus（当今的），源自 modo（刚才）。",
+  "cog": "英 modern；法 moderne",
+  "tip": "重音在第二音节 [moˈdɛʁn]；动词 modern（腐烂，读 [ˈmoːdɐn]）重音在第一音节，是另一个词。"
+ },
+ {
+  "w": "international",
+  "pos": "adj",
+  "ipa": "ɪntɐnat͡si̯oˈnaːl",
+  "lvl": "A2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "国际的，国际性的",
+    "de": "mehrere Staaten betreffend, nicht national begrenzt",
+    "ex": [
+     {
+      "de": "Die Konferenz ist international, die Arbeitssprache ist Englisch.",
+      "zh": "这是一个国际会议，工作语言是英语。"
+     },
+     {
+      "de": "Das Unternehmen ist international tätig.",
+      "zh": "这家公司在国际上开展业务。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein internationaler Flughafen / Konzern — 国际机场/跨国集团",
+   "international bekannt / anerkannt — 国际知名/认可",
+   "die internationale Gemeinschaft — 国际社会"
+  ],
+  "root": "inter·nation·al：inter-（之间）+ Nation（国家）+ -al（形容词后缀）",
+  "fam": [
+   "Nation",
+   "national",
+   "Internationalisierung",
+   "Internationale"
+  ],
+  "ety": "借自英语 international（18 世纪末由边沁 Jeremy Bentham 首创），由拉丁语 inter（之间）+ natio（民族）构成。",
+  "cog": "英 international；法 international",
+  "tip": "-tion- 读 [t͡si̯oː]，不读英语的 [ʃ]。"
+ },
+ {
+  "w": "national",
+  "pos": "adj",
+  "ipa": "nat͡si̯oˈnaːl",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "国家的，全国的",
+    "de": "einen Staat als Ganzes betreffend",
+    "ex": [
+     {
+      "de": "Das Problem muss national und international gelöst werden.",
+      "zh": "这个问题必须在国家和国际层面上解决。"
+     },
+     {
+      "de": "Die Mannschaft ist national erfolgreich, international aber kaum bekannt.",
+      "zh": "这支球队在国内很成功，但在国际上几乎不出名。"
+     }
+    ]
+   },
+   {
+    "zh": "民族的；民族主义的",
+    "de": "die Nation, das Volk betreffend; nationalistisch",
+    "ex": [
+     {
+      "de": "Die Partei hat einen stark nationalen Kurs eingeschlagen.",
+      "zh": "该党走上了强烈的民族主义路线。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf nationaler Ebene — 在国家层面",
+   "die Nationalmannschaft / der Nationalfeiertag — 国家队/国庆节",
+   "nationale Sicherheit / Interessen — 国家安全/利益"
+  ],
+  "root": "nation·al：Nation（国家，民族）+ -al（形容词后缀）",
+  "fam": [
+   "Nation",
+   "international",
+   "Nationalität",
+   "Nationalismus"
+  ],
+  "ety": "借自法语 national，来自 nation < 拉丁语 natio（出生；种族，民族），源自 nasci（出生）。",
+  "cog": "英 national, nation, native",
+  "tip": "表示“国内的”与“国际的”相对时用 national；“民族主义的”多用 nationalistisch，避免歧义。"
+ },
+ {
+  "w": "fit",
+  "pos": "adj",
+  "ipa": "fɪt",
+  "lvl": "A2",
+  "forms": "fitter · am fittesten",
+  "senses": [
+   {
+    "zh": "身体健康的，状态好的",
+    "de": "gesund und leistungsfähig",
+    "ex": [
+     {
+      "de": "Mit 70 ist meine Oma noch topfit.",
+      "zh": "我奶奶 70 岁了身体还非常棒。"
+     },
+     {
+      "de": "Ich gehe zweimal pro Woche schwimmen, um fit zu bleiben.",
+      "zh": "我每周游泳两次来保持健康。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）能胜任的，在行的",
+    "de": "(ugs.) gut vorbereitet, kompetent",
+    "ex": [
+     {
+      "de": "Für die Prüfung bin ich noch nicht fit genug.",
+      "zh": "我对这次考试还没准备充分。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich fit halten / fit bleiben — 保持健康",
+   "fit für etw.(A) sein — 为……做好准备",
+   "topfit — 状态极好",
+   "die Fitness / das Fitnessstudio — 健身/健身房"
+  ],
+  "root": "fit：英语借词",
+  "fam": [
+   "Fitness",
+   "Fitnessstudio",
+   "topfit",
+   "fit machen"
+  ],
+  "ety": "20 世纪借自英语 fit（合适的，健康的）。",
+  "cog": "英 fit",
+  "tip": "变格时辅音双写：ein fitter Mann；比较级 fitter。"
+ },
+ {
+  "w": "intelligent",
+  "pos": "adj",
+  "ipa": "ɪntɛliˈɡɛnt",
+  "lvl": "A2–B1",
+  "forms": "intelligenter · am intelligentesten",
+  "senses": [
+   {
+    "zh": "聪明的，智力高的",
+    "de": "klug, mit großer geistiger Fähigkeit",
+    "ex": [
+     {
+      "de": "Sie ist sehr intelligent und lernt schnell.",
+      "zh": "她很聪明，学得很快。"
+     },
+     {
+      "de": "Das war eine intelligente Frage.",
+      "zh": "这是个很有水平的问题。"
+     }
+    ]
+   },
+   {
+    "zh": "（技术）智能的",
+    "de": "(Technik) selbstständig reagierend, lernfähig",
+    "ex": [
+     {
+      "de": "Intelligente Stromzähler sollen Energie sparen helfen.",
+      "zh": "智能电表应有助于节约能源。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein intelligenter Mensch — 聪明人",
+   "künstliche Intelligenz (KI) — 人工智能",
+   "近义：klug, schlau（机灵，狡猾），gescheit"
+  ],
+  "root": "intel·lig·ent：拉丁语 inter（之间）+ legere（挑选，阅读）→“能在事物之间辨别”",
+  "fam": [
+   "Intelligenz",
+   "Intellekt",
+   "intellektuell"
+  ],
+  "ety": "借自拉丁语 intellegens / intelligens，为 intellegere（理解，认识）的现在分词。",
+  "cog": "英 intelligent；法 intelligent",
+  "tip": "g 读 [ɡ]，不读英语的 [dʒ]；重音在最后音节 -gent。"
+ },
+ {
+  "w": "Information",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Informationen",
+  "gs": "der Information",
+  "ipa": "ɪnfɔʁmaˈt͡si̯oːn",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "信息，消息，资料",
+    "de": "Mitteilung, Auskunft, Nachricht",
+    "ex": [
+     {
+      "de": "Weitere Informationen finden Sie auf unserer Website.",
+      "zh": "更多信息请浏览我们的网站。"
+     },
+     {
+      "de": "Danke für die Information!",
+      "zh": "谢谢告知！"
+     }
+    ]
+   },
+   {
+    "zh": "（只用单数）问讯处，咨询台",
+    "de": "Auskunftsstelle",
+    "ex": [
+     {
+      "de": "Fragen Sie doch an der Information im Erdgeschoss.",
+      "zh": "您去一楼的问讯处问问吧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Informationen über etw.(A) / zu etw.(D) — 关于……的信息",
+   "nähere / weitere Informationen — 详细/更多信息",
+   "zu Ihrer Information — 供您参考",
+   "an der Information — 在问讯处"
+  ],
+  "root": "in·form·ation：in-（进入）+ forma（形状）+ -ation（名词后缀）→“赋予形式、使成形”→ 教导、告知",
+  "fam": [
+   "informieren",
+   "Info",
+   "informativ",
+   "Informatik"
+  ],
+  "ety": "借自拉丁语 informatio（塑造；教导；概念），源自 informare（赋形，教导）。",
+  "cog": "英 information；法 information",
+  "tip": "与英语不同，德语 Information 可数：eine Information, viele Informationen（英语 information 不可数）。口语缩写 die Info, -s。"
+ },
+ {
+  "w": "Plan",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Pläne",
+  "gs": "des Plan(e)s",
+  "ipa": "plaːn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "计划，打算",
+    "de": "Vorhaben, Absicht; Programm",
+    "ex": [
+     {
+      "de": "Hast du schon Pläne für das Wochenende?",
+      "zh": "你周末有计划了吗？"
+     },
+     {
+      "de": "Alles läuft nach Plan.",
+      "zh": "一切按计划进行。"
+     }
+    ]
+   },
+   {
+    "zh": "平面图，图纸；（时刻、课程）表",
+    "de": "Zeichnung, Karte; Übersicht",
+    "ex": [
+     {
+      "de": "Der Architekt hat uns die Pläne für das neue Haus gezeigt.",
+      "zh": "建筑师给我们看了新房子的设计图。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Plan machen / haben / ändern — 制定/有/改变计划",
+   "nach Plan — 按计划",
+   "Pläne schmieden — 筹划",
+   "auf dem Plan stehen — 列入日程",
+   "Stadtplan / Fahrplan / Stundenplan — 城市地图/时刻表/课程表"
+  ],
+  "root": "Plan：法语借词，本义“平面”",
+  "fam": [
+   "planen",
+   "Planung",
+   "Stadtplan",
+   "Fahrplan",
+   "Stundenplan"
+  ],
+  "ety": "借自法语 plan（平面图），源自拉丁语 planum（平面）/ planus（平的）。",
+  "cog": "英 plan, plane；法 plan",
+  "tip": "复数有变音 Pläne。“我没有计划”可说 Ich habe nichts vor（vorhaben 更口语）。"
+ },
+ {
+  "w": "E-Mail",
+  "pos": "n",
+  "gen": "f",
+  "pl": "E-Mails",
+  "gs": "der E-Mail",
+  "ipa": "ˈiːmeɪ̯l",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "电子邮件",
+    "de": "elektronische Nachricht, die über das Internet verschickt wird",
+    "ex": [
+     {
+      "de": "Ich schicke Ihnen die Unterlagen per E-Mail.",
+      "zh": "我会通过电子邮件把资料发给您。"
+     },
+     {
+      "de": "Hast du meine E-Mail schon gelesen?",
+      "zh": "你看过我的邮件了吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine E-Mail an jmdn.(A) schreiben / schicken — 给某人写/发邮件",
+   "per E-Mail — 通过电子邮件",
+   "E-Mail-Adresse — 电子邮箱地址",
+   "mailen — （口）发邮件"
+  ],
+  "root": "E-Mail：英语借词，E = electronic（电子的）+ mail（邮件）",
+  "fam": [
+   "mailen",
+   "Mail",
+   "E-Mail-Adresse",
+   "Post"
+  ],
+  "ety": "20 世纪 80–90 年代借自英语 e-mail（electronic mail）；英语 mail 原指“邮袋”，来自古法语 male（袋子）。",
+  "cog": "英 e-mail, mail",
+  "tip": "标准德语为阴性 die E-Mail；南德、奥地利、瑞士也用中性 das E-Mail。连字符写法 E-Mail 为标准写法。"
+ }
+]

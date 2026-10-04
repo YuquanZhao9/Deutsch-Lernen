@@ -1,7 +1,7 @@
 import json, glob, sys, os, re
 from collections import Counter
 ents = []
-for p in sorted(glob.glob('parts/[A-D][12].json'))+sorted(glob.glob('parts/[0-9][0-9][0-9].json')):
+for p in sorted(glob.glob('parts/[A-D][12].json'))+sorted(glob.glob('parts/[0-9][0-9][0-9].json'))+sorted(glob.glob('parts/X[0-9][0-9].json')):
     d = json.load(open(p)); print(p, len(d)); ents += d
 seen = {}
 probs = []

@@ -1,0 +1,1929 @@
+[
+ {
+  "w": "Etikett",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Etiketten (auch: Etikette, Etiketts)",
+  "gs": "des Etikett(e)s",
+  "ipa": "etiˈkɛt",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "标签，商标贴；价签",
+    "de": "aufgeklebtes oder angehängtes Schildchen mit Angaben zu einer Ware",
+    "ex": [
+     {
+      "de": "Auf dem Etikett stehen die Inhaltsstoffe und das Haltbarkeitsdatum.",
+      "zh": "标签上写着成分和保质期。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬）标签，帽子（对人或事的简单化归类）",
+    "de": "pauschale, oft abwertende Bezeichnung für jmdn./etw.",
+    "ex": [
+     {
+      "de": "Das Etikett „populistisch“ wird inzwischen fast jeder Partei angeheftet.",
+      "zh": "如今几乎每个政党都被扣上“民粹主义”的帽子。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Etikett aufkleben / ablösen / anbringen — 贴上/揭下/加上标签",
+   "jmdm. ein Etikett anheften / aufkleben — 给某人贴标签、扣帽子",
+   "Preisetikett · Weinetikett — 价签 · 酒标"
+  ],
+  "root": "Etikett：整体借自法语 étiquette（小标签），德语去掉词尾 -e 并改为中性",
+  "fam": [
+   "etikettieren",
+   "Etikettierung",
+   "Etikette",
+   "Etikettenschwindel"
+  ],
+  "ety": "借自法语 étiquette（贴在物品上的标签）；法语词一般认为源自古法语 estiquier（钉住、固定），后者来自日耳曼语（与 stechen/stecken 有关）。",
+  "cog": "英 etiquette, ticket（经古法语 estiquet）",
+  "tip": "das Etikett（标签）≠ die Etikette（礼仪、礼节）。Etikettenschwindel 指“挂羊头卖狗肉”。"
+ },
+ {
+  "w": "Fahrkarte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fahrkarten",
+  "gs": "der Fahrkarte",
+  "ipa": "ˈfaːɐ̯ˌkaʁtə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "（火车、公交等的）车票",
+    "de": "Ausweis, der zur Fahrt mit einem öffentlichen Verkehrsmittel berechtigt",
+    "ex": [
+     {
+      "de": "Ich habe meine Fahrkarte am Automaten gekauft.",
+      "zh": "我在自动售票机上买了车票。"
+     },
+     {
+      "de": "Eine Fahrkarte nach Hamburg, bitte – hin und zurück.",
+      "zh": "请给我一张去汉堡的往返票。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Fahrkarte kaufen / lösen / entwerten — 买票 / 购票（较正式）/ 打票",
+   "eine einfache Fahrkarte · eine Hin- und Rückfahrkarte — 单程票 · 往返票",
+   "eine Fahrkarte nach + 地名 — 去某地的票；Fahrkartenautomat / Fahrkartenkontrolle — 售票机 / 查票"
+  ],
+  "root": "Fahr·karte：fahren（乘车行驶）+ Karte（卡片）→ 乘车用的卡片 → 车票",
+  "fam": [
+   "fahren",
+   "Fahrschein",
+   "Fahrgast",
+   "Rückfahrkarte",
+   "Karte"
+  ],
+  "ety": "复合词：fahren（本族词）+ Karte（< 法 carte < 拉 charta < 希腊 chártēs，纸、纸页）。",
+  "cog": "英 card, chart（同出拉丁 charta）；fahren ~ 英 fare",
+  "tip": "飞机票一般说 Flugticket / Flugschein，不说 *Flugkarte；口语中 Ticket 也可指车票。Fahrschein 多见于公交公司的官方用语。"
+ },
+ {
+  "w": "Faulheit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Faulheit",
+  "ipa": "ˈfaʊ̯lhaɪ̯t",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "懒惰，懒散",
+    "de": "Unlust zu arbeiten oder sich anzustrengen",
+    "ex": [
+     {
+      "de": "Aus reiner Faulheit hat er die Bewerbung nicht abgeschickt.",
+      "zh": "他纯粹是因为懒才没把求职申请寄出去。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus Faulheit — 出于懒惰",
+   "vor Faulheit stinken（俗）— 懒得要命",
+   "Denkfaulheit · Schreibfaulheit — 懒于思考 · 懒于写字"
+  ],
+  "root": "Faul·heit：faul（懒的；腐烂的）+ -heit（抽象名词后缀）→ 懒惰",
+  "fam": [
+   "faul",
+   "faulenzen",
+   "Faulpelz",
+   "verfaulen",
+   "Fäulnis"
+  ],
+  "ety": "faul < 中古高地德语 vūl < 古高地德语 fūl（腐烂的，发臭的）< 原始日耳曼语 *fūlaz；“懒惰”是由“腐烂、不动”引申出的后起义。",
+  "cog": "英 foul；荷 vuil",
+  "tip": "faul 有两义：懒的（ein fauler Schüler）和腐烂的（faule Eier）。Faulheit 只对应“懒惰”，“腐烂”用 Fäulnis。"
+ },
+ {
+  "w": "gefeit",
+  "pos": "adj",
+  "ipa": "ɡəˈfaɪ̯t",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（对某事）有免疫力的，不受……侵害的（多用于否定）",
+    "de": "gegen etw. geschützt, immun (meist verneint)",
+    "ex": [
+     {
+      "de": "Auch große Konzerne sind nicht gegen Cyberangriffe gefeit.",
+      "zh": "大公司也无法免受网络攻击。"
+     },
+     {
+      "de": "Niemand ist davor gefeit, Fehler zu machen.",
+      "zh": "谁都难免犯错。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gegen etw.(A) gefeit sein — 不受某事影响，对某事有抵抗力",
+   "vor etw.(D) gefeit sein — 同上（较少见）",
+   "nicht / niemand ist davor gefeit, … zu … — 谁都不能保证不……"
+  ],
+  "root": "ge·fei·t：动词 feien（用魔法护佑）的第二分词 → 被魔法保护的 → 刀枪不入的、免疫的",
+  "fam": [
+   "feien",
+   "Fee"
+  ],
+  "ety": "feien < 中古高地德语 feinen/feien（施魔法）< 中古高地德语 fei(e)（仙女，Fee），后者借自古法语 fée < 通俗拉丁语 fata（命运女神）。动词 feien 今已罕用，基本只保留分词 gefeit。",
+  "cog": "英 fairy（经古法语 faerie）；法 fée",
+  "tip": "只作表语用，几乎固定于 gegen etw. gefeit sein；正式书面语色彩。"
+ },
+ {
+  "w": "Fettsäure",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fettsäuren",
+  "gs": "der Fettsäure",
+  "ipa": "ˈfɛtˌzɔɪ̯ʁə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "脂肪酸",
+    "de": "organische Säure, die Bestandteil von Fetten ist",
+    "ex": [
+     {
+      "de": "Fisch enthält viele ungesättigte Fettsäuren.",
+      "zh": "鱼含有大量不饱和脂肪酸。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gesättigte / ungesättigte Fettsäuren — 饱和/不饱和脂肪酸",
+   "Omega-3-Fettsäuren · Transfettsäuren — ω-3 脂肪酸 · 反式脂肪酸"
+  ],
+  "root": "Fett·säure：Fett（脂肪）+ Säure（酸）",
+  "fam": [
+   "Fett",
+   "fettig",
+   "Säure",
+   "sauer"
+  ],
+  "ety": "复合词：Fett（原为低地德语形式，与 feist 同源）+ Säure（< sauer，古高地德语 sūr）。",
+  "cog": "英 fat, sour"
+ },
+ {
+  "w": "Finanzministerium",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Finanzministerien",
+  "gs": "des Finanzministeriums",
+  "ipa": "fiˈnant͡sminɪsˌteːʁi̯ʊm",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "财政部",
+    "de": "Ministerium, das für die Staatsfinanzen zuständig ist",
+    "ex": [
+     {
+      "de": "Das Finanzministerium rechnet mit geringeren Steuereinnahmen.",
+      "zh": "财政部预计税收将减少。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Bundesministerium der Finanzen (BMF) — 德国联邦财政部（正式名称）",
+   "ein Sprecher des Finanzministeriums — 财政部发言人",
+   "Finanzminister(in) — 财政部长"
+  ],
+  "root": "Finanz·ministerium：Finanz-（财政）+ Ministerium（部）",
+  "fam": [
+   "Finanzen",
+   "finanziell",
+   "Minister",
+   "Ministerium",
+   "finanzieren"
+  ],
+  "ety": "Finanz < 法 finance（支付、资金）；Ministerium < 拉 ministerium（服务、职务），minister 原义“仆人、助手”。",
+  "cog": "英 finance, ministry, minister",
+  "tip": "复数 -ien：Ministerien [minɪsˈteːʁi̯ən]。"
+ },
+ {
+  "w": "fließend",
+  "pos": "adj",
+  "ipa": "ˈfliːsn̩t",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（语言）流利的",
+    "de": "ohne Stocken, sicher (beim Sprechen einer Sprache)",
+    "ex": [
+     {
+      "de": "Sie spricht fließend Deutsch und Englisch.",
+      "zh": "她德语和英语都说得很流利。"
+     },
+     {
+      "de": "Für die Stelle sind fließende Spanischkenntnisse erforderlich.",
+      "zh": "该职位要求西班牙语流利。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "fließend Deutsch sprechen（副词用法，无冠词）— 说流利的德语",
+   "fließendes Wasser — 自来水；流动的水",
+   "fließende Übergänge / Grenzen — 界限模糊、逐渐过渡"
+  ],
+  "root": "fließ·end：fließen（流动）的第一分词 → 流动的 → 流畅的",
+  "fam": [
+   "fließen",
+   "Fluss",
+   "flüssig",
+   "Einfluss",
+   "Überfluss"
+  ],
+  "ety": "fließen < 中古高地德语 vliezen < 古高地德语 fliozan < 原始日耳曼语 *fleutaną（漂流、流动）。",
+  "cog": "英 fleet（古义：漂浮、流过）；荷 vlieten",
+  "tip": "瑞士写作 fliessend（瑞士不用 ß）。flüssig 也可形容讲话、文笔流畅，但说某种语言流利固定用 fließend Deutsch sprechen。"
+ },
+ {
+  "w": "Frauchen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Frauchen",
+  "gs": "des Frauchens",
+  "ipa": "ˈfʁaʊ̯çən",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（狗等宠物的）女主人",
+    "de": "Besitzerin eines Hundes (aus Sicht des Tieres)",
+    "ex": [
+     {
+      "de": "Der Hund wartet vor dem Supermarkt geduldig auf sein Frauchen.",
+      "zh": "狗在超市门口耐心地等它的女主人。"
+     }
+    ]
+   },
+   {
+    "zh": "（旧，亲昵）小妇人；老婆",
+    "de": "(veraltend, fam.) kleine Frau; Ehefrau",
+    "ex": [
+     {
+      "de": "Er ging mit seinem Frauchen spazieren.",
+      "zh": "他和老婆一起去散步。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Herrchen und Frauchen — （狗的）男主人和女主人",
+   "Komm zu Frauchen! — 到女主人这儿来！（对狗说）"
+  ],
+  "root": "Frau·chen：Frau（女人）+ -chen（指小后缀，中性）",
+  "fam": [
+   "Frau",
+   "Herrchen",
+   "Fräulein"
+  ],
+  "ety": "Frau < 中古高地德语 vrouwe < 古高地德语 frouwa（女主人、贵妇），原义是“女主人”，故 Frauchen 用于宠物主人顺理成章。",
+  "cog": "荷 vrouw",
+  "tip": "-chen 结尾一律中性：das Frauchen。用于宠物时第三人称常省冠词：Frauchen kommt gleich。"
+ },
+ {
+  "w": "frontal",
+  "pos": "adj",
+  "ipa": "fʁɔnˈtaːl",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "正面的，迎面的",
+    "de": "von vorn, an der Vorderseite",
+    "ex": [
+     {
+      "de": "Die beiden Autos stießen frontal zusammen.",
+      "zh": "两辆车迎面相撞。"
+     }
+    ]
+   },
+   {
+    "zh": "直接的，正面的（攻击、批评）",
+    "de": "direkt, ohne Umschweife (Angriff, Kritik)",
+    "ex": [
+     {
+      "de": "Die Opposition griff den Minister frontal an.",
+      "zh": "反对党正面抨击部长。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "frontal zusammenstoßen — 迎面相撞；Frontalzusammenstoß — 正面碰撞",
+   "Frontalunterricht — 教师面对全班讲授的传统授课方式",
+   "ein frontaler Angriff — 正面进攻"
+  ],
+  "root": "front·al：Front（前面）+ -al（形容词后缀）",
+  "fam": [
+   "Front",
+   "Frontalunterricht",
+   "Fassade"
+  ],
+  "ety": "< 新拉丁语 frontalis < 拉 frons, frontis（前额；正面）。",
+  "cog": "英 frontal, front"
+ },
+ {
+  "w": "gebrochen",
+  "pos": "adj",
+  "ipa": "ɡəˈbʁɔxn̩",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（语言）蹩脚的，不流利的",
+    "de": "fehlerhaft, stockend (Sprache)",
+    "ex": [
+     {
+      "de": "Er erklärte uns in gebrochenem Deutsch den Weg.",
+      "zh": "他用蹩脚的德语给我们指路。"
+     }
+    ]
+   },
+   {
+    "zh": "（精神上）垮掉的，心碎的",
+    "de": "seelisch zerstört, ohne Lebensmut",
+    "ex": [
+     {
+      "de": "Nach dem Tod seiner Frau war er ein gebrochener Mann.",
+      "zh": "妻子去世后，他整个人都垮了。"
+     }
+    ]
+   },
+   {
+    "zh": "断了的；（数）分数的；（光）折射的",
+    "de": "entzwei; (Math.) als Bruch; (Physik) abgelenkt",
+    "ex": [
+     {
+      "de": "Mit gebrochenem Bein wurde sie ins Krankenhaus gebracht.",
+      "zh": "她腿骨折被送进了医院。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in gebrochenem Deutsch / Englisch — 用蹩脚的德语/英语",
+   "ein gebrochenes Herz — 破碎的心",
+   "ein gebrochenes Verhältnis zu etw. haben — 与某事关系疏离、存在裂痕"
+  ],
+  "root": "ge·broch·en：brechen（打断）的第二分词 → 断了的 → 不完整的、垮掉的",
+  "fam": [
+   "brechen",
+   "Bruch",
+   "zerbrechen",
+   "Verbrechen",
+   "gebrechlich"
+  ],
+  "ety": "brechen < 中古高地德语 brechen < 古高地德语 brehhan < 原始日耳曼语 *brekaną。",
+  "cog": "英 break, broken；荷 breken",
+  "tip": "brechen 的变化：bricht · brach · hat gebrochen。gebrochenes Deutsch 是固定说法，不说 *kaputtes Deutsch。"
+ },
+ {
+  "w": "Geflüchtete",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Geflüchtete",
+  "gs": "des Geflüchteten",
+  "ipa": "ɡəˈflʏçtətə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "逃难者，难民（逃离家园的人）",
+    "de": "Person, die aus ihrer Heimat geflohen ist",
+    "ex": [
+     {
+      "de": "Viele Geflüchtete aus der Ukraine haben in Deutschland Arbeit gefunden.",
+      "zh": "许多来自乌克兰的难民在德国找到了工作。"
+     },
+     {
+      "de": "Die Stadt bringt die Geflüchteten in Wohnungen unter.",
+      "zh": "市政府把难民安置在住房里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "形容词变格：ein Geflüchteter / eine Geflüchtete / der/die Geflüchtete / die Geflüchteten / Geflüchtete（无冠词复数）",
+   "Geflüchtete aufnehmen / unterbringen / integrieren — 接收/安置/融入难民",
+   "Geflüchtete aus + 国名 — 来自某国的难民"
+  ],
+  "root": "Ge·flücht·et·e：flüchten（逃）的第二分词 geflüchtet 名词化 → 逃出来的人",
+  "fam": [
+   "flüchten",
+   "Flucht",
+   "Flüchtling",
+   "fliehen",
+   "flüchtig"
+  ],
+  "ety": "flüchten < 中古高地德语 vlühten，派生自 Flucht（< 古高地德语 fluht），与 fliehen 同源。",
+  "cog": "英 flight（逃跑义）, flee",
+  "tip": "按形容词变格，阳性词典形式为 der Geflüchtete / ein Geflüchteter，阴性 die Geflüchtete。近年媒体多用 Geflüchtete 代替 Flüchtling，被认为更中性。"
+ },
+ {
+  "w": "Geländer",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Geländer",
+  "gs": "des Geländers",
+  "ipa": "ɡəˈlɛndɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "栏杆，扶手",
+    "de": "Vorrichtung aus Stangen o. Ä. zum Festhalten und als Absturzsicherung",
+    "ex": [
+     {
+      "de": "Bitte halten Sie sich auf der Treppe am Geländer fest.",
+      "zh": "下楼梯时请扶好扶手。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich am Geländer festhalten — 扶住栏杆",
+   "Treppengeländer · Brückengeländer · Balkongeländer — 楼梯扶手 · 桥栏 · 阳台栏杆"
+  ],
+  "root": "Ge·länd·er：ge-（集合）+ 中古高地德语 lander（栅栏）→ 一排栏杆",
+  "fam": [
+   "Treppengeländer",
+   "Brückengeländer"
+  ],
+  "ety": "< 中古高地德语 gelender(e)，一般认为是 lander（木杆栅栏）的集合名词。",
+  "cog": "—",
+  "tip": "注意与 Gelände（地带、场地）区分：das Geländer 栏杆，das Gelände 场地。"
+ },
+ {
+  "w": "Gerüst",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gerüste",
+  "gs": "des Gerüst(e)s",
+  "ipa": "ɡəˈʁʏst",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "脚手架",
+    "de": "Konstruktion aus Stangen und Brettern für Bauarbeiten",
+    "ex": [
+     {
+      "de": "An der Fassade wurde ein Gerüst aufgestellt.",
+      "zh": "外墙上搭起了脚手架。"
+     }
+    ]
+   },
+   {
+    "zh": "框架，骨架（比喻结构）",
+    "de": "tragende Grundstruktur",
+    "ex": [
+     {
+      "de": "Das theoretische Gerüst der Arbeit steht schon.",
+      "zh": "论文的理论框架已经搭好了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Gerüst aufstellen / aufbauen / abbauen — 搭/拆脚手架",
+   "das Grundgerüst eines Textes — 文章的基本框架",
+   "Baugerüst — 建筑脚手架"
+  ],
+  "root": "Ge·rüst：ge-（集合）+ rüsten（装备、准备）→ 装配起来的东西 → 脚手架、框架",
+  "fam": [
+   "rüsten",
+   "Rüstung",
+   "ausrüsten",
+   "Grundgerüst"
+  ],
+  "ety": "< 中古高地德语 gerüste < 古高地德语 girusti（装备、器具），与 rüsten 同源。",
+  "cog": "—"
+ },
+ {
+  "w": "Gewalttat",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Gewalttaten",
+  "gs": "der Gewalttat",
+  "ipa": "ɡəˈvaltˌtaːt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "暴力行为，暴行",
+    "de": "Tat, bei der Gewalt gegen Menschen oder Sachen angewendet wird",
+    "ex": [
+     {
+      "de": "Die Polizei ermittelt nach der Gewalttat am Bahnhof.",
+      "zh": "警方正在调查火车站发生的暴力事件。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Gewalttat begehen / verüben — 实施暴力行为",
+   "Opfer einer Gewalttat werden — 成为暴力行为的受害者",
+   "Gewalttäter · gewalttätig — 暴力犯 · 有暴力倾向的"
+  ],
+  "root": "Gewalt·tat：Gewalt（暴力）+ Tat（行为）",
+  "fam": [
+   "Gewalt",
+   "gewalttätig",
+   "Gewalttäter",
+   "Tat",
+   "Täter"
+  ],
+  "ety": "Gewalt < 古高地德语 giwalt，与 walten（支配）同源；Tat < 古高地德语 tāt，与 tun 同源。",
+  "cog": "英 wield（~walten）, deed（~Tat）"
+ },
+ {
+  "w": "Grausamkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Grausamkeiten",
+  "gs": "der Grausamkeit",
+  "ipa": "ˈɡʁaʊ̯zaːmkaɪ̯t",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "残忍，残酷",
+    "de": "das Grausamsein, Unbarmherzigkeit",
+    "ex": [
+     {
+      "de": "Die Grausamkeit des Krieges ist kaum zu beschreiben.",
+      "zh": "战争的残酷几乎无法用语言形容。"
+     }
+    ]
+   },
+   {
+    "zh": "（常复数）残忍的行为，暴行",
+    "de": "grausame Handlung",
+    "ex": [
+     {
+      "de": "Die Zeugen berichteten von unvorstellbaren Grausamkeiten.",
+      "zh": "证人讲述了难以想象的暴行。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Grausamkeit gegenüber Tieren — 虐待动物",
+   "mit äußerster Grausamkeit — 极其残忍地"
+  ],
+  "root": "grau·sam·keit：grausam（残忍的）+ -keit（抽象名词后缀）；grausam = grausen（恐惧）+ -sam",
+  "fam": [
+   "grausam",
+   "Grauen",
+   "grausig",
+   "grauenhaft",
+   "Graus"
+  ],
+  "ety": "grausam < 中古高地德语 grūsam（令人恐惧的），与 grausen/grauen（感到恐惧）有关，原义“可怕的”，后转为“残忍的”。",
+  "cog": "—",
+  "tip": "与颜色 grau（灰色）无关。"
+ },
+ {
+  "w": "Gymnastik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Gymnastik",
+  "ipa": "ɡʏmˈnastɪk",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "体操，健身操",
+    "de": "körperliche Übungen zur Kräftigung und Lockerung des Körpers",
+    "ex": [
+     {
+      "de": "Jeden Morgen macht meine Großmutter eine halbe Stunde Gymnastik.",
+      "zh": "我奶奶每天早上做半小时健身操。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Gymnastik machen — 做操",
+   "Rückengymnastik · Wassergymnastik · Krankengymnastik — 背部保健操 · 水中健身操 · 理疗（体疗）",
+   "rhythmische Sportgymnastik — 艺术体操"
+  ],
+  "root": "Gymnast·ik：希腊语 gymnastikḗ（体育训练的技艺），词根 gymnós（裸体的）——古希腊人裸体训练",
+  "fam": [
+   "gymnastisch",
+   "Gymnasium",
+   "Krankengymnastik"
+  ],
+  "ety": "< 拉丁语 gymnastica < 希腊语 gymnastikḗ (téchnē)，来自 gymnázein（锻炼，原义“裸体练习”）< gymnós（裸体的）。",
+  "cog": "英 gymnastics, gym",
+  "tip": "竞技体操说 Turnen / Kunstturnen；Gymnastik 多指健身、保健操。Gymnasium 在德国是“文理中学”，不是“健身房”（Fitnessstudio）。"
+ },
+ {
+  "w": "Gänze",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Gänze",
+  "ipa": "ˈɡɛnt͡sə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "整体，全部（只用于固定短语）",
+    "de": "Gesamtheit (nur in festen Wendungen)",
+    "ex": [
+     {
+      "de": "Der Bericht wird in seiner Gänze veröffentlicht.",
+      "zh": "报告将全文公布。"
+     },
+     {
+      "de": "Die Kosten werden zur Gänze vom Arbeitgeber übernommen.",
+      "zh": "费用完全由雇主承担。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in seiner / ihrer Gänze — 整体上，全部地",
+   "zur Gänze — 完全地，全部（书面，奥地利常用）"
+  ],
+  "root": "Gänz·e：ganz（整个的）+ -e（形容词名词化后缀，伴随变音）",
+  "fam": [
+   "ganz",
+   "gänzlich",
+   "Ganzheit",
+   "ergänzen"
+  ],
+  "ety": "< 中古高地德语 genze，派生自 ganz（< 古高地德语 ganz）；ganz 的更早来源不详。",
+  "cog": "—",
+  "tip": "只出现在 in seiner Gänze / zur Gänze 中，不能单独作普通名词。"
+ },
+ {
+  "w": "Henne",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Hennen",
+  "gs": "der Henne",
+  "ipa": "ˈhɛnə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "母鸡；（其他鸟类的）雌禽",
+    "de": "weibliches Huhn; Weibchen verschiedener Vögel",
+    "ex": [
+     {
+      "de": "Die Hennen legen jeden Tag frische Eier.",
+      "zh": "母鸡每天都下新鲜的蛋。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Was war zuerst da, die Henne oder das Ei? — 先有鸡还是先有蛋？",
+   "Legehenne · Glucke — 产蛋母鸡 · 抱窝母鸡"
+  ],
+  "root": "Henn·e：Hahn（公鸡）的阴性形式，-e 为阴性词尾，伴随元音变化",
+  "fam": [
+   "Hahn",
+   "Huhn",
+   "Hühnchen",
+   "Legehenne"
+  ],
+  "ety": "< 中古高地德语 henne < 古高地德语 henna，为 Hahn（古高地德语 hano）的阴性派生词；Hahn 一般认为与拉丁语 canere（唱）同源，原义“歌唱者”。",
+  "cog": "英 hen；荷 hen",
+  "tip": "日常说“鸡”多用 Huhn（总称、母鸡），Henne 更具体、偏农业用语；公鸡 Hahn，小鸡 Küken。"
+ },
+ {
+  "w": "Hohn",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Hohn(e)s",
+  "ipa": "hoːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "嘲讽，讥笑，蔑视",
+    "de": "verächtlicher Spott",
+    "ex": [
+     {
+      "de": "Für seinen Vorschlag erntete er nur Hohn und Spott.",
+      "zh": "他的提议只招来一片冷嘲热讽。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Hohn und Spott — 冷嘲热讽",
+   "etw. spricht jeder Vernunft / allen Regeln Hohn — 某事完全违背理性/一切规则",
+   "jmdm. zum Hohn — 偏偏与某人作对；Das ist der reinste Hohn! — 这简直是嘲弄！"
+  ],
+  "root": "Hohn：单一词根；动词 höhnen、verhöhnen，形容词 höhnisch",
+  "fam": [
+   "höhnisch",
+   "verhöhnen",
+   "Hohngelächter",
+   "hohnlachen"
+  ],
+  "ety": "< 中古高地德语 hōn < 古高地德语 hōna（侮辱、耻辱），与古高地德语形容词 hōni（被轻视的）相关；可比较哥特语 hauns（卑贱的）。",
+  "cog": "—",
+  "tip": "Hohn 比 Spott 更强烈、更带蔑视；常见于 etw. spricht + D Hohn（与……背道而驰）这一书面结构。"
+ },
+ {
+  "w": "häufen",
+  "pos": "v",
+  "ipa": "ˈhɔɪ̯fn̩",
+  "lvl": "B2–C1",
+  "forms": "häuft · häufte · hat gehäuft",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（反身）sich häufen：增多，频繁出现",
+    "de": "sich häufen: zahlreicher, häufiger werden",
+    "ex": [
+     {
+      "de": "In letzter Zeit häufen sich die Beschwerden über den Lärm.",
+      "zh": "最近关于噪音的投诉越来越多。"
+     },
+     {
+      "de": "Die Fälle von Betrug haben sich gehäuft.",
+      "zh": "诈骗案件频频发生。"
+     }
+    ]
+   },
+   {
+    "zh": "堆积，堆放",
+    "de": "zu einem Haufen anhäufen, aufschichten",
+    "ex": [
+     {
+      "de": "Sie häufte das Laub in eine Ecke des Gartens.",
+      "zh": "她把落叶堆到花园的一角。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich häufen — 增多、接连发生（主语多为 Fälle, Beschwerden, Anzeichen, Fehler 等）",
+   "etw. auf etw.(A) häufen — 把某物堆到……上",
+   "ein gehäufter Teelöffel — 满满一茶匙（冒尖）；gehäuft auftreten — 频繁出现"
+  ],
+  "root": "häuf·en：Haufen（堆）+ -en（动词词尾，变音）→ 堆起来；反身 → 越积越多",
+  "fam": [
+   "Haufen",
+   "häufig",
+   "Häufung",
+   "anhäufen",
+   "überhäufen"
+  ],
+  "ety": "< 中古高地德语 hiufen/häufen，派生自 Haufen（< 古高地德语 hūfo）。",
+  "cog": "英 heap；荷 hoop",
+  "tip": "常用反身形式 sich häufen 表示“多起来”，比 zunehmen 更强调事件接二连三；häufig（经常）即由此而来。"
+ },
+ {
+  "w": "Jahrhundertwende",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Jahrhundertwenden",
+  "gs": "der Jahrhundertwende",
+  "ipa": "jaːɐ̯ˈhʊndɐtˌvɛndə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "世纪之交",
+    "de": "Übergang von einem Jahrhundert zum nächsten (bes. um 1900 oder 2000)",
+    "ex": [
+     {
+      "de": "Das Gebäude wurde um die Jahrhundertwende errichtet.",
+      "zh": "这座建筑建于世纪之交。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "um die Jahrhundertwende — 世纪之交前后",
+   "seit der Jahrhundertwende — 自世纪之交以来",
+   "die Kunst der Jahrhundertwende — 1900 年前后的艺术（不加说明时常指 1900 年）"
+  ],
+  "root": "Jahr·hundert·wende：Jahrhundert（世纪）+ Wende（转折）",
+  "fam": [
+   "Jahrhundert",
+   "Wende",
+   "wenden",
+   "Jahrtausendwende"
+  ],
+  "ety": "复合词：Jahrhundert（Jahr + hundert）+ Wende（< wenden，古高地德语 wenten）。",
+  "cog": "英 year, hundred, wend",
+  "tip": "德国史语境中，单说 die Wende 常指 1989/90 年的政治转折。"
+ },
+ {
+  "w": "kandidieren",
+  "pos": "v",
+  "ipa": "kandiˈdiːʁən",
+  "lvl": "B2–C1",
+  "forms": "kandidiert · kandidierte · hat kandidiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "参选，竞选（某职位）",
+    "de": "sich als Kandidat um ein Amt bewerben",
+    "ex": [
+     {
+      "de": "Sie kandidiert bei der nächsten Wahl für den Bundestag.",
+      "zh": "她将在下届选举中竞选联邦议员。"
+     },
+     {
+      "de": "Der Bürgermeister will nicht noch einmal kandidieren.",
+      "zh": "市长不打算再次参选。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "für etw.(A) kandidieren — 竞选某职位/某机构席位（für das Amt, für den Bundestag）",
+   "als + 职位 kandidieren — 作为……候选人参选",
+   "gegen jmdn. kandidieren — 与某人竞选"
+  ],
+  "root": "kandid·ier·en：Kandidat（候选人）+ -ieren（外来动词后缀）",
+  "fam": [
+   "Kandidat",
+   "Kandidatin",
+   "Kandidatur"
+  ],
+  "ety": "派生自 Kandidat < 拉 candidatus（穿白袍的人；古罗马求职者穿白袍）< candidus（洁白的）。",
+  "cog": "英 candidate, candid",
+  "tip": "-ieren 动词第二分词不加 ge-：hat kandidiert。"
+ },
+ {
+  "w": "Kennzahl",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kennzahlen",
+  "gs": "der Kennzahl",
+  "ipa": "ˈkɛnˌt͡saːl",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（经济、技术）指标，关键数据",
+    "de": "Zahl, die einen Sachverhalt in komprimierter Form kennzeichnet",
+    "ex": [
+     {
+      "de": "Alle wichtigen Kennzahlen des Unternehmens haben sich verbessert.",
+      "zh": "公司所有重要指标都有所改善。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wirtschaftliche / betriebswirtschaftliche Kennzahlen — 经济指标 / 企业经营指标",
+   "eine Kennzahl für etw.(A) — 衡量某事的指标",
+   "Kennzahlen erheben / auswerten — 采集/分析指标数据"
+  ],
+  "root": "Kenn·zahl：kennen（认识、识别）+ Zahl（数）→ 用来识别状况的数字",
+  "fam": [
+   "kennen",
+   "Kennzeichen",
+   "kennzeichnen",
+   "Zahl"
+  ],
+  "ety": "复合词：kennen（< 古高地德语 -kennen）+ Zahl（< 古高地德语 zala）。",
+  "cog": "英 ken, tale（~Zahl）",
+  "tip": "英语 KPI 在德语中常译为 Leistungskennzahl。旧时“电话区号”也称 Kennzahl，现多说 Vorwahl。"
+ },
+ {
+  "w": "Kirmes",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kirmessen",
+  "gs": "der Kirmes",
+  "ipa": "ˈkɪʁməs",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（地区性）集市庙会，游乐集市",
+    "de": "(bes. west- und mitteldt.) Volksfest mit Fahrgeschäften und Buden, urspr. zur Kirchweih",
+    "ex": [
+     {
+      "de": "Am Wochenende gehen wir mit den Kindern auf die Kirmes.",
+      "zh": "周末我们带孩子去逛游乐集市。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf die Kirmes gehen · auf der Kirmes — 去集市 · 在集市上",
+   "地区同义词：Kirchweih, Kerwe, Kirtag（奥）, Jahrmarkt, Volksfest"
+  ],
+  "root": "Kir·mes：由 Kirch(en)messe 缩合而来：Kirche（教堂）+ Messe（弥撒）→ 教堂落成纪念日的弥撒及其节庆",
+  "fam": [
+   "Kirche",
+   "Messe",
+   "Kirchweih"
+  ],
+  "ety": "< 中古高地德语 kirmesse, kirchmesse（教堂落成纪念弥撒）；Messe < 教会拉丁语 missa。",
+  "cog": "荷 kermis；英 kermis（借自荷兰语）",
+  "tip": "主要流行于德国西部和中部（如北威州）；南德多说 Kirchweih/Kerwe，北德说 Jahrmarkt。复数双写 s：Kirmessen。"
+ },
+ {
+  "w": "Klopapier",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Klopapiers",
+  "ipa": "ˈkloːpaˌpiːɐ̯",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（口）卫生纸，厕纸",
+    "de": "(ugs.) Toilettenpapier",
+    "ex": [
+     {
+      "de": "Wir haben kein Klopapier mehr – kannst du welches kaufen?",
+      "zh": "我们没有卫生纸了，你能买点吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Rolle Klopapier — 一卷卫生纸",
+   "正式说法：Toilettenpapier；Klo（口）= Toilette"
+  ],
+  "root": "Klo·papier：Klo（厕所，Klosett 的缩略）+ Papier（纸）",
+  "fam": [
+   "Klo",
+   "Klosett",
+   "Papier",
+   "Toilettenpapier"
+  ],
+  "ety": "Klo 是 Klosett 的口语缩略，Klosett < 英 (water) closet；Papier < 拉 papyrus < 希腊 pápyros（纸莎草）。",
+  "cog": "英 closet, paper",
+  "tip": "不可数，量词用 eine Rolle / eine Packung Klopapier。"
+ },
+ {
+  "w": "Kluft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Klüfte",
+  "gs": "der Kluft",
+  "ipa": "klʊft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（比喻）鸿沟，隔阂，差距",
+    "de": "tiefgreifender Gegensatz, Abstand zwischen Gruppen",
+    "ex": [
+     {
+      "de": "Die Kluft zwischen Arm und Reich wird immer größer.",
+      "zh": "贫富差距越来越大。"
+     },
+     {
+      "de": "Zwischen Anspruch und Wirklichkeit klafft eine tiefe Kluft.",
+      "zh": "理想与现实之间存在巨大鸿沟。"
+     }
+    ]
+   },
+   {
+    "zh": "裂缝，深谷",
+    "de": "tiefer Spalt im Gestein, Schlucht",
+    "ex": [
+     {
+      "de": "Der Weg führt an einer tiefen Kluft entlang.",
+      "zh": "小路沿着一道深深的峡谷延伸。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）衣服，制服（此义复数 Kluften）",
+    "de": "(ugs.) Kleidung, Uniform",
+    "ex": [
+     {
+      "de": "Er kam in seiner besten Kluft zur Feier.",
+      "zh": "他穿着最好的行头来参加庆典。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Kluft zwischen A und B — A 与 B 之间的鸿沟",
+   "eine Kluft überbrücken / vertiefen — 弥合/加深隔阂",
+   "eine Kluft klafft / tut sich auf — 出现裂痕"
+  ],
+  "root": "Kluft（裂缝义）：与 klieben（劈开，旧）同源，即“劈开的地方”",
+  "fam": [
+   "klaffen",
+   "zerklüftet",
+   "Klüftung"
+  ],
+  "ety": "义 1、2：< 中古高地德语、古高地德语 kluft，与 klieben（劈开）同源。义 3 为另一个词，来自黑话（Rotwelsch），一说源自希伯来语 qillūf（外皮）。",
+  "cog": "英 cleave, cleft（裂缝义）",
+  "tip": "“贫富差距”最地道的说法之一就是 die Kluft zwischen Arm und Reich。"
+ },
+ {
+  "w": "Koalitionspartner",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Koalitionspartner",
+  "gs": "des Koalitionspartners",
+  "ipa": "koaliˈt͡si̯oːnsˌpaʁtnɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "联合执政伙伴（党）",
+    "de": "Partei, die mit einer anderen eine Regierungskoalition bildet",
+    "ex": [
+     {
+      "de": "Die Grünen stellten sich gegen den Plan ihres Koalitionspartners.",
+      "zh": "绿党反对其执政伙伴的计划。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der kleinere / größere Koalitionspartner — 较小/较大的执政伙伴",
+   "sich mit dem Koalitionspartner einigen — 与执政伙伴达成一致",
+   "Koalitionsvertrag · Koalitionsverhandlungen — 联合执政协议 · 组阁谈判"
+  ],
+  "root": "Koalition·s·partner：Koalition（联盟）+ -s-（连接音）+ Partner（伙伴）",
+  "fam": [
+   "Koalition",
+   "Partner",
+   "Koalitionsvertrag",
+   "Partnerschaft"
+  ],
+  "ety": "Koalition < 法/英 coalition < 中世纪拉丁语 coalitio，源自拉 coalescere（长在一起）；Partner < 英 partner。",
+  "cog": "英 coalition partner"
+ },
+ {
+  "w": "Kontrahent",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kontrahenten",
+  "gs": "des Kontrahenten",
+  "ipa": "kɔntʁaˈhɛnt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "对手，竞争者",
+    "de": "Gegner in einem Wettkampf oder Streit",
+    "ex": [
+     {
+      "de": "Im TV-Duell griff sie ihren Kontrahenten scharf an.",
+      "zh": "在电视辩论中，她猛烈抨击对手。"
+     }
+    ]
+   },
+   {
+    "zh": "（法）合同当事人，缔约方",
+    "de": "Vertragspartner",
+    "ex": [
+     {
+      "de": "Beide Kontrahenten haben den Vertrag unterzeichnet.",
+      "zh": "双方当事人都已签署合同。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化：den / dem / des Kontrahenten",
+   "sein politischer Kontrahent — 他的政治对手",
+   "Kontrahentin（阴性）"
+  ],
+  "root": "Kon·tra·hent：拉 con-（共同）+ trahere（拉）的现在分词 → “共同拉到一起的人” → 缔约方；后转为（决斗、比赛的）对手",
+  "fam": [
+   "kontrahieren",
+   "Kontrakt",
+   "Traktor",
+   "Kontraktion"
+  ],
+  "ety": "< 拉 contrahens（属格 contrahentis），contrahere（缔结契约；拉拢）的现在分词。“对手”义一般认为来自旧时大学生用语 kontrahieren（约定决斗）。",
+  "cog": "英 contract",
+  "tip": "属于弱变化阳性名词，除单数主格外均加 -en：mit seinem Kontrahenten（不说 *Kontrahent）。"
+ },
+ {
+  "w": "Krampf",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Krämpfe",
+  "gs": "des Krampf(e)s",
+  "ipa": "kʁampf",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "抽筋，痉挛",
+    "de": "unwillkürliche, schmerzhafte Zusammenziehung von Muskeln",
+    "ex": [
+     {
+      "de": "Beim Schwimmen bekam er plötzlich einen Krampf in der Wade.",
+      "zh": "游泳时他小腿突然抽筋了。"
+     }
+    ]
+   },
+   {
+    "zh": "（口，无复数）牵强做作；胡扯",
+    "de": "(ugs.) gezwungenes, sinnloses Tun; Unsinn",
+    "ex": [
+     {
+      "de": "Das ganze Projekt ist doch nur noch Krampf.",
+      "zh": "整个项目已经纯属瞎折腾了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Krampf (im Bein) bekommen / haben — （腿）抽筋",
+   "Wadenkrampf · Magenkrampf — 小腿抽筋 · 胃痉挛",
+   "krampfhaft (versuchen) — 拼命地、勉强地（尝试）；verkrampft — 紧张、拘谨的"
+  ],
+  "root": "Krampf：单一词根，原义“弯曲、蜷缩”；动词 krampfen / sich verkrampfen",
+  "fam": [
+   "krampfhaft",
+   "verkrampft",
+   "sich verkrampfen",
+   "Wadenkrampf",
+   "krampfen"
+  ],
+  "ety": "< 中古高地德语、古高地德语 krampf，与形容词 krampf（弯曲的）相关。",
+  "cog": "英 cramp（一说经古法语 crampe 借自日耳曼语）；荷 kramp",
+  "tip": "krampfhaft 不是“抽筋的”，而是“拼命、勉强地”：krampfhaft nach einer Lösung suchen。"
+ },
+ {
+  "w": "Kreisverkehr",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kreisverkehre",
+  "gs": "des Kreisverkehrs",
+  "ipa": "ˈkʁaɪ̯sfɛɐ̯ˌkeːɐ̯",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "环岛，环形交叉路口",
+    "de": "Verkehrsführung, bei der die Fahrzeuge einen Platz im Kreis umfahren; Kreisel",
+    "ex": [
+     {
+      "de": "Nehmen Sie im Kreisverkehr die zweite Ausfahrt.",
+      "zh": "在环岛走第二个出口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in den Kreisverkehr einfahren / aus dem Kreisverkehr ausfahren — 驶入/驶出环岛",
+   "im Kreisverkehr die erste / zweite Ausfahrt nehmen — 在环岛走第一/第二个出口",
+   "口语：der Kreisel"
+  ],
+  "root": "Kreis·verkehr：Kreis（圆圈）+ Verkehr（交通）",
+  "fam": [
+   "Kreis",
+   "Kreisel",
+   "Verkehr",
+   "verkehren"
+  ],
+  "ety": "复合词：Kreis（< 古高地德语 kreiz）+ Verkehr（< verkehren）。",
+  "cog": "—",
+  "tip": "复数少用。设有环岛标志时，环内车辆享有优先通行权；出环岛时须打转向灯（blinken）。"
+ },
+ {
+  "w": "kulinarisch",
+  "pos": "adj",
+  "ipa": "kuliˈnaːʁɪʃ",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "烹饪的，饮食的；美食的",
+    "de": "die Kochkunst, gutes Essen betreffend",
+    "ex": [
+     {
+      "de": "Die Region ist für ihre kulinarischen Spezialitäten bekannt.",
+      "zh": "该地区以美食特色闻名。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "kulinarische Spezialitäten / Genüsse — 美食特产 / 美食享受",
+   "ein kulinarisches Erlebnis — 一次美食体验",
+   "die Kulinarik（名词，较新）— 饮食文化，美食"
+  ],
+  "root": "kulin·ar·isch：拉 culina（厨房）+ -ar- + -isch（形容词后缀）",
+  "fam": [
+   "Kulinarik",
+   "Küche"
+  ],
+  "ety": "< 拉 culinarius（厨房的）< culina（厨房）。",
+  "cog": "英 culinary"
+ },
+ {
+  "w": "kurzum",
+  "pos": "adv",
+  "ipa": "kʊʁt͡sˈʔʊm",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "总之，简而言之",
+    "de": "um es kurz zu sagen; zusammengefasst",
+    "ex": [
+     {
+      "de": "Das Essen war gut, der Service freundlich, kurzum: ein gelungener Abend.",
+      "zh": "菜好吃，服务也友好，总之，这是个愉快的夜晚。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kurzum, … / Kurzum: … — 置于句外，后接完整的正常语序句子",
+   "Kurzum: … — 冒号引出总结",
+   "近义：kurz gesagt, mit einem Wort, alles in allem"
+  ],
+  "root": "kurz·um：kurz（短）+ um（……地）→ 简短地说",
+  "fam": [
+   "kurz",
+   "kürzen",
+   "Kürze",
+   "kurzfristig"
+  ],
+  "ety": "由 kurz um（简短地说）连写而成；kurz < 古高地德语 kurz，借自拉 curtus（短的、截断的）。",
+  "cog": "英 curt（同出拉 curtus）",
+  "tip": "重音在后：kurzˈum。常用于列举之后作总结，书面和口语都可。"
+ },
+ {
+  "w": "Landeskirche",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Landeskirchen",
+  "gs": "der Landeskirche",
+  "ipa": "ˈlandəsˌkɪʁçə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（德国）地区新教教会；（瑞士）州教会",
+    "de": "in Deutschland: regionale evangelische Kirche; in der Schweiz: Kantonalkirche",
+    "ex": [
+     {
+      "de": "Die Evangelische Landeskirche in Württemberg hat rund zwei Millionen Mitglieder.",
+      "zh": "符腾堡新教地区教会约有两百万成员。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die evangelische Landeskirche — 新教地区教会",
+   "20 Landeskirchen bilden die Evangelische Kirche in Deutschland (EKD) — 20 个地区教会组成德国新教教会",
+   "天主教对应的单位为 Bistum / Diözese（主教区）"
+  ],
+  "root": "Land·es·kirche：Land（邦、地区）+ -es（属格连接）+ Kirche（教会）",
+  "fam": [
+   "Land",
+   "Kirche",
+   "Kirchensteuer",
+   "Landesbischof"
+  ],
+  "ety": "复合词；Kirche < 古高地德语 kirihha，来自希腊语 kyriakón（属于主的［房屋］）。",
+  "cog": "英 church",
+  "tip": "德国 Landeskirche 的辖区沿袭历史上的邦国，不一定与今天的联邦州边界一致。"
+ },
+ {
+  "w": "leasen",
+  "pos": "v",
+  "ipa": "ˈliːzn̩",
+  "lvl": "B2–C1",
+  "forms": "least · leaste · hat geleast",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "租赁（汽车、设备等，融资租赁）",
+    "de": "(Fahrzeuge, Maschinen) gegen monatliche Raten mieten",
+    "ex": [
+     {
+      "de": "Viele Firmen leasen ihre Dienstwagen, statt sie zu kaufen.",
+      "zh": "许多公司的公务车是租赁而不是购买的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Auto leasen — 租赁汽车",
+   "etw. bei jmdm. / über eine Firma leasen — 通过某公司租赁某物",
+   "das Leasing — 租赁；Leasingvertrag / Leasingrate — 租赁合同 / 月租"
+  ],
+  "root": "leas·en：英语 lease + 德语动词词尾 -en",
+  "fam": [
+   "Leasing",
+   "Leasingvertrag",
+   "Leasingrate"
+  ],
+  "ety": "20 世纪借自英语 to lease < 盎格鲁-诺曼法语 lesser（出租、放开）< 拉 laxare（放松）。",
+  "cog": "英 lease；法 laisser",
+  "tip": "读英语音 [ˈliːzn̩]，变位按德语规则：du least, er least, geleast。"
+ },
+ {
+  "w": "Lebensende",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Lebensendes",
+  "ipa": "ˈleːbn̩sˌʔɛndə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "生命的尽头，晚年临终时",
+    "de": "Ende des Lebens, letzte Lebensphase",
+    "ex": [
+     {
+      "de": "Bis an ihr Lebensende lebte sie in ihrem Haus am See.",
+      "zh": "她直到生命的最后一刻都住在湖边的房子里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bis ans / an sein Lebensende — 直到生命终结，一辈子",
+   "am Lebensende — 在生命末期",
+   "Begleitung am Lebensende — 临终关怀"
+  ],
+  "root": "Leben·s·ende：Leben（生命）+ -s-（连接音）+ Ende（终结）",
+  "fam": [
+   "Leben",
+   "leben",
+   "Ende",
+   "lebenslang"
+  ],
+  "ety": "复合词：Leben（< 古高地德语 lebēn）+ Ende（< 古高地德语 enti）。",
+  "cog": "英 life, end"
+ },
+ {
+  "w": "lebensgefährlich",
+  "pos": "adj",
+  "ipa": "ˈleːbn̩sɡəˌfɛːɐ̯lɪç",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "危及生命的，有生命危险的",
+    "de": "mit Lebensgefahr verbunden",
+    "ex": [
+     {
+      "de": "Bei dem Unfall wurde der Fahrer lebensgefährlich verletzt.",
+      "zh": "事故中司机受了致命重伤。"
+     },
+     {
+      "de": "Das Betreten der Eisfläche ist lebensgefährlich.",
+      "zh": "踏上冰面有生命危险。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "lebensgefährlich verletzt sein — 伤势危及生命（新闻常用，对比 schwer verletzt 重伤）",
+   "eine lebensgefährliche Krankheit / Situation — 危及生命的疾病/处境",
+   "Es besteht Lebensgefahr. / Vorsicht, Lebensgefahr! — 有生命危险！"
+  ],
+  "root": "leben·s·gefähr·lich：Leben（生命）+ gefährlich（危险的）",
+  "fam": [
+   "Lebensgefahr",
+   "gefährlich",
+   "Gefahr",
+   "gefährden"
+  ],
+  "ety": "复合词；Gefahr < 中古高地德语 gevāre（埋伏、诡计），原义“暗算”。",
+  "cog": "英 life；fear（一说与 Gefahr 同源）",
+  "tip": "新闻中伤情分级：leicht verletzt < schwer verletzt < lebensgefährlich verletzt。"
+ },
+ {
+  "w": "lebhaft",
+  "pos": "adj",
+  "ipa": "ˈleːphaft",
+  "lvl": "B1–B2",
+  "forms": "lebhafter · am lebhaftesten",
+  "senses": [
+   {
+    "zh": "活泼的，生气勃勃的；热烈的",
+    "de": "voller Leben, munter; angeregt",
+    "ex": [
+     {
+      "de": "Nach dem Vortrag entstand eine lebhafte Diskussion.",
+      "zh": "报告结束后展开了热烈的讨论。"
+     },
+     {
+      "de": "Die Kinder sind heute sehr lebhaft.",
+      "zh": "孩子们今天特别活泼。"
+     }
+    ]
+   },
+   {
+    "zh": "（记忆、想象）鲜明的，生动的",
+    "de": "deutlich, anschaulich",
+    "ex": [
+     {
+      "de": "Ich kann mich noch lebhaft an unseren ersten Urlaub erinnern.",
+      "zh": "我对我们第一次度假仍记忆犹新。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine lebhafte Diskussion / Debatte — 热烈的讨论",
+   "eine lebhafte Fantasie haben — 想象力丰富",
+   "sich lebhaft an etw.(A) erinnern — 对某事记忆犹新；lebhafter Verkehr / Handel — 繁忙的交通/活跃的交易"
+  ],
+  "root": "leb·haft：leben（生活）+ -haft（形容词后缀，表“具有……性质”）",
+  "fam": [
+   "leben",
+   "Leben",
+   "lebendig",
+   "Lebhaftigkeit"
+  ],
+  "ety": "< 中古高地德语 lebehaft，由 leben 和后缀 -haft 构成。",
+  "cog": "英 live, lively",
+  "tip": "读音中 b 在 h 前清化为 [p]：[ˈleːphaft]。lebhaft 偏“活跃、热烈”，lebendig 偏“活着的、有生命力的”。"
+ },
+ {
+  "w": "Leukämie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Leukämien",
+  "gs": "der Leukämie",
+  "ipa": "lɔɪ̯kɛˈmiː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "白血病",
+    "de": "bösartige Erkrankung des blutbildenden Systems; Blutkrebs",
+    "ex": [
+     {
+      "de": "Bei dem Kind wurde Leukämie diagnostiziert.",
+      "zh": "这个孩子被诊断出患有白血病。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an Leukämie erkranken / leiden / sterben — 患/得/死于白血病",
+   "akute / chronische Leukämie — 急性/慢性白血病",
+   "通俗：Blutkrebs — 血癌"
+  ],
+  "root": "Leuk·äm·ie：希腊语 leukós（白的）+ haîma（血）+ -ie（病名后缀）→ “白色的血”",
+  "fam": [
+   "Anämie",
+   "leukämisch",
+   "Leukozyt"
+  ],
+  "ety": "19 世纪中叶由德国病理学家 Rudolf Virchow 根据希腊语 leukós（白）+ haîma（血）创造的新拉丁/希腊医学术语。",
+  "cog": "英 leukemia (BE leukaemia)",
+  "tip": "复数 Leukämien 读 [lɔɪ̯kɛˈmiːən]。"
+ },
+ {
+  "w": "limitieren",
+  "pos": "v",
+  "ipa": "limiˈtiːʁən",
+  "lvl": "C1",
+  "forms": "limitiert · limitierte · hat limitiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "限制，限定（数量、范围）",
+    "de": "begrenzen, beschränken",
+    "ex": [
+     {
+      "de": "Die Zahl der Teilnehmer ist auf 30 limitiert.",
+      "zh": "参加人数限定为 30 人。"
+     },
+     {
+      "de": "Die Uhr erscheint in einer limitierten Auflage von 500 Stück.",
+      "zh": "这款手表限量发行 500 枚。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. auf + 数量 (A) limitieren — 把某物限定在……",
+   "eine limitierte Auflage / Edition — 限量版",
+   "近义：begrenzen, beschränken（更常用）"
+  ],
+  "root": "limit·ier·en：Limit（界限）+ -ieren（外来动词后缀）",
+  "fam": [
+   "Limit",
+   "Limitierung",
+   "limitiert",
+   "eliminieren"
+  ],
+  "ety": "< 法 limiter < 拉 limitare（划界）< limes, limitis（边界，界墙）。",
+  "cog": "英 limit",
+  "tip": "日常多说 begrenzen；limitieren 偏商业、技术语境（limitiertes Angebot）。"
+ },
+ {
+  "w": "Lippenstift",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Lippenstifte",
+  "gs": "des Lippenstift(e)s",
+  "ipa": "ˈlɪpn̩ˌʃtɪft",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "口红，唇膏",
+    "de": "Kosmetikstift zum Färben der Lippen",
+    "ex": [
+     {
+      "de": "Sie trägt meistens roten Lippenstift.",
+      "zh": "她大多涂红色口红。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Lippenstift auftragen / tragen — 涂口红",
+   "Lippenpflegestift / Labello — 润唇膏（护理用，无色）"
+  ],
+  "root": "Lippe·n·stift：Lippe（嘴唇）+ -n-（连接音）+ Stift（笔状物）",
+  "fam": [
+   "Lippe",
+   "Stift",
+   "Bleistift",
+   "Lipgloss"
+  ],
+  "ety": "复合词；Lippe 原为低地德语形式（中古低地德语 lippe）；Stift < 古高地德语 steft（尖钉）。",
+  "cog": "英 lip",
+  "tip": "Stift 为阳性，故 der Lippenstift。护唇的无色润唇膏称 Lippenpflegestift，口语常用商标名 Labello。"
+ },
+ {
+  "w": "Lungenentzündung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Lungenentzündungen",
+  "gs": "der Lungenentzündung",
+  "ipa": "ˈlʊŋənʔɛntˌt͡sʏndʊŋ",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "肺炎",
+    "de": "Entzündung des Lungengewebes; Pneumonie",
+    "ex": [
+     {
+      "de": "Er liegt mit einer Lungenentzündung im Krankenhaus.",
+      "zh": "他因肺炎住院了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Lungenentzündung haben / bekommen — 得了肺炎",
+   "an einer Lungenentzündung sterben — 死于肺炎",
+   "医学术语：Pneumonie"
+  ],
+  "root": "Lunge·n·ent·zünd·ung：Lunge（肺）+ Entzündung（炎症；ent- + zünden 点燃 + -ung）",
+  "fam": [
+   "Lunge",
+   "Entzündung",
+   "entzünden",
+   "Mittelohrentzündung"
+  ],
+  "ety": "复合词；Lunge < 古高地德语 lungun，一般认为与 leicht（轻的）同源，因肺轻而得名；Entzündung 派生自 entzünden（点燃→发炎）。",
+  "cog": "英 lung",
+  "tip": "各种“……炎”多用 -entzündung：Blinddarmentzündung（阑尾炎）、Bindehautentzündung（结膜炎）。"
+ },
+ {
+  "w": "Löschung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Löschungen",
+  "gs": "der Löschung",
+  "ipa": "ˈlœʃʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（数据、登记等的）删除，注销",
+    "de": "Entfernen von Daten oder Einträgen",
+    "ex": [
+     {
+      "de": "Nutzer haben ein Recht auf Löschung ihrer personenbezogenen Daten.",
+      "zh": "用户有权要求删除其个人数据。"
+     },
+     {
+      "de": "Die Löschung aus dem Handelsregister wurde beantragt.",
+      "zh": "已申请从商业登记簿中注销。"
+     }
+    ]
+   },
+   {
+    "zh": "（船货的）卸货",
+    "de": "Entladen eines Schiffes",
+    "ex": [
+     {
+      "de": "Die Löschung der Ladung dauerte zwei Tage.",
+      "zh": "卸货持续了两天。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Löschung von Daten / eines Kontos — 删除数据/注销账户",
+   "Recht auf Löschung（DSGVO 第 17 条）— 删除权（“被遗忘权”）",
+   "die Löschung beantragen — 申请删除/注销"
+  ],
+  "root": "Lösch·ung：löschen（熄灭；删除；卸货）+ -ung（名词化后缀）",
+  "fam": [
+   "löschen",
+   "Feuerlöscher",
+   "auslöschen",
+   "Löschtaste"
+  ],
+  "ety": "löschen < 中古高地德语 leschen（熄灭）；“卸货”义的 löschen 一般认为是另一个来自低地德语的词，与 los（松开）有关。",
+  "cog": "—",
+  "tip": "灭火（Löschen eines Brandes）一般说 Löscharbeiten 或 das Löschen，较少用 Löschung；Löschung 主要用于数据和法律登记。"
+ },
+ {
+  "w": "Machtkampf",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Machtkämpfe",
+  "gs": "des Machtkampf(e)s",
+  "ipa": "ˈmaxtˌkampf",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "权力斗争，夺权之争",
+    "de": "Kampf um Macht und Einfluss",
+    "ex": [
+     {
+      "de": "In der Partei ist ein offener Machtkampf ausgebrochen.",
+      "zh": "党内爆发了公开的权力斗争。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Machtkampf um etw.(A) — 争夺某物的权力斗争",
+   "ein Machtkampf zwischen A und B — A 与 B 之间的权力斗争",
+   "einen Machtkampf austragen / gewinnen / verlieren — 进行/赢得/输掉权力斗争"
+  ],
+  "root": "Macht·kampf：Macht（权力）+ Kampf（斗争）",
+  "fam": [
+   "Macht",
+   "mächtig",
+   "Kampf",
+   "kämpfen",
+   "Machthaber"
+  ],
+  "ety": "Macht < 古高地德语 maht，与 mögen（能够）同源；Kampf < 古高地德语 kampf，借自拉 campus（战场、原野）。",
+  "cog": "英 might（~Macht）；camp（~Kampf，同出拉丁语）"
+ },
+ {
+  "w": "mager",
+  "pos": "adj",
+  "ipa": "ˈmaːɡɐ",
+  "lvl": "B1–B2",
+  "forms": "magerer · am magersten",
+  "senses": [
+   {
+    "zh": "瘦的，消瘦的",
+    "de": "dünn, ohne Fettpolster",
+    "ex": [
+     {
+      "de": "Nach der langen Krankheit war er ganz mager geworden.",
+      "zh": "久病之后，他变得骨瘦如柴。"
+     }
+    ]
+   },
+   {
+    "zh": "（食物）低脂的，瘦的",
+    "de": "fettarm",
+    "ex": [
+     {
+      "de": "Ich kaufe nur mageres Fleisch und Magerquark.",
+      "zh": "我只买瘦肉和低脂凝乳。"
+     }
+    ]
+   },
+   {
+    "zh": "（结果）微薄的，贫乏的",
+    "de": "dürftig, unergiebig",
+    "ex": [
+     {
+      "de": "Die Ausbeute der Verhandlungen war mager.",
+      "zh": "谈判收获甚微。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mageres Fleisch · Magermilch · Magerquark — 瘦肉 · 脱脂奶 · 低脂凝乳",
+   "ein mageres Ergebnis / magere Jahre — 微薄的结果 / 歉收年景",
+   "Magersucht — 厌食症"
+  ],
+  "root": "mager：单一词根",
+  "fam": [
+   "abmagern",
+   "Magersucht",
+   "Magerkeit",
+   "Magermilch"
+  ],
+  "ety": "< 中古高地德语 mager < 古高地德语 magar < 原始日耳曼语 *magraz；与拉丁语 macer（瘦的）同源。",
+  "cog": "拉 macer；英 meagre / meager（经古法语 maigre 借自拉丁语，间接同源）；荷 mager",
+  "tip": "说人瘦一般用 schlank（褒，苗条）或 dünn（中性），mager 带“瘦得过分、不健康”的色彩。"
+ },
+ {
+  "w": "Melancholie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Melancholien",
+  "gs": "der Melancholie",
+  "ipa": "melaŋkoˈliː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "忧郁，惆怅",
+    "de": "Schwermut, gedrückte Stimmung",
+    "ex": [
+     {
+      "de": "Im Herbst überkommt mich oft eine leichte Melancholie.",
+      "zh": "秋天我常常感到一丝惆怅。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in Melancholie verfallen — 陷入忧郁",
+   "melancholisch — 忧郁的；Melancholiker — 忧郁质的人"
+  ],
+  "root": "Melan·chol·ie：希腊语 mélas（黑）+ cholḗ（胆汁）+ -ie → “黑胆汁（过多）” → 忧郁（古代体液说）",
+  "fam": [
+   "melancholisch",
+   "Melancholiker",
+   "Cholera",
+   "cholerisch"
+  ],
+  "ety": "< 晚期拉丁语 melancholia < 希腊语 melancholía（黑胆汁），源于古希腊四体液说：黑胆汁过多使人忧郁。",
+  "cog": "英 melancholy；法 mélancolie",
+  "tip": "ch 读 [k]：[melaŋkoˈliː]。"
+ },
+ {
+  "w": "Mimik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Mimik",
+  "ipa": "ˈmiːmɪk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "面部表情，表情（变化）",
+    "de": "Mienenspiel; Gesichtsausdruck als Ausdrucksmittel",
+    "ex": [
+     {
+      "de": "An seiner Mimik konnte man erkennen, dass er nicht zufrieden war.",
+      "zh": "从他的表情可以看出他并不满意。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Mimik und Gestik — 表情与手势",
+   "eine ausdrucksstarke Mimik — 丰富的表情"
+  ],
+  "root": "Mim·ik：希腊语 mîmos（模仿者、演员）+ -ik（名词后缀）→ 表演的艺术 → 面部表情",
+  "fam": [
+   "mimisch",
+   "Mime",
+   "Pantomime",
+   "mimen"
+  ],
+  "ety": "< 拉 (ars) mimica < 希腊语 mimikḗ (téchnē)（模仿的艺术），源自 mîmos（模仿者、演员）。",
+  "cog": "英 mimic, mime",
+  "tip": "Mimik ≠ 英语 mimicry（模仿）。德语中 Mimik 专指面部表情，常与 Gestik 并列。"
+ },
+ {
+  "w": "Misere",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Miseren",
+  "gs": "der Misere",
+  "ipa": "miˈzeːʁə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "困境，窘境，糟糕局面",
+    "de": "Notlage, beklagenswerter Zustand",
+    "ex": [
+     {
+      "de": "Wer ist schuld an der Misere im Gesundheitswesen?",
+      "zh": "医疗卫生系统的困境该由谁负责？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus der Misere herauskommen — 摆脱困境",
+   "die finanzielle / wirtschaftliche Misere — 财政/经济困境",
+   "Bildungsmisere · Pflegemisere — 教育困境 · 护理困境"
+  ],
+  "root": "Miser·e：法语 misère（苦难）",
+  "fam": [
+   "miserabel",
+   "Miserere"
+  ],
+  "ety": "< 法 misère < 拉 miseria（不幸）< miser（不幸的、可怜的）。",
+  "cog": "英 misery, miserable",
+  "tip": "Misere 多指社会、经济领域的长期糟糕局面，不指个人的“痛苦”（那是 Elend, Leid）。"
+ },
+ {
+  "w": "Mitstreiter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Mitstreiter",
+  "gs": "des Mitstreiters",
+  "ipa": "ˈmɪtˌʃtʁaɪ̯tɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "战友，同道，共同奋斗者",
+    "de": "jmd., der mit anderen für eine Sache kämpft",
+    "ex": [
+     {
+      "de": "Gemeinsam mit einigen Mitstreitern gründete sie eine Bürgerinitiative.",
+      "zh": "她与几位同道一起成立了一个公民倡议组织。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Mitstreiter suchen / gewinnen — 寻找/争取同道",
+   "Mitstreiterin（阴性）"
+  ],
+  "root": "Mit·streit·er：mit（共同）+ streiten（战斗、争吵）+ -er（施动者后缀）",
+  "fam": [
+   "streiten",
+   "Streit",
+   "Streiter",
+   "bestreiten",
+   "umstritten"
+  ],
+  "ety": "streiten < 中古高地德语 strīten < 古高地德语 strītan。",
+  "cog": "英 strife（一说经古法语借自日耳曼语）",
+  "tip": "多用于社会运动、倡议活动等积极语境，不含“吵架”义。"
+ },
+ {
+  "w": "modifizieren",
+  "pos": "v",
+  "ipa": "modifiˈt͡siːʁən",
+  "lvl": "C1",
+  "forms": "modifiziert · modifizierte · hat modifiziert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "修改，调整，修正",
+    "de": "(teilweise) abändern, anpassen",
+    "ex": [
+     {
+      "de": "Das Konzept musste leicht modifiziert werden.",
+      "zh": "这一方案不得不稍作修改。"
+     },
+     {
+      "de": "Gentechnisch modifizierte Pflanzen sind in der EU umstritten.",
+      "zh": "转基因植物在欧盟颇具争议。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. leicht / grundlegend modifizieren — 略作/从根本上修改",
+   "gentechnisch modifiziert — 转基因的",
+   "近义：abändern, anpassen, verändern"
+  ],
+  "root": "modi·fiz·ier·en：拉 modus（方式、尺度）+ facere（做）→ “给出另一种方式” → 修改",
+  "fam": [
+   "Modifikation",
+   "Modus",
+   "Modell"
+  ],
+  "ety": "< 拉 modificare（调节、限度）< modus + facere。",
+  "cog": "英 modify；法 modifier",
+  "tip": "modifizieren 指局部修改，彻底改变用 verändern / umgestalten。"
+ }
+]

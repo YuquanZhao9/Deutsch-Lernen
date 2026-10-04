@@ -557,6 +557,18 @@ async function load() {
   CUSTOM = await idb.get('customDict'); DICT = CUSTOM || BASE; buildIndex();
 }
 const th = store.get('theme', ''); if (th) document.documentElement.dataset.theme = th;
-load().then(() => { const h = location.hash.slice(1); if (h && byKey.get(decodeURIComponent(h))) open(decodeURIComponent(h)); else render(); });
+// Links from other pages: #Vorurteil, or UTF-8 bytes as ~XX (#gew~C3~A4hrleisten), or %XX.
+function openHash() {
+  let h = location.hash.slice(1); if (!h) return false;
+  try { h = decodeURIComponent(h.replace(/~([0-9A-Fa-f]{2})/g, '%$1')).trim(); } catch { return false; }
+  if (!h) return false;
+  if (byKey.get(h)) { q.value = ''; current = null; open(h); return true; }
+  const r = search(h);
+  if (r.length && fold(r[0].w) === fold(h)) { q.value = ''; current = null; open(keyOf(r[0])); return true; }
+  // not a headword: show the search results for it (an inflected form gets its hint there)
+  q.value = h; current = null; tab = 'search'; render(); return true;
+}
+window.addEventListener('hashchange', () => { if (INDEX.length) openHash(); });
+load().then(() => { if (!openHash()) render(); });
 })();
 </script>

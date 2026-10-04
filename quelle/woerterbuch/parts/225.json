@@ -1,0 +1,2100 @@
+[
+ {
+  "w": "Croissant",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Croissants",
+  "gs": "des Croissants",
+  "ipa": "kʁoaˈsãː",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "羊角面包，可颂",
+    "de": "Hörnchen aus Blätterteig bzw. Hefeblätterteig",
+    "ex": [
+     {
+      "de": "Zum Frühstück gab es Kaffee und ein Croissant.",
+      "zh": "早餐是咖啡加一个可颂。"
+     },
+     {
+      "de": "Die Croissants beim Bäcker nebenan sind noch warm.",
+      "zh": "隔壁面包店的可颂还是热的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Butter-/Schoko-/Nusscroissant — 黄油/巧克力/坚果可颂",
+   "ein Croissant mit Marmelade — 抹果酱的可颂",
+   "德式同类：das (Butter-)Hörnchen；奥地利：das Kipferl"
+  ],
+  "root": "Croissant：法语外来词，本义“新月（形）”，因面包呈弯月形而得名",
+  "fam": [
+   "Hörnchen",
+   "Blätterteig",
+   "Bäckerei"
+  ],
+  "ety": "20 世纪借自法语 croissant，原为 croître（生长）的现在分词，指“渐盈的（新月）”；croître < 拉丁语 crescere（生长）。",
+  "cog": "法 croissant；英 croissant, crescent",
+  "tip": "读音保留法语鼻化元音 [ãː]，结尾的 t 不发音；中性名词：das Croissant。"
+ },
+ {
+  "w": "Semmel",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Semmeln",
+  "gs": "der Semmel",
+  "ipa": "ˈzɛml̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（南德、奥地利）小圆面包",
+    "de": "(bes. bayr., österr.) Brötchen",
+    "ex": [
+     {
+      "de": "Holst du beim Bäcker sechs Semmeln?",
+      "zh": "你去面包店买六个小面包好吗？"
+     },
+     {
+      "de": "In Wien isst man die Wurst gern in einer Semmel.",
+      "zh": "在维也纳，人们喜欢把香肠夹在小面包里吃。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Semmel mit Leberkäse — 夹肝肉糕的小面包（巴伐利亚典型小吃）",
+   "weggehen wie warme Semmeln — 卖得飞快（≈ wie warme Brötchen）",
+   "地区差异：Brötchen（通用、北德）/ Semmel（巴伐利亚、奥地利）/ Schrippe（柏林）/ Weck(le)（施瓦本等西南部）"
+  ],
+  "root": "Semmel：拉丁语外来词，本义“精白面粉”，后指用精白面粉烤的小面包",
+  "fam": [
+   "Semmelknödel",
+   "Semmelbrösel",
+   "Brötchen"
+  ],
+  "ety": "中古高地德语 semel(e) < 古高地德语 semala（精白面粉） < 拉丁语 simila（精白面粉）。",
+  "cog": "拉 simila；意 semola（粗粒小麦粉）",
+  "tip": "在德国北部说 Semmel 别人也懂，但日常更常说 Brötchen；Semmelbrösel（面包屑）在全德通用。"
+ },
+ {
+  "w": "Vollkornbrot",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Vollkornbrote",
+  "gs": "des Vollkornbrot(e)s",
+  "ipa": "ˈfɔlkɔʁnˌbʁoːt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "全麦面包，全谷物面包",
+    "de": "Brot aus Mehl oder Schrot des ganzen Getreidekorns",
+    "ex": [
+     {
+      "de": "Vollkornbrot hält länger satt als Weißbrot.",
+      "zh": "全麦面包比白面包更顶饱。"
+     },
+     {
+      "de": "Ich nehme zwei Scheiben Vollkornbrot mit Käse.",
+      "zh": "我要两片夹奶酪的全麦面包。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Scheibe Vollkornbrot — 一片全麦面包",
+   "Vollkornbrötchen / Vollkornnudeln / Vollkornmehl — 全麦小面包/全麦面/全麦粉",
+   "Vollkornbrot ↔ Weißbrot / Mischbrot — 全麦面包 ↔ 白面包/混合面包"
+  ],
+  "root": "Voll·korn·brot：voll（完整的）+ Korn（谷粒）+ Brot（面包）→ 用整颗谷粒磨成的面粉做的面包",
+  "fam": [
+   "Vollkorn",
+   "Brot",
+   "Korn",
+   "Schwarzbrot"
+  ],
+  "ety": "透明复合词；Brot < 古高地德语 brōt，Korn < 古高地德语 korn。",
+  "cog": "英 bread, corn",
+  "tip": "Vollkornbrot 不一定是深色的；德国法规要求其谷物成分至少 90% 为全谷物。Schwarzbrot 指黑麦为主的深色面包，二者不完全相同。"
+ },
+ {
+  "w": "Cornflakes",
+  "pos": "n",
+  "gen": "pl",
+  "pl": "Cornflakes",
+  "gs": "der Cornflakes",
+  "ipa": "ˈkɔːnfleːks",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "玉米片（早餐谷物）",
+    "de": "geröstete Maisflocken, die meist mit Milch gegessen werden",
+    "ex": [
+     {
+      "de": "Die Kinder essen morgens Cornflakes mit Milch.",
+      "zh": "孩子们早上吃玉米片泡牛奶。"
+     },
+     {
+      "de": "Die Cornflakes sind leider schon alle.",
+      "zh": "可惜玉米片已经吃完了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Schüssel Cornflakes — 一碗玉米片",
+   "Cornflakes mit Milch / Joghurt — 玉米片配牛奶/酸奶",
+   "近义：das Müsli（什锦燕麦）、die Haferflocken（燕麦片）"
+  ],
+  "root": "Corn·flakes：英语 corn（玉米，美式用法）+ flakes（薄片）",
+  "fam": [
+   "Haferflocken",
+   "Müsli",
+   "Mais"
+  ],
+  "ety": "20 世纪借自美式英语 cornflakes；corn 与德语 Korn 同源。",
+  "cog": "英 cornflakes, corn；德 Korn",
+  "tip": "一般只用复数：Die Cornflakes sind ...（偶见单数 die Cornflake 指一片）。德语发音常近英语，ˈkɔːɐ̯nfleːks 或 ˈkɔːnfleɪ̯ks 均可听到。"
+ },
+ {
+  "w": "Sahnetorte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Sahnetorten",
+  "gs": "der Sahnetorte",
+  "ipa": "ˈzaːnəˌtɔʁtə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "奶油蛋糕，鲜奶油夹层蛋糕",
+    "de": "Torte mit einer Füllung oder einem Überzug aus Schlagsahne",
+    "ex": [
+     {
+      "de": "Zum Geburtstag hat Oma eine Sahnetorte gebacken.",
+      "zh": "奶奶为生日烤了一个奶油蛋糕。"
+     },
+     {
+      "de": "Ein Stück Sahnetorte, bitte!",
+      "zh": "请来一块奶油蛋糕！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Stück Sahnetorte — 一块奶油蛋糕",
+   "Kaffee und Kuchen / Kaffee und Torte — 德国下午茶点心习俗",
+   "Schwarzwälder Kirschtorte — 黑森林樱桃蛋糕（最著名的 Sahnetorte）"
+  ],
+  "root": "Sahne·torte：Sahne（奶油）+ Torte（多层大蛋糕）",
+  "fam": [
+   "Sahne",
+   "Torte",
+   "Schlagsahne",
+   "Obsttorte"
+  ],
+  "ety": "Sahne < 中古高地德语 sane，进一步来源不详；Torte < 意大利语 torta < 晚期拉丁语 torta（圆饼）。",
+  "cog": "意 torta；英 tart（一说同源）",
+  "tip": "Torte 通常指多层、带奶油或馅的精致蛋糕；Kuchen 是更普通的“蛋糕/糕点”。"
+ },
+ {
+  "w": "Käsekuchen",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Käsekuchen",
+  "gs": "des Käsekuchens",
+  "ipa": "ˈkɛːzəˌkuːxn̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（德式）奶酪蛋糕，芝士蛋糕",
+    "de": "Kuchen mit einer Füllung aus Quark (oder Frischkäse)",
+    "ex": [
+     {
+      "de": "Der Käsekuchen meiner Mutter ist der beste.",
+      "zh": "我妈妈做的奶酪蛋糕最好吃。"
+     },
+     {
+      "de": "Möchtest du noch ein Stück Käsekuchen?",
+      "zh": "你还想再来一块奶酪蛋糕吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Stück Käsekuchen — 一块奶酪蛋糕",
+   "Käsekuchen mit Rosinen / ohne Boden — 带葡萄干的/无饼底的奶酪蛋糕",
+   "奥地利常称 Topfenkuchen / Topfentorte（Topfen = Quark）"
+  ],
+  "root": "Käse·kuchen：Käse（奶酪，此处指夸克）+ Kuchen（蛋糕）",
+  "fam": [
+   "Käse",
+   "Kuchen",
+   "Quark",
+   "Käsesahnetorte"
+  ],
+  "ety": "Käse < 古高地德语 kāsi < 拉丁语 cāseus；Kuchen < 古高地德语 kuohho。",
+  "cog": "英 cheese, cake；拉 caseus",
+  "tip": "德式 Käsekuchen 主要用 Quark（夸克奶酪）而非美式的奶油奶酪，口感更轻、略酸。"
+ },
+ {
+  "w": "Apfelkuchen",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Apfelkuchen",
+  "gs": "des Apfelkuchens",
+  "ipa": "ˈap͡fl̩ˌkuːxn̩",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "苹果蛋糕，苹果派",
+    "de": "Kuchen mit Äpfeln als Belag oder Füllung",
+    "ex": [
+     {
+      "de": "Am Sonntag gibt es Apfelkuchen mit Sahne.",
+      "zh": "星期天有苹果蛋糕配奶油。"
+     },
+     {
+      "de": "Der Apfelkuchen ist noch warm aus dem Ofen.",
+      "zh": "苹果蛋糕刚出炉，还热着。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gedeckter Apfelkuchen — 带盖的苹果派",
+   "Apfelkuchen mit Streuseln — 酥粒苹果蛋糕",
+   "ein Stück Apfelkuchen mit Sahne / Vanilleeis — 一块苹果蛋糕配奶油/香草冰淇淋"
+  ],
+  "root": "Apfel·kuchen：Apfel（苹果）+ Kuchen（蛋糕）",
+  "fam": [
+   "Apfel",
+   "Kuchen",
+   "Apfelstrudel",
+   "Apfelsaft"
+  ],
+  "ety": "Apfel < 古高地德语 apful；Kuchen < 古高地德语 kuohho。",
+  "cog": "英 apple, cake",
+  "tip": "Apfelstrudel 是另一种点心（酥皮卷），不要和 Apfelkuchen 混用。"
+ },
+ {
+  "w": "Orangensaft",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Orangensäfte",
+  "gs": "des Orangensaft(e)s",
+  "ipa": "oˈʁãːʒn̩ˌzaft",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "橙汁",
+    "de": "Saft aus Orangen",
+    "ex": [
+     {
+      "de": "Ein Glas Orangensaft, bitte.",
+      "zh": "请来一杯橙汁。"
+     },
+     {
+      "de": "Frisch gepresster Orangensaft kostet hier vier Euro.",
+      "zh": "这里鲜榨橙汁要四欧元。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "frisch gepresster Orangensaft — 鲜榨橙汁",
+   "ein Glas / eine Flasche Orangensaft — 一杯/一瓶橙汁",
+   "同义：O-Saft（口语）、Apfelsinensaft（北德，较旧）"
+  ],
+  "root": "Orangen·saft：Orange（橙子）+ -n-（连接音）+ Saft（汁）",
+  "fam": [
+   "Orange",
+   "Saft",
+   "Apfelsaft",
+   "O-Saft"
+  ],
+  "ety": "Orange < 法语 orange < 阿拉伯语 nāranǧ < 波斯语 nārang（词首 o- 一般认为受法语 or“金”或地名 Orange 影响）；Saft < 中古高地德语 saf/saft。",
+  "cog": "英 orange juice；法 jus d'orange",
+  "tip": "复数 Orangensäfte 仅指“不同种类/多份橙汁”。Orange 有法语式发音 [oˈʁãːʒə] 和德语化发音 [oˈʁaŋʒə]。"
+ },
+ {
+  "w": "Apfelsaft",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Apfelsäfte",
+  "gs": "des Apfelsaft(e)s",
+  "ipa": "ˈap͡fl̩ˌzaft",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "苹果汁",
+    "de": "Saft aus Äpfeln",
+    "ex": [
+     {
+      "de": "Die Kinder trinken am liebsten Apfelsaft.",
+      "zh": "孩子们最喜欢喝苹果汁。"
+     },
+     {
+      "de": "Naturtrüber Apfelsaft schmeckt kräftiger als klarer.",
+      "zh": "天然浑浊苹果汁比澄清的味道更浓。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "naturtrüber / klarer Apfelsaft — 浑浊（未过滤）/澄清苹果汁",
+   "Apfelsaft mit Wasser verdünnen — 苹果汁兑水（→ Apfelschorle）",
+   "ein Glas Apfelsaft — 一杯苹果汁"
+  ],
+  "root": "Apfel·saft：Apfel（苹果）+ Saft（汁）",
+  "fam": [
+   "Apfel",
+   "Saft",
+   "Apfelschorle",
+   "Orangensaft"
+  ],
+  "ety": "Apfel < 古高地德语 apful；Saft < 中古高地德语 saf/saft，古高地德语 saf。",
+  "cog": "英 apple juice；英 sap（树液，与 Saft 同源）",
+  "tip": "德国人很少直接喝纯苹果汁，常兑气泡水成 Apfelschorle。"
+ },
+ {
+  "w": "Sprudel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sprudel",
+  "gs": "des Sprudels",
+  "ipa": "ˈʃpʁuːdl̩",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（含气）矿泉水，气泡水",
+    "de": "kohlensäurehaltiges Mineralwasser",
+    "ex": [
+     {
+      "de": "Ich hätte gern einen Sprudel.",
+      "zh": "我想要一瓶气泡水。"
+     },
+     {
+      "de": "Kannst du noch einen Kasten Sprudel kaufen?",
+      "zh": "你能再买一箱气泡水吗？"
+     }
+    ]
+   },
+   {
+    "zh": "涌泉，喷涌的泉水",
+    "de": "(heraus)sprudelnde Quelle",
+    "ex": [
+     {
+      "de": "Der heiße Sprudel in Karlsbad ist eine Touristenattraktion.",
+      "zh": "卡罗维发利的温泉喷泉是一处旅游景点。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Kasten Sprudel — 一箱气泡水",
+   "Wasser mit / ohne Sprudel — 含气/不含气的水（餐厅点水时常问）",
+   "动词：sprudeln（涌出，冒泡）；sprudelnd（滔滔不绝的）"
+  ],
+  "root": "Sprudel：由动词 sprudeln（喷涌、冒泡）构成的名词",
+  "fam": [
+   "sprudeln",
+   "Mineralwasser",
+   "Kohlensäure",
+   "Wasser"
+  ],
+  "ety": "由 sprudeln 逆构而来；sprudeln 一般认为是 sprühen（喷洒）与 strudeln（打漩）的混合形式（近代德语）。",
+  "cog": "—",
+  "tip": "Sprudel 在西南德、黑森一带最常用；北德多说 Selters 或 Mineralwasser。点水时：„mit Kohlensäure / still“（含气/不含气）。"
+ },
+ {
+  "w": "Schorle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Schorlen",
+  "gs": "der Schorle",
+  "ipa": "ˈʃɔʁlə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（果汁或葡萄酒兑气泡水的）混合饮料，舒乐",
+    "de": "Getränk aus Wein oder Saft, mit Mineralwasser gemischt",
+    "ex": [
+     {
+      "de": "Im Sommer trinke ich am liebsten eine Weinschorle.",
+      "zh": "夏天我最喜欢喝葡萄酒兑气泡水。"
+     },
+     {
+      "de": "Eine Johannisbeerschorle, bitte – aber nicht zu süß.",
+      "zh": "请来一杯醋栗汁兑气泡水，别太甜。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Weinschorle / Apfelschorle / Saftschorle — 葡萄酒/苹果汁/果汁兑气泡水",
+   "süße / saure Schorle — 兑柠檬汽水/兑矿泉水的葡萄酒（普法尔茨说法）",
+   "阴性为主；南德、普法尔茨也说 das Schorle（复数 die Schorles）"
+  ],
+  "root": "Schorle：来源不明的方言词，已进入通用德语",
+  "fam": [
+   "Apfelschorle",
+   "Weinschorle",
+   "Sprudel",
+   "Mineralwasser"
+  ],
+  "ety": "词源不详；18 世纪已见 Schorlemorle 等形式（一说为戏谑性的叠韵造词）。",
+  "cog": "—",
+  "tip": "Schorle 是典型德国饮品，中文无对应词；注意词性：标准语 die Schorle，地区性 das Schorle。"
+ },
+ {
+  "w": "Apfelschorle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Apfelschorlen",
+  "gs": "der Apfelschorle",
+  "ipa": "ˈap͡fl̩ˌʃɔʁlə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "苹果汁兑气泡水",
+    "de": "Getränk aus Apfelsaft und Mineralwasser",
+    "ex": [
+     {
+      "de": "Eine große Apfelschorle, bitte!",
+      "zh": "请来一大杯苹果汁兑气泡水！"
+     },
+     {
+      "de": "Nach dem Sport trinke ich gern eine Apfelschorle.",
+      "zh": "运动后我喜欢喝一杯苹果汽水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Apfelschorle bestellen — 点一杯苹果汁气泡水",
+   "eine Apfelschorle mischen: halb Saft, halb Wasser — 调制：一半果汁一半水",
+   "南德也说 das Apfelschorle"
+  ],
+  "root": "Apfel·schorle：Apfel（苹果）+ Schorle（兑水饮料）",
+  "fam": [
+   "Schorle",
+   "Apfelsaft",
+   "Sprudel"
+  ],
+  "ety": "透明复合词；Schorle 来源不详（见 Schorle）。",
+  "cog": "—",
+  "tip": "德国餐厅、学校食堂最常见的软饮之一；Apfelschorle 也有瓶装成品出售。"
+ },
+ {
+  "w": "Cappuccino",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Cappuccinos / Cappuccini",
+  "gs": "des Cappuccino(s)",
+  "ipa": "kapʊˈt͡ʃiːno",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "卡布奇诺咖啡",
+    "de": "Kaffee (Espresso) mit aufgeschäumter Milch",
+    "ex": [
+     {
+      "de": "Zwei Cappuccino, bitte!",
+      "zh": "请来两杯卡布奇诺！"
+     },
+     {
+      "de": "Morgens trinke ich meistens einen Cappuccino.",
+      "zh": "我早上通常喝一杯卡布奇诺。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Cappuccino bestellen — 点一杯卡布奇诺",
+   "点单时常用不变形复数：zwei Cappuccino（= zwei Tassen Cappuccino）",
+   "相关：Espresso, Latte macchiato, Milchkaffee"
+  ],
+  "root": "Cappuccino：意大利语，本义“嘉布遣会修士”，因咖啡颜色似其棕色修士袍得名",
+  "fam": [
+   "Kaffee",
+   "Espresso",
+   "Milchschaum"
+  ],
+  "ety": "借自意大利语 cappuccino（嘉布遣会修士），源自 cappuccio（兜帽），因该会修士的长帽兜袍而得名。",
+  "cog": "意 cappuccino；英 cappuccino, cap",
+  "tip": "点饮品时数量词后常不加复数词尾：„Drei Cappuccino, bitte.“ 重音在 -ci- 上。"
+ },
+ {
+  "w": "Petersilie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Petersilie",
+  "ipa": "petɐˈziːli̯ə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "欧芹，香芹，洋香菜",
+    "de": "Gewürz- und Küchenkraut mit glatten oder krausen Blättern",
+    "ex": [
+     {
+      "de": "Zum Schluss die gehackte Petersilie über die Kartoffeln streuen.",
+      "zh": "最后把切碎的欧芹撒在土豆上。"
+     },
+     {
+      "de": "Im Garten wachsen Schnittlauch und Petersilie.",
+      "zh": "花园里种着细香葱和欧芹。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "glatte / krause Petersilie — 平叶/卷叶欧芹",
+   "ein Bund Petersilie — 一把欧芹",
+   "Petersilienkartoffeln — 欧芹土豆（配菜）",
+   "jdm. ist die Petersilie verhagelt（口，旧）— 某人垂头丧气"
+  ],
+  "root": "Peter·silie：希腊语 petro-（石头）+ selinon（芹菜）→“长在石间的芹菜”；德语形式受人名 Peter 影响",
+  "fam": [
+   "Kräuter",
+   "Schnittlauch",
+   "Dill",
+   "Basilikum"
+  ],
+  "ety": "中古高地德语 petersilje，古高地德语 petersilia < 中古拉丁语 petrosilium < 拉丁语 petroselinum < 希腊语 petroselinon（石芹）。",
+  "cog": "英 parsley；法 persil",
+  "tip": "Petersilie ≠ 香菜（Koriander）。重音在 -si- 上，结尾 -lie 读 [li̯ə]，三音节半。"
+ },
+ {
+  "w": "Imbissbude",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Imbissbuden",
+  "gs": "der Imbissbude",
+  "ipa": "ˈɪmbɪsˌbuːdə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "小吃摊，快餐亭",
+    "de": "kleiner Verkaufsstand oder Kiosk für einfache warme Speisen",
+    "ex": [
+     {
+      "de": "An der Imbissbude am Bahnhof gibt es die beste Currywurst.",
+      "zh": "火车站的小吃摊有最好吃的咖喱香肠。"
+     },
+     {
+      "de": "Mittags holen wir uns oft Pommes an der Imbissbude.",
+      "zh": "中午我们常到小吃摊买薯条。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an der Imbissbude essen — 在小吃摊吃饭",
+   "同义：der Imbiss, der Imbissstand, die Pommesbude（口）, die Frittenbude（口）",
+   "Döner-Imbiss — 土耳其烤肉店"
+  ],
+  "root": "Imbiss·bude：Imbiss（小吃，便餐）+ Bude（棚屋，摊位）",
+  "fam": [
+   "Imbiss",
+   "Bude",
+   "Kiosk",
+   "Schnellimbiss"
+  ],
+  "ety": "Imbiss < 中古高地德语 imbīz，古高地德语 imbīz，与 enbīzan（进食，in + bīzan“咬”）相关；Bude < 中古高地德语 buode（小屋）。",
+  "cog": "英 bite（与 beißen 同源）；英 booth（与 Bude 同源）",
+  "tip": "Bude 本身带口语色彩（也指“住处、破屋”），Imbissbude 指很简单的路边摊；正式一点说 Imbiss 或 Imbissstand。"
+ },
+ {
+  "w": "Bistro",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Bistros",
+  "gs": "des Bistros",
+  "ipa": "ˈbɪstʁo",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "小酒馆，小餐馆（提供简餐和饮品）",
+    "de": "kleines Lokal, in dem man einfache Gerichte und Getränke bekommt",
+    "ex": [
+     {
+      "de": "Wir haben in einem kleinen Bistro zu Mittag gegessen.",
+      "zh": "我们在一家小餐馆吃了午饭。"
+     },
+     {
+      "de": "Im ICE gibt es ein Bordbistro.",
+      "zh": "ICE 列车上有一个餐吧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ins Bistro gehen — 去小餐馆",
+   "Bordbistro（火车上的餐吧）, Bistrotisch（小圆高桌）",
+   "近义：Café, Kneipe（偏喝酒）, Restaurant（较正式）"
+  ],
+  "root": "Bistro：法语外来词",
+  "fam": [
+   "Café",
+   "Kneipe",
+   "Restaurant",
+   "Lokal"
+  ],
+  "ety": "借自法语 bistro(t)，词源不详；流行说法称来自俄语 bystro（“快”），但一般认为缺乏依据。",
+  "cog": "法 bistro；英 bistro",
+  "tip": "重音也可在后：[bɪsˈtʁoː]。中性名词：das Bistro。"
+ },
+ {
+  "w": "Ober",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Ober",
+  "gs": "des Obers",
+  "ipa": "ˈoːbɐ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（餐馆的）男服务员，侍者",
+    "de": "Kellner (bes. in der Anrede)",
+    "ex": [
+     {
+      "de": "Herr Ober, die Rechnung bitte!",
+      "zh": "服务员，请结账！"
+     },
+     {
+      "de": "Der Ober brachte uns die Speisekarte.",
+      "zh": "服务员给我们拿来了菜单。"
+     }
+    ]
+   },
+   {
+    "zh": "（德国纸牌）王后级牌，上级牌",
+    "de": "Spielkarte im deutschen Blatt (zwischen König und Unter)",
+    "ex": [
+     {
+      "de": "Beim Schafkopf sind die Ober die höchsten Trümpfe.",
+      "zh": "玩 Schafkopf 牌时，Ober 是最大的王牌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Herr Ober! — 服务员！（称呼，略显过时，现在多说 Entschuldigung! / Hallo!）",
+   "近义：der Kellner, die Kellnerin, die Bedienung",
+   "作为形容词前缀 ober-：obere, Oberarm, Oberschicht"
+  ],
+  "root": "Ober：Oberkellner（领班侍者）的缩略",
+  "fam": [
+   "Kellner",
+   "Oberkellner",
+   "obere",
+   "Bedienung"
+  ],
+  "ety": "19 世纪由 Oberkellner 缩略而来；ober < 古高地德语 obaro（上面的）。",
+  "cog": "英 over（与 ober 同源）",
+  "tip": "“Herr Ober” 本是对领班的尊称，后泛指所有男服务员；没有对应的阴性称呼，女服务员称 Bedienung 或 Kellnerin。"
+ },
+ {
+  "w": "glutenfrei",
+  "pos": "adj",
+  "ipa": "ɡluˈteːnfʁaɪ̯",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "不含麸质的，无麸质的",
+    "de": "kein Gluten (Klebereiweiß des Getreides) enthaltend",
+    "ex": [
+     {
+      "de": "Haben Sie auch glutenfreies Brot?",
+      "zh": "你们也有无麸质面包吗？"
+     },
+     {
+      "de": "Wegen ihrer Zöliakie muss sie sich glutenfrei ernähren.",
+      "zh": "由于患有乳糜泻，她必须吃无麸质饮食。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "glutenfreie Produkte / Nudeln / Ernährung — 无麸质产品/面条/饮食",
+   "sich glutenfrei ernähren — 采取无麸质饮食",
+   "同类构词：laktosefrei, zuckerfrei, alkoholfrei, fleischlos"
+  ],
+  "root": "gluten·frei：Gluten（麸质，谷蛋白）+ -frei（不含……的）",
+  "fam": [
+   "Gluten",
+   "laktosefrei",
+   "zuckerfrei",
+   "Zöliakie"
+  ],
+  "ety": "Gluten 借自拉丁语 glūten（胶）；-frei < 古高地德语 frī（自由的）。",
+  "cog": "英 gluten-free；英 glue（经法语，与拉丁语 glus/gluten 相关）",
+  "tip": "Gluten 重音在第二音节：[ɡluˈteːn]，中性名词 das Gluten。"
+ },
+ {
+  "w": "laktosefrei",
+  "pos": "adj",
+  "ipa": "lakˈtoːzəfʁaɪ̯",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "无乳糖的，不含乳糖的",
+    "de": "keine Laktose (Milchzucker) enthaltend",
+    "ex": [
+     {
+      "de": "Ich vertrage keine normale Milch, ich kaufe nur laktosefreie.",
+      "zh": "我喝不了普通牛奶，只买无乳糖的。"
+     },
+     {
+      "de": "Viele Hartkäse sind von Natur aus laktosefrei.",
+      "zh": "许多硬质奶酪天然就几乎不含乳糖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "laktosefreie Milch / Joghurt — 无乳糖牛奶/酸奶",
+   "Laktoseintoleranz — 乳糖不耐受；laktoseintolerant sein — 乳糖不耐",
+   "同类：glutenfrei, vegan, vegetarisch"
+  ],
+  "root": "laktose·frei：Laktose（乳糖）+ -frei（不含……的）",
+  "fam": [
+   "Laktose",
+   "Laktoseintoleranz",
+   "glutenfrei",
+   "Milch"
+  ],
+  "ety": "Laktose 为近代科学造词：拉丁语 lac, lactis（奶）+ 化学后缀 -ose（取自 Glukose）。",
+  "cog": "英 lactose-free；拉 lac",
+  "tip": "也写作 lactosefrei；中国学习者常见的“乳糖不耐受”说成 Ich habe eine Laktoseintoleranz / Ich bin laktoseintolerant。"
+ },
+ {
+  "w": "Einkaufskorb",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Einkaufskörbe",
+  "gs": "des Einkaufskorb(e)s",
+  "ipa": "ˈaɪ̯nkaʊ̯fsˌkɔʁp",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "购物篮",
+    "de": "Korb, in dem man beim Einkaufen die Waren trägt",
+    "ex": [
+     {
+      "de": "Nimm bitte einen Einkaufskorb, wir brauchen nicht viel.",
+      "zh": "拿个购物篮吧，我们买的不多。"
+     }
+    ]
+   },
+   {
+    "zh": "（网店的）购物车",
+    "de": "virtueller Warenkorb in einem Onlineshop",
+    "ex": [
+     {
+      "de": "Legen Sie den Artikel in den Einkaufskorb.",
+      "zh": "请将商品加入购物车。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. in den Einkaufskorb legen — 把某物放进购物篮/购物车",
+   "区分：der Einkaufswagen（超市手推购物车）",
+   "网购更常说 der Warenkorb"
+  ],
+  "root": "Einkauf·s·korb：Einkauf（购物）+ -s-（连接音）+ Korb（篮子）",
+  "fam": [
+   "einkaufen",
+   "Korb",
+   "Einkaufswagen",
+   "Warenkorb"
+  ],
+  "ety": "透明复合词；Korb < 古高地德语 korb，一般认为借自拉丁语 corbis（篮子）。",
+  "cog": "拉 corbis",
+  "tip": "购物车别说 *Einkaufsauto：超市里是 Einkaufswagen，网站上是 Warenkorb。"
+ },
+ {
+  "w": "Drogerie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Drogerien",
+  "gs": "der Drogerie",
+  "ipa": "dʁoɡəˈʁiː",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "日化用品店，药妆店",
+    "de": "Geschäft für Körperpflege-, Kosmetik-, Haushalts- und rezeptfreie Gesundheitsprodukte",
+    "ex": [
+     {
+      "de": "Zahnpasta und Shampoo kaufe ich in der Drogerie.",
+      "zh": "牙膏和洗发水我在日化店买。"
+     },
+     {
+      "de": "Die nächste Drogerie ist gleich um die Ecke.",
+      "zh": "最近的日化店就在拐角。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in die Drogerie gehen — 去日化店",
+   "Drogeriemarkt — 连锁日化超市",
+   "区分：die Apotheke（药房，卖处方药和非处方药）"
+  ],
+  "root": "Drog·erie：Droge（原指药材）+ -erie（店铺、行业后缀，来自法语）",
+  "fam": [
+   "Droge",
+   "Drogist",
+   "Drogeriemarkt",
+   "Apotheke"
+  ],
+  "ety": "19 世纪仿法语 droguerie 构成；Droge < 法语 drogue（药材），其来源不详（一说出自中古荷兰语 droge vate“干货桶”）。",
+  "cog": "法 droguerie；英 drugstore, drug",
+  "tip": "Drogerie 不卖处方药，药品要去 Apotheke。Droge 今天常指“毒品”，但 Drogerie 与毒品无关。"
+ },
+ {
+  "w": "Bioladen",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Bioläden",
+  "gs": "des Bioladens",
+  "ipa": "ˈbiːoˌlaːdn̩",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "有机食品店",
+    "de": "Geschäft, das Lebensmittel und Produkte aus ökologischem Anbau verkauft",
+    "ex": [
+     {
+      "de": "Gemüse kaufen wir meistens im Bioladen.",
+      "zh": "蔬菜我们大多在有机食品店买。"
+     },
+     {
+      "de": "Im Bioladen ist vieles teurer als im Supermarkt.",
+      "zh": "有机店里很多东西比超市贵。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Bioladen einkaufen — 在有机店购物",
+   "Bio-Supermarkt / Biomarkt — 有机超市",
+   "Bio-Produkte, Bio-Gemüse, Bio-Siegel — 有机产品/蔬菜/认证标志"
+  ],
+  "root": "Bio·laden：bio（有机的，来自 biologisch）+ Laden（商店）",
+  "fam": [
+   "bio",
+   "Laden",
+   "Reformhaus",
+   "Supermarkt"
+  ],
+  "ety": "Bio- 为 biologisch 的缩略，源自希腊语 bios（生命）；Laden < 中古高地德语 lade（木板，摊板）。",
+  "cog": "英 organic shop",
+  "tip": "德语用 bio 表示“有机”，不是“生物”：Bio-Eier = 有机鸡蛋。复数 Läden 有变音。"
+ },
+ {
+  "w": "Reformhaus",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Reformhäuser",
+  "gs": "des Reformhauses",
+  "ipa": "ʁeˈfɔʁmˌhaʊ̯s",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "（德国）健康食品店，保健品店",
+    "de": "Fachgeschäft für Naturkost, Diätprodukte und naturheilkundliche Mittel",
+    "ex": [
+     {
+      "de": "Meine Großmutter kauft ihre Kräutertees im Reformhaus.",
+      "zh": "我奶奶在健康食品店买草药茶。"
+     },
+     {
+      "de": "Reformhäuser gibt es in Deutschland seit über hundert Jahren.",
+      "zh": "德国的健康食品店已有一百多年历史。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Reformhaus — 在健康食品店",
+   "区分：Reformhaus（传统保健、营养补充）/ Bioladen（有机食品）/ Drogerie（日化）",
+   "Reformkost — 健康饮食产品"
+  ],
+  "root": "Reform·haus：Reform（改革）+ Haus（店铺）；名称来自“生活改革运动”",
+  "fam": [
+   "Reform",
+   "Bioladen",
+   "Drogerie",
+   "Haus"
+  ],
+  "ety": "源于 19、20 世纪之交的“生活改革运动”（Lebensreformbewegung），该运动提倡素食与自然疗法；Reform < 法语 réforme < 拉丁语 reformare（重塑）。",
+  "cog": "—",
+  "tip": "Reformhaus 是德国特有概念，与政治“改革”无关；重音在 Reform 的 -form 上。"
+ },
+ {
+  "w": "Öffnungszeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Öffnungszeiten",
+  "gs": "der Öffnungszeit",
+  "ipa": "ˈœfnʊŋsˌt͡saɪ̯t",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（多用复数）营业时间，开放时间",
+    "de": "(meist Pl.) Zeit, in der ein Geschäft, eine Behörde o. Ä. geöffnet ist",
+    "ex": [
+     {
+      "de": "Wie sind die Öffnungszeiten der Bibliothek?",
+      "zh": "图书馆的开放时间是几点到几点？"
+     },
+     {
+      "de": "Die Öffnungszeiten stehen an der Tür.",
+      "zh": "营业时间写在门上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Öffnungszeiten erweitern / verlängern — 延长营业时间",
+   "außerhalb der Öffnungszeiten — 营业时间以外",
+   "Öffnungszeiten: Mo–Fr 9–18 Uhr — 营业时间：周一至周五 9 至 18 点",
+   "近义：Geschäftszeiten, Sprechzeiten（诊所、机关接待时间）"
+  ],
+  "root": "Öffn·ung·s·zeit：öffnen（打开）+ -ung + -s- + Zeit（时间）",
+  "fam": [
+   "öffnen",
+   "Öffnung",
+   "geöffnet",
+   "Ladenschluss"
+  ],
+  "ety": "透明复合词；öffnen < 古高地德语 offanōn；Zeit < 古高地德语 zīt。",
+  "cog": "英 opening hours；英 tide（与 Zeit 同源）",
+  "tip": "几乎总用复数 Öffnungszeiten。“营业中/已打烊”说 geöffnet / geschlossen。"
+ },
+ {
+  "w": "Ratenzahlung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Ratenzahlungen",
+  "gs": "der Ratenzahlung",
+  "ipa": "ˈʁaːtn̩ˌt͡saːlʊŋ",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "分期付款",
+    "de": "Bezahlung in mehreren Teilbeträgen",
+    "ex": [
+     {
+      "de": "Das Sofa können Sie auch auf Ratenzahlung kaufen.",
+      "zh": "这张沙发您也可以分期付款购买。"
+     },
+     {
+      "de": "Die monatliche Ratenzahlung beträgt 50 Euro.",
+      "zh": "每月分期付款金额为 50 欧元。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf Ratenzahlung / auf Raten kaufen — 分期购买",
+   "in (monatlichen) Raten zahlen / abzahlen — 按（月）分期付清",
+   "eine Ratenzahlung vereinbaren — 约定分期付款"
+  ],
+  "root": "Raten·zahl·ung：Rate（分期款）+ Zahlung（付款）",
+  "fam": [
+   "Rate",
+   "zahlen",
+   "Zahlung",
+   "Kredit"
+  ],
+  "ety": "Rate < 意大利语 rata（份额） < 拉丁语 (pars) rata（按比例计算好的份额），ratus 为 reri（计算）的过去分词；Zahlung 来自 zahlen。",
+  "cog": "英 rate；意 rata",
+  "tip": "口语更常说 auf Raten；Rate 的基本义是“分期款”，“比率”义主要见于复合词，如 Inflationsrate, Geburtenrate, Wachstumsrate。"
+ },
+ {
+  "w": "Lastschrift",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Lastschriften",
+  "gs": "der Lastschrift",
+  "ipa": "ˈlastˌʃʁɪft",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "（银行）直接扣款，自动转账扣款",
+    "de": "Einzug eines Betrags vom Konto des Zahlungspflichtigen durch den Empfänger",
+    "ex": [
+     {
+      "de": "Die Miete wird per Lastschrift abgebucht.",
+      "zh": "房租通过直接扣款从账户划走。"
+     },
+     {
+      "de": "Sie können eine Lastschrift innerhalb von acht Wochen zurückgeben lassen.",
+      "zh": "您可以在八周内要求退回一笔直接扣款。"
+     }
+    ]
+   },
+   {
+    "zh": "（会计）借记，记入借方",
+    "de": "Buchung auf der Sollseite eines Kontos",
+    "ex": [
+     {
+      "de": "Auf dem Kontoauszug sind alle Lastschriften und Gutschriften aufgeführt.",
+      "zh": "账户对账单上列出了所有借记和贷记款项。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "per Lastschrift zahlen / abbuchen — 通过直接扣款付款",
+   "das SEPA-Lastschriftmandat erteilen — 授予 SEPA 扣款授权",
+   "eine Lastschrift zurückgeben / widersprechen — 退回/撤销扣款",
+   "反义：die Gutschrift（入账，贷记）"
+  ],
+  "root": "Last·schrift：Last（负担 → 借方）+ Schrift（记录）→“记在负担一方的记录”",
+  "fam": [
+   "Gutschrift",
+   "abbuchen",
+   "Konto",
+   "Überweisung"
+  ],
+  "ety": "银行用语，由 Last（负担，记入借方）+ Schrift 构成，与 Gutschrift 相对；Last < 古高地德语 hlast。",
+  "cog": "英 direct debit",
+  "tip": "Lastschrift（对方从你账户扣款）≠ Überweisung（你主动转账）。德国房租、电话费、保险常用 Lastschrift。"
+ },
+ {
+  "w": "Bankkarte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bankkarten",
+  "gs": "der Bankkarte",
+  "ipa": "ˈbaŋkˌkaʁtə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "银行卡（借记卡）",
+    "de": "Karte der Bank zum Geldabheben und bargeldlosen Bezahlen",
+    "ex": [
+     {
+      "de": "Kann ich hier mit Bankkarte bezahlen?",
+      "zh": "这里可以用银行卡付款吗？"
+     },
+     {
+      "de": "Der Automat hat meine Bankkarte eingezogen.",
+      "zh": "取款机把我的银行卡吞了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit (der) Bankkarte zahlen — 刷卡付款",
+   "die Bankkarte sperren lassen — 挂失/冻结银行卡（统一挂失电话 116 116）",
+   "近义：Girokarte, EC-Karte（口语仍常用）, Debitkarte；区分 Kreditkarte"
+  ],
+  "root": "Bank·karte：Bank（银行）+ Karte（卡）",
+  "fam": [
+   "Bank",
+   "Karte",
+   "Kreditkarte",
+   "Geheimzahl"
+  ],
+  "ety": "Bank < 意大利语 banco/banca（长凳，钱商柜台），后者源自日耳曼语；Karte < 法语 carte < 拉丁语 charta < 希腊语 chartēs（纸张）。",
+  "cog": "英 bank card；英 bench（与 Bank 同源）",
+  "tip": "在德国说“刷卡”：mit Karte zahlen；“现金”：bar zahlen。Bankkarte 指借记卡，不等于 Kreditkarte。"
+ },
+ {
+  "w": "Geheimzahl",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Geheimzahlen",
+  "gs": "der Geheimzahl",
+  "ipa": "ɡəˈhaɪ̯mˌt͡saːl",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（银行卡）密码，个人识别码",
+    "de": "persönliche Identifikationsnummer, PIN",
+    "ex": [
+     {
+      "de": "Bitte geben Sie Ihre Geheimzahl ein.",
+      "zh": "请输入您的密码。"
+     },
+     {
+      "de": "Notieren Sie Ihre Geheimzahl niemals auf der Karte.",
+      "zh": "千万不要把密码写在卡上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Geheimzahl eingeben — 输入密码",
+   "die Geheimzahl vergessen / ändern — 忘记/修改密码",
+   "同义：die PIN, die PIN-Nummer（口）；网站登录密码则是 das Passwort / Kennwort"
+  ],
+  "root": "Geheim·zahl：geheim（秘密的）+ Zahl（数字）",
+  "fam": [
+   "geheim",
+   "Zahl",
+   "Geheimnis",
+   "PIN"
+  ],
+  "ety": "透明复合词；geheim 原义“属于家的、内部的”，与 Heim 相关；Zahl < 古高地德语 zala。",
+  "cog": "英 PIN；英 tale（与 Zahl 同源）",
+  "tip": "Geheimzahl 只指数字密码；电脑、网站的密码说 Passwort，不要混用。"
+ },
+ {
+  "w": "Überweisungsformular",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Überweisungsformulare",
+  "gs": "des Überweisungsformulars",
+  "ipa": "yːbɐˈvaɪ̯zʊŋsfɔʁmuˌlaːɐ̯",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "转账单，汇款单",
+    "de": "Vordruck für eine Banküberweisung",
+    "ex": [
+     {
+      "de": "Füllen Sie das Überweisungsformular bitte in Druckbuchstaben aus.",
+      "zh": "请用印刷体填写转账单。"
+     },
+     {
+      "de": "Heute erledigen die meisten ihre Überweisungen online statt mit Überweisungsformular.",
+      "zh": "如今大多数人在网上转账，不再用纸质转账单。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Überweisungsformular ausfüllen / unterschreiben — 填写/签署转账单",
+   "Angaben: Empfänger, IBAN, BIC, Betrag, Verwendungszweck — 收款人、IBAN、BIC、金额、用途",
+   "同义：Überweisungsträger, Überweisungsschein"
+  ],
+  "root": "Über·weis·ung·s·formular：Überweisung（转账）+ -s- + Formular（表格）",
+  "fam": [
+   "Überweisung",
+   "überweisen",
+   "Formular",
+   "Konto"
+  ],
+  "ety": "透明复合词；Formular < 拉丁语 formularius（与 formula“格式、规程”相关）。",
+  "cog": "英 transfer form；拉 formula",
+  "tip": "德国转账必须写 Verwendungszweck（用途/备注），如付房租时写明月份。"
+ },
+ {
+  "w": "Kontoauszug",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kontoauszüge",
+  "gs": "des Kontoauszug(e)s",
+  "ipa": "ˈkɔntoˌʔaʊ̯st͡suːk",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "银行对账单，账户明细",
+    "de": "Aufstellung der Buchungen und des Kontostands für einen bestimmten Zeitraum",
+    "ex": [
+     {
+      "de": "Für den Mietvertrag brauche ich die Kontoauszüge der letzten drei Monate.",
+      "zh": "签租房合同我需要最近三个月的银行对账单。"
+     },
+     {
+      "de": "Ich drucke meinen Kontoauszug am Automaten aus.",
+      "zh": "我在自助机上打印对账单。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Kontoauszug prüfen / ausdrucken — 核对/打印对账单",
+   "auf dem Kontoauszug stehen — 显示在对账单上",
+   "elektronischer Kontoauszug / Kontoauszugsdrucker — 电子对账单/对账单打印机"
+  ],
+  "root": "Konto·aus·zug：Konto（账户）+ Auszug（摘录）",
+  "fam": [
+   "Konto",
+   "Auszug",
+   "Kontostand",
+   "ausziehen"
+  ],
+  "ety": "Konto < 意大利语 conto（账目） < 晚期拉丁语 computus（计算）；Auszug 来自 ausziehen（抽出，摘录）。",
+  "cog": "英 account statement；意 conto",
+  "tip": "Auszug 还表示“搬出”（der Auszug aus der Wohnung），此处为“摘录”义。复数 Konten（也作 Kontos），注意 Kontoauszüge 有变音。"
+ },
+ {
+  "w": "Postamt",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Postämter",
+  "gs": "des Postamt(e)s",
+  "ipa": "ˈpɔstˌʔamt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "邮局",
+    "de": "Dienststelle der Post, in der man Briefe und Pakete aufgibt",
+    "ex": [
+     {
+      "de": "Das Postamt schließt heute um 18 Uhr.",
+      "zh": "邮局今天 18 点关门。"
+     },
+     {
+      "de": "In vielen Dörfern gibt es kein eigenes Postamt mehr.",
+      "zh": "许多村子里已经没有自己的邮局了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aufs / zum Postamt gehen — 去邮局",
+   "ein Paket auf dem Postamt aufgeben — 在邮局寄包裹",
+   "今天德国多为 Postfiliale / Postbank-Filiale / Postagentur（设在商店里的代办点）；口语说 zur Post gehen"
+  ],
+  "root": "Post·amt：Post（邮政）+ Amt（机关，局）",
+  "fam": [
+   "Post",
+   "Amt",
+   "Postleitzahl",
+   "Postbote"
+  ],
+  "ety": "Post < 意大利语 posta（驿站）；Amt < 古高地德语 ambaht（职务，侍奉）。",
+  "cog": "英 post office",
+  "tip": "日常口语多说 Ich gehe zur Post；Postamt 稍显正式或过时。"
+ },
+ {
+  "w": "Unterhemd",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Unterhemden",
+  "gs": "des Unterhemd(e)s",
+  "ipa": "ˈʊntɐˌhɛmt",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "汗衫，贴身背心，内衣上衣",
+    "de": "unter der Oberbekleidung direkt auf der Haut getragenes Hemd",
+    "ex": [
+     {
+      "de": "Im Winter trage ich unter dem Pullover ein Unterhemd.",
+      "zh": "冬天我在毛衣里面穿一件贴身背心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein ärmelloses Unterhemd — 无袖背心",
+   "Unterwäsche: Unterhemd, Unterhose, Slip, Socken — 内衣裤",
+   "近义：das Unterhemd ↔ das T-Shirt（外穿）"
+  ],
+  "root": "Unter·hemd：unter（在下面的）+ Hemd（衬衫）",
+  "fam": [
+   "Hemd",
+   "Unterhose",
+   "Unterwäsche",
+   "unter"
+  ],
+  "ety": "透明复合词；Hemd < 古高地德语 hemidi。",
+  "cog": "英 undershirt",
+  "tip": "Hemd 单独多指带扣衬衫（男衬衫），复数 Hemden；Unterhemd 是贴身的内衣。"
+ },
+ {
+  "w": "Slip",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Slips",
+  "gs": "des Slips",
+  "ipa": "slɪp",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（三角）内裤",
+    "de": "kurze, eng anliegende Unterhose ohne Beine",
+    "ex": [
+     {
+      "de": "Im Dreierpack sind die Slips günstiger.",
+      "zh": "三条装的内裤更便宜。"
+     },
+     {
+      "de": "Er trägt lieber Boxershorts als Slips.",
+      "zh": "他更喜欢穿平角裤而不是三角裤。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Damenslip / Herrenslip — 女式/男式三角裤",
+   "区分：die Boxershorts（平角裤）, die Unterhose（内裤，统称）, der Tanga",
+   "einen frischen Slip anziehen — 换上干净内裤"
+  ],
+  "root": "Slip：英语外来词，源自 to slip（滑入，套上）",
+  "fam": [
+   "Unterhose",
+   "Unterwäsche",
+   "Unterhemd"
+  ],
+  "ety": "20 世纪借自英语 slip（本义“可滑入的衣物”，英语中多指衬裙），德语中词义转为三角内裤。",
+  "cog": "英 slip（意义不同）",
+  "tip": "“假英语”：英语的内裤是 briefs/panties。读 [slɪp]，不读 [ʃlɪp]。"
+ },
+ {
+  "w": "Strumpfhose",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Strumpfhosen",
+  "gs": "der Strumpfhose",
+  "ipa": "ˈʃtʁʊmp͡fˌhoːzə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "连裤袜，裤袜",
+    "de": "Strümpfe und Höschen in einem Stück",
+    "ex": [
+     {
+      "de": "Unter dem Rock trägt sie eine schwarze Strumpfhose.",
+      "zh": "她在裙子里面穿了一条黑色连裤袜。"
+     },
+     {
+      "de": "Mist, meine Strumpfhose hat eine Laufmasche!",
+      "zh": "糟糕，我的连裤袜脱丝了！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine blickdichte Strumpfhose — 不透肉的连裤袜",
+   "eine Laufmasche in der Strumpfhose — 连裤袜抽丝",
+   "Wollstrumpfhose / Feinstrumpfhose — 羊毛/薄款连裤袜"
+  ],
+  "root": "Strumpf·hose：Strumpf（长袜）+ Hose（裤子）",
+  "fam": [
+   "Strumpf",
+   "Hose",
+   "Socke",
+   "Leggings"
+  ],
+  "ety": "透明复合词；Strumpf < 中古高地德语 strumpf（残桩，截头），后转指（裤子截出的）长袜；Hose < 古高地德语 hosa（护腿）。",
+  "cog": "英 hose（长袜，与 Hose 同源）",
+  "tip": "Strumpfhose 是阴性单数，一条连裤袜：eine Strumpfhose（不说 *ein Paar Strumpfhosen）。"
+ },
+ {
+  "w": "Weste",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Westen",
+  "gs": "der Weste",
+  "ipa": "ˈvɛstə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "背心，马甲",
+    "de": "ärmelloses, vorn meist geknöpftes Kleidungsstück für den Oberkörper",
+    "ex": [
+     {
+      "de": "Zum Anzug trägt er eine graue Weste.",
+      "zh": "他西装里面穿了件灰色马甲。"
+     },
+     {
+      "de": "Im Auto muss eine Warnweste liegen.",
+      "zh": "车里必须备有一件反光背心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine weiße / saubere Weste haben — 清白无污点（口语习语）",
+   "Warnweste / Rettungsweste / Strickweste — 反光背心/救生衣/针织背心",
+   "die Weste zuknöpfen — 扣上马甲"
+  ],
+  "root": "Weste：法语外来词，本义“衣服”",
+  "fam": [
+   "Warnweste",
+   "Rettungsweste",
+   "Anzug",
+   "Jacke"
+  ],
+  "ety": "17 世纪借自法语 veste < 意大利语 veste（衣服） < 拉丁语 vestis（衣服）。",
+  "cog": "英 vest；法 veste；拉 vestis",
+  "tip": "英式英语 vest 是贴身背心（德语 Unterhemd），美式 vest 才是马甲；德语 Weste = 马甲/背心外衣。"
+ },
+ {
+  "w": "Reißverschluss",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Reißverschlüsse",
+  "gs": "des Reißverschlusses",
+  "ipa": "ˈʁaɪ̯sfɛɐ̯ˌʃlʊs",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "拉链",
+    "de": "Verschluss aus zwei Zahnreihen, die durch einen Schieber verbunden oder getrennt werden",
+    "ex": [
+     {
+      "de": "Der Reißverschluss an meiner Jacke klemmt.",
+      "zh": "我夹克上的拉链卡住了。"
+     },
+     {
+      "de": "Mach mal den Reißverschluss zu, es ist kalt!",
+      "zh": "把拉链拉上，天冷！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Reißverschluss aufmachen / zumachen (zuziehen) — 拉开/拉上拉链",
+   "Der Reißverschluss klemmt / ist kaputt. — 拉链卡住了/坏了",
+   "das Reißverschlussverfahren — （交通）车道合并时的“拉链式”交替通行"
+  ],
+  "root": "Reiß·ver·schluss：reißen（拉、扯）+ Verschluss（扣合装置）",
+  "fam": [
+   "reißen",
+   "Verschluss",
+   "schließen",
+   "Knopf"
+  ],
+  "ety": "20 世纪初出现的透明复合词；Verschluss 来自 verschließen。",
+  "cog": "英 zip, zipper（不同源）",
+  "tip": "1996 年正字法改革后写 -ss（旧写法 Reißverschluß）。Reißverschlussverfahren 是德国驾照考试常见词。"
+ },
+ {
+  "w": "Halskette",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Halsketten",
+  "gs": "der Halskette",
+  "ipa": "ˈhalsˌkɛtə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "项链",
+    "de": "Kette, die als Schmuck um den Hals getragen wird",
+    "ex": [
+     {
+      "de": "Zum Geburtstag hat sie eine silberne Halskette bekommen.",
+      "zh": "她生日收到了一条银项链。"
+     },
+     {
+      "de": "Die Halskette gehörte früher meiner Großmutter.",
+      "zh": "这条项链以前是我祖母的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Halskette tragen / umlegen / abnehmen — 戴着/戴上/取下项链",
+   "eine Halskette aus Gold / Perlen — 金/珍珠项链",
+   "近义：die Kette（口，常直接用）, das Collier（高档）；der Anhänger（吊坠）"
+  ],
+  "root": "Hals·kette：Hals（脖子）+ Kette（链子）",
+  "fam": [
+   "Hals",
+   "Kette",
+   "Armband",
+   "Ohrring"
+  ],
+  "ety": "透明复合词；Kette < 古高地德语 ketina < 拉丁语 catena（链）。",
+  "cog": "英 chain（经古法语，同出 catena）",
+  "tip": "口语常只说 Kette：Schöne Kette!"
+ },
+ {
+  "w": "Wolle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wollen（指不同种类）",
+  "gs": "der Wolle",
+  "ipa": "ˈvɔlə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "羊毛；毛线；毛料",
+    "de": "Haare von Schafen (und anderen Tieren); daraus gesponnenes Garn",
+    "ex": [
+     {
+      "de": "Der Pullover ist aus reiner Wolle.",
+      "zh": "这件毛衣是纯羊毛的。"
+     },
+     {
+      "de": "Oma strickt aus dieser Wolle einen Schal.",
+      "zh": "奶奶用这团毛线织一条围巾。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus (reiner) Wolle — （纯）羊毛制的",
+   "ein Knäuel Wolle — 一团毛线",
+   "sich (mit jdm.) in die Wolle kriegen / geraten（口）— （与某人）争吵起来",
+   "in der Wolle gefärbt — 彻头彻尾的，地地道道的（如 ein in der Wolle gefärbter Demokrat）"
+  ],
+  "root": "Wolle：日耳曼语固有词",
+  "fam": [
+   "wollen（羊毛的，形容词）",
+   "Schurwolle",
+   "Baumwolle",
+   "Wollpullover"
+  ],
+  "ety": "古高地德语 wolla < 原始日耳曼语 *wullō。",
+  "cog": "英 wool；荷 wol",
+  "tip": "Baumwolle（棉花）字面是“树上的羊毛”。形容词 wollen（羊毛的）与情态动词 wollen 同形不同源。"
+ },
+ {
+  "w": "Leder",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Leder",
+  "gs": "des Leders",
+  "ipa": "ˈleːdɐ",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "皮革，皮子",
+    "de": "gegerbte Tierhaut",
+    "ex": [
+     {
+      "de": "Die Tasche ist aus echtem Leder.",
+      "zh": "这个包是真皮的。"
+     },
+     {
+      "de": "Die Sitze im Auto sind mit Leder bezogen.",
+      "zh": "车座椅是皮面的。"
+     }
+    ]
+   },
+   {
+    "zh": "（口，体育）足球",
+    "de": "(ugs.) Fußball",
+    "ex": [
+     {
+      "de": "Er jagt dem Leder hinterher.",
+      "zh": "他追着足球跑。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus echtem Leder / Kunstleder — 真皮/人造革制的",
+   "Lederjacke / Lederschuhe / Ledersofa — 皮夹克/皮鞋/皮沙发",
+   "zäh wie Leder — （肉）老得嚼不动",
+   "jdm. ans Leder wollen（口）— 想对某人下手"
+  ],
+  "root": "Leder：日耳曼语固有词",
+  "fam": [
+   "ledern",
+   "Kunstleder",
+   "Lederhose",
+   "gerben"
+  ],
+  "ety": "古高地德语 ledar < 原始日耳曼语 *leþrą。",
+  "cog": "英 leather；荷 leer",
+  "tip": "复数同形（die Leder），且多只在指“不同种皮革”时用。形容词“皮制的”：ledern 或 Leder- 复合词。"
+ },
+ {
+  "w": "gestreift",
+  "pos": "adj",
+  "ipa": "ɡəˈʃtʁaɪ̯ft",
+  "lvl": "A2–B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "有条纹的，带条纹的",
+    "de": "mit Streifen gemustert",
+    "ex": [
+     {
+      "de": "Er trägt ein blau-weiß gestreiftes Hemd.",
+      "zh": "他穿着一件蓝白条纹衬衫。"
+     },
+     {
+      "de": "Das Zebra ist schwarz-weiß gestreift.",
+      "zh": "斑马身上是黑白条纹。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "längs / quer gestreift — 竖条纹/横条纹的",
+   "rot-weiß gestreift — 红白条纹的",
+   "花纹系列：gestreift / kariert / gepunktet / geblümt / einfarbig — 条纹/格子/圆点/碎花/纯色"
+  ],
+  "root": "ge·streif·t：streifen（加条纹）的第二分词，已词汇化为形容词；Streifen（条纹）",
+  "fam": [
+   "Streifen",
+   "streifen",
+   "kariert",
+   "gepunktet"
+  ],
+  "ety": "来自 Streifen < 中古高地德语 streif(e)。",
+  "cog": "英 striped（英 stripe 一说与 Streifen 同源）",
+  "tip": "作定语要变格：ein gestreifter Pullover, eine gestreifte Bluse。"
+ },
+ {
+  "w": "kariert",
+  "pos": "adj",
+  "ipa": "kaˈʁiːɐ̯t",
+  "lvl": "A2–B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "方格的，格子花纹的",
+    "de": "mit Karos gemustert",
+    "ex": [
+     {
+      "de": "Für Mathe brauchst du ein kariertes Heft.",
+      "zh": "数学课你需要一个方格本。"
+     },
+     {
+      "de": "Er hat ein rot kariertes Hemd an.",
+      "zh": "他穿着一件红格子衬衫。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）糊涂的，莫名其妙的（多用作副词）",
+    "de": "(ugs.) verwirrt, unsinnig",
+    "ex": [
+     {
+      "de": "Guck nicht so kariert!",
+      "zh": "别那么一脸懵的样子！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "kariertes Papier ↔ liniertes Papier — 方格纸 ↔ 横线纸",
+   "ein kariertes Hemd / ein Schottenkaro — 格子衬衫/苏格兰格",
+   "kariert reden / gucken（口）— 胡说八道/发愣"
+  ],
+  "root": "kar·iert：karieren（加方格）的第二分词；Karo（方格，菱形）",
+  "fam": [
+   "Karo",
+   "gestreift",
+   "gepunktet",
+   "liniert"
+  ],
+  "ety": "由 Karo 派生的动词 karieren；Karo < 法语 carreau（方块） < 通俗拉丁语 *quadrellum，源自拉丁语 quadrum（正方形）。",
+  "cog": "法 carré；英 square（经古法语，同出 quadrum 系）",
+  "tip": "重音在 -riert 上；注意拼写只有一个 r。"
+ },
+ {
+  "w": "gepunktet",
+  "pos": "adj",
+  "ipa": "ɡəˈpʊŋktət",
+  "lvl": "A2–B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "带圆点的，波点的；点状的",
+    "de": "mit Punkten gemustert oder versehen",
+    "ex": [
+     {
+      "de": "Sie trägt ein rot gepunktetes Kleid.",
+      "zh": "她穿着一条红色波点连衣裙。"
+     },
+     {
+      "de": "Schneiden Sie entlang der gepunkteten Linie.",
+      "zh": "请沿虚线剪开。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "weiß gepunktet / mit weißen Punkten — 白色圆点的",
+   "eine gepunktete Linie — 点线，虚线",
+   "同类：gestreift, kariert, geblümt"
+  ],
+  "root": "ge·punkt·et：punkten（加点）的第二分词，已作形容词；Punkt（点）",
+  "fam": [
+   "Punkt",
+   "punkten",
+   "gestreift",
+   "kariert"
+  ],
+  "ety": "来自 Punkt < 中古高地德语 punct < 拉丁语 punctum（刺点）。",
+  "cog": "英 dotted；英 point（同出拉丁语 punctum）",
+  "tip": "动词 punkten 今日多指“得分”，但 gepunktet 作形容词基本只表示“有圆点的”。"
+ },
+ {
+  "w": "einfarbig",
+  "pos": "adj",
+  "ipa": "ˈaɪ̯nfaʁbɪç",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "单色的，纯色的",
+    "de": "nur eine Farbe habend, ohne Muster",
+    "ex": [
+     {
+      "de": "Zu der bunten Hose passt am besten ein einfarbiges T-Shirt.",
+      "zh": "这条花裤子最好配一件纯色 T 恤。"
+     },
+     {
+      "de": "Die Wand soll einfarbig weiß sein.",
+      "zh": "墙要刷成纯白色。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einfarbig ↔ bunt / gemustert / mehrfarbig — 纯色 ↔ 彩色/有花纹/多色",
+   "einfarbige Kleidung — 纯色服装",
+   "奥地利：einfärbig"
+  ],
+  "root": "ein·farb·ig：ein（一）+ Farbe（颜色）+ -ig（形容词后缀）",
+  "fam": [
+   "Farbe",
+   "bunt",
+   "mehrfarbig",
+   "farbig"
+  ],
+  "ety": "透明构词；Farbe < 古高地德语 farawa。",
+  "cog": "英 single-coloured, plain",
+  "tip": "描述衣料也常说 uni（不变格，多作表语：Der Stoff ist uni）。"
+ },
+ {
+  "w": "modisch",
+  "pos": "adj",
+  "ipa": "ˈmoːdɪʃ",
+  "lvl": "B1",
+  "forms": "modischer · am modischsten",
+  "senses": [
+   {
+    "zh": "时髦的，时尚的，入时的",
+    "de": "der aktuellen Mode entsprechend",
+    "ex": [
+     {
+      "de": "Sie ist immer modisch gekleidet.",
+      "zh": "她总是穿得很时髦。"
+     },
+     {
+      "de": "Die Brille ist modisch, aber unbequem.",
+      "zh": "这副眼镜很时尚，但戴着不舒服。"
+     }
+    ]
+   },
+   {
+    "zh": "关于时尚的，时装方面的",
+    "de": "die Mode betreffend",
+    "ex": [
+     {
+      "de": "In modischen Fragen frage ich meine Schwester.",
+      "zh": "穿搭方面的问题我会问我姐姐。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich modisch kleiden — 穿着时髦",
+   "modisch ↔ altmodisch / unmodern — 时髦 ↔ 过时",
+   "近义：trendy（口）, schick, modern, angesagt（口）"
+  ],
+  "root": "mod·isch：Mode（时尚）+ -isch（形容词后缀）",
+  "fam": [
+   "Mode",
+   "altmodisch",
+   "Modenschau",
+   "modern"
+  ],
+  "ety": "由 Mode 派生；Mode 17 世纪借自法语 mode < 拉丁语 modus（方式，尺度）。",
+  "cog": "英 fashionable；法 à la mode",
+  "tip": "modisch ≠ modern：modern 是“现代的”，modisch 专指衣着打扮“时髦”。altmodisch 是“过时的、老派的”。"
+ },
+ {
+  "w": "Wimper",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wimpern",
+  "gs": "der Wimper",
+  "ipa": "ˈvɪmpɐ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "睫毛",
+    "de": "eines der kurzen Haare am Rand des Augenlids",
+    "ex": [
+     {
+      "de": "Sie hat lange, dunkle Wimpern.",
+      "zh": "她有长长的深色睫毛。"
+     },
+     {
+      "de": "Mir ist eine Wimper ins Auge gefallen.",
+      "zh": "一根睫毛掉进我眼睛里了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ohne mit der Wimper zu zucken — 眼都不眨一下，毫不犹豫",
+   "die Wimpern tuschen — 涂睫毛膏；die Wimperntusche — 睫毛膏",
+   "falsche / künstliche Wimpern — 假睫毛"
+  ],
+  "root": "Wimper：古高地德语 wint·brāwa，后一部分即 Braue（眉）",
+  "fam": [
+   "Augenbraue",
+   "Lid",
+   "Auge",
+   "Wimperntusche"
+  ],
+  "ety": "中古高地德语 wintbrā，古高地德语 wintbrāwa；第二部分对应 Braue（眉），第一部分来源有争议（一说与 winden“转动”相关）。",
+  "cog": "英 brow（与 -brāwa 同源）",
+  "tip": "多用复数 Wimpern。区分 die Augenbraue（眉毛）与 die Wimper（睫毛）。"
+ },
+ {
+  "w": "Lid",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Lider",
+  "gs": "des Lid(e)s",
+  "ipa": "liːt",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "眼睑，眼皮",
+    "de": "bewegliche Hautfalte, die das Auge bedeckt",
+    "ex": [
+     {
+      "de": "Ihre Lider waren vom Weinen geschwollen.",
+      "zh": "她的眼皮哭肿了。"
+     },
+     {
+      "de": "Vor Müdigkeit fielen ihm die Lider zu.",
+      "zh": "他困得眼皮都合上了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das obere / untere Lid — 上/下眼睑",
+   "Augenlid（更常用）, Lidschatten（眼影）, Lidstrich（眼线）",
+   "die Lider senken / schließen — 垂下眼帘/闭上眼"
+  ],
+  "root": "Lid：日耳曼语固有词，本义“盖子”",
+  "fam": [
+   "Augenlid",
+   "Lidschatten",
+   "Wimper",
+   "Auge"
+  ],
+  "ety": "古高地德语 hlit（盖子）。",
+  "cog": "英 lid（盖子；eyelid 眼睑）；荷 lid",
+  "tip": "与 das Lied（歌曲）同音 [liːt]，但写法不同，复数也不同：Lider ↔ Lieder。"
+ },
+ {
+  "w": "Nerv",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Nerven",
+  "gs": "des Nervs",
+  "ipa": "nɛʁf",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "神经",
+    "de": "Faser(bündel), das Reize zwischen Gehirn und Körper leitet",
+    "ex": [
+     {
+      "de": "Beim Bohren hat der Zahnarzt den Nerv getroffen.",
+      "zh": "钻牙时牙医碰到了神经。"
+     }
+    ]
+   },
+   {
+    "zh": "（复数）神经，精神承受力",
+    "de": "(Pl.) psychische Belastbarkeit",
+    "ex": [
+     {
+      "de": "Du gehst mir auf die Nerven!",
+      "zh": "你真烦人！"
+     },
+     {
+      "de": "In der Prüfung hat sie die Nerven verloren.",
+      "zh": "考试时她心慌失措了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. auf die Nerven gehen — 让某人心烦",
+   "die Nerven verlieren / behalten — 失去/保持镇定",
+   "Nerven wie Drahtseile haben — 神经坚强如钢索",
+   "den Nerv der Zeit treffen — 切中时代脉搏；Das kostet Nerven. — 这很耗神。"
+  ],
+  "root": "Nerv：拉丁语外来词，本义“筋，腱”",
+  "fam": [
+   "nerven",
+   "nervös",
+   "Nervosität",
+   "Nervensystem"
+  ],
+  "ety": "借自拉丁语 nervus（筋腱，弓弦），近代转指“神经”。",
+  "cog": "英 nerve；拉 nervus",
+  "tip": "v 读 [f]。属格 des Nervs（少见 des Nerven），复数 die Nerven。口语动词 nerven = 烦（Du nervst!）。"
+ },
+ {
+  "w": "Krankschreibung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Krankschreibungen",
+  "gs": "der Krankschreibung",
+  "ipa": "ˈkʁaŋkˌʃʁaɪ̯bʊŋ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（医生开的）病假证明，开病假",
+    "de": "ärztliche Bescheinigung der Arbeitsunfähigkeit",
+    "ex": [
+     {
+      "de": "Der Arzt hat mir eine Krankschreibung für eine Woche gegeben.",
+      "zh": "医生给我开了一周病假。"
+     },
+     {
+      "de": "Die Krankschreibung wird heute meist elektronisch an die Krankenkasse übermittelt.",
+      "zh": "如今病假证明多以电子方式传给医保公司。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "动词：jdn. krankschreiben（可分）— 给某人开病假；krankgeschrieben sein — 在病假中",
+   "正式名称：die Arbeitsunfähigkeitsbescheinigung (AU)；口语旧称 der gelbe Schein",
+   "eine Krankschreibung verlängern — 延长病假"
+  ],
+  "root": "krank·schreib·ung：krank（生病的）+ schreiben（写）+ -ung →“写明生病”",
+  "fam": [
+   "krankschreiben",
+   "Krankmeldung",
+   "krank",
+   "Attest"
+  ],
+  "ety": "透明构词，来自 krankschreiben；krank < 中古高地德语 kranc（原义“虚弱的”）。",
+  "cog": "英 sick note",
+  "tip": "Krankschreibung 由医生出具；Krankmeldung 是员工向雇主报病。德国法定：病假超过三个日历日须有医生证明，雇主可要求更早提交。"
+ },
+ {
+  "w": "Krankmeldung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Krankmeldungen",
+  "gs": "der Krankmeldung",
+  "ipa": "ˈkʁaŋkˌmɛldʊŋ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "报病，请病假（通知雇主或学校）",
+    "de": "Mitteilung an Arbeitgeber oder Schule, dass man krank ist",
+    "ex": [
+     {
+      "de": "Die Krankmeldung muss am ersten Tag vor Arbeitsbeginn erfolgen.",
+      "zh": "必须在第一天上班前请病假。"
+     },
+     {
+      "de": "Im Winter steigt die Zahl der Krankmeldungen.",
+      "zh": "冬天请病假的人数会上升。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich krankmelden（可分：meldet sich krank）— 请病假",
+   "eine Krankmeldung abgeben / einreichen — 递交病假通知/证明",
+   "口语中也泛指“病假条”（≈ Krankschreibung）"
+  ],
+  "root": "krank·meld·ung：krank（生病的）+ melden（报告）+ -ung",
+  "fam": [
+   "sich krankmelden",
+   "melden",
+   "Krankschreibung",
+   "krank"
+  ],
+  "ety": "透明构词，来自 sich krankmelden；melden < 古高地德语 meldōn（告知）。",
+  "cog": "英 calling in sick",
+  "tip": "Ich melde mich heute krank. = 我今天请病假。与 Krankschreibung 区分：一个是自己通知，一个是医生证明。"
+ },
+ {
+  "w": "Attest",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Atteste",
+  "gs": "des Attest(e)s",
+  "ipa": "aˈtɛst",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（医生）证明，诊断证明",
+    "de": "ärztliche Bescheinigung über den Gesundheitszustand",
+    "ex": [
+     {
+      "de": "Für die Befreiung vom Sportunterricht brauchst du ein Attest.",
+      "zh": "要免上体育课，你需要一张医生证明。"
+     },
+     {
+      "de": "Der Arbeitgeber verlangt ab dem ersten Krankheitstag ein Attest.",
+      "zh": "雇主要求从生病第一天起就提交医生证明。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein ärztliches Attest vorlegen / ausstellen — 出示/开具医生证明",
+   "ein Attest über etw.(A) — 关于……的证明",
+   "近义：die Bescheinigung, die Krankschreibung"
+  ],
+  "root": "Attest：拉丁语外来词，ad-（向）+ testari（作证）",
+  "fam": [
+   "attestieren",
+   "Test",
+   "Testament",
+   "Bescheinigung"
+  ],
+  "ety": "由拉丁语 attestari（证明，作证）派生，近代德语形成名词 Attest（旧作 Attestat）。",
+  "cog": "英 attest；拉 testis（证人）",
+  "tip": "重音在第二音节；Attest 多指医生证明，一般证明说 Bescheinigung。"
+ },
+ {
+  "w": "Rettungswagen",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Rettungswagen",
+  "gs": "des Rettungswagens",
+  "ipa": "ˈʁɛtʊŋsˌvaːɡn̩",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "救护车",
+    "de": "Fahrzeug für die Notfallversorgung und den Transport von Verletzten und Kranken",
+    "ex": [
+     {
+      "de": "Rufen Sie sofort einen Rettungswagen!",
+      "zh": "立刻叫救护车！"
+     },
+     {
+      "de": "Der Verletzte wurde mit dem Rettungswagen ins Krankenhaus gebracht.",
+      "zh": "伤者被救护车送往医院。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Rettungswagen rufen (Notruf 112) — 叫救护车（急救电话 112）",
+   "缩写 RTW；近义 der Krankenwagen（口语通用）, der Notarztwagen",
+   "eine Rettungsgasse bilden — （堵车时）让出救援通道"
+  ],
+  "root": "Rett·ung·s·wagen：Rettung（救援）+ -s- + Wagen（车）",
+  "fam": [
+   "retten",
+   "Rettung",
+   "Krankenwagen",
+   "Rettungsdienst"
+  ],
+  "ety": "透明复合词；retten < 古高地德语 retten；Wagen < 古高地德语 wagan。",
+  "cog": "英 ambulance；英 wagon（与 Wagen 同源）",
+  "tip": "复数一般同形 Rettungswagen，南德、奥地利也说 Rettungswägen；奥地利口语常直接说 die Rettung。"
+ }
+]

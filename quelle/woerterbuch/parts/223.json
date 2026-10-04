@@ -1,0 +1,2099 @@
+[
+ {
+  "w": "Name",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Namen",
+  "gs": "des Namens",
+  "ipa": "ˈnaːmə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "名字，姓名；名称",
+    "de": "Bezeichnung, mit der eine Person, ein Ort oder eine Sache benannt wird",
+    "ex": [
+     {
+      "de": "Wie ist Ihr Name, bitte?",
+      "zh": "请问您叫什么名字？"
+     },
+     {
+      "de": "Den Namen des Restaurants habe ich leider vergessen.",
+      "zh": "那家餐馆的名字我可惜忘了。"
+     }
+    ]
+   },
+   {
+    "zh": "名声，名望",
+    "de": "Ruf, Ansehen",
+    "ex": [
+     {
+      "de": "Die Firma hat sich in der Branche einen Namen gemacht.",
+      "zh": "这家公司在业内闯出了名气。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "混合变格：der Name, den/dem Namen, des Namens；复数 die Namen",
+   "im Namen von jdm. / in jds. Namen — 以某人的名义，代表某人",
+   "sich einen Namen machen — 成名，出名",
+   "Vorname（名）+ Nachname / Familienname（姓）"
+  ],
+  "root": "Nam·e：单纯词，词根 nam-（名称）",
+  "fam": [
+   "nennen",
+   "namens",
+   "namentlich",
+   "Vorname",
+   "Familienname"
+  ],
+  "ety": "中古高地德语 name < 古高地德语 namo；与拉丁语 nomen、希腊语 onoma 同源。",
+  "cog": "英 name；荷 naam；拉 nomen",
+  "tip": "常见错误：*des Names、*den Name；正确为 des Namens、den Namen。“我叫……”说 Mein Name ist … 或 Ich heiße …。"
+ },
+ {
+  "w": "Familienname",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Familiennamen",
+  "gs": "des Familiennamens",
+  "ipa": "faˈmiːli̯ənˌnaːmə",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "姓，姓氏",
+    "de": "Nachname, den alle Mitglieder einer Familie tragen",
+    "ex": [
+     {
+      "de": "Bitte tragen Sie hier Ihren Familiennamen und Ihren Vornamen ein.",
+      "zh": "请在这里填写您的姓和名。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 Name：den/dem Familiennamen, des Familiennamens",
+   "同义：Nachname（更口语）；表格中也作 Zuname",
+   "Geburtsname — 出生时的姓（婚前姓）"
+  ],
+  "root": "Famili·en·nam·e：Familie（家庭）+ -n-（连接成分）+ Name（名字）→ 家族共用的名字",
+  "fam": [
+   "Name",
+   "Familie",
+   "Nachname",
+   "Vorname",
+   "familiär"
+  ],
+  "ety": "复合词。Familie 借自拉丁语 familia（家仆，家庭）；Name 见该词条。",
+  "cog": "英 family name",
+  "tip": "德语表格顺序常为 Name/Nachname 在前、Vorname 在后；中国学习者注意不要把姓写进 Vorname 一栏。"
+ },
+ {
+  "w": "Familienstand",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Familienstand(e)s",
+  "ipa": "faˈmiːli̯ənˌʃtant",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "婚姻状况",
+    "de": "Angabe, ob jmd. ledig, verheiratet, geschieden oder verwitwet ist",
+    "ex": [
+     {
+      "de": "Im Formular wird auch nach dem Familienstand gefragt.",
+      "zh": "表格里也询问婚姻状况。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "常见选项：ledig（未婚）/ verheiratet（已婚）/ geschieden（离异）/ verwitwet（丧偶）",
+   "eingetragene Lebenspartnerschaft — 登记的同性伴侣关系（旧选项）",
+   "多见于表格、官方文件"
+  ],
+  "root": "Famili·en·stand：Familie（家庭）+ Stand（状态，地位）→ 在家庭方面的状态",
+  "fam": [
+   "Familie",
+   "Stand",
+   "stehen",
+   "Zustand"
+  ],
+  "ety": "复合词。Stand 源自 stehen；Familie 借自拉丁语 familia。",
+  "cog": "英 stand（Stand 同源）",
+  "tip": "Familienstand 不是“家庭情况/家境”，而专指婚姻状况；“家境”可说 familiäre Verhältnisse。"
+ },
+ {
+  "w": "verwitwet",
+  "pos": "adj",
+  "ipa": "fɛɐ̯ˈvɪtvət",
+  "lvl": "A2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "丧偶的，寡居的",
+    "de": "so, dass der Ehepartner gestorben ist",
+    "ex": [
+     {
+      "de": "Meine Großmutter ist seit zehn Jahren verwitwet.",
+      "zh": "我奶奶丧偶已经十年了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Familienstand: verwitwet — 婚姻状况：丧偶（表格用语）",
+   "缩写 verw.",
+   "名词：die Witwe（寡妇）/ der Witwer（鳏夫）"
+  ],
+  "root": "ver·witw·et：ver-（成为某状态）+ Witwe（寡妇）+ -et（分词形容词词尾）→ 成为寡妇/鳏夫的",
+  "fam": [
+   "Witwe",
+   "Witwer",
+   "Witwenrente"
+  ],
+  "ety": "Witwe < 中古高地德语 witewe < 古高地德语 wituwa；与拉丁语 vidua（寡妇）同源。",
+  "cog": "英 widow, widowed；拉 vidua",
+  "tip": "男女通用：Er ist verwitwet. / Sie ist verwitwet. 不能比较，没有比较级。"
+ },
+ {
+  "w": "ankreuzen",
+  "pos": "v",
+  "ipa": "ˈanˌkʁɔɪ̯t͡sn̩",
+  "lvl": "A2",
+  "forms": "kreuzt an · kreuzte an · hat angekreuzt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（在方框里）打叉，勾选",
+    "de": "etw. (in einem Formular, Test) mit einem Kreuz markieren",
+    "ex": [
+     {
+      "de": "Kreuzen Sie die richtige Antwort an.",
+      "zh": "请勾选正确答案。"
+     },
+     {
+      "de": "Ich habe im Formular „verheiratet“ angekreuzt.",
+      "zh": "我在表格里勾了“已婚”。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) ankreuzen — 勾选某项",
+   "Zutreffendes bitte ankreuzen — 请勾选符合的选项（表格用语）",
+   "考试题型：Kreuzen Sie an: richtig oder falsch?"
+  ],
+  "root": "an·kreuz·en：an-（在……上）+ Kreuz（十字）+ -en → 在上面画十字",
+  "fam": [
+   "Kreuz",
+   "kreuzen",
+   "Kreuzung",
+   "durchkreuzen"
+  ],
+  "ety": "Kreuz < 中古高地德语 kriuz(e) < 古高地德语 krūzi，借自拉丁语 crux（十字架；宾格 crucem）。",
+  "cog": "英 cross, crucial；拉 crux",
+  "tip": "德国表格习惯打叉（☒）而不是打勾（✓），ankreuzen 字面就是“打十字”。"
+ },
+ {
+  "w": "anprobieren",
+  "pos": "v",
+  "ipa": "ˈanpʁoˌbiːʁən",
+  "lvl": "A2",
+  "forms": "probiert an · probierte an · hat anprobiert",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "试穿，试戴",
+    "de": "Kleidung, Schuhe o. Ä. anziehen, um zu prüfen, ob sie passen",
+    "ex": [
+     {
+      "de": "Kann ich die Hose in Größe 40 anprobieren?",
+      "zh": "我能试一下 40 码的裤子吗？"
+     },
+     {
+      "de": "Die Umkleidekabinen zum Anprobieren sind dort hinten.",
+      "zh": "试衣间在那边后面。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) anprobieren — 试穿某物",
+   "完成时无 ge-：hat anprobiert（-ieren 动词）",
+   "die Anprobe — 试穿；Umkleidekabine — 试衣间"
+  ],
+  "root": "an·prob·ier·en：an-（穿上，接触）+ probieren（尝试）→ 穿上试试",
+  "fam": [
+   "probieren",
+   "Probe",
+   "ausprobieren",
+   "Anprobe"
+  ],
+  "ety": "probieren 借自拉丁语 probare（检验，证明），经中古高地德语 probieren 进入德语。",
+  "cog": "英 probe, prove；拉 probare",
+  "tip": "试吃说 probieren（Darf ich mal probieren?），试穿才用 anprobieren；试用新东西多说 ausprobieren。"
+ },
+ {
+  "w": "mitkommen",
+  "pos": "v",
+  "ipa": "ˈmɪtˌkɔmən",
+  "lvl": "A1",
+  "forms": "kommt mit · kam mit · ist mitgekommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "一起来，一同去",
+    "de": "zusammen mit jdm. kommen oder gehen",
+    "ex": [
+     {
+      "de": "Wir gehen ins Kino. Kommst du mit?",
+      "zh": "我们去看电影，你一起来吗？"
+     },
+     {
+      "de": "Sie ist leider nicht mitgekommen, weil sie krank war.",
+      "zh": "她可惜没一起来，因为她病了。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）跟得上，听得懂",
+    "de": "(ugs.) etw. verstehen, folgen können",
+    "ex": [
+     {
+      "de": "Der Lehrer spricht so schnell, da komme ich nicht mit.",
+      "zh": "老师说得太快了，我跟不上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit jdm. mitkommen — 跟某人一起来/去",
+   "Kommst du mit? — 你一起去吗？（最常用邀请句）",
+   "完成时用 sein：ist mitgekommen"
+  ],
+  "root": "mit·komm·en：mit-（一起）+ kommen（来）",
+  "fam": [
+   "kommen",
+   "mitnehmen",
+   "mitmachen",
+   "mitgehen"
+  ],
+  "ety": "复合动词。kommen < 中古高地德语 komen < 古高地德语 queman。",
+  "cog": "英 come",
+  "tip": "德语从说话人角度看：邀请别人同去用 Kommst du mit?，不说 *Gehst du mit mir?（虽可说，但不地道）。"
+ },
+ {
+  "w": "mehrere",
+  "pos": "pron",
+  "ipa": "ˈmeːʁəʁə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "几个，好几个，若干",
+    "de": "einige, nicht viele, aber mehr als zwei",
+    "ex": [
+     {
+      "de": "Ich habe dich mehrere Male angerufen.",
+      "zh": "我给你打了好几次电话。"
+     },
+     {
+      "de": "Die Arbeiten dauern mehrere Wochen.",
+      "zh": "这项工程要持续好几周。"
+     }
+    ]
+   },
+   {
+    "zh": "各种不同的，多种",
+    "de": "verschiedene",
+    "ex": [
+     {
+      "de": "Das Wort hat mehrere Bedeutungen.",
+      "zh": "这个词有好几种意思。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "只用复数，按强变化：mehrere – mehrere – mehreren – mehrerer",
+   "后接形容词强变化：mehrere neue Bücher, mit mehreren alten Freunden",
+   "单数中性 mehreres（多件事）少用：Ich habe noch mehreres zu erledigen.",
+   "mehrere Male / mehrmals — 好几次"
+  ],
+  "root": "mehr·er·e：mehr（更多）+ -er（比较级后缀的再次叠加）+ 词尾 -e",
+  "fam": [
+   "mehr",
+   "mehrmals",
+   "Mehrheit",
+   "mehrfach",
+   "vermehren"
+  ],
+  "ety": "由 mehr 再加比较级后缀形成；mehr < 中古高地德语 mēr(e) < 古高地德语 mēro。",
+  "cog": "英 more",
+  "tip": "mehrere 指“好几个”（通常 3 个以上，不特别多），不等于 mehr（更多）：mehrere Leute ≠ mehr Leute。"
+ },
+ {
+  "w": "Hass",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Hasses",
+  "ipa": "has",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "仇恨，憎恨",
+    "de": "sehr starke Abneigung, Feindschaft",
+    "ex": [
+     {
+      "de": "Im Internet schlägt Politikern oft Hass entgegen.",
+      "zh": "政治人物在网上经常遭受仇恨攻击。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）气愤，恼火",
+    "de": "(ugs.) Wut, Ärger",
+    "ex": [
+     {
+      "de": "Ich habe so einen Hass auf diesen Drucker!",
+      "zh": "我对这台打印机简直恨透了！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Hass auf jdn./etw.(A) — 对……的仇恨；auch: Hass gegen jdn.",
+   "Hass und Hetze — 仇恨与煽动（媒体常用）",
+   "Hassrede f — 仇恨言论；aus Hass — 出于仇恨"
+  ],
+  "root": "Hass：单纯词，与动词 hassen 同根",
+  "fam": [
+   "hassen",
+   "hässlich",
+   "gehässig",
+   "Hassliebe"
+  ],
+  "ety": "中古高地德语 haz < 古高地德语 haz（仇恨，敌意）。",
+  "cog": "英 hate；荷 haat",
+  "tip": "1996 年正字法改革后写 Hass（旧写法 Haß）。hässlich（丑的）原义“可憎的”，与 Hass 同族。"
+ },
+ {
+  "w": "Schwägerin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Schwägerinnen",
+  "gs": "der Schwägerin",
+  "ipa": "ˈʃvɛːɡəʁɪn",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "嫂子，弟媳；大姑子，小姑子；大姨子，小姨子",
+    "de": "Ehefrau des Bruders; Schwester des Ehepartners",
+    "ex": [
+     {
+      "de": "Meine Schwägerin, also die Frau meines Bruders, kommt aus Polen.",
+      "zh": "我嫂子，也就是我哥的妻子，是波兰人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性：der Schwager（姐夫/妹夫/大舅子/小舅子等）",
+   "die Schwiegereltern — 公婆/岳父母（注意区分 Schwieger-）",
+   "德语不区分长幼和父系母系，需要时说明：die Frau meines Bruders"
+  ],
+  "root": "Schwäg·er·in：Schwager（姻亲兄弟）+ -in（阴性后缀），变元音",
+  "fam": [
+   "Schwager",
+   "Schwiegermutter",
+   "Schwiegersohn",
+   "verschwägert"
+  ],
+  "ety": "Schwager < 中古高地德语 swāger；一般认为与 Schwieger-（姻亲长辈）同源。",
+  "cog": "古英 sweor（岳父，一般认为同源）",
+  "tip": "中文的嫂子、弟媳、小姑子、小姨子等在德语里都可以是 Schwägerin。"
+ },
+ {
+  "w": "Bekannte",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Bekannte（die Bekannten）",
+  "gs": "des Bekannten",
+  "ipa": "bəˈkantə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "熟人，相识的人",
+    "de": "Person, die man kennt, mit der man aber nicht eng befreundet ist",
+    "ex": [
+     {
+      "de": "Das ist kein Freund von mir, nur ein Bekannter.",
+      "zh": "他不是我朋友，只是个熟人。"
+     },
+     {
+      "de": "Die Wohnung habe ich über eine Bekannte gefunden.",
+      "zh": "这套房子我是通过一个熟人找到的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "按形容词变格：der Bekannte / ein Bekannter / die Bekannte (f) / viele Bekannte / die Bekannten",
+   "ein guter Bekannter — 一个关系不错的熟人",
+   "Freunde und Bekannte — 亲朋好友；der Bekanntenkreis — 交际圈"
+  ],
+  "root": "be·kann·t·e：bekannt（熟识的，有名的）名词化 → 认识的人",
+  "fam": [
+   "bekannt",
+   "kennen",
+   "kennenlernen",
+   "Bekanntschaft",
+   "erkennen"
+  ],
+  "ety": "bekannt 原为 bekennen（中古高地德语义为“认识，知道”）的过去分词；kennen < 古高地德语 kennen。",
+  "cog": "英 ken（古，知识），know（远亲，一般认为同源）",
+  "tip": "德国人区分 Freund（真正的朋友）和 Bekannte(r)（熟人），不像中文“朋友”那样泛用。形容词变格：ein Bekannter，不是 *ein Bekannte。"
+ },
+ {
+  "w": "Vermieterin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Vermieterinnen",
+  "gs": "der Vermieterin",
+  "ipa": "fɛɐ̯ˈmiːtəʁɪn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（女）房东，出租人",
+    "de": "weibliche Person, die eine Wohnung o. Ä. gegen Geld vermietet",
+    "ex": [
+     {
+      "de": "Die Heizung ist kaputt, ich muss meine Vermieterin anrufen.",
+      "zh": "暖气坏了，我得给房东打电话。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性：der Vermieter；对应方：die Mieterin / der Mieter（租客）",
+   "die Vermieterbescheinigung — 房东证明（办理户口登记 Anmeldung 时需要）",
+   "jdm. etw. vermieten — 把某物租给某人"
+  ],
+  "root": "ver·miet·er·in：vermieten（出租）+ -er（施动者）+ -in（阴性后缀）",
+  "fam": [
+   "vermieten",
+   "Vermieter",
+   "Miete",
+   "Mieterin",
+   "mieten"
+  ],
+  "ety": "Miete < 中古高地德语 miete < 古高地德语 mieta（报酬，工钱）。",
+  "cog": "英 meed（古，报酬）",
+  "tip": "vermieten = 出租（给别人），mieten = 租入；Vermieterin 是出租的一方，Mieterin 是租住的一方。"
+ },
+ {
+  "w": "Mieterin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Mieterinnen",
+  "gs": "der Mieterin",
+  "ipa": "ˈmiːtəʁɪn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（女）房客，租户",
+    "de": "weibliche Person, die eine Wohnung o. Ä. gemietet hat",
+    "ex": [
+     {
+      "de": "Die neue Mieterin im zweiten Stock ist sehr freundlich.",
+      "zh": "三楼新来的租户很友善。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性：der Mieter；对应方：die Vermieterin",
+   "der Mieterschutz — 租户保护；der Mieterverein — 租户协会",
+   "die Nachmieterin — 下一任租客（转租、退租时常用）"
+  ],
+  "root": "miet·er·in：mieten（租用）+ -er（施动者）+ -in（阴性后缀）",
+  "fam": [
+   "mieten",
+   "Miete",
+   "Mieter",
+   "Vermieterin",
+   "Mietvertrag"
+  ],
+  "ety": "Miete < 中古高地德语 miete < 古高地德语 mieta（报酬）。",
+  "cog": "英 meed（古，报酬）",
+  "tip": "注意德语 Stock 计数：im zweiten Stock = 中国说的“三楼”。"
+ },
+ {
+  "w": "Anzeige",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Anzeigen",
+  "gs": "der Anzeige",
+  "ipa": "ˈanˌt͡saɪ̯ɡə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（报纸、网上的）广告，启事",
+    "de": "Inserat, Annonce in einer Zeitung oder im Internet",
+    "ex": [
+     {
+      "de": "Ich habe die Wohnung über eine Anzeige im Internet gefunden.",
+      "zh": "我是通过网上的一则广告找到这套房子的。"
+     },
+     {
+      "de": "Sie hat eine Anzeige aufgegeben, um ihr altes Fahrrad zu verkaufen.",
+      "zh": "她登了广告卖自己的旧自行车。"
+     }
+    ]
+   },
+   {
+    "zh": "报案，告发",
+    "de": "Meldung einer Straftat bei der Polizei",
+    "ex": [
+     {
+      "de": "Nach dem Einbruch haben wir Anzeige bei der Polizei erstattet.",
+      "zh": "入室盗窃发生后，我们向警察报了案。"
+     }
+    ]
+   },
+   {
+    "zh": "显示；显示屏",
+    "de": "das Anzeigen von Daten; Display",
+    "ex": [
+     {
+      "de": "Die Anzeige am Bahnsteig zeigt zehn Minuten Verspätung.",
+      "zh": "站台显示屏显示晚点十分钟。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Anzeige aufgeben — 登广告；Kleinanzeigen — 分类小广告",
+   "(gegen jdn.) Anzeige erstatten — （对某人）报案、起诉",
+   "jdn. anzeigen — 告发某人；eine Anzeige wegen Diebstahls — 以盗窃罪报案"
+  ],
+  "root": "an·zeig·e：anzeigen（显示；告发）的名词形式：an-（向）+ zeigen（指出）",
+  "fam": [
+   "anzeigen",
+   "zeigen",
+   "Zeiger",
+   "Zeichen",
+   "Werbeanzeige"
+  ],
+  "ety": "zeigen < 中古高地德语 zeigen < 古高地德语 zeigōn。",
+  "cog": "英 token（与 Zeichen 同源）",
+  "tip": "“报警”不是 *die Polizei anzeigen，而是 die Polizei rufen；Anzeige erstatten 是正式报案/告发。"
+ },
+ {
+  "w": "Geschirrspüler",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Geschirrspüler",
+  "gs": "des Geschirrspülers",
+  "ipa": "ɡəˈʃɪʁˌʃpyːlɐ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "洗碗机",
+    "de": "Maschine, die Geschirr automatisch spült; Spülmaschine",
+    "ex": [
+     {
+      "de": "Kannst du bitte den Geschirrspüler ausräumen?",
+      "zh": "你能把洗碗机里的碗碟拿出来吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Geschirrspüler einräumen / ausräumen — 往洗碗机里放/从洗碗机里取",
+   "同义：die Spülmaschine（更口语）",
+   "spülmaschinenfest — 可用洗碗机洗的"
+  ],
+  "root": "Ge·schirr·spül·er：Geschirr（餐具）+ spülen（冲洗）+ -er（表工具）",
+  "fam": [
+   "Geschirr",
+   "spülen",
+   "Spülmaschine",
+   "abspülen",
+   "Spüle"
+  ],
+  "ety": "复合词。Geschirr < 中古高地德语 geschirre（器具）；spülen < 中古高地德语 spüelen。",
+  "cog": "—",
+  "tip": "-er 后缀既可表人（Lehrer）也可表器具（Geschirrspüler, Drucker）。"
+ },
+ {
+  "w": "Bügeleisen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Bügeleisen",
+  "gs": "des Bügeleisens",
+  "ipa": "ˈbyːɡl̩ˌʔaɪ̯zn̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "熨斗",
+    "de": "elektrisches Gerät zum Glätten von Wäsche",
+    "ex": [
+     {
+      "de": "Hast du das Bügeleisen ausgeschaltet?",
+      "zh": "你把熨斗关了吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Bügelbrett — 熨衣板",
+   "mit dem Bügeleisen bügeln — 用熨斗熨",
+   "Dampfbügeleisen — 蒸汽熨斗"
+  ],
+  "root": "Büg·el·eisen：bügeln（熨）+ Eisen（铁）→ 熨烫用的铁器",
+  "fam": [
+   "bügeln",
+   "Bügel",
+   "Eisen",
+   "Bügelbrett"
+  ],
+  "ety": "复合词。Eisen < 古高地德语 īsarn；Bügel 与 biegen（弯）有关。",
+  "cog": "英 iron（与 Eisen 同源）",
+  "tip": "英语 iron 既是“铁”又是“熨斗”，德语则用复合词 Bügeleisen。"
+ },
+ {
+  "w": "Gardine",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Gardinen",
+  "gs": "der Gardine",
+  "ipa": "ɡaʁˈdiːnə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（透光的薄）窗帘，纱帘",
+    "de": "meist durchsichtiger Vorhang aus leichtem Stoff vor dem Fenster",
+    "ex": [
+     {
+      "de": "Die weißen Gardinen lassen viel Licht ins Zimmer.",
+      "zh": "白色的纱帘让很多光照进房间。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Gardinen aufhängen / waschen — 挂/洗窗帘",
+   "区分：der Vorhang（厚窗帘，也指舞台幕布）",
+   "Gardinenpredigt f — （口）（妻子对丈夫的）训斥"
+  ],
+  "root": "Gard·in·e：外来词，无德语内部拆分",
+  "fam": [
+   "Vorhang",
+   "Gardinenstange",
+   "Gardinenpredigt"
+  ],
+  "ety": "借自荷兰语 gordijn，源自古法语 courtine < 晚期拉丁语 cortina（帘子）。",
+  "cog": "英 curtain；荷 gordijn",
+  "tip": "严格说 Gardine 指薄纱帘，Vorhang 指可遮光的厚帘，但口语中常混用。"
+ },
+ {
+  "w": "Klingel",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Klingeln",
+  "gs": "der Klingel",
+  "ipa": "ˈklɪŋl̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "门铃；铃",
+    "de": "Vorrichtung (an der Tür, am Fahrrad), mit der man läutet",
+    "ex": [
+     {
+      "de": "Die Klingel ist kaputt, bitte klopfen Sie.",
+      "zh": "门铃坏了，请敲门。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf die Klingel drücken — 按门铃",
+   "die Fahrradklingel — 自行车铃",
+   "动词：klingeln — 按铃；（电话、闹钟）响：Es klingelt."
+  ],
+  "root": "kling·el：klingen（发出响声）+ -el（表工具的后缀）",
+  "fam": [
+   "klingeln",
+   "klingen",
+   "Klang",
+   "Türklingel"
+  ],
+  "ety": "由 klingeln 构成；klingen < 古高地德语 klingan，拟声词。",
+  "cog": "—",
+  "tip": "Es klingelt. = 门铃/电话响了。门铃在南德、奥地利也常说 die Glocke。"
+ },
+ {
+  "w": "staubsaugen",
+  "pos": "v",
+  "ipa": "ˈʃtaʊ̯pˌzaʊ̯ɡn̩",
+  "lvl": "A2",
+  "forms": "staubsaugt · staubsaugte · hat gestaubsaugt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "用吸尘器吸尘",
+    "de": "mit dem Staubsauger sauber machen",
+    "ex": [
+     {
+      "de": "Am Samstag sauge ich immer die ganze Wohnung Staub.",
+      "zh": "周六我总是给整个房子吸尘。"
+     },
+     {
+      "de": "Hast du im Wohnzimmer schon gestaubsaugt?",
+      "zh": "你客厅已经吸过尘了吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "两种写法都对：staubsaugen（staubsaugt, hat gestaubsaugt）或 Staub saugen（saugt Staub, hat Staub gesaugt）",
+   "das Zimmer staubsaugen — 给房间吸尘",
+   "der Staubsauger — 吸尘器"
+  ],
+  "root": "staub·saug·en：Staub（灰尘）+ saugen（吸）",
+  "fam": [
+   "Staubsauger",
+   "Staub",
+   "saugen",
+   "abstauben"
+  ],
+  "ety": "一般认为由 Staubsauger 逆构而来；saugen < 古高地德语 sūgan。",
+  "cog": "英 suck（与 saugen 同源）",
+  "tip": "作一个词时不可分：ich staubsauge；分开写时 Staub 像宾语：ich sauge Staub。不要混写成 *ich sauge staub。"
+ },
+ {
+  "w": "bügeln",
+  "pos": "v",
+  "ipa": "ˈbyːɡl̩n",
+  "lvl": "A2",
+  "forms": "bügelt · bügelte · hat gebügelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "熨，熨烫（衣物）",
+    "de": "Wäsche mit einem heißen Bügeleisen glatt machen",
+    "ex": [
+     {
+      "de": "Ich muss noch das Hemd für morgen bügeln.",
+      "zh": "我还得把明天穿的衬衫熨一下。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) bügeln — 熨某物",
+   "bügelfrei — 免熨的",
+   "aufbügeln — 熨贴上（贴布等）"
+  ],
+  "root": "büg·el·n：Bügel（弯曲的金属器具）+ -n",
+  "fam": [
+   "Bügeleisen",
+   "Bügel",
+   "Kleiderbügel",
+   "biegen"
+  ],
+  "ety": "由 Bügel 派生；Bügel 一般认为与 biegen（弯曲）同源。",
+  "cog": "英 bow（弯，与 biegen 同源）",
+  "tip": "Kleiderbügel = 衣架，与熨烫无直接关系，都源于“弯曲的器具”。"
+ },
+ {
+  "w": "schälen",
+  "pos": "v",
+  "ipa": "ˈʃɛːlən",
+  "lvl": "A2–B1",
+  "forms": "schält · schälte · hat geschält",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "削皮，剥皮",
+    "de": "die Schale von Obst, Gemüse o. Ä. entfernen",
+    "ex": [
+     {
+      "de": "Schäl bitte die Kartoffeln und schneide sie in Würfel.",
+      "zh": "请把土豆去皮，切成丁。"
+     }
+    ]
+   },
+   {
+    "zh": "（sich ～）脱皮",
+    "de": "(sich ~) die Haut verlieren (z. B. nach Sonnenbrand)",
+    "ex": [
+     {
+      "de": "Nach dem Sonnenbrand schält sich meine Nase.",
+      "zh": "晒伤后我的鼻子在脱皮。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Obst / Kartoffeln / ein Ei schälen — 削水果/土豆皮，剥鸡蛋壳",
+   "der Schäler / Sparschäler — 削皮刀",
+   "sich schälen — 脱皮"
+  ],
+  "root": "schäl·en：Schale（皮，壳）+ -en，变元音 → 去掉外皮",
+  "fam": [
+   "Schale",
+   "Schälmesser",
+   "abschälen",
+   "Eierschale"
+  ],
+  "ety": "由 Schale 派生；Schale < 中古高地德语 schal(e) < 古高地德语 scala（外壳）。",
+  "cog": "英 shell, scale（鱼鳞）",
+  "tip": "削苹果、土豆用 schälen；剥鸡蛋、剥橘子也可说 schälen。区分 schälen（去皮）与 schneiden（切）。"
+ },
+ {
+  "w": "Nachspeise",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Nachspeisen",
+  "gs": "der Nachspeise",
+  "ipa": "ˈnaːxˌʃpaɪ̯zə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "饭后甜点",
+    "de": "süße Speise, die nach dem Hauptgericht gegessen wird",
+    "ex": [
+     {
+      "de": "Als Nachspeise gibt es heute Apfelstrudel mit Vanilleeis.",
+      "zh": "今天的饭后甜点是苹果卷配香草冰淇淋。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "als Nachspeise / zur Nachspeise — 作为甜点",
+   "同义：der Nachtisch（最常用），das Dessert（较正式、菜单上）",
+   "菜单顺序：Vorspeise – Hauptgericht – Nachspeise"
+  ],
+  "root": "nach·speis·e：nach（之后）+ Speise（菜肴）→ 主菜之后的菜",
+  "fam": [
+   "Speise",
+   "Vorspeise",
+   "Speisekarte",
+   "speisen",
+   "Nachtisch"
+  ],
+  "ety": "复合词。Speise < 中古高地德语 spīse < 古高地德语 spīsa，借自中世纪拉丁语 spe(n)sa（开支，伙食），源自拉丁语 expensa（花费）。",
+  "cog": "英 expense（同出拉丁语 expensa）",
+  "tip": "Nachspeise 在南德、奥地利较常用；全国最普通的说法是 Nachtisch。"
+ },
+ {
+  "w": "Dessert",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Desserts",
+  "gs": "des Desserts",
+  "ipa": "dɛˈseːɐ̯",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "甜点，餐后甜品",
+    "de": "Nachtisch, Nachspeise",
+    "ex": [
+     {
+      "de": "Möchten Sie noch ein Dessert oder einen Kaffee?",
+      "zh": "您还要甜点或咖啡吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Dessert / als Dessert — 作为甜点",
+   "die Dessertkarte — 甜点单",
+   "同义：Nachtisch, Nachspeise"
+  ],
+  "root": "Des·sert：外来词，法语 desservir（撤下餐具）的派生名词",
+  "fam": [
+   "Nachtisch",
+   "Nachspeise",
+   "Dessertwein"
+  ],
+  "ety": "借自法语 dessert，源自 desservir（清理餐桌，撤菜）→ 撤去主菜后上的食物。",
+  "cog": "英 dessert；法 dessert",
+  "tip": "读音按法语，结尾 t 不发音：[dɛˈseːɐ̯]；别与 Wüste（沙漠，英 desert）混淆。"
+ },
+ {
+  "w": "Steak",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Steaks",
+  "gs": "des Steaks",
+  "ipa": "steːk",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "牛排；（煎烤的）肉排",
+    "de": "gebratene oder gegrillte Scheibe Fleisch, bes. vom Rind",
+    "ex": [
+     {
+      "de": "Wie möchten Sie Ihr Steak – medium oder durchgebraten?",
+      "zh": "您的牛排要几分熟——五分熟还是全熟？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Rindersteak / Schweinesteak / Lachssteak — 牛排/猪排/三文鱼排",
+   "englisch / medium / durchgebraten — 三分熟/五分熟/全熟",
+   "读音也可为 [ʃteːk]"
+  ],
+  "root": "Steak：外来词，无德语内部拆分",
+  "fam": [
+   "Rumpsteak",
+   "Steakhaus"
+  ],
+  "ety": "19 世纪借自英语 steak，英语词源自古诺尔斯语 steik（烤肉）。",
+  "cog": "英 steak；冰岛 steik",
+  "tip": "德语说 englisch 指“带血的、生一点的”牛排（英 rare）。"
+ },
+ {
+  "w": "Pflaume",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Pflaumen",
+  "gs": "der Pflaume",
+  "ipa": "ˈpflaʊ̯mə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "李子；梅子",
+    "de": "blaue oder gelbe Steinfrucht mit süßem Fruchtfleisch",
+    "ex": [
+     {
+      "de": "Im September backt meine Oma Pflaumenkuchen.",
+      "zh": "九月我奶奶会烤李子蛋糕。"
+     }
+    ]
+   },
+   {
+    "zh": "（口，贬）笨蛋，没用的人",
+    "de": "(ugs.) unfähiger Mensch",
+    "ex": [
+     {
+      "de": "Der Schiedsrichter ist eine echte Pflaume!",
+      "zh": "这个裁判真是个废物！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "getrocknete Pflaumen — 西梅干",
+   "Zwetschge / Zwetsche — 欧洲李（南德常用，常与 Pflaume 混用）",
+   "der Pflaumenbaum — 李子树"
+  ],
+  "root": "Pflaum·e：外来词，经拉丁语传入",
+  "fam": [
+   "Pflaumenkuchen",
+   "Zwetschge",
+   "Pflaumenmus"
+  ],
+  "ety": "中古高地德语 pflūme < 古高地德语 pflūma，借自拉丁语 prunum（李子，经民间拉丁语变体），后者源自希腊语 proumnon。",
+  "cog": "英 plum, prune；拉 prunum",
+  "tip": "pf- 是第二次辅音推移的结果：英 p → 德 pf（plum – Pflaume, pepper – Pfeffer）。"
+ },
+ {
+  "w": "umtauschen",
+  "pos": "v",
+  "ipa": "ˈʊmˌtaʊ̯ʃn̩",
+  "lvl": "A2",
+  "forms": "tauscht um · tauschte um · hat umgetauscht",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（退）换（商品）",
+    "de": "eine gekaufte Ware zurückgeben und dafür etw. anderes bekommen",
+    "ex": [
+     {
+      "de": "Die Schuhe sind zu klein. Kann ich sie umtauschen?",
+      "zh": "这双鞋太小了，我能换吗？"
+     },
+     {
+      "de": "Reduzierte Ware ist vom Umtausch ausgeschlossen.",
+      "zh": "打折商品不予退换。"
+     }
+    ]
+   },
+   {
+    "zh": "兑换（货币）",
+    "de": "Geld in eine andere Währung wechseln",
+    "ex": [
+     {
+      "de": "Am Flughafen habe ich 200 Euro in Dollar umgetauscht.",
+      "zh": "我在机场把 200 欧元换成了美元。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) gegen etw.(A) umtauschen — 把……换成……",
+   "Geld in eine Währung umtauschen — 换外币（也说 wechseln）",
+   "der Umtausch — 换货；Umtausch nur mit Kassenbon — 凭小票换货"
+  ],
+  "root": "um·tausch·en：um-（转换）+ tauschen（交换）",
+  "fam": [
+   "tauschen",
+   "Umtausch",
+   "austauschen",
+   "Tausch"
+  ],
+  "ety": "tauschen < 中古高地德语 tūschen（原义“哄骗，说谎话”，后转为“交换”）；更早来源不详。",
+  "cog": "—",
+  "tip": "umtauschen 是“换货”，退货退钱是 zurückgeben / das Geld zurückbekommen；德国法律上商家对无质量问题的换货没有义务，属于自愿服务。"
+ },
+ {
+  "w": "reklamieren",
+  "pos": "v",
+  "ipa": "ʁeklaˈmiːʁən",
+  "lvl": "B1",
+  "forms": "reklamiert · reklamierte · hat reklamiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（就商品、服务的缺陷）投诉，要求索赔",
+    "de": "sich über eine fehlerhafte Ware oder Leistung beschweren und Ersatz verlangen",
+    "ex": [
+     {
+      "de": "Der Fernseher war defekt, deshalb habe ich ihn reklamiert.",
+      "zh": "电视机有故障，所以我去投诉要求处理了。"
+     },
+     {
+      "de": "Sie reklamierte die falsche Rechnung beim Kundenservice.",
+      "zh": "她向客服投诉账单错误。"
+     }
+    ]
+   },
+   {
+    "zh": "声称（某事物）归自己，要求得到",
+    "de": "etw. für sich beanspruchen",
+    "ex": [
+     {
+      "de": "Beide Parteien reklamieren den Wahlsieg für sich.",
+      "zh": "两党都声称自己赢得了选举。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) reklamieren — 就某物投诉",
+   "die Reklamation — 投诉，索赔",
+   "etw. für sich reklamieren — 声称某物属于自己"
+  ],
+  "root": "re·klam·ier·en：re-（反，回）+ clamare（喊）→“回喊、抗议”",
+  "fam": [
+   "Reklamation",
+   "Reklame",
+   "proklamieren"
+  ],
+  "ety": "借自拉丁语 reclamare（大声反对，提出异议），可能经法语 réclamer 传入。",
+  "cog": "英 reclaim；法 réclamer",
+  "tip": "Reklame 是“广告”（略旧），Reklamation 是“投诉”，别混淆。reklamieren 专指对缺陷商品/服务投诉；一般抱怨用 sich beschweren。"
+ },
+ {
+  "w": "Kassenbon",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kassenbons",
+  "gs": "des Kassenbons",
+  "ipa": "ˈkasn̩ˌbɔŋ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "购物小票，收银小票",
+    "de": "kleiner Beleg von der Kasse über einen Einkauf",
+    "ex": [
+     {
+      "de": "Bitte heben Sie den Kassenbon auf, falls Sie die Ware umtauschen möchten.",
+      "zh": "如果要换货，请保留好购物小票。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Kassenbon aufheben — 保留小票",
+   "同义：der Bon, der Kassenzettel, die Quittung（较正式的收据）",
+   "Brauchen Sie den Bon? — 您要小票吗？（收银员常问）"
+  ],
+  "root": "Kass·en·bon：Kasse（收银台）+ Bon（票据）",
+  "fam": [
+   "Kasse",
+   "Bon",
+   "Kassierer",
+   "Quittung"
+  ],
+  "ety": "Kasse 借自意大利语 cassa（钱箱）< 拉丁语 capsa（盒子）；Bon 借自法语 bon（好的；凭单）。",
+  "cog": "英 cash, case（与 Kasse 同源）；法 bon",
+  "tip": "Bon 读作法语音 [bɔŋ]（德语化，带 -ŋ），不读 *[bɔn]。"
+ },
+ {
+  "w": "Geldautomat",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Geldautomaten",
+  "gs": "des Geldautomaten",
+  "ipa": "ˈɡɛltʔaʊ̯toˌmaːt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "自动取款机，ATM",
+    "de": "Automat, an dem man mit einer Karte Bargeld abheben kann",
+    "ex": [
+     {
+      "de": "Gibt es hier in der Nähe einen Geldautomaten?",
+      "zh": "这附近有自动取款机吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化：den/dem/des Geldautomaten",
+   "am Geldautomaten Geld abheben — 在取款机上取钱",
+   "同义：der Bankautomat；瑞士：der Bancomat"
+  ],
+  "root": "Geld·auto·mat：Geld（钱）+ Automat（自动机器）",
+  "fam": [
+   "Geld",
+   "Automat",
+   "automatisch",
+   "Fahrkartenautomat"
+  ],
+  "ety": "Automat 经法语 automate 借自希腊语 automatos（自行运动的）；Geld < 古高地德语 gelt（支付，报酬）。",
+  "cog": "英 automat(ion)；英 yield（与 Geld 同族，一般认为）",
+  "tip": "常见错误：*an dem Geldautomat；Automat 为弱变化名词，应为 am Geldautomaten。"
+ },
+ {
+  "w": "einzahlen",
+  "pos": "v",
+  "ipa": "ˈaɪ̯nˌt͡saːlən",
+  "lvl": "A2–B1",
+  "forms": "zahlt ein · zahlte ein · hat eingezahlt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "存（钱），缴入（账户）",
+    "de": "Geld auf ein Konto bringen oder an eine Kasse zahlen",
+    "ex": [
+     {
+      "de": "Ich möchte 500 Euro auf mein Konto einzahlen.",
+      "zh": "我想往账户里存 500 欧元。"
+     },
+     {
+      "de": "Sie zahlt seit 30 Jahren in die Rentenkasse ein.",
+      "zh": "她三十年来一直缴纳养老保险。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Geld auf ein Konto einzahlen — 往账户存钱",
+   "in eine Kasse / Versicherung einzahlen — 缴纳（保险等）",
+   "反义：abheben — 取钱；die Einzahlung — 存款"
+  ],
+  "root": "ein·zahl·en：ein-（进入）+ zahlen（支付）",
+  "fam": [
+   "zahlen",
+   "Einzahlung",
+   "bezahlen",
+   "Zahl",
+   "auszahlen"
+  ],
+  "ety": "zahlen 由 Zahl 派生；Zahl < 中古高地德语 zal < 古高地德语 zala（数目，叙述）。",
+  "cog": "英 tell, tale（与 Zahl 同源）",
+  "tip": "存钱 einzahlen，取钱 abheben（不说 *auszahlen，那是“支付给某人”）。"
+ },
+ {
+  "w": "Turnschuh",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Turnschuhe",
+  "gs": "des Turnschuh(e)s",
+  "ipa": "ˈtʊʁnˌʃuː",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "运动鞋，球鞋",
+    "de": "leichter Sportschuh",
+    "ex": [
+     {
+      "de": "Für den Ausflug solltet ihr bequeme Turnschuhe anziehen.",
+      "zh": "郊游你们应该穿舒适的运动鞋。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Paar Turnschuhe — 一双运动鞋",
+   "同义：Sportschuh；口语也说 Sneaker",
+   "Turnschuhe anziehen / tragen — 穿运动鞋"
+  ],
+  "root": "Turn·schuh：turnen（做体操）+ Schuh（鞋）",
+  "fam": [
+   "Schuh",
+   "turnen",
+   "Turnhalle",
+   "Turnverein"
+  ],
+  "ety": "复合词。turnen 由 F. L. Jahn 于 19 世纪初作为体育用语推广，源自中古高地德语 turnen（转动），借自拉丁语 tornare（旋转）；Schuh < 古高地德语 scuoh。",
+  "cog": "英 shoe；英 turn（与 turnen 同出拉丁语 tornare）",
+  "tip": "Turnschuh 字面是“体操鞋”，实际泛指运动鞋。"
+ },
+ {
+  "w": "Schlafanzug",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Schlafanzüge",
+  "gs": "des Schlafanzug(e)s",
+  "ipa": "ˈʃlaːfʔanˌt͡suːk",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（成套的）睡衣",
+    "de": "Kleidung aus Hose und Oberteil zum Schlafen",
+    "ex": [
+     {
+      "de": "Die Kinder sind schon im Schlafanzug und putzen sich die Zähne.",
+      "zh": "孩子们已经穿上睡衣在刷牙了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Schlafanzug — 穿着睡衣",
+   "同义：der Pyjama（读 [pyˈdʒaːma]）",
+   "das Nachthemd — 睡裙"
+  ],
+  "root": "Schlaf·an·zug：Schlaf（睡眠）+ Anzug（套装）",
+  "fam": [
+   "Schlaf",
+   "schlafen",
+   "Anzug",
+   "anziehen"
+  ],
+  "ety": "复合词。Anzug 源自 anziehen（穿上）；Schlaf < 古高地德语 slāf。",
+  "cog": "英 sleep（与 Schlaf 同源）",
+  "tip": "Anzug 一般指西装，但在 Schlafanzug、Trainingsanzug（运动服）、Badeanzug（女式泳衣）中是“套装”之意。"
+ },
+ {
+  "w": "Badehose",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Badehosen",
+  "gs": "der Badehose",
+  "ipa": "ˈbaːdəˌhoːzə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "游泳裤",
+    "de": "kurze Hose zum Schwimmen (für Männer und Jungen)",
+    "ex": [
+     {
+      "de": "Pack deine Badehose ein, wir gehen ins Schwimmbad!",
+      "zh": "把泳裤带上，我们去游泳馆！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "女式：der Badeanzug（连体泳衣），der Bikini",
+   "die Badesachen — 游泳用品",
+   "注意：一条泳裤是单数 eine Badehose"
+  ],
+  "root": "Bad·e·hos·e：baden（洗澡，游泳）+ Hose（裤子）",
+  "fam": [
+   "Hose",
+   "baden",
+   "Bad",
+   "Badeanzug",
+   "Badetuch"
+  ],
+  "ety": "复合词。Hose < 古高地德语 hosa（腿套）；baden < 古高地德语 badōn。",
+  "cog": "英 hose（长筒袜），bath（与 Bad 同源）",
+  "tip": "Hose 是单数：eine Hose = 一条裤子（英语 trousers 为复数，德语不是）。"
+ },
+ {
+  "w": "Zahnschmerzen",
+  "pos": "n",
+  "gen": "pl",
+  "pl": "Zahnschmerzen",
+  "gs": "der Zahnschmerzen",
+  "ipa": "ˈt͡saːnˌʃmɛʁt͡sn̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "牙疼",
+    "de": "Schmerzen an einem oder mehreren Zähnen",
+    "ex": [
+     {
+      "de": "Ich habe seit gestern starke Zahnschmerzen.",
+      "zh": "我从昨天起牙疼得厉害。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Zahnschmerzen haben — 牙疼（一般用复数）",
+   "单数 der Zahnschmerz 较少用",
+   "类似：Kopfschmerzen, Bauchschmerzen, Halsschmerzen"
+  ],
+  "root": "Zahn·schmerz·en：Zahn（牙齿）+ Schmerzen（疼痛，复数）",
+  "fam": [
+   "Zahn",
+   "Schmerz",
+   "Zahnarzt",
+   "schmerzen"
+  ],
+  "ety": "复合词。Zahn < 古高地德语 zan(d)；Schmerz < 古高地德语 smerzo。",
+  "cog": "英 tooth（与 Zahn 同源），smart（刺痛，与 Schmerz 同源）",
+  "tip": "说“我牙疼”：Ich habe Zahnschmerzen 或 Mir tut der Zahn weh（不说 *Mein Zahn ist schmerzhaft）。"
+ },
+ {
+  "w": "Salbe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Salben",
+  "gs": "der Salbe",
+  "ipa": "ˈzalbə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "药膏，软膏",
+    "de": "fettige Masse, die man (als Medikament) auf die Haut streicht",
+    "ex": [
+     {
+      "de": "Tragen Sie die Salbe zweimal täglich auf die betroffene Stelle auf.",
+      "zh": "请每天两次将药膏涂在患处。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Salbe auftragen — 涂药膏",
+   "die Wundsalbe — 伤口药膏",
+   "区分：die Creme（护肤霜、乳膏），das Gel（凝胶）"
+  ],
+  "root": "Salb·e：单纯词",
+  "fam": [
+   "salben",
+   "Salbung",
+   "Wundsalbe"
+  ],
+  "ety": "中古高地德语 salbe < 古高地德语 salba（油膏）。",
+  "cog": "英 salve；荷 zalf",
+  "tip": "salben 意为“涂油；（宗教）敷油礼”，与日常抹药膏不同，抹药膏说 eincremen / Salbe auftragen。"
+ },
+ {
+  "w": "Operation",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Operationen",
+  "gs": "der Operation",
+  "ipa": "opəʁaˈt͡si̯oːn",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "手术",
+    "de": "chirurgischer Eingriff",
+    "ex": [
+     {
+      "de": "Nach der Operation muss er noch eine Woche im Krankenhaus bleiben.",
+      "zh": "手术后他还得在医院住一周。"
+     },
+     {
+      "de": "Die Operation am Knie ist gut verlaufen.",
+      "zh": "膝盖手术很顺利。"
+     }
+    ]
+   },
+   {
+    "zh": "（军事、警方）行动；（数学）运算",
+    "de": "militärische / polizeiliche Aktion; Rechenvorgang",
+    "ex": [
+     {
+      "de": "Die Polizei hat bei einer großen Operation mehrere Verdächtige festgenommen.",
+      "zh": "警方在一次大规模行动中抓获了数名嫌疑人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich einer Operation unterziehen — 接受手术（正式）；口语：operiert werden",
+   "eine Operation am Herzen / am Knie — 心脏/膝盖手术",
+   "口语缩略：die OP（也指手术室）"
+  ],
+  "root": "Oper·ation：operieren（动手术）+ -ation（名词后缀）；拉丁 opus（工作）",
+  "fam": [
+   "operieren",
+   "Operateur",
+   "operativ",
+   "Kooperation"
+  ],
+  "ety": "借自拉丁语 operatio（工作，活动），源自 operari（工作）。",
+  "cog": "英 operation；拉 opus, opera",
+  "tip": "“做手术”对病人说 operiert werden，不说 *eine Operation machen（那是医生的视角）。"
+ },
+ {
+  "w": "Wartezimmer",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Wartezimmer",
+  "gs": "des Wartezimmers",
+  "ipa": "ˈvaʁtəˌt͡sɪmɐ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（诊所的）候诊室",
+    "de": "Raum in einer Arztpraxis, in dem die Patienten warten",
+    "ex": [
+     {
+      "de": "Nehmen Sie bitte noch kurz im Wartezimmer Platz.",
+      "zh": "请在候诊室稍坐一会儿。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Wartezimmer sitzen / warten — 在候诊室等",
+   "车站的候车室：der Wartesaal / Warteraum",
+   "Nehmen Sie Platz. — 请坐（诊所常用）"
+  ],
+  "root": "Wart·e·zimmer：warten（等待）+ Zimmer（房间）",
+  "fam": [
+   "warten",
+   "Zimmer",
+   "Wartesaal",
+   "Warteliste"
+  ],
+  "ety": "复合词。warten < 古高地德语 wartēn（守望）；Zimmer < 古高地德语 zimbar（木料，建筑）。",
+  "cog": "英 ward, guard（与 warten 同源）；timber（与 Zimmer 同源）",
+  "tip": "Zimmer 本义“木结构建筑”，与英语 timber 同源，后来才指“房间”。"
+ },
+ {
+  "w": "Versichertenkarte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Versichertenkarten",
+  "gs": "der Versichertenkarte",
+  "ipa": "fɛɐ̯ˈzɪçɐtn̩ˌkaʁtə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（医疗）保险卡",
+    "de": "Karte der Krankenkasse, die man beim Arzt vorzeigt",
+    "ex": [
+     {
+      "de": "Haben Sie Ihre Versichertenkarte dabei?",
+      "zh": "您带医保卡了吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Versichertenkarte vorlegen / einlesen — 出示/读卡",
+   "现正式名称：die elektronische Gesundheitskarte (eGK)",
+   "口语：die Krankenkassenkarte"
+  ],
+  "root": "Ver·sicher·t·en·karte：Versicherte（被保险人）+ Karte（卡）",
+  "fam": [
+   "Versicherung",
+   "versichern",
+   "sicher",
+   "Karte",
+   "Gesundheitskarte"
+  ],
+  "ety": "复合词。versichern 由 sicher 派生，sicher 借自拉丁语 securus；Karte 借自法语 carte < 拉丁语 charta（纸）。",
+  "cog": "英 secure, card",
+  "tip": "Versicherte 是形容词性名词（被保险人），故复合词中为 Versicherten-。"
+ },
+ {
+  "w": "Zahnärztin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Zahnärztinnen",
+  "gs": "der Zahnärztin",
+  "ipa": "ˈt͡saːnˌʔɛːɐ̯t͡stɪn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（女）牙医",
+    "de": "Ärztin für Zähne und Mund",
+    "ex": [
+     {
+      "de": "Ich habe morgen um neun einen Termin bei der Zahnärztin.",
+      "zh": "我明天九点约了牙医。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zur Zahnärztin / zum Zahnarzt gehen — 去看牙医",
+   "bei der Zahnärztin — 在牙医那里",
+   "阳性：der Zahnarzt；die Zahnarztpraxis — 牙科诊所"
+  ],
+  "root": "Zahn·ärzt·in：Zahn（牙）+ Arzt（医生）+ -in（阴性后缀），变元音",
+  "fam": [
+   "Zahnarzt",
+   "Arzt",
+   "Zahn",
+   "ärztlich"
+  ],
+  "ety": "Arzt < 古高地德语 arzāt，借自晚期拉丁语 archiater < 希腊语 archiatros（首席医师）。",
+  "cog": "英 tooth（与 Zahn 同源）；希 archiatros",
+  "tip": "去看医生用 zu：zur Zahnärztin gehen；在医生那里用 bei：bei der Zahnärztin sein。"
+ },
+ {
+  "w": "Krankenpfleger",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Krankenpfleger",
+  "gs": "des Krankenpflegers",
+  "ipa": "ˈkʁaŋkn̩ˌpfleːɡɐ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "男护士，护理员",
+    "de": "Mann, der beruflich Kranke pflegt",
+    "ex": [
+     {
+      "de": "Mein Bruder arbeitet als Krankenpfleger auf der Intensivstation.",
+      "zh": "我哥哥在重症监护室当男护士。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性：die Krankenpflegerin；传统称 die Krankenschwester",
+   "官方职业名称现为 Pflegefachmann / Pflegefachfrau",
+   "Altenpfleger — 养老护理员"
+  ],
+  "root": "Krank·en·pfleg·er：krank（病的）+ pflegen（照料）+ -er（施动者）",
+  "fam": [
+   "pflegen",
+   "Pflege",
+   "krank",
+   "Pflegerin",
+   "Krankenschwester"
+  ],
+  "ety": "复合词。pflegen < 中古高地德语 pflegen < 古高地德语 pflegan（照料，负责）；更早来源有争议。",
+  "cog": "荷 verpleger（护理员）",
+  "tip": "男护士不能叫 *Krankenbruder；说 Krankenpfleger 或 Pfleger。"
+ },
+ {
+  "w": "sich erkälten",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈkɛltn̩",
+  "lvl": "A2",
+  "forms": "erkältet sich · erkältete sich · hat sich erkältet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "着凉，感冒",
+    "de": "eine Erkältung bekommen",
+    "ex": [
+     {
+      "de": "Zieh eine Jacke an, sonst erkältest du dich!",
+      "zh": "穿上外套，不然你会着凉的！"
+     },
+     {
+      "de": "Ich habe mich beim Fußballspielen im Regen erkältet.",
+      "zh": "我在雨里踢球着凉感冒了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "必须带反身代词：Ich habe mich erkältet.",
+   "erkältet sein — 感冒了（状态）：Ich bin erkältet.",
+   "die Erkältung — 感冒；eine Erkältung haben"
+  ],
+  "root": "er·kält·en：er-（达到某状态）+ kalt（冷）+ -en，变元音 → 受冷",
+  "fam": [
+   "Erkältung",
+   "kalt",
+   "Kälte",
+   "abkühlen"
+  ],
+  "ety": "由 er- + kalt 构成；kalt < 古高地德语 kalt。",
+  "cog": "英 cold；荷 koud",
+  "tip": "“我感冒了”最常说 Ich bin erkältet / Ich habe eine Erkältung；流感是 die Grippe，比感冒严重。"
+ },
+ {
+  "w": "niesen",
+  "pos": "v",
+  "ipa": "ˈniːzn̩",
+  "lvl": "B1",
+  "forms": "niest · nieste · hat geniest",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "打喷嚏",
+    "de": "Luft plötzlich und laut durch Nase und Mund ausstoßen",
+    "ex": [
+     {
+      "de": "Wenn du niesen musst, halte dir bitte die Armbeuge vor.",
+      "zh": "要打喷嚏时，请用手肘挡住。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "别人打喷嚏后说：Gesundheit! — 回答 Danke!",
+   "in die Armbeuge niesen — 对着肘弯打喷嚏",
+   "der Niesreiz — 想打喷嚏的感觉"
+  ],
+  "root": "nies·en：单纯动词，拟声来源",
+  "fam": [
+   "Nieser",
+   "Niesreiz",
+   "Nieswurz"
+  ],
+  "ety": "中古高地德语 niesen < 古高地德语 niosan。",
+  "cog": "英 sneeze（古英语 fnēosan，一般认为同源）；荷 niezen",
+  "tip": "弱变化：nieste, hat geniest（不是 *nos, *genossen）。"
+ },
+ {
+  "w": "Fußgängerzone",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fußgängerzonen",
+  "gs": "der Fußgängerzone",
+  "ipa": "ˈfuːsɡɛŋɐˌt͡soːnə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "步行街，步行区",
+    "de": "Bereich in der Innenstadt, in dem keine Autos fahren dürfen",
+    "ex": [
+     {
+      "de": "In der Fußgängerzone gibt es viele Geschäfte und Cafés.",
+      "zh": "步行街上有很多商店和咖啡馆。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Fußgängerzone — 在步行街上",
+   "der Fußgänger — 行人；der Fußgängerüberweg / Zebrastreifen — 人行横道",
+   "Radfahren verboten — 禁止骑自行车（步行街常见标牌）"
+  ],
+  "root": "Fuß·gäng·er·zone：Fuß（脚）+ Gänger（行走者）+ Zone（区域）",
+  "fam": [
+   "Fußgänger",
+   "Fuß",
+   "gehen",
+   "Zone"
+  ],
+  "ety": "复合词。Zone 借自拉丁语 zona < 希腊语 zōnē（腰带）。",
+  "cog": "英 foot, zone",
+  "tip": "德国城市市中心几乎都有 Fußgängerzone，是购物区的代称。"
+ },
+ {
+  "w": "Fahrerin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fahrerinnen",
+  "gs": "der Fahrerin",
+  "ipa": "ˈfaːʁəʁɪn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（女）司机，驾驶员",
+    "de": "weibliche Person, die ein Fahrzeug lenkt",
+    "ex": [
+     {
+      "de": "Die Fahrerin des Busses hat sofort gebremst.",
+      "zh": "公交车司机立刻刹了车。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性：der Fahrer",
+   "die Busfahrerin / Taxifahrerin / Radfahrerin — 公交司机/出租车司机/骑车人",
+   "die Beifahrerin — （女）副驾驶座乘客"
+  ],
+  "root": "fahr·er·in：fahren（驾驶）+ -er（施动者）+ -in（阴性后缀）",
+  "fam": [
+   "Fahrer",
+   "fahren",
+   "Fahrt",
+   "Fahrzeug"
+  ],
+  "ety": "fahren < 古高地德语 faran。",
+  "cog": "英 fare, ferry（与 fahren 同源）",
+  "tip": "Radfahrerin 是骑自行车的人，不是“司机”；-fahrerin 泛指驾驶/乘骑某交通工具的人。"
+ },
+ {
+  "w": "Reisebüro",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Reisebüros",
+  "gs": "des Reisebüros",
+  "ipa": "ˈʁaɪ̯zəbyˌʁoː",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "旅行社",
+    "de": "Geschäft, in dem man Reisen buchen kann",
+    "ex": [
+     {
+      "de": "Wir haben unseren Urlaub im Reisebüro gebucht.",
+      "zh": "我们是在旅行社订的度假行程。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Reisebüro buchen — 在旅行社预订",
+   "der Reiseveranstalter — 旅游产品供应商（组团方）",
+   "die Pauschalreise — 打包旅游"
+  ],
+  "root": "Reis·e·büro：Reise（旅行）+ Büro（办公室）",
+  "fam": [
+   "Reise",
+   "reisen",
+   "Büro",
+   "Reiseleiter"
+  ],
+  "ety": "复合词。Büro 借自法语 bureau（书桌；办公室）；Reise < 古高地德语 reisa（启程）。",
+  "cog": "英 bureau；英 rise（与 Reise 同源，一般认为）",
+  "tip": "Büro 末音节重读：[byˈʁoː]，复数 -s。"
+ },
+ {
+  "w": "buchen",
+  "pos": "v",
+  "ipa": "ˈbuːxn̩",
+  "lvl": "A2",
+  "forms": "bucht · buchte · hat gebucht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "预订（旅行、房间、机票等）",
+    "de": "eine Reise, einen Platz o. Ä. fest bestellen",
+    "ex": [
+     {
+      "de": "Ich habe ein Doppelzimmer für drei Nächte gebucht.",
+      "zh": "我订了一间双人房，住三晚。"
+     },
+     {
+      "de": "Den Flug kann man auch online buchen.",
+      "zh": "航班也可以在网上预订。"
+     }
+    ]
+   },
+   {
+    "zh": "记账，入账",
+    "de": "einen Betrag in ein Konto / eine Buchführung eintragen",
+    "ex": [
+     {
+      "de": "Der Betrag wurde gestern von Ihrem Konto abgebucht.",
+      "zh": "这笔款项昨天已从您账户扣除。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Flug / ein Hotel / eine Reise buchen — 订机票/酒店/旅行",
+   "die Buchung — 预订；ausgebucht — 订满了",
+   "abbuchen — （从账户）扣款；umbuchen — 改签"
+  ],
+  "root": "buch·en：Buch（账簿，书）+ -en → 记入簿册",
+  "fam": [
+   "Buch",
+   "Buchung",
+   "Buchhaltung",
+   "abbuchen",
+   "umbuchen"
+  ],
+  "ety": "由 Buch 派生，原义“记入账簿”；“预订”义 20 世纪起受英语 book 影响而普及（一般认为）。",
+  "cog": "英 book (v.)",
+  "tip": "订餐厅座位常说 einen Tisch reservieren；订旅行、机票、酒店多用 buchen。"
+ },
+ {
+  "w": "Zelt",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Zelte",
+  "gs": "des Zelt(e)s",
+  "ipa": "t͡sɛlt",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "帐篷",
+    "de": "transportable Unterkunft aus Stoff und Stangen",
+    "ex": [
+     {
+      "de": "Wir haben unser Zelt direkt am See aufgebaut.",
+      "zh": "我们把帐篷直接搭在湖边。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Zelt aufbauen / abbauen — 搭/拆帐篷",
+   "im Zelt schlafen / übernachten — 睡在帐篷里",
+   "zelten — 露营；der Zeltplatz / Campingplatz — 露营地"
+  ],
+  "root": "Zelt：单纯词",
+  "fam": [
+   "zelten",
+   "Zeltplatz",
+   "Bierzelt",
+   "Zirkuszelt"
+  ],
+  "ety": "中古高地德语 zelt < 古高地德语 zelt（帐篷）。",
+  "cog": "英 tilt（古义“篷布”，一般认为同源）",
+  "tip": "das Bierzelt 指啤酒节（如慕尼黑啤酒节）上的大帐篷。"
+ },
+ {
+  "w": "Touristin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Touristinnen",
+  "gs": "der Touristin",
+  "ipa": "tuˈʁɪstɪn",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（女）游客",
+    "de": "weibliche Person, die als Tourist reist",
+    "ex": [
+     {
+      "de": "Eine Touristin aus Japan fragte mich nach dem Weg zum Dom.",
+      "zh": "一位来自日本的女游客向我问去大教堂的路。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性：der Tourist（弱变化）；阴性无弱变化：der Touristin",
+   "die Touristeninformation — 游客咨询处",
+   "近义：die Urlauberin（度假者）"
+  ],
+  "root": "Tour·ist·in：Tour（旅行）+ -ist（表人）+ -in（阴性后缀）",
+  "fam": [
+   "Tourist",
+   "Tourismus",
+   "touristisch",
+   "Tour"
+  ],
+  "ety": "Tourist 于 19 世纪借自英语 tourist，源自法语 tour（转圈，巡游）。",
+  "cog": "英 tourist；法 touriste",
+  "tip": "重音在 -ris-：[tuˈʁɪstɪn]。"
+ },
+ {
+  "w": "Anrufbeantworter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Anrufbeantworter",
+  "gs": "des Anrufbeantworters",
+  "ipa": "ˈanʁuːfbəˌʔantvɔʁtɐ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "电话答录机；语音信箱",
+    "de": "Gerät oder Dienst, der Anrufe entgegennimmt und Nachrichten aufnimmt",
+    "ex": [
+     {
+      "de": "Ich habe dir eine Nachricht auf den Anrufbeantworter gesprochen.",
+      "zh": "我在你的答录机上留了言。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf den Anrufbeantworter sprechen — 给答录机留言",
+   "den Anrufbeantworter abhören — 听答录机留言",
+   "口语缩略：der AB [aːˈbeː]"
+  ],
+  "root": "An·ruf·be·antwort·er：Anruf（来电）+ beantworten（回答）+ -er（表工具）",
+  "fam": [
+   "anrufen",
+   "Anruf",
+   "beantworten",
+   "Antwort"
+  ],
+  "ety": "复合词。Antwort < 古高地德语 antwurti（ant-“对着” + Wort“话”）。",
+  "cog": "英 answer（同样由“对着说”构成）",
+  "tip": "常见录音：Leider bin ich im Moment nicht erreichbar. Bitte hinterlassen Sie eine Nachricht nach dem Signalton."
+ },
+ {
+  "w": "Mailbox",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Mailboxen",
+  "gs": "der Mailbox",
+  "ipa": "ˈmeɪ̯lbɔks",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（手机的）语音信箱",
+    "de": "Anrufbeantworter beim Mobiltelefon (Dienst des Netzbetreibers)",
+    "ex": [
+     {
+      "de": "Er geht nicht ran, ich lande immer nur auf seiner Mailbox.",
+      "zh": "他不接电话，我总是转到他的语音信箱。"
+     }
+    ]
+   },
+   {
+    "zh": "电子邮箱",
+    "de": "elektronischer Briefkasten für E-Mails",
+    "ex": [
+     {
+      "de": "Meine Mailbox ist voll, ich muss alte Mails löschen.",
+      "zh": "我的邮箱满了，得删些旧邮件。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf die Mailbox sprechen — 在语音信箱留言",
+   "die Mailbox abhören — 听语音信箱",
+   "复数：die Mailboxen"
+  ],
+  "root": "Mail·box：英语 mail（邮件）+ box（箱）",
+  "fam": [
+   "Mail",
+   "E-Mail",
+   "Anrufbeantworter",
+   "Box"
+  ],
+  "ety": "20 世纪末借自英语 mailbox。",
+  "cog": "英 mailbox",
+  "tip": "德语中 Mailbox 最常指手机语音信箱，与英语（美式“信箱”）用法不同。"
+ },
+ {
+  "w": "zurückrufen",
+  "pos": "v",
+  "ipa": "t͡suˈʁʏkˌʁuːfn̩",
+  "lvl": "A2",
+  "forms": "ruft zurück · rief zurück · hat zurückgerufen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "回电话",
+    "de": "jdn. anrufen, der vorher angerufen hat",
+    "ex": [
+     {
+      "de": "Frau Weber ist gerade in einer Besprechung. Kann sie Sie zurückrufen?",
+      "zh": "韦伯女士正在开会，她可以给您回电话吗？"
+     },
+     {
+      "de": "Ich rufe dich in zehn Minuten zurück.",
+      "zh": "我十分钟后给你回电话。"
+     }
+    ]
+   },
+   {
+    "zh": "召回，叫回来",
+    "de": "jdn. auffordern zurückzukommen; ein Produkt zurückholen",
+    "ex": [
+     {
+      "de": "Der Hersteller hat 50 000 Autos zurückgerufen.",
+      "zh": "厂商召回了五万辆汽车。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn.(A) zurückrufen — 给某人回电话（第四格！）",
+   "der Rückruf — 回电；召回",
+   "um Rückruf bitten — 请求回电"
+  ],
+  "root": "zurück·ruf·en：zurück（回）+ rufen（叫，打电话）",
+  "fam": [
+   "rufen",
+   "anrufen",
+   "Rückruf",
+   "Anruf"
+  ],
+  "ety": "复合动词。rufen < 古高地德语 (h)ruofan。",
+  "cog": "—",
+  "tip": "支配第四格：Ich rufe dich zurück（✗ *dir）。"
+ },
+ {
+  "w": "Homepage",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Homepages",
+  "gs": "der Homepage",
+  "ipa": "ˈhoʊ̯mpeɪ̯t͡ʃ",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "（个人、机构的）网站；网站首页",
+    "de": "Website einer Person oder Firma; Startseite einer Website",
+    "ex": [
+     {
+      "de": "Die Öffnungszeiten finden Sie auf unserer Homepage.",
+      "zh": "营业时间请见我们的网站。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf der Homepage — 在网站上",
+   "德语中常泛指整个网站（= Website, Webseite）",
+   "eine Homepage erstellen — 建网站"
+  ],
+  "root": "Home·page：英语 home（家，主）+ page（页）",
+  "fam": [
+   "Website",
+   "Webseite",
+   "Startseite",
+   "Internetseite"
+  ],
+  "ety": "20 世纪 90 年代借自英语 home page。",
+  "cog": "英 home page",
+  "tip": "德语 Homepage 常指整个网站，而英语 homepage 主要指首页；正式文本多用 Website / Internetseite。"
+ },
+ {
+  "w": "Benutzername",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Benutzernamen",
+  "gs": "des Benutzernamens",
+  "ipa": "bəˈnʊt͡sɐˌnaːmə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "用户名",
+    "de": "Name, mit dem man sich bei einem Computer oder Online-Dienst anmeldet",
+    "ex": [
+     {
+      "de": "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort ein.",
+      "zh": "请输入您的用户名和密码。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "变格同 Name：den/dem Benutzernamen, des Benutzernamens",
+   "Benutzername und Passwort eingeben — 输入用户名和密码",
+   "同义：der Nutzername, der Username"
+  ],
+  "root": "Be·nutz·er·name：Benutzer（用户）+ Name（名字）",
+  "fam": [
+   "Benutzer",
+   "benutzen",
+   "Name",
+   "Nutzer"
+  ],
+  "ety": "复合词。benutzen 由 nutzen 加 be- 构成；nutzen < 古高地德语 nuzzen。",
+  "cog": "英 name",
+  "tip": "常见错误：*den Benutzername；正确 den Benutzernamen。"
+ }
+]

@@ -1,0 +1,24 @@
+[
+{"w": "Engpass", "pos": "n", "gen": "m", "pl": "Engpässe", "gs": "des Engpasses", "ipa": "ˈɛŋpas", "lvl": "B2–C1",
+ "senses": [
+  {"zh": "（供应、人手、资金等的）短缺，瓶颈", "de": "Mangel, knappe Versorgung, Kapazitätsgrenze", "ex": [{"de": "Bei einigen Medikamenten kommt es derzeit zu Engpässen.", "zh": "目前一些药品出现了短缺。"}, {"de": "Im Dezember haben wir einen personellen Engpass.", "zh": "十二月我们人手紧张。"}]},
+  {"zh": "（道路、山谷等的）狭窄处，隘口", "de": "schmale Stelle eines Weges oder Tals", "ex": [{"de": "Am Engpass staut sich der Verkehr jeden Morgen.", "zh": "每天早上车流都在这个窄路段堵住。"}]}
+ ],
+ "use": ["Engpässe bei etw.(D) — ……方面的短缺", "einen Engpass überbrücken / beseitigen — 渡过/消除短缺", "in einen (finanziellen) Engpass geraten — 陷入（资金）困境", "Lieferengpass / Personalengpass — 供货短缺／人手短缺"],
+ "root": "eng·pass：eng（窄）+ Pass（通道、山口）→ 狭窄的通道 → 引申为“卡脖子的地方”，即供应瓶颈",
+ "fam": ["eng", "die Enge", "verengen", "der Pass", "der Lieferengpass", "der Personalengpass"],
+ "ety": "eng < 中古高地德语 enge < 古高地德语 engi，可追溯到原始日耳曼语 *angwuz，与拉丁语 angustus（窄）同源。Pass 作“山口、通道”讲，一般认为是近代早期借自法语 pas / 意大利语 passo（步子；通道），二者都来自拉丁语 passus（步子）。",
+ "cog": "荷 eng（窄；吓人）；拉丁 angustus（窄）→ 英 anguish",
+ "tip": "经济新闻高频词，相当于英语 bottleneck / shortage。注意复数变音 Engpässe。"},
+{"w": "Zumutung", "pos": "n", "gen": "f", "pl": "Zumutungen", "gs": "der Zumutung", "ipa": "ˈt͡suːmuːtʊŋ", "lvl": "C1",
+ "senses": [
+  {"zh": "过分的要求；让人难以忍受的事，强人所难", "de": "unzumutbare Forderung; etwas, das man nur schwer ertragen kann", "ex": [{"de": "Diese Arbeitsbedingungen sind eine Zumutung.", "zh": "这样的工作条件简直让人无法接受。"}, {"de": "Der Lärm ist eine Zumutung für die Anwohner.", "zh": "这种噪音对周边居民来说是种折磨。"}]},
+  {"zh": "（书面）无理的要求，苛求", "de": "Ansinnen, unverschämte Forderung an jdn.", "ex": [{"de": "Er wies diese Zumutung entschieden zurück.", "zh": "他断然拒绝了这种无理要求。"}]}
+ ],
+ "use": ["Das ist eine Zumutung! — 这也太过分了！", "eine Zumutung für jdn. sein — 让某人难以忍受", "etw. als Zumutung empfinden — 觉得某事强人所难", "jdm. etw. zumuten — 让某人承受某事（动词）"],
+ "root": "zu·mut·ung：zumuten（要求别人承受）+ -ung（名词后缀）→ 强加给别人的要求 → 过分的要求、难以忍受的事",
+ "fam": ["zumuten", "zumutbar", "unzumutbar", "der Mut", "vermuten", "die Anmut"],
+ "ety": "来自动词 zumuten，中古高地德语 zuomuoten（期望、要求），由 muoten（想要、要求）派生。muot 的意思是“心思、意愿”，也就是现代 Mut 的古义，所以 zumuten 本义是“把某种期望加到别人身上”。",
+ "cog": "Mut 与英 mood、荷 moed 同源（< 原始日耳曼语 *mōdaz）",
+ "tip": "口语里常单独用作感叹：Das ist eine Zumutung! 形容词 zumutbar / unzumutbar（可/不可合理要求的）在法律和职场语境中也很常用。"}
+]
