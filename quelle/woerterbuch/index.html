@@ -110,6 +110,12 @@ ul.use li { font-size: 15px; }
 .hitbar { background: var(--accent-soft); color: var(--ink); border-radius: 10px; padding: 9px 12px; font-size: 14px; line-height: 1.5; }
 .hitbar b { font-family: var(--f-head); color: var(--accent); }
 .row .gl .hint { color: var(--accent); }
+.row.h2 { flex-direction: column; align-items: stretch; gap: 2px; padding-right: 86px; position: relative; }
+.row.h2 .gl { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.row.h2 .gl .pos { color: var(--accent); font-style: normal; margin-right: 4px; }
+.row.h2 .gl .pos.g-f { color: var(--die); } .row.h2 .gl .pos.g-m { color: var(--der); } .row.h2 .gl .pos.g-n { color: var(--das); }
+.row.h2 .badge { position: absolute; right: 12px; top: 12px; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; background: var(--bg); }
+.row.h2 .q { color: var(--muted); font-size: 13px; margin-right: 6px; }
 .conj details { border-top: 1px solid var(--line); }
 .conj details:first-of-type { border-top: 0; }
 .conj summary { cursor: pointer; padding: 8px 0; font-size: 14px; font-weight: 600; list-style: none; display: flex; justify-content: space-between; }
@@ -137,6 +143,12 @@ ul.use li { font-size: 15px; }
 .legend { display: flex; gap: 14px; font-size: 13px; }
 /* sentence translation */
 .trout { font-size: 17px; line-height: 1.7; }
+.trin, .trin1 { display: block; width: 100%; box-sizing: border-box; margin-top: 2px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); color: var(--ink); font: inherit; font-size: 15px; outline: none; }
+.trin1:focus { border-color: var(--accent); }
+.srcline { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--muted); }
+.btn.small { padding: 5px 10px; font-size: 13px; }
+#extcard .row.h2 { position: relative; padding-right: 76px; } #extcard .row.h2 .btn.small { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); }
+a.btn { text-decoration: none; display: inline-block; }
 .trout[lang="de"] { font-family: var(--f-head); }
 .trw { display: grid; grid-template-columns: 1fr; gap: 8px; }
 .trw .w { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
@@ -163,12 +175,12 @@ ul.use li { font-size: 15px; }
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="search" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h11a4 4 0 0 1 4 4v10H8a4 4 0 0 1-4-4z"/><path d="M8 9h7M8 13h5"/></svg>查词</button>
     <button role="tab" data-tab="book" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>生词本</button>
-    <button role="tab" data-tab="lib" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v3h16v-3"/></svg>词库</button>
+    <button role="tab" data-tab="lib" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>设置</button>
     <button data-go="daily" class="switch" aria-label="切换到 Deutsch täglich"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg>每日学习</button>
   </nav>
 </div>
 <div class="toast" id="toast" hidden></div>
-<input type="file" id="file" accept=".json,application/json" hidden>
+<input type="file" id="file" accept=".json,.csv,.tsv,.txt,text/plain,text/csv,application/json" hidden>
 
 <script id="embedded-dict" type="application/json">null</script>
 <script>
@@ -185,9 +197,16 @@ const idb = (() => {
   const tx = (mode, fn) => open().then(db => new Promise((res, rej) => { const t = db.transaction('kv', mode); const q = fn(t.objectStore('kv')); t.oncomplete = () => res(q && q.result); t.onerror = () => rej(t.error); }));
   return { get: k => tx('readonly', s => s.get(k)).catch(() => null), set: (k, v) => tx('readwrite', s => s.put(v, k)).then(() => true, () => false) };
 })();
-let CUSTOM = null;
+let CUSTOM = null, EXT = [], EXTGLOSS = new Map(); // EXT: imported external dictionaries [{name, added, entries}], kept in IndexedDB
 let DICT = { entries: [] }, INDEX = [], byKey = new Map();
 let tab = 'search', current = null, history = store.get('history', []), book = store.get('book', []);
+// search history entries: {k: headword} for opened entries, {q: text, tr?: translation} for sentences and misses; n = times, t = last time
+history = (Array.isArray(history) ? history : []).map(h => typeof h === 'string' ? { k: h, n: 1, t: 0 } : h).filter(h => h && (h.k || h.q));
+function remember(item) {
+  const same = h => item.k ? h.k === item.k : (!h.k && h.q === item.q);
+  const old = history.find(same);
+  history = [{ ...item, n: (old?.n || 0) + 1, t: Date.now() }, ...history.filter(h => !same(h))].slice(0, 200); store.set('history', history);
+}
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fold = s => String(s).toLowerCase().replace(/^sich\s+/, '').replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss').replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u').replace(/[·\-\s]/g,'');
@@ -405,32 +424,45 @@ function suggest(raw) { const f = fold(raw); return INDEX.map(x => [lev(f, x.k),
 function hwHtml(e) { return (e.pos === 'n' && e.gen ? `<span class="art g-${e.gen}">${ART[e.gen]}</span>` : '') + esc(e.w); }
 function rowHtml(e, raw) {
   const h = raw ? hitFor(e, raw) : null;
-  const hint = h ? `<span class="hint">${esc(h.form)}：${esc(h.labels.join('；'))}</span> · ` : '';
+  const hint = (h ? `<span class="hint">${esc(h.form)}：${esc(h.labels.join('；'))}</span> · ` : '') + (e.ext ? `<span class="hint">${esc(e.src)}</span> · ` : '');
   return `<li><button class="row" data-open="${esc(keyOf(e))}"><span class="hw">${hwHtml(e)}</span><span class="gl">${hint}${esc((e.senses?.[0]?.zh) || '')}</span></button></li>`;
 }
 
+const POSAB = { n: '', v: 'v.', adj: 'adj.', adv: 'adv.', konj: 'konj.', präp: 'präp.', part: 'part.', pron: 'pron.', num: 'num.', art: 'art.', interj: 'interj.' };
+function histRow(h) {
+  const badge = h.n > 1 ? `<span class="badge">已查 ${h.n} 次</span>` : '';
+  if (h.k) {
+    const e = byKey.get(h.k); if (!e) return '';
+    const pos = e.pos === 'n' && e.gen ? `<span class="pos g-${e.gen}">${e.gen === 'pl' ? 'pl.' : e.gen + '.'}</span>` : POSAB[e.pos] ? `<span class="pos">${POSAB[e.pos]}</span>` : '';
+    return `<li><button class="row h2" data-open="${esc(h.k)}"><span class="hw">${hwHtml(e)}</span><span class="gl">${pos}${esc((e.senses || []).map(x => x.zh).join('；'))}</span>${badge}</button></li>`;
+  }
+  return `<li><button class="row h2" data-q="${esc(h.q)}"><span class="hw" lang="${isZh(h.q) ? 'zh' : 'de'}"><span class="q">${h.tr ? '整句' : '没查到'}</span>${esc(h.q)}</span>${h.tr ? `<span class="gl">${esc(h.tr)}</span>` : ''}${badge}</button></li>`;
+}
 function renderHome() {
-  const recent = history.map(k => byKey.get(k)).filter(Boolean).slice(0, 12);
-  const pick = DICT.entries.length ? Array.from({length: 8}, (_, i) => DICT.entries[(dayNum() * 7 + i * 53) % DICT.entries.length]) : [];
+  const rows = history.map(histRow).filter(Boolean);
   view.innerHTML = `<div class="stack">
-    ${recent.length ? `<section><div class="label">最近查过</div><div class="chips">${recent.map(e => `<button class="chip" data-open="${esc(keyOf(e))}">${esc(e.w)}</button>`).join('')}</div></section>` : ''}
-    <section><div class="label">今日随机 8 词</div><ul class="list">${[...new Set(pick)].map(rowHtml).join('')}</ul></section>
+    <section class="card"><h3>句子翻译</h3>
+      <textarea class="trin" id="hin" rows="2" style="resize:vertical;min-height:64px" placeholder="输入一句德语或中文，德→中、中→德都可以" autocapitalize="off" spellcheck="false"></textarea>
+      <div class="btns"><button class="btn" id="hgo">翻译</button></div>
+      ${canTranslate() ? '' : `<div class="note">这个版本连不上翻译服务，只能逐词查词典${TRANSLATE_API ? '' : '；在网站或 claude.ai 里打开可以翻译整句'}。</div>`}
+    </section>
+    ${rows.length ? `<section><div class="label">查词记录 · ${rows.length}</div><ul class="list">${rows.join('')}</ul></section>
+    <div class="btns"><button class="btn ghost" id="clearhist">清空记录</button></div>` : `<div class="empty">查过的词和翻译过的句子会按时间列在这里。</div>`}
     <section class="legend"><span class="g-m">■ der 阳性</span><span class="g-f">■ die 阴性</span><span class="g-n">■ das 中性</span></section>
   </div>`;
 }
-function dayNum() { return Math.floor(Date.now() / 864e5); }
 
 function renderResults(s) {
   const res = search(s);
   if (res.length) { view.innerHTML = `<ul class="list">${res.map(e => rowHtml(e, s)).join('')}</ul>`; return; }
   const sug = /[一-鿿]/.test(s) ? [] : suggest(s);
-  view.innerHTML = `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : '可以在“词库”页导入更大的词库文件。'}</div>
+  view.innerHTML = `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : '可以在“设置”页导入外部词典。'}</div>
     ${sug.length ? `<ul class="list">${sug.map(rowHtml).join('')}</ul>` : ''}`;
 }
 
 function renderEntry(e) {
   current = e;
-  history = [keyOf(e), ...history.filter(k => k !== keyOf(e))].slice(0, 40); store.set('history', history);
+  remember({ k: keyOf(e) });
   const starred = book.includes(keyOf(e));
   const nounInfo = e.pos === 'n' ? [e.gs && `单数二格 ${esc(e.gs)}`, e.pl && `复数 ${e.pl === '—' ? '无' : esc(e.pl)}`].filter(Boolean).join(' · ') : '';
   const hit = hitFor(e, q.value);
@@ -446,7 +478,7 @@ function renderEntry(e) {
       </div>
       <div class="meta">${e.ipa ? `<span class="ipa">[${esc(e.ipa)}]</span>` : ''}<span class="pos">${POS[e.pos] || esc(e.pos || '')}</span>${e.lvl ? `<span class="lvl">级别 ${esc(String(e.lvl).replace(/\s*[\/~-]\s*/g, '–'))}</span>` : ''}</div>
     </div>
-    ${hitHtml}
+    ${hitHtml}${extHtml(e)}
     ${nounInfo ? `<div class="forms">${nounInfo}</div>` : ''}
     ${e.forms ? `<div class="forms"><small>${formsLabel}</small>${esc(e.forms)}</div>` : ''}
     ${conjHtml}
@@ -483,17 +515,62 @@ function renderBook() {
     <div class="btns"><button class="btn ghost" id="copybook">复制生词列表</button></div>` : `<div class="empty">查词时点右上角的星标，词就会收进这里。</div>`}</div>`;
 }
 
+function sourceLine() { // plain text under the sentence box; the settings live in the 设置 tab
+  return `<div class="note">翻译由 <b>${esc(sourceName())}</b> 完成${TRANSLATE_API ? '，在「设置」页可以换成自己的模型' : ''}。</div>`;
+}
+function modelCard() {
+  const cur = SAMPLE ? 'Claude（claude.ai 自带，免费）' : TRANSLATE_API ? (MODEL ? `你外接的模型 <b>${esc(MODEL.name)}</b>` : '网站自带的 Workers AI（免费，不用设置）') : '无（这个版本连不上翻译服务，只能逐词查词典）';
+  return `<section class="card" id="modelcard"><h3>句子翻译</h3>
+      <dl class="kv"><dt>当前来源</dt><dd>${cur}</dd></dl>
+      ${TRANSLATE_API ? `<div class="btns"><button class="btn" data-setup="1">${MODEL ? '修改设置' : '立即设置'}</button></div><div class="note">想用更好或更快的模型？点上面的按钮，有推荐的免费来源和一步步的绑定教程。</div>` : '<div class="note">在网站版里可以绑定自己的模型（智谱、硅基流动、DeepSeek 等，多数免费）。</div>'}
+    </section>`;
+}
+function renderSetup() {
+  const pick = setupPick === 'other' ? { id: 'other', label: '其他', url: '', name: '' } : PRESETS.find(x => x.id === setupPick) || (MODEL && !setupPick ? { id: 'cur', label: MODEL.name, url: MODEL.url, name: MODEL.name } : null);
+  const row = x => `<li><button class="row h2" data-preset="${x.id}"><span class="hw" style="font-family:var(--f-body)">${esc(x.label)} <span class="lvl">${esc(x.tag)}</span></span><span class="gl">${esc(x.desc)}</span>${setupPick === x.id ? '<span class="badge">已选</span>' : ''}</button></li>`;
+  view.innerHTML = `<article class="entry">
+    <div class="ehead"><div class="line1"><h1 style="font-family:var(--f-body);font-size:24px">句子翻译设置</h1></div>
+      <div class="meta">当前：${esc(sourceName())}${MODEL ? '' : '（免费，不用设置就能用）'}</div></div>
+    <section class="sec"><h2>绑定自己的模型，三步</h2><ul class="use">
+      <li><b>①</b> 在下面选一家，点「去注册」用手机号或邮箱注册（多数免费或有赠送额度，以官网为准）。</li>
+      <li><b>②</b> 在官网找到「API Keys / 密钥」页，新建一个密钥并复制。</li>
+      <li><b>③</b> 回到这里，粘贴密钥，点「保存并测试」。</li></ul>
+      <div class="note">密钥只保存在这台设备的浏览器里，翻译时经本网站转发给模型方，网站不保存；换设备要重新填。</div></section>
+    <section><div class="label">推荐 · 国内可直接用</div><ul class="list">${PRESETS.filter(x => x.zone === 'cn').map(row).join('')}</ul></section>
+    <section><div class="label">海外 · 需要能访问海外网络</div><ul class="list">${PRESETS.filter(x => x.zone === 'intl').map(row).join('')}</ul></section>
+    <section><div class="label">其他</div><ul class="list"><li><button class="row h2" data-preset="other"><span class="hw" style="font-family:var(--f-body)">自己填接口</span><span class="gl">任何 OpenAI 兼容的接口都可以（地址以 /v1 结尾）</span>${setupPick === 'other' ? '<span class="badge">已选</span>' : ''}</button></li></ul></section>
+    ${pick ? `<section class="card" id="modelform"><h3>${esc(pick.label === '其他' ? '填写接口' : pick.label)}</h3>
+      ${pick.site ? `<div class="btns"><a class="btn ghost" href="${esc(pick.site)}" target="_blank" rel="noopener">去注册 ↗</a>${pick.keys ? `<a class="btn ghost" href="${esc(pick.keys)}" target="_blank" rel="noopener">打开密钥页 ↗</a>` : ''}</div>` : ''}
+      <div class="stack" style="gap:8px">
+        <label class="note">接口地址<input class="trin1" id="m-url" type="url" placeholder="https://api.deepseek.com/v1" value="${esc(pick.url)}" autocapitalize="off" spellcheck="false"></label>
+        <label class="note">模型名<input class="trin1" id="m-name" type="text" placeholder="deepseek-chat" value="${esc(pick.name)}" autocapitalize="off" spellcheck="false"></label>
+        <label class="note">API Key（粘贴到这里）<input class="trin1" id="m-key" type="password" placeholder="sk-…" value="${esc(pick.id === 'cur' ? MODEL.key : '')}" autocapitalize="off" spellcheck="false"></label>
+      </div>
+      <div class="btns"><button class="btn" id="m-save">保存并测试</button>${MODEL ? '<button class="btn ghost" id="m-clear">改回 Workers AI</button>' : ''}</div>
+      <div class="note">保存时会用它翻译一句 “Guten Morgen!”，成功才会启用。</div></section>` : ''}
+    <button class="btn ghost" id="setup-back">返回</button>
+  </article>`;
+  if (setupPick) { const f = $('#modelform'); if (f) { f.scrollIntoView({ block: 'start' }); const k = $('#m-key'); if (k && !k.value) k.focus(); } }
+}
+function extCard() {
+  const rows = EXT.map((d, i) => `<li><div class="row h2"><span class="hw" style="font-family:var(--f-body)">${esc(d.name)}</span><span class="gl">${d.entries.length} 个词条${d.added ? ' · ' + esc(d.added) : ''}</span><button class="btn ghost small" data-extdel="${i}">删除</button></div></li>`).join('');
+  return `<section class="card" id="extcard"><h3>外部词典</h3>
+      <div>把别的词典或生词表导进来一起查：查到的词会在词条页多出一栏「其他词典」，词库里没有的词会作为新词条加入。</div>
+      ${EXT.length ? `<ul class="list">${rows}</ul>` : ''}
+      <div class="btns"><button class="btn" id="import">导入词典文件</button>${CUSTOM ? '<button class="btn ghost" id="reset">恢复内置词库</button>' : ''}</div>
+      <div class="note">支持：<b>.txt / .csv / .tsv</b>（每行「德语词 分隔符 中文释义」，分隔符可以是制表符、逗号、分号、| 等；Anki、欧路/德语助手导出的生词表都可以）和 <b>.json</b>（Wortwurzel 格式，或 [{word, meaning}] 这类数组）。词典 .mdx 请先用词典软件导出为文本。</div>
+    </section>`;
+}
 function renderLib() {
   const custom = CUSTOM;
   view.innerHTML = `<div class="stack">
+    <section class="card" id="konto"><h3>账户</h3><div id="konto-slot"><div class="note">${TRANSLATE_API ? '登录后查词记录、生词本和翻译设置会跟着账号走，换手机也在。' : '在网站上打开可以登录账户，让查词记录、生词本和翻译设置跟着账号走。'}</div></div></section>
+    ${modelCard()}
+    ${extCard()}
     <section class="card"><h3>当前词库</h3>
       <dl class="kv"><dt>名称</dt><dd>${esc(DICT.name || '')}</dd><dt>版本</dt><dd>${esc(DICT.version || '')}</dd><dt>词条数</dt><dd>${DICT.entries.length}</dd><dt>来源</dt><dd>${custom ? '你导入的文件' : SRC}</dd></dl>
       <div class="note">${STALE ? '这次没有连上网，用的是本机缓存的旧词库。联网后点下面的按钮重新下载。' : '词库已缓存在本机，断网后再打开这个页面也能查。'}</div>
       ${EMBED || custom ? '' : '<div class="btns"><button class="btn ghost" id="refetch">重新下载最新词库</button></div>'}
-    </section>
-    <section class="card"><h3>导入词库文件</h3>
-      <div>选择一个 Wortwurzel 格式的 <b>.json</b> 词库文件。新词会合并进来，同名词条以文件为准。</div>
-      <div class="btns"><button class="btn" id="import">选择文件导入</button>${custom ? '<button class="btn ghost" id="reset">恢复内置词库</button>' : ''}</div>
     </section>
     <section class="card"><h3>下载离线版</h3>
       <div>完整词库文件 <b>wortwurzel.json</b> 和可以离线打开的 <b>Wortwurzel离线版.html</b> 都在项目对话的附件里，下载后用手机浏览器直接打开 html 即可，不需要网络。</div>
@@ -501,12 +578,28 @@ function renderLib() {
     <section class="card"><h3>外观</h3><div class="btns">
       <button class="btn ghost" data-theme-set="">跟随系统</button><button class="btn ghost" data-theme-set="light">浅色</button><button class="btn ghost" data-theme-set="dark">深色</button></div></section>
   </div>`;
+  document.dispatchEvent(new CustomEvent('ww:settings')); // the site's account script fills #konto-slot
 }
 
 // ---- sentence translation. The search box is the single entry point: a word looks up the dictionary, a sentence
 // is translated by Claude (the artifact's `sample` capability) on claude.ai; elsewhere only word-by-word lookup + a DeepL link.
 const DAILY_URL = 'https://claude.ai/artifact/Q59g6KiDtPyirydA3PfDTo'; // Deutsch täglich (the site build may rewrite this to ../taeglich/)
+const TRANSLATE_API = ''; // the site build sets this to its translate endpoint (/api/translate): Workers AI by default, or the user's own model
+let MODEL = store.get('model', null); if (!(MODEL && MODEL.url && MODEL.name && MODEL.key)) MODEL = null;
+const PRESETS = [
+  // zone cn: works from mainland China without a VPN. Quotas are as of 2026-10; the guide says to check the provider's site.
+  { id: 'zhipu', label: '智谱 GLM', tag: '免费', zone: 'cn', desc: 'GLM-4-Flash 完全免费，中文好，手机号注册即用', url: 'https://open.bigmodel.cn/api/paas/v4', name: 'glm-4-flash', site: 'https://open.bigmodel.cn', keys: 'https://open.bigmodel.cn/usercenter/apikeys' },
+  { id: 'siliconflow', label: '硅基流动', tag: '免费模型', zone: 'cn', desc: 'Qwen2.5-7B 等多个模型免费，注册还送额度', url: 'https://api.siliconflow.cn/v1', name: 'Qwen/Qwen2.5-7B-Instruct', site: 'https://cloud.siliconflow.cn', keys: 'https://cloud.siliconflow.cn/account/ak' },
+  { id: 'qwen', label: '通义千问', tag: '新用户免费额度', zone: 'cn', desc: 'qwen-plus 译文质量好，新账号有一段时间的免费 token', url: 'https://dashscope.aliyuncs.com/compatible-mode/v1', name: 'qwen-plus', site: 'https://bailian.console.aliyun.com', keys: 'https://bailian.console.aliyun.com/?apiKey=1' },
+  { id: 'deepseek', label: 'DeepSeek', tag: '极便宜', zone: 'cn', desc: '质量接近 GPT-4，充 10 元能翻几万句', url: 'https://api.deepseek.com/v1', name: 'deepseek-chat', site: 'https://platform.deepseek.com', keys: 'https://platform.deepseek.com/api_keys' },
+  { id: 'gemini', label: 'Google Gemini', tag: '免费额度', zone: 'intl', desc: 'gemini-2.0-flash 每天有免费额度，德语很好', url: 'https://generativelanguage.googleapis.com/v1beta/openai', name: 'gemini-2.0-flash', site: 'https://aistudio.google.com', keys: 'https://aistudio.google.com/apikey' },
+  { id: 'groq', label: 'Groq', tag: '免费', zone: 'intl', desc: 'Llama 3.3 70B，免费且非常快', url: 'https://api.groq.com/openai/v1', name: 'llama-3.3-70b-versatile', site: 'https://console.groq.com', keys: 'https://console.groq.com/keys' },
+  { id: 'openai', label: 'OpenAI', tag: '付费', zone: 'intl', desc: 'gpt-4o-mini 便宜够用', url: 'https://api.openai.com/v1', name: 'gpt-4o-mini', site: 'https://platform.openai.com', keys: 'https://platform.openai.com/api-keys' },
+];
+let setupOpen = false, setupPick = null;
 let SAMPLE = null, trLast = store.get('trLast', null), trBusy = false, trCtl = null;
+const canTranslate = () => !!(SAMPLE || TRANSLATE_API);
+const sourceName = () => SAMPLE ? 'Claude' : MODEL ? `你外接的模型 ${MODEL.name}` : '网站自带的 Workers AI';
 (async () => { try { if (window.claude && typeof claude.use === 'function') SAMPLE = await claude.use('sample'); } catch {} if (tab === 'search' && !current && isSentence(q.value)) render(); })();
 const isZh = s => /[一-鿿]/.test(s);
 // what counts as "a sentence" rather than a dictionary query
@@ -532,22 +625,33 @@ function trPrompt(t, dir) {
     : '你是德语教师，学生是母语为中文的 B2–C1 水平学习者。把下面这句中文翻译成地道、符合书面规范的德语（tr 给最自然的译法，alt 给另一种常见说法）；words 列出译文里 4–8 个关键词（动词、名词、形容词、固定搭配）；notes 说明用到的语法点、搭配或中国学习者容易出错的地方。')
     + '\n只回复一个 JSON 对象，格式：' + shape + '\n\n句子：' + t;
 }
+// the website backend: Workers AI, or the user's own OpenAI-compatible model relayed by the site (see the 设置 tab)
+async function apiTranslate(t, dir, signal) {
+  const body = { text: t, dir, prompt: trPrompt(t, dir) }; if (MODEL) body.model = MODEL;
+  const res = await fetch(TRANSLATE_API, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal });
+  if (!res.ok) throw { code: 'upstream_error', message: 'HTTP ' + res.status };
+  const j = await res.json();
+  if (!j || j.ok === false) throw { code: 'api_error', message: (j && j.error) || '翻译服务没有返回结果' };
+  return j.result || j;
+}
 async function translate(t) {
-  t = String(t || '').trim(); if (!t || !SAMPLE || trBusy) return;
+  t = String(t || '').trim(); if (!t || !canTranslate() || trBusy) return;
   const dir = isZh(t) ? 'zh2de' : 'de2zh';
   trBusy = true; trCtl = new AbortController(); render();
   try {
-    const r = await SAMPLE.json(trPrompt(t, dir), { modelTier: 'quick', signal: trCtl.signal }) || {};
+    const r = (SAMPLE ? await SAMPLE.json(trPrompt(t, dir), { modelTier: 'quick', signal: trCtl.signal }) : await apiTranslate(t, dir, trCtl.signal)) || {};
+    if (!r.tr) throw { code: 'empty_completion' };
     trLast = { src: t, dir, tr: String(r.tr || ''), alt: String(r.alt || ''),
       words: (Array.isArray(r.words) ? r.words : []).slice(0, 10).map(w => ({ de: String(w?.de || ''), form: String(w?.form || ''), zh: String(w?.zh || '') })).filter(w => w.de),
       notes: (Array.isArray(r.notes) ? r.notes : []).slice(0, 4).map(n => String(n)) };
-    store.set('trLast', trLast);
+    store.set('trLast', trLast); remember({ q: t, tr: trLast.tr });
   } catch (e) {
     const c = e && e.code;
     if (c === 'not_granted' || c === 'sampling_disabled' || c === 'not_declared' || c === 'capability_disabled') { SAMPLE = null; toast('这个页面没有获得使用 Claude 的许可'); }
     else if (c === 'rate_limited') toast('请求太频繁，稍后再试');
     else if (c === 'invalid_json' || c === 'empty_completion') toast('没有得到有效结果，再点一次翻译');
-    else if (c !== 'cancelled') toast('翻译失败，稍后再试');
+    else if (c === 'api_error') toast(String(e.message || '翻译失败').slice(0, 80));
+    else if (c !== 'cancelled') toast(MODEL ? '连不上你外接的模型，检查「设置」页里的翻译设置' : '翻译失败，稍后再试');
   }
   trBusy = false; trCtl = null; render();
 }
@@ -565,7 +669,7 @@ function renderSentence(raw) {
   const done = trLast && trLast.src === t && !trBusy;
   view.innerHTML = `<div class="stack">
     <section class="card"><h3>整句${zh ? '中 → 德' : '德 → 中'}</h3><div class="trout" lang="${zh ? 'zh' : 'de'}">${esc(t)}</div>
-      ${SAMPLE ? `<div class="btns"><button class="btn" id="trgo"${trBusy ? ' disabled' : ''}>${trBusy ? '翻译中…' : done ? '重新翻译' : '翻译这句话'}</button>${trBusy ? '<button class="btn ghost" id="trstop">停止</button>' : ''}</div>${done ? '' : '<div class="note">按回车也可以。翻译由 Claude 完成，会给出重点词和语法提示。</div>'}`
+      ${canTranslate() ? `<div class="btns"><button class="btn" id="trgo"${trBusy ? ' disabled' : ''}>${trBusy ? '翻译中…' : done ? '重新翻译' : '翻译这句话'}</button>${trBusy ? '<button class="btn ghost" id="trstop">停止</button>' : ''}</div>${done ? '' : `<div class="note">按回车也可以${SAMPLE ? '，会给出重点词和语法提示' : ''}。</div>`}${sourceLine()}`
         : `<div class="note">这个版本连不上 Claude，所以只能逐词查词典。完整翻译请在 claude.ai 里打开词典页，或 <a href="${esc(deepl)}" target="_blank" rel="noopener">用 DeepL 翻译这句</a>。</div>`}
     </section>
     ${done ? trResultHtml(trLast) : ''}
@@ -578,7 +682,7 @@ function render() {
   for (const b of document.querySelectorAll('nav.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === tab);
   $('#clear').hidden = !q.value;
   if (tab === 'book') return renderBook();
-  if (tab === 'lib') return renderLib();
+  if (tab === 'lib') return setupOpen && TRANSLATE_API ? renderSetup() : renderLib();
   if (current) return renderEntry(current);
   if (isSentence(q.value)) return renderSentence(q.value);
   if (q.value.trim()) return renderResults(q.value);
@@ -587,41 +691,126 @@ function render() {
 
 function open(key) { const e = byKey.get(key); if (!e) return; tab = 'search'; renderEntry(e); for (const b of document.querySelectorAll('nav.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === 'search'); }
 
-q.addEventListener('input', () => { current = null; tab = 'search'; render(); });
-q.addEventListener('keydown', ev => { if (ev.key !== 'Enter') return; if (isSentence(q.value)) { q.blur(); return translate(q.value); } const r = search(q.value); if (r.length) { open(keyOf(r[0])); q.blur(); } });
+q.addEventListener('input', () => { current = null; tab = 'search'; setupOpen = false; render(); });
+q.addEventListener('keydown', ev => { if (ev.key !== 'Enter') return; if (isSentence(q.value)) { q.blur(); return translate(q.value); } const r = search(q.value); if (r.length) { open(keyOf(r[0])); q.blur(); } else if (q.value.trim()) { remember({ q: q.value.trim() }); q.blur(); } });
 $('#clear').onclick = () => { q.value = ''; current = null; render(); q.focus(); };
 $('#uml').addEventListener('pointerdown', ev => ev.preventDefault());
 $('#uml').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; const s = q.selectionStart ?? q.value.length; q.value = q.value.slice(0, s) + b.textContent + q.value.slice(q.selectionEnd ?? s); q.setSelectionRange(s + 1, s + 1); q.dispatchEvent(new Event('input')); });
-document.querySelector('nav.tabs').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; if (b.dataset.go === 'daily') { location.href = DAILY_URL; return; } tab = b.dataset.tab; if (tab === 'search') current = null; render(); main.scrollTop = 0; });
+document.querySelector('nav.tabs').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; if (b.dataset.go === 'daily') { location.href = DAILY_URL; return; } tab = b.dataset.tab; if (tab === 'search') current = null; setupOpen = false; render(); main.scrollTop = 0; });
 
 view.addEventListener('click', async ev => {
   const t = ev.target.closest('button'); if (!t) return;
   if (t.dataset.open) return open(t.dataset.open);
+  if (t.dataset.q != null) { q.value = t.dataset.q; current = null; tab = 'search'; return render(); }
+  if (t.id === 'clearhist') { history = []; store.set('history', history); toast('已清空查词记录'); return render(); }
   if (t.dataset.find) { const r = search(t.dataset.find); if (r.length && fold(r[0].w) === fold(t.dataset.find)) return open(keyOf(r[0])); q.value = t.dataset.find; current = null; return render(); }
   if (t.id === 'back') { current = null; return render(); }
   if (t.id === 'trgo') { if (trLast && trLast.src === q.value.trim()) trLast = null; return translate(q.value); }
   if (t.id === 'trstop') { trCtl?.abort(); return; }
+  if (t.id === 'hgo') { const v = $('#hin').value.trim(); if (!v) return; q.value = v; current = null; render(); if (isSentence(v)) translate(v); else { const r = search(v); if (r.length) open(keyOf(r[0])); } return; }
+  if (t.dataset.setup) { setupOpen = true; setupPick = null; tab = 'lib'; render(); main.scrollTop = 0; return; }
+  if (t.id === 'setup-back') { setupOpen = false; render(); main.scrollTop = 0; return; }
+  if (t.dataset.preset) { setupPick = t.dataset.preset; return render(); }
+  if (t.id === 'm-clear') { MODEL = null; store.set('model', null); setupPick = null; toast('已改回 Workers AI'); return render(); }
+  if (t.id === 'm-save') {
+    const m = { url: $('#m-url').value.trim().replace(/\/+$/, ''), name: $('#m-name').value.trim(), key: $('#m-key').value.trim() };
+    if (!/^https:\/\//.test(m.url) || !m.name || !m.key) return toast('接口地址、模型名、API Key 都要填');
+    const prev = MODEL; MODEL = m; t.disabled = true; t.textContent = '测试中…';
+    try { const r = await apiTranslate('Guten Morgen!', 'de2zh'); if (!r || !r.tr) throw { message: '模型没有返回译文' }; store.set('model', m); toast('已保存，测试译文：' + String(r.tr).slice(0, 20)); }
+    catch (e) { MODEL = prev; toast('测试失败：' + String(e.message || '连不上这个模型').slice(0, 60)); t.disabled = false; t.textContent = '保存并测试'; return; }
+    setupOpen = false; setupPick = null; return render();
+  }
   if (t.id === 'trsay') { try { const u = new SpeechSynthesisUtterance(trLast?.tr || ''); u.lang = 'de-DE'; u.rate = .9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch { toast('这个浏览器不支持朗读'); } return; }
   if (t.id === 'star') { const k = keyOf(current); book = book.includes(k) ? book.filter(x => x !== k) : [k, ...book]; store.set('book', book); t.setAttribute('aria-pressed', book.includes(k)); toast(book.includes(k) ? '已加入生词本' : '已移出生词本'); return; }
   if (t.id === 'say') { try { const u = new SpeechSynthesisUtterance(current.w); u.lang = 'de-DE'; u.rate = .9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch { toast('这个浏览器不支持朗读'); } return; }
   if (t.id === 'import') return $('#file').click();
-  if (t.id === 'refetch') { toast('正在下载最新词库…'); const d = await fetchBase(); if (!d) return toast('没有连上网，稍后再试'); BASE = d; SRC = '在线词库（最新）'; STALE = false; idb.set('cache', d); if (!CUSTOM) { DICT = d; buildIndex(); } toast(`已更新：${d.entries.length} 词`); return render(); }
+  if (t.id === 'refetch') { toast('正在下载最新词库…'); const d = await fetchBase(); if (!d) return toast('没有连上网，稍后再试'); BASE = d; SRC = '在线词库（最新）'; STALE = false; idb.set('cache', d); if (!CUSTOM) applyExt(); toast(`已更新：${d.entries.length} 词`); return render(); }
   if (t.id === 'reset') { await idb.set('customDict', null); await load(); toast('已恢复内置词库'); return render(); }
+  if (t.dataset.extdel) { const d = EXT[+t.dataset.extdel]; if (!d || !confirm(`删除导入的词典「${d.name}」？`)) return; EXT.splice(+t.dataset.extdel, 1); idb.set('extDicts', EXT); applyExt(); toast('已删除'); return render(); }
   if (t.id === 'copybook') { const txt = book.map(k => { const e = byKey.get(k); return e ? `${e.gen ? ART[e.gen] + ' ' : ''}${e.w}\t${e.senses?.[0]?.zh || ''}` : k; }).join('\n'); try { await navigator.clipboard.writeText(txt); toast('已复制 ' + book.length + ' 个词'); } catch { toast('复制失败，请手动选择'); } return; }
   if ('themeSet' in t.dataset) { const v = t.dataset.themeSet; if (v) document.documentElement.dataset.theme = v; else delete document.documentElement.dataset.theme; store.set('theme', v); return; }
 });
 
+// Merge the base dictionary with the imported ones: words the base lacks become entries, the rest show under 其他词典.
+function applyExt() {
+  const base = CUSTOM || BASE; EXTGLOSS = new Map(); const have = new Set(base.entries.map(e => fold(e.w))); const extra = [];
+  for (const d of EXT) for (const e of d.entries) {
+    const k = fold(e.w);
+    if (have.has(k)) { let g = EXTGLOSS.get(k); if (!g) EXTGLOSS.set(k, g = []); g.push({ src: d.name, zh: (e.senses || []).map(x => x.zh).join('；'), w: e.w }); }
+    else { have.add(k); extra.push({ ...e, src: d.name, ext: true }); }
+  }
+  DICT = extra.length ? { ...base, entries: base.entries.concat(extra) } : base; buildIndex();
+}
+function extHtml(e) {
+  const g = e.ext ? [] : EXTGLOSS.get(fold(e.w)) || [];
+  if (e.ext) return `<div class="note">来自你导入的词典「${esc(e.src)}」</div>`;
+  return g.length ? `<section class="sec"><h2>其他词典</h2><ul class="use">${g.map(x => `<li><b>${esc(x.src)}</b>${x.w !== e.w ? ` (${esc(x.w)})` : ''}：${esc(x.zh)}</li>`).join('')}</ul></section>` : '';
+}
+const GEN = { der: 'm', die: 'f', das: 'n', m: 'm', f: 'f', n: 'n', 'm.': 'm', 'f.': 'f', 'n.': 'n', r: 'm', e: 'f', s: 'n' };
+const POSIN = { n: 'n', nomen: 'n', subst: 'n', substantiv: 'n', noun: 'n', v: 'v', vt: 'v', vi: 'v', verb: 'v', vb: 'v', adj: 'adj', adjektiv: 'adj', adjective: 'adj', a: 'adj', adv: 'adv', adverb: 'adv', präp: 'präp', prep: 'präp', präposition: 'präp', konj: 'konj', conj: 'konj', pron: 'pron', num: 'num', art: 'art', interj: 'interj', int: 'interj', part: 'part' };
+const hasZh = t => /[一-鿿]/.test(String(t || ''));
+// one headword + gloss -> entry; understands "der Hund", "Hund, der", "Hund (m)", "Hund m.", "sich freuen"
+function extEntry(w, zh, pos, gen) {
+  w = String(w || '').replace(/\s+/g, ' ').trim(); zh = String(zh || '').replace(/\s+/g, ' ').trim();
+  if (!w || !zh || w.length > 60 || hasZh(w)) return null;
+  let m;
+  if ((m = w.match(/^(der|die|das)\s+(.+)$/i))) { gen = gen || GEN[m[1].toLowerCase()]; w = m[2]; }
+  else if ((m = w.match(/^(.+?),\s*(der|die|das)$/i))) { gen = gen || GEN[m[2].toLowerCase()]; w = m[1]; }
+  else if ((m = w.match(/^(.+?)\s*[\(（]\s*(der|die|das|[mfn])\.?\s*[\)）]$/i))) { gen = gen || GEN[m[2].toLowerCase()]; w = m[1]; }
+  else if ((m = w.match(/^(.+?)\s+([mfn])\.?$/i))) { gen = gen || GEN[m[2].toLowerCase()]; w = m[1]; }
+  else if ((m = w.match(/^([rs]|e)\s+([A-ZÄÖÜ].+)$/))) { gen = gen || GEN[m[1]]; w = m[2]; }
+  w = w.replace(/^(der|die|das)\s+/i, '').trim(); if (!w) return null;
+  pos = POSIN[String(pos || '').toLowerCase().replace(/\.$/, '')] || (gen ? 'n' : (/^[A-ZÄÖÜ]/.test(w) && !/\s/.test(w) ? 'n' : ''));
+  if (pos !== 'n') gen = undefined;
+  return { w, pos, gen, senses: [{ zh }] };
+}
+function parseExternal(text) {
+  text = text.replace(/^﻿/, '');
+  const out = [];
+  if (/^\s*[\[{]/.test(text)) {
+    const data = JSON.parse(text);
+    const arr = Array.isArray(data) ? data : Array.isArray(data.entries) ? data.entries : Array.isArray(data.words) ? data.words : null;
+    if (arr) for (const e of arr) {
+      if (!e || typeof e !== 'object') continue;
+      if (e.w && Array.isArray(e.senses)) { out.push({ ...e }); continue; } // Wortwurzel format: keep the whole entry
+      const w = e.w ?? e.word ?? e.de ?? e.german ?? e.headword ?? e.term ?? e.front ?? e.lemma;
+      const zh = e.zh ?? e.cn ?? e.chinese ?? e.meaning ?? e.translation ?? e.definition ?? e.back ?? e.def ?? e.gloss;
+      const x = extEntry(w, Array.isArray(zh) ? zh.join('；') : zh, e.pos, e.gen); if (x) out.push(x);
+    } else if (data && typeof data === 'object') for (const [w, v] of Object.entries(data)) { const x = extEntry(w, typeof v === 'string' ? v : v && (v.zh || v.meaning || v.cn)); if (x) out.push(x); }
+    return out;
+  }
+  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  const cnt = d => lines.filter(l => l.includes(d)).length;
+  const delim = ['\t', '|', ';', '，', ',', '：', ':', '→', '=', ' - ', ' – '].map(d => [d, cnt(d)]).filter(([, n]) => n >= Math.max(2, lines.length * 0.6)).sort((a, b) => b[1] - a[1])[0]?.[0];
+  const split = l => {
+    if (delim === ',' || delim === ';') { const cols = []; let cur = '', q = false; for (const c of l) { if (c === '"') q = !q; else if (c === delim && !q) { cols.push(cur); cur = ''; } else cur += c; } cols.push(cur); return cols.map(c => c.trim()); }
+    if (delim) return l.split(delim).map(c => c.trim());
+    const m = l.match(/^(.+?)\s{2,}(.+)$/) || l.match(/^([^一-鿿]+?)\s*([一-鿿].*)$/); return m ? [m[1], m[2]] : [l];
+  };
+  lines.forEach((l, i) => {
+    const cols = split(l).filter(c => c !== '');
+    if (cols.length < 2) return;
+    if (i === 0 && !cols.some(hasZh) && /word|wort|德|单词|term|front|meaning|释义|headword/i.test(l)) return; // header row
+    const w = cols[0]; const zh = cols.slice(1).find(hasZh) || cols[1];
+    const pos = cols.slice(1).find(c => POSIN[c.toLowerCase().replace(/\.$/, '')]);
+    const x = extEntry(w, zh, pos); if (x) out.push(x);
+  });
+  return out;
+}
 $('#file').addEventListener('change', async ev => {
   const f = ev.target.files[0]; ev.target.value = ''; if (!f) return;
+  if (/\.(mdx|mdd|dict|dsl|bgl|apkg|xlsx|xls|pdf|docx?)$/i.test(f.name)) return toast('这种格式暂不支持，请先用词典软件导出为 txt / csv / json');
   try {
-    const data = JSON.parse(await f.text()); const entries = Array.isArray(data) ? data : data.entries;
-    if (!Array.isArray(entries) || !entries.every(e => e && e.w)) throw new Error('格式不对');
-    const prev = CUSTOM;
-    const merged = new Map((prev?.entries || BASE.entries).map(e => [e.w, e])); entries.forEach(e => merged.set(e.w, e));
-    const dict = { name: data.name || BASE.name, version: (data.version || '') + ' + 导入', entries: [...merged.values()].sort((a, b) => a.w.localeCompare(b.w, 'de')) };
-    CUSTOM = dict; if (!(await idb.set('customDict', dict))) toast('导入成功，但浏览器不允许保存，刷新后会失效');
-    DICT = dict; buildIndex(); toast(`导入了 ${entries.length} 个词条`); render();
-  } catch (err) { toast('导入失败：文件不是有效的词库 JSON'); }
+    const buf = await f.arrayBuffer(); let text = new TextDecoder('utf-8').decode(buf);
+    if ((text.match(/\uFFFD/g) || []).length > 3) { try { text = new TextDecoder('gbk').decode(buf); } catch {} }
+    const entries = parseExternal(text);
+    if (!entries.length) throw new Error('empty');
+    const name = f.name.replace(/\.[^.]+$/, '');
+    EXT = EXT.filter(d => d.name !== name).concat({ name, added: new Date().toISOString().slice(0, 10), entries });
+    if (!(await idb.set('extDicts', EXT))) toast('导入成功，但浏览器不允许保存，刷新后会失效');
+    applyExt(); const fresh = entries.filter(e => !EXTGLOSS.has(fold(e.w))).length;
+    toast(`导入「${name}」：${entries.length} 个词条，其中 ${entries.length - fresh} 个词库里已有`); render();
+  } catch (err) { toast('没有读到词条：请确认每行是「德语词 分隔符 中文释义」，或 JSON 数组'); }
 });
 
 let BASE = null, EMBED = false, SRC = '', STALE = false;
@@ -645,8 +834,8 @@ async function load() {
     if (BASE) { SRC = '在线词库（最新）'; idb.set('cache', BASE); }
     else { BASE = await idb.get('cache'); STALE = !!BASE; SRC = '本机缓存（未联网）'; }
   }
-  if (!BASE) { view.innerHTML = '<div class="empty">词库没有加载成功。请联网后刷新，或在“词库”页导入词库文件。</div>'; BASE = { entries: [] }; }
-  CUSTOM = await idb.get('customDict'); DICT = CUSTOM || BASE; buildIndex();
+  if (!BASE) { view.innerHTML = '<div class="empty">词库没有加载成功。请联网后刷新，或在“设置”页导入词典文件。</div>'; BASE = { entries: [] }; }
+  CUSTOM = await idb.get('customDict'); EXT = (await idb.get('extDicts')) || []; applyExt();
 }
 const th = store.get('theme', ''); if (th) document.documentElement.dataset.theme = th;
 // Links from other pages: #Vorurteil, or UTF-8 bytes as ~XX (#gew~C3~A4hrleisten), or %XX.
