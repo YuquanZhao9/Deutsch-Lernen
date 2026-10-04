@@ -139,6 +139,23 @@ async function translateWith(cfg, text, to) {
   }), '你的翻译接口');
   return j.choices && j.choices[0] && j.choices[0].message && String(j.choices[0].message.content || '').trim();
 }
+// Workers AI (free daily allowance): a multilingual chat model first, the dedicated translation model as fallback
+const AI_CHAT = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
+async function defaultTranslate(ai, text, to) {
+  try {
+    const r = await ai.run(AI_CHAT, { temperature: 0.2, max_tokens: 1024, messages: [
+      { role: 'system', content: to === 'de'
+        ? 'You are a translator. Translate the user text from Chinese into natural German. Output only the German translation.'
+        : 'You are a translator. Translate the user text from German into Simplified Chinese (简体中文). Output only the Chinese translation.' },
+      { role: 'user', content: text } ] });
+    const out = r && String(r.response || '').trim();
+    if (out) return out;
+  } catch (e) { console.error('workers ai chat', e); }
+  const r = await ai.run('@cf/meta/m2m100-1.2b', { text, source_lang: to === 'de' ? 'chinese' : 'german', target_lang: to === 'de' ? 'german' : 'chinese' });
+  if (!r || !r.translated_text) fail(502, '默认翻译暂时不可用，请稍后再试');
+  return r.translated_text;
+}
+
 function checkTrConfig(c) {
   if (!['openai', 'deepl'].includes(c.provider)) fail(400, '不支持这种接口');
   if (c.provider === 'openai') {
@@ -320,9 +337,7 @@ Object.assign(routes, {
       return { text: out, source: 'custom' };
     }
     if (!env.AI) fail(503, '还没有可用的句子翻译：请在账号页填写你自己的翻译接口');
-    const r = await env.AI.run('@cf/meta/m2m100-1.2b', { text, source_lang: to === 'de' ? 'chinese' : 'german', target_lang: to === 'de' ? 'german' : 'chinese' });
-    if (!r || !r.translated_text) fail(502, '默认翻译暂时不可用');
-    return { text: r.translated_text, source: 'default' };
+    return { text: await defaultTranslate(env.AI, text, to), source: 'default' };
   },
 });
 

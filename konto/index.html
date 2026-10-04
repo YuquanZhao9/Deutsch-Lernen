@@ -97,10 +97,18 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     <details style="margin-top:18px" id="tr">
       <summary style="cursor:pointer;color:var(--muted);font-size:14px">句子翻译接口 <span id="tr-state"></span></summary>
       <form data-form="translate">
-        <p class="note">词典里翻译整句时，会用你在这里填的接口。密钥只保存在服务器上，网页里看不到。</p>
+        <p class="note">词典里翻译整句时，默认用网站自带的免费翻译（Cloudflare Workers AI），不用设置。想要更准的翻译，可以接上你自己的模型，之后整句翻译都走你的接口。密钥只保存在服务器上，网页里看不到。</p>
+        <details class="note" style="margin-top:8px"><summary style="cursor:pointer">怎么拿到密钥？（以 DeepSeek 为例，3 分钟）</summary>
+          <ol style="padding-left:18px;margin:8px 0 0">
+            <li>打开 <a href="https://platform.deepseek.com" target="_blank" rel="noopener">platform.deepseek.com</a>，用手机号注册登录，充值几块钱（翻译用量很小）。</li>
+            <li>左侧点“API keys”→“创建 API key”，复制那串以 sk- 开头的密钥。</li>
+            <li>回到这里：接口类型选“大模型”，常用服务选“DeepSeek”，把密钥粘到“API 密钥”，点“测试翻译”。看到译文就成功了。</li>
+          </ol>
+          <p style="margin:8px 0 0">其他服务的密钥在这里创建：通义千问 <a href="https://bailian.console.aliyun.com" target="_blank" rel="noopener">阿里云百炼</a>，Kimi <a href="https://platform.moonshot.cn" target="_blank" rel="noopener">platform.moonshot.cn</a>，智谱 <a href="https://open.bigmodel.cn" target="_blank" rel="noopener">open.bigmodel.cn</a>（glm-4-flash 免费），DeepL <a href="https://www.deepl.com/pro-api" target="_blank" rel="noopener">deepl.com/pro-api</a>（免费版每月 50 万字符，密钥以 :fx 结尾）。</p>
+        </details>
         <label for="t-provider">接口类型</label>
         <select id="t-provider" name="provider">
-          <option value="">不使用自己的接口</option>
+          <option value="">默认（网站自带的免费翻译）</option>
           <option value="openai">大模型（DeepSeek、通义、Kimi 等）</option>
           <option value="deepl">DeepL</option>
         </select>
@@ -201,7 +209,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
         history.replaceState(null, '', location.pathname + (next ? '?next=' + encodeURIComponent(next) : ''));
         done();
       }
-      if (f.dataset.form === 'translate') { await saveTr(); say(tf.provider.value ? '翻译接口已保存。' : '已改回不使用自己的接口。', 'ok', '#msg2'); }
+      if (f.dataset.form === 'translate') { await saveTr(); say(tf.provider.value ? '翻译接口已保存。' : '已改回网站自带的免费翻译。', 'ok', '#msg2'); }
       if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
     });
   });
@@ -238,7 +246,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     tf.url.value = c.url || ''; tf.model.value = c.model || ''; tf.key.value = '';
     tf.key.placeholder = c.keyHint ? '已保存（' + c.keyHint + '），不改就留空' : '';
     trToggle();
-    $('#tr-state').textContent = c.provider ? '· 已设置' : '';
+    $('#tr-state').textContent = c.provider ? '· 用你自己的接口' : '· 默认';
   }
   function trToggle() {
     const p = tf.provider.value;
@@ -259,7 +267,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     await saveTr();
     say('正在测试…', '', '#msg2');
     const r = await S.translate('Wer rastet, der rostet.');
-    say('测试成功（' + (r.source === 'custom' ? '你的接口' : '默认翻译') + '）：Wer rastet, der rostet. → ' + r.text, 'ok', '#msg2');
+    say('测试成功（' + (r.source === 'custom' ? '你的接口' : '网站自带翻译') + '）：Wer rastet, der rostet. → ' + r.text, 'ok', '#msg2');
   }));
 
   $('#logout').addEventListener('click', async () => { await S.logout(); show(); tab('login'); });
