@@ -78,7 +78,8 @@ def build_woerterbuch():
     # account sync (konto/sync.js) updates ww.book / ww.history after the page has read them: let it re-read
     page = must_replace(page, "history = store.get('history', []), book = store.get('book', []);",
                         "history = store.get('history', []), book = store.get('book', []);\n"
-                        "window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []); };", 'woerterbuch')
+                        "window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []);"
+                        " if (tab === 'book') renderBook(); else if (tab === 'search' && !current && !q.value.trim()) renderHome(); };", 'woerterbuch')
     # 登录 / 已同步 link in the header (label kept current by konto/sync.js)
     page = must_replace(page, '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>',
                         '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span>'

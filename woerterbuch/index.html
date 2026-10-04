@@ -193,7 +193,7 @@ const idb = (() => {
 let CUSTOM = null;
 let DICT = { entries: [] }, INDEX = [], byKey = new Map();
 let tab = 'search', current = null, history = store.get('history', []), book = store.get('book', []);
-window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []); };
+window.__wwReload = () => { history = store.get('history', []); book = store.get('book', []); if (tab === 'book') renderBook(); else if (tab === 'search' && !current && !q.value.trim()) renderHome(); };
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fold = s => String(s).toLowerCase().replace(/^sich\s+/, '').replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss').replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u').replace(/[·\-\s]/g,'');
