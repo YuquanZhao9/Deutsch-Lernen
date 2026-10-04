@@ -23,8 +23,8 @@ body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:16px/1
 .tabs button{flex:1;border:0;background:none;color:var(--muted);font:inherit;font-size:15px;padding:8px 0;border-radius:7px;cursor:pointer}
 .tabs button[aria-selected=true]{background:var(--card);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
 label{display:block;font-size:13px;color:var(--muted);margin:12px 0 4px}
-input{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
-input:focus{outline:2px solid var(--accent);outline-offset:-1px}
+input,select{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink)}
+input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
 .row{display:flex;gap:8px}.row input{flex:1;min-width:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;margin-top:18px;border:0;border-radius:10px;padding:12px;font:inherit;font-weight:600;background:var(--accent);color:var(--accent-ink);cursor:pointer}
 .btn.ghost{background:none;border:1px solid var(--line);color:var(--ink);font-weight:500}
@@ -94,6 +94,35 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
       <div class="acts"><button class="btn" type="button" id="merge-yes">并入此账号</button><button class="btn ghost" type="button" id="merge-no">暂不</button></div>
     </div>
     <a class="btn" id="back" href="../">继续学习</a>
+    <details style="margin-top:18px" id="tr">
+      <summary style="cursor:pointer;color:var(--muted);font-size:14px">句子翻译接口 <span id="tr-state"></span></summary>
+      <form data-form="translate">
+        <p class="note">词典里翻译整句时，会用你在这里填的接口。密钥只保存在服务器上，网页里看不到。</p>
+        <label for="t-provider">接口类型</label>
+        <select id="t-provider" name="provider">
+          <option value="">不使用自己的接口</option>
+          <option value="openai">大模型（DeepSeek、通义、Kimi 等）</option>
+          <option value="deepl">DeepL</option>
+        </select>
+        <div id="t-openai" hidden>
+          <label for="t-preset">常用服务（选一个自动填写地址和模型）</label>
+          <select id="t-preset">
+            <option value="">自己填写</option>
+            <option value="https://api.deepseek.com|deepseek-chat">DeepSeek</option>
+            <option value="https://dashscope.aliyuncs.com/compatible-mode/v1|qwen-plus">通义千问（阿里云百炼）</option>
+            <option value="https://api.moonshot.cn/v1|moonshot-v1-8k">Kimi（月之暗面）</option>
+            <option value="https://open.bigmodel.cn/api/paas/v4|glm-4-flash">智谱 GLM</option>
+            <option value="https://api.openai.com/v1|gpt-4o-mini">OpenAI</option>
+          </select>
+          <label for="t-url">接口地址</label><input id="t-url" name="url" type="url" placeholder="https://api.deepseek.com" autocomplete="off">
+          <label for="t-model">模型名</label><input id="t-model" name="model" placeholder="deepseek-chat" autocomplete="off">
+        </div>
+        <div id="t-keyrow" hidden>
+          <label for="t-key">API 密钥</label><input id="t-key" name="key" type="password" autocomplete="off">
+        </div>
+        <div class="row" style="margin-top:18px"><button class="btn ghost" type="submit" style="margin:0">保存</button><button class="btn ghost" type="button" id="t-test" style="margin:0">测试翻译</button></div>
+      </form>
+    </details>
     <details style="margin-top:18px">
       <summary style="cursor:pointer;color:var(--muted);font-size:14px">修改密码</summary>
       <form data-form="password">
@@ -172,6 +201,7 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
         history.replaceState(null, '', location.pathname + (next ? '?next=' + encodeURIComponent(next) : ''));
         done();
       }
+      if (f.dataset.form === 'translate') { await saveTr(); say(tf.provider.value ? '翻译接口已保存。' : '已改回不使用自己的接口。', 'ok', '#msg2'); }
       if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
     });
   });
@@ -199,6 +229,38 @@ input:focus{outline:2px solid var(--accent);outline-offset:-1px}
     await S.mergeLocal(); mergeAsked = true; show(); say('已并入此账号。', 'ok', '#msg2');
   }));
   $('#merge-no').addEventListener('click', () => { mergeAsked = true; show(); });
+
+  // ---- 句子翻译接口
+  const tf = $('form[data-form=translate]');
+  let trLoaded = false;
+  function trForm(c) {
+    tf.provider.value = c.provider || '';
+    tf.url.value = c.url || ''; tf.model.value = c.model || ''; tf.key.value = '';
+    tf.key.placeholder = c.keyHint ? '已保存（' + c.keyHint + '），不改就留空' : '';
+    trToggle();
+    $('#tr-state').textContent = c.provider ? '· 已设置' : '';
+  }
+  function trToggle() {
+    const p = tf.provider.value;
+    $('#t-openai').hidden = p !== 'openai'; $('#t-keyrow').hidden = !p;
+  }
+  tf.provider.addEventListener('change', trToggle);
+  $('#t-preset').addEventListener('change', e => { const [u, m] = e.target.value.split('|'); if (u) { tf.url.value = u; tf.model.value = m; } });
+  $('#tr').addEventListener('toggle', () => {
+    if (!$('#tr').open || trLoaded) return;
+    trLoaded = true;
+    S.getTranslateConfig().then(trForm, e => say(e.message, 'err', '#msg2'));
+  });
+  async function saveTr() {
+    const c = await S.setTranslateConfig({ provider: tf.provider.value, url: tf.url.value.trim(), model: tf.model.value.trim(), key: tf.key.value.trim() });
+    trForm(c);
+  }
+  $('#t-test').addEventListener('click', () => busy(tf, async () => {
+    await saveTr();
+    say('正在测试…', '', '#msg2');
+    const r = await S.translate('Wer rastet, der rostet.');
+    say('测试成功（' + (r.source === 'custom' ? '你的接口' : '默认翻译') + '）：Wer rastet, der rostet. → ' + r.text, 'ok', '#msg2');
+  }));
 
   $('#logout').addEventListener('click', async () => { await S.logout(); show(); tab('login'); });
 

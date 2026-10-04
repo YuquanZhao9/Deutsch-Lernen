@@ -21,7 +21,7 @@
 - `quelle/taeglich/artifact.html`：每日学习页的 claude.ai 原版源码；`Deutsch-taeglich.bat` 是打开 claude.ai 版的 Windows 启动器
 - `quelle/woerterbuch/`：词典源文件（SCHEMA.md、页面模板、build.py、分批词条 parts/）
 - `fonts/`：网页用的字体（本地副本，国内打不开 Google Fonts）；`tools/fonts.py` 重新下载它们
-- `konto/`：账号页（注册、登录、忘记密码）和同步脚本 `sync.js`
+- `konto/`：账号页（注册、登录、忘记密码、自己的句子翻译接口）和同步脚本 `sync.js`
 - `functions/api/`：账号和同步的后端，运行在 Cloudflare Pages（https://deutsch-lernen-1ca.pages.dev），数据存在 Cloudflare D1；GitHub Pages 上的网页也调用这个后端
 - `tools/build_site.py`：从 `quelle/` 生成网页；`tools/shim.js`：让原版页面脱离 claude.ai 运行的本地存储层
 

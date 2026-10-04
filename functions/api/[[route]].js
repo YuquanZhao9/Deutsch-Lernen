@@ -7,6 +7,7 @@
 //   variable    MAIL_NAME       -> optional sender name (default "Deutsch lernen")
 //   variable    ALLOWED_ORIGINS -> optional, extra comma-separated origins allowed to call the API
 //   variable    SITE_URL        -> optional, site root used in the reset link (default: this deployment's origin)
+//   AI binding  AI              -> optional, Workers AI: default sentence translation for users without their own link
 //
 // Routes (JSON in, JSON out; auth = "Authorization: Bearer <token>"):
 //   POST /api/register        {email, password}            -> {token, email, id}   (409 code "exists" if taken)
@@ -18,6 +19,10 @@
 //   POST /api/reset/confirm   {email, code, password}      -> {token, email, id}
 //   GET  /api/data?since=T    (auth)                       -> {docs:[{path,data,t}], now}
 //   POST /api/data            (auth) {docs:[{path,data}]}  -> {now}    (data null deletes)
+//   GET  /api/translate/config (auth)                      -> {provider, url, model, keyHint}
+//   POST /api/translate/config (auth) {provider, url, model, key}  (key omitted = keep; provider '' = remove)
+//   GET  /api/translate/status (auth optional)             -> {custom, default}
+//   POST /api/translate       (auth optional) {text, to?}  -> {text, source: 'custom' | 'default'}
 
 const ORIGINS = ['https://yuquanzhao9.github.io'];
 const SESSION_DAYS = 180;
@@ -36,6 +41,7 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS docs (user_id TEXT NOT NULL, path TEXT NOT NULL, data TEXT, t INTEGER NOT NULL,
      PRIMARY KEY (user_id, path))`,
   `CREATE INDEX IF NOT EXISTS docs_user_t ON docs(user_id, t)`,
+  `CREATE TABLE IF NOT EXISTS settings (user_id TEXT PRIMARY KEY, translate TEXT)`,
 ];
 let schemaReady = null;
 const ensureSchema = db => schemaReady || (schemaReady = db.batch(SCHEMA.map(s => db.prepare(s))).catch(e => { schemaReady = null; throw e; }));
@@ -89,6 +95,60 @@ async function auth(request, db) {
   if (!row || now - row.last > SESSION_DAYS * 864e5) fail(401, '登录已过期，请重新登录');
   if (now - row.last > 36e5) await db.prepare('UPDATE sessions SET last = ? WHERE token = ?').bind(now, th).run();
   return { id: row.user_id, email: row.email, token: th };
+}
+
+async function maybeAuth(request, db) {
+  if (!request.headers.get('Authorization')) return null;
+  try { return await auth(request, db); } catch { return null; }
+}
+
+// ---- sentence translation: the user's own endpoint (proxied, so the key never reaches the page) or Workers AI
+const MAX_TR = 2000;
+const hasCJK = t => /[\u3400-\u9fff]/.test(t);
+async function trConfig(db, userId) {
+  const row = await db.prepare('SELECT translate FROM settings WHERE user_id = ?').bind(userId).first();
+  return row && row.translate ? JSON.parse(row.translate) : null;
+}
+function chatUrl(u) {
+  u = u.replace(/\/+$/, '');
+  return /\/chat\/completions$/.test(u) ? u : u + '/chat/completions';
+}
+async function upstream(r, what) {
+  if (r.ok) return r.json();
+  const t = (await r.text()).slice(0, 300);
+  console.error(what, r.status, t);
+  fail(502, `${what}返回错误（${r.status}）${r.status === 401 || r.status === 403 ? '：密钥不对或没有权限' : ''}`);
+}
+async function translateWith(cfg, text, to) {
+  if (cfg.provider === 'deepl') {
+    const host = /:fx$/.test(cfg.key) ? 'https://api-free.deepl.com' : 'https://api.deepl.com';
+    const j = await upstream(await fetch(host + '/v2/translate', {
+      method: 'POST', headers: { Authorization: 'DeepL-Auth-Key ' + cfg.key, 'content-type': 'application/json' },
+      body: JSON.stringify({ text: [text], target_lang: to === 'de' ? 'DE' : 'ZH' }),
+    }), 'DeepL ');
+    return j.translations && j.translations[0] && j.translations[0].text;
+  }
+  // OpenAI-compatible chat API (DeepSeek, 通义千问, Kimi, 智谱, OpenAI, …)
+  const j = await upstream(await fetch(chatUrl(cfg.url), {
+    method: 'POST', headers: Object.assign({ 'content-type': 'application/json' }, cfg.key ? { Authorization: 'Bearer ' + cfg.key } : {}),
+    body: JSON.stringify({ model: cfg.model, temperature: 0.2, messages: [
+      { role: 'system', content: to === 'de'
+        ? '把用户给的中文翻译成自然、地道的德语。只输出译文，不要解释。'
+        : 'Übersetze den Text des Nutzers ins Chinesische (vereinfacht), genau und natürlich. Gib nur die Übersetzung aus, ohne Erklärungen.' },
+      { role: 'user', content: text } ] }),
+  }), '你的翻译接口');
+  return j.choices && j.choices[0] && j.choices[0].message && String(j.choices[0].message.content || '').trim();
+}
+function checkTrConfig(c) {
+  if (!['openai', 'deepl'].includes(c.provider)) fail(400, '不支持这种接口');
+  if (c.provider === 'openai') {
+    let u; try { u = new URL(c.url); } catch { fail(400, '接口地址格式不对'); }
+    const local = u.protocol === 'http:' && /^(localhost|127\.0\.0\.1)$/.test(u.hostname); // for local testing
+    if ((u.protocol !== 'https:' && !local) || u.username || u.password) fail(400, '接口地址必须是 https:// 开头的网址');
+    if (!c.model) fail(400, '请填写模型名');
+  }
+  if (c.provider === 'deepl' && !c.key) fail(400, '请填写 DeepL 密钥');
+  if (String(c.key || '').length > 500 || String(c.url || '').length > 500 || String(c.model || '').length > 200) fail(400, '内容太长');
 }
 
 async function body(request) {
@@ -225,6 +285,46 @@ const routes = {
     return { now };
   },
 };
+
+Object.assign(routes, {
+  async 'GET /api/translate/config'({ request, db }) {
+    const u = await auth(request, db), c = await trConfig(db, u.id);
+    if (!c) return { provider: '' };
+    return { provider: c.provider, url: c.url || '', model: c.model || '', keyHint: c.key ? '••••' + c.key.slice(-4) : '' };
+  },
+  async 'POST /api/translate/config'({ request, db }) {
+    const u = await auth(request, db), b = await body(request);
+    if (!b.provider) { await db.prepare('DELETE FROM settings WHERE user_id = ?').bind(u.id).run(); return { provider: '' }; }
+    const old = await trConfig(db, u.id) || {};
+    const c = { provider: b.provider, url: String(b.url || '').trim(), model: String(b.model || '').trim(),
+      key: b.key ? String(b.key).trim() : (old.provider === b.provider ? old.key || '' : '') };
+    checkTrConfig(c);
+    await db.prepare('INSERT INTO settings (user_id, translate) VALUES (?, ?) ON CONFLICT(user_id) DO UPDATE SET translate = excluded.translate')
+      .bind(u.id, JSON.stringify(c)).run();
+    return { provider: c.provider, url: c.url, model: c.model, keyHint: c.key ? '••••' + c.key.slice(-4) : '' };
+  },
+  async 'GET /api/translate/status'({ request, db, env }) {
+    const u = await maybeAuth(request, db);
+    return { custom: !!(u && await trConfig(db, u.id)), default: !!env.AI };
+  },
+  async 'POST /api/translate'({ request, db, env }) {
+    const u = await maybeAuth(request, db), b = await body(request);
+    const text = String(b.text || '').trim();
+    if (!text) fail(400, '没有要翻译的内容');
+    if (text.length > MAX_TR) fail(413, `一次最多翻译 ${MAX_TR} 个字`);
+    const to = b.to === 'de' || b.to === 'zh' ? b.to : hasCJK(text) ? 'de' : 'zh';
+    const cfg = u && await trConfig(db, u.id);
+    if (cfg) {
+      const out = await translateWith(cfg, text, to);
+      if (!out) fail(502, '你的翻译接口没有返回译文');
+      return { text: out, source: 'custom' };
+    }
+    if (!env.AI) fail(503, '还没有可用的句子翻译：请在账号页填写你自己的翻译接口');
+    const r = await env.AI.run('@cf/meta/m2m100-1.2b', { text, source_lang: to === 'de' ? 'chinese' : 'german', target_lang: to === 'de' ? 'german' : 'chinese' });
+    if (!r || !r.translated_text) fail(502, '默认翻译暂时不可用');
+    return { text: r.translated_text, source: 'default' };
+  },
+});
 
 function cors(request, env) {
   const origin = request.headers.get('Origin');

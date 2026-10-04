@@ -223,6 +223,11 @@
     confirmReset: (email, code, password) => call('POST', '/reset/confirm', { email, code, password }).then(signedIn),
     changePassword: password => call('POST', '/password', { password }, acct.token).then(r => { acct.token = r.token; saveAcct(); }),
     localPending, mergeLocal,
+    // sentence translation through the account's own endpoint (or the site default); see functions/api
+    translate: text => call('POST', '/translate', { text }, acct.token),
+    translateAvailable: () => call('GET', '/translate/status', null, acct.token).then(r => !!(r.custom || r.default), () => false),
+    getTranslateConfig: () => call('GET', '/translate/config', null, acct.token),
+    setTranslateConfig: cfg => call('POST', '/translate/config', cfg, acct.token),
     // signs out this device only; the account's copy on this device is kept for the next sign-in
     async logout() {
       try { await push(); } catch (e) {}
