@@ -39,6 +39,8 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
 [hidden]{display:none!important}
 html.embed body{padding:0;background:transparent;min-height:0;display:block}html.embed .wrap{max-width:none}
 html.embed .brand,html.embed .lead,html.embed .nav,html.embed #back{display:none}
+/* the dictionary's 设置 has its own 整句翻译来源 card; ?embed=1&setup=translate still shows this one */
+html.embed:not(.tr) #tr{display:none}
 html.embed .card{border-radius:12px}
 .box{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);font-size:14px}
 .box p{margin:0 0 10px}.box .acts{display:flex;gap:8px}.box .btn{margin:0;padding:10px}
@@ -49,6 +51,7 @@ html.embed .card{border-radius:12px}
 // embedded in the dictionary's 设置: follow its 外观 choice (ww.theme: '' | 'light' | 'dark')
 if (new URLSearchParams(location.search).get('embed') === '1') {
   document.documentElement.classList.add('embed');
+  if (new URLSearchParams(location.search).get('setup') === 'translate') document.documentElement.classList.add('tr');
   const theme = () => { let t = ''; try { t = JSON.parse(localStorage.getItem('ww.theme') || '""'); } catch (e) {}
     if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; };
   theme(); addEventListener('storage', e => { if (e.key === 'ww.theme') theme(); });

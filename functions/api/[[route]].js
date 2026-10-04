@@ -25,6 +25,9 @@
 //   POST /api/translate/config (auth) {provider, url, model, key}  (key omitted = keep; provider '' = remove)
 //   GET  /api/translate/status (auth optional)             -> {custom, default}
 //   POST /api/translate       (auth optional) {text, to?}  -> {text, source: 'custom' | 'default'}
+//                             or, from the dictionary page: {text, dir: 'de2zh'|'zh2de', prompt, model?: {url, name, key}}
+//                             -> {ok: true, result: {tr, alt, words, notes}, source: 'custom'|'workers-ai'} | {ok: false, error}
+//                             model in the request (kept on the device) > the account's saved source > Workers AI
 
 const ORIGINS = ['https://yuquanzhao9.github.io'];
 const SESSION_DAYS = 180;
@@ -163,6 +166,53 @@ async function defaultTranslate(ai, text, to) {
   const r = await ai.run('@cf/meta/m2m100-1.2b', { text, source_lang: to === 'de' ? 'chinese' : 'german', target_lang: to === 'de' ? 'german' : 'chinese' });
   if (!r || !r.translated_text) fail(502, '默认翻译暂时不可用，请稍后再试');
   return r.translated_text;
+}
+
+// the dictionary page sends its own prompt asking for a JSON object {tr, alt, words, notes}
+const parseJsonReply = t => {
+  t = String(t || '').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  const i = t.indexOf('{'), j = t.lastIndexOf('}');
+  try { return JSON.parse(i >= 0 && j > i ? t.slice(i, j + 1) : t); } catch { return { tr: t }; }
+};
+async function chat(cfg, prompt, json) {
+  const req = { model: cfg.model, temperature: 0.2, messages: [{ role: 'user', content: prompt }] };
+  const send = body => fetch(chatUrl(cfg.url), { method: 'POST',
+    headers: Object.assign({ 'content-type': 'application/json' }, cfg.key ? { Authorization: 'Bearer ' + cfg.key } : {}), body: JSON.stringify(body) });
+  let r = await send(json ? { ...req, response_format: { type: 'json_object' } } : req);
+  if (json && r.status === 400) r = await send(req); // providers without response_format
+  const j = await upstream(r, '你的翻译接口');
+  return j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+}
+async function pageTranslate(b, u, db, env) {
+  try {
+    const text = String(b.text || '').trim(), prompt = String(b.prompt || '');
+    if (!text || !prompt) fail(400, '没有要翻译的内容');
+    if (text.length > MAX_TR || prompt.length > MAX_TR + 4000) fail(413, `一次最多翻译 ${MAX_TR} 个字`);
+    const to = b.dir === 'zh2de' ? 'de' : b.dir === 'de2zh' ? 'zh' : hasCJK(text) ? 'de' : 'zh';
+    let cfg = null;
+    if (b.model && b.model.url) {
+      cfg = { provider: 'openai', url: String(b.model.url).trim(), model: String(b.model.name || '').trim(), key: String(b.model.key || '').trim() };
+      checkTrConfig(cfg);
+    } else if (u) cfg = await trConfig(db, u.id);
+    if (cfg && cfg.provider === 'deepl') return { ok: true, result: { tr: await translateWith(cfg, text, to), alt: '', words: [], notes: [] }, source: 'custom' };
+    if (cfg) {
+      const res = parseJsonReply(await chat(cfg, prompt, true));
+      if (!res.tr) fail(502, '你的翻译接口没有返回译文');
+      return { ok: true, result: res, source: 'custom' };
+    }
+    if (!env.AI) fail(503, '网站的免费翻译还没有开通');
+    let res = null;
+    try {
+      const r = await env.AI.run(AI_CHAT, { temperature: 0.2, max_tokens: 1500, messages: [{ role: 'user', content: prompt }] });
+      res = r && parseJsonReply(r.response);
+    } catch (e) { console.error('workers ai chat', e); }
+    if (!res || !res.tr) res = { tr: await defaultTranslate(env.AI, text, to), alt: '', words: [], notes: [] };
+    return { ok: true, result: res, source: 'workers-ai' };
+  } catch (e) {
+    if (e instanceof HttpError) return { ok: false, error: e.message };
+    console.error(e);
+    return { ok: false, error: '翻译出错了，请稍后再试' };
+  }
 }
 
 function checkTrConfig(c) {
@@ -383,6 +433,7 @@ Object.assign(routes, {
   },
   async 'POST /api/translate'({ request, db, env }) {
     const u = await maybeAuth(request, db), b = await body(request);
+    if (b.prompt != null) return pageTranslate(b, u, db, env);
     const text = String(b.text || '').trim();
     if (!text) fail(400, '没有要翻译的内容');
     if (text.length > MAX_TR) fail(413, `一次最多翻译 ${MAX_TR} 个字`);

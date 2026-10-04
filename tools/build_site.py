@@ -85,6 +85,9 @@ def build_woerterbuch():
     page = must_replace(page, '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>',
                         '<div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span>'
                         '<a href="../konto/" data-dl-account style="margin-left:auto;font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap">登录</a></div>', 'woerterbuch')
+    # sentence translation goes to the site's API (functions/api): same origin on pages.dev, the mirror from GitHub Pages
+    page = must_replace(page, "const TRANSLATE_API = '';",
+                        "const TRANSLATE_API = window.DLSync ? DLSync.api + '/translate' : 'https://deutsch-lernen-1ca.pages.dev/api/translate';", 'woerterbuch')
     page = must_replace(page, '词（保存在本机浏览器）', "词（${window.DLSync && DLSync.user() ? '已同步到你的账号' : '保存在本机浏览器，登录后可同步'}）", 'woerterbuch')
     full = ('<!doctype html>\n<html lang="zh-CN"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' + HEAD +

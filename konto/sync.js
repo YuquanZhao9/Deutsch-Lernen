@@ -205,7 +205,9 @@
   });
 
   window.DLSync = {
-    ready, root: ROOT,
+    ready, root: ROOT, api: API,
+    // for pages that call the API themselves (the dictionary's sentence translation)
+    authHeaders: () => acct.token ? { Authorization: 'Bearer ' + acct.token } : {},
     user: () => acct.token ? acct.email : null,
     state: () => state,
     onChange(f) { listeners.push(f); },
