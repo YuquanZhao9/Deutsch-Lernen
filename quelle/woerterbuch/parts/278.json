@@ -1,0 +1,1830 @@
+[
+ {
+  "w": "Chefkoch",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Chefköche",
+  "gs": "des Chefkochs",
+  "ipa": "ˈʃɛfˌkɔx",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "主厨，厨师长",
+    "de": "leitender Koch einer Küche, Küchenchef",
+    "ex": [
+     {
+      "de": "Der Chefkoch stellt die Speisekarte jede Woche neu zusammen.",
+      "zh": "主厨每周都会重新编排菜单。"
+     },
+     {
+      "de": "Nach zehn Jahren in Paris kehrte sie als Chefköchin in ihre Heimatstadt zurück.",
+      "zh": "在巴黎工作十年后，她以主厨身份回到了家乡。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Chefkoch / Chefköchin eines Restaurants — 某餐厅的主厨",
+   "als Chefkoch arbeiten — 当主厨",
+   "近义：Küchenchef；餐馆“老板”是 Inhaber/Wirt，不叫 Chefkoch"
+  ],
+  "root": "Chef·koch：Chef（头儿、首领）+ Koch（厨师）→ 厨师的头儿 → 主厨",
+  "fam": [
+   "Chef",
+   "Koch",
+   "kochen",
+   "Küchenchef",
+   "Kochkunst"
+  ],
+  "ety": "Chef 18 世纪借自法语 chef（首领，原义“头”）< 拉丁语 caput（头）；Koch < 古高地德语 koh，早期借自拉丁语 coquus（厨师）。",
+  "cog": "Chef：英 chief, chef；拉 caput。Koch：英 cook；拉 coquus",
+  "tip": "德语 Chef 泛指上司，与英语 chef（厨师）不同；“厨师长”要说 Chefkoch 或 Küchenchef。"
+ },
+ {
+  "w": "Dachstuhl",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Dachstühle",
+  "gs": "des Dachstuhl(e)s",
+  "ipa": "ˈdaxˌʃtuːl",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "屋架，屋顶木构架（承托屋面的梁木结构）",
+    "de": "tragende Holzkonstruktion eines Daches",
+    "ex": [
+     {
+      "de": "Bei dem Brand wurde der komplette Dachstuhl zerstört.",
+      "zh": "火灾中整个屋架被烧毁。"
+     },
+     {
+      "de": "Der Dachstuhl des Fachwerkhauses stammt noch aus dem 17. Jahrhundert.",
+      "zh": "这座桁架房屋的屋顶木架可追溯到 17 世纪。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Dachstuhl brennt / steht in Flammen — 屋架着火（新闻常见）",
+   "den Dachstuhl erneuern / ausbauen — 更换屋架/改建屋顶空间",
+   "相关：Dachboden（阁楼空间）、Dachbalken（屋梁）"
+  ],
+  "root": "Dach·stuhl：Dach（屋顶）+ Stuhl（这里取“支架、座架”之义）→ 屋顶的支架",
+  "fam": [
+   "Dach",
+   "Stuhl",
+   "Dachboden",
+   "Dachdecker",
+   "Gestühl"
+  ],
+  "ety": "Dach < 中古高地德语 dach < 古高地德语 dah，与 decken（覆盖）同根；Stuhl < 古高地德语 stuol，原义“座、架”。",
+  "cog": "Dach：英 thatch；荷 dak。Stuhl：英 stool",
+  "tip": "Stuhl 在建筑术语中指“支架”，不要理解为“椅子”。"
+ },
+ {
+  "w": "Darknet",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Darknets",
+  "gs": "des Darknets",
+  "ipa": "ˈdaːɐ̯knɛt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "暗网（需要特殊软件才能访问、匿名化的网络部分）",
+    "de": "anonymer, nur mit spezieller Software zugänglicher Teil des Internets",
+    "ex": [
+     {
+      "de": "Die Ermittler kamen den Händlern über eine Plattform im Darknet auf die Spur.",
+      "zh": "调查人员通过暗网上的一个交易平台追踪到了这些贩子。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Darknet — 在暗网上（介词用 in）",
+   "etw. im Darknet kaufen / anbieten — 在暗网购买/出售某物",
+   "相关：Deep Web（深网，泛指搜索引擎索引不到的内容，范围更大）"
+  ],
+  "root": "Dark·net：英语 dark（黑暗的）+ net（网络）→ 暗网",
+  "fam": [
+   "Internet",
+   "Netz",
+   "Netzwerk",
+   "Darkroom"
+  ],
+  "ety": "21 世纪初借自英语 darknet，原指封闭的私密文件共享网络，后专指 Tor 等匿名网络。",
+  "cog": "英 darknet",
+  "tip": "中性名词 das Darknet；口语和媒体常与 Drogen、Waffen、Hacker 等并提。"
+ },
+ {
+  "w": "Desinteresse",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Desinteresses",
+  "ipa": "dɛsʔɪntəˈʁɛsə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "不感兴趣，冷淡，漠不关心",
+    "de": "fehlendes Interesse, Gleichgültigkeit",
+    "ex": [
+     {
+      "de": "Das Desinteresse der Jugendlichen an Parteipolitik ist seit Jahren ein Thema.",
+      "zh": "年轻人对政党政治的冷漠多年来一直是个话题。"
+     },
+     {
+      "de": "Er reagierte mit völligem Desinteresse auf den Vorschlag.",
+      "zh": "他对这个建议表现得毫无兴趣。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Desinteresse an etw.(D) — 对某事不感兴趣（介词同 Interesse an）",
+   "Desinteresse zeigen / bekunden — 表现出冷淡",
+   "反义：Interesse；形容词 desinteressiert（an etw. D）"
+  ],
+  "root": "des·interesse：否定前缀 des-（法语来源，“不、去”）+ Interesse（兴趣）→ 没有兴趣",
+  "fam": [
+   "Interesse",
+   "interessieren",
+   "desinteressiert",
+   "interessant",
+   "uninteressiert"
+  ],
+  "ety": "Interesse 15/16 世纪借自中世纪拉丁语 interesse（利益、损害赔偿），本为拉丁语动词 interesse（在其中、有关系）的不定式名词化；Desinteresse 按法语 désintérêt 的模式构成（18/19 世纪）。",
+  "cog": "英 disinterest；法 désintérêt；拉 interesse",
+  "tip": "英语 disinterested 常指“无私、中立”，德语 desinteressiert / Desinteresse 只表示“不感兴趣”。"
+ },
+ {
+  "w": "Dolomit",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Dolomite",
+  "gs": "des Dolomit(e)s",
+  "ipa": "doloˈmiːt",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "白云石（矿物，碳酸钙镁）；白云岩",
+    "de": "Mineral aus Calcium-Magnesium-Carbonat; daraus bestehendes Gestein",
+    "ex": [
+     {
+      "de": "Die steilen Wände der Dolomiten bestehen überwiegend aus Dolomit.",
+      "zh": "多洛米蒂山脉的陡壁主要由白云岩构成。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus Dolomit bestehen — 由白云岩构成",
+   "地名 die Dolomiten（复数）— 多洛米蒂山（意大利北部）",
+   "相关：Kalkstein（石灰岩）、Marmor（大理石）"
+  ],
+  "root": "Dolomit：由人名 Dolomieu + 矿物后缀 -it 构成",
+  "fam": [
+   "Dolomiten",
+   "Granit",
+   "Kalkstein",
+   "Mineral"
+  ],
+  "ety": "18 世纪末以法国地质学家 Déodat de Dolomieu（1750–1801）的姓氏命名（法语 dolomie / dolomite），他首次描述了这种岩石；山脉名 Dolomiten 亦由此而来。",
+  "cog": "英 dolomite；法 dolomite",
+  "tip": "矿物名 Dolomit 为阳性单数，山脉名 Dolomiten 只用复数。"
+ },
+ {
+  "w": "dotieren",
+  "pos": "v",
+  "ipa": "doˈtiːʁən",
+  "lvl": "C1",
+  "forms": "dotiert · dotierte · hat dotiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（为奖项、职位）配备资金；（奖金）定为……",
+    "de": "mit einem Geldbetrag ausstatten",
+    "ex": [
+     {
+      "de": "Der Preis ist mit 50.000 Euro dotiert.",
+      "zh": "该奖项奖金为五万欧元。"
+     },
+     {
+      "de": "Die Stelle ist überdurchschnittlich gut dotiert.",
+      "zh": "这个职位的薪酬高于平均水平。"
+     }
+    ]
+   },
+   {
+    "zh": "（物理/半导体）掺杂",
+    "de": "einen Halbleiter gezielt mit Fremdatomen versetzen",
+    "ex": [
+     {
+      "de": "Das Silizium wird mit Phosphor dotiert, um die Leitfähigkeit zu erhöhen.",
+      "zh": "在硅中掺入磷以提高导电性。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit etw.(D) dotiert sein — 奖金/薪酬为……（几乎总用被动或状态被动）",
+   "hoch / gut / mit 10.000 Euro dotiert — 高额/优厚/奖金一万欧元的",
+   "名词：die Dotierung（奖金额；掺杂）"
+  ],
+  "root": "dot·ieren：拉丁语 dotare（赠予、配嫁妆）+ 动词后缀 -ieren → 配以资金",
+  "fam": [
+   "Dotierung",
+   "Dotation",
+   "dotiert"
+  ],
+  "ety": "借自拉丁语 dotare（赠予财产、给嫁妆），派生自 dos, dotis（嫁妆）；较早的中世纪拉丁语用法指为教会或机构捐赠财产。",
+  "cog": "英 endow, dowry；法 doter；拉 dos（嫁妆）",
+  "tip": "词表中的 dotiert 是其分词，日常几乎只见于 „mit ... dotiert“ 这一结构。"
+ },
+ {
+  "w": "Einnahmequelle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Einnahmequellen",
+  "gs": "der Einnahmequelle",
+  "ipa": "ˈaɪ̯nnaːməˌkvɛlə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "收入来源，财源",
+    "de": "Quelle, aus der Einnahmen fließen",
+    "ex": [
+     {
+      "de": "Der Tourismus ist die wichtigste Einnahmequelle der Insel.",
+      "zh": "旅游业是这座岛最重要的收入来源。"
+     },
+     {
+      "de": "Die Stadt sucht nach neuen Einnahmequellen, um das Haushaltsloch zu stopfen.",
+      "zh": "该市正在寻找新的财源以填补预算缺口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine wichtige / sichere / zusätzliche Einnahmequelle — 重要的/稳定的/额外的收入来源",
+   "sich(D) eine neue Einnahmequelle erschließen — 开辟新的财源",
+   "近义：Erwerbsquelle, Geldquelle；个人的“收入”多说 Einkommen"
+  ],
+  "root": "Einnahme·quelle：Einnahme（收入，由 einnehmen 派生）+ Quelle（泉源）→ 收入的源头",
+  "fam": [
+   "Einnahme",
+   "einnehmen",
+   "Quelle",
+   "Ausgabe",
+   "Einkommen"
+  ],
+  "ety": "透明复合词。Quelle < 古高地德语 quella，与 quellen（涌出）同根。",
+  "cog": "Quelle：英 well（泉；同根）",
+  "tip": "Einnahmen（复数）指收入款项，与 Ausgaben（支出）相对。"
+ },
+ {
+  "w": "eintauschen",
+  "pos": "v",
+  "ipa": "ˈaɪ̯nˌtaʊ̯ʃn̩",
+  "lvl": "B2",
+  "forms": "tauscht ein · tauschte ein · hat eingetauscht",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（用某物）换取，兑换；以旧换新",
+    "de": "etw. hergeben und dafür etw. anderes bekommen",
+    "ex": [
+     {
+      "de": "Die Gutscheine können bis Ende des Jahres gegen Waren eingetauscht werden.",
+      "zh": "这些代金券可在年底前兑换商品。"
+     },
+     {
+      "de": "Er hat seinen alten Wagen beim Händler gegen ein neues Modell eingetauscht.",
+      "zh": "他在经销商那里用旧车换了一辆新款。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) gegen etw.(A) eintauschen — 用某物换取某物（介词 gegen + 第四格）",
+   "etw. in etw.(A) eintauschen（较少）— 把……兑换成……",
+   "近义：umtauschen（退换商品）、austauschen（互换、更换）"
+  ],
+  "root": "ein·tauschen：ein（进入）+ tauschen（交换）→ 换进来",
+  "fam": [
+   "tauschen",
+   "Tausch",
+   "umtauschen",
+   "austauschen",
+   "Tauschhandel"
+  ],
+  "ety": "tauschen < 中古高地德语 tūschen（原义或为“说假话、戏弄”），一般认为与 täuschen 同源，“交换”之义约自 15/16 世纪起确立；更早来源不详。",
+  "cog": "荷 tuisen（旧）；英语无直接同源词",
+  "tip": "区分：umtauschen = 商品退换（在店里换货），eintauschen = 以物换物/兑换，austauschen = 交换意见或更换部件。"
+ },
+ {
+  "w": "Elektrode",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Elektroden",
+  "gs": "der Elektrode",
+  "ipa": "elɛkˈtʁoːdə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "电极",
+    "de": "elektrisch leitendes Teil, über das Strom in ein Medium ein- oder austritt",
+    "ex": [
+     {
+      "de": "Beim Schweißen schmilzt die Elektrode und verbindet die Werkstücke.",
+      "zh": "焊接时电极熔化并把工件连接起来。"
+     },
+     {
+      "de": "Die Elektroden werden auf der Brust des Patienten befestigt, um das EKG abzuleiten.",
+      "zh": "电极贴在病人胸部以记录心电图。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "positive / negative Elektrode — 正/负电极（即 Anode / Kathode）",
+   "Elektroden anlegen / anbringen — 贴上电极",
+   "相关：Elektrolyt（电解质）、Elektrolyse（电解）"
+  ],
+  "root": "Elektr·ode：希腊语 ḗlektron（琥珀；→ 电）+ hodós（道路）→ 电流的通道",
+  "fam": [
+   "Elektrizität",
+   "elektrisch",
+   "Anode",
+   "Kathode",
+   "Elektrolyse"
+  ],
+  "ety": "1834 年由英国物理学家法拉第（与 W. Whewell 商定）据希腊语 ḗlektron（琥珀）和 hodós（路）创造为英语 electrode，19 世纪借入德语。",
+  "cog": "英 electrode；希 ḗlektron, hodós",
+  "tip": "阴性，复数 -n；Anode（阳极）和 Kathode（阴极）同为法拉第所造。"
+ },
+ {
+  "w": "entgegennehmen",
+  "pos": "v",
+  "ipa": "ɛntˈɡeːɡn̩ˌneːmən",
+  "lvl": "B2",
+  "forms": "nimmt entgegen · nahm entgegen · hat entgegengenommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "接受，接收，领取（递交过来的东西：包裹、奖项、申请、电话）",
+    "de": "etw., das einem überreicht oder übermittelt wird, annehmen",
+    "ex": [
+     {
+      "de": "Die Schauspielerin nahm den Preis unter großem Applaus entgegen.",
+      "zh": "女演员在热烈的掌声中领取了奖项。"
+     },
+     {
+      "de": "Der Nachbar hat das Paket für mich entgegengenommen.",
+      "zh": "邻居替我签收了包裹。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) entgegennehmen — 接收/领取某物",
+   "Glückwünsche / Bestellungen / Anrufe entgegennehmen — 接受祝贺/接受订单/接听电话",
+   "比 annehmen 更正式、更书面，常见于新闻与公文"
+  ],
+  "root": "entgegen·nehmen：entgegen（迎着、朝向）+ nehmen（拿）→ 迎上去接过来",
+  "fam": [
+   "nehmen",
+   "entgegen",
+   "annehmen",
+   "Entgegennahme",
+   "entgegenkommen"
+  ],
+  "ety": "nehmen < 中古高地德语 nemen < 古高地德语 neman < 原始日耳曼语 *nemaną（拿取）；entgegen < 古高地德语 ingagan（迎向）。",
+  "cog": "nehmen：英 nimble（同根，旧义“善于拿取”）；荷 nemen。entgegen：英 against（gegen 同根）",
+  "tip": "前缀 entgegen 可分，重音落在 ge 上：entGEgennehmen；完成时分词 entgegengenommen 不加 ge-。"
+ },
+ {
+  "w": "entgegentreten",
+  "pos": "v",
+  "ipa": "ɛntˈɡeːɡn̩ˌtʁeːtn̩",
+  "lvl": "C1",
+  "forms": "tritt entgegen · trat entgegen · ist entgegengetreten",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "反对，抵制，对抗（某人/某种倾向）",
+    "de": "sich jdm./etw. widersetzen, gegen etw. vorgehen",
+    "ex": [
+     {
+      "de": "Die Regierung will Falschinformationen im Netz entschieden entgegentreten.",
+      "zh": "政府要坚决抵制网络上的虚假信息。"
+     },
+     {
+      "de": "Er trat den Vorwürfen mit ruhiger Sachlichkeit entgegen.",
+      "zh": "他以冷静客观的态度回应了这些指责。"
+     }
+    ]
+   },
+   {
+    "zh": "迎面走向，走到（某人）面前",
+    "de": "auf jdn. zugehen, sich jdm. gegenüberstellen",
+    "ex": [
+     {
+      "de": "Mutig trat sie dem Angreifer entgegen.",
+      "zh": "她勇敢地迎向袭击者。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm./etw.(D) entgegentreten — 反对/对抗某人或某事（第三格！）",
+   "einer Entwicklung / Gefahr / einem Vorurteil entgegentreten — 遏制某种趋势/危险/偏见",
+   "完成时用 sein：ist entgegengetreten"
+  ],
+  "root": "entgegen·treten：entgegen（迎着）+ treten（迈步）→ 迎着走上去 → 对抗",
+  "fam": [
+   "treten",
+   "entgegen",
+   "entgegenwirken",
+   "auftreten",
+   "Gegner"
+  ],
+  "ety": "treten < 中古高地德语 treten < 古高地德语 tretan（踩、迈步）< 原始日耳曼语 *tredaną。",
+  "cog": "英 tread；荷 treden",
+  "tip": "宾语是第三格（dem Rassismus entgegentreten），中国学习者易误用第四格。"
+ },
+ {
+  "w": "Erbgut",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Erbgüter",
+  "gs": "des Erbgut(e)s",
+  "ipa": "ˈɛʁpˌɡuːt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "遗传物质，基因组",
+    "de": "Gesamtheit der Gene eines Lebewesens, Genom",
+    "ex": [
+     {
+      "de": "Forscher haben das Erbgut des Virus vollständig entschlüsselt.",
+      "zh": "研究人员已经完整破译了这种病毒的遗传物质。"
+     },
+     {
+      "de": "Veränderungen im Erbgut können über Generationen weitergegeben werden.",
+      "zh": "遗传物质的变化可以世代相传。"
+     }
+    ]
+   },
+   {
+    "zh": "（较旧）继承的财产，祖业",
+    "de": "ererbter Besitz",
+    "ex": [
+     {
+      "de": "Der Hof war seit Jahrhunderten Erbgut der Familie.",
+      "zh": "这座农庄几百年来一直是这个家族的祖产。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Erbgut entschlüsseln / verändern / schädigen — 破译/改变/损伤遗传物质",
+   "menschliches Erbgut — 人类基因组",
+   "义项1 通常只用单数；近义 Genom、DNA"
+  ],
+  "root": "Erb·gut：Erbe（遗产）+ Gut（财产）→ 继承下来的财产 → 转指遗传下来的“东西”",
+  "fam": [
+   "Erbe",
+   "erben",
+   "Gut",
+   "vererben",
+   "Erbkrankheit"
+  ],
+  "ety": "Erbe < 古高地德语 erbi（遗产）；Gut 为形容词 gut 的名词化（财产）。“遗传物质”义是 20 世纪随遗传学产生的转义。",
+  "cog": "Erbe：荷 erf；英语无直接对应。Gut：英 good(s)",
+  "tip": "新闻和科普中 Erbgut 比专业术语 Genom 更常见。"
+ },
+ {
+  "w": "Etikette",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Etiketten",
+  "gs": "der Etikette",
+  "ipa": "etiˈkɛtə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "礼节，礼仪规范（尤指社交、宫廷场合）",
+    "de": "Gesamtheit der Umgangsformen und Verhaltensregeln",
+    "ex": [
+     {
+      "de": "Bei einem Staatsbankett schreibt die Etikette genau vor, wer neben wem sitzt.",
+      "zh": "在国宴上，礼仪规范明确规定谁坐在谁旁边。"
+     },
+     {
+      "de": "Es verstößt gegen die Etikette, vor dem Gastgeber mit dem Essen zu beginnen.",
+      "zh": "在主人之前开始用餐有违礼节。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gegen die Etikette verstoßen — 违反礼仪",
+   "die Etikette wahren / einhalten — 遵守礼节",
+   "注意：das Etikett（中性，复数 Etikette/Etiketten）= 标签，不要混淆"
+  ],
+  "root": "Etikette：法语 étiquette（标签 → 写有礼仪规程的纸条 → 礼仪）",
+  "fam": [
+   "Etikett",
+   "etikettieren",
+   "Netiquette",
+   "Ticket"
+  ],
+  "ety": "18 世纪借自法语 étiquette，原义“贴条、标签”，在西班牙/法国宫廷引申为“礼仪规程”（一说因宫廷礼仪写在纸条上）；法语词出自古法语 estiquet（插上的小牌），源于日耳曼语（与 stecken 同根）。",
+  "cog": "英 etiquette, ticket；法 étiquette",
+  "tip": "Etikette（阴性）= 礼仪，Etikett（中性）= 标签；两者词源相同但词性不同。"
+ },
+ {
+  "w": "Euthanasie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Euthanasie",
+  "ipa": "ɔɪ̯tanaˈziː",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "安乐死（在德语中因纳粹历史而带强烈负面色彩）",
+    "de": "Herbeiführen des Todes bei Schwerkranken; Sterbehilfe",
+    "ex": [
+     {
+      "de": "In den Niederlanden ist aktive Euthanasie unter strengen Auflagen erlaubt.",
+      "zh": "在荷兰，主动安乐死在严格条件下是允许的。"
+     }
+    ]
+   },
+   {
+    "zh": "（历史）纳粹对残疾人和精神病人的系统性屠杀（所谓“安乐死”行动）",
+    "de": "nationalsozialistische Massenmorde an Kranken und Behinderten",
+    "ex": [
+     {
+      "de": "Im Rahmen der sogenannten Euthanasie wurden über 70.000 Menschen ermordet.",
+      "zh": "在所谓“安乐死”行动中，超过七万人被杀害。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aktive / passive Euthanasie — 主动/被动安乐死",
+   "现代德语讨论临终问题时多用 Sterbehilfe，Euthanasie 常指纳粹罪行",
+   "形容词：euthanatisch（罕）"
+  ],
+  "root": "Eu·thanas·ie：希腊语 eu-（好）+ thánatos（死亡）+ -ie（名词后缀）→ “好死、善终”",
+  "fam": [
+   "Thanatologie",
+   "Euphorie",
+   "Evangelium",
+   "Sterbehilfe"
+  ],
+  "ety": "借自希腊语 euthanasía（轻松、善好的死亡），由 eu（好）和 thánatos（死）构成；17 世纪经新拉丁语进入欧洲各语言，德语中纳粹时期的滥用使其带上罪恶含义。",
+  "cog": "英 euthanasia；希 thánatos",
+  "tip": "面向德国人讨论安乐死，请用 Sterbehilfe；说 Euthanasie 会让人联想到纳粹。"
+ },
+ {
+  "w": "Exklave",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Exklaven",
+  "gs": "der Exklave",
+  "ipa": "ɛksˈklaːvə",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "外飞地（与本国领土不相连、被他国领土包围的区域）",
+    "de": "Gebietsteil eines Staates, der vom Hauptgebiet getrennt ist",
+    "ex": [
+     {
+      "de": "Kaliningrad ist eine russische Exklave zwischen Polen und Litauen.",
+      "zh": "加里宁格勒是位于波兰和立陶宛之间的俄罗斯外飞地。"
+     },
+     {
+      "de": "Büsingen am Hochrhein ist eine deutsche Exklave auf Schweizer Gebiet.",
+      "zh": "上莱茵河畔比辛根是位于瑞士境内的德国外飞地。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Exklave von X — X 的外飞地（从母国视角）",
+   "Enklave（内飞地）：从包围国视角看同一块地",
+   "相关：Grenze, Hoheitsgebiet"
+  ],
+  "root": "Ex·klave：拉丁语 ex-（向外）+ -klave（取自 Enklave，本义“锁住、围住”）→ 被围在外面的地",
+  "fam": [
+   "Enklave",
+   "Konklave",
+   "Klavier",
+   "Schlüssel"
+  ],
+  "ety": "19 世纪按 Enklave 的模式以前缀 ex- 构成；Enklave 借自法语 enclave，派生自 enclaver（围住）< 通俗拉丁语 *inclavare（用钥匙锁上）< 拉丁语 clavis（钥匙）。",
+  "cog": "英 exclave, enclave；拉 clavis（钥匙）；法 enclave",
+  "tip": "同一块地：对母国而言是 Exklave，对包围它的国家而言是 Enklave。"
+ },
+ {
+  "w": "Feldherr",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Feldherren",
+  "gs": "des Feldherrn",
+  "ipa": "ˈfɛltˌhɛʁ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "统帅，（古代/旧时）军队指挥官，大将",
+    "de": "oberster Befehlshaber eines Heeres (bes. historisch)",
+    "ex": [
+     {
+      "de": "Hannibal gilt als einer der größten Feldherren der Antike.",
+      "zh": "汉尼拔被视为古代最伟大的统帅之一。"
+     },
+     {
+      "de": "Der Feldherr ließ seine Truppen über die Alpen marschieren.",
+      "zh": "这位统帅率军翻越阿尔卑斯山。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化名词：der Feldherr, des Feldherrn, dem Feldherrn, den Feldherrn；复数 die Feldherren",
+   "ein genialer / römischer Feldherr — 天才的/罗马的统帅",
+   "现代用语：Oberbefehlshaber, General；Feldherr 多用于历史语境或比喻（Fußball）"
+  ],
+  "root": "Feld·herr：Feld（战场）+ Herr（主人、首领）→ 战场上的主人 → 统帅",
+  "fam": [
+   "Herr",
+   "Feld",
+   "Feldzug",
+   "Herrschaft",
+   "Feldwebel"
+  ],
+  "ety": "16 世纪构成的复合词。Herr < 古高地德语 hēriro，本为 hēr（尊贵的）的比较级（“更尊贵者”）；Feld < 古高地德语 feld。",
+  "cog": "Feld：英 field。Herr：英 hoar（同根 hēr，“灰白的、年长的”）",
+  "tip": "第二格和第三、四格都是 Feldherrn（不是 Feldherres）。"
+ },
+ {
+  "w": "Fernbus",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Fernbusse",
+  "gs": "des Fernbusses",
+  "ipa": "ˈfɛʁnˌbʊs",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "长途大巴，长途汽车",
+    "de": "Reisebus im Linienverkehr über große Entfernungen",
+    "ex": [
+     {
+      "de": "Mit dem Fernbus von Berlin nach München dauert es etwa sieben Stunden.",
+      "zh": "乘长途大巴从柏林到慕尼黑大约要七个小时。"
+     },
+     {
+      "de": "Seit der Liberalisierung 2013 sind Fernbusse eine günstige Alternative zur Bahn.",
+      "zh": "自 2013 年市场放开以来，长途大巴成了火车之外的廉价选择。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit dem Fernbus fahren / reisen — 坐长途大巴",
+   "der Fernbusbahnhof / Fernbushalt — 长途汽车站/停靠点",
+   "相关：Reisebus（旅游大巴）、Linienbus（公交）"
+  ],
+  "root": "Fern·bus：fern（远）+ Bus（公共汽车）→ 跑长途的巴士",
+  "fam": [
+   "Bus",
+   "fern",
+   "Fernverkehr",
+   "Fernzug",
+   "Omnibus"
+  ],
+  "ety": "Bus 为 Omnibus 的缩略；Omnibus 19 世纪借自法语 omnibus（巴黎公共马车名），本为拉丁语 omnibus（“给所有人”，omnis 的与格复数）。fern < 古高地德语 ferrana。",
+  "cog": "英 bus, omnibus；拉 omnibus。fern：英 far",
+  "tip": "复数 Fernbusse，第二格 des Fernbusses（s 要双写）。"
+ },
+ {
+  "w": "feststellbar",
+  "pos": "adj",
+  "ipa": "ˈfɛstˌʃtɛlbaːɐ̯",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "可以确定的，可查明的，可察觉的",
+    "de": "so, dass es sich feststellen lässt; nachweisbar",
+    "ex": [
+     {
+      "de": "Ein Zusammenhang zwischen den beiden Ereignissen ist nicht feststellbar.",
+      "zh": "两起事件之间无法确定有任何关联。"
+     },
+     {
+      "de": "Im Blut waren noch deutlich feststellbare Spuren des Medikaments vorhanden.",
+      "zh": "血液中仍有明显可检出的药物残留。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. ist (nicht) feststellbar — 某事（无法）确定/查明",
+   "ein feststellbarer Unterschied / Trend — 可察觉的差异/趋势",
+   "近义：nachweisbar, erkennbar, messbar；反义：nicht feststellbar"
+  ],
+  "root": "fest·stell·bar：feststellen（确定、查明）+ -bar（可……的）→ 可以确定的",
+  "fam": [
+   "feststellen",
+   "Feststellung",
+   "fest",
+   "stellen",
+   "nachweisbar"
+  ],
+  "ety": "由 feststellen 加后缀 -bar 派生；-bar < 古高地德语 -bāri（携带、承受），与 gebären 同根。",
+  "cog": "-bar：英 -able 对应功能，但不同源；bear（承受）与 -bar 同根",
+  "tip": "也可指“可固定/可锁定的”（feststellbare Rollen 带刹车的脚轮），语境不同。"
+ },
+ {
+  "w": "Flüchtlingshilfe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Flüchtlingshilfe",
+  "ipa": "ˈflʏçtlɪŋsˌhɪlfə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "难民援助（工作/组织）",
+    "de": "Unterstützung für Flüchtlinge; Organisation, die diese leistet",
+    "ex": [
+     {
+      "de": "Viele Ehrenamtliche engagieren sich in der Flüchtlingshilfe.",
+      "zh": "许多志愿者投身于难民援助工作。"
+     },
+     {
+      "de": "Die Flüchtlingshilfe der Stadt sucht dringend Dolmetscher.",
+      "zh": "该市的难民援助组织急需翻译。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Flüchtlingshilfe tätig / aktiv sein — 从事难民援助",
+   "ehrenamtliche / kirchliche Flüchtlingshilfe — 志愿的/教会的难民援助",
+   "相关：Flüchtlingsunterkunft, Asylbewerber, Geflüchtete"
+  ],
+  "root": "Flüchtling·s·hilfe：Flüchtling（难民，flüchten + -ling）+ 连接 -s- + Hilfe（帮助）",
+  "fam": [
+   "Flüchtling",
+   "flüchten",
+   "Flucht",
+   "Hilfe",
+   "helfen"
+  ],
+  "ety": "透明复合词。Flucht/flüchten 与 fliehen 同根（古高地德语 fliohan）；Hilfe < 古高地德语 helfa。",
+  "cog": "fliehen：英 flee；Hilfe：英 help",
+  "tip": "近年官方及媒体常用 Geflüchtete 代替 Flüchtlinge，但复合词 Flüchtlingshilfe 仍通用。"
+ },
+ {
+  "w": "Forschungseinrichtung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Forschungseinrichtungen",
+  "gs": "der Forschungseinrichtung",
+  "ipa": "ˈfɔʁʃʊŋsʔaɪ̯nˌʁɪçtʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "研究机构，科研单位",
+    "de": "Institution, die wissenschaftliche Forschung betreibt",
+    "ex": [
+     {
+      "de": "Die Max-Planck-Gesellschaft ist eine der bekanntesten außeruniversitären Forschungseinrichtungen Deutschlands.",
+      "zh": "马克斯·普朗克学会是德国最著名的非大学科研机构之一。"
+     },
+     {
+      "de": "Mehrere Forschungseinrichtungen arbeiten an dem Projekt zusammen.",
+      "zh": "多家研究机构合作开展该项目。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine außeruniversitäre / staatliche / private Forschungseinrichtung — 非大学/国立/私立研究机构",
+   "an einer Forschungseinrichtung arbeiten — 在某研究机构工作",
+   "近义：Forschungsinstitut, Institut"
+  ],
+  "root": "Forschung·s·einrichtung：Forschung（研究）+ -s- + Einrichtung（机构，由 einrichten 派生）",
+  "fam": [
+   "Forschung",
+   "forschen",
+   "Forscher",
+   "Einrichtung",
+   "Institut"
+  ],
+  "ety": "透明复合词。forschen < 古高地德语 forscōn（探询），与 fragen 同根，日耳曼语构词与拉丁语 poscere（要求）平行。",
+  "cog": "forschen：拉 poscere（要求）、precari（请求）远亲；英语无直接对应",
+  "tip": "Einrichtung 既指“机构”也指“设施/布置”，此处取“机构”义。"
+ },
+ {
+  "w": "Fortbewegung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Fortbewegung",
+  "ipa": "ˈfɔʁtbəˌveːɡʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（人、动物或车辆的）移动，行进，位移",
+    "de": "das Sichfortbewegen von einem Ort zum anderen",
+    "ex": [
+     {
+      "de": "Das Fahrrad ist in der Stadt oft das schnellste Mittel der Fortbewegung.",
+      "zh": "在城市里，自行车往往是最快的出行方式。"
+     },
+     {
+      "de": "Schlangen nutzen zur Fortbewegung wellenförmige Bewegungen des Körpers.",
+      "zh": "蛇靠身体的波浪状运动来移动。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Mittel der Fortbewegung / Fortbewegungsmittel — 交通工具、移动方式",
+   "zur Fortbewegung dienen — 用于移动",
+   "动词：sich fortbewegen（移动、行进）"
+  ],
+  "root": "fort·bewegung：fort（向前、离开）+ Bewegung（运动）→ 向前的运动 → 移动",
+  "fam": [
+   "sich fortbewegen",
+   "Bewegung",
+   "bewegen",
+   "fort",
+   "Fortschritt"
+  ],
+  "ety": "由 sich fortbewegen 派生。bewegen < 古高地德语 biwegan；fort < 古高地德语 ford（向前）。",
+  "cog": "fort：英 forth；bewegen：英 weigh, wag（同根 wegan）",
+  "tip": "多用于较正式或科普语境，日常说“出行”更常用 unterwegs sein / sich bewegen。"
+ },
+ {
+  "w": "Friedensnobelpreis",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Friedensnobelpreise",
+  "gs": "des Friedensnobelpreises",
+  "ipa": "ˈfʁiːdn̩snoˌbɛlpʁaɪ̯s",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "诺贝尔和平奖",
+    "de": "von Alfred Nobel gestifteter Preis für Verdienste um den Frieden",
+    "ex": [
+     {
+      "de": "Der Friedensnobelpreis wird als einziger Nobelpreis in Oslo verliehen.",
+      "zh": "诺贝尔和平奖是唯一在奥斯陆颁发的诺贝尔奖。"
+     },
+     {
+      "de": "2009 erhielt der damalige US-Präsident Obama den Friedensnobelpreis.",
+      "zh": "2009 年时任美国总统奥巴马获得了诺贝尔和平奖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Friedensnobelpreis erhalten / bekommen / verliehen bekommen — 获得诺贝尔和平奖",
+   "jdn. für den Friedensnobelpreis nominieren — 提名某人角逐诺贝尔和平奖",
+   "der Friedensnobelpreisträger / die -trägerin — 诺贝尔和平奖得主"
+  ],
+  "root": "Frieden·s·nobel·preis：Frieden（和平）+ -s- + Nobel（人名）+ Preis（奖）",
+  "fam": [
+   "Nobelpreis",
+   "Frieden",
+   "Preis",
+   "Preisträger",
+   "friedlich"
+  ],
+  "ety": "以瑞典化学家 Alfred Nobel（1833–1896）命名，依其遗嘱 1901 年起颁发。Frieden < 古高地德语 fridu，与 frei、Freund 同根（原义“爱护、保护”）；Preis 借自古法语 pris < 拉丁语 pretium。",
+  "cog": "Frieden：英 free, friend（同根）；Preis：英 price, prize；拉 pretium",
+  "tip": "重音在 Frie-；Nobel 本身重音在第二音节（noˈbɛl）。"
+ },
+ {
+  "w": "Frühsommer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Frühsommer",
+  "gs": "des Frühsommers",
+  "ipa": "ˈfʁyːˌzɔmɐ",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "初夏",
+    "de": "Anfang des Sommers (etwa Juni)",
+    "ex": [
+     {
+      "de": "Im Frühsommer blühen die Wiesen besonders üppig.",
+      "zh": "初夏时节草地上繁花似锦。"
+     },
+     {
+      "de": "Die Bauarbeiten sollen bis zum Frühsommer abgeschlossen sein.",
+      "zh": "施工预计在初夏前完成。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Frühsommer — 在初夏（介词 in + 第三格）",
+   "ein warmer / verregneter Frühsommer — 温暖的/多雨的初夏",
+   "对应：Spätsommer（夏末）、Frühherbst、Frühjahr"
+  ],
+  "root": "Früh·sommer：früh（早）+ Sommer（夏天）→ 夏天的早期",
+  "fam": [
+   "Sommer",
+   "früh",
+   "Spätsommer",
+   "Frühling",
+   "Hochsommer"
+  ],
+  "ety": "透明复合词。Sommer < 古高地德语 sumar < 原始日耳曼语 *sumaraz；früh < 古高地德语 fruo。",
+  "cog": "Sommer：英 summer；荷 zomer",
+  "tip": "Frühjahr 是“春季”，不要与 Frühsommer（初夏）混淆。"
+ },
+ {
+  "w": "funktionsfähig",
+  "pos": "adj",
+  "ipa": "fʊŋkˈt͡si̯oːnsˌfɛːɪç",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "能正常运转的，功能完好的，可用的",
+    "de": "in der Lage zu funktionieren; intakt",
+    "ex": [
+     {
+      "de": "Nach der Reparatur war die Anlage wieder voll funktionsfähig.",
+      "zh": "修理之后设备又完全恢复了正常运转。"
+     },
+     {
+      "de": "Ohne eine funktionsfähige Verwaltung kann kein Staat bestehen.",
+      "zh": "没有运转正常的行政体系，国家就无法存续。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "voll / eingeschränkt / nicht mehr funktionsfähig — 完全/部分/不再能运转",
+   "etw. funktionsfähig halten / machen — 保持/使某物能够运转",
+   "名词：die Funktionsfähigkeit；近义：funktionstüchtig, intakt；反义：defekt, kaputt"
+  ],
+  "root": "Funktion·s·fähig：Funktion（功能）+ -s- + -fähig（有能力的）→ 有能力执行功能的",
+  "fam": [
+   "Funktion",
+   "funktionieren",
+   "Funktionsfähigkeit",
+   "fähig",
+   "funktionstüchtig"
+  ],
+  "ety": "Funktion 17 世纪借自拉丁语 functio（执行、履行）< fungi（履行、完成）；fähig 由 fahen（= fangen，抓住）派生，原义“能抓住、能容纳的”。",
+  "cog": "Funktion：英 function；拉 fungi。fähig：英 fang（同根 fangen）",
+  "tip": "既用于机器设备，也用于机构、市场、民主制度等抽象事物。"
+ },
+ {
+  "w": "fürstlich",
+  "pos": "adj",
+  "ipa": "ˈfʏʁstlɪç",
+  "lvl": "C1",
+  "forms": "fürstlicher · am fürstlichsten",
+  "senses": [
+   {
+    "zh": "王侯的，公侯的",
+    "de": "einen Fürsten betreffend, zu ihm gehörend",
+    "ex": [
+     {
+      "de": "Das Schloss war jahrhundertelang fürstliche Residenz.",
+      "zh": "这座宫殿数百年来一直是侯爵的官邸。"
+     }
+    ]
+   },
+   {
+    "zh": "（转义）丰厚的，豪华的，阔绰的",
+    "de": "sehr großzügig, üppig, reichlich",
+    "ex": [
+     {
+      "de": "Für den Vortrag wurde er fürstlich bezahlt.",
+      "zh": "他做这场报告得到了一笔丰厚的报酬。"
+     },
+     {
+      "de": "Die Gäste wurden fürstlich bewirtet.",
+      "zh": "客人们受到了极其盛情的款待。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "fürstlich bezahlen / entlohnen / belohnen — 付丰厚报酬/重赏",
+   "ein fürstliches Mahl / Gehalt — 丰盛的宴席/优厚的薪水",
+   "义项2 多作副词修饰动词，略带调侃语气"
+  ],
+  "root": "fürst·lich：Fürst（侯爵、君主）+ -lich（形容词后缀）→ 像王侯那样的 → 阔绰的",
+  "fam": [
+   "Fürst",
+   "Fürstin",
+   "Fürstentum",
+   "fürstlich",
+   "Kurfürst"
+  ],
+  "ety": "Fürst < 中古高地德语 vürste < 古高地德语 furisto（“最前面的人、首领”），是 vor/für 的最高级形式名词化，与英语 first 同构。",
+  "cog": "英 first；荷 vorst",
+  "tip": "Fürst 是弱变化名词（des Fürsten）；fürstlich 的转义“阔绰”类似汉语“王侯般的待遇”。"
+ },
+ {
+  "w": "Gegenseitigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Gegenseitigkeit",
+  "ipa": "ˈɡeːɡn̩ˌzaɪ̯tɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "相互性，互惠，互相（对等）",
+    "de": "wechselseitiges Verhältnis; Prinzip, dass beide Seiten gleichermaßen geben und nehmen",
+    "ex": [
+     {
+      "de": "Eine gute Freundschaft beruht auf Gegenseitigkeit.",
+      "zh": "良好的友谊建立在相互对等的基础上。"
+     },
+     {
+      "de": "Das Abkommen regelt die Anerkennung von Abschlüssen auf Gegenseitigkeit.",
+      "zh": "该协议规定双方互相承认学历。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf Gegenseitigkeit beruhen — 以互惠为基础",
+   "auf Gegenseitigkeit — 在互惠/对等的基础上（固定搭配）",
+   "Versicherungsverein auf Gegenseitigkeit (VVaG) — 相互保险社（法律术语）"
+  ],
+  "root": "gegen·seit·ig·keit：gegenseitig（相互的，gegen + Seite + -ig）+ -keit（名词化后缀）",
+  "fam": [
+   "gegenseitig",
+   "Seite",
+   "gegen",
+   "wechselseitig",
+   "Gegenleistung"
+  ],
+  "ety": "18 世纪由 gegenseitig 派生；Seite < 古高地德语 sīta（侧面）；gegen < 古高地德语 gagan。",
+  "cog": "Seite：英 side；gegen：英 against（同根 gagan）",
+  "tip": "“Das beruht auf Gegenseitigkeit“ 常用作幽默回应（“彼此彼此”），语境可褒可贬。"
+ },
+ {
+  "w": "geizen",
+  "pos": "v",
+  "ipa": "ˈɡaɪ̯t͡sn̩",
+  "lvl": "C1",
+  "forms": "geizt · geizte · hat gegeizt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "吝啬，舍不得（给予）",
+    "de": "mit etw. sehr sparsam sein, es nur ungern hergeben",
+    "ex": [
+     {
+      "de": "Die Kritiker geizten nicht mit Lob für die junge Regisseurin.",
+      "zh": "评论家们毫不吝啬地称赞这位年轻的女导演。"
+     },
+     {
+      "de": "Beim Essen sollte man nicht mit Gewürzen geizen.",
+      "zh": "做菜时不该舍不得放调料。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit etw.(D) geizen — 吝惜某物（介词 mit + 第三格）",
+   "nicht mit Lob / Beifall / Kritik geizen — 不吝赞美/掌声/批评（最常见用法，多为否定句）",
+   "名词 der Geiz（吝啬），形容词 geizig"
+  ],
+  "root": "geiz·en：与 Geiz（吝啬）同根的动词，“表现得吝啬”",
+  "fam": [
+   "Geiz",
+   "geizig",
+   "Geizhals",
+   "Geizkragen"
+  ],
+  "ety": "中古高地德语 gīzen，一般认为是 gīten（贪求）的强化派生形式；名词 Geiz（mhd. gīz“贪婪”）由动词逆构而来；原义“贪婪”，17–18 世纪转为“吝啬”；更早来源不详。",
+  "cog": "英语无直接同源词；荷语 gijzen 无关",
+  "tip": "“Geiz ist geil“ 是德国电器连锁 Saturn 的著名广告语，可见 Geiz 在口语中的中性/戏谑用法。"
+ },
+ {
+  "w": "krauchen",
+  "pos": "v",
+  "ipa": "ˈkʁaʊ̯xn̩",
+  "lvl": "C2",
+  "forms": "kraucht · krauchte · ist gekraucht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（地区口语，尤德国中东部）爬，爬行；慢吞吞地挪动",
+    "de": "(landschaftlich) kriechen; sich mühsam fortbewegen",
+    "ex": [
+     {
+      "de": "Das Kind krauchte unter den Tisch, um den Ball zu holen.",
+      "zh": "孩子爬到桌子底下去捡球。"
+     },
+     {
+      "de": "Müde krauchten wir die letzten Meter zum Gipfel.",
+      "zh": "我们疲惫地挪完了登顶前的最后几米。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "irgendwohin krauchen — 爬向某处（完成时用 sein）",
+   "弱变化动词：krauchte, ist gekraucht（与强变化的 kriechen – kroch – gekrochen 不同）",
+   "标准语用 kriechen；krauchen 主要见于萨克森、柏林-勃兰登堡等地口语"
+  ],
+  "root": "krauchen：kriechen 的方言元音变体",
+  "fam": [
+   "kriechen",
+   "Kriecher",
+   "Kriechspur",
+   "unterkriechen"
+  ],
+  "ety": "中古高地德语 krūchen，为 kriechen（古高地德语 kriohhan，原始日耳曼语 *kreukaną）的元音交替变体；今作地区口语用词。",
+  "cog": "kriechen：荷 kruipen；英 creep 来自另一同族词根（一说相关）",
+  "tip": "新闻或正式文本中几乎不出现，遇到时多为引用口语或方言色彩。"
+ },
+ {
+  "w": "gentechnisch",
+  "pos": "adj",
+  "ipa": "ˈɡeːnˌtɛçnɪʃ",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "基因技术的，转基因的",
+    "de": "die Gentechnik betreffend, mit Mitteln der Gentechnik",
+    "ex": [
+     {
+      "de": "Gentechnisch veränderte Lebensmittel müssen in der EU gekennzeichnet werden.",
+      "zh": "在欧盟，转基因食品必须加以标注。"
+     },
+     {
+      "de": "Das Insulin wird heute gentechnisch hergestellt.",
+      "zh": "如今胰岛素是用基因技术生产的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gentechnisch verändert (gv) — 转基因的：gentechnisch veränderte Organismen (GVO)",
+   "gentechnisch herstellen / erzeugen — 用基因技术生产",
+   "名词：die Gentechnik；相关：Genmais, Gentherapie"
+  ],
+  "root": "gen·techn·isch：Gen（基因）+ Technik（技术）+ -isch → 与基因技术有关的",
+  "fam": [
+   "Gen",
+   "Gentechnik",
+   "Genom",
+   "Technik",
+   "technisch"
+  ],
+  "ety": "Gen 1909 年由丹麦遗传学家 W. Johannsen 据希腊语 génos（种、出身）/ -genēs 创造；Technik 18 世纪借自法语 technique，终源于希腊语 téchnē（技艺）。",
+  "cog": "英 gene, technical；希 génos, téchnē",
+  "tip": "“转基因”在德语中说 gentechnisch verändert，不用 *transgenetisch（专业词 transgen 另有用法）。"
+ },
+ {
+  "w": "Gerichtsverhandlung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Gerichtsverhandlungen",
+  "gs": "der Gerichtsverhandlung",
+  "ipa": "ɡəˈʁɪçt͡sfɛɐ̯ˌhandlʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "法庭审理，庭审，开庭",
+    "de": "mündliche Verhandlung eines Falles vor Gericht",
+    "ex": [
+     {
+      "de": "Die Gerichtsverhandlung wurde wegen Krankheit des Angeklagten vertagt.",
+      "zh": "因被告生病，庭审被延期。"
+     },
+     {
+      "de": "Journalisten dürfen in der Regel an Gerichtsverhandlungen teilnehmen.",
+      "zh": "记者通常可以旁听庭审。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Gerichtsverhandlung eröffnen / vertagen / unterbrechen — 开庭/延期/中断审理",
+   "öffentliche / nichtöffentliche Gerichtsverhandlung — 公开/不公开审理",
+   "近义：Prozess, Verhandlung, Hauptverhandlung（刑诉中的主审程序）"
+  ],
+  "root": "Gericht·s·verhandlung：Gericht（法院）+ -s- + Verhandlung（审理、协商，由 verhandeln 派生）",
+  "fam": [
+   "Gericht",
+   "Verhandlung",
+   "verhandeln",
+   "Richter",
+   "Prozess"
+  ],
+  "ety": "透明复合词。Gericht 由 richten（审判）派生（中古高地德语 gerihte）；handeln < 古高地德语 hantalōn（用手处理），由 Hand 派生。",
+  "cog": "Gericht：英 right；handeln：英 handle",
+  "tip": "Verhandlung 单独用也可指“谈判”，加 Gerichts- 才明确指庭审。"
+ },
+ {
+  "w": "geschmacklich",
+  "pos": "adj",
+  "ipa": "ɡəˈʃmaklɪç",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "味道上的，口味方面的",
+    "de": "den Geschmack (von Speisen) betreffend",
+    "ex": [
+     {
+      "de": "Geschmacklich ist der neue Kaffee kaum vom alten zu unterscheiden.",
+      "zh": "从味道上看，新款咖啡几乎和旧款没有区别。"
+     },
+     {
+      "de": "Die Sorte überzeugt geschmacklich, ist aber sehr teuer.",
+      "zh": "这个品种口味令人满意，但价格很贵。"
+     }
+    ]
+   },
+   {
+    "zh": "审美趣味上的，品位方面的",
+    "de": "den ästhetischen Geschmack betreffend",
+    "ex": [
+     {
+      "de": "Die Einrichtung ist geschmacklich etwas gewagt, aber durchaus originell.",
+      "zh": "这套装修在品位上有点大胆，但确实别具一格。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "geschmacklich überzeugen / enttäuschen — 味道上令人满意/失望",
+   "geschmacklich (gesehen) — 从口味/品位角度看（多作副词）",
+   "相关：geschmackvoll（有品位的）、geschmacklos（无味的；低俗的）"
+  ],
+  "root": "ge·schmack·lich：Geschmack（味道；品位）+ -lich → 与味道/品位有关的",
+  "fam": [
+   "Geschmack",
+   "schmecken",
+   "geschmackvoll",
+   "geschmacklos",
+   "Geschmackssache"
+  ],
+  "ety": "由 Geschmack 派生。schmecken < 古高地德语 smecken（尝、有味道）；Geschmack < 中古高地德语 gesmac。",
+  "cog": "英 smack（味道，a smack of）；荷 smaak",
+  "tip": "geschmacklich 中性，只表示“在味道/品位方面”；表示好坏要用 geschmackvoll / geschmacklos。"
+ },
+ {
+  "w": "Geschmackssache",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Geschmackssachen",
+  "gs": "der Geschmackssache",
+  "ipa": "ɡəˈʃmaksˌzaxə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "个人口味问题，见仁见智的事",
+    "de": "Angelegenheit, die vom persönlichen Geschmack abhängt",
+    "ex": [
+     {
+      "de": "Ob man den Film mag, ist reine Geschmackssache.",
+      "zh": "喜不喜欢这部电影纯属个人口味。"
+     },
+     {
+      "de": "Welche Farbe besser passt, bleibt Geschmackssache.",
+      "zh": "哪种颜色更合适，见仁见智。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Das ist (reine) Geschmackssache. — 这纯粹是个人喜好问题。（口语高频，不带冠词）",
+   "etw. ist Geschmackssache — 某事取决于个人口味",
+   "近义：Ansichtssache（见解问题）；谚语：Über Geschmack lässt sich (nicht) streiten."
+  ],
+  "root": "Geschmack·s·sache：Geschmack（口味、品位）+ -s- + Sache（事情）→ 口味的事",
+  "fam": [
+   "Geschmack",
+   "Sache",
+   "geschmacklich",
+   "Ansichtssache",
+   "Glückssache"
+  ],
+  "ety": "透明复合词。Sache < 古高地德语 sahha（原义“诉讼、争端”，后泛指“事情”）；Geschmack 见 geschmacklich。",
+  "cog": "Sache：英 sake（for the sake of，同根）；荷 zaak",
+  "tip": "几乎总作表语且不加冠词：Das ist Geschmackssache，不说 *eine Geschmackssache。"
+ },
+ {
+  "w": "geschäftsführend",
+  "pos": "adj",
+  "ipa": "ɡəˈʃɛft͡sˌfyːʁənt",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "执行业务的，负责经营管理的",
+    "de": "die Geschäfte eines Unternehmens oder Verbandes führend",
+    "ex": [
+     {
+      "de": "Sie ist geschäftsführende Gesellschafterin der Firma.",
+      "zh": "她是这家公司的执行股东（兼总经理）。"
+     },
+     {
+      "de": "Der geschäftsführende Vorstand trifft sich jede Woche.",
+      "zh": "执行董事会每周开会。"
+     }
+    ]
+   },
+   {
+    "zh": "（政府、部长）看守的，代行职务的（任期已满但新政府尚未组成时）",
+    "de": "nach Ende der Amtszeit die Amtsgeschäfte bis zur Neubesetzung weiterführend",
+    "ex": [
+     {
+      "de": "Bis zur Bildung der neuen Koalition bleibt die Regierung nur geschäftsführend im Amt.",
+      "zh": "在新的联合政府组成之前，现政府只是看守政府。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "geschäftsführender Gesellschafter / Direktor — 执行股东/执行董事",
+   "geschäftsführende Regierung / geschäftsführender Minister — 看守政府/代理部长",
+   "名词：der/die Geschäftsführende（执行者）；相关 Geschäftsführer（总经理，GmbH 的法定代表）"
+  ],
+  "root": "geschäft·s·führend：Geschäft（业务）+ -s- + führend（führen 的现在分词）→ 主持业务的",
+  "fam": [
+   "Geschäft",
+   "Geschäftsführer",
+   "Geschäftsführung",
+   "führen",
+   "Führung"
+  ],
+  "ety": "由固定搭配 die Geschäfte führen（主持业务）构成的分词复合形容词；Geschäft 由 schaffen（做、创造）派生（中古高地德语 gescheft）。",
+  "cog": "schaffen：英 shape（同根）；führen：英 fare, ferry（同根 fahren）",
+  "tip": "新闻中 geschäftsführend 常指“看守”（义项2），不要误解为“在经营”。"
+ },
+ {
+  "w": "Gewalttäter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gewalttäter",
+  "gs": "des Gewalttäters",
+  "ipa": "ɡəˈvaltˌtɛːtɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "暴力犯罪者，施暴者",
+    "de": "jmd., der Gewalttaten begeht",
+    "ex": [
+     {
+      "de": "Die Polizei nahm den mutmaßlichen Gewalttäter noch am Tatort fest.",
+      "zh": "警方在案发现场就逮捕了这名涉嫌施暴者。"
+     },
+     {
+      "de": "Rechtsextreme Gewalttäter werden in einer eigenen Datei erfasst.",
+      "zh": "极右翼暴力犯罪者被登记在一个专门的档案中。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein verurteilter / mutmaßlicher / notorischer Gewalttäter — 已定罪的/涉嫌的/惯犯型施暴者",
+   "阴性：die Gewalttäterin, -nen",
+   "相关：Gewalttat（暴力行为）、Straftäter（罪犯）、Täter（作案人）"
+  ],
+  "root": "Gewalt·täter：Gewalt（暴力）+ Täter（作案者，由 Tat 派生）→ 实施暴力行为的人",
+  "fam": [
+   "Gewalt",
+   "Gewalttat",
+   "Täter",
+   "Tat",
+   "gewalttätig"
+  ],
+  "ety": "由 Gewalttat 派生。Gewalt < 古高地德语 giwalt，由 waltan（掌管、支配，今 walten）派生；Tat < 古高地德语 tāt，与 tun 同根。",
+  "cog": "Gewalt：英 wield（同根 walten）；Tat：英 deed, do",
+  "tip": "Gewalttäter 指“施暴者”，而 Gewaltopfer 是“暴力受害者”；形容词 gewalttätig（暴力的）。"
+ },
+ {
+  "w": "sich wappnen",
+  "pos": "v",
+  "ipa": "ˈvapnən",
+  "lvl": "C1",
+  "forms": "wappnet sich · wappnete sich · hat sich gewappnet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（为应对某事）做好准备，武装自己，严阵以待",
+    "de": "sich auf etw. Schwieriges vorbereiten, sich dagegen schützen",
+    "ex": [
+     {
+      "de": "Die Stadt wappnet sich mit Sandsäcken gegen das Hochwasser.",
+      "zh": "该市用沙袋严阵以待，防备洪水。"
+     },
+     {
+      "de": "Für das Gespräch mit dem Chef hatte sie sich mit guten Argumenten gewappnet.",
+      "zh": "为了和老板谈话，她事先准备好了充分的论据。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich gegen etw.(A) wappnen — 为防备某事做好准备",
+   "sich für etw.(A) wappnen — 为某事做好准备",
+   "gegen etw. gewappnet sein — 对某事已有防备（状态被动，常见）"
+  ],
+  "root": "wappn·en：Wappen（盾徽；旧义“武器”）+ -en → 配备武器 → 武装起来 → 转义“做好准备”",
+  "fam": [
+   "Wappen",
+   "Waffe",
+   "bewaffnen",
+   "Waffenstillstand"
+  ],
+  "ety": "中古高地德语 wāpenen（武装），由 wāpen（武器）派生；wāpen 是 Waffe 的中古荷兰语/低地德语形式，12 世纪随骑士文化传入高地德语，后分化为 Wappen（盾徽）与 Waffe（武器）。",
+  "cog": "英 weapon；荷 wapen",
+  "tip": "现代德语几乎只用反身形式 sich wappnen，不再表示字面的“拿起武器”。"
+ },
+ {
+  "w": "Gigabyte",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gigabyte",
+  "gs": "des Gigabyte(s)",
+  "ipa": "ˈɡiːɡaˌbaɪ̯t",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "千兆字节，吉字节（GB，约 10 亿字节）",
+    "de": "Maßeinheit für Datenmengen: eine Milliarde Byte (bzw. 2³⁰ Byte)",
+    "ex": [
+     {
+      "de": "Der Tarif umfasst zehn Gigabyte Datenvolumen pro Monat.",
+      "zh": "该套餐每月包含 10 GB 流量。"
+     },
+     {
+      "de": "Das Update ist über drei Gigabyte groß.",
+      "zh": "这个更新包有三个多 GB。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zehn Gigabyte Speicher / Datenvolumen — 10 GB 存储空间/流量（数量词后复数不变）",
+   "缩写 GB；相近单位：Megabyte (MB), Terabyte (TB)",
+   "复数通常与单数同形（与数词连用时）；也见 Gigabytes"
+  ],
+  "root": "Giga·byte：希腊语 gígas（巨人；→ 十亿倍词头）+ Byte（字节）",
+  "fam": [
+   "Byte",
+   "Megabyte",
+   "Terabyte",
+   "Kilobyte",
+   "Bit"
+  ],
+  "ety": "借自英语 gigabyte（20 世纪下半叶）；giga- 为国际单位制词头，源于希腊语 gígas（巨人）；byte 为 1956 年 IBM 工程师 W. Buchholz 所造（由 bite 改拼）。",
+  "cog": "英 gigabyte；希 gígas",
+  "tip": "德语中 g 读 [ɡ]（也常读 [ˈɡɪɡa]），不读英语的 [dʒ]；中性名词 das Gigabyte。"
+ },
+ {
+  "w": "glühen",
+  "pos": "v",
+  "ipa": "ˈɡlyːən",
+  "lvl": "B2",
+  "forms": "glüht · glühte · hat geglüht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（因高温）发红光，灼热发光；（炭火）闪着红光",
+    "de": "durch Hitze rot oder weiß leuchten",
+    "ex": [
+     {
+      "de": "Das Eisen glühte rot, als der Schmied es aus dem Feuer zog.",
+      "zh": "铁匠把铁从火里取出来时，铁块烧得通红。"
+     },
+     {
+      "de": "In der Feuerstelle glühte noch die Asche.",
+      "zh": "火塘里的灰烬还泛着红光。"
+     }
+    ]
+   },
+   {
+    "zh": "（脸）发烫，火辣辣；（转义）满腔热情",
+    "de": "heiß und rot sein; von Begeisterung erfüllt sein",
+    "ex": [
+     {
+      "de": "Ihre Wangen glühten vor Aufregung.",
+      "zh": "她激动得双颊发烫。"
+     },
+     {
+      "de": "Die Fans glühten vor Begeisterung für ihr Team.",
+      "zh": "球迷们对自己的球队充满狂热。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "vor etw.(D) glühen — 因……而发烫/满腔热情：vor Fieber / Begeisterung glühen",
+   "rot glühen; glühend heiß — 烧得通红；灼热的",
+   "派生：glühend（炽热的；热烈的）、die Glut（余烬、炽热）、der Glühwein"
+  ],
+  "root": "glüh·en：日耳曼语词根 *glō-（发光、灼热）",
+  "fam": [
+   "Glut",
+   "glühend",
+   "Glühbirne",
+   "Glühwein",
+   "verglühen"
+  ],
+  "ety": "中古高地德语 glüejen < 古高地德语 gluoen < 原始日耳曼语 *glōaną（发光、灼热），与 Glut 同根。",
+  "cog": "英 glow；荷 gloeien",
+  "tip": "glühen 是不发火焰的“红热发光”，有火焰的燃烧是 brennen。"
+ },
+ {
+  "w": "Grabmal",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Grabmäler",
+  "gs": "des Grabmal(e)s",
+  "ipa": "ˈɡʁaːpˌmaːl",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "墓碑，陵墓，墓葬纪念建筑",
+    "de": "Denkmal auf oder über einem Grab",
+    "ex": [
+     {
+      "de": "Das Grabmal des Unbekannten Soldaten wird rund um die Uhr bewacht.",
+      "zh": "无名战士墓昼夜有人守卫。"
+     },
+     {
+      "de": "Auf dem alten Friedhof stehen kunstvolle Grabmäler aus dem 19. Jahrhundert.",
+      "zh": "老墓园里立着 19 世纪精美的墓碑。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Grabmal errichten — 建造墓碑/陵墓",
+   "复数 Grabmäler，也见 Grabmale",
+   "相关：Grabstein（墓碑石）、Gruft（墓穴）、Mausoleum（陵墓）"
+  ],
+  "root": "Grab·mal：Grab（坟墓）+ Mal（标记、纪念物，如 Denkmal）→ 墓上的纪念标志",
+  "fam": [
+   "Grab",
+   "graben",
+   "Denkmal",
+   "Mal",
+   "Grabstein"
+  ],
+  "ety": "Grab < 古高地德语 grab，由 graben（挖）派生；Mal < 古高地德语 māl（标记、记号），今见于 Denkmal、Merkmal。",
+  "cog": "Grab：英 grave；Mal：英 mole（痣，一说同根）",
+  "tip": "Grabmal 比 Grabstein 更正式，常指有艺术或纪念价值的墓葬建筑。"
+ },
+ {
+  "w": "Grundvoraussetzung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Grundvoraussetzungen",
+  "gs": "der Grundvoraussetzung",
+  "ipa": "ˈɡʁʊntfoˌʁaʊ̯szɛt͡sʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "基本前提，基本条件",
+    "de": "grundlegende, unverzichtbare Voraussetzung",
+    "ex": [
+     {
+      "de": "Gute Deutschkenntnisse sind eine Grundvoraussetzung für das Studium.",
+      "zh": "良好的德语水平是上大学的基本前提。"
+     },
+     {
+      "de": "Vertrauen ist die Grundvoraussetzung jeder Zusammenarbeit.",
+      "zh": "信任是一切合作的基本前提。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Grundvoraussetzung für etw.(A) sein — 是某事的基本前提（介词 für）",
+   "eine Grundvoraussetzung erfüllen / schaffen — 满足/创造基本条件",
+   "近义：Grundbedingung；Voraussetzung（前提，程度稍弱）"
+  ],
+  "root": "Grund·voraus·setz·ung：Grund（基础）+ Voraussetzung（前提：voraus 预先 + setzen 设定 + -ung）",
+  "fam": [
+   "Voraussetzung",
+   "voraussetzen",
+   "Grund",
+   "Grundlage",
+   "Grundbedingung"
+  ],
+  "ety": "透明复合词。Voraussetzung 由 voraussetzen（预先设定）派生，18 世纪起作哲学术语（对应拉丁语 praesuppositio）；setzen 是 sitzen 的使役动词（古高地德语 sezzen）。",
+  "cog": "setzen：英 set；Grund：英 ground",
+  "tip": "注意 Voraussetzung 的拼写：voraus + setzung，中间没有 -s-。"
+ },
+ {
+  "w": "Gynäkologie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Gynäkologie",
+  "ipa": "ɡynɛkoloˈɡiː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "妇科学，妇科",
+    "de": "Frauenheilkunde; Lehre von den Krankheiten der weiblichen Geschlechtsorgane",
+    "ex": [
+     {
+      "de": "Nach dem Studium spezialisierte sie sich auf Gynäkologie und Geburtshilfe.",
+      "zh": "毕业后她专攻妇科和产科。"
+     },
+     {
+      "de": "Die Klinik hat eine eigene Abteilung für Gynäkologie.",
+      "zh": "这家医院设有独立的妇科。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Gynäkologie und Geburtshilfe — 妇产科（科室常用全称）",
+   "der Gynäkologe / die Gynäkologin — 妇科医生（口语 Frauenarzt/Frauenärztin）",
+   "形容词：gynäkologisch（妇科的）"
+  ],
+  "root": "Gynäk·o·logie：希腊语 gynḗ, 属格 gynaikós（女人）+ -logie（学问，< lógos）→ 关于女性的学问",
+  "fam": [
+   "Gynäkologe",
+   "gynäkologisch",
+   "Biologie",
+   "Frauenheilkunde",
+   "Androgyn"
+  ],
+  "ety": "19 世纪由新拉丁语/希腊语成分构成的学术词：希腊语 gynḗ（女人，词干 gynaik-）+ -logía（学）；德语中与本土词 Frauenheilkunde 并用。",
+  "cog": "英 gynaecology / gynecology；希 gynḗ",
+  "tip": "重音在最后音节 -gie [ˈɡiː]，与 Biologie、Psychologie 相同；拼写 ä 不是 e。"
+ },
+ {
+  "w": "Halterung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Halterungen",
+  "gs": "der Halterung",
+  "ipa": "ˈhaltəʁʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "支架，托架，固定装置",
+    "de": "Vorrichtung, die etw. hält oder befestigt",
+    "ex": [
+     {
+      "de": "Das Handy sitzt in einer Halterung am Armaturenbrett.",
+      "zh": "手机放在仪表盘上的一个支架里。"
+     },
+     {
+      "de": "Die Halterung für den Fernseher muss fest in der Wand verankert werden.",
+      "zh": "电视机的壁挂支架必须牢固地固定在墙上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. in / an einer Halterung befestigen — 把某物固定在支架上",
+   "eine Halterung für etw.(A) — 用于某物的支架：Fahrradhalterung, Wandhalterung",
+   "近义：Halter（较小的夹座，如 Handyhalter）、Ständer（立式支架）"
+  ],
+  "root": "halt·er·ung：halten（持、固定）+ -er（工具）+ -ung（名词化）→ 起固定作用的装置",
+  "fam": [
+   "halten",
+   "Halter",
+   "Halt",
+   "Haltbarkeit",
+   "befestigen"
+  ],
+  "ety": "由 Halter 派生。halten < 中古高地德语 halten < 古高地德语 haltan（看管、保持）< 原始日耳曼语 *haldaną。",
+  "cog": "英 hold；荷 houden",
+  "tip": "Halterung 指固定装置本身；Halter 也可指“持有人”（Fahrzeughalter 车主），Halterung 无此义。"
+ },
+ {
+  "w": "Heiland",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Heilande",
+  "gs": "des Heilands",
+  "ipa": "ˈhaɪ̯lant",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "救世主，救主（基督教对耶稣的称呼）",
+    "de": "(christlich) Erlöser, Jesus Christus",
+    "ex": [
+     {
+      "de": "In vielen Weihnachtsliedern wird die Geburt des Heilands besungen.",
+      "zh": "许多圣诞颂歌都在歌颂救主的诞生。"
+     },
+     {
+      "de": "„Herr Jesus, du Heiland der Welt“ – so beginnt das alte Kirchenlied.",
+      "zh": "“主耶稣，你是世界的救主”——这首古老的圣歌这样开头。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Heiland — 几乎总带定冠词，专指耶稣基督",
+   "jdn. als Heiland verehren / feiern — 把某人当作救世主崇拜（讽刺用法）",
+   "近义：Erlöser, Retter；感叹语（南德/奥地利）：Heiland! / Heilandsack!"
+  ],
+  "root": "heil·and：heilen（医治、拯救）的古现在分词形式名词化 → “拯救者”",
+  "fam": [
+   "heilen",
+   "Heil",
+   "heilig",
+   "Heilung",
+   "heil"
+  ],
+  "ety": "古高地德语 heilant，为动词 heilen 的现在分词名词化，用以翻译拉丁语 salvator / 希腊语 sōtḗr（拯救者）；古英语 hǣlend 为平行构词。",
+  "cog": "英 heal, whole, holy（同根 heil）；古英 hǣlend",
+  "tip": "复数极少用；日常德语中仅见于宗教语境、圣诞歌或南德口语感叹。"
+ },
+ {
+  "w": "herausnehmen",
+  "pos": "v",
+  "ipa": "hɛˈʁaʊ̯sˌneːmən",
+  "lvl": "B1–B2",
+  "forms": "nimmt heraus · nahm heraus · hat herausgenommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "取出，拿出；（医学）摘除",
+    "de": "aus etw. nach außen nehmen, entfernen",
+    "ex": [
+     {
+      "de": "Nimm bitte die Wäsche aus der Maschine heraus.",
+      "zh": "请把衣服从洗衣机里拿出来。"
+     },
+     {
+      "de": "Dem Patienten musste der Blinddarm herausgenommen werden.",
+      "zh": "病人不得不接受阑尾切除。"
+     }
+    ]
+   },
+   {
+    "zh": "（反身 sich etw. herausnehmen）擅自做，放肆，自以为有权……",
+    "de": "sich etw. erlauben, was einem nicht zusteht",
+    "ex": [
+     {
+      "de": "Was nimmst du dir eigentlich heraus, so mit mir zu reden?",
+      "zh": "你凭什么这样跟我说话？"
+     },
+     {
+      "de": "Der neue Kollege nimmt sich ziemlich viel heraus.",
+      "zh": "这位新同事相当放肆。"
+     }
+    ]
+   },
+   {
+    "zh": "（从名单、项目中）撤出，删去；让（球员）下场",
+    "de": "aus einem Zusammenhang entfernen; (Sport) auswechseln",
+    "ex": [
+     {
+      "de": "Der Trainer nahm den verletzten Stürmer in der Halbzeit heraus.",
+      "zh": "教练在中场休息时把受伤的前锋换下。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) aus etw.(D) herausnehmen — 从……中取出某物",
+   "sich(D) etw.(A) herausnehmen — 擅自做某事，放肆：sich Freiheiten / zu viel herausnehmen",
+   "口语常用 rausnehmen；相比之下 entnehmen 更书面（etw. D entnehmen）"
+  ],
+  "root": "heraus·nehmen：heraus（从里向外、朝说话者）+ nehmen（拿）→ 拿出来",
+  "fam": [
+   "nehmen",
+   "heraus",
+   "entnehmen",
+   "hinausnehmen",
+   "Entnahme"
+  ],
+  "ety": "nehmen < 古高地德语 neman < 原始日耳曼语 *nemaną；heraus = her（朝向说话者）+ aus。",
+  "cog": "nehmen：英 nimble（同根）、荷 nemen；heraus：英 here, out",
+  "tip": "反身用法中 sich 是第三格（Du nimmst dir zu viel heraus），且带明显责备语气。"
+ }
+]

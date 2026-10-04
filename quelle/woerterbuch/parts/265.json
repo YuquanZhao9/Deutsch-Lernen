@@ -1,0 +1,2371 @@
+[
+ {
+  "w": "Profiling",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Profilings",
+  "gs": "des Profilings",
+  "ipa": "ˈpʁoʊ̯faɪ̯lɪŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（刑侦）罪犯侧写，犯罪心理画像",
+    "de": "Erstellen eines Täterprofils aufgrund von Tatmerkmalen",
+    "ex": [
+     {
+      "de": "Beim Profiling versuchen Fallanalytiker, aus den Spuren am Tatort auf die Persönlichkeit des Täters zu schließen.",
+      "zh": "在罪犯侧写中，案件分析员试图从现场痕迹推断作案者的性格特征。"
+     }
+    ]
+   },
+   {
+    "zh": "（数据/营销）用户画像，个人特征分析",
+    "de": "systematische Auswertung personenbezogener Daten, um Verhaltensmuster zu erstellen",
+    "ex": [
+     {
+      "de": "Die DSGVO räumt Betroffenen das Recht ein, einem automatisierten Profiling zu widersprechen.",
+      "zh": "《通用数据保护条例》赋予当事人反对自动化用户画像的权利。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Profiling betreiben / durchführen — 进行侧写／画像分析",
+   "automatisiertes Profiling (DSGVO Art. 22) — 自动化画像（法律术语）",
+   "Racial Profiling — 基于种族特征的警务盘查（常见批评用语）"
+  ],
+  "root": "Profil·ing：Profil（轮廓、特征概貌）+ 英语动名词后缀 -ing → 勾勒某人的特征概貌",
+  "fam": [
+   "das Profil",
+   "profilieren",
+   "der Profiler",
+   "das Täterprofil"
+  ],
+  "ety": "20 世纪后半叶借自英语 profiling（< to profile < profile）；profile 本身来自意大利语 profilo（< profilare 勾勒轮廓，< 拉丁语 filum 线）。",
+  "cog": "英 profiling, profile；意 profilo",
+  "tip": "德语中读作英语音；多用于刑侦与数据保护语境，不是“个人简介”（那叫 Profil）。"
+ },
+ {
+  "w": "Prophylaxe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Prophylaxen",
+  "gs": "der Prophylaxe",
+  "ipa": "pʁofyˈlaksə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（医学）预防，预防措施",
+    "de": "vorbeugende Maßnahme gegen Krankheiten",
+    "ex": [
+     {
+      "de": "Regelmäßige Zahnreinigung gehört zur Prophylaxe gegen Karies und Parodontitis.",
+      "zh": "定期洁牙属于预防龋齿和牙周炎的措施。"
+     },
+     {
+      "de": "Die Krankenkasse übernimmt die Kosten für die Prophylaxe nur einmal im Jahr.",
+      "zh": "医保每年只报销一次预防性检查的费用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Prophylaxe gegen etw.(A) / zur Prophylaxe von etw.(D) — 预防某病",
+   "medikamentöse / zahnärztliche Prophylaxe — 药物预防／牙科预防",
+   "prophylaktisch（形容词）— 预防性的"
+  ],
+  "root": "Pro·phyl·axe：希腊语 pro-（在前）+ phylássein（守护）→ 事先守护 → 预防",
+  "fam": [
+   "prophylaktisch",
+   "die Prophylaktik",
+   "das Prophylaktikum"
+  ],
+  "ety": "19 世纪经新拉丁语 prophylaxis 借自希腊语 prophýlaxis（预先防护），由 pro-（在前）+ phylássein（守卫、保护）构成。",
+  "cog": "英 prophylaxis；法 prophylaxie；希 prophýlaxis",
+  "tip": "日常口语更常说 Vorbeugung / Vorsorge；Prophylaxe 为医学专业词。"
+ },
+ {
+  "w": "prämieren",
+  "pos": "v",
+  "ipa": "pʁɛˈmiːʁən",
+  "lvl": "C1",
+  "forms": "prämiert · prämierte · hat prämiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "授奖，给……颁奖；评奖表彰",
+    "de": "mit einem Preis auszeichnen",
+    "ex": [
+     {
+      "de": "Der Dokumentarfilm wurde auf der Berlinale mit dem Silbernen Bären prämiert.",
+      "zh": "这部纪录片在柏林电影节上获颁银熊奖。"
+     },
+     {
+      "de": "Die Jury prämierte drei Projekte, die sich für nachhaltige Mobilität einsetzen.",
+      "zh": "评审团对三个致力于可持续出行的项目进行了表彰。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn./etw. mit etw.(D) prämieren — 以某奖项表彰某人／某作品",
+   "ein prämierter Wein / Film — 获奖葡萄酒／获奖影片（分词作形容词）",
+   "变体 prämiieren 亦为正确拼法，但 prämieren 更常见"
+  ],
+  "root": "prämi·eren：Prämie（奖金、奖品）+ 动词后缀 -ieren → 发奖",
+  "fam": [
+   "die Prämie",
+   "die Prämierung",
+   "der Preis",
+   "preisgekrönt"
+  ],
+  "ety": "19 世纪由 Prämie 派生；Prämie 借自拉丁语 praemium（报酬、奖赏，< prae- 在前 + emere 取得，“先行取得之物”）。",
+  "cog": "英 premium；法 prime；拉 praemium",
+  "tip": "语料中的 prämiert 是其过去分词，常作定语：ein mehrfach prämiertes Restaurant（屡获殊荣的餐厅）。"
+ },
+ {
+  "w": "punkto",
+  "pos": "präp",
+  "ipa": "ˈpʊŋkto",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（奥地利、瑞士用法）关于，就……而言",
+    "de": "(österr., schweiz.) hinsichtlich, in Bezug auf",
+    "ex": [
+     {
+      "de": "Punkto Sicherheit hat das neue Modell deutlich zugelegt.",
+      "zh": "在安全性方面，新车型有明显进步。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "punkto + 第二格（口语中名词常不变格）：punkto Preis / punkto Qualität — 就价格／质量而言",
+   "标准德语写作 in puncto：in puncto Zuverlässigkeit — 就可靠性而言",
+   "近义：hinsichtlich (G), bezüglich (G), was … betrifft"
+  ],
+  "root": "punkto：拉丁语 in puncto（在……这一点上）的省略形式；punctum 点 → 条目、方面",
+  "fam": [
+   "der Punkt",
+   "in puncto",
+   "punktuell",
+   "pünktlich"
+  ],
+  "ety": "源于拉丁语短语 in puncto（< punctum 点，pungere 刺 的过去分词），原为法律与商业用语“在某条目上”；省去 in 的 punkto 主要见于奥地利和瑞士。",
+  "cog": "英 point, punctual；法 point；拉 punctum",
+  "tip": "德国标准语用 in puncto（亦拼作 in punkto）；单独的 punkto 带地区色彩，不要在正式写作中使用。"
+ },
+ {
+  "w": "rausnehmen",
+  "pos": "v",
+  "ipa": "ˈʁaʊ̯sˌneːmən",
+  "lvl": "B1–B2",
+  "forms": "nimmt raus · nahm raus · hat rausgenommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（口语）取出，拿出来；去掉，删除",
+    "de": "(ugs.) herausnehmen, entfernen",
+    "ex": [
+     {
+      "de": "Nimm bitte die Batterien raus, bevor du das Gerät wegwirfst.",
+      "zh": "扔掉设备之前请把电池取出来。"
+     },
+     {
+      "de": "Den letzten Absatz würde ich aus dem Bericht rausnehmen, der bringt nichts.",
+      "zh": "报告的最后一段我会删掉，没什么意义。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语）把……撤下，使退出（比赛、班级等）",
+    "de": "(ugs.) jdn. aus etw. zurückziehen",
+    "ex": [
+     {
+      "de": "Der Trainer hat ihn nach der Verletzung sofort rausgenommen.",
+      "zh": "他受伤后教练立刻把他换下了场。"
+     }
+    ]
+   },
+   {
+    "zh": "sich etw. rausnehmen（口语）：擅自做某事，放肆",
+    "de": "(ugs.) sich etw. anmaßen",
+    "ex": [
+     {
+      "de": "Was nimmt der sich eigentlich raus, einfach meinen Parkplatz zu benutzen?",
+      "zh": "他凭什么这么放肆，居然随便用我的车位？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) aus etw.(D) rausnehmen — 从……中取出某物",
+   "sich(D) etw.(A) rausnehmen — 擅自做某事（贬义）",
+   "书面语用 herausnehmen；raus- 是 heraus-/hinaus- 的口语缩略，也用于 rausgehen, rauswerfen 等"
+  ],
+  "root": "raus·nehmen：raus（= heraus，向外）+ nehmen（拿）→ 拿出来",
+  "fam": [
+   "nehmen",
+   "herausnehmen",
+   "die Entnahme",
+   "rauswerfen",
+   "rausgehen"
+  ],
+  "ety": "nehmen < 中古高地德语 nemen < 古高地德语 neman < 原始日耳曼语 *nemaną（拿取）。raus 由 heraus 口语缩略而来。",
+  "cog": "荷 nemen；英 nimble（“敏捷”，一般认为同源）；哥特 niman",
+  "tip": "口语中 raus- 不区分 heraus/hinaus 的方向；写正式文本时改用 herausnehmen。"
+ },
+ {
+  "w": "Referentin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Referentinnen",
+  "gs": "der Referentin",
+  "ipa": "ʁefeˈʁɛntɪn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（女）报告人，主讲人，演讲者",
+    "de": "Frau, die einen Vortrag hält",
+    "ex": [
+     {
+      "de": "Die Referentin stellte die Ergebnisse ihrer Studie in zwanzig Minuten vor.",
+      "zh": "主讲人用二十分钟介绍了她的研究结果。"
+     }
+    ]
+   },
+   {
+    "zh": "（女）专员，部门主管官员；（议员、部长的）助理",
+    "de": "Sachbearbeiterin für ein bestimmtes Fachgebiet in einer Behörde oder Organisation",
+    "ex": [
+     {
+      "de": "Als Referentin für Umweltpolitik bereitet sie Reden und Positionspapiere für den Minister vor.",
+      "zh": "作为环境政策专员，她为部长准备演讲稿和立场文件。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Referentin für etw.(A) — 负责某领域的专员",
+   "als Referentin auftreten / eingeladen werden — 作为主讲人出场／被邀请",
+   "阳性形式 der Referent（-en, -en，弱变化）；wissenschaftliche Referentin — 学术助理"
+  ],
+  "root": "Referent·in：referieren（作报告）+ -ent（行为者）+ -in（阴性后缀）→ 作报告的女性",
+  "fam": [
+   "der Referent",
+   "referieren",
+   "das Referat",
+   "die Referenz"
+  ],
+  "ety": "Referent 借自拉丁语 referens（referre 的现在分词：带回、报告，< re- 回 + ferre 携带）；-in 为德语本族阴性后缀。",
+  "cog": "英 refer, reference；法 référent；拉 referre",
+  "tip": "Referent/Referentin 在官僚体系里常指“某领域的负责官员”，不是“推荐人”（那是 Referenz / Referenzgeber）。"
+ },
+ {
+  "w": "Regenfall",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Regenfälle",
+  "gs": "des Regenfalls / Regenfalles",
+  "ipa": "ˈʁeːɡn̩ˌfal",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "降雨，降水（多用复数）",
+    "de": "das Fallen von Regen; Niederschlag",
+    "ex": [
+     {
+      "de": "Nach tagelangen heftigen Regenfällen traten mehrere Flüsse über die Ufer.",
+      "zh": "连日暴雨之后，多条河流决堤。"
+     },
+     {
+      "de": "Für das Wochenende sind ergiebige Regenfälle angekündigt.",
+      "zh": "预报周末将有大量降雨。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "heftige / anhaltende / ergiebige Regenfälle — 强烈的／持续的／充沛的降雨",
+   "几乎只用复数 Regenfälle；单数多见于气象术语",
+   "近义：der Niederschlag（降水，统称）, der Schauer（阵雨）"
+  ],
+  "root": "Regen·fall：Regen（雨）+ Fall（落下）→ 雨的降落",
+  "fam": [
+   "der Regen",
+   "fallen",
+   "der Niederschlag",
+   "der Wolkenbruch",
+   "regnen"
+  ],
+  "ety": "Regen < 中古高地德语 regen < 古高地德语 regan < 原始日耳曼语 *regną；Fall 为 fallen 的动词名词。",
+  "cog": "英 rain, fall；荷 regen, val",
+  "tip": "新闻语体词；口语说 Es hat stark geregnet 即可。"
+ },
+ {
+  "w": "Regierungszeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Regierungszeiten",
+  "gs": "der Regierungszeit",
+  "ipa": "ʁeˈɡiːʁʊŋsˌt͡saɪ̯t",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "执政时期，统治时期，在位期间",
+    "de": "Zeitraum, in dem jd. regiert",
+    "ex": [
+     {
+      "de": "In ihrer Regierungszeit wurde das Rentensystem zweimal reformiert.",
+      "zh": "在她执政期间，养老金制度进行了两次改革。"
+     },
+     {
+      "de": "Die Regierungszeit Friedrichs II. gilt als Blütezeit der preußischen Verwaltung.",
+      "zh": "腓特烈二世在位时期被视为普鲁士行政的鼎盛期。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "während / in der Regierungszeit (von) … — 在……执政期间",
+   "unter der Regierung von … 亦可表达同一意思",
+   "近义：Amtszeit（任期，范围更广，也用于非统治者）"
+  ],
+  "root": "Regierung·s·zeit：Regierung（政府、统治）+ 连接 -s- + Zeit（时间）",
+  "fam": [
+   "regieren",
+   "die Regierung",
+   "die Amtszeit",
+   "der Regent"
+  ],
+  "ety": "regieren < 中古高地德语 regieren，经古法语 reger 借自拉丁语 regere（引导、统治）；Zeit < 中古高地德语 zīt < 古高地德语 zīt < 原始日耳曼语 *tīdiz。",
+  "cog": "英 tide（与 Zeit 同源）；英 regime, reign；拉 regere",
+  "tip": "用于君主或政府首脑；对总理、总统也可以说 Amtszeit / Kanzlerschaft。"
+ },
+ {
+  "w": "Reliquie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Reliquien",
+  "gs": "der Reliquie",
+  "ipa": "ʁeˈliːkvi̯ə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（宗教）圣物，圣髑（圣人遗骨或遗物）",
+    "de": "Überrest eines Heiligen oder Gegenstand, der mit ihm in Verbindung steht, als Gegenstand der Verehrung",
+    "ex": [
+     {
+      "de": "Im Kölner Dom werden die Reliquien der Heiligen Drei Könige in einem goldenen Schrein aufbewahrt.",
+      "zh": "科隆大教堂里，三王的圣髑被保存在一座金质圣龛中。"
+     }
+    ]
+   },
+   {
+    "zh": "（转义）珍贵的遗物，纪念物",
+    "de": "(übertragen) mit Ehrfurcht aufbewahrtes Andenken",
+    "ex": [
+     {
+      "de": "Das alte Trikot hütet er wie eine Reliquie.",
+      "zh": "那件旧球衣他像圣物一样珍藏着。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Reliquien verehren / aufbewahren — 崇敬／保存圣物",
+   "der Reliquienschrein — 圣髑龛；die Reliquienverehrung — 圣物崇拜",
+   "注意发音：qu 读 [kv]，重音在 -li-"
+  ],
+  "root": "Reliqu·ie：拉丁语 relinquere（留下）→ reliquiae（遗留之物）→ 圣人遗物",
+  "fam": [
+   "das Relikt",
+   "die Reliquienverehrung",
+   "der Reliquiar"
+  ],
+  "ety": "中古高地德语 reliquie 借自拉丁语 reliquiae（复数，“遗留之物、遗骸”，< relinquere 留下，< re- + linquere 离开）。",
+  "cog": "英 relic；法 relique；拉 relinquere",
+  "tip": "Relikt（残余、遗迹）是中性名词且无宗教色彩，不要混用。"
+ },
+ {
+  "w": "Rentenalter",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Rentenalters",
+  "ipa": "ˈʁɛntn̩ˌʔaltɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "退休年龄，领取养老金的年龄",
+    "de": "Alter, ab dem jd. Anspruch auf Altersrente hat",
+    "ex": [
+     {
+      "de": "Das gesetzliche Rentenalter steigt bis 2031 schrittweise auf 67 Jahre.",
+      "zh": "法定退休年龄到2031年将逐步提高到67岁。"
+     },
+     {
+      "de": "Viele Beschäftigte wollen schon vor dem Rentenalter aus dem Beruf aussteigen.",
+      "zh": "许多职工希望在退休年龄之前就退出职场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Rentenalter erreichen — 达到退休年龄",
+   "das gesetzliche / reguläre Rentenalter anheben — 提高法定退休年龄",
+   "近义：das Renteneintrittsalter（更正式）；das Pensionsalter（公务员、奥地利用法）"
+  ],
+  "root": "Renten·alter：Rente（养老金）+ 连接 -n- + Alter（年龄）",
+  "fam": [
+   "die Rente",
+   "der Rentner",
+   "das Alter",
+   "der Ruhestand",
+   "die Altersrente"
+  ],
+  "ety": "Rente < 中古高地德语 rente，借自古法语 rente（收益），< 通俗拉丁语 *rendita（< reddere 归还、交付）；Alter < 古高地德语 altar，与 alt 同源。",
+  "cog": "英 rent；法 rente；英 old（Alter）",
+  "tip": "德国雇员退休说 in Rente gehen，公务员说 in Pension gehen；Rentenalter 只用单数。"
+ },
+ {
+  "w": "Ressentiment",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Ressentiments",
+  "gs": "des Ressentiments",
+  "ipa": "ʁɛsɑ̃tiˈmɑ̃ː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（因无力感而生的）积怨，怨恨；偏见，反感情绪",
+    "de": "auf Vorurteilen beruhende, oft unbewusste Abneigung; aufgestauter Groll",
+    "ex": [
+     {
+      "de": "Populisten schüren gezielt Ressentiments gegen Zuwanderer.",
+      "zh": "民粹主义者有意煽动针对移民的怨恨情绪。"
+     },
+     {
+      "de": "Hinter seiner Kritik steckt vor allem ein altes Ressentiment gegen die Eliten.",
+      "zh": "他的批评背后主要是对精英阶层由来已久的积怨。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Ressentiments gegen jdn./etw.(A) hegen / schüren / abbauen — 怀有／煽动／消除对……的怨恨",
+   "多用复数 Ressentiments",
+   "读法语音，词尾 -t 不发音；形容词 ressentimentgeladen — 充满怨恨的"
+  ],
+  "root": "Re·ssenti·ment：法语 re-（反复）+ sentir（感受）+ -ment（名词后缀）→ 反复感受到的（怨恨）",
+  "fam": [
+   "das Sentiment",
+   "sentimental",
+   "der Groll",
+   "die Abneigung"
+  ],
+  "ety": "19 世纪借自法语 ressentiment（< ressentir 深切感受、记恨，< re- + sentir < 拉丁语 sentire 感觉）；作为哲学概念由尼采（Zur Genealogie der Moral，1887）推广。",
+  "cog": "英 resentment；法 ressentiment；拉 sentire",
+  "tip": "比 Hass 弱、比 Abneigung 深：强调积压的、不自觉的怨气。"
+ },
+ {
+  "w": "rundherum",
+  "pos": "adv",
+  "ipa": "ˌʁʊnthɛˈʁʊm",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "在周围，四周",
+    "de": "ringsum, auf allen Seiten",
+    "ex": [
+     {
+      "de": "Das Haus steht allein auf dem Hügel, rundherum nur Wiesen und Wald.",
+      "zh": "房子孤零零地立在山丘上，四周只有草地和树林。"
+     }
+    ]
+   },
+   {
+    "zh": "完全地，彻底地",
+    "de": "völlig, ganz und gar",
+    "ex": [
+     {
+      "de": "Mit dem neuen Job ist sie rundherum zufrieden.",
+      "zh": "她对新工作完全满意。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "rundherum zufrieden / glücklich / gelungen — 完全满意／幸福／成功",
+   "rundherum um etw.(A) — 围绕某物一周",
+   "近义：ringsherum, ringsum（义项1）；rundum（两义皆可）"
+  ],
+  "root": "rund·her·um：rund（圆、周围）+ herum（绕着）→ 绕一整圈 → 四周；彻底",
+  "fam": [
+   "rund",
+   "herum",
+   "rundum",
+   "ringsherum",
+   "die Runde"
+  ],
+  "ety": "rund < 中古高地德语 runt，借自古法语 ront（< 拉丁语 rotundus 圆的，< rota 轮）；herum 由 her + um 复合而成。",
+  "cog": "英 round, around；法 rond；拉 rotundus",
+  "tip": "rundherum 与 rundum 基本同义，rundum 更常见于“完全”义（rundum sorglos）。"
+ },
+ {
+  "w": "Rückschritt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Rückschritte",
+  "gs": "des Rückschritts / Rückschrittes",
+  "ipa": "ˈʁʏkˌʃʁɪt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "倒退，退步",
+    "de": "Entwicklung zu einem schlechteren, früheren Zustand",
+    "ex": [
+     {
+      "de": "Kritiker sehen in dem Gesetz einen Rückschritt für den Datenschutz.",
+      "zh": "批评者认为该法律是数据保护方面的倒退。"
+     },
+     {
+      "de": "Nach zwei Jahren Fortschritt erlebte die Friedensbewegung einen herben Rückschritt.",
+      "zh": "经过两年进展之后，和平运动遭遇了严重倒退。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Rückschritt für / in etw.(D) sein — 对……而言是倒退",
+   "Fortschritt und Rückschritt — 进步与倒退（固定对举）",
+   "rückschrittlich（形容词）— 倒退的，保守落后的"
+  ],
+  "root": "Rück·schritt：rück-（向后）+ Schritt（步）→ 向后迈的一步",
+  "fam": [
+   "der Schritt",
+   "schreiten",
+   "der Fortschritt",
+   "rückschrittlich",
+   "der Rückgang"
+  ],
+  "ety": "18 世纪作为 Fortschritt 的反义词构成；Schritt < 中古高地德语 schrit < 古高地德语 scrit，属 schreiten（< 原始日耳曼语 *skrīdaną）。",
+  "cog": "英 stride（一般认为与 schreiten 同源）；荷 schrede",
+  "tip": "Rückschritt 是评价性的“退步”；客观的“减少、回落”用 Rückgang。"
+ },
+ {
+  "w": "scheffeln",
+  "pos": "v",
+  "ipa": "ˈʃɛfl̩n",
+  "lvl": "C1",
+  "forms": "scheffelt · scheffelte · hat gescheffelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（口语，常带贬义）大把地捞取，大量积聚（钱财等）",
+    "de": "(ugs.) in großen Mengen einnehmen, anhäufen",
+    "ex": [
+     {
+      "de": "Mit dubiosen Finanzprodukten hat die Bank jahrelang Millionen gescheffelt.",
+      "zh": "这家银行多年来靠可疑的金融产品捞了数百万。"
+     },
+     {
+      "de": "Der Sprinter scheffelte in dieser Saison eine Medaille nach der anderen.",
+      "zh": "这位短跑选手本赛季一块接一块地拿奖牌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Geld / Millionen / Gewinne scheffeln — 大把捞钱／赚取数百万／获取暴利",
+   "Medaillen / Titel / Punkte scheffeln — 大量收割奖牌／头衔／得分",
+   "近义：anhäufen, einheimsen（口语）, kassieren"
+  ],
+  "root": "scheffel·n：Scheffel（谷物量器，“斗、斛”）+ -n → 像用斗量谷那样成堆地收 → 大量捞取",
+  "fam": [
+   "der Scheffel",
+   "schaffen",
+   "das Schaff"
+  ],
+  "ety": "由 Scheffel 派生；Scheffel < 中古高地德语 scheffel < 古高地德语 sceffil，是 Schaff（木桶、容器）的指小形式，一般认为与 schaffen（“做成、造”）同源。",
+  "cog": "荷 schepel；英 skep（“篮、蜂箱”，一说经北欧语借入）",
+  "tip": "几乎只与“钱、奖牌、成绩”类宾语连用，并隐含“轻松、贪婪地大量获取”。"
+ },
+ {
+  "w": "schwenken",
+  "pos": "v",
+  "ipa": "ˈʃvɛŋkn̩",
+  "lvl": "B2",
+  "forms": "schwenkt · schwenkte · hat geschwenkt（不及物“转向”用 sein：ist geschwenkt）",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "挥舞，摇动（旗帜、手帕等）",
+    "de": "etw. hin und her bewegen",
+    "ex": [
+     {
+      "de": "Die Fans schwenkten Fahnen und sangen die Vereinshymne.",
+      "zh": "球迷们挥舞旗帜，唱起俱乐部的队歌。"
+     }
+    ]
+   },
+   {
+    "zh": "转动，转向（摄像机、起重臂等）；（队伍、车辆）转弯",
+    "de": "etw. in eine andere Richtung drehen; die Richtung ändern",
+    "ex": [
+     {
+      "de": "Die Kamera schwenkt langsam über die Skyline der Stadt.",
+      "zh": "摄像机缓缓摇过城市的天际线。"
+     },
+     {
+      "de": "Die Kolonne ist nach links geschwenkt und verschwand im Wald.",
+      "zh": "车队向左转弯，消失在林中。"
+     }
+    ]
+   },
+   {
+    "zh": "（烹饪）在锅中翻动，颠锅；（用水）涮，晃洗",
+    "de": "in der Pfanne hin und her bewegen; in Flüssigkeit kurz hin und her bewegen",
+    "ex": [
+     {
+      "de": "Die Kartoffeln kurz in brauner Butter schwenken und mit Petersilie bestreuen.",
+      "zh": "把土豆在褐色黄油里快速翻炒一下，撒上欧芹。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) schwenken — 挥舞某物；eine Fahne / ein Taschentuch schwenken",
+   "nach links / rechts schwenken（sein）— 向左／右转；auf einen neuen Kurs schwenken — 转到新路线",
+   "etw. in Butter schwenken — 用黄油翻炒；das Glas schwenken — 晃动酒杯",
+   "der Schwenk（镜头摇动；政策转向）— ein Kameraschwenk / ein politischer Schwenk"
+  ],
+  "root": "schwenk·en：schwingen（摆动）的使役式 → 使摆动 → 挥舞、转动",
+  "fam": [
+   "schwingen",
+   "der Schwenk",
+   "der Schwenker",
+   "verschwenken",
+   "die Schwenkung"
+  ],
+  "ety": "中古高地德语 swenken < 古高地德语 swenken，是 schwingen（< 原始日耳曼语 *swingwaną）的使役动词“使摆动”。",
+  "cog": "英 swing；荷 zwenken",
+  "tip": "及物（挥舞、翻炒）用 haben；表示“转弯、转向”的位置变化用 sein：Das Auto ist auf die Nebenstraße geschwenkt。"
+ },
+ {
+  "w": "Schäferhund",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Schäferhunde",
+  "gs": "des Schäferhunds / Schäferhundes",
+  "ipa": "ˈʃɛːfɐˌhʊnt",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "牧羊犬；（特指）德国牧羊犬，德牧",
+    "de": "Hund, der zum Hüten von Schafen gezüchtet wurde; bes. der Deutsche Schäferhund",
+    "ex": [
+     {
+      "de": "Unser Nachbar hat einen Deutschen Schäferhund, der aufs Wort gehorcht.",
+      "zh": "我们邻居养了一只德国牧羊犬，一叫就听话。"
+     },
+     {
+      "de": "Die Polizei setzt bei der Suche nach Vermissten oft Schäferhunde ein.",
+      "zh": "警方搜寻失踪人员时经常出动牧羊犬。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Deutsche Schäferhund — 德国牧羊犬（品种名，大写 Deutsche）",
+   "einen Schäferhund halten / ausbilden — 养／训练一只牧羊犬",
+   "近义：der Hütehund（牧羊犬统称）；口语也说 Schäfer"
+  ],
+  "root": "Schäfer·hund：Schäfer（牧羊人，< Schaf 羊）+ Hund（狗）→ 牧羊人的狗",
+  "fam": [
+   "der Hund",
+   "das Schaf",
+   "der Schäfer",
+   "der Hütehund",
+   "der Wachhund"
+  ],
+  "ety": "Schaf < 中古高地德语 schāf < 古高地德语 scāf < 西日耳曼语 *skēpa-；Hund < 中古高地德语 hunt < 古高地德语 hunt < 原始日耳曼语 *hundaz。",
+  "cog": "英 sheep, hound；荷 schaap, hond；拉 canis（与 Hund 同源）",
+  "tip": "中文“德牧”在德语里常直接说 Schäferhund，不必加 Deutscher。"
+ },
+ {
+  "w": "selbstredend",
+  "pos": "adv",
+  "ipa": "ˈzɛlpstˌʁeːdn̩t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "不言而喻，当然，自然",
+    "de": "selbstverständlich, natürlich",
+    "ex": [
+     {
+      "de": "Selbstredend werden alle Daten vertraulich behandelt.",
+      "zh": "所有数据当然都会被保密处理。"
+     },
+     {
+      "de": "Dass der Vorstand informiert werden muss, ist selbstredend.",
+      "zh": "必须通知董事会，这不言而喻。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "作句子副词（Selbstredend hat er zugesagt.）或表语（Das ist selbstredend.）",
+   "近义：selbstverständlich（最常用）, natürlich；selbstredend 语体稍显文雅、略带正式或戏谑",
+   "Es versteht sich von selbst, dass … — 同义句型"
+  ],
+  "root": "selbst·redend：selbst（自己）+ redend（说着的，reden 的现在分词）→ “自己就在说明” → 不言而喻",
+  "fam": [
+   "reden",
+   "selbst",
+   "selbstverständlich",
+   "die Rede"
+  ],
+  "ety": "19 世纪由 selbst + redend 构成；reden < 中古高地德语 reden < 古高地德语 redōn（< rede 言辞、交代）。",
+  "cog": "英 self（selbst）；荷 zelf, reden",
+  "tip": "Duden 将其归为形容词，但实际几乎只作副词或表语，不用作定语。"
+ },
+ {
+  "w": "Sklerose",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Sklerosen",
+  "gs": "der Sklerose",
+  "ipa": "skleˈʁoːzə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（医学）硬化（症），组织硬化",
+    "de": "krankhafte Verhärtung von Gewebe oder Organen",
+    "ex": [
+     {
+      "de": "Die Multiple Sklerose ist eine chronisch-entzündliche Erkrankung des zentralen Nervensystems.",
+      "zh": "多发性硬化症是一种中枢神经系统的慢性炎症性疾病。"
+     },
+     {
+      "de": "Bei einer Sklerose der Herzklappen kann ein operativer Eingriff nötig werden.",
+      "zh": "心脏瓣膜硬化时可能需要手术干预。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Multiple Sklerose（缩写 MS）— 多发性硬化症；an MS erkrankt sein",
+   "die Arteriosklerose — 动脉硬化；die Arterienverkalkung（通俗说法）",
+   "sklerotisch（形容词）— 硬化的；（转义）僵化的"
+  ],
+  "root": "Skler·ose：希腊语 sklērós（硬的）+ -ose（表疾病的名词后缀）→ 硬化症",
+  "fam": [
+   "sklerotisch",
+   "die Arteriosklerose",
+   "die Multiple Sklerose"
+  ],
+  "ety": "经新拉丁语 sclerosis 借自希腊语 sklḗrōsis（变硬，< sklēroûn 使变硬 < sklērós 硬的）。",
+  "cog": "英 sclerosis；法 sclérose；希 sklērós",
+  "tip": "Multiple Sklerose 作为疾病名两词都大写；日常口语多直接说 MS。"
+ },
+ {
+  "w": "Sonnenbrand",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sonnenbrände",
+  "gs": "des Sonnenbrands / Sonnenbrandes",
+  "ipa": "ˈzɔnənˌbʁant",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "晒伤，日灼",
+    "de": "Rötung und Entzündung der Haut durch zu starke Sonneneinstrahlung",
+    "ex": [
+     {
+      "de": "Ohne Sonnencreme holst du dir am Strand in einer Stunde einen Sonnenbrand.",
+      "zh": "不涂防晒霜，在海滩上一小时就会晒伤。"
+     },
+     {
+      "de": "Mein Rücken brennt, ich habe mir gestern einen Sonnenbrand geholt.",
+      "zh": "我后背火辣辣的，昨天晒伤了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(sich) einen Sonnenbrand holen / bekommen — 晒伤",
+   "einen Sonnenbrand auf der Nase / an den Schultern haben — 鼻子／肩膀晒伤",
+   "相关：die Sonnencreme — 防晒霜；der Lichtschutzfaktor (LSF) — 防晒指数"
+  ],
+  "root": "Sonnen·brand：Sonne（太阳）+ Brand（灼烧）→ 太阳的灼烧",
+  "fam": [
+   "die Sonne",
+   "brennen",
+   "der Brand",
+   "der Sonnenstich",
+   "die Sonnencreme"
+  ],
+  "ety": "Sonne < 中古高地德语 sunne < 古高地德语 sunna < 原始日耳曼语 *sunnōn；Brand < 古高地德语 brant，属 brennen。",
+  "cog": "英 sun, brand（“燃烧的木头”义）；荷 zon, brand；拉 sol（与 Sonne 同源）",
+  "tip": "晒伤是 Sonnenbrand，中暑是 Sonnenstich / Hitzschlag，不要混淆。"
+ },
+ {
+  "w": "Sozialamt",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Sozialämter",
+  "gs": "des Sozialamts / Sozialamtes",
+  "ipa": "zoˈt͡si̯aːlˌʔamt",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "社会救济局，社会福利局（地方政府机构）",
+    "de": "kommunale Behörde, die für Sozialhilfe und andere soziale Leistungen zuständig ist",
+    "ex": [
+     {
+      "de": "Wer seinen Lebensunterhalt nicht selbst bestreiten kann, kann beim Sozialamt Hilfe beantragen.",
+      "zh": "无法自行维持生计的人可以向社会救济局申请救助。"
+     },
+     {
+      "de": "Das Sozialamt übernimmt in solchen Fällen die Kosten für das Pflegeheim.",
+      "zh": "这种情况下，社会救济局承担养老院的费用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "beim Sozialamt etw.(A) beantragen — 向社会救济局申请某项救助",
+   "zum / aufs Sozialamt gehen — 去社会救济局",
+   "相关机构：das Jobcenter（失业救济）, das Jugendamt（青少年事务局）, das Arbeitsamt（旧称）"
+  ],
+  "root": "Sozial·amt：sozial（社会的）+ Amt（局、机关）→ 主管社会救济的机关",
+  "fam": [
+   "sozial",
+   "das Amt",
+   "die Sozialhilfe",
+   "das Jugendamt",
+   "der Sozialstaat"
+  ],
+  "ety": "sozial 经法语 social 借自拉丁语 socialis（< socius 伙伴）；Amt < 中古高地德语 ambet < 古高地德语 ambaht（职务、服务），一般认为源自凯尔特语（高卢语 ambactos 仆从），拉丁语 ambactus 亦由此而来。",
+  "cog": "英 social；荷 ambt（Amt）；拉 socius, ambactus",
+  "tip": "德国 2005 年后失业者的基本保障由 Jobcenter 管，Sozialamt 主要负责无劳动能力者的 Sozialhilfe。"
+ },
+ {
+  "w": "spitzeln",
+  "pos": "v",
+  "ipa": "ˈʃpɪt͡sl̩n",
+  "lvl": "C1–C2",
+  "forms": "spitzelt · spitzelte · hat gespitzelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "当密探，告密，打小报告（为秘密警察、机关等刺探情报）",
+    "de": "als Spitzel tätig sein, heimlich Informationen über andere sammeln und weitergeben",
+    "ex": [
+     {
+      "de": "Jahrelang hatte er für die Stasi gespitzelt und sogar über seine eigene Frau berichtet.",
+      "zh": "多年来他为斯塔西充当线人，甚至汇报自己妻子的情况。"
+     },
+     {
+      "de": "Mitarbeiter, die gegen Kollegen spitzeln, vergiften das Betriebsklima.",
+      "zh": "打同事小报告的员工会败坏企业氛围。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "für jdn.(A) spitzeln — 替某机构当密探",
+   "gegen jdn.(A) / jdn. bespitzeln — 监视、刺探某人（bespitzeln 为及物）",
+   "der Spitzel — 密探，线人；die Bespitzelung — 监视、窃探"
+  ],
+  "root": "spitzel·n：Spitzel（密探）+ -n → 干密探的事",
+  "fam": [
+   "der Spitzel",
+   "bespitzeln",
+   "spitz",
+   "der Spitz",
+   "die Bespitzelung"
+  ],
+  "ety": "由 Spitzel 派生；Spitzel 原为奥地利用语，一般认为由 Spitz（一种警觉的看家犬）加指小后缀 -el 而来，19 世纪指“警方线人”。",
+  "cog": "荷 spits（spitz）；英 spitz（犬种，借自德语）",
+  "tip": "spitzeln 常与东德 Stasi 语境相连，感情色彩强烈贬义；中性的“刺探情报”用 ausspionieren。"
+ },
+ {
+  "w": "Spitzenkandidatin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Spitzenkandidatinnen",
+  "gs": "der Spitzenkandidatin",
+  "ipa": "ˈʃpɪt͡sn̩kandiˌdaːtɪn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（女）首席候选人，领衔候选人（政党在选举中推出的头号人物）",
+    "de": "Frau, die von einer Partei als wichtigste Kandidatin in eine Wahl geschickt wird",
+    "ex": [
+     {
+      "de": "Die Grünen gehen mit einer Spitzenkandidatin in die Landtagswahl.",
+      "zh": "绿党将由一位女性首席候选人领衔参加州议会选举。"
+     },
+     {
+      "de": "Als Spitzenkandidatin muss sie in den TV-Duellen gegen den Amtsinhaber bestehen.",
+      "zh": "作为首席候选人，她必须在电视辩论中顶住现任者的攻势。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. zur Spitzenkandidatin küren / nominieren — 推举某人为首席候选人",
+   "Spitzenkandidatin für das Amt des Ministerpräsidenten — 州长职位的首席候选人",
+   "阳性 der Spitzenkandidat（-en, -en，弱变化）"
+  ],
+  "root": "Spitzen·kandidat·in：Spitze（顶端、领先）+ -n- + Kandidat（候选人）+ -in（阴性）→ 排在最前面的候选人",
+  "fam": [
+   "der Spitzenkandidat",
+   "der Kandidat",
+   "kandidieren",
+   "die Spitze",
+   "die Kandidatur"
+  ],
+  "ety": "Kandidat 借自拉丁语 candidatus（“穿白袍者”，古罗马求职官员着白托加，< candidus 白亮的）；Spitze < 中古高地德语 spitze < 古高地德语 spizza。",
+  "cog": "英 candidate；法 candidat；拉 candidus",
+  "tip": "德国选举是选党不选人，“Spitzenkandidat(in)”是政党面向选民推出的总理／州长人选。"
+ },
+ {
+  "w": "Sprachkurs",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sprachkurse",
+  "gs": "des Sprachkurses",
+  "ipa": "ˈʃpʁaːxˌkʊʁs",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "语言课程，语言班",
+    "de": "Kurs, in dem eine Fremdsprache unterrichtet wird",
+    "ex": [
+     {
+      "de": "Ich mache abends einen Sprachkurs an der Volkshochschule.",
+      "zh": "我晚上在市民大学上语言班。"
+     },
+     {
+      "de": "Der Sprachkurs bereitet gezielt auf die B2-Prüfung vor.",
+      "zh": "这个语言课程专门为B2考试做准备。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Sprachkurs besuchen / machen / belegen — 上语言课",
+   "ein Sprachkurs für Anfänger / Fortgeschrittene — 初学者／进阶语言班",
+   "der Intensivkurs — 强化班；der Integrationskurs — 融入课程（含德语课）"
+  ],
+  "root": "Sprach·kurs：Sprache（语言）+ Kurs（课程）",
+  "fam": [
+   "die Sprache",
+   "der Kurs",
+   "die Sprachschule",
+   "der Deutschkurs",
+   "sprechen"
+  ],
+  "ety": "Sprache < 中古高地德语 sprāche < 古高地德语 sprāhha，属 sprechen；Kurs 借自拉丁语 cursus（跑动、进程，< currere 跑），“课程”义受法语 cours 影响。",
+  "cog": "英 speech, course；荷 spraak, cursus；拉 cursus",
+  "tip": "Kurs 第二格为 des Kurses，复数 Kurse；不要写成 *Kurs‑s。"
+ },
+ {
+  "w": "sprichwörtlich",
+  "pos": "adj",
+  "ipa": "ˈʃpʁɪçvœʁtlɪç",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "谚语般的，众所周知的，出了名的",
+    "de": "allgemein bekannt, zum geflügelten Wort geworden",
+    "ex": [
+     {
+      "de": "Die sprichwörtliche deutsche Pünktlichkeit ließ an diesem Bahnhof auf sich warten.",
+      "zh": "在这个车站，德国人出了名的守时却迟迟不见踪影。"
+     },
+     {
+      "de": "Sein Geiz ist in der Familie sprichwörtlich.",
+      "zh": "他的吝啬在家族里是出了名的。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词）照字面说，如谚语所说",
+    "de": "(adverbial) wie es im Sprichwort heißt",
+    "ex": [
+     {
+      "de": "Das Projekt steht sprichwörtlich auf der Kippe.",
+      "zh": "这个项目正如俗话所说，命悬一线。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die sprichwörtliche Ruhe / Gelassenheit / Schlamperei — 出了名的平静／沉着／马虎",
+   "sprichwörtlich geworden sein — 已成谚语、成了典型",
+   "注意：sprichwörtlich 不等于 wörtlich（字面的）"
+  ],
+  "root": "sprich·wört·lich：Sprichwort（谚语，< sprechen + Wort）+ -lich（形容词后缀）→ 谚语般的",
+  "fam": [
+   "das Sprichwort",
+   "das Wort",
+   "sprechen",
+   "wörtlich",
+   "die Redewendung"
+  ],
+  "ety": "由 Sprichwort 派生；Sprichwort 见于中古高地德语 sprichwort，由 sprechen 的词干与 Wort 构成，原意“口头流传的话”。",
+  "cog": "英 word（Wort）；荷 spreekwoord",
+  "tip": "常被用作“正如俗话所说”的套话，新闻中稍显滥用；表示“字面意义上”请用 buchstäblich / wörtlich。"
+ },
+ {
+  "w": "Staatschef",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Staatschefs",
+  "gs": "des Staatschefs",
+  "ipa": "ˈʃtaːt͡sˌʃɛf",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "国家元首；（新闻用语）国家领导人",
+    "de": "Staatsoberhaupt; oberster Repräsentant eines Staates",
+    "ex": [
+     {
+      "de": "Beim Gipfel trafen sich die Staatschefs der G20 zu Gesprächen über die Weltwirtschaft.",
+      "zh": "峰会期间，二十国集团的国家领导人就世界经济举行会谈。"
+     },
+     {
+      "de": "Der französische Staatschef kündigte eine Reform der Rentenversicherung an.",
+      "zh": "法国总统宣布将改革养老保险制度。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Staats- und Regierungschefs — 国家元首和政府首脑（新闻固定搭配）",
+   "正式称呼是 das Staatsoberhaupt；Staatschef 为新闻用语",
+   "阴性 die Staatschefin"
+  ],
+  "root": "Staats·chef：Staat（国家）+ -s- + Chef（首领）→ 国家的首脑",
+  "fam": [
+   "der Staat",
+   "der Chef",
+   "der Regierungschef",
+   "das Staatsoberhaupt",
+   "die Staatsführung"
+  ],
+  "ety": "Staat 经意大利语 stato / 法语 état 借自拉丁语 status（状态、地位）；Chef 借自法语 chef（头、首领）< 拉丁语 caput（头）。",
+  "cog": "英 state, chief；法 état, chef；拉 status, caput",
+  "tip": "在德国，Staatschef 指联邦总统（Bundespräsident），Regierungschef 指总理（Bundeskanzler），别混用。"
+ },
+ {
+  "w": "Stachel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Stacheln",
+  "gs": "des Stachels",
+  "ipa": "ˈʃtaxl̩",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "（植物、动物的）刺，棘；（蜜蜂等的）螫针",
+    "de": "spitzer, harter Fortsatz bei Pflanzen und Tieren; Giftstachel von Insekten",
+    "ex": [
+     {
+      "de": "Der Igel rollt sich zusammen und richtet seine Stacheln auf.",
+      "zh": "刺猬蜷成一团，竖起身上的刺。"
+     },
+     {
+      "de": "Eine Biene verliert beim Stechen ihren Stachel und stirbt danach.",
+      "zh": "蜜蜂螫人后会失去螫针，随后死去。"
+     }
+    ]
+   },
+   {
+    "zh": "（转义）刺痛，刺激；（内心的）刺",
+    "de": "(übertragen) etw., das schmerzt oder antreibt",
+    "ex": [
+     {
+      "de": "Die Niederlage saß wie ein Stachel in ihm und trieb ihn zu neuen Höchstleistungen.",
+      "zh": "那次失败像根刺扎在他心里，驱使他创造新的最佳成绩。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Stachel einer Biene / eines Kaktus — 蜜蜂的螫针／仙人掌的刺",
+   "jdm. einen Stachel ins Fleisch setzen — 给某人一个刺激／留下一根刺",
+   "wider den Stachel löcken（圣经成语）— 以卵击石，徒劳反抗",
+   "动词 anstacheln / aufstacheln — 煽动、刺激（语料中的 stacheln 多为此二词或名词复数）"
+  ],
+  "root": "Stach·el：与 stechen（刺）同根 + -el（工具／指小后缀）→ 用来刺的东西",
+  "fam": [
+   "stechen",
+   "stachelig",
+   "anstacheln",
+   "die Stachelbeere",
+   "der Stacheldraht"
+  ],
+  "ety": "中古高地德语 stachel < 古高地德语 stachil（刺、尖），与 stechen（< 原始日耳曼语 *stekaną）同源。",
+  "cog": "英 stick（动词“刺、插”，与 stechen 同源）；荷 stekel",
+  "tip": "植物学上玫瑰的“刺”是 Stachel（表皮突起），仙人掌、山楂的刺是 Dorn（由叶或枝变态而来）——日常则常混用。"
+ },
+ {
+  "w": "Statur",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Staturen",
+  "gs": "der Statur",
+  "ipa": "ʃtaˈtuːɐ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "身材，体格，体型",
+    "de": "Körperbau, Körpergröße eines Menschen",
+    "ex": [
+     {
+      "de": "Der Täter war laut Zeugen von kräftiger Statur und etwa 1,80 m groß.",
+      "zh": "据目击者说，作案者身材壮实，身高约1米80。"
+     },
+     {
+      "de": "Trotz ihrer zierlichen Statur hebt sie beim Training 80 Kilo.",
+      "zh": "尽管身材娇小，她训练时能举起80公斤。"
+     }
+    ]
+   },
+   {
+    "zh": "（转义）格局，气度，分量（人物的）",
+    "de": "(übertragen) Format, Bedeutung einer Persönlichkeit",
+    "ex": [
+     {
+      "de": "Der Partei fehlt ein Kandidat von politischer Statur.",
+      "zh": "这个党缺少一位有政治分量的候选人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "von kräftiger / schmaler / zierlicher / hagerer Statur sein — 身材壮实／瘦削／娇小／干瘦",
+   "ein Politiker von internationaler Statur — 具有国际影响力的政治家",
+   "近义：der Körperbau, die Figur（偏指线条、身段）"
+  ],
+  "root": "Stat·ur：拉丁语 stare（站立）→ statura（站立时的高度）→ 身材",
+  "fam": [
+   "die Statue",
+   "die Station",
+   "der Status",
+   "stabil",
+   "das Stativ"
+  ],
+  "ety": "16 世纪借自拉丁语 statura（身高、体型，< stare 站立，与原始印欧语“站立”词根相关）。",
+  "cog": "英 stature；法 stature；拉 statura；英 stand（远亲同源）",
+  "tip": "读音重音在第二音节 Sta-ˈtur；不要与 Statue（雕像）、Status（地位）混淆。"
+ },
+ {
+  "w": "Steuersatz",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Steuersätze",
+  "gs": "des Steuersatzes",
+  "ipa": "ˈʃtɔɪ̯ɐˌzat͡s",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "税率",
+    "de": "Prozentsatz, mit dem eine Steuer berechnet wird",
+    "ex": [
+     {
+      "de": "Der ermäßigte Steuersatz von sieben Prozent gilt unter anderem für Lebensmittel und Bücher.",
+      "zh": "7%的优惠税率适用于食品和书籍等商品。"
+     },
+     {
+      "de": "Die Opposition fordert einen höheren Steuersatz für Spitzenverdiener.",
+      "zh": "反对党要求对高收入者实行更高的税率。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der ermäßigte / reguläre / volle Steuersatz — 优惠／标准／全额税率",
+   "der Spitzensteuersatz — 最高边际税率；der Eingangssteuersatz — 起始税率",
+   "den Steuersatz senken / anheben / erhöhen — 降低／提高税率"
+  ],
+  "root": "Steuer·satz：Steuer（税）+ Satz（规定的比率，< setzen）→ 定下的税的比率",
+  "fam": [
+   "die Steuer",
+   "der Satz",
+   "setzen",
+   "die Mehrwertsteuer",
+   "der Zinssatz"
+  ],
+  "ety": "Steuer（税）< 中古高地德语 stiure（支持、资助、捐纳）< 古高地德语 stiura（支柱、支持）；Satz 为 setzen 的名词化，“规定的额度”义自 18 世纪起。",
+  "cog": "英 steer（与 das Steuer“舵”同源，一般认为与 die Steuer 同出一源）；荷 stuur",
+  "tip": "die Steuer（税）与 das Steuer（方向盘、舵）性别不同；Steuersatz 的 Steuer 是阴性“税”。"
+ },
+ {
+  "w": "Stimmrecht",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Stimmrechte",
+  "gs": "des Stimmrechts / Stimmrechtes",
+  "ipa": "ˈʃtɪmˌʁɛçt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "表决权，投票权；选举权",
+    "de": "Recht, bei Abstimmungen oder Wahlen seine Stimme abzugeben",
+    "ex": [
+     {
+      "de": "In der Schweiz erhielten Frauen auf Bundesebene erst 1971 das Stimmrecht.",
+      "zh": "在瑞士，女性直到1971年才获得联邦层面的投票权。"
+     },
+     {
+      "de": "Die Großaktionäre halten zusammen über 60 Prozent der Stimmrechte.",
+      "zh": "大股东合计持有60%以上的表决权。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Stimmrecht haben / ausüben / entziehen — 拥有／行使／剥夺表决权",
+   "das aktive / passive Wahlrecht — 选举权／被选举权（Wahlrecht 专指选举，Stimmrecht 也用于股东会、议会表决）",
+   "stimmberechtigt（形容词）— 有表决权的"
+  ],
+  "root": "Stimm·recht：Stimme（声音 → 一票）+ Recht（权利）→ 投票的权利",
+  "fam": [
+   "die Stimme",
+   "abstimmen",
+   "das Recht",
+   "das Wahlrecht",
+   "stimmberechtigt"
+  ],
+  "ety": "Stimme < 中古高地德语 stimme < 古高地德语 stimna（声音），中世纪起用于“投票（口头表态）”；Recht < 古高地德语 reht < 原始日耳曼语 *rehtaz（直的、正的）。",
+  "cog": "英 right（Recht）；荷 stem（Stimme）, recht；拉 rectus（与 Recht 同源）",
+  "tip": "瑞士把“公投表决权”统称 Stimmrecht，“选举权”叫 Wahlrecht；德国日常多说 Wahlrecht。"
+ },
+ {
+  "w": "Strafbarkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Strafbarkeit",
+  "ipa": "ˈʃtʁaːfbaːɐ̯kaɪ̯t",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "（法律）可罚性，应受刑罚性；（某行为）构成犯罪",
+    "de": "Eigenschaft einer Handlung, mit Strafe bedroht zu sein",
+    "ex": [
+     {
+      "de": "Der Bundestag beschloss die Strafbarkeit von Hasskommentaren im Netz zu verschärfen.",
+      "zh": "联邦议院决定加大对网络仇恨言论的刑事处罚力度。"
+     },
+     {
+      "de": "Ohne Vorsatz entfällt in diesem Fall die Strafbarkeit.",
+      "zh": "在本案中，若无故意，则不构成犯罪。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Strafbarkeit von etw.(D) — 某行为的可罚性",
+   "die Strafbarkeit entfällt / ist gegeben — 不构成犯罪／构成犯罪（法律用语）",
+   "strafbar（形容词）— 可依法处罚的；sich strafbar machen — 触犯刑法"
+  ],
+  "root": "Straf·bar·keit：Strafe（刑罚）+ -bar（可……的）+ -keit（名词化）→ 可被处罚的性质",
+  "fam": [
+   "die Strafe",
+   "strafbar",
+   "bestrafen",
+   "straffrei",
+   "das Strafrecht"
+  ],
+  "ety": "由 strafbar 派生；Strafe < 中古高地德语 strāfe（责备、惩罚），再往前词源不详。",
+  "cog": "荷 straf, strafbaar",
+  "tip": "法律专业词；日常“这是违法的”说 Das ist strafbar / verboten。"
+ },
+ {
+  "w": "Streiterei",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Streitereien",
+  "gs": "der Streiterei",
+  "ipa": "ʃtʁaɪ̯təˈʁaɪ̯",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（没完没了的）争吵，拌嘴，口角（略带贬义）",
+    "de": "(abwertend) andauerndes, meist kleinliches Streiten",
+    "ex": [
+     {
+      "de": "Die ewigen Streitereien um die Hausarbeit zermürben beide.",
+      "zh": "为家务没完没了的争吵让两人都心力交瘁。"
+     },
+     {
+      "de": "Nach monatelangen Streitereien innerhalb der Koalition trat der Minister zurück.",
+      "zh": "执政联盟内部争吵数月之后，这位部长辞职了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Streitereien um / wegen etw.(A/G) — 围绕某事的争吵",
+   "in Streitereien verwickelt sein — 卷入争吵",
+   "-erei 后缀表示“反复、烦人的行为”（Fragerei, Lauferei），语气比 Streit 更贬"
+  ],
+  "root": "Streit·erei：streiten（争吵）+ -erei（表反复、令人厌烦的行为）→ 没完没了的争吵",
+  "fam": [
+   "der Streit",
+   "streiten",
+   "streitsüchtig",
+   "die Auseinandersetzung",
+   "der Zank"
+  ],
+  "ety": "由 streiten 加 -erei 派生；streiten < 中古高地德语 strīten < 古高地德语 strītan（争斗、争论）。",
+  "cog": "荷 strijden, strijd；英 strife, strive（经古法语 estrif 借入，一般认为源自日耳曼语）",
+  "tip": "Streit 可指严肃的争议，Streiterei 一定是鸡毛蒜皮、让人厌烦的争吵。"
+ },
+ {
+  "w": "Syphilis",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Syphilis",
+  "ipa": "ˈzyːfilɪs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（医学）梅毒",
+    "de": "durch Bakterien (Treponema pallidum) verursachte, meist sexuell übertragene Infektionskrankheit",
+    "ex": [
+     {
+      "de": "Die Zahl der Syphilis-Infektionen ist in Deutschland in den letzten Jahren wieder gestiegen.",
+      "zh": "近年来德国的梅毒感染人数再次上升。"
+     },
+     {
+      "de": "Unbehandelt kann Syphilis nach Jahren das Nervensystem schädigen.",
+      "zh": "梅毒若不治疗，多年后可能损害神经系统。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an Syphilis erkranken / leiden — 患梅毒",
+   "sich mit Syphilis infizieren / anstecken — 感染梅毒",
+   "旧称 die Lues；形容词 syphilitisch"
+  ],
+  "root": "Syphilis：源自 1530 年拉丁语诗作中牧羊人 Syphilus 之名，他因冒犯太阳神而染此病",
+  "fam": [
+   "syphilitisch",
+   "die Lues",
+   "die Geschlechtskrankheit"
+  ],
+  "ety": "新拉丁语 syphilis，出自意大利医生 G. Fracastoro 1530 年的教谕诗《Syphilis sive morbus Gallicus》，以诗中染病的牧羊人 Syphilus 命名；人名本身的来源有多种说法。",
+  "cog": "英 syphilis；法 syphilis",
+  "tip": "德语发音 [ˈzyːfilɪs]，重音在第一音节，S 读浊音 [z]。"
+ },
+ {
+  "w": "Säugetier",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Säugetiere",
+  "gs": "des Säugetiers / Säugetieres",
+  "ipa": "ˈzɔɪ̯ɡəˌtiːɐ̯",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "哺乳动物",
+    "de": "Wirbeltier, dessen Junge mit Milch gesäugt werden",
+    "ex": [
+     {
+      "de": "Wale sind keine Fische, sondern Säugetiere, die im Wasser leben.",
+      "zh": "鲸不是鱼，而是生活在水中的哺乳动物。"
+     },
+     {
+      "de": "Die Fledermaus ist das einzige Säugetier, das aktiv fliegen kann.",
+      "zh": "蝙蝠是唯一能主动飞行的哺乳动物。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zu den Säugetieren gehören / zählen — 属于哺乳动物",
+   "das größte / kleinste Säugetier der Welt — 世界上最大／最小的哺乳动物",
+   "相关类别：das Reptil（爬行动物）, der Vogel, die Amphibie, der Fisch"
+  ],
+  "root": "Säuge·tier：säugen（哺乳，saugen 的使役式“让吮吸”）+ Tier（动物）→ 给幼崽喂奶的动物",
+  "fam": [
+   "säugen",
+   "saugen",
+   "der Säugling",
+   "das Tier",
+   "die Tierart"
+  ],
+  "ety": "18 世纪为译拉丁语 Mammalia 构成；säugen < 古高地德语 sougen，是 saugen（< 原始日耳曼语 *sūganą）的使役动词；Tier < 中古高地德语 tier < 古高地德语 tior < 原始日耳曼语 *deuzą（野兽）。",
+  "cog": "英 suck（saugen）, deer（Tier，语义缩窄为“鹿”）；荷 zogen, dier",
+  "tip": "是 Säuge-（säugen 哺乳）而非 *Saugtier；der Säugling 是“婴儿”。"
+ },
+ {
+  "w": "Transsexuelle",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Transsexuelle（die Transsexuellen）",
+  "gs": "des Transsexuellen",
+  "ipa": "tʁanszɛksuˈɛlə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "跨性别者（性别认同与出生时指定性别不一致的人；原为医学用语）",
+    "de": "Person, deren Geschlechtsidentität nicht mit dem bei der Geburt zugewiesenen Geschlecht übereinstimmt",
+    "ex": [
+     {
+      "de": "Das Transsexuellengesetz von 1980 wurde 2024 durch das Selbstbestimmungsgesetz abgelöst.",
+      "zh": "1980年的《跨性别者法》于2024年被《性别自决法》取代。"
+     },
+     {
+      "de": "Viele Betroffene lehnen den Begriff „Transsexuelle“ inzwischen ab und sprechen von trans Personen.",
+      "zh": "许多当事人如今已不接受“Transsexuelle”这一称呼，而说“跨性别人士”。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "按形容词变格：der/die Transsexuelle, ein Transsexueller / eine Transsexuelle；复数 die Transsexuellen / viele Transsexuelle",
+   "形容词 transsexuell；现今更中性的说法：transgeschlechtlich, trans*, eine trans Frau / ein trans Mann",
+   "反义／对举：cisgeschlechtlich（顺性别）"
+  ],
+  "root": "Trans·sexu·elle：拉丁语 trans-（越过）+ sexuell（性别的）+ 形容词名词化 → “跨越性别的人”",
+  "fam": [
+   "transsexuell",
+   "die Transsexualität",
+   "transgeschlechtlich",
+   "die Sexualität",
+   "der Transgender"
+  ],
+  "ety": "20 世纪中期经英语 transsexual（1949 年由医学界创造）借入；由拉丁语 trans（越过）与 sexualis（< sexus 性别）构成。",
+  "cog": "英 transsexual；法 transsexuel；拉 trans, sexus",
+  "tip": "该词在德语中已带医学化、过时色彩，正式与媒体语境建议用 trans Person / transgeschlechtliche Person。"
+ },
+ {
+  "w": "traumhaft",
+  "pos": "adj",
+  "ipa": "ˈtʁaʊ̯mhaft",
+  "lvl": "B1",
+  "forms": "traumhafter · am traumhaftesten",
+  "senses": [
+   {
+    "zh": "梦幻般的，美妙极了的",
+    "de": "wunderschön, wie im Traum",
+    "ex": [
+     {
+      "de": "Vom Balkon aus hat man einen traumhaften Blick auf die Bucht.",
+      "zh": "从阳台上可以欣赏到海湾梦幻般的景色。"
+     },
+     {
+      "de": "Das Wetter war die ganze Woche traumhaft.",
+      "zh": "整整一周天气好得像做梦一样。"
+     }
+    ]
+   },
+   {
+    "zh": "（副词，口语）极其，棒极了地",
+    "de": "(adverbial, ugs.) sehr, hervorragend",
+    "ex": [
+     {
+      "de": "Die beiden harmonieren traumhaft miteinander.",
+      "zh": "他们俩配合得默契极了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein traumhaftes Wetter / Hotel / Ergebnis — 极好的天气／酒店／成绩",
+   "traumhaft schön / sicher — 美极了／稳稳当当（副词加强）",
+   "名词化 das Traumhafte（语料中的形式）：das Traumhafte an dieser Landschaft — 这片风景令人神往之处"
+  ],
+  "root": "traum·haft：Traum（梦）+ -haft（具有……性质的）→ 像梦一样的",
+  "fam": [
+   "der Traum",
+   "träumen",
+   "der Albtraum",
+   "verträumt",
+   "der Tagtraum"
+  ],
+  "ety": "Traum < 中古高地德语 troum < 古高地德语 troum < 原始日耳曼语 *draumaz（梦，一般认为与“欺骗、幻象”义相关）。",
+  "cog": "英 dream；荷 droom；瑞典 dröm",
+  "tip": "是褒义“美如梦境”，不表示“虚幻不实”；后者用 unrealistisch / illusorisch。"
+ },
+ {
+  "w": "Umlaufbahn",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Umlaufbahnen",
+  "gs": "der Umlaufbahn",
+  "ipa": "ˈʊmlaʊ̯fˌbaːn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（天文、航天）轨道，运行轨道",
+    "de": "Bahn, auf der sich ein Himmelskörper oder Satellit um einen anderen bewegt",
+    "ex": [
+     {
+      "de": "Die Rakete brachte den Wettersatelliten in eine Umlaufbahn in 800 Kilometern Höhe.",
+      "zh": "火箭将气象卫星送入800公里高的轨道。"
+     },
+     {
+      "de": "Die Erde braucht für eine Umlaufbahn um die Sonne rund 365 Tage.",
+      "zh": "地球绕太阳运行一周大约需要365天。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in eine Umlaufbahn eintreten / einschwenken / gebracht werden — 进入轨道",
+   "eine Umlaufbahn um die Erde / den Mars — 环绕地球／火星的轨道",
+   "近义：der Orbit（专业、新闻常用）；die Erdumlaufbahn — 地球轨道；die geostationäre Umlaufbahn"
+  ],
+  "root": "Um·lauf·bahn：umlaufen（环绕运行）+ Bahn（轨迹）→ 环绕运行的路径",
+  "fam": [
+   "der Umlauf",
+   "umlaufen",
+   "die Bahn",
+   "laufen",
+   "die Laufbahn"
+  ],
+  "ety": "Umlauf 由 um + laufen 构成（laufen < 古高地德语 (h)loufan < 原始日耳曼语 *hlaupaną）；Bahn < 中古高地德语 ban（开辟出的道路），来源不详。",
+  "cog": "英 leap（laufen）；荷 omloop, baan",
+  "tip": "Laufbahn 是“职业生涯”，Umlaufbahn 才是天体轨道；火车轨道叫 das Gleis。"
+ },
+ {
+  "w": "sich umschauen",
+  "pos": "v",
+  "ipa": "ˈʊmˌʃaʊ̯ən",
+  "lvl": "A2–B1",
+  "forms": "schaut sich um · schaute sich um · hat sich umgeschaut",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "环顾四周，回头看",
+    "de": "sich umdrehen und zurückblicken; sich in alle Richtungen umsehen",
+    "ex": [
+     {
+      "de": "Sie schaute sich noch einmal um, bevor sie die Tür zuzog.",
+      "zh": "关门之前她又回头看了一眼。"
+     }
+    ]
+   },
+   {
+    "zh": "随便看看，逛逛（商店、城市）",
+    "de": "sich etw. ansehen, ohne festes Ziel",
+    "ex": [
+     {
+      "de": "Danke, ich möchte mich nur ein bisschen umschauen.",
+      "zh": "谢谢，我只是随便看看。"
+     },
+     {
+      "de": "Wir haben uns einen Tag lang in der Altstadt umgeschaut.",
+      "zh": "我们在老城逛了一整天。"
+     }
+    ]
+   },
+   {
+    "zh": "sich nach etw. umschauen：寻找，物色",
+    "de": "nach etw. suchen, Ausschau halten",
+    "ex": [
+     {
+      "de": "Er schaut sich schon seit Monaten nach einer größeren Wohnung um.",
+      "zh": "他找更大的房子已经找了好几个月了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich(A) umschauen — 四处看看（反身四格）",
+   "sich nach jdm./etw.(D) umschauen — 寻找、物色",
+   "南德、奥地利常用 umschauen；北德多说 sich umsehen / sich umgucken",
+   "Da wirst du dich aber umschauen!（口语）— 你可要大吃一惊了！"
+  ],
+  "root": "um·schauen：um-（环绕、转过来）+ schauen（看）→ 转着看",
+  "fam": [
+   "schauen",
+   "sich umsehen",
+   "die Umschau",
+   "anschauen",
+   "die Schau"
+  ],
+  "ety": "schauen < 中古高地德语 schouwen < 古高地德语 scouwōn < 原始日耳曼语 *skawwōną（观看）。",
+  "cog": "英 show（一般认为与 schauen 同源，词义由“看”转为“使看见”）；荷 schouwen",
+  "tip": "必须带反身代词：Ich schaue mich um，不能说 *Ich schaue um。"
+ },
+ {
+  "w": "Unterarm",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Unterarme",
+  "gs": "des Unterarms / Unterarmes",
+  "ipa": "ˈʊntɐˌʔaʁm",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "前臂，小臂",
+    "de": "Teil des Arms zwischen Ellenbogen und Handgelenk",
+    "ex": [
+     {
+      "de": "Beim Sturz hat er sich den Unterarm gebrochen.",
+      "zh": "摔倒时他摔断了前臂。"
+     },
+     {
+      "de": "Die Tätowierung auf ihrem linken Unterarm ist ein Zitat von Rilke.",
+      "zh": "她左前臂上的纹身是一句里尔克的诗。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich(D) den Unterarm brechen / verstauchen — 前臂骨折／扭伤",
+   "der Oberarm — 上臂；der Ellenbogen — 肘；das Handgelenk — 手腕",
+   "Unterarmstütz（俯卧撑式平板支撑）— 健身用语"
+  ],
+  "root": "Unter·arm：unter（下）+ Arm（臂）→ 手臂下段（靠近手的部分）",
+  "fam": [
+   "der Arm",
+   "der Oberarm",
+   "der Ärmel",
+   "das Handgelenk",
+   "die Elle"
+  ],
+  "ety": "Arm < 中古高地德语 arm < 古高地德语 arm < 原始日耳曼语 *armaz，与拉丁语 armus（上臂、肩）同源。",
+  "cog": "英 arm；荷 arm；拉 armus",
+  "tip": "unter 这里指“靠下（靠手）的”，与 Oberarm 对举；不是“胳膊下面”（腋下是 die Achsel）。"
+ },
+ {
+  "w": "Unteroffizier",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Unteroffiziere",
+  "gs": "des Unteroffiziers",
+  "ipa": "ˈʊntɐʔɔfiˌt͡siːɐ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（军衔）士官，军士；（德国联邦国防军）下士",
+    "de": "Dienstgrad zwischen Mannschaften und Offizieren; in der Bundeswehr auch konkreter Dienstgrad",
+    "ex": [
+     {
+      "de": "Nach zwei Jahren wurde er zum Unteroffizier befördert.",
+      "zh": "两年后他被晋升为下士。"
+     },
+     {
+      "de": "Unteroffiziere bilden das Rückgrat der Truppe, weil sie die Soldaten unmittelbar führen.",
+      "zh": "士官直接带兵，是部队的中坚力量。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Unteroffizier befördert werden — 晋升为士官",
+   "Unteroffizier mit / ohne Portepee — 高级／初级士官（德军分类）",
+   "军衔层级：Mannschaften（士兵）< Unteroffiziere（士官）< Offiziere（军官）；缩写 Uffz."
+  ],
+  "root": "Unter·offizier：unter（下级）+ Offizier（军官）→ 军官之下的指挥人员",
+  "fam": [
+   "der Offizier",
+   "der Feldwebel",
+   "der Soldat",
+   "der Dienstgrad",
+   "das Offizierskorps"
+  ],
+  "ety": "17 世纪由 unter + Offizier 构成；Offizier 借自法语 officier < 中世纪拉丁语 officiarius（担任职务者，< officium 职务）。",
+  "cog": "英 officer, non-commissioned officer；法 sous-officier；拉 officium",
+  "tip": "Unteroffizier 既是士官的总称，也是联邦国防军中一个具体军衔（相当于英美 corporal/sergeant 一级）。"
+ },
+ {
+  "w": "unvergesslich",
+  "pos": "adj",
+  "ipa": "ˌʊnfɛɐ̯ˈɡɛslɪç",
+  "lvl": "B1–B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "难忘的，令人无法忘怀的",
+    "de": "so eindrucksvoll, dass man es nicht vergessen kann",
+    "ex": [
+     {
+      "de": "Die Reise durch Patagonien war ein unvergessliches Erlebnis.",
+      "zh": "穿越巴塔哥尼亚的旅行是一次难忘的经历。"
+     },
+     {
+      "de": "Mit seiner Rede hat er sich unvergesslich gemacht.",
+      "zh": "他那场演讲让人永远记住了他。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein unvergesslicher Abend / Moment / Urlaub — 难忘的夜晚／时刻／假期",
+   "jdm. unvergesslich bleiben / sein — 让某人永生难忘",
+   "sich unvergesslich machen — 让人铭记（可褒可贬）"
+  ],
+  "root": "un·vergess·lich：un-（否定）+ vergessen（忘记）+ -lich（可……的）→ 无法忘记的",
+  "fam": [
+   "vergessen",
+   "vergesslich",
+   "das Vergessen",
+   "die Vergesslichkeit",
+   "unvergessen"
+  ],
+  "ety": "vergessen < 中古高地德语 vergezzen < 古高地德语 firgezzan（< fir- 失去 + gezzan 获得，“失去已得到的”），与原始日耳曼语 *getaną 同源。",
+  "cog": "英 forget, get；荷 vergeten",
+  "tip": "vergesslich（健忘的）指人，unvergesslich 指事物；二者不是反义词。"
+ },
+ {
+  "w": "utopisch",
+  "pos": "adj",
+  "ipa": "uˈtoːpɪʃ",
+  "lvl": "B2–C1",
+  "forms": "utopischer · am utopischsten",
+  "senses": [
+   {
+    "zh": "乌托邦式的，空想的，不切实际的",
+    "de": "nur in der Vorstellung möglich, unrealistisch",
+    "ex": [
+     {
+      "de": "Ein klimaneutrales Europa bis 2030 halten viele Ökonomen für utopisch.",
+      "zh": "许多经济学家认为到2030年实现气候中和的欧洲是不切实际的。"
+     },
+     {
+      "de": "Die Forderung nach einem bedingungslosen Grundeinkommen galt lange als utopisch.",
+      "zh": "无条件基本收入的诉求长期被视为空想。"
+     }
+    ]
+   },
+   {
+    "zh": "（文学、思想）乌托邦的，描绘理想社会的",
+    "de": "eine Utopie betreffend, eine ideale Gesellschaft entwerfend",
+    "ex": [
+     {
+      "de": "Der Roman entwirft eine utopische Gesellschaft ohne Geld und Eigentum.",
+      "zh": "这部小说描绘了一个没有金钱和私有财产的乌托邦社会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. für utopisch halten — 认为某事不切实际",
+   "utopische Vorstellungen / Preise — 不切实际的想法／离谱的价格（口语）",
+   "反义：realistisch；相关：dystopisch — 反乌托邦的"
+  ],
+  "root": "u·top·isch：希腊语 ou（不）+ tópos（地方）→ “不存在的地方” + -isch → 乌托邦的",
+  "fam": [
+   "die Utopie",
+   "der Utopist",
+   "die Dystopie",
+   "dystopisch"
+  ],
+  "ety": "源自托马斯·莫尔 1516 年的拉丁语作品《Utopia》，词由希腊语 ou（不）与 tópos（地方）组成，意为“乌有之乡”；德语 Utopie 借自法语 utopie，utopisch 由此派生。",
+  "cog": "英 utopian；法 utopique；希 tópos",
+  "tip": "在口语中常指“根本不可能、太离谱”，不一定涉及理想社会。"
+ },
+ {
+  "w": "Vektor",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Vektoren",
+  "gs": "des Vektors",
+  "ipa": "ˈvɛktoːɐ̯",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（数学、物理）向量，矢量",
+    "de": "Größe mit Betrag und Richtung",
+    "ex": [
+     {
+      "de": "Die Geschwindigkeit ist ein Vektor, der Betrag und Richtung angibt.",
+      "zh": "速度是一个矢量，既有大小也有方向。"
+     },
+     {
+      "de": "Zwei Vektoren sind linear unabhängig, wenn keiner ein Vielfaches des anderen ist.",
+      "zh": "若两个向量都不是对方的倍数，则它们线性无关。"
+     }
+    ]
+   },
+   {
+    "zh": "（生物、医学）传播媒介（传播病原体的生物）；（基因工程）载体",
+    "de": "Überträger von Krankheitserregern; Transportmolekül in der Gentechnik",
+    "ex": [
+     {
+      "de": "Stechmücken sind die wichtigsten Vektoren für Malaria und Dengue.",
+      "zh": "蚊子是疟疾和登革热最主要的传播媒介。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "复数 Vektoren，重音移到 -ˈto-：[vɛkˈtoːʁən]",
+   "Vektoren addieren / multiplizieren — 向量加法／乘法；das Skalarprodukt — 点积",
+   "die Vektorgrafik — 矢量图；der Vektorraum — 向量空间"
+  ],
+  "root": "Vek·tor：拉丁语 vehere（运载）→ vector（运载者）→ 携带方向信息的量；传播者",
+  "fam": [
+   "die Vektorgrafik",
+   "der Vektorraum",
+   "das Vehikel",
+   "die Vektorrechnung"
+  ],
+  "ety": "19 世纪作为数学术语借自拉丁语 vector（搬运者、乘者，< vehere 运载），数学义由爱尔兰数学家 W. R. Hamilton 于 1840 年代引入。",
+  "cog": "英 vector, vehicle；拉 vehere；英 way, wagon（远亲同源）",
+  "tip": "V 读 [v]，不是 [f]；复数 Vektoren 不加变音。"
+ },
+ {
+  "w": "verbocken",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈbɔkn̩",
+  "lvl": "B2",
+  "forms": "verbockt · verbockte · hat verbockt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（口语）搞砸，弄糟",
+    "de": "(ugs.) etw. durch Ungeschick verderben, vermasseln",
+    "ex": [
+     {
+      "de": "Die Prüfung hab ich total verbockt, ich war viel zu nervös.",
+      "zh": "考试我彻底搞砸了，当时太紧张了。"
+     },
+     {
+      "de": "Wer hat denn die Bestellung verbockt? Da fehlt die Hälfte.",
+      "zh": "订单是谁搞砸的？少了一半东西。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) verbockt haben — 把某事搞砸",
+   "Das hast du verbockt, jetzt musst du es ausbaden. — 你搞砸的，现在得你自己收拾",
+   "近义：vermasseln, versauen（更粗）, verpatzen；书面：verderben, scheitern lassen"
+  ],
+  "root": "ver·bock·en：ver-（表“错误、坏结果”）+ Bock（公山羊 → 蠢错，见 einen Bock schießen）+ -en → 犯蠢错而弄坏",
+  "fam": [
+   "der Bock",
+   "bockig",
+   "bocken",
+   "einen Bock schießen",
+   "vermasseln"
+  ],
+  "ety": "19 世纪口语由 Bock 派生，与成语 einen Bock schießen（“犯错”，一般认为源自射击比赛中射得最差者得一只山羊作安慰奖）相关；Bock < 古高地德语 boc < 原始日耳曼语 *bukkaz。",
+  "cog": "英 buck；荷 bok",
+  "tip": "随意口语词，不宜用于正式书面语；过去分词 verbockt 可作形容词：ein verbockter Auftrag。"
+ },
+ {
+  "w": "verdichten",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈdɪçtn̩",
+  "lvl": "C1",
+  "forms": "verdichtet · verdichtete · hat verdichtet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "压缩，使致密（气体、土壤、材料）",
+    "de": "dichter machen, komprimieren",
+    "ex": [
+     {
+      "de": "Im Motor wird das Gemisch aus Luft und Kraftstoff vor der Zündung verdichtet.",
+      "zh": "发动机中，空气和燃油的混合气在点火前被压缩。"
+     },
+     {
+      "de": "Schwere Maschinen verdichten den Boden so stark, dass kaum noch Wasser versickert.",
+      "zh": "重型机械把土壤压得太实，雨水几乎渗不下去。"
+     }
+    ]
+   },
+   {
+    "zh": "sich verdichten：（迹象、怀疑）越来越多，趋于确凿；（雾、人群）变浓、变密",
+    "de": "sich häufen, stärker werden; dichter werden",
+    "ex": [
+     {
+      "de": "Die Hinweise verdichten sich, dass der Angriff von außen gesteuert wurde.",
+      "zh": "越来越多的迹象表明，这次攻击是外部操控的。"
+     }
+    ]
+   },
+   {
+    "zh": "（文本、内容）浓缩，凝练；（城市）加密建设",
+    "de": "auf das Wesentliche konzentrieren; (Städtebau) enger bebauen",
+    "ex": [
+     {
+      "de": "Die Autorin verdichtet dreißig Jahre Familiengeschichte auf 200 Seiten.",
+      "zh": "作者把三十年家族史浓缩在200页里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) verdichten — 压缩／浓缩某物",
+   "die Hinweise / Anzeichen / Gerüchte verdichten sich — 迹象／传闻越来越多",
+   "verdichtetes Bauen / die Nachverdichtung — 城市高密度建设／加密建设（规划术语）",
+   "语料中的 verdichtet 多为分词：verdichtete Lyrik — 凝练的诗；verdichteter Boden — 板结的土壤"
+  ],
+  "root": "ver·dicht·en：ver-（使变成）+ dicht（密的）+ -en → 使变密",
+  "fam": [
+   "dicht",
+   "die Dichte",
+   "die Verdichtung",
+   "der Verdichter",
+   "abdichten"
+  ],
+  "ety": "由 dicht 派生；dicht < 中古高地德语 dīhte（密的、厚的），一般认为与 gedeihen 同源；与英语 tight 为同源词。",
+  "cog": "英 tight；荷 dicht；冰 þéttur",
+  "tip": "与 dichten（写诗）无关，尽管词形相近；“压缩文件”用 komprimieren，不用 verdichten。"
+ },
+ {
+  "w": "Verfassungsbeschwerde",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verfassungsbeschwerden",
+  "gs": "der Verfassungsbeschwerde",
+  "ipa": "fɛɐ̯ˈfasʊŋsbəˌʃveːɐ̯də",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "（法律）宪法诉愿（公民认为基本权利受国家侵犯时向宪法法院提起的申诉）",
+    "de": "Rechtsbehelf, mit dem jd. beim Bundesverfassungsgericht die Verletzung seiner Grundrechte rügt",
+    "ex": [
+     {
+      "de": "Gegen das neue Polizeigesetz haben mehrere Bürgerrechtler Verfassungsbeschwerde eingelegt.",
+      "zh": "多名公民权利活动人士就新警察法提起了宪法诉愿。"
+     },
+     {
+      "de": "Das Bundesverfassungsgericht nahm die Verfassungsbeschwerde nicht zur Entscheidung an.",
+      "zh": "联邦宪法法院未受理这起宪法诉愿。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Verfassungsbeschwerde (gegen etw.) einlegen / erheben — 提起宪法诉愿（无冠词是法律惯用法）",
+   "einer Verfassungsbeschwerde stattgeben / sie abweisen — 支持／驳回宪法诉愿",
+   "das Bundesverfassungsgericht (BVerfG) in Karlsruhe — 联邦宪法法院；die Grundrechte — 基本权利"
+  ],
+  "root": "Verfassung·s·beschwerde：Verfassung（宪法）+ -s- + Beschwerde（申诉，< sich beschweren）→ 依据宪法提出的申诉",
+  "fam": [
+   "die Verfassung",
+   "verfassen",
+   "die Beschwerde",
+   "sich beschweren",
+   "verfassungswidrig"
+  ],
+  "ety": "Verfassung（宪法义 18 世纪起）< verfassen（< fassen，古高地德语 fazzōn）；Beschwerde < 中古高地德语 beswærde（负担），属 schwer（< 古高地德语 swār）。",
+  "cog": "荷 zwaar（schwer）, vatten（fassen）",
+  "tip": "Beschwerde 本义“负担、投诉”，在法律中指“申诉、上诉”；中国的“宪法诉愿”制度不同，翻译时可加注。"
+ },
+ {
+  "w": "vergüten",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈɡyːtn̩",
+  "lvl": "C1",
+  "forms": "vergütet · vergütete · hat vergütet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（为工作、服务）付酬，支付报酬",
+    "de": "für eine Leistung bezahlen",
+    "ex": [
+     {
+      "de": "Überstunden werden mit einem Zuschlag von 25 Prozent vergütet.",
+      "zh": "加班按25%的加成支付报酬。"
+     },
+     {
+      "de": "Das Praktikum wird mit 800 Euro im Monat vergütet.",
+      "zh": "这个实习岗位每月有800欧元报酬。"
+     }
+    ]
+   },
+   {
+    "zh": "补偿，赔偿（费用、损失）",
+    "de": "erstatten, ersetzen",
+    "ex": [
+     {
+      "de": "Die Reisekosten werden Ihnen nach Vorlage der Belege vergütet.",
+      "zh": "出示票据后，差旅费将予以报销。"
+     }
+    ]
+   },
+   {
+    "zh": "（技术）对金属进行调质处理；给镜片镀膜",
+    "de": "(Technik) Stahl härten und anlassen; Glas beschichten",
+    "ex": [
+     {
+      "de": "Vergütete Objektive reduzieren störende Reflexe.",
+      "zh": "镀膜镜头能减少恼人的反光。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. etw.(A) vergüten — 向某人支付／补偿某项费用",
+   "etw. wird (mit X Euro) vergütet — 某项工作按……付酬",
+   "die Vergütung — 报酬、薪酬（比 Lohn/Gehalt 更正式）；vergüteter Stahl — 调质钢"
+  ],
+  "root": "ver·güt·en：ver-（使成）+ gut（好）+ -en → 使之变好 → 补偿、付酬",
+  "fam": [
+   "gut",
+   "die Vergütung",
+   "die Güte",
+   "das Gut",
+   "begütigen"
+  ],
+  "ety": "中古高地德语 vergüeten（弥补、赔偿），由 ver- + guot（好）构成；gut < 古高地德语 guot < 原始日耳曼语 *gōdaz。",
+  "cog": "英 good；荷 goed, vergoeden",
+  "tip": "语料中的 vergütet 多为被动分词：ein vergütetes Praktikum（有薪实习）；无薪实习是 unvergütet / unbezahlt。"
+ },
+ {
+  "w": "verlosen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈloːzn̩",
+  "lvl": "B2",
+  "forms": "verlost · verloste · hat verlost",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "抽奖送出，以抽签方式分配",
+    "de": "durch das Los vergeben",
+    "ex": [
+     {
+      "de": "Unter allen Teilnehmern verlosen wir drei Wochenendreisen nach Wien.",
+      "zh": "我们将在所有参与者中抽出三个维也纳周末游名额。"
+     },
+     {
+      "de": "Die wenigen Tickets für das Finale wurden unter den Fans verlost.",
+      "zh": "决赛仅有的几张门票在球迷中抽签分配。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) unter jdm.(D) verlosen — 在某些人之间抽奖分配某物",
+   "die Verlosung — 抽奖；an einer Verlosung teilnehmen — 参加抽奖",
+   "注意区分：verlieren（丢失）— verlor — verloren；verlosen 是规则动词"
+  ],
+  "root": "ver·los·en：ver-（分配出去）+ Los（签、彩票）+ -en → 通过抽签分出去",
+  "fam": [
+   "das Los",
+   "die Verlosung",
+   "auslosen",
+   "die Lotterie",
+   "das Losverfahren"
+  ],
+  "ety": "由 Los 派生；Los < 中古高地德语 lōz < 古高地德语 (h)lōz < 原始日耳曼语 *hlautaz（签、抽签所得份额）。",
+  "cog": "英 lot；荷 lot；法 lot（借自日耳曼语）",
+  "tip": "verlost（过去分词）与 verloren（verlieren 的分词）形近义远，不要搞混。"
+ },
+ {
+  "w": "Verstaatlichung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verstaatlichungen",
+  "gs": "der Verstaatlichung",
+  "ipa": "fɛɐ̯ˈʃtaːtlɪçʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "国有化，收归国有",
+    "de": "Überführung von Privateigentum in Staatseigentum",
+    "ex": [
+     {
+      "de": "Nach der Finanzkrise wurde die Verstaatlichung angeschlagener Banken ernsthaft diskutiert.",
+      "zh": "金融危机后，陷入困境的银行国有化问题被认真讨论。"
+     },
+     {
+      "de": "Die Verstaatlichung der Energieversorger scheiterte am Widerstand der Wirtschaft.",
+      "zh": "能源供应商的国有化因经济界的反对而失败。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Verstaatlichung von etw.(D) fordern / beschließen — 要求／决定将某物国有化",
+   "反义：die Privatisierung — 私有化",
+   "相关：die Enteignung — 征收、剥夺所有权；verstaatlichen（动词）"
+  ],
+  "root": "Ver·staat·lich·ung：ver-（使成为）+ Staat（国家）+ -lich + -ung → 使变成国家的 → 国有化",
+  "fam": [
+   "der Staat",
+   "verstaatlichen",
+   "staatlich",
+   "die Privatisierung",
+   "die Enteignung"
+  ],
+  "ety": "19 世纪由 verstaatlichen 派生；Staat 经意大利语 stato 与法语 état 借自拉丁语 status（状态、地位，< stare 站立）。",
+  "cog": "英 state, nationalization；法 état；拉 status",
+  "tip": "德语 Verstaatlichung 对应英语 nationalization；Nationalisierung 在德语中少用于此义。"
+ },
+ {
+  "w": "Verwarnung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verwarnungen",
+  "gs": "der Verwarnung",
+  "ipa": "fɛɐ̯ˈvaʁnʊŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（官方）警告，告诫（轻微违规的处罚）",
+    "de": "amtliche Ermahnung wegen eines geringfügigen Verstoßes",
+    "ex": [
+     {
+      "de": "Für das Falschparken gab es diesmal nur eine Verwarnung mit zehn Euro Verwarnungsgeld.",
+      "zh": "这次违章停车只收到一张警告，交了10欧元警告金。"
+     },
+     {
+      "de": "Der Mitarbeiter erhielt eine schriftliche Verwarnung wegen wiederholter Verspätung.",
+      "zh": "这名员工因屡次迟到收到书面警告。"
+     }
+    ]
+   },
+   {
+    "zh": "（体育）警告，黄牌",
+    "de": "(Sport) Ermahnung durch den Schiedsrichter, meist mit gelber Karte",
+    "ex": [
+     {
+      "de": "Nach seiner zweiten Verwarnung musste der Verteidiger vom Platz.",
+      "zh": "吃到第二张黄牌后，这名后卫被罚下场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Verwarnung erhalten / aussprechen — 收到／发出警告",
+   "jdn. verwarnen — 警告某人；eine gebührenpflichtige Verwarnung — 收费警告（交通）",
+   "相关：die Abmahnung — 劳动法上的正式警告（比 Verwarnung 更重）；das Bußgeld — 罚款"
+  ],
+  "root": "Ver·warn·ung：ver-（强化）+ warnen（警告）+ -ung → 正式的警告",
+  "fam": [
+   "warnen",
+   "verwarnen",
+   "die Warnung",
+   "die Abmahnung",
+   "die Ermahnung"
+  ],
+  "ety": "由 verwarnen 派生；warnen < 中古高地德语 warnen < 古高地德语 warnōn（当心、警告）< 原始日耳曼语 *warnōną。",
+  "cog": "英 warn；古诺斯 varna",
+  "tip": "交通违章中 Verwarnung（警告金 ≤ 55 欧元）与 Bußgeld（罚款）是不同层级；职场中正式警告叫 Abmahnung。"
+ },
+ {
+  "w": "Volksvertreter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Volksvertreter",
+  "gs": "des Volksvertreters",
+  "ipa": "ˈfɔlksfɛɐ̯ˌtʁeːtɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "民意代表，议员（人民的代表）",
+    "de": "gewähltes Mitglied eines Parlaments; Abgeordneter",
+    "ex": [
+     {
+      "de": "Als Volksvertreter sind die Abgeordneten nur ihrem Gewissen verpflichtet.",
+      "zh": "作为民意代表，议员只对自己的良心负责。"
+     },
+     {
+      "de": "Die Bürger erwarten von ihren Volksvertretern mehr Transparenz bei Nebeneinkünften.",
+      "zh": "公民期望民意代表在兼职收入方面更加透明。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性 die Volksvertreterin；die Volksvertretung — 议会、代议机关",
+   "近义：der Abgeordnete, der Parlamentarier（Volksvertreter 略带庄重或讽刺色彩）",
+   "gewählte Volksvertreter — 民选代表"
+  ],
+  "root": "Volks·vertreter：Volk（人民）+ -s- + Vertreter（代表，< vertreten 代替出面）→ 代表人民的人",
+  "fam": [
+   "das Volk",
+   "vertreten",
+   "der Vertreter",
+   "die Volksvertretung",
+   "der Abgeordnete"
+  ],
+  "ety": "19 世纪议会制形成时的构词；Volk < 中古高地德语 volc < 古高地德语 folc < 原始日耳曼语 *fulką（人群、军队）；vertreten < ver- + treten（< 古高地德语 tretan）。",
+  "cog": "英 folk, tread；荷 volk, vertreden",
+  "tip": "媒体常用“unsere Volksvertreter”带轻微讽刺：提醒议员不要忘记为谁服务。"
+ },
+ {
+  "w": "Voraussicht",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Voraussicht",
+  "ipa": "foˈʁaʊ̯sˌzɪçt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "预见，预料；远见",
+    "de": "das Vorhersehen einer Entwicklung; Weitblick",
+    "ex": [
+     {
+      "de": "Aller Voraussicht nach wird das Gesetz noch vor der Sommerpause verabschiedet.",
+      "zh": "按目前预计，这项法律将在夏季休会前通过。"
+     },
+     {
+      "de": "In weiser Voraussicht hatte sie die wichtigen Dateien schon gesichert.",
+      "zh": "她很有先见之明，早已备份了重要文件。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aller Voraussicht nach — 预计，按预料（最常用固定搭配）",
+   "in weiser / kluger Voraussicht — 出于先见之明",
+   "voraussichtlich（副词）— 预计、大概：Der Zug kommt voraussichtlich 10 Minuten später."
+  ],
+  "root": "Voraus·sicht：voraus（预先、在前）+ Sicht（看、视野）→ 预先看到 → 预见",
+  "fam": [
+   "voraussehen",
+   "voraussichtlich",
+   "die Sicht",
+   "die Vorsicht",
+   "die Aussicht"
+  ],
+  "ety": "18 世纪由 voraussehen 构成的动词名词；Sicht < 中古高地德语 siht < 古高地德语 siht，属 sehen（< 原始日耳曼语 *sehwaną）。",
+  "cog": "英 sight, foresight；荷 vooruitzicht（义近“前景”）",
+  "tip": "Voraussicht（预见）≠ Vorsicht（小心）；voraussichtlich ≠ vorsichtig，中国学习者常混淆。"
+ },
+ {
+  "w": "vorfinden",
+  "pos": "v",
+  "ipa": "ˈfoːɐ̯ˌfɪndn̩",
+  "lvl": "B2–C1",
+  "forms": "findet vor · fand vor · hat vorgefunden",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（到达时）发现，碰到（某种现成的状况）",
+    "de": "bei der Ankunft in einem bestimmten Zustand antreffen",
+    "ex": [
+     {
+      "de": "Die Rettungskräfte fanden den Mann bewusstlos in seiner Wohnung vor.",
+      "zh": "救援人员到达时发现这名男子昏迷在家中。"
+     },
+     {
+      "de": "Die neue Regierung fand leere Kassen und einen Reformstau vor.",
+      "zh": "新政府接手时面对的是空空的国库和一堆积压的改革。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn./etw.(A) (in einem Zustand) vorfinden — 发现某人／某物处于某种状态",
+   "die vorgefundenen Bedingungen / Verhältnisse — 既有的条件／状况（语料中的 vorgefunden）",
+   "近义：antreffen；区别于 finden（找到）：vorfinden 强调“到场时事情已是如此”"
+  ],
+  "root": "vor·finden：vor-（已在面前）+ finden（发现）→ 发现已摆在面前的东西",
+  "fam": [
+   "finden",
+   "der Befund",
+   "die Erfindung",
+   "antreffen",
+   "auffinden"
+  ],
+  "ety": "finden < 中古高地德语 vinden < 古高地德语 findan < 原始日耳曼语 *finþaną（找到）。",
+  "cog": "英 find；荷 vinden",
+  "tip": "可分动词：Ich fand ein Chaos vor. 过去分词 vorgefunden；不要与 vorfinden 的近形词 erfinden（发明）混淆。"
+ },
+ {
+  "w": "Wertigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wertigkeiten",
+  "gs": "der Wertigkeit",
+  "ipa": "ˈveːɐ̯tɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "价值高低，重要程度；（产品的）品质档次",
+    "de": "Grad der Bedeutung oder Qualität von etw.",
+    "ex": [
+     {
+      "de": "Die hohe Wertigkeit der Materialien merkt man dem Auto schon beim Einsteigen an.",
+      "zh": "一上车就能感觉到这款车用料的高档。"
+     },
+     {
+      "de": "Über die Wertigkeit von Pflegeberufen wird in der Gesellschaft zu wenig gesprochen.",
+      "zh": "社会对护理职业重要性的讨论太少。"
+     }
+    ]
+   },
+   {
+    "zh": "（化学）化合价；（语言学）配价",
+    "de": "(Chemie) Anzahl der Bindungen eines Atoms; (Linguistik) Valenz",
+    "ex": [
+     {
+      "de": "Kohlenstoff hat die Wertigkeit vier.",
+      "zh": "碳的化合价是四。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Wertigkeit von etw.(D) — 某物的价值档次／重要程度",
+   "eine hohe / geringe Wertigkeit haben — 档次高／低；重要性高／低",
+   "化学中也说 die Valenz；形容词 hochwertig / minderwertig — 优质的／劣质的"
+  ],
+  "root": "Wert·ig·keit：Wert（价值）+ -ig（具有……的）+ -keit（名词化）→ 具有价值的程度",
+  "fam": [
+   "der Wert",
+   "wertvoll",
+   "hochwertig",
+   "die Bewertung",
+   "minderwertig"
+  ],
+  "ety": "由形容词 wertig 派生（主要见于复合词 hochwertig 等）；Wert < 中古高地德语 wert < 古高地德语 werd < 原始日耳曼语 *werþaz（有价值的）。",
+  "cog": "英 worth；荷 waard；哥特 wairþs",
+  "tip": "Wertigkeit 常用于营销和评价语境，指“档次、质感”，与 Wert（价值本身）不同。"
+ },
+ {
+  "w": "wissentlich",
+  "pos": "adj",
+  "ipa": "ˈvɪsn̩tlɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "明知的，故意的，有意识的（常作副词：明知故犯地）",
+    "de": "im Bewusstsein der Folgen; absichtlich",
+    "ex": [
+     {
+      "de": "Wer wissentlich falsche Angaben macht, riskiert eine Geldstrafe.",
+      "zh": "明知故犯提供虚假信息者，可能被处以罚款。"
+     },
+     {
+      "de": "Der Konzern hat die Risiken des Medikaments wissentlich verschwiegen.",
+      "zh": "该集团故意隐瞒了这种药物的风险。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wissentlich und willentlich — 明知且故意（法律固定搭配）",
+   "etw. wissentlich verschweigen / in Kauf nehmen — 故意隐瞒／明知后果仍接受",
+   "近义：bewusst, absichtlich, vorsätzlich（法律）；反义：unwissentlich — 不知情地"
+  ],
+  "root": "wissen·t·lich：wissen（知道）+ 连接 -t- + -lich → 在知情状态下的",
+  "fam": [
+   "wissen",
+   "das Wissen",
+   "unwissentlich",
+   "das Gewissen",
+   "bewusst"
+  ],
+  "ety": "中古高地德语 wizzentlich（< wizzen 知道）；wissen < 古高地德语 wizzan < 原始日耳曼语 *witaną（原义“已经看见”，过去现在式动词）。",
+  "cog": "英 wit, wise, witness；拉 videre（看）；希 oîda（我知道）",
+  "tip": "多作副词使用，作定语较少；法律上的“故意”另有术语 vorsätzlich。"
+ }
+]
