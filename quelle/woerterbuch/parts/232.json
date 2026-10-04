@@ -1,0 +1,1936 @@
+[
+ {
+  "w": "Medizintechnik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Medizintechnik",
+  "ipa": "meˈdiːt͡sɪnˌtɛçnɪk",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "医疗技术，医学工程；医疗器械（行业）",
+    "de": "Technik zur Herstellung und Anwendung medizinischer Geräte",
+    "ex": [
+     {
+      "de": "Die Medizintechnik gehört zu den innovativsten Branchen in Deutschland.",
+      "zh": "医疗器械行业是德国最具创新力的行业之一。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Medizintechnik arbeiten — 在医疗器械行业工作",
+   "ein Unternehmen der Medizintechnik / ein Medizintechnikhersteller — 医疗器械企业",
+   "Studiengang Medizintechnik — 医学工程（专业）"
+  ],
+  "root": "Medizin·technik：Medizin（医学）+ Technik（技术）→ 医学用的技术",
+  "fam": [
+   "Medizin",
+   "Technik",
+   "medizinisch",
+   "technisch",
+   "Medizintechniker"
+  ],
+  "ety": "Medizin < 拉丁语 (ars) medicina（医术）< medicus（医生）；Technik < 法语 technique < 希腊语 technikós（技艺的）< téchnē（技艺）。",
+  "cog": "英 medical technology（medtech）",
+  "tip": "复合词重音在第一部分的重音音节：Mediˈzin-；通常不用复数。"
+ },
+ {
+  "w": "Messwert",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Messwerte",
+  "gs": "des Messwert(e)s",
+  "ipa": "ˈmɛsˌveːɐ̯t",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "测量值，测得的数值",
+    "de": "durch Messung ermittelter Wert",
+    "ex": [
+     {
+      "de": "Die Messwerte lagen deutlich über dem zulässigen Grenzwert.",
+      "zh": "测量值明显超过了允许的限值。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Messwerte erfassen / auswerten — 采集/分析测量数据",
+   "der Messwert liegt bei ... — 测量值为……",
+   "Grenzwert vs. Messwert — 限值 与 实测值"
+  ],
+  "root": "Mess·wert：messen（测量）+ Wert（数值）",
+  "fam": [
+   "messen",
+   "Messung",
+   "Messgerät",
+   "Wert",
+   "Grenzwert"
+  ],
+  "ety": "messen < 古高地德语 mezzan；Wert < 古高地德语 werd（价值）。",
+  "cog": "英 measured value；messen 与英 mete（度量，古语）同源",
+  "tip": "注意 ss：Messwert 来自 messen，不要与 die Messe（展会/弥撒）混淆。"
+ },
+ {
+  "w": "Mikroskop",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Mikroskope",
+  "gs": "des Mikroskops",
+  "ipa": "mikʁoˈskoːp",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "显微镜",
+    "de": "optisches Gerät zur stark vergrößerten Betrachtung kleiner Objekte",
+    "ex": [
+     {
+      "de": "Unter dem Mikroskop erkennt man die einzelnen Zellen.",
+      "zh": "在显微镜下可以看到单个细胞。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. unter dem Mikroskop betrachten / untersuchen — 在显微镜下观察/检查",
+   "ein Elektronenmikroskop — 电子显微镜",
+   "mikroskopisch klein — 微小得要用显微镜才看得见"
+  ],
+  "root": "Mikro·skop：mikro-（希腊语 mikrós，小）+ -skop（希腊语 skopeîn，观看）→“看小东西的仪器”",
+  "fam": [
+   "mikroskopisch",
+   "Teleskop",
+   "Mikrobe",
+   "Horoskop"
+  ],
+  "ety": "17世纪新拉丁语 microscopium，由希腊语 mikrós（小的）+ skopeîn（观察）构成，经新拉丁语进入德语。",
+  "cog": "英 microscope；法 microscope",
+  "tip": "中性名词：das Mikroskop；重音在最后音节 -ˈskop。"
+ },
+ {
+  "w": "Modellierung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Modellierungen",
+  "gs": "der Modellierung",
+  "ipa": "modɛˈliːʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "建模（数学/计算机模型）",
+    "de": "Erstellung eines (mathematischen) Modells eines Systems",
+    "ex": [
+     {
+      "de": "Die Modellierung des Klimas erfordert enorme Rechenleistung.",
+      "zh": "气候建模需要巨大的计算能力。"
+     }
+    ]
+   },
+   {
+    "zh": "塑造，造型（雕塑等）",
+    "de": "plastische Formung, Gestaltung",
+    "ex": [
+     {
+      "de": "Die feine Modellierung des Gesichts verrät die Hand eines Meisters.",
+      "zh": "面部细腻的塑造显示出大师之手。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Modellierung von Prozessen / Daten — 流程/数据建模",
+   "eine statistische / mathematische Modellierung — 统计/数学建模",
+   "动词：etw. modellieren — 为……建模；塑造"
+  ],
+  "root": "Modell·ier·ung：Modell（模型）+ -ieren（动词后缀）+ -ung（名词化）→ 建立模型的过程",
+  "fam": [
+   "Modell",
+   "modellieren",
+   "Modellrechnung",
+   "Model"
+  ],
+  "ety": "Modell < 意大利语 modello < 通俗拉丁语 *modellus < 拉丁语 modulus（尺度，modus 的指小词）。",
+  "cog": "英 modelling；意 modellare",
+  "tip": "学术中“建模”多用 Modellierung，日常“做模型”说 ein Modell bauen。"
+ },
+ {
+  "w": "Modifikation",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Modifikationen",
+  "gs": "der Modifikation",
+  "ipa": "modifikaˈt͡si̯oːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "修改，修正；变更",
+    "de": "Abwandlung, Veränderung",
+    "ex": [
+     {
+      "de": "Nach einigen Modifikationen wurde der Entwurf angenommen.",
+      "zh": "经过几处修改后，草案获得通过。"
+     }
+    ]
+   },
+   {
+    "zh": "（生物）变异；（化学）同素异形体",
+    "de": "nicht erbliche Abwandlung; Erscheinungsform eines Stoffes",
+    "ex": [
+     {
+      "de": "Graphit und Diamant sind Modifikationen des Kohlenstoffs.",
+      "zh": "石墨和金刚石是碳的同素异形体。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Modifikationen an etw.(D) vornehmen — 对某物进行修改",
+   "eine geringfügige / grundlegende Modifikation — 微小的/根本性的修改",
+   "动词：etw. modifizieren — 修改"
+  ],
+  "root": "Modi·fik·ation：拉丁语 modus（方式，尺度）+ facere（做）+ -ation（名词后缀）→“改变方式” → 修改",
+  "fam": [
+   "modifizieren",
+   "Modus",
+   "Modell",
+   "Mode"
+  ],
+  "ety": "借自拉丁语 modificatio（度量，规定），源自 modificare < modus（尺度）+ facere（做）。",
+  "cog": "英 modification；法 modification",
+  "tip": "比 Änderung 更书面、技术化；口语中说 Änderung 更自然。"
+ },
+ {
+  "w": "Monolog",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Monologe",
+  "gs": "des Monolog(e)s",
+  "ipa": "monoˈloːk",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "独白；（一人）长篇自语",
+    "de": "Selbstgespräch, längere Rede einer Person (bes. im Drama)",
+    "ex": [
+     {
+      "de": "Hamlets Monolog gehört zu den berühmtesten Passagen der Weltliteratur.",
+      "zh": "哈姆雷特的独白是世界文学中最著名的段落之一。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬）一个人说个不停，自说自话",
+    "de": "Rede, bei der der andere nicht zu Wort kommt",
+    "ex": [
+     {
+      "de": "Das war kein Gespräch, sondern ein Monolog meines Chefs.",
+      "zh": "那不是谈话，而是我上司一个人的独角戏。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Monolog halten — 发表独白；滔滔不绝",
+   "innerer Monolog — 内心独白（文学手法）",
+   "反义：Dialog — 对话"
+  ],
+  "root": "Mono·log：mono-（希腊语 mónos，单独）+ -log（lógos，话语）→“一个人的话语”",
+  "fam": [
+   "Dialog",
+   "monologisch",
+   "Monopol",
+   "Katalog"
+  ],
+  "ety": "借自法语 monologue，源自希腊语 monólogos（独自说话的）< mónos（单独）+ lógos（话语）。",
+  "cog": "英 monologue；法 monologue",
+  "tip": "阳性：der Monolog，复数 Monologe；词尾 -g 读 [k]。"
+ },
+ {
+  "w": "Muttertag",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Muttertage",
+  "gs": "des Muttertag(e)s",
+  "ipa": "ˈmʊtɐˌtaːk",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "母亲节（德国为五月第二个星期日）",
+    "de": "Feiertag zu Ehren der Mütter, in Deutschland am zweiten Sonntag im Mai",
+    "ex": [
+     {
+      "de": "Zum Muttertag schenken viele Kinder ihrer Mutter Blumen.",
+      "zh": "母亲节时，许多孩子给母亲送花。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "am Muttertag / zum Muttertag — 在母亲节 / 为了母亲节",
+   "jmdm. zum Muttertag gratulieren — 祝某人母亲节快乐",
+   "对应：Vatertag（父亲节，德国在耶稣升天节）"
+  ],
+  "root": "Mutter·tag：Mutter（母亲）+ Tag（日子）",
+  "fam": [
+   "Mutter",
+   "Vatertag",
+   "mütterlich",
+   "Feiertag"
+  ],
+  "ety": "节日源于美国（Anna Jarvis 自1907年起推动），20世纪20年代在德国流行开来；Mutter < 古高地德语 muoter，Tag < 古高地德语 tag。",
+  "cog": "英 Mother's Day；Mutter 与英 mother 同源",
+  "tip": "Muttertag 不是法定假日（本来就是星期日）；德国的 Vatertag 常是男士出游饮酒的日子。"
+ },
+ {
+  "w": "Nachtigall",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Nachtigallen",
+  "gs": "der Nachtigall",
+  "ipa": "ˈnaxtɪɡal",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "夜莺",
+    "de": "Singvogel mit besonders schönem Gesang, der auch nachts singt",
+    "ex": [
+     {
+      "de": "In der Nacht hörten wir im Park eine Nachtigall singen.",
+      "zh": "夜里我们在公园里听到一只夜莺在唱歌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Nachtigall singt / schlägt — 夜莺鸣唱",
+   "Nachtigall, ick hör dir trapsen!（柏林方言，口）— 我早看出你的心思了",
+   "wie eine Nachtigall singen — 歌声优美"
+  ],
+  "root": "Nachti·gall：Nacht（夜）+ 古高地德语 galan（唱，鸣叫）→“夜里歌唱者”",
+  "fam": [
+   "Nacht",
+   "nächtlich",
+   "gellen"
+  ],
+  "ety": "古高地德语 nahtigala，由 naht（夜）+ galan（唱）构成；-i- 为连接成分。",
+  "cog": "英 nightingale（古英语 nihtegala；-n- 为后来插入）；荷 nachtegaal",
+  "tip": "阴性：die Nachtigall，复数 Nachtigallen；重音在第一音节。"
+ },
+ {
+  "w": "narrativ",
+  "pos": "adj",
+  "ipa": "naʁaˈtiːf",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "叙事的，叙述的",
+    "de": "erzählend, in erzählender Form",
+    "ex": [
+     {
+      "de": "Der Film bricht bewusst mit narrativen Konventionen.",
+      "zh": "这部电影有意打破叙事惯例。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "narrative Strukturen / Elemente — 叙事结构/元素",
+   "das Narrativ（名词）— 叙事；（政治/媒体中的）话语框架，常见于时事评论",
+   "narratives Interview（社科）— 叙事访谈"
+  ],
+  "root": "narr·ativ：拉丁语 narrare（讲述）+ -ativ（形容词后缀）",
+  "fam": [
+   "Narrativ",
+   "Narration",
+   "Erzählung",
+   "Erzähler"
+  ],
+  "ety": "借自晚期拉丁语 narrativus（叙述的）< narrare（讲述）。",
+  "cog": "英 narrative；法 narratif",
+  "tip": "名词 das Narrativ（复数 Narrative）在新闻中极常见：ein Narrativ bedienen / verbreiten（迎合/传播某种叙事）。"
+ },
+ {
+  "w": "Neubaugebiet",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Neubaugebiete",
+  "gs": "des Neubaugebiet(e)s",
+  "ipa": "ˈnɔɪ̯baʊ̯ɡəˌbiːt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "新建住宅区，新开发区",
+    "de": "Gebiet mit neu gebauten (oder geplanten) Wohnhäusern",
+    "ex": [
+     {
+      "de": "Im Neubaugebiet am Stadtrand entstehen 200 Einfamilienhäuser.",
+      "zh": "城郊的新建住宅区将建起200栋独栋住宅。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Neubaugebiet ausweisen / erschließen — 划定/开发新建区",
+   "im Neubaugebiet wohnen — 住在新区",
+   "相关：Neubau（新建筑）↔ Altbau（老房子）"
+  ],
+  "root": "Neu·bau·gebiet：neu（新）+ Bau（建筑）+ Gebiet（区域）",
+  "fam": [
+   "Neubau",
+   "Altbau",
+   "Gebiet",
+   "bauen",
+   "Baugebiet"
+  ],
+  "ety": "复合词；Gebiet < 中古高地德语 gebiet（管辖区），源自 gebieten（命令、统辖）。",
+  "cog": "英 new development area；bauen（古高地德语 būan，居住、耕种）与英 neighbour 中的 -bour 同源"
+ },
+ {
+  "w": "Neukunde",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Neukunden",
+  "gs": "des Neukunden",
+  "ipa": "ˈnɔɪ̯ˌkʊndə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "新客户，新顾客",
+    "de": "Kunde, der zum ersten Mal etwas kauft oder einen Vertrag abschließt",
+    "ex": [
+     {
+      "de": "Für Neukunden gibt es im ersten Jahr einen Rabatt von zehn Prozent.",
+      "zh": "新客户第一年可享九折优惠。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Neukunden gewinnen / akquirieren — 获取新客户",
+   "ein Angebot nur für Neukunden — 仅限新客户的优惠",
+   "反义：Bestandskunde / Stammkunde — 老客户/常客"
+  ],
+  "root": "Neu·kunde：neu（新）+ Kunde（顾客）",
+  "fam": [
+   "Kunde",
+   "Kundin",
+   "Kundschaft",
+   "Stammkunde",
+   "kündigen"
+  ],
+  "ety": "Kunde < 中古高地德语 kunde < 古高地德语 kundo（熟人，知情者），与 kund（已知的）、kennen 同源。",
+  "cog": "Kunde 与英 couth/uncouth、know 远源相关；英 new customer",
+  "tip": "弱变化名词：des/dem/den Neukunden；女性为 die Neukundin。"
+ },
+ {
+  "w": "Nichtwähler",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Nichtwähler",
+  "gs": "des Nichtwählers",
+  "ipa": "ˈnɪçtˌvɛːlɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "不投票者，弃权选民",
+    "de": "wahlberechtigte Person, die nicht an einer Wahl teilnimmt",
+    "ex": [
+     {
+      "de": "Die Partei will vor allem Nichtwähler mobilisieren.",
+      "zh": "该党主要想动员那些不投票的选民。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Gruppe der Nichtwähler — 不投票群体",
+   "Nichtwähler mobilisieren / zurückgewinnen — 动员/争取回不投票者",
+   "相关：Wahlbeteiligung（投票率）, Stammwähler, Wechselwähler"
+  ],
+  "root": "Nicht·wähl·er：nicht（不）+ wählen（选举）+ -er（施事者后缀）",
+  "fam": [
+   "wählen",
+   "Wahl",
+   "Wähler",
+   "Wahlbeteiligung",
+   "Wechselwähler"
+  ],
+  "ety": "wählen < 古高地德语 wellen（选择），与 wollen 同源。",
+  "cog": "英 non-voter；wählen 与英 will 远源相关",
+  "tip": "复数与单数同形：die Nichtwähler；女性 die Nichtwählerin。"
+ },
+ {
+  "w": "Nikotin",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Nikotins",
+  "ipa": "nikoˈtiːn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "尼古丁",
+    "de": "giftiges Alkaloid im Tabak",
+    "ex": [
+     {
+      "de": "Schon geringe Mengen Nikotin machen abhängig.",
+      "zh": "即使少量的尼古丁也会使人上瘾。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nikotinabhängig sein — 对尼古丁上瘾",
+   "Nikotinpflaster / Nikotinersatz — 尼古丁贴片/尼古丁替代疗法",
+   "der Nikotingehalt — 尼古丁含量"
+  ],
+  "root": "Nikot·in：人名 Nicot + -in（化学物质后缀）",
+  "fam": [
+   "nikotinfrei",
+   "Tabak",
+   "Raucher"
+  ],
+  "ety": "借自法语 nicotine，得名于法国驻葡萄牙使节 Jean Nicot，他于16世纪中叶将烟草引入法国。",
+  "cog": "英 nicotine；法 nicotine",
+  "tip": "中性名词：das Nikotin，无复数；重音在末音节。"
+ },
+ {
+  "w": "nordwestlich",
+  "pos": "adj",
+  "ipa": "nɔʁtˈvɛstlɪç",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "西北的，在西北方向的",
+    "de": "im Nordwesten gelegen; nach Nordwesten gerichtet",
+    "ex": [
+     {
+      "de": "Das Dorf liegt etwa zehn Kilometer nordwestlich von Hannover.",
+      "zh": "这个村庄位于汉诺威西北约十公里处。"
+     },
+     {
+      "de": "Morgen weht ein frischer nordwestlicher Wind.",
+      "zh": "明天将刮起清凉的西北风。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nordwestlich von + D / nordwestlich + G — 在……西北：nordwestlich der Stadt",
+   "in nordwestlicher Richtung — 朝西北方向",
+   "名词：der Nordwesten（西北）"
+  ],
+  "root": "nord·west·lich：Nord（北）+ West（西）+ -lich（形容词后缀）",
+  "fam": [
+   "Nordwesten",
+   "nördlich",
+   "westlich",
+   "südöstlich"
+  ],
+  "ety": "Nord < 古高地德语 nord；West < 古高地德语 west；-lich < 古高地德语 -līh。",
+  "cog": "英 northwest(ern)；荷 noordwestelijk",
+  "tip": "作介词用时后接第二格（nordwestlich Berlins），口语和地名前多用 von + D。"
+ },
+ {
+  "w": "Notstand",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Notstände",
+  "gs": "des Notstand(e)s",
+  "ipa": "ˈnoːtˌʃtant",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "紧急状态；困境，危急状况",
+    "de": "Lage großer Not; (Staat) Ausnahmezustand",
+    "ex": [
+     {
+      "de": "Nach dem Erdbeben rief die Regierung den nationalen Notstand aus.",
+      "zh": "地震后政府宣布全国进入紧急状态。"
+     }
+    ]
+   },
+   {
+    "zh": "（法）紧急避险",
+    "de": "rechtfertigende Zwangslage (Strafrecht)",
+    "ex": [
+     {
+      "de": "Der Angeklagte berief sich auf Notstand.",
+      "zh": "被告援引紧急避险进行辩护。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Notstand ausrufen / verhängen — 宣布/实施紧急状态",
+   "der Pflegenotstand / Bildungsnotstand — 护理/教育危机",
+   "die Notstandsgesetze（1968）— （联邦德国）紧急状态法"
+  ],
+  "root": "Not·stand：Not（危难）+ Stand（状态）→ 危难的状态",
+  "fam": [
+   "Not",
+   "Notfall",
+   "Ausnahmezustand",
+   "Notwehr",
+   "Stand"
+  ],
+  "ety": "Not < 古高地德语 nōt（困苦，强迫）；Stand 源自 stehen。",
+  "cog": "Not 与英 need 同源；Stand 与英 stand 同源",
+  "tip": "Notstand 侧重“长期危机/法律上的紧急状态”，Notfall 是具体的“紧急情况/急诊”；Notwehr 是“正当防卫”。"
+ },
+ {
+  "w": "Nussbaum",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Nussbäume",
+  "gs": "des Nussbaum(e)s",
+  "ipa": "ˈnʊsˌbaʊ̯m",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "核桃树（尤指胡桃树）",
+    "de": "Baum, der Nüsse trägt, bes. Walnussbaum",
+    "ex": [
+     {
+      "de": "Im Garten steht ein alter Nussbaum.",
+      "zh": "花园里有一棵老核桃树。"
+     }
+    ]
+   },
+   {
+    "zh": "胡桃木（木材）",
+    "de": "Holz des Walnussbaums",
+    "ex": [
+     {
+      "de": "Der Tisch ist aus massivem Nussbaum gefertigt.",
+      "zh": "这张桌子由实心胡桃木制成。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus Nussbaum — 胡桃木制的（作木材时无冠词）",
+   "Nussbaummöbel — 胡桃木家具",
+   "相关：Walnuss（核桃）, Haselnuss（榛子）"
+  ],
+  "root": "Nuss·baum：Nuss（坚果）+ Baum（树）",
+  "fam": [
+   "Nuss",
+   "Walnuss",
+   "Baum",
+   "Haselnuss"
+  ],
+  "ety": "Nuss < 古高地德语 nuz；Baum < 古高地德语 boum。",
+  "cog": "Nuss 与英 nut 同源；Baum 与英 beam（梁）同源"
+ },
+ {
+  "w": "Ochse",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Ochsen",
+  "gs": "des Ochsen",
+  "ipa": "ˈɔksə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（阉割的）公牛，犍牛",
+    "de": "kastriertes männliches Rind",
+    "ex": [
+     {
+      "de": "Früher zogen Ochsen den Pflug.",
+      "zh": "过去由犍牛拉犁。"
+     }
+    ]
+   },
+   {
+    "zh": "（骂）蠢货，笨蛋",
+    "de": "(Schimpfwort) dummer Mensch",
+    "ex": [
+     {
+      "de": "Du Ochse, das hättest du doch merken müssen!",
+      "zh": "你这个笨蛋，这你本该注意到的！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "dastehen wie der Ochs vorm Berg（口）— 呆立不知所措",
+   "schuften / arbeiten wie ein Ochse — 像牛一样苦干",
+   "区分：Stier/Bulle（未阉割的公牛）, Kuh（母牛）, Rind（牛，总称）"
+  ],
+  "root": "Ochse：单纯词，无可拆分词素",
+  "fam": [
+   "Ochsenschwanzsuppe",
+   "Rind",
+   "Stier",
+   "Kuh"
+  ],
+  "ety": "古高地德语 ohso < 原始日耳曼语 *uhsô；与梵语 ukṣán（公牛）同源。",
+  "cog": "英 ox（复数 oxen）；荷 os",
+  "tip": "弱变化名词：des/dem/den Ochsen；口语南德常说 der Ochs。"
+ },
+ {
+  "w": "Ohm",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Ohm",
+  "gs": "des Ohm(s)",
+  "ipa": "oːm",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "欧姆（电阻单位，符号 Ω）",
+    "de": "Maßeinheit des elektrischen Widerstands",
+    "ex": [
+     {
+      "de": "Der Widerstand hat einen Wert von 220 Ohm.",
+      "zh": "这个电阻的阻值为220欧姆。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das ohmsche Gesetz（也写 Ohm'sche Gesetz）— 欧姆定律",
+   "数量词后复数不变：zehn Ohm",
+   "Kiloohm / Megaohm — 千欧/兆欧"
+  ],
+  "root": "Ohm：以德国物理学家 Georg Simon Ohm（1789–1854）命名",
+  "fam": [
+   "ohmsch",
+   "Widerstand",
+   "Volt",
+   "Ampere"
+  ],
+  "ety": "得名于德国物理学家 Georg Simon Ohm；19世纪后期被确立为国际电阻单位。",
+  "cog": "英 ohm；法 ohm",
+  "tip": "中性：das Ohm。另有古旧/方言词 der Ohm（舅舅、叔叔），与本词无关。"
+ },
+ {
+  "w": "pausieren",
+  "pos": "v",
+  "ipa": "paʊ̯ˈziːʁən",
+  "lvl": "B2",
+  "forms": "pausiert · pausierte · hat pausiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "暂停，中断；休息（一段时间）",
+    "de": "eine Pause machen, vorübergehend aussetzen",
+    "ex": [
+     {
+      "de": "Der Stürmer muss wegen einer Verletzung drei Wochen pausieren.",
+      "zh": "这名前锋因伤需休战三周。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit etw.(D) pausieren — 暂停某事：mit dem Training pausieren",
+   "eine Weile / ein Jahr pausieren — 休息一阵/一年",
+   "比 eine Pause machen 更书面，多用于体育、职场"
+  ],
+  "root": "paus·ieren：Pause（暂停）+ -ieren（动词后缀）",
+  "fam": [
+   "Pause",
+   "Mittagspause",
+   "unterbrechen"
+  ],
+  "ety": "Pause < 中古高地德语 pūse < 古法语 pause / 拉丁语 pausa < 希腊语 paûsis（停止）。",
+  "cog": "英 pause；法 pauser",
+  "tip": "-ieren 动词完成时不加 ge-：hat pausiert。"
+ },
+ {
+  "w": "phantastisch",
+  "pos": "adj",
+  "ipa": "fanˈtastɪʃ",
+  "lvl": "A2–B1",
+  "forms": "phantastischer · am phantastischsten",
+  "senses": [
+   {
+    "zh": "（口）好极了，棒极了",
+    "de": "großartig, wunderbar",
+    "ex": [
+     {
+      "de": "Das Essen war einfach phantastisch!",
+      "zh": "这顿饭真是棒极了！"
+     },
+     {
+      "de": "Sie hat eine phantastische Stimme.",
+      "zh": "她的嗓音美妙极了。"
+     }
+    ]
+   },
+   {
+    "zh": "幻想的，虚幻的，离奇的",
+    "de": "nicht wirklich, auf Fantasie beruhend",
+    "ex": [
+     {
+      "de": "Der Roman verbindet realistische und phantastische Elemente.",
+      "zh": "这部小说融合了现实与奇幻元素。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）难以置信的（数量、价格）",
+    "de": "unglaublich (hoch)",
+    "ex": [
+     {
+      "de": "Die Wohnungen werden zu phantastischen Preisen verkauft.",
+      "zh": "这些公寓的售价高得离谱。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "异体：fantastisch（Duden 推荐写法），两种拼法均正确",
+   "die phantastische Literatur — 奇幻文学",
+   "Das klingt phantastisch! — 听起来太棒了！"
+  ],
+  "root": "phantast·isch：希腊语 phantázein（使显现）→ phantastikós（善于想象的）+ -isch",
+  "fam": [
+   "Fantasie",
+   "Phantast",
+   "Phantom",
+   "fantasievoll"
+  ],
+  "ety": "经拉丁语 phantasticus 借自希腊语 phantastikós（想象的），源自 phantázein（使显现）。",
+  "cog": "英 fantastic；法 fantastique",
+  "tip": "现在 f 拼写更常见（fantastisch, Fantasie），但 ph 拼写仍属规范；同一文本中应统一。"
+ },
+ {
+  "w": "Publizist",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Publizisten",
+  "gs": "des Publizisten",
+  "ipa": "publiˈt͡sɪst",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "评论家，时评作家；政论记者",
+    "de": "Journalist oder Schriftsteller, der zu aktuellen (politischen) Themen schreibt",
+    "ex": [
+     {
+      "de": "Der Publizist kritisiert seit Jahren die Medienpolitik der Regierung.",
+      "zh": "这位时评作家多年来一直批评政府的媒体政策。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein bekannter / streitbarer Publizist — 知名的/好辩的评论家",
+   "die Publizistik — 新闻传播学；时评写作",
+   "女性：die Publizistin"
+  ],
+  "root": "Publiz·ist：publizieren（发表）+ -ist（表示从事者）",
+  "fam": [
+   "publizieren",
+   "Publikation",
+   "Publikum",
+   "Publizistik",
+   "öffentlich"
+  ],
+  "ety": "源自 publizieren < 拉丁语 publicare（公之于众）< publicus（公共的）。",
+  "cog": "英 publicist（义有差异，英语多指“公关宣传人员”）",
+  "tip": "弱变化名词：des/dem/den Publizisten。注意英语 publicist 是“公关”，德语 Publizist 是“评论作者”。"
+ },
+ {
+  "w": "radioaktiv",
+  "pos": "adj",
+  "ipa": "ʁadi̯oʔakˈtiːf",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "放射性的，有放射性的",
+    "de": "Strahlung aussendend durch Zerfall von Atomkernen",
+    "ex": [
+     {
+      "de": "Die Endlagerung radioaktiver Abfälle ist bis heute ungelöst.",
+      "zh": "放射性废料的最终处置至今仍未解决。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "radioaktive Strahlung / Abfälle — 放射性辐射/废料",
+   "radioaktiv verseucht — 受到放射性污染",
+   "名词：die Radioaktivität — 放射性"
+  ],
+  "root": "radio·aktiv：拉丁语 radius（射线）+ aktiv（活跃的）→“发出射线的”",
+  "fam": [
+   "Radioaktivität",
+   "Strahlung",
+   "aktiv",
+   "Radius"
+  ],
+  "ety": "借自法语 radioactif（玛丽·居里于19世纪末创用），由拉丁语 radius（光线）+ activus（活动的）构成。",
+  "cog": "英 radioactive；法 radioactif",
+  "tip": "radio- 与“收音机”无关，指“射线”。"
+ },
+ {
+  "w": "Rechtsmittel",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Rechtsmittel",
+  "gs": "des Rechtsmittels",
+  "ipa": "ˈʁɛçt͡sˌmɪtl̩",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "（法）上诉手段，法律救济（如上诉、复审）",
+    "de": "Mittel, eine gerichtliche Entscheidung von einer höheren Instanz überprüfen zu lassen",
+    "ex": [
+     {
+      "de": "Die Verteidigung kündigte an, Rechtsmittel gegen das Urteil einzulegen.",
+      "zh": "辩方宣布将对判决提起上诉。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Rechtsmittel (gegen etw.) einlegen — （对……）提起上诉",
+   "das Urteil ist noch nicht rechtskräftig, Rechtsmittel sind möglich — 判决尚未生效，可以上诉",
+   "Rechtsmittelbelehrung — 上诉权利告知"
+  ],
+  "root": "Rechts·mittel：Recht（法律）+ -s-（连接音）+ Mittel（手段）",
+  "fam": [
+   "Recht",
+   "Berufung",
+   "Revision",
+   "rechtskräftig",
+   "Mittel"
+  ],
+  "ety": "Recht < 古高地德语 reht；Mittel < 中古高地德语 mittel（中间物，手段），源自 mitte。",
+  "cog": "Recht 与英 right 同源；英 legal remedy / appeal",
+  "tip": "不是泛指“法律手段”，而是专指 Berufung、Revision、Beschwerde 等上诉途径；单复数同形。"
+ },
+ {
+  "w": "Rechtssicherheit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Rechtssicherheit",
+  "ipa": "ˈʁɛçt͡sˌzɪçɐhaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "法律确定性，法律上的可靠性",
+    "de": "Verlässlichkeit und Vorhersehbarkeit der Rechtslage",
+    "ex": [
+     {
+      "de": "Die Unternehmen fordern mehr Rechtssicherheit beim Datenschutz.",
+      "zh": "企业要求在数据保护方面有更多的法律确定性。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Rechtssicherheit schaffen / gewährleisten — 创造/保障法律确定性",
+   "aus Gründen der Rechtssicherheit — 出于法律确定性的考虑",
+   "相关：Rechtsstaat（法治国家）, Rechtslage（法律状况）"
+  ],
+  "root": "Rechts·sicher·heit：Recht（法律）+ -s- + sicher（可靠的）+ -heit（名词后缀）",
+  "fam": [
+   "Recht",
+   "Sicherheit",
+   "sicher",
+   "rechtssicher"
+  ],
+  "ety": "sicher < 古高地德语 sihhur，借自拉丁语 securus（无忧的）。",
+  "cog": "sicher 与英 secure 同源（均出自拉丁语 securus）；英 legal certainty",
+  "tip": "形容词 rechtssicher（法律上站得住的）也常用：eine rechtssichere Lösung。"
+ },
+ {
+  "w": "Reederei",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Reedereien",
+  "gs": "der Reederei",
+  "ipa": "ʁeːdəˈʁaɪ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "航运公司，船运公司",
+    "de": "Unternehmen, das Schiffe besitzt und für Fracht- oder Personenverkehr einsetzt",
+    "ex": [
+     {
+      "de": "Die Hamburger Reederei betreibt über 200 Containerschiffe.",
+      "zh": "这家汉堡航运公司运营着200多艘集装箱船。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Reederei gründen / führen — 创办/经营航运公司",
+   "Containerreederei / Kreuzfahrtreederei — 集装箱/邮轮航运公司",
+   "der Reeder — 船东，航运企业主"
+  ],
+  "root": "Reed·er·ei：Reeder（船东）+ -ei（表示行业/企业的后缀）",
+  "fam": [
+   "Reeder",
+   "Schifffahrt",
+   "Hafen",
+   "Frachter"
+  ],
+  "ety": "Reeder 来自低地德语，与中古低地德语 rēden（装备〔船只〕）相关；一般认为与 bereit（准备好的）同源。",
+  "cog": "荷 reder, rederij",
+  "tip": "注意双写 ee，读长音 [eː]；重音在末音节 -ˈrei。"
+ },
+ {
+  "w": "rekrutieren",
+  "pos": "v",
+  "ipa": "ʁekʁuˈtiːʁən",
+  "lvl": "C1",
+  "forms": "rekrutiert · rekrutierte · hat rekrutiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "招募，征募（人员、新兵）",
+    "de": "(Personal, Soldaten) anwerben",
+    "ex": [
+     {
+      "de": "Die Firma rekrutiert ihre Fachkräfte zunehmend im Ausland.",
+      "zh": "这家公司越来越多地在国外招聘专业人才。"
+     }
+    ]
+   },
+   {
+    "zh": "sich aus etw. rekrutieren：由……组成，从……中产生",
+    "de": "sich zusammensetzen aus",
+    "ex": [
+     {
+      "de": "Die Mitglieder rekrutieren sich überwiegend aus dem Mittelstand.",
+      "zh": "成员大多来自中产阶层。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. für etw.(A) rekrutieren — 为……招募某人",
+   "sich aus + D rekrutieren — 由……构成（书面）",
+   "名词：die Rekrutierung；der Rekrut（新兵）"
+  ],
+  "root": "rekrut·ieren：法语 recrue（新兵）+ -ieren（动词后缀）",
+  "fam": [
+   "Rekrut",
+   "Rekrutierung",
+   "anwerben",
+   "einstellen"
+  ],
+  "ety": "借自法语 recruter，源自 recrue（补充兵员），原为 recroître（重新生长）的过去分词。",
+  "cog": "英 recruit；法 recruter",
+  "tip": "-ieren 动词完成时不加 ge-：hat rekrutiert。日常“招聘员工”多说 einstellen 或 Personal suchen。"
+ },
+ {
+  "w": "Rettungskraft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Rettungskräfte",
+  "gs": "der Rettungskraft",
+  "ipa": "ˈʁɛtʊŋsˌkʁaft",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "救援人员（多用复数）",
+    "de": "Person, die bei Rettungseinsätzen hilft (Sanitäter, Feuerwehr usw.)",
+    "ex": [
+     {
+      "de": "Die Rettungskräfte waren innerhalb weniger Minuten am Unfallort.",
+      "zh": "救援人员几分钟内就赶到了事故现场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Rettungskräfte sind im Einsatz — 救援人员正在执行任务",
+   "Angriffe auf Rettungskräfte — 袭击救援人员（新闻常见）",
+   "相关：Einsatzkräfte（出勤人员）, Sanitäter（急救员）"
+  ],
+  "root": "Rettungs·kraft：Rettung（救援）+ -s- + Kraft（力量；人员）",
+  "fam": [
+   "retten",
+   "Rettung",
+   "Rettungsdienst",
+   "Einsatzkraft",
+   "Fachkraft"
+  ],
+  "ety": "retten < 古高地德语 retten；Kraft < 古高地德语 kraft（力量），此处引申为“人力，人员”（参 Fachkraft）。",
+  "cog": "英 rescue workers；Kraft 与英 craft 同源",
+  "tip": "Kraft 指“人员”时多用复数：Rettungskräfte, Lehrkräfte, Fachkräfte。"
+ },
+ {
+  "w": "Rückendeckung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Rückendeckung",
+  "ipa": "ˈʁʏkn̩ˌdɛkʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "支持，撑腰，后盾",
+    "de": "Unterstützung, Absicherung durch andere",
+    "ex": [
+     {
+      "de": "Der Minister hat die volle Rückendeckung der Kanzlerin.",
+      "zh": "这位部长得到总理的全力支持。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm. Rückendeckung geben — 给某人撑腰",
+   "Rückendeckung bekommen / haben — 得到/拥有支持",
+   "原为军事用语：后方掩护"
+  ],
+  "root": "Rücken·deck·ung：Rücken（背部）+ Deckung（掩护）→“掩护后背” → 支持",
+  "fam": [
+   "Rücken",
+   "Deckung",
+   "decken",
+   "Unterstützung"
+  ],
+  "ety": "原为军事用语（后方掩护），后引申为政治、职场上的支持。Rücken < 古高地德语 rucki；decken < 古高地德语 decken。",
+  "cog": "Rücken 与英 ridge 同源；decken 与英 thatch 同源；英 backing",
+  "tip": "常见于政治新闻；与 Unterstützung 相比更强调“出问题时有人兜底”。"
+ },
+ {
+  "w": "Sammelband",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sammelbände",
+  "gs": "des Sammelband(e)s",
+  "ipa": "ˈzaml̩ˌbant",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "文集，论文集，合集",
+    "de": "Buch mit Beiträgen mehrerer Autoren oder mehreren Werken",
+    "ex": [
+     {
+      "de": "Der Aufsatz erschien 2019 in einem Sammelband zur Migrationsforschung.",
+      "zh": "这篇论文2019年发表于一部移民研究论文集中。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Sammelband herausgeben — 主编一部文集",
+   "ein Beitrag in einem Sammelband — 文集中的一篇文章",
+   "相关：der Herausgeber（编者）, die Anthologie（选集）"
+  ],
+  "root": "Sammel·band：sammeln（收集）+ Band（卷，册）",
+  "fam": [
+   "sammeln",
+   "Sammlung",
+   "Band",
+   "Herausgeber"
+  ],
+  "ety": "sammeln < 古高地德语 samanōn（聚集），与 zusammen 同源；Band（册）源自 binden。",
+  "cog": "sammeln 与英 same 同源；英 edited volume, anthology",
+  "tip": "Band 作“册”时为阳性，复数 Bände；作“带子”时为中性 das Band（Bänder），作“乐队”时为阴性 die Band。"
+ },
+ {
+  "w": "Schauspielhaus",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Schauspielhäuser",
+  "gs": "des Schauspielhauses",
+  "ipa": "ˈʃaʊ̯ʃpiːlˌhaʊ̯s",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "话剧院，剧院",
+    "de": "Theater, in dem vor allem Schauspiele aufgeführt werden",
+    "ex": [
+     {
+      "de": "Das Stück wird ab Herbst im Schauspielhaus gezeigt.",
+      "zh": "这部剧从秋天起在话剧院上演。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ins Schauspielhaus gehen — 去话剧院",
+   "das Deutsche Schauspielhaus in Hamburg — 汉堡德意志话剧院",
+   "区分：Opernhaus（歌剧院）, Theater（剧院，总称）"
+  ],
+  "root": "Schau·spiel·haus：Schauspiel（话剧）+ Haus（房屋）",
+  "fam": [
+   "Schauspiel",
+   "Schauspieler",
+   "Theater",
+   "Opernhaus"
+  ],
+  "ety": "Schauspiel 由 schauen（观看）+ Spiel（表演）构成，近代早期出现。",
+  "cog": "英 playhouse"
+ },
+ {
+  "w": "schlafen",
+  "pos": "v",
+  "ipa": "ˈʃlaːfn̩",
+  "lvl": "A1",
+  "forms": "schläft · schlief · hat geschlafen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "睡觉，睡着",
+    "de": "im Zustand des Schlafes sein",
+    "ex": [
+     {
+      "de": "Ich habe heute Nacht schlecht geschlafen.",
+      "zh": "我昨晚没睡好。"
+     },
+     {
+      "de": "Leise, das Baby schläft!",
+      "zh": "小声点，宝宝在睡觉！"
+     }
+    ]
+   },
+   {
+    "zh": "过夜，借宿",
+    "de": "übernachten",
+    "ex": [
+     {
+      "de": "Du kannst gern bei uns schlafen.",
+      "zh": "你可以在我们家过夜。"
+     }
+    ]
+   },
+   {
+    "zh": "mit jmdm. schlafen：（委婉）与某人发生性关系",
+    "de": "Geschlechtsverkehr haben",
+    "ex": [
+     {
+      "de": "Sie hat nie mit ihm geschlafen.",
+      "zh": "她从未和他发生过关系。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "schlafen gehen — 去睡觉；Schlaf gut! — 睡个好觉！",
+   "现在分词 schlafend 作定语：ein schlafendes Kind — 熟睡的孩子；schlafende Hunde wecken — 惹麻烦",
+   "einschlafen（入睡，sein）/ ausschlafen（睡足）/ verschlafen（睡过头）",
+   "über etw.(A) schlafen — 把某事搁一晚再定"
+  ],
+  "root": "schlaf·en：词根 schlaf-（睡）+ -en（不定式词尾）",
+  "fam": [
+   "Schlaf",
+   "schläfrig",
+   "einschlafen",
+   "ausschlafen",
+   "Schlafzimmer"
+  ],
+  "ety": "中古高地德语 slāfen < 古高地德语 slāfan < 原始日耳曼语 *slēpaną。",
+  "cog": "英 sleep；荷 slapen",
+  "tip": "强变化：du schläfst, er schläft（变音）；完成时用 haben。einschlafen 用 sein：Ich bin eingeschlafen。"
+ },
+ {
+  "w": "Schuhmacher",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Schuhmacher",
+  "gs": "des Schuhmachers",
+  "ipa": "ˈʃuːˌmaxɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "鞋匠，制鞋工",
+    "de": "Handwerker, der Schuhe herstellt und repariert",
+    "ex": [
+     {
+      "de": "Ich bringe die Stiefel zum Schuhmacher, die Sohle ist kaputt.",
+      "zh": "我把靴子送到鞋匠那儿去，鞋底坏了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Schuhmacher bringen — 送去鞋匠那里（修）",
+   "同义：der Schuster（更口语）",
+   "das Schuhmacherhandwerk — 制鞋手艺"
+  ],
+  "root": "Schuh·mach·er：Schuh（鞋）+ machen（做）+ -er（施事者后缀）",
+  "fam": [
+   "Schuh",
+   "Schuster",
+   "machen",
+   "Handwerker"
+  ],
+  "ety": "Schuh < 古高地德语 scuoh；machen < 古高地德语 mahhōn。",
+  "cog": "Schuh 与英 shoe 同源；machen 与英 make 同源；英 shoemaker",
+  "tip": "作普通名词写 Schuhmacher；姓氏常写作 Schumacher（无 h）。单复数同形。"
+ },
+ {
+  "w": "Sendezeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Sendezeiten",
+  "gs": "der Sendezeit",
+  "ipa": "ˈzɛndəˌt͡saɪ̯t",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "播出时间；播出时段",
+    "de": "Zeit, zu der (oder während der) etw. gesendet wird",
+    "ex": [
+     {
+      "de": "Die Parteien erhalten vor der Wahl kostenlose Sendezeit.",
+      "zh": "大选前各政党可获得免费播出时段。"
+     },
+     {
+      "de": "Die Serie läuft zur besten Sendezeit.",
+      "zh": "这部剧在黄金时段播出。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zur besten Sendezeit — 在黄金时段",
+   "Sendezeit kaufen / bekommen — 购买/获得播出时间",
+   "相关：Sendung（节目）, Sender（电台/电视台）"
+  ],
+  "root": "Sende·zeit：senden（播送）+ Zeit（时间）",
+  "fam": [
+   "senden",
+   "Sendung",
+   "Sender",
+   "Zeit"
+  ],
+  "ety": "senden < 古高地德语 senten（派遣），本义“使走”；“广播”义为20世纪新义。",
+  "cog": "senden 与英 send 同源；英 airtime, broadcasting time",
+  "tip": "senden 表“广播”时为弱变化（sendete, gesendet）；表“寄送”时也可用 sandte, gesandt。"
+ },
+ {
+  "w": "Sirene",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Sirenen",
+  "gs": "der Sirene",
+  "ipa": "ziˈʁeːnə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "警报器，汽笛",
+    "de": "Gerät, das einen lauten Warnton erzeugt",
+    "ex": [
+     {
+      "de": "Um 12 Uhr heulten in der ganzen Stadt die Sirenen.",
+      "zh": "12点整全城警报鸣响。"
+     }
+    ]
+   },
+   {
+    "zh": "（希腊神话）塞壬（以歌声诱惑水手的海妖）",
+    "de": "(Mythologie) Fabelwesen, das Seeleute durch Gesang anlockt",
+    "ex": [
+     {
+      "de": "Odysseus ließ sich an den Mast binden, um den Sirenen zu widerstehen.",
+      "zh": "奥德修斯让人把自己绑在桅杆上，以抵御塞壬的诱惑。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Sirene heult / ertönt — 警报器鸣响",
+   "mit Blaulicht und Sirene — 闪着蓝灯、鸣着警笛",
+   "der Sirenengesang（喻）— 诱人的危险许诺"
+  ],
+  "root": "Sirene：源自希腊神话中的 Seirḗn",
+  "fam": [
+   "Sirenengesang",
+   "Alarm",
+   "Martinshorn"
+  ],
+  "ety": "经拉丁语 Siren 借自希腊语 Seirḗn（塞壬）；“警报器”义来自法语 sirène（法国物理学家 Cagniard de la Tour 1819年以此命名其发声装置）。",
+  "cog": "英 siren；法 sirène",
+  "tip": "警车上的笛声德语常称 Martinshorn；Sirene 多指固定的防空/灾害警报器。"
+ },
+ {
+  "w": "Sommermonat",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sommermonate",
+  "gs": "des Sommermonats",
+  "ipa": "ˈzɔmɐˌmoːnat",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "夏季月份，夏月",
+    "de": "Monat des Sommers (Juni, Juli, August)",
+    "ex": [
+     {
+      "de": "In den Sommermonaten ist die Insel von Touristen überlaufen.",
+      "zh": "夏季的几个月里，这个岛上挤满了游客。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in den Sommermonaten — 在夏季几个月里（多用复数）",
+   "相关：Wintermonat, Frühlingsmonat",
+   "die heißen Sommermonate — 炎热的夏季"
+  ],
+  "root": "Sommer·monat：Sommer（夏天）+ Monat（月份）",
+  "fam": [
+   "Sommer",
+   "Monat",
+   "sommerlich",
+   "monatlich"
+  ],
+  "ety": "Sommer < 古高地德语 sumar；Monat < 古高地德语 mānōd，与 Mond（月亮）同源。",
+  "cog": "英 summer month；Monat 与英 month、moon 同源",
+  "tip": "Monat 读 [ˈmoːnat]，复数 Monate。"
+ },
+ {
+  "w": "spendieren",
+  "pos": "v",
+  "ipa": "ʃpɛnˈdiːʁən",
+  "lvl": "B1–B2",
+  "forms": "spendiert · spendierte · hat spendiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（口）请客，出钱请（某人吃喝等）",
+    "de": "(ugs.) jmdm. etw. bezahlen, schenken",
+    "ex": [
+     {
+      "de": "Zum Geburtstag hat er der ganzen Abteilung Kuchen spendiert.",
+      "zh": "他过生日时请全部门吃了蛋糕。"
+     },
+     {
+      "de": "Komm, ich spendier dir ein Bier.",
+      "zh": "走，我请你喝杯啤酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm. etw.(A) spendieren — 请某人（吃/喝）某物",
+   "eine Runde spendieren — 请大家喝一轮",
+   "近义：jmdn. einladen（请客）; 区分 spenden（捐赠）"
+  ],
+  "root": "spend·ieren：spenden（给予，捐赠）+ -ieren（动词后缀）",
+  "fam": [
+   "spenden",
+   "Spende",
+   "Spender",
+   "einladen"
+  ],
+  "ety": "由 spenden 加外来后缀 -ieren 构成（近代早期）；spenden < 古高地德语 spentōn，一般认为借自中古拉丁语 spendere（花费）< 拉丁语 expendere。",
+  "cog": "英 spend（同出拉丁语 expendere）",
+  "tip": "spendieren 是私人“请客”，spenden 是向慈善机构“捐款”，不要混用：Ich spende für das Rote Kreuz."
+ },
+ {
+  "w": "Spielsache",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Spielsachen",
+  "gs": "der Spielsache",
+  "ipa": "ˈʃpiːlˌzaxə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "玩具（多用复数）",
+    "de": "Gegenstand zum Spielen, Spielzeug",
+    "ex": [
+     {
+      "de": "Räum bitte deine Spielsachen auf!",
+      "zh": "请把你的玩具收拾好！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Spielsachen aufräumen — 收拾玩具",
+   "同义：das Spielzeug（集合名词，多用单数）",
+   "Spielsachen für Kleinkinder — 幼儿玩具"
+  ],
+  "root": "Spiel·sache：Spiel（游戏）+ Sache（东西）",
+  "fam": [
+   "Spielzeug",
+   "spielen",
+   "Spiel",
+   "Sache"
+  ],
+  "ety": "Spiel < 古高地德语 spil；Sache < 古高地德语 sahha（诉讼事由，事物）。",
+  "cog": "英 toy, plaything；Sache 与英 sake 同源",
+  "tip": "单数 die Spielsache 少用，一般说 Spielsachen 或 Spielzeug。"
+ },
+ {
+  "w": "Sportdirektor",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sportdirektoren",
+  "gs": "des Sportdirektors",
+  "ipa": "ˈʃpɔʁtdiˌʁɛktoːɐ̯",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "体育总监；（俱乐部）体育主管",
+    "de": "Verantwortlicher für den sportlichen Bereich eines Vereins oder Verbands",
+    "ex": [
+     {
+      "de": "Der neue Sportdirektor soll den Kader bis zum Sommer umbauen.",
+      "zh": "新任体育总监要在夏天前重组球队阵容。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Sportdirektor eines Vereins / Verbands — 俱乐部/协会的体育总监",
+   "einen Spieler verpflichten（体育总监的工作）— 签下球员",
+   "相关：Trainer（主教练）, Manager, Vorstand"
+  ],
+  "root": "Sport·direktor：Sport（体育）+ Direktor（主管）",
+  "fam": [
+   "Sport",
+   "Direktor",
+   "Direktion",
+   "Sportverein"
+  ],
+  "ety": "Sport 借自英语 sport；Direktor 借自拉丁语 director（引导者）< dirigere（指引）。",
+  "cog": "英 sporting director",
+  "tip": "复数重音后移：der Diˈrektor → die Direkˈtoren；女性 die Sportdirektorin。"
+ },
+ {
+  "w": "Sprachraum",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Sprachräume",
+  "gs": "des Sprachraum(e)s",
+  "ipa": "ˈʃpʁaːxˌʁaʊ̯m",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "语言区，某语言通行的地区",
+    "de": "Gebiet, in dem eine bestimmte Sprache gesprochen wird",
+    "ex": [
+     {
+      "de": "Der Roman wurde im gesamten deutschen Sprachraum ein Bestseller.",
+      "zh": "这部小说在整个德语区都成了畅销书。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der deutsche Sprachraum / der deutschsprachige Raum — 德语区",
+   "im englischen Sprachraum — 在英语世界",
+   "近义：Sprachgebiet"
+  ],
+  "root": "Sprach·raum：Sprache（语言）+ Raum（空间，区域）",
+  "fam": [
+   "Sprache",
+   "Raum",
+   "sprechen",
+   "Sprachgebiet",
+   "deutschsprachig"
+  ],
+  "ety": "Sprache < 古高地德语 sprāhha，源自 sprechen；Raum < 古高地德语 rūm（空间）。",
+  "cog": "Raum 与英 room 同源；sprechen 与英 speak 同源"
+ },
+ {
+  "w": "Staatskanzlei",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Staatskanzleien",
+  "gs": "der Staatskanzlei",
+  "ipa": "ˈʃtaːt͡skant͡sˌlaɪ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "州政府办公厅（德国各州州长的行政机构）",
+    "de": "Behörde des Ministerpräsidenten eines deutschen Bundeslandes",
+    "ex": [
+     {
+      "de": "Die Bayerische Staatskanzlei hat die neuen Regeln am Abend veröffentlicht.",
+      "zh": "巴伐利亚州政府办公厅于晚间公布了新规定。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Chef der Staatskanzlei — 州政府办公厅主任",
+   "对应联邦层面：das Bundeskanzleramt — 联邦总理府",
+   "柏林、汉堡、不来梅称 Senatskanzlei"
+  ],
+  "root": "Staats·kanzlei：Staat（国家，州）+ -s- + Kanzlei（公署，办公厅）",
+  "fam": [
+   "Staat",
+   "Kanzlei",
+   "Kanzler",
+   "Ministerpräsident"
+  ],
+  "ety": "Kanzlei < 中古高地德语 kanzelīe < 中古拉丁语 cancellaria，源自拉丁语 cancelli（栅栏，隔栏——指官署中的隔栏）。",
+  "cog": "英 chancellery；Kanzler 对应英 chancellor",
+  "tip": "Kanzlei 单用时也指律师事务所：eine Anwaltskanzlei。"
+ },
+ {
+  "w": "Stadtbahn",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Stadtbahnen",
+  "gs": "der Stadtbahn",
+  "ipa": "ˈʃtatˌbaːn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "城市轻轨（部分路段地下运行的有轨电车系统）",
+    "de": "schienengebundenes Nahverkehrsmittel zwischen Straßenbahn und U-Bahn",
+    "ex": [
+     {
+      "de": "Die neue Stadtbahnlinie verbindet die Innenstadt mit dem Flughafen.",
+      "zh": "新的轻轨线路连接市中心和机场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit der Stadtbahn fahren — 乘轻轨",
+   "die Stadtbahnlinie / die Stadtbahnhaltestelle — 轻轨线路/轻轨站",
+   "区分：Straßenbahn（有轨电车）, U-Bahn（地铁）, S-Bahn（城郊快铁）"
+  ],
+  "root": "Stadt·bahn：Stadt（城市）+ Bahn（铁路，轨道）",
+  "fam": [
+   "Stadt",
+   "Bahn",
+   "Straßenbahn",
+   "U-Bahn",
+   "S-Bahn"
+  ],
+  "ety": "Stadt < 古高地德语 stat（地点）；Bahn < 中古高地德语 ban（道路）。",
+  "cog": "英 light rail",
+  "tip": "Stadt 中 dt 读 [t]，元音短：[ʃtat]。"
+ },
+ {
+  "w": "Stichprobe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Stichproben",
+  "gs": "der Stichprobe",
+  "ipa": "ˈʃtɪçˌpʁoːbə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "抽查，抽检",
+    "de": "Kontrolle eines zufällig ausgewählten Teils",
+    "ex": [
+     {
+      "de": "Die Polizei kontrolliert die Fahrzeuge nur stichprobenartig.",
+      "zh": "警方只对车辆进行抽查。"
+     }
+    ]
+   },
+   {
+    "zh": "（统计）样本，抽样",
+    "de": "zufällig ausgewählte Teilmenge einer Gesamtheit",
+    "ex": [
+     {
+      "de": "Die Umfrage beruht auf einer repräsentativen Stichprobe von 2000 Personen.",
+      "zh": "该调查基于2000人的代表性样本。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Stichproben machen / durchführen — 进行抽查",
+   "eine repräsentative / zufällige Stichprobe — 有代表性的/随机的样本",
+   "stichprobenartig / stichprobenweise — 抽查式地"
+  ],
+  "root": "Stich·probe：Stich（刺，戳）+ Probe（样品，检验）",
+  "fam": [
+   "Stich",
+   "stechen",
+   "Probe",
+   "prüfen",
+   "Abstich"
+  ],
+  "ety": "据 Duden，原指冶炼时从熔炉出口（Abstich）取出的检验样品；Probe 源自中古拉丁语 proba（检验）< 拉丁语 probare。",
+  "cog": "英 sample, spot check；Probe 与英 probe, proof 同出拉丁语 probare",
+  "tip": "统计学“样本量”说 Stichprobenumfang / Stichprobengröße。"
+ },
+ {
+  "w": "stilllegen",
+  "pos": "v",
+  "ipa": "ˈʃtɪlˌleːɡn̩",
+  "lvl": "C1",
+  "forms": "legt still · legte still · hat stillgelegt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "关闭，停运，停产（工厂、设备、线路）",
+    "de": "außer Betrieb setzen",
+    "ex": [
+     {
+      "de": "Das letzte Kohlekraftwerk der Region wurde 2021 stillgelegt.",
+      "zh": "该地区最后一座燃煤电厂于2021年停运。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Werk / eine Bahnstrecke stilllegen — 关闭工厂/停运铁路线",
+   "名词：die Stilllegung — 关停",
+   "ein Auto stilllegen — 注销车辆（停止上牌）"
+  ],
+  "root": "still·legen：still（静止的）+ legen（放）→“使静止” → 停运",
+  "fam": [
+   "still",
+   "legen",
+   "Stilllegung",
+   "stillstehen",
+   "Stillstand"
+  ],
+  "ety": "still < 古高地德语 stilli；legen < 古高地德语 leggen（使躺下，liegen 的使役动词）。",
+  "cog": "still 与英 still 同源；legen 与英 lay 同源",
+  "tip": "1996年正字法改革后写三个 l：stilllegen（旧写法 stillegen）。完成时 hat stillgelegt。"
+ },
+ {
+  "w": "Streichung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Streichungen",
+  "gs": "der Streichung",
+  "ipa": "ˈʃtʁaɪ̯çʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "删除，删去",
+    "de": "das Streichen (eines Textes, Wortes)",
+    "ex": [
+     {
+      "de": "Der Verlag verlangte die Streichung mehrerer Kapitel.",
+      "zh": "出版社要求删掉几个章节。"
+     }
+    ]
+   },
+   {
+    "zh": "取消；削减（经费、岗位等）",
+    "de": "Abschaffung, Kürzung",
+    "ex": [
+     {
+      "de": "Die Gewerkschaft protestiert gegen die Streichung von 500 Stellen.",
+      "zh": "工会抗议裁减500个岗位。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Streichung von Subventionen / Stellen — 取消补贴/裁减岗位",
+   "动词：etw. streichen（strich, hat gestrichen）— 删去；取消；涂刷",
+   "近义：Kürzung（削减）, Abschaffung（废除）"
+  ],
+  "root": "Streich·ung：streichen（划掉；抹）+ -ung（名词化后缀）",
+  "fam": [
+   "streichen",
+   "Strich",
+   "Anstrich",
+   "Kürzung"
+  ],
+  "ety": "streichen < 古高地德语 strīhhan（抹，划）。",
+  "cog": "streichen 与英 strike、stroke 同源",
+  "tip": "streichen 的“刷漆”义不派生 Streichung（刷漆说 Anstrich）。"
+ },
+ {
+  "w": "Tagesablauf",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Tagesabläufe",
+  "gs": "des Tagesablauf(e)s",
+  "ipa": "ˈtaːɡəsʔapˌlaʊ̯f",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "一天的日程，日常作息",
+    "de": "Ablauf, Gestaltung eines Tages",
+    "ex": [
+     {
+      "de": "Ein geregelter Tagesablauf hilft vielen Menschen im Homeoffice.",
+      "zh": "有规律的日常作息对许多居家办公的人很有帮助。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen festen / geregelten Tagesablauf haben — 作息固定/有规律",
+   "Beschreiben Sie Ihren Tagesablauf.（考试常见题）— 描述你的一天",
+   "相关：Alltag（日常生活）, Routine（惯例）"
+  ],
+  "root": "Tages·ab·lauf：Tag（天）+ -es-（属格连接）+ Ablauf（进程，流程）",
+  "fam": [
+   "Tag",
+   "Ablauf",
+   "ablaufen",
+   "täglich",
+   "Alltag"
+  ],
+  "ety": "Tag < 古高地德语 tag；Ablauf 源自 ablaufen（流逝，进行）。",
+  "cog": "Tag 与英 day 同源；laufen 与英 leap 同源"
+ },
+ {
+  "w": "Tanne",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Tannen",
+  "gs": "der Tanne",
+  "ipa": "ˈtanə",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "冷杉；（口）圣诞树",
+    "de": "Nadelbaum mit flachen Nadeln und aufrecht stehenden Zapfen",
+    "ex": [
+     {
+      "de": "Im Schwarzwald wachsen vor allem Fichten und Tannen.",
+      "zh": "黑森林里主要生长着云杉和冷杉。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Tannenbaum — 冷杉树；圣诞树（O Tannenbaum！）",
+   "der Tannenzapfen / die Tannennadel — 冷杉球果/冷杉针叶",
+   "形容词 tannen（少用）— 冷杉木制的"
+  ],
+  "root": "Tanne：单纯词",
+  "fam": [
+   "Tannenbaum",
+   "Tannenzapfen",
+   "Fichte",
+   "Kiefer",
+   "Nadelbaum"
+  ],
+  "ety": "中古高地德语 tanne < 古高地德语 tanna；更早来源不详。",
+  "cog": "英语无常用同源词（英 fir 词义相同，但不同源）",
+  "tip": "口语常把云杉 Fichte 也叫 Tanne；作为圣诞树多数其实是 Nordmanntanne 或 Fichte。"
+ },
+ {
+  "w": "Taxi",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Taxis",
+  "gs": "des Taxis",
+  "ipa": "ˈtaksi",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "出租车",
+    "de": "Auto, das Fahrgäste gegen Bezahlung befördert",
+    "ex": [
+     {
+      "de": "Wir nehmen ein Taxi zum Bahnhof.",
+      "zh": "我们打车去火车站。"
+     },
+     {
+      "de": "Können Sie mir bitte ein Taxi rufen?",
+      "zh": "请帮我叫辆出租车好吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Taxi nehmen / rufen / bestellen — 打车/叫车/订车",
+   "mit dem Taxi fahren — 乘出租车；Taxi fahren — 开出租车（当司机）",
+   "der Taxifahrer / der Taxistand — 出租车司机/出租车候车点"
+  ],
+  "root": "Taxi：Taxameter（计价器）的缩略",
+  "fam": [
+   "Taxe",
+   "Taxameter",
+   "Taxifahrer",
+   "Taxistand"
+  ],
+  "ety": "Taxameter(droschke)（装计价器的马车/汽车）的缩写；Taxameter 由中古拉丁语 taxa（估价，费用）+ 希腊语 métron（量具）构成，19世纪末出现。",
+  "cog": "英 taxi, taxicab；法 taxi",
+  "tip": "复数 Taxis。常见的“Taxen”是同义词 die Taxe（出租车；费用）的复数。瑞士也说 der Taxi。"
+ },
+ {
+  "w": "Teilnehmerzahl",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Teilnehmerzahlen",
+  "gs": "der Teilnehmerzahl",
+  "ipa": "ˈtaɪ̯lneːmɐˌt͡saːl",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "参加人数，参与者数量",
+    "de": "Anzahl der Teilnehmer",
+    "ex": [
+     {
+      "de": "Die Teilnehmerzahl ist auf 20 Personen begrenzt.",
+      "zh": "参加人数限定为20人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Teilnehmerzahl ist begrenzt / beschränkt — 名额有限",
+   "eine Mindestteilnehmerzahl — 最低参加人数",
+   "die Teilnehmerzahl steigt / sinkt — 参加人数上升/下降"
+  ],
+  "root": "Teil·nehm·er·zahl：teilnehmen（参加）+ -er（人）+ Zahl（数字）",
+  "fam": [
+   "teilnehmen",
+   "Teilnehmer",
+   "Teilnahme",
+   "Zahl",
+   "Anzahl"
+  ],
+  "ety": "teilnehmen 由 Teil（部分）+ nehmen（拿）构成：“拿取一份” → 参与；Zahl < 古高地德语 zala。",
+  "cog": "Zahl 与英 tale、tell 同源；英 number of participants"
+ },
+ {
+  "w": "Tiefgang",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Tiefgang(e)s",
+  "ipa": "ˈtiːfˌɡaŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（船的）吃水深度",
+    "de": "Tiefe, bis zu der ein Schiff im Wasser liegt",
+    "ex": [
+     {
+      "de": "Große Containerschiffe haben einen Tiefgang von bis zu 16 Metern.",
+      "zh": "大型集装箱船的吃水深度可达16米。"
+     }
+    ]
+   },
+   {
+    "zh": "（思想上的）深度",
+    "de": "geistige Tiefe, Gehalt",
+    "ex": [
+     {
+      "de": "Dem Film fehlt es trotz guter Schauspieler an Tiefgang.",
+      "zh": "尽管演员不错，这部电影缺乏深度。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Tiefgang haben — 有深度",
+   "es fehlt an Tiefgang — 缺乏深度",
+   "ein Gespräch mit Tiefgang — 有深度的谈话"
+  ],
+  "root": "Tief·gang：tief（深的）+ Gang（走，行进）→ 船“行进时没入水中的深度”",
+  "fam": [
+   "tief",
+   "Tiefe",
+   "gehen",
+   "Gang",
+   "oberflächlich"
+  ],
+  "ety": "tief < 古高地德语 tiof；Gang 源自 gehen。原为航海用语，后转义为“思想深度”。",
+  "cog": "tief 与英 deep 同源；英 draught（船吃水）",
+  "tip": "无复数；“深度”义与 oberflächlich（肤浅）相对。"
+ }
+]

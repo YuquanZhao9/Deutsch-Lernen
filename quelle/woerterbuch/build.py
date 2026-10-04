@@ -37,3 +37,15 @@ page = page.replace('<script id="embedded-dict" type="application/json">null</sc
 full = '<!doctype html>\n<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>\n' + page.replace('<div class="app">', '</head><body>\n<div class="app">', 1) + '\n</body></html>'
 open('Wortwurzel离线版.html','w').write(full)
 print('offline html', len(full.encode())//1024, 'KB')
+
+# web/: split copy for the artifact (each published file must stay under 16MB)
+os.makedirs('web', exist_ok=True)
+for f in glob.glob('web/wortwurzel*.json'): os.remove(f)
+N = 2 if len(json.dumps(dic, ensure_ascii=False).encode()) > 9_000_000 else 1
+k = -(-len(entries) // N)
+parts = []
+for i in range(N):
+    fn = f'wortwurzel-{i+1}.json'; parts.append(fn)
+    json.dump({"entries": entries[i*k:(i+1)*k]}, open('web/' + fn, 'w'), ensure_ascii=False, separators=(',',':'))
+json.dump({k2: v for k2, v in dic.items() if k2 != 'entries'} | {"parts": parts, "count": len(entries)}, open('web/wortwurzel.json', 'w'), ensure_ascii=False)
+print('web parts', [(p, os.path.getsize('web/' + p) // 1024) for p in parts])

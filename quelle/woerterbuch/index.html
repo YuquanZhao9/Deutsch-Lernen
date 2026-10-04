@@ -541,7 +541,13 @@ $('#file').addEventListener('change', async ev => {
 let BASE = null, EMBED = false, SRC = '', STALE = false;
 async function fetchBase() {
   for (let i = 0; i < 2; i++) {
-    try { const r = await fetch('wortwurzel.json?v=' + Date.now(), { cache: 'no-store' }); if (!r.ok) throw 0; const d = await r.json(); if (d && d.entries && d.entries.length) return d; } catch {}
+    try {
+      const get = async f => { const r = await fetch(f + '?v=' + Date.now(), { cache: 'no-store' }); if (!r.ok) throw 0; return r.json(); };
+      const d = await get('wortwurzel.json');
+      // large dictionaries are published as a small manifest plus several entry files
+      if (d && Array.isArray(d.parts)) { const ps = await Promise.all(d.parts.map(get)); d.entries = ps.flatMap(x => x.entries || []); delete d.parts; if (d.count && d.entries.length !== d.count) throw 0; }
+      if (d && d.entries && d.entries.length) return d;
+    } catch {}
   }
   return null;
 }

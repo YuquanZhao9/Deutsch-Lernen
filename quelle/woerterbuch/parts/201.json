@@ -1,0 +1,2337 @@
+[
+ {
+  "w": "synchronisieren",
+  "pos": "v",
+  "ipa": "zʏnkʁoniˈziːʁən",
+  "lvl": "C1",
+  "forms": "synchronisiert · synchronisierte · hat synchronisiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（为影片）配音，译制",
+    "de": "einen Film mit Dialogen in einer anderen Sprache versehen",
+    "ex": [
+     {
+      "de": "In Deutschland werden fast alle ausländischen Filme synchronisiert.",
+      "zh": "在德国，几乎所有外国电影都会配上德语。"
+     }
+    ]
+   },
+   {
+    "zh": "使同步，同步（数据、过程）",
+    "de": "zeitlich aufeinander abstimmen; Daten auf mehreren Geräten abgleichen",
+    "ex": [
+     {
+      "de": "Die App synchronisiert deine Kontakte automatisch mit der Cloud.",
+      "zh": "这个应用会自动把你的联系人同步到云端。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Film ins Deutsche synchronisieren — 把电影译制成德语",
+   "etw. mit etw.(D) synchronisieren — 使某物与某物同步",
+   "die Synchronisation / Synchronisierung — 配音；同步；die Synchronstimme — 配音演员的声音",
+   "反义：ein Film im Original (mit Untertiteln) — 原声（带字幕）电影"
+  ],
+  "root": "syn-（希腊语“共同”）+ chron（时间）+ -isieren（动词后缀）→“使处于同一时间” → 同步；配音即让声音与画面口型同步",
+  "fam": [
+   "synchron",
+   "Synchronisation",
+   "Chronik",
+   "chronisch",
+   "Chronologie"
+  ],
+  "ety": "由 synchron（同时的）加 -isieren 构成；synchron 源自晚期拉丁语 synchronus < 希腊语 sýnchronos（同时的：syn“共同”+ chrónos“时间”）。一般认为动词形式受法语 synchroniser / 英语 synchronize 影响。",
+  "cog": "英 synchronize, chronic；法 synchroniser",
+  "tip": "德国是“配音大国”，日常说 der Film ist synchronisiert / läuft in der synchronisierten Fassung；原声版叫 OV（Originalversion）或 OmU（Original mit Untertiteln）。"
+ },
+ {
+  "w": "temporär",
+  "pos": "adj",
+  "ipa": "tɛmpoˈʁɛːɐ̯",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "暂时的，临时的，短期的",
+    "de": "nur eine gewisse Zeit dauernd, vorübergehend",
+    "ex": [
+     {
+      "de": "Wegen der Bauarbeiten wird die Straße temporär gesperrt.",
+      "zh": "由于施工，这条街将临时封闭。"
+     },
+     {
+      "de": "Die Störung ist nur temporär und sollte bald behoben sein.",
+      "zh": "这个故障只是暂时的，应该很快就能排除。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "temporäre Dateien — 临时文件（计算机）",
+   "eine temporäre Lösung / Maßnahme — 临时解决办法/措施",
+   "近义（更常用）：vorübergehend, zeitweilig；反义：dauerhaft, permanent"
+  ],
+  "root": "tempor-（拉丁语 tempus, temporis“时间”）+ -är（形容词后缀，对应法语 -aire）→“只关乎一段时间的” → 暂时的",
+  "fam": [
+   "Tempo",
+   "Temporalsatz",
+   "temporal",
+   "kontemporär"
+  ],
+  "ety": "借自法语 temporaire，源自拉丁语 temporārius（一时的），出自 tempus（时间）。",
+  "cog": "英 temporary, tempo；法 temporaire",
+  "tip": "temporär 偏书面、技术语体；日常口语多说 vorübergehend。注意不要与 temporal（时间上的，语法里的“时间状语”）混淆。"
+ },
+ {
+  "w": "Therapeutin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Therapeutinnen",
+  "gs": "der Therapeutin",
+  "ipa": "teʁaˈpɔɪ̯tɪn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "女治疗师（尤指女心理治疗师）",
+    "de": "weibliche Person, die eine Therapie durchführt",
+    "ex": [
+     {
+      "de": "Meine Therapeutin hat mir geholfen, meine Ängste besser zu verstehen.",
+      "zh": "我的心理治疗师帮助我更好地理解自己的恐惧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性 der Therapeut, -en, -en（弱变化名词）",
+   "die Physiotherapeutin / Psychotherapeutin / Ergotherapeutin — 女物理/心理/作业治疗师",
+   "zur Therapeutin gehen; bei einer Therapeutin in Behandlung sein — 去看治疗师；在治疗师处接受治疗"
+  ],
+  "root": "Therapeut（治疗师）+ -in（阴性后缀）",
+  "fam": [
+   "Therapeut",
+   "Therapie",
+   "therapeutisch",
+   "therapieren"
+  ],
+  "ety": "Therapeut 借自希腊语 therapeutḗs（侍奉者、照料者），出自 therapeúein（侍奉、照料、医治）；-in 为德语固有阴性后缀。",
+  "cog": "英 therapist；法 thérapeute",
+  "tip": "复数要双写 n：Therapeutinnen。重音始终在 -peu-。"
+ },
+ {
+  "w": "Trauerfeier",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Trauerfeiern",
+  "gs": "der Trauerfeier",
+  "ipa": "ˈtʁaʊ̯ɐˌfaɪ̯ɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "追悼会，悼念仪式",
+    "de": "Feier zum Gedenken an einen Verstorbenen, meist vor der Beerdigung",
+    "ex": [
+     {
+      "de": "An der Trauerfeier nahmen über 300 Menschen teil.",
+      "zh": "三百多人参加了追悼会。"
+     },
+     {
+      "de": "Die Trauerfeier findet im engsten Familienkreis statt.",
+      "zh": "追悼会仅在最亲近的家人范围内举行。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an einer Trauerfeier teilnehmen — 参加追悼会",
+   "eine Trauerfeier abhalten — 举行追悼会",
+   "相关：die Beerdigung / Beisetzung（下葬）, der Trauergottesdienst（追思礼拜）, die Trauerrede（悼词）"
+  ],
+  "root": "Trauer（悲伤，哀悼）+ Feier（仪式，庆典）→ 哀悼的仪式",
+  "fam": [
+   "Trauer",
+   "trauern",
+   "traurig",
+   "Feier",
+   "feiern"
+  ],
+  "ety": "Trauer 源自中古高地德语 trūre，与动词 trauern < 古高地德语 trūrēn 相关；Feier < 中古高地德语 vīre < 古高地德语 fīra，借自教会拉丁语 fēria（节日）。",
+  "cog": "Feier：英 fair（集市，同出拉 feria）",
+  "tip": "Feier 并不只表示“庆祝”，也可指庄重的仪式：Trauerfeier（追悼会）、Gedenkfeier（纪念仪式）。"
+ },
+ {
+  "w": "traumatisieren",
+  "pos": "v",
+  "ipa": "tʁaʊ̯matiˈziːʁən",
+  "lvl": "C1",
+  "forms": "traumatisiert · traumatisierte · hat traumatisiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "使受到（心理）创伤",
+    "de": "jdm. ein seelisches Trauma zufügen",
+    "ex": [
+     {
+      "de": "Der Unfall hat das Kind schwer traumatisiert.",
+      "zh": "那场事故给孩子造成了严重的心理创伤。"
+     },
+     {
+      "de": "Viele Geflüchtete sind durch Krieg und Flucht traumatisiert.",
+      "zh": "许多难民因战争和逃亡而受到心理创伤。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. traumatisieren — 使某人受创伤（及物，第四格）",
+   "traumatisiert sein — 受过创伤（状态被动最常见）",
+   "die Traumatisierung — 创伤化；ein traumatisches Erlebnis — 创伤性经历"
+  ],
+  "root": "Trauma（创伤）+ -isieren（动词后缀“使成为……”）→ 使受创伤",
+  "fam": [
+   "Trauma",
+   "traumatisch",
+   "Traumatisierung",
+   "Traumatologie"
+  ],
+  "ety": "由 Trauma 派生；Trauma 借自希腊语 traûma（伤口），原为医学术语，后引申指心理创伤。",
+  "cog": "英 traumatize, trauma",
+  "tip": "Trauma 与 Traum（梦）无关！Trauma 读 ˈtʁaʊ̯ma，复数 Traumata 或 Traumen。"
+ },
+ {
+  "w": "Tsunami",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Tsunamis",
+  "gs": "des Tsunamis",
+  "ipa": "t͡suˈnaːmi",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "海啸",
+    "de": "durch ein Seebeben ausgelöste, sehr hohe Flutwelle",
+    "ex": [
+     {
+      "de": "Nach dem Erdbeben wurde eine Tsunamiwarnung für die gesamte Küste ausgegeben.",
+      "zh": "地震后，整个沿海地区发布了海啸预警。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）浪潮，洪流",
+    "de": "übertragen: plötzliche, überwältigende Menge von etw.",
+    "ex": [
+     {
+      "de": "Die Behörde wurde von einem Tsunami an Anträgen überrollt.",
+      "zh": "该机构被如潮水般涌来的申请淹没了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Tsunami trifft die Küste / rollt auf die Küste zu — 海啸袭击/涌向海岸",
+   "die Tsunamiwarnung / das Tsunami-Frühwarnsystem — 海啸预警/预警系统",
+   "近义（德语固有）：die Flutwelle"
+  ],
+  "root": "日语 津波（tsu“港口”+ nami“波浪”）→“港口中的浪”",
+  "fam": [
+   "Tsunamiwarnung",
+   "Flutwelle",
+   "Seebeben"
+  ],
+  "ety": "借自日语 tsunami（津波），经英语进入德语，20 世纪后半叶起通用，2004 年印度洋海啸后成为日常词。",
+  "cog": "英 tsunami；日 津波",
+  "tip": "阳性：der Tsunami。德语读 t͡su-，首音 ts 要发出来，不要读成 su-。"
+ },
+ {
+  "w": "ungewollt",
+  "pos": "adj",
+  "ipa": "ˈʊnɡəˌvɔlt",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "非故意的，无意的",
+    "de": "nicht beabsichtigt",
+    "ex": [
+     {
+      "de": "Mit seiner Bemerkung hat er sie ungewollt verletzt.",
+      "zh": "他的那句话无意中伤害了她。"
+     }
+    ]
+   },
+   {
+    "zh": "不想要的，意外的",
+    "de": "nicht gewünscht",
+    "ex": [
+     {
+      "de": "Die Beratungsstelle hilft Frauen bei einer ungewollten Schwangerschaft.",
+      "zh": "这家咨询机构为意外怀孕的女性提供帮助。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine ungewollte Schwangerschaft — 意外怀孕",
+   "ungewollt komisch — （本不想搞笑却）无意中显得滑稽",
+   "近义：unbeabsichtigt, unabsichtlich；反义：gewollt, absichtlich"
+  ],
+  "root": "un-（否定）+ gewollt（wollen 的第二分词）→“不是想要的” → 无意的；不想要的",
+  "fam": [
+   "wollen",
+   "gewollt",
+   "Wille",
+   "freiwillig",
+   "unwillkürlich"
+  ],
+  "ety": "wollen < 中古高地德语 wellen/wollen < 古高地德语 wellen/wollen。",
+  "cog": "英 will；荷 willen",
+  "tip": "作状语时最常见：etw. ungewollt tun（无意中做了某事）。"
+ },
+ {
+  "w": "universell",
+  "pos": "adj",
+  "ipa": "univɛʁˈzɛl",
+  "lvl": "C1",
+  "forms": "universeller · am universellsten",
+  "senses": [
+   {
+    "zh": "普遍的，全面的，具有普遍意义的",
+    "de": "allgemein, alle Bereiche umfassend; überall gültig",
+    "ex": [
+     {
+      "de": "Menschenrechte gelten universell, unabhängig von Herkunft und Religion.",
+      "zh": "人权普遍适用，与出身和宗教无关。"
+     }
+    ]
+   },
+   {
+    "zh": "多用途的，通用的；多才多艺的",
+    "de": "vielseitig verwendbar oder gebildet",
+    "ex": [
+     {
+      "de": "Das Gerät ist universell einsetzbar.",
+      "zh": "这台设备用途广泛。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "universell einsetzbar / verwendbar — 通用的",
+   "ein universeller Anspruch — 普遍性的诉求",
+   "近义：allgemein, umfassend, vielseitig"
+  ],
+  "root": "univers-（拉丁语 universus“整个的”：uni-“一”+ versus“转向”）+ -ell（形容词后缀）→“转为一体的，全体的” → 普遍的",
+  "fam": [
+   "Universum",
+   "Universität",
+   "Universalgenie",
+   "universal"
+  ],
+  "ety": "借自法语 universel，源自拉丁语 ūniversālis（全体的），出自 ūniversus（全部的，整个的）。",
+  "cog": "英 universal, universe；法 universel",
+  "tip": "universell 与 universal 意思基本相同，universal 多用于复合词（Universalgenie, Universalschlüssel）。"
+ },
+ {
+  "w": "unschön",
+  "pos": "adj",
+  "ipa": "ˈʊnˌʃøːn",
+  "lvl": "B2",
+  "forms": "unschöner · am unschönsten",
+  "senses": [
+   {
+    "zh": "令人不快的，不愉快的；不太体面的",
+    "de": "unangenehm, unerfreulich",
+    "ex": [
+     {
+      "de": "Das war eine unschöne Szene vor allen Gästen.",
+      "zh": "当着所有客人的面，那一幕很难看。"
+     },
+     {
+      "de": "Es ist unschön, dass wir davon aus der Zeitung erfahren mussten.",
+      "zh": "我们竟然要从报纸上得知此事，这很让人不舒服。"
+     }
+    ]
+   },
+   {
+    "zh": "不好看的，难看的",
+    "de": "nicht schön anzusehen",
+    "ex": [
+     {
+      "de": "Nach dem Umbau blieben unschöne Flecken an der Wand.",
+      "zh": "改造之后墙上留下了难看的污渍。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine unschöne Angelegenheit / Erfahrung — 一件不愉快的事/一次不愉快的经历",
+   "Das ist (sehr) unschön. — 这（很）糟糕/不好。（委婉的批评）",
+   "近义：unerfreulich, unangenehm, hässlich（更强烈）"
+  ],
+  "root": "un-（否定）+ schön（美的，好的）",
+  "fam": [
+   "schön",
+   "Schönheit",
+   "beschönigen",
+   "verschönern"
+  ],
+  "ety": "schön < 中古高地德语 schœne < 古高地德语 scōni（光亮的，美的），一般认为与 schauen 同源，本义“好看的”。",
+  "cog": "英 sheen（光泽）；荷 schoon",
+  "tip": "unschön 常用作委婉批评，语气比 hässlich 或 schlecht 温和得多，职场中很常见。"
+ },
+ {
+  "w": "unsinnig",
+  "pos": "adj",
+  "ipa": "ˈʊnˌzɪnɪç",
+  "lvl": "B2",
+  "forms": "unsinniger · am unsinnigsten",
+  "senses": [
+   {
+    "zh": "荒谬的，无意义的，愚蠢的",
+    "de": "ohne Sinn, unvernünftig",
+    "ex": [
+     {
+      "de": "Diese Regelung ist völlig unsinnig und verursacht nur Bürokratie.",
+      "zh": "这条规定毫无道理，只会带来官僚主义。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）极度的，过分的",
+    "de": "ugs.: übermäßig, sehr groß",
+    "ex": [
+     {
+      "de": "Er hat unsinnig viel Geld für das Auto ausgegeben.",
+      "zh": "他为这辆车花了一大笔冤枉钱。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine unsinnige Forderung / Vorschrift — 荒唐的要求/规定",
+   "Es ist unsinnig, + zu-Infinitiv — 做……毫无意义",
+   "名词：der Unsinn — 胡话，蠢事；近义：sinnlos, absurd, unvernünftig"
+  ],
+  "root": "un-（否定）+ Sinn（意义，理智）+ -ig（形容词后缀）→ 没有意义的",
+  "fam": [
+   "Unsinn",
+   "Sinn",
+   "sinnvoll",
+   "sinnlos",
+   "Wahnsinn"
+  ],
+  "ety": "Sinn < 中古高地德语 sin < 古高地德语 sin（感官，意识；本义一说为“方向、行走”）。",
+  "cog": "英 send（一说同源，Sinn 本义“行走、方向”）",
+  "tip": "sinnlos 侧重“没有用处、白费”，unsinnig 侧重“违背理智、荒唐”。"
+ },
+ {
+  "w": "Untergeschoss",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Untergeschosse",
+  "gs": "des Untergeschosses",
+  "ipa": "ˈʊntɐɡəˌʃɔs",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "地下层，地下室楼层",
+    "de": "Stockwerk unterhalb des Erdgeschosses, Keller(geschoss)",
+    "ex": [
+     {
+      "de": "Die Tiefgarage befindet sich im ersten Untergeschoss.",
+      "zh": "地下车库位于地下一层。"
+     },
+     {
+      "de": "Die Sportabteilung ist im Untergeschoss.",
+      "zh": "运动用品部在地下层。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Untergeschoss (UG) — 在地下层；电梯标识常为 UG / U1 / -1",
+   "对比：das Erdgeschoss (EG) — 一楼（地面层）；das Obergeschoss (OG) — 楼上层",
+   "近义：das Kellergeschoss, der Keller"
+  ],
+  "root": "unter（下面）+ Geschoss（楼层）",
+  "fam": [
+   "Erdgeschoss",
+   "Obergeschoss",
+   "Dachgeschoss",
+   "Stockwerk"
+  ],
+  "ety": "Geschoss（楼层）一般认为与 schießen（向上耸出）有关，中古高地德语 geschōz 本指建筑的突出部分；与 Geschoss（弹丸）同形。",
+  "cog": "英 shoot（schießen 的同源词）",
+  "tip": "奥地利及南德常写 Untergeschoß（读长音 oː）。德国的 1. Obergeschoss 相当于中国的“二楼”。"
+ },
+ {
+  "w": "Unterschlupf",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Unterschlupfe（少用 Unterschlüpfe）",
+  "gs": "des Unterschlupf(e)s",
+  "ipa": "ˈʊntɐˌʃlʊp͡f",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "藏身处，避难所；栖身之地",
+    "de": "Ort, an dem man Schutz findet oder sich versteckt",
+    "ex": [
+     {
+      "de": "Die Wanderer fanden in einer Berghütte Unterschlupf vor dem Gewitter.",
+      "zh": "徒步者在一间山屋里躲避雷雨。"
+     },
+     {
+      "de": "Der Verdächtige soll bei Freunden Unterschlupf gefunden haben.",
+      "zh": "据称嫌疑人藏在朋友那里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(bei jdm.) Unterschlupf finden / suchen — （在某人处）找到/寻找藏身之所",
+   "jdm. Unterschlupf gewähren / bieten — 给某人提供藏身处",
+   "近义：das Versteck, die Zuflucht, das Obdach"
+  ],
+  "root": "unter（在下面）+ Schlupf（钻入，来自 schlüpfen“溜进、钻入”）→“钻到下面去躲” → 藏身处",
+  "fam": [
+   "unterschlüpfen",
+   "schlüpfen",
+   "Schlupfloch",
+   "Schlüpfer"
+  ],
+  "ety": "由 unterschlüpfen（钻进去躲藏）构成；schlüpfen < 中古高地德语 slüpfen < 古高地德语 slupfen。",
+  "cog": "哥特语 sliupan（溜进；schlüpfen 为 schliefen 的强化形式，与之同源）",
+  "tip": "常见用法是不加冠词：Unterschlupf finden / gewähren。"
+ },
+ {
+  "w": "Verdauung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Verdauung",
+  "ipa": "fɛɐ̯ˈdaʊ̯ʊŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "消化",
+    "de": "Vorgang, bei dem die Nahrung im Körper aufgespalten wird",
+    "ex": [
+     {
+      "de": "Ballaststoffe sind gut für die Verdauung.",
+      "zh": "膳食纤维有助于消化。"
+     },
+     {
+      "de": "Nach dem Essen mache ich einen Spaziergang, das fördert die Verdauung.",
+      "zh": "饭后我会散散步，这能促进消化。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Verdauung fördern / anregen — 促进消化",
+   "Probleme mit der Verdauung haben — 消化不良",
+   "verdauen — 消化；（比喻）消化、接受（坏消息）；verdaulich / unverdaulich — 易/难消化的"
+  ],
+  "root": "ver-（完成、彻底）+ dau-（消化）+ -ung（名词后缀）",
+  "fam": [
+   "verdauen",
+   "verdaulich",
+   "Verdauungstrakt",
+   "Verdauungsspaziergang"
+  ],
+  "ety": "verdauen < 中古高地德语 verdöuwen < 古高地德语 firdouwen（消化）；词根更早来源不详。",
+  "cog": "—（英语无常用同源词）",
+  "tip": "比喻义：eine Nachricht erst einmal verdauen müssen（得先消化一下这个消息）。"
+ },
+ {
+  "w": "verdient",
+  "pos": "adj",
+  "ipa": "fɛɐ̯ˈdiːnt",
+  "lvl": "B2",
+  "forms": "verdienter · am verdientesten",
+  "senses": [
+   {
+    "zh": "应得的，当之无愧的",
+    "de": "berechtigt, als Lohn oder Folge angemessen",
+    "ex": [
+     {
+      "de": "Nach einem überzeugenden Spiel war der Sieg absolut verdient.",
+      "zh": "比赛表现令人信服，这场胜利实至名归。"
+     },
+     {
+      "de": "Nach der Prüfung gönnen wir uns einen verdienten Urlaub.",
+      "zh": "考完试后我们给自己放一个应得的假。"
+     }
+    ]
+   },
+   {
+    "zh": "功勋卓著的，有贡献的",
+    "de": "mit großen Verdiensten",
+    "ex": [
+     {
+      "de": "Sie ist eine verdiente Wissenschaftlerin, die zahlreiche Preise erhalten hat.",
+      "zh": "她是一位功勋卓著的科学家，获得过众多奖项。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein verdienter Sieg / eine verdiente Strafe — 应得的胜利/惩罚",
+   "sich um etw.(A) verdient machen — 为某事做出贡献",
+   "verdientermaßen (adv) — 理所应当地；名词 das Verdienst — 功劳；der Verdienst — 收入"
+  ],
+  "root": "verdienen（挣得；应得）的第二分词形容词化：ver-（达到结果）+ dienen（服务）→“靠服务得来的” → 应得的",
+  "fam": [
+   "verdienen",
+   "Verdienst",
+   "dienen",
+   "Dienst",
+   "unverdient"
+  ],
+  "ety": "verdienen < 中古高地德语 verdienen < 古高地德语 firdionōn（通过服务而获得）；dienen < 古高地德语 dionōn。",
+  "cog": "荷 verdienen",
+  "tip": "注意区分：das Verdienst（功劳）与 der Verdienst（收入）；verdient 作形容词时多为“应得的”。"
+ },
+ {
+  "w": "Vereinbarkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Vereinbarkeit",
+  "ipa": "fɛɐ̯ˈʔaɪ̯nbaːɐ̯kaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "兼容性，可协调性；能兼顾",
+    "de": "Möglichkeit, verschiedene Dinge miteinander in Einklang zu bringen",
+    "ex": [
+     {
+      "de": "Die Vereinbarkeit von Familie und Beruf ist für viele Eltern ein großes Thema.",
+      "zh": "家庭与工作的兼顾对许多父母来说是个大问题。"
+     },
+     {
+      "de": "Das Gericht prüft die Vereinbarkeit des Gesetzes mit dem Grundgesetz.",
+      "zh": "法院审查该法律是否符合基本法。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Vereinbarkeit von Familie und Beruf — 家庭与事业的兼顾（社会政策固定说法）",
+   "die Vereinbarkeit mit etw.(D) — 与某物相符",
+   "形容词：vereinbar（mit etw. vereinbar sein 与……相容）；反义：Unvereinbarkeit"
+  ],
+  "root": "ver-（使成为）+ ein（一）+ -bar（可……的）+ -keit（名词后缀）→“可以合为一体的性质” → 可协调性",
+  "fam": [
+   "vereinbar",
+   "vereinbaren",
+   "Vereinbarung",
+   "einig",
+   "vereinen"
+  ],
+  "ety": "由形容词 vereinbar 加 -keit 构成；vereinbaren 源自 ein（一），本义“使一致”。ein < 古高地德语 ein。",
+  "cog": "英 one（ein 的同源词）",
+  "tip": "vereinbar 是“可兼容的”，vereinbaren 是“约定”；Vereinbarkeit 只对应前者。"
+ },
+ {
+  "w": "Verhängnis",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Verhängnisse",
+  "gs": "des Verhängnisses",
+  "ipa": "fɛɐ̯ˈhɛŋnɪs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "厄运，灾祸；致命的不幸",
+    "de": "schlimmes Schicksal, Unheil, dem man nicht entgehen kann",
+    "ex": [
+     {
+      "de": "Seine Spielsucht wurde ihm am Ende zum Verhängnis.",
+      "zh": "最终，他的赌瘾毁了他。"
+     },
+     {
+      "de": "Das Verhängnis nahm seinen Lauf, als niemand die Warnungen ernst nahm.",
+      "zh": "当没人把警告当回事时，灾难便无可挽回地发生了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. zum Verhängnis werden — 成为某人的祸根，使某人遭殃（最常用）",
+   "das Verhängnis nimmt seinen Lauf — 厄运开始降临，不可避免",
+   "形容词：verhängnisvoll — 灾难性的，致命的（ein verhängnisvoller Fehler）"
+  ],
+  "root": "ver- + häng-（hängen“悬挂”）+ -nis（名词后缀）→ 源自 verhängen（本义“放任、听任发生”）→ 天意注定的事 → 厄运",
+  "fam": [
+   "verhängen",
+   "verhängnisvoll",
+   "hängen",
+   "Vorhang"
+  ],
+  "ety": "源自中古高地德语 verhencnisse（许可，天意安排），出自 verhengen（放松缰绳、听任、允许）；后意义转为“注定的厄运”。",
+  "cog": "英 hang（hängen 的同源词）",
+  "tip": "固定搭配几乎总是 jdm. zum Verhängnis werden，主语多为某种弱点或错误。与 verhängen（判处罚款、宣布紧急状态）意义已分离。"
+ },
+ {
+  "w": "Verkehrsminister",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Verkehrsminister",
+  "gs": "des Verkehrsministers",
+  "ipa": "fɛɐ̯ˈkeːɐ̯smiˌnɪstɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "交通部长",
+    "de": "für das Verkehrswesen zuständiger Minister",
+    "ex": [
+     {
+      "de": "Der Verkehrsminister kündigte mehr Geld für die Sanierung von Brücken an.",
+      "zh": "交通部长宣布将拨出更多资金用于桥梁修缮。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性：die Verkehrsministerin, -nen",
+   "der Bundesverkehrsminister / Landesverkehrsminister — 联邦/州交通部长",
+   "das Verkehrsministerium — 交通部"
+  ],
+  "root": "Verkehr（交通）+ -s-（连接音）+ Minister（部长）",
+  "fam": [
+   "Verkehr",
+   "Ministerium",
+   "Minister",
+   "Verkehrswende"
+  ],
+  "ety": "Minister 经法语 ministre 借自拉丁语 minister（仆人，助手）；Verkehr 源自 verkehren（往来）。",
+  "cog": "英 minister；法 ministre",
+  "tip": "复合词中的连接音 -s-：Verkehrsminister, Verkehrsmittel, Verkehrsunfall。"
+ },
+ {
+  "w": "verkommen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈkɔmən",
+  "lvl": "C1",
+  "forms": "verkommt · verkam · ist verkommen",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（建筑、地区等）衰败，破败；（人）堕落，潦倒",
+    "de": "(durch Vernachlässigung) in einen schlechten Zustand geraten; moralisch herunterkommen",
+    "ex": [
+     {
+      "de": "Das alte Bahnhofsviertel ist in den letzten Jahren völlig verkommen.",
+      "zh": "老火车站一带近几年完全破败了。"
+     },
+     {
+      "de": "Nach dem Tod seiner Frau ist er immer mehr verkommen.",
+      "zh": "妻子死后，他越来越潦倒。"
+     }
+    ]
+   },
+   {
+    "zh": "沦为……",
+    "de": "zu etw. Schlechterem werden",
+    "ex": [
+     {
+      "de": "Die Debatte ist zu einer reinen Show verkommen.",
+      "zh": "这场辩论沦为了一场纯粹的作秀。"
+     }
+    ]
+   },
+   {
+    "zh": "（食物）腐坏，变质",
+    "de": "(von Lebensmitteln) verderben",
+    "ex": [
+     {
+      "de": "Wir haben so viel Obst, dass es zu verkommen droht.",
+      "zh": "我们的水果太多了，有坏掉的危险。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zu etw.(D) verkommen — 沦为某物",
+   "verkommen lassen — 任其破败/腐坏",
+   "形容词 verkommen — 破败的；堕落的（ein verkommenes Haus, ein verkommener Mensch）"
+  ],
+  "root": "ver-（向坏的方向）+ kommen（来，变成）→“走向坏处” → 衰败、堕落",
+  "fam": [
+   "kommen",
+   "herunterkommen",
+   "Verkommenheit",
+   "umkommen"
+  ],
+  "ety": "kommen < 中古高地德语 komen < 古高地德语 queman/coman；ver- 在此表示“变坏”。",
+  "cog": "英 come（kommen 的同源词）",
+  "tip": "完成时用 sein：Das Haus ist verkommen。不要与 vorkommen（发生，出现）混淆。"
+ },
+ {
+  "w": "Verlegenheit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verlegenheiten",
+  "gs": "der Verlegenheit",
+  "ipa": "fɛɐ̯ˈleːɡn̩haɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "尴尬，难为情，窘迫",
+    "de": "Gefühl der Unsicherheit und Peinlichkeit",
+    "ex": [
+     {
+      "de": "Vor Verlegenheit wurde sie ganz rot.",
+      "zh": "她窘得满脸通红。"
+     }
+    ]
+   },
+   {
+    "zh": "困境，为难（尤指缺钱）",
+    "de": "unangenehme, schwierige Lage",
+    "ex": [
+     {
+      "de": "Die Frage des Journalisten brachte den Minister sichtlich in Verlegenheit.",
+      "zh": "记者的问题显然让部长很为难。"
+     },
+     {
+      "de": "Er war in finanzieller Verlegenheit und musste sich Geld leihen.",
+      "zh": "他手头拮据，不得不借钱。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. in Verlegenheit bringen — 使某人为难/尴尬",
+   "in Verlegenheit geraten / sein — 陷入窘境",
+   "aus Verlegenheit — 出于尴尬（掩饰）；die Verlegenheitslösung — 权宜之计"
+  ],
+  "root": "verlegen（尴尬的）+ -heit（名词后缀）→ 尴尬的状态",
+  "fam": [
+   "verlegen",
+   "Verlegenheitslösung",
+   "liegen",
+   "verlegen (v.)"
+  ],
+  "ety": "形容词 verlegen 一般认为源自中古高地德语 verligen（因久躺而变得迟钝、无用）的第二分词 verlegen；后转义为“不知所措的，尴尬的”。",
+  "cog": "英 lie（躺，与 liegen 同源）",
+  "tip": "形容词 verlegen（尴尬的）与动词 verlegen（推迟；放错地方；出版）同形，但来源不同。"
+ },
+ {
+  "w": "Verschmelzung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verschmelzungen",
+  "gs": "der Verschmelzung",
+  "ipa": "fɛɐ̯ˈʃmɛlt͡sʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "融合，合并（企业、组织）",
+    "de": "Zusammenschluss zu einer Einheit, Fusion",
+    "ex": [
+     {
+      "de": "Die Verschmelzung der beiden Banken soll bis Jahresende abgeschlossen sein.",
+      "zh": "两家银行的合并预计于年底前完成。"
+     }
+    ]
+   },
+   {
+    "zh": "熔合；（物）聚变",
+    "de": "Zusammenschmelzen von Stoffen; Kernfusion",
+    "ex": [
+     {
+      "de": "Bei der Verschmelzung von Atomkernen wird enorme Energie frei.",
+      "zh": "原子核聚变时会释放出巨大的能量。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Verschmelzung von A und B / A mit B — A 与 B 的融合",
+   "动词：verschmelzen (verschmilzt · verschmolz · ist/hat verschmolzen) — 融合（不及物用 sein，及物用 haben）",
+   "近义：die Fusion（企业合并，更常用）, die Vereinigung"
+  ],
+  "root": "ver-（完全）+ schmelz-（schmelzen“熔化”）+ -ung（名词后缀）→ 熔为一体",
+  "fam": [
+   "verschmelzen",
+   "schmelzen",
+   "Schmelze",
+   "Kernschmelze",
+   "Schmalz"
+  ],
+  "ety": "schmelzen < 中古高地德语 smelzen < 古高地德语 smelzan。",
+  "cog": "英 smelt（冶炼），melt（一说同源）",
+  "tip": "法律上 Verschmelzung 是公司合并的正式用语（Umwandlungsgesetz），日常和新闻多说 Fusion。"
+ },
+ {
+  "w": "versperren",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈʃpɛʁən",
+  "lvl": "B2",
+  "forms": "versperrt · versperrte · hat versperrt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "堵住，阻挡（道路、视线）",
+    "de": "einen Weg, Zugang oder Blick blockieren",
+    "ex": [
+     {
+      "de": "Ein umgestürzter Baum versperrt die Straße.",
+      "zh": "一棵倒下的树挡住了道路。"
+     },
+     {
+      "de": "Das neue Hochhaus versperrt uns die Sicht auf den See.",
+      "zh": "新建的高楼挡住了我们看湖的视线。"
+     }
+    ]
+   },
+   {
+    "zh": "（奥、南德）锁上",
+    "de": "österr., süddt.: abschließen",
+    "ex": [
+     {
+      "de": "Hast du die Haustür versperrt?",
+      "zh": "你把大门锁上了吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdm. den Weg / die Sicht versperren — 挡住某人的路/视线（第三格+第四格）",
+   "versperrt sein — 被堵住了（Der Eingang ist versperrt.）",
+   "近义：blockieren, sperren, verstellen"
+  ],
+  "root": "ver-（封闭，阻塞）+ sperren（封锁，拦住）→ 堵死",
+  "fam": [
+   "sperren",
+   "Sperre",
+   "absperren",
+   "Sperrstunde",
+   "gesperrt"
+  ],
+  "ety": "sperren < 中古高地德语 sperren < 古高地德语 sperren（拦住，关闭），一般认为与 Sparren（椽子）有关，本义“用木杆拦住”。",
+  "cog": "英 spar（圆木，桅杆；一说同源）",
+  "tip": "versperren 强调“挡住、使不能通过”；sperren 常指官方封闭（eine Straße sperren）。"
+ },
+ {
+  "w": "Verwechslung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verwechslungen",
+  "gs": "der Verwechslung",
+  "ipa": "fɛɐ̯ˈvɛkslʊŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "混淆，弄错，认错",
+    "de": "irrtümliches Vertauschen von Personen oder Dingen",
+    "ex": [
+     {
+      "de": "Durch eine Verwechslung bekam der Patient das falsche Medikament.",
+      "zh": "由于一次混淆，病人拿到了错误的药。"
+     },
+     {
+      "de": "Das muss eine Verwechslung sein – ich habe nichts bestellt.",
+      "zh": "一定是弄错了——我什么都没订。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Verwechslung mit jdm./etw.(D) — 与某人/某物的混淆",
+   "zum Verwechseln ähnlich — 像得难以分辨",
+   "动词：verwechseln (A mit B verwechseln — 把 A 错当成 B)；变体写法：Verwechselung"
+  ],
+  "root": "ver-（错误地）+ wechsl-（wechseln“交换”）+ -ung → 错误的交换 → 混淆",
+  "fam": [
+   "verwechseln",
+   "wechseln",
+   "Wechsel",
+   "abwechseln",
+   "Wechselgeld"
+  ],
+  "ety": "wechseln 源自 Wechsel < 中古高地德语 wehsel < 古高地德语 wehsal（交换）；一般认为与 Woche（本义“轮替”）同源。",
+  "cog": "英 week（与 Woche 同源，一般认为与 Wechsel 同根）",
+  "tip": "常见错误：verwechseln 后用 mit：Ich habe ihn mit seinem Bruder verwechselt.（不说 *zu）。"
+ },
+ {
+  "w": "Vielseitigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Vielseitigkeit",
+  "ipa": "ˈfiːlˌzaɪ̯tɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "多面性，多才多艺；用途广泛",
+    "de": "Eigenschaft, vielseitig zu sein (Interessen, Fähigkeiten, Verwendbarkeit)",
+    "ex": [
+     {
+      "de": "Die Schauspielerin ist für ihre Vielseitigkeit bekannt.",
+      "zh": "这位女演员以戏路宽广著称。"
+     },
+     {
+      "de": "Die Vielseitigkeit des Materials macht es für viele Branchen interessant.",
+      "zh": "这种材料用途广泛，许多行业都对它感兴趣。"
+     }
+    ]
+   },
+   {
+    "zh": "（马术）三项赛",
+    "de": "Sport: Disziplin des Reitsports aus Dressur, Gelände und Springen",
+    "ex": [
+     {
+      "de": "Die deutsche Equipe gewann Gold in der Vielseitigkeit.",
+      "zh": "德国队获得了马术三项赛金牌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "形容词：vielseitig — 多方面的，多才多艺的（vielseitig interessiert / einsetzbar）",
+   "seine Vielseitigkeit unter Beweis stellen — 证明自己的多面才能",
+   "近义：die Flexibilität, die Bandbreite"
+  ],
+  "root": "viel（多）+ Seite（方面）+ -ig（形容词后缀）+ -keit（名词后缀）→ 多方面的性质",
+  "fam": [
+   "vielseitig",
+   "Seite",
+   "einseitig",
+   "beidseitig",
+   "vielfältig"
+  ],
+  "ety": "viel < 古高地德语 filu；Seite < 古高地德语 sīta。",
+  "cog": "英 side（Seite 的同源词）；viel 与希腊语 poly-（多）一般认为同源",
+  "tip": "求职信中常用：Vielseitigkeit, Flexibilität und Teamfähigkeit。"
+ },
+ {
+  "w": "vorarbeiten",
+  "pos": "v",
+  "ipa": "ˈfoːɐ̯ˌʔaʁbaɪ̯tn̩",
+  "lvl": "C1",
+  "forms": "arbeitet vor · arbeitete vor · hat vorgearbeitet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "预先多工作（以便日后休息），提前做好",
+    "de": "im Voraus arbeiten, um später freie Zeit zu haben",
+    "ex": [
+     {
+      "de": "Ich habe zwei Tage vorgearbeitet und kann deshalb am Freitag freinehmen.",
+      "zh": "我提前多干了两天活，所以周五可以休息。"
+     }
+    ]
+   },
+   {
+    "zh": "sich vorarbeiten：艰难地向前推进；逐步上升",
+    "de": "sich mühsam vorwärtsbewegen; allmählich aufsteigen",
+    "ex": [
+     {
+      "de": "Die Retter arbeiteten sich langsam durch die Trümmer vor.",
+      "zh": "救援人员在废墟中缓慢地向前推进。"
+     },
+     {
+      "de": "Mit drei Siegen hat sich die Mannschaft auf Platz vier vorgearbeitet.",
+      "zh": "凭借三连胜，该队逐步升至第四名。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich durch etw.(A) vorarbeiten — 艰难地穿过某物",
+   "jdm. vorarbeiten — 为某人做好前期工作",
+   "der Vorarbeiter / die Vorarbeiterin — 工头，领班；die Vorarbeit — 前期工作"
+  ],
+  "root": "vor（向前；预先）+ arbeiten（工作）",
+  "fam": [
+   "Vorarbeit",
+   "Vorarbeiter",
+   "arbeiten",
+   "Arbeit",
+   "nacharbeiten"
+  ],
+  "ety": "arbeiten < 中古高地德语 arbeiten < 古高地德语 arbeitōn，出自 arbeit（辛劳、困苦）。",
+  "cog": "荷 arbeid；哥特语 arbaiþs（辛劳）",
+  "tip": "两义都可分：Ich arbeite vor. / Wir arbeiten uns vor. 与之相对，事后补做工作叫 nacharbeiten。"
+ },
+ {
+  "w": "Wasserkraft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wasserkräfte（少用）",
+  "gs": "der Wasserkraft",
+  "ipa": "ˈvasɐˌkʁaft",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "水力，水能",
+    "de": "Energie des fließenden Wassers, bes. zur Stromerzeugung",
+    "ex": [
+     {
+      "de": "Norwegen deckt fast seinen gesamten Strombedarf mit Wasserkraft.",
+      "zh": "挪威几乎全部的电力需求都靠水力来满足。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Strom aus Wasserkraft — 水力发电",
+   "das Wasserkraftwerk — 水电站",
+   "erneuerbare Energien: Wind, Sonne, Wasserkraft — 可再生能源：风能、太阳能、水能"
+  ],
+  "root": "Wasser（水）+ Kraft（力）",
+  "fam": [
+   "Wasserkraftwerk",
+   "Kraftwerk",
+   "Windkraft",
+   "Atomkraft",
+   "Wasser"
+  ],
+  "ety": "Wasser < 古高地德语 wazzar；Kraft < 古高地德语 kraft。",
+  "cog": "英 water, craft（Kraft 的同源词，义转为“技艺”）",
+  "tip": "比较：Windkraft（风能）、Atomkraft（核能）、Kohlekraft（煤电），德语常用 -kraft 表示能源类型。"
+ },
+ {
+  "w": "Wedel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Wedel",
+  "gs": "des Wedels",
+  "ipa": "ˈveːdl̩",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "（棕榈、蕨类的）大叶片",
+    "de": "großes, gefiedertes Blatt von Palmen oder Farnen",
+    "ex": [
+     {
+      "de": "Die Wedel der Palmen bewegten sich leicht im Wind.",
+      "zh": "棕榈的叶片在风中轻轻摇曳。"
+     }
+    ]
+   },
+   {
+    "zh": "掸子，拂尘",
+    "de": "Gerät aus Federn o. Ä. zum Abstauben",
+    "ex": [
+     {
+      "de": "Mit einem Wedel entfernte sie den Staub von den Büchern.",
+      "zh": "她用掸子把书上的灰尘掸掉。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Palmwedel / Farnwedel — 棕榈叶/蕨叶",
+   "der Staubwedel — 鸡毛掸子",
+   "动词：wedeln — 摇摆，挥动（mit dem Schwanz wedeln 摇尾巴）；滑雪中指“小回转”"
+  ],
+  "root": "wed-（摆动）+ -el（工具名词后缀）→ 用来摆动的东西",
+  "fam": [
+   "wedeln",
+   "Staubwedel",
+   "Palmwedel",
+   "Schwanzwedeln"
+  ],
+  "ety": "源自中古高地德语 wedel < 古高地德语 wedil（尾巴；扇子），一般认为与“摆动”的动词有关；更早来源不确定。",
+  "cog": "—（英语无常用同源词）",
+  "tip": "单复数同形：ein Wedel, zwei Wedel。在猎人用语中也指鹿尾。"
+ },
+ {
+  "w": "Widmung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Widmungen",
+  "gs": "der Widmung",
+  "ipa": "ˈvɪtmʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（书、作品上的）题词，献词",
+    "de": "Text, mit dem man ein Werk oder Geschenk jdm. zueignet",
+    "ex": [
+     {
+      "de": "Auf der ersten Seite stand eine persönliche Widmung des Autors.",
+      "zh": "第一页上有作者亲笔写的题词。"
+     },
+     {
+      "de": "Kannst du mir eine Widmung in das Buch schreiben?",
+      "zh": "你能在书上给我写句题词吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（法律、行政）用途指定（尤奥地利：土地用途规划）",
+    "de": "Festlegung des Verwendungszwecks (z. B. eines Grundstücks)",
+    "ex": [
+     {
+      "de": "Die Widmung des Grundstücks als Bauland wurde vom Gemeinderat beschlossen.",
+      "zh": "市镇议会决定将这块地指定为建设用地。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Widmung schreiben / ins Buch schreiben — 写题词",
+   "mit (persönlicher) Widmung — 附有（亲笔）题词",
+   "动词：jdm. etw. widmen — 把某物献给某人；sich etw.(D) widmen — 专心致力于某事"
+  ],
+  "root": "widm-（widmen“奉献”）+ -ung（名词后缀）",
+  "fam": [
+   "widmen",
+   "sich widmen",
+   "Flächenwidmung",
+   "Hingabe"
+  ],
+  "ety": "widmen < 中古高地德语 widemen < 古高地德语 widimen（以财物赠与、捐赠），一般认为出自古高地德语 widamo（聘礼，嫁妆；参 Wittum）。",
+  "cog": "古英语 weotuma（聘礼；一般认为同源）",
+  "tip": "sich widmen 支配第三格：Er widmet sich seiner Familie / der Forschung."
+ },
+ {
+  "w": "wortwörtlich",
+  "pos": "adj",
+  "ipa": "ˈvɔʁtˈvœʁtlɪç",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "逐字的，一字不差的",
+    "de": "Wort für Wort, genau dem Wortlaut entsprechend",
+    "ex": [
+     {
+      "de": "Er hat den Text wortwörtlich aus dem Internet abgeschrieben.",
+      "zh": "他把这篇文字从网上一字不差地抄了下来。"
+     }
+    ]
+   },
+   {
+    "zh": "名副其实地，确确实实地（强调字面意义）",
+    "de": "im eigentlichen Sinne, buchstäblich",
+    "ex": [
+     {
+      "de": "Nach dem Marathon war ich wortwörtlich am Boden.",
+      "zh": "跑完马拉松后，我真的是趴在地上起不来了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. wortwörtlich wiedergeben / übersetzen / zitieren — 逐字转述/翻译/引用",
+   "etw. wortwörtlich nehmen — 按字面理解某事",
+   "近义：wörtlich, buchstäblich"
+  ],
+  "root": "Wort（词）+ wörtlich（字面的）→ 叠加强调：一字一字的",
+  "fam": [
+   "wörtlich",
+   "Wort",
+   "Wortlaut",
+   "Antwort"
+  ],
+  "ety": "Wort < 中古高地德语 wort < 古高地德语 wort。",
+  "cog": "英 word；荷 woord",
+  "tip": "wortwörtlich 比 wörtlich 语气更强，口语中常用来强调“真的是这样”。"
+ },
+ {
+  "w": "zahllos",
+  "pos": "adj",
+  "ipa": "ˈt͡saːlˌloːs",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "无数的，数不清的",
+    "de": "sehr viele, nicht zu zählen",
+    "ex": [
+     {
+      "de": "Trotz zahlloser Versuche gelang es ihm nicht, das Problem zu lösen.",
+      "zh": "尽管做了无数次尝试，他还是没能解决这个问题。"
+     },
+     {
+      "de": "Zahllose Menschen verfolgten das Spiel im Fernsehen.",
+      "zh": "无数人在电视上观看了这场比赛。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "几乎只作定语，后接复数：zahllose Fälle / Beispiele — 无数的案例/例子",
+   "近义：unzählig, unzählbar, sehr viele",
+   "比较：zahlreich — 众多的（程度较弱）"
+  ],
+  "root": "Zahl（数）+ -los（无……的）→“没有数的” → 数不清的",
+  "fam": [
+   "Zahl",
+   "zählen",
+   "zahlreich",
+   "unzählig",
+   "Anzahl"
+  ],
+  "ety": "Zahl < 中古高地德语 zal < 古高地德语 zala（数目，叙述）。",
+  "cog": "英 tale, tell（同源，“讲述”与“计数”本为一义）",
+  "tip": "zahllos 与 zahlreich 都表示“多”，但 zahllos 带夸张色彩，相当于“数不胜数”。"
+ },
+ {
+  "w": "zauberhaft",
+  "pos": "adj",
+  "ipa": "ˈt͡saʊ̯bɐhaft",
+  "lvl": "B2",
+  "forms": "zauberhafter · am zauberhaftesten",
+  "senses": [
+   {
+    "zh": "迷人的，美妙的，令人陶醉的",
+    "de": "bezaubernd, entzückend, sehr schön",
+    "ex": [
+     {
+      "de": "Das kleine Dorf liegt in einer zauberhaften Landschaft.",
+      "zh": "这个小村庄坐落在迷人的风景之中。"
+     },
+     {
+      "de": "Vielen Dank für den zauberhaften Abend!",
+      "zh": "非常感谢这美妙的夜晚！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein zauberhafter Abend / Ort / Anblick — 美妙的夜晚/迷人的地方/景象",
+   "zauberhaft aussehen — 看上去迷人",
+   "近义：bezaubernd, entzückend, märchenhaft"
+  ],
+  "root": "Zauber（魔法，魅力）+ -haft（具有……性质的）→ 像施了魔法一样的 → 迷人的",
+  "fam": [
+   "Zauber",
+   "zaubern",
+   "Zauberer",
+   "bezaubernd",
+   "verzaubert"
+  ],
+  "ety": "Zauber < 中古高地德语 zouber < 古高地德语 zoubar（魔法，巫术）。",
+  "cog": "古诺斯语 taufr（魔法，一般认为同源）",
+  "tip": "zauberhaft 多用于赞美人、地方或氛围，略带感情色彩；“有魔力的”本义更常用 magisch。"
+ },
+ {
+  "w": "Zivilcourage",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Zivilcourage",
+  "ipa": "t͡siˈviːlkuˌʁaːʒə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（公民的）道德勇气，见义勇为的勇气",
+    "de": "Mut, sich im Alltag öffentlich für Recht und Moral einzusetzen, auch gegen Widerstand",
+    "ex": [
+     {
+      "de": "Die Passantin zeigte Zivilcourage und half dem angegriffenen Mann.",
+      "zh": "这位路人表现出见义勇为的勇气，帮助了遭袭的男子。"
+     },
+     {
+      "de": "Es braucht Zivilcourage, um bei Mobbing nicht wegzuschauen.",
+      "zh": "面对霸凌不袖手旁观需要道德勇气。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Zivilcourage zeigen / beweisen — 表现出道德勇气",
+   "ein Preis für Zivilcourage — 道德勇气奖",
+   "近义：der Mut, die Courage；相关：einschreiten（出面干预）"
+  ],
+  "root": "zivil（公民的，民间的，拉 civilis）+ Courage（勇气，法 courage）→ 公民的勇气",
+  "fam": [
+   "zivil",
+   "Courage",
+   "couragiert",
+   "Zivilist",
+   "Zivilisation"
+  ],
+  "ety": "复合词：zivil 借自拉丁语 cīvīlis（公民的），Courage 借自法语 courage（< 古法语 corage，出自拉丁语 cor“心”）。该词一般认为由俾斯麦于 19 世纪 60 年代推广。",
+  "cog": "英 civil, courage；法 courage",
+  "tip": "Zivilcourage 读法式：-ku-ˈʁaː-ʒə，结尾 ge 读 ʒə。它不是“勇气”泛称，而特指日常生活中挺身而出、对抗不公的勇气。"
+ },
+ {
+  "w": "zusammenbrechen",
+  "pos": "v",
+  "ipa": "t͡suˈzamənˌbʁɛçn̩",
+  "lvl": "B1–B2",
+  "forms": "bricht zusammen · brach zusammen · ist zusammengebrochen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（人）晕倒，垮掉，崩溃",
+    "de": "(körperlich oder seelisch) plötzlich die Kraft verlieren",
+    "ex": [
+     {
+      "de": "Der Läufer brach kurz vor dem Ziel zusammen.",
+      "zh": "那名跑者在终点前不远处倒下了。"
+     },
+     {
+      "de": "Als sie die Nachricht hörte, brach sie weinend zusammen.",
+      "zh": "听到这个消息，她崩溃大哭。"
+     }
+    ]
+   },
+   {
+    "zh": "（建筑等）倒塌",
+    "de": "einstürzen",
+    "ex": [
+     {
+      "de": "Bei dem Erdbeben brachen viele Häuser zusammen.",
+      "zh": "地震中许多房屋倒塌了。"
+     }
+    ]
+   },
+   {
+    "zh": "（系统、交通、经济等）瘫痪，崩溃",
+    "de": "nicht mehr funktionieren",
+    "ex": [
+     {
+      "de": "Wegen des Schnees ist der Verkehr in der Stadt komplett zusammengebrochen.",
+      "zh": "由于大雪，城市交通完全瘫痪。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "unter etw.(D) zusammenbrechen — 在某物（重负）下垮掉（unter der Last / dem Druck）",
+   "das Netz / das System bricht zusammen — 网络/系统崩溃",
+   "名词：der Zusammenbruch — 崩溃，倒塌"
+  ],
+  "root": "zusammen（一起，合拢）+ brechen（折断）→ 折断后合拢塌下 → 倒塌、崩溃",
+  "fam": [
+   "Zusammenbruch",
+   "brechen",
+   "einbrechen",
+   "abbrechen",
+   "Bruch"
+  ],
+  "ety": "brechen < 中古高地德语 brechen < 古高地德语 brehhan。",
+  "cog": "英 break；荷 breken",
+  "tip": "完成时用 sein：Er ist zusammengebrochen。强变化：brechen – brach – gebrochen，现在时 du brichst, er bricht。"
+ },
+ {
+  "w": "zusammenhängend",
+  "pos": "adj",
+  "ipa": "t͡suˈzamənˌhɛŋənt",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "连贯的，有条理的",
+    "de": "logisch verbunden, kohärent",
+    "ex": [
+     {
+      "de": "In der Prüfung müssen Sie einen zusammenhängenden Text schreiben.",
+      "zh": "考试中您必须写一篇连贯的文章。"
+     }
+    ]
+   },
+   {
+    "zh": "相连的，连成一片的；相关的",
+    "de": "räumlich verbunden; miteinander in Beziehung stehend",
+    "ex": [
+     {
+      "de": "Das Naturschutzgebiet ist eine der größten zusammenhängenden Waldflächen Europas.",
+      "zh": "这个自然保护区是欧洲面积最大的连片森林之一。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zusammenhängend sprechen / erzählen — 连贯地说/讲述",
+   "eine zusammenhängende Fläche — 连成一片的区域",
+   "动词：mit etw.(D) zusammenhängen (hing zusammen, hat zusammengehangen) — 与……有关；名词：der Zusammenhang"
+  ],
+  "root": "zusammenhängen（相连，相关）的第一分词形容词化：zusammen（一起）+ hängen（挂）→“挂在一起的” → 相连的、连贯的",
+  "fam": [
+   "zusammenhängen",
+   "Zusammenhang",
+   "hängen",
+   "unabhängig"
+  ],
+  "ety": "hängen < 中古高地德语 hangen/hengen < 古高地德语 hangēn。",
+  "cog": "英 hang",
+  "tip": "zusammenhängend 是第一分词（主动、持续），不要写成 *zusammengehängt。"
+ },
+ {
+  "w": "Zusammenlegung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Zusammenlegungen",
+  "gs": "der Zusammenlegung",
+  "ipa": "t͡suˈzamənˌleːɡʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "合并，归并（机构、部门、地区等）",
+    "de": "Vereinigung mehrerer Einheiten zu einer",
+    "ex": [
+     {
+      "de": "Die Zusammenlegung der beiden Schulen stößt bei den Eltern auf Widerstand.",
+      "zh": "两所学校的合并遭到了家长们的反对。"
+     },
+     {
+      "de": "Durch die Zusammenlegung der Abteilungen sollen Kosten gespart werden.",
+      "zh": "部门合并旨在节约成本。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Zusammenlegung von Gemeinden / Behörden / Standorten — 市镇/机关/厂址的合并",
+   "动词：etw. zusammenlegen — 合并；（衣服）叠好；凑钱（Wir legen zusammen.）",
+   "近义：die Fusion, die Vereinigung, der Zusammenschluss"
+  ],
+  "root": "zusammen（一起）+ leg-（legen“放”）+ -ung → 放到一起 → 合并",
+  "fam": [
+   "zusammenlegen",
+   "legen",
+   "Gemeindezusammenlegung",
+   "Zusammenschluss"
+  ],
+  "ety": "legen < 中古高地德语 legen < 古高地德语 leggen，为 liegen 的使役动词（“使躺下”）。",
+  "cog": "英 lay（legen 的同源词）",
+  "tip": "Zusammenlegung 多用于行政机构、单位的合并；企业合并多用 Fusion。"
+ },
+ {
+  "w": "Überdosis",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Überdosen",
+  "gs": "der Überdosis",
+  "ipa": "ˈyːbɐˌdoːzɪs",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "过量（尤指药物、毒品），超剂量",
+    "de": "zu große Menge eines Medikaments oder einer Droge",
+    "ex": [
+     {
+      "de": "Der Musiker starb an einer Überdosis Heroin.",
+      "zh": "这位音乐人死于海洛因过量。"
+     },
+     {
+      "de": "Eine Überdosis Vitamin D kann gesundheitsschädlich sein.",
+      "zh": "过量摄入维生素 D 可能有害健康。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an einer Überdosis sterben — 死于用药过量",
+   "eine Überdosis (von) etw. nehmen — 过量服用某物（常省略 von：eine Überdosis Schlaftabletten）",
+   "（比喻）eine Überdosis Kitsch / Werbung — 过多的媚俗/广告"
+  ],
+  "root": "über-（超过）+ Dosis（剂量）",
+  "fam": [
+   "Dosis",
+   "dosieren",
+   "Dosierung",
+   "überdosieren"
+  ],
+  "ety": "Dosis 经中世纪拉丁语 dosis 借自希腊语 dósis（给予；一份药量），出自 didónai（给）。",
+  "cog": "英 overdose, dose",
+  "tip": "Dosis 的复数是 Dosen（与 Dose“罐头”复数同形），Überdosis → Überdosen。重音在 Über-。"
+ },
+ {
+  "w": "überwältigen",
+  "pos": "v",
+  "ipa": "yːbɐˈvɛltɪɡn̩",
+  "lvl": "C1",
+  "forms": "überwältigt · überwältigte · hat überwältigt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "制服，压制（某人）",
+    "de": "jdn. mit Gewalt bezwingen, wehrlos machen",
+    "ex": [
+     {
+      "de": "Fahrgäste überwältigten den Angreifer und hielten ihn bis zum Eintreffen der Polizei fest.",
+      "zh": "乘客们制服了袭击者，并一直按住他直到警察赶到。"
+     }
+    ]
+   },
+   {
+    "zh": "（情感、印象）使无法自持，使深受震撼",
+    "de": "(von Gefühlen, Eindrücken) jdn. ganz erfassen",
+    "ex": [
+     {
+      "de": "Die Aussicht vom Gipfel hat uns überwältigt.",
+      "zh": "山顶的景色让我们为之震撼。"
+     },
+     {
+      "de": "Sie wurde von ihren Gefühlen überwältigt und begann zu weinen.",
+      "zh": "她情难自已，哭了起来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. überwältigen — 制服某人（第四格）",
+   "von etw.(D) überwältigt sein — 被某物震撼/打动",
+   "形容词：überwältigend — 压倒性的；令人震撼的（eine überwältigende Mehrheit 压倒性多数）"
+  ],
+  "root": "über-（在上，压倒）+ wält-（walten“支配、掌控”）+ -igen（动词后缀）→ 在力量上压倒 → 制服；震撼",
+  "fam": [
+   "überwältigend",
+   "walten",
+   "Gewalt",
+   "verwalten",
+   "Verwaltung"
+  ],
+  "ety": "中古高地德语 überweltigen，出自 walten < 古高地德语 waltan（统治，掌控）。",
+  "cog": "英 wield（walten 的同源词）",
+  "tip": "不可分动词，重音在 -wäl-：Er überwältigte ihn（不说 *wältigte über）。"
+ },
+ {
+  "w": "üppig",
+  "pos": "adj",
+  "ipa": "ˈʏpɪç",
+  "lvl": "C1",
+  "forms": "üppiger · am üppigsten",
+  "senses": [
+   {
+    "zh": "丰盛的，丰富的；（植物）繁茂的",
+    "de": "reichlich, in großer Fülle; dicht wachsend",
+    "ex": [
+     {
+      "de": "Zum Geburtstag gab es ein üppiges Buffet.",
+      "zh": "生日时有一桌丰盛的自助餐。"
+     },
+     {
+      "de": "Nach dem Regen ist die Vegetation besonders üppig.",
+      "zh": "雨后植被格外繁茂。"
+     }
+    ]
+   },
+   {
+    "zh": "（身材）丰满的",
+    "de": "(vom Körper) voll, rundlich",
+    "ex": [
+     {
+      "de": "Die Malerin stellte gern Frauen mit üppigen Formen dar.",
+      "zh": "这位女画家喜欢描绘体态丰满的女性。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein üppiges Essen / Frühstück — 丰盛的饭菜/早餐",
+   "üppig ausgestattet / bemessen — 装备豪华/给得宽裕",
+   "nicht (gerade) üppig — （钱、报酬）不算多（Das Gehalt ist nicht gerade üppig.）"
+  ],
+  "root": "单纯词，无可拆分的前缀；-ig 为形容词后缀",
+  "fam": [
+   "Üppigkeit",
+   "über（一般认为同源）"
+  ],
+  "ety": "中古高地德语 üppic < 古高地德语 uppīg（多余的，空虚的，无用的）；一般认为与 über/oben 有关，本义“过多的”，后由“多余”转为“丰盛”。",
+  "cog": "—（英语无常用同源词）",
+  "tip": "üppig 多为褒义或中性的“丰富”，但修饰工资、预算时常以否定形式出现：nicht üppig = 不宽裕。"
+ },
+ {
+  "w": "abfangen",
+  "pos": "v",
+  "ipa": "ˈapˌfaŋən",
+  "lvl": "C1",
+  "forms": "fängt ab · fing ab · hat abgefangen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "截获，拦截（信件、球、导弹等）",
+    "de": "etw. auf dem Weg zum Ziel aufhalten und an sich bringen",
+    "ex": [
+     {
+      "de": "Die Luftabwehr hat die meisten Raketen abgefangen.",
+      "zh": "防空系统拦截了大部分导弹。"
+     },
+     {
+      "de": "Der Geheimdienst fing die Nachricht ab, bevor sie den Empfänger erreichte.",
+      "zh": "情报部门在消息到达收件人之前就将其截获了。"
+     }
+    ]
+   },
+   {
+    "zh": "（半路）拦住，截住（某人）",
+    "de": "jdn. erwarten und ansprechen, bevor er weitergeht",
+    "ex": [
+     {
+      "de": "Ich habe ihn vor dem Büro abgefangen, um kurz mit ihm zu reden.",
+      "zh": "我在办公室门口拦住了他，想跟他简单说几句。"
+     }
+    ]
+   },
+   {
+    "zh": "缓冲，稳住；弥补（冲击、损失）",
+    "de": "einen Stoß, Sturz oder negative Folgen auffangen, ausgleichen",
+    "ex": [
+     {
+      "de": "Die Regierung will die steigenden Energiepreise mit Zuschüssen abfangen.",
+      "zh": "政府打算通过补贴来缓冲能源价格上涨的影响。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Ball / Pass abfangen — 断球（体育）",
+   "ein Flugzeug abfangen — 拉起飞机（避免坠落）",
+   "die Folgen / Verluste abfangen — 缓冲后果/弥补损失"
+  ],
+  "root": "ab-（离开原路径，截断）+ fangen（抓住）→ 在半路抓住 → 截获",
+  "fam": [
+   "fangen",
+   "auffangen",
+   "anfangen",
+   "Fang",
+   "Abfangjäger"
+  ],
+  "ety": "fangen < 中古高地德语 vāhen/vangen < 古高地德语 fāhan。",
+  "cog": "英 fang（獠牙，本义“抓取之物”）；荷 vangen",
+  "tip": "强变化：fangen – fing – gefangen，du fängst, er fängt。"
+ },
+ {
+  "w": "abtragen",
+  "pos": "v",
+  "ipa": "ˈapˌtʁaːɡn̩",
+  "lvl": "C1",
+  "forms": "trägt ab · trug ab · hat abgetragen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "拆除，铲平；（地质）侵蚀，剥蚀",
+    "de": "(Erde, Gebäude) Schicht für Schicht entfernen; (Wasser, Wind) Gestein wegschwemmen",
+    "ex": [
+     {
+      "de": "Der Hügel wurde für den Bau der Autobahn abgetragen.",
+      "zh": "为了修建高速公路，那座小山被铲平了。"
+     },
+     {
+      "de": "Im Laufe von Jahrmillionen haben Wind und Wasser das Gebirge abgetragen.",
+      "zh": "数百万年间，风和水侵蚀了这座山脉。"
+     }
+    ]
+   },
+   {
+    "zh": "（衣物）穿旧，穿破",
+    "de": "Kleidung durch langes Tragen abnutzen",
+    "ex": [
+     {
+      "de": "Er trug einen abgetragenen Mantel.",
+      "zh": "他穿着一件旧得发白的大衣。"
+     }
+    ]
+   },
+   {
+    "zh": "（书）偿还（债务）",
+    "de": "gehoben: Schulden nach und nach bezahlen",
+    "ex": [
+     {
+      "de": "Es dauerte zehn Jahre, bis sie ihre Schulden abgetragen hatte.",
+      "zh": "她花了十年才还清债务。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Schicht / einen Hügel abtragen — 去除一层/铲平小山",
+   "abgetragene Kleidung — 穿旧的衣服（常用分词形容词）",
+   "die Schulden abtragen — 偿还债务；名词：die Abtragung"
+  ],
+  "root": "ab-（离开，去除）+ tragen（搬运；穿戴）→ 搬走 → 拆除；穿到磨损",
+  "fam": [
+   "tragen",
+   "übertragen",
+   "Abtrag",
+   "Vortrag",
+   "Ertrag"
+  ],
+  "ety": "tragen < 中古高地德语 tragen < 古高地德语 tragan。",
+  "cog": "英 drag, draw（一说同源）",
+  "tip": "强变化：tragen – trug – getragen，du trägst, er trägt。“撤下餐具”义（den Tisch / das Geschirr abtragen）较书面，口语用 abräumen。"
+ },
+ {
+  "w": "Ablagerung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Ablagerungen",
+  "gs": "der Ablagerung",
+  "ipa": "ˈapˌlaːɡəʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "沉积物，沉淀物；（体内）沉积",
+    "de": "das, was sich irgendwo abgesetzt hat",
+    "ex": [
+     {
+      "de": "Kalkablagerungen können die Waschmaschine beschädigen.",
+      "zh": "水垢沉积会损坏洗衣机。"
+     },
+     {
+      "de": "Ablagerungen in den Blutgefäßen erhöhen das Risiko eines Herzinfarkts.",
+      "zh": "血管中的沉积物会增加心肌梗死的风险。"
+     }
+    ]
+   },
+   {
+    "zh": "沉积（过程）；（废物的）堆放",
+    "de": "Vorgang des Sichablagerns; Deponieren von Abfall",
+    "ex": [
+     {
+      "de": "Die Ablagerung von Sand im Flussbett verändert den Lauf des Flusses.",
+      "zh": "河床中泥沙的沉积改变了河道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Ablagerungen bilden sich — 形成沉积",
+   "die Kalkablagerung / Fettablagerung — 水垢/脂肪沉积",
+   "动词：sich ablagern — 沉积；etw. ablagern — 堆放（废物）；（酒、木材）存放熟化"
+  ],
+  "root": "ab-（向下）+ lager-（Lager“存放处”）+ -ung → 落下并存放 → 沉积",
+  "fam": [
+   "ablagern",
+   "Lager",
+   "lagern",
+   "Mülldeponie",
+   "Sediment"
+  ],
+  "ety": "Lager < 中古高地德语 leger < 古高地德语 legar（卧处），与 liegen 同源。",
+  "cog": "英 lair（兽穴），lie（躺）",
+  "tip": "地理、医学中常用复数 Ablagerungen；专业词 Sediment 为拉丁语借词。"
+ },
+ {
+  "w": "Adlige",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Adlige（die Adligen）",
+  "gs": "des Adligen",
+  "ipa": "ˈaːdlɪɡə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "贵族（成员）",
+    "de": "Angehöriger des Adels",
+    "ex": [
+     {
+      "de": "Das Schloss gehörte jahrhundertelang einer Familie von Adligen.",
+      "zh": "这座宫殿几百年来一直属于一个贵族家庭。"
+     },
+     {
+      "de": "Im Mittelalter besaßen die Adligen das meiste Land.",
+      "zh": "中世纪时，大部分土地归贵族所有。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "按形容词变格：der Adlige / ein Adliger / die Adlige (f) / viele Adlige / die Adligen",
+   "变体写法：der/die Adelige",
+   "形容词：adlig / adelig — 贵族的；名词：der Adel — 贵族阶层"
+  ],
+  "root": "Adel（贵族）+ -ig（形容词后缀）→ adlig（贵族的）→ 名词化：贵族成员",
+  "fam": [
+   "Adel",
+   "adlig",
+   "adeln",
+   "veredeln",
+   "edel"
+  ],
+  "ety": "Adel < 中古高地德语 adel < 古高地德语 adal（高贵的家族，出身）；edel（高贵的）同源。",
+  "cog": "古英语 æþele（高贵的；参人名 Ethel）",
+  "tip": "形容词性名词：ein Adliger, aber der Adlige。德国 1919 年起贵族特权取消，von 等成为姓氏的一部分。"
+ },
+ {
+  "w": "Alkoholkonsum",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Alkoholkonsums",
+  "ipa": "ˈalkohoːlkɔnˌzuːm",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "饮酒（量），酒精消费",
+    "de": "das Trinken von Alkohol; die konsumierte Menge Alkohol",
+    "ex": [
+     {
+      "de": "Übermäßiger Alkoholkonsum schadet der Leber.",
+      "zh": "过量饮酒损害肝脏。"
+     },
+     {
+      "de": "Der Alkoholkonsum in Deutschland ist in den letzten Jahren leicht gesunken.",
+      "zh": "近年来德国的酒精消费量略有下降。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "übermäßiger / regelmäßiger Alkoholkonsum — 过量/经常饮酒",
+   "den Alkoholkonsum reduzieren / einschränken — 减少饮酒",
+   "der Pro-Kopf-Konsum von Alkohol — 人均酒精消费量"
+  ],
+  "root": "Alkohol（酒精）+ Konsum（消费）",
+  "fam": [
+   "Alkohol",
+   "alkoholisch",
+   "Alkoholiker",
+   "Konsum",
+   "konsumieren"
+  ],
+  "ety": "Alkohol 源自阿拉伯语 al-kuḥl（锑粉，眼影粉），经西班牙语/中世纪拉丁语 alcohol（细粉 → 精华）进入欧洲，后指酒精；Konsum 借自意大利语 consumo，出自拉丁语 cōnsūmere（消耗）。",
+  "cog": "英 alcohol, consumption",
+  "tip": "Alkohol 重音一般在首音节 ˈalkohoːl，也可读 alkoˈhoːl。Konsum 读 kɔnˈzuːm，s 浊化。"
+ },
+ {
+  "w": "altmodisch",
+  "pos": "adj",
+  "ipa": "ˈaltˌmoːdɪʃ",
+  "lvl": "B1",
+  "forms": "altmodischer · am altmodischsten",
+  "senses": [
+   {
+    "zh": "过时的，老式的；（思想）守旧的",
+    "de": "nicht mehr modern; konservativ, überholt",
+    "ex": [
+     {
+      "de": "Das Kleid ist zwar altmodisch, aber ich mag es trotzdem.",
+      "zh": "这条裙子虽然过时了，但我还是喜欢。"
+     },
+     {
+      "de": "Meine Großeltern haben ziemlich altmodische Ansichten über die Ehe.",
+      "zh": "我祖父母对婚姻的看法相当守旧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "altmodisch gekleidet sein — 穿着过时",
+   "altmodische Ansichten / Methoden — 守旧的观点/老办法",
+   "反义：modern, modisch, zeitgemäß；近义：veraltet, unmodern"
+  ],
+  "root": "alt（旧的）+ Mode（时尚）+ -isch（形容词后缀）→ 旧时尚的",
+  "fam": [
+   "Mode",
+   "modisch",
+   "modern",
+   "alt",
+   "unmodern"
+  ],
+  "ety": "Mode 借自法语 mode，源自拉丁语 modus（方式，尺度）；alt < 古高地德语 alt。",
+  "cog": "英 old, mode；法 mode",
+  "tip": "altmodisch 可略带贬义，也可带怀旧的亲切感：Ich bin da ein bisschen altmodisch.（这方面我有点老派。）"
+ },
+ {
+  "w": "anklicken",
+  "pos": "v",
+  "ipa": "ˈanˌklɪkn̩",
+  "lvl": "B1",
+  "forms": "klickt an · klickte an · hat angeklickt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（用鼠标）点击",
+    "de": "mit der Maus auf etw. klicken, um es auszuwählen",
+    "ex": [
+     {
+      "de": "Klicken Sie auf den Link, um Ihre Anmeldung zu bestätigen.",
+      "zh": "请点击链接以确认您的注册。"
+     },
+     {
+      "de": "Um die Datei zu öffnen, musst du sie doppelt anklicken.",
+      "zh": "要打开文件，你得双击它。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. anklicken — 点击某物（及物，第四格）",
+   "近义：auf etw.(A) klicken — 点击某物",
+   "doppelt anklicken / doppelklicken — 双击；ein Kästchen anklicken — 勾选方框"
+  ],
+  "root": "an-（接触到）+ klicken（咔哒一声，点击）",
+  "fam": [
+   "klicken",
+   "Klick",
+   "Doppelklick",
+   "Mausklick"
+  ],
+  "ety": "klicken 为拟声词（模仿“咔哒”声），计算机义受英语 click 影响。",
+  "cog": "英 click；荷 klikken",
+  "tip": "两种结构都对：den Button anklicken = auf den Button klicken；anklicken 后直接接第四格。"
+ },
+ {
+  "w": "Anomalie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Anomalien",
+  "gs": "der Anomalie",
+  "ipa": "anomaˈliː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "异常，反常（现象）；（医）畸形",
+    "de": "Abweichung vom Normalen, von der Regel",
+    "ex": [
+     {
+      "de": "Die Software erkennt Anomalien im Datenverkehr und schlägt Alarm.",
+      "zh": "该软件能识别数据流量中的异常并发出警报。"
+     },
+     {
+      "de": "Bei der Untersuchung wurde eine genetische Anomalie festgestellt.",
+      "zh": "检查中发现了一种基因异常。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Anomalie feststellen / entdecken — 发现异常",
+   "Temperaturanomalie — 气温异常（气象）",
+   "形容词：anomal（异常的）；近义：die Abweichung, die Unregelmäßigkeit"
+  ],
+  "root": "a(n)-（希腊语否定前缀“不”）+ homal-（希腊语 homalós“平坦的，均匀的”）+ -ie（名词后缀）→ 不均匀 → 异常",
+  "fam": [
+   "anomal",
+   "Norm",
+   "Abweichung"
+  ],
+  "ety": "经晚期拉丁语 anōmalia 借自希腊语 anōmalía（不均匀，不规则），出自 anṓmalos（an- + homalós“平坦的”）。",
+  "cog": "英 anomaly；法 anomalie",
+  "tip": "重音在最后的 -lie；复数 Anomalien 读 anomaˈliːən。"
+ },
+ {
+  "w": "anpacken",
+  "pos": "v",
+  "ipa": "ˈanˌpakn̩",
+  "lvl": "B2",
+  "forms": "packt an · packte an · hat angepackt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "着手处理，解决（问题、任务）",
+    "de": "eine Aufgabe energisch in Angriff nehmen",
+    "ex": [
+     {
+      "de": "Die Regierung muss die Probleme im Bildungssystem endlich anpacken.",
+      "zh": "政府必须终于着手解决教育体制中的问题。"
+     }
+    ]
+   },
+   {
+    "zh": "（mit anpacken）帮忙干活，出把力",
+    "de": "bei einer Arbeit mithelfen",
+    "ex": [
+     {
+      "de": "Beim Umzug haben alle Nachbarn mit angepackt.",
+      "zh": "搬家时所有邻居都来帮忙了。"
+     },
+     {
+      "de": "Sie ist jemand, der gern anpackt.",
+      "zh": "她是个肯干实事的人。"
+     }
+    ]
+   },
+   {
+    "zh": "抓住；对待（某人）",
+    "de": "kräftig anfassen; jdn. auf bestimmte Weise behandeln",
+    "ex": [
+     {
+      "de": "Der Trainer hat die jungen Spieler hart angepackt.",
+      "zh": "教练对年轻球员很严厉。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Problem / eine Aufgabe anpacken — 着手解决问题/任务",
+   "mit anpacken — 一起动手帮忙（口语）",
+   "jdn. hart / sanft anpacken — 严厉/温和地对待某人"
+  ],
+  "root": "an-（着手，接触）+ packen（抓住）→ 一把抓住 → 着手做",
+  "fam": [
+   "packen",
+   "Packung",
+   "Paket",
+   "einpacken",
+   "zupacken"
+  ],
+  "ety": "packen 一般认为由中古低地德语/中古荷兰语 pak（包裹）派生，经低地德语进入标准德语。",
+  "cog": "英 pack；荷 pakken",
+  "tip": "比 lösen 更强调“动手干、积极主动”；Anpacken statt reden!（少说多做！）"
+ },
+ {
+  "w": "Arbeitsamt",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Arbeitsämter",
+  "gs": "des Arbeitsamt(e)s",
+  "ipa": "ˈaʁbaɪ̯t͡sˌʔamt",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "劳动局，职业介绍所（旧称；今称 Agentur für Arbeit）",
+    "de": "frühere Bezeichnung für die Behörde für Arbeitsvermittlung und Arbeitslosengeld",
+    "ex": [
+     {
+      "de": "Nach der Kündigung musste er sich beim Arbeitsamt melden.",
+      "zh": "被解雇后他必须去劳动局登记。"
+     },
+     {
+      "de": "Umgangssprachlich sagen viele immer noch „Arbeitsamt“ statt „Agentur für Arbeit“.",
+      "zh": "口语中很多人仍然说“劳动局”，而不说“联邦就业署”。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich beim Arbeitsamt (arbeitslos) melden — 到劳动局登记（失业）",
+   "vom Arbeitsamt Geld bekommen — 领取失业金（口语）",
+   "今正式名称：die Agentur für Arbeit / die Bundesagentur für Arbeit；das Jobcenter（负责 Bürgergeld）"
+  ],
+  "root": "Arbeit（工作）+ -s-（连接音）+ Amt（官署，机关）",
+  "fam": [
+   "Amt",
+   "Arbeit",
+   "Arbeitslosigkeit",
+   "Finanzamt",
+   "Standesamt"
+  ],
+  "ety": "Amt < 中古高地德语 amt/ambet < 古高地德语 ambaht（职务，服务），一般认为借自凯尔特语（参高卢语 ambactus“仆从”）。",
+  "cog": "古英语 ambeht（职务，同源）",
+  "tip": "2004 年起官方改称 Agentur für Arbeit，但口语中 Arbeitsamt 仍很常用。复数变音：Ämter。"
+ },
+ {
+  "w": "aufdringlich",
+  "pos": "adj",
+  "ipa": "ˈaʊ̯fˌdʁɪŋlɪç",
+  "lvl": "B2",
+  "forms": "aufdringlicher · am aufdringlichsten",
+  "senses": [
+   {
+    "zh": "（人）纠缠不休的，强人所难的，咄咄逼人的",
+    "de": "(von Personen) sich anderen lästig aufdrängend",
+    "ex": [
+     {
+      "de": "Der Verkäufer war so aufdringlich, dass wir den Laden schnell verließen.",
+      "zh": "那个推销员太纠缠人了，我们赶紧离开了商店。"
+     }
+    ]
+   },
+   {
+    "zh": "（颜色、气味等）刺眼的，刺鼻的，过分张扬的",
+    "de": "(von Farben, Gerüchen usw.) zu stark, störend",
+    "ex": [
+     {
+      "de": "Sie trug ein aufdringliches Parfüm.",
+      "zh": "她喷了一种很冲的香水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aufdringlich werden — 变得纠缠不休（如搭讪、推销）",
+   "aufdringliche Werbung — 令人厌烦的强行广告",
+   "名词：die Aufdringlichkeit；近义：lästig, penetrant, zudringlich"
+  ],
+  "root": "auf-（向上，向某人身上）+ dring-（dringen“挤入”）+ -lich（形容词后缀）→ 硬挤到别人身上的 → 纠缠的",
+  "fam": [
+   "aufdrängen",
+   "dringen",
+   "dringend",
+   "eindringen",
+   "Drang"
+  ],
+  "ety": "源自 aufdringen（强加），dringen < 中古高地德语 dringen < 古高地德语 dringan（挤压，推进）。",
+  "cog": "英 throng（人群；一般认为同源）",
+  "tip": "aufdringlich 是性格评价，常用于男性对女性的骚扰性搭讪：Er wurde aufdringlich.。"
+ },
+ {
+  "w": "aufeinandertreffen",
+  "pos": "v",
+  "ipa": "aʊ̯fʔaɪ̯ˈnandɐˌtʁɛfn̩",
+  "lvl": "C1",
+  "forms": "trifft aufeinander · traf aufeinander · ist aufeinandergetroffen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "相遇，碰头；（比赛中）交锋",
+    "de": "sich begegnen; (im Sport) gegeneinander spielen",
+    "ex": [
+     {
+      "de": "Im Halbfinale treffen die beiden Favoriten aufeinander.",
+      "zh": "两支夺冠热门球队将在半决赛中交锋。"
+     }
+    ]
+   },
+   {
+    "zh": "（观点、文化等）碰撞，交汇",
+    "de": "zusammenkommen und in Kontakt oder Konflikt geraten",
+    "ex": [
+     {
+      "de": "In der Diskussion trafen völlig unterschiedliche Meinungen aufeinander.",
+      "zh": "讨论中截然不同的观点相互碰撞。"
+     },
+     {
+      "de": "In dieser Stadt treffen Orient und Okzident aufeinander.",
+      "zh": "在这座城市，东方与西方交汇。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "主语为复数（双方）：A und B treffen aufeinander",
+   "im Finale / im Viertelfinale aufeinandertreffen — 在决赛/四分之一决赛中相遇",
+   "名词：das Aufeinandertreffen — 交锋；碰撞"
+  ],
+  "root": "aufeinander（相互朝向，彼此）+ treffen（碰到，遇见）→ 彼此相遇",
+  "fam": [
+   "treffen",
+   "Treffen",
+   "Treffpunkt",
+   "aufeinander",
+   "betreffen"
+  ],
+  "ety": "treffen < 中古高地德语 treffen < 古高地德语 treffan（击中，碰上）。",
+  "cog": "—（英语无常用同源词）",
+  "tip": "完成时用 sein：Die Teams sind schon zweimal aufeinandergetroffen。aufeinander 与动词连写（2006 年正字法后）。"
+ },
+ {
+  "w": "auslasten",
+  "pos": "v",
+  "ipa": "ˈaʊ̯sˌlastn̩",
+  "lvl": "C1",
+  "forms": "lastet aus · lastete aus · hat ausgelastet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "充分利用（设备、产能）",
+    "de": "die Kapazität von etw. voll nutzen",
+    "ex": [
+     {
+      "de": "Die Fabrik ist derzeit nur zu 60 Prozent ausgelastet.",
+      "zh": "该工厂目前的产能利用率仅为 60%。"
+     },
+     {
+      "de": "Die Intensivstationen waren während der Grippewelle voll ausgelastet.",
+      "zh": "流感高峰期间，重症监护室满负荷运转。"
+     }
+    ]
+   },
+   {
+    "zh": "使（人）忙碌，使（人）充分投入",
+    "de": "jdn. voll beschäftigen, fordern",
+    "ex": [
+     {
+      "de": "Mit drei Kindern und einem Vollzeitjob bin ich mehr als ausgelastet.",
+      "zh": "带着三个孩子还要全职工作，我已经忙得不可开交了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(voll) ausgelastet sein — 满负荷；（人）很忙",
+   "nicht ausgelastet sein — 未充分利用；（人）闲得慌、不够忙",
+   "名词：die Auslastung — 利用率，负荷率（die Auslastung der Kapazitäten）"
+  ],
+  "root": "aus-（完全，到尽头）+ lasten（承重，负担）→ 加满负荷",
+  "fam": [
+   "Last",
+   "Auslastung",
+   "belasten",
+   "überlastet",
+   "lästig"
+  ],
+  "ety": "Last < 中古高地德语 last < 古高地德语 hlast（负载），出自 laden（装载）。",
+  "cog": "英 lade, laden（装载）",
+  "tip": "最常用作状态被动 ausgelastet sein；überlastet 才是“超负荷”。"
+ },
+ {
+  "w": "Auswanderung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Auswanderungen",
+  "gs": "der Auswanderung",
+  "ipa": "ˈaʊ̯sˌvandəʁʊŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（向国外的）移民，移居国外",
+    "de": "das dauerhafte Verlassen des Heimatlandes, um in einem anderen Land zu leben",
+    "ex": [
+     {
+      "de": "Im 19. Jahrhundert führte die Armut zu einer massenhaften Auswanderung nach Amerika.",
+      "zh": "19 世纪，贫困导致了大规模移民美洲。"
+     },
+     {
+      "de": "Die Auswanderung junger Fachkräfte ist für das Land ein großes Problem.",
+      "zh": "年轻专业人才的外流是这个国家的一大问题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Auswanderung nach Kanada / in die USA — 移民到加拿大/美国",
+   "动词：auswandern (ist ausgewandert)；名词：der Auswanderer, die Auswanderin",
+   "对比：die Einwanderung（移入）, die Migration（迁移，统称）"
+  ],
+  "root": "aus-（向外）+ wander-（wandern“漫游、迁移”）+ -ung → 向外迁移 → 移居国外",
+  "fam": [
+   "auswandern",
+   "Auswanderer",
+   "Einwanderung",
+   "wandern",
+   "Zuwanderung"
+  ],
+  "ety": "wandern < 中古高地德语 wandern，与 wenden（转向）同源。",
+  "cog": "英 wander, wend",
+  "tip": "从出发国角度说 Auswanderung（移出），从目的国角度说 Einwanderung（移入）。"
+ },
+ {
+  "w": "Bachelorarbeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bachelorarbeiten",
+  "gs": "der Bachelorarbeit",
+  "ipa": "ˈbɛt͡ʃəlɐˌʔaʁbaɪ̯t",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "学士论文，本科毕业论文",
+    "de": "wissenschaftliche Abschlussarbeit im Bachelorstudium",
+    "ex": [
+     {
+      "de": "Ich schreibe meine Bachelorarbeit über erneuerbare Energien.",
+      "zh": "我的本科毕业论文写的是可再生能源。"
+     },
+     {
+      "de": "Die Bachelorarbeit muss bis Ende März abgegeben werden.",
+      "zh": "学士论文必须在三月底前提交。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Bachelorarbeit schreiben / abgeben / verteidigen — 写/交/答辩学士论文",
+   "der Betreuer / die Betreuerin der Bachelorarbeit — 论文导师",
+   "相关：die Masterarbeit（硕士论文）, die Dissertation / Doktorarbeit（博士论文）, die Abschlussarbeit（毕业论文统称）"
+  ],
+  "root": "Bachelor（学士）+ Arbeit（工作，论文）",
+  "fam": [
+   "Bachelor",
+   "Masterarbeit",
+   "Abschlussarbeit",
+   "Arbeit"
+  ],
+  "ety": "Bachelor 借自英语 bachelor，源自古法语 bacheler（青年骑士），出自中世纪拉丁语 baccalārius（来源不详）。",
+  "cog": "英 bachelor；法 bachelier",
+  "tip": "Bachelor 按英语发音读 ˈbɛt͡ʃəlɐ；在德语中阳性：der Bachelor（学位，也指学士本人）。"
+ }
+]
