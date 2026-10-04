@@ -164,7 +164,8 @@ function checkTrConfig(c) {
     if ((u.protocol !== 'https:' && !local) || u.username || u.password) fail(400, '接口地址必须是 https:// 开头的网址');
     if (!c.model) fail(400, '请填写模型名');
   }
-  if (c.provider === 'deepl' && !c.key) fail(400, '请填写 DeepL 密钥');
+  if (!c.key && c.provider === 'deepl') fail(400, '请填写 DeepL 密钥');
+  if (!c.key && c.provider === 'openai' && !/^https?:\/\/(localhost|127\.0\.0\.1)[:/]/.test(c.url)) fail(400, '请填写 API 密钥');
   if (String(c.key || '').length > 500 || String(c.url || '').length > 500 || String(c.model || '').length > 200) fail(400, '内容太长');
 }
 
@@ -314,7 +315,7 @@ Object.assign(routes, {
     if (!b.provider) { await db.prepare('DELETE FROM settings WHERE user_id = ?').bind(u.id).run(); return { provider: '' }; }
     const old = await trConfig(db, u.id) || {};
     const c = { provider: b.provider, url: String(b.url || '').trim(), model: String(b.model || '').trim(),
-      key: b.key ? String(b.key).trim() : (old.provider === b.provider ? old.key || '' : '') };
+      key: b.key ? String(b.key).trim() : (old.provider === b.provider && (b.provider === 'deepl' || old.url === String(b.url || '').trim()) ? old.key || '' : '') };
     checkTrConfig(c);
     await db.prepare('INSERT INTO settings (user_id, translate) VALUES (?, ?) ON CONFLICT(user_id) DO UPDATE SET translate = excluded.translate')
       .bind(u.id, JSON.stringify(c)).run();

@@ -95,35 +95,30 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     </div>
     <a class="btn" id="back" href="../">继续学习</a>
     <details style="margin-top:18px" id="tr">
-      <summary style="cursor:pointer;color:var(--muted);font-size:14px">句子翻译接口 <span id="tr-state"></span></summary>
+      <summary style="cursor:pointer;color:var(--muted);font-size:14px">句子翻译设置 <span id="tr-state"></span></summary>
       <form data-form="translate">
-        <p class="note">词典里翻译整句时，默认用网站自带的免费翻译（Cloudflare Workers AI），不用设置。想要更准的翻译，可以接上你自己的模型，之后整句翻译都走你的接口。密钥只保存在服务器上，网页里看不到。</p>
-        <details class="note" style="margin-top:8px"><summary style="cursor:pointer">怎么拿到密钥？（以 DeepSeek 为例，3 分钟）</summary>
-          <ol style="padding-left:18px;margin:8px 0 0">
-            <li>打开 <a href="https://platform.deepseek.com" target="_blank" rel="noopener">platform.deepseek.com</a>，用手机号注册登录，充值几块钱（翻译用量很小）。</li>
-            <li>左侧点“API keys”→“创建 API key”，复制那串以 sk- 开头的密钥。</li>
-            <li>回到这里：接口类型选“大模型”，常用服务选“DeepSeek”，把密钥粘到“API 密钥”，点“测试翻译”。看到译文就成功了。</li>
-          </ol>
-          <p style="margin:8px 0 0">其他服务的密钥在这里创建：通义千问 <a href="https://bailian.console.aliyun.com" target="_blank" rel="noopener">阿里云百炼</a>，Kimi <a href="https://platform.moonshot.cn" target="_blank" rel="noopener">platform.moonshot.cn</a>，智谱 <a href="https://open.bigmodel.cn" target="_blank" rel="noopener">open.bigmodel.cn</a>（glm-4-flash 免费），DeepL <a href="https://www.deepl.com/pro-api" target="_blank" rel="noopener">deepl.com/pro-api</a>（免费版每月 50 万字符，密钥以 :fx 结尾）。</p>
-        </details>
-        <label for="t-provider">接口类型</label>
-        <select id="t-provider" name="provider">
-          <option value="">默认（网站自带的免费翻译）</option>
-          <option value="openai">大模型（DeepSeek、通义、Kimi 等）</option>
-          <option value="deepl">DeepL</option>
+        <p class="note">词典里翻译整句时，默认用网站自带的免费翻译（Cloudflare Workers AI），不用设置。想要更准的翻译，可以接上你自己的翻译源，之后整句翻译都走它。密钥只保存在服务器上，网页里看不到。</p>
+        <label for="t-preset">翻译源</label>
+        <select id="t-preset">
+          <option value="default">网站自带（免费，不用设置）</option>
+          <optgroup label="推荐 · 有免费额度">
+            <option value="zhipu">智谱 GLM-4-Flash（免费）</option>
+            <option value="silicon">硅基流动 Qwen2.5-7B（免费）</option>
+            <option value="deepl">DeepL 免费版（每月 50 万字符）</option>
+          </optgroup>
+          <optgroup label="更准 · 按量付费，很便宜">
+            <option value="deepseek">DeepSeek</option>
+            <option value="qwen">通义千问（阿里云百炼）</option>
+            <option value="kimi">Kimi（月之暗面）</option>
+            <option value="openai">OpenAI</option>
+          </optgroup>
+          <option value="other">其他（填任意兼容 OpenAI 格式的 API）</option>
         </select>
+        <div class="box" id="t-guide" hidden></div>
+        <input type="hidden" name="provider">
         <div id="t-openai" hidden>
-          <label for="t-preset">常用服务（选一个自动填写地址和模型）</label>
-          <select id="t-preset">
-            <option value="">自己填写</option>
-            <option value="https://api.deepseek.com|deepseek-chat">DeepSeek</option>
-            <option value="https://dashscope.aliyuncs.com/compatible-mode/v1|qwen-plus">通义千问（阿里云百炼）</option>
-            <option value="https://api.moonshot.cn/v1|moonshot-v1-8k">Kimi（月之暗面）</option>
-            <option value="https://open.bigmodel.cn/api/paas/v4|glm-4-flash">智谱 GLM</option>
-            <option value="https://api.openai.com/v1|gpt-4o-mini">OpenAI</option>
-          </select>
-          <label for="t-url">接口地址</label><input id="t-url" name="url" type="url" placeholder="https://api.deepseek.com" autocomplete="off">
-          <label for="t-model">模型名</label><input id="t-model" name="model" placeholder="deepseek-chat" autocomplete="off">
+          <label for="t-url">接口地址</label><input id="t-url" name="url" type="url" placeholder="https://api.example.com/v1" autocomplete="off">
+          <label for="t-model">模型名</label><input id="t-model" name="model" autocomplete="off">
         </div>
         <div id="t-keyrow" hidden>
           <label for="t-key">API 密钥</label><input id="t-key" name="key" type="password" autocomplete="off">
@@ -189,7 +184,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     finally { btns.forEach(b => b.disabled = false); }
   }
   // after signing in: go back to the page that sent us here, unless there is signed-out data to decide about
-  const done = () => { if (next && !S.localPending()) location.href = next; else { show(); S.pull(); } };
+  const done = () => { if (next && !S.localPending() && params.get('setup') !== 'translate') location.href = next; else { show(); S.pull(); } };
   const samePw = f => { if (f.password.value !== f.password2.value) throw new Error('两次输入的密码不一样'); };
 
   document.addEventListener('submit', e => {
@@ -209,7 +204,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
         history.replaceState(null, '', location.pathname + (next ? '?next=' + encodeURIComponent(next) : ''));
         done();
       }
-      if (f.dataset.form === 'translate') { await saveTr(); say(tf.provider.value ? '翻译接口已保存。' : '已改回网站自带的免费翻译。', 'ok', '#msg2'); }
+      if (f.dataset.form === 'translate') { await saveTr(); say(tf.provider.value ? '翻译源已保存。' : '已改回网站自带的免费翻译。', 'ok', '#msg2'); }
       if (f.dataset.form === 'password') { samePw(f); await S.changePassword(f.password.value); f.reset(); say('密码已修改。', 'ok', '#msg2'); }
     });
   });
@@ -238,27 +233,60 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
   }));
   $('#merge-no').addEventListener('click', () => { mergeAsked = true; show(); });
 
-  // ---- 句子翻译接口
+  // ---- 句子翻译接口. Presets fill provider/url/model; the dictionary's 立即设置 links here as ?setup=translate[&preset=id]
+  const PRESETS = {
+    default: { provider: '' },
+    zhipu: { provider: 'openai', url: 'https://open.bigmodel.cn/api/paas/v4', model: 'glm-4-flash', site: 'https://open.bigmodel.cn', name: '智谱开放平台',
+      steps: ['打开 open.bigmodel.cn，用手机号注册并登录（需要实名认证）。', '右上角头像 →“API Keys”→“添加新的 API Key”，复制密钥。', 'GLM-4-Flash 是免费模型，不用充值。'] },
+    silicon: { provider: 'openai', url: 'https://api.siliconflow.cn/v1', model: 'Qwen/Qwen2.5-7B-Instruct', site: 'https://cloud.siliconflow.cn', name: '硅基流动',
+      steps: ['打开 cloud.siliconflow.cn，用手机号注册并登录。', '左侧“API 密钥”→“新建 API 密钥”，复制以 sk- 开头的密钥。', 'Qwen2.5-7B-Instruct 是免费模型，不用充值。'] },
+    deepl: { provider: 'deepl', site: 'https://www.deepl.com/pro-api', name: 'DeepL API',
+      steps: ['打开 deepl.com/pro-api，注册“DeepL API Free”（需要绑一张银行卡做验证，不扣费）。', '账户页 →“API Keys”，复制以 :fx 结尾的密钥。', '每月 50 万字符免费，翻译质量很好。'] },
+    deepseek: { provider: 'openai', url: 'https://api.deepseek.com', model: 'deepseek-chat', site: 'https://platform.deepseek.com', name: 'DeepSeek 开放平台',
+      steps: ['打开 platform.deepseek.com，用手机号注册并登录，充值几块钱（翻译用量很小）。', '左侧“API keys”→“创建 API key”，复制以 sk- 开头的密钥。'] },
+    qwen: { provider: 'openai', url: 'https://dashscope.aliyuncs.com/compatible-mode/v1', model: 'qwen-plus', site: 'https://bailian.console.aliyun.com', name: '阿里云百炼',
+      steps: ['打开阿里云百炼控制台，用阿里云账号登录并开通服务（新用户有免费额度）。', '右上角“API-KEY”→“创建 API-KEY”，复制密钥。'] },
+    kimi: { provider: 'openai', url: 'https://api.moonshot.cn/v1', model: 'moonshot-v1-8k', site: 'https://platform.moonshot.cn', name: 'Kimi 开放平台',
+      steps: ['打开 platform.moonshot.cn，注册登录并充值。', '“API Key 管理”→“新建”，复制以 sk- 开头的密钥。'] },
+    openai: { provider: 'openai', url: 'https://api.openai.com/v1', model: 'gpt-4o-mini', site: 'https://platform.openai.com/api-keys', name: 'OpenAI（国内需要代理）',
+      steps: ['在 platform.openai.com 创建 API key 并绑定付款方式。'] },
+    other: { provider: 'openai', url: '', model: '',
+      steps: ['填任何兼容 OpenAI 格式（/chat/completions）的服务：接口地址一般以 /v1 结尾，再填模型名和密钥。', '例如自建的 One API / New API 中转、火山方舟、讯飞星火、OpenRouter 等。'] },
+  };
   const tf = $('form[data-form=translate]');
-  let trLoaded = false;
+  let trLoaded = false, saved = {};
+  const presetOf = c => !c.provider ? 'default' : c.provider === 'deepl' ? 'deepl'
+    : Object.keys(PRESETS).find(k => PRESETS[k].url && PRESETS[k].url === c.url && PRESETS[k].model === c.model) || 'other';
+  function showPreset(id, keep) {
+    const p = PRESETS[id] || PRESETS.default;
+    $('#t-preset').value = id;
+    tf.provider.value = p.provider;
+    if (!keep && p.provider === 'openai') { tf.url.value = p.url || ''; tf.model.value = p.model || ''; }
+    $('#t-openai').hidden = p.provider !== 'openai';
+    $('#t-keyrow').hidden = !p.provider;
+    // a saved key only carries over to the same service
+    const same = saved.provider === p.provider && (p.provider === 'deepl' || keep || saved.url === tf.url.value);
+    tf.key.placeholder = same && saved.keyHint ? '已保存（' + saved.keyHint + '），不改就留空' : '粘贴你的 API 密钥';
+    const g = $('#t-guide');
+    g.hidden = !p.steps;
+    if (p.steps) g.innerHTML = '<p style="font-weight:600">怎么设置</p><ol style="padding-left:18px;margin:0">'
+      + p.steps.map(t => '<li>' + t + '</li>').join('')
+      + '<li>把密钥粘到下面的“API 密钥”，点“测试翻译”，看到译文就成功了。</li></ol>'
+      + (p.site ? '<p style="margin:8px 0 0"><a href="' + p.site + '" target="_blank" rel="noopener">打开' + p.name + ' ↗</a></p>' : '');
+  }
   function trForm(c) {
-    tf.provider.value = c.provider || '';
+    saved = c;
     tf.url.value = c.url || ''; tf.model.value = c.model || ''; tf.key.value = '';
-    tf.key.placeholder = c.keyHint ? '已保存（' + c.keyHint + '），不改就留空' : '';
-    trToggle();
-    $('#tr-state').textContent = c.provider ? '· 用你自己的接口' : '· 默认';
+    showPreset(presetOf(c), true);
+    $('#tr-state').textContent = c.provider ? '· 用你自己的翻译源' : '· 网站自带';
   }
-  function trToggle() {
-    const p = tf.provider.value;
-    $('#t-openai').hidden = p !== 'openai'; $('#t-keyrow').hidden = !p;
+  $('#t-preset').addEventListener('change', e => showPreset(e.target.value, false));
+  function openTr(preset) {
+    $('#tr').open = true;
+    if (!trLoaded) { trLoaded = true; S.getTranslateConfig().then(c => { trForm(c); if (preset && PRESETS[preset]) showPreset(preset, false); }, e => say(e.message, 'err', '#msg2')); }
+    $('#tr').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  tf.provider.addEventListener('change', trToggle);
-  $('#t-preset').addEventListener('change', e => { const [u, m] = e.target.value.split('|'); if (u) { tf.url.value = u; tf.model.value = m; } });
-  $('#tr').addEventListener('toggle', () => {
-    if (!$('#tr').open || trLoaded) return;
-    trLoaded = true;
-    S.getTranslateConfig().then(trForm, e => say(e.message, 'err', '#msg2'));
-  });
+  $('#tr').addEventListener('toggle', () => { if ($('#tr').open && !trLoaded) openTr(); });
   async function saveTr() {
     const c = await S.setTranslateConfig({ provider: tf.provider.value, url: tf.url.value.trim(), model: tf.model.value.trim(), key: tf.key.value.trim() });
     trForm(c);
@@ -267,7 +295,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     await saveTr();
     say('正在测试…', '', '#msg2');
     const r = await S.translate('Wer rastet, der rostet.');
-    say('测试成功（' + (r.source === 'custom' ? '你的接口' : '网站自带翻译') + '）：Wer rastet, der rostet. → ' + r.text, 'ok', '#msg2');
+    say('测试成功（' + (r.source === 'custom' ? '你的翻译源' : '网站自带翻译') + '）：Wer rastet, der rostet. → ' + r.text, 'ok', '#msg2');
   }));
 
   $('#logout').addEventListener('click', async () => { await S.logout(); show(); tab('login'); });
@@ -283,6 +311,11 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:-1px}
     }
   }
   show();
+  if (params.get('setup') === 'translate') {
+    if (S.user()) openTr(params.get('preset'));
+    else say('先登录或注册，登录后会自动打开句子翻译设置。', 'ok');
+  }
+  S.onChange(() => { if (params.get('setup') === 'translate' && S.user() && !trLoaded) openTr(params.get('preset')); });
 })();
 </script>
 </body>
