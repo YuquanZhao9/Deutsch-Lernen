@@ -601,6 +601,10 @@ const PRESETS = [
 ];
 let setupOpen = false, setupPick = null;
 let SAMPLE = null, trLast = store.get('trLast', null), trBusy = false, trCtl = null;
+// drop a cached result an older page version stored badly (it showed "[object Object]"), and the same text in the history
+const badTr = v => typeof v !== 'string' || /\[object /.test(v);
+if (trLast && (trLast.v !== 2 || badTr(trLast.tr))) { trLast = null; store.set('trLast', null); }
+if (history.some(h => h.tr != null && badTr(h.tr))) { history = history.map(h => h.tr != null && badTr(h.tr) ? { ...h, tr: undefined } : h); store.set('history', history); }
 const canTranslate = () => !!(SAMPLE || TRANSLATE_API);
 const sourceName = () => SAMPLE ? 'Claude' : MODEL ? `你外接的模型 ${MODEL.name}` : '网站自带的 Workers AI';
 (async () => { try { if (window.claude && typeof claude.use === 'function') SAMPLE = await claude.use('sample'); } catch {} if (tab === 'search' && !current && wantSentence(q.value)) render(); })();
@@ -678,7 +682,7 @@ async function translate(t) {
     let r;
     try { r = normTr(await ask()); if (!r.tr) throw { code: 'empty_completion' }; }
     catch (e) { const c = e && e.code; if (c !== 'invalid_json' && c !== 'empty_completion') throw e; r = normTr(await ask()); if (!r.tr) throw { code: 'empty_completion' }; } // one quiet retry
-    trLast = { src: t, dir, tr: r.tr, alt: r.alt, words: r.words, notes: r.notes };
+    trLast = { v: 2, src: t, dir, tr: r.tr, alt: r.alt, words: r.words, notes: r.notes };
     store.set('trLast', trLast); remember({ q: t, tr: trLast.tr });
   } catch (e) {
     const c = e && e.code;
