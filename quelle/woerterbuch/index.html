@@ -450,9 +450,10 @@ function renderHome() {
 
 function renderResults(s) {
   const res = search(s);
-  if (res.length) { view.innerHTML = `<ul class="list">${res.map(e => rowHtml(e, s)).join('')}</ul>`; return; }
+  const tr = canTranslate() && looksText(s) ? `<div class="btns" style="margin:8px 0"><button class="btn ghost" id="trforce">把这段当整句翻译</button></div>` : '';
+  if (res.length) { view.innerHTML = `<ul class="list">${res.map(e => rowHtml(e, s)).join('')}</ul>${tr}`; return; }
   const sug = /[一-鿿]/.test(s) ? [] : suggest(s);
-  view.innerHTML = `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : '可以在“设置”页导入外部词典。'}</div>
+  view.innerHTML = `<div class="empty">词库里还没有“${esc(s)}”。${sug.length ? '你是不是要找：' : canTranslate() && looksText(s) ? '要翻译整句的话，按回车或点下面的按钮。' : '可以在“设置”页导入外部词典。'}</div>${tr}
     ${sug.length ? `<ul class="list">${sug.map(rowHtml).join('')}</ul>` : ''}`;
 }
 
@@ -596,8 +597,11 @@ let setupOpen = false, setupPick = null;
 let SAMPLE = null, trLast = store.get('trLast', null), trBusy = false, trCtl = null;
 const canTranslate = () => !!(SAMPLE || TRANSLATE_API);
 const sourceName = () => SAMPLE ? 'Claude' : MODEL ? `你外接的模型 ${MODEL.name}` : '网站自带的 Workers AI';
-(async () => { try { if (window.claude && typeof claude.use === 'function') SAMPLE = await claude.use('sample'); } catch {} if (tab === 'search' && !current && isSentence(q.value)) render(); })();
+(async () => { try { if (window.claude && typeof claude.use === 'function') SAMPLE = await claude.use('sample'); } catch {} if (tab === 'search' && !current && wantSentence(q.value)) render(); })();
 const isZh = s => /[一-鿿]/.test(s);
+var forceTr = ''; // text the user explicitly asked to translate as a whole (Enter with no dictionary hit, or the 整句翻译 button); var + function declarations: render() can run before this line
+function looksText(v) { const t = String(v || '').trim(); return /[一-鿿]/.test(t) ? t.replace(/[^一-鿿]/g, '').length >= 2 : /\s/.test(t); }
+function wantSentence(v) { return isSentence(v) || (!!forceTr && forceTr === String(v || '').trim()); }
 // what counts as "a sentence" rather than a dictionary query
 function isSentence(raw) {
   const s = String(raw || '').trim(); if (!s) return false;
@@ -626,8 +630,8 @@ async function apiTranslate(t, dir, signal) {
   const body = { text: t, dir, prompt: trPrompt(t, dir) }; if (MODEL) body.model = MODEL;
   const auth = window.DLSync && typeof DLSync.authHeaders === 'function' ? DLSync.authHeaders() : {}; // signed-in users on the site: the account's saved model applies server-side
   const res = await fetch(TRANSLATE_API, { method: 'POST', headers: { 'content-type': 'application/json', ...auth }, body: JSON.stringify(body), signal });
-  if (!res.ok) throw { code: 'upstream_error', message: 'HTTP ' + res.status };
-  const j = await res.json();
+  if (!res.ok) { let msg = '翻译服务出错（' + res.status + '）'; try { const j = await res.json(); if (j && j.error) msg = j.error; } catch {} throw { code: 'api_error', message: msg }; }
+  let j; try { j = await res.json(); } catch { throw { code: 'invalid_json' }; }
   if (!j || j.ok === false) throw { code: 'api_error', message: (j && j.error) || '翻译服务没有返回结果' };
   return j.result || j;
 }
@@ -635,9 +639,12 @@ async function translate(t) {
   t = String(t || '').trim(); if (!t || !canTranslate() || trBusy) return;
   const dir = isZh(t) ? 'zh2de' : 'de2zh';
   trBusy = true; trCtl = new AbortController(); render();
+  const timer = setTimeout(() => trCtl && trCtl.abort('timeout'), 90000);
+  const ask = () => SAMPLE ? SAMPLE.json(trPrompt(t, dir), { modelTier: 'quick', signal: trCtl.signal }) : apiTranslate(t, dir, trCtl.signal);
   try {
-    const r = (SAMPLE ? await SAMPLE.json(trPrompt(t, dir), { modelTier: 'quick', signal: trCtl.signal }) : await apiTranslate(t, dir, trCtl.signal)) || {};
-    if (!r.tr) throw { code: 'empty_completion' };
+    let r;
+    try { r = (await ask()) || {}; if (!r.tr) throw { code: 'empty_completion' }; }
+    catch (e) { const c = e && e.code; if (c !== 'invalid_json' && c !== 'empty_completion') throw e; r = (await ask()) || {}; if (!r.tr) throw { code: 'empty_completion' }; } // one quiet retry
     trLast = { src: t, dir, tr: String(r.tr || ''), alt: String(r.alt || ''),
       words: (Array.isArray(r.words) ? r.words : []).slice(0, 10).map(w => ({ de: String(w?.de || ''), form: String(w?.form || ''), zh: String(w?.zh || '') })).filter(w => w.de),
       notes: (Array.isArray(r.notes) ? r.notes : []).slice(0, 4).map(n => String(n)) };
@@ -648,9 +655,10 @@ async function translate(t) {
     else if (c === 'rate_limited') toast('请求太频繁，稍后再试');
     else if (c === 'invalid_json' || c === 'empty_completion') toast('没有得到有效结果，再点一次翻译');
     else if (c === 'api_error') toast(String(e.message || '翻译失败').slice(0, 80));
-    else if (c !== 'cancelled') toast(MODEL ? '连不上你外接的模型，检查「设置」页里的翻译设置' : '翻译失败，稍后再试');
+    else if (trCtl && trCtl.signal.aborted && trCtl.signal.reason === 'timeout') toast('翻译超时了，再试一次');
+    else if (c !== 'cancelled' && !(e && e.name === 'AbortError')) toast(MODEL ? '连不上你外接的模型，检查「设置」页里的翻译设置' : '连不上翻译服务，检查网络后再试');
   }
-  trBusy = false; trCtl = null; render();
+  clearTimeout(timer); trBusy = false; trCtl = null; render();
 }
 function trResultHtml(r) {
   const de = r.dir === 'zh2de';
@@ -681,7 +689,7 @@ function render() {
   if (tab === 'book') return renderBook();
   if (tab === 'lib') return setupOpen && TRANSLATE_API ? renderSetup() : renderLib();
   if (current) return renderEntry(current);
-  if (isSentence(q.value)) return renderSentence(q.value);
+  if (wantSentence(q.value)) return renderSentence(q.value);
   if (q.value.trim()) return renderResults(q.value);
   renderHome();
 }
@@ -689,7 +697,7 @@ function render() {
 function open(key) { const e = byKey.get(key); if (!e) return; tab = 'search'; renderEntry(e); for (const b of document.querySelectorAll('nav.tabs button')) b.setAttribute('aria-selected', b.dataset.tab === 'search'); }
 
 q.addEventListener('input', () => { current = null; tab = 'search'; setupOpen = false; render(); });
-q.addEventListener('keydown', ev => { if (ev.key !== 'Enter') return; if (isSentence(q.value)) { q.blur(); return translate(q.value); } const r = search(q.value); if (r.length) { open(keyOf(r[0])); q.blur(); } else if (q.value.trim()) { remember({ q: q.value.trim() }); q.blur(); } });
+q.addEventListener('keydown', ev => { if (ev.key !== 'Enter') return; if (wantSentence(q.value)) { q.blur(); return translate(q.value); } const r = search(q.value); if (r.length) { open(keyOf(r[0])); q.blur(); } else if (q.value.trim()) { q.blur(); if (canTranslate() && looksText(q.value)) { forceTr = q.value.trim(); render(); return translate(q.value); } remember({ q: q.value.trim() }); } });
 $('#clear').onclick = () => { q.value = ''; current = null; render(); q.focus(); };
 $('#uml').addEventListener('pointerdown', ev => ev.preventDefault());
 $('#uml').addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; const s = q.selectionStart ?? q.value.length; q.value = q.value.slice(0, s) + b.textContent + q.value.slice(q.selectionEnd ?? s); q.setSelectionRange(s + 1, s + 1); q.dispatchEvent(new Event('input')); });
@@ -704,6 +712,7 @@ view.addEventListener('click', async ev => {
   if (t.id === 'back') { current = null; return render(); }
   if (t.id === 'trgo') { if (trLast && trLast.src === q.value.trim()) trLast = null; return translate(q.value); }
   if (t.id === 'trstop') { trCtl?.abort(); return; }
+  if (t.id === 'trforce') { forceTr = q.value.trim(); render(); return translate(q.value); }
   if (t.dataset.setup) { setupOpen = true; setupPick = null; tab = 'lib'; render(); main.scrollTop = 0; return; }
   if (t.id === 'setup-back') { setupOpen = false; render(); main.scrollTop = 0; return; }
   if (t.dataset.preset) { setupPick = t.dataset.preset; return render(); }
