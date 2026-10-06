@@ -638,6 +638,33 @@ async function apiTranslate(t, dir, signal) {
   if (!j || j.ok === false) throw { code: 'api_error', message: (j && j.error) || '翻译服务没有返回结果' };
   return j.result || j;
 }
+// Models do not always honour the requested shape: tr may come back as an object ({"zh": "…"}), the JSON
+// may be wrapped in a code fence or in {result: …}, words may be plain strings. Normalise before rendering.
+function textOf(v, depth = 0) {
+  if (v == null) return '';
+  if (typeof v === 'string') return v.trim();
+  if (typeof v === 'number' || typeof v === 'boolean') return String(v);
+  if (depth > 3) return '';
+  if (Array.isArray(v)) return v.map(x => textOf(x, depth + 1)).filter(Boolean).join('；');
+  if (typeof v === 'object') {
+    for (const k of ['tr', '译文', 'translation', 'text', 'zh', 'de', 'content', 'value', 'result']) if (k in v) { const t = textOf(v[k], depth + 1); if (t) return t; }
+    for (const x of Object.values(v)) { const t = textOf(x, depth + 1); if (t) return t; }
+  }
+  return '';
+}
+function normTr(r) {
+  if (typeof r === 'string') { const t = r.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, ''); const i = t.indexOf('{'), j = t.lastIndexOf('}'); try { r = JSON.parse(i >= 0 && j > i ? t.slice(i, j + 1) : t); } catch { return { tr: t, alt: '', words: [], notes: [] }; } }
+  if (!r || typeof r !== 'object') return { tr: '', alt: '', words: [], notes: [] };
+  if (!('tr' in r) && r.result && typeof r.result === 'object') r = r.result;
+  const tr = textOf(r.tr ?? r['译文'] ?? r.translation ?? r.text ?? r.output ?? r.zh ?? r.de);
+  if (/^\s*(```|\{)/.test(tr) && /"(tr|译文|translation)"/.test(tr)) { const inner = normTr(tr); if (inner.tr) return inner; } // the server fell back to the raw text and it is JSON
+  const alt = textOf(r.alt ?? r['另一种说法'] ?? r.alternative);
+  const words = (Array.isArray(r.words) ? r.words : Array.isArray(r['重点词']) ? r['重点词'] : []).slice(0, 10)
+    .map(w => typeof w === 'string' ? { de: w, form: '', zh: '' } : w && typeof w === 'object' ? { de: textOf(w.de ?? w.word ?? w['原形'] ?? w.lemma), form: textOf(w.form ?? w['句中'] ?? w.inflected), zh: textOf(w.zh ?? w.meaning ?? w['意思'] ?? w.cn) } : null)
+    .filter(w => w && w.de);
+  const notes = (Array.isArray(r.notes) ? r.notes : r.notes ? [r.notes] : []).slice(0, 4).map(n => textOf(n)).filter(Boolean);
+  return { tr, alt: alt === tr ? '' : alt, words, notes };
+}
 async function translate(t) {
   t = String(t || '').trim(); if (!t || !canTranslate() || trBusy) return;
   const dir = isZh(t) ? 'zh2de' : 'de2zh';
@@ -646,11 +673,9 @@ async function translate(t) {
   const ask = () => SAMPLE ? SAMPLE.json(trPrompt(t, dir), { modelTier: 'quick', signal: trCtl.signal }) : apiTranslate(t, dir, trCtl.signal);
   try {
     let r;
-    try { r = (await ask()) || {}; if (!r.tr) throw { code: 'empty_completion' }; }
-    catch (e) { const c = e && e.code; if (c !== 'invalid_json' && c !== 'empty_completion') throw e; r = (await ask()) || {}; if (!r.tr) throw { code: 'empty_completion' }; } // one quiet retry
-    trLast = { src: t, dir, tr: String(r.tr || ''), alt: String(r.alt || ''),
-      words: (Array.isArray(r.words) ? r.words : []).slice(0, 10).map(w => ({ de: String(w?.de || ''), form: String(w?.form || ''), zh: String(w?.zh || '') })).filter(w => w.de),
-      notes: (Array.isArray(r.notes) ? r.notes : []).slice(0, 4).map(n => String(n)) };
+    try { r = normTr(await ask()); if (!r.tr) throw { code: 'empty_completion' }; }
+    catch (e) { const c = e && e.code; if (c !== 'invalid_json' && c !== 'empty_completion') throw e; r = normTr(await ask()); if (!r.tr) throw { code: 'empty_completion' }; } // one quiet retry
+    trLast = { src: t, dir, tr: r.tr, alt: r.alt, words: r.words, notes: r.notes };
     store.set('trLast', trLast); remember({ q: t, tr: trLast.tr });
   } catch (e) {
     const c = e && e.code;
