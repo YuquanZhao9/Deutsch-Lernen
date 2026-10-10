@@ -1,0 +1,2179 @@
+[
+ {
+  "w": "abfüllen",
+  "pos": "v",
+  "ipa": "ˈapˌfʏlən",
+  "lvl": "B2",
+  "forms": "füllt ab · füllte ab · hat abgefüllt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "灌装，装瓶，分装",
+    "de": "eine Flüssigkeit o. Ä. aus einem größeren Behälter in kleinere füllen",
+    "ex": [
+     {
+      "de": "Das Mineralwasser wird direkt an der Quelle in Flaschen abgefüllt.",
+      "zh": "这种矿泉水在水源地直接装瓶。"
+     },
+     {
+      "de": "Der Wein wird erst nach zwei Jahren im Fass abgefüllt.",
+      "zh": "这款葡萄酒在桶中存放两年后才装瓶。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）把某人灌醉",
+    "de": "(umgangssprachlich) jmdn. betrunken machen",
+    "ex": [
+     {
+      "de": "Auf seinem Junggesellenabschied haben ihn seine Freunde ordentlich abgefüllt.",
+      "zh": "在他的单身派对上，朋友们把他灌得烂醉。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. in Flaschen / Dosen / Säcke abfüllen — 把某物装瓶／装罐／装袋",
+   "die Abfüllung — 灌装；灌装的批次（食品标签上常见 abgefüllt am … 灌装日期）",
+   "jmdn. abfüllen 为口语，含戏谑意味"
+  ],
+  "root": "ab·füll·en：ab-（离开、从……分出）+ füllen（装满）→ 从大容器中分出来装满小容器 → 分装、灌装",
+  "fam": [
+   "füllen",
+   "voll",
+   "die Abfüllung",
+   "die Füllung",
+   "auffüllen"
+  ],
+  "ety": "füllen < 中古高地德语 vüllen < 古高地德语 fullen < 原始日耳曼语 *fullijaną，为形容词 voll（满的）派生的动词。",
+  "cog": "英 fill, full；荷 vullen",
+  "tip": "abfüllen 指“分装进容器”，auffüllen 指“补满、加满”（den Tank auffüllen），不要混用。"
+ },
+ {
+  "w": "abklären",
+  "pos": "v",
+  "ipa": "ˈapˌklɛːʁən",
+  "lvl": "B2",
+  "forms": "klärt ab · klärte ab · hat abgeklärt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "澄清，核实，弄清楚（事实、问题）",
+    "de": "einen Sachverhalt genau prüfen und klären",
+    "ex": [
+     {
+      "de": "Bevor wir den Vertrag unterschreiben, müssen wir noch einige rechtliche Fragen abklären.",
+      "zh": "在签合同之前，我们还得把几个法律问题弄清楚。"
+     },
+     {
+      "de": "Ich kläre das kurz mit meiner Chefin ab und melde mich dann.",
+      "zh": "我先跟我的上司确认一下，然后再联系您。"
+     }
+    ]
+   },
+   {
+    "zh": "（医）做检查以明确（病因）",
+    "de": "(Medizin) durch Untersuchungen die Ursache feststellen",
+    "ex": [
+     {
+      "de": "Die Kopfschmerzen sollten Sie neurologisch abklären lassen.",
+      "zh": "您的头痛应该去做神经科检查，查明原因。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. mit jmdm. abklären — 与某人核实/商定某事",
+   "abklären, ob … — 弄清是否……",
+   "die Abklärung — 澄清；（医）检查确诊",
+   "abgeklärt（形）：（因阅历而）沉稳淡定的，看透世事的"
+  ],
+  "root": "ab·klär·en：ab-（彻底、完成）+ klären（使清楚）+ -en → 彻底弄清",
+  "fam": [
+   "klar",
+   "klären",
+   "erklären",
+   "die Abklärung",
+   "abgeklärt"
+  ],
+  "ety": "klar 于中古高地德语时期（klār）借自拉丁语 clārus（明亮的、清楚的）；klären 由 klar 派生。",
+  "cog": "英 clear（经古法语 cler）；拉 clarus",
+  "tip": "abklären 多用于事务、行政、医疗场合，比 klären 更强调“通过询问/检查来确认”。"
+ },
+ {
+  "w": "Abgleich",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Abgleiche",
+  "gs": "des Abgleich(e)s",
+  "ipa": "ˈapˌɡlaɪ̯ç",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "比对，核对；校准",
+    "de": "Vergleich und Abstimmung von Daten, Werten o. Ä.",
+    "ex": [
+     {
+      "de": "Ein Abgleich der Fingerabdrücke mit der Datenbank brachte keinen Treffer.",
+      "zh": "将指纹与数据库进行比对后，没有找到匹配结果。"
+     }
+    ]
+   },
+   {
+    "zh": "（数据）同步",
+    "de": "(EDV) Synchronisierung von Datenbeständen",
+    "ex": [
+     {
+      "de": "Der Abgleich zwischen Handy und Laptop läuft automatisch über die Cloud.",
+      "zh": "手机和笔记本电脑之间的数据通过云端自动同步。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Abgleich von etw. mit etw.(D) — 将……与……比对",
+   "der Datenabgleich / Kontenabgleich — 数据比对／对账",
+   "动词 abgleichen：gleicht ab · glich ab · hat abgeglichen"
+  ],
+  "root": "Ab·gleich：ab-（从……出发、对照）+ gleich（相同的）→ 对照使之一致 → 比对、校准",
+  "fam": [
+   "abgleichen",
+   "gleich",
+   "der Vergleich",
+   "ausgleichen"
+  ],
+  "ety": "由动词 abgleichen 逆构而成；gleich < 中古高地德语 gelīch < 古高地德语 gilīh < 原始日耳曼语 *galīkaz（同一形体的）。",
+  "cog": "英 like, alike；荷 gelijk",
+  "tip": "Abgleich 是技术/行政用语，强调核对是否一致；一般“比较”用 Vergleich。"
+ },
+ {
+  "w": "abscheulich",
+  "pos": "adj",
+  "ipa": "apˈʃɔɪ̯lɪç",
+  "lvl": "B2–C1",
+  "forms": "abscheulicher · am abscheulichsten",
+  "senses": [
+   {
+    "zh": "可憎的，令人发指的",
+    "de": "Abscheu erregend; moralisch verwerflich",
+    "ex": [
+     {
+      "de": "Die Polizei spricht von einem abscheulichen Verbrechen.",
+      "zh": "警方称这是一起令人发指的罪行。"
+     },
+     {
+      "de": "Ich finde es abscheulich, wie man mit diesen Tieren umgeht.",
+      "zh": "我觉得人们对待这些动物的方式令人憎恶。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）极难闻的，极糟糕的",
+    "de": "(umgangssprachlich) sehr unangenehm, scheußlich",
+    "ex": [
+     {
+      "de": "In dem Keller roch es abscheulich.",
+      "zh": "地下室里有一股难闻至极的气味。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein abscheuliches Verbrechen / eine abscheuliche Tat — 令人发指的罪行",
+   "abscheulich riechen / schmecken — 气味/味道极其难闻",
+   "近义：widerlich, ekelhaft, scheußlich（口语更常用）"
+  ],
+  "root": "ab·scheu·lich：Abscheu（厌恶）+ -lich（形容词后缀）→ 引起厌恶的",
+  "fam": [
+   "der Abscheu",
+   "verabscheuen",
+   "scheuen",
+   "scheußlich",
+   "die Scheu"
+  ],
+  "ety": "Abscheu 与中古高地德语 abeschiuhen（厌恶而避开）有关，属于 scheuen（畏避）一族；scheuen < 中古高地德语 schiuhen < 古高地德语 sciuhen。",
+  "cog": "英 shy；英 eschew（经古法语借自日耳曼语）",
+  "tip": "重音在第二音节：ab-SCHEU-lich，而不是 AB-。"
+ },
+ {
+  "w": "Akkord",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Akkorde",
+  "gs": "des Akkord(e)s",
+  "ipa": "aˈkɔʁt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "和弦",
+    "de": "(Musik) Zusammenklang von mindestens drei Tönen",
+    "ex": [
+     {
+      "de": "Für die meisten Popsongs reichen drei oder vier Akkorde.",
+      "zh": "大多数流行歌曲三四个和弦就够了。"
+     }
+    ]
+   },
+   {
+    "zh": "计件工作，计件工资制",
+    "de": "Bezahlung nach der Menge der geleisteten Arbeit",
+    "ex": [
+     {
+      "de": "Früher arbeiteten viele Näherinnen im Akkord und wurden pro Stück bezahlt.",
+      "zh": "过去许多缝纫女工做计件活，按件计酬。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Akkord greifen / anschlagen — 按/弹一个和弦",
+   "im Akkord arbeiten — 做计件工作；（口）拼命快干",
+   "der Akkordlohn / die Akkordarbeit — 计件工资／计件劳动"
+  ],
+  "root": "Ak·kord：源自法语 accord（一致、协调）；ac- < 拉丁语 ad-（向）+ cor, cordis（心）→ “心意相合” → 声音协调（和弦）；“按件达成的约定” → 计件",
+  "fam": [
+   "der Akkordlohn",
+   "die Akkordarbeit",
+   "das Akkordeon"
+  ],
+  "ety": "借自法语 accord（一致、协议），源自 accorder（使协调）< 通俗拉丁语 *accordare（ad + cor“心”）。音乐义“和弦”约 18 世纪在德语中通行；“计件”义来自“（关于工作量与报酬的）约定”。",
+  "cog": "英 accord, chord；法 accord",
+  "tip": "Akkordeon（手风琴）也是同一来源；“和弦”和“计件”两义差别大，靠语境区分。"
+ },
+ {
+  "w": "alkoholisch",
+  "pos": "adj",
+  "ipa": "alkoˈhoːlɪʃ",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "含酒精的",
+    "de": "Alkohol enthaltend",
+    "ex": [
+     {
+      "de": "Auf dem Festivalgelände dürfen keine alkoholischen Getränke verkauft werden.",
+      "zh": "音乐节场地内不得出售含酒精饮料。"
+     },
+     {
+      "de": "Für Kinder gibt es eine alkoholfreie Bowle, für die Erwachsenen eine alkoholische.",
+      "zh": "孩子们有不含酒精的潘趣酒，大人们则喝含酒精的。"
+     }
+    ]
+   },
+   {
+    "zh": "（化）醇的；酒精造成的",
+    "de": "(Chemie) Alkohol betreffend; durch Alkohol bewirkt",
+    "ex": [
+     {
+      "de": "Bei der alkoholischen Gärung wandelt Hefe Zucker in Ethanol um.",
+      "zh": "在酒精发酵中，酵母将糖转化为乙醇。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "alkoholische Getränke — 酒精饮料（反义：alkoholfrei 不含酒精的）",
+   "die alkoholische Gärung — 酒精发酵",
+   "“酗酒的人”用 der Alkoholiker，不用 alkoholisch"
+  ],
+  "root": "Alkohol·isch：Alkohol（酒精）+ -isch（形容词后缀）→ 酒精的",
+  "fam": [
+   "der Alkohol",
+   "der Alkoholiker",
+   "alkoholfrei",
+   "der Alkoholismus"
+  ],
+  "ety": "Alkohol 约 16 世纪经中古拉丁语／西班牙语 alcohol 借入，源自阿拉伯语 al-kuḥl（锑粉，用作眼影）；炼金术中转指“精炼的粉末/精华”，后专指酒精。",
+  "cog": "英 alcohol；西 alcohol；阿 al-kuḥl",
+  "tip": "Alkohol 重音在最后：alko-HOL；alkoholisch 重音在 -ho-。"
+ },
+ {
+  "w": "Analphabet",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Analphabeten",
+  "gs": "des Analphabeten",
+  "ipa": "ˈanʔalfabeːt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "文盲",
+    "de": "jmd., der nicht lesen und schreiben kann",
+    "ex": [
+     {
+      "de": "In Deutschland gelten Millionen Erwachsene als funktionale Analphabeten.",
+      "zh": "在德国，有数百万成年人被视为功能性文盲。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬）门外汉，一窍不通的人",
+    "de": "(abwertend) jmd., der auf einem Gebiet nichts versteht",
+    "ex": [
+     {
+      "de": "Was Technik angeht, bin ich ein völliger Analphabet.",
+      "zh": "在技术方面，我完全是个门外汉。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化名词：des/dem/den Analphabeten；阴性 die Analphabetin, -nen",
+   "ein funktionaler Analphabet — 功能性文盲（能认字但读写能力不足以应付日常）",
+   "der Analphabetismus — 文盲现象；文盲率",
+   "发音亦作 ˌanʔalfaˈbeːt（重音在末音节）"
+  ],
+  "root": "An·alpha·bet：an-（希腊语否定前缀“不”）+ Alphabet（字母表，取自希腊字母 alpha + beta）→ 不识字母的人",
+  "fam": [
+   "das Alphabet",
+   "der Analphabetismus",
+   "alphabetisch",
+   "alphabetisieren"
+  ],
+  "ety": "源自希腊语 analphábētos（不识字母的），由否定前缀 an- 与 alphábētos 构成；经近代拉丁语进入欧洲各语言。",
+  "cog": "法 analphabète；英 alphabet",
+  "tip": "是弱变化名词：Ich habe einem Analphabeten geholfen（不是 *einem Analphabet）。"
+ },
+ {
+  "w": "Anarchismus",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Anarchismus",
+  "ipa": "anaʁˈçɪsmʊs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "无政府主义",
+    "de": "politische Lehre, die jede staatliche Herrschaft ablehnt",
+    "ex": [
+     {
+      "de": "Der Anarchismus lehnt nicht Ordnung an sich ab, sondern staatliche Gewalt.",
+      "zh": "无政府主义反对的并非秩序本身，而是国家强制力。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Anarchist, -en, -en（弱变化）— 无政府主义者；anarchistisch（形）",
+   "die Anarchie — 无政府状态；混乱",
+   "anarchisch — 无秩序的，混乱的（与 anarchistisch 区分）"
+  ],
+  "root": "An·arch·ismus：an-（无）+ arch-（希腊语 archē 统治）+ -ismus（主义）→ 无统治的主义",
+  "fam": [
+   "die Anarchie",
+   "der Anarchist",
+   "anarchistisch",
+   "anarchisch",
+   "die Monarchie"
+  ],
+  "ety": "由 Anarchie 加 -ismus 构成，19 世纪通行；Anarchie 源自希腊语 anarchía（无首领、无政府状态），经中古拉丁语／法语 anarchie 进入德语。",
+  "cog": "英 anarchism；法 anarchisme",
+  "tip": "ch 在 ar 之后读 [ç]：anar-ç-ismus；Anarchie 读 [anaʁˈçiː]。"
+ },
+ {
+  "w": "angeboren",
+  "pos": "adj",
+  "ipa": "ˈanɡəˌboːʁən",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "先天的，天生的",
+    "de": "von Geburt an vorhanden",
+    "ex": [
+     {
+      "de": "Das Kind kam mit einem angeborenen Herzfehler zur Welt.",
+      "zh": "这个孩子出生时就患有先天性心脏病。"
+     },
+     {
+      "de": "Ist Musikalität angeboren oder kann man sie lernen?",
+      "zh": "音乐才能是天生的，还是可以后天学会的？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein angeborener Herzfehler / eine angeborene Krankheit — 先天性心脏缺陷／先天性疾病",
+   "jmdm. angeboren sein — 某人生来就有",
+   "反义：erworben（后天获得的）"
+  ],
+  "root": "an·ge·boren：an-（附着于）+ geboren（gebären 的过去分词，出生）→ 出生时就带着的",
+  "fam": [
+   "gebären",
+   "geboren",
+   "die Geburt",
+   "erworben"
+  ],
+  "ety": "gebären < 中古高地德语 gebern < 古高地德语 giberan，属于原始日耳曼语 *beraną（携带、生育）一族。",
+  "cog": "英 born, bear；荷 aangeboren",
+  "tip": "angeboren 只用于“与生俱来”，不能用来说“天赋高”（那是 begabt）。"
+ },
+ {
+  "w": "Angewohnheit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Angewohnheiten",
+  "gs": "der Angewohnheit",
+  "ipa": "ˈanɡəˌvoːnhaɪ̯t",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "（个人的）习惯，习性（常指不好的小毛病）",
+    "de": "etw., das man sich angewöhnt hat und oft unbewusst tut",
+    "ex": [
+     {
+      "de": "Nägelkauen ist eine schlechte Angewohnheit, die man schwer loswird.",
+      "zh": "咬指甲是个很难改掉的坏习惯。"
+     },
+     {
+      "de": "Er hat die Angewohnheit, mitten im Satz aufzuhören.",
+      "zh": "他有个习惯，话说到一半就停下来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Angewohnheit haben, etw. zu tun — 有做某事的习惯",
+   "eine schlechte Angewohnheit ablegen — 改掉坏习惯",
+   "近义辨析：Gewohnheit（泛指习惯，中性）；Angewohnheit 更指个人的小癖好"
+  ],
+  "root": "An·ge·wohn·heit：angewöhnen（使习惯）的分词词干 + -heit（名词后缀）→ 已养成的习惯",
+  "fam": [
+   "sich angewöhnen",
+   "die Gewohnheit",
+   "gewohnt",
+   "wohnen",
+   "abgewöhnen"
+  ],
+  "ety": "wohnen < 中古高地德语 wonen < 古高地德语 wonēn（居住；习惯于），“习惯”义由此而来。",
+  "cog": "英 wont（习惯）；荷 gewoonte",
+  "tip": "动词是 sich etw. angewöhnen（养成），反义 sich etw. abgewöhnen（戒掉）。"
+ },
+ {
+  "w": "Anis",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Anise",
+  "gs": "des Anis(es)",
+  "ipa": "aˈniːs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "茴芹，洋茴香（植物及其籽，作香料）",
+    "de": "Doldenblütler, dessen Samen als Gewürz verwendet werden",
+    "ex": [
+     {
+      "de": "Für das Weihnachtsgebäck braucht man Zimt, Nelken und etwas Anis.",
+      "zh": "做圣诞饼干需要肉桂、丁香和少许茴芹籽。"
+     }
+    ]
+   },
+   {
+    "zh": "茴香酒",
+    "de": "Anisschnaps, Anislikör",
+    "ex": [
+     {
+      "de": "Nach dem Essen wurde ein Glas Anis serviert.",
+      "zh": "饭后上了一杯茴香酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "发音：标准 [aˈniːs]，南德、奥地利多读 [ˈaːnɪs]",
+   "复数 Anise 很少用",
+   "der Sternanis — 八角（大料）；中餐里的“小茴香”是 Fenchel，不是 Anis"
+  ],
+  "root": "Anis：借词，不可再拆分",
+  "fam": [
+   "der Sternanis",
+   "der Anisschnaps",
+   "der Fenchel"
+  ],
+  "ety": "中古高地德语 anīs，借自拉丁语 anīsum，后者源自希腊语 ánēson / ánison。",
+  "cog": "英 anise；法 anis；拉 anisum",
+  "tip": "Anis、Sternanis（八角）、Fenchel（茴香）味道相近但是不同植物，中文译名易混。"
+ },
+ {
+  "w": "Anschlusstreffer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Anschlusstreffer",
+  "gs": "des Anschlusstreffers",
+  "ipa": "ˈanʃlʊsˌtʁɛfɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（足球等）扳回一球（使落后方只差一球的进球）",
+    "de": "(Sport) Tor, durch das eine zurückliegende Mannschaft auf ein Tor herankommt",
+    "ex": [
+     {
+      "de": "In der 80. Minute gelang den Gästen der Anschlusstreffer zum 1:2.",
+      "zh": "第 80 分钟，客队扳回一球，将比分改写为 1:2。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Anschlusstreffer erzielen — 扳回一球",
+   "近义：das Anschlusstor；区分 der Ausgleich（扳平）、der Führungstreffer（领先进球）"
+  ],
+  "root": "An·schluss·treffer：Anschluss（衔接、追上）+ Treffer（命中、进球）→ 追近比分的进球",
+  "fam": [
+   "der Anschluss",
+   "anschließen",
+   "der Treffer",
+   "treffen",
+   "das Anschlusstor"
+  ],
+  "ety": "Anschluss 由 anschließen（连接）派生，schließen < 古高地德语 sliozan；Treffer 由 treffen < 古高地德语 treffan 派生。",
+  "cog": "荷 sluiten（关闭，与 schließen 同源）；荷 treffen",
+  "tip": "只用于把比分追到一球差（如 1:2、2:3），追平则叫 Ausgleich。"
+ },
+ {
+  "w": "Arbeitsaufwand",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Arbeitsaufwand(e)s",
+  "ipa": "ˈaʁbaɪ̯tsˌʔaʊ̯fvant",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "工作量，所需投入的人力/工时",
+    "de": "Menge an Arbeit, die für etw. nötig ist",
+    "ex": [
+     {
+      "de": "Der Arbeitsaufwand für die Umstellung wurde deutlich unterschätzt.",
+      "zh": "系统切换所需的工作量被严重低估了。"
+     },
+     {
+      "de": "Mit wenig Arbeitsaufwand lässt sich die Wohnung deutlich gemütlicher gestalten.",
+      "zh": "只需花一点功夫，就能让房子舒适很多。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit großem / geringem Arbeitsaufwand — 花费大量／少量功夫",
+   "der Arbeitsaufwand ist hoch / beträgt … Stunden — 工作量大／共需……小时",
+   "近义：der Zeitaufwand（耗时），die Arbeitsbelastung（工作负担）"
+  ],
+  "root": "Arbeit·s·auf·wand：Arbeit（工作）+ -s-（连接音）+ Aufwand（投入、耗费，来自 aufwenden）→ 工作上的投入",
+  "fam": [
+   "die Arbeit",
+   "der Aufwand",
+   "aufwenden",
+   "aufwendig",
+   "der Zeitaufwand"
+  ],
+  "ety": "Arbeit < 中古高地德语 ar(e)beit < 古高地德语 arabeit（辛劳、苦难）< 原始日耳曼语 *arbaidiz；Aufwand 由 aufwenden（花费）派生，wenden 是 winden 的使役动词。",
+  "cog": "荷 arbeid；英 wend（与 wenden 同源）",
+  "tip": "Aufwand 本身极少用复数；说“工作量很大”用 Der Arbeitsaufwand ist groß/hoch，而不是 *viel。"
+ },
+ {
+  "w": "Arbeitslager",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Arbeitslager",
+  "gs": "des Arbeitslagers",
+  "ipa": "ˈaʁbaɪ̯tsˌlaːɡɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "劳动营，劳改营（强迫劳动的集中营）",
+    "de": "Lager, in dem Menschen Zwangsarbeit leisten müssen",
+    "ex": [
+     {
+      "de": "Nach dem Krieg wurden viele Kriegsgefangene in sowjetische Arbeitslager gebracht.",
+      "zh": "战后许多战俘被送进了苏联的劳动营。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. in ein Arbeitslager deportieren / schicken — 把某人押送到劳动营",
+   "相关：das Konzentrationslager (KZ), das Straflager, der Gulag",
+   "历史语境词，多见于关于纳粹德国、苏联、朝鲜等的报道"
+  ],
+  "root": "Arbeit·s·lager：Arbeit（劳动）+ -s-（连接音）+ Lager（营地）→ 强制劳动的营地",
+  "fam": [
+   "die Arbeit",
+   "das Lager",
+   "das Straflager",
+   "das Flüchtlingslager",
+   "lagern"
+  ],
+  "ety": "Lager < 中古高地德语 leger < 古高地德语 legar（躺卧之处），与 liegen（躺）同族；Arbeit 见 arbeiten。",
+  "cog": "英 lair（兽穴，同源）；荷 leger（军队）",
+  "tip": "Lager 还有“仓库”义（auf Lager 有现货），Arbeitslager 只指劳动营。"
+ },
+ {
+  "w": "Assistenzarzt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Assistenzärzte",
+  "gs": "des Assistenzarzt(e)s",
+  "ipa": "asɪsˈtɛnt͡sˌʔaːɐ̯t͡st",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "住院医师（在医院接受专科培训、尚未取得专科医师资格的医生）",
+    "de": "approbierter Arzt in der Weiterbildung zum Facharzt",
+    "ex": [
+     {
+      "de": "Als Assistenzärztin hat sie oft 24-Stunden-Dienste in der Notaufnahme.",
+      "zh": "作为住院医师，她经常在急诊科值 24 小时班。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性：die Assistenzärztin, -nen",
+   "医院等级：Assistenzarzt → Facharzt → Oberarzt → Chefarzt",
+   "ein Assistenzarzt in Weiterbildung zum Internisten — 在接受内科专科培训的住院医师"
+  ],
+  "root": "Assistenz·arzt：Assistenz（协助，拉丁语 assistere“站在旁边”）+ Arzt（医生）→ 协助（上级医生）的医生",
+  "fam": [
+   "der Arzt",
+   "die Assistenz",
+   "der Assistent",
+   "der Facharzt",
+   "der Oberarzt"
+  ],
+  "ety": "Assistenz 源自中古拉丁语 assistentia（协助），出自拉丁语 assistere（站在旁边）；Arzt < 古高地德语 arzāt，借自晚期拉丁语 archiater < 希腊语 archiātros（首席医生）。",
+  "cog": "英 assist；拉 assistere；希 archiatros",
+  "tip": "Assistenzarzt 并不是“助理医生/医生助理”，而是已拿到行医执照的正式医生。"
+ },
+ {
+  "w": "ausgrenzen",
+  "pos": "v",
+  "ipa": "ˈaʊ̯sˌɡʁɛnt͡sn̩",
+  "lvl": "C1",
+  "forms": "grenzt aus · grenzte aus · hat ausgegrenzt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "排斥，排挤（某人或某群体）",
+    "de": "jmdn. aus einer Gemeinschaft ausschließen",
+    "ex": [
+     {
+      "de": "Kinder aus armen Familien werden in der Schule oft ausgegrenzt.",
+      "zh": "穷人家的孩子在学校里常常受到排挤。"
+     },
+     {
+      "de": "Wir dürfen Menschen nicht wegen ihrer Herkunft ausgrenzen.",
+      "zh": "我们不能因为出身而排斥他人。"
+     }
+    ]
+   },
+   {
+    "zh": "（讨论中）把某问题排除在外",
+    "de": "etw. bei einer Betrachtung nicht berücksichtigen",
+    "ex": [
+     {
+      "de": "Die Frage der Finanzierung wurde in dem Bericht bewusst ausgegrenzt.",
+      "zh": "报告有意没有涉及资金问题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. aus der Gesellschaft / Gruppe ausgrenzen — 把某人排斥在社会/群体之外",
+   "sich ausgegrenzt fühlen — 感到被排挤",
+   "die Ausgrenzung — 排斥，边缘化（soziale Ausgrenzung 社会排斥）"
+  ],
+  "root": "aus·grenz·en：aus-（向外）+ Grenze（边界）+ -en → 划到边界之外",
+  "fam": [
+   "die Grenze",
+   "die Ausgrenzung",
+   "abgrenzen",
+   "begrenzen",
+   "angrenzen"
+  ],
+  "ety": "Grenze 于 13 世纪左右借自西斯拉夫语（参见古波兰语 granica），中古高地德语作 greniz(e)，逐渐取代本土词 Mark。",
+  "cog": "波兰 granica；捷 hranice",
+  "tip": "ausgrenzen 带社会排斥色彩；单纯“划界、区分”用 abgrenzen（sich von jmdm. abgrenzen 与某人划清界限）。"
+ },
+ {
+  "w": "Ausrottung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Ausrottungen",
+  "gs": "der Ausrottung",
+  "ipa": "ˈaʊ̯sˌʁɔtʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "灭绝，根除；（对民族的）灭绝、屠灭",
+    "de": "vollständige Vernichtung von Lebewesen, Krankheiten o. Ä.",
+    "ex": [
+     {
+      "de": "Die Ausrottung der Pocken gilt als einer der größten Erfolge der Medizin.",
+      "zh": "根除天花被视为医学史上最大的成就之一。"
+     },
+     {
+      "de": "Die Jagd führte im 19. Jahrhundert fast zur Ausrottung des Bisons.",
+      "zh": "19 世纪的猎杀几乎导致美洲野牛灭绝。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "动词：ausrotten（rottet aus · rottete aus · hat ausgerottet）— 消灭，根除",
+   "vom Aussterben bedroht（濒临灭绝，自然灭绝）vs. Ausrottung（人为灭绝）",
+   "复数少用"
+  ],
+  "root": "aus·rott·ung：aus-（彻底、除去）+ rotten（拔除、开垦，旧词）+ -ung → 连根拔除",
+  "fam": [
+   "ausrotten",
+   "roden",
+   "das Aussterben"
+  ],
+  "ety": "ausrotten < 中古高地德语 ūʒroten；一般认为 rotten 是 roden（开垦、拔除树根）的旧异体。",
+  "cog": "荷 uitroeien（构词相同）",
+  "tip": "ausrotten 与 verrotten（腐烂）无关；后者来自 rotten（腐烂，英 rot）。"
+ },
+ {
+  "w": "auswachsen",
+  "pos": "v",
+  "ipa": "ˈaʊ̯sˌvaksn̩",
+  "lvl": "C1",
+  "forms": "wächst aus · wuchs aus · hat sich ausgewachsen / ist ausgewachsen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "sich auswachsen：演变成，发展成（多指坏事）",
+    "de": "sich zu etw. (Größerem, Schlimmerem) entwickeln",
+    "ex": [
+     {
+      "de": "Der kleine Streit hat sich zu einer handfesten Krise ausgewachsen.",
+      "zh": "这场小争执演变成了一场严重的危机。"
+     }
+    ]
+   },
+   {
+    "zh": "sich auswachsen：（毛病、畸形等）随生长而自行消失",
+    "de": "sich im Laufe des Wachstums verlieren",
+    "ex": [
+     {
+      "de": "Die Fehlstellung der Zähne wächst sich meistens von selbst aus.",
+      "zh": "这种牙齿排列不齐大多会随着生长自行矫正。"
+     }
+    ]
+   },
+   {
+    "zh": "（不及物，sein）长足，长成；（谷物）在穗上发芽",
+    "de": "zu voller Größe wachsen; (von Getreide) auf dem Halm keimen",
+    "ex": [
+     {
+      "de": "Der Welpe ist noch nicht ausgewachsen.",
+      "zh": "这只小狗还没长成。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich zu etw.(D) auswachsen — 演变成……（haben）",
+   "Das ist zum Auswachsen! — （口）真让人受不了！",
+   "ausgewachsen（形）：成年的，长成的；（口）十足的（ein ausgewachsener Skandal 一桩不折不扣的丑闻）"
+  ],
+  "root": "aus·wachs·en：aus-（到头、完全；向外）+ wachsen（生长）→ 长到头／长出去 → 发展成；长没了",
+  "fam": [
+   "wachsen",
+   "ausgewachsen",
+   "das Wachstum",
+   "der Auswuchs",
+   "erwachsen"
+  ],
+  "ety": "wachsen < 中古高地德语 wahsen < 古高地德语 wahsan < 原始日耳曼语 *wahsijaną。",
+  "cog": "英 wax（月亮渐盈）；荷 wassen（旧，生长）",
+  "tip": "反身用法用 haben，不及物“长成”用 sein：Der Hund ist ausgewachsen.（狗已长成。）"
+ },
+ {
+  "w": "Backhaus",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Backhäuser",
+  "gs": "des Backhauses",
+  "ipa": "ˈbakˌhaʊ̯s",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（乡村公用的）烤炉房，烤面包房",
+    "de": "(meist dörfliches, gemeinschaftlich genutztes) Gebäude mit einem Backofen",
+    "ex": [
+     {
+      "de": "Einmal im Monat wird im alten Backhaus des Dorfes Brot gebacken.",
+      "zh": "村里那座老烤炉房每月烤一次面包。"
+     }
+    ]
+   },
+   {
+    "zh": "（地区用语）面包店，烘焙坊",
+    "de": "(landschaftlich) Bäckerei",
+    "ex": [
+     {
+      "de": "Das Backhaus am Marktplatz hat schon um sechs Uhr geöffnet.",
+      "zh": "集市广场边的面包店六点就开门了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Backhaus Brot backen — 在烤炉房烤面包",
+   "常见于德国西南部、黑森等地的乡村传统；也常作面包店名称",
+   "近义：das Backhäuschen, die Bäckerei"
+  ],
+  "root": "Back·haus：backen（烘烤）+ Haus（房子）→ 烤东西的房子",
+  "fam": [
+   "backen",
+   "der Bäcker",
+   "die Bäckerei",
+   "das Haus",
+   "der Backofen"
+  ],
+  "ety": "透明复合词：backen < 古高地德语 bahhan；Haus < 古高地德语 hūs。",
+  "cog": "英 bake, house；荷 bakhuis",
+  "tip": "表示“去面包店”日常多说 zum Bäcker gehen。"
+ },
+ {
+  "w": "Badesee",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Badeseen",
+  "gs": "des Badesees",
+  "ipa": "ˈbaːdəˌzeː",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "可游泳的湖，天然游泳湖",
+    "de": "See, in dem man baden kann",
+    "ex": [
+     {
+      "de": "Am Wochenende fahren wir an einen Badesee in der Nähe von Berlin.",
+      "zh": "周末我们去柏林附近的一个游泳湖。"
+     },
+     {
+      "de": "Das Gesundheitsamt prüft regelmäßig die Wasserqualität der Badeseen.",
+      "zh": "卫生局定期检测各游泳湖的水质。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an einen Badesee fahren / am Badesee liegen — 去游泳湖／在湖边躺着",
+   "复数读 [ˈbaːdəˌzeːən]",
+   "注意：der See（湖）≠ die See（海）"
+  ],
+  "root": "Bade·see：baden（洗澡、游泳）+ See（湖）→ 可以游泳的湖",
+  "fam": [
+   "baden",
+   "das Bad",
+   "der See",
+   "das Freibad",
+   "der Badeanzug"
+  ],
+  "ety": "透明复合词：baden < 古高地德语 badōn，由 Bad 派生；See < 古高地德语 sē(o) < 原始日耳曼语 *saiwiz。",
+  "cog": "英 bath, sea；荷 baden, zee",
+  "tip": "der See 阳性指湖，die See 阴性指海（an die See fahren 去海边）。"
+ },
+ {
+  "w": "ballern",
+  "pos": "v",
+  "ipa": "ˈbalɐn",
+  "lvl": "B2–C1",
+  "forms": "ballert · ballerte · hat geballert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（口）砰砰乱射，乱开枪；放鞭炮",
+    "de": "(umgangssprachlich) laut und wiederholt schießen; knallen",
+    "ex": [
+     {
+      "de": "In der Silvesternacht wird in der ganzen Stadt geballert.",
+      "zh": "跨年夜全城都在噼里啪啦放鞭炮。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）猛踢，猛砸，猛扔",
+    "de": "(umgangssprachlich) heftig schießen, werfen, schlagen",
+    "ex": [
+     {
+      "de": "Der Stürmer ballerte den Ball aus 20 Metern unter die Latte.",
+      "zh": "前锋在 20 米外一脚爆射，球直挂横梁下沿。"
+     }
+    ]
+   },
+   {
+    "zh": "jmdm. eine ballern：（口）扇某人一记耳光",
+    "de": "jmdm. eine Ohrfeige geben",
+    "ex": [
+     {
+      "de": "Wenn du das noch mal sagst, baller ich dir eine!",
+      "zh": "你再说一遍，我就扇你一巴掌！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gegen die Tür ballern — 砰砰砸门",
+   "die Ballerei — （口）乱射一气；das Ballerspiel — 射击类游戏",
+   "（青年口语）Die Musik ballert! — 音乐太带劲了"
+  ],
+  "root": "baller·n：拟声词根 baller-（砰砰声）+ -n → 发出砰砰声",
+  "fam": [
+   "die Ballerei",
+   "das Ballerspiel",
+   "knallen"
+  ],
+  "ety": "一般认为是拟声词，模仿枪击、爆炸的声音；具体来源不详。",
+  "cog": "（拟声词）无确定同源词",
+  "tip": "与 der Ball（球）无关；书面语用 schießen。"
+ },
+ {
+  "w": "Beet",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Beete",
+  "gs": "des Beet(e)s",
+  "ipa": "beːt",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "苗床，花坛，菜畦",
+    "de": "abgegrenzte Fläche im Garten, auf der Blumen oder Gemüse wachsen",
+    "ex": [
+     {
+      "de": "Im Frühling legen wir hinter dem Haus ein Beet für Kräuter an.",
+      "zh": "春天我们在屋后开辟一块香草苗床。"
+     },
+     {
+      "de": "Bitte nicht die Beete betreten!",
+      "zh": "请勿踩踏花坛！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Beet anlegen / umgraben / jäten — 开辟／翻耕／给苗床除草",
+   "das Blumenbeet / Gemüsebeet / Hochbeet — 花坛／菜畦／高架苗床"
+  ],
+  "root": "Beet：单纯词（与 Bett 原为同一词）",
+  "fam": [
+   "das Blumenbeet",
+   "das Hochbeet",
+   "das Bett"
+  ],
+  "ety": "中古高地德语 bet(te)，与 Bett（床）原为同一个词，后来拼写分化为 Bett（床）和 Beet（苗床）。",
+  "cog": "英 bed（flower bed 花坛）；荷 bed",
+  "tip": "Beet [beːt] 长音，Bett [bɛt] 短音；也不要与英语 beet（甜菜，德语 Rübe）混淆。"
+ },
+ {
+  "w": "Behebung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Behebungen",
+  "gs": "der Behebung",
+  "ipa": "bəˈheːbʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "排除，消除，修复（故障、缺陷）",
+    "de": "Beseitigung von Mängeln, Schäden, Störungen",
+    "ex": [
+     {
+      "de": "Die Behebung des Schadens wird mehrere Wochen dauern.",
+      "zh": "修复这处损坏需要几周时间。"
+     }
+    ]
+   },
+   {
+    "zh": "（奥地利）提款，取钱",
+    "de": "(österreichisch) Abhebung von Geld",
+    "ex": [
+     {
+      "de": "Für die Behebung am Bankomaten werden keine Gebühren verrechnet.",
+      "zh": "在自动取款机取款不收手续费。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Behebung eines Fehlers / einer Störung — 排除故障",
+   "动词：beheben（behebt · behob · hat behoben）",
+   "公文词，口语多用 beseitigen / reparieren"
+  ],
+  "root": "be·heb·ung：be-（使及物化）+ heben（举起）+ -ung（名词后缀）→ 把（问题）举走 → 排除",
+  "fam": [
+   "beheben",
+   "heben",
+   "abheben",
+   "die Fehlerbehebung"
+  ],
+  "ety": "beheben 由 heben 加 be- 构成；heben < 中古高地德语 heben < 古高地德语 heffen < 原始日耳曼语 *habjaną。",
+  "cog": "英 heave；荷 heffen",
+  "tip": "Fehlerbehebung（故障排除）是软件界面常见词，对应英语 troubleshooting。"
+ },
+ {
+  "w": "behördlich",
+  "pos": "adj",
+  "ipa": "bəˈhøːɐ̯tlɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "官方的，政府机关的，由主管部门作出的",
+    "de": "von einer Behörde ausgehend, amtlich",
+    "ex": [
+     {
+      "de": "Für den Umbau ist eine behördliche Genehmigung erforderlich.",
+      "zh": "改建需要获得主管部门的批准。"
+     },
+     {
+      "de": "Der Markt wurde auf behördliche Anordnung geschlossen.",
+      "zh": "该市场根据官方命令被关闭。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine behördliche Genehmigung / Anordnung / Auflage — 官方许可／命令／规定",
+   "behördlich genehmigt — 经官方批准的",
+   "近义：amtlich（官方的），offiziell"
+  ],
+  "root": "be·hörd·lich：Behörde（主管机关）+ -lich（形容词后缀）→ 机关的",
+  "fam": [
+   "die Behörde",
+   "hören",
+   "gehören",
+   "die Aufsichtsbehörde"
+  ],
+  "ety": "Behörde 约 16 世纪由旧动词 behören（归属、隶属于）派生，原指“（某事）所归属之处”，即主管部门；behören 属于 hören 一族。",
+  "cog": "英 hear（与 hören 同源）",
+  "tip": "behördlich 只作定语或副词；“机关”本身是 die Behörde, -n。"
+ },
+ {
+  "w": "belanglos",
+  "pos": "adj",
+  "ipa": "bəˈlaŋloːs",
+  "lvl": "C1",
+  "forms": "belangloser · am belanglosesten",
+  "senses": [
+   {
+    "zh": "无关紧要的，琐碎的，无足轻重的",
+    "de": "ohne Bedeutung, unwichtig",
+    "ex": [
+     {
+      "de": "Wir haben uns nur über belanglose Dinge unterhalten.",
+      "zh": "我们只是聊了些无关紧要的事。"
+     },
+     {
+      "de": "Für das Urteil ist diese Frage völlig belanglos.",
+      "zh": "这个问题对判决毫无影响。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "für etw./jmdn. belanglos sein — 对……无关紧要",
+   "die Belanglosigkeit, -en — 琐事；无关紧要",
+   "von Belang sein — 重要（反义表达：nicht von Belang）"
+  ],
+  "root": "be·lang·los：Belang（重要性，来自 belangen“涉及”）+ -los（无）→ 不涉及要紧之处",
+  "fam": [
+   "der Belang",
+   "belangen",
+   "anbelangen",
+   "lang",
+   "die Belanglosigkeit"
+  ],
+  "ety": "Belang 由 belangen（涉及、关系到）派生，该词由 be- + langen（伸及、够到）构成，langen 与 lang 同族。",
+  "cog": "英 belong, long",
+  "tip": "近义词 unwichtig 更口语；belanglos 常用于“闲谈内容空洞”（belangloses Gerede）。"
+ },
+ {
+  "w": "belächeln",
+  "pos": "v",
+  "ipa": "bəˈlɛçl̩n",
+  "lvl": "C1",
+  "forms": "belächelt · belächelte · hat belächelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "对……付之一笑，（带优越感地）嘲笑，不当回事",
+    "de": "über jmdn./etw. nachsichtig oder spöttisch lächeln; nicht ernst nehmen",
+    "ex": [
+     {
+      "de": "Anfangs wurde die Idee belächelt, heute ist sie ein Milliardengeschäft.",
+      "zh": "起初这个想法遭人嗤笑，如今它已是一门数十亿的生意。"
+     },
+     {
+      "de": "Er belächelte die Warnungen der Experten.",
+      "zh": "他对专家的警告不以为然。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn./etw. belächeln — 对某人/某事一笑置之（及物，宾格）",
+   "常用被动：belächelt werden — 被人看轻、被嘲笑",
+   "辨析：auslachen（当面大笑嘲弄）语气更重"
+  ],
+  "root": "be·lächel·n：be-（使及物化，作用于对象）+ lächeln（微笑）→ 对着某人/某事（轻蔑地）笑",
+  "fam": [
+   "lächeln",
+   "lachen",
+   "das Lächeln",
+   "lächerlich",
+   "auslachen"
+  ],
+  "ety": "lächeln < 中古高地德语 lecheln，为 lachen（笑）的指小/反复形式；lachen < 古高地德语 lahhēn。",
+  "cog": "英 laugh；荷 lachen",
+  "tip": "belächeln 不是“对某人微笑”（那是 jmdn. anlächeln），而是带轻视的笑。"
+ },
+ {
+  "w": "Berufstätigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Berufstätigkeiten",
+  "gs": "der Berufstätigkeit",
+  "ipa": "bəˈʁuːfsˌtɛːtɪçkaɪ̯t",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "职业活动，就业，工作（指从事某种职业这一状态）",
+    "de": "das Ausüben eines Berufs",
+    "ex": [
+     {
+      "de": "Nach der Geburt ihres Sohnes hat sie ihre Berufstätigkeit für zwei Jahre unterbrochen.",
+      "zh": "儿子出生后，她中断工作两年。"
+     },
+     {
+      "de": "Die Berufstätigkeit von Frauen ist in den letzten Jahrzehnten stark gestiegen.",
+      "zh": "过去几十年间，女性就业率大幅上升。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Berufstätigkeit ausüben / aufnehmen / unterbrechen — 从事／开始／中断职业活动",
+   "berufstätig（形）— 有工作的，在职的：berufstätige Mütter 职业母亲",
+   "复数少用"
+  ],
+  "root": "Beruf·s·tätig·keit：Beruf（职业）+ -s-（连接音）+ tätig（从事的、活动的）+ -keit（名词后缀）→ 从事职业的状态",
+  "fam": [
+   "der Beruf",
+   "berufstätig",
+   "tätig",
+   "die Tätigkeit",
+   "die Tat"
+  ],
+  "ety": "Beruf < 中古高地德语 beruof（召唤；名声），经路德的用法获得“天职、职业”之义，由 rufen（呼唤）派生；tätig 由 Tat（行为）派生，Tat 与 tun 同族。",
+  "cog": "英 deed（与 Tat 同源）, do；荷 beroep",
+  "tip": "Berufstätigkeit 强调“在工作”这一状态；具体的“工作岗位”用 die Stelle / der Job。"
+ },
+ {
+  "w": "besagt",
+  "pos": "adj",
+  "ipa": "bəˈzaːkt",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "上述的，所说的，前面提到的",
+    "de": "bereits erwähnt, genannt (nur attributiv)",
+    "ex": [
+     {
+      "de": "Besagter Mitarbeiter hatte schon früher Kundendaten weitergegeben.",
+      "zh": "该员工此前就曾泄露过客户数据。"
+     },
+     {
+      "de": "An besagtem Abend war er gar nicht in der Stadt.",
+      "zh": "在所说的那天晚上，他根本不在城里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "只作定语，常省略冠词：besagter Herr, an besagtem Tag",
+   "公文、法律语言，口语中有时带戏谑色彩",
+   "来自动词 besagen（besagt · besagte · hat besagt）：表明，意味着：Das besagt gar nichts. 这说明不了什么。"
+  ],
+  "root": "be·sag·t：be-（使及物化）+ sagen（说）的过去分词 → 已被说到的",
+  "fam": [
+   "besagen",
+   "sagen",
+   "die Aussage",
+   "obig",
+   "genannt"
+  ],
+  "ety": "besagen 的过去分词形容词化；sagen < 中古高地德语 sagen < 古高地德语 sagēn。",
+  "cog": "英 say；荷 zeggen",
+  "tip": "近义 oben genannt, erwähnt；besagt 不能作表语（不能说 *Der Mann ist besagt）。"
+ },
+ {
+  "w": "Betriebsleiter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Betriebsleiter",
+  "gs": "des Betriebsleiters",
+  "ipa": "bəˈtʁiːpsˌlaɪ̯tɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "厂长，企业（生产单位）负责人，运营主管",
+    "de": "Person, die einen Betrieb oder Betriebsteil leitet",
+    "ex": [
+     {
+      "de": "Der Betriebsleiter ist für die Sicherheit aller Mitarbeiter im Werk verantwortlich.",
+      "zh": "厂长负责全厂员工的安全。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性：die Betriebsleiterin, -nen",
+   "die Betriebsleitung — 企业管理层；运营管理",
+   "区分 der Betriebsrat（职工委员会）"
+  ],
+  "root": "Betrieb·s·leiter：Betrieb（企业、工厂，来自 betreiben 经营）+ -s- + Leiter（领导者，来自 leiten）→ 企业负责人",
+  "fam": [
+   "der Betrieb",
+   "betreiben",
+   "leiten",
+   "die Leitung",
+   "der Betriebsrat"
+  ],
+  "ety": "Betrieb 由 betreiben 派生，treiben < 古高地德语 trīban（驱赶）；leiten < 中古高地德语 leiten < 古高地德语 leiten（引导）。",
+  "cog": "英 drive（与 treiben 同源）, lead（与 leiten 同源）",
+  "tip": "der Leiter（领导人，复数 Leiter）≠ die Leiter（梯子，复数 Leitern）。"
+ },
+ {
+  "w": "betriebswirtschaftlich",
+  "pos": "adj",
+  "ipa": "bəˈtʁiːpsˌvɪʁtʃaftlɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "企业经济学的，工商管理的；从企业经营角度的",
+    "de": "die Betriebswirtschaft betreffend; unter wirtschaftlichen Gesichtspunkten eines Unternehmens",
+    "ex": [
+     {
+      "de": "Betriebswirtschaftlich ist die Schließung des Standorts sinnvoll, sozial aber problematisch.",
+      "zh": "从企业经营角度看关闭这个厂区是合理的，但从社会角度看却有问题。"
+     },
+     {
+      "de": "Für die Stelle sind betriebswirtschaftliche Kenntnisse erforderlich.",
+      "zh": "这个职位要求具备企业管理知识。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Betriebswirtschaftslehre (BWL) — 企业管理学（大学专业）",
+   "区分 volkswirtschaftlich（国民经济学的，宏观经济的，VWL）",
+   "betriebswirtschaftlich denken / rechnen — 从经营角度思考／核算"
+  ],
+  "root": "Betrieb·s·wirtschaft·lich：Betrieb（企业）+ Wirtschaft（经济）+ -lich → 企业经济的",
+  "fam": [
+   "die Betriebswirtschaft",
+   "die BWL",
+   "der Betriebswirt",
+   "volkswirtschaftlich",
+   "die Wirtschaft"
+  ],
+  "ety": "Betrieb 见 betreiben；Wirtschaft 由 Wirt（主人、店主）+ -schaft 构成，原指“持家、经营”；Wirt 的更早来源不详。",
+  "cog": "荷 bedrijf（企业，构词相近）",
+  "tip": "BWL 学的是“企业层面”，VWL 学的是“国家/宏观层面”，中国学生选专业时常混。"
+ },
+ {
+  "w": "Betrug",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Betrug(e)s",
+  "ipa": "bəˈtʁuːk",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "欺骗，诈骗（罪）",
+    "de": "Täuschung, um sich einen Vorteil zu verschaffen; (Recht) Straftat der Vermögensschädigung durch Täuschung",
+    "ex": [
+     {
+      "de": "Der Manager wurde wegen Betrugs zu drei Jahren Haft verurteilt.",
+      "zh": "这名经理因诈骗罪被判处三年监禁。"
+     },
+     {
+      "de": "Das Angebot klang zu gut, um wahr zu sein – und war tatsächlich Betrug.",
+      "zh": "这个报价好得令人难以置信——结果果然是骗局。"
+     }
+    ]
+   },
+   {
+    "zh": "（感情上的）背叛，不忠",
+    "de": "Untreue in einer Beziehung",
+    "ex": [
+     {
+      "de": "Den Betrug ihres Mannes konnte sie ihm nie verzeihen.",
+      "zh": "她始终无法原谅丈夫的不忠。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wegen Betrugs angeklagt / verurteilt werden — 因诈骗被起诉／判刑",
+   "der Steuerbetrug / Versicherungsbetrug / Wahlbetrug — 逃税／骗保／选举舞弊",
+   "多次的欺诈行为用 Betrügereien 或 Betrugsfälle",
+   "动词 betrügen：betrügt · betrog · hat betrogen；人：der Betrüger"
+  ],
+  "root": "Be·trug：由 betrügen（欺骗）逆构；be- + trügen（使产生错觉）",
+  "fam": [
+   "betrügen",
+   "der Betrüger",
+   "trügen",
+   "trügerisch",
+   "die Betrügerei"
+  ],
+  "ety": "trügen < 中古高地德语 triegen < 古高地德语 triogan（欺骗）。",
+  "cog": "荷 bedriegen（欺骗）",
+  "tip": "betrügen 及物：jmdn. betrügen 欺骗某人；jmdn. mit jmdm. betrügen 背着某人与他人出轨。"
+ },
+ {
+  "w": "Bevormundung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bevormundungen",
+  "gs": "der Bevormundung",
+  "ipa": "bəˈfoːɐ̯mʊndʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（贬）家长式管制，横加干涉，替人做主",
+    "de": "das Bevormunden; Einschränkung der Selbstbestimmung",
+    "ex": [
+     {
+      "de": "Viele Bürger empfinden das Rauchverbot als staatliche Bevormundung.",
+      "zh": "许多公民认为禁烟令是国家的家长式管制。"
+     }
+    ]
+   },
+   {
+    "zh": "（旧）监护",
+    "de": "(veraltet) Vormundschaft",
+    "ex": [
+     {
+      "de": "Bis ins 20. Jahrhundert standen verheiratete Frauen rechtlich unter der Bevormundung ihres Mannes.",
+      "zh": "直到 20 世纪，已婚妇女在法律上仍处于丈夫的监护之下。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. bevormunden — 对某人指手画脚，替某人做主",
+   "sich gegen Bevormundung wehren — 反抗被管束",
+   "der Vormund — 监护人；die Vormundschaft — 监护（法律用语）"
+  ],
+  "root": "be·vor·mund·ung：be- + Vormund（监护人：vor 在前 + Mund 保护）+ -ung → 当别人的监护人 → 替人做主",
+  "fam": [
+   "bevormunden",
+   "der Vormund",
+   "die Vormundschaft",
+   "mündig",
+   "der Mündel"
+  ],
+  "ety": "Vormund < 中古高地德语 vormunde < 古高地德语 foramundo（保护人）；其中 munt 意为“保护、监护权”，与 Mund（嘴）不是同一个词。",
+  "cog": "古英语 mund（保护）",
+  "tip": "Vormund、mündig（成年的、有行为能力的）中的 -mund 都是“保护”义，与“嘴”无关。"
+ },
+ {
+  "w": "biographisch",
+  "pos": "adj",
+  "ipa": "bioˈɡʁaːfɪʃ",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "传记的，生平的",
+    "de": "die Biografie (eines Menschen) betreffend",
+    "ex": [
+     {
+      "de": "Der Roman enthält viele biographische Bezüge zum Leben des Autors.",
+      "zh": "这部小说中有许多与作者生平相关的内容。"
+     },
+     {
+      "de": "Bitte fügen Sie Ihrer Bewerbung einige biographische Angaben bei.",
+      "zh": "请在申请材料中附上一些个人履历信息。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "亦写作 biografisch（Duden 推荐拼法）",
+   "biographische Angaben / Daten — 个人履历资料",
+   "die Biographie / Biografie, -n — 传记"
+  ],
+  "root": "bio·graph·isch：bio-（希腊语 bíos 生命）+ -graph-（希腊语 gráphein 书写）+ -isch → 书写一生的",
+  "fam": [
+   "die Biografie",
+   "der Biograf",
+   "die Autobiografie",
+   "die Geografie",
+   "die Biologie"
+  ],
+  "ety": "由 Biographie 派生；Biographie 于 18 世纪借入，源自晚期希腊语 biographía（生平记述）。",
+  "cog": "英 biographical；法 biographique",
+  "tip": "ph/f 两种拼法均正确，但同一篇文章中应统一。"
+ },
+ {
+  "w": "blamieren",
+  "pos": "v",
+  "ipa": "blaˈmiːʁən",
+  "lvl": "B2",
+  "forms": "blamiert · blamierte · hat blamiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "sich blamieren：出丑，丢脸",
+    "de": "sich lächerlich machen, sich bloßstellen",
+    "ex": [
+     {
+      "de": "Ich habe mich vor allen Kollegen total blamiert.",
+      "zh": "我在所有同事面前丢尽了脸。"
+     },
+     {
+      "de": "Mit dieser Antwort hat sich der Minister bis auf die Knochen blamiert.",
+      "zh": "部长的这个回答让他颜面尽失。"
+     }
+    ]
+   },
+   {
+    "zh": "jmdn. blamieren：使某人出丑，让某人难堪",
+    "de": "jmdn. in eine peinliche Lage bringen",
+    "ex": [
+     {
+      "de": "Musst du mich immer vor meinen Freunden blamieren?",
+      "zh": "你非得每次都在我朋友面前让我难堪吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich vor jmdm. blamieren — 在某人面前出丑",
+   "sich bis auf die Knochen blamieren — （口）丢人丢到家",
+   "die Blamage [blaˈmaːʒə] — 出丑，丢人的事"
+  ],
+  "root": "blam·ier·en：法语 blâmer（指责）+ -ieren（外来动词后缀）",
+  "fam": [
+   "die Blamage",
+   "sich blamieren",
+   "blamabel"
+  ],
+  "ety": "17 世纪借自法语 blâmer（指责），源自晚期拉丁语 blasphemare（亵渎、诽谤）< 希腊语 blasphēmeîn；德语中词义转为“使出丑”。",
+  "cog": "英 blame；法 blâmer",
+  "tip": "假朋友：英语 blame 是“责怪”，德语 blamieren 是“出丑”；“责怪”德语用 jmdm. die Schuld geben / vorwerfen。"
+ },
+ {
+  "w": "Bläser",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Bläser",
+  "gs": "des Bläsers",
+  "ipa": "ˈblɛːzɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "管乐手，吹奏乐器演奏者",
+    "de": "Musiker, der ein Blasinstrument spielt",
+    "ex": [
+     {
+      "de": "Im zweiten Satz setzen die Bläser mit einem feierlichen Thema ein.",
+      "zh": "第二乐章中，管乐以庄严的主题进入。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Bläser（复数）— （乐团中的）管乐声部",
+   "die Holzbläser / Blechbläser — 木管／铜管乐手",
+   "阴性：die Bläserin, -nen"
+  ],
+  "root": "Bläs·er：blasen（吹）+ -er（施动者后缀，词干变音）→ 吹奏的人",
+  "fam": [
+   "blasen",
+   "das Blasinstrument",
+   "die Blasmusik",
+   "der Blechbläser"
+  ],
+  "ety": "blasen < 中古高地德语 blāsen < 古高地德语 blāsan。",
+  "cog": "英 blast（同源）；荷 blazen",
+  "tip": "Blasinstrument 是“管乐器”，不是“打击乐器”（Schlaginstrument）。"
+ },
+ {
+  "w": "bodenständig",
+  "pos": "adj",
+  "ipa": "ˈboːdn̩ˌʃtɛndɪç",
+  "lvl": "C1",
+  "forms": "bodenständiger · am bodenständigsten",
+  "senses": [
+   {
+    "zh": "朴实的，接地气的，脚踏实地的",
+    "de": "natürlich, unkompliziert, mit der Heimat verbunden",
+    "ex": [
+     {
+      "de": "Trotz seines Erfolgs ist der Fußballer bodenständig geblieben.",
+      "zh": "尽管功成名就，这位球员依然朴实低调。"
+     }
+    ]
+   },
+   {
+    "zh": "本土的，地道的（菜肴、手工艺等）",
+    "de": "in einer Gegend verwurzelt, einheimisch",
+    "ex": [
+     {
+      "de": "Das Gasthaus bietet bodenständige bayerische Küche.",
+      "zh": "这家餐馆供应地道的巴伐利亚家常菜。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bodenständige Küche — 地道家常菜",
+   "褒义词，形容人时常与 bescheiden, ehrlich 连用",
+   "die Bodenständigkeit — 朴实；扎根乡土"
+  ],
+  "root": "Boden·ständ·ig：Boden（土地、地面）+ ständig（站立的，来自 stehen）→ 牢牢站在土地上的",
+  "fam": [
+   "der Boden",
+   "stehen",
+   "ständig",
+   "selbstständig"
+  ],
+  "ety": "Boden < 中古高地德语 bodem < 古高地德语 bodam；ständig 由 Stand / stehen 派生。",
+  "cog": "英 bottom（与 Boden 同源）, stand",
+  "tip": "形容人时是褒义（不浮夸），并不等于“土气”。"
+ },
+ {
+  "w": "bombardieren",
+  "pos": "v",
+  "ipa": "bɔmbaʁˈdiːʁən",
+  "lvl": "B2–C1",
+  "forms": "bombardiert · bombardierte · hat bombardiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "轰炸，炮击",
+    "de": "mit Bomben oder Granaten beschießen",
+    "ex": [
+     {
+      "de": "Im Zweiten Weltkrieg wurde die Innenstadt fast vollständig bombardiert.",
+      "zh": "二战期间市中心几乎被完全炸毁。"
+     }
+    ]
+   },
+   {
+    "zh": "（喻）（以问题、邮件等）狂轰滥炸",
+    "de": "jmdn. mit etw. überhäufen",
+    "ex": [
+     {
+      "de": "Nach der Pressekonferenz wurde die Ministerin mit Fragen bombardiert.",
+      "zh": "新闻发布会后，部长被问题轮番轰炸。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. mit Fragen / E-Mails / Werbung bombardieren — 用问题／邮件／广告轰炸某人",
+   "die Bombardierung / das Bombardement [bɔmbaʁdəˈmãː] — 轰炸",
+   "无 ge- 前缀的过去分词：bombardiert"
+  ],
+  "root": "bombard·ier·en：Bombarde（射石炮）+ -ieren（外来动词后缀）→ 用炮轰击",
+  "fam": [
+   "die Bombe",
+   "die Bombardierung",
+   "das Bombardement",
+   "der Bomber"
+  ],
+  "ety": "借自法语 bombarder，由 bombarde（中世纪射石炮）派生；后者源自拉丁语 bombus（嗡嗡声、轰响）< 希腊语 bómbos。",
+  "cog": "英 bombard, bomb；法 bombarder",
+  "tip": "-ieren 动词完成时不加 ge-：hat bombardiert（不是 *gebombardiert）。"
+ },
+ {
+  "w": "Borste",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Borsten",
+  "gs": "der Borste",
+  "ipa": "ˈbɔʁstə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（猪等动物的）鬃毛，硬毛",
+    "de": "steifes, dickes Haar bestimmter Tiere",
+    "ex": [
+     {
+      "de": "Wildschweine haben ein dichtes Fell aus kräftigen Borsten.",
+      "zh": "野猪身上覆盖着浓密粗硬的鬃毛。"
+     }
+    ]
+   },
+   {
+    "zh": "（刷子的）刷毛",
+    "de": "Haar oder Kunststofffaser einer Bürste o. Ä.",
+    "ex": [
+     {
+      "de": "Zahnbürsten mit weichen Borsten schonen das Zahnfleisch.",
+      "zh": "软毛牙刷能保护牙龈。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "weiche / harte Borsten — 软毛／硬毛",
+   "borstig（形）— 有硬毛的；（喻）粗鲁的，脾气倔的",
+   "die Naturborste — 天然鬃毛（刷子）"
+  ],
+  "root": "Borste：单纯词",
+  "fam": [
+   "borstig",
+   "die Bürste",
+   "die Naturborste"
+  ],
+  "ety": "中古高地德语 borst(e) < 古高地德语 burst；一般认为 Bürste（刷子）亦由此派生。",
+  "cog": "英 bristle（同源）；荷 borstel",
+  "tip": "Borste（硬毛）与 Bürste（刷子）读音、意思都相近，注意区分。"
+ },
+ {
+  "w": "Brautpaar",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Brautpaare",
+  "gs": "des Brautpaar(e)s",
+  "ipa": "ˈbʁaʊ̯tˌpaːɐ̯",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "（婚礼上的）新人，新郎新娘",
+    "de": "Braut und Bräutigam (am Hochzeitstag)",
+    "ex": [
+     {
+      "de": "Die Gäste bewarfen das Brautpaar vor der Kirche mit Reis.",
+      "zh": "宾客们在教堂前向新人撒米。"
+     },
+     {
+      "de": "Das Brautpaar eröffnete den Tanz mit einem Walzer.",
+      "zh": "新人以一支华尔兹拉开舞会序幕。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "dem Brautpaar gratulieren — 向新人道贺",
+   "die Braut — 新娘；der Bräutigam — 新郎",
+   "婚礼后称 das Ehepaar（夫妻）"
+  ],
+  "root": "Braut·paar：Braut（新娘）+ Paar（一对）→ 新娘（与新郎）这一对",
+  "fam": [
+   "die Braut",
+   "der Bräutigam",
+   "das Paar",
+   "das Ehepaar",
+   "das Brautkleid"
+  ],
+  "ety": "Braut < 中古高地德语 brūt < 古高地德语 brūt；Paar 于中古高地德语时期（pār）借自拉丁语 pār（相等的、一对）。",
+  "cog": "英 bride, pair；荷 bruid, paar",
+  "tip": "Brautpaar 指婚礼当天或婚礼前后的新人，不用于结婚多年的夫妻。"
+ },
+ {
+  "w": "brisant",
+  "pos": "adj",
+  "ipa": "bʁiˈzant",
+  "lvl": "C1",
+  "forms": "brisanter · am brisantesten",
+  "senses": [
+   {
+    "zh": "（话题、问题）敏感的，一触即发的，具有爆炸性的",
+    "de": "hochaktuell und konfliktträchtig, heikel",
+    "ex": [
+     {
+      "de": "Die Studie enthält brisante Informationen über die Zustände in den Heimen.",
+      "zh": "这项研究包含有关养老院状况的敏感信息。"
+     },
+     {
+      "de": "Das Thema ist politisch äußerst brisant.",
+      "zh": "这个话题在政治上极为敏感。"
+     }
+    ]
+   },
+   {
+    "zh": "（炸药）爆炸力强的，猛烈的",
+    "de": "(Technik) mit großer Sprengkraft",
+    "ex": [
+     {
+      "de": "Der Sprengstoff ist besonders brisant und schwer zu handhaben.",
+      "zh": "这种炸药威力极大，难以处理。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein brisantes Thema / Dokument — 敏感话题／文件",
+   "die Brisanz — 爆炸性，敏感性：an Brisanz gewinnen 变得更加敏感",
+   "近义：heikel（棘手的），explosiv"
+  ],
+  "root": "bris·ant：法语 briser（打碎）的现在分词 brisant → 能炸碎的 → 爆炸性的",
+  "fam": [
+   "die Brisanz"
+  ],
+  "ety": "19 世纪作为爆破术语借自法语 brisant（击碎的），为 briser（打碎）的现在分词；后转用于“敏感的（话题）”。",
+  "cog": "英 debris（同出于 briser）；法 briser",
+  "tip": "brisant 不是“明亮的”（brilliant = brillant）；新闻语言中高频。"
+ },
+ {
+  "w": "Bundesanwaltschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Bundesanwaltschaft",
+  "ipa": "ˈbʊndəsˌʔanvaltʃaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（德国）联邦检察院；（瑞士）联邦检察署",
+    "de": "Staatsanwaltschaft des Bundes (in Deutschland beim Bundesgerichtshof)",
+    "ex": [
+     {
+      "de": "Wegen des Terrorverdachts hat die Bundesanwaltschaft die Ermittlungen übernommen.",
+      "zh": "由于涉嫌恐怖主义，联邦检察院接手了调查。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Bundesanwaltschaft ermittelt / erhebt Anklage — 联邦检察院展开调查／提起公诉",
+   "der Generalbundesanwalt — 联邦总检察长（领导德国联邦检察院）",
+   "德国负责恐怖主义、间谍、危害国家安全等案件；普通案件由各州 Staatsanwaltschaft 负责"
+  ],
+  "root": "Bund·es·anwalt·schaft：Bund（联邦）+ -es- + Anwalt（律师、代理人）+ -schaft（机构）→ 联邦的检察机构",
+  "fam": [
+   "der Bund",
+   "der Anwalt",
+   "die Staatsanwaltschaft",
+   "der Bundesanwalt",
+   "der Rechtsanwalt"
+  ],
+  "ety": "Bund 与 binden 同族；Anwalt < 中古高地德语 anwalte < 古高地德语 anawalto（掌权者、代理人），由 walten（支配）派生。",
+  "cog": "英 bind, bond（与 Bund 同源）；英 wield（与 walten 同源）",
+  "tip": "Anwalt 一般指律师，但 Staatsanwalt / Bundesanwalt 指检察官。"
+ },
+ {
+  "w": "Buslinie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Buslinien",
+  "gs": "der Buslinie",
+  "ipa": "ˈbʊsˌliːni̯ə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "公交线路",
+    "de": "regelmäßige Verbindung, die von Bussen befahren wird",
+    "ex": [
+     {
+      "de": "Die Buslinie 100 fährt an vielen Sehenswürdigkeiten vorbei.",
+      "zh": "100 路公交车途经许多景点。"
+     },
+     {
+      "de": "Seit letztem Jahr gibt es eine neue Buslinie zum Flughafen.",
+      "zh": "从去年起有了一条通往机场的新公交线路。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit der Buslinie 5 fahren — 坐 5 路公交",
+   "口语常说 die Fünf / der Bus Nummer fünf",
+   "die Linie 也可单用：Nehmen Sie die Linie 7."
+  ],
+  "root": "Bus·linie：Bus（公交车）+ Linie（线路）",
+  "fam": [
+   "der Bus",
+   "die Linie",
+   "die Bushaltestelle",
+   "die Straßenbahnlinie"
+  ],
+  "ety": "透明复合词：Bus 是 Omnibus 的缩短，后者源自法语 (voiture) omnibus，取拉丁语 omnibus“为所有人”；Linie 借自拉丁语 līnea（线）。",
+  "cog": "英 bus, line；法 ligne",
+  "tip": "Linie 读三音节 [ˈliːni̯ə]，复数 Linien [ˈliːni̯ən]。"
+ },
+ {
+  "w": "bähen",
+  "pos": "v",
+  "ipa": "ˈbɛːən",
+  "lvl": "C2",
+  "forms": "bäht · bähte · hat gebäht",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（南德、奥地利、瑞士）微烤，烤（面包片）",
+    "de": "(landschaftlich, bes. süddeutsch, österreichisch, schweizerisch) Brot leicht rösten",
+    "ex": [
+     {
+      "de": "Zur Suppe gab es gebähtes Brot.",
+      "zh": "汤配烤面包片。"
+     }
+    ]
+   },
+   {
+    "zh": "（医，旧）以湿热敷",
+    "de": "(veraltet) mit feuchter Wärme behandeln",
+    "ex": [
+     {
+      "de": "Früher bähte man entzündete Stellen mit warmen Umschlägen.",
+      "zh": "过去人们用热敷布热敷发炎部位。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Brot / Semmeln bähen — 烤面包片/小面包",
+   "地区性、少见词；标准德语多用 rösten / toasten",
+   "die Bähung — （旧）热敷"
+  ],
+  "root": "bäh·en：单纯动词词干 bäh-（加热）+ -en",
+  "fam": [
+   "die Bähung",
+   "rösten",
+   "toasten"
+  ],
+  "ety": "中古高地德语 bæjen，古高地德语 bājan（加热、温暖）；更早的来源不详。",
+  "cog": "无常见英语同源词",
+  "tip": "非常地区化的词，理解即可，不必主动使用。"
+ },
+ {
+  "w": "bündig",
+  "pos": "adj",
+  "ipa": "ˈbʏndɪç",
+  "lvl": "C1",
+  "forms": "bündiger · am bündigsten",
+  "senses": [
+   {
+    "zh": "kurz und bündig：简明扼要，干脆利落",
+    "de": "knapp und treffend",
+    "ex": [
+     {
+      "de": "Die Antwort der Behörde war kurz und bündig: Der Antrag wird abgelehnt.",
+      "zh": "主管部门的回复简短干脆：申请被驳回。"
+     }
+    ]
+   },
+   {
+    "zh": "（建筑、技术）齐平的，平齐的",
+    "de": "(Bauwesen, Technik) in gleicher Ebene, ohne Absatz",
+    "ex": [
+     {
+      "de": "Die Steckdose sollte bündig mit der Wand abschließen.",
+      "zh": "插座应与墙面齐平。"
+     }
+    ]
+   },
+   {
+    "zh": "（雅）令人信服的，确凿的",
+    "de": "(gehoben) schlüssig, überzeugend",
+    "ex": [
+     {
+      "de": "Einen bündigen Beweis für seine These blieb er schuldig.",
+      "zh": "他没能为自己的论点提供确凿的证据。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "kurz und bündig — 简明扼要（最常见的固定搭配）",
+   "bündig abschließen mit etw.(D) — 与……齐平",
+   "linksbündig / rechtsbündig — 左对齐／右对齐（排版）"
+  ],
+  "root": "bünd·ig：Bund（捆、束，来自 binden）+ -ig（形容词后缀）→ 捆得紧的 → 紧凑的、严丝合缝的",
+  "fam": [
+   "der Bund",
+   "binden",
+   "linksbündig",
+   "verbindlich",
+   "das Bündel"
+  ],
+  "ety": "由 Bund 派生，与 binden（捆绑）同族；原义“有约束力的”，后转为“紧凑、齐整”。",
+  "cog": "英 bind, bond",
+  "tip": "Word 中“左对齐”即 linksbündig，“两端对齐”为 Blocksatz。"
+ },
+ {
+  "w": "aufbürden",
+  "pos": "v",
+  "ipa": "ˈaʊ̯fˌbʏʁdn̩",
+  "lvl": "C1",
+  "forms": "bürdet auf · bürdete auf · hat aufgebürdet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "把（负担、责任、费用）强加给（某人）",
+    "de": "jmdm. etw. Schweres, eine Last auferlegen",
+    "ex": [
+     {
+      "de": "Die Reform bürdet den Kommunen zusätzliche Kosten auf.",
+      "zh": "这项改革给地方政府增加了额外的开支负担。"
+     },
+     {
+      "de": "Man sollte Kindern nicht die Probleme der Erwachsenen aufbürden.",
+      "zh": "不应该把大人的问题压到孩子身上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm.(D) etw.(A) aufbürden — 把某事强加给某人",
+   "sich(D) etw. aufbürden — 自己揽下（重担）",
+   "雅语中也可单用 bürden：jmdm. etw. bürden（少见）"
+  ],
+  "root": "auf·bürd·en：auf-（加到……上）+ Bürde（重负）+ -en → 把重负压到上面",
+  "fam": [
+   "die Bürde",
+   "auferlegen",
+   "die Last",
+   "belasten"
+  ],
+  "ety": "Bürde < 中古高地德语 bürde < 古高地德语 burdī（负担），与古高地德语 beran（携带）同族。",
+  "cog": "英 burden, bear",
+  "tip": "比 auferlegen 更带“不公平地压给别人”的色彩，多见于报刊。"
+ },
+ {
+  "w": "Chanson",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Chansons",
+  "gs": "des Chansons",
+  "ipa": "ʃãˈsõː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "法国香颂，（法语）艺术歌曲",
+    "de": "(französisches) Lied, oft mit poetischem oder gesellschaftskritischem Text",
+    "ex": [
+     {
+      "de": "Édith Piaf ist wohl die berühmteste Sängerin französischer Chansons.",
+      "zh": "伊迪丝·琵雅芙大概是最著名的法国香颂女歌手。"
+     }
+    ]
+   },
+   {
+    "zh": "（歌舞表演中的）讽刺小曲，卡巴莱歌曲",
+    "de": "Kabarettlied mit satirischem Inhalt",
+    "ex": [
+     {
+      "de": "In den Zwanzigerjahren waren Berliner Chansons über Politik und Liebe sehr beliebt.",
+      "zh": "二十年代，以政治和爱情为题材的柏林卡巴莱歌曲风靡一时。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Chanson singen / vortragen — 演唱一首香颂",
+   "der Chansonnier [ʃãsɔˈni̯eː] / die Chansonnière — 香颂歌手",
+   "复数：die Chansons"
+  ],
+  "root": "Chanson：法语借词，来自 chanter（唱）",
+  "fam": [
+   "der Chansonnier",
+   "die Chansonnière",
+   "die Kantate"
+  ],
+  "ety": "借自法语 chanson（歌曲），源自拉丁语 cantio（歌唱），由 canere（唱）派生。",
+  "cog": "英 chant；法 chanson；拉 cantio",
+  "tip": "注意性别：das Chanson（不是 die）。"
+ },
+ {
+  "w": "Chaot",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Chaoten",
+  "gs": "des Chaoten",
+  "ipa": "kaˈoːt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（口）做事乱七八糟的人，邋遢马虎的人",
+    "de": "(umgangssprachlich) unordentlicher, chaotischer Mensch",
+    "ex": [
+     {
+      "de": "Mein Mitbewohner ist ein totaler Chaot, er findet nie seine Schlüssel.",
+      "zh": "我室友是个十足的马大哈，老是找不到钥匙。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬）闹事者，（政治示威中的）暴力捣乱分子",
+    "de": "(abwertend) jmd., der durch Gewalt Unruhe stiftet",
+    "ex": [
+     {
+      "de": "Am Rande der Demonstration lieferten sich einige Chaoten Straßenschlachten mit der Polizei.",
+      "zh": "示威外围，一些闹事者与警察发生了街头冲突。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化名词：des/dem/den Chaoten；阴性 die Chaotin, -nen",
+   "chaotisch（形）— 混乱的",
+   "das Chaos [ˈkaːɔs] — 混乱"
+  ],
+  "root": "Chao·t：由 Chaos（混乱）构成的人称名词",
+  "fam": [
+   "das Chaos",
+   "chaotisch"
+  ],
+  "ety": "20 世纪由 Chaos 派生；Chaos 经拉丁语借自希腊语 cháos（虚空、混沌）。",
+  "cog": "英 chaos；希 chaos",
+  "tip": "Chaot 读 [kaˈoːt]，首字母 Ch 读 [k]；用于朋友间多半是玩笑。"
+ },
+ {
+  "w": "Coupé",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Coupés",
+  "gs": "des Coupés",
+  "ipa": "kuˈpeː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "双门轿跑车",
+    "de": "sportlicher Pkw mit zwei Türen und meist flachem Dach",
+    "ex": [
+     {
+      "de": "Das neue Coupé ist eher ein Liebhaberstück als ein Familienauto.",
+      "zh": "这款新双门轿跑与其说是家用车，不如说是发烧友的收藏。"
+     }
+    ]
+   },
+   {
+    "zh": "（奥地利，旧）火车包厢",
+    "de": "(österreichisch, sonst veraltet) Abteil im Eisenbahnwagen",
+    "ex": [
+     {
+      "de": "Wir hatten ein Coupé für uns allein.",
+      "zh": "我们独占了一个包厢。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "亦写作 Coupe（无重音符）",
+   "das Cabrio — 敞篷车；die Limousine — 三厢轿车",
+   "词形与读音按法语：[kuˈpeː]"
+  ],
+  "root": "Coupé：法语 couper（切）的过去分词 → “截短的（马车）”",
+  "fam": [
+   "das Cabrio",
+   "die Limousine"
+  ],
+  "ety": "借自法语 coupé，原为 carrosse coupé（截短的四轮马车），couper 意为“切、截”；后转指双门小轿车。",
+  "cog": "英 coupé / coupe；法 couper",
+  "tip": "中性名词：das Coupé；不要与 der Coup（突袭、妙招）混淆。"
+ },
+ {
+  "w": "Demografie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Demografien",
+  "gs": "der Demografie",
+  "ipa": "demoɡʁaˈfiː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "人口学，人口统计学",
+    "de": "Wissenschaft von der Bevölkerungsentwicklung",
+    "ex": [
+     {
+      "de": "Sie forscht an der Universität im Bereich Demografie.",
+      "zh": "她在大学从事人口学研究。"
+     }
+    ]
+   },
+   {
+    "zh": "人口结构，人口状况",
+    "de": "Bevölkerungsstruktur und -entwicklung (eines Landes)",
+    "ex": [
+     {
+      "de": "Die Demografie Japans stellt das Rentensystem vor große Probleme.",
+      "zh": "日本的人口结构给养老金体系带来了巨大难题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "亦写作 Demographie",
+   "demografisch（形）：der demografische Wandel — 人口结构变化（德国政治高频词）",
+   "复数 Demografien 少用，读 [demoɡʁaˈfiːən]"
+  ],
+  "root": "Demo·graf·ie：demo-（希腊语 dēmos 民众）+ -graf-（gráphein 书写、描述）+ -ie → 对人口的描述",
+  "fam": [
+   "demografisch",
+   "die Demokratie",
+   "die Geografie",
+   "die Biografie"
+  ],
+  "ety": "19 世纪中叶经法语 démographie 传入，由希腊语 dēmos（人民）与 -graphía（书写、描述）构成的新词。",
+  "cog": "英 demography；法 démographie",
+  "tip": "重音在最后：Demogra-FIE；der demografische Wandel 是考试与新闻中的必会表达。"
+ },
+ {
+  "w": "digitalisieren",
+  "pos": "v",
+  "ipa": "diɡitaliˈziːʁən",
+  "lvl": "B2",
+  "forms": "digitalisiert · digitalisierte · hat digitalisiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（把资料）数字化，电子化",
+    "de": "analoge Daten in digitale umwandeln",
+    "ex": [
+     {
+      "de": "Die Bibliothek digitalisiert ihre historischen Handschriften.",
+      "zh": "图书馆正在将馆藏古代手稿数字化。"
+     },
+     {
+      "de": "Alte Fotos lassen sich mit einem Scanner leicht digitalisieren.",
+      "zh": "老照片用扫描仪就能轻松数字化。"
+     }
+    ]
+   },
+   {
+    "zh": "（使企业、行政等）数字化转型",
+    "de": "Abläufe auf digitale Technik umstellen",
+    "ex": [
+     {
+      "de": "Die Verwaltung soll bis 2030 vollständig digitalisiert werden.",
+      "zh": "政府管理应在 2030 年前全面实现数字化。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Digitalisierung — 数字化（德国政治、经济高频词）",
+   "Akten / Prozesse / Schulen digitalisieren — 将档案／流程／学校数字化",
+   "无 ge- 的过去分词：digitalisiert"
+  ],
+  "root": "digital·isier·en：digital（数字的）+ -isieren（使……化）→ 使数字化",
+  "fam": [
+   "digital",
+   "die Digitalisierung",
+   "das Digitalfoto",
+   "analog"
+  ],
+  "ety": "由 digital 派生；digital 经英语 digital 借入，源自拉丁语 digitālis（手指的），由 digitus（手指）派生，因“用手指数数”而引申为“数字的”。",
+  "cog": "英 digitize, digit；拉 digitus",
+  "tip": "Digitalisierung 在德国常指整个社会的数字化转型，不只是“扫描文件”。"
+ }
+]

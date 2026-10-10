@@ -9,3 +9,5 @@ When fully done: send_message to upload thread session cse_01MF6dx24diNXdNx75UWJ
 2026-10-04 06:03 UTC: user said "做到150" (cmsg_01FG35ZLhWUaSCWukQturg1rDgEtjftMfRerFwWUYKv2ME). Running 121–135 (121–129 resume mode). Launch up to 150 only, then rebuild/publish and wait for user. stop.txt holds the limit.
 
 2026-10-04 06:30 UTC: user said 做到180. Launched 151–165; roll to 180 then rebuild/publish and wait.
+
+2026-10-10 15:33 UTC: user said 扩充词汇到20000 (cmsg_01FG35ZLhWUaSCWukQturg1r1DwQaL3WtS2fko7ciqHzUe). From 14162: 281 (resume, tmp/281_1.json), queue 282–409 (320+k = cands2[18660+k*60:+60]). ~51 entries/batch → ~115 batches. Stop launching once build count >= 20000. Full JSON will be ~23MB: under Cloudflare's 25MiB/file, web split into 3 parts.

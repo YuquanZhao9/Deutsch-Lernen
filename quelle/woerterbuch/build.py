@@ -41,7 +41,7 @@ print('offline html', len(full.encode())//1024, 'KB')
 # web/: split copy for the artifact (each published file must stay under 16MB)
 os.makedirs('web', exist_ok=True)
 for f in glob.glob('web/wortwurzel*.json'): os.remove(f)
-N = 2 if len(json.dumps(dic, ensure_ascii=False).encode()) > 9_000_000 else 1
+N = max(1, -(-len(json.dumps(dic, ensure_ascii=False).encode()) // 9_000_000))  # ~9MB per part, well under the 16MB per-file limit
 k = -(-len(entries) // N)
 parts = []
 for i in range(N):
