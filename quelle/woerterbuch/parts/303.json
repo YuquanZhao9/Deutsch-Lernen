@@ -1,0 +1,1792 @@
+[
+ {
+  "w": "Datenträger",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Datenträger",
+  "gs": "des Datenträgers",
+  "ipa": "ˈdaːtn̩ˌtʁɛːɡɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "数据载体，存储介质（硬盘、U盘、光盘等）",
+    "de": "Medium, auf dem Daten gespeichert werden (Festplatte, USB-Stick, DVD usw.)",
+    "ex": [
+     {
+      "de": "Vertrauliche Unterlagen dürfen nicht auf privaten Datenträgern gespeichert werden.",
+      "zh": "机密文件不得存储在私人存储介质上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Daten auf einem externen Datenträger sichern — 把数据备份到外部存储介质上",
+   "ein beschädigter / verschlüsselter Datenträger — 损坏的/加密的存储介质",
+   "Datenträger vernichten / formatieren — 销毁/格式化存储介质"
+  ],
+  "root": "Daten（数据）+ Träger（承载者，tragen 的施事名词）→“承载数据的东西”",
+  "fam": [
+   "Daten",
+   "Datei",
+   "tragen",
+   "Träger",
+   "Datenbank"
+  ],
+  "ety": "Daten 为 Datum 的复数，借自拉丁语 datum（“给定之物”，dare 给 的过去分词）；tragen < 中古高地德语 tragen < 古高地德语 tragan < 原始日耳曼语 *draganą。",
+  "cog": "英 data, drag/draw（与 tragen 同源）",
+  "tip": "Datenträger 是上位词，日常多直接说 Festplatte、USB-Stick；法律、IT 安全文本中常用 Datenträger。"
+ },
+ {
+  "w": "dazugeben",
+  "pos": "v",
+  "ipa": "daˈt͡suːˌɡeːbn̩",
+  "lvl": "B1",
+  "forms": "gibt dazu · gab dazu · hat dazugegeben",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（烹饪）加入，添加",
+    "de": "(beim Kochen) zusätzlich hineingeben",
+    "ex": [
+     {
+      "de": "Zum Schluss die gehackte Petersilie dazugeben und kurz umrühren.",
+      "zh": "最后加入切碎的欧芹，稍微搅拌一下。"
+     }
+    ]
+   },
+   {
+    "zh": "另外给，额外添上",
+    "de": "zusätzlich geben",
+    "ex": [
+     {
+      "de": "Wenn du zehn Euro gibst, gebe ich den Rest dazu.",
+      "zh": "你出十欧元，剩下的我来补上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) (zu etw.(D)) dazugeben — 把某物加到……里",
+   "nach Belieben Salz dazugeben — 依口味加盐（菜谱常用）",
+   "近义：hinzugeben, hinzufügen（较书面）"
+  ],
+  "root": "da·zu·geben：dazu（向此、此外）+ geben（给）→“额外给到这里” → 添加",
+  "fam": [
+   "geben",
+   "dazukommen",
+   "dazugehören",
+   "Zugabe",
+   "hinzufügen"
+  ],
+  "ety": "geben < 中古高地德语 geben < 古高地德语 geban < 原始日耳曼语 *gebaną。",
+  "cog": "英 give",
+  "tip": "可分动词，变位时 dazu 放句末：Geben Sie die Eier dazu.；菜谱里常用不定式作命令：Die Eier dazugeben."
+ },
+ {
+  "w": "Dekadenz",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Dekadenz",
+  "ipa": "dekaˈdɛnt͡s",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "颓废，堕落；（文化、道德的）衰落",
+    "de": "kultureller oder moralischer Verfall; übersteigerter, verfeinerter Lebensgenuss",
+    "ex": [
+     {
+      "de": "Kritiker sahen in dem Luxusleben der Elite ein Zeichen römischer Dekadenz.",
+      "zh": "批评者认为精英阶层的奢靡生活是罗马式颓废的标志。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Zeichen / Symbol der Dekadenz — 颓废的标志",
+   "die Dekadenz der Spätantike / des Fin de Siècle — 古代晚期/世纪末的颓废",
+   "形容词：dekadent（颓废的、奢靡的）"
+  ],
+  "root": "拉丁 de-（向下）+ cadere（落下）+ -enz（名词后缀）→“往下落” → 衰落、颓废",
+  "fam": [
+   "dekadent",
+   "Kadenz",
+   "Kasus",
+   "Zufall"
+  ],
+  "ety": "18 世纪借自法语 décadence < 中古拉丁语 decadentia < de-（向下）+ cadere（落下）。",
+  "cog": "英 decadence, decay；法 décadence",
+  "tip": "日常口语中常带讽刺、夸张：Champagner zum Frühstück – das ist ja pure Dekadenz!（早饭喝香槟，真是奢靡！）"
+ },
+ {
+  "w": "drängeln",
+  "pos": "v",
+  "ipa": "ˈdʁɛŋl̩n",
+  "lvl": "B2",
+  "forms": "drängelt · drängelte · hat gedrängelt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（在人群中）推搡，挤；插队",
+    "de": "sich in einer Menge rücksichtslos nach vorn schieben",
+    "ex": [
+     {
+      "de": "Bitte nicht drängeln, es kommt jeder an die Reihe!",
+      "zh": "请别挤，每个人都会轮到的！"
+     },
+     {
+      "de": "Er hat sich an der Kasse nach vorne gedrängelt.",
+      "zh": "他在收银台前挤到了前面去。"
+     }
+    ]
+   },
+   {
+    "zh": "（开车）紧跟前车逼迫让道",
+    "de": "im Straßenverkehr zu dicht auffahren, um den Vordermann zu bedrängen",
+    "ex": [
+     {
+      "de": "Wer auf der Autobahn drängelt, riskiert ein Bußgeld und Punkte in Flensburg.",
+      "zh": "在高速上紧逼前车的人会被罚款并在弗伦斯堡记分。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）催促，缠着要求",
+    "de": "(ugs.) ungeduldig zu etw. drängen",
+    "ex": [
+     {
+      "de": "Die Kinder drängelten, endlich ins Schwimmbad zu fahren.",
+      "zh": "孩子们一个劲儿地催着去游泳池。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich nach vorne / durch die Menge drängeln — 挤到前面/挤过人群（反身）",
+   "jmdn. drängeln — 催促某人",
+   "der Drängler — 开车紧逼前车的人；Drängelei — 推挤"
+  ],
+  "root": "dräng·el·n：drängen（挤、催）+ -eln（反复/小称动词后缀）→“不断地挤” → 推搡、催个不停",
+  "fam": [
+   "drängen",
+   "Drang",
+   "dringen",
+   "Gedränge",
+   "Drängler"
+  ],
+  "ety": "drängen 的反复式。drängen < 中古高地德语 drengen < 古高地德语 drengen，为 dringen（穿入、挤进）的使役动词。",
+  "cog": "英 throng（与 dringen 同源）",
+  "tip": "drängeln 比 drängen 更口语、更带贬义；正式语境说 drängen（Die Zeit drängt.）。"
+ },
+ {
+  "w": "Duschgel",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Duschgele / Duschgels",
+  "gs": "des Duschgels",
+  "ipa": "ˈduːʃˌɡeːl",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "沐浴露",
+    "de": "flüssiges Reinigungsmittel zum Duschen",
+    "ex": [
+     {
+      "de": "Im Hotelzimmer lagen Duschgel und Shampoo bereit.",
+      "zh": "酒店房间里备好了沐浴露和洗发水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Flasche / Tube Duschgel — 一瓶/一管沐浴露",
+   "Duschgel für empfindliche Haut — 敏感肌用沐浴露",
+   "近义：Duschbad；固体的叫 Seife"
+  ],
+  "root": "Dusch(e)（淋浴）+ Gel（凝胶）→“淋浴用的凝胶”",
+  "fam": [
+   "Dusche",
+   "duschen",
+   "Gel",
+   "Haargel"
+  ],
+  "ety": "Dusche 借自法语 douche < 意大利语 doccia（水管、喷淋）；Gel 为 Gelatine 的缩略，后者借自意大利语 gelatina，源自拉丁语 gelare（冻结）。",
+  "cog": "英 shower gel；法 gel douche",
+  "tip": "注意中性名词：das Duschgel（受 das Gel 决定），不是 die。"
+ },
+ {
+  "w": "duzen",
+  "pos": "v",
+  "ipa": "ˈduːt͡sn̩",
+  "lvl": "B1",
+  "forms": "duzt · duzte · hat geduzt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "以 du（你）相称",
+    "de": "jmdn. mit „du“ anreden",
+    "ex": [
+     {
+      "de": "In vielen Start-ups duzen sich alle, auch den Chef.",
+      "zh": "在许多初创公司里，大家都以“你”相称，对老板也一样。"
+     },
+     {
+      "de": "Darf ich dich duzen?",
+      "zh": "我可以用“你”称呼你吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. duzen — 用 du 称呼某人；sich (gegenseitig) duzen — 互相用 du 称呼",
+   "jmdm. das Du anbieten — 提议对方改用 du 相称",
+   "反义：siezen（用 Sie 称呼）"
+  ],
+  "root": "du（你）+ -zen（由代词构成动词的后缀，同 siezen）→“说 du”",
+  "fam": [
+   "du",
+   "siezen",
+   "Duzfreund",
+   "das Du"
+  ],
+  "ety": "源自代词 du（中古高地德语 duzen）；du < 古高地德语 du/thū < 原始日耳曼语 *þū。",
+  "cog": "英 thou；法 tutoyer（意义对应）",
+  "tip": "从 Sie 改为 du 一般由年长者或职位高者提议；擅自 duzen 陌生成年人会被视为失礼。"
+ },
+ {
+  "w": "Eckstein",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Ecksteine",
+  "gs": "des Ecksteins / Ecksteines",
+  "ipa": "ˈɛkˌʃtaɪ̯n",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（建筑）墙角石，奠基石；喻：基石，支柱",
+    "de": "Stein an der Ecke eines Gebäudes; (übertr.) Grundpfeiler, wichtigste Grundlage",
+    "ex": [
+     {
+      "de": "Die Gewaltenteilung ist ein Eckstein jeder Demokratie.",
+      "zh": "三权分立是一切民主制度的基石。"
+     }
+    ]
+   },
+   {
+    "zh": "（扑克牌）方块",
+    "de": "Karo (Farbe im Kartenspiel)",
+    "ex": [
+     {
+      "de": "Er spielte Eckstein-Ass aus.",
+      "zh": "他打出了方块 A。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Eckstein der Gesellschaft / Politik — 社会/政策的基石",
+   "近义：Grundpfeiler, Eckpfeiler, Grundstein",
+   "《圣经》用语：der Stein, den die Bauleute verworfen haben, ist zum Eckstein geworden（匠人所弃的石头已成了房角的头块石头）"
+  ],
+  "root": "Eck(e)（角）+ Stein（石头）→“角上的石头” → 基石",
+  "fam": [
+   "Ecke",
+   "eckig",
+   "Eckpfeiler",
+   "Stein",
+   "Grundstein"
+  ],
+  "ety": "Ecke < 中古高地德语 ecke < 古高地德语 ecka（尖、刃）；Stein < 古高地德语 stein < 原始日耳曼语 *stainaz。",
+  "cog": "英 edge, stone；英 cornerstone（意义对应）",
+  "tip": "表示“基础、支柱”时，现代德语更常用 Eckpfeiler 或 Grundpfeiler；Eckstein 偏书面或宗教语境。"
+ },
+ {
+  "w": "Eigenregie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Eigenregie",
+  "ipa": "ˈaɪ̯ɡn̩ʁeˌʒiː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "自主，自行操办（不借助他人）",
+    "de": "eigene Leitung, Durchführung ohne fremde Hilfe",
+    "ex": [
+     {
+      "de": "Die Gemeinde hat das Schwimmbad in Eigenregie saniert.",
+      "zh": "市镇自行完成了游泳馆的翻修。"
+     },
+     {
+      "de": "Er produziert seine Filme komplett in Eigenregie.",
+      "zh": "他的电影完全是自己独立制作的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. in Eigenregie machen / durchführen / organisieren — 自行做/实施/组织某事（几乎只用于此搭配）",
+   "近义：selbstständig, auf eigene Faust, selbst"
+  ],
+  "root": "eigen（自己的）+ Regie（导演、管理）→“自己主导”",
+  "fam": [
+   "eigen",
+   "Regie",
+   "Regisseur",
+   "Eigeninitiative",
+   "Eigenverantwortung"
+  ],
+  "ety": "Regie 借自法语 régie（管理、经营），源自 régir（管理）< 拉丁语 regere（引导、统治）；eigen < 古高地德语 eigan。",
+  "cog": "法 régie；英 regime, own（与 eigen 同源）",
+  "tip": "Regie 读法语音 [ʁeˈʒiː]，注意 g 读 [ʒ]。"
+ },
+ {
+  "w": "Eigentümerin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Eigentümerinnen",
+  "gs": "der Eigentümerin",
+  "ipa": "ˈaɪ̯ɡn̩tyːməʁɪn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（女）所有人，业主，物主",
+    "de": "weibliche Person, der etw. rechtlich gehört",
+    "ex": [
+     {
+      "de": "Die Eigentümerin des Hauses will die Wohnungen modernisieren lassen.",
+      "zh": "这栋房子的女业主打算翻新公寓。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die rechtmäßige Eigentümerin — 合法所有人",
+   "Eigentümerin eines Grundstücks / Unternehmens — 地产/企业的所有人",
+   "阳性：der Eigentümer；集合：Eigentümergemeinschaft（业主共同体）"
+  ],
+  "root": "Eigentum（所有权）+ -er（施事后缀，带变音）+ -in（阴性后缀）→“拥有财产的女人”",
+  "fam": [
+   "Eigentümer",
+   "Eigentum",
+   "eigen",
+   "Besitzerin",
+   "Eigentumswohnung"
+  ],
+  "ety": "Eigentum < 中古高地德语 eigentuom，由 eigen（自己的；古高地德语 eigan）+ -tum 构成。",
+  "cog": "英 own（古英语 āgen）",
+  "tip": "法律上 Eigentümerin（所有人）≠ Besitzerin（占有人）：租客是 Besitzerin，房东才是 Eigentümerin；日常口语常混用。"
+ },
+ {
+  "w": "Eindringling",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Eindringlinge",
+  "gs": "des Eindringlings",
+  "ipa": "ˈaɪ̯nˌdʁɪŋlɪŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "闯入者，入侵者；不速之客",
+    "de": "jmd., der unbefugt irgendwo eindringt",
+    "ex": [
+     {
+      "de": "Die Alarmanlage meldete einen Eindringling im Lager.",
+      "zh": "警报系统显示仓库里有入侵者。"
+     },
+     {
+      "de": "In der eingeschworenen Gruppe fühlte sie sich wie ein Eindringling.",
+      "zh": "在那个抱团的小圈子里，她觉得自己像个外人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Eindringling abwehren / überwältigen — 抵御/制服入侵者",
+   "阴性：Eindringling 无专门阴性形式，女性也用 der Eindringling"
+  ],
+  "root": "ein（进入）+ dring(en)（挤、穿透）+ -ling（表人后缀，常带贬义）→“硬闯进来的人”",
+  "fam": [
+   "eindringen",
+   "dringen",
+   "dringend",
+   "Feigling",
+   "Flüchtling"
+  ],
+  "ety": "由 eindringen 加后缀 -ling 构成；dringen < 中古高地德语 dringen < 古高地德语 dringan。",
+  "cog": "英 intruder（意义对应）；英 throng（与 dringen 同源）",
+  "tip": "-ling 名词都是阳性：der Eindringling, der Feigling, der Lehrling。"
+ },
+ {
+  "w": "Eingangshalle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Eingangshallen",
+  "gs": "der Eingangshalle",
+  "ipa": "ˈaɪ̯nɡaŋsˌhalə",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "入口大厅，门厅",
+    "de": "große Halle hinter dem Eingang eines Gebäudes",
+    "ex": [
+     {
+      "de": "Wir treffen uns um neun in der Eingangshalle des Hotels.",
+      "zh": "我们九点在酒店大堂见。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Eingangshalle warten — 在门厅等候",
+   "近义：Foyer, Lobby（酒店）, Vorhalle"
+  ],
+  "root": "Eingang（入口）+ -s-（连接音）+ Halle（大厅）",
+  "fam": [
+   "Eingang",
+   "eingehen",
+   "Halle",
+   "Turnhalle",
+   "Bahnhofshalle"
+  ],
+  "ety": "Halle < 中古高地德语 halle < 古高地德语 halla（有顶的大厅）；Eingang 源自 eingehen。",
+  "cog": "英 hall",
+  "tip": "不要写成 Eingangshall；剧院的门厅常说 Foyer，酒店常说 Lobby 或 Empfangshalle。"
+ },
+ {
+  "w": "Einkäufer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Einkäufer",
+  "gs": "des Einkäufers",
+  "ipa": "ˈaɪ̯nˌkɔɪ̯fɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "采购员，买手（企业职位）",
+    "de": "Angestellter, der für ein Unternehmen Waren einkauft",
+    "ex": [
+     {
+      "de": "Als Einkäufer verhandelt er täglich mit Lieferanten aus Asien.",
+      "zh": "作为采购员，他每天都要和亚洲供应商谈判。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "strategischer / technischer Einkäufer — 战略/技术采购",
+   "阴性：die Einkäuferin；部门：der Einkauf（采购部）",
+   "Er arbeitet im Einkauf. — 他在采购部工作。"
+  ],
+  "root": "ein（进来）+ kauf(en)（买）+ -er（施事后缀，带变音）→“负责买进的人”",
+  "fam": [
+   "einkaufen",
+   "Einkauf",
+   "kaufen",
+   "Verkäufer",
+   "Käufer"
+  ],
+  "ety": "kaufen < 古高地德语 koufen，一般认为是早期从拉丁语 caupo（小贩、酒馆老板）借入日耳曼语的。",
+  "cog": "英 cheap（古英语 cēap“交易”）, chapman",
+  "tip": "Einkäufer 指职业采购，普通“购物者”说 Käufer 或 Kunde；时尚业的“买手”也叫 Einkäufer。"
+ },
+ {
+  "w": "Einsatzgebiet",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Einsatzgebiete",
+  "gs": "des Einsatzgebiet(e)s",
+  "ipa": "ˈaɪ̯nzat͡sɡəˌbiːt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（军队、救援等的）执行任务地区，部署地区",
+    "de": "Gebiet, in dem Truppen, Helfer o. Ä. eingesetzt werden",
+    "ex": [
+     {
+      "de": "Die Soldaten kehrten nach sechs Monaten aus dem Einsatzgebiet zurück.",
+      "zh": "士兵们在执行任务地区待了六个月后返回。"
+     }
+    ]
+   },
+   {
+    "zh": "（设备、方法的）应用领域，适用范围",
+    "de": "Bereich, in dem etw. verwendet wird",
+    "ex": [
+     {
+      "de": "Das Einsatzgebiet dieser Sensoren reicht von der Medizin bis zur Raumfahrt.",
+      "zh": "这类传感器的应用范围从医学一直延伸到航天。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ins Einsatzgebiet verlegt werden — 被调往任务地区",
+   "vielseitige Einsatzgebiete — 用途广泛",
+   "近义：Anwendungsbereich, Einsatzbereich"
+  ],
+  "root": "Einsatz（投入、使用；任务）+ Gebiet（地区、领域）",
+  "fam": [
+   "Einsatz",
+   "einsetzen",
+   "Gebiet",
+   "Einsatzkräfte",
+   "Anwendungsgebiet"
+  ],
+  "ety": "Einsatz 源自 einsetzen；Gebiet < 中古高地德语 gebiet（命令、管辖范围），与 gebieten（命令）相关。",
+  "cog": "英 bid（与 bieten/gebieten 同源）",
+  "tip": "产品说明书里常见 Einsatzgebiete = 用途，不要直译成“战斗地区”。"
+ },
+ {
+  "w": "Eisdiele",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Eisdielen",
+  "gs": "der Eisdiele",
+  "ipa": "ˈaɪ̯sˌdiːlə",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "冰淇淋店",
+    "de": "kleines Café, in dem Speiseeis verkauft wird",
+    "ex": [
+     {
+      "de": "Im Sommer bildet sich vor der Eisdiele eine lange Schlange.",
+      "zh": "夏天冰淇淋店门前总排起长队。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in die Eisdiele gehen — 去冰淇淋店",
+   "eine Kugel Eis in der Eisdiele kaufen — 在冰淇淋店买一个冰淇淋球",
+   "近义：Eiscafé"
+  ],
+  "root": "Eis（冰；冰淇淋）+ Diele（原义木板、门厅 → 店堂）",
+  "fam": [
+   "Eis",
+   "Eiscafé",
+   "Eiskugel",
+   "Diele"
+  ],
+  "ety": "Eis < 古高地德语 īs < 原始日耳曼语 *īsa-；Diele < 古高地德语 dili（木板），后引申为“门厅、店堂”，此处指小店。",
+  "cog": "英 ice；英 deal（木板，与 Diele 同源）",
+  "tip": "德国的 Eisdiele 传统上多由意大利人经营，冬季常歇业。"
+ },
+ {
+  "w": "Eiswürfel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Eiswürfel",
+  "gs": "des Eiswürfels",
+  "ipa": "ˈaɪ̯sˌvʏʁfl̩",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "冰块",
+    "de": "kleiner Würfel aus gefrorenem Wasser zum Kühlen von Getränken",
+    "ex": [
+     {
+      "de": "Möchtest du deine Cola mit oder ohne Eiswürfel?",
+      "zh": "你的可乐要加冰还是不加冰？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Glas mit Eiswürfeln — 一杯加冰块的饮料",
+   "Eiswürfel in den Drink geben — 在饮料里放冰块",
+   "制冰盒：die Eiswürfelform"
+  ],
+  "root": "Eis（冰）+ Würfel（立方体、骰子）→“立方形的冰”",
+  "fam": [
+   "Eis",
+   "Würfel",
+   "würfeln",
+   "werfen"
+  ],
+  "ety": "Würfel < 古高地德语 wurfil，源自 werfen（投掷），原义“投掷之物”即骰子。",
+  "cog": "英 ice, ice cube",
+  "tip": "德国餐厅饮料默认通常不加冰，需要时说 mit Eis bitte。"
+ },
+ {
+  "w": "Empore",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Emporen",
+  "gs": "der Empore",
+  "ipa": "ɛmˈpoːʁə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（教堂、大厅内的）楼座，廊台",
+    "de": "erhöhter, galerieartiger Raum in Kirchen oder Sälen",
+    "ex": [
+     {
+      "de": "Die Orgel befindet sich auf der Empore über dem Haupteingang.",
+      "zh": "管风琴位于正门上方的楼座上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf der Empore sitzen / stehen — 坐/站在楼座上",
+   "die Orgelempore — 管风琴廊台"
+  ],
+  "root": "empor（向上）→“高处的（座位）”",
+  "fam": [
+   "empor",
+   "emporsteigen",
+   "Galerie"
+  ],
+  "ety": "一般认为是 Emporkirche（教堂中的高处楼座）的缩略；empor < 中古高地德语 enbor < 古高地德语 in bor（“到高处”）。",
+  "cog": "英 gallery, loft（意义对应）",
+  "tip": "重音在第二音节 em-PO-re；与形容词 empört（愤怒的）无关。"
+ },
+ {
+  "w": "entbehren",
+  "pos": "v",
+  "ipa": "ɛntˈbeːʁən",
+  "lvl": "C1",
+  "forms": "entbehrt · entbehrte · hat entbehrt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "没有……也行，缺少（某物）；舍弃",
+    "de": "auf etw. verzichten (können); etw. vermissen",
+    "ex": [
+     {
+      "de": "In den Kriegsjahren mussten die Menschen vieles entbehren.",
+      "zh": "战争年代人们不得不忍受许多匮乏。"
+     },
+     {
+      "de": "Er ist im Team nicht zu entbehren.",
+      "zh": "团队里少不了他。"
+     }
+    ]
+   },
+   {
+    "zh": "（书）缺乏，毫无（+第二格）",
+    "de": "(geh.) einer Sache ermangeln (mit Genitiv)",
+    "ex": [
+     {
+      "de": "Diese Vorwürfe entbehren jeder Grundlage.",
+      "zh": "这些指责毫无根据。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw./jmdn.(A) entbehren (können) — 能够没有某物/某人",
+   "einer Sache(G) entbehren — 缺乏某物（固定：jeder Grundlage entbehren 毫无依据）",
+   "entbehrlich（可有可无的）↔ unentbehrlich（不可或缺的）；Entbehrung（匮乏、困苦）"
+  ],
+  "root": "ent-（离开、去除）+ behren（< bern，“携带”）→“不带在身边” → 缺少、舍弃",
+  "fam": [
+   "entbehrlich",
+   "unentbehrlich",
+   "Entbehrung",
+   "gebären",
+   "Bahre"
+  ],
+  "ety": "中古高地德语 enbern < 古高地德语 inberan，由前缀 in-/ent- 与 beran（携带）构成，原义“不（在身边）带着”；现代形式中的 -t- 来自前缀 ent-。",
+  "cog": "英 bear（携带）",
+  "tip": "第二义项要求第二格，属高级书面语：Das entbehrt nicht einer gewissen Ironie.（这不无讽刺意味。）"
+ },
+ {
+  "w": "erhören",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈhøːʁən",
+  "lvl": "C1",
+  "forms": "erhört · erhörte · hat erhört",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（神、上级）应允（祈求、请求），听从",
+    "de": "eine Bitte, ein Gebet gewähren, erfüllen",
+    "ex": [
+     {
+      "de": "Ihre Gebete wurden erhört: Das Kind wurde gesund.",
+      "zh": "她的祈祷应验了：孩子康复了。"
+     },
+     {
+      "de": "Die Regierung hat die Forderungen der Bauern endlich erhört.",
+      "zh": "政府终于听取了农民的诉求。"
+     }
+    ]
+   },
+   {
+    "zh": "（旧/谑）接受（求爱者）",
+    "de": "(veraltet, scherzh.) einen Werbenden erhören",
+    "ex": [
+     {
+      "de": "Nach Monaten hat sie ihn endlich erhört.",
+      "zh": "几个月后她终于接受了他的追求。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Bitte / ein Gebet / ein Flehen erhören — 应允请求/祈祷/哀求",
+   "Gott erhört uns. — 上帝垂听我们。",
+   "注意：unerhört（闻所未闻的、骇人听闻的）"
+  ],
+  "root": "er-（达成、完成）+ hören（听）→“听进去并满足”",
+  "fam": [
+   "hören",
+   "unerhört",
+   "gehören",
+   "Gehör",
+   "anhören"
+  ],
+  "ety": "中古高地德语 erhœren < 古高地德语 irhōren；hören < 古高地德语 hōren < 原始日耳曼语 *hauzijaną。",
+  "cog": "英 hear",
+  "tip": "不是“听到”：听到是 hören；erhören 一定含“满足请求”之意，多见于宗教或修辞语境。"
+ },
+ {
+  "w": "erkaufen",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈkaʊ̯fn̩",
+  "lvl": "C1",
+  "forms": "erkauft · erkaufte · hat erkauft",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（以代价、牺牲）换取，用钱买到",
+    "de": "etw. durch Opfer oder Geld erlangen",
+    "ex": [
+     {
+      "de": "Der Sieg war teuer erkauft: Hunderte Soldaten fielen.",
+      "zh": "这场胜利代价惨重：数百名士兵阵亡。"
+     },
+     {
+      "de": "Das Wachstum wurde mit hohen Schulden erkauft.",
+      "zh": "增长是靠大量举债换来的。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬）收买",
+    "de": "(abwertend) durch Bestechung erlangen",
+    "ex": [
+     {
+      "de": "Er soll sich das Schweigen der Zeugen erkauft haben.",
+      "zh": "据说他花钱买通了证人保持沉默。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. teuer / mit etw.(D) erkaufen — 以高昂代价/以某物换取某事",
+   "sich(D) etw.(A) erkaufen — 用钱买到（好处、沉默、时间等）",
+   "Zeit erkaufen — 争取时间"
+  ],
+  "root": "er-（获得、达成）+ kaufen（买）→“买到手” → 以代价换取",
+  "fam": [
+   "kaufen",
+   "verkaufen",
+   "käuflich",
+   "bestechen"
+  ],
+  "ety": "kaufen < 古高地德语 koufen，一般认为源自早期借入的拉丁语 caupo（小贩、酒馆老板）。",
+  "cog": "英 cheap（古英语 cēap“交易”）",
+  "tip": "erkaufen 很少指普通购物，几乎总带“付出代价”的含义；普通购买用 kaufen。"
+ },
+ {
+  "w": "Ernüchterung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Ernüchterungen",
+  "gs": "der Ernüchterung",
+  "ipa": "ɛɐ̯ˈnʏçtəʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "幻想破灭，清醒过来；失望",
+    "de": "Enttäuschung nach anfänglicher Begeisterung; Rückkehr zur nüchternen Sicht",
+    "ex": [
+     {
+      "de": "Nach der anfänglichen Euphorie folgte schnell die Ernüchterung.",
+      "zh": "最初的狂喜之后，很快便是幻灭。"
+     }
+    ]
+   },
+   {
+    "zh": "醒酒",
+    "de": "das Nüchternwerden nach Alkoholgenuss",
+    "ex": [
+     {
+      "de": "Die kalte Luft trug zu seiner Ernüchterung bei.",
+      "zh": "冷空气帮他醒了酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Die Ernüchterung folgt / setzt ein. — 幻想随之破灭",
+   "eine große Ernüchterung erleben — 经历巨大的失望",
+   "动词：ernüchtern；形容词：ernüchternd（令人清醒的、令人失望的）ein ernüchterndes Ergebnis"
+  ],
+  "root": "er-（使变成）+ nüchtern（清醒的、空腹的）+ -ung → 使清醒 → 幻想破灭",
+  "fam": [
+   "nüchtern",
+   "ernüchtern",
+   "ernüchternd",
+   "Nüchternheit"
+  ],
+  "ety": "nüchtern < 中古高地德语 nüehtern < 古高地德语 nuohturn（空腹的），一般认为借自拉丁语 nocturnus（夜间的），可能与修道院清晨空腹做晨祷有关。",
+  "cog": "英 sobering（意义对应）；拉 nocturnus",
+  "tip": "新闻常用：Die Bilanz sorgt für Ernüchterung.（这份结算令人失望。）比 Enttäuschung 更强调“回到现实”。"
+ },
+ {
+  "w": "erstrahlen",
+  "pos": "v",
+  "ipa": "ɛɐ̯ˈʃtʁaːlən",
+  "lvl": "C1",
+  "forms": "erstrahlt · erstrahlte · ist erstrahlt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "闪耀，大放光彩；焕然一新",
+    "de": "hell aufleuchten; in vollem Glanz erscheinen",
+    "ex": [
+     {
+      "de": "Nach der Renovierung erstrahlt das Schloss in neuem Glanz.",
+      "zh": "翻修后，城堡焕发出新的光彩。"
+     },
+     {
+      "de": "Zur Weihnachtszeit erstrahlt die Innenstadt in festlichem Licht.",
+      "zh": "圣诞期间，市中心沐浴在节日灯光之中。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in neuem Glanz erstrahlen — 焕然一新（翻修、修复后的固定说法）",
+   "in hellem / buntem Licht erstrahlen — 闪耀着明亮/五彩的光"
+  ],
+  "root": "er-（开始、进入某状态）+ strahlen（放射光芒）→“亮起来、发出光芒”",
+  "fam": [
+   "strahlen",
+   "Strahl",
+   "Strahlung",
+   "ausstrahlen"
+  ],
+  "ety": "strahlen 源自 Strahl < 中古高地德语 strāle < 古高地德语 strāla（箭），光线被比作射出的箭。",
+  "cog": "古英语 strǣl（箭）",
+  "tip": "完成时多用 sein（ist erstrahlt），表示进入发光状态；书面、修辞色彩浓。"
+ },
+ {
+  "w": "Eurokrise",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Eurokrise",
+  "ipa": "ˈɔɪ̯ʁoˌkʁiːzə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "欧元危机（尤指 2010 年前后的欧元区债务危机）",
+    "de": "Krise der gemeinsamen europäischen Währung, bes. die Staatsschuldenkrise ab etwa 2010",
+    "ex": [
+     {
+      "de": "Während der Eurokrise mussten mehrere Länder Hilfskredite beantragen.",
+      "zh": "欧元危机期间，好几个国家不得不申请救助贷款。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Eurokrise bewältigen / überwinden — 应对/克服欧元危机",
+   "auf dem Höhepunkt der Eurokrise — 在欧元危机最严重时",
+   "近义：Euro-Schuldenkrise, Staatsschuldenkrise"
+  ],
+  "root": "Euro（欧元）+ Krise（危机）",
+  "fam": [
+   "Euro",
+   "Krise",
+   "Eurozone",
+   "Finanzkrise",
+   "krisenfest"
+  ],
+  "ety": "Krise 经法语 crise / 拉丁语 crisis 借自希腊语 krísis（判断、决定，转为“关键时刻”）；Euro 为 1995 年定名的货币名称。",
+  "cog": "英 euro crisis, crisis",
+  "tip": "Euro 读 [ˈɔɪ̯ʁo]，不读英语式 [ˈjʊəɹəʊ]。"
+ },
+ {
+  "w": "Fahrweise",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fahrweisen",
+  "gs": "der Fahrweise",
+  "ipa": "ˈfaːɐ̯ˌvaɪ̯zə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "驾驶方式，驾驶风格",
+    "de": "Art und Weise, wie jmd. ein Fahrzeug fährt",
+    "ex": [
+     {
+      "de": "Eine vorausschauende Fahrweise spart Sprit und Nerven.",
+      "zh": "预判式的驾驶方式既省油又省心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine sportliche / defensive / aggressive Fahrweise — 运动型/防御型/激进的驾驶风格",
+   "seine Fahrweise anpassen — 调整驾驶方式（适应路况）"
+  ],
+  "root": "Fahr(en)（驾驶）+ Weise（方式）→“驾驶的方式”",
+  "fam": [
+   "fahren",
+   "Weise",
+   "Denkweise",
+   "Arbeitsweise",
+   "Fahrer"
+  ],
+  "ety": "Weise < 古高地德语 wīsa（方式）；fahren < 古高地德语 faran（行进）。",
+  "cog": "英 -wise（如 likewise）, wise（古义“方式”）；英 fare（与 fahren 同源）",
+  "tip": "-weise 构成很多“方式”名词：Lebensweise, Sichtweise, Vorgehensweise，均为阴性。"
+ },
+ {
+  "w": "Faustregel",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Faustregeln",
+  "gs": "der Faustregel",
+  "ipa": "ˈfaʊ̯stˌʁeːɡl̩",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "经验法则，粗略的规则",
+    "de": "einfache, grobe Regel, die meist zutrifft",
+    "ex": [
+     {
+      "de": "Als Faustregel gilt: Die Miete sollte nicht mehr als ein Drittel des Einkommens betragen.",
+      "zh": "一般的经验法则是：房租不应超过收入的三分之一。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "als Faustregel gilt: … — 经验法则是……",
+   "eine einfache Faustregel — 一条简单的经验法则",
+   "近义：Daumenregel（较少）, Richtwert"
+  ],
+  "root": "Faust（拳头）+ Regel（规则）→“用拳头比划的规则” → 不精确但实用的规则",
+  "fam": [
+   "Faust",
+   "Regel",
+   "regeln",
+   "regelmäßig",
+   "auf eigene Faust"
+  ],
+  "ety": "Regel < 中古高地德语 regel < 古高地德语 regula，借自拉丁语 regula（尺、规则）；Faust < 古高地德语 fūst。Faustregel 的具体来历说法不一。",
+  "cog": "英 rule of thumb（意义对应）, fist（与 Faust 同源）, rule",
+  "tip": "英语说“拇指法则”，德语说“拳头法则”；Daumenregel 是英语直译，较少用。"
+ },
+ {
+  "w": "Feigling",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Feiglinge",
+  "gs": "des Feiglings",
+  "ipa": "ˈfaɪ̯klɪŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "胆小鬼，懦夫",
+    "de": "feiger, ängstlicher Mensch",
+    "ex": [
+     {
+      "de": "Sei kein Feigling und sag ihr endlich die Wahrheit!",
+      "zh": "别当缩头乌龟，赶紧把真相告诉她！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. einen Feigling nennen — 骂某人是懦夫",
+   "ein elender Feigling — 可悲的懦夫",
+   "近义：Angsthase（口，较温和）, Memme（贬）"
+  ],
+  "root": "feig(e)（胆怯的）+ -ling（表人后缀，常带贬义）→“胆怯的人”",
+  "fam": [
+   "feige",
+   "Feigheit",
+   "Eindringling",
+   "Schwächling"
+  ],
+  "ety": "feige < 中古高地德语 veige < 古高地德语 feigi，原义“注定要死的、命该绝的”，后转为“胆怯的”。",
+  "cog": "英 fey（古英语 fǣge“注定要死的”）",
+  "tip": "-ling 名词为阳性，指女性也说 Sie ist ein Feigling。"
+ },
+ {
+  "w": "Fernost",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "—（通常不带冠词使用）",
+  "ipa": "fɛʁnˈʔɔst",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "远东（东亚、东南亚地区）",
+    "de": "Ostasien und Südostasien (ohne Artikel gebraucht)",
+    "ex": [
+     {
+      "de": "Viele Elektronikteile werden aus Fernost importiert.",
+      "zh": "许多电子零件从远东进口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus / in / nach Fernost — 来自/在/去远东（不加冠词）",
+   "= der Ferne Osten（带冠词时用这一形式）",
+   "形容词：fernöstlich（远东的）fernöstliche Philosophie"
+  ],
+  "root": "fern（遥远的）+ Ost（东方）→“遥远的东方”",
+  "fam": [
+   "fern",
+   "Osten",
+   "fernöstlich",
+   "Nahost",
+   "der Ferne Osten"
+  ],
+  "ety": "由 fern + Ost 复合而成，相当于 der Ferne Osten（对应英语 Far East）；Ost(en) < 古高地德语 ōstan（在东方）。",
+  "cog": "英 Far East, east",
+  "tip": "Fernost 常用于经济、贸易报道；今天更中性的说法是 Ostasien / Asien。重音在后：fern-OST。"
+ },
+ {
+  "w": "Fortgang",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Fortgang(e)s",
+  "ipa": "ˈfɔʁtˌɡaŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "进展，进程，继续",
+    "de": "Weiterentwicklung, Fortsetzung eines Vorgangs",
+    "ex": [
+     {
+      "de": "Der Ausschuss berichtet regelmäßig über den Fortgang der Verhandlungen.",
+      "zh": "委员会定期报告谈判的进展。"
+     }
+    ]
+   },
+   {
+    "zh": "（书）离去，离职",
+    "de": "(geh.) das Weggehen, Ausscheiden",
+    "ex": [
+     {
+      "de": "Nach seinem Fortgang aus der Firma brach das Projekt zusammen.",
+      "zh": "他离开公司后，这个项目就垮了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "seinen Fortgang nehmen — 继续进行（书面）",
+   "den Fortgang der Arbeiten beobachten — 关注工作的进展",
+   "近义：Fortschritt（进步）, Verlauf（过程）"
+  ],
+  "root": "fort（向前；离开）+ Gang（行走）→“向前走/走开” → 进展；离去",
+  "fam": [
+   "fortgehen",
+   "Gang",
+   "gehen",
+   "Fortschritt",
+   "Fortsetzung"
+  ],
+  "ety": "源自 fortgehen；fort < 中古高地德语 vort（向前）；Gang < 古高地德语 gang。",
+  "cog": "英 forth, gang",
+  "tip": "Fortgang 指过程的“推进”，Fortschritt 指“进步、成就”：der Fortgang der Bauarbeiten ≠ technischer Fortschritt。"
+ },
+ {
+  "w": "Freibier",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Freibier(e)s",
+  "ipa": "ˈfʁaɪ̯ˌbiːɐ̯",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "免费啤酒",
+    "de": "Bier, das kostenlos ausgeschenkt wird",
+    "ex": [
+     {
+      "de": "Zur Eröffnung des neuen Lokals gab es Freibier für alle.",
+      "zh": "新酒馆开业时，所有人都能免费喝啤酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Freibier ausschenken — 免费供应啤酒",
+   "Freibier für alle! — 啤酒全免费！（庆祝时的口号，也作讽刺：不现实的承诺）"
+  ],
+  "root": "frei（免费的）+ Bier（啤酒）",
+  "fam": [
+   "frei",
+   "Bier",
+   "Freikarte",
+   "kostenlos",
+   "gratis"
+  ],
+  "ety": "Bier < 古高地德语 bior，词源不详（一说源自通俗拉丁语 biber“饮料”）；frei < 古高地德语 frī。",
+  "cog": "英 beer, free",
+  "tip": "政治评论中 „Freibier für alle“ 常讽刺不切实际的福利承诺。"
+ },
+ {
+  "w": "Freilichtmuseum",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Freilichtmuseen",
+  "gs": "des Freilichtmuseums",
+  "ipa": "ˈfʁaɪ̯lɪçtmuˌzeːʊm",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "露天博物馆（展示历史建筑、乡村生活等）",
+    "de": "Museum unter freiem Himmel, in dem z. B. historische Gebäude gezeigt werden",
+    "ex": [
+     {
+      "de": "Im Freilichtmuseum kann man sehen, wie die Bauern vor 200 Jahren lebten.",
+      "zh": "在露天博物馆里可以看到两百年前农民的生活。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Freilichtmuseum besuchen — 参观露天博物馆",
+   "相关：Freilichtbühne（露天舞台）, unter freiem Himmel（露天）"
+  ],
+  "root": "Freilicht（露天、自然光）+ Museum（博物馆）",
+  "fam": [
+   "frei",
+   "Licht",
+   "Museum",
+   "Freilichtbühne"
+  ],
+  "ety": "Museum 借自拉丁语 museum < 希腊语 mouseîon（缪斯神殿）；Licht < 古高地德语 lioht。",
+  "cog": "英 open-air museum, light, museum",
+  "tip": "复数 Museen 读 [muˈzeːən]，不要说 Museums。"
+ },
+ {
+  "w": "Fördergeld",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Fördergelder",
+  "gs": "des Fördergeld(e)s",
+  "ipa": "ˈfœʁdɐˌɡɛlt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "资助款，补贴资金（多用复数）",
+    "de": "Geld, mit dem Projekte, Unternehmen o. Ä. (meist staatlich) gefördert werden",
+    "ex": [
+     {
+      "de": "Das Forschungsprojekt erhält Fördergelder von der EU.",
+      "zh": "该研究项目获得欧盟的资助款。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Fördergelder beantragen / bewilligen / kürzen — 申请/批准/削减资助款",
+   "öffentliche Fördergelder — 公共资助资金",
+   "近义：Fördermittel, Zuschuss, Subvention"
+  ],
+  "root": "förder(n)（促进、资助）+ Geld（钱）→“用于资助的钱”",
+  "fam": [
+   "fördern",
+   "Förderung",
+   "Geld",
+   "Fördermittel",
+   "Förderprogramm"
+  ],
+  "ety": "fördern < 中古高地德语 vürdern < 古高地德语 furdiren，源自 vorder（前面的），原义“向前推”；Geld < 古高地德语 gelt（报酬、偿付）。",
+  "cog": "英 further（动词“促进”）, forward",
+  "tip": "几乎总用复数 Fördergelder；中国学生写申请书时常说 Fördermittel 或 Stipendium（个人奖学金），注意区别。"
+ },
+ {
+  "w": "Gastgeberin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Gastgeberinnen",
+  "gs": "der Gastgeberin",
+  "ipa": "ˈɡastˌɡeːbəʁɪn",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（女）主人，东道主",
+    "de": "Frau, die Gäste empfängt und bewirtet",
+    "ex": [
+     {
+      "de": "Die Gastgeberin begrüßte jeden Gast persönlich an der Tür.",
+      "zh": "女主人在门口亲自迎接每位客人。"
+     }
+    ]
+   },
+   {
+    "zh": "（体育、会议）东道国/主办方（阴性名词指代时）",
+    "de": "Land, Stadt o. Ä., die ein Ereignis ausrichtet",
+    "ex": [
+     {
+      "de": "Als Gastgeberin der Konferenz hat die Stadt viel investiert.",
+      "zh": "作为会议的主办城市，该市投入了大量资金。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine gute / aufmerksame Gastgeberin sein — 是个好客/周到的主人",
+   "阳性：der Gastgeber；复数常用 die Gastgeber（主人一家；主队）"
+  ],
+  "root": "Gast（客人）+ geb(en)（给）+ -er + -in →“给客人（款待）的女人”",
+  "fam": [
+   "Gastgeber",
+   "Gast",
+   "gastfreundlich",
+   "Gastfreundschaft",
+   "geben"
+  ],
+  "ety": "Gast < 古高地德语 gast < 原始日耳曼语 *gastiz（陌生人、客人）；geben < 古高地德语 geban。",
+  "cog": "英 guest, give",
+  "tip": "体育报道中 die Gastgeber 指主队，die Gäste 指客队。"
+ },
+ {
+  "w": "Gentrifizierung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Gentrifizierungen",
+  "gs": "der Gentrifizierung",
+  "ipa": "ɡɛntʁifiˈt͡siːʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（城市）绅士化，士绅化（富裕人群迁入导致原住居民被挤出）",
+    "de": "Aufwertung eines Stadtviertels, die zur Verdrängung ärmerer Bewohner führt",
+    "ex": [
+     {
+      "de": "In Berlin-Kreuzberg wird heftig über Gentrifizierung und steigende Mieten diskutiert.",
+      "zh": "在柏林克罗伊茨贝格，人们就绅士化和房租上涨激烈争论。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Gentrifizierung eines Viertels — 某街区的绅士化",
+   "gegen Gentrifizierung protestieren — 抗议绅士化",
+   "动词：gentrifizieren；口语缩写：Gentri"
+  ],
+  "root": "英 gentry（士绅阶层）+ -ifizier(en)（使成为……）+ -ung →“使士绅化”",
+  "fam": [
+   "gentrifizieren",
+   "Verdrängung",
+   "Aufwertung",
+   "Mietpreisbremse"
+  ],
+  "ety": "仿英语 gentrification（英国社会学家 Ruth Glass 于 1964 年提出）构成；gentry 源自古法语 genterise（出身高贵），与拉丁语 gens（氏族）相关。",
+  "cog": "英 gentrification, gentry, gentle",
+  "tip": "德语中常为贬义，暗含“挤走原住民”；中性说法是 Aufwertung（升值、改造）。"
+ },
+ {
+  "w": "Geologe",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Geologen",
+  "gs": "des Geologen",
+  "ipa": "ɡeoˈloːɡə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "地质学家",
+    "de": "Wissenschaftler auf dem Gebiet der Geologie",
+    "ex": [
+     {
+      "de": "Geologen untersuchen, ob der Boden für ein Endlager geeignet ist.",
+      "zh": "地质学家正在调查该地层是否适合作为最终处置库。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "弱变化名词：den / dem / des Geologen",
+   "阴性：die Geologin；学科：die Geologie；形容词：geologisch"
+  ],
+  "root": "希 gē / geo-（土地、地球）+ -loge（研究者，< lógos 言说、学问）→“研究大地的人”",
+  "fam": [
+   "Geologie",
+   "geologisch",
+   "Geografie",
+   "Biologe",
+   "Psychologe"
+  ],
+  "ety": "源自 Geologie，后者为近代学术新词，由希腊语 gē（大地）+ -logía（学说）构成，经法语/新拉丁语进入德语。",
+  "cog": "英 geologist；法 géologue",
+  "tip": "-loge 结尾名词都属弱变化（n-Deklination）：Ich frage den Geologen（不是 den Geologe）。"
+ },
+ {
+  "w": "geradewegs",
+  "pos": "adv",
+  "ipa": "ɡəˈʁaːdəˌveːks",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "径直地，直接地（不绕路）",
+    "de": "auf direktem Weg, ohne Umweg",
+    "ex": [
+     {
+      "de": "Nach der Arbeit ging sie geradewegs nach Hause.",
+      "zh": "下班后她径直回了家。"
+     }
+    ]
+   },
+   {
+    "zh": "直截了当地；简直",
+    "de": "ohne Umschweife; geradezu",
+    "ex": [
+     {
+      "de": "Er kam geradewegs auf das Thema Geld zu sprechen.",
+      "zh": "他直截了当地谈起了钱的问题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "geradewegs auf jmdn./etw. zugehen — 径直走向某人/某物",
+   "geradewegs in die Katastrophe steuern — 直奔灾难而去（喻）",
+   "近义：direkt, schnurstracks（口）"
+  ],
+  "root": "gerade（直的）+ Weg（路）+ -s（副词后缀，原属格）→“走直路地”",
+  "fam": [
+   "gerade",
+   "geradeaus",
+   "Weg",
+   "keineswegs",
+   "unterwegs"
+  ],
+  "ety": "gerade < 中古高地德语 gerade/gerat；-wegs 为 Weg 的属格形式作副词，构词同 keineswegs, unterwegs。",
+  "cog": "英 straight away（意义对应）, way",
+  "tip": "geradewegs 与 geradeaus 不同：geradeaus 指方向“笔直向前”，geradewegs 指“不绕路地直达”。"
+ },
+ {
+  "w": "Gesamtwerk",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gesamtwerke",
+  "gs": "des Gesamtwerk(e)s",
+  "ipa": "ɡəˈzamtˌvɛʁk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（作家、艺术家的）全部作品，毕生创作",
+    "de": "alle Werke eines Künstlers, Autors o. Ä.",
+    "ex": [
+     {
+      "de": "Der Literaturpreis wird für das Gesamtwerk der Autorin verliehen.",
+      "zh": "这项文学奖是为表彰这位女作家的全部创作而颁发的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "für sein Gesamtwerk ausgezeichnet werden — 因毕生创作获奖",
+   "das Gesamtwerk Goethes — 歌德的全部作品",
+   "相关：Gesamtausgabe（全集版本）, Lebenswerk"
+  ],
+  "root": "gesamt（全部的）+ Werk（作品）",
+  "fam": [
+   "gesamt",
+   "insgesamt",
+   "Werk",
+   "Lebenswerk",
+   "Gesamtausgabe"
+  ],
+  "ety": "gesamt < 中古高地德语 gesam(e)nt，为 samenen（聚集，参见 sammeln）的过去分词；Werk < 古高地德语 werc。",
+  "cog": "英 work, oeuvre（意义对应）",
+  "tip": "Gesamtwerk 指作品本身的总和；印刷的“全集”是 Gesamtausgabe 或 gesammelte Werke。"
+ },
+ {
+  "w": "Gesandtschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Gesandtschaften",
+  "gs": "der Gesandtschaft",
+  "ipa": "ɡəˈzantʃaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "公使馆；使团",
+    "de": "diplomatische Vertretung unter Leitung eines Gesandten (unterhalb einer Botschaft); Gruppe von Gesandten",
+    "ex": [
+     {
+      "de": "Im 19. Jahrhundert unterhielten viele Staaten in der Hauptstadt nur eine Gesandtschaft, keine Botschaft.",
+      "zh": "19 世纪，许多国家在首都只设公使馆，而不设大使馆。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Gesandtschaft schicken / empfangen — 派遣/接待使团",
+   "区分：Botschaft（大使馆）> Gesandtschaft（公使馆）; Konsulat（领事馆）"
+  ],
+  "root": "Gesandt(e)（使者，senden 的过去分词名词化）+ -schaft（集合/机构后缀）",
+  "fam": [
+   "Gesandte",
+   "senden",
+   "Sendung",
+   "Botschaft",
+   "Botschafter"
+  ],
+  "ety": "源自 Gesandte（使者），即 senden（派遣；sandte, gesandt）的分词名词化；senden < 古高地德语 senten。",
+  "cog": "英 send；英 legation（意义对应）",
+  "tip": "现代外交中公使馆已很少见，日常说 Botschaft；Gesandtschaft 多见于历史文本。"
+ },
+ {
+  "w": "Geschäftsreise",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Geschäftsreisen",
+  "gs": "der Geschäftsreise",
+  "ipa": "ɡəˈʃɛft͡sˌʁaɪ̯zə",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "出差，商务旅行",
+    "de": "Reise aus beruflichen Gründen",
+    "ex": [
+     {
+      "de": "Mein Mann ist diese Woche auf Geschäftsreise in Shanghai.",
+      "zh": "我丈夫这周去上海出差了。"
+     },
+     {
+      "de": "Die Kosten der Geschäftsreise werden von der Firma erstattet.",
+      "zh": "出差费用由公司报销。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf Geschäftsreise sein / gehen — 在出差/去出差",
+   "eine Geschäftsreise machen — 出差一趟",
+   "近义：Dienstreise（尤指公务员、公职）"
+  ],
+  "root": "Geschäft（生意、业务）+ -s- + Reise（旅行）",
+  "fam": [
+   "Geschäft",
+   "geschäftlich",
+   "Reise",
+   "reisen",
+   "Dienstreise"
+  ],
+  "ety": "Geschäft 源自 schaffen（做、创造）；Reise < 中古高地德语 reise < 古高地德语 reisa（启程），与古高地德语 rīsan（升起、动身）相关。",
+  "cog": "英 business trip；英 rise（与 Reise 词根相关）",
+  "tip": "“出差”不能说 Geschäftsfahrt；更常见的是 auf Geschäftsreise / dienstlich unterwegs sein。"
+ },
+ {
+  "w": "Gesundheitspolitik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Gesundheitspolitik",
+  "ipa": "ɡəˈzʊnthaɪ̯t͡spoliˌtiːk",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "卫生政策，医疗卫生政策",
+    "de": "Politik, die das Gesundheitswesen betrifft",
+    "ex": [
+     {
+      "de": "Die alternde Bevölkerung stellt die Gesundheitspolitik vor große Herausforderungen.",
+      "zh": "人口老龄化给卫生政策带来了巨大挑战。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Gesundheitspolitik — 在卫生政策方面",
+   "gesundheitspolitischer Sprecher einer Partei — 某政党的卫生政策发言人",
+   "相关：Gesundheitswesen（医疗卫生体系）, Gesundheitsminister"
+  ],
+  "root": "Gesundheit（健康）+ -s- + Politik（政策、政治）",
+  "fam": [
+   "Gesundheit",
+   "gesund",
+   "Politik",
+   "Gesundheitswesen",
+   "gesundheitspolitisch"
+  ],
+  "ety": "gesund < 古高地德语 gisunt；Politik 经法语 politique 借自希腊语 politikḗ（城邦事务之术）。",
+  "cog": "英 sound（健全的，与 gesund 同源）, health policy",
+  "tip": "Politik 既可译“政治”也可译“政策”；具体某项政策用 Maßnahme / Regelung，而不是 eine Politik。"
+ },
+ {
+  "w": "Gewinde",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gewinde",
+  "gs": "des Gewindes",
+  "ipa": "ɡəˈvɪndə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "螺纹",
+    "de": "schraubenförmig verlaufende Rille an Schrauben, Muttern o. Ä.",
+    "ex": [
+     {
+      "de": "Die Schraube lässt sich nicht mehr festziehen, weil das Gewinde beschädigt ist.",
+      "zh": "螺纹损坏了，所以这颗螺丝再也拧不紧了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Gewinde schneiden — 攻丝，车螺纹",
+   "Innengewinde / Außengewinde — 内螺纹/外螺纹",
+   "Das Gewinde ist ausgeleiert. — 螺纹滑丝了。"
+  ],
+  "root": "Ge-（集合/结果名词前缀）+ wind(en)（缠绕、旋转）+ -e →“绕出来的（纹路）”",
+  "fam": [
+   "winden",
+   "Windung",
+   "Wendeltreppe",
+   "wenden",
+   "Schraubengewinde"
+  ],
+  "ety": "源自 winden（缠绕）< 古高地德语 wintan；中古高地德语 gewinde 原指“缠绕物、花环”。",
+  "cog": "英 wind（缠绕）, thread（意义对应）",
+  "tip": "技术德语高频词；注意 das Gewinde 与 der Wind（风）不同族，与 winden（缠绕）同族。"
+ },
+ {
+  "w": "Glashaus",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Glashäuser",
+  "gs": "des Glashauses",
+  "ipa": "ˈɡlaːsˌhaʊ̯s",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "玻璃房；温室",
+    "de": "Gebäude aus Glas, bes. Gewächshaus",
+    "ex": [
+     {
+      "de": "Im Glashaus des Botanischen Gartens wachsen tropische Pflanzen.",
+      "zh": "植物园的玻璃温室里生长着热带植物。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Wer im Glashaus sitzt, sollte nicht mit Steinen werfen. — 坐在玻璃房里的人不该扔石头（自身有缺点就别指责别人）",
+   "近义：Gewächshaus, Treibhaus（温室）"
+  ],
+  "root": "Glas（玻璃）+ Haus（房子）",
+  "fam": [
+   "Glas",
+   "gläsern",
+   "Haus",
+   "Gewächshaus",
+   "Treibhaus"
+  ],
+  "ety": "Glas < 古高地德语 glas（一般认为与“闪亮”义相关）；Haus < 古高地德语 hūs。",
+  "cog": "英 glasshouse, glass, house",
+  "tip": "表示“温室”时，日常更常用 Gewächshaus；Glashaus 主要出现在上述谚语中。"
+ },
+ {
+  "w": "Goldpreis",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Goldpreise",
+  "gs": "des Goldpreises",
+  "ipa": "ˈɡɔltˌpʁaɪ̯s",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "金价",
+    "de": "Marktpreis für Gold",
+    "ex": [
+     {
+      "de": "In Krisenzeiten steigt der Goldpreis oft auf Rekordhöhe.",
+      "zh": "在危机时期，金价常常涨到创纪录的高位。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Der Goldpreis steigt / fällt / klettert. — 金价上涨/下跌/攀升",
+   "der Goldpreis pro Feinunze — 每金衡盎司的金价"
+  ],
+  "root": "Gold（黄金）+ Preis（价格）",
+  "fam": [
+   "Gold",
+   "golden",
+   "Preis",
+   "Ölpreis",
+   "Aktienkurs"
+  ],
+  "ety": "Preis 借自古法语 pris < 拉丁语 pretium（价值、价格）；Gold < 古高地德语 gold。",
+  "cog": "英 gold, price, prize",
+  "tip": "Preis 既是“价格”也是“奖”：Nobelpreis（诺贝尔奖）。"
+ },
+ {
+  "w": "Grünkohl",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Grünkohl(e)s",
+  "ipa": "ˈɡʁyːnˌkoːl",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "羽衣甘蓝（北德冬季菜）",
+    "de": "Kohlart mit krausen grünen Blättern, im Winter gegessen",
+    "ex": [
+     {
+      "de": "In Norddeutschland isst man im Winter Grünkohl mit Pinkel oder Kassler.",
+      "zh": "在北德，冬天人们吃羽衣甘蓝配香肠或熏猪排。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Grünkohl mit Pinkel — 羽衣甘蓝配燕麦香肠（不来梅/奥尔登堡特色）",
+   "die Grünkohlfahrt / Kohlfahrt — 北德冬季“吃甘蓝徒步”的聚会习俗",
+   "近义：Braunkohl（地区说法）"
+  ],
+  "root": "grün（绿色的）+ Kohl（甘蓝、卷心菜）",
+  "fam": [
+   "Kohl",
+   "Rotkohl",
+   "Blumenkohl",
+   "Weißkohl",
+   "grün"
+  ],
+  "ety": "Kohl < 古高地德语 kōl(i)，借自拉丁语 caulis（茎、甘蓝）；grün < 古高地德语 gruoni。",
+  "cog": "英 kale, cole（与 Kohl 同源）, green",
+  "tip": "传统上要等经霜之后才收割，口感更甜。"
+ },
+ {
+  "w": "Hauptdarstellerin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Hauptdarstellerinnen",
+  "gs": "der Hauptdarstellerin",
+  "ipa": "ˈhaʊ̯ptdaːɐ̯ˌʃtɛləʁɪn",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "女主角，女主演",
+    "de": "Schauspielerin, die die Hauptrolle spielt",
+    "ex": [
+     {
+      "de": "Die Hauptdarstellerin wurde für ihre Leistung mit einem Oscar ausgezeichnet.",
+      "zh": "女主角凭借出色的表演获得了奥斯卡奖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "beste Hauptdarstellerin — 最佳女主角",
+   "阳性：der Hauptdarsteller；相关：Nebendarstellerin（女配角）, die Hauptrolle spielen（演主角）"
+  ],
+  "root": "Haupt（主要的）+ darstell(en)（表现、扮演）+ -er + -in",
+  "fam": [
+   "Darsteller",
+   "darstellen",
+   "Darstellung",
+   "Hauptrolle",
+   "Haupt"
+  ],
+  "ety": "Haupt < 古高地德语 houbit（头）；darstellen 由 dar（那里）+ stellen（放置）构成，原义“摆到面前”。",
+  "cog": "英 head（与 Haupt 同源）",
+  "tip": "颁奖用语固定说 beste Hauptdarstellerin；口语里也说 die Hauptrolle spielen。"
+ },
+ {
+  "w": "Hebräisch",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Hebräisch(s)",
+  "ipa": "heˈbʁɛːɪʃ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "希伯来语",
+    "de": "die hebräische Sprache",
+    "ex": [
+     {
+      "de": "Das Alte Testament wurde überwiegend auf Hebräisch verfasst.",
+      "zh": "旧约大部分是用希伯来语写成的。"
+     },
+     {
+      "de": "Sie lernt seit zwei Jahren modernes Hebräisch.",
+      "zh": "她学现代希伯来语已经两年了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf Hebräisch — 用希伯来语",
+   "Hebräisch sprechen / lernen（不加冠词）",
+   "带定冠词时常用名词化形容词：das Hebräische, aus dem Hebräischen übersetzen（从希伯来语翻译）"
+  ],
+  "root": "Hebrä-（希伯来人）+ -isch（形容词后缀）→ 名词化为语言名",
+  "fam": [
+   "hebräisch",
+   "Hebräer",
+   "Jiddisch",
+   "Aramäisch"
+  ],
+  "ety": "经拉丁语 Hebraeus 借自希腊语 Hebraîos，最终源自希伯来语 ʿivrî（希伯来人）。",
+  "cog": "英 Hebrew；法 hébreu",
+  "tip": "语言名首字母大写（Hebräisch），形容词小写（die hebräische Bibel）；现代以色列的官方语言也叫 Iwrit。"
+ },
+ {
+  "w": "Homeoffice",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Homeoffices",
+  "gs": "des Homeoffice(s)",
+  "ipa": "ˈhoːmˌʔɔfɪs",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "居家办公；家庭办公室",
+    "de": "Arbeit von zu Hause aus; Arbeitsplatz in der eigenen Wohnung",
+    "ex": [
+     {
+      "de": "Seit der Pandemie arbeite ich zwei Tage pro Woche im Homeoffice.",
+      "zh": "自疫情以来，我每周有两天居家办公。"
+     },
+     {
+      "de": "Viele Firmen wollen das Homeoffice wieder einschränken.",
+      "zh": "很多公司想重新限制居家办公。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Homeoffice arbeiten / sein — 在家办公",
+   "ins Homeoffice gehen / wechseln — 转为在家办公",
+   "Homeoffice machen（口）— 在家办公；也写作 Home-Office"
+  ],
+  "root": "英 home（家）+ office（办公室）→ 德语中的伪英语用法",
+  "fam": [
+   "Büro",
+   "Telearbeit",
+   "mobiles Arbeiten",
+   "Heimarbeit"
+  ],
+  "ety": "借自英语 home office（家里的办公室、书房），但在德语中词义转为“居家办公”这一工作方式。",
+  "cog": "英 home, office（英语中多说 working from home / WFH）",
+  "tip": "伪英语词：英语的 home office 指家里的书房，英国的 Home Office 还指“内政部”；表达“我在家办公”用英语要说 I'm working from home。"
+ }
+]
