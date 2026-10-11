@@ -1,0 +1,2005 @@
+[
+ {
+  "w": "Wetterstation",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wetterstationen",
+  "gs": "der Wetterstation",
+  "ipa": "ˈvɛtɐʃtaˌt͡si̯oːn",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "气象站",
+    "de": "Station, an der meteorologische Daten (Temperatur, Niederschlag, Wind usw.) gemessen werden",
+    "ex": [
+     {
+      "de": "Die Wetterstation auf der Zugspitze hat in der Nacht minus 18 Grad gemessen.",
+      "zh": "楚格峰上的气象站夜间测得零下18度。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine automatische / private Wetterstation — 自动/家用气象站",
+   "Daten einer Wetterstation auswerten — 分析气象站的数据"
+  ],
+  "root": "Wetter·station：Wetter（天气）+ Station（站）→ 观测天气的站点",
+  "fam": [
+   "Wetter",
+   "Wetterbericht",
+   "Station",
+   "Messstation"
+  ],
+  "ety": "Wetter < 古高地德语 wetar；Station 借自拉丁语 statio（停留处，驻地，源自 stare 站立）。",
+  "cog": "英 weather, station",
+  "tip": "德语 Wetter 指具体某时某地的天气，Klima 指长期气候，勿混用。"
+ },
+ {
+  "w": "Wettrennen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Wettrennen",
+  "gs": "des Wettrennens",
+  "ipa": "ˈvɛtˌʁɛnən",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "赛跑；（赛马、赛车等）竞速比赛",
+    "de": "Rennen, bei dem mehrere Teilnehmer um den Sieg laufen oder fahren",
+    "ex": [
+     {
+      "de": "Die Kinder veranstalteten ein Wettrennen bis zum Ende der Straße.",
+      "zh": "孩子们比赛跑到街道尽头。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）竞相争夺，竞赛",
+    "de": "Wettlauf, Konkurrenz um etw.",
+    "ex": [
+     {
+      "de": "Zwischen den Konzernen ist ein Wettrennen um die besten Fachkräfte entbrannt.",
+      "zh": "各大企业之间展开了争夺顶尖人才的竞赛。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Wettrennen gewinnen / veranstalten — 赢得/举办赛跑",
+   "ein Wettrennen um etw.(A) — 争夺某物的竞赛（也常说 Wettlauf）",
+   "ein Wettrennen gegen die Zeit — 与时间赛跑"
+  ],
+  "root": "Wett·rennen：wetten（打赌）+ rennen（奔跑）→ 以输赢相较的奔跑",
+  "fam": [
+   "Wette",
+   "wetten",
+   "Wettbewerb",
+   "Wettlauf",
+   "rennen"
+  ],
+  "ety": "Wette < 古高地德语 wetti（抵押，赌注）；rennen < 古高地德语 rennen（使奔跑，rinnan 的使役形式）。",
+  "cog": "英 wed（原义“立誓抵押”）, run",
+  "tip": "比喻义中 Wettlauf 更常见，如 Wettlauf mit der Zeit；Wettrennen 也可用，但更偏具体的比赛。"
+ },
+ {
+  "w": "widerstandsfähig",
+  "pos": "adj",
+  "ipa": "ˈviːdɐʃtant͡sˌfɛːɪç",
+  "lvl": "B2–C1",
+  "forms": "widerstandsfähiger · am widerstandsfähigsten",
+  "senses": [
+   {
+    "zh": "有抵抗力的；耐用的，结实的；（植物）抗病的",
+    "de": "fähig, äußeren Einflüssen, Belastungen oder Krankheiten standzuhalten",
+    "ex": [
+     {
+      "de": "Dieses Material ist besonders widerstandsfähig gegen Hitze und Kratzer.",
+      "zh": "这种材料特别耐高温、抗划。"
+     },
+     {
+      "de": "Kinder, die früh Krisen bewältigen, werden oft psychisch widerstandsfähiger.",
+      "zh": "早早经历过危机的孩子，心理上往往更有韧性。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "widerstandsfähig gegen etw.(A) — 能抵御某物",
+   "widerstandsfähige Sorten / Materialien — 抗性强的品种/耐用材料",
+   "名词：die Widerstandsfähigkeit — 抵抗力；（心理）韧性，也说 Resilienz"
+  ],
+  "root": "wider·stand·s·fähig：Widerstand（抵抗）+ -s-（连接音）+ fähig（有能力的）→ 有能力抵抗的",
+  "fam": [
+   "Widerstand",
+   "widerstehen",
+   "Widerstandsfähigkeit",
+   "fähig"
+  ],
+  "ety": "wider < 古高地德语 widar（对着，反向）；stehen < 古高地德语 stān/stēn；fähig 见 befähigen。",
+  "cog": "英 withstand（with- 原义“反对”，与 wider 同源）",
+  "tip": "wider（反对）与 wieder（再次）拼写不同：Widerstand 不写 ie。"
+ },
+ {
+  "w": "wiedergeboren",
+  "pos": "adj",
+  "ipa": "ˈviːdɐɡəˌboːʁən",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "转世的，再生的（宗教）",
+    "de": "nach dem Tod in einem neuen Leben wieder zur Welt gekommen",
+    "ex": [
+     {
+      "de": "Nach buddhistischer Vorstellung kann ein Mensch als Tier wiedergeboren werden.",
+      "zh": "按照佛教的观念，人可能转世为动物。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）焕然一新的，如获新生的",
+    "de": "(fig.) wie neu belebt, völlig erholt",
+    "ex": [
+     {
+      "de": "Nach drei Wochen am Meer fühlte sie sich wie wiedergeboren.",
+      "zh": "在海边待了三周后，她觉得自己像重获新生一般。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "als etw. wiedergeboren werden — 转世为……",
+   "sich wie wiedergeboren fühlen — 感觉如获新生",
+   "ein wiedergeborener Christ — 重生派基督徒（英 born-again Christian）"
+  ],
+  "root": "wieder·ge·boren：wieder（再）+ geboren（gebären 的第二分词，被生出）→ 再次出生的",
+  "fam": [
+   "Wiedergeburt",
+   "gebären",
+   "Geburt",
+   "geboren"
+  ],
+  "ety": "gebären < 古高地德语 giberan，基础动词 beran（负载，承载）；原义“怀着、承载”→ 生育。",
+  "cog": "英 reborn；bear, born（同源）",
+  "tip": "作谓语多与 werden 连用（wiedergeboren werden）；名词“转世、复兴”用 die Wiedergeburt（如 Renaissance 的德译）。"
+ },
+ {
+  "w": "Wochenschrift",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wochenschriften",
+  "gs": "der Wochenschrift",
+  "ipa": "ˈvɔxn̩ʃʁɪft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "周刊（杂志）",
+    "de": "wöchentlich erscheinende Zeitschrift",
+    "ex": [
+     {
+      "de": "Der Aufsatz erschien zuerst in einer medizinischen Wochenschrift.",
+      "zh": "这篇文章最早发表在一份医学周刊上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine politische / wissenschaftliche Wochenschrift — 政治/学术周刊",
+   "今日常用 Wochenzeitschrift, Wochenzeitung, Wochenmagazin"
+  ],
+  "root": "Wochen·schrift：Woche（周）+ Schrift（文字，刊物）→ 每周出版的刊物",
+  "fam": [
+   "Woche",
+   "wöchentlich",
+   "Zeitschrift",
+   "Schrift",
+   "schreiben"
+  ],
+  "ety": "Woche < 古高地德语 wehha/wohha（原义“交替、轮换”）；Schrift < 古高地德语 scrift，源于 scrīban（借自拉丁语 scribere 写）。",
+  "cog": "英 week；script（同出拉丁语 scribere）",
+  "tip": "较书面、略旧，常见于老牌刊物名称；日常说 Wochenzeitung（周报）或 Wochenmagazin。"
+ },
+ {
+  "w": "Wohneigentum",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Wohneigentums",
+  "ipa": "ˈvoːnʔaɪ̯ɡn̩tuːm",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "自有住房，住房产权",
+    "de": "Eigentum an einer selbst genutzten Wohnung oder einem Haus",
+    "ex": [
+     {
+      "de": "In Deutschland ist die Quote für Wohneigentum im europäischen Vergleich niedrig.",
+      "zh": "与欧洲其他国家相比，德国的住房自有率较低。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Wohneigentum erwerben / bilden — 购置/积累自有住房",
+   "die Förderung von Wohneigentum — 对自有住房的资助",
+   "die Wohneigentumsquote — 住房自有率"
+  ],
+  "root": "Wohn·eigen·tum：wohnen（居住）+ Eigentum（所有物，产权；eigen 自己的 + -tum）→ 自己拥有的住所",
+  "fam": [
+   "wohnen",
+   "Wohnung",
+   "Eigentum",
+   "Eigentümer",
+   "eigen"
+  ],
+  "ety": "wohnen < 古高地德语 wonēn（停留，习惯于）；eigen < 古高地德语 eigan（自己的，原为 eigan“拥有”的分词）。",
+  "cog": "英 own（与 eigen 同源）",
+  "tip": "Eigentum（法律上的所有权）≠ Besitz（实际占有）；租房者 besitzt 房子但不是 Eigentümer。"
+ },
+ {
+  "w": "Wäldchen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Wäldchen",
+  "gs": "des Wäldchens",
+  "ipa": "ˈvɛltçən",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "小树林，小片林子",
+    "de": "kleiner Wald",
+    "ex": [
+     {
+      "de": "Hinter dem Dorf liegt ein kleines Wäldchen, in dem wir als Kinder gespielt haben.",
+      "zh": "村子后面有一片小树林，我们小时候常在那里玩。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Wäldchen am Stadtrand — 城郊的小树林",
+   "-chen 指小词一律为中性，并常变音：der Wald → das Wäldchen"
+  ],
+  "root": "Wäld·chen：Wald（森林）+ -chen（指小后缀，引起变音）→ 小森林",
+  "fam": [
+   "Wald",
+   "Waldrand",
+   "bewaldet",
+   "Gehölz"
+  ],
+  "ety": "Wald < 古高地德语 wald。",
+  "cog": "英 wold, weald（古英语 wald，同源）",
+  "tip": "指小词 Wäldchen 复数不变：zwei Wäldchen。"
+ },
+ {
+  "w": "Zahnspange",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Zahnspangen",
+  "gs": "der Zahnspange",
+  "ipa": "ˈt͡saːnʃpaŋə",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "牙齿矫正器，牙套",
+    "de": "Vorrichtung zur Korrektur von Zahnfehlstellungen",
+    "ex": [
+     {
+      "de": "Unsere Tochter muss zwei Jahre lang eine feste Zahnspange tragen.",
+      "zh": "我们女儿得戴两年固定牙套。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine feste / lose (herausnehmbare) Zahnspange — 固定/活动矫正器",
+   "eine Zahnspange tragen / bekommen — 戴/装牙套",
+   "专业说法：kieferorthopädische Behandlung — 正畸治疗"
+  ],
+  "root": "Zahn·spange：Zahn（牙）+ Spange（夹子，扣环）→ 夹在牙上的扣件",
+  "fam": [
+   "Zahn",
+   "Zahnarzt",
+   "Spange",
+   "Haarspange"
+  ],
+  "ety": "Zahn < 古高地德语 zan(d)；Spange < 古高地德语 spanga（扣环，夹子）。",
+  "cog": "英 tooth（与 Zahn 同源）；spangle（一般认为与 Spange 同源）",
+  "tip": "口语中也说 Klammer（奥地利/南德常用 Zahnklammer）。"
+ },
+ {
+  "w": "zehnfach",
+  "pos": "adj",
+  "ipa": "ˈt͡seːnfax",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "十倍的；十重的",
+    "de": "zehnmal so viel, so groß; zehnmal vorhanden",
+    "ex": [
+     {
+      "de": "Die Mieten sind in dreißig Jahren fast um das Zehnfache gestiegen.",
+      "zh": "三十年间房租几乎涨了十倍。"
+     },
+     {
+      "de": "Die Lupe bietet eine zehnfache Vergrößerung.",
+      "zh": "这个放大镜能放大十倍。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Zehnfache — 十倍（名词化，大写）",
+   "um das Zehnfache steigen — 增长十倍；auf das Zehnfache steigen — 增长到十倍",
+   "eine zehnfache Vergrößerung — 十倍放大"
+  ],
+  "root": "zehn·fach：zehn（十）+ -fach（倍，重）→ 十倍的",
+  "fam": [
+   "zehn",
+   "zweifach",
+   "vielfach",
+   "das Zehnfache"
+  ],
+  "ety": "zehn < 古高地德语 zehan；-fach 来自名词 Fach（古高地德语 fah，部分，格层）。",
+  "cog": "英 ten, tenfold",
+  "tip": "作名词时大写：um das Zehnfache；作定语时小写：eine zehnfache Menge。注意 um das Zehnfache 与 auf das Zehnfache 的区别。"
+ },
+ {
+  "w": "Zersplitterung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Zersplitterungen（少用）",
+  "gs": "der Zersplitterung",
+  "ipa": "t͡sɛɐ̯ˈʃplɪtəʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "分裂，四分五裂，碎片化",
+    "de": "Aufteilung in viele kleine, oft schwache Teile",
+    "ex": [
+     {
+      "de": "Die Zersplitterung der Parteienlandschaft erschwert die Regierungsbildung.",
+      "zh": "政党格局的碎片化使组阁更加困难。"
+     }
+    ]
+   },
+   {
+    "zh": "（物体）碎裂",
+    "de": "das Zerbrechen in Splitter",
+    "ex": [
+     {
+      "de": "Sicherheitsglas verhindert die Zersplitterung der Scheibe bei einem Aufprall.",
+      "zh": "安全玻璃可防止车窗在撞击时碎裂。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die politische / territoriale Zersplitterung — 政治/领土分裂",
+   "die Zersplitterung der Kräfte — 力量分散",
+   "动词：zersplittern（ist/hat zersplittert）"
+  ],
+  "root": "zer·splitter·ung：zer-（分裂、破碎）+ Splitter（碎片）+ -ung → 碎成很多块",
+  "fam": [
+   "zersplittern",
+   "Splitter",
+   "splittern",
+   "Zerfall"
+  ],
+  "ety": "Splitter < 中古高地德语 splitter（一般认为源自低地德语）。",
+  "cog": "英 splinter, split",
+  "tip": "Zersplitterung 多用于抽象的“分散、割据”，如历史上的 die deutsche Kleinstaaterei 常被描述为 politische Zersplitterung。"
+ },
+ {
+  "w": "Zubringer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Zubringer",
+  "gs": "des Zubringers",
+  "ipa": "ˈt͡suːbʁɪŋɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "连接（高速）公路的联络道，引道",
+    "de": "Straße, die den Verkehr zu einer Autobahn o. Ä. hinführt",
+    "ex": [
+     {
+      "de": "Wegen eines Unfalls ist der Zubringer zur A9 gesperrt.",
+      "zh": "由于发生事故，通往A9高速的联络道已封闭。"
+     }
+    ]
+   },
+   {
+    "zh": "接驳车，摆渡车；（交通）支线",
+    "de": "Bus, Bahn oder Flug, der Fahrgäste zu einem Verkehrsknoten bringt",
+    "ex": [
+     {
+      "de": "Vom Bahnhof fährt ein Zubringer direkt zum Flughafen.",
+      "zh": "火车站有接驳车直达机场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Autobahnzubringer — 高速公路联络道",
+   "der Zubringerbus / Zubringerflug — 接驳巴士/支线航班",
+   "（技术）Zubringer — 送料装置，进料器"
+  ],
+  "root": "zu·bring·er：zu（向，到）+ bringen（带来）+ -er（施事/工具后缀）→ 把人、车、物“送过去”的东西",
+  "fam": [
+   "bringen",
+   "zubringen",
+   "Zubringerdienst",
+   "Lieferant"
+  ],
+  "ety": "bringen < 古高地德语 bringan。",
+  "cog": "英 bring",
+  "tip": "不要与动词 zubringen（度过时间，如 die Nacht im Freien zubringen）的含义混淆。"
+ },
+ {
+  "w": "zurückhaltend",
+  "pos": "adj",
+  "ipa": "t͡suˈʁʏkhaltn̩t",
+  "lvl": "B2",
+  "forms": "zurückhaltender · am zurückhaltendsten",
+  "senses": [
+   {
+    "zh": "拘谨的，矜持的，内敛的",
+    "de": "still, bescheiden, nicht aufdringlich",
+    "ex": [
+     {
+      "de": "Sie ist eher zurückhaltend und spricht in Meetings selten als Erste.",
+      "zh": "她比较内敛，开会时很少第一个发言。"
+     }
+    ]
+   },
+   {
+    "zh": "克制的，谨慎的，有所保留的",
+    "de": "vorsichtig, nur mäßig; mit Vorbehalt",
+    "ex": [
+     {
+      "de": "Die Anleger reagierten zurückhaltend auf die neuen Zahlen.",
+      "zh": "投资者对新数据反应谨慎。"
+     },
+     {
+      "de": "Mit Prognosen sollte man in dieser Lage zurückhaltend sein.",
+      "zh": "在这种情况下，最好不要轻易做预测。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich zurückhaltend äußern — 表态谨慎",
+   "mit etw.(D) zurückhaltend sein — 在某事上有所节制（如 mit Kritik, mit Alkohol）",
+   "zurückhaltende Farben — 素雅的颜色",
+   "名词：die Zurückhaltung — 克制，含蓄"
+  ],
+  "root": "zurück·halt·end：zurück（向后）+ halten（拉住）+ -end（第一分词）→ 把自己往后拉住 → 克制、内敛",
+  "fam": [
+   "zurückhalten",
+   "Zurückhaltung",
+   "sich zurückhalten",
+   "halten"
+  ],
+  "ety": "halten < 古高地德语 haltan（看守，保持）。",
+  "cog": "英 hold（与 halten 同源）；意义对应 reserved",
+  "tip": "zurückhaltend 是中性甚至偏褒的“含蓄”，与 schüchtern（害羞，偏负面）不同；也不等于 kalt（冷淡）。"
+ },
+ {
+  "w": "Zwiespalt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Zwiespalte / Zwiespälte（少用）",
+  "gs": "des Zwiespalt(e)s",
+  "ipa": "ˈt͡sviːʃpalt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（内心的）矛盾，左右为难",
+    "de": "innere Zerrissenheit zwischen zwei Möglichkeiten",
+    "ex": [
+     {
+      "de": "Viele Ärzte geraten in einen Zwiespalt zwischen Schweigepflicht und Schutz Dritter.",
+      "zh": "许多医生在保密义务与保护第三方之间陷入两难。"
+     }
+    ]
+   },
+   {
+    "zh": "分歧，不和",
+    "de": "Uneinigkeit, Konflikt zwischen Personen oder Gruppen",
+    "ex": [
+     {
+      "de": "Die Frage der Wehrpflicht hat einen tiefen Zwiespalt in der Partei offengelegt.",
+      "zh": "兵役问题暴露出党内的深刻分歧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in einen Zwiespalt geraten — 陷入矛盾",
+   "sich in einem Zwiespalt befinden — 处于两难之中",
+   "der Zwiespalt der Gefühle — 情感上的矛盾",
+   "形容词：zwiespältig — 矛盾的，复杂的（ein zwiespältiges Gefühl）"
+  ],
+  "root": "zwie·spalt：zwie-（二，zwei 的古构词形式）+ Spalt（裂缝）→ 一分为二的裂缝 → 内心或彼此间的分裂",
+  "fam": [
+   "zwiespältig",
+   "Spalt",
+   "spalten",
+   "Zwielicht",
+   "Zweifel"
+  ],
+  "ety": "中古高地德语 zwispalt；zwie- 为 zwei 的古老构词形式（同见 Zwieback, Zwielicht）。",
+  "cog": "英 twi-（twilight，与 zwie- 同源）",
+  "tip": "Zwiespalt 偏书面，口语多说 hin- und hergerissen sein（左右为难）。"
+ },
+ {
+  "w": "Örtlichkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Örtlichkeiten",
+  "gs": "der Örtlichkeit",
+  "ipa": "ˈœʁtlɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "地点，场所；当地环境（书面、公文）",
+    "de": "Ort, Gegend, Gelände",
+    "ex": [
+     {
+      "de": "Die Polizei hat die Örtlichkeit des Unfalls weiträumig abgesperrt.",
+      "zh": "警方大范围封锁了事故现场。"
+     },
+     {
+      "de": "Der neue Kollege muss sich erst mit den Örtlichkeiten vertraut machen.",
+      "zh": "新同事得先熟悉一下这里的环境。"
+     }
+    ]
+   },
+   {
+    "zh": "（委婉）厕所，洗手间（常用复数）",
+    "de": "(verhüllend) Toilette",
+    "ex": [
+     {
+      "de": "Entschuldigung, wo sind hier die Örtlichkeiten?",
+      "zh": "打扰一下，请问洗手间在哪儿？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich mit den Örtlichkeiten vertraut machen — 熟悉环境",
+   "die Örtlichkeiten besichtigen — 实地查看场地",
+   "形容词：örtlich — 当地的，局部的（örtliche Betäubung 局部麻醉）"
+  ],
+  "root": "ört·lich·keit：Ort（地方）+ -lich（形容词后缀，变音）+ -keit（名词化）→ 地方性 → 场所",
+  "fam": [
+   "Ort",
+   "örtlich",
+   "Ortschaft",
+   "orten"
+  ],
+  "ety": "Ort < 古高地德语 ort（尖端，边角）→ 中古高地德语起转指“地点”。",
+  "cog": "一般认为与英 odd（原义“尖角”，经古诺尔斯语 oddi）同源",
+  "tip": "作“厕所”讲是委婉、略带幽默的说法，多用复数 die Örtlichkeiten。"
+ },
+ {
+  "w": "übermächtig",
+  "pos": "adj",
+  "ipa": "ˈyːbɐmɛçtɪç",
+  "lvl": "C1",
+  "forms": "übermächtiger · am übermächtigsten（少用）",
+  "senses": [
+   {
+    "zh": "势力过强的，占压倒性优势的",
+    "de": "viel mächtiger als andere; zu mächtig",
+    "ex": [
+     {
+      "de": "Gegen den übermächtigen Konkurrenten hatte das Start-up kaum eine Chance.",
+      "zh": "面对实力碾压的对手，这家初创公司几乎毫无机会。"
+     }
+    ]
+   },
+   {
+    "zh": "（情感、欲望）强烈得无法抗拒的",
+    "de": "(von Gefühlen) so stark, dass man nicht dagegen ankommt",
+    "ex": [
+     {
+      "de": "Plötzlich überkam ihn ein übermächtiges Verlangen, alles hinzuwerfen.",
+      "zh": "他突然被一种无法抗拒的冲动攫住，想把一切都撂下不干。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein übermächtiger Gegner / Staat — 过于强大的对手/国家",
+   "ein übermächtiges Gefühl der Angst — 压倒一切的恐惧感",
+   "名词：die Übermacht — 优势兵力，压倒性优势"
+  ],
+  "root": "über·mächt·ig：über-（超过，过度）+ Macht（力量，权力）+ -ig → 力量过度的",
+  "fam": [
+   "Macht",
+   "mächtig",
+   "Übermacht",
+   "machtlos"
+  ],
+  "ety": "Macht < 古高地德语 maht；mächtig < 古高地德语 mahtīg。",
+  "cog": "英 might, mighty",
+  "tip": "重音在 ü 上：ˈüber-；勿与 übermütig（得意忘形的）混淆。"
+ },
+ {
+  "w": "Abfallwirtschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Abfallwirtschaft",
+  "ipa": "ˈapfalvɪʁtʃaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "废弃物管理（行业），垃圾处理与回收利用体系",
+    "de": "Gesamtheit der Maßnahmen zur Vermeidung, Verwertung und Beseitigung von Abfällen",
+    "ex": [
+     {
+      "de": "Die kommunale Abfallwirtschaft setzt verstärkt auf Recycling statt Verbrennung.",
+      "zh": "市政废弃物管理越来越注重回收利用而非焚烧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die kommunale Abfallwirtschaft — 市政废弃物管理",
+   "das Amt / der Betrieb für Abfallwirtschaft — 垃圾管理局/环卫公司",
+   "近义：Kreislaufwirtschaft — 循环经济；Entsorgung — 废物处置"
+  ],
+  "root": "Ab·fall·wirt·schaft：Abfall（垃圾；ab 离开 + fallen 落下 → “掉下来的东西”）+ Wirtschaft（经济，经营）",
+  "fam": [
+   "Abfall",
+   "abfallen",
+   "Wirtschaft",
+   "Müll",
+   "Entsorgung"
+  ],
+  "ety": "fallen < 古高地德语 fallan；Wirtschaft 由 Wirt（店主，户主；古高地德语 wirt）+ -schaft 构成。",
+  "cog": "英 fall",
+  "tip": "Abfall 偏正式/行政用语，日常说 Müll；Abfallwirtschaft 是专业、公文用词。"
+ },
+ {
+  "w": "abfertigen",
+  "pos": "v",
+  "ipa": "ˈapfɛʁtɪɡn̩",
+  "lvl": "B2–C1",
+  "forms": "fertigt ab · fertigte ab · hat abgefertigt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "为（乘客、行李、货物）办理手续；放行，处理",
+    "de": "Personen, Gepäck oder Waren formal bearbeiten und weiterleiten",
+    "ex": [
+     {
+      "de": "Am Schalter wurden die Passagiere zügig abgefertigt.",
+      "zh": "柜台很快为旅客办完了手续。"
+     },
+     {
+      "de": "Die Container werden im Hafen rund um die Uhr abgefertigt.",
+      "zh": "港口全天候处理集装箱的通关和装卸。"
+     }
+    ]
+   },
+   {
+    "zh": "（口，贬）草草打发，敷衍",
+    "de": "(ugs.) jdn. unfreundlich oder kurz behandeln",
+    "ex": [
+     {
+      "de": "Am Telefon wurde ich nur kurz abgefertigt.",
+      "zh": "电话里对方三言两语就把我打发了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn./etw. abfertigen — 给某人/某物办手续（多用被动）",
+   "jdn. kurz / schroff abfertigen — 草草/粗暴地打发某人",
+   "名词：die Abfertigung（Zollabfertigung 海关通关）"
+  ],
+  "root": "ab·fertig·en：ab（离开，完成）+ fertig（完成的，准备好的）→ 把人或物“弄好”送走",
+  "fam": [
+   "fertig",
+   "Abfertigung",
+   "Zollabfertigung",
+   "fertigen"
+  ],
+  "ety": "fertig < 古高地德语 fartīg（准备上路的），源自 fart（行程，今 Fahrt）。",
+  "cog": "英 fare（与 fahren 同源）",
+  "tip": "奥地利德语中 die Abfertigung 还指“解雇补偿金”。"
+ },
+ {
+  "w": "abschlachten",
+  "pos": "v",
+  "ipa": "ˈapʃlaxtn̩",
+  "lvl": "C1",
+  "forms": "schlachtet ab · schlachtete ab · hat abgeschlachtet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "屠杀，残杀（人）",
+    "de": "Menschen grausam und in großer Zahl töten",
+    "ex": [
+     {
+      "de": "Im Krieg wurden ganze Dörfer von Milizen abgeschlachtet.",
+      "zh": "战争中整个村庄的居民都遭到民兵屠杀。"
+     }
+    ]
+   },
+   {
+    "zh": "（大批、草率地）宰杀（牲畜）",
+    "de": "Tiere (in großer Zahl) schlachten",
+    "ex": [
+     {
+      "de": "Wegen der Seuche musste der gesamte Bestand abgeschlachtet werden.",
+      "zh": "由于疫情，全部存栏牲畜都不得不宰杀。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Menschen / Zivilisten abschlachten — 屠杀平民",
+   "比 töten / schlachten 情感色彩更强，带“残忍、成批”的意味"
+  ],
+  "root": "ab·schlacht·en：ab（彻底，去除）+ schlachten（宰杀）→ 一个不剩地宰杀",
+  "fam": [
+   "schlachten",
+   "Schlacht",
+   "Schlachthof",
+   "schlagen"
+  ],
+  "ety": "schlachten < 古高地德语 slahtōn，与 schlagen（打）同源。",
+  "cog": "英 slaughter（经古诺尔斯语，同源）, slay",
+  "tip": "schlachten 本义是正常的屠宰牲畜（中性），abschlachten 则强调残忍和大规模，用于人时带强烈谴责。"
+ },
+ {
+  "w": "absorbieren",
+  "pos": "v",
+  "ipa": "apzɔʁˈbiːʁən",
+  "lvl": "C1",
+  "forms": "absorbiert · absorbierte · hat absorbiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "吸收（光、热、液体、声音、冲击等）",
+    "de": "(Strahlung, Flüssigkeit, Energie) in sich aufnehmen",
+    "ex": [
+     {
+      "de": "Dunkle Oberflächen absorbieren mehr Sonnenlicht als helle.",
+      "zh": "深色表面比浅色表面吸收更多阳光。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）占据（精力、注意力）；吸纳",
+    "de": "(fig.) jds. Kraft, Zeit oder Aufmerksamkeit ganz beanspruchen",
+    "ex": [
+     {
+      "de": "Das Projekt absorbiert fast meine gesamte Arbeitszeit.",
+      "zh": "这个项目几乎占用了我全部的工作时间。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Wärme / Strahlung / Feuchtigkeit absorbieren — 吸收热量/辐射/湿气",
+   "von etw.(D) absorbiert sein — 全神贯注于某事",
+   "名词：die Absorption（物理/化学）；der Absorber 吸收器"
+  ],
+  "root": "ab·sorb·ieren：拉 ab（离开，从…）+ sorbere（吸，吞）+ -ieren（外来动词后缀）→ 吸进去",
+  "fam": [
+   "Absorption",
+   "Absorber",
+   "absorbierend"
+  ],
+  "ety": "借自拉丁语 absorbere（吞下，吸收）。",
+  "cog": "英 absorb",
+  "tip": "-ieren 动词第二分词不加 ge-：hat absorbiert。日常可说 aufnehmen / aufsaugen。"
+ },
+ {
+  "w": "Amphitheater",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Amphitheater",
+  "gs": "des Amphitheaters",
+  "ipa": "amˈfiːteaːtɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（古罗马）圆形剧场，竞技场",
+    "de": "antikes, meist ovales Theater mit ringsum ansteigenden Sitzreihen",
+    "ex": [
+     {
+      "de": "Das Amphitheater in Trier bot Platz für etwa 18 000 Zuschauer.",
+      "zh": "特里尔的圆形剧场可容纳约一万八千名观众。"
+     }
+    ]
+   },
+   {
+    "zh": "阶梯式（半圆形）露天剧场或会场",
+    "de": "halbkreisförmig ansteigende Anlage, z. B. Freilichtbühne",
+    "ex": [
+     {
+      "de": "Im Sommer finden im Amphitheater des Parks Konzerte statt.",
+      "zh": "夏天公园的阶梯露天剧场里会举办音乐会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein römisches Amphitheater — 罗马圆形剧场",
+   "amphitheatralisch ansteigen — 呈阶梯状逐级升高"
+  ],
+  "root": "amphi·theater：希腊语 amphi-（两侧，周围）+ théatron（看台，剧场）→ 四周都是看台的剧场",
+  "fam": [
+   "Theater",
+   "theatralisch",
+   "Amphibie"
+  ],
+  "ety": "经拉丁语 amphitheatrum 借自希腊语 amphithéatron。",
+  "cog": "英 amphitheatre/amphitheater",
+  "tip": "重音在 -phi-：Am-ˈphi-the-a-ter；古罗马最著名的是 das Kolosseum。"
+ },
+ {
+  "w": "Amtshandlung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Amtshandlungen",
+  "gs": "der Amtshandlung",
+  "ipa": "ˈamt͡shandlʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "公务行为，职务行为（官员或机关依职权所做的行为）",
+    "de": "Handlung, die eine Behörde oder ein Amtsträger in amtlicher Eigenschaft vornimmt",
+    "ex": [
+     {
+      "de": "Die Eheschließung ist eine Amtshandlung des Standesbeamten.",
+      "zh": "结婚登记是户籍官员的一项公务行为。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Amtshandlung vornehmen — 执行公务",
+   "Gebühren für Amtshandlungen — 公务规费（办证等收费）",
+   "（宗教）kirchliche Amtshandlungen — 教会圣事仪式（洗礼、婚礼、葬礼等）"
+  ],
+  "root": "Amt·s·handl·ung：Amt（职务，机关）+ -s-（连接音）+ Handlung（行为；handeln 行动 + -ung）",
+  "fam": [
+   "Amt",
+   "amtlich",
+   "Beamter",
+   "Handlung",
+   "handeln"
+  ],
+  "ety": "Amt < 古高地德语 ambaht（职务，服役），一般认为源自凯尔特语（参见拉丁语 ambactus 仆从）；handeln < 古高地德语 hantalōn（用手处理），源自 Hand。",
+  "cog": "英 hand（handeln 的词根）",
+  "tip": "公文用语；日常说 etw. beim Amt erledigen。"
+ },
+ {
+  "w": "Amtsperiode",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Amtsperioden",
+  "gs": "der Amtsperiode",
+  "ipa": "ˈamt͡speʁi̯oːdə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "任期",
+    "de": "Zeitraum, für den jd. in ein Amt gewählt oder berufen ist",
+    "ex": [
+     {
+      "de": "Der Präsident strebt eine zweite Amtsperiode an.",
+      "zh": "总统寻求第二个任期。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in seiner ersten Amtsperiode — 在其第一个任期内",
+   "die Amtsperiode endet / läuft ab — 任期结束",
+   "近义：Amtszeit；议会任期叫 Legislaturperiode / Wahlperiode"
+  ],
+  "root": "Amt·s·periode：Amt（职务）+ Periode（时期）→ 担任职务的时期",
+  "fam": [
+   "Amt",
+   "Amtszeit",
+   "Periode",
+   "periodisch"
+  ],
+  "ety": "Periode 经拉丁语 periodus 借自希腊语 períodos（循环，周期：peri- 周围 + hodós 路）。Amt 见 Amtshandlung。",
+  "cog": "英 period",
+  "tip": "Amtszeit 更常用；Amtsperiode 多见于新闻和瑞士、奥地利德语。"
+ },
+ {
+  "w": "anfliegen",
+  "pos": "v",
+  "ipa": "ˈanfliːɡn̩",
+  "lvl": "C1",
+  "forms": "fliegt an · flog an · hat/ist angeflogen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（航班）飞往，在…降落；向（目标）飞去（及物，完成时用 haben）",
+    "de": "(tr.) ein Ziel im Flug ansteuern, regelmäßig dorthin fliegen",
+    "ex": [
+     {
+      "de": "Die Airline fliegt Shanghai künftig dreimal pro Woche an.",
+      "zh": "这家航空公司今后每周三次飞往上海。"
+     },
+     {
+      "de": "Der Pilot hat den Flughafen wegen Nebels nicht anfliegen können.",
+      "zh": "因为大雾，飞行员没能飞向机场降落。"
+     }
+    ]
+   },
+   {
+    "zh": "飞来，飞近（不及物，完成时用 sein，常用 angeflogen kommen）",
+    "de": "(intr.) heranfliegen",
+    "ex": [
+     {
+      "de": "Plötzlich kam ein Ball angeflogen und traf das Fenster.",
+      "zh": "突然飞来一个球，砸中了窗户。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Flughafen / eine Stadt anfliegen — 飞往（某机场/城市）",
+   "angeflogen kommen — 飞过来（运动方向）",
+   "名词：der Anflug — 进近，降落飞行；（比喻）一丝（ein Anflug von Ironie）"
+  ],
+  "root": "an·flieg·en：an（向，靠近）+ fliegen（飞）→ 朝某处飞去",
+  "fam": [
+   "fliegen",
+   "Anflug",
+   "Flug",
+   "Flughafen"
+  ],
+  "ety": "fliegen < 古高地德语 fliogan。",
+  "cog": "英 fly",
+  "tip": "及物（anfliegen + 宾语）用 haben，不及物（angeflogen kommen）用 sein。另有书面用法：jdm. fliegt etw. an（某人轻松学会某事，ist angeflogen）。"
+ },
+ {
+  "w": "Aprilscherz",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Aprilscherze",
+  "gs": "des Aprilscherzes",
+  "ipa": "aˈpʁɪlʃɛʁt͡s",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "愚人节玩笑",
+    "de": "Scherz, mit dem man jdn. am 1. April hereinlegt",
+    "ex": [
+     {
+      "de": "Die Meldung über die Abschaffung der Hausaufgaben war leider nur ein Aprilscherz.",
+      "zh": "取消家庭作业的消息可惜只是个愚人节玩笑。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Aprilscherz machen — 开愚人节玩笑",
+   "auf einen Aprilscherz hereinfallen — 上了愚人节玩笑的当",
+   "jdn. in den April schicken — 在愚人节捉弄某人",
+   "Das ist doch wohl ein Aprilscherz! — 这不会是开玩笑吧！"
+  ],
+  "root": "April·scherz：April（四月）+ Scherz（玩笑）→ 四月一日的玩笑",
+  "fam": [
+   "April",
+   "Scherz",
+   "scherzen",
+   "scherzhaft"
+  ],
+  "ety": "April 借自拉丁语 Aprilis；Scherz < 中古高地德语 scherz（嬉戏，玩乐），更早来源不甚明确。",
+  "cog": "英 April；（意大利语借自德语）scherzo（一般认为）",
+  "tip": "德语 April 重音在第二音节：aˈpʁɪl。"
+ },
+ {
+  "w": "Arbeiterkammer",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Arbeiterkammern",
+  "gs": "der Arbeiterkammer",
+  "ipa": "ˈaʁbaɪ̯tɐkamɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "劳工协会，劳动者公会（奥地利等地依法设立、雇员强制加入的利益代表机构）",
+    "de": "gesetzliche Interessenvertretung der Arbeitnehmer (bes. in Österreich, auch in Luxemburg, Bremen und im Saarland)",
+    "ex": [
+     {
+      "de": "Die Arbeiterkammer berät ihre Mitglieder kostenlos in arbeitsrechtlichen Fragen.",
+      "zh": "劳工协会为会员免费提供劳动法方面的咨询。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "奥地利缩写：die AK",
+   "die Arbeiterkammer Wien — 维也纳劳工协会",
+   "对应雇主一方：die Wirtschaftskammer（奥）/ die Industrie- und Handelskammer（德）"
+  ],
+  "root": "Arbeiter·kammer：Arbeiter（工人，劳动者）+ Kammer（议会式机构，公会）",
+  "fam": [
+   "Arbeiter",
+   "Arbeit",
+   "Kammer",
+   "Handwerkskammer",
+   "Gewerkschaft"
+  ],
+  "ety": "Kammer < 古高地德语 kamara，借自拉丁语 camera（拱顶房间），后者源自希腊语 kamára。",
+  "cog": "英 chamber（经古法语，同源）",
+  "tip": "Arbeiterkammer 是法定公法机构，所有雇员自动成为会员；Gewerkschaft（工会）则是自愿加入的社团，二者不同。"
+ },
+ {
+  "w": "Armeekorps",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Armeekorps",
+  "gs": "des Armeekorps",
+  "ipa": "aʁˈmeːkoːɐ̯",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "军（陆军编制单位，下辖若干师）",
+    "de": "großer militärischer Verband aus mehreren Divisionen",
+    "ex": [
+     {
+      "de": "Das Armeekorps bestand aus drei Divisionen.",
+      "zh": "该军下辖三个师。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "发音：单数 [...koːɐ̯]，二格和复数 [...koːɐ̯s]，拼写不变",
+   "编制大致为 Armee（集团军）> Korps（军）> Division（师）> Brigade（旅）"
+  ],
+  "root": "Armee·korps：Armee（军队）+ Korps（团体，军）→ 军队中的“军”一级",
+  "fam": [
+   "Armee",
+   "Korps",
+   "Korpsgeist",
+   "Körper"
+  ],
+  "ety": "Armee 借自法语 armée（军队）；Korps 借自法语 corps（身体，团体），源于拉丁语 corpus。",
+  "cog": "英 army, corps",
+  "tip": "Korps 读如法语 [koːɐ̯]，末尾 -ps 在单数主格不发音。"
+ },
+ {
+  "w": "Aufenthaltserlaubnis",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Aufenthaltserlaubnisse",
+  "gs": "der Aufenthaltserlaubnis",
+  "ipa": "ˈaʊ̯fʔɛnthalt͡sʔɛɐ̯laʊ̯pnɪs",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "居留许可",
+    "de": "behördliche Genehmigung für Ausländer, sich in einem Land aufzuhalten",
+    "ex": [
+     {
+      "de": "Ich muss meine Aufenthaltserlaubnis vor Ablauf bei der Ausländerbehörde verlängern.",
+      "zh": "我必须在到期前去外管局延长居留许可。"
+     },
+     {
+      "de": "Für ein Studium in Deutschland erhält man eine befristete Aufenthaltserlaubnis.",
+      "zh": "在德国读书可获得有期限的居留许可。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Aufenthaltserlaubnis beantragen / erteilen / verlängern — 申请/发放/延长居留许可",
+   "eine Aufenthaltserlaubnis zum Zweck des Studiums — 以学习为目的的居留许可",
+   "德国居留法中：Aufenthaltserlaubnis（有期限）≠ Niederlassungserlaubnis（无期限定居许可）"
+  ],
+  "root": "Aufenthalt·s·erlaub·nis：Aufenthalt（停留，居留）+ -s- + Erlaubnis（许可；erlauben + -nis）",
+  "fam": [
+   "Aufenthalt",
+   "sich aufhalten",
+   "Erlaubnis",
+   "erlauben",
+   "Aufenthaltstitel"
+  ],
+  "ety": "erlauben < 古高地德语 irlouben；Aufenthalt 源自中古高地德语 ūfenthalten（留住，停留）。",
+  "cog": "英 leave（名词“许可”，与 -lauben 同源）, hold（与 halten 同源）",
+  "tip": "Erlaubnis 的复数是 Erlaubnisse（双 s）。法律上的总称是 Aufenthaltstitel（居留凭证），其中包括 Visum、Aufenthaltserlaubnis、Blaue Karte EU、Niederlassungserlaubnis 等。"
+ },
+ {
+  "w": "aufrollen",
+  "pos": "v",
+  "ipa": "ˈaʊ̯fʁɔlən",
+  "lvl": "C1",
+  "forms": "rollt auf · rollte auf · hat aufgerollt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "卷起，卷成卷；（也可指）展开（卷着的东西）",
+    "de": "zu einer Rolle aufwickeln; auch: etw. Zusammengerolltes auseinanderrollen",
+    "ex": [
+     {
+      "de": "Nach dem Einsatz rollten die Feuerwehrleute die Schläuche wieder auf.",
+      "zh": "出警结束后，消防员把水龙带重新卷了起来。"
+     }
+    ]
+   },
+   {
+    "zh": "重新审理，重新提出（案件、问题）",
+    "de": "(einen Fall, ein Thema) erneut aufgreifen und von Grund auf behandeln",
+    "ex": [
+     {
+      "de": "Nach dem neuen Gutachten wird der Fall noch einmal aufgerollt.",
+      "zh": "有了新的鉴定意见后，此案将重新审理。"
+     }
+    ]
+   },
+   {
+    "zh": "（体育/军事）从后面逐个超越；从侧翼突破",
+    "de": "(Sport, Militär) von hinten oder von der Seite her überholen bzw. aufbrechen",
+    "ex": [
+     {
+      "de": "Der Läufer rollte das Feld in der letzten Runde von hinten auf.",
+      "zh": "这名选手在最后一圈从后面把对手一个个超了过去。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Kabel / einen Teppich aufrollen — 把电缆/地毯卷起",
+   "einen Fall / einen Prozess neu aufrollen — 重新审理某案",
+   "das Feld von hinten aufrollen — 从后面追赶并超越众人"
+  ],
+  "root": "auf·roll·en：auf（向上，开）+ rollen（滚，卷）→ 卷起或卷开",
+  "fam": [
+   "rollen",
+   "Rolle",
+   "entrollen",
+   "zusammenrollen"
+  ],
+  "ety": "rollen < 中古高地德语 rollen，借自古法语 roller，源于中世纪拉丁语 rotulare（rotula“小轮”）。",
+  "cog": "英 roll",
+  "tip": "aufrollen 既可“卷起”也可“展开”，靠语境区分；明确“展开”可用 entrollen / ausrollen。卷袖子说 die Ärmel hochkrempeln。"
+ },
+ {
+  "w": "aufweichen",
+  "pos": "v",
+  "ipa": "ˈaʊ̯fvaɪ̯çn̩",
+  "lvl": "C1",
+  "forms": "weicht auf · weichte auf · hat/ist aufgeweicht",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "泡软，使变软（及物，haben）；变软，被泡软（不及物，sein）",
+    "de": "(tr.) weich machen; (intr.) weich werden",
+    "ex": [
+     {
+      "de": "Der Dauerregen hat den Boden völlig aufgeweicht.",
+      "zh": "连绵的雨把地面泡得一片泥泞。"
+     },
+     {
+      "de": "Die Brötchen sind in der Milch aufgeweicht.",
+      "zh": "小面包在牛奶里泡软了。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）削弱，松动（规则、原则、立场）",
+    "de": "(fig.) Regeln, Grundsätze o. Ä. lockern, aushöhlen",
+    "ex": [
+     {
+      "de": "Kritiker befürchten, dass der Kündigungsschutz aufgeweicht wird.",
+      "zh": "批评者担心解雇保护会被削弱。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Boden / das Brot aufweichen — 泡软地面/面包",
+   "Regeln / Standards / den Datenschutz aufweichen — 放宽规则/降低标准/削弱数据保护",
+   "名词：die Aufweichung"
+  ],
+  "root": "auf·weich·en：auf（表示开始、变成某状态）+ weich（软的）+ -en → 使变软",
+  "fam": [
+   "weich",
+   "erweichen",
+   "Weichmacher",
+   "Aufweichung"
+  ],
+  "ety": "weich < 古高地德语 weih。",
+  "cog": "英 weak（经古诺尔斯语 veikr，同源）",
+  "tip": "aufweichen 来自形容词 weich，是弱变化（weichte auf, aufgeweicht）；不要与强变化的 weichen / ausweichen（wich aus, ausgewichen“避让”）混淆。"
+ },
+ {
+  "w": "aushebeln",
+  "pos": "v",
+  "ipa": "ˈaʊ̯sheːbl̩n",
+  "lvl": "C1",
+  "forms": "hebelt aus · hebelte aus · hat ausgehebelt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（比喻）使失效，架空，规避（法律、规定、机制）",
+    "de": "(fig.) etw. (bes. Regeln, Kontrollen) unwirksam machen oder umgehen",
+    "ex": [
+     {
+      "de": "Mit dem Gesetz könnte die Kontrolle durch das Parlament ausgehebelt werden.",
+      "zh": "这项法律可能会架空议会的监督。"
+     }
+    ]
+   },
+   {
+    "zh": "撬开，撬出；（摔跤、柔道）用杠杆动作摔倒（对手）",
+    "de": "mit einem Hebel herausheben; (Sport) den Gegner durch Hebelwirkung zu Fall bringen",
+    "ex": [
+     {
+      "de": "Die Einbrecher hatten die Terrassentür einfach ausgehebelt.",
+      "zh": "窃贼直接把露台门撬开了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Gesetze / den Rechtsstaat / Kontrollen aushebeln — 架空法律/法治/监督",
+   "eine Tür / ein Fenster aushebeln — 撬开门/窗"
+  ],
+  "root": "aus·hebel·n：aus（出，掉）+ Hebel（杠杆，撬棍）+ -n → 用杠杆撬出 → 使（机制）失灵",
+  "fam": [
+   "Hebel",
+   "heben",
+   "Hebelwirkung",
+   "am längeren Hebel sitzen"
+  ],
+  "ety": "Hebel 源自 heben（举起；古高地德语 heffen）。",
+  "cog": "英 heave（与 heben 同源）",
+  "tip": "新闻中最常用比喻义，宾语多为法律、规则、制度：das Grundgesetz aushebeln。"
+ },
+ {
+  "w": "Baugruppe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Baugruppen",
+  "gs": "der Baugruppe",
+  "ipa": "ˈbaʊ̯ɡʁʊpə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（技术）组件，部件，总成",
+    "de": "(Technik) aus mehreren Einzelteilen bestehende, funktionale Einheit eines Geräts oder einer Maschine",
+    "ex": [
+     {
+      "de": "Die defekte Baugruppe kann komplett ausgetauscht werden.",
+      "zh": "损坏的组件可以整体更换。"
+     }
+    ]
+   },
+   {
+    "zh": "合作建房小组（若干家庭共同出资建房的私人团体）",
+    "de": "Zusammenschluss privater Bauherren, die gemeinsam ein Wohnhaus planen und bauen",
+    "ex": [
+     {
+      "de": "In Berlin hat sich eine Baugruppe aus zwölf Familien zusammengetan.",
+      "zh": "在柏林，十二户家庭组成了一个合作建房小组。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine elektronische Baugruppe — 电子组件",
+   "Baugruppen montieren / prüfen — 装配/检测组件",
+   "近义：Bauteil（单个零件）, Modul, Komponente"
+  ],
+  "root": "Bau·gruppe：bauen（建造）+ Gruppe（组）→ 构造上的一组（零件）/ 建房的一组人",
+  "fam": [
+   "bauen",
+   "Bauteil",
+   "Gruppe",
+   "Baustein"
+  ],
+  "ety": "bauen < 古高地德语 būan（居住，耕种）；Gruppe 借自法语 groupe，后者源于意大利语 gruppo。",
+  "cog": "英 group；英 neighbour 中的 -bour、bower（与 bauen 同源）",
+  "tip": "Bauteil（零件）是单件，Baugruppe 是由多个零件组成的部件。"
+ },
+ {
+  "w": "befeuern",
+  "pos": "v",
+  "ipa": "bəˈfɔɪ̯ɐn",
+  "lvl": "C1",
+  "forms": "befeuert · befeuerte · hat befeuert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（比喻）助长，推动，刺激（讨论、通胀、猜测等）",
+    "de": "(fig.) anheizen, antreiben, verstärken",
+    "ex": [
+     {
+      "de": "Die hohen Energiepreise befeuern die Inflation zusätzlich.",
+      "zh": "高企的能源价格进一步推高了通胀。"
+     },
+     {
+      "de": "Der Rücktritt befeuerte Spekulationen über eine Neuwahl.",
+      "zh": "这次辞职加剧了关于重新选举的猜测。"
+     }
+    ]
+   },
+   {
+    "zh": "给（炉子等）烧火，用…作燃料",
+    "de": "(einen Ofen o. Ä.) mit Brennstoff heizen",
+    "ex": [
+     {
+      "de": "Der Kachelofen wird mit Holz befeuert.",
+      "zh": "这座瓷砖壁炉用木柴烧火。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Debatte / Gerüchte / die Nachfrage befeuern — 引发辩论/助长谣言/刺激需求",
+   "etw. mit etw.(D) befeuern — 用某物给…加燃料",
+   "（口，军/体育）jdn. mit etw. befeuern — 向某人猛烈发射/抛掷"
+  ],
+  "root": "be·feuer·n：be-（施加于对象）+ Feuer（火）+ -n → 给某物加火",
+  "fam": [
+   "Feuer",
+   "feuern",
+   "anfeuern",
+   "Befeuerung"
+  ],
+  "ety": "Feuer < 古高地德语 fiur。",
+  "cog": "英 fire",
+  "tip": "近义 anheizen 同样常用于比喻；注意 feuern 另有“开除”义（jdn. feuern），befeuern 无此义。"
+ },
+ {
+  "w": "befähigen",
+  "pos": "v",
+  "ipa": "bəˈfɛːɪɡn̩",
+  "lvl": "C1",
+  "forms": "befähigt · befähigte · hat befähigt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "使能够，使有能力；使具备资格",
+    "de": "jdn. in die Lage versetzen, etw. zu tun; jdm. die Fähigkeit oder Qualifikation für etw. geben",
+    "ex": [
+     {
+      "de": "Die Ausbildung befähigt die Absolventen, selbstständig einen Betrieb zu führen.",
+      "zh": "这项培训使毕业生有能力独立经营企业。"
+     },
+     {
+      "de": "Der Abschluss befähigt zum Studium an einer Fachhochschule.",
+      "zh": "这一学历使人具备进入应用技术大学学习的资格。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. zu etw.(D) befähigen — 使某人能够做某事",
+   "jdn. (dazu) befähigen, etw. zu tun",
+   "zu etw. befähigt sein — 有能力/资格做某事",
+   "名词：die Befähigung（Lehrbefähigung 教师资格）"
+  ],
+  "root": "be·fähig·en：be-（使具有）+ fähig（有能力的）+ -en → 使有能力",
+  "fam": [
+   "fähig",
+   "Fähigkeit",
+   "Befähigung",
+   "unfähig"
+  ],
+  "ety": "fähig < 中古高地德语 væhic（能容纳的，能接受的），与 fangen（古形 fāhen“抓住”）同源。",
+  "cog": "英 fang（与 fangen 同源）",
+  "tip": "书面、正式；日常说 in die Lage versetzen 或 ermöglichen（后者宾语是事情：jdm. etw. ermöglichen）。"
+ },
+ {
+  "w": "bepflanzen",
+  "pos": "v",
+  "ipa": "bəˈpflant͡sn̩",
+  "lvl": "B2–C1",
+  "forms": "bepflanzt · bepflanzte · hat bepflanzt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "在（某处）种植，栽满（植物）",
+    "de": "eine Fläche mit Pflanzen versehen",
+    "ex": [
+     {
+      "de": "Wir haben den Balkon mit Kräutern und Tomaten bepflanzt.",
+      "zh": "我们在阳台上种了香草和西红柿。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) mit etw.(D) bepflanzen — 在某处种上某物",
+   "ein bepflanztes Dach / Beet — 种有植物的屋顶/花坛",
+   "名词：die Bepflanzung — 种植；（种植的）植物"
+  ],
+  "root": "be·pflanz·en：be-（使及物，施加于整个表面）+ Pflanze（植物）+ -en → 给某处种上植物",
+  "fam": [
+   "Pflanze",
+   "pflanzen",
+   "Bepflanzung",
+   "anpflanzen"
+  ],
+  "ety": "Pflanze < 古高地德语 pflanza，借自拉丁语 planta（嫩枝，幼苗）。",
+  "cog": "英 plant",
+  "tip": "be- 把“处所”变成宾语：Blumen pflanzen（种花）vs. das Beet mit Blumen bepflanzen（在花坛里种上花）。"
+ },
+ {
+  "w": "bergsteigen",
+  "pos": "v",
+  "ipa": "ˈbɛʁkʃtaɪ̯ɡn̩",
+  "lvl": "B1–B2",
+  "forms": "— · — · ist/hat berggestiegen（通常只用不定式和第二分词）",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "登山，爬山（作为运动）",
+    "de": "im Gebirge auf Berge klettern oder wandern (als Sport)",
+    "ex": [
+     {
+      "de": "Im Sommer gehen wir in den Alpen bergsteigen.",
+      "zh": "夏天我们去阿尔卑斯山登山。"
+     },
+     {
+      "de": "Er ist schon als Jugendlicher viel berggestiegen.",
+      "zh": "他少年时就经常登山。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "bergsteigen gehen — 去登山",
+   "das Bergsteigen — 登山运动（名词化）",
+   "der Bergsteiger / die Bergsteigerin — 登山者"
+  ],
+  "root": "berg·steig·en：Berg（山）+ steigen（登，上升）→ 登山",
+  "fam": [
+   "Berg",
+   "steigen",
+   "Bergsteiger",
+   "besteigen"
+  ],
+  "ety": "Berg < 古高地德语 berg；steigen < 古高地德语 stīgan。",
+  "cog": "英 barrow（古坟丘，古英语 beorg，与 Berg 同源）；stair, stile（与 steigen 同源）",
+  "tip": "现在时人称变位（*ich steige berg）基本不用；说具体某座山用 einen Berg besteigen：Wir haben die Zugspitze bestiegen。"
+ },
+ {
+  "w": "Berufsorientierung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Berufsorientierung",
+  "ipa": "bəˈʁuːfsʔoʁi̯ɛntiːʁʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "职业定向，职业规划指导（尤指学校中帮助学生了解职业、选择方向）",
+    "de": "Maßnahmen und Prozess, durch die sich (junge) Menschen über Berufe informieren und eine Berufswahl treffen",
+    "ex": [
+     {
+      "de": "Praktika sind ein wichtiger Teil der Berufsorientierung in der neunten Klasse.",
+      "zh": "实习是九年级职业定向教育的重要组成部分。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Angebote zur Berufsorientierung — 职业定向项目",
+   "Berufsorientierung an Schulen — 学校的职业指导",
+   "相关：die Berufsberatung（职业咨询，如劳动局提供）"
+  ],
+  "root": "Beruf·s·orient·ier·ung：Beruf（职业）+ -s- + Orientierung（定向；orientieren 辨明方向 + -ung）",
+  "fam": [
+   "Beruf",
+   "beruflich",
+   "Orientierung",
+   "sich orientieren",
+   "Berufswahl"
+  ],
+  "ety": "orientieren 借自法语 orienter（使朝向东方，辨明方向），源自 orient（东方，拉丁语 oriens“升起的（太阳）”）；Beruf 源自 berufen（召唤）。",
+  "cog": "英 orientation",
+  "tip": "德国中学（尤其 Haupt-/Realschule）普遍开设，常与 Praktikum, Berufsberatung 一起出现。"
+ },
+ {
+  "w": "Besatzungszone",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Besatzungszonen",
+  "gs": "der Besatzungszone",
+  "ipa": "bəˈzat͡sʊŋst͡soːnə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "占领区",
+    "de": "von fremden Truppen besetztes und verwaltetes Gebiet, bes. die Zonen in Deutschland nach 1945",
+    "ex": [
+     {
+      "de": "Nach 1945 wurde Deutschland in vier Besatzungszonen aufgeteilt.",
+      "zh": "1945年后，德国被划分为四个占领区。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die amerikanische / britische / französische / sowjetische Besatzungszone — 美/英/法/苏占区",
+   "aus der sowjetischen Besatzungszone (SBZ) ging die DDR hervor — 民主德国由苏占区而来"
+  ],
+  "root": "Be·satz·ung·s·zone：Besatzung（占领；besetzen 占据 + -ung）+ -s- + Zone（区域）",
+  "fam": [
+   "besetzen",
+   "Besatzung",
+   "Besatzungsmacht",
+   "Zone"
+  ],
+  "ety": "Zone 经拉丁语 zona 借自希腊语 zṓnē（腰带，带状区域）；besetzen 源自 setzen。",
+  "cog": "英 zone；set（与 setzen 同源）",
+  "tip": "Besatzung 另有“（船、飞机的）全体乘员”之义：die Besatzung eines Schiffes。"
+ },
+ {
+  "w": "Besserwisser",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Besserwisser",
+  "gs": "des Besserwissers",
+  "ipa": "ˈbɛsɐvɪsɐ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（贬）自以为是的人，好为人师者，万事通",
+    "de": "(abwertend) jd., der immer alles besser zu wissen glaubt und andere belehrt",
+    "ex": [
+     {
+      "de": "Niemand arbeitet gern mit einem Besserwisser zusammen, der jede Idee kritisiert.",
+      "zh": "谁都不愿和一个对每个想法都挑刺的自以为是的人共事。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性：die Besserwisserin",
+   "形容词：besserwisserisch — 自以为是的",
+   "名词：die Besserwisserei — 自以为是，好为人师"
+  ],
+  "root": "besser·wiss·er：besser（更好）+ wissen（知道）+ -er（人）→ 总觉得自己知道得更多的人",
+  "fam": [
+   "besser",
+   "wissen",
+   "besserwisserisch",
+   "Klugscheißer"
+  ],
+  "ety": "besser < 古高地德语 bezzir（gut 的比较级异根形式）；wissen < 古高地德语 wizzan。",
+  "cog": "英 better；wit, wise（与 wissen 同源）",
+  "tip": "口语中更粗俗的同义词是 Klugscheißer，正式场合避免使用。"
+ },
+ {
+  "w": "Bestürzung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Bestürzung",
+  "ipa": "bəˈʃtʏʁt͡sʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "震惊，惊愕（尤指对噩耗、不幸事件的错愕与痛心）",
+    "de": "Erschütterung, Fassungslosigkeit angesichts eines schlimmen Ereignisses",
+    "ex": [
+     {
+      "de": "Die Nachricht vom Tod des Trainers löste im ganzen Verein große Bestürzung aus.",
+      "zh": "教练去世的消息令整个俱乐部深感震惊。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit Bestürzung reagieren / auf etw. reagieren — 震惊地作出反应",
+   "Bestürzung auslösen — 引起震惊",
+   "zu jds. Bestürzung — 令某人震惊的是",
+   "形容词：bestürzt（über etw.(A) bestürzt sein 对某事感到震惊）"
+  ],
+  "root": "be·stürz·ung：bestürzen（使惊愕；be- + stürzen 跌落、倒塌）+ -ung → 心里像被“推倒”的感觉",
+  "fam": [
+   "bestürzt",
+   "bestürzend",
+   "stürzen",
+   "Sturz"
+  ],
+  "ety": "bestürzen < 中古高地德语 bestürzen（掀翻，打乱）；stürzen < 古高地德语 sturzen。",
+  "cog": "一说与英 start 同源",
+  "tip": "比 Überraschung 沉重得多，只用于负面事件；常见于讣告和官方声明（mit großer Bestürzung haben wir erfahren …）。"
+ },
+ {
+  "w": "beteuern",
+  "pos": "v",
+  "ipa": "bəˈtɔɪ̯ɐn",
+  "lvl": "C1",
+  "forms": "beteuert · beteuerte · hat beteuert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "一再声明，郑重保证，信誓旦旦地表示（尤指自己无辜或真诚）",
+    "de": "etw. nachdrücklich versichern, bes. um Zweifel auszuräumen",
+    "ex": [
+     {
+      "de": "Der Angeklagte beteuerte bis zuletzt seine Unschuld.",
+      "zh": "被告直到最后都坚称自己无罪。"
+     },
+     {
+      "de": "Die Regierung beteuert, dass die Renten sicher seien.",
+      "zh": "政府一再保证养老金是有保障的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "seine Unschuld / Liebe beteuern — 坚称自己无辜/一再表白爱意",
+   "beteuern, dass … — 一再声明……（新闻中后接第一虚拟式）",
+   "名词：die Beteuerung"
+  ],
+  "root": "be·teuer·n：be- + teuer（珍贵的）+ -n → 把话说得很“珍贵、郑重” → 郑重保证",
+  "fam": [
+   "teuer",
+   "Beteuerung",
+   "versichern",
+   "schwören"
+  ],
+  "ety": "中古高地德语 betiuren（估价高；郑重声明），源自 tiure（珍贵的，今 teuer；古高地德语 tiuri）。",
+  "cog": "英 dear（与 teuer 同源）",
+  "tip": "beteuern 常暗示听者未必相信，带一丝怀疑色彩；中性的“保证”用 versichern。"
+ },
+ {
+  "w": "Bewusstlosigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Bewusstlosigkeit",
+  "ipa": "bəˈvʊstloːzɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "昏迷，失去知觉",
+    "de": "Zustand, in dem jd. ohne Bewusstsein ist",
+    "ex": [
+     {
+      "de": "Eine Kohlenmonoxidvergiftung kann schnell zur Bewusstlosigkeit führen.",
+      "zh": "一氧化碳中毒会很快导致昏迷。"
+     }
+    ]
+   },
+   {
+    "zh": "bis zur Bewusstlosigkeit：（口）没完没了地，直到筋疲力尽",
+    "de": "(ugs.) bis zum Überdruss, bis zur Erschöpfung",
+    "ex": [
+     {
+      "de": "Das Thema wurde in den Medien bis zur Bewusstlosigkeit diskutiert.",
+      "zh": "这个话题被媒体翻来覆去地讨论，令人厌烦。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in Bewusstlosigkeit fallen — 陷入昏迷",
+   "aus der Bewusstlosigkeit erwachen — 从昏迷中苏醒",
+   "形容词：bewusstlos（bewusstlos werden 昏过去）",
+   "近义：Ohnmacht（短暂昏厥）, Koma（医学上的深度昏迷）"
+  ],
+  "root": "be·wusst·los·ig·keit：bewusst（有意识的）+ -los（无）+ -igkeit（名词化）→ 无意识的状态",
+  "fam": [
+   "bewusst",
+   "Bewusstsein",
+   "bewusstlos",
+   "wissen"
+  ],
+  "ety": "bewusst < 中古高地德语 bewist，为 bewizzen（知晓）的分词，源自 wissen。",
+  "cog": "英 wit（与 wissen 同源）",
+  "tip": "短暂晕倒常说 in Ohnmacht fallen；Bewusstlosigkeit 更偏医学、事故报道用语。"
+ },
+ {
+  "w": "Bigband",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bigbands",
+  "gs": "der Bigband",
+  "ipa": "ˈbɪɡbɛnt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "大乐队（大编制爵士乐/摇摆乐乐队）",
+    "de": "großes Jazz- oder Tanzorchester mit Bläsersätzen und Rhythmusgruppe",
+    "ex": [
+     {
+      "de": "Zum Abschlussball spielte die Bigband der Schule Swing-Klassiker.",
+      "zh": "毕业舞会上，学校的大乐队演奏了摇摆乐经典曲目。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "也写作 Big Band",
+   "in einer Bigband spielen — 在大乐队里演奏",
+   "die Bigband-Musik der 1940er-Jahre — 二十世纪四十年代的大乐队音乐"
+  ],
+  "root": "英语 big（大）+ band（乐队）",
+  "fam": [
+   "Band",
+   "Jazz",
+   "Orchester",
+   "Combo"
+  ],
+  "ety": "二十世纪借自英语 big band。",
+  "cog": "英 big band",
+  "tip": "表“乐队”的 die Band 读 [bɛnt]，是阴性，与 das Band（带子）、der Band（卷册）不同。"
+ },
+ {
+  "w": "Bildsprache",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bildsprachen（少用）",
+  "gs": "der Bildsprache",
+  "ipa": "ˈbɪltʃpʁaːxə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（文学）形象化语言，比喻性语言",
+    "de": "an Bildern, Metaphern reiche Ausdrucksweise",
+    "ex": [
+     {
+      "de": "Die Bildsprache des Gedichts erinnert an die Romantik.",
+      "zh": "这首诗的意象语言令人联想到浪漫主义。"
+     }
+    ]
+   },
+   {
+    "zh": "（电影、摄影、设计）视觉语言，画面风格",
+    "de": "Gestaltungsweise und Wirkung von Bildern in Film, Fotografie, Werbung",
+    "ex": [
+     {
+      "de": "Der Film besticht durch seine kühle, minimalistische Bildsprache.",
+      "zh": "这部电影以其冷峻、极简的视觉语言打动人心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine starke / poetische Bildsprache — 有力的/诗意的视觉（形象）语言",
+   "die Bildsprache der Werbung — 广告的视觉语言"
+  ],
+  "root": "Bild·sprache：Bild（图像，形象）+ Sprache（语言）→ 用图像/意象表达的语言",
+  "fam": [
+   "Bild",
+   "bildlich",
+   "Sprache",
+   "Metapher"
+  ],
+  "ety": "Bild < 古高地德语 bilidi（形象，样子）；Sprache < 古高地德语 sprāhha。",
+  "cog": "英 speech（与 Sprache 同源）",
+  "tip": "艺术评论中的高频词；说文学里的“意象”也可用 Bildlichkeit 或 Metaphorik。"
+ },
+ {
+  "w": "Bravour",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Bravouren（少用）",
+  "gs": "der Bravour",
+  "ipa": "bʁaˈvuːɐ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "出色，精湛（的技艺）；mit Bravour 出色地",
+    "de": "Meisterschaft, glänzende Technik",
+    "ex": [
+     {
+      "de": "Sie hat die Prüfung mit Bravour bestanden.",
+      "zh": "她以优异的表现通过了考试。"
+     }
+    ]
+   },
+   {
+    "zh": "（旧，书面）勇敢，胆量",
+    "de": "(veraltend) Kühnheit, Tapferkeit",
+    "ex": [
+     {
+      "de": "Mit großer Bravour stellte er sich der Übermacht entgegen.",
+      "zh": "他以极大的勇气迎战强敌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. mit Bravour meistern / bestehen — 出色地完成/通过某事",
+   "die Bravourleistung — 出色的表现",
+   "也写作 Bravur"
+  ],
+  "root": "借词：法语 bravoure（勇敢；精湛技艺），与 brav、bravo 同源",
+  "fam": [
+   "bravourös",
+   "brav",
+   "bravo",
+   "Bravourstück"
+  ],
+  "ety": "借自法语 bravoure，后者源自意大利语 bravura（勇敢，精湛），来自 bravo（勇敢的，出色的）。",
+  "cog": "英 bravura, brave",
+  "tip": "几乎只用于固定搭配 mit Bravour；注意德语 brav 今义为“乖的，规矩的”，与英语 brave 不同。"
+ },
+ {
+  "w": "Dauerbrenner",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Dauerbrenner",
+  "gs": "des Dauerbrenners",
+  "ipa": "ˈdaʊ̯ɐbʁɛnɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（口）长盛不衰的东西；经久不衰的话题、作品、热门产品",
+    "de": "(ugs.) etw., das lange aktuell oder erfolgreich bleibt",
+    "ex": [
+     {
+      "de": "Das Thema Mietpreise ist ein Dauerbrenner in der Kommunalpolitik.",
+      "zh": "房租问题是地方政治中经久不衰的话题。"
+     },
+     {
+      "de": "Der Weihnachtsklassiker ist im Radio ein echter Dauerbrenner.",
+      "zh": "这首圣诞经典在电台里是常年热播曲目。"
+     }
+    ]
+   },
+   {
+    "zh": "长燃炉（可长时间持续燃烧的炉子）",
+    "de": "Ofen, der lange ohne Nachlegen brennt",
+    "ex": [
+     {
+      "de": "Früher heizte man das Wohnzimmer mit einem Dauerbrenner.",
+      "zh": "过去人们用长燃炉给客厅取暖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Dauerbrenner sein — 长盛不衰，始终是热点",
+   "ein Dauerbrenner im Programm / im Sortiment — 节目单上/货架上的常青产品"
+  ],
+  "root": "Dauer·brenn·er：Dauer（持续）+ brennen（燃烧）+ -er → 持续燃烧的东西 → 长红的东西",
+  "fam": [
+   "dauern",
+   "Dauer",
+   "brennen",
+   "Brenner"
+  ],
+  "ety": "dauern < 中古高地德语 dūren，借自拉丁语 durare（持续）；brennen < 古高地德语 brennen。",
+  "cog": "英 endure, duration（同出拉丁语 durare）；burn（与 brennen 同源）",
+  "tip": "多为褒义或中性，也可指“老生常谈的问题”。"
+ },
+ {
+  "w": "dazulernen",
+  "pos": "v",
+  "ipa": "daˈt͡suːlɛʁnən",
+  "lvl": "B1–B2",
+  "forms": "lernt dazu · lernte dazu · hat dazugelernt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "学到新东西，增长见识，吸取教训",
+    "de": "zusätzlich etw. lernen, neue Erfahrungen machen",
+    "ex": [
+     {
+      "de": "Man lernt nie aus – ich lerne jeden Tag etwas dazu.",
+      "zh": "活到老学到老——我每天都能学到点新东西。"
+     },
+     {
+      "de": "Die Partei hat aus der Wahlniederlage offenbar nichts dazugelernt.",
+      "zh": "这个党显然没有从选举失败中吸取任何教训。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) dazulernen — 学到（新的）某物",
+   "aus etw.(D) dazulernen — 从某事中吸取经验",
+   "Man lernt immer dazu. — 学无止境 / 又长了见识"
+  ],
+  "root": "dazu·lern·en：dazu（另外，加上）+ lernen（学）→ 在已有基础上再学",
+  "fam": [
+   "lernen",
+   "dazu",
+   "Lernprozess",
+   "auslernen"
+  ],
+  "ety": "lernen < 古高地德语 lernēn/lirnēn。",
+  "cog": "英 learn",
+  "tip": "重音在 zu 上：da-ˈzu-ler-nen；第二分词 dazugelernt，ge 在 dazu 之后。"
+ },
+ {
+  "w": "Delikatesse",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Delikatessen",
+  "gs": "der Delikatesse",
+  "ipa": "delikaˈtɛsə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "美味佳肴，珍馐，精美食品",
+    "de": "besonders feine, wohlschmeckende Speise",
+    "ex": [
+     {
+      "de": "Trüffel gelten in Italien als besondere Delikatesse.",
+      "zh": "在意大利，松露被视为难得的珍馐。"
+     }
+    ]
+   },
+   {
+    "zh": "（书面）细腻，分寸，谨慎周到",
+    "de": "(geh.) Feingefühl, Takt; heikle Sache",
+    "ex": [
+     {
+      "de": "Die Verhandlungen erforderten große diplomatische Delikatesse.",
+      "zh": "这次谈判需要极高的外交分寸。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine regionale Delikatesse — 地方特色美食",
+   "das Delikatessengeschäft — 精品食品店（英语 delicatessen 即由此而来）",
+   "形容词：delikat — 美味的；棘手的、微妙的（eine delikate Angelegenheit）"
+  ],
+  "root": "借词：法语 délicat（精细的，美味的）+ -esse（名词后缀）→ 精美之物/细腻",
+  "fam": [
+   "delikat",
+   "Feinkost",
+   "Leckerbissen",
+   "Spezialität"
+  ],
+  "ety": "借自法语 délicatesse，源于 délicat < 拉丁语 delicatus（精致的，娇贵的）。",
+  "cog": "英 delicacy；delicatessen（经德语复数借入英语）",
+  "tip": "日常“美食店”更常说 Feinkostladen；delikat 的“棘手、微妙”义学习者常忽略。"
+ },
+ {
+  "w": "Demokratieverständnis",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Demokratieverständnisses",
+  "ipa": "demokʁaˈtiːfɛɐ̯ʃtɛntnɪs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "民主观念，对民主的理解",
+    "de": "Auffassung davon, was Demokratie ist und wie sie funktionieren soll",
+    "ex": [
+     {
+      "de": "Kritiker werfen dem Minister ein fragwürdiges Demokratieverständnis vor.",
+      "zh": "批评者指责这位部长的民主观念有问题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein seltsames / fragwürdiges Demokratieverständnis haben — 民主观念令人存疑",
+   "das Demokratieverständnis stärken / fördern — 增强民主意识（常见于政治教育）"
+  ],
+  "root": "Demokratie·verständ·nis：Demokratie（民主；希腊语 dēmos 人民 + kratos 统治）+ Verständnis（理解；verstehen + -nis）",
+  "fam": [
+   "Demokratie",
+   "demokratisch",
+   "Verständnis",
+   "verstehen"
+  ],
+  "ety": "Demokratie 经晚期拉丁语 democratia 借自希腊语 dēmokratía；verstehen < 古高地德语 firstān。",
+  "cog": "英 democracy；understand（stand 与 stehen 同源）",
+  "tip": "批评性语境中常见：jdm. ein merkwürdiges Demokratieverständnis vorwerfen。Verständnis 二格双写 s：des Verständnisses。"
+ }
+]
