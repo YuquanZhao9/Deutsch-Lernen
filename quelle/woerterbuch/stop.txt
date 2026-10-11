@@ -2,3 +2,4 @@ TARGET=20000, paced (user 2026-10-10 15:34 UTC: 分成每五小时做1000个，�
 Each round = ~20 batches (~1000 words), then build/publish/sync and stop; next round 5 h after the previous round started.
 Round 1 (start 15:33 UTC 2026-10-10): batches 281–300. STOP_AFTER=300.
 Round 2 (start 20:33 UTC 2026-10-10): batches 301–320. STOP_AFTER=320.
+Round 3 (start 01:34 UTC 2026-10-11): batches 321–340. STOP_AFTER=340.
