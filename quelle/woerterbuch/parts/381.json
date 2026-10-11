@@ -1,0 +1,2101 @@
+[
+ {
+  "w": "hellgrau",
+  "pos": "adj",
+  "ipa": "ˈhɛlɡʁaʊ̯",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "浅灰色的，淡灰色的",
+    "de": "von heller, blasser grauer Farbe",
+    "ex": [
+     {
+      "de": "Sie trug einen hellgrauen Wollmantel und dunkle Stiefel.",
+      "zh": "她穿着一件浅灰色的羊毛大衣和深色靴子。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "hellgrau gestrichen / gekleidet — 漆成/穿着浅灰色",
+   "构词：hell- + 颜色 → 浅色：hellblau, hellgrün；反义 dunkel-：dunkelgrau",
+   "名词化：das Hellgrau — 浅灰色"
+  ],
+  "root": "hell（明亮的，浅的）+ grau（灰色的）→ 浅灰",
+  "fam": [
+   "hell",
+   "grau",
+   "dunkelgrau",
+   "Grauzone",
+   "ergrauen"
+  ],
+  "ety": "复合词：hell + grau。grau < 中古高地德语 grā < 古高地德语 grāo；hell < 中古高地德语 hel，一般认为原指声音“清亮”，后转指光线明亮。",
+  "cog": "英 grey / gray",
+  "tip": "颜色复合词连写且小写：hellgrau, dunkelblau；名词化才大写：ein helles Grau / das Hellgrau。"
+ },
+ {
+  "w": "hellhörig",
+  "pos": "adj",
+  "ipa": "ˈhɛlhøːʁɪç",
+  "lvl": "B2–C1",
+  "forms": "hellhöriger · am hellhörigsten",
+  "senses": [
+   {
+    "zh": "（房屋、墙壁）隔音差的",
+    "de": "(von Gebäuden) schalldurchlässig, schlecht gegen Geräusche gedämmt",
+    "ex": [
+     {
+      "de": "Die Wohnung ist so hellhörig, dass wir jedes Gespräch der Nachbarn mitbekommen.",
+      "zh": "这套房子隔音太差，邻居的每句谈话我们都听得见。"
+     }
+    ]
+   },
+   {
+    "zh": "警觉的，起疑心的（常用 hellhörig werden）",
+    "de": "aufmerksam, misstrauisch werdend",
+    "ex": [
+     {
+      "de": "Als der Anrufer nach meiner PIN fragte, wurde ich hellhörig.",
+      "zh": "当来电者问我的密码时，我警觉了起来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "hellhörig werden — 警觉起来，起疑心",
+   "ein hellhöriges Haus / hellhörige Wände — 隔音差的房子/墙",
+   "近义：aufhorchen（竖起耳朵听），misstrauisch werden"
+  ],
+  "root": "hell（声音清亮→听得清）+ hör(en)（听）+ -ig（形容词后缀）→ 听得很清楚的 → ①声音容易传过来的 ②听觉敏锐、警觉的",
+  "fam": [
+   "hören",
+   "Gehör",
+   "schwerhörig",
+   "hell",
+   "aufhorchen"
+  ],
+  "ety": "派生词：hell + hören + -ig。hören < 中古高地德语 hœren < 古高地德语 hōren；本义“听觉敏锐”，后衍生出“隔音差”义。",
+  "cog": "英 hear（hören）",
+  "tip": "“房子隔音不好”地道说法就是 Die Wohnung ist hellhörig，而不说 *Die Wohnung hat schlechte Schallisolierung（虽可懂但不常用）。"
+ },
+ {
+  "w": "sich herausbilden",
+  "pos": "v",
+  "ipa": "hɛˈʁaʊ̯sˌbɪldn̩",
+  "lvl": "C1",
+  "forms": "bildet sich heraus · bildete sich heraus · hat sich herausgebildet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（逐渐）形成，发展出来",
+    "de": "allmählich entstehen, sich entwickeln",
+    "ex": [
+     {
+      "de": "Im Laufe der Jahrhunderte hat sich in der Region ein eigener Dialekt herausgebildet.",
+      "zh": "几百年间，这个地区逐渐形成了自己的方言。"
+     },
+     {
+      "de": "Erst langsam bildete sich ein Konsens unter den Experten heraus.",
+      "zh": "专家之间的共识是慢慢才形成的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich aus etw.(D) herausbilden — 从……中逐渐形成",
+   "etw. herausbilden（及物，较少）— 培养出，造就：Fähigkeiten herausbilden",
+   "近义：sich entwickeln, entstehen, sich herauskristallisieren"
+  ],
+  "root": "heraus（从里到外，出来）+ bilden（构成，塑造）→ 从中被塑造出来 → 逐渐形成",
+  "fam": [
+   "bilden",
+   "Bildung",
+   "Bild",
+   "Herausbildung",
+   "ausbilden"
+  ],
+  "ety": "bilden < 中古高地德语 bilden < 古高地德语 bilidōn（塑造，赋形），由 Bild（古高地德语 bilidi，形象）派生。",
+  "cog": "英 out（aus）",
+  "tip": "强调“过程性、自然地形成”，主语多为抽象事物（Strukturen, Traditionen, Meinungen）；完成时用 haben：hat sich herausgebildet。"
+ },
+ {
+  "w": "Herzinsuffizienz",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Herzinsuffizienzen",
+  "gs": "der Herzinsuffizienz",
+  "ipa": "ˈhɛʁt͡sʔɪnzʊfiˌt͡si̯ɛnt͡s",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "心力衰竭，心功能不全",
+    "de": "(Medizin) unzureichende Pumpleistung des Herzens, Herzschwäche",
+    "ex": [
+     {
+      "de": "Die Patientin leidet an einer chronischen Herzinsuffizienz.",
+      "zh": "这位女患者患有慢性心力衰竭。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an Herzinsuffizienz leiden — 患心衰",
+   "akute / chronische Herzinsuffizienz — 急性/慢性心衰",
+   "日常说法：Herzschwäche；同类：Niereninsuffizienz（肾功能不全）"
+  ],
+  "root": "Herz（心脏）+ Insuffizienz（in- 不 + suffizient 足够的 + -enz）→ 心脏（功能）不足",
+  "fam": [
+   "Herz",
+   "Insuffizienz",
+   "Herzschwäche",
+   "Niereninsuffizienz",
+   "suffizient"
+  ],
+  "ety": "复合词。Insuffizienz < 晚期拉丁语 insufficientia（不足），源自 sufficere（足够）；Herz < 古高地德语 herza。",
+  "cog": "英 insufficiency, heart",
+  "tip": "医学术语；患者间口语更常说 Herzschwäche。复数极少用。"
+ },
+ {
+  "w": "herzlos",
+  "pos": "adj",
+  "ipa": "ˈhɛʁt͡sloːs",
+  "lvl": "B2",
+  "forms": "herzloser · am herzlosesten",
+  "senses": [
+   {
+    "zh": "无情的，冷酷的，没心肝的",
+    "de": "ohne Mitgefühl, gefühllos, kalt",
+    "ex": [
+     {
+      "de": "Es war herzlos, die alte Frau einfach im Regen stehen zu lassen.",
+      "zh": "把那位老太太就这样丢在雨里，真是太无情了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "herzlos handeln / sich herzlos verhalten — 冷酷行事",
+   "ein herzloser Mensch / eine herzlose Entscheidung — 冷酷的人/决定",
+   "名词：die Herzlosigkeit；反义：warmherzig, mitfühlend"
+  ],
+  "root": "Herz（心）+ -los（无……的）→ 没有心的 → 无情",
+  "fam": [
+   "Herz",
+   "herzlich",
+   "barmherzig",
+   "Herzlosigkeit",
+   "warmherzig"
+  ],
+  "ety": "派生词：Herz + -los。Herz < 中古高地德语 herze < 古高地德语 herza；-los < 古高地德语 lōs（松开的，没有的）。",
+  "cog": "英 heartless",
+  "tip": "herzlos 的反义不是 herzlich（亲切的、衷心的），而是 warmherzig / mitfühlend。"
+ },
+ {
+  "w": "hingehören",
+  "pos": "v",
+  "ipa": "ˈhɪnɡəˌhøːʁən",
+  "lvl": "B1–B2",
+  "forms": "gehört hin · gehörte hin · hat hingehört",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（某物）应该放在（某处）",
+    "de": "an einen bestimmten Platz gehören",
+    "ex": [
+     {
+      "de": "Leg das Werkzeug bitte wieder dahin, wo es hingehört.",
+      "zh": "请把工具放回原处。"
+     },
+     {
+      "de": "Wo gehören die Gläser hin?",
+      "zh": "杯子该放哪儿？"
+     }
+    ]
+   },
+   {
+    "zh": "（某人）归属于（某处）",
+    "de": "an einem Ort / in einer Gruppe seinen Platz haben",
+    "ex": [
+     {
+      "de": "Nach dem Umzug wusste er lange nicht, wo er eigentlich hingehört.",
+      "zh": "搬家后，他很长时间都不知道自己究竟属于哪里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Wo gehört das hin? — 这个放哪儿？（疑问词 wo 与 hin 常分开）",
+   "dahin / dorthin gehören — 属于那儿",
+   "区别：gehören + 第三格 = 属于某人（Das Buch gehört mir.）"
+  ],
+  "root": "hin（往那儿）+ gehören（属于）→ 应归到某处",
+  "fam": [
+   "gehören",
+   "hören",
+   "dazugehören",
+   "Zugehörigkeit",
+   "angehören"
+  ],
+  "ety": "gehören < 中古高地德语 gehœren < 古高地德语 gihōren，原义“听从，听命于”，由 hören 派生，后引申为“归属”。",
+  "cog": "英 hear（hören）",
+  "tip": "口语中 wo … hin 常拆开：Wo gehört das hin? 也可说 Wohin gehört das?"
+ },
+ {
+  "w": "hinterhältig",
+  "pos": "adj",
+  "ipa": "ˈhɪntɐˌhɛltɪç",
+  "lvl": "C1",
+  "forms": "hinterhältiger · am hinterhältigsten",
+  "senses": [
+   {
+    "zh": "阴险的，暗箭伤人的，两面三刀的",
+    "de": "heimtückisch, mit verborgener böser Absicht",
+    "ex": [
+     {
+      "de": "Das war ein hinterhältiger Versuch, seine Glaubwürdigkeit zu untergraben.",
+      "zh": "这是一次企图破坏他公信力的阴险行径。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein hinterhältiger Angriff / Trick — 阴险的攻击/伎俩",
+   "jdn. hinterhältig betrügen — 阴险地欺骗某人",
+   "近义：hinterlistig, heimtückisch, falsch；名词 die Hinterhältigkeit"
+  ],
+  "root": "Hinterhalt（埋伏；旧义：隐藏的意图）+ -ig → 像设埋伏一样的 → 阴险的",
+  "fam": [
+   "Hinterhalt",
+   "halten",
+   "hinterlistig",
+   "Hinterhältigkeit",
+   "hinter"
+  ],
+  "ety": "由 Hinterhalt（埋伏）派生；Hinterhalt 由 hinter（在后面）+ halten 构成，原指“藏在后面的（力量、意图）”。",
+  "cog": "英 hold（halten），behind / hinder（hinter）",
+  "tip": "与 hinterlistig 基本同义；hinterhältig 更强调表面友善、暗中使坏。"
+ },
+ {
+  "w": "hochqualifiziert",
+  "pos": "adj",
+  "ipa": "ˈhoːxkvalifiˌt͡siːɐ̯t",
+  "lvl": "B2–C1",
+  "forms": "höher qualifiziert · am höchsten qualifiziert",
+  "senses": [
+   {
+    "zh": "高素质的，高技能的，资历很高的",
+    "de": "sehr gut ausgebildet, mit hoher fachlicher Qualifikation",
+    "ex": [
+     {
+      "de": "Das Unternehmen sucht dringend hochqualifizierte Fachkräfte aus dem Ausland.",
+      "zh": "这家公司急需从国外招聘高素质的专业人才。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "hochqualifizierte Arbeitskräfte / Mitarbeiter — 高技能劳动力/员工",
+   "也可分写：hoch qualifiziert（两种写法均正确）",
+   "比较级：höher qualifiziert；反义：gering qualifiziert / ungelernt"
+  ],
+  "root": "hoch（高）+ qualifiziert（具备资格的，qualifizieren 的过去分词）→ 资格很高的",
+  "fam": [
+   "Qualifikation",
+   "qualifizieren",
+   "Qualität",
+   "hoch",
+   "Höchstleistung"
+  ],
+  "ety": "qualifizieren < 中古拉丁语 qualificare（赋予某种性质），由拉丁语 qualis（怎样的）+ facere（做）构成。",
+  "cog": "英 highly qualified, qualify",
+  "tip": "连写时比较级仍拆开：höher qualifiziert，不说 *hochqualifizierter。"
+ },
+ {
+  "w": "Hochzeitsfeier",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Hochzeitsfeiern",
+  "gs": "der Hochzeitsfeier",
+  "ipa": "ˈhɔxt͡saɪ̯t͡sˌfaɪ̯ɐ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "婚礼庆典，婚宴",
+    "de": "Feier anlässlich einer Hochzeit",
+    "ex": [
+     {
+      "de": "Zur Hochzeitsfeier waren über hundert Gäste eingeladen.",
+      "zh": "婚宴邀请了一百多位客人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Hochzeitsfeier ausrichten / planen — 举办/筹划婚宴",
+   "auf einer Hochzeitsfeier sein — 参加婚宴",
+   "区别：Trauung = 结婚仪式（登记/教堂）；Feier = 之后的庆祝"
+  ],
+  "root": "Hochzeit（婚礼）+ -s-（连接音）+ Feier（庆祝）",
+  "fam": [
+   "Hochzeit",
+   "Feier",
+   "feiern",
+   "Feiertag",
+   "Hochzeitsnacht"
+  ],
+  "ety": "Hochzeit < 中古高地德语 hōchzīt（隆重的节日），后专指婚礼；Feier < 中古高地德语 vīre < 古高地德语 fīra，借自拉丁语 feria（节日）。",
+  "cog": "英 high + tide（时间）；英 fair（集市，亦源自拉 feria）",
+  "tip": "Hochzeit 里的 o 读短音 [ɔ]：[ˈhɔxt͡saɪ̯t]，与 hoch [hoːx] 不同。"
+ },
+ {
+  "w": "Hochzeitsnacht",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Hochzeitsnächte",
+  "gs": "der Hochzeitsnacht",
+  "ipa": "ˈhɔxt͡saɪ̯t͡sˌnaxt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "新婚之夜，洞房之夜",
+    "de": "die erste Nacht nach der Hochzeit",
+    "ex": [
+     {
+      "de": "Die Hochzeitsnacht verbrachte das Paar in einem kleinen Schlosshotel.",
+      "zh": "这对新人在一家小城堡酒店度过了新婚之夜。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Hochzeitsnacht — 在新婚之夜",
+   "相关：die Flitterwochen（蜜月）"
+  ],
+  "root": "Hochzeit（婚礼）+ -s- + Nacht（夜）",
+  "fam": [
+   "Hochzeit",
+   "Nacht",
+   "nächtlich",
+   "Hochzeitsfeier",
+   "Flitterwochen"
+  ],
+  "ety": "复合词。Nacht < 古高地德语 naht；Hochzeit < 中古高地德语 hōchzīt（隆重节日）。",
+  "cog": "英 night",
+  "tip": "复数变音：die Hochzeitsnächte。"
+ },
+ {
+  "w": "Holzweg",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Holzwege",
+  "gs": "des Holzweg(e)s",
+  "ipa": "ˈhɔlt͡sveːk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（固定用法 auf dem Holzweg sein）想错了，误入歧途",
+    "de": "(nur in: auf dem Holzweg sein) sich irren, eine falsche Annahme haben",
+    "ex": [
+     {
+      "de": "Wer glaubt, das Problem löse sich von selbst, ist auf dem Holzweg.",
+      "zh": "谁要是以为问题会自行解决，那就大错特错了。"
+     }
+    ]
+   },
+   {
+    "zh": "（本义）林中运木小道",
+    "de": "Waldweg zum Abtransport von Holz",
+    "ex": [
+     {
+      "de": "Der Holzweg endete mitten im Wald.",
+      "zh": "这条运木小道在森林中间就断了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf dem Holzweg sein — 想错了，搞错了",
+   "sich auf dem Holzweg befinden — 走在错误的路上（比喻）",
+   "近义：sich irren, falschliegen"
+  ],
+  "root": "Holz（木头）+ Weg（路）→ 运木头的路 → 只通到伐木处、不通向村镇 → 走错路",
+  "fam": [
+   "Holz",
+   "Weg",
+   "hölzern",
+   "Ausweg",
+   "unterwegs"
+  ],
+  "ety": "复合词：Holz（古高地德语 holz）+ Weg（古高地德语 weg）。运木道通常止于林中伐木处，不通往别处，故引申为“歧途、错误的想法”。",
+  "cog": "英 holt（树林，古旧词），way",
+  "tip": "比喻义几乎只用在 auf dem Holzweg sein / sich befinden 中；不说 *einen Holzweg gehen 表“想错”。"
+ },
+ {
+  "w": "Höhenangst",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Höhenangst",
+  "ipa": "ˈhøːənˌʔaŋst",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "恐高（症）",
+    "de": "Angst vor großen Höhen, Schwindelgefühl in der Höhe",
+    "ex": [
+     {
+      "de": "Wegen meiner Höhenangst steige ich nicht auf den Kirchturm.",
+      "zh": "因为恐高，我不爬教堂的钟楼。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Höhenangst haben — 恐高",
+   "unter Höhenangst leiden — 受恐高之苦",
+   "同类：Platzangst（幽闭/广场恐惧），Flugangst（飞行恐惧）"
+  ],
+  "root": "Höhe（高处）+ -n- + Angst（恐惧）",
+  "fam": [
+   "hoch",
+   "Höhe",
+   "Angst",
+   "ängstlich",
+   "Flugangst"
+  ],
+  "ety": "复合词。Höhe < 古高地德语 hōhī，由 hoch 派生；Angst < 古高地德语 angust，一般认为与拉丁语 angustus（狭窄）同源。",
+  "cog": "英 high, height；英语借词 angst",
+  "tip": "德语说 Höhenangst haben（不是 *Angst vor Höhe haben，后者可懂但不地道）。"
+ },
+ {
+  "w": "Innenbereich",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Innenbereiche",
+  "gs": "des Innenbereich(e)s",
+  "ipa": "ˈɪnənbəˌʁaɪ̯ç",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "内部区域；室内（区域）",
+    "de": "innerer Bereich, Innenraum eines Gebäudes o. Ä.",
+    "ex": [
+     {
+      "de": "Im Innenbereich des Restaurants gilt ein striktes Rauchverbot.",
+      "zh": "餐厅室内区域严格禁烟。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Innen- und Außenbereich — 室内外",
+   "für den Innenbereich geeignet — 适合室内使用（产品说明常用）",
+   "反义：der Außenbereich"
+  ],
+  "root": "innen（里面）+ Bereich（区域，范围）",
+  "fam": [
+   "innen",
+   "Außenbereich",
+   "Bereich",
+   "reichen",
+   "Innenraum"
+  ],
+  "ety": "复合词。Bereich 由中古高地德语 bereichen（延伸到，达到）派生，与 reichen 相关。",
+  "cog": "英 in, reach（reichen）",
+  "tip": "Bereich 通常为阳性：der Bereich（偶见中性 das Bereich，不推荐）。"
+ },
+ {
+  "w": "innerparteilich",
+  "pos": "adj",
+  "ipa": "ˈɪnɐpaʁˌtaɪ̯lɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "党内的",
+    "de": "innerhalb einer Partei",
+    "ex": [
+     {
+      "de": "Der Vorschlag des Vorsitzenden stieß auf heftige innerparteiliche Kritik.",
+      "zh": "党主席的提议遭到党内的强烈批评。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "innerparteiliche Demokratie / Opposition — 党内民主/反对派",
+   "innerparteiliche Konflikte / Machtkämpfe — 党内冲突/权力斗争",
+   "同类构词：innerbetrieblich（企业内部的），innerstädtisch（市内的）"
+  ],
+  "root": "inner-（内部的）+ Partei（党）+ -lich（形容词后缀）→ 党内的",
+  "fam": [
+   "Partei",
+   "parteilich",
+   "überparteilich",
+   "Parteitag",
+   "inner"
+  ],
+  "ety": "Partei < 法语 partie（部分，一方）< 拉丁语 pars, partis（部分）。",
+  "cog": "英 party, part",
+  "tip": "只作定语或状语，不能比较；注意 parteilich 意为“偏袒的”，与 innerparteilich 意思不同。"
+ },
+ {
+  "w": "Intonation",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Intonationen",
+  "gs": "der Intonation",
+  "ipa": "ɪntonaˈt͡si̯oːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（语言学）语调，句调",
+    "de": "(Sprachwissenschaft) Satzmelodie, Verlauf der Tonhöhe beim Sprechen",
+    "ex": [
+     {
+      "de": "Bei Entscheidungsfragen steigt die Intonation im Deutschen am Satzende an.",
+      "zh": "在德语一般疑问句中，语调在句末上扬。"
+     }
+    ]
+   },
+   {
+    "zh": "（音乐）音准；起调",
+    "de": "(Musik) Reinheit der Tonhöhe; Anstimmen",
+    "ex": [
+     {
+      "de": "Die Intonation des Chores war an manchen Stellen nicht ganz sauber.",
+      "zh": "合唱团的音准在某些地方不太准。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "steigende / fallende Intonation — 升调/降调",
+   "eine saubere / unsaubere Intonation — 音准准/不准",
+   "动词：intonieren（起调，唱出；以某种语调说）"
+  ],
+  "root": "in-（进入）+ ton（音调）+ -ation（名词后缀）→ 定音、发出音调",
+  "fam": [
+   "Ton",
+   "intonieren",
+   "Betonung",
+   "Tonart",
+   "monoton"
+  ],
+  "ety": "< 中古拉丁语 intonatio，源自 intonare（起调、吟唱；古典拉丁语中义为“打雷，大声发出”），其中 tonus 借自希腊语 tónos（张力，音调）。",
+  "cog": "英 intonation, tone",
+  "tip": "区别：Betonung / Akzent = 重音（词或音节的强调）；Intonation = 整句的高低起伏。"
+ },
+ {
+  "w": "Juckreiz",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Juckreize",
+  "gs": "des Juckreizes",
+  "ipa": "ˈjʊkʁaɪ̯t͡s",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "瘙痒，痒感",
+    "de": "unangenehme Empfindung auf der Haut, die zum Kratzen reizt",
+    "ex": [
+     {
+      "de": "Die Salbe lindert den Juckreiz nach Mückenstichen.",
+      "zh": "这种药膏能缓解蚊虫叮咬后的瘙痒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(einen starken) Juckreiz verspüren / haben — 感到（剧烈）瘙痒",
+   "den Juckreiz lindern / stillen — 止痒",
+   "动词：jucken：Es juckt mich am Arm. / Mir juckt der Arm."
+  ],
+  "root": "juck(en)（痒）+ Reiz（刺激）→ 痒的刺激感",
+  "fam": [
+   "jucken",
+   "Reiz",
+   "reizen",
+   "gereizt",
+   "Hautreizung"
+  ],
+  "ety": "jucken < 中古高地德语 jucken < 古高地德语 jucchen；Reiz 由 reizen 派生（古高地德语 reizen）。",
+  "cog": "英 itch（与 jucken 同源）",
+  "tip": "复数罕用。“我的手臂痒”说 Mein Arm juckt / Es juckt mich am Arm，不说 *Ich bin juckend。"
+ },
+ {
+  "w": "Jugendbewegung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Jugendbewegungen",
+  "gs": "der Jugendbewegung",
+  "ipa": "ˈjuːɡn̩tbəˌveːɡʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "青年运动",
+    "de": "von Jugendlichen getragene gesellschaftliche oder politische Bewegung",
+    "ex": [
+     {
+      "de": "Die Klimaproteste haben eine neue, weltweite Jugendbewegung hervorgebracht.",
+      "zh": "气候抗议催生了一场新的全球性青年运动。"
+     }
+    ]
+   },
+   {
+    "zh": "（历史，常带定冠词）德国青年运动（20世纪初以“候鸟”为代表）",
+    "de": "(Geschichte) die deutsche Jugendbewegung um 1900 (z. B. Wandervogel)",
+    "ex": [
+     {
+      "de": "Die Jugendbewegung um 1900 suchte das einfache Leben in der Natur.",
+      "zh": "1900 年前后的德国青年运动追求在大自然中过简朴的生活。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Jugendbewegung entsteht / formiert sich — 青年运动兴起",
+   "Teil einer Jugendbewegung sein — 是某青年运动的一部分"
+  ],
+  "root": "Jugend（青年）+ Bewegung（运动）",
+  "fam": [
+   "jung",
+   "Jugend",
+   "Jugendliche",
+   "bewegen",
+   "Bewegung"
+  ],
+  "ety": "复合词。Jugend < 古高地德语 jugund；Bewegung 由 bewegen（古高地德语 biwegan）派生。",
+  "cog": "英 youth, young",
+  "tip": "Jugend 词尾 -d 读 [t]：[ˈjuːɡn̩t]。"
+ },
+ {
+  "w": "sich jähren",
+  "pos": "v",
+  "ipa": "ˈjɛːʁən",
+  "lvl": "C1",
+  "forms": "jährt sich · jährte sich · hat sich gejährt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（某事件）满……周年",
+    "de": "(von einem Ereignis) am Jahrestag ein Jahr oder mehrere Jahre zurückliegen",
+    "ex": [
+     {
+      "de": "Heute jährt sich der Todestag des Dichters zum hundertsten Mal.",
+      "zh": "今天是这位诗人逝世一百周年。"
+     },
+     {
+      "de": "Der Anschlag jährt sich bald zum ersten Mal.",
+      "zh": "袭击事件即将满一周年。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. jährt sich zum x-ten Mal — 某事满 x 周年（主语是事件，不是人）",
+   "近义：das x-jährige Jubiläum feiern；名词 der Jahrestag（周年纪念日）",
+   "区别：verjähren — （法律）过诉讼时效"
+  ],
+  "root": "Jahr（年）+ -en（动词化）→ 满一年",
+  "fam": [
+   "Jahr",
+   "jährlich",
+   "Jahrestag",
+   "verjähren",
+   "Jahrhundert"
+  ],
+  "ety": "由 Jahr 派生；Jahr < 中古高地德语 jār < 古高地德语 jār。",
+  "cog": "英 year",
+  "tip": "必须用反身形式，主语为事件：Der Mauerfall jährt sich …，不说 *Wir jähren den Mauerfall。"
+ },
+ {
+  "w": "Kapitalgesellschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kapitalgesellschaften",
+  "gs": "der Kapitalgesellschaft",
+  "ipa": "kapiˈtaːlɡəˌzɛlʃaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（法律/经济）资合公司（如股份公司、有限责任公司）",
+    "de": "Gesellschaft, bei der die Kapitalbeteiligung im Vordergrund steht und die Haftung auf das Gesellschaftsvermögen beschränkt ist (z. B. GmbH, AG)",
+    "ex": [
+     {
+      "de": "GmbH und Aktiengesellschaft sind die bekanntesten Formen der Kapitalgesellschaft.",
+      "zh": "有限责任公司和股份公司是最常见的资合公司形式。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Kapitalgesellschaft gründen — 成立资合公司",
+   "对立概念：die Personengesellschaft（人合公司，如 OHG, KG）",
+   "Kapitalgesellschaften unterliegen der Körperschaftsteuer — 资合公司缴纳公司所得税"
+  ],
+  "root": "Kapital（资本）+ Gesellschaft（公司，社会）→ 以资本为基础的公司",
+  "fam": [
+   "Kapital",
+   "Gesellschaft",
+   "Personengesellschaft",
+   "Kapitalismus",
+   "Geselle"
+  ],
+  "ety": "Kapital < 意大利语 capitale < 中古拉丁语 capitalis（主要的），源自拉丁语 caput（头）；Gesellschaft 由 Geselle（古高地德语 gisellio，伙伴）+ -schaft 构成。",
+  "cog": "英 capital",
+  "tip": "资合公司是法人（juristische Person），股东原则上只以出资额为限承担责任。"
+ },
+ {
+  "w": "Kinderchor",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kinderchöre",
+  "gs": "des Kinderchor(e)s",
+  "ipa": "ˈkɪndɐˌkoːɐ̯",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "儿童合唱团",
+    "de": "Chor, der aus Kindern besteht",
+    "ex": [
+     {
+      "de": "Beim Weihnachtskonzert tritt auch der Kinderchor der Gemeinde auf.",
+      "zh": "圣诞音乐会上，教区的儿童合唱团也会登台演出。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Kinderchor singen — 在儿童合唱团唱歌",
+   "einen Kinderchor gründen / leiten — 创办/指挥儿童合唱团"
+  ],
+  "root": "Kinder（孩子们）+ Chor（合唱团）",
+  "fam": [
+   "Kind",
+   "Chor",
+   "Chorleiter",
+   "Knabenchor",
+   "Kirchenchor"
+  ],
+  "ety": "Chor < 拉丁语 chorus < 希腊语 chorós（轮舞，歌舞队）。",
+  "cog": "英 choir, chorus",
+  "tip": "Chor 读 [koːɐ̯]，ch 发 [k]；复数变音 Chöre。"
+ },
+ {
+  "w": "Kindeswohl",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Kindeswohl(e)s",
+  "ipa": "ˈkɪndəsˌvoːl",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（法律）子女福祉，儿童最佳利益",
+    "de": "(Recht) das körperliche, geistige und seelische Wohlergehen eines Kindes",
+    "ex": [
+     {
+      "de": "Bei der Entscheidung über das Sorgerecht steht das Kindeswohl im Mittelpunkt.",
+      "zh": "在决定监护权时，子女福祉是核心考量。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Kindeswohl gefährden — 危害儿童福祉",
+   "dem Kindeswohl dienen / entsprechen — 符合儿童利益",
+   "die Kindeswohlgefährdung — 儿童福祉受害（青少年局常用术语）"
+  ],
+  "root": "Kind（孩子）+ -es-（属格连接）+ Wohl（福祉）",
+  "fam": [
+   "Kind",
+   "Wohl",
+   "Wohlergehen",
+   "wohl",
+   "Kindheit"
+  ],
+  "ety": "复合词。Wohl 由副词 wohl（古高地德语 wola，好）名词化而来。",
+  "cog": "英 well（wohl），kin（与 Kind 同源）",
+  "tip": "属法律、社会工作领域用语；注意连接成分是 Kindes-（如 Kindesmissbrauch），不是 *Kinderwohl。"
+ },
+ {
+  "w": "Kirchspiel",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Kirchspiele",
+  "gs": "des Kirchspiel(e)s",
+  "ipa": "ˈkɪʁçʃpiːl",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（尤指北德、旧时）教区，堂区",
+    "de": "(bes. norddeutsch, veraltend) Pfarrbezirk, Kirchengemeinde",
+    "ex": [
+     {
+      "de": "Früher bildeten mehrere Dörfer zusammen ein Kirchspiel mit einer gemeinsamen Kirche.",
+      "zh": "过去几个村子合成一个教区，共用一座教堂。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Kirchspiel X gehören — 属于某教区",
+   "近义（通用）：die Pfarrei, die Kirchengemeinde",
+   "多见于地名、地方史与家谱资料中"
+  ],
+  "root": "Kirch(e)（教堂）+ -spiel（此处与“游戏”无关，一般认为与古词 spel“宣告”有关）→ 教会宣告所及的范围",
+  "fam": [
+   "Kirche",
+   "Kirchengemeinde",
+   "Pfarrei",
+   "kirchlich",
+   "Kirchturm"
+  ],
+  "ety": "< 中古高地德语 kirchspil；后半部分一般认为与中古高地德语 spel（言语、宣告）有关，原指教会有权宣告事务的区域。此说不完全确定。",
+  "cog": "英 church；英 spell, gospel（与 spel 相关，一说）",
+  "tip": "词义与 Spiel（游戏）无关，不要望文生义。"
+ },
+ {
+  "w": "Kitzler",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kitzler",
+  "gs": "des Kitzlers",
+  "ipa": "ˈkɪt͡slɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "阴蒂",
+    "de": "(umgangssprachlich) Klitoris",
+    "ex": [
+     {
+      "de": "Der Kitzler ist ein sehr empfindliches, nervenreiches Organ.",
+      "zh": "阴蒂是一个非常敏感、神经丰富的器官。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "医学用词：die Klitoris（复数 Klitorides / Klitoris）",
+   "Kitzler 为通俗说法，比 Klitoris 更口语"
+  ],
+  "root": "kitzel(n)（挠痒）+ -er（名词后缀）→ 敏感、易“发痒”的部位",
+  "fam": [
+   "kitzeln",
+   "kitzlig",
+   "Klitoris"
+  ],
+  "ety": "由 kitzeln（挠痒）派生；kitzeln < 中古高地德语 kitzeln < 古高地德语 kizzilōn。",
+  "cog": "—",
+  "tip": "日常、性教育读物中都可见；正式医学文本用 Klitoris。"
+ },
+ {
+  "w": "Klavierkonzert",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Klavierkonzerte",
+  "gs": "des Klavierkonzert(e)s",
+  "ipa": "klaˈviːɐ̯kɔnˌt͡sɛʁt",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "钢琴协奏曲",
+    "de": "Komposition für Klavier und Orchester",
+    "ex": [
+     {
+      "de": "Das zweite Klavierkonzert von Rachmaninow gehört zu seinen bekanntesten Werken.",
+      "zh": "拉赫玛尼诺夫的第二钢琴协奏曲是他最著名的作品之一。"
+     }
+    ]
+   },
+   {
+    "zh": "钢琴音乐会",
+    "de": "Konzert, bei dem Klavier gespielt wird",
+    "ex": [
+     {
+      "de": "Am Samstagabend findet im Rathaussaal ein Klavierkonzert statt.",
+      "zh": "周六晚上在市政厅大厅有一场钢琴音乐会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Klavierkonzert spielen / aufführen — 演奏钢琴协奏曲",
+   "ins Klavierkonzert gehen — 去听钢琴音乐会",
+   "区别：Klavierabend（钢琴独奏会），Klaviersonate（钢琴奏鸣曲）"
+  ],
+  "root": "Klavier（钢琴）+ Konzert（协奏曲；音乐会）",
+  "fam": [
+   "Klavier",
+   "Konzert",
+   "Klavierspieler",
+   "Klavierabend",
+   "konzertant"
+  ],
+  "ety": "Klavier < 法语 clavier（键盘），源自拉丁语 clavis（钥匙）；Konzert < 意大利语 concerto。",
+  "cog": "英 concerto, concert；英 clavier",
+  "tip": "Klavier 重音在第二音节 [klaˈviːɐ̯]；Konzert 兼有“协奏曲”和“音乐会”两义，要靠上下文判断。"
+ },
+ {
+  "w": "Klingelton",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Klingeltöne",
+  "gs": "des Klingelton(e)s",
+  "ipa": "ˈklɪŋl̩ˌtoːn",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（手机等的）铃声",
+    "de": "Ton bzw. Melodie, mit der ein Telefon einen Anruf signalisiert",
+    "ex": [
+     {
+      "de": "Ich habe meinen Klingelton geändert, weil er mich ständig erschreckt hat.",
+      "zh": "我换了手机铃声，因为它老是把我吓一跳。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Klingelton ändern / einstellen — 更改/设置铃声",
+   "das Handy auf lautlos stellen — 把手机调成静音",
+   "相关：die Klingel（门铃），klingeln（响铃）"
+  ],
+  "root": "Klingel（铃）/ klingeln（响铃）+ Ton（声音）",
+  "fam": [
+   "klingeln",
+   "Klingel",
+   "klingen",
+   "Ton",
+   "Weckton"
+  ],
+  "ety": "复合词。Ton < 拉丁语 tonus < 希腊语 tónos（音调）；klingeln 为 klingen 的反复/指小动词。",
+  "cog": "英 tone",
+  "tip": "复数变音：die Klingeltöne。"
+ },
+ {
+  "w": "Kobalt",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Kobalts",
+  "ipa": "ˈkoːbalt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "钴（化学元素，符号 Co）",
+    "de": "chemisches Element, silbrig glänzendes, hartes Metall (Zeichen: Co)",
+    "ex": [
+     {
+      "de": "Für die Herstellung von Lithium-Ionen-Akkus wird viel Kobalt benötigt.",
+      "zh": "生产锂离子电池需要大量的钴。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kobalt abbauen / fördern — 开采钴",
+   "kobaltblau — 钴蓝色",
+   "化学专业写法：Cobalt"
+  ],
+  "root": "源自 Kobold（地精、山妖）",
+  "fam": [
+   "Kobold",
+   "kobaltblau",
+   "Kobaltblau"
+  ],
+  "ety": "源自 Kobold（山中精怪）。16 世纪萨克森矿工认为难以冶炼、冶炼时放出有毒烟气的矿石是地精作祟，故称之为 Kobold / Kobalt；后由化学家沿用为元素名。",
+  "cog": "英 cobalt（借自德语）",
+  "tip": "日常写法 Kobalt，化学文献多写 Cobalt；中性名词 das Kobalt。"
+ },
+ {
+  "w": "Komfortzone",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Komfortzonen",
+  "gs": "der Komfortzone",
+  "ipa": "kɔmˈfoːɐ̯ˌt͡soːnə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "舒适区",
+    "de": "vertrauter Bereich des Lebens, in dem man sich sicher fühlt und keine Risiken eingeht",
+    "ex": [
+     {
+      "de": "Wer sich weiterentwickeln will, muss ab und zu seine Komfortzone verlassen.",
+      "zh": "想要成长，就得时不时离开自己的舒适区。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Komfortzone verlassen — 走出舒适区",
+   "aus der Komfortzone herauskommen / heraustreten — 跳出舒适区",
+   "sich in seiner Komfortzone einrichten — 安于舒适区"
+  ],
+  "root": "Komfort（舒适）+ Zone（区域）",
+  "fam": [
+   "Komfort",
+   "komfortabel",
+   "Zone",
+   "Bequemlichkeit"
+  ],
+  "ety": "仿英语 comfort zone 构成。Komfort < 英语 comfort / 法语 confort；Zone < 拉丁语 zona < 希腊语 zṓnē（腰带，地带）。",
+  "cog": "英 comfort zone",
+  "tip": "Komfort 重音在第二音节 [kɔmˈfoːɐ̯]，词尾 t 不发音。"
+ },
+ {
+  "w": "Kontrollgruppe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kontrollgruppen",
+  "gs": "der Kontrollgruppe",
+  "ipa": "kɔnˈtʁɔlˌɡʁʊpə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（实验中的）对照组",
+    "de": "(Wissenschaft) Gruppe in einem Experiment, die nicht behandelt wird und als Vergleich dient",
+    "ex": [
+     {
+      "de": "Die Kontrollgruppe erhielt lediglich ein Placebo.",
+      "zh": "对照组只服用了安慰剂。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Vergleich zur Kontrollgruppe — 与对照组相比",
+   "Versuchsgruppe / Experimentalgruppe vs. Kontrollgruppe — 实验组与对照组",
+   "randomisierte Kontrollgruppe — 随机对照组"
+  ],
+  "root": "Kontroll(e)（控制，检查）+ Gruppe（组）",
+  "fam": [
+   "Kontrolle",
+   "kontrollieren",
+   "Gruppe",
+   "Versuchsgruppe"
+  ],
+  "ety": "Kontrolle < 法语 contrôle（由 contre-rôle“副本登记册”缩合而来）；Gruppe < 意大利语 gruppo。",
+  "cog": "英 control group",
+  "tip": "复合时 Kontrolle 去掉词尾 -e：Kontroll-gruppe, Kontrollverlust。"
+ },
+ {
+  "w": "Krankenstand",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Krankenstände",
+  "gs": "des Krankenstand(e)s",
+  "ipa": "ˈkʁaŋkn̩ˌʃtant",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "病假率，因病缺勤人数（比例）",
+    "de": "Anteil bzw. Zahl der wegen Krankheit fehlenden Beschäftigten",
+    "ex": [
+     {
+      "de": "Im Winter steigt der Krankenstand in vielen Betrieben deutlich an.",
+      "zh": "冬季许多企业的病假率明显上升。"
+     }
+    ]
+   },
+   {
+    "zh": "（尤奥地利）病假（状态）",
+    "de": "(bes. österreichisch) Zustand, wegen Krankheit krankgeschrieben zu sein",
+    "ex": [
+     {
+      "de": "Sie ist seit zwei Wochen im Krankenstand.",
+      "zh": "她已经休了两周病假。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein hoher / niedriger Krankenstand — 病假率高/低",
+   "im Krankenstand sein（奥）= krankgeschrieben sein（德）— 在休病假",
+   "相关：die Krankmeldung（病假通知），die Arbeitsunfähigkeitsbescheinigung（病假条）"
+  ],
+  "root": "Kranken（病人，复数属格形式）+ Stand（状态，人数）→ 患病者的情况",
+  "fam": [
+   "krank",
+   "Krankheit",
+   "Stand",
+   "krankschreiben",
+   "Krankenkasse"
+  ],
+  "ety": "复合词。krank < 中古高地德语 kranc（虚弱的）；Stand 由 stehen 派生。",
+  "cog": "英 stand（Stand）",
+  "tip": "在德国，“我在休病假”一般说 Ich bin krankgeschrieben；im Krankenstand sein 为奥地利常用说法。"
+ },
+ {
+  "w": "Kulturwissenschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kulturwissenschaften",
+  "gs": "der Kulturwissenschaft",
+  "ipa": "kʊlˈtuːɐ̯vɪsn̩ˌʃaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "文化学，文化研究（学科）",
+    "de": "Wissenschaft, die sich mit Kulturen, ihren Praktiken und Ausdrucksformen beschäftigt",
+    "ex": [
+     {
+      "de": "Sie studiert Kulturwissenschaft und schreibt ihre Abschlussarbeit über Popmusik.",
+      "zh": "她学文化学，毕业论文写的是流行音乐。"
+     }
+    ]
+   },
+   {
+    "zh": "（复数）人文科学，文化科学（统称）",
+    "de": "(Plural) Gesamtheit der Geisteswissenschaften im weiteren Sinn",
+    "ex": [
+     {
+      "de": "Die Kulturwissenschaften haben sich seit den 1990er-Jahren stark verändert.",
+      "zh": "自 20 世纪 90 年代以来，人文学科发生了巨大变化。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kulturwissenschaft studieren — 学文化学",
+   "区别：Naturwissenschaften（自然科学），Sozialwissenschaften（社会科学）",
+   "形容词：kulturwissenschaftlich；人：der Kulturwissenschaftler / die Kulturwissenschaftlerin"
+  ],
+  "root": "Kultur（文化）+ Wissenschaft（科学，学科）",
+  "fam": [
+   "Kultur",
+   "kulturell",
+   "Wissenschaft",
+   "wissen",
+   "Kulturwissenschaftler"
+  ],
+  "ety": "Kultur < 拉丁语 cultura（耕作，培育），源自 colere（耕种）；Wissenschaft 由 wissen + -schaft 构成。",
+  "cog": "英 culture；英 wit（与 wissen 同源）",
+  "tip": "Kultur 重音在后：[kʊlˈtuːɐ̯]。"
+ },
+ {
+  "w": "kursiv",
+  "pos": "adj",
+  "ipa": "kʊʁˈziːf",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "斜体的",
+    "de": "(Druck) in schräg liegender Schrift",
+    "ex": [
+     {
+      "de": "Fremdsprachige Begriffe werden im Text kursiv gesetzt.",
+      "zh": "文中的外语术语用斜体排印。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. kursiv schreiben / setzen / drucken — 用斜体书写/排印",
+   "die Kursive / Kursivschrift — 斜体字",
+   "对照：fett（粗体），unterstrichen（下划线）"
+  ],
+  "root": "curs-（拉丁语“跑”，currere）+ -iv → 流畅书写的 → 斜体",
+  "fam": [
+   "Kursivschrift",
+   "Kurs",
+   "Kurier",
+   "Konkurrenz"
+  ],
+  "ety": "< 中古拉丁语 cursivus（流动的，草写的），源自拉丁语 currere（跑）。",
+  "cog": "英 cursive",
+  "tip": "德语排版中“斜体”就说 kursiv，不说 *italic；英语的 cursive 主要指“草书”，词义不完全对应。"
+ },
+ {
+  "w": "kölnisch",
+  "pos": "adj",
+  "ipa": "ˈkœlnɪʃ",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "科隆的，科隆风格的",
+    "de": "Köln, die Kölner betreffend; aus Köln stammend",
+    "ex": [
+     {
+      "de": "Das kölnische Brauchtum rund um den Karneval ist weit über die Stadt hinaus bekannt.",
+      "zh": "科隆的狂欢节习俗远近闻名。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kölnisch Wasser — 科隆香水，古龙水（固定用法，形容词不变格）",
+   "更常用的不变格形式：Kölner（der Kölner Dom，不说 *der kölnische Dom）",
+   "das Kölsch — 科隆啤酒；科隆方言"
+  ],
+  "root": "Köln（科隆）+ -isch（形容词后缀）",
+  "fam": [
+   "Köln",
+   "Kölner",
+   "Kölsch",
+   "Kölnischwasser"
+  ],
+  "ety": "Köln < 拉丁语 Colonia（殖民地），源自罗马殖民地名 Colonia Claudia Ara Agrippinensium。",
+  "cog": "英 cologne（古龙水），colony",
+  "tip": "城市名派生的不变格形容词 Kölner 更常用；kölnisch 多见于 Kölnisch Wasser 及书面语。"
+ },
+ {
+  "w": "Landeschef",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Landeschefs",
+  "gs": "des Landeschefs",
+  "ipa": "ˈlandəsˌʃɛf",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（媒体用语）州长；（政党、组织等的）州级负责人",
+    "de": "(Pressesprache) Ministerpräsident eines Bundeslandes; Vorsitzender einer Organisation auf Landesebene",
+    "ex": [
+     {
+      "de": "Der bayerische Landeschef kündigte schärfere Regeln an.",
+      "zh": "巴伐利亚州长宣布将出台更严格的规定。"
+     },
+     {
+      "de": "Die Partei hat einen neuen Landeschef gewählt.",
+      "zh": "该党选出了新的州党主席。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阴性：die Landeschefin",
+   "正式称谓：der Ministerpräsident（州长），der Landesvorsitzende（州党主席）"
+  ],
+  "root": "Landes（州的，Land 的属格）+ Chef（首脑）",
+  "fam": [
+   "Land",
+   "Bundesland",
+   "Chef",
+   "Landesregierung",
+   "Landesvorsitzende"
+  ],
+  "ety": "复合词。Chef < 法语 chef（首领）< 拉丁语 caput（头）。",
+  "cog": "英 chief, chef",
+  "tip": "新闻用语，非正式官衔；Chef 读 [ʃɛf]。"
+ },
+ {
+  "w": "Landesgericht",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Landesgerichte",
+  "gs": "des Landesgericht(e)s",
+  "ipa": "ˈlandəsɡəˌʁɪçt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（奥地利）州法院",
+    "de": "(in Österreich) Gericht erster Instanz für bedeutendere Rechtssachen und Berufungsgericht gegenüber den Bezirksgerichten",
+    "ex": [
+     {
+      "de": "Der Prozess findet vor dem Landesgericht für Strafsachen in Wien statt.",
+      "zh": "案件在维也纳刑事州法院审理。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "vor dem Landesgericht — 在州法院（审理）",
+   "德国对应机构叫 das Landgericht（无 -es-）",
+   "奥地利法院层级：Bezirksgericht → Landesgericht → Oberlandesgericht → OGH"
+  ],
+  "root": "Landes（州的）+ Gericht（法院）",
+  "fam": [
+   "Gericht",
+   "Richter",
+   "richten",
+   "Landgericht",
+   "Bezirksgericht"
+  ],
+  "ety": "复合词。Gericht 由 richten（审判，使正）派生；richten < 古高地德语 rihten。",
+  "cog": "英 right（与 richten 同源）",
+  "tip": "德国：Landgericht；奥地利：Landesgericht——一字之差，翻译新闻时要注意国别。"
+ },
+ {
+  "w": "Landsitz",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Landsitze",
+  "gs": "des Landsitzes",
+  "ipa": "ˈlantˌzɪt͡s",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "乡间宅邸，乡村庄园",
+    "de": "größeres, repräsentatives Anwesen auf dem Land",
+    "ex": [
+     {
+      "de": "Die Familie verbringt die Sommermonate auf ihrem Landsitz in der Toskana.",
+      "zh": "这家人夏季几个月都在托斯卡纳的乡间庄园度过。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf einem Landsitz leben — 住在乡间庄园",
+   "近义：das Landgut, das Herrenhaus, das Anwesen"
+  ],
+  "root": "Land（乡村）+ Sitz（居所，座位）→ 乡间的居所",
+  "fam": [
+   "Land",
+   "ländlich",
+   "Sitz",
+   "sitzen",
+   "Wohnsitz"
+  ],
+  "ety": "复合词。Sitz 由 sitzen 派生（古高地德语 sizzen）。",
+  "cog": "英 land, seat / sit",
+  "tip": "Sitz 在复合词中指“住所、所在地”：Wohnsitz（住所），Firmensitz（公司所在地）。"
+ },
+ {
+  "w": "Lebensmittelsicherheit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Lebensmittelsicherheit",
+  "ipa": "ˈleːbn̩smɪtl̩ˌzɪçɐhaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "食品安全",
+    "de": "Unbedenklichkeit von Lebensmitteln für die Gesundheit",
+    "ex": [
+     {
+      "de": "Die Behörde ist für die Kontrolle der Lebensmittelsicherheit zuständig.",
+      "zh": "该机构负责监管食品安全。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Lebensmittelsicherheit gewährleisten — 保障食品安全",
+   "区别：Ernährungssicherheit — 粮食安全（有足够食物）"
+  ],
+  "root": "Lebensmittel（食品）+ Sicherheit（安全）",
+  "fam": [
+   "Lebensmittel",
+   "sicher",
+   "Sicherheit",
+   "Lebensmittelkontrolle"
+  ],
+  "ety": "复合词。sicher < 古高地德语 sihhur，早期借自拉丁语 securus（无忧的）。",
+  "cog": "英 secure（同出拉 securus）",
+  "tip": "英语 food security 多指“粮食保障”，对应德语 Ernährungssicherheit；food safety 才是 Lebensmittelsicherheit。"
+ },
+ {
+  "w": "Lebenswirklichkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Lebenswirklichkeiten",
+  "gs": "der Lebenswirklichkeit",
+  "ipa": "ˈleːbn̩sˌvɪʁklɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "生活现实，实际生活状况",
+    "de": "die tatsächlichen Lebensumstände von Menschen",
+    "ex": [
+     {
+      "de": "Viele Gesetze gehen an der Lebenswirklichkeit junger Familien vorbei.",
+      "zh": "许多法律脱离了年轻家庭的实际生活状况。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an der Lebenswirklichkeit vorbeigehen — 脱离现实生活",
+   "die Lebenswirklichkeit der Menschen berücksichtigen — 考虑人们的生活实际",
+   "近义：die Lebensrealität, die Lebensumstände"
+  ],
+  "root": "Leben（生活）+ -s- + Wirklichkeit（现实）",
+  "fam": [
+   "Leben",
+   "Wirklichkeit",
+   "wirklich",
+   "wirken",
+   "Lebensrealität"
+  ],
+  "ety": "复合词。Wirklichkeit 由 wirklich 派生，wirklich 源自 wirken（起作用；古高地德语 wirken）。",
+  "cog": "英 work（与 wirken 同源），life",
+  "tip": "政治、社会评论中的高频词。"
+ },
+ {
+  "w": "leger",
+  "pos": "adj",
+  "ipa": "leˈʒɛːɐ̯",
+  "lvl": "B2–C1",
+  "forms": "legerer · am legersten",
+  "senses": [
+   {
+    "zh": "（衣着）休闲的，随便的",
+    "de": "(von Kleidung) bequem, nicht förmlich",
+    "ex": [
+     {
+      "de": "Zur Gartenparty kann man ruhig leger gekleidet kommen.",
+      "zh": "参加花园派对可以穿得随意些。"
+     }
+    ]
+   },
+   {
+    "zh": "（举止、气氛）随意的，不拘礼节的",
+    "de": "ungezwungen, lässig",
+    "ex": [
+     {
+      "de": "Der Umgangston im Team ist ziemlich leger.",
+      "zh": "团队里说话的氛围相当随意。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "leger gekleidet sein — 穿着休闲",
+   "近义：lässig, locker, ungezwungen；反义：förmlich, elegant"
+  ],
+  "root": "借自法语 léger（轻的）→ 轻便的 → 随意的",
+  "fam": [
+   "lässig",
+   "Legerheit"
+  ],
+  "ety": "< 法语 léger（轻的，轻便的），最终源自拉丁语 levis（轻的）。",
+  "cog": "英 levity（拉 levis）",
+  "tip": "按法语发音：g 读 [ʒ]，r 几乎不发：[leˈʒɛːɐ̯]；变格时 legere Kleidung [leˈʒɛːʁə]。"
+ },
+ {
+  "w": "Leitfähigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Leitfähigkeiten",
+  "gs": "der Leitfähigkeit",
+  "ipa": "ˈlaɪ̯tˌfɛːɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（物理）传导性，导电性/导热性",
+    "de": "(Physik) Fähigkeit eines Stoffes, elektrischen Strom oder Wärme zu leiten",
+    "ex": [
+     {
+      "de": "Kupfer besitzt eine sehr hohe elektrische Leitfähigkeit.",
+      "zh": "铜的导电性非常高。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "elektrische / thermische Leitfähigkeit — 导电性/导热性",
+   "die Wärmeleitfähigkeit — 导热系数",
+   "动词：leiten（传导）；der Leiter（导体），der Halbleiter（半导体）"
+  ],
+  "root": "leit(en)（引导，传导）+ fähig（能够的）+ -keit（名词后缀）→ 传导的能力",
+  "fam": [
+   "leiten",
+   "Leiter",
+   "Halbleiter",
+   "fähig",
+   "Fähigkeit"
+  ],
+  "ety": "派生复合词。leiten < 古高地德语 leiten（引导）；fähig < 中古高地德语 -væhec，一般认为与 fangen 相关，原义“能容纳、能接受的”。",
+  "cog": "英 lead（与 leiten 同源）",
+  "tip": "复数罕用。"
+ },
+ {
+  "w": "Leuchtfeuer",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Leuchtfeuer",
+  "gs": "des Leuchtfeuers",
+  "ipa": "ˈlɔɪ̯çtˌfɔɪ̯ɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（航海、航空）灯标，信号灯",
+    "de": "Licht, das Schiffen oder Flugzeugen zur Orientierung dient",
+    "ex": [
+     {
+      "de": "Das Leuchtfeuer weist den Schiffen nachts den Weg in den Hafen.",
+      "zh": "灯标在夜间为船只指引进港的航路。"
+     }
+    ]
+   },
+   {
+    "zh": "（比喻）灯塔，引路明灯，榜样",
+    "de": "(übertragen) Vorbild, wegweisendes Beispiel",
+    "ex": [
+     {
+      "de": "Das neue Forschungszentrum gilt als Leuchtfeuer für die ganze Region.",
+      "zh": "新的研究中心被视为整个地区的标杆。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Leuchtfeuer der Hoffnung — 希望的明灯",
+   "相关：der Leuchtturm（灯塔，亦作比喻：Leuchtturmprojekt 标杆项目）"
+  ],
+  "root": "Leucht(en)（发光）+ Feuer（火）→ 发光的火 → 灯标",
+  "fam": [
+   "leuchten",
+   "Leuchtturm",
+   "Licht",
+   "Feuer",
+   "beleuchten"
+  ],
+  "ety": "复合词。leuchten < 古高地德语 liuhten，与 Licht 同源；Feuer < 古高地德语 fiur。",
+  "cog": "英 light, fire",
+  "tip": "复数与单数同形：die Leuchtfeuer。"
+ },
+ {
+  "w": "Literaturverzeichnis",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Literaturverzeichnisse",
+  "gs": "des Literaturverzeichnisses",
+  "ipa": "lɪtəʁaˈtuːɐ̯fɛɐ̯ˌt͡saɪ̯çnɪs",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "参考文献（列表），书目",
+    "de": "Verzeichnis der in einer Arbeit benutzten oder zitierten Literatur",
+    "ex": [
+     {
+      "de": "Alle zitierten Quellen müssen im Literaturverzeichnis vollständig aufgeführt werden.",
+      "zh": "所有引用的文献都必须完整列在参考文献中。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. ins Literaturverzeichnis aufnehmen — 把……列入参考文献",
+   "ein Literaturverzeichnis erstellen — 编制参考文献",
+   "近义：die Bibliografie, das Quellenverzeichnis"
+  ],
+  "root": "Literatur（文献）+ Verzeichnis（目录，清单）",
+  "fam": [
+   "Literatur",
+   "Verzeichnis",
+   "verzeichnen",
+   "zeichnen",
+   "Inhaltsverzeichnis"
+  ],
+  "ety": "Literatur < 拉丁语 litteratura（文字，学问），源自 littera（字母）；Verzeichnis 由 verzeichnen（登记）派生，后者源自 Zeichen（记号）。",
+  "cog": "英 literature；英 token（与 Zeichen 同源）",
+  "tip": "Verzeichnis 复数双写 s：die Verzeichnisse；第二格 des Verzeichnisses。"
+ },
+ {
+  "w": "Lokalität",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Lokalitäten",
+  "gs": "der Lokalität",
+  "ipa": "lokaliˈtɛːt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "场所，地点（尤指举办活动的地方）",
+    "de": "Örtlichkeit, Raum für eine Veranstaltung",
+    "ex": [
+     {
+      "de": "Für die Firmenfeier suchen wir noch eine passende Lokalität.",
+      "zh": "我们还在为公司聚会寻找合适的场地。"
+     }
+    ]
+   },
+   {
+    "zh": "饭馆，酒馆",
+    "de": "Gaststätte, Lokal",
+    "ex": [
+     {
+      "de": "Die Lokalität am Marktplatz ist abends immer gut besucht.",
+      "zh": "市场广场上那家馆子晚上总是客满。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine passende / gemütliche Lokalität — 合适的场地/舒适的馆子",
+   "近义：die Örtlichkeit, die Location（口语外来词），das Lokal"
+  ],
+  "root": "lokal（地方的）+ -ität（名词后缀）→ 地点",
+  "fam": [
+   "Lokal",
+   "lokal",
+   "lokalisieren",
+   "Lokalzeitung"
+  ],
+  "ety": "< 中古拉丁语 localitas，源自拉丁语 locus（地点）。",
+  "cog": "英 locality, local",
+  "tip": "略带书面或戏谑色彩；日常更常说 das Lokal 或 die Location。"
+ },
+ {
+  "w": "Lorbeer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Lorbeeren",
+  "gs": "des Lorbeers",
+  "ipa": "ˈlɔʁbeːɐ̯",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "月桂（树）；月桂叶（香料）",
+    "de": "immergrüner Strauch bzw. Baum; dessen Blätter als Gewürz",
+    "ex": [
+     {
+      "de": "Ein Lorbeerblatt verleiht dem Eintopf ein würziges Aroma.",
+      "zh": "一片月桂叶能给炖菜增添浓郁的香味。"
+     }
+    ]
+   },
+   {
+    "zh": "（复数，比喻）荣誉，桂冠，赞誉",
+    "de": "(Plural, übertragen) Ruhm, Anerkennung",
+    "ex": [
+     {
+      "de": "Nach dem großen Erfolg hat er sich auf seinen Lorbeeren ausgeruht.",
+      "zh": "取得大成功后，他就躺在功劳簿上吃老本了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich auf seinen Lorbeeren ausruhen — 吃老本，躺在功劳簿上",
+   "(die) Lorbeeren ernten / einheimsen — 获得赞誉（也指抢功）",
+   "der Lorbeerkranz — 桂冠"
+  ],
+  "root": "Lor-（拉丁语 laurus 月桂）+ Beer(e)（浆果）→ 月桂果 → 月桂",
+  "fam": [
+   "Beere",
+   "Lorbeerblatt",
+   "Lorbeerkranz",
+   "Laureat"
+  ],
+  "ety": "< 中古高地德语 lōrber < 古高地德语 lōrberi，由借自拉丁语 laurus（月桂）的成分 + beri（浆果）构成；原指月桂的果实，后指整株植物。",
+  "cog": "英 laurel（拉 laurus），berry",
+  "tip": "复数 Lorbeeren（弱变化），单数第二格 des Lorbeers；比喻义一般用复数。"
+ },
+ {
+  "w": "losschicken",
+  "pos": "v",
+  "ipa": "ˈloːsˌʃɪkn̩",
+  "lvl": "B2",
+  "forms": "schickt los · schickte los · hat losgeschickt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "派出去，打发（某人去做某事）；寄出",
+    "de": "jdn. mit einem Auftrag wegschicken; etw. absenden",
+    "ex": [
+     {
+      "de": "Wir haben einen Praktikanten losgeschickt, um Kaffee zu holen.",
+      "zh": "我们派了个实习生去买咖啡。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jdn. losschicken, um … zu … — 打发某人去做……",
+   "jdn. zum Einkaufen losschicken — 派某人去买东西",
+   "近义：schicken, entsenden（正式），aussenden"
+  ],
+  "root": "los（出发，离开）+ schicken（派遣，寄）→ 让人出发去 → 派出去",
+  "fam": [
+   "schicken",
+   "abschicken",
+   "Geschick",
+   "losgehen",
+   "losfahren"
+  ],
+  "ety": "schicken < 中古高地德语 schicken（安排，使就绪），与 geschehen 有关（一说）。",
+  "cog": "英 loose（与 los 同源）",
+  "tip": "多带口语色彩；完成时：hat losgeschickt。"
+ },
+ {
+  "w": "Luftaufnahme",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Luftaufnahmen",
+  "gs": "der Luftaufnahme",
+  "ipa": "ˈlʊftʔaʊ̯fˌnaːmə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "航拍照片，航空摄影",
+    "de": "aus der Luft (von Flugzeug, Drohne o. Ä.) gemachte Fotografie oder Filmaufnahme",
+    "ex": [
+     {
+      "de": "Luftaufnahmen zeigen das ganze Ausmaß der Überschwemmung.",
+      "zh": "航拍照片显示了洪灾的全貌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Luftaufnahmen machen — 航拍",
+   "eine Luftaufnahme mit der Drohne — 无人机航拍",
+   "相关：die Satellitenaufnahme（卫星图像）"
+  ],
+  "root": "Luft（空中）+ Aufnahme（拍摄，摄影）",
+  "fam": [
+   "Luft",
+   "Aufnahme",
+   "aufnehmen",
+   "Luftbild",
+   "Satellitenaufnahme"
+  ],
+  "ety": "复合词。Luft < 古高地德语 luft；Aufnahme 由 aufnehmen 派生。",
+  "cog": "英 loft, lift（与 Luft 同源）",
+  "tip": "近义 das Luftbild 多指单张照片；Luftaufnahme 可指照片或视频。"
+ },
+ {
+  "w": "luxuriös",
+  "pos": "adj",
+  "ipa": "lʊksuˈʁi̯øːs",
+  "lvl": "B1–B2",
+  "forms": "luxuriöser · am luxuriösesten",
+  "senses": [
+   {
+    "zh": "豪华的，奢华的",
+    "de": "mit großem Luxus ausgestattet, sehr komfortabel und teuer",
+    "ex": [
+     {
+      "de": "Das Hotel ist luxuriös ausgestattet, aber auch entsprechend teuer.",
+      "zh": "这家酒店装修豪华，价格也相应很贵。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "luxuriös leben / wohnen — 过奢华生活/住豪宅",
+   "eine luxuriöse Villa / Ausstattung — 豪华别墅/装修",
+   "名词：der Luxus；近义：prunkvoll, edel, nobel"
+  ],
+  "root": "Luxur-（拉丁语 luxuria 奢侈）+ -iös（形容词后缀，源自法语 -eux）",
+  "fam": [
+   "Luxus",
+   "Luxushotel",
+   "Luxusgut"
+  ],
+  "ety": "< 法语 luxurieux < 拉丁语 luxuriosus（繁茂的；放纵的），源自 luxuria（奢侈）。",
+  "cog": "英 luxurious, luxury",
+  "tip": "不要与 luxuriant（茂盛的，书面词）混淆。"
+ },
+ {
+  "w": "lückenhaft",
+  "pos": "adj",
+  "ipa": "ˈlʏkn̩haft",
+  "lvl": "B2–C1",
+  "forms": "lückenhafter · am lückenhaftesten",
+  "senses": [
+   {
+    "zh": "有缺漏的，不完整的，残缺的",
+    "de": "Lücken aufweisend, unvollständig",
+    "ex": [
+     {
+      "de": "Seine Erinnerung an jenen Abend ist äußerst lückenhaft.",
+      "zh": "他对那晚的记忆非常零碎。"
+     },
+     {
+      "de": "Die Dokumentation des Projekts war lückenhaft.",
+      "zh": "这个项目的文档不完整。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "lückenhafte Kenntnisse / Beweise — 不全面的知识/证据",
+   "反义：lückenlos（完整无缺的，如 lückenlose Aufklärung 彻底查明）",
+   "名词：die Lücke（缺口，空白）"
+  ],
+  "root": "Lücke（缺口）+ -n- + -haft（具有……性质的）→ 有缺口的",
+  "fam": [
+   "Lücke",
+   "lückenlos",
+   "Gesetzeslücke",
+   "Marktlücke",
+   "Zahnlücke"
+  ],
+  "ety": "Lücke < 中古高地德语 lücke < 古高地德语 lucka；一般认为与 Loch（洞）相关。",
+  "cog": "—",
+  "tip": "反义词 lückenlos 也很常用：eine lückenlose Überwachung（无死角监控）。"
+ },
+ {
+  "w": "Magenschmerz",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Magenschmerzen",
+  "gs": "des Magenschmerzes",
+  "ipa": "ˈmaːɡn̩ˌʃmɛʁt͡s",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "胃痛（多用复数）",
+    "de": "(meist Plural) Schmerz im Bereich des Magens",
+    "ex": [
+     {
+      "de": "Nach dem fettigen Essen hatte ich starke Magenschmerzen.",
+      "zh": "吃了油腻的东西后，我胃疼得厉害。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Magenschmerzen haben — 胃疼",
+   "jdm. Magenschmerzen bereiten（比喻）— 让某人很担心/不舒服",
+   "同类：Kopfschmerzen, Bauchschmerzen, Zahnschmerzen"
+  ],
+  "root": "Magen（胃）+ Schmerz（疼痛）",
+  "fam": [
+   "Magen",
+   "Schmerz",
+   "schmerzen",
+   "Bauchschmerzen",
+   "Magenverstimmung"
+  ],
+  "ety": "复合词。Magen < 古高地德语 mago；Schmerz < 中古高地德语 smerze < 古高地德语 smerzo。",
+  "cog": "英 maw（胃，古旧词，与 Magen 同源），smart（刺痛，与 Schmerz 同源）",
+  "tip": "日常几乎只用复数：Ich habe Magenschmerzen，不说 *Ich habe einen Magenschmerz。"
+ },
+ {
+  "w": "manifestieren",
+  "pos": "v",
+  "ipa": "manifɛsˈtiːʁən",
+  "lvl": "C1",
+  "forms": "manifestiert · manifestierte · hat manifestiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（sich manifestieren）显现，表现出来",
+    "de": "sich zeigen, deutlich sichtbar werden",
+    "ex": [
+     {
+      "de": "Die Unzufriedenheit der Bevölkerung manifestierte sich in massenhaften Protesten.",
+      "zh": "民众的不满表现为大规模的抗议。"
+     }
+    ]
+   },
+   {
+    "zh": "（及物，书面）表明，宣示；使固化",
+    "de": "(gehoben) bekunden, offenbar machen; verfestigen",
+    "ex": [
+     {
+      "de": "Das neue Gesetz manifestiert den Willen der Regierung, den Klimaschutz voranzutreiben.",
+      "zh": "新法律体现了政府推进气候保护的决心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich in etw.(D) manifestieren — 体现在……中",
+   "名词：die Manifestation（表现，显现）；das Manifest（宣言）",
+   "近义：sich zeigen, zum Ausdruck kommen, sich äußern"
+  ],
+  "root": "manifest-（拉丁语 manifestus，明显的）+ -ieren（动词后缀）→ 使明显",
+  "fam": [
+   "Manifest",
+   "Manifestation",
+   "manifest"
+  ],
+  "ety": "< 拉丁语 manifestare（显示，揭露），源自 manifestus（明显的，可触知的）。",
+  "cog": "英 manifest",
+  "tip": "最常见的是反身用法 sich manifestieren；完成时用 haben。"
+ },
+ {
+  "w": "Metastase",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Metastasen",
+  "gs": "der Metastase",
+  "ipa": "metaˈstaːzə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（医学）转移灶，（肿瘤）转移",
+    "de": "(Medizin) Tochtergeschwulst, Absiedlung eines Tumors an einer anderen Körperstelle",
+    "ex": [
+     {
+      "de": "Bei der Untersuchung wurden Metastasen in der Leber entdeckt.",
+      "zh": "检查时在肝脏发现了转移灶。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Metastasen bilden — 发生转移",
+   "metastasieren — 转移（动词）",
+   "相关：der Primärtumor（原发肿瘤）"
+  ],
+  "root": "meta-（希腊语：变换，在后）+ stas-（希腊语：站立，位置）+ -e → 换了位置 → 转移",
+  "fam": [
+   "metastasieren",
+   "Tumor",
+   "Statik"
+  ],
+  "ety": "经医学拉丁语借自希腊语 metástasis（移位，迁移），由 meta（变换）+ stásis（站立，位置）构成。",
+  "cog": "英 metastasis",
+  "tip": "多用复数 Metastasen；重音在 sta：[metaˈstaːzə]。"
+ },
+ {
+  "w": "Militärdiktatur",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Militärdiktaturen",
+  "gs": "der Militärdiktatur",
+  "ipa": "miliˈtɛːɐ̯dɪktaˌtuːɐ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "军事独裁（政权）",
+    "de": "Diktatur, bei der das Militär die Staatsgewalt ausübt",
+    "ex": [
+     {
+      "de": "Das Land wurde jahrzehntelang von einer Militärdiktatur regiert.",
+      "zh": "该国数十年来一直由军事独裁政权统治。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "unter einer Militärdiktatur leben — 生活在军事独裁之下",
+   "das Ende der Militärdiktatur — 军事独裁的终结",
+   "相关：die Militärjunta（军政府），der Militärputsch（军事政变）"
+  ],
+  "root": "Militär（军队）+ Diktatur（独裁）",
+  "fam": [
+   "Militär",
+   "militärisch",
+   "Diktatur",
+   "Diktator",
+   "diktieren"
+  ],
+  "ety": "Militär < 法语 militaire < 拉丁语 militaris（军事的），源自 miles（士兵）；Diktatur < 拉丁语 dictatura（独裁官职位）。",
+  "cog": "英 military dictatorship",
+  "tip": "Militär 重音在最后：[miliˈtɛːɐ̯]；das Militär 为中性。"
+ },
+ {
+  "w": "Militärputsch",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Militärputsche",
+  "gs": "des Militärputsch(e)s",
+  "ipa": "miliˈtɛːɐ̯ˌpʊt͡ʃ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "军事政变",
+    "de": "vom Militär ausgehender Umsturz der Regierung",
+    "ex": [
+     {
+      "de": "Nach dem Militärputsch wurde der Präsident unter Hausarrest gestellt.",
+      "zh": "军事政变后，总统遭到软禁。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Militärputsch verüben / niederschlagen — 发动/镇压军事政变",
+   "durch einen Militärputsch an die Macht kommen — 通过军事政变上台",
+   "近义：der Staatsstreich"
+  ],
+  "root": "Militär（军队）+ Putsch（政变）",
+  "fam": [
+   "Militär",
+   "Putsch",
+   "putschen",
+   "Putschist",
+   "Staatsstreich"
+  ],
+  "ety": "Putsch 源自瑞士德语 Putsch（撞击，冲击）；1839 年苏黎世事件后通行于标准德语，进而传入其他语言。",
+  "cog": "英 putsch（借自德语）",
+  "tip": "Putsch 复数为 Putsche；动词 putschen，参与者 der Putschist。"
+ },
+ {
+  "w": "Millionenstadt",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Millionenstädte",
+  "gs": "der Millionenstadt",
+  "ipa": "mɪˈli̯oːnənˌʃtat",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "百万人口城市",
+    "de": "Stadt mit mindestens einer Million Einwohnern",
+    "ex": [
+     {
+      "de": "Deutschland hat nur vier Millionenstädte: Berlin, Hamburg, München und Köln.",
+      "zh": "德国只有四座百万人口城市：柏林、汉堡、慕尼黑和科隆。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zur Millionenstadt werden / anwachsen — 发展成百万人口城市",
+   "相关：die Großstadt（10 万人口以上的城市），die Metropole"
+  ],
+  "root": "Millionen（百万）+ Stadt（城市）",
+  "fam": [
+   "Million",
+   "Millionär",
+   "Stadt",
+   "Großstadt",
+   "städtisch"
+  ],
+  "ety": "Million < 意大利语 milione（大的千，即百万），源自拉丁语 mille（千）；Stadt < 古高地德语 stat（地方）。",
+  "cog": "英 million；英 stead（与 Stadt 同源）",
+  "tip": "复数变音：die Millionenstädte。德国官方统计中 Großstadt 指 10 万人以上的城市。"
+ },
+ {
+  "w": "Missgeburt",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Missgeburten",
+  "gs": "der Missgeburt",
+  "ipa": "ˈmɪsɡəˌbuːɐ̯t",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "（旧，今属歧视性用语）畸形儿，畸形胎",
+    "de": "(veraltet, heute diskriminierend) mit schweren Fehlbildungen geborenes Lebewesen",
+    "ex": [
+     {
+      "de": "Früher wurden Kinder mit Fehlbildungen abwertend als Missgeburten bezeichnet.",
+      "zh": "过去人们会把有先天畸形的孩子贬称为“怪胎”。"
+     }
+    ]
+   },
+   {
+    "zh": "（骂人话，极具侮辱性）怪胎，废物",
+    "de": "(derb, Schimpfwort) stark abwertende Bezeichnung für einen Menschen",
+    "ex": [
+     {
+      "de": "Er beleidigte den Schiedsrichter als Missgeburt und wurde vom Platz gestellt.",
+      "zh": "他辱骂裁判是“怪胎”，被罚下场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "中性医学用语：die Fehlbildung（畸形），angeborene Fehlbildungen（先天畸形）",
+   "作骂人话非常粗鲁，务必避免使用"
+  ],
+  "root": "miss-（错误，失败）+ Geburt（出生）→ 出生得不正常的",
+  "fam": [
+   "Geburt",
+   "gebären",
+   "missraten",
+   "Missbildung",
+   "Fehlbildung"
+  ],
+  "ety": "派生词：前缀 miss-（古高地德语 missa-，错误的）+ Geburt（由 gebären 派生，古高地德语 giburt）。",
+  "cog": "英 mis-（前缀），birth（与 Geburt 同源）",
+  "tip": "冒犯性极强的词，学习者只需能听懂；描述先天异常请用 Fehlbildung（Missbildung 也已渐被视为不妥）。"
+ }
+]
