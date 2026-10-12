@@ -1,0 +1,1879 @@
+[
+ {
+  "w": "etabliert",
+  "pos": "adj",
+  "ipa": "etaˈbliːɐ̯t",
+  "lvl": "C1",
+  "forms": "etablierter · am etabliertesten",
+  "senses": [
+   {
+    "zh": "已确立的，站稳脚跟的；公认的，成熟的",
+    "de": "fest eingeführt, anerkannt, bewährt",
+    "ex": [
+     {
+      "de": "Das Verfahren ist in der Industrie längst etabliert.",
+      "zh": "这种工艺在工业界早已成熟应用。"
+     },
+     {
+      "de": "Gegen die etablierten Marken hat das Start-up kaum eine Chance.",
+      "zh": "面对那些老牌品牌，这家初创公司几乎没有机会。"
+     }
+    ]
+   },
+   {
+    "zh": "（社会上）有地位的，体制内的，主流的",
+    "de": "zur herrschenden Gesellschaftsschicht gehörend, arriviert",
+    "ex": [
+     {
+      "de": "Die etablierten Parteien verlieren zunehmend an Zustimmung.",
+      "zh": "传统主流政党的支持率日益下滑。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine etablierte Methode / Marke / Größe — 成熟的方法 / 老牌品牌 / 公认的重要人物",
+   "die etablierten Parteien — 传统主流政党（政治报道高频）",
+   "sich (als etw.) etablieren — （作为……）站稳脚跟，立足"
+  ],
+  "root": "etablier·t：etablieren（建立、确立）的过去分词，已词汇化为形容词 → 已被确立的",
+  "fam": [
+   "etablieren",
+   "Etablierung",
+   "Etablissement",
+   "Establishment",
+   "stabil"
+  ],
+  "ety": "etablieren 于 17 世纪借自法语 établir（建立），后者源自拉丁语 stabilire（使稳固），由 stabilis（稳固的）派生。",
+  "cog": "英 establish；法 établir；拉 stabilis",
+  "tip": "不要拼成 etabiliert；“established”的德语对应词，常与 längst、fest 连用：fest etabliert。"
+ },
+ {
+  "w": "Fachberater",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Fachberater",
+  "gs": "des Fachberaters",
+  "ipa": "ˈfaxbəˌʁaːtɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "专业顾问，专业咨询员",
+    "de": "Person, die auf einem bestimmten Fachgebiet berät",
+    "ex": [
+     {
+      "de": "Lassen Sie sich vor dem Kauf von einem Fachberater im Baumarkt informieren.",
+      "zh": "购买前请先向建材市场的专业顾问咨询。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Fachberater für Energie / Pflege / Finanzen — 能源/护理/金融方面的专业顾问",
+   "die Fachberaterin — 女专业顾问"
+  ],
+  "root": "Fach·berat·er：Fach（专业领域）+ beraten（咨询、提供建议）+ -er（施动者）→ 专业领域的咨询者",
+  "fam": [
+   "beraten",
+   "Beratung",
+   "Berater",
+   "Fachmann",
+   "Fachgebiet"
+  ],
+  "ety": "复合词。Fach < 中古高地德语 vach < 古高地德语 fah（隔间、区域）；beraten 来自 raten < 古高地德语 rātan（建议）。",
+  "cog": "英 read（古义“劝告、解释”，与 raten 同源）"
+ },
+ {
+  "w": "Fachhandel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Fachhandels",
+  "ipa": "ˈfaxˌhandl̩",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "专业零售（业）；专卖店（总称）",
+    "de": "Einzelhandel, der auf bestimmte Waren spezialisiert ist",
+    "ex": [
+     {
+      "de": "Das Gerät ist ab sofort im Fachhandel erhältlich.",
+      "zh": "该设备即日起可在专业商店购得。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Fachhandel erhältlich sein — 在专业商店有售（广告常用语）",
+   "der Fachhändler — 专业经销商",
+   "Fachhandel ↔ Discounter / Onlinehandel — 专业零售 ↔ 折扣店 / 网络零售"
+  ],
+  "root": "Fach·handel：Fach（专业）+ Handel（贸易）→ 专门经营某类商品的商业",
+  "fam": [
+   "handeln",
+   "Händler",
+   "Fachgeschäft",
+   "Einzelhandel"
+  ],
+  "ety": "复合词。Handel < 中古高地德语 handel，由动词 handeln < 古高地德语 hantalōn（用手处理）派生，与 Hand 同族。",
+  "cog": "英 handle, hand"
+ },
+ {
+  "w": "Fachhochschulreife",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Fachhochschulreife",
+  "ipa": "ˈfaxhoːxʃuːlˌʁaɪ̯fə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "应用技术大学入学资格（德国中学毕业资格之一，俗称 Fachabitur）",
+    "de": "Schulabschluss, der zum Studium an einer Fachhochschule berechtigt",
+    "ex": [
+     {
+      "de": "Mit der Fachhochschulreife kann sie Sozialarbeit an einer Fachhochschule studieren.",
+      "zh": "凭借应用技术大学入学资格，她可以在应用技术大学读社会工作专业。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die (Fach)hochschulreife erwerben — 取得（应用技术）大学入学资格",
+   "Fachhochschulreife ↔ allgemeine Hochschulreife (Abitur) — 仅限应用技术大学 ↔ 可上所有大学",
+   "fachgebundene Hochschulreife — 限定专业的大学入学资格"
+  ],
+  "root": "Fach·hoch·schul·reife：Fachhochschule（应用技术大学）+ Reife（成熟；资格）→ 具备上应用技术大学的“成熟度”",
+  "fam": [
+   "Fachhochschule",
+   "Hochschulreife",
+   "reif",
+   "Reifeprüfung",
+   "Abitur"
+  ],
+  "ety": "复合词。Reife 由 reif < 古高地德语 rīfi（成熟的）派生。",
+  "cog": "英 ripe（与 reif 同源）",
+  "tip": "口语多说 Fachabitur 或 Fachabi；Abitur 本身指 allgemeine Hochschulreife，两者不能混用。"
+ },
+ {
+  "w": "Fahrersitz",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Fahrersitze",
+  "gs": "des Fahrersitzes",
+  "ipa": "ˈfaːʁɐˌzɪt͡s",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "驾驶座",
+    "de": "Sitz des Fahrers in einem Fahrzeug",
+    "ex": [
+     {
+      "de": "Er stellte den Fahrersitz etwas weiter nach hinten.",
+      "zh": "他把驾驶座往后调了一点。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf dem Fahrersitz sitzen / Platz nehmen — 坐在驾驶座上",
+   "Fahrersitz ↔ Beifahrersitz ↔ Rücksitz — 驾驶座 ↔ 副驾驶座 ↔ 后座"
+  ],
+  "root": "Fahr·er·sitz：Fahrer（司机）+ Sitz（座位）",
+  "fam": [
+   "fahren",
+   "Fahrer",
+   "Beifahrersitz",
+   "sitzen",
+   "Sitz"
+  ],
+  "ety": "复合词。Sitz 由 sitzen < 古高地德语 sizzen 派生；fahren < 古高地德语 faran。",
+  "cog": "英 sit, seat；英 fare"
+ },
+ {
+  "w": "Fahrplanwechsel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Fahrplanwechsel",
+  "gs": "des Fahrplanwechsels",
+  "ipa": "ˈfaːɐ̯plaːnˌvɛksl̩",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "时刻表更换，（列车/公交）运行图调整",
+    "de": "Inkrafttreten eines neuen Fahrplans",
+    "ex": [
+     {
+      "de": "Zum Fahrplanwechsel im Dezember fallen einige Regionalverbindungen weg.",
+      "zh": "随着 12 月时刻表调整，部分区域线路将被取消。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum / mit dem Fahrplanwechsel — 随着时刻表更换",
+   "der neue Fahrplan tritt in Kraft — 新时刻表生效"
+  ],
+  "root": "Fahr·plan·wechsel：Fahrplan（时刻表）+ Wechsel（更换）",
+  "fam": [
+   "Fahrplan",
+   "wechseln",
+   "Wechsel",
+   "fahren"
+  ],
+  "ety": "复合词。Plan 借自法语 plan / 拉丁语 planum（平面）；Wechsel < 古高地德语 wehsal。",
+  "cog": "英 plan；英 fare",
+  "tip": "欧洲铁路的年度大调整通常在 12 月中旬，新闻中常简称 der Fahrplanwechsel。"
+ },
+ {
+  "w": "Fahrradtour",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Fahrradtouren",
+  "gs": "der Fahrradtour",
+  "ipa": "ˈfaːɐ̯ʁaːtˌtuːɐ̯",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "骑车游，自行车旅行",
+    "de": "Ausflug oder Reise mit dem Fahrrad",
+    "ex": [
+     {
+      "de": "Am Wochenende machen wir eine Fahrradtour an der Elbe entlang.",
+      "zh": "周末我们沿着易北河骑车游。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Fahrradtour machen / unternehmen — 骑车出游",
+   "Radtour (同义，更口语) — 骑行"
+  ],
+  "root": "Fahr·rad·tour：Fahrrad（自行车）+ Tour（游览、行程）",
+  "fam": [
+   "Fahrrad",
+   "Radtour",
+   "Tour",
+   "Tourist",
+   "Rad"
+  ],
+  "ety": "复合词。Tour 借自法语 tour（转圈；行程），源自拉丁语 tornus（车床）< 希腊语 tórnos。",
+  "cog": "英 tour；法 tour"
+ },
+ {
+  "w": "Faksimile",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Faksimiles",
+  "gs": "des Faksimiles",
+  "ipa": "fakˈziːmile",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（书籍、手稿等的）摹真本，原样复制件",
+    "de": "originalgetreue Nachbildung einer Vorlage, bes. einer Handschrift",
+    "ex": [
+     {
+      "de": "Die Bibliothek zeigt ein Faksimile der mittelalterlichen Handschrift.",
+      "zh": "图书馆展出了这部中世纪手抄本的摹真本。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Faksimileausgabe — 摹真版，影印版",
+   "etw. faksimilieren — 原样复制某物"
+  ],
+  "root": "fac·simile：拉丁语 fac（做！facere 的命令式）+ simile（相似的）→“使之相似” → 原样复制",
+  "fam": [
+   "faksimilieren",
+   "Fax",
+   "Faksimileausgabe",
+   "Simulation"
+  ],
+  "ety": "源自拉丁语短语 fac simile（“做得一模一样”），一般认为经英语 facsimile 进入德语；Fax 即其缩略。",
+  "cog": "英 facsimile, fax；拉 facere, similis",
+  "tip": "重音在第二音节 -si-，词尾 -e 要读出 [e]。"
+ },
+ {
+  "w": "Falschaussage",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Falschaussagen",
+  "gs": "der Falschaussage",
+  "ipa": "ˈfalʃˌʔaʊ̯szaːɡə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（法）虚假陈述，伪证（尤指未经宣誓的）",
+    "de": "bewusst unwahre Aussage, bes. vor Gericht",
+    "ex": [
+     {
+      "de": "Der Zeuge wurde wegen uneidlicher Falschaussage verurteilt.",
+      "zh": "该证人因未经宣誓的虚假陈述被判有罪。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Falschaussage machen — 作伪证，作虚假陈述",
+   "uneidliche Falschaussage ↔ Meineid — 未宣誓的伪证 ↔ 宣誓后的伪证（罪责更重）"
+  ],
+  "root": "falsch·aus·sage：falsch（错误的、虚假的）+ Aussage（陈述、证词）",
+  "fam": [
+   "aussagen",
+   "Aussage",
+   "falsch",
+   "Meineid",
+   "Zeugenaussage"
+  ],
+  "ety": "复合词。falsch < 中古高地德语 valsch，一般认为借自古法语 fals（< 拉丁语 falsus）；Aussage 由 aussagen < sagen 派生。",
+  "cog": "英 false；英 say",
+  "tip": "德国刑法区分 Falschaussage 与 Meineid（宣誓后作伪证），新闻报道中不可混用。"
+ },
+ {
+  "w": "Familienfeier",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Familienfeiern",
+  "gs": "der Familienfeier",
+  "ipa": "faˈmiːli̯ənˌfaɪ̯ɐ",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "家庭聚会，家庭庆祝活动（如生日、婚礼）",
+    "de": "Feier im Kreis der Familie",
+    "ex": [
+     {
+      "de": "Zur Familienfeier kamen über dreißig Verwandte.",
+      "zh": "三十多位亲戚来参加了这次家庭聚会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Familienfeier ausrichten — 操办家庭聚会",
+   "auf einer Familienfeier sein — 在参加家庭聚会"
+  ],
+  "root": "Familie·n·feier：Familie（家庭）+ -n-（连接音）+ Feier（庆祝会）",
+  "fam": [
+   "Familie",
+   "feiern",
+   "Feier",
+   "Feiertag",
+   "Familienfest"
+  ],
+  "ety": "复合词。Familie 借自拉丁语 familia（家庭、家仆）；Feier < 中古高地德语 vīre < 拉丁语 fēriae（节日、假日）。",
+  "cog": "英 family；英 fair（集市，同源于拉 feria）"
+ },
+ {
+  "w": "Familienfest",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Familienfeste",
+  "gs": "des Familienfest(e)s",
+  "ipa": "faˈmiːli̯ənˌfɛst",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "家庭节日，阖家团圆的节日；家庭庆典",
+    "de": "Fest, das im Familienkreis gefeiert wird",
+    "ex": [
+     {
+      "de": "Weihnachten gilt in Deutschland als das Familienfest schlechthin.",
+      "zh": "在德国，圣诞节被视为最典型的家庭团聚节日。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein großes Familienfest feiern — 举办盛大的家庭庆典",
+   "Familienfest ≈ Familienfeier — 前者也常指节日本身（如圣诞节）"
+  ],
+  "root": "Familie·n·fest：Familie（家庭）+ Fest（节日、庆典）",
+  "fam": [
+   "Familie",
+   "Fest",
+   "festlich",
+   "Familienfeier"
+  ],
+  "ety": "复合词。Fest < 中古高地德语 fest，借自拉丁语 festum（节日）。",
+  "cog": "英 family, feast, festival"
+ },
+ {
+  "w": "Familienkreis",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Familienkreise",
+  "gs": "des Familienkreises",
+  "ipa": "faˈmiːli̯ənˌkʁaɪ̯s",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "家人圈子，家庭范围",
+    "de": "Gesamtheit der Familienangehörigen",
+    "ex": [
+     {
+      "de": "Die Beisetzung findet im engsten Familienkreis statt.",
+      "zh": "葬礼仅限至亲参加。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im engsten Familienkreis — 只在至亲范围内（讣告、婚礼通知常用）",
+   "im Familien- und Freundeskreis — 在亲友之间"
+  ],
+  "root": "Familie·n·kreis：Familie（家庭）+ Kreis（圈子）→ 家庭这个圈子",
+  "fam": [
+   "Familie",
+   "Kreis",
+   "Freundeskreis",
+   "Bekanntenkreis"
+  ],
+  "ety": "复合词。Kreis < 中古高地德语 kreiʒ < 古高地德语 kreiz（圆圈），更早来源不详。",
+  "cog": "英 family"
+ },
+ {
+  "w": "Familientradition",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Familientraditionen",
+  "gs": "der Familientradition",
+  "ipa": "faˈmiːli̯əntʁadiˌt͡si̯oːn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "家族传统，家风",
+    "de": "in einer Familie überlieferter Brauch",
+    "ex": [
+     {
+      "de": "Das Weingut wird nach alter Familientradition in fünfter Generation geführt.",
+      "zh": "这座酒庄秉承家族传统，已由第五代人经营。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Familientradition fortsetzen / pflegen — 延续/维护家族传统",
+   "nach (alter) Familientradition — 按照（古老的）家族传统"
+  ],
+  "root": "Familie·n·tradition：Familie（家庭）+ Tradition（传统）",
+  "fam": [
+   "Familie",
+   "Tradition",
+   "traditionell",
+   "Familienbetrieb"
+  ],
+  "ety": "复合词。Tradition 借自拉丁语 trāditiō（交付、传承），源自 trādere（交出、传下）。",
+  "cog": "英 tradition"
+ },
+ {
+  "w": "fassbar",
+  "pos": "adj",
+  "ipa": "ˈfasbaːɐ̯",
+  "lvl": "C1",
+  "forms": "fassbarer · am fassbarsten",
+  "senses": [
+   {
+    "zh": "可理解的，能领会的",
+    "de": "verständlich, begreifbar",
+    "ex": [
+     {
+      "de": "Das Ausmaß der Katastrophe ist kaum fassbar.",
+      "zh": "这场灾难的规模简直令人难以想象。"
+     }
+    ]
+   },
+   {
+    "zh": "具体的，可把握的，可捉摸的",
+    "de": "konkret, greifbar",
+    "ex": [
+     {
+      "de": "Die Vorwürfe sind bisher nicht fassbar.",
+      "zh": "这些指控迄今都还没有具体的依据。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "kaum / schwer fassbar — 难以理解的，难以置信的",
+   "unfassbar — 不可思议的（更常用）"
+  ],
+  "root": "fass·bar：fassen（抓住；领会）+ -bar（可……的）→ 可被抓住/领会的",
+  "fam": [
+   "fassen",
+   "unfassbar",
+   "erfassen",
+   "begreifen",
+   "Fassung"
+  ],
+  "ety": "由 fassen + -bar 构成。fassen < 中古高地德语 vaʒʒen < 古高地德语 faʒʒōn（装载；抓住），一般认为与 Fass（桶）同族。",
+  "cog": "英 vat（与 Fass 同源）；荷 vatten（抓住、理解）",
+  "tip": "否定形式 unfassbar 远比 fassbar 常用；fassbar 多与 kaum、schwer、nicht 连用。"
+ },
+ {
+  "w": "Finanzbranche",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Finanzbranchen",
+  "gs": "der Finanzbranche",
+  "ipa": "fiˈnant͡sˌbʁãːʃə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "金融业，金融行业",
+    "de": "Wirtschaftszweig der Banken, Versicherungen und Finanzdienstleister",
+    "ex": [
+     {
+      "de": "In der Finanzbranche werden derzeit tausende Stellen abgebaut.",
+      "zh": "金融业目前正在裁减数以千计的岗位。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Finanzbranche arbeiten / tätig sein — 在金融业工作",
+   "die Finanzbranche regulieren — 监管金融业"
+  ],
+  "root": "Finanz·branche：Finanz(en)（金融、财政）+ Branche（行业）",
+  "fam": [
+   "Finanzen",
+   "finanziell",
+   "Branche",
+   "Finanzmarkt"
+  ],
+  "ety": "复合词。Finanz 借自法语 finance（资金）；Branche 借自法语 branche（树枝；分支），源自晚期拉丁语 branca（爪子）。",
+  "cog": "英 finance, branch",
+  "tip": "Branche 保留法语发音 [ˈbʁãːʃə]，鼻化元音，不要读成 [ˈbʁantʃə]。"
+ },
+ {
+  "w": "Firmung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Firmungen",
+  "gs": "der Firmung",
+  "ipa": "ˈfɪʁmʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（天主教）坚振圣事，坚振礼",
+    "de": "katholisches Sakrament zur Stärkung im Glauben",
+    "ex": [
+     {
+      "de": "Zur Firmung schenkte ihm sein Pate eine Uhr.",
+      "zh": "他行坚振礼时，代父送了他一块表。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Firmung empfangen — 领受坚振圣事",
+   "gefirmt werden — 受坚振（firmen 的被动）",
+   "der Firmling / der Firmpate — 受坚振者 / 坚振代父"
+  ],
+  "root": "firm·ung：firmen（施坚振礼）+ -ung（名词化）",
+  "fam": [
+   "firmen",
+   "Firmling",
+   "Konfirmation",
+   "konfirmieren"
+  ],
+  "ety": "firmen < 中古高地德语 firmen，借自拉丁语 fīrmāre（使坚固、加强），源自 fīrmus（坚固的）。",
+  "cog": "英 confirmation, firm",
+  "tip": "Firmung 是天主教用语；新教对应的仪式称 Konfirmation。"
+ },
+ {
+  "w": "flügge",
+  "pos": "adj",
+  "ipa": "ˈflʏɡə",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（雏鸟）羽毛丰满能飞的",
+    "de": "(von jungen Vögeln) flugfähig",
+    "ex": [
+     {
+      "de": "Nach etwa drei Wochen sind die jungen Amseln flügge.",
+      "zh": "大约三周后，小乌鸫就能飞了。"
+     }
+    ]
+   },
+   {
+    "zh": "（转，口）（孩子）长大自立的，翅膀硬了的",
+    "de": "(von Kindern) selbstständig, erwachsen",
+    "ex": [
+     {
+      "de": "Seit die Kinder flügge sind, haben die beiden wieder mehr Zeit füreinander.",
+      "zh": "自从孩子们长大离家，两人又有了更多相处的时间。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "flügge werden — 长出羽毛能飞；（孩子）长大自立",
+   "nur prädikativ gebräuchlich — 一般只作表语，与 sein / werden 连用"
+  ],
+  "root": "flügg·e：与 fliegen（飞）、Flügel（翅膀）同族 → 能飞的",
+  "fam": [
+   "fliegen",
+   "Flügel",
+   "Flug",
+   "flink"
+  ],
+  "ety": "来自低地德语，参见中古低地德语 vlügge（能飞的），与 fliegen 同族。",
+  "cog": "英 fledge, fledgling（同源）",
+  "tip": "注意双写 gg 和变音 ü；汉语“翅膀硬了”常带贬义，flügge 则是中性的。"
+ },
+ {
+  "w": "Folgeschaden",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Folgeschäden",
+  "gs": "des Folgeschadens",
+  "ipa": "ˈfɔlɡəˌʃaːdn̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "后续损害，间接损失；（医）后遗损害",
+    "de": "Schaden, der als Folge eines anderen Schadens oder Ereignisses entsteht",
+    "ex": [
+     {
+      "de": "Die Versicherung übernimmt auch Folgeschäden durch das ausgelaufene Wasser.",
+      "zh": "保险公司也承担漏水造成的后续损失。"
+     },
+     {
+      "de": "Bei rechtzeitiger Behandlung bleiben meist keine Folgeschäden zurück.",
+      "zh": "如果及时治疗，通常不会留下后遗症。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Folgeschäden verursachen / vermeiden — 造成/避免后续损害",
+   "gesundheitliche Folgeschäden — 健康上的后遗损害",
+   "der Mangelfolgeschaden (Recht) — 瑕疵后果损害"
+  ],
+  "root": "Folge·schaden：Folge（后果）+ Schaden（损害）→ 作为后果产生的损害",
+  "fam": [
+   "Schaden",
+   "schaden",
+   "Folge",
+   "folgen",
+   "Spätfolge"
+  ],
+  "ety": "复合词。Schaden < 中古高地德语 schade < 古高地德语 scado；Folge 由 folgen < 古高地德语 folgēn 派生。",
+  "cog": "英 scathe（同源）；英 follow"
+ },
+ {
+  "w": "formatieren",
+  "pos": "v",
+  "ipa": "fɔʁmaˈtiːʁən",
+  "lvl": "B2",
+  "forms": "formatiert · formatierte · hat formatiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（计算机）格式化（存储介质）",
+    "de": "(EDV) einen Datenträger für die Speicherung vorbereiten",
+    "ex": [
+     {
+      "de": "Beim Formatieren werden alle Daten auf dem USB-Stick gelöscht.",
+      "zh": "格式化时 U 盘上的所有数据都会被删除。"
+     }
+    ]
+   },
+   {
+    "zh": "设置（文本、表格的）格式，排版",
+    "de": "Text oder Daten in eine bestimmte Form bringen",
+    "ex": [
+     {
+      "de": "Bitte formatieren Sie die Überschriften einheitlich.",
+      "zh": "请把各级标题设置成统一格式。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) formatieren — 格式化/排版某物",
+   "die Festplatte neu formatieren — 重新格式化硬盘",
+   "die Formatierung — 格式；格式化"
+  ],
+  "root": "format·ier·en：Format（格式、尺寸）+ -ieren（外来动词后缀）",
+  "fam": [
+   "Format",
+   "Formatierung",
+   "Form",
+   "formal"
+  ],
+  "ety": "由 Format 派生；Format 借自拉丁语 fōrmātum（被成形的），fōrmāre（塑形）的过去分词，源自 fōrma（形状）。计算机义受英语 format 影响。",
+  "cog": "英 format；拉 forma"
+ },
+ {
+  "w": "Frauenklinik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Frauenkliniken",
+  "gs": "der Frauenklinik",
+  "ipa": "ˈfʁaʊ̯ənˌkliːnɪk",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "妇产科医院；（医院的）妇产科",
+    "de": "Klinik für Frauenheilkunde und Geburtshilfe",
+    "ex": [
+     {
+      "de": "Das Baby kam in der Frauenklinik des Universitätsklinikums zur Welt.",
+      "zh": "宝宝在大学附属医院的妇产科出生。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Frauenklinik entbinden — 在妇产医院分娩",
+   "die Frauenheilkunde — 妇科学（= Gynäkologie）"
+  ],
+  "root": "Frau·en·klinik：Frau（女性）+ -en（连接）+ Klinik（医院、诊所）",
+  "fam": [
+   "Frau",
+   "Klinik",
+   "Frauenarzt",
+   "Klinikum"
+  ],
+  "ety": "复合词。Klinik 源自希腊语 klīnikḗ (téchnē)（病床边的医术），由 klínē（床）派生；Frau < 古高地德语 frouwa（女主人）。",
+  "cog": "英 clinic"
+ },
+ {
+  "w": "Freilichtbühne",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Freilichtbühnen",
+  "gs": "der Freilichtbühne",
+  "ipa": "ˈfʁaɪ̯lɪçtˌbyːnə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "露天剧场，露天舞台",
+    "de": "Theater bzw. Bühne unter freiem Himmel",
+    "ex": [
+     {
+      "de": "Im Sommer werden auf der Freilichtbühne Märchen für Kinder gespielt.",
+      "zh": "夏天，露天剧场会为孩子们上演童话剧。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf der Freilichtbühne spielen — 在露天剧场演出",
+   "das Freilichtmuseum / Freilichtkino — 露天博物馆 / 露天电影"
+  ],
+  "root": "Frei·licht·bühne：frei（开放的）+ Licht（光线）+ Bühne（舞台）→ 在天光下的舞台",
+  "fam": [
+   "Freilicht",
+   "Bühne",
+   "Freilichtmuseum",
+   "im Freien"
+  ],
+  "ety": "复合词。Bühne < 中古高地德语 büne（木板地面、平台），更早来源不详。",
+  "cog": "英 free, light"
+ },
+ {
+  "w": "Frikadelle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Frikadellen",
+  "gs": "der Frikadelle",
+  "ipa": "fʁikaˈdɛlə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "煎肉饼，煎肉丸（用肉馅做的扁圆形煎饼）",
+    "de": "gebratener flacher Kloß aus Hackfleisch",
+    "ex": [
+     {
+      "de": "Zum Kartoffelsalat gibt es selbst gemachte Frikadellen.",
+      "zh": "配土豆沙拉的是自制煎肉饼。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Frikadellen braten — 煎肉饼",
+   "地区说法：Bulette（柏林）、Fleischpflanzerl（巴伐利亚）、Fleischküchle（施瓦本）、Fleischlaberl（奥地利）"
+  ],
+  "root": "Frikadelle：罗曼语借词，内部不可再分",
+  "fam": [
+   "Bulette",
+   "Hackfleisch",
+   "Fleischpflanzerl"
+  ],
+  "ety": "词源不完全确定；一般认为是罗曼语借词，与法语 fricandeau（嫩煎小牛肉）、意大利语 frittatella（小煎饼）等词有关。",
+  "cog": "荷 frikadel；法 fricandeau",
+  "tip": "德国各地叫法差异很大，听到 Bulette 或 Fleischpflanzerl 指的是同一种食物。"
+ },
+ {
+  "w": "furchtlos",
+  "pos": "adj",
+  "ipa": "ˈfʊʁçtloːs",
+  "lvl": "C1",
+  "forms": "furchtloser · am furchtlosesten",
+  "senses": [
+   {
+    "zh": "无畏的，无所畏惧的",
+    "de": "ohne Furcht, mutig",
+    "ex": [
+     {
+      "de": "Die Journalistin berichtete furchtlos über die Korruption in der Regierung.",
+      "zh": "这名女记者无所畏惧地报道了政府中的腐败。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "furchtlos gegenüber etw.(D) — 面对……无所畏惧",
+   "die Furchtlosigkeit — 无畏",
+   "近义：mutig, unerschrocken；反义：ängstlich, furchtsam"
+  ],
+  "root": "furcht·los：Furcht（恐惧）+ -los（无……的）",
+  "fam": [
+   "Furcht",
+   "fürchten",
+   "fürchterlich",
+   "furchtbar",
+   "Furchtlosigkeit"
+  ],
+  "ety": "由 Furcht + -los 构成。Furcht < 中古高地德语 vorhte < 古高地德语 forhta。",
+  "cog": "英 fright（同源）"
+ },
+ {
+  "w": "Färber",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Färber",
+  "gs": "des Färbers",
+  "ipa": "ˈfɛʁbɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "染工，染匠",
+    "de": "Handwerker, der Stoffe, Garne o. Ä. färbt",
+    "ex": [
+     {
+      "de": "Im Mittelalter wohnten die Färber meist am Fluss, weil sie viel Wasser brauchten.",
+      "zh": "中世纪的染匠大多住在河边，因为他们需要大量用水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Färberei — 染坊，染色厂",
+   "Färber 也是常见姓氏"
+  ],
+  "root": "färb·er：färben（染色）+ -er（施动者）",
+  "fam": [
+   "färben",
+   "Farbe",
+   "Färberei",
+   "farbig",
+   "Färbung"
+  ],
+  "ety": "由 färben 派生；färben < 中古高地德语 verwen，与 Farbe < 古高地德语 farawa 同族。",
+  "cog": "荷 verver（染工）, verf（颜料）"
+ },
+ {
+  "w": "Gebläse",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gebläse",
+  "gs": "des Gebläses",
+  "ipa": "ɡəˈblɛːzə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "鼓风机，风机；（汽车）暖风/空调风扇",
+    "de": "Vorrichtung zum Erzeugen eines Luftstroms",
+    "ex": [
+     {
+      "de": "Im Winter dreht er das Gebläse auf, damit die Scheibe nicht beschlägt.",
+      "zh": "冬天他把车里的风扇开大，以免挡风玻璃起雾。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Gebläse anstellen / aufdrehen — 打开/开大风机",
+   "das Laubgebläse — 吹叶机"
+  ],
+  "root": "Ge·bläs·e：Ge-…-e（集合/工具名词框架）+ blasen（吹）→ 吹风的装置",
+  "fam": [
+   "blasen",
+   "Bläser",
+   "Blase",
+   "Laubbläser"
+  ],
+  "ety": "由 blasen 派生；blasen < 中古高地德语 blāsen < 古高地德语 blāsan。",
+  "cog": "英 blast（一般认为同源）"
+ },
+ {
+  "w": "Gefrierpunkt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gefrierpunkte",
+  "gs": "des Gefrierpunkt(e)s",
+  "ipa": "ɡəˈfʁiːɐ̯ˌpʊŋkt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "冰点，凝固点；零度",
+    "de": "Temperatur, bei der eine Flüssigkeit gefriert (bei Wasser 0 °C)",
+    "ex": [
+     {
+      "de": "Nachts sinken die Temperaturen unter den Gefrierpunkt.",
+      "zh": "夜间气温将降到零度以下。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "unter / über dem Gefrierpunkt — 零度以下/以上（天气预报高频）",
+   "unter den Gefrierpunkt sinken / fallen — 降到零度以下"
+  ],
+  "root": "Ge·frier·punkt：gefrieren（结冰）+ Punkt（点）",
+  "fam": [
+   "gefrieren",
+   "frieren",
+   "Frost",
+   "Gefrierschrank",
+   "Punkt"
+  ],
+  "ety": "复合词。gefrieren 由 frieren < 古高地德语 friosan 加 ge- 构成；Punkt 借自拉丁语 punctum（点）。",
+  "cog": "英 freeze, frost；英 point"
+ },
+ {
+  "w": "Gegenschlag",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gegenschläge",
+  "gs": "des Gegenschlag(e)s",
+  "ipa": "ˈɡeːɡn̩ˌʃlaːk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "反击，回击（军事或转义）",
+    "de": "Schlag oder Angriff als Antwort auf einen Angriff",
+    "ex": [
+     {
+      "de": "Die Opposition holte zum Gegenschlag aus und warf der Regierung Wortbruch vor.",
+      "zh": "反对派展开反击，指责政府食言。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Gegenschlag ausholen — 准备反击，发起反击",
+   "einen Gegenschlag führen — 进行反击",
+   "近义：Vergeltungsschlag（报复性打击）, Gegenangriff"
+  ],
+  "root": "Gegen·schlag：gegen（反向）+ Schlag（打击）",
+  "fam": [
+   "schlagen",
+   "Schlag",
+   "Gegenangriff",
+   "zurückschlagen"
+  ],
+  "ety": "复合词。Schlag 由 schlagen < 古高地德语 slahan 派生。",
+  "cog": "英 slay（同源）"
+ },
+ {
+  "w": "geheuer",
+  "pos": "adj",
+  "ipa": "ɡəˈhɔɪ̯ɐ",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（只用于否定）nicht geheuer：令人不安的，可疑的，阴森的",
+    "de": "(nur verneint) unheimlich, verdächtig, nicht vertrauenerweckend",
+    "ex": [
+     {
+      "de": "Mir ist die Sache nicht ganz geheuer.",
+      "zh": "这件事让我觉得有点不对劲。"
+     },
+     {
+      "de": "Nachts ist es in dem alten Haus nicht geheuer.",
+      "zh": "那栋老房子夜里阴森森的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm. ist etw./jmd. nicht geheuer — 某人对某事/某人感到不放心、不对劲（第三格）",
+   "几乎只用于否定或疑问句，不能单独说 *Das ist geheuer."
+  ],
+  "root": "ge·heuer：古义“温和的、安全的”；反义名词 Ungeheuer（怪物）即“不温和的东西”",
+  "fam": [
+   "Ungeheuer",
+   "ungeheuer",
+   "nicht geheuer"
+  ],
+  "ety": "< 中古高地德语 gehiure（温和的、亲切的）< 古高地德语 gihiuri。",
+  "cog": "古英语 hīere（温和的；一般认为同源）",
+  "tip": "与 ungeheuer（巨大的）同源，但语义已分化；nicht geheuer 常用来表达“心里发毛”的感觉。"
+ },
+ {
+  "w": "geloben",
+  "pos": "v",
+  "ipa": "ɡəˈloːbn̩",
+  "lvl": "C1–C2",
+  "forms": "gelobt · gelobte · hat gelobt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "郑重许诺，立誓，发誓",
+    "de": "feierlich versprechen",
+    "ex": [
+     {
+      "de": "Nach dem Skandal gelobte der Vorstand Besserung.",
+      "zh": "丑闻之后，董事会郑重承诺会改进。"
+     },
+     {
+      "de": "Sie gelobten einander ewige Treue.",
+      "zh": "他们彼此立誓永远忠诚。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(jmdm.) etw.(A) geloben — （向某人）郑重许诺某事",
+   "Besserung geloben — 保证改正",
+   "das Gelobte Land — （圣经）应许之地"
+  ],
+  "root": "ge·lob·en：ge-（加强/完成义前缀）+ loben（称赞；古义“允诺、认可”）",
+  "fam": [
+   "loben",
+   "Gelübde",
+   "verloben",
+   "Verlobung",
+   "Lob"
+  ],
+  "ety": "< 中古高地德语 geloben < 古高地德语 gilobōn，由 loben 加 ge- 构成；loben 古义还包括“赞同、许诺”。",
+  "cog": "荷 geloven（相信）；英 believe（远源相关，一般认为）",
+  "tip": "注意与 loben（称赞）区别：过去分词 gelobt 两词同形，但 geloben 意为“许诺”；名词是 das Gelübde（誓约）。"
+ },
+ {
+  "w": "Generalvikar",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Generalvikare",
+  "gs": "des Generalvikars",
+  "ipa": "ɡeneˈʁaːlviˌkaːɐ̯",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（天主教）总代理主教，主教代理（协助教区主教管理行政事务）",
+    "de": "Stellvertreter des Bischofs in der Verwaltung einer Diözese",
+    "ex": [
+     {
+      "de": "Der Generalvikar äußerte sich im Namen des Bistums zu den Vorwürfen.",
+      "zh": "总代理主教代表教区就相关指控作出回应。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Generalvikar des Erzbistums Köln — 科隆总教区的总代理主教",
+   "der Vikar — 副本堂神父；（新教）见习牧师"
+  ],
+  "root": "General·vikar：General-（总的）+ Vikar（代理人）→ 全权代理（主教）的人",
+  "fam": [
+   "Vikar",
+   "General",
+   "Bistum",
+   "Bischof"
+  ],
+  "ety": "Vikar 借自拉丁语 vicārius（代理人），由 vicis（交替、代替）派生；General- 源自拉丁语 generālis（总的）。",
+  "cog": "英 vicar general；拉 vicarius"
+ },
+ {
+  "w": "generisch",
+  "pos": "adj",
+  "ipa": "ɡeˈneːʁɪʃ",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "类属的，泛指的，一般性的",
+    "de": "die Gattung betreffend, allgemein",
+    "ex": [
+     {
+      "de": "Das generische Maskulinum ist in der Genderdebatte umstritten.",
+      "zh": "泛指阳性在性别语言讨论中颇具争议。"
+     }
+    ]
+   },
+   {
+    "zh": "（药）通用名的，仿制的；（商品）无品牌的",
+    "de": "nicht markengeschützt (bes. von Arzneimitteln)",
+    "ex": [
+     {
+      "de": "Generische Medikamente sind oft deutlich günstiger.",
+      "zh": "仿制药往往便宜得多。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das generische Maskulinum — 泛指阳性（用阳性形式指称所有性别）",
+   "das Generikum (Pl. Generika) — 仿制药",
+   "ein generischer Begriff — 上位概念，类属概念"
+  ],
+  "root": "gener·isch：拉丁语 genus, generis（种类，属格）+ -isch（形容词后缀）",
+  "fam": [
+   "Generikum",
+   "Genus",
+   "generell",
+   "Generation"
+  ],
+  "ety": "源自拉丁语 genus（属、类，属格 generis）；现代用法（尤其“仿制的”）受英语 generic 影响。",
+  "cog": "英 generic；拉 genus"
+ },
+ {
+  "w": "geräuschlos",
+  "pos": "adj",
+  "ipa": "ɡəˈʁɔɪ̯ʃloːs",
+  "lvl": "B2–C1",
+  "forms": "geräuschloser · am geräuschlosesten",
+  "senses": [
+   {
+    "zh": "无声的，悄无声息的",
+    "de": "ohne Geräusch, lautlos",
+    "ex": [
+     {
+      "de": "Die Tür öffnete sich fast geräuschlos.",
+      "zh": "门几乎无声地开了。"
+     }
+    ]
+   },
+   {
+    "zh": "（转）不声张的，低调的",
+    "de": "unauffällig, ohne Aufsehen",
+    "ex": [
+     {
+      "de": "Der Konflikt wurde geräuschlos hinter den Kulissen beigelegt.",
+      "zh": "这场冲突在幕后被悄悄化解了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "geräuschlos arbeiten / gleiten — 无声地运转/滑行",
+   "近义：lautlos, still, leise"
+  ],
+  "root": "Ge·räusch·los：Geräusch（声响、噪音）+ -los（无……的）",
+  "fam": [
+   "Geräusch",
+   "rauschen",
+   "lautlos",
+   "geräuschvoll"
+  ],
+  "ety": "由 Geräusch + -los 构成；Geräusch 由 rauschen < 中古高地德语 rūschen 派生。",
+  "cog": "荷 ruis（噪声）, ruisen（沙沙作响）"
+ },
+ {
+  "w": "Gesamtweltcup",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gesamtweltcups",
+  "gs": "des Gesamtweltcups",
+  "ipa": "ɡəˈzamtˌvɛltkap",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（体育，尤指冬季项目）世界杯总积分；世界杯总冠军（水晶球）",
+    "de": "Gesamtwertung aller Weltcuprennen einer Saison",
+    "ex": [
+     {
+      "de": "Mit dem Sieg im letzten Rennen sicherte sie sich den Gesamtweltcup.",
+      "zh": "凭借最后一站的胜利，她锁定了世界杯总冠军。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Gesamtweltcup gewinnen — 赢得世界杯总冠军",
+   "im Gesamtweltcup führen — 在世界杯总积分榜上领先"
+  ],
+  "root": "Gesamt·welt·cup：gesamt（总的）+ Welt（世界）+ Cup（杯赛）",
+  "fam": [
+   "Weltcup",
+   "gesamt",
+   "Gesamtwertung",
+   "Cup"
+  ],
+  "ety": "复合词。Cup 借自英语 cup（奖杯）。",
+  "cog": "英 world cup",
+  "tip": "Cup 在德语中读 [kap]，不读 [kʌp]；常见于滑雪、跳台滑雪、冬季两项报道。"
+ },
+ {
+  "w": "Gesangbuch",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gesangbücher",
+  "gs": "des Gesangbuch(e)s",
+  "ipa": "ɡəˈzaŋbuːx",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（教会用）赞美诗集，圣歌集",
+    "de": "Buch mit Kirchenliedern für den Gottesdienst",
+    "ex": [
+     {
+      "de": "Die Gemeinde schlug das Gesangbuch auf und sang das erste Lied.",
+      "zh": "会众翻开赞美诗集，唱起了第一首歌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das evangelische / katholische Gesangbuch — 新教/天主教赞美诗集（天主教的叫 Gotteslob）",
+   "ein Lied aus dem Gesangbuch — 赞美诗集中的一首歌"
+  ],
+  "root": "Gesang·buch：Gesang（歌唱、歌曲）+ Buch（书）",
+  "fam": [
+   "Gesang",
+   "singen",
+   "Liederbuch",
+   "Buch"
+  ],
+  "ety": "复合词。Gesang 由 singen < 古高地德语 singan 派生。",
+  "cog": "英 song, sing；英 book"
+ },
+ {
+  "w": "Geschichtsschreiber",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Geschichtsschreiber",
+  "gs": "des Geschichtsschreibers",
+  "ipa": "ɡəˈʃɪçt͡sˌʃʁaɪ̯bɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "史学家，编史者，史官",
+    "de": "jmd., der Geschichte darstellt und aufschreibt; Historiker",
+    "ex": [
+     {
+      "de": "Der römische Geschichtsschreiber Tacitus beschrieb die Germanen.",
+      "zh": "罗马史学家塔西佗描述过日耳曼人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Geschichtsschreibung — 历史编纂，史学",
+   "近义：Historiker（现代学术称谓），Chronist（编年史家）"
+  ],
+  "root": "Geschicht·s·schreib·er：Geschichte（历史）+ -s-（连接）+ schreiben（写）+ -er（施动者）",
+  "fam": [
+   "Geschichte",
+   "Geschichtsschreibung",
+   "schreiben",
+   "Historiker",
+   "Chronist"
+  ],
+  "ety": "复合词。Geschichte 由 geschehen 派生（原义“发生的事”）；schreiben < 古高地德语 scrīban，借自拉丁语 scrībere。",
+  "cog": "英 scribe；拉 scribere",
+  "tip": "Geschichtsschreiber 多用于古代或文学语境；指现代专业学者时一般说 Historiker。"
+ },
+ {
+  "w": "Geschlechtsorgan",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Geschlechtsorgane",
+  "gs": "des Geschlechtsorgans",
+  "ipa": "ɡəˈʃlɛçt͡sʔɔʁˌɡaːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "性器官，生殖器官",
+    "de": "der Fortpflanzung dienendes Organ",
+    "ex": [
+     {
+      "de": "Im Biologieunterricht werden die männlichen und weiblichen Geschlechtsorgane besprochen.",
+      "zh": "生物课会讲到男性和女性的生殖器官。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die äußeren / inneren Geschlechtsorgane — 外/内生殖器",
+   "近义：Genitalien (Pl.)，Fortpflanzungsorgan"
+  ],
+  "root": "Geschlecht·s·organ：Geschlecht（性别）+ -s-（连接）+ Organ（器官）",
+  "fam": [
+   "Geschlecht",
+   "geschlechtlich",
+   "Organ",
+   "Genitalien"
+  ],
+  "ety": "复合词。Geschlecht < 中古高地德语 geslehte（家族、种类），一般认为与 schlagen 同族（参见 nach jmdm. schlagen“像某人”）；Organ 借自拉丁语 organum < 希腊语 órganon（工具）。",
+  "cog": "英 organ"
+ },
+ {
+  "w": "Geschäftsraum",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Geschäftsräume",
+  "gs": "des Geschäftsraum(e)s",
+  "ipa": "ɡəˈʃɛft͡sˌʁaʊ̯m",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "营业场所，商业用房，办公室（多用复数）",
+    "de": "für geschäftliche Zwecke genutzter Raum",
+    "ex": [
+     {
+      "de": "Die Firma sucht neue Geschäftsräume in zentraler Lage.",
+      "zh": "公司正在市中心寻找新的营业场所。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Geschäftsräume mieten / anmieten — 租用商业用房",
+   "近义：Gewerberaum, Büroräume"
+  ],
+  "root": "Geschäft·s·raum：Geschäft（生意；商店）+ -s-（连接）+ Raum（房间、空间）",
+  "fam": [
+   "Geschäft",
+   "Raum",
+   "Gewerberaum",
+   "Räumlichkeiten"
+  ],
+  "ety": "复合词。Raum < 古高地德语 rūm（空间）。",
+  "cog": "英 room（同源）"
+ },
+ {
+  "w": "gesundheitsschädlich",
+  "pos": "adj",
+  "ipa": "ɡəˈzʊnthaɪ̯t͡sˌʃɛːtlɪç",
+  "lvl": "B2",
+  "forms": "gesundheitsschädlicher · am gesundheitsschädlichsten",
+  "senses": [
+   {
+    "zh": "有害健康的",
+    "de": "der Gesundheit schadend",
+    "ex": [
+     {
+      "de": "Feinstaub gilt als besonders gesundheitsschädlich.",
+      "zh": "细颗粒物被认为对健康危害尤其大。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gesundheitsschädlich sein / wirken — 有害健康",
+   "近义：schädlich, ungesund；反义：gesundheitsfördernd"
+  ],
+  "root": "Gesund·heit·s·schäd·lich：Gesundheit（健康）+ -s-（连接）+ schädlich（有害的）",
+  "fam": [
+   "Gesundheit",
+   "schädlich",
+   "Schaden",
+   "gesund"
+  ],
+  "ety": "复合词。gesund < 古高地德语 gisunt；schädlich 由 Schaden 派生。",
+  "cog": "英 sound（健全的，同源）；英 scathe"
+ },
+ {
+  "w": "Gewerk",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gewerke",
+  "gs": "des Gewerk(e)s",
+  "ipa": "ɡəˈvɛʁk",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "（建筑）工种，分项工程（如电气、水暖、木工）",
+    "de": "(Bauw.) Handwerkszweig bzw. Teilleistung am Bau",
+    "ex": [
+     {
+      "de": "Der Architekt koordiniert die einzelnen Gewerke auf der Baustelle.",
+      "zh": "建筑师负责协调工地上各个工种。"
+     }
+    ]
+   },
+   {
+    "zh": "（旧）手工业，行业；行会",
+    "de": "(veraltet) Handwerk, Zunft",
+    "ex": [
+     {
+      "de": "Die alten Gewerke der Stadt hatten eigene Zunfthäuser.",
+      "zh": "城里的老行会都有各自的会馆。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "alle Gewerke koordinieren — 协调所有工种",
+   "die Ausschreibung nach Gewerken — 按工种分项招标"
+  ],
+  "root": "Ge·werk：Ge-（集合前缀）+ Werk（工作、工程）",
+  "fam": [
+   "Werk",
+   "Gewerbe",
+   "Handwerk",
+   "werken"
+  ],
+  "ety": "< 中古高地德语 gewerc，由 Werk < 古高地德语 werc 加 ge- 构成。",
+  "cog": "英 work（同源）",
+  "tip": "建筑、工程行业术语，日常口语少用；不要与 Gewerbe（工商业）混淆。"
+ },
+ {
+  "w": "Glücksgefühl",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Glücksgefühle",
+  "gs": "des Glücksgefühl(e)s",
+  "ipa": "ˈɡlʏksɡəˌfyːl",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "幸福感，喜悦感",
+    "de": "Gefühl des Glücks",
+    "ex": [
+     {
+      "de": "Sport setzt Endorphine frei und sorgt für Glücksgefühle.",
+      "zh": "运动会释放内啡肽，带来愉悦感。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Glücksgefühl empfinden / verspüren — 感到幸福",
+   "Glücksgefühle auslösen — 引发幸福感"
+  ],
+  "root": "Glück·s·gefühl：Glück（幸福）+ -s-（连接）+ Gefühl（感觉）",
+  "fam": [
+   "Glück",
+   "glücklich",
+   "Gefühl",
+   "fühlen"
+  ],
+  "ety": "复合词。Glück < 中古高地德语 g(e)lücke，更早来源不详。",
+  "cog": "荷 geluk；英 luck（一般认为经中古荷兰语借入）"
+ },
+ {
+  "w": "Gockel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gockel",
+  "gs": "des Gockels",
+  "ipa": "ˈɡɔkl̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（南德，口）公鸡",
+    "de": "(bes. südd., ugs.) Hahn",
+    "ex": [
+     {
+      "de": "Morgens um fünf kräht schon der Gockel.",
+      "zh": "早上五点公鸡就叫了。"
+     }
+    ]
+   },
+   {
+    "zh": "（转，口，贬）爱显摆的男人，自负的家伙",
+    "de": "(ugs., abwertend) eitler, sich aufspielender Mann",
+    "ex": [
+     {
+      "de": "Er stolziert herum wie ein eitler Gockel.",
+      "zh": "他像只骄傲的公鸡一样昂首阔步。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "wie ein Gockel — 像公鸡一样（趾高气扬）",
+   "标准语一般说 der Hahn"
+  ],
+  "root": "Gockel：拟声词，模仿鸡叫声",
+  "fam": [
+   "Hahn",
+   "gackern",
+   "Gockelhahn"
+  ],
+  "ety": "一般认为源自模仿鸡叫的拟声词（参见 gackern、儿语 Gockelhahn）。",
+  "cog": "参见 英 cock（同属拟声来源，非直接同源）",
+  "tip": "地域性口语词；标准德语“公鸡”说 Hahn。"
+ },
+ {
+  "w": "Golfclub",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Golfclubs",
+  "gs": "des Golfclubs",
+  "ipa": "ˈɡɔlfklʊp",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "高尔夫俱乐部",
+    "de": "Verein von Golfspielern mit eigener Anlage",
+    "ex": [
+     {
+      "de": "Er ist seit Jahren Mitglied im örtlichen Golfclub.",
+      "zh": "他多年来一直是当地高尔夫俱乐部的会员。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Mitglied im Golfclub sein — 是高尔夫俱乐部会员",
+   "异体拼写：Golfklub"
+  ],
+  "root": "Golf·club：Golf（高尔夫）+ Club（俱乐部）",
+  "fam": [
+   "Golf",
+   "Club",
+   "Golfplatz",
+   "Golfschläger"
+  ],
+  "ety": "复合词。两部分均借自英语：golf（词源不详，一说与中古荷兰语 colf“球杆”有关）、club。",
+  "cog": "英 golf club",
+  "tip": "高尔夫“球杆”德语一般说 der Golfschläger，不说 Golfclub。"
+ },
+ {
+  "w": "Grundpfeiler",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Grundpfeiler",
+  "gs": "des Grundpfeilers",
+  "ipa": "ˈɡʁʊntˌp͡faɪ̯lɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（转）基石，支柱，根本",
+    "de": "wesentliche Grundlage",
+    "ex": [
+     {
+      "de": "Die Pressefreiheit ist ein Grundpfeiler der Demokratie.",
+      "zh": "新闻自由是民主的基石之一。"
+     }
+    ]
+   },
+   {
+    "zh": "（建筑）基柱，承重柱",
+    "de": "tragender Pfeiler eines Bauwerks",
+    "ex": [
+     {
+      "de": "Die Grundpfeiler der Brücke müssen saniert werden.",
+      "zh": "这座桥的承重柱需要修缮。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Grundpfeiler von etw.(D) / + Gen. — ……的基石",
+   "近义：Grundlage, Säule, Fundament"
+  ],
+  "root": "Grund·pfeiler：Grund（基础）+ Pfeiler（柱子）",
+  "fam": [
+   "Pfeiler",
+   "Grund",
+   "Grundlage",
+   "Säule"
+  ],
+  "ety": "复合词。Pfeiler < 中古高地德语 pfīlære，借自中世纪拉丁语 pilare / pilarium，源自拉丁语 pila（柱子）。",
+  "cog": "英 pillar（同出拉 pila）",
+  "tip": "转义（基石）比字面义更常用，多见于政治、社会评论。"
+ },
+ {
+  "w": "Grüppchen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Grüppchen",
+  "gs": "des Grüppchens",
+  "ipa": "ˈɡʁʏpçən",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "小群，小组；小团体，小圈子（有时含贬义）",
+    "de": "kleine Gruppe; (abwertend) Clique",
+    "ex": [
+     {
+      "de": "Auf der Party standen die Gäste in kleinen Grüppchen zusammen.",
+      "zh": "聚会上客人们三三两两地聚在一起。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in Grüppchen zusammenstehen — 三五成群地站着",
+   "die Grüppchenbildung — 拉帮结派，形成小圈子"
+  ],
+  "root": "Grüpp·chen：Gruppe（群体）+ -chen（指小后缀，引起变音 u→ü）",
+  "fam": [
+   "Gruppe",
+   "gruppieren",
+   "Gruppierung"
+  ],
+  "ety": "Gruppe 于 17 世纪末借自法语 groupe，后者源自意大利语 gruppo（团、结）。",
+  "cog": "英 group；法 groupe"
+ },
+ {
+  "w": "Gutshof",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gutshöfe",
+  "gs": "des Gutshof(e)s",
+  "ipa": "ˈɡuːt͡sˌhoːf",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "庄园，田庄（大型农庄及其建筑群）",
+    "de": "großer landwirtschaftlicher Betrieb mit Herrenhaus",
+    "ex": [
+     {
+      "de": "Der alte Gutshof wurde zu einem Hotel umgebaut.",
+      "zh": "这座老庄园被改建成了酒店。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf einem Gutshof leben / arbeiten — 在庄园生活/工作",
+   "近义：Gut, Landgut, Rittergut"
+  ],
+  "root": "Gut·s·hof：Gut（田产、庄园）+ -s-（连接）+ Hof（院落、农场）",
+  "fam": [
+   "Gut",
+   "Hof",
+   "Landgut",
+   "Gutsherr",
+   "Bauernhof"
+  ],
+  "ety": "复合词。Gut 由形容词 gut 名词化（“财产”）；Hof < 古高地德语 hof。",
+  "cog": "英 good；荷 hof"
+ },
+ {
+  "w": "Gynäkologe",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Gynäkologen",
+  "gs": "des Gynäkologen",
+  "ipa": "ɡynɛkoˈloːɡə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "妇科医生",
+    "de": "Facharzt für Frauenheilkunde",
+    "ex": [
+     {
+      "de": "Sie geht einmal im Jahr zur Vorsorge beim Gynäkologen.",
+      "zh": "她每年去妇科医生那儿做一次体检。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Gynäkologen gehen — 去看妇科医生",
+   "n-变格：den / dem / des Gynäkologen；女性 die Gynäkologin",
+   "口语更常说：der Frauenarzt / die Frauenärztin"
+  ],
+  "root": "gynäk·o·log·e：希腊语 gynḗ（女人，词干 gynaik-）+ -loge（研究者，< lógos）",
+  "fam": [
+   "Gynäkologie",
+   "gynäkologisch",
+   "Gynäkologin",
+   "Frauenarzt"
+  ],
+  "ety": "新拉丁/希腊语构词：希腊语 gynḗ（属格 gynaikós，女人）+ lógos（言说、学问）。",
+  "cog": "英 gynecologist",
+  "tip": "弱变化名词，单数除主格外都加 -en；重音在 -lo-。"
+ },
+ {
+  "w": "Gänseblümchen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Gänseblümchen",
+  "gs": "des Gänseblümchens",
+  "ipa": "ˈɡɛnzəˌblyːmçən",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "雏菊（野生小雏菊）",
+    "de": "kleine weiße Wiesenblume mit gelber Mitte (Bellis perennis)",
+    "ex": [
+     {
+      "de": "Im Frühling ist die Wiese voller Gänseblümchen.",
+      "zh": "春天草地上开满了雏菊。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Gänseblümchen pflücken — 采雏菊",
+   "einen Kranz aus Gänseblümchen flechten — 用雏菊编花环"
+  ],
+  "root": "Gäns·e·blüm·chen：Gans（鹅，复数 Gänse）+ Blume（花）+ -chen（指小）→“鹅吃的/鹅草地上的小花”",
+  "fam": [
+   "Gans",
+   "Blume",
+   "Blümchen"
+  ],
+  "ety": "复合词。名称一般认为与鹅常在长满此花的草地上觅食有关。Gans < 古高地德语 gans；Blume < 古高地德语 bluomo。",
+  "cog": "英 goose（同源 Gans）；英 bloom（同源 Blume）",
+  "tip": "注意变音：Gänse- 和 -blümchen 都带变音。"
+ },
+ {
+  "w": "Haftrichter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Haftrichter",
+  "gs": "des Haftrichters",
+  "ipa": "ˈhaftˌʁɪçtɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（法）羁押法官（决定是否签发或维持逮捕令的法官）",
+    "de": "Richter, der über Untersuchungshaft entscheidet",
+    "ex": [
+     {
+      "de": "Der Verdächtige wurde noch am selben Tag dem Haftrichter vorgeführt.",
+      "zh": "嫌疑人当天就被带到羁押法官面前。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdn. dem Haftrichter vorführen — 将某人带至羁押法官处（审查羁押）",
+   "der Haftrichter erlässt Haftbefehl — 羁押法官签发逮捕令"
+  ],
+  "root": "Haft·richter：Haft（拘押、监禁）+ Richter（法官）",
+  "fam": [
+   "Haft",
+   "Untersuchungshaft",
+   "Haftbefehl",
+   "Richter",
+   "richten"
+  ],
+  "ety": "复合词。Haft < 中古高地德语 haft（拘束、监禁）；Richter 由 richten < 古高地德语 rihten 派生。",
+  "cog": "英 right（与 richten 同族）",
+  "tip": "新闻高频：dem Haftrichter vorgeführt werden 意为“被提交法官审查是否羁押”，不等于已被判刑。"
+ },
+ {
+  "w": "Halbschwester",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Halbschwestern",
+  "gs": "der Halbschwester",
+  "ipa": "ˈhalpˌʃvɛstɐ",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "同父异母或同母异父的姐妹",
+    "de": "Schwester, mit der man nur einen Elternteil gemeinsam hat",
+    "ex": [
+     {
+      "de": "Erst mit vierzig erfuhr er, dass er eine Halbschwester in Kanada hat.",
+      "zh": "他四十岁时才得知自己在加拿大有个同父异母的姐妹。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Halbschwester / Halbbruder — 同父异母或同母异父的姐妹 / 兄弟",
+   "Stiefschwester — 继姐妹（无血缘关系）"
+  ],
+  "root": "Halb·schwester：halb（一半）+ Schwester（姐妹）→ 只有一半血缘的姐妹",
+  "fam": [
+   "Schwester",
+   "Halbbruder",
+   "Stiefschwester",
+   "Geschwister"
+  ],
+  "ety": "复合词。Schwester < 古高地德语 swester。",
+  "cog": "英 half sister",
+  "tip": "不要与 Stiefschwester 混淆：Halb- 有一方共同的亲生父母，Stief- 则无血缘关系。"
+ },
+ {
+  "w": "Halteverbot",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Halteverbote",
+  "gs": "des Halteverbot(e)s",
+  "ipa": "ˈhaltəfɛɐ̯ˌboːt",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "禁止停车（连短暂停靠也不允许）；禁停区",
+    "de": "Verbot, an einer Stelle anzuhalten; Stelle mit diesem Verbot",
+    "ex": [
+     {
+      "de": "Wer im Halteverbot steht, riskiert ein Bußgeld oder sogar das Abschleppen.",
+      "zh": "在禁停区停车会被罚款，甚至被拖走。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Halteverbot stehen / parken — 在禁停区停车",
+   "absolutes ↔ eingeschränktes Halteverbot — 全面禁停 ↔ 限时禁停（允许三分钟内上下客/装卸）",
+   "Halteverbot ↔ Parkverbot — 禁止停靠 ↔ 禁止停放（可短暂停靠）"
+  ],
+  "root": "Halt·e·verbot：halten（停住）+ Verbot（禁令）",
+  "fam": [
+   "halten",
+   "Verbot",
+   "verbieten",
+   "Parkverbot"
+  ],
+  "ety": "复合词。Verbot 由 verbieten < bieten 派生；halten < 古高地德语 haltan。",
+  "cog": "英 halt, hold",
+  "tip": "德国《道路交通条例》（StVO）的官方写法是 Haltverbot（无 -e-），日常写作 Halteverbot 也很常见。"
+ },
+ {
+  "w": "harsch",
+  "pos": "adj",
+  "ipa": "haʁʃ",
+  "lvl": "C1",
+  "forms": "harscher · am harschesten",
+  "senses": [
+   {
+    "zh": "严厉的，粗暴的，尖刻的",
+    "de": "unfreundlich, barsch, schroff",
+    "ex": [
+     {
+      "de": "Die Pläne stießen auf harsche Kritik der Opposition.",
+      "zh": "这些计划遭到了反对派的严厉批评。"
+     }
+    ]
+   },
+   {
+    "zh": "（雪）冻硬的，结了冰壳的",
+    "de": "(vom Schnee) mit einer harten Kruste",
+    "ex": [
+     {
+      "de": "Der harsche Schnee knirschte unter unseren Stiefeln.",
+      "zh": "冻硬的雪在我们的靴子下咯吱作响。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "harsche Kritik / Worte — 严厉的批评 / 尖刻的话（新闻高频）",
+   "der Harsch / Harschschnee — 冻壳雪"
+  ],
+  "root": "harsch：单一词根，原义“粗糙、坚硬”",
+  "fam": [
+   "Harsch",
+   "Harschschnee",
+   "barsch",
+   "schroff"
+  ],
+  "ety": "来自低地德语（参见中古低地德语 harsch，粗糙的）。",
+  "cog": "英 harsh（同源）",
+  "tip": "日常多用于 harsche Kritik；与 barsch（粗声粗气的）近义但不同词。"
+ }
+]

@@ -7,3 +7,5 @@ Round 4 (start 06:35 UTC 2026-10-11): batches 341–360. STOP_AFTER=360.
 Round 5 (start 08:44 UTC 2026-10-11, user asked 现在继续做新的一轮): batches 361–380. STOP_AFTER=380.
 Round 6 FINAL (start 09:50 UTC 2026-10-11, user: 继续现在做): batches 381–402 (22 batches to make sure ≥20000). STOP_AFTER=402.
 Round 6 DONE 2026-10-11 ~10:15 UTC: 20094 entries (v31). Expansion to 20000 FINISHED; no further rounds.
+Expansion to 23000 (user 2026-10-12 22:29 UTC: 扩展到23000): paced ~1000/round. Round A (start 22:35 UTC 10-12): batches 403–422. STOP_AFTER=422. Batches 410–469 generated = cands2[18660+(id-320)*60:+60].
+Round A DONE 22:51 UTC 2026-10-12: 21086 entries (v33). Next round B via send_later 03:35 UTC 10-13.

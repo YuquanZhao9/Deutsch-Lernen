@@ -1,0 +1,2025 @@
+[
+{
+"w": "gegensteuern",
+"pos": "v",
+"ipa": "ˈɡeːɡn̩ˌʃtɔɪ̯ɐn",
+"lvl": "C1",
+"forms": "steuert gegen · steuerte gegen · hat gegengesteuert",
+"sep": true,
+"senses": [
+{
+"zh": "采取对策，加以遏制，扭转（不利趋势）",
+"de": "Maßnahmen gegen eine unerwünschte Entwicklung ergreifen",
+"ex": [
+{
+"de": "Die Regierung will mit einem Konjunkturpaket gegensteuern.",
+"zh": "政府打算推出一揽子经济刺激计划来扭转局面。"
+},
+{
+"de": "Wenn wir jetzt nicht gegensteuern, steigen die Kosten weiter.",
+"zh": "如果我们现在不采取对策，成本还会继续上涨。"
+}
+]
+},
+{
+"zh": "（驾驶时）反向打方向盘，反打舵",
+"de": "(beim Fahren) in die entgegengesetzte Richtung lenken",
+"ex": [
+{
+"de": "Als das Auto ins Schleudern geriet, steuerte er sofort gegen.",
+"zh": "车子一打滑，他立刻反向打了方向盘。"
+}
+]
+}
+],
+"use": [
+"einer Entwicklung / einem Trend (D) gegensteuern — 遏制某种发展/趋势",
+"rechtzeitig / energisch gegensteuern — 及时/果断地采取对策",
+"名词：das Gegensteuern；常见：Gegensteuer geben（瑞士）"
+],
+"root": "gegen·steuer·n：gegen（反向，对着）+ steuern（掌舵，驾驶）→“往反方向打舵” → 采取对策扭转局面",
+"fam": [
+"steuern",
+"Steuer",
+"Steuerung",
+"gegensätzlich"
+],
+"ety": "steuern < 中古高地德语 stiuren < 古高地德语 stiuren（掌舵，引导），与 Steuer（舵）同源。",
+"cog": "英 steer；荷 sturen",
+"tip": "支配第三格：einer Sache gegensteuern（不是 gegen etw. steuern）；多见于政治、经济报道。"
+},
+{
+"w": "sich gehaben",
+"pos": "v",
+"ipa": "ɡəˈhaːbn̩",
+"lvl": "C2",
+"forms": "gehabt sich · gehabte sich · hat sich gehabt",
+"sep": false,
+"senses": [
+{
+"zh": "（古、雅）过得……；举止，表现（今几乎只用于告别语 Gehab dich wohl!）",
+"de": "(veraltet) sich befinden, sich verhalten",
+"ex": [
+{
+"de": "„Gehab dich wohl!“, rief der Alte und schloss die Tür.",
+"zh": "“多保重！”老人喊了一声，关上了门。"
+},
+{
+"de": "Gehabt euch wohl, wir sehen uns im Frühjahr!",
+"zh": "你们多保重，我们开春再见！"
+}
+]
+}
+],
+"use": [
+"Gehab dich wohl! / Gehaben Sie sich wohl! — 多保重！（古雅或戏谑的告别语）",
+"名词 das Gehabe — 做作的举止，装腔作势（贬义，常用）",
+"勿与助动词 haben 的完成式 gehabt 混淆"
+],
+"root": "ge·hab·en：ge-（古前缀，加强/完成）+ haben（持有）→“使自身保持（某种状态）” → 过得，举止",
+"fam": [
+"haben",
+"Gehabe",
+"Verhalten",
+"Habe"
+],
+"ety": "中古高地德语 gehaben，古高地德语 gihabēn（握住；保持；举止），由 haben 加前缀 ge- 构成。",
+"cog": "英 have",
+"tip": "现代德语中基本只剩固定告别语；以文学、戏谑语气出现。日常更常见的是名词 Gehabe（如 wichtigtuerisches Gehabe 摆架子）。"
+},
+{
+"w": "Gehörlose",
+"pos": "n",
+"gen": "m",
+"pl": "Gehörlose（die Gehörlosen）",
+"gs": "des Gehörlosen",
+"ipa": "ɡəˈhøːɐ̯loːzə",
+"lvl": "B2–C1",
+"senses": [
+{
+"zh": "聋人，听障者",
+"de": "Person, die nicht hören kann",
+"ex": [
+{
+"de": "Viele Gehörlose verständigen sich in Gebärdensprache.",
+"zh": "许多聋人用手语交流。"
+},
+{
+"de": "Die Nachrichten werden für Gehörlose zusätzlich gedolmetscht.",
+"zh": "新闻节目还会为聋人配上手语翻译。"
+}
+]
+}
+],
+"use": [
+"按形容词变格：der Gehörlose / ein Gehörloser / die Gehörlose (f) / Gehörlose / die Gehörlosen",
+"形容词 gehörlos — 失聪的；Gehörlosenschule — 聋人学校",
+"Gebärdensprache (f) — 手语"
+],
+"root": "Ge·hör·los·e：Gehör（听觉）+ -los（无）+ -e（形容词名词化）→“没有听觉的人” → 聋人",
+"fam": [
+"Gehör",
+"hören",
+"gehörlos",
+"schwerhörig"
+],
+"ety": "由形容词 gehörlos 名词化；Gehör < 中古高地德语 gehœre，属 hören 词族。",
+"cog": "英 hear",
+"tip": "Gehörlose 是聋人群体自己倾向使用的中性称呼；taubstumm（聋哑）被视为歧视性、过时的说法，应避免。"
+},
+{
+"w": "Geothermie",
+"pos": "n",
+"gen": "f",
+"pl": "—",
+"gs": "der Geothermie",
+"ipa": "ɡeotɛʁˈmiː",
+"lvl": "C1",
+"senses": [
+{
+"zh": "地热；地热能（的利用）",
+"de": "Erdwärme und ihre Nutzung zur Energiegewinnung",
+"ex": [
+{
+"de": "Island deckt einen großen Teil seines Energiebedarfs mit Geothermie.",
+"zh": "冰岛很大一部分能源需求靠地热满足。"
+}
+]
+},
+{
+"zh": "地热学",
+"de": "Wissenschaft von der Wärme im Erdinneren",
+"ex": [
+{
+"de": "Sie hat sich in ihrer Promotion auf Geothermie spezialisiert.",
+"zh": "她读博时专攻地热学。"
+}
+]
+}
+],
+"use": [
+"oberflächennahe / tiefe Geothermie — 浅层/深层地热",
+"geothermisch (adj) — 地热的；ein geothermisches Kraftwerk — 地热电站",
+"近义：Erdwärme"
+],
+"root": "Geo·therm·ie：geo-（希腊语“地，土地”）+ therm-（热）+ -ie（名词后缀）→ 地热（学）",
+"fam": [
+"geothermisch",
+"Thermometer",
+"Geologie",
+"Erdwärme"
+],
+"ety": "近代科学构词，由希腊语 gē（大地）与 thermē（热）组合而成。",
+"cog": "英 geothermal energy；希 gē, thermē",
+"tip": "重音在最后音节 -mie；属可再生能源（erneuerbare Energien）话题常用词。"
+},
+{
+"w": "Gerichtsmediziner",
+"pos": "n",
+"gen": "m",
+"pl": "Gerichtsmediziner",
+"gs": "des Gerichtsmediziners",
+"ipa": "ɡəˈʁɪçt͡smediˌt͡siːnɐ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "法医",
+"de": "Arzt, der Verletzungen und Todesursachen für die Justiz untersucht",
+"ex": [
+{
+"de": "Der Gerichtsmediziner stellte fest, dass das Opfer bereits seit zwei Tagen tot war.",
+"zh": "法医确认，死者已经死亡两天了。"
+}
+]
+}
+],
+"use": [
+"阴性：die Gerichtsmedizinerin",
+"die Gerichtsmedizin — 法医学；法医鉴定所",
+"专业正式称呼多用 Rechtsmediziner / Rechtsmedizin"
+],
+"root": "Gericht·s·mediz·in·er：Gericht（法院）+ -s-（连接音）+ Mediziner（医学工作者）→ 为法院服务的医生 → 法医",
+"fam": [
+"Gericht",
+"Medizin",
+"Rechtsmedizin",
+"gerichtlich"
+],
+"ety": "复合词；Medizin 借自拉丁语 medicina（医术），源自 medicus（医生）。",
+"cog": "英 forensic pathologist；拉 medicus",
+"tip": "Gericht 在此是“法院”，不是“菜肴”。犯罪剧中常听到 Gerichtsmedizin，学界正式名称是 Rechtsmedizin。"
+},
+{
+"w": "Geschichtsforschung",
+"pos": "n",
+"gen": "f",
+"pl": "—",
+"gs": "der Geschichtsforschung",
+"ipa": "ɡəˈʃɪçt͡sˌfɔʁʃʊŋ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "历史研究，史学研究",
+"de": "wissenschaftliche Erforschung der Geschichte",
+"ex": [
+{
+"de": "Die neuere Geschichtsforschung zeichnet ein differenzierteres Bild der Epoche.",
+"zh": "近来的史学研究对那个时代作出了更为细致的描绘。"
+}
+]
+}
+],
+"use": [
+"in der Geschichtsforschung — 在史学研究中",
+"近义：Geschichtswissenschaft, Historiografie",
+"Geschichtsforscher (m) — 历史研究者"
+],
+"root": "Geschicht·s·forsch·ung：Geschichte（历史）+ -s-（连接音）+ Forschung（研究）",
+"fam": [
+"Geschichte",
+"Forschung",
+"forschen",
+"geschichtlich"
+],
+"ety": "复合词；Geschichte < 中古高地德语 geschiht（发生的事），属 geschehen 词族；forschen < 古高地德语 forscōn。",
+"cog": "英 history（义近，非同源）",
+"tip": "注意连接音 -s-：Geschichtsforschung、Geschichtsbuch，不说 *Geschichteforschung。"
+},
+{
+"w": "Gesetzestext",
+"pos": "n",
+"gen": "m",
+"pl": "Gesetzestexte",
+"gs": "des Gesetzestext(e)s",
+"ipa": "ɡəˈzɛt͡səsˌtɛkst",
+"lvl": "C1",
+"senses": [
+{
+"zh": "法律条文，法律文本",
+"de": "Wortlaut eines Gesetzes",
+"ex": [
+{
+"de": "Im Gesetzestext ist davon keine Rede.",
+"zh": "法律条文中根本没有提到这一点。"
+},
+{
+"de": "Juristen streiten darüber, wie der Gesetzestext auszulegen ist.",
+"zh": "法律界人士对该如何解释这条法律争论不休。"
+}
+]
+}
+],
+"use": [
+"den Gesetzestext auslegen / ändern — 解释/修改法律条文",
+"laut Gesetzestext — 根据法律条文",
+"近义：Wortlaut des Gesetzes"
+],
+"root": "Gesetz·es·text：Gesetz（法律）+ -es-（连接成分）+ Text（文本）",
+"fam": [
+"Gesetz",
+"Gesetzgeber",
+"gesetzlich",
+"Text"
+],
+"ety": "Gesetz < 中古高地德语 gesetze（规定），属 setzen 词族；Text 借自拉丁语 textus（编织物 → 文章脉络）。",
+"cog": "英 text；拉 textus",
+"tip": "连接成分是 -es-：Gesetzestext、Gesetzesentwurf（法律草案），但 Gesetzgeber 无连接成分。"
+},
+{
+"w": "Gestüt",
+"pos": "n",
+"gen": "n",
+"pl": "Gestüte",
+"gs": "des Gestüt(e)s",
+"ipa": "ɡəˈʃtyːt",
+"lvl": "C1",
+"senses": [
+{
+"zh": "养马场，种马场",
+"de": "Betrieb, in dem Pferde gezüchtet werden",
+"ex": [
+{
+"de": "Auf dem Gestüt werden vor allem Trakehner gezüchtet.",
+"zh": "这家养马场主要培育特拉克纳马。"
+}
+]
+},
+{
+"zh": "（某马场的）全部种马",
+"de": "Gesamtheit der Zuchtpferde eines Betriebs",
+"ex": [
+{
+"de": "Das Gestüt umfasst rund hundert Stuten.",
+"zh": "该马场共有约一百匹母马。"
+}
+]
+}
+],
+"use": [
+"ein staatliches Gestüt — 国营养马场",
+"Pferde auf einem Gestüt züchten — 在养马场培育马匹",
+"相关：die Stute（母马）、der Hengst（公马）"
+],
+"root": "Ge·stüt：ge-（集合名词前缀）+ stuot（马群）→“一群种马” → 养马场",
+"fam": [
+"Stute",
+"Pferdezucht",
+"Hengst"
+],
+"ety": "中古高地德语 gestüete，为 stuot（种马群）的集合名词；stuot 即今 Stute（母马）的来源。",
+"cog": "英 stud（种马场，古英语 stōd）",
+"tip": "中性名词 das Gestüt，复数 Gestüte；与 Stute（母马）同源，可帮助记忆。"
+},
+{
+"w": "gleichbleibend",
+"pos": "adj",
+"ipa": "ˈɡlaɪ̯çˌblaɪ̯bn̩t",
+"lvl": "B2",
+"forms": "—",
+"senses": [
+{
+"zh": "保持不变的，恒定的，稳定的",
+"de": "sich nicht verändernd, konstant",
+"ex": [
+{
+"de": "Das Unternehmen garantiert eine gleichbleibende Qualität.",
+"zh": "公司保证质量始终如一。"
+},
+{
+"de": "Bei gleichbleibender Temperatur hält sich der Käse mehrere Wochen.",
+"zh": "在恒定温度下，这种奶酪可以保存好几周。"
+}
+]
+}
+],
+"use": [
+"gleichbleibende Qualität / Leistung — 稳定的质量/表现",
+"bei gleichbleibendem Einkommen — 在收入不变的情况下",
+"也可分写 gleich bleibend；动词：gleich bleiben (ist gleich geblieben)"
+],
+"root": "gleich·bleib·end：gleich（相同的）+ bleiben（保持）的现在分词 → 保持不变的",
+"fam": [
+"gleich",
+"bleiben",
+"unverändert",
+"konstant"
+],
+"ety": "由 gleich bleiben 的现在分词构成；gleich < 古高地德语 gilīh，bleiben < 古高地德语 bilīban。",
+"cog": "英 like（同源于 gleich）",
+"tip": "已词汇化为形容词，不能比较；作定语时正常变格：ein gleichbleibender Preis。"
+},
+{
+"w": "Glutamat",
+"pos": "n",
+"gen": "n",
+"pl": "Glutamate",
+"gs": "des Glutamat(e)s",
+"ipa": "ɡlutaˈmaːt",
+"lvl": "C1",
+"senses": [
+{
+"zh": "味精，谷氨酸钠（日常用法）",
+"de": "als Geschmacksverstärker verwendetes Salz der Glutaminsäure",
+"ex": [
+{
+"de": "Viele Fertiggerichte enthalten Glutamat als Geschmacksverstärker.",
+"zh": "许多速食都添加了味精来增味。"
+},
+{
+"de": "Das Restaurant wirbt damit, ohne Glutamat zu kochen.",
+"zh": "这家餐馆打出的招牌是烹饪不加味精。"
+}
+]
+},
+{
+"zh": "（化）谷氨酸盐",
+"de": "(Chemie) Salz der Glutaminsäure",
+"ex": [
+{
+"de": "Glutamat dient im Gehirn als wichtiger Botenstoff.",
+"zh": "谷氨酸盐在大脑中是一种重要的信使物质。"
+}
+]
+}
+],
+"use": [
+"ohne (Zusatz von) Glutamat — 不加味精",
+"Mononatriumglutamat — 谷氨酸一钠（标签用语，E 621）",
+"Geschmacksverstärker (m) — 增味剂"
+],
+"root": "Glut·am·at：Glutamin(säure)（谷氨酸）+ -at（化学：盐类后缀）→ 谷氨酸盐",
+"fam": [
+"Glutaminsäure",
+"Gluten",
+"Geschmacksverstärker"
+],
+"ety": "化学术语，源自 Glutaminsäure；该酸最早从小麦面筋中提取，故以拉丁语 gluten（胶，黏合物）命名。",
+"cog": "英 glutamate；拉 gluten",
+"tip": "中性名词 das Glutamat；与 Glut（余火）无关。"
+},
+{
+"w": "Glöckner",
+"pos": "n",
+"gen": "m",
+"pl": "Glöckner",
+"gs": "des Glöckners",
+"ipa": "ˈɡlœknɐ",
+"lvl": "C2",
+"senses": [
+{
+"zh": "敲钟人，（教堂的）司钟",
+"de": "Person, die in einer Kirche die Glocken läutet",
+"ex": [
+{
+"de": "„Der Glöckner von Notre-Dame“ ist einer der bekanntesten Romane Victor Hugos.",
+"zh": "《巴黎圣母院》（德译名直译为“巴黎圣母院的敲钟人”）是维克多·雨果最著名的小说之一。"
+}
+]
+}
+],
+"use": [
+"der Glöckner von Notre-Dame — 巴黎圣母院的敲钟人（卡西莫多）",
+"die Glocken läuten — 敲钟，鸣钟",
+"近义：Küster, Mesner（教堂司事，兼管敲钟）"
+],
+"root": "Glöck·ner：Glocke（钟）+ -ner（表示从事者的后缀）→ 敲钟的人",
+"fam": [
+"Glocke",
+"Glockenturm",
+"Glockenspiel",
+"Klingel"
+],
+"ety": "Glocke < 中古高地德语 glocke < 古高地德语 glocka；一般认为源自凯尔特语（古爱尔兰语 clocc），随爱尔兰传教士传入。",
+"cog": "英 clock（经中古荷兰语/古法语，同出一源）",
+"tip": "今天多因雨果小说的德译名而为人熟知；日常教会中更常用 Mesner / Küster。"
+},
+{
+"w": "goldrichtig",
+"pos": "adj",
+"ipa": "ˈɡɔltˈʁɪçtɪç",
+"lvl": "B2–C1",
+"forms": "—",
+"senses": [
+{
+"zh": "（口）完全正确的，再合适不过的",
+"de": "(ugs.) völlig richtig, genau passend",
+"ex": [
+{
+"de": "Mit dieser Entscheidung lagen Sie goldrichtig.",
+"zh": "您这个决定做得再对不过了。"
+},
+{
+"de": "Der Zeitpunkt für den Umzug war goldrichtig.",
+"zh": "搬家的时机选得恰到好处。"
+}
+]
+},
+{
+"zh": "（口，指人）靠得住的，人很好的",
+"de": "(ugs.) zuverlässig, sympathisch",
+"ex": [
+{
+"de": "Frag ruhig Jonas, der ist goldrichtig.",
+"zh": "尽管去问约纳斯，他这人靠得住。"
+}
+]
+}
+],
+"use": [
+"(mit etw.) goldrichtig liegen — （在某事上）判断完全正确",
+"goldrichtig sein — 完全对；（人）很靠谱",
+"近义：genau richtig, völlig zutreffend"
+],
+"root": "gold·richtig：Gold（金子，表示“极好”的加强成分）+ richtig（正确的）→“金子般正确” → 完全正确",
+"fam": [
+"richtig",
+"Gold",
+"goldig",
+"goldwert"
+],
+"ety": "口语加强复合词，gold- 起强调作用；richtig < 古高地德语 rihtīg，属 recht 词族。",
+"cog": "英 right（与 richtig 同源）",
+"tip": "两个音节都可带重音（强调式形容词常见双重音）；属口语，正式书面语用 völlig zutreffend。"
+},
+{
+"w": "gottlos",
+"pos": "adj",
+"ipa": "ˈɡɔtloːs",
+"lvl": "C1",
+"forms": "gottloser · am gottlosesten",
+"senses": [
+{
+"zh": "不信神的，无神论的",
+"de": "nicht an Gott glaubend",
+"ex": [
+{
+"de": "Die Missionare hielten die Bewohner der Insel für gottlos.",
+"zh": "传教士们认为岛上的居民不信上帝。"
+}
+]
+},
+{
+"zh": "亵渎神明的；（道德上）邪恶的，无耻的",
+"de": "Gott missachtend; verwerflich, unmoralisch",
+"ex": [
+{
+"de": "Der Prediger wetterte gegen das gottlose Treiben in der Stadt.",
+"zh": "布道者痛斥城里那些伤风败俗的勾当。"
+}
+]
+}
+],
+"use": [
+"ein gottloser Mensch — 不信神的人；无法无天的人",
+"名词：Gottlosigkeit (f) — 不信神；邪恶",
+"近义：atheistisch（中性）；ruchlos, verwerflich（贬义）"
+],
+"root": "Gott·los：Gott（上帝）+ -los（无，缺乏）→“心中无神” → 不信神的；无法无天的",
+"fam": [
+"Gott",
+"göttlich",
+"Gottlosigkeit",
+"fromm"
+],
+"ety": "中古高地德语 gotlōs，古高地德语 gotalōs；Gott 与 -los 皆为日耳曼语固有成分。",
+"cog": "英 godless；荷 goddeloos",
+"tip": "带强烈宗教/道德评判色彩；只陈述“不信神”的事实时用 atheistisch 或 nicht gläubig。"
+},
+{
+"w": "Hammel",
+"pos": "n",
+"gen": "m",
+"pl": "Hammel / Hämmel",
+"gs": "des Hammels",
+"ipa": "ˈhaml̩",
+"lvl": "C1",
+"senses": [
+{
+"zh": "阉公羊；羊肉（指 Hammelfleisch）",
+"de": "kastrierter Schafbock; dessen Fleisch",
+"ex": [
+{
+"de": "Zum Fest gab es Hammel mit grünen Bohnen.",
+"zh": "节日宴席上吃的是羊肉配四季豆。"
+}
+]
+},
+{
+"zh": "（口，骂人话）蠢货，笨蛋",
+"de": "(ugs., Schimpfwort) dummer, ungeschickter Mensch",
+"ex": [
+{
+"de": "Pass doch auf, du Hammel!",
+"zh": "你小心点儿，蠢货！"
+}
+]
+}
+],
+"use": [
+"Hammelfleisch (n) / Hammelkeule (f) — 羊肉 / 羊腿",
+"Hammelsprung (m) — （联邦议院的）“羊跳”计票法：议员分别从“赞成/反对/弃权”门重新进场计数",
+"相关：Schaf（羊）、Lamm（羔羊）、Bock（公羊）"
+],
+"root": "Hamm·el：古高地德语 hamal（被割残的）→“被阉割的公羊”",
+"fam": [
+"Hammelfleisch",
+"Hammelsprung",
+"Schaf",
+"Lamm"
+],
+"ety": "中古高地德语 hamel，古高地德语 hamal，原义“残缺的，被割掉的”，指被阉割的公羊。",
+"cog": "英 mutton（义同，非同源）",
+"tip": "厨房里 Hammel 指老羊肉，膻味较重；嫩羊肉叫 Lamm。称人 Hammel 是粗鲁的骂人话。"
+},
+{
+"w": "Handschuhfach",
+"pos": "n",
+"gen": "n",
+"pl": "Handschuhfächer",
+"gs": "des Handschuhfach(e)s",
+"ipa": "ˈhantʃuːˌfax",
+"lvl": "B1–B2",
+"senses": [
+{
+"zh": "（汽车副驾驶前的）手套箱，储物箱",
+"de": "Ablagefach im Armaturenbrett vor dem Beifahrersitz",
+"ex": [
+{
+"de": "Die Fahrzeugpapiere liegen im Handschuhfach.",
+"zh": "车辆证件放在手套箱里。"
+}
+]
+}
+],
+"use": [
+"etw. ins Handschuhfach legen — 把某物放进手套箱",
+"etw. aus dem Handschuhfach holen — 从手套箱里拿出某物",
+"近义（口）：Handschuhkasten"
+],
+"root": "Hand·schuh·fach：Handschuh（手套）+ Fach（格子，隔层）→ 放手套的格子 → 车内手套箱",
+"fam": [
+"Handschuh",
+"Fach",
+"Ablage",
+"Armaturenbrett"
+],
+"ety": "透明复合词；Handschuh < 古高地德语 hantscuoh（“手鞋”），Fach < 古高地德语 fah（隔断）。",
+"cog": "英 glove compartment（义同）",
+"tip": "Handschuh 字面是“手鞋”；复数 Handschuhfächer 带变音。"
+},
+{
+"w": "Hausbank",
+"pos": "n",
+"gen": "f",
+"pl": "Hausbanken",
+"gs": "der Hausbank",
+"ipa": "ˈhaʊ̯sˌbaŋk",
+"lvl": "C1",
+"senses": [
+{
+"zh": "（企业或个人长期合作的）主要往来银行，开户银行",
+"de": "Bank, mit der ein Unternehmen oder eine Person hauptsächlich und dauerhaft zusammenarbeitet",
+"ex": [
+{
+"de": "Für den Kredit wandte sich der Mittelständler zuerst an seine Hausbank.",
+"zh": "为了这笔贷款，这家中型企业首先找了自己的主要往来银行。"
+},
+{
+"de": "Förderkredite der KfW werden über die Hausbank beantragt.",
+"zh": "德国复兴信贷银行的扶持贷款需通过开户银行申请。"
+}
+]
+}
+],
+"use": [
+"über die Hausbank beantragen — 通过开户银行申请",
+"die Hausbank wechseln — 更换主要往来银行",
+"复数是 Hausbanken（金融机构），不是 *Hausbänke（长凳）"
+],
+"root": "Haus·bank：Haus（家，自家的）+ Bank（银行）→“自家的银行” → 主要往来银行",
+"fam": [
+"Bank",
+"Bankkonto",
+"Kreditinstitut",
+"Haus"
+],
+"ety": "Bank（银行）借自意大利语 banco/banca（兑换商的柜台），后者又源自日耳曼语的“长凳”一词。",
+"cog": "英 bank；意 banca",
+"tip": "德国中小企业融资体系中的关键概念（Hausbankprinzip）。"
+},
+{
+"w": "Hauseigentümer",
+"pos": "n",
+"gen": "m",
+"pl": "Hauseigentümer",
+"gs": "des Hauseigentümers",
+"ipa": "ˈhaʊ̯sʔaɪ̯ɡn̩ˌtyːmɐ",
+"lvl": "B2–C1",
+"senses": [
+{
+"zh": "房屋业主，房主",
+"de": "Person, der ein Haus gehört",
+"ex": [
+{
+"de": "Die neue Grundsteuer trifft Hauseigentümer und Mieter gleichermaßen.",
+"zh": "新的房产税对房主和租户都有影响。"
+}
+]
+}
+],
+"use": [
+"阴性：die Hauseigentümerin",
+"近义：Hausbesitzer, Vermieter（出租方）",
+"Haus- und Grundbesitzerverein — 房地产业主协会"
+],
+"root": "Haus·eigen·tüm·er：Haus（房屋）+ Eigentümer（所有者）→ 房屋所有者",
+"fam": [
+"Eigentum",
+"eigen",
+"Eigentümer",
+"Hausbesitzer"
+],
+"ety": "透明复合词；Eigentum < 中古高地德语 eigentuom，由 eigen（自己的）+ -tum 构成。",
+"cog": "英 own（与 eigen 同源）",
+"tip": "法律上 Eigentümer（所有权人）与 Besitzer（占有人）有别；日常口语常混用。"
+},
+{
+"w": "Hauseingang",
+"pos": "n",
+"gen": "m",
+"pl": "Hauseingänge",
+"gs": "des Hauseingang(e)s",
+"ipa": "ˈhaʊ̯sʔaɪ̯nˌɡaŋ",
+"lvl": "B1",
+"senses": [
+{
+"zh": "楼门口，房屋入口",
+"de": "Eingang eines Hauses",
+"ex": [
+{
+"de": "Wir treffen uns um acht am Hauseingang.",
+"zh": "我们八点在楼门口碰头。"
+},
+{
+"de": "Im Hauseingang hatten sich ein paar Leute vor dem Regen untergestellt.",
+"zh": "几个人躲在楼门口避雨。"
+}
+]
+}
+],
+"use": [
+"am / im Hauseingang — 在楼门口",
+"den Hauseingang freihalten — 保持入口畅通",
+"近义：Haustür（大门本身）"
+],
+"root": "Haus·ein·gang：Haus（房屋）+ Eingang（入口：ein 进 + Gang 走）",
+"fam": [
+"Eingang",
+"Ausgang",
+"gehen",
+"Haustür"
+],
+"ety": "透明复合词；Gang < 古高地德语 gang，属 gehen 词族。",
+"cog": "英 gang（原义“行走”）",
+"tip": "Hauseingang 指入口处这一区域，Haustür 指门。"
+},
+{
+"w": "Haustechnik",
+"pos": "n",
+"gen": "f",
+"pl": "—",
+"gs": "der Haustechnik",
+"ipa": "ˈhaʊ̯sˌtɛçnɪk",
+"lvl": "C1",
+"senses": [
+{
+"zh": "楼宇设备（暖通、给排水、电气等设施的总称）",
+"de": "Gesamtheit der technischen Anlagen eines Gebäudes (Heizung, Lüftung, Sanitär, Elektro)",
+"ex": [
+{
+"de": "Bei der Sanierung wurde die gesamte Haustechnik erneuert.",
+"zh": "翻修时整栋楼的设备系统全部换新。"
+}
+]
+},
+{
+"zh": "（单位内的）设备维修部门，后勤技术部",
+"de": "für die Gebäudetechnik zuständige Abteilung",
+"ex": [
+{
+"de": "Wenn die Klimaanlage ausfällt, rufen Sie bitte die Haustechnik an.",
+"zh": "空调坏了的话，请打电话给设备维修部。"
+}
+]
+}
+],
+"use": [
+"近义：Gebäudetechnik, TGA (Technische Gebäudeausrüstung)",
+"Haustechniker (m) — 楼宇设备技术员，物业维修工",
+"Heizung, Lüftung, Sanitär — 暖气、通风、卫浴"
+],
+"root": "Haus·techn·ik：Haus（建筑）+ Technik（技术，设备）→ 建筑内的技术设备",
+"fam": [
+"Technik",
+"technisch",
+"Haustechniker",
+"Gebäudetechnik"
+],
+"ety": "Technik 借自希腊语 technikḗ（技艺），源自 téchnē（手艺，技术）。",
+"cog": "英 technique；希 téchnē",
+"tip": "公司、学校里说 die Haustechnik 常指负责维修的部门或人员。"
+},
+{
+"w": "Hautarzt",
+"pos": "n",
+"gen": "m",
+"pl": "Hautärzte",
+"gs": "des Hautarzt(e)s",
+"ipa": "ˈhaʊ̯tʔaːɐ̯t͡st",
+"lvl": "B1",
+"senses": [
+{
+"zh": "皮肤科医生",
+"de": "Facharzt für Hautkrankheiten, Dermatologe",
+"ex": [
+{
+"de": "Mit dem Ausschlag solltest du lieber zum Hautarzt gehen.",
+"zh": "你起了疹子，最好去看看皮肤科医生。"
+}
+]
+}
+],
+"use": [
+"阴性：die Hautärztin",
+"zum Hautarzt gehen — 去看皮肤科",
+"正式：Dermatologe (m) / Dermatologin (f)"
+],
+"root": "Haut·arzt：Haut（皮肤）+ Arzt（医生）",
+"fam": [
+"Haut",
+"Arzt",
+"Dermatologe",
+"Hautkrankheit"
+],
+"ety": "Arzt < 古高地德语 arzāt，经中古拉丁语 archiater 借自希腊语 archiatros（首席医生）；Haut < 古高地德语 hūt。",
+"cog": "英 hide（兽皮，与 Haut 同源）",
+"tip": "Arzt 的 a 读长音 [aː]；复数变音 Hautärzte。"
+},
+{
+"w": "Havarie",
+"pos": "n",
+"gen": "f",
+"pl": "Havarien",
+"gs": "der Havarie",
+"ipa": "havaˈʁiː",
+"lvl": "C2",
+"senses": [
+{
+"zh": "（船舶、飞机的）事故，海损",
+"de": "Unfall, Beschädigung eines Schiffes oder Flugzeugs",
+"ex": [
+{
+"de": "Nach der Havarie des Tankers trat Öl ins Meer aus.",
+"zh": "油轮出事后，石油泄漏入海。"
+}
+]
+},
+{
+"zh": "（技术设备的）严重故障，事故",
+"de": "schwerer Schaden an einer technischen Anlage",
+"ex": [
+{
+"de": "Nach einer Havarie im Kraftwerk musste der Reaktor abgeschaltet werden.",
+"zh": "电站发生事故后，反应堆不得不停机。"
+}
+]
+}
+],
+"use": [
+"eine Havarie erleiden — 遭遇海损/事故",
+"havarieren (ist havariert) — 出事故；ein havariertes Schiff — 失事船只",
+"奥地利口语中也指车祸"
+],
+"root": "Havar·ie：经荷兰语/法语借入的航海术语，原指“货物受损”",
+"fam": [
+"havarieren",
+"havariert",
+"Schiffbruch",
+"Unglück"
+],
+"ety": "17 世纪经荷兰语 averij / 法语 avarie 借入，源自意大利语 avaria；一般认为最终来自阿拉伯语 ʿawār（损坏）。",
+"cog": "英 average（海商法中“海损”义）；法 avarie",
+"tip": "专业、新闻用语，日常说 Unfall / Unglück。重音在末音节 -rie。"
+},
+{
+"w": "Hektoliter",
+"pos": "n",
+"gen": "m",
+"pl": "Hektoliter",
+"gs": "des Hektoliters",
+"ipa": "hɛktoˈliːtɐ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "百升（容积单位，缩写 hl）",
+"de": "Hohlmaß von hundert Litern",
+"ex": [
+{
+"de": "Die Brauerei produziert jährlich rund 50.000 Hektoliter Bier.",
+"zh": "这家啤酒厂每年生产约五万百升啤酒。"
+}
+]
+}
+],
+"use": [
+"也可用中性：das Hektoliter",
+"Abk.: hl — 百升",
+"数量词后不变：drei Hektoliter Wein — 三百升葡萄酒"
+],
+"root": "Hekto·liter：hekto-（希腊语“一百”）+ Liter（升）→ 一百升",
+"fam": [
+"Liter",
+"Hektar",
+"Hektopascal",
+"Milliliter"
+],
+"ety": "18 世纪末法国公制单位 hectolitre 的德语形式；hekto- 源自希腊语 hekatón（百），Liter 源自法语 litre。",
+"cog": "英 hectolitre；法 hectolitre",
+"tip": "常见于啤酒、葡萄酒产量统计；Liter 在德语中可为阳性或中性，Hektoliter 亦然。"
+},
+{
+"w": "Hellseher",
+"pos": "n",
+"gen": "m",
+"pl": "Hellseher",
+"gs": "des Hellsehers",
+"ipa": "ˈhɛlˌzeːɐ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "有千里眼的人，通灵者，预言者",
+"de": "Person, die angeblich Verborgenes oder Zukünftiges wahrnehmen kann",
+"ex": [
+{
+"de": "Die Polizei lehnte die Hilfe des Hellsehers ab.",
+"zh": "警方拒绝了那位通灵者的帮助。"
+}
+]
+},
+{
+"zh": "（口，反讽）能未卜先知的人",
+"de": "(ugs., ironisch) jemand, der etw. im Voraus wissen soll",
+"ex": [
+{
+"de": "Woher soll ich das wissen? Ich bin doch kein Hellseher!",
+"zh": "我怎么会知道？我又不会未卜先知！"
+}
+]
+}
+],
+"use": [
+"Ich bin doch kein Hellseher! — 我又不是神仙！（口语常用）",
+"阴性：die Hellseherin；hellsehen — 预见；hellseherisch (adj)",
+"近义：Wahrsager（算命者）"
+],
+"root": "Hell·seh·er：hell（明亮，清楚）+ sehen（看）+ -er（人）→“看得清楚的人” → 千里眼",
+"fam": [
+"hellsehen",
+"sehen",
+"hell",
+"Wahrsager"
+],
+"ety": "一般认为是仿法语 clairvoyant（clair 清楚 + voyant 看见的）构成的仿译词。",
+"cog": "法 clairvoyant；英 clairvoyant",
+"tip": "口语中最常见的是否定反问句 Ich bin doch kein Hellseher!，表示“这事我事先没法知道”。"
+},
+{
+"w": "Herausbildung",
+"pos": "n",
+"gen": "f",
+"pl": "—",
+"gs": "der Herausbildung",
+"ipa": "hɛˈʁaʊ̯sˌbɪldʊŋ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "（逐渐的）形成，产生，发展成形",
+"de": "allmähliche Entstehung, Entwicklung",
+"ex": [
+{
+"de": "Die Studie untersucht die Herausbildung nationaler Identitäten im 19. Jahrhundert.",
+"zh": "这项研究考察19世纪民族认同的形成。"
+}
+]
+}
+],
+"use": [
+"die Herausbildung von etw. (D) / einer Sache (G) — ……的形成",
+"动词：sich herausbilden — 逐渐形成",
+"近义：Entstehung, Entwicklung"
+],
+"root": "her·aus·bild·ung：heraus（出来）+ bilden（形成）+ -ung（名词化）→“逐渐形成出来”",
+"fam": [
+"sich herausbilden",
+"bilden",
+"Bildung",
+"Ausbildung"
+],
+"ety": "由 sich herausbilden 名词化；bilden < 古高地德语 bilidōn（塑形），属 Bild 词族。",
+"cog": "—",
+"tip": "学术语体常用，强调“在过程中慢慢成形”；比 Entstehung 更有过程感。"
+},
+{
+"w": "herumliegen",
+"pos": "v",
+"ipa": "hɛˈʁʊmˌliːɡn̩",
+"lvl": "B2",
+"forms": "liegt herum · lag herum · hat herumgelegen",
+"sep": true,
+"senses": [
+{
+"zh": "（东西）乱放着，到处散落；闲置",
+"de": "unordentlich irgendwo liegen; ungenutzt liegen",
+"ex": [
+{
+"de": "Im Kinderzimmer liegen überall Spielsachen herum.",
+"zh": "儿童房里到处都扔着玩具。"
+},
+{
+"de": "Lass deine Wertsachen nicht einfach im Auto herumliegen.",
+"zh": "别把贵重物品随手丢在车里。"
+}
+]
+},
+{
+"zh": "（口，指人）躺着无所事事",
+"de": "(ugs.) untätig liegen, faulenzen",
+"ex": [
+{
+"de": "Er hat das ganze Wochenende nur auf dem Sofa herumgelegen.",
+"zh": "他整个周末都躺在沙发上无所事事。"
+}
+]
+},
+{
+"zh": "环绕在……周围",
+"de": "um etw. herum liegen",
+"ex": [
+{
+"de": "Die um den See herumliegenden Dörfer sind nur über schmale Straßen erreichbar.",
+"zh": "湖周围的那些村子只有窄路可通。"
+}
+]
+}
+],
+"use": [
+"etw. herumliegen lassen — 把某物乱扔着不管",
+"herumliegendes Geld / Material — 闲置的资金/材料",
+"完成时南德、奥地利、瑞士多用 ist herumgelegen"
+],
+"root": "her·um·lieg·en：herum（四处，周围）+ liegen（躺，放着）→“四处放着”",
+"fam": [
+"liegen",
+"herumlaufen",
+"herumstehen",
+"Liege"
+],
+"ety": "liegen < 中古高地德语 ligen < 古高地德语 liggen，与 legen 为同一词族。",
+"cog": "英 lie；荷 liggen",
+"tip": "是 liegen（不及物，放着）而非 legen（及物，放置）：Die Socken liegen herum, aber: Er legt die Socken hin。"
+},
+{
+"w": "Herzversagen",
+"pos": "n",
+"gen": "n",
+"pl": "—",
+"gs": "des Herzversagens",
+"ipa": "ˈhɛʁt͡sfɛɐ̯ˌzaːɡn̩",
+"lvl": "C1",
+"senses": [
+{
+"zh": "心力衰竭，心脏骤停（致死原因）",
+"de": "plötzliches Aussetzen der Herzfunktion",
+"ex": [
+{
+"de": "Der Schauspieler starb im Alter von 78 Jahren an Herzversagen.",
+"zh": "这位演员因心力衰竭去世，享年78岁。"
+}
+]
+}
+],
+"use": [
+"an Herzversagen sterben — 死于心力衰竭",
+"akutes Herzversagen — 急性心衰",
+"医学上慢性心衰多称 Herzinsuffizienz"
+],
+"root": "Herz·ver·sag·en：Herz（心脏）+ Versagen（失灵，衰竭）→ 心脏功能失灵",
+"fam": [
+"Herz",
+"versagen",
+"Nierenversagen",
+"Herzinfarkt"
+],
+"ety": "复合词；versagen < 中古高地德语 versagen（拒绝，否认），引申为“不起作用，失灵”。",
+"cog": "英 heart（与 Herz 同源）",
+"tip": "常见于讣告和新闻；与 Herzinfarkt（心肌梗死）不同。"
+},
+{
+"w": "heuchlerisch",
+"pos": "adj",
+"ipa": "ˈhɔɪ̯çləʁɪʃ",
+"lvl": "C1",
+"forms": "heuchlerischer · am heuchlerischsten",
+"senses": [
+{
+"zh": "虚伪的，伪善的，假惺惺的",
+"de": "geheuchelt, unaufrichtig, scheinheilig",
+"ex": [
+{
+"de": "Es ist heuchlerisch, Wasser zu predigen und Wein zu trinken.",
+"zh": "嘴上要别人节俭、自己却大肆享乐，这是虚伪的。"
+},
+{
+"de": "Die Opposition nannte die Empörung der Regierung heuchlerisch.",
+"zh": "反对党称政府的愤慨是假惺惺的。"
+}
+]
+}
+],
+"use": [
+"heuchlerische Moral / Politik — 伪善的道德/政治",
+"动词 heucheln — 假装；名词 Heuchler (m), Heuchelei (f) — 伪君子；伪善",
+"近义：scheinheilig, verlogen, doppelzüngig"
+],
+"root": "heuch·ler·isch：heucheln（假装）→ Heuchler（伪君子）+ -isch（形容词后缀）→ 伪君子般的 → 虚伪的",
+"fam": [
+"heucheln",
+"Heuchler",
+"Heuchelei",
+"scheinheilig"
+],
+"ety": "heucheln 见于早期新高地德语，词源不详；一说与中古高地德语 hūchen（蹲伏）有关，原指“卑躬屈膝、做出谦恭样子”。",
+"cog": "—",
+"tip": "常用习语 Wasser predigen und Wein trinken（宣扬节俭自己却享乐）就是 heuchlerisch 的典型。"
+},
+{
+"w": "sich hineinversetzen",
+"pos": "v",
+"ipa": "hɪˈnaɪ̯nfɛɐ̯ˌzɛt͡sn̩",
+"lvl": "B2–C1",
+"forms": "versetzt sich hinein · versetzte sich hinein · hat sich hineinversetzt",
+"sep": true,
+"senses": [
+{
+"zh": "设身处地（为某人着想）；把自己代入（某种情境）",
+"de": "sich in jds. Lage oder eine Situation einfühlen",
+"ex": [
+{
+"de": "Versuch doch mal, dich in meine Lage hineinzuversetzen!",
+"zh": "你倒是试着站在我的立场上想一想！"
+},
+{
+"de": "Ein guter Autor kann sich in seine Figuren hineinversetzen.",
+"zh": "好作家能够把自己代入笔下的人物。"
+}
+]
+}
+],
+"use": [
+"sich in jdn. / jds. Lage (A) hineinversetzen — 设身处地为某人着想",
+"sich in eine Zeit / Situation hineinversetzen — 设想自己身处某个时代/情境",
+"近义：sich einfühlen in, sich in jds. Schuhe stellen（口）"
+],
+"root": "hin·ein·ver·setz·en：hinein（进入里面）+ versetzen（移到别处）→“把自己移进（别人处境）里” → 设身处地",
+"fam": [
+"versetzen",
+"setzen",
+"Versetzung",
+"Empathie"
+],
+"ety": "setzen < 古高地德语 sezzen，为 sitzen 的使役动词（“使坐下”）。",
+"cog": "英 set, sit",
+"tip": "in 后接第四格（方向）：sich in seine Lage hineinversetzen，不是 *in seiner Lage。"
+},
+{
+"w": "Hinterhand",
+"pos": "n",
+"gen": "f",
+"pl": "Hinterhände",
+"gs": "der Hinterhand",
+"ipa": "ˈhɪntɐˌhant",
+"lvl": "C1",
+"senses": [
+{
+"zh": "（喻）后手，备用的筹码（多用于 etw. in der Hinterhand haben）",
+"de": "(übertragen) Reserve, die man noch nicht eingesetzt hat",
+"ex": [
+{
+"de": "Die Verhandlungsführerin hat noch ein starkes Argument in der Hinterhand.",
+"zh": "这位谈判代表手里还留着一个有力的论据。"
+},
+{
+"de": "Für den Notfall sollte man immer einen Plan B in der Hinterhand haben.",
+"zh": "为了应对紧急情况，手里总该留一个备用方案。"
+}
+]
+},
+{
+"zh": "（牌戏）最后出牌的位置",
+"de": "(Kartenspiel) Position des Spielers, der zuletzt ausspielt",
+"ex": [
+{
+"de": "Wer in der Hinterhand sitzt, kann abwarten, was die anderen spielen.",
+"zh": "最后出牌的人可以先看别人出什么。"
+}
+]
+},
+{
+"zh": "（马等的）后躯，后肢",
+"de": "hinterer Teil des Pferdekörpers mit den Hinterbeinen",
+"ex": [
+{
+"de": "Das Pferd lahmt auf der Hinterhand.",
+"zh": "这匹马后腿瘸了。"
+}
+]
+}
+],
+"use": [
+"etw. in der Hinterhand haben / behalten — 留有后手",
+"in der Hinterhand sein / sitzen — 处于后出牌的有利位置",
+"反义：Vorhand（先出牌者；马的前躯；网球正手）"
+],
+"root": "Hinter·hand：hinter（后面的）+ Hand（手；牌戏中的“一手位置”）→“后面那一手” → 后手",
+"fam": [
+"Vorhand",
+"Mittelhand",
+"hinter",
+"Hand"
+],
+"ety": "复合词；比喻义源于纸牌游戏：最后出牌者可根据他人出牌决定策略。",
+"cog": "英 hand（同源）",
+"tip": "最常用的是 etw. in der Hinterhand haben，与中文“留一手、手里有牌”相当。"
+},
+{
+"w": "Hirnforschung",
+"pos": "n",
+"gen": "f",
+"pl": "—",
+"gs": "der Hirnforschung",
+"ipa": "ˈhɪʁnˌfɔʁʃʊŋ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "脑科学研究，脑研究",
+"de": "wissenschaftliche Erforschung des Gehirns",
+"ex": [
+{
+"de": "Die Hirnforschung hat in den letzten Jahrzehnten enorme Fortschritte gemacht.",
+"zh": "近几十年来，脑科学研究取得了巨大进展。"
+}
+]
+}
+],
+"use": [
+"Ergebnisse der Hirnforschung — 脑科学研究的成果",
+"Hirnforscher (m) — 脑科学家",
+"近义：Neurowissenschaft(en)"
+],
+"root": "Hirn·forsch·ung：Hirn（脑）+ Forschung（研究）",
+"fam": [
+"Gehirn",
+"Hirn",
+"Forschung",
+"Neurologie"
+],
+"ety": "Hirn < 中古高地德语 hirn(e) < 古高地德语 hirni；Gehirn 为其集合形式。",
+"cog": "—",
+"tip": "复合词里常用 Hirn-（Hirnforschung, Hirntumor），单独说“大脑”多用 Gehirn。"
+},
+{
+"w": "Hochzeitsreise",
+"pos": "n",
+"gen": "f",
+"pl": "Hochzeitsreisen",
+"gs": "der Hochzeitsreise",
+"ipa": "ˈhɔxt͡saɪ̯t͡sˌʁaɪ̯zə",
+"lvl": "B1",
+"senses": [
+{
+"zh": "蜜月旅行",
+"de": "Reise eines frisch verheirateten Paares",
+"ex": [
+{
+"de": "Für ihre Hochzeitsreise fliegen die beiden nach Mauritius.",
+"zh": "两人将飞往毛里求斯度蜜月。"
+}
+]
+}
+],
+"use": [
+"auf Hochzeitsreise sein / gehen — 在度蜜月/去度蜜月",
+"近义：Flitterwochen (pl) — 蜜月",
+"Hochzeit (f) — 婚礼"
+],
+"root": "Hoch·zeit·s·reise：Hochzeit（婚礼）+ -s-（连接音）+ Reise（旅行）",
+"fam": [
+"Hochzeit",
+"Reise",
+"Flitterwochen",
+"heiraten"
+],
+"ety": "Hochzeit < 中古高地德语 hōchzīt（盛大节日），后专指婚礼；Reise < 古高地德语 reisa。",
+"cog": "英 honeymoon（义同，非同源）",
+"tip": "Hochzeit 的 o 读短音 [ɔ]，与 hoch [hoːx] 不同；Hochzeit 是婚礼，Hochzeitstag 是结婚纪念日。"
+},
+{
+"w": "Hoffnungsschimmer",
+"pos": "n",
+"gen": "m",
+"pl": "Hoffnungsschimmer",
+"gs": "des Hoffnungsschimmers",
+"ipa": "ˈhɔfnʊŋsˌʃɪmɐ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "一线希望，希望的微光",
+"de": "geringe, aber spürbare Hoffnung",
+"ex": [
+{
+"de": "Die neuen Konjunkturdaten sind ein erster Hoffnungsschimmer für die Branche.",
+"zh": "新的经济数据给这个行业带来了第一线希望。"
+},
+{
+"de": "Für die Angehörigen der Vermissten gibt es noch einen Hoffnungsschimmer.",
+"zh": "对失踪者的家属来说，还有一线希望。"
+}
+]
+}
+],
+"use": [
+"ein (kleiner) Hoffnungsschimmer — 一线希望",
+"einen Hoffnungsschimmer sehen — 看到一线希望",
+"近义：Silberstreif (am Horizont)"
+],
+"root": "Hoff·nung·s·schimmer：Hoffnung（希望）+ -s-（连接音）+ Schimmer（微光）→ 希望的微光",
+"fam": [
+"Hoffnung",
+"hoffen",
+"schimmern",
+"Schimmer"
+],
+"ety": "复合词；Schimmer 由动词 schimmern（闪烁微光）派生，hoffen < 中古高地德语 hoffen。",
+"cog": "英 hope；英 shimmer",
+"tip": "新闻高频词，常与 erster, letzter 搭配：der letzte Hoffnungsschimmer 最后一线希望。"
+},
+{
+"w": "Hokuspokus",
+"pos": "n",
+"gen": "m",
+"pl": "—",
+"gs": "des Hokuspokus",
+"ipa": "hoːkʊsˈpoːkʊs",
+"lvl": "C1",
+"senses": [
+{
+"zh": "（变戏法时念的）咒语",
+"de": "Zauberformel der Taschenspieler",
+"ex": [
+{
+"de": "„Hokuspokus!“, rief der Zauberer, und das Kaninchen war verschwunden.",
+"zh": "魔术师喊了声“变！”，兔子就不见了。"
+}
+]
+},
+{
+"zh": "（贬）骗人的把戏，故弄玄虚；无谓的瞎折腾",
+"de": "(abwertend) Schwindel, Täuschung; unnötiges Getue",
+"ex": [
+{
+"de": "Viele Ärzte halten diese Heilmethode für reinen Hokuspokus.",
+"zh": "许多医生认为这种疗法纯属故弄玄虚。"
+}
+]
+}
+],
+"use": [
+"(reiner) Hokuspokus — 纯属骗人的把戏",
+"Hokuspokus Fidibus! — （儿童魔术）变变变！",
+"近义：Humbug, Schwindel, Mumpitz"
+],
+"root": "Hokus·pokus：押韵的伪拉丁语咒语，无实义",
+"fam": [
+"Zauberei",
+"Humbug",
+"Schwindel"
+],
+"ety": "17 世纪借自英语 hocus pocus（魔术师咒语）；来源不详，一说是对弥撒用语 hoc est corpus（这是我的身体）的讽刺性模仿。",
+"cog": "英 hocus-pocus",
+"tip": "阳性 der Hokuspokus；口语常用来批评某种理论或做法“不科学、在糊弄人”。"
+},
+{
+"w": "Holzkirche",
+"pos": "n",
+"gen": "f",
+"pl": "Holzkirchen",
+"gs": "der Holzkirche",
+"ipa": "ˈhɔlt͡sˌkɪʁçə",
+"lvl": "B2",
+"senses": [
+{
+"zh": "木结构教堂，木造教堂",
+"de": "aus Holz gebaute Kirche",
+"ex": [
+{
+"de": "Die Holzkirchen in den Karpaten gehören zum UNESCO-Welterbe.",
+"zh": "喀尔巴阡山区的木造教堂被列入联合国教科文组织世界遗产。"
+}
+]
+}
+],
+"use": [
+"Stabkirche (f) — （挪威）木板教堂",
+"近义：Holzbau (m) — 木结构建筑"
+],
+"root": "Holz·kirche：Holz（木头）+ Kirche（教堂）",
+"fam": [
+"Holz",
+"Kirche",
+"hölzern",
+"Holzhaus"
+],
+"ety": "复合词；Kirche < 古高地德语 kirihha，一般认为经由希腊语 kyriakón（主的［房屋］）借入。",
+"cog": "英 church；英 holt（古，树林，与 Holz 同源）",
+"tip": "Kirche 末尾的 -che 读 [çə]。"
+},
+{
+"w": "Impfpflicht",
+"pos": "n",
+"gen": "f",
+"pl": "Impfpflichten",
+"gs": "der Impfpflicht",
+"ipa": "ˈɪmp͡fˌp͡flɪçt",
+"lvl": "C1",
+"senses": [
+{
+"zh": "强制接种（义务），疫苗接种义务",
+"de": "gesetzliche Verpflichtung, sich impfen zu lassen",
+"ex": [
+{
+"de": "Seit 2020 gilt in Deutschland eine Impfpflicht gegen Masern für Kita-Kinder.",
+"zh": "自2020年起，德国对托儿所儿童实行麻疹疫苗强制接种。"
+},
+{
+"de": "Über eine allgemeine Impfpflicht wurde im Bundestag heftig gestritten.",
+"zh": "联邦议院曾就是否全民强制接种展开激烈争论。"
+}
+]
+}
+],
+"use": [
+"eine allgemeine / einrichtungsbezogene Impfpflicht — 全民/针对特定机构（医护等）的接种义务",
+"die Impfpflicht einführen / aufheben — 实行/取消强制接种",
+"impfen — 接种；sich impfen lassen — 去打疫苗"
+],
+"root": "Impf·pflicht：impfen（接种）+ Pflicht（义务）→ 接种义务",
+"fam": [
+"impfen",
+"Impfung",
+"Impfstoff",
+"Pflicht",
+"verpflichten"
+],
+"ety": "impfen < 古高地德语 impfōn，原义“嫁接（果树）”，借自通俗拉丁语；18 世纪末起转指接种疫苗。Pflicht < 古高地德语 pfliht（照料，义务）。",
+"cog": "英 plight（古义“义务，承诺”，与 Pflicht 同源）",
+"tip": "复数少用。新冠时期高频词；注意 impf 中 [mp͡f] 的发音。"
+},
+{
+"w": "Infarkt",
+"pos": "n",
+"gen": "m",
+"pl": "Infarkte",
+"gs": "des Infarkt(e)s",
+"ipa": "ɪnˈfaʁkt",
+"lvl": "B2–C1",
+"senses": [
+{
+"zh": "（医）梗死，梗塞；（口）通常指心肌梗死",
+"de": "Absterben von Gewebe durch Unterbrechung der Blutzufuhr; (ugs.) Herzinfarkt",
+"ex": [
+{
+"de": "Nach seinem Infarkt hat er mit dem Rauchen aufgehört.",
+"zh": "心梗之后，他戒了烟。"
+},
+{
+"de": "Bluthochdruck erhöht das Risiko für einen Infarkt.",
+"zh": "高血压会增加梗死的风险。"
+}
+]
+}
+],
+"use": [
+"einen Infarkt erleiden / haben — 发生梗死",
+"Herzinfarkt / Hirninfarkt — 心肌梗死/脑梗死",
+"近义（脑）：Schlaganfall"
+],
+"root": "In·farkt：拉丁语 in-（进入）+ farcire（塞满）→“被塞住” → 血管阻塞造成的梗死",
+"fam": [
+"Herzinfarkt",
+"Hirninfarkt",
+"Farce"
+],
+"ety": "近代医学拉丁语 infarctus，源自拉丁语 infarcire（塞进，填满）；同一词根 farcire 也见于 Farce（原义“填馅”）。",
+"cog": "英 infarction；拉 infarcire",
+"tip": "口语里单说 Infarkt 一般就指心肌梗死。"
+},
+{
+"w": "Infografik",
+"pos": "n",
+"gen": "f",
+"pl": "Infografiken",
+"gs": "der Infografik",
+"ipa": "ˈɪnfoˌɡʁaːfɪk",
+"lvl": "C1",
+"senses": [
+{
+"zh": "信息图，图解（用图表直观呈现信息）",
+"de": "grafische Darstellung von Informationen und Daten",
+"ex": [
+{
+"de": "Eine Infografik zeigt, wie sich die Mieten in den Großstädten entwickelt haben.",
+"zh": "一张信息图展示了各大城市房租的变化情况。"
+}
+]
+}
+],
+"use": [
+"eine interaktive Infografik — 交互式信息图",
+"in einer Infografik darstellen — 用信息图呈现",
+"近义：Schaubild, Diagramm"
+],
+"root": "Info·grafik：Info(rmation)（信息）+ Grafik（图形）",
+"fam": [
+"Information",
+"Grafik",
+"grafisch",
+"Diagramm"
+],
+"ety": "20 世纪后期的复合词（仿英语 infographic）；Grafik 源自希腊语 graphikḗ（书写/绘画的技艺）。",
+"cog": "英 infographic",
+"tip": "也拼作 Infographik（旧拼法）；新闻媒体常用词。"
+},
+{
+"w": "Informationszentrum",
+"pos": "n",
+"gen": "n",
+"pl": "Informationszentren",
+"gs": "des Informationszentrums",
+"ipa": "ɪnfɔʁmaˈt͡si̯oːnsˌt͡sɛntʁʊm",
+"lvl": "B1–B2",
+"senses": [
+{
+"zh": "信息中心，咨询中心；游客中心",
+"de": "Einrichtung, die Auskünfte und Informationen bereitstellt",
+"ex": [
+{
+"de": "Karten für die Führung gibt es im Informationszentrum am Eingang.",
+"zh": "导览门票可以在入口处的游客中心购买。"
+}
+]
+}
+],
+"use": [
+"im Informationszentrum nachfragen — 去咨询中心问一问",
+"近义：Infozentrum（口）, Besucherzentrum, Auskunft",
+"复数为 -zentren，不是 *Zentrums"
+],
+"root": "Informa·tion·s·zentrum：Information（信息）+ -s-（连接音）+ Zentrum（中心）",
+"fam": [
+"Information",
+"informieren",
+"Zentrum",
+"zentral"
+],
+"ety": "Information 借自拉丁语 informatio（塑造，教导）；Zentrum 借自拉丁语 centrum，源自希腊语 kéntron（圆规尖，中心点）。",
+"cog": "英 information centre；拉 centrum",
+"tip": "-tion 后面的复合词一般要加连接音 -s-：Informationszentrum, Organisationsform。"
+},
+{
+"w": "Inkarnation",
+"pos": "n",
+"gen": "f",
+"pl": "Inkarnationen",
+"gs": "der Inkarnation",
+"ipa": "ɪnkaʁnaˈt͡si̯oːn",
+"lvl": "C2",
+"senses": [
+{
+"zh": "化身，体现，典型",
+"de": "Verkörperung, Inbegriff",
+"ex": [
+{
+"de": "Für viele war er die Inkarnation des amerikanischen Traums.",
+"zh": "在许多人眼中，他就是美国梦的化身。"
+}
+]
+},
+{
+"zh": "（宗）道成肉身；转世，投胎",
+"de": "(Religion) Menschwerdung Gottes; Wiedergeburt in einem Körper",
+"ex": [
+{
+"de": "Im tibetischen Buddhismus gilt der Dalai Lama als Inkarnation eines Bodhisattvas.",
+"zh": "在藏传佛教中，达赖喇嘛被视为一位菩萨的转世。"
+}
+]
+}
+],
+"use": [
+"die Inkarnation des Bösen / der Eleganz — 邪恶/优雅的化身",
+"近义：Verkörperung, Inbegriff；Reinkarnation (f) — 转世轮回",
+"动词：inkarnieren（少用）"
+],
+"root": "In·carn·ation：拉丁语 in-（进入）+ caro, carnis（肉）+ -atio（名词后缀）→“进入肉身” → 化身",
+"fam": [
+"Reinkarnation",
+"Karneval",
+"karnivor"
+],
+"ety": "借自教会拉丁语 incarnatio（基督道成肉身），源自 incarnari（成为肉身），词根为拉丁语 caro, carnis（肉）。",
+"cog": "英 incarnation；拉 caro",
+"tip": "书面雅语；日常更常说 Verkörperung。"
+},
+{
+"w": "Irreführung",
+"pos": "n",
+"gen": "f",
+"pl": "Irreführungen",
+"gs": "der Irreführung",
+"ipa": "ˈɪʁəˌfyːʁʊŋ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "误导，蒙骗",
+"de": "das Täuschen, absichtliches Verleiten zu einer falschen Annahme",
+"ex": [
+{
+"de": "Die Verbraucherzentrale wirft dem Hersteller Irreführung der Kunden vor.",
+"zh": "消费者保护中心指责该厂商误导顾客。"
+},
+{
+"de": "Die Angabe „zuckerfrei“ war eine klare Irreführung.",
+"zh": "“无糖”这一标注显然是在误导消费者。"
+}
+]
+}
+],
+"use": [
+"Irreführung der Verbraucher / der Öffentlichkeit — 误导消费者/公众",
+"动词：irreführen (führt irre, hat irregeführt)；形容词 irreführend — 误导性的",
+"irreführende Werbung — 误导性广告"
+],
+"root": "Irre·führ·ung：irre（错误方向，迷途）+ führen（引导）+ -ung（名词化）→“引向歧途” → 误导",
+"fam": [
+"irreführen",
+"irreführend",
+"führen",
+"Irrtum",
+"sich irren"
+],
+"ety": "由 irreführen 名词化；irre < 古高地德语 irri（迷途的，混乱的）。",
+"cog": "英 err（义近，借自拉丁语 errare；一般认为与 irre 远亲同源）",
+"tip": "法律、消费者保护常用词；比 Täuschung 更强调“使人产生错误印象”。"
+},
+{
+"w": "Kaffeepause",
+"pos": "n",
+"gen": "f",
+"pl": "Kaffeepausen",
+"gs": "der Kaffeepause",
+"ipa": "ˈkafeˌpaʊ̯zə",
+"lvl": "A2–B1",
+"senses": [
+{
+"zh": "（工作、会议间的）茶歇，咖啡休息时间",
+"de": "kurze Arbeits- oder Sitzungspause, in der man Kaffee trinkt",
+"ex": [
+{
+"de": "Nach dem zweiten Vortrag gibt es eine kurze Kaffeepause.",
+"zh": "第二场报告结束后有短暂的茶歇。"
+},
+{
+"de": "Lass uns das in der Kaffeepause besprechen.",
+"zh": "这事我们茶歇的时候再聊吧。"
+}
+]
+}
+],
+"use": [
+"eine Kaffeepause machen / einlegen — 休息一下喝杯咖啡",
+"in der Kaffeepause — 茶歇时",
+"Mittagspause (f) — 午休"
+],
+"root": "Kaffee·pause：Kaffee（咖啡）+ Pause（休息）",
+"fam": [
+"Kaffee",
+"Pause",
+"Mittagspause",
+"pausieren"
+],
+"ety": "Kaffee 17 世纪经法语 café 借自土耳其语 kahve，源自阿拉伯语 qahwa；Pause 借自拉丁语 pausa。",
+"cog": "英 coffee break",
+"tip": "德国标准音 Kaffee 重音在前 [ˈkafe]，奥地利多读 [kaˈfeː]。"
+},
+{
+"w": "Kannibalismus",
+"pos": "n",
+"gen": "m",
+"pl": "—",
+"gs": "des Kannibalismus",
+"ipa": "kanibaˈlɪsmʊs",
+"lvl": "C1",
+"senses": [
+{
+"zh": "食人，食人习俗；（动物的）同类相食",
+"de": "das Verzehren von Artgenossen",
+"ex": [
+{
+"de": "Bei manchen Spinnenarten ist Kannibalismus weit verbreitet.",
+"zh": "在某些蜘蛛中，同类相食的现象很普遍。"
+}
+]
+},
+{
+"zh": "（经济）（自家产品之间的）互相蚕食，自相残杀",
+"de": "(Wirtschaft) gegenseitige Verdrängung von Produkten desselben Anbieters",
+"ex": [
+{
+"de": "Der Konzern fürchtet einen Kannibalismus zwischen seinen beiden Automarken.",
+"zh": "集团担心旗下两个汽车品牌会互相蚕食市场。"
+}
+]
+}
+],
+"use": [
+"Kannibale (m), kannibalisch (adj) — 食人者；食人的，残暴的",
+"kannibalisieren — （经济）蚕食自家产品的市场",
+"近义：Menschenfresserei"
+],
+"root": "Kannibal·ismus：Kannibale（食人者）+ -ismus（行为、现象后缀）",
+"fam": [
+"Kannibale",
+"kannibalisch",
+"kannibalisieren"
+],
+"ety": "Kannibale 经西班牙语 caníbal 借入，为 caribe（加勒比人）的变体；哥伦布的记载中把加勒比人描述为食人者。",
+"cog": "英 cannibalism；西 caníbal",
+"tip": "阳性，以 -ismus 结尾的名词一般没有复数。"
+},
+{
+"w": "Kanzlerschaft",
+"pos": "n",
+"gen": "f",
+"pl": "Kanzlerschaften",
+"gs": "der Kanzlerschaft",
+"ipa": "ˈkant͡slɐʃaft",
+"lvl": "C1",
+"senses": [
+{
+"zh": "总理任期；总理职位",
+"de": "Amtszeit oder Amt eines Kanzlers",
+"ex": [
+{
+"de": "Während ihrer Kanzlerschaft erlebte Deutschland mehrere große Krisen.",
+"zh": "在她担任总理期间，德国经历了数次重大危机。"
+},
+{
+"de": "Er strebt die Kanzlerschaft an.",
+"zh": "他志在总理之位。"
+}
+]
+}
+],
+"use": [
+"während / unter jds. Kanzlerschaft — 在某人担任总理期间",
+"die Kanzlerschaft anstreben — 谋求总理职位",
+"Kanzlerkandidat (m) — 总理候选人"
+],
+"root": "Kanzler·schaft：Kanzler（总理）+ -schaft（职位、状态后缀）→ 总理职位/任期",
+"fam": [
+"Kanzler",
+"Bundeskanzler",
+"Kanzleramt",
+"Kanzlei"
+],
+"ety": "Kanzler < 中古高地德语 kanzelære，借自拉丁语 cancellarius（站在法庭栏杆 cancelli 旁的书记官）。",
+"cog": "英 chancellor；拉 cancellarius",
+"tip": "德国、奥地利政治报道高频词。"
+},
+{
+"w": "Kauderwelsch",
+"pos": "n",
+"gen": "n",
+"pl": "—",
+"gs": "des Kauderwelsch(s)",
+"ipa": "ˈkaʊ̯dɐvɛlʃ",
+"lvl": "C1",
+"senses": [
+{
+"zh": "（夹杂多种语言、让人听不懂的）杂拌话，胡言乱语",
+"de": "unverständliches Gemisch aus verschiedenen Sprachen",
+"ex": [
+{
+"de": "Die Touristen redeten ein Kauderwelsch aus Englisch, Deutsch und Spanisch.",
+"zh": "那些游客说着英语、德语、西班牙语混杂的杂拌话。"
+}
+]
+},
+{
+"zh": "晦涩难懂的行话，莫名其妙的术语堆砌",
+"de": "schwer verständliche Fachsprache, Jargon",
+"ex": [
+{
+"de": "Den Vertrag versteht kein normaler Mensch, das ist reines Juristen-Kauderwelsch.",
+"zh": "这份合同普通人根本看不懂，全是律师的天书行话。"
+}
+]
+}
+],
+"use": [
+"ein Kauderwelsch reden / sprechen — 说杂拌话；说得叫人摸不着头脑",
+"Behörden- / Juristenkauderwelsch — 官腔/律师行话",
+"近义：Jargon, Fachchinesisch（口）"
+],
+"root": "Kauder·welsch：Kauder（来源有争议）+ welsch（外国的，罗曼语的）→“听不懂的外国话”",
+"fam": [
+"welsch",
+"Rotwelsch",
+"Fachchinesisch"
+],
+"ety": "第二部分 welsch 原指“罗曼语的，外国的”。第一部分来源不详：一说指瑞士城市 Chur（其罗曼什语被称为 Churwelsch），一说与方言 kaudern（含糊不清地说话）有关。",
+"cog": "英 Welsh（与 welsch 同源，均指“外族人”）",
+"tip": "中性名词 das Kauderwelsch；常作贬义。德语也说 Fachchinesisch（“专业中文”）表示同样意思。"
+},
+{
+"w": "Kernkraft",
+"pos": "n",
+"gen": "f",
+"pl": "—",
+"gs": "der Kernkraft",
+"ipa": "ˈkɛʁnˌkʁaft",
+"lvl": "B2–C1",
+"senses": [
+{
+"zh": "核能，核电",
+"de": "durch Kernspaltung gewonnene Energie, Atomkraft",
+"ex": [
+{
+"de": "Deutschland ist im April 2023 aus der Kernkraft ausgestiegen.",
+"zh": "德国于2023年4月退出了核电。"
+},
+{
+"de": "In Frankreich stammt ein Großteil des Stroms aus Kernkraft.",
+"zh": "法国的电力大部分来自核能。"
+}
+]
+}
+],
+"use": [
+"aus der Kernkraft aussteigen — 弃核，退出核电",
+"Kernkraftwerk (n) / Kernkraftgegner (m) — 核电站 / 反核人士",
+"近义：Atomkraft（日常、政治口号常用），Kernenergie（中性）"
+],
+"root": "Kern·kraft：Kern（核，原子核）+ Kraft（力，能量）→ 核能",
+"fam": [
+"Kernenergie",
+"Kernkraftwerk",
+"Atomkraft",
+"Kern"
+],
+"ety": "20 世纪复合词；Kern < 古高地德语 kerno（果核），Kraft < 古高地德语 kraft。",
+"cog": "英 kernel（与 Kern 同源）；英 craft（与 Kraft 同源）",
+"tip": "Kernkraft 比 Atomkraft 更正式、中性；口号是 „Atomkraft? Nein danke!“"
+},
+{
+"w": "Kernpunkt",
+"pos": "n",
+"gen": "m",
+"pl": "Kernpunkte",
+"gs": "des Kernpunkt(e)s",
+"ipa": "ˈkɛʁnˌpʊŋkt",
+"lvl": "C1",
+"senses": [
+{
+"zh": "核心，要点，关键问题",
+"de": "wichtigster, zentraler Punkt",
+"ex": [
+{
+"de": "Ein Kernpunkt der Reform ist die Senkung der Lohnnebenkosten.",
+"zh": "这项改革的核心之一是降低工资附加费用。"
+},
+{
+"de": "Damit kommen wir zum Kernpunkt des Problems.",
+"zh": "这样我们就说到问题的关键了。"
+}
+]
+}
+],
+"use": [
+"ein Kernpunkt der Debatte / des Programms — 辩论/纲领的核心要点",
+"近义：Kern, Kernfrage, Hauptpunkt, Knackpunkt（口）"
+],
+"root": "Kern·punkt：Kern（核心）+ Punkt（点）→ 核心要点",
+"fam": [
+"Kern",
+"Punkt",
+"Kernfrage",
+"Kernaussage"
+],
+"ety": "复合词；Punkt 借自拉丁语 punctum（刺出的点），源自 pungere（刺）。",
+"cog": "英 point；拉 punctum",
+"tip": "常见于政治、学术语境；口语里关键难点说 Knackpunkt。"
+},
+{
+"w": "Kinderdorf",
+"pos": "n",
+"gen": "n",
+"pl": "Kinderdörfer",
+"gs": "des Kinderdorf(e)s",
+"ipa": "ˈkɪndɐˌdɔʁf",
+"lvl": "C1",
+"senses": [
+{
+"zh": "儿童村（以家庭形式收养孤儿和无人照管儿童的机构）",
+"de": "Einrichtung, in der elternlose oder verlassene Kinder in familienähnlichen Gruppen aufwachsen",
+"ex": [
+{
+"de": "Das erste SOS-Kinderdorf wurde 1949 in Imst in Tirol gegründet.",
+"zh": "第一座SOS儿童村于1949年在蒂罗尔的伊姆斯特建立。"
+}
+]
+}
+],
+"use": [
+"SOS-Kinderdorf — SOS儿童村（国际慈善组织）",
+"in einem Kinderdorf aufwachsen — 在儿童村长大",
+"Kinderdorfmutter (f) — 儿童村的“妈妈”（照料人）"
+],
+"root": "Kinder·dorf：Kinder（儿童，复数）+ Dorf（村庄）→ 儿童村",
+"fam": [
+"Kind",
+"Dorf",
+"Kinderheim",
+"Waisenhaus"
+],
+"ety": "20 世纪中期复合词，随赫尔曼·格迈纳（Hermann Gmeiner）创办的 SOS 儿童村而普及。",
+"cog": "英 children's village",
+"tip": "与 Kinderheim（儿童福利院）不同，Kinderdorf 强调由固定照料人与孩子组成“家庭”。"
+},
+{
+"w": "Kinderkrankheit",
+"pos": "n",
+"gen": "f",
+"pl": "Kinderkrankheiten",
+"gs": "der Kinderkrankheit",
+"ipa": "ˈkɪndɐˌkʁaŋkhaɪ̯t",
+"lvl": "B2",
+"senses": [
+{
+"zh": "儿童（传染）病（如麻疹、腮腺炎、水痘）",
+"de": "typische, meist ansteckende Krankheit im Kindesalter",
+"ex": [
+{
+"de": "Masern sind keine harmlose Kinderkrankheit.",
+"zh": "麻疹可不是什么无害的儿童病。"
+}
+]
+},
+{
+"zh": "（喻）（新产品、新技术的）初期毛病",
+"de": "(übertragen) Anfangsschwierigkeiten bei etw. Neuem",
+"ex": [
+{
+"de": "Das neue Modell hatte noch einige Kinderkrankheiten, etwa bei der Software.",
+"zh": "新车型还存在一些初期毛病，比如软件方面。"
+}
+]
+}
+],
+"use": [
+"typische Kinderkrankheiten wie Masern, Mumps und Windpocken — 麻疹、腮腺炎、水痘等典型儿童病",
+"die Kinderkrankheiten (eines Systems) beseitigen — 解决（系统的）初期问题",
+"近义（喻）：Anfangsschwierigkeiten (pl)"
+],
+"root": "Kinder·krank·heit：Kinder（儿童）+ Krankheit（疾病）",
+"fam": [
+"Kind",
+"krank",
+"Krankheit",
+"Anfangsschwierigkeit"
+],
+"ety": "复合词；krank < 中古高地德语 kranc（虚弱的），后来才有“生病的”之义。",
+"cog": "英 teething problems（喻义对应，非同源）",
+"tip": "喻义在科技、汽车报道里很常见，多用复数 Kinderkrankheiten。"
+},
+{
+"w": "Kleidchen",
+"pos": "n",
+"gen": "n",
+"pl": "Kleidchen",
+"gs": "des Kleidchens",
+"ipa": "ˈklaɪ̯tçən",
+"lvl": "B1",
+"senses": [
+{
+"zh": "小裙子，（小女孩的）连衣裙；（轻巧、短小的）裙子",
+"de": "kleines, leichtes oder kurzes Kleid",
+"ex": [
+{
+"de": "Die Kleine trug ein rotes Kleidchen mit weißen Punkten.",
+"zh": "小姑娘穿着一条红底白点的小裙子。"
+},
+{
+"de": "Für ein dünnes Sommerkleidchen ist es heute viel zu kalt.",
+"zh": "今天太冷了，穿薄薄的夏装小裙子可不行。"
+}
+]
+}
+],
+"use": [
+"Kleid 的指小形式，-chen 结尾一律为中性 das，复数不变",
+"Sommerkleidchen — 夏季小裙子",
+"带亲昵或略带轻视的语气"
+],
+"root": "Kleid·chen：Kleid（连衣裙，衣服）+ -chen（指小后缀）→ 小裙子",
+"fam": [
+"Kleid",
+"Kleidung",
+"kleiden",
+"Kleiderschrank"
+],
+"ety": "Kleid < 中古高地德语 kleit（衣服），来源不详。",
+"cog": "—",
+"tip": "-chen 前没有变音，因为 ei 无法变音；比较 Haus → Häuschen。"
+}
+]
