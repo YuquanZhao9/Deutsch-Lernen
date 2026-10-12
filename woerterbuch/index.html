@@ -643,7 +643,15 @@ async function apiTranslate(t, dir, signal) {
   if (!res.ok) { let msg = '翻译服务出错（' + res.status + '）'; try { const j = await res.json(); if (j && j.error) msg = j.error; } catch {} throw { code: 'api_error', message: msg }; }
   let j; try { j = await res.json(); } catch { throw { code: 'invalid_json' }; }
   if (!j || j.ok === false) throw { code: 'api_error', message: (j && j.error) || '翻译服务没有返回结果' };
-  return j.result || j;
+  const r = j.result || j;
+  if (normTr(r).tr) return r;
+  // the server could not read the model's reply (older server code turns a JSON object into "[object Object]"):
+  // ask the plain translation endpoint so the user still gets a translation, just without word notes
+  const p = await fetch(TRANSLATE_API, { method: 'POST', headers: { 'content-type': 'application/json', ...auth }, body: JSON.stringify({ text: t, to: dir === 'zh2de' ? 'de' : 'zh' }), signal });
+  let k = null; try { k = await p.json(); } catch {}
+  const tr = k && typeof k.text === 'string' ? k.text.trim() : '';
+  if (!p.ok || !tr || badTr(tr)) throw { code: 'empty_completion' };
+  return { tr, alt: '', words: [], notes: [] };
 }
 // Models do not always honour the requested shape: tr may come back as an object ({"zh": "…"}), the JSON
 // may be wrapped in a code fence or in {result: …}, words may be plain strings. Normalise before rendering.
@@ -663,7 +671,8 @@ function normTr(r) {
   if (typeof r === 'string') { const t = r.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, ''); const i = t.indexOf('{'), j = t.lastIndexOf('}'); try { r = JSON.parse(i >= 0 && j > i ? t.slice(i, j + 1) : t); } catch { return { tr: t, alt: '', words: [], notes: [] }; } }
   if (!r || typeof r !== 'object') return { tr: '', alt: '', words: [], notes: [] };
   if (!('tr' in r) && r.result && typeof r.result === 'object') r = r.result;
-  const tr = textOf(r.tr ?? r['译文'] ?? r.translation ?? r.text ?? r.output ?? r.zh ?? r.de);
+  let tr = textOf(r.tr ?? r['译文'] ?? r.translation ?? r.text ?? r.output ?? r.zh ?? r.de);
+  if (badTr(tr)) tr = '';
   if (/^\s*(```|\{)/.test(tr) && /"(tr|译文|translation)"/.test(tr)) { const inner = normTr(tr); if (inner.tr) return inner; } // the server fell back to the raw text and it is JSON
   const alt = textOf(r.alt ?? r['另一种说法'] ?? r.alternative);
   const words = (Array.isArray(r.words) ? r.words : Array.isArray(r['重点词']) ? r['重点词'] : []).slice(0, 10)
