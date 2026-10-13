@@ -1,0 +1,2044 @@
+[
+ {
+  "w": "Kostenaufwand",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kostenaufwände（少用）",
+  "gs": "des Kostenaufwand(e)s",
+  "ipa": "ˈkɔstn̩ʔaʊ̯fˌvant",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "费用支出，花费的成本",
+    "de": "die für etw. aufgewendeten Kosten",
+    "ex": [
+     {
+      "de": "Der Umbau ist mit einem erheblichen Kostenaufwand verbunden.",
+      "zh": "改建需要相当大的费用支出。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit hohem / geringem Kostenaufwand — 花费高/低",
+   "der Kostenaufwand für etw.(A) — 用于……的费用",
+   "den Kostenaufwand senken / abschätzen — 降低/估算成本"
+  ],
+  "root": "Kosten·auf·wand：Kosten（费用）+ Aufwand（投入、花费，来自 aufwenden）→ 在金钱上的投入",
+  "fam": [
+   "die Kosten",
+   "kosten",
+   "der Aufwand",
+   "aufwenden",
+   "aufwendig"
+  ],
+  "ety": "Kosten < 中古高地德语 koste（价值、花费），借自中古拉丁语 costa / costus，源于拉丁语 constare（值……，花费）。Aufwand 是 aufwenden 的名词形式，wenden < 古高地德语 wenten。",
+  "cog": "英 cost（同源借词，均出自拉丁语 constare）",
+  "tip": "偏书面、公文用语；口语多说 die Kosten 或 der Aufwand。复数极少用。"
+ },
+ {
+  "w": "Kostenpunkt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kostenpunkte",
+  "gs": "des Kostenpunkt(e)s",
+  "ipa": "ˈkɔstn̩ˌpʊŋkt",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "（口）价钱，花费（常不带冠词，引出金额）",
+    "de": "ugs.: Preis, Kosten (oft ohne Artikel vor einer Summe)",
+    "ex": [
+     {
+      "de": "Ein neues Dach – Kostenpunkt: rund 30.000 Euro.",
+      "zh": "换个新屋顶——费用：大约三万欧元。"
+     }
+    ]
+   },
+   {
+    "zh": "费用项目，开支项",
+    "de": "einzelner Posten in einer Kostenrechnung",
+    "ex": [
+     {
+      "de": "Der größte Kostenpunkt im Budget sind die Personalkosten.",
+      "zh": "预算中最大的开支项是人员费用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kostenpunkt: … Euro — （口）价格：……欧元（插入语式用法）",
+   "Was ist der Kostenpunkt? — （口）要花多少钱？"
+  ],
+  "root": "Kosten·punkt：Kosten（费用）+ Punkt（点、项）→ 费用这一项 → 价钱",
+  "fam": [
+   "die Kosten",
+   "der Punkt",
+   "der Kostenfaktor",
+   "kostspielig"
+  ],
+  "ety": "Kosten 借自中古拉丁语 costa（< 拉丁语 constare）；Punkt < 中古高地德语 punct，借自拉丁语 punctum（点、刺出的点）。",
+  "cog": "英 cost, point",
+  "tip": "口语中常见“Kostenpunkt?”直接问价，比 Wie viel kostet das? 更随意、略带调侃。"
+ },
+ {
+  "w": "Krankenhausaufenthalt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Krankenhausaufenthalte",
+  "gs": "des Krankenhausaufenthalt(e)s",
+  "ipa": "ˈkʁaŋkn̩haʊ̯sʔaʊ̯fʔɛntˌhalt",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "住院（期间）",
+    "de": "Zeit, die jmd. als Patient im Krankenhaus verbringt",
+    "ex": [
+     {
+      "de": "Nach einem kurzen Krankenhausaufenthalt konnte sie wieder arbeiten.",
+      "zh": "短暂住院之后她又能上班了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein längerer / stationärer Krankenhausaufenthalt — 较长的住院/住院治疗",
+   "während des Krankenhausaufenthalts — 住院期间",
+   "einen Krankenhausaufenthalt vermeiden — 避免住院"
+  ],
+  "root": "Kranken·haus·aufenthalt：Krankenhaus（医院）+ Aufenthalt（逗留，来自 sich aufhalten）→ 在医院的逗留",
+  "fam": [
+   "das Krankenhaus",
+   "der Aufenthalt",
+   "sich aufhalten",
+   "krank"
+  ],
+  "ety": "透明复合词：krank < 中古高地德语 kranc（虚弱）；Aufenthalt 由 auf + enthalten（古义“停留”）构成。",
+  "cog": "英 hospital stay（意译对应）",
+  "tip": "“住院”德语不说 *im Krankenhaus wohnen*，而是 im Krankenhaus liegen / einen Krankenhausaufenthalt haben。"
+ },
+ {
+  "w": "Kriminologie",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Kriminologie",
+  "ipa": "kʁiminoloˈɡiː",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "犯罪学",
+    "de": "Wissenschaft von den Ursachen und Erscheinungsformen der Kriminalität",
+    "ex": [
+     {
+      "de": "Sie hat Rechtswissenschaft mit Schwerpunkt Kriminologie studiert.",
+      "zh": "她读的是法学，重点方向是犯罪学。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Professor(in) für Kriminologie — 犯罪学教授",
+   "der Kriminologe / die Kriminologin — 犯罪学家",
+   "kriminologisch — 犯罪学的"
+  ],
+  "root": "Krimino·logie：拉丁 crimen（罪行）+ 希腊 -logia（学问）→ 研究犯罪的学问",
+  "fam": [
+   "der Kriminologe",
+   "kriminologisch",
+   "kriminell",
+   "die Kriminalität",
+   "der Krimi"
+  ],
+  "ety": "19 世纪末形成的学术新词，由拉丁语 crimen（属格 criminis，罪行）与希腊语来源的 -logie 组合而成（意大利语 criminologia 一般被视为较早用例）。",
+  "cog": "英 criminology；法 criminologie",
+  "tip": "重音在最后的 -gie 上。注意与 Kriminalistik（刑侦学，侦查技术）区分。"
+ },
+ {
+  "w": "Kristallkugel",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kristallkugeln",
+  "gs": "der Kristallkugel",
+  "ipa": "kʁɪsˈtalˌkuːɡl̩",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "水晶球（多指算命用的）",
+    "de": "Kugel aus Glas oder Kristall, bes. zum Wahrsagen",
+    "ex": [
+     {
+      "de": "Ich habe keine Kristallkugel – wie sich der Markt entwickelt, weiß niemand.",
+      "zh": "我又没有水晶球——市场会怎么发展，谁也不知道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in die Kristallkugel schauen / blicken — （喻）预测未来",
+   "Ich habe keine Kristallkugel. — 我又不会未卜先知。"
+  ],
+  "root": "Kristall·kugel：Kristall（水晶）+ Kugel（球）",
+  "fam": [
+   "der Kristall",
+   "kristallklar",
+   "die Kugel",
+   "der Kugelschreiber"
+  ],
+  "ety": "Kristall < 中古高地德语 kristalle，经拉丁语 crystallus 借自希腊语 krýstallos（冰；水晶）。Kugel < 中古高地德语 kugel(e)。",
+  "cog": "英 crystal ball",
+  "tip": "der Kristall（水晶、晶体）为阳性；das Kristall 指水晶玻璃制品（如 Kristallglas），但复合词 Kristallkugel 恒为阴性（随 Kugel）。"
+ },
+ {
+  "w": "Kursbuch",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Kursbücher",
+  "gs": "des Kursbuch(e)s",
+  "ipa": "ˈkʊʁsˌbuːx",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（铁路等的）列车时刻表手册",
+    "de": "Buch mit den Fahrplänen der Bahn u. a. Verkehrsmittel",
+    "ex": [
+     {
+      "de": "Früher suchte man Verbindungen im Kursbuch, heute in der App.",
+      "zh": "以前人们在列车时刻表手册里查车次，如今用手机应用。"
+     }
+    ]
+   },
+   {
+    "zh": "（语言等课程的）课本，教材",
+    "de": "Lehrbuch, das in einem Kurs verwendet wird",
+    "ex": [
+     {
+      "de": "Bitte bringen Sie morgen Ihr Kursbuch mit.",
+      "zh": "请明天把课本带来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Kursbuch nachschlagen — 查时刻表",
+   "Kursbuch und Arbeitsbuch — 课本和练习册（语言教材常见配套）"
+  ],
+  "root": "Kurs·buch：Kurs（班次、线路；课程）+ Buch（书）",
+  "fam": [
+   "der Kurs",
+   "der Sprachkurs",
+   "das Buch",
+   "das Arbeitsbuch"
+  ],
+  "ety": "Kurs 借自拉丁语 cursus（奔跑、路线），部分义项经法语 cours 进入德语；Buch < 古高地德语 buoh。",
+  "cog": "英 course, book",
+  "tip": "在德语课堂上 Kursbuch 指“课本”，与 Arbeitsbuch（练习册）相对；铁路义今天已较少见。"
+ },
+ {
+  "w": "Kurzbeschreibung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kurzbeschreibungen",
+  "gs": "der Kurzbeschreibung",
+  "ipa": "ˈkʊʁt͡sbəˌʃʁaɪ̯bʊŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "简要说明，简介",
+    "de": "knappe Beschreibung, Zusammenfassung",
+    "ex": [
+     {
+      "de": "Bitte fügen Sie dem Antrag eine Kurzbeschreibung des Projekts bei.",
+      "zh": "请在申请中附上项目的简要说明。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Kurzbeschreibung von etw.(D) / zu etw.(D) — ……的简介",
+   "Produkt-Kurzbeschreibung — 产品简介"
+  ],
+  "root": "Kurz·be·schreib·ung：kurz（短）+ Beschreibung（描述，来自 beschreiben）",
+  "fam": [
+   "kurz",
+   "beschreiben",
+   "die Beschreibung",
+   "die Kurzfassung"
+  ],
+  "ety": "透明复合词：kurz 借自拉丁语 curtus（截短的）；schreiben 借自拉丁语 scribere。",
+  "cog": "英 short description",
+  "tip": "近义 Kurzfassung（缩写版、摘要）、Steckbrief（简介卡）。"
+ },
+ {
+  "w": "Kutte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kutten",
+  "gs": "der Kutte",
+  "ipa": "ˈkʊtə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（僧侣穿的）连帽长袍，僧袍",
+    "de": "langes, weites Gewand von Mönchen",
+    "ex": [
+     {
+      "de": "Die Mönche trugen braune Kutten mit Kapuze.",
+      "zh": "僧侣们穿着带兜帽的棕色长袍。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）（摩托车帮、球迷的）缀满徽章的牛仔马甲",
+    "de": "ugs.: Weste mit Abzeichen von Rockern oder Fußballfans",
+    "ex": [
+     {
+      "de": "Das Tragen von Kutten ist bei dem Treffen verboten.",
+      "zh": "聚会上禁止穿帮派马甲。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Kutte tragen — 穿僧袍；（喻）当修士",
+   "in die Kutte schlüpfen — 穿上长袍/马甲"
+  ],
+  "root": "Kutte：单纯词，原义“（宽松的）外衣”",
+  "fam": [
+   "die Mönchskutte",
+   "der Kuttenträger"
+  ],
+  "ety": "中古高地德语 kutte，借自中古拉丁语 cotta / 古法语 cote（外衣、长袍）；后者一般认为源自法兰克语。",
+  "cog": "英 coat（经古法语 cote，同出一源）",
+  "tip": "日常最常见于 Mönchskutte；德国媒体报道摩托车帮派（Rocker）时 Kutte 指其标志性马甲。"
+ },
+ {
+  "w": "Landesrecht",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Landesrecht(e)s",
+  "ipa": "ˈlandəsˌʁɛçt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（德国、奥地利）州法",
+    "de": "das Recht der einzelnen Bundesländer",
+    "ex": [
+     {
+      "de": "Das Schulwesen wird überwiegend durch Landesrecht geregelt.",
+      "zh": "学校事务主要由州法规定。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Bundesrecht bricht Landesrecht. — 联邦法优于州法（《基本法》第 31 条）",
+   "nach Landesrecht — 依照州法"
+  ],
+  "root": "Landes·recht：Land（此处指联邦州）+ -es- + Recht（法）",
+  "fam": [
+   "das Land",
+   "das Bundesland",
+   "das Bundesrecht",
+   "das Recht",
+   "die Landesregierung"
+  ],
+  "ety": "透明复合词：Land < 古高地德语 lant；Recht < 古高地德语 reht。",
+  "cog": "英 land, right",
+  "tip": "德国语境中 Land 常指“联邦州”，故 Landesrecht 不是“国家法”，国家（联邦）层面是 Bundesrecht。"
+ },
+ {
+  "w": "Landgasthof",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Landgasthöfe",
+  "gs": "des Landgasthof(e)s",
+  "ipa": "ˈlantɡastˌhoːf",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "乡村客栈，乡间旅店（兼餐馆）",
+    "de": "Gasthof auf dem Land mit Gaststätte und oft Zimmern",
+    "ex": [
+     {
+      "de": "Wir übernachteten in einem gemütlichen Landgasthof mit regionaler Küche.",
+      "zh": "我们住在一家提供地方菜的舒适乡村客栈。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Landgasthof einkehren — 在乡村客栈歇脚用餐",
+   "ein traditioneller Landgasthof — 传统乡村客栈"
+  ],
+  "root": "Land·gast·hof：Land（乡村）+ Gasthof（客栈，Gast 客人 + Hof 院落）",
+  "fam": [
+   "der Gasthof",
+   "das Gasthaus",
+   "der Gast",
+   "das Land"
+  ],
+  "ety": "透明复合词：Gast < 古高地德语 gast；Hof < 古高地德语 hof。",
+  "cog": "英 guest；荷 hof",
+  "tip": "Gasthof 偏乡村、传统，常有住宿；Gaststätte 是一般餐馆的书面统称。"
+ },
+ {
+  "w": "lauwarm",
+  "pos": "adj",
+  "ipa": "ˈlaʊ̯ˌvaʁm",
+  "lvl": "B1–B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "温的，微温的（不冷不热）",
+    "de": "mäßig warm, weder kalt noch richtig warm",
+    "ex": [
+     {
+      "de": "Der Kaffee ist nur noch lauwarm.",
+      "zh": "咖啡已经只是温吞吞的了。"
+     },
+     {
+      "de": "Den Teig mit lauwarmem Wasser verrühren.",
+      "zh": "用温水把面团搅匀。"
+     }
+    ]
+   },
+   {
+    "zh": "（喻）不冷不热的，冷淡的，敷衍的",
+    "de": "übertr.: halbherzig, wenig begeistert",
+    "ex": [
+     {
+      "de": "Der Vorschlag stieß nur auf lauwarme Zustimmung.",
+      "zh": "这一提议只得到不冷不热的赞同。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "lauwarm duschen / servieren — 用温水冲澡 / 温着上桌",
+   "eine lauwarme Reaktion — 冷淡的反应"
+  ],
+  "root": "lau·warm：lau（微温）+ warm（暖）→ 加强“温而不热”",
+  "fam": [
+   "lau",
+   "warm",
+   "die Wärme",
+   "erwärmen"
+  ],
+  "ety": "lau < 中古高地德语 lā（屈折形 lāwer）< 古高地德语 lāo（温的）。",
+  "cog": "英 lukewarm（一般认为 luke 与 lau 同源）",
+  "tip": "烹饪中“温水”就是 lauwarmes Wasser，不说 *warmes Wasser* 以免过热。"
+ },
+ {
+  "w": "Legionelle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Legionellen",
+  "gs": "der Legionelle",
+  "ipa": "leɡi̯oˈnɛlə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "军团菌（多用复数）",
+    "de": "Bakterium der Gattung Legionella, Erreger der Legionärskrankheit",
+    "ex": [
+     {
+      "de": "Im Trinkwasser des Hotels wurden Legionellen nachgewiesen.",
+      "zh": "酒店饮用水中检出了军团菌。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Legionellen im Warmwasser — 热水中的军团菌",
+   "auf Legionellen untersuchen / prüfen — 检测军团菌",
+   "die Legionärskrankheit — 军团病"
+  ],
+  "root": "Legion·elle：Legion（军团）+ 拉丁语指小后缀 -ella（细菌属名常用）",
+  "fam": [
+   "die Legion",
+   "der Legionär",
+   "die Legionärskrankheit"
+  ],
+  "ety": "源自拉丁学名 Legionella；该菌在 1976 年美国费城“美国退伍军人协会”（American Legion）大会疫情后被发现并以此命名。",
+  "cog": "英 legionella",
+  "tip": "德国房东须定期检测集中热水系统中的 Legionellen，租房信件中常见此词。"
+ },
+ {
+  "w": "leidig",
+  "pos": "adj",
+  "ipa": "ˈlaɪ̯dɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "讨厌的，恼人的，令人头疼的（多作定语）",
+    "de": "lästig, unangenehm, immer wieder störend",
+    "ex": [
+     {
+      "de": "Lass uns endlich dieses leidige Thema beenden.",
+      "zh": "咱们总算把这个烦人的话题了结吧。"
+     },
+     {
+      "de": "Am Ende scheiterte alles an der leidigen Geldfrage.",
+      "zh": "最后一切都卡在了令人头疼的钱的问题上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das leidige Thema / die leidige Frage — 老大难的话题/问题",
+   "eine leidige Angelegenheit — 一件烦心事"
+  ],
+  "root": "leid·ig：Leid（痛苦、烦恼）+ -ig（形容词后缀）→ 带来烦恼的",
+  "fam": [
+   "das Leid",
+   "leiden",
+   "leider",
+   "leidlich"
+  ],
+  "ety": "中古高地德语 leidec，由 leit（痛苦、讨厌的）派生，与 Leid、leider 同源。",
+  "cog": "英 loath（一说同源，指“厌恶的”）",
+  "tip": "几乎只作定语，表说话人的厌烦，与 leider（可惜）、leidlich（还过得去）勿混。"
+ },
+ {
+  "w": "Preis-Leistungs-Verhältnis",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Preis-Leistungs-Verhältnisse（少用）",
+  "gs": "des Preis-Leistungs-Verhältnisses",
+  "ipa": "ˈpʁaɪ̯sˈlaɪ̯stʊŋsfɛɐ̯ˌhɛltnɪs",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "性价比",
+    "de": "Verhältnis zwischen Preis und Qualität/Leistung eines Angebots",
+    "ex": [
+     {
+      "de": "Das Hotel bietet ein hervorragendes Preis-Leistungs-Verhältnis.",
+      "zh": "这家酒店性价比极高。"
+     },
+     {
+      "de": "Beim Preis-Leistungs-Verhältnis liegt das günstigere Modell vorn.",
+      "zh": "论性价比，更便宜的那款领先。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein gutes / schlechtes Preis-Leistungs-Verhältnis — 性价比高/低",
+   "Das Preis-Leistungs-Verhältnis stimmt. — 物有所值。"
+  ],
+  "root": "Preis-Leistungs-Verhältnis：Preis（价格）+ Leistung（性能、服务）+ Verhältnis（比例、关系）",
+  "fam": [
+   "der Preis",
+   "die Leistung",
+   "das Verhältnis",
+   "preiswert"
+  ],
+  "ety": "现代复合词。Preis 借自古法语 pris（< 拉丁语 pretium）；Leistung 来自 leisten；Verhältnis 来自 sich verhalten。",
+  "cog": "英 price-performance ratio, value for money",
+  "tip": "用连字符写，中间的 Leistungs- 带 -s；说“性价比高”用 gut，不说 *hoch*。口语缩写 P/L-Verhältnis。"
+ },
+ {
+  "w": "Leninismus",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Leninismus",
+  "ipa": "leniˈnɪsmʊs",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "列宁主义",
+    "de": "die von Lenin entwickelte Weiterführung des Marxismus",
+    "ex": [
+     {
+      "de": "Der Marxismus-Leninismus war die Staatsideologie der DDR.",
+      "zh": "马克思列宁主义是民主德国的国家意识形态。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Marxismus-Leninismus — 马克思列宁主义",
+   "der Leninist / leninistisch — 列宁主义者 / 列宁主义的"
+  ],
+  "root": "Lenin·ismus：人名 Lenin + -ismus（主义）",
+  "fam": [
+   "der Leninist",
+   "leninistisch",
+   "der Marxismus",
+   "der Kommunismus"
+  ],
+  "ety": "20 世纪初由人名 Lenin（Wladimir Iljitsch Uljanow 的化名）加希腊—拉丁语后缀 -ismus 构成。",
+  "cog": "英 Leninism；俄 ленинизм",
+  "tip": "-ismus 名词均为阳性，属格不加 -s：des Leninismus。"
+ },
+ {
+  "w": "Lesesaal",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Lesesäle",
+  "gs": "des Lesesaal(e)s",
+  "ipa": "ˈleːzəˌzaːl",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "阅览室",
+    "de": "großer Raum in einer Bibliothek zum Lesen und Arbeiten",
+    "ex": [
+     {
+      "de": "Diese Bücher dürfen nur im Lesesaal benutzt werden.",
+      "zh": "这些书只能在阅览室内使用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Lesesaal arbeiten / lernen — 在阅览室学习",
+   "Präsenzbestand – nur im Lesesaal — 不外借馆藏，仅限阅览室"
+  ],
+  "root": "Lese·saal：lesen（读）+ Saal（大厅）",
+  "fam": [
+   "lesen",
+   "der Saal",
+   "der Leser",
+   "die Bibliothek"
+  ],
+  "ety": "透明复合词：lesen < 古高地德语 lesan（原义“拾取、挑选”）；Saal < 古高地德语 sal（大屋、厅堂）。",
+  "cog": "英 reading room；荷 leeszaal",
+  "tip": "Saal 复数只有一个 ä：Säle（不是 *Sääle*）。"
+ },
+ {
+  "w": "Lieferdienst",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Lieferdienste",
+  "gs": "des Lieferdienst(e)s",
+  "ipa": "ˈliːfɐˌdiːnst",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "送货服务；外卖/配送公司",
+    "de": "Dienst, der Waren oder Essen nach Hause liefert; Firma, die das anbietet",
+    "ex": [
+     {
+      "de": "Wir haben heute Abend beim Lieferdienst Pizza bestellt.",
+      "zh": "我们今晚叫了外卖披萨。"
+     },
+     {
+      "de": "Viele Supermärkte bieten inzwischen einen Lieferdienst an.",
+      "zh": "如今很多超市都提供送货上门服务。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "beim Lieferdienst bestellen — 叫外卖/在配送平台下单",
+   "ein Lieferdienst für Lebensmittel — 生鲜配送服务",
+   "der Lieferservice — 同义"
+  ],
+  "root": "Liefer·dienst：liefern（交货、送货）+ Dienst（服务）",
+  "fam": [
+   "liefern",
+   "die Lieferung",
+   "der Lieferant",
+   "der Dienst",
+   "der Lieferservice"
+  ],
+  "ety": "liefern 于 15 世纪自中古低地德语 lēveren 进入高地德语，后者经中古荷兰语 leveren 借自法语 livrer（交付）< 拉丁语 liberare（释放）。Dienst < 古高地德语 dionōst。",
+  "cog": "英 deliver（同出拉丁语 liberare）",
+  "tip": "“叫外卖”最自然的说法：etw. beim Lieferdienst bestellen / sich etw. liefern lassen。"
+ },
+ {
+  "w": "liquidieren",
+  "pos": "v",
+  "ipa": "likviˈdiːʁən",
+  "lvl": "C1",
+  "forms": "liquidiert · liquidierte · hat liquidiert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（公司）清算，解散；变现",
+    "de": "ein Unternehmen auflösen und abwickeln; Vermögen zu Geld machen",
+    "ex": [
+     {
+      "de": "Nach der Insolvenz wurde die Firma liquidiert.",
+      "zh": "破产后公司被清算了。"
+     }
+    ]
+   },
+   {
+    "zh": "（委婉）消灭，处决（某人）",
+    "de": "verhüll.: jmdn. töten, beseitigen",
+    "ex": [
+     {
+      "de": "Das Regime ließ zahlreiche Oppositionelle liquidieren.",
+      "zh": "该政权处决了大批反对派人士。"
+     }
+    ]
+   },
+   {
+    "zh": "（医生、律师等）开账单，收取费用",
+    "de": "(von Ärzten, Anwälten) ein Honorar in Rechnung stellen",
+    "ex": [
+     {
+      "de": "Der Chefarzt darf bei Privatpatienten gesondert liquidieren.",
+      "zh": "主任医师可以向私人保险病人另行收费。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Unternehmen liquidieren — 清算一家企业",
+   "Vermögenswerte liquidieren — 将资产变现",
+   "die Liquidation — 清算；（委婉）处决"
+  ],
+  "root": "liquid·ier·en：拉丁 liquidus（液态的；清楚的）+ -ieren → “使流动、使清楚” → 把资产变成流动的钱、把账目了结",
+  "fam": [
+   "die Liquidation",
+   "liquide",
+   "die Liquidität",
+   "der Liquidator"
+  ],
+  "ety": "借自意大利语 liquidare / 中古拉丁语 liquidare（使清楚、结清账目），源于拉丁语 liquidus（流动的、清楚的）。“处决”义一般认为在 20 世纪受俄语 ликвидировать 的用法影响而流行。",
+  "cog": "英 liquidate；法 liquider",
+  "tip": "不可分、无 ge- 的 -ieren 动词：hat liquidiert。注意“处决”这一委婉用法，读新闻时别误解成“清算”。"
+ },
+ {
+  "w": "Luftröhre",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Luftröhren",
+  "gs": "der Luftröhre",
+  "ipa": "ˈlʊftˌʁøːʁə",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "气管",
+    "de": "Röhre, die vom Kehlkopf zu den Bronchien führt (Trachea)",
+    "ex": [
+     {
+      "de": "Ein Stück Fleisch war ihm in die Luftröhre geraten.",
+      "zh": "一块肉卡进了他的气管。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. gerät in die Luftröhre — 某物呛进气管",
+   "der Luftröhrenschnitt — 气管切开术"
+  ],
+  "root": "Luft·röhre：Luft（空气）+ Röhre（管）→ 通空气的管",
+  "fam": [
+   "die Luft",
+   "die Röhre",
+   "das Rohr",
+   "die Speiseröhre"
+  ],
+  "ety": "透明复合词：Luft < 古高地德语 luft；Röhre < 古高地德语 rōra（芦苇、管子）。",
+  "cog": "英 windpipe（意译对应）",
+  "tip": "与 Speiseröhre（食道）相对。口语“呛着了”：Ich habe mich verschluckt。"
+ },
+ {
+  "w": "makaber",
+  "pos": "adj",
+  "ipa": "maˈkaːbɐ",
+  "lvl": "C1",
+  "forms": "makabrer · am makabersten",
+  "senses": [
+   {
+    "zh": "阴森可怖的；（玩笑等）拿死亡开涮的，黑色的",
+    "de": "mit dem Tod, Grauenhaftem spielend; schaurig",
+    "ex": [
+     {
+      "de": "Das war ein ziemlich makabrer Witz.",
+      "zh": "这是个相当阴森的黑色笑话。"
+     },
+     {
+      "de": "Makaber wirkt, dass ausgerechnet ein Bestatter den Preis gewann.",
+      "zh": "令人毛骨悚然的是，偏偏是一个殡葬业者获了奖。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein makabrer Humor / Scherz — 黑色幽默/玩笑",
+   "Das klingt makaber, aber … — 听起来瘆人，但……"
+  ],
+  "root": "makaber：借词，源自法语 danse macabre（死亡之舞）",
+  "fam": [
+   "der Totentanz",
+   "grausig",
+   "schaurig"
+  ],
+  "ety": "借自法语 macabre，出自中世纪 danse macabre（死亡之舞）；macabre 本身来源不确定，一说与《马加比书》（Maccabées）有关。",
+  "cog": "英 macabre；法 macabre",
+  "tip": "作定语时词干去 e：ein makabrer Witz, eine makabre Szene（不说 *makaberer*）。"
+ },
+ {
+  "w": "manisch",
+  "pos": "adj",
+  "ipa": "ˈmaːnɪʃ",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（医）躁狂的",
+    "de": "med.: an einer Manie leidend, krankhaft erregt",
+    "ex": [
+     {
+      "de": "In manischen Phasen schläft er kaum und gibt viel Geld aus.",
+      "zh": "躁狂期他几乎不睡觉，还大把花钱。"
+     }
+    ]
+   },
+   {
+    "zh": "狂热的，着魔般的，执迷的",
+    "de": "übertr.: übersteigert, besessen",
+    "ex": [
+     {
+      "de": "Mit fast manischem Eifer sammelt sie alte Schallplatten.",
+      "zh": "她以近乎着魔的热情收集老唱片。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "manisch-depressiv — 躁郁的（旧称，今多说 bipolar）",
+   "eine manische Episode — 躁狂发作"
+  ],
+  "root": "man·isch：希腊 mania（狂热、癫狂）+ -isch（形容词后缀）",
+  "fam": [
+   "die Manie",
+   "der Maniker",
+   "bipolar",
+   "die Kleptomanie"
+  ],
+  "ety": "由 Manie 派生；Manie 经拉丁语 mania 借自希腊语 manía（疯狂）。",
+  "cog": "英 manic；法 maniaque",
+  "tip": "日常“疯狂地喜欢”多说 verrückt nach / besessen von；manisch 偏书面或医学色彩。"
+ },
+ {
+  "w": "Maskenball",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Maskenbälle",
+  "gs": "des Maskenball(e)s",
+  "ipa": "ˈmaskn̩ˌbal",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "化装舞会，假面舞会",
+    "de": "Ball, bei dem die Gäste maskiert oder kostümiert sind",
+    "ex": [
+     {
+      "de": "Zum Fasching veranstaltet der Verein einen Maskenball.",
+      "zh": "狂欢节时协会举办一场化装舞会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "auf einen Maskenball gehen — 去参加化装舞会",
+   "Ein Maskenball — 威尔第歌剧《假面舞会》"
+  ],
+  "root": "Masken·ball：Maske（面具）+ Ball（舞会）",
+  "fam": [
+   "die Maske",
+   "sich maskieren",
+   "der Ball",
+   "das Kostüm"
+  ],
+  "ety": "Maske 经法语 masque 借自意大利语 maschera；Ball（舞会）借自法语 bal（< 古法语 baller，跳舞），与“球”义的 Ball 并非同一个词。",
+  "cog": "英 masked ball, masquerade",
+  "tip": "舞会的 Ball 与球 Ball 同形同性，复数都是 Bälle。"
+ },
+ {
+  "w": "Materialkosten",
+  "pos": "n",
+  "gen": "pl",
+  "pl": "Materialkosten",
+  "gs": "der Materialkosten",
+  "ipa": "mateˈʁi̯aːlˌkɔstn̩",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "材料费，原材料成本",
+    "de": "Kosten für das verwendete Material",
+    "ex": [
+     {
+      "de": "Die Materialkosten sind im letzten Jahr stark gestiegen.",
+      "zh": "去年材料成本大幅上涨。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Material- und Personalkosten — 材料费和人工费",
+   "die Materialkosten tragen / übernehmen — 承担材料费"
+  ],
+  "root": "Material·kosten：Material（材料）+ Kosten（费用）",
+  "fam": [
+   "das Material",
+   "die Kosten",
+   "die Personalkosten",
+   "die Lohnkosten"
+  ],
+  "ety": "Material 借自中古拉丁语 materiale，源于拉丁语 materia（物质、木料）；Kosten 借自中古拉丁语 costa。",
+  "cog": "英 material costs",
+  "tip": "只有复数，与 Kosten 一样：Die Materialkosten betragen …（动词用复数）。"
+ },
+ {
+  "w": "Meise",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Meisen",
+  "gs": "der Meise",
+  "ipa": "ˈmaɪ̯zə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "山雀",
+    "de": "kleiner Singvogel (z. B. Kohlmeise, Blaumeise)",
+    "ex": [
+     {
+      "de": "Im Winter kommen Meisen an unser Futterhäuschen.",
+      "zh": "冬天山雀会飞到我们的喂鸟屋来。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）eine Meise haben：脑子有毛病，神经兮兮",
+    "de": "ugs.: eine Meise haben = nicht ganz normal sein",
+    "ex": [
+     {
+      "de": "Du hast doch 'ne Meise, bei dem Wetter baden zu gehen!",
+      "zh": "这种天气还去游泳，你脑子有病吧！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kohlmeise / Blaumeise — 大山雀 / 蓝山雀",
+   "eine Meise haben — （口）脑子不正常"
+  ],
+  "root": "Meise：单纯词",
+  "fam": [
+   "die Kohlmeise",
+   "die Blaumeise",
+   "der Meisenknödel"
+  ],
+  "ety": "中古高地德语 meise < 古高地德语 meisa，原始日耳曼语形式不详。",
+  "cog": "英 titmouse（mouse 部分原为古英语 māse，与 Meise 同源，后因民间词源误附会为 mouse）",
+  "tip": "“eine Meise haben”与 einen Vogel haben 同义，都指人“有点疯”。"
+ },
+ {
+  "w": "Memento",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Mementos",
+  "gs": "des Mementos",
+  "ipa": "meˈmɛnto",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（书）警示，告诫；令人警醒之事",
+    "de": "geh.: Mahnung, Erinnerung, die zur Besinnung auffordert",
+    "ex": [
+     {
+      "de": "Die Ruine steht als Memento gegen den Krieg mitten in der Stadt.",
+      "zh": "这片废墟矗立在市中心，作为反战的警示。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "memento mori — 勿忘你终有一死（拉丁语）",
+   "ein Memento für etw.(A) / an etw.(A) — 对……的警示/提醒"
+  ],
+  "root": "memento：拉丁语 meminisse（记得）的命令式 → “记住！”",
+  "fam": [
+   "das Memorandum",
+   "die Memoiren",
+   "memorieren"
+  ],
+  "ety": "借自拉丁语 memento（“记住！”），为 meminisse 的第二人称单数命令式；原为天主教弥撒中纪念祷词的开头词。",
+  "cog": "英 memento（意为“纪念品”，词义与德语有别）",
+  "tip": "德语 Memento 是“警示、告诫”，不是英语 memento 的“纪念品”（德语说 Andenken / Souvenir）。"
+ },
+ {
+  "w": "Menschenrechtskonvention",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Menschenrechtskonventionen",
+  "gs": "der Menschenrechtskonvention",
+  "ipa": "ˈmɛnʃn̩ʁɛçt͡skɔnvɛnˌt͡si̯oːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "人权公约（尤指《欧洲人权公约》）",
+    "de": "völkerrechtlicher Vertrag zum Schutz der Menschenrechte, bes. die Europäische Menschenrechtskonvention",
+    "ex": [
+     {
+      "de": "Der Gerichtshof sah einen Verstoß gegen die Europäische Menschenrechtskonvention.",
+      "zh": "法院认定存在违反《欧洲人权公约》的行为。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Europäische Menschenrechtskonvention (EMRK) — 《欧洲人权公约》（1950）",
+   "gegen die Menschenrechtskonvention verstoßen — 违反人权公约"
+  ],
+  "root": "Menschen·rechts·konvention：Menschenrecht（人权）+ Konvention（公约）",
+  "fam": [
+   "das Menschenrecht",
+   "die Konvention",
+   "der Menschenrechtsgerichtshof"
+  ],
+  "ety": "Konvention 经法语 convention 借自拉丁语 conventio（集会、约定），源于 convenire（聚集、一致）。",
+  "cog": "英 human rights convention",
+  "tip": "新闻中常缩写 EMRK；其执行机构是 Europäischer Gerichtshof für Menschenrechte (EGMR)。"
+ },
+ {
+  "w": "Menschenrechtsorganisation",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Menschenrechtsorganisationen",
+  "gs": "der Menschenrechtsorganisation",
+  "ipa": "ˈmɛnʃn̩ʁɛçt͡sʔɔʁɡanizaˌt͡si̯oːn",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "人权组织",
+    "de": "Organisation, die sich für den Schutz der Menschenrechte einsetzt",
+    "ex": [
+     {
+      "de": "Menschenrechtsorganisationen kritisieren die Haftbedingungen scharf.",
+      "zh": "人权组织严厉批评关押条件。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "laut der Menschenrechtsorganisation Amnesty International — 据人权组织国际特赦",
+   "eine Menschenrechtsorganisation berichtet / warnt — 人权组织报告/警告"
+  ],
+  "root": "Menschen·rechts·organisation：Menschenrecht（人权）+ Organisation（组织）",
+  "fam": [
+   "das Menschenrecht",
+   "die Organisation",
+   "der Menschenrechtler"
+  ],
+  "ety": "透明复合词；Organisation 借自法语 organisation，源于中古拉丁语 organizare。",
+  "cog": "英 human rights organization",
+  "tip": "新闻高频词；注意中间的连接 -s-：Menschenrechts-。"
+ },
+ {
+  "w": "menschenwürdig",
+  "pos": "adj",
+  "ipa": "ˈmɛnʃn̩ˌvʏʁdɪç",
+  "lvl": "B2–C1",
+  "forms": "menschenwürdiger · am menschenwürdigsten",
+  "senses": [
+   {
+    "zh": "合乎人的尊严的，像样的，人道的",
+    "de": "der Würde des Menschen entsprechend",
+    "ex": [
+     {
+      "de": "Alle Geflüchteten haben Anspruch auf eine menschenwürdige Unterbringung.",
+      "zh": "所有难民都有权获得体面的住所。"
+     },
+     {
+      "de": "Die Gefangenen wurden nicht menschenwürdig behandelt.",
+      "zh": "犯人没有受到人道的对待。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein menschenwürdiges Leben / Dasein — 有尊严的生活",
+   "menschenwürdig wohnen / sterben — 有尊严地居住/离世",
+   "Gegenteil: menschenunwürdig — 有辱人格的"
+  ],
+  "root": "Menschen·würd·ig：Mensch（人）+ Würde（尊严）+ -ig → 配得上人的尊严的",
+  "fam": [
+   "die Menschenwürde",
+   "menschenunwürdig",
+   "würdig",
+   "die Würde"
+  ],
+  "ety": "透明复合词。Würde < 古高地德语 wirdī（价值、尊严），与 wert 同源。",
+  "cog": "英 worth（与 Würde 同源）",
+  "tip": "德国《基本法》第 1 条：Die Würde des Menschen ist unantastbar——此词常与这一宪法背景相关。"
+ },
+ {
+  "w": "Metronom",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Metronome",
+  "gs": "des Metronoms",
+  "ipa": "metʁoˈnoːm",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "节拍器",
+    "de": "Gerät, das beim Musizieren ein gleichmäßiges Tempo angibt",
+    "ex": [
+     {
+      "de": "Übe die Etüde zuerst langsam mit dem Metronom.",
+      "zh": "先跟着节拍器慢速练这首练习曲。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Metronom auf 80 stellen — 把节拍器调到 80",
+   "nach dem Metronom spielen — 跟着节拍器弹奏"
+  ],
+  "root": "Metro·nom：希腊 métron（尺度）+ nómos（规则）→ 定“节奏规则”的器具",
+  "fam": [
+   "das Meter",
+   "die Metrik",
+   "metrisch",
+   "die Astronomie"
+  ],
+  "ety": "19 世纪初新造词，取自希腊语 métron（量度）与 nómos（规则、法则）；该装置 1815 年由 Johann Nepomuk Mälzel 取得专利。",
+  "cog": "英 metronome；法 métronome",
+  "tip": "中性名词，重音在最后：das Metronom。"
+ },
+ {
+  "w": "mikroskopisch",
+  "pos": "adj",
+  "ipa": "mikʁoˈskoːpɪʃ",
+  "lvl": "B2–C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "显微镜的，用显微镜进行的",
+    "de": "mit dem Mikroskop (erfolgend)",
+    "ex": [
+     {
+      "de": "Die Gewebeprobe wird mikroskopisch untersucht.",
+      "zh": "组织样本要进行显微镜检查。"
+     }
+    ]
+   },
+   {
+    "zh": "极微小的",
+    "de": "übertr.: winzig klein",
+    "ex": [
+     {
+      "de": "Die Unterschiede zwischen den beiden Versionen sind mikroskopisch.",
+      "zh": "两个版本之间的差别微乎其微。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mikroskopisch klein — 小到只能用显微镜看见",
+   "eine mikroskopische Untersuchung — 显微镜检查"
+  ],
+  "root": "mikro·skop·isch：希腊 mikrós（小）+ skopeín（观看）+ -isch",
+  "fam": [
+   "das Mikroskop",
+   "mikroskopieren",
+   "makroskopisch",
+   "das Teleskop"
+  ],
+  "ety": "由 Mikroskop 派生；Mikroskop 为 17 世纪新拉丁语 microscopium，取自希腊语 mikrós（小）与 skopeín（看）。",
+  "cog": "英 microscopic",
+  "tip": "表“极小”时口语常说 winzig；mikroskopisch klein 是固定加强说法。"
+ },
+ {
+  "w": "Mineralstoff",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Mineralstoffe",
+  "gs": "des Mineralstoff(e)s",
+  "ipa": "mineˈʁaːlˌʃtɔf",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "矿物质（营养学）",
+    "de": "anorganischer Nährstoff wie Calcium, Magnesium, Eisen",
+    "ex": [
+     {
+      "de": "Vollkornbrot enthält viele Ballaststoffe und Mineralstoffe.",
+      "zh": "全麦面包含有大量膳食纤维和矿物质。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Vitamine und Mineralstoffe — 维生素和矿物质",
+   "reich an Mineralstoffen — 富含矿物质"
+  ],
+  "root": "Mineral·stoff：Mineral（矿物）+ Stoff（物质）",
+  "fam": [
+   "das Mineral",
+   "das Mineralwasser",
+   "der Stoff",
+   "der Nährstoff"
+  ],
+  "ety": "Mineral 借自中古拉丁语 minerale（矿物），与 minera（矿石）相关；Stoff 于近代早期借自中古荷兰语 stoffe / 古法语 estoffe（材料）。",
+  "cog": "英 mineral",
+  "tip": "营养学语境常用 Mineralstoffe，地质学语境说 Mineralien（矿物）。"
+ },
+ {
+  "w": "Monsun",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Monsune",
+  "gs": "des Monsuns",
+  "ipa": "mɔnˈzuːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "季风；季风雨",
+    "de": "jahreszeitlich wechselnder Wind in Süd- und Südostasien; der damit verbundene Regen",
+    "ex": [
+     {
+      "de": "Der Monsun hat in Indien schwere Überschwemmungen ausgelöst.",
+      "zh": "季风雨在印度引发了严重洪灾。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Monsunzeit — 季风季节、雨季",
+   "der Monsun setzt ein — 季风开始"
+  ],
+  "root": "Monsun：借词，源自阿拉伯语 mawsim（季节）",
+  "fam": [
+   "der Monsunregen",
+   "die Monsunzeit"
+  ],
+  "ety": "经英语 monsoon 借自葡萄牙语 monção，后者源于阿拉伯语 mawsim（季节）。",
+  "cog": "英 monsoon；荷 moesson",
+  "tip": "重音在第二音节：Mon·sún；s 发浊音 [z]。"
+ },
+ {
+  "w": "Moralapostel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Moralapostel",
+  "gs": "des Moralapostels",
+  "ipa": "moˈʁaːlʔaˌpɔstl̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（贬）道德说教者，卫道士",
+    "de": "abwertend: jmd., der anderen ständig Moral predigt",
+    "ex": [
+     {
+      "de": "Ich will hier nicht den Moralapostel spielen, aber das war unfair.",
+      "zh": "我不想在这儿充当道德说教者，但那样做不公平。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Moralapostel spielen — 摆出卫道士的样子，进行道德说教",
+   "sich als Moralapostel aufspielen — 以道德楷模自居"
+  ],
+  "root": "Moral·apostel：Moral（道德）+ Apostel（使徒）→ 传播道德的“使徒” → 好说教的人（讽刺）",
+  "fam": [
+   "die Moral",
+   "moralisch",
+   "moralisieren",
+   "der Apostel"
+  ],
+  "ety": "Moral 借自法语 morale，源于拉丁语 moralis（与习俗相关的，mos 习俗）；Apostel 经教会拉丁语 apostolus 借自希腊语 apóstolos（被派遣者）。",
+  "cog": "英 moralizer（意近）；apostle",
+  "tip": "贬义词。阴性可说 Moralapostelin，但较少见；也可泛用于女性：Sie ist ein Moralapostel。"
+ },
+ {
+  "w": "Muffe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Muffen",
+  "gs": "der Muffe",
+  "ipa": "ˈmʊfə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（技）套管，管接头，承口",
+    "de": "Verbindungsstück für Rohre oder Kabel",
+    "ex": [
+     {
+      "de": "Die beiden Rohre werden mit einer Muffe verbunden.",
+      "zh": "两根管子用套管连接起来。"
+     }
+    ]
+   },
+   {
+    "zh": "（俗）jmdm. geht die Muffe：某人吓得要命",
+    "de": "salopp: jmdm. geht die Muffe (1:1000) = jmd. hat große Angst",
+    "ex": [
+     {
+      "de": "Vor der Prüfung ging mir ganz schön die Muffe.",
+      "zh": "考试前我吓得够呛。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm. geht die Muffe (eins zu tausend) — （俗）某人怕得要死",
+   "Muffensausen haben — （俗）心里发怵",
+   "die Rohrmuffe / Kabelmuffe — 管箍 / 电缆接头"
+  ],
+  "root": "Muffe：单纯词，原义“套筒”",
+  "fam": [
+   "der Muff",
+   "das Muffensausen",
+   "die Rohrmuffe"
+  ],
+  "ety": "一般认为与 Muff（手笼）同源，后者经荷兰语 mof 借自法语 moufle（连指手套）；具体途径不详。“害怕”义的俗语来源亦不清楚。",
+  "cog": "英 muff（手笼）",
+  "tip": "俗语 jmdm. geht die Muffe 语域很低（salopp），正式场合避免；中性说法是 große Angst haben。"
+ },
+ {
+  "w": "Musikkapelle",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Musikkapellen",
+  "gs": "der Musikkapelle",
+  "ipa": "muˈziːkkaˌpɛlə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（尤指管乐、民间的）乐队",
+    "de": "kleineres Orchester, bes. Blasmusik",
+    "ex": [
+     {
+      "de": "Beim Dorffest spielte die örtliche Musikkapelle.",
+      "zh": "乡村节庆上本地乐队进行了演奏。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Musikkapelle spielt auf — 乐队奏乐",
+   "mit Musikkapelle durch den Ort ziehen — 跟着乐队在村里游行"
+  ],
+  "root": "Musik·kapelle：Musik（音乐）+ Kapelle（乐队；原义小教堂）",
+  "fam": [
+   "die Kapelle",
+   "der Kapellmeister",
+   "die Blaskapelle",
+   "die Musik"
+  ],
+  "ety": "Kapelle 借自中古拉丁语 cap(p)ella（小教堂）；“乐队”义源于宫廷或教堂礼拜堂里的唱诗班与乐师。Musik 经拉丁语 musica 借自希腊语 mousikḗ。",
+  "cog": "英 chapel（同源），a cappella",
+  "tip": "Kapelle 有“小教堂”和“乐队”两义；德奥乡镇的 Musikkapelle 多为铜管乐队。"
+ },
+ {
+  "w": "Nachbearbeitung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Nachbearbeitungen",
+  "gs": "der Nachbearbeitung",
+  "ipa": "ˈnaːxbəˌʔaʁbaɪ̯tʊŋ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "后期处理，后期加工；返工",
+    "de": "nachträgliche Bearbeitung (z. B. von Fotos, Werkstücken, Texten)",
+    "ex": [
+     {
+      "de": "Die Fotos wurden ohne Nachbearbeitung veröffentlicht.",
+      "zh": "这些照片未经后期处理就发表了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Nachbearbeitung am Computer — 电脑后期处理",
+   "etw. erfordert Nachbearbeitung — 某物需要返工",
+   "nachbearbeiten — 后期加工（可分动词）"
+  ],
+  "root": "Nach·be·arbeit·ung：nach（之后）+ bearbeiten（加工）+ -ung",
+  "fam": [
+   "nachbearbeiten",
+   "bearbeiten",
+   "die Bearbeitung",
+   "die Arbeit"
+  ],
+  "ety": "透明复合词：Arbeit < 古高地德语 ar(a)beit（原义“辛劳”）。",
+  "cog": "英 post-processing（意译对应）",
+  "tip": "摄影、影视中“后期”也常说 Postproduktion。"
+ },
+ {
+  "w": "nachgucken",
+  "pos": "v",
+  "ipa": "ˈnaːxˌɡʊkn̩",
+  "lvl": "B1",
+  "forms": "guckt nach · guckte nach · hat nachgeguckt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（口）查看，查一查，去看看（是否……）",
+    "de": "ugs.: nachsehen, prüfen",
+    "ex": [
+     {
+      "de": "Ich guck mal nach, ob noch Milch im Kühlschrank ist.",
+      "zh": "我去看看冰箱里还有没有牛奶。"
+     },
+     {
+      "de": "Kannst du im Fahrplan nachgucken, wann der Zug fährt?",
+      "zh": "你能查一下时刻表，看看火车几点开吗？"
+     }
+    ]
+   },
+   {
+    "zh": "（口）目送",
+    "de": "jmdm./etw. hinterhersehen",
+    "ex": [
+     {
+      "de": "Sie guckte dem Auto noch lange nach.",
+      "zh": "她久久地目送着那辆车。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nachgucken, ob / wann … — 查看是否/何时……",
+   "im Internet / Wörterbuch nachgucken — 上网/查词典",
+   "jmdm. nachgucken — 目送某人"
+  ],
+  "root": "nach·gucken：nach（跟随；核对）+ gucken（看）",
+  "fam": [
+   "gucken",
+   "nachsehen",
+   "nachschauen",
+   "der Gucker"
+  ],
+  "ety": "gucken < 中古高地德语 gucken，来源不详。",
+  "cog": "—",
+  "tip": "北部和中部口语；书面/标准说 nachsehen，南德奥地利多说 nachschauen。"
+ },
+ {
+  "w": "nagelneu",
+  "pos": "adj",
+  "ipa": "ˈnaːɡl̩ˈnɔɪ̯",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（口）崭新的，全新的",
+    "de": "ugs.: ganz neu, noch unbenutzt",
+    "ex": [
+     {
+      "de": "Er fährt ein nagelneues Auto.",
+      "zh": "他开着一辆崭新的车。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "nagelneu sein — 全新",
+   "funkelnagelneu — （口，加强）簇新"
+  ],
+  "root": "nagel·neu：Nagel（钉子）+ neu（新）→ 像刚打好的钉子一样新（加强语）",
+  "fam": [
+   "neu",
+   "funkelnagelneu",
+   "brandneu",
+   "der Nagel"
+  ],
+  "ety": "一般认为指“像刚锻好的钉子一样新”，Nagel 在此仅起加强作用；Nagel < 古高地德语 nagal，neu < 古高地德语 niuwi。",
+  "cog": "英 brand-new（意近）；nail, new",
+  "tip": "不可比较（不说 *nagelneuer*）；同义 brandneu、funkelnagelneu。"
+ },
+ {
+  "w": "Negativzins",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Negativzinsen",
+  "gs": "des Negativzinses",
+  "ipa": "ˈneːɡatiːfˌt͡sɪns",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "负利率（多用复数）",
+    "de": "Zins, den der Anleger an die Bank zahlen muss, statt ihn zu erhalten",
+    "ex": [
+     {
+      "de": "Einige Banken verlangten von Großkunden Negativzinsen auf hohe Guthaben.",
+      "zh": "一些银行对大客户的高额存款收取负利率。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Negativzinsen erheben / verlangen — 收取负利息",
+   "die Phase der Negativzinsen — 负利率时期",
+   "das Verwahrentgelt — 保管费（银行对负利率的委婉说法）"
+  ],
+  "root": "Negativ·zins：negativ（负的）+ Zins（利息）",
+  "fam": [
+   "der Zins",
+   "die Zinsen",
+   "der Leitzins",
+   "negativ"
+  ],
+  "ety": "Zins < 古高地德语 zins，借自拉丁语 census（估税、赋税）；negativ 借自拉丁语 negativus。",
+  "cog": "英 negative interest rate",
+  "tip": "Zins 的复数是 Zinsen（不是 *Zinse*）；“利息”日常多用复数 Zinsen。"
+ },
+ {
+  "w": "Neubildung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Neubildungen",
+  "gs": "der Neubildung",
+  "ipa": "ˈnɔɪ̯ˌbɪldʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "新形成；重新组建",
+    "de": "das Neubilden, Neuentstehung; Neubesetzung (z. B. einer Regierung)",
+    "ex": [
+     {
+      "de": "Nach der Wahl begannen die Gespräche über die Neubildung der Regierung.",
+      "zh": "大选后开始了关于组建新政府的会谈。"
+     }
+    ]
+   },
+   {
+    "zh": "（语言）新词，新造词",
+    "de": "Sprachw.: neu gebildetes Wort, Neologismus",
+    "ex": [
+     {
+      "de": "„Entschleunigung“ ist eine relativ junge Neubildung.",
+      "zh": "“减速生活”是一个比较新的新造词。"
+     }
+    ]
+   },
+   {
+    "zh": "（医）新生物，赘生物，肿瘤",
+    "de": "Med.: krankhaftes neues Gewebe, Neoplasma",
+    "ex": [
+     {
+      "de": "Bei der Untersuchung wurde eine gutartige Neubildung entdeckt.",
+      "zh": "检查时发现了一个良性肿物。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Neubildung von Zellen / Knochen — 细胞/骨的新生",
+   "eine sprachliche Neubildung — 语言新词"
+  ],
+  "root": "Neu·bild·ung：neu（新）+ Bildung（形成，来自 bilden）",
+  "fam": [
+   "bilden",
+   "die Bildung",
+   "der Neologismus",
+   "neu"
+  ],
+  "ety": "透明复合词：bilden < 古高地德语 bilidōn（塑造）。",
+  "cog": "英 new formation; neologism",
+  "tip": "医学报告中 Neubildung 是对肿瘤的中性说法，不一定是恶性。"
+ },
+ {
+  "w": "Neunjährige",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Neunjährige（die Neunjährigen）",
+  "gs": "des Neunjährigen",
+  "ipa": "ˈnɔɪ̯nˌjɛːʁɪɡə",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "九岁的孩子（男孩/女孩）",
+    "de": "neun Jahre altes Kind",
+    "ex": [
+     {
+      "de": "Ein Neunjähriger hat das Feuer rechtzeitig bemerkt.",
+      "zh": "一个九岁男孩及时发现了火情。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Neunjährige / ein Neunjähriger — 那个/一个九岁男孩",
+   "die Neunjährige / eine Neunjährige — 那个/一个九岁女孩",
+   "neunjährig — 九岁的；为期九年的"
+  ],
+  "root": "neun·jähr·ig·e：neun（九）+ Jahr（年）+ -ig + 形容词名词化词尾 -e",
+  "fam": [
+   "neunjährig",
+   "das Jahr",
+   "jährlich",
+   "der/die Zehnjährige"
+  ],
+  "ety": "由形容词 neunjährig 名词化。neun < 古高地德语 niun；Jahr < 古高地德语 jār。",
+  "cog": "英 nine-year-old",
+  "tip": "形容词性名词，按形容词变格：der Neunjährige, ein Neunjähriger, mit einem Neunjährigen。同理可类推 Zehnjährige、Achtzigjährige 等。"
+ },
+ {
+  "w": "Niedrigwasser",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Niedrigwasser",
+  "gs": "des Niedrigwassers",
+  "ipa": "ˈniːdʁɪçˌvasɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（河流）枯水，低水位；（海洋）低潮",
+    "de": "niedriger Wasserstand eines Flusses; Ebbe-Tiefstand",
+    "ex": [
+     {
+      "de": "Wegen Niedrigwassers können Frachtschiffe auf dem Rhein nur halb beladen fahren.",
+      "zh": "由于枯水，莱茵河上的货船只能半载航行。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Niedrigwasser führen — （河流）处于低水位",
+   "das Niedrigwasser am Rhein — 莱茵河枯水",
+   "Gegenteil: Hochwasser — 洪水，高水位"
+  ],
+  "root": "Niedrig·wasser：niedrig（低）+ Wasser（水）",
+  "fam": [
+   "niedrig",
+   "das Wasser",
+   "das Hochwasser",
+   "der Wasserstand"
+  ],
+  "ety": "透明复合词：niedrig 由 nieder（低）派生；Wasser < 古高地德语 wazzar。",
+  "cog": "英 low water",
+  "tip": "与 Hochwasser 相对；干旱夏季的德国新闻常见。"
+ },
+ {
+  "w": "Obrist",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Obristen",
+  "gs": "des Obristen",
+  "ipa": "oˈbʁɪst",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（旧）上校",
+    "de": "veraltet: Oberst",
+    "ex": [
+     {
+      "de": "Der Obrist erteilte den Befehl zum Rückzug.",
+      "zh": "上校下达了撤退命令。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬，多用复数）军人集团，军政府成员",
+    "de": "abwertend, meist Pl.: Mitglied einer Militärjunta",
+    "ex": [
+     {
+      "de": "Von 1967 bis 1974 herrschten in Griechenland die Obristen.",
+      "zh": "1967 年至 1974 年希腊由上校军政府统治。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Obristen / das Obristenregime — 军人政权（尤指希腊 1967–1974）",
+   "heute üblich: der Oberst — 今天正式军衔说 Oberst"
+  ],
+  "root": "Obrist：oberst（ober“上面的”的最高级）的旧形式 → “最上面的（军官）”",
+  "fam": [
+   "der Oberst",
+   "ober",
+   "oberst",
+   "der Oberstleutnant"
+  ],
+  "ety": "为 Oberst 的较老形式，源自形容词 ober 的最高级 oberst（最高的），早期新高地德语用作军衔名称。",
+  "cog": "英 colonel（意译对应）",
+  "tip": "弱变化名词：des/dem/den Obristen。正式军衔今天用 Oberst（亦弱变化或混合变化）。"
+ },
+ {
+  "w": "Obstbau",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Obstbau(e)s",
+  "ipa": "ˈoːpstˌbaʊ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "果树栽培，果树业",
+    "de": "Anbau von Obst als Erwerbszweig",
+    "ex": [
+     {
+      "de": "Das Alte Land bei Hamburg ist für seinen Obstbau bekannt.",
+      "zh": "汉堡附近的旧国以果树种植闻名。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Obst- und Weinbau — 果树与葡萄种植",
+   "im Obstbau tätig sein — 从事果树业",
+   "der Obstbauer — 果农"
+  ],
+  "root": "Obst·bau：Obst（水果）+ Bau（种植，来自 bauen 耕种）",
+  "fam": [
+   "das Obst",
+   "der Obstbauer",
+   "der Ackerbau",
+   "der Weinbau",
+   "bauen"
+  ],
+  "ety": "Obst < 中古高地德语 obez < 古高地德语 obaz；Bau 来自 bauen（古义“耕种、居住”）。",
+  "cog": "英 fruit growing（意译对应）",
+  "tip": "Obst 发音 [oːpst]，长 o。Bau 在 Ackerbau、Obstbau 中指“种植”，不是“建筑”。"
+ },
+ {
+  "w": "Onlinehändler",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Onlinehändler",
+  "gs": "des Onlinehändlers",
+  "ipa": "ˈɔnlaɪ̯nˌhɛndlɐ",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "网店，电商；网络零售商",
+    "de": "Händler, der Waren über das Internet verkauft",
+    "ex": [
+     {
+      "de": "Viele kleine Läden leiden unter der Konkurrenz großer Onlinehändler.",
+      "zh": "许多小商店饱受大型电商竞争之苦。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "beim Onlinehändler bestellen — 在网店下单",
+   "der Online-Handel — 网络零售",
+   "auch: Online-Händler — 亦可加连字符"
+  ],
+  "root": "Online·händler：online（在线）+ Händler（商人，来自 handeln）",
+  "fam": [
+   "der Handel",
+   "handeln",
+   "der Händler",
+   "der Einzelhändler",
+   "der Onlineshop"
+  ],
+  "ety": "online 借自英语；Händler 来自 handeln（经营、交易）< 古高地德语 hantalōn（用手操作）。",
+  "cog": "英 online retailer",
+  "tip": "阴性 Onlinehändlerin；指公司时一般用阳性 der Onlinehändler。"
+ },
+ {
+  "w": "Panzerung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Panzerungen",
+  "gs": "der Panzerung",
+  "ipa": "ˈpant͡səʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "装甲，防护钢板；装甲防护",
+    "de": "Schutzschicht aus Stahl o. Ä. (an Fahrzeugen, Schiffen, Türen)",
+    "ex": [
+     {
+      "de": "Die Panzerung des Fahrzeugs hält Gewehrschüssen stand.",
+      "zh": "该车的装甲能抵御步枪射击。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine schusssichere Panzerung — 防弹装甲",
+   "mit Panzerung versehen — 加装装甲",
+   "gepanzert — 装甲的"
+  ],
+  "root": "Panzer·ung：Panzer（铠甲；坦克）+ -ung",
+  "fam": [
+   "der Panzer",
+   "panzern",
+   "gepanzert",
+   "der Schützenpanzer"
+  ],
+  "ety": "Panzer < 中古高地德语 panzier（护胸甲），借自古法语 pancier(e)，源于拉丁语 pantex（腹部）。",
+  "cog": "意 panciera（护腹甲）",
+  "tip": "Panzer 既是“铠甲、甲壳”也是“坦克”；Panzerung 只指防护层本身。"
+ },
+ {
+  "w": "Paralleluniversum",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Paralleluniversen",
+  "gs": "des Paralleluniversums",
+  "ipa": "paʁaˈleːlʔuniˌvɛʁzʊm",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "平行宇宙",
+    "de": "hypothetisches anderes Universum neben dem unseren",
+    "ex": [
+     {
+      "de": "Der Roman spielt in einem Paralleluniversum.",
+      "zh": "这部小说的故事发生在一个平行宇宙中。"
+     }
+    ]
+   },
+   {
+    "zh": "（喻）与现实脱节的小圈子/封闭世界",
+    "de": "übertr.: abgeschottete Welt mit eigener Wahrnehmung",
+    "ex": [
+     {
+      "de": "Manche Politiker scheinen in einem Paralleluniversum zu leben.",
+      "zh": "有些政客似乎生活在一个平行世界里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in einem Paralleluniversum leben — （喻）活在自己的世界里，脱离现实"
+  ],
+  "root": "Parallel·universum：parallel（平行的）+ Universum（宇宙）",
+  "fam": [
+   "parallel",
+   "die Parallele",
+   "das Universum",
+   "die Parallelgesellschaft"
+  ],
+  "ety": "parallel 经拉丁语 parallelus 借自希腊语 parállēlos（彼此并排的）；Universum 借自拉丁语 universum（整体，宇宙）。",
+  "cog": "英 parallel universe",
+  "tip": "复数 -um → -en：Universen。"
+ },
+ {
+  "w": "Parteipolitik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Parteipolitik",
+  "ipa": "paʁˈtaɪ̯poliˌtiːk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "政党政治；党派利益考量（常带贬义）",
+    "de": "Politik einer Partei; Handeln nach Parteiinteressen statt Sachfragen",
+    "ex": [
+     {
+      "de": "Bei der Rentenreform sollte nicht Parteipolitik im Vordergrund stehen.",
+      "zh": "养老金改革不应以党派利益为先。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "aus parteipolitischen Gründen — 出于党派政治原因",
+   "parteipolitisch motiviert — 出于党派动机的",
+   "Parteipolitik betreiben — 搞党派政治"
+  ],
+  "root": "Partei·politik：Partei（政党）+ Politik（政治）",
+  "fam": [
+   "die Partei",
+   "parteipolitisch",
+   "überparteilich",
+   "die Politik"
+  ],
+  "ety": "Partei 借自法语 partie（部分、一方），源于拉丁语 partire（分）；Politik 经法语 politique 借自希腊语 politikḗ（城邦事务）。",
+  "cog": "英 party politics",
+  "tip": "常带贬义，暗指为党派利益而非实际问题服务；反义 überparteilich（超党派的）。"
+ },
+ {
+  "w": "Pelikan",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Pelikane",
+  "gs": "des Pelikans",
+  "ipa": "ˈpeːlikaːn",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "鹈鹕",
+    "de": "großer Wasservogel mit dehnbarem Kehlsack am Schnabel",
+    "ex": [
+     {
+      "de": "Pelikane fangen Fische mit ihrem großen Kehlsack.",
+      "zh": "鹈鹕用它们的大喉囊捕鱼。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Schwarm Pelikane — 一群鹈鹕"
+  ],
+  "root": "Pelikan：借词，源自希腊语 pelekán",
+  "fam": [
+   "der Vogel",
+   "der Wasservogel"
+  ],
+  "ety": "中古高地德语 pelikān，经拉丁语 pelecanus 借自希腊语 pelekán；一说与 pélekys（斧头）有关，指其喙。",
+  "cog": "英 pelican；法 pélican",
+  "tip": "Duden 读音以首音节重读 [ˈpeːlikaːn] 为主，也可读 [peliˈkaːn]。"
+ },
+ {
+  "w": "Pflegefall",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Pflegefälle",
+  "gs": "des Pflegefall(e)s",
+  "ipa": "ˈpfleːɡəˌfal",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "需长期护理的人，失能者",
+    "de": "Person, die dauerhaft auf Pflege angewiesen ist",
+    "ex": [
+     {
+      "de": "Nach dem Schlaganfall wurde ihr Vater zum Pflegefall.",
+      "zh": "中风之后她父亲成了需要长期护理的人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Pflegefall werden — 变得需要长期护理",
+   "im Pflegefall — 在需要护理的情况下（保险用语）",
+   "die Pflegeversicherung — 护理保险"
+  ],
+  "root": "Pflege·fall：Pflege（护理）+ Fall（情况、个案）",
+  "fam": [
+   "pflegen",
+   "die Pflege",
+   "der Pflegegrad",
+   "die Pflegekraft"
+  ],
+  "ety": "透明复合词：pflegen < 古高地德语 pflegan（照料、负责）；Fall < 古高地德语 fal。",
+  "cog": "英 care case（意译对应）",
+  "tip": "指人时略显冷冰冰的行政用语；当面宜说 pflegebedürftig sein。"
+ },
+ {
+  "w": "Pfründe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Pfründen",
+  "gs": "der Pfründe",
+  "ipa": "ˈpfʁʏndə",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（教会的）圣职俸禄",
+    "de": "kirchliches Amt mit festen Einkünften",
+    "ex": [
+     {
+      "de": "Im Mittelalter vergaben Fürsten Pfründen an ihre Günstlinge.",
+      "zh": "中世纪诸侯把圣职俸禄分给宠臣。"
+     }
+    ]
+   },
+   {
+    "zh": "（贬）肥缺，既得利益",
+    "de": "abwertend: einträglicher Posten ohne viel Arbeit; Privilegien",
+    "ex": [
+     {
+      "de": "Die Funktionäre wollen ihre Pfründen nicht aufgeben.",
+      "zh": "那些官员不愿放弃自己的既得利益。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "seine Pfründen sichern / verteidigen — 保住/捍卫自己的既得利益",
+   "um Pfründen kämpfen — 争夺肥缺"
+  ],
+  "root": "Pfründe：借词，源自中古拉丁语 provenda（供给、俸禄）",
+  "fam": [
+   "der Pfründner"
+  ],
+  "ety": "中古高地德语 pfrüende < 古高地德语 pfruonta，借自中古拉丁语 provenda（由 praebenda“应提供之物”演变而来）。",
+  "cog": "英 prebend, provender（同源借词）",
+  "tip": "今天多用复数、贬义，指政治或经济上的“既得利益、肥缺”。"
+ },
+ {
+  "w": "Politikum",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Politika",
+  "gs": "des Politikums",
+  "ipa": "poˈliːtikʊm",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "政治性事件，具有政治意义（或引发政治争议）的事",
+    "de": "Angelegenheit von politischer Bedeutung, die politische Auseinandersetzungen auslöst",
+    "ex": [
+     {
+      "de": "Die Schließung des Werks ist längst zum Politikum geworden.",
+      "zh": "关闭这座工厂早已成了一个政治议题。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Politikum werden — 演变成政治问题",
+   "ein Politikum ersten Ranges — 头等政治事件"
+  ],
+  "root": "Politik·um：Politik + 拉丁中性词尾 -um → “政治性的东西”",
+  "fam": [
+   "die Politik",
+   "politisch",
+   "der Politiker",
+   "politisieren"
+  ],
+  "ety": "新拉丁语式构词，源于拉丁语 politicus（政治的）的中性形式，后者借自希腊语 politikós。",
+  "cog": "—",
+  "tip": "重音在第二音节 po·LI·ti·kum；复数 Politika 极少用。"
+ },
+ {
+  "w": "Polyp",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Polypen",
+  "gs": "des Polypen",
+  "ipa": "poˈlyːp",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（医）息肉；（口，多用复数）腺样体肥大",
+    "de": "Med.: gutartige Wucherung der Schleimhaut; ugs. Pl.: vergrößerte Rachenmandel",
+    "ex": [
+     {
+      "de": "Bei der Darmspiegelung wurden zwei Polypen entfernt.",
+      "zh": "肠镜检查时切除了两个息肉。"
+     }
+    ]
+   },
+   {
+    "zh": "（动）水螅体，珊瑚虫",
+    "de": "Zool.: festsitzende Form der Nesseltiere",
+    "ex": [
+     {
+      "de": "Korallenriffe werden von winzigen Polypen aufgebaut.",
+      "zh": "珊瑚礁是由微小的珊瑚虫构建的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Polypen im Darm / in der Nase — 肠息肉/鼻息肉",
+   "Polypen entfernen lassen — 做息肉切除"
+  ],
+  "root": "Poly·p：希腊 polýpous（多足的）：polýs（多）+ poús（脚）",
+  "fam": [
+   "die Polypenentfernung",
+   "der Oktopus",
+   "polypös"
+  ],
+  "ety": "经拉丁语 polypus 借自希腊语 polýpous（多足的；章鱼）；医学义因息肉形状似触手而来。",
+  "cog": "英 polyp, octopus（-pus 同为“脚”）",
+  "tip": "弱变化名词：des/dem/den Polypen。旧时俗语也用来指“警察”，今已罕见。"
+ }
+]

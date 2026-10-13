@@ -11,3 +11,5 @@ Expansion to 23000 (user 2026-10-12 22:29 UTC: 扩展到23000): paced ~1000/roun
 Round A DONE 22:51 UTC 2026-10-12: 21086 entries (v33). Next round B via send_later 03:35 UTC 10-13.
 Round B (start 03:36 UTC 2026-10-13, scheduled): batches 423–442. STOP_AFTER=442.
 Round B DONE 03:57 UTC 2026-10-13: 22082 entries (v34). Round C via send_later 08:36 UTC.
+Round C FINAL (start 08:37 UTC 2026-10-13, scheduled): batches 443–462 (+more if build < 23000). STOP_AFTER=462.
+Round C DONE 08:59 UTC 2026-10-13: 23074 entries (v35). Expansion to 23000 FINISHED; no further rounds. Full JSON 25.57 MB (limit 26.21 MB).
