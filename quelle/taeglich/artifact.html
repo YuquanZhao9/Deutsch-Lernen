@@ -683,22 +683,24 @@ function initRev() {
   if (S.wmode == null && d.lemmas.length) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : !quizOk(d) ? 'quiz' : done < n ? 'rev' : 'new'; }
 }
 const wmode = () => { const d = S.day; if (S.wmode === 'quiz' && d && d.lemmas.length) return 'quiz'; return (d && d.review || []).length && S.wmode === 'rev' ? 'rev' : 'new'; };
+let cardsLoading = null;
 async function ensureCards() {
   // the full card of a review word lives in that day's shared content; fetch each day once
   const R = (S.day && S.day.review) || [];
   const need = [...new Set(R.map(r => r.d))].filter(d => !(d in S.cards));
-  if (!need.length || !S.db) return;
+  if (!need.length || !S.db) return cardsLoading;
   need.forEach(d => { S.cards[d] = undefined; });
-  await Promise.all(need.map(async d => {
+  const p = Promise.all(need.map(async d => {
     try { const x = await S.db.doc('content/' + d).get(); S.cards[d] = x.exists ? (x.data().words || []) : []; }
     catch (e) { S.cards[d] = false; }
   }));
-  if (S.view === 'words' && wmode() === 'rev') render();
+  cardsLoading = p; await p; if (cardsLoading === p) cardsLoading = null;
+  if (S.view === 'words' && (wmode() === 'rev' || wmode() === 'quiz')) render();
 }
-async function rmark(j, m) {
+async function rmark(j, m, quiet) {
   const d = S.day, r = (d.review || [])[j]; if (!r) return;
-  d.rmarks = { ...(d.rmarks || {}), [j]: m }; d.rpos = j;
-  save(S.dayRef, { rmarks: { [j]: m }, rpos: j });
+  d.rmarks = { ...(d.rmarks || {}), [j]: m }; if (!quiet) d.rpos = j;
+  save(S.dayRef, quiet ? { rmarks: { [j]: m } } : { rmarks: { [j]: m }, rpos: j });
   if (S.profileRef) {
     const t = today(), doc = await srsDoc(r.d);
     const it = doc.items[r.i] || { l: r.l, g: r.g, L: 0, due: t, n: 0, x: 0 };
@@ -714,7 +716,7 @@ async function rmark(j, m) {
     }
   }
   syncCal();
-  render();
+  if (!quiet) render();
 }
 function rgo(j) {
   const n = (S.day.review || []).length, nj = Math.max(0, Math.min(n, j));
@@ -1125,7 +1127,7 @@ function wseg() {
   const d = S.day, R = d.review || [], nl = d.lemmas.length; if (!nl) return '';
   const mode = wmode(), nm = Math.min(Object.keys(d.marks || {}).length, nl), rm = Object.keys(d.rmarks || {}).length, q = d.quiz;
   const tabs = [`<button role="tab" data-wmode="new" aria-selected="${mode === 'new'}">新词 ${nm}/${nl}</button>`,
-    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">过关 ${quizOk(d) ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n : quizPool(d).length)}</button>`];
+    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">过关 ${quizOk(d) ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n : quizPool(d).length + revLeft(d))}</button>`];
   if (R.length) tabs.push(`<button role="tab" data-wmode="rev" aria-selected="${mode === 'rev'}">复习 ${rm}/${R.length}</button>`);
   return `<div class="rseg wseg" role="tablist" aria-label="新词、过关和复习" style="grid-template-columns:repeat(${tabs.length},minmax(0,1fr))">${tabs.join('')}</div>`;
 }
@@ -1215,7 +1217,7 @@ function vReviewDone() {
   const left = R.length - c.k.length - c.f.length - c.u.length, newLeft = d.lemmas.length - Object.keys(d.marks || {}).length;
   const graded = d.grading && !d.grading.pending;
   const pills = arr => arr.map(j => { const r = R[j], w = S.cards[r.d] && S.cards[r.d][r.i]; return `<button class="wpill ${rm[j]}" data-rgo="${j}">${esc(r.l)}${w && w.meaning ? ' · ' + esc(String(w.meaning).split(/[；;，,]/)[0]) : ''}</button>`; }).join('');
-  const cta = newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续学新词（还剩 ${newLeft} 个）</button>` : !(d.quiz && d.quiz.done) ? `<button class="btn primary" data-wmode="quiz">去复习过关</button>` : graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`;
+  const cta = newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续学新词（还剩 ${newLeft} 个）</button>` : !quizOk(d) ? `<button class="btn primary" data-wmode="quiz">去复习过关</button>` : graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`;
   return `<div class="view">${dateBar()}
     <div class="head"><div><h1>${left ? '还有 ' + left + ' 个复习词没选' : esc(dayName()) + '的复习完成了'}</h1></div>${cta}</div>${wseg()}
     ${progBar(rm, R.length, REVL)}
@@ -1259,11 +1261,22 @@ const deLabel = (w, l) => { const g = artCls(w && w.gender); return (g ? g + ' '
 const posGroup = p => /名词/.test(p || '') ? 'n' : /动词/.test(p || '') ? 'v' : 'o';
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 let qa = null, qOpts = null, qPlayed = null, qTimer = null, qTyped = '';
-// 过关 only asks the words that were not marked 认识 (unmarked words count as not known yet)
+// 过关 asks today's new words that were not marked 认识 (unmarked words count as not known yet)
+// plus the earlier words due for review today that were not already marked 记得 in 复习.
+// A quiz item is { i, t } for today's word i, or { r, t } for review word r (index in d.review).
+const qkey = it => it.r != null ? 'r' + it.r : String(it.i);
+function qword(d, it) {
+  if (it.r != null) { const r = (d.review || [])[it.r]; if (!r) return null; const cs = S.cards[r.d], w = cs ? cs[r.i] : null; return w ? { w, l: r.l, r } : null; }
+  const w = d.words[it.i]; return w ? { w, l: d.lemmas[it.i] } : null;
+}
 const quizPool = d => d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortMean(d.words[i]) && d.marks[i] !== 'k');
+const revPool = d => (d.review || []).map((r, j) => j).filter(j => (d.rmarks || {})[j] !== 'k' && (x => x && shortMean(x.w))(qword(d, { r: j })));
+const revLeft = d => (d.review || []).filter((r, j) => (d.rmarks || {})[j] !== 'k').length;
 const allMarked = d => Object.keys(d.marks || {}).length >= d.lemmas.length;
-const quizOk = d => !!(d.quiz && d.quiz.done) || (allMarked(d) && !quizPool(d).length);
-// rounds started before this rule asked every word: drop the 认识 words that were not answered wrong
+// a round from before review words were part of 过关 still needs today's review words added
+const quizStale = d => !!(d.quiz && !d.quiz.rv && d.date === today() && revLeft(d) > 0);
+const quizOk = d => d.quiz ? !!d.quiz.done && !quizStale(d) : allMarked(d) && !quizPool(d).length && !revLeft(d);
+// rounds started before 认识 words were left out asked every word: drop the 认识 words that were not answered wrong
 function quizTrim(d) {
   const q = d && d.quiz; if (!q || q.sel || !Array.isArray(q.items)) return;
   q.sel = 1;
@@ -1276,59 +1289,101 @@ function quizTrim(d) {
   }
   if (S.dayRef && S.day === d) save(S.dayRef, { quiz: q });
 }
-function quizNew(d) {
-  const idx = shuffle(quizPool(d));
-  const items = idx.map((i, k) => {
-    let t = ['de', 'zh', 'ls', 'sp'][k % 4];
-    if (t === 'sp' && !spellable((d.words[i] && d.words[i].word) || d.lemmas[i])) t = 'zh';
-    if (t === 'ls' && !canSpeak()) t = 'de';
-    return { i, t };
+function qtypes(d, list, from) {
+  return list.map((x, k) => {
+    const qw = qword(d, x); let t = ['de', 'zh', 'ls', 'sp'][(k + from) % 4];
+    if (t === 'sp' && !spellable((qw && qw.w.word) || (qw && qw.l))) t = 'zh';
+    if (t === 'ls' && (!canSpeak() || (d.quiz && d.quiz.nols))) t = 'de';
+    return { ...x, t };
   });
-  return { items, k: 0, pass: {}, miss: {}, done: !items.length, n: idx.length, sel: 1 };
 }
-function quizStart() {
+function quizNew(d) {
+  const items = qtypes(d, shuffle(quizPool(d).map(i => ({ i })).concat(revPool(d).map(r => ({ r })))), 0);
+  return { items, k: 0, pass: {}, miss: {}, done: !items.length, n: items.length, sel: 1, rv: 1 };
+}
+// add today's review words to a round that was started without them (they go after the words still waiting)
+function quizAddRev(d) {
+  const q = d.quiz; if (!q || q.rv) return;
+  const add = qtypes(d, shuffle(revPool(d).map(r => ({ r }))), q.items.length);
+  q.rv = 1;
+  if (add.length) { q.items = q.items.concat(add); q.n += add.length; q.done = false; }
+  if (S.dayRef && S.day === d) save(S.dayRef, { quiz: q });
+}
+async function quizReady(d) {
+  // today's review list and the cards of the review words have to be there before a round is built
+  if (d.date === today()) { try { await buildReview(); } catch (e) {} }
+  try { await ensureCards(); } catch (e) {}
+}
+async function quizStart() {
   const d = S.day; if (!d || !d.lemmas.length) return;
   qa = null; qOpts = null; qPlayed = null; qTyped = ''; clearTimeout(qTimer);
+  S.qBusy = true; S.wmode = 'quiz'; render();
+  await quizReady(d);
+  S.qBusy = false; if (S.day !== d) return;
   const fresh = quizNew(d);
   if (d.quiz) save(S.dayRef, { quiz: null }); // clear the old round first so no old answers get merged into the new one
   d.quiz = fresh; save(S.dayRef, { quiz: fresh });
   S.wmode = 'quiz'; syncCal(); render(); window.scrollTo({ top: 0 });
 }
-function quizOpts(d, it) {
+function qcands(d) {
+  const out = [];
+  d.lemmas.forEach((l, j) => { const w = d.words[j]; if (w && shortMean(w)) out.push({ key: String(j), w, l }); });
+  (d.review || []).forEach((r, j) => { const x = qword(d, { r: j }); if (x && shortMean(x.w)) out.push({ key: 'r' + j, w: x.w, l: x.l }); });
+  return out;
+}
+function quizOpts(d, it, me) {
   if (qOpts && qOpts.it === it) return qOpts.opts;
-  const w = d.words[it.i], gp = posGroup(w.pos), same = [], other = [];
-  d.lemmas.forEach((l, j) => {
-    const x = d.words[j]; if (j === it.i || !x || !shortMean(x)) return;
-    if (it.t === 'zh' ? fold(x.word || l) === fold(w.word || d.lemmas[it.i]) : shortMean(x) === shortMean(w)) return;
-    (posGroup(x.pos) === gp ? same : other).push(j);
+  const mk = qkey(it), gp = posGroup(me.w.pos), same = [], other = [], seen = new Set([it.t === 'zh' ? fold(me.w.word || me.l) : shortMean(me.w)]);
+  shuffle(qcands(d)).forEach(c => {
+    if (c.key === mk) return;
+    const lab = it.t === 'zh' ? fold(c.w.word || c.l) : shortMean(c.w); if (seen.has(lab)) return; seen.add(lab);
+    (posGroup(c.w.pos) === gp ? same : other).push(c);
   });
-  const pick = shuffle(same).slice(0, 3); if (pick.length < 3) pick.push(...shuffle(other).slice(0, 3 - pick.length));
-  qOpts = { it, opts: shuffle(pick.concat(it.i)) };
+  const pick = same.slice(0, 3); if (pick.length < 3) pick.push(...other.slice(0, 3 - pick.length));
+  qOpts = { it, opts: shuffle(pick.concat({ key: mk, w: me.w, l: me.l })) };
   return qOpts.opts;
+}
+// a new word missed in 过关 comes back tomorrow (unless the review schedule already took it over)
+async function srsMiss(date, i, l, g) {
+  if (!S.profileRef) return;
+  const doc = await srsDoc(date), it = doc.items[i], due = addDays(today(), LADDER[0]);
+  if (it && (it.n > 0 || (it.L === 0 && it.due <= due))) return;
+  doc.items[i] = { ...(it || { l, g: g || null, n: 0, x: 0 }), L: 0, due };
+  srsPut(date, i);
 }
 function quizAnswer(ok, pick, typed) {
   const d = S.day, q = d && d.quiz; if (!q || qa || q.done) return;
   const it = q.items[q.k]; if (!it) return;
-  const w = d.words[it.i];
-  if (ok) q.pass[it.i] = 1;
-  else {
-    q.miss[it.i] = (q.miss[it.i] || 0) + 1;
+  const me = qword(d, it); if (!me) return;
+  const w = me.w, key = qkey(it);
+  if (ok) {
+    q.pass[key] = 1;
+    // an earlier word answered right at the first try counts as 记得 in today's review
+    if (it.r != null && !(d.rmarks || {})[it.r]) rmark(it.r, 'k', true);
+  } else {
+    q.miss[key] = (q.miss[key] || 0) + 1;
     let t = it.t === 'sp' ? 'sp' : ({ de: 'zh', zh: 'ls', ls: 'de' })[it.t];
     if (t === 'ls' && (!canSpeak() || q.nols)) t = 'de';
-    q.items.splice(Math.min(q.items.length, q.k + 4), 0, { i: it.i, t });
-    // a word missed in 过关 goes into the wordbook (unless it is already there)
-    const key = bookKey(d.lemmas[it.i]);
-    if (S.profileRef && w && key && !S.book.some(b => b.id === key)) {
-      const entry = { word: w, mark: 'f', date: d.date, added: Date.now() };
-      save(S.profileRef.collection('wordbook').doc(key), entry, true);
-      S.book = [{ id: key, ...entry }].concat(S.book);
+    q.items.splice(Math.min(q.items.length, q.k + 4), 0, it.r != null ? { r: it.r, t } : { i: it.i, t });
+    if (it.r != null) {
+      // an earlier word answered wrong counts as 忘了: it comes back tomorrow and goes into the wordbook
+      if ((d.rmarks || {})[it.r] !== 'u') rmark(it.r, 'u', true);
+    } else {
+      srsMiss(d.date, it.i, d.lemmas[it.i], artCls(w.gender));
+      // a word missed in 过关 goes into the wordbook (unless it is already there)
+      const bk = bookKey(d.lemmas[it.i]);
+      if (S.profileRef && bk && !S.book.some(b => b.id === bk)) {
+        const entry = { word: w, mark: 'f', date: d.date, added: Date.now() };
+        save(S.profileRef.collection('wordbook').doc(bk), entry, true);
+        S.book = [{ id: bk, ...entry }].concat(S.book);
+      }
     }
   }
   q.k++; q.done = q.k >= q.items.length;
   qa = { it, ok, pick, typed }; qTyped = '';
   save(S.dayRef, { quiz: q });
   if (q.done) syncCal();
-  if ((it.t === 'zh' || it.t === 'sp') && autoSpeakOn()) speak(deLabel(w, d.lemmas[it.i]), false); // 看德语 and 听发音 were already heard
+  if ((it.t === 'zh' || it.t === 'sp') && autoSpeakOn()) speak(deLabel(w, me.l), false); // 看德语 and 听发音 were already heard
   render();
   clearTimeout(qTimer);
   if (ok) qTimer = setTimeout(() => { if (qa && qa.it === it && S.view === 'words' && wmode() === 'quiz') quizNext(); }, 1100);
@@ -1339,34 +1394,48 @@ function quizNoListen() {
   qPlayed = null; qOpts = null; save(S.dayRef, { quiz: q }); render();
 }
 function quizNext() { clearTimeout(qTimer); if (!qa) return; qa = null; render(); }
-function quizPlay() { const d = S.day, q = d && d.quiz, it = q && (qa ? qa.it : q.items[q.k]); if (it) speak(deLabel(d.words[it.i], d.lemmas[it.i])); }
+function quizPlay() { const d = S.day, q = d && d.quiz, it = q && (qa ? qa.it : q.items[q.k]), me = it && qword(d, it); if (me) speak(deLabel(me.w, me.l)); }
 function quizAfterRender(hadFocus) {
   const d = S.day, q = d && d.quiz; if (!q || qa || q.done) return;
-  const it = q.items[q.k]; if (!it) return;
+  const it = q.items[q.k], me = it && qword(d, it); if (!me) return;
   const inp = $('#qin');
   if (inp && (hadFocus || qPlayed !== it)) { inp.focus({ preventScroll: true }); const n = inp.value.length; try { inp.setSelectionRange(n, n); } catch (e) {} }
   if (qPlayed === it) return; qPlayed = it;
-  if (userActed && (it.t === 'ls' || (it.t === 'de' && autoSpeakOn()))) speak(deLabel(d.words[it.i], d.lemmas[it.i]), it.t === 'ls' ? undefined : false);
+  if (userActed && (it.t === 'ls' || (it.t === 'de' && autoSpeakOn()))) speak(deLabel(me.w, me.l), it.t === 'ls' ? undefined : false);
 }
 const PLAY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>';
 function vQuiz() {
   const d = S.day, n = d.lemmas.length, q = d.quiz;
   const newLeft = n - Object.keys(d.marks || {}).length;
   const head = `<div class="head hm"><div><h1>${esc(dayName())}复习过关</h1></div></div>`;
-  const pool = quizPool(d), kn = d.lemmas.filter((l, i) => d.marks[i] === 'k').length;
-  if ((!q || (q.done && !q.n)) && !pool.length && allMarked(d)) return `<div class="view">${dateBar()}${head}${wseg()}
+  const wait = msg => `<div class="view">${dateBar()}${head}${wseg()}<div class="qz"><div class="qcard"><p><span class="spin"></span>${msg}</p></div></div></div>`;
+  if (S.qBusy) return wait('正在准备题目，把今天该复习的旧词也放进来…');
+  if (quizStale(d)) {
+    if (Array.isArray(d.review) && d.review.every(r => S.cards[r.d] !== undefined)) quizAddRev(d);
+    else { quizReady(d).then(() => { if (S.view === 'words' && wmode() === 'quiz') render(); }); return wait('正在把今天该复习的旧词加进这一轮…'); }
+  }
+  const pool = quizPool(d), kn = d.lemmas.filter((l, i) => d.marks[i] === 'k').length, rl = revLeft(d);
+  if ((!q || (q.done && !q.n)) && !pool.length && !rl && allMarked(d)) return `<div class="view">${dateBar()}${head}${wseg()}
     <div class="qz"><div class="qcard"><h2>${esc(dayName())}的 ${n} 个词你都标了“认识”</h2>
-      <p>过关只考没记牢的词，这次没有要考的，算作已经过关。</p>
+      <p>过关只考没记牢的词和该复习的旧词，这次没有要考的，算作已经过关。</p>
       <div class="qrow">${d.grading && !d.grading.pending ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`}<button class="btn" data-wmode="new">回看新词</button></div></div></div></div>`;
   if (!q) return `<div class="view">${dateBar()}${head}${wseg()}
-    <div class="qz"><div class="qcard"><h2>把${esc(dayName())}没记牢的 ${pool.length} 个词再过一遍</h2>
-      <p>像百词斩一样，只考你选了“模糊”和“不认识”的词${kn ? `（标了“认识”的 ${kn} 个词不考）` : ''}。每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。答错的词会自动收进生词本。</p>
+    <div class="qz"><div class="qcard"><h2>${rl ? `把 ${pool.length} 个新词和 ${rl} 个旧词再过一遍` : `把${esc(dayName())}没记牢的 ${pool.length} 个词再过一遍`}</h2>
+      <p>像百词斩一样，考你选了“模糊”和“不认识”的新词${kn ? `（标了“认识”的 ${kn} 个不考）` : ''}${rl ? `，还有之前学过、按记忆曲线今天该复习的 ${rl} 个旧词` : ''}。每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。</p>
+      <p>答错的词会收进生词本，并且明天再考；旧词一次答对，下次复习的间隔就拉长。</p>
       ${newLeft > 0 ? `<p class="sub">还有 ${newLeft} 个新词没看，没看的词也会考，建议先看完再来过关。</p>` : ''}
       ${d.date >= QUIZ_FROM ? '<p class="sub">过关也算在每天的打卡里。</p>' : ''}
       <div class="qrow"><button class="btn primary" data-act="quiz-start">开始过关</button>${newLeft > 0 ? '<button class="btn" data-wmode="new">先看新词</button>' : ''}</div></div></div></div>`;
   if (q.done && !qa) return vQuizDone();
-  const it = qa ? qa.it : q.items[q.k], w = d.words[it.i], l = d.lemmas[it.i], g = artCls(w.gender);
+  const it = qa ? qa.it : q.items[q.k], me = qword(d, it);
+  if (!me) {
+    if (it.r != null && (d.review || [])[it.r] && S.cards[d.review[it.r].d] === undefined) { ensureCards(); return wait('正在载入这个旧词…'); }
+    // the card of this word cannot be loaded: let it pass so the round can go on
+    q.pass[qkey(it)] = 1; q.k++; q.done = q.k >= q.items.length; save(S.dayRef, { quiz: q }); return vQuiz();
+  }
+  const w = me.w, l = me.l, g = artCls(w.gender), key = qkey(it);
   const passed = Object.keys(q.pass).length, missN = Object.values(q.miss).reduce((a, b) => a + b, 0);
+  const tag = it.r != null ? `旧词 · ${esc(fmtShort(me.r.d))}学的` : '';
   let prompt = '', body = '';
   if (it.t === 'de') prompt = `<div class="qprompt">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="qword" lang="de">${esc(w.word || l)}</span><button class="speak" data-speak="${esc(deLabel(w, l))}" aria-label="朗读">${PLAY}</button></div>`;
   else if (it.t === 'ls') prompt = `<div class="qprompt" style="justify-content:center"><button class="qplay" data-act="quiz-play" aria-label="再听一遍">${PLAY}</button></div><p class="sub" style="text-align:center">点黄色按钮可以再听一遍<br><button class="qlink" data-act="quiz-nols">现在听不了？换成看词选意思</button></p>`;
@@ -1378,16 +1447,16 @@ function vQuiz() {
       <div class="qrow umls">${['ä', 'ö', 'ü', 'ß'].map(c => `<button type="button" data-qins="${c}">${c}</button>`).join('')}</div>
       <div class="qrow"><button class="btn primary" type="submit">确定</button><button class="btn" type="button" data-act="quiz-giveup">不会，看答案</button></div></form>`;
   } else {
-    const opts = quizOpts(d, it), de = it.t === 'zh';
-    body = `<div class="qopts">${opts.map((j, x) => {
-      const cls = qa ? (j === it.i ? 'right' : qa.pick === j ? 'wrong' : '') : '';
-      return `<button class="qopt ${cls}" data-qpick="${j}" ${de ? 'lang="de"' : ''} ${qa ? 'disabled' : ''}><span class="qk">${x + 1}</span><span>${esc(de ? deLabel(d.words[j], d.lemmas[j]) : shortMean(d.words[j]))}</span></button>`;
+    const opts = quizOpts(d, it, me), de = it.t === 'zh';
+    body = `<div class="qopts">${opts.map((c, x) => {
+      const cls = qa ? (c.key === key ? 'right' : qa.pick === c.key ? 'wrong' : '') : '';
+      return `<button class="qopt ${cls}" data-qpick="${esc(c.key)}" ${de ? 'lang="de"' : ''} ${qa ? 'disabled' : ''}><span class="qk">${x + 1}</span><span>${esc(de ? deLabel(c.w, c.l) : shortMean(c.w))}</span></button>`;
     }).join('')}</div>`;
   }
   let fb = '';
   if (qa) {
     const ex = (w.examples || [])[0], typedOk = qa.ok && qa.typed != null && fold(qa.typed) === fold(w.word || l) && bare(String(qa.typed).trim().replace(/^(der|die|das)\s+/i, '')) !== bare(w.word || l);
-    fb = `<div class="qfb ${qa.ok ? '' : 'bad'}"><b>${qa.ok ? '✓ 答对了' : '✗ 答错了，过几题会换个题型再考一次'}</b>
+    fb = `<div class="qfb ${qa.ok ? '' : 'bad'}"><b>${qa.ok ? '✓ 答对了' : '✗ 答错了，过几题会换个题型再考一次，明天也会再出现'}</b>
       ${!qa.ok && qa.typed != null && String(qa.typed).trim() ? `<span class="muted">你写的是：<s>${esc(qa.typed)}</s></span>` : ''}
       ${typedOk ? `<span class="muted">算对了，标准写法是 ${esc(bare(w.word || l))}${g ? '（名词首字母大写）' : ''}。</span>` : ''}
       <div class="qrev">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="w" lang="de">${esc(w.word || l)}</span><button class="speak" data-speak="${esc(deLabel(w, l))}" aria-label="朗读">${PLAY}</button><span class="m">${esc(w.meaning || '')}</span></div>
@@ -1396,22 +1465,26 @@ function vQuiz() {
   }
   return `<div class="view">${dateBar()}${head}${wseg()}
     <div class="prog"><span>过关 ${passed} / ${q.n}</span><div class="qbar"><i style="width:${q.n ? passed / q.n * 100 : 0}%"></i></div><span>答错 ${missN} 次</span></div>
-    <div class="qz"><div class="qcard"><div class="qtype"><span>${QT[it.t]}</span><span>${q.miss[it.i] && !qa ? '再考一次' : ''}</span></div>
+    <div class="qz"><div class="qcard"><div class="qtype"><span>${QT[it.t]}</span><span>${[q.miss[key] && !qa ? '再考一次' : '', tag].filter(Boolean).join(' · ')}</span></div>
       ${prompt}${body}${fb}
       ${!qa && it.t !== 'sp' ? '<span class="kbd only-d">键盘：1–4 选择</span>' : ''}</div></div></div>`;
 }
 function vQuizDone() {
   const d = S.day, q = d.quiz, n = q.n, miss = q.miss || {};
-  const missed = Object.keys(miss).map(Number).sort((a, b) => (miss[b] - miss[a]) || a - b), total = Object.values(miss).reduce((a, b) => a + b, 0);
+  const missed = Object.keys(miss).sort((a, b) => (miss[b] - miss[a]) || (a > b) - (a < b)), total = Object.values(miss).reduce((a, b) => a + b, 0);
+  const nOld = new Set(q.items.filter(it => it.r != null).map(it => it.r)).size;
   const graded = d.grading && !d.grading.pending, R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length, newLeft = d.lemmas.length - Object.keys(d.marks || {}).length;
   const btns = [newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续看新词（还剩 ${newLeft} 个）</button>` : '',
     rleft > 0 ? `<button class="btn ${newLeft > 0 ? '' : 'primary'}" data-wmode="rev">开始复习（${rleft} 个）</button>` : '',
     graded ? '' : `<button class="btn ${newLeft > 0 || rleft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`].join('');
-  const pills = missed.map(i => `<button class="wpill u" data-qgo="${i}">${esc(deLabel(d.words[i], d.lemmas[i]))} · ${esc(shortMean(d.words[i]))}${miss[i] > 1 ? ' ×' + miss[i] : ''}</button>`).join('');
+  const pills = missed.map(k => {
+    const it = k[0] === 'r' ? { r: Number(k.slice(1)) } : { i: Number(k) }, me = qword(d, it); if (!me) return '';
+    return `<button class="wpill u" ${it.r != null ? `data-qrgo="${it.r}"` : `data-qgo="${it.i}"`}>${esc(deLabel(me.w, me.l))} · ${esc(shortMean(me.w))}${it.r != null ? ' · 旧词' : ''}${miss[k] > 1 ? ' ×' + miss[k] : ''}</button>`;
+  }).join('');
   return `<div class="view">${dateBar()}
-    <div class="head"><div><h1>${esc(dayName())}过关了</h1><p class="sub">${n} 个没记牢的词全部答对。${missed.length ? `一次答对 ${n - missed.length} 个，另外 ${missed.length} 个答错过又补对了。` : '每个词都是一次答对。'}</p></div>${isDone(d.date) ? stamp(d.date, S.justDone) : btns ? `<div class="qrow">${btns}</div>` : ''}</div>${wseg()}
+    <div class="head"><div><h1>${esc(dayName())}过关了</h1><p class="sub">${n} 个词全部答对${nOld ? `（新词 ${n - nOld} 个，旧词 ${nOld} 个）` : ''}。${missed.length ? `一次答对 ${n - missed.length} 个，另外 ${missed.length} 个答错过又补对了，明天会再考。` : '每个词都是一次答对。'}</p></div>${isDone(d.date) ? stamp(d.date, S.justDone) : btns ? `<div class="qrow">${btns}</div>` : ''}</div>${wseg()}
     <div class="summary"><div class="stat k"><b>${n - missed.length}</b>一次答对</div><div class="stat f"><b>${missed.length}</b>答错后补对</div><div class="stat u"><b>${total}</b>总共答错</div></div>
-    ${missed.length ? `<section class="sec"><h3>答错过的词（已收进生词本，点开看讲解）</h3><div class="wlist">${pills}</div></section>` : ''}
+    ${missed.length ? `<section class="sec"><h3>答错过的词（已收进生词本，明天再考，点开看讲解）</h3><div class="wlist">${pills}</div></section>` : ''}
     <div class="qrow"><button class="btn" data-act="quiz-again">再过一遍</button>${isDone(d.date) && btns ? btns : ''}</div></div>`;
 }
 
@@ -1531,7 +1604,7 @@ function vSet() {
     <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会按你的水平提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，打开页面就能直接开始。如果打开时还没出好，可以点“现在就在页面里生成”。</p>
     <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
     <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
-    <p>看完当天的新词后还有“复习过关”：选了“模糊”和“不认识”的词各出一道题（看德语选意思、看中文选德语、听发音选意思、拼写），标了“认识”的词不考；答错的词过几题换个题型再考，全部答对才过关。从 10 月 14 日起，过关也算在打卡里。</p>
+    <p>看完当天的新词后还有“复习过关”：选了“模糊”和“不认识”的新词，加上按记忆曲线当天该复习的旧词，各出一道题（看德语选意思、看中文选德语、听发音选意思、拼写）；标了“认识”的新词和复习里选了“记得”的旧词不考。答错的词过几题换个题型再考，全部答对才过关，并且第二天还会再考；旧词一次答对就算“记得”，下次间隔拉长。从 10 月 14 日起，过关也算在打卡里。</p>
     <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
     <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
     <section class="sec"><h3>发音</h3><p>切换到下一个单词（新词和复习都算）时，自动用德语读一遍这个词，名词连冠词一起读。想再听就点单词旁边的喇叭。</p>
@@ -1769,7 +1842,8 @@ document.addEventListener('click', e => {
   if (t.dataset.date) { goDate(t.dataset.date); return; }
   if (t.dataset.month) { S.calMonth = t.dataset.month; render(); return; }
   if (t.dataset.speak) { speak(t.dataset.speak); return; }
-  if (t.dataset.qpick !== undefined) { const q = S.day && S.day.quiz, it = q && q.items[q.k]; if (it && !qa) quizAnswer(Number(t.dataset.qpick) === it.i, Number(t.dataset.qpick), null); return; }
+  if (t.dataset.qpick !== undefined) { const q = S.day && S.day.quiz, it = q && q.items[q.k]; if (it && !qa) quizAnswer(t.dataset.qpick === qkey(it), t.dataset.qpick, null); return; }
+  if (t.dataset.qrgo !== undefined) { S.wmode = 'rev'; rgo(Number(t.dataset.qrgo)); return; }
   if (t.dataset.qins) { const inp = $('#qin'); if (inp) { const a = inp.selectionStart ?? inp.value.length, b = inp.selectionEnd ?? a; inp.value = inp.value.slice(0, a) + t.dataset.qins + inp.value.slice(b); qTyped = inp.value; inp.focus(); inp.setSelectionRange(a + 1, a + 1); } return; }
   if (t.dataset.qgo !== undefined) { S.wmode = 'new'; go(Number(t.dataset.qgo)); return; }
   if (t.dataset.mark) { mark(S.idx, t.dataset.mark); if (innerWidth <= 820) setTimeout(() => $('#detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30); return; }
@@ -1820,7 +1894,7 @@ document.addEventListener('submit', e => {
   if (!e.target.classList.contains('qspell')) return;
   e.preventDefault();
   const v = ($('#qin') || {}).value || '', q = S.day && S.day.quiz, it = q && q.items[q.k]; if (!it || qa || !v.trim()) return;
-  const w = S.day.words[it.i]; quizAnswer(fold(v) === fold((w && w.word) || S.day.lemmas[it.i]), null, v);
+  const me = qword(S.day, it); if (me) quizAnswer(fold(v) === fold(me.w.word || me.l), null, v);
 });
 document.addEventListener('change', e => {
   const t = e.target;
