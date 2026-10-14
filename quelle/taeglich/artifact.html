@@ -185,6 +185,9 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .qopt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 12%,var(--paper))}
 .qopt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--paper))}
 @media (hover:hover){.qopt:not(:disabled):hover{border-color:var(--accent)}}
+.toast{position:fixed;left:16px;right:16px;margin-inline:auto;width:fit-content;bottom:calc(var(--tabh) + 84px + env(safe-area-inset-bottom,0px));z-index:30;max-width:460px;padding:10px 14px;border-radius:var(--r);background:var(--ink);color:var(--bg);font-size:14px;line-height:1.5;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+@media (min-width:821px){.toast{bottom:28px}}
+.qlink{background:none;border:0;padding:4px 0;color:var(--muted);font:inherit;font-size:13px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .qhint{font-family:var(--read);font-size:20px;letter-spacing:.14em;word-break:break-all}
 .qhint small{font-family:var(--ui);font-size:13px;letter-spacing:0;color:var(--muted);margin-left:6px}
 .qspell{display:flex;flex-direction:column;gap:10px}
@@ -420,6 +423,7 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
   <div style="min-width:0">
     <div class="mtop"><div class="brand">Deutsch <span class="tag">täglich</span></div><div class="sync" style="font-size:12px;color:var(--muted)"><span class="dot" id="sync-dot-m"></span><span id="sync-txt-m">连接中</span></div></div>
     <main id="main"></main>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
   </div>
 </div>
 
@@ -576,6 +580,7 @@ async function openDate(date, refresh) {
   const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks, rpos: S.day.rpos, quiz: S.day.quiz || null } : emptyProg());
   S.day = { date, ...prog };
   applyContent(c);
+  quizTrim(S.day);
   const n = S.day.lemmas.length;
   if (!keep || S.idx > n) S.idx = n && Object.keys(S.day.marks).length >= n ? n : Math.min(S.day.pos || 0, Math.max(0, n - 1));
   initRev();
@@ -675,7 +680,7 @@ function initRev() {
   const R = d.review || [], n = R.length, done = Object.keys(d.rmarks || {}).length;
   if (S.ridxDate !== d.date) { S.ridxDate = d.date; S.wmode = null; S.ridx = 0; }
   if (S.ridx === 0 && n) S.ridx = done >= n ? n : Math.min(d.rpos || 0, n - 1);
-  if (S.wmode == null && d.lemmas.length) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : !(d.quiz && d.quiz.done) ? 'quiz' : done < n ? 'rev' : 'new'; }
+  if (S.wmode == null && d.lemmas.length) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : !quizOk(d) ? 'quiz' : done < n ? 'rev' : 'new'; }
 }
 const wmode = () => { const d = S.day; if (S.wmode === 'quiz' && d && d.lemmas.length) return 'quiz'; return (d && d.review || []).length && S.wmode === 'rev' ? 'rev' : 'new'; };
 async function ensureCards() {
@@ -724,7 +729,7 @@ function dayStatus(d) {
   const R = d.review || [], nl = d.lemmas.length;
   const t = nl + R.length, n = Math.min(Object.keys(d.marks || {}).length, nl) + Math.min(Object.keys(d.rmarks || {}).length, R.length), r = !!(d.grading && !d.grading.pending);
   const st = { n, t, r, done: nl > 0 && n >= t && r };
-  if (d.date >= QUIZ_FROM && nl > 0) { st.q = !!(d.quiz && d.quiz.done); st.done = st.done && st.q; }
+  if (d.date >= QUIZ_FROM && nl > 0) { st.q = quizOk(d); st.done = st.done && st.q; }
   return st;
 }
 function syncCal() {
@@ -886,16 +891,49 @@ ${JSON.stringify(shorts.map(s => ({ i: s.i, frage: s.q, referenz: s.reference, a
 }
 
 /* ---------------- actions ---------------- */
-let deVoice = null;
+/* Speech. Some listed voices are not installed or need the network and then stay silent without an error,
+   so if nothing starts within a moment the same text is tried again with only lang="de-DE" (the system's default German voice). */
+let deVoice = null, badVoice = new Set(), speakSeq = 0, toastT = null;
+function germanVoices() { try { return speechSynthesis.getVoices().filter(v => /^de/i.test(v.lang)); } catch (e) { return []; } }
 function pickVoice() {
-  try { const vs = speechSynthesis.getVoices(); deVoice = vs.find(v => /^de[-_]DE/i.test(v.lang)) || vs.find(v => /^de/i.test(v.lang)) || null; } catch (e) {}
+  const vs = germanVoices().filter(v => !badVoice.has(v.voiceURI));
+  const de = vs.filter(v => /^de[-_]DE/i.test(v.lang));
+  deVoice = de.find(v => v.localService && v.default) || de.find(v => v.localService) || vs.find(v => v.localService) || de[0] || vs[0] || null;
 }
 try { pickVoice(); speechSynthesis.addEventListener('voiceschanged', pickVoice); } catch (e) {}
-function speak(text) {
+function voiceInfo() {
+  if (!('speechSynthesis' in window)) return '这个浏览器不支持朗读';
+  const vs = germanVoices(); if (!deVoice) pickVoice();
+  return vs.length ? `德语语音：${esc(deVoice ? deVoice.name : vs[0].name)}${vs.length > 1 ? `（共 ${vs.length} 个可选）` : ''}` : '设备上没找到德语语音，会用系统默认语音读';
+}
+function toast(msg, ms) {
+  const el = $('#toast'); if (!el) return;
+  el.textContent = msg; el.hidden = false; clearTimeout(toastT);
+  toastT = setTimeout(() => { el.hidden = true; }, ms || 6000);
+}
+const NO_SOUND = '没播出声音。手机请关掉静音模式、调大媒体音量；电脑请看看系统里有没有德语语音。';
+function speak(text, manual) {
+  if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance !== 'function') { if (manual !== false) toast('这个浏览器不支持朗读，换 Safari 或 Chrome 打开试试。'); return; }
+  const ss = speechSynthesis, my = ++speakSeq;
+  const attempt = (n) => {
+    if (my !== speakSeq) return;
+    const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.9; u.volume = 1;
+    if (n === 0) { if (!deVoice) pickVoice(); if (deVoice) u.voice = deVoice; }
+    const v = u.voice; let started = false, failed = false;
+    const fail = (why) => {
+      if (failed || started || my !== speakSeq) return; failed = true;
+      if (n === 0 && v) { badVoice.add(v.voiceURI); pickVoice(); try { ss.cancel(); } catch (e) {} setTimeout(() => attempt(1), 60); }
+      else if (manual !== false || why === 'not-allowed') toast(why === 'not-allowed' ? '浏览器暂时不让网页出声，先点一下页面再按喇叭。' : NO_SOUND);
+    };
+    u.onstart = () => { started = true; };
+    u.onerror = e => { const er = e && e.error; if (er === 'interrupted' || er === 'canceled') return; fail(er); };
+    try { ss.resume(); } catch (e) {}
+    ss.speak(u);
+    setTimeout(() => { if (!started && !ss.speaking) fail('timeout'); }, n === 0 ? 1600 : 2500);
+  };
   try {
-    const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.9;
-    if (!deVoice) pickVoice(); if (deVoice) u.voice = deVoice;
-    speechSynthesis.cancel(); speechSynthesis.speak(u);
+    if (ss.speaking || ss.pending) { ss.cancel(); setTimeout(() => attempt(0), 60); } // speaking right after cancel() is sometimes dropped
+    else attempt(0);
   } catch (e) {}
 }
 /* auto-read: when the word card switches to another word (new words or review), read it once.
@@ -918,7 +956,7 @@ function autoSpeak() {
   const c = curCard(), k = c ? c.key : null;
   if (k === spokenKey) return;
   spokenKey = k;
-  if (c && autoSpeakOn() && userActed && document.visibilityState !== 'hidden') speak(c.text);
+  if (c && autoSpeakOn() && userActed && document.visibilityState !== 'hidden') speak(c.text, false);
 }
 const bookKey = l => (l || '').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/Ä/g,'Ae').replace(/Ö/g,'Oe').replace(/Ü/g,'Ue').replace(/ß/g,'ss').replace(/[^A-Za-z0-9_\-.]/g, '_');
 function mark(i, m) {
@@ -1076,7 +1114,7 @@ function wseg() {
   const d = S.day, R = d.review || [], nl = d.lemmas.length; if (!nl) return '';
   const mode = wmode(), nm = Math.min(Object.keys(d.marks || {}).length, nl), rm = Object.keys(d.rmarks || {}).length, q = d.quiz;
   const tabs = [`<button role="tab" data-wmode="new" aria-selected="${mode === 'new'}">新词 ${nm}/${nl}</button>`,
-    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">过关 ${q && q.done ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n : nl)}</button>`];
+    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">过关 ${quizOk(d) ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n : quizPool(d).length)}</button>`];
   if (R.length) tabs.push(`<button role="tab" data-wmode="rev" aria-selected="${mode === 'rev'}">复习 ${rm}/${R.length}</button>`);
   return `<div class="rseg wseg" role="tablist" aria-label="新词、过关和复习" style="grid-template-columns:repeat(${tabs.length},minmax(0,1fr))">${tabs.join('')}</div>`;
 }
@@ -1183,7 +1221,7 @@ function vWordsDone() {
   const left = d.lemmas.length - c.k.length - c.f.length - c.u.length;
   const graded = d.grading && !d.grading.pending;
   const R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length;
-  const qd = !!(d.quiz && d.quiz.done), qNeed = !qd && d.date >= QUIZ_FROM;
+  const qd = quizOk(d), qNeed = !qd && d.date >= QUIZ_FROM;
   const need = [qNeed ? '过关' : '', rleft > 0 ? '复习' : '', graded ? '' : '阅读题'].filter(Boolean).join('、').replace(/、([^、]*)$/, '和$1');
   const btns = (qd ? '' : `<button class="btn primary" data-wmode="quiz">${d.quiz ? '继续复习过关' : '开始复习过关'}</button>`) + (rleft > 0 ? `<button class="btn ${qd ? 'primary' : ''}" data-wmode="rev">开始复习（${rleft} 个）</button>` : '') + (graded ? '' : `<button class="btn ${qd && !(rleft > 0) ? 'primary' : ''}" data-view-go="read">去做${esc(dayName())}阅读</button>`);
   return `<div class="view">${dateBar()}
@@ -1210,15 +1248,32 @@ const deLabel = (w, l) => { const g = artCls(w && w.gender); return (g ? g + ' '
 const posGroup = p => /名词/.test(p || '') ? 'n' : /动词/.test(p || '') ? 'v' : 'o';
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 let qa = null, qOpts = null, qPlayed = null, qTimer = null, qTyped = '';
+// 过关 only asks the words that were not marked 认识 (unmarked words count as not known yet)
+const quizPool = d => d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortMean(d.words[i]) && d.marks[i] !== 'k');
+const allMarked = d => Object.keys(d.marks || {}).length >= d.lemmas.length;
+const quizOk = d => !!(d.quiz && d.quiz.done) || (allMarked(d) && !quizPool(d).length);
+// rounds started before this rule asked every word: drop the 认识 words that were not answered wrong
+function quizTrim(d) {
+  const q = d && d.quiz; if (!q || q.sel || !Array.isArray(q.items)) return;
+  q.sel = 1;
+  if (!q.done) {
+    const keep = i => d.marks[i] !== 'k' || (q.miss || {})[i];
+    const before = q.items.slice(0, q.k).filter(it => keep(it.i)).length;
+    q.items = q.items.filter(it => keep(it.i)); q.k = before;
+    q.pass = Object.fromEntries(Object.entries(q.pass || {}).filter(([i]) => keep(Number(i))));
+    q.n = new Set(q.items.map(it => it.i)).size; q.done = q.k >= q.items.length;
+  }
+  if (S.dayRef && S.day === d) save(S.dayRef, { quiz: q });
+}
 function quizNew(d) {
-  const idx = shuffle(d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortMean(d.words[i])));
+  const idx = shuffle(quizPool(d));
   const items = idx.map((i, k) => {
     let t = ['de', 'zh', 'ls', 'sp'][k % 4];
     if (t === 'sp' && !spellable((d.words[i] && d.words[i].word) || d.lemmas[i])) t = 'zh';
     if (t === 'ls' && !canSpeak()) t = 'de';
     return { i, t };
   });
-  return { items, k: 0, pass: {}, miss: {}, done: false, n: idx.length };
+  return { items, k: 0, pass: {}, miss: {}, done: !items.length, n: idx.length, sel: 1 };
 }
 function quizStart() {
   const d = S.day; if (!d || !d.lemmas.length) return;
@@ -1248,7 +1303,7 @@ function quizAnswer(ok, pick, typed) {
   else {
     q.miss[it.i] = (q.miss[it.i] || 0) + 1;
     let t = it.t === 'sp' ? 'sp' : ({ de: 'zh', zh: 'ls', ls: 'de' })[it.t];
-    if (t === 'ls' && !canSpeak()) t = 'de';
+    if (t === 'ls' && (!canSpeak() || q.nols)) t = 'de';
     q.items.splice(Math.min(q.items.length, q.k + 4), 0, { i: it.i, t });
     // a word missed in 过关 goes into the wordbook (unless it is already there)
     const key = bookKey(d.lemmas[it.i]);
@@ -1262,10 +1317,15 @@ function quizAnswer(ok, pick, typed) {
   qa = { it, ok, pick, typed }; qTyped = '';
   save(S.dayRef, { quiz: q });
   if (q.done) syncCal();
-  if ((it.t === 'zh' || it.t === 'sp') && autoSpeakOn()) speak(deLabel(w, d.lemmas[it.i])); // 看德语 and 听发音 were already heard
+  if ((it.t === 'zh' || it.t === 'sp') && autoSpeakOn()) speak(deLabel(w, d.lemmas[it.i]), false); // 看德语 and 听发音 were already heard
   render();
   clearTimeout(qTimer);
   if (ok) qTimer = setTimeout(() => { if (qa && qa.it === it && S.view === 'words' && wmode() === 'quiz') quizNext(); }, 1100);
+}
+function quizNoListen() {
+  const d = S.day, q = d && d.quiz; if (!q || qa) return;
+  q.nols = 1; q.items.forEach((it, x) => { if (x >= q.k && it.t === 'ls') it.t = 'de'; });
+  qPlayed = null; qOpts = null; save(S.dayRef, { quiz: q }); render();
 }
 function quizNext() { clearTimeout(qTimer); if (!qa) return; qa = null; render(); }
 function quizPlay() { const d = S.day, q = d && d.quiz, it = q && (qa ? qa.it : q.items[q.k]); if (it) speak(deLabel(d.words[it.i], d.lemmas[it.i])); }
@@ -1275,17 +1335,22 @@ function quizAfterRender(hadFocus) {
   const inp = $('#qin');
   if (inp && (hadFocus || qPlayed !== it)) { inp.focus({ preventScroll: true }); const n = inp.value.length; try { inp.setSelectionRange(n, n); } catch (e) {} }
   if (qPlayed === it) return; qPlayed = it;
-  if (userActed && (it.t === 'ls' || (it.t === 'de' && autoSpeakOn()))) speak(deLabel(d.words[it.i], d.lemmas[it.i]));
+  if (userActed && (it.t === 'ls' || (it.t === 'de' && autoSpeakOn()))) speak(deLabel(d.words[it.i], d.lemmas[it.i]), it.t === 'ls' ? undefined : false);
 }
 const PLAY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>';
 function vQuiz() {
   const d = S.day, n = d.lemmas.length, q = d.quiz;
   const newLeft = n - Object.keys(d.marks || {}).length;
   const head = `<div class="head hm"><div><h1>${esc(dayName())}复习过关</h1></div></div>`;
+  const pool = quizPool(d), kn = d.lemmas.filter((l, i) => d.marks[i] === 'k').length;
+  if ((!q || (q.done && !q.n)) && !pool.length && allMarked(d)) return `<div class="view">${dateBar()}${head}${wseg()}
+    <div class="qz"><div class="qcard"><h2>${esc(dayName())}的 ${n} 个词你都标了“认识”</h2>
+      <p>过关只考没记牢的词，这次没有要考的，算作已经过关。</p>
+      <div class="qrow">${d.grading && !d.grading.pending ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`}<button class="btn" data-wmode="new">回看新词</button></div></div></div></div>`;
   if (!q) return `<div class="view">${dateBar()}${head}${wseg()}
-    <div class="qz"><div class="qcard"><h2>把${esc(dayName())}的 ${n} 个新词再过一遍</h2>
-      <p>像百词斩一样，每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。答错的词会自动收进生词本。</p>
-      ${newLeft > 0 ? `<p class="sub">还有 ${newLeft} 个新词没看，建议先看完再来过关。</p>` : ''}
+    <div class="qz"><div class="qcard"><h2>把${esc(dayName())}没记牢的 ${pool.length} 个词再过一遍</h2>
+      <p>像百词斩一样，只考你选了“模糊”和“不认识”的词${kn ? `（标了“认识”的 ${kn} 个词不考）` : ''}。每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。答错的词会自动收进生词本。</p>
+      ${newLeft > 0 ? `<p class="sub">还有 ${newLeft} 个新词没看，没看的词也会考，建议先看完再来过关。</p>` : ''}
       ${d.date >= QUIZ_FROM ? '<p class="sub">过关也算在每天的打卡里。</p>' : ''}
       <div class="qrow"><button class="btn primary" data-act="quiz-start">开始过关</button>${newLeft > 0 ? '<button class="btn" data-wmode="new">先看新词</button>' : ''}</div></div></div></div>`;
   if (q.done && !qa) return vQuizDone();
@@ -1293,7 +1358,7 @@ function vQuiz() {
   const passed = Object.keys(q.pass).length, missN = Object.values(q.miss).reduce((a, b) => a + b, 0);
   let prompt = '', body = '';
   if (it.t === 'de') prompt = `<div class="qprompt">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="qword" lang="de">${esc(w.word || l)}</span><button class="speak" data-speak="${esc(deLabel(w, l))}" aria-label="朗读">${PLAY}</button></div>`;
-  else if (it.t === 'ls') prompt = `<div class="qprompt" style="justify-content:center"><button class="qplay" data-act="quiz-play" aria-label="再听一遍">${PLAY}</button></div><p class="sub" style="text-align:center">点黄色按钮可以再听一遍</p>`;
+  else if (it.t === 'ls') prompt = `<div class="qprompt" style="justify-content:center"><button class="qplay" data-act="quiz-play" aria-label="再听一遍">${PLAY}</button></div><p class="sub" style="text-align:center">点黄色按钮可以再听一遍<br><button class="qlink" data-act="quiz-nols">现在听不了？换成看词选意思</button></p>`;
   else prompt = `<div class="qprompt"><span class="qmean">${esc(shortMean(w))}</span>${w.pos ? `<span class="chip" style="font-size:13px;color:var(--muted)">${esc(w.pos)}</span>` : ''}</div>`;
   if (it.t === 'sp') {
     const b = bare(w.word || l), sich = /^sich\s/i.test(w.word || l);
@@ -1333,7 +1398,7 @@ function vQuizDone() {
     graded ? '' : `<button class="btn ${newLeft > 0 || rleft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`].join('');
   const pills = missed.map(i => `<button class="wpill u" data-qgo="${i}">${esc(deLabel(d.words[i], d.lemmas[i]))} · ${esc(shortMean(d.words[i]))}${miss[i] > 1 ? ' ×' + miss[i] : ''}</button>`).join('');
   return `<div class="view">${dateBar()}
-    <div class="head"><div><h1>${esc(dayName())}过关了</h1><p class="sub">${n} 个词全部答对。${missed.length ? `一次答对 ${n - missed.length} 个，另外 ${missed.length} 个答错过又补对了。` : '每个词都是一次答对。'}</p></div>${isDone(d.date) ? stamp(d.date, S.justDone) : btns ? `<div class="qrow">${btns}</div>` : ''}</div>${wseg()}
+    <div class="head"><div><h1>${esc(dayName())}过关了</h1><p class="sub">${n} 个没记牢的词全部答对。${missed.length ? `一次答对 ${n - missed.length} 个，另外 ${missed.length} 个答错过又补对了。` : '每个词都是一次答对。'}</p></div>${isDone(d.date) ? stamp(d.date, S.justDone) : btns ? `<div class="qrow">${btns}</div>` : ''}</div>${wseg()}
     <div class="summary"><div class="stat k"><b>${n - missed.length}</b>一次答对</div><div class="stat f"><b>${missed.length}</b>答错后补对</div><div class="stat u"><b>${total}</b>总共答错</div></div>
     ${missed.length ? `<section class="sec"><h3>答错过的词（已收进生词本，点开看讲解）</h3><div class="wlist">${pills}</div></section>` : ''}
     <div class="qrow"><button class="btn" data-act="quiz-again">再过一遍</button>${isDone(d.date) && btns ? btns : ''}</div></div>`;
@@ -1455,12 +1520,13 @@ function vSet() {
     <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会按你的水平提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，打开页面就能直接开始。如果打开时还没出好，可以点“现在就在页面里生成”。</p>
     <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
     <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
-    <p>看完当天的新词后还有“复习过关”：每个新词出一道题（看德语选意思、看中文选德语、听发音选意思、拼写），答错的词过几题换个题型再考，全部答对才过关。从 10 月 14 日起，过关也算在打卡里。</p>
+    <p>看完当天的新词后还有“复习过关”：选了“模糊”和“不认识”的词各出一道题（看德语选意思、看中文选德语、听发音选意思、拼写），标了“认识”的词不考；答错的词过几题换个题型再考，全部答对才过关。从 10 月 14 日起，过关也算在打卡里。</p>
     <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
     <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
     <section class="sec"><h3>发音</h3><p>切换到下一个单词（新词和复习都算）时，自动用德语读一遍这个词，名词连冠词一起读。想再听就点单词旁边的喇叭。</p>
     <div class="filter" role="group" aria-label="自动朗读"><span class="sub" style="align-self:center">翻到新单词时自动朗读</span><button data-autospeak="1" aria-pressed="${autoSpeakOn()}">开</button><button data-autospeak="0" aria-pressed="${!autoSpeakOn()}">关</button></div>
-    <p class="sub">刚打开页面时浏览器不允许网页自己出声，所以第一个词不会自动读；点过页面之后，每翻到一个新词都会读。声音用的是设备自带的德语语音，如果读得不像德语，可以在系统设置里下载德语语音。</p></section>
+    <div class="qrow"><button class="btn" data-act="test-speak">试听一句</button><span class="sub" style="align-self:center">${voiceInfo()}</span></div>
+    <p class="sub">刚打开页面时浏览器不允许网页自己出声，所以第一个词不会自动读；点过页面之后，每翻到一个新词都会读。声音用的是设备自带的德语语音。没有声音时：iPhone 先关掉侧面的静音开关（静音模式下网页朗读不出声），再调大媒体音量；电脑请在系统设置里添加德语语音。</p></section>
     <section class="sec"><h3>同步</h3><p>${S.db ? '题目、进度、打卡记录和生词本都保存在云端。手机和电脑打开同一个链接、登录同一个 claude.ai 账号即可同步；切回这个页面时会自动拉取最新内容。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
     <section class="sec"><h3>说明</h3><p>简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。</p></section></div>`;
 }
@@ -1720,6 +1786,8 @@ document.addEventListener('click', e => {
   else if (act === 'quiz-start' || act === 'quiz-again') quizStart();
   else if (act === 'quiz-next') quizNext();
   else if (act === 'quiz-play') quizPlay();
+  else if (act === 'quiz-nols') quizNoListen();
+  else if (act === 'test-speak') speak('Guten Tag! Das ist die Kirchenglocke.');
   else if (act === 'quiz-giveup') quizAnswer(false, null, ($('#qin') || {}).value || '');
   else if (act === 'go-quiz') { S.view = 'words'; S.wmode = 'quiz'; render(); window.scrollTo({ top: 0 }); }
   else if (act === 'stop-speak') { try { speechSynthesis.cancel(); } catch (e) {} }
