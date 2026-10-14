@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Deutsch täglich</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -847,12 +847,39 @@ ${JSON.stringify(shorts.map(s => ({ i: s.i, frage: s.q, referenz: s.reference, a
 }
 
 /* ---------------- actions ---------------- */
+let deVoice = null;
+function pickVoice() {
+  try { const vs = speechSynthesis.getVoices(); deVoice = vs.find(v => /^de[-_]DE/i.test(v.lang)) || vs.find(v => /^de/i.test(v.lang)) || null; } catch (e) {}
+}
+try { pickVoice(); speechSynthesis.addEventListener('voiceschanged', pickVoice); } catch (e) {}
 function speak(text) {
   try {
     const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.9;
-    const v = speechSynthesis.getVoices().find(v => /^de/i.test(v.lang)); if (v) u.voice = v;
+    if (!deVoice) pickVoice(); if (deVoice) u.voice = deVoice;
     speechSynthesis.cancel(); speechSynthesis.speak(u);
   } catch (e) {}
+}
+/* auto-read: when the word card switches to another word (new words or review), read it once.
+   Browsers only allow sound after the viewer has touched the page, so the very first card after opening stays silent. */
+const autoSpeakOn = () => S.profile.autoSpeak !== false;
+let spokenKey = null, userActed = false;
+for (const ev of ['pointerdown', 'keydown', 'touchend']) addEventListener(ev, () => { userActed = true; }, { capture: true, passive: true });
+const speakText = (w, l, g0) => { const g = artCls(w ? w.gender : g0); return (g ? g + ' ' : '') + ((w && w.word) || l); };
+function curCard() {
+  const d = S.day; if (!d) return null;
+  if (wmode() === 'rev') {
+    const R = d.review || []; if (S.ridx >= R.length) return null;
+    const r = R[S.ridx], cs = S.cards[r.d], w = cs ? cs[r.i] : null;
+    return { key: d.date + '|r|' + S.ridx + '|' + r.l, text: speakText(w, r.l, r.g) };
+  }
+  const n = d.lemmas.length; if (S.idx >= n) return null;
+  return { key: d.date + '|n|' + S.idx + '|' + d.lemmas[S.idx], text: speakText(d.words[S.idx], d.lemmas[S.idx]) };
+}
+function autoSpeak() {
+  const c = curCard(), k = c ? c.key : null;
+  if (k === spokenKey) return;
+  spokenKey = k;
+  if (c && autoSpeakOn() && userActed && document.visibilityState !== 'hidden') speak(c.text);
 }
 const bookKey = l => (l || '').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/Ä/g,'Ae').replace(/Ö/g,'Oe').replace(/Ü/g,'Ue').replace(/ß/g,'ss').replace(/[^A-Za-z0-9_\-.]/g, '_');
 function mark(i, m) {
@@ -912,7 +939,7 @@ function render() {
   m.innerHTML = ({ words: vWords, read: vRead, book: vBook, set: vSet })[S.view]();
   S.slide = null;
   if (S.view === 'read') requestAnimationFrame(layoutGl);
-  if (S.view === 'words') spy();
+  if (S.view === 'words') { spy(); autoSpeak(); }
 }
 function layoutGl() {
   const body = $('.abody.has-gl'); if (!body) return;
@@ -1242,6 +1269,9 @@ function vSet() {
     <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
     <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
     <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
+    <section class="sec"><h3>发音</h3><p>切换到下一个单词（新词和复习都算）时，自动用德语读一遍这个词，名词连冠词一起读。想再听就点单词旁边的喇叭。</p>
+    <div class="filter" role="group" aria-label="自动朗读"><span class="sub" style="align-self:center">翻到新单词时自动朗读</span><button data-autospeak="1" aria-pressed="${autoSpeakOn()}">开</button><button data-autospeak="0" aria-pressed="${!autoSpeakOn()}">关</button></div>
+    <p class="sub">刚打开页面时浏览器不允许网页自己出声，所以第一个词不会自动读；点过页面之后，每翻到一个新词都会读。声音用的是设备自带的德语语音，如果读得不像德语，可以在系统设置里下载德语语音。</p></section>
     <section class="sec"><h3>同步</h3><p>${S.db ? '题目、进度、打卡记录和生词本都保存在云端。手机和电脑打开同一个链接、登录同一个 claude.ai 账号即可同步；切回这个页面时会自动拉取最新内容。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
     <section class="sec"><h3>说明</h3><p>简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。</p></section></div>`;
 }
@@ -1484,6 +1514,7 @@ document.addEventListener('click', e => {
     if (d && d.date === today() && Array.isArray(d.review) && !Object.keys(d.rmarks || {}).length) { delete d.review; S.ridx = 0; S.wmode = null; S.ridxDate = null; buildReview(); }
     render(); return;
   }
+  if (t.dataset.autospeak !== undefined) { const v = t.dataset.autospeak === '1'; S.profile.autoSpeak = v; save(S.profileRef, { autoSpeak: v }); render(); return; }
   if (t.dataset.filter) { S.bookFilter = t.dataset.filter; render(); return; }
   if (t.dataset.book) { S.openBook = S.openBook === t.dataset.book ? null : t.dataset.book; render(); return; }
   if (t.dataset.unbook) { unbook(t.dataset.unbook); render(); return; }
