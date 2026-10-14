@@ -157,6 +157,7 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .rseg{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--mtop-h));z-index:3;background:var(--bg);padding-block:8px;display:grid;grid-template-columns:1fr 1fr}
 .rseg button{border:1px solid var(--line);background:var(--paper);padding:9px 8px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
 .rseg button:first-child{border-radius:10px 0 0 10px} .rseg button:last-child{border-radius:0 10px 10px 0;border-left:0}
+.rseg button:not(:first-child){border-left:0}
 .rseg button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .to-q{align-self:stretch;margin-top:6px}
 /* new words / review switch (both layouts) */
@@ -165,6 +166,42 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0}
 .nextrev b{color:var(--ink);font-weight:600}
 .srcday{color:var(--muted)}
 @media (min-width: 821px){.only-m{display:none !important}}
+/* 复习过关 (quiz on the day's new words) */
+.qz{display:flex;justify-content:center}
+.qcard{width:100%;max-width:640px;box-sizing:border-box;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;gap:16px}
+.qcard h2{margin:0;font-family:var(--display);font-size:24px;font-weight:600;text-wrap:balance}
+.qcard p{margin:0}
+.qtype{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;letter-spacing:.06em;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums}
+.qprompt{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-height:52px}
+.qword{font-family:var(--display);font-size:clamp(28px,7vw,40px);font-weight:700;line-height:1.1;word-break:break-word;hyphens:auto}
+.qmean{font-size:22px;font-weight:600;line-height:1.45}
+.qplay{width:84px;height:84px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center}
+.qplay svg{width:36px;height:36px}
+.qopts{display:grid;gap:8px}
+.qopt{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:11px 14px;font-size:16px;line-height:1.4;min-height:52px}
+.qopt[lang="de"]{font-family:var(--read);font-size:17px}
+.qopt .qk{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--ui);font-size:12px;color:var(--muted)}
+.qopt:disabled{cursor:default}
+.qopt:disabled:not(.right):not(.wrong){opacity:.5}
+.qopt.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 12%,var(--paper))}
+.qopt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--paper))}
+@media (hover:hover){.qopt:not(:disabled):hover{border-color:var(--accent)}}
+.qhint{font-family:var(--read);font-size:20px;letter-spacing:.14em;word-break:break-all}
+.qhint small{font-family:var(--ui);font-size:13px;letter-spacing:0;color:var(--muted);margin-left:6px}
+.qspell{display:flex;flex-direction:column;gap:10px}
+.qspell input{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--bg);color:var(--ink);font-family:var(--read);font-size:20px}
+.qrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.umls button{min-width:44px;height:40px;border:1px solid var(--line);background:var(--paper);border-radius:8px;font-family:var(--read);font-size:18px}
+.qfb{border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;background:var(--bg);border-left:3px solid var(--good)}
+.qfb.bad{border-left-color:var(--bad)}
+.qfb>b{color:var(--good)} .qfb.bad>b{color:var(--bad)}
+.qrev{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.qrev .w{font-family:var(--display);font-size:22px;font-weight:600}
+.qrev .art{font-size:17px}
+.qrev .speak{width:30px;height:30px} .qrev .speak svg{width:16px;height:16px}
+.qrev .m{color:var(--muted)}
+.qbar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.qbar i{display:block;height:100%;background:var(--good)}
 /* done summary */
 .summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .stat{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px}
@@ -413,7 +450,7 @@ const LEVEL_HINT = {
   'C1': '水平 C1：选高级、书面和学术语境中常用的词，包括固定搭配和较抽象的表达。'
 };
 const hint = l => LEVEL_HINT[l] ? '\n' + LEVEL_HINT[l] : '';
-const emptyProg = () => ({ marks: {}, pos: 0, answers: {}, grading: null, notes: [] });
+const emptyProg = () => ({ marks: {}, pos: 0, answers: {}, grading: null, notes: [], quiz: null });
 const S = { db:null, sample:null, uid:null, profileRef:null, settingsRef:null, contentRef:null, dayRef:null, unsub:null,
   settings:{ level: DEFAULT_LEVEL, seen: [], dates: [] }, profile:{ cal: {} },
   date: today(), day:null, content:null, calMonth: today().slice(0, 7),
@@ -446,7 +483,7 @@ function scheduleCache() {
     try {
       if (!S.day || !S.content) return;
       const c = cacheRead(); c.days = c.days || {};
-      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0 } };
+      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0, quiz: S.day.quiz || null } };
       const keep = Object.keys(c.days).sort().slice(-4); for (const k of Object.keys(c.days)) if (!keep.includes(k)) delete c.days[k];
       c.settings = S.settings; c.cal = S.profile.cal;
       localStorage.setItem(CK, JSON.stringify(c));
@@ -537,7 +574,7 @@ async function openDate(date, refresh) {
     save(S.dayRef, p, true);
   }
   const keep = refresh && S.day && S.day.date === date && (!c || JSON.stringify(c.lemmas) === JSON.stringify(S.day.lemmas || []) || !(S.day.lemmas || []).length);
-  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks, rpos: S.day.rpos } : emptyProg());
+  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], review: S.day.review, rmarks: S.day.rmarks, rpos: S.day.rpos, quiz: S.day.quiz || null } : emptyProg());
   S.day = { date, ...prog };
   applyContent(c);
   const n = S.day.lemmas.length;
@@ -639,9 +676,9 @@ function initRev() {
   const R = d.review || [], n = R.length, done = Object.keys(d.rmarks || {}).length;
   if (S.ridxDate !== d.date) { S.ridxDate = d.date; S.wmode = null; S.ridx = 0; }
   if (S.ridx === 0 && n) S.ridx = done >= n ? n : Math.min(d.rpos || 0, n - 1);
-  if (S.wmode == null && n) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : done < n ? 'rev' : 'new'; }
+  if (S.wmode == null && d.lemmas.length) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : !(d.quiz && d.quiz.done) ? 'quiz' : done < n ? 'rev' : 'new'; }
 }
-const wmode = () => ((S.day && S.day.review || []).length && S.wmode === 'rev' ? 'rev' : 'new');
+const wmode = () => { const d = S.day; if (S.wmode === 'quiz' && d && d.lemmas.length) return 'quiz'; return (d && d.review || []).length && S.wmode === 'rev' ? 'rev' : 'new'; };
 async function ensureCards() {
   // the full card of a review word lives in that day's shared content; fetch each day once
   const R = (S.day && S.day.review) || [];
@@ -687,13 +724,15 @@ function rgo(j) {
 function dayStatus(d) {
   const R = d.review || [], nl = d.lemmas.length;
   const t = nl + R.length, n = Math.min(Object.keys(d.marks || {}).length, nl) + Math.min(Object.keys(d.rmarks || {}).length, R.length), r = !!(d.grading && !d.grading.pending);
-  return { n, t, r, done: nl > 0 && n >= t && r };
+  const st = { n, t, r, done: nl > 0 && n >= t && r };
+  if (d.date >= QUIZ_FROM && nl > 0) { st.q = !!(d.quiz && d.quiz.done); st.done = st.done && st.q; }
+  return st;
 }
 function syncCal() {
   const d = S.day; if (!d || !d.lemmas.length) return;
   const st = dayStatus(d), old = (S.profile.cal || {})[d.date];
   st.done = st.done || !!(old && old.done);
-  if (old && old.n === st.n && old.t === st.t && old.r === st.r && old.done === st.done) return;
+  if (old && old.n === st.n && old.t === st.t && old.r === st.r && old.q === st.q && old.done === st.done) return;
   if (st.done && !(old && old.done)) S.justDone = true;
   S.profile.cal = { ...(S.profile.cal || {}), [d.date]: st };
   save(S.profileRef, { cal: { [d.date]: st } });
@@ -867,7 +906,7 @@ let spokenKey = null, userActed = false;
 for (const ev of ['pointerdown', 'keydown', 'touchend']) addEventListener(ev, () => { userActed = true; }, { capture: true, passive: true });
 const speakText = (w, l, g0) => { const g = artCls(w ? w.gender : g0); return (g ? g + ' ' : '') + ((w && w.word) || l); };
 function curCard() {
-  const d = S.day; if (!d) return null;
+  const d = S.day; if (!d || wmode() === 'quiz') return null;
   if (wmode() === 'rev') {
     const R = d.review || []; if (S.ridx >= R.length) return null;
     const r = R[S.ridx], cs = S.cards[r.d], w = cs ? cs[r.i] : null;
@@ -909,7 +948,7 @@ function go(i) {
 }
 async function goDate(date) {
   if (date > today()) return;
-  S.confirmRegen = false; S.justDone = false; S.readPane = 'art'; S.wmode = null;
+  S.confirmRegen = false; S.justDone = false; S.readPane = 'art'; S.wmode = null; qa = null; clearTimeout(qTimer);
   if (S.view === 'cal' || S.view === 'book' || S.view === 'set') S.view = 'words';
   S.day = null; render();
   await openDate(date);
@@ -927,9 +966,10 @@ function updateBadges() {
   $('#b-book').textContent = S.book.length || '';
   const k = streak();
   $('#b-cal').textContent = k ? k + ' 天' : '';
-  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成新词、复习和阅读即可打卡';
+  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成新词、过关、复习和阅读即可打卡';
 }
 function render() {
+  const qFocus = !!(document.activeElement && document.activeElement.id === 'qin');
   scheduleCache();
   if (S.view !== 'read') closePop();
   document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-current', String(t.dataset.view === S.view)));
@@ -940,7 +980,7 @@ function render() {
   m.innerHTML = ({ words: vWords, read: vRead, book: vBook, set: vSet })[S.view]();
   S.slide = null;
   if (S.view === 'read') requestAnimationFrame(layoutGl);
-  if (S.view === 'words') { spy(); autoSpeak(); }
+  if (S.view === 'words') { spy(); autoSpeak(); if (wmode() === 'quiz') quizAfterRender(qFocus); }
 }
 function layoutGl() {
   const body = $('.abody.has-gl'); if (!body) return;
@@ -1034,12 +1074,16 @@ function secnavHTML(w) {
   return `<nav class="secnav" aria-label="讲解目录"><b class="sw only-m">${g ? `<span class="art ${g}">${g}</span>` : ''}${esc(w.word)}</b>${[['mean','词意'],['use','用法'],['root','词根'],['ety','词源']].map(([k, l]) => `<button data-sec="${k}">${l}</button>`).join('')}</nav>`;
 }
 function wseg() {
-  const d = S.day, R = d.review || []; if (!R.length) return '';
-  const mode = wmode(), nl = d.lemmas.length, nm = Math.min(Object.keys(d.marks || {}).length, nl), rm = Object.keys(d.rmarks || {}).length;
-  return `<div class="rseg wseg" role="tablist" aria-label="新词和复习"><button role="tab" data-wmode="new" aria-selected="${mode === 'new'}">新词 ${nm}/${nl}</button><button role="tab" data-wmode="rev" aria-selected="${mode === 'rev'}">复习 ${rm}/${R.length}</button></div>`;
+  const d = S.day, R = d.review || [], nl = d.lemmas.length; if (!nl) return '';
+  const mode = wmode(), nm = Math.min(Object.keys(d.marks || {}).length, nl), rm = Object.keys(d.rmarks || {}).length, q = d.quiz;
+  const tabs = [`<button role="tab" data-wmode="new" aria-selected="${mode === 'new'}">新词 ${nm}/${nl}</button>`,
+    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">过关 ${q && q.done ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n : nl)}</button>`];
+  if (R.length) tabs.push(`<button role="tab" data-wmode="rev" aria-selected="${mode === 'rev'}">复习 ${rm}/${R.length}</button>`);
+  return `<div class="rseg wseg" role="tablist" aria-label="新词、过关和复习" style="grid-template-columns:repeat(${tabs.length},minmax(0,1fr))">${tabs.join('')}</div>`;
 }
 function vWords() {
   if (wmode() === 'rev') return vReview();
+  if (wmode() === 'quiz') return vQuiz();
   const d = S.day, n = d.lemmas.length;
   const errBox = S.err.words ? `<div class="notice err">${esc(S.err.words)} <button class="btn sm" data-act="retry-words" style="margin-left:8px">重试</button></div>` : '';
   const head = `<div class="head hm"><div><h1>${esc(dayName())} 30 词</h1></div>${S.gen.words === S.date && n ? `<span class="skeleton"><span class="spin"></span>后面的词还在生成</span>` : ''}</div>`;
@@ -1123,7 +1167,7 @@ function vReviewDone() {
   const left = R.length - c.k.length - c.f.length - c.u.length, newLeft = d.lemmas.length - Object.keys(d.marks || {}).length;
   const graded = d.grading && !d.grading.pending;
   const pills = arr => arr.map(j => { const r = R[j], w = S.cards[r.d] && S.cards[r.d][r.i]; return `<button class="wpill ${rm[j]}" data-rgo="${j}">${esc(r.l)}${w && w.meaning ? ' · ' + esc(String(w.meaning).split(/[；;，,]/)[0]) : ''}</button>`; }).join('');
-  const cta = newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续学新词（还剩 ${newLeft} 个）</button>` : graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`;
+  const cta = newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续学新词（还剩 ${newLeft} 个）</button>` : !(d.quiz && d.quiz.done) ? `<button class="btn primary" data-wmode="quiz">去复习过关</button>` : graded ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`;
   return `<div class="view">${dateBar()}
     <div class="head"><div><h1>${left ? '还有 ' + left + ' 个复习词没选' : esc(dayName()) + '的复习完成了'}</h1></div>${cta}</div>${wseg()}
     ${progBar(rm, R.length, REVL)}
@@ -1140,8 +1184,9 @@ function vWordsDone() {
   const left = d.lemmas.length - c.k.length - c.f.length - c.u.length;
   const graded = d.grading && !d.grading.pending;
   const R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length;
-  const need = [rleft > 0 ? '复习' : '', graded ? '' : '阅读题'].filter(Boolean).join('和');
-  const btns = (rleft > 0 ? `<button class="btn primary" data-wmode="rev">开始复习（${rleft} 个）</button>` : '') + (graded ? '' : `<button class="btn ${rleft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`);
+  const qd = !!(d.quiz && d.quiz.done), qNeed = !qd && d.date >= QUIZ_FROM;
+  const need = [qNeed ? '过关' : '', rleft > 0 ? '复习' : '', graded ? '' : '阅读题'].filter(Boolean).join('、').replace(/、([^、]*)$/, '和$1');
+  const btns = (qd ? '' : `<button class="btn primary" data-wmode="quiz">${d.quiz ? '继续复习过关' : '开始复习过关'}</button>`) + (rleft > 0 ? `<button class="btn ${qd ? 'primary' : ''}" data-wmode="rev">开始复习（${rleft} 个）</button>` : '') + (graded ? '' : `<button class="btn ${qd && !(rleft > 0) ? 'primary' : ''}" data-view-go="read">去做${esc(dayName())}阅读</button>`);
   return `<div class="view">${dateBar()}
     <div class="head"><div><h1>${left ? '还有 ' + left + ' 个词没选' : esc(dayName()) + '的新词完成了'}</h1>${!left && need ? `<p class="sub">再做完${need}就能打卡。</p>` : ''}</div>${btns ? `<div style="display:flex;gap:8px;flex-wrap:wrap">${btns}</div>` : ''}</div>${wseg()}
     ${progBar()}
@@ -1150,6 +1195,149 @@ function vWordsDone() {
     ${c.k.length ? `<section class="sec"><h3>认识的词</h3><div class="wlist">${pills(c.k)}</div></section>` : ''}
     <div><button class="btn" data-go="0">从头再看一遍</button></div>
   </div>`;
+}
+
+/* ---------------- 复习过关 ----------------
+   Every new word of the day gets one question (看德语选意思 / 看中文选德语 / 听发音选意思 / 拼写, mixed).
+   A wrong answer puts the word back three questions later with another question type; the round is over when every word has been answered right. */
+const QUIZ_FROM = '2026-10-14'; // from this day on the check-in also needs 过关
+const QT = { de: '看德语，选意思', zh: '看中文，选德语', ls: '听发音，选意思', sp: '拼写' };
+const canSpeak = () => { try { return 'speechSynthesis' in window && typeof SpeechSynthesisUtterance === 'function'; } catch (e) { return false; } };
+const shortMean = w => String((w && w.meaning) || '').split(/[；;]/)[0].trim();
+const bare = l => String(l || '').replace(/^sich\s+/i, '').trim();
+const spellable = l => { const b = bare(l); return !!b && !/[\s()\/…,]/.test(b) && b.length <= 22; };
+const fold = x => String(x || '').trim().toLowerCase().replace(/^(der|die|das)\s+/, '').replace(/^sich\s+/, '').replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/\s+/g, ' ');
+const deLabel = (w, l) => { const g = artCls(w && w.gender); return (g ? g + ' ' : '') + ((w && w.word) || l); };
+const posGroup = p => /名词/.test(p || '') ? 'n' : /动词/.test(p || '') ? 'v' : 'o';
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+let qa = null, qOpts = null, qPlayed = null, qTimer = null, qTyped = '';
+function quizNew(d) {
+  const idx = shuffle(d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortMean(d.words[i])));
+  const items = idx.map((i, k) => {
+    let t = ['de', 'zh', 'ls', 'sp'][k % 4];
+    if (t === 'sp' && !spellable((d.words[i] && d.words[i].word) || d.lemmas[i])) t = 'zh';
+    if (t === 'ls' && !canSpeak()) t = 'de';
+    return { i, t };
+  });
+  return { items, k: 0, pass: {}, miss: {}, done: false, n: idx.length };
+}
+function quizStart() {
+  const d = S.day; if (!d || !d.lemmas.length) return;
+  qa = null; qOpts = null; qPlayed = null; qTyped = ''; clearTimeout(qTimer);
+  const fresh = quizNew(d);
+  if (d.quiz) save(S.dayRef, { quiz: null }); // clear the old round first so no old answers get merged into the new one
+  d.quiz = fresh; save(S.dayRef, { quiz: fresh });
+  S.wmode = 'quiz'; syncCal(); render(); window.scrollTo({ top: 0 });
+}
+function quizOpts(d, it) {
+  if (qOpts && qOpts.it === it) return qOpts.opts;
+  const w = d.words[it.i], gp = posGroup(w.pos), same = [], other = [];
+  d.lemmas.forEach((l, j) => {
+    const x = d.words[j]; if (j === it.i || !x || !shortMean(x)) return;
+    if (it.t === 'zh' ? fold(x.word || l) === fold(w.word || d.lemmas[it.i]) : shortMean(x) === shortMean(w)) return;
+    (posGroup(x.pos) === gp ? same : other).push(j);
+  });
+  const pick = shuffle(same).slice(0, 3); if (pick.length < 3) pick.push(...shuffle(other).slice(0, 3 - pick.length));
+  qOpts = { it, opts: shuffle(pick.concat(it.i)) };
+  return qOpts.opts;
+}
+function quizAnswer(ok, pick, typed) {
+  const d = S.day, q = d && d.quiz; if (!q || qa || q.done) return;
+  const it = q.items[q.k]; if (!it) return;
+  const w = d.words[it.i];
+  if (ok) q.pass[it.i] = 1;
+  else {
+    q.miss[it.i] = (q.miss[it.i] || 0) + 1;
+    let t = it.t === 'sp' ? 'sp' : ({ de: 'zh', zh: 'ls', ls: 'de' })[it.t];
+    if (t === 'ls' && !canSpeak()) t = 'de';
+    q.items.splice(Math.min(q.items.length, q.k + 4), 0, { i: it.i, t });
+    // a word missed in 过关 goes into the wordbook (unless it is already there)
+    const key = bookKey(d.lemmas[it.i]);
+    if (S.profileRef && w && key && !S.book.some(b => b.id === key)) {
+      const entry = { word: w, mark: 'f', date: d.date, added: Date.now() };
+      save(S.profileRef.collection('wordbook').doc(key), entry, true);
+      S.book = [{ id: key, ...entry }].concat(S.book);
+    }
+  }
+  q.k++; q.done = q.k >= q.items.length;
+  qa = { it, ok, pick, typed }; qTyped = '';
+  save(S.dayRef, { quiz: q });
+  if (q.done) syncCal();
+  if ((it.t === 'zh' || it.t === 'sp') && autoSpeakOn()) speak(deLabel(w, d.lemmas[it.i])); // 看德语 and 听发音 were already heard
+  render();
+  clearTimeout(qTimer);
+  if (ok) qTimer = setTimeout(() => { if (qa && qa.it === it && S.view === 'words' && wmode() === 'quiz') quizNext(); }, 1100);
+}
+function quizNext() { clearTimeout(qTimer); if (!qa) return; qa = null; render(); }
+function quizPlay() { const d = S.day, q = d && d.quiz, it = q && (qa ? qa.it : q.items[q.k]); if (it) speak(deLabel(d.words[it.i], d.lemmas[it.i])); }
+function quizAfterRender(hadFocus) {
+  const d = S.day, q = d && d.quiz; if (!q || qa || q.done) return;
+  const it = q.items[q.k]; if (!it) return;
+  const inp = $('#qin');
+  if (inp && (hadFocus || qPlayed !== it)) { inp.focus({ preventScroll: true }); const n = inp.value.length; try { inp.setSelectionRange(n, n); } catch (e) {} }
+  if (qPlayed === it) return; qPlayed = it;
+  if (userActed && (it.t === 'ls' || (it.t === 'de' && autoSpeakOn()))) speak(deLabel(d.words[it.i], d.lemmas[it.i]));
+}
+const PLAY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>';
+function vQuiz() {
+  const d = S.day, n = d.lemmas.length, q = d.quiz;
+  const newLeft = n - Object.keys(d.marks || {}).length;
+  const head = `<div class="head hm"><div><h1>${esc(dayName())}复习过关</h1></div></div>`;
+  if (!q) return `<div class="view">${dateBar()}${head}${wseg()}
+    <div class="qz"><div class="qcard"><h2>把${esc(dayName())}的 ${n} 个新词再过一遍</h2>
+      <p>像百词斩一样，每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。答错的词会自动收进生词本。</p>
+      ${newLeft > 0 ? `<p class="sub">还有 ${newLeft} 个新词没看，建议先看完再来过关。</p>` : ''}
+      ${d.date >= QUIZ_FROM ? '<p class="sub">过关也算在每天的打卡里。</p>' : ''}
+      <div class="qrow"><button class="btn primary" data-act="quiz-start">开始过关</button>${newLeft > 0 ? '<button class="btn" data-wmode="new">先看新词</button>' : ''}</div></div></div></div>`;
+  if (q.done && !qa) return vQuizDone();
+  const it = qa ? qa.it : q.items[q.k], w = d.words[it.i], l = d.lemmas[it.i], g = artCls(w.gender);
+  const passed = Object.keys(q.pass).length, missN = Object.values(q.miss).reduce((a, b) => a + b, 0);
+  let prompt = '', body = '';
+  if (it.t === 'de') prompt = `<div class="qprompt">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="qword" lang="de">${esc(w.word || l)}</span><button class="speak" data-speak="${esc(deLabel(w, l))}" aria-label="朗读">${PLAY}</button></div>`;
+  else if (it.t === 'ls') prompt = `<div class="qprompt" style="justify-content:center"><button class="qplay" data-act="quiz-play" aria-label="再听一遍">${PLAY}</button></div><p class="sub" style="text-align:center">点黄色按钮可以再听一遍</p>`;
+  else prompt = `<div class="qprompt"><span class="qmean">${esc(shortMean(w))}</span>${w.pos ? `<span class="chip" style="font-size:13px;color:var(--muted)">${esc(w.pos)}</span>` : ''}</div>`;
+  if (it.t === 'sp') {
+    const b = bare(w.word || l), sich = /^sich\s/i.test(w.word || l);
+    const hint = `<div class="qhint" lang="de">${g ? esc(g) + ' ' : ''}${sich ? 'sich ' : ''}${esc(b[0])}${'_'.repeat(Math.max(0, b.length - 1))}<small>${b.length} 个字母</small></div>`;
+    body = qa ? hint : `${hint}<form class="qspell" autocomplete="off"><input id="qin" lang="de" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="写出这个德语词${g ? '（不用写冠词）' : ''}" value="${esc(qTyped)}">
+      <div class="qrow umls">${['ä', 'ö', 'ü', 'ß'].map(c => `<button type="button" data-qins="${c}">${c}</button>`).join('')}</div>
+      <div class="qrow"><button class="btn primary" type="submit">确定</button><button class="btn" type="button" data-act="quiz-giveup">不会，看答案</button></div></form>`;
+  } else {
+    const opts = quizOpts(d, it), de = it.t === 'zh';
+    body = `<div class="qopts">${opts.map((j, x) => {
+      const cls = qa ? (j === it.i ? 'right' : qa.pick === j ? 'wrong' : '') : '';
+      return `<button class="qopt ${cls}" data-qpick="${j}" ${de ? 'lang="de"' : ''} ${qa ? 'disabled' : ''}><span class="qk">${x + 1}</span><span>${esc(de ? deLabel(d.words[j], d.lemmas[j]) : shortMean(d.words[j]))}</span></button>`;
+    }).join('')}</div>`;
+  }
+  let fb = '';
+  if (qa) {
+    const ex = (w.examples || [])[0], typedOk = qa.ok && qa.typed != null && fold(qa.typed) === fold(w.word || l) && bare(String(qa.typed).trim().replace(/^(der|die|das)\s+/i, '')) !== bare(w.word || l);
+    fb = `<div class="qfb ${qa.ok ? '' : 'bad'}"><b>${qa.ok ? '✓ 答对了' : '✗ 答错了，过几题会换个题型再考一次'}</b>
+      ${!qa.ok && qa.typed != null && String(qa.typed).trim() ? `<span class="muted">你写的是：<s>${esc(qa.typed)}</s></span>` : ''}
+      ${typedOk ? `<span class="muted">算对了，标准写法是 ${esc(bare(w.word || l))}${g ? '（名词首字母大写）' : ''}。</span>` : ''}
+      <div class="qrev">${g ? `<span class="art ${g}">${g}</span>` : ''}<span class="w" lang="de">${esc(w.word || l)}</span><button class="speak" data-speak="${esc(deLabel(w, l))}" aria-label="朗读">${PLAY}</button><span class="m">${esc(w.meaning || '')}</span></div>
+      ${!qa.ok && ex ? `<div class="ex"><span class="de">${esc(ex.de)}</span><span class="zh">${esc(ex.zh)}</span></div>` : ''}
+      <div class="qrow"><button class="btn primary" data-act="quiz-next">${q.done ? '看结果' : '继续'}</button>${!qa.ok ? dictLink(dictKey(w)) : ''}<span class="kbd only-d">回车继续</span></div></div>`;
+  }
+  return `<div class="view">${dateBar()}${head}${wseg()}
+    <div class="prog"><span>过关 ${passed} / ${q.n}</span><div class="qbar"><i style="width:${q.n ? passed / q.n * 100 : 0}%"></i></div><span>答错 ${missN} 次</span></div>
+    <div class="qz"><div class="qcard"><div class="qtype"><span>${QT[it.t]}</span><span>${q.miss[it.i] && !qa ? '再考一次' : ''}</span></div>
+      ${prompt}${body}${fb}
+      ${!qa && it.t !== 'sp' ? '<span class="kbd only-d">键盘：1–4 选择</span>' : ''}</div></div></div>`;
+}
+function vQuizDone() {
+  const d = S.day, q = d.quiz, n = q.n, miss = q.miss || {};
+  const missed = Object.keys(miss).map(Number).sort((a, b) => (miss[b] - miss[a]) || a - b), total = Object.values(miss).reduce((a, b) => a + b, 0);
+  const graded = d.grading && !d.grading.pending, R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length, newLeft = d.lemmas.length - Object.keys(d.marks || {}).length;
+  const btns = [newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续看新词（还剩 ${newLeft} 个）</button>` : '',
+    rleft > 0 ? `<button class="btn ${newLeft > 0 ? '' : 'primary'}" data-wmode="rev">开始复习（${rleft} 个）</button>` : '',
+    graded ? '' : `<button class="btn ${newLeft > 0 || rleft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`].join('');
+  const pills = missed.map(i => `<button class="wpill u" data-qgo="${i}">${esc(deLabel(d.words[i], d.lemmas[i]))} · ${esc(shortMean(d.words[i]))}${miss[i] > 1 ? ' ×' + miss[i] : ''}</button>`).join('');
+  return `<div class="view">${dateBar()}
+    <div class="head"><div><h1>${esc(dayName())}过关了</h1><p class="sub">${n} 个词全部答对。${missed.length ? `一次答对 ${n - missed.length} 个，另外 ${missed.length} 个答错过又补对了。` : '每个词都是一次答对。'}</p></div>${isDone(d.date) ? stamp(d.date, S.justDone) : btns ? `<div class="qrow">${btns}</div>` : ''}</div>${wseg()}
+    <div class="summary"><div class="stat k"><b>${n - missed.length}</b>一次答对</div><div class="stat f"><b>${missed.length}</b>答错后补对</div><div class="stat u"><b>${total}</b>总共答错</div></div>
+    ${missed.length ? `<section class="sec"><h3>答错过的词（已收进生词本，点开看讲解）</h3><div class="wlist">${pills}</div></section>` : ''}
+    <div class="qrow"><button class="btn" data-act="quiz-again">再过一遍</button>${isDone(d.date) && btns ? btns : ''}</div></div>`;
 }
 
 function vRead() {
@@ -1195,7 +1383,7 @@ function vRead() {
     r.questions.forEach((q, i) => { tot += 2; got += q.type === 'mc' ? (g[i]?.ok ? 2 : 0) : (g[i]?.score || 0); });
     const st = dayStatus(d);
     scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">选择题每题 2 分，简答题按内容和语法打 0–2 分。</span></div>
-      ${isDone(d.date) ? stamp(d.date, S.justDone) : `<span class="sub">还有 ${st.t - st.n} 个词没选（新词和复习），选完就能打卡。</span>`}</div>`;
+      ${isDone(d.date) ? stamp(d.date, S.justDone) : st.n < st.t ? `<span class="sub">还有 ${st.t - st.n} 个词没选（新词和复习），选完${st.q === false ? '并过关' : ''}就能打卡。</span>` : st.q === false ? `<span class="sub">再完成复习过关就能打卡。<button class="btn sm" data-act="go-quiz" style="margin-left:6px">去过关</button></span>` : ''}</div>`;
   }
   const pane = S.readPane === 'q' ? 'q' : 'art';
   const rseg = `<div class="rseg only-m" role="tablist"><button role="tab" data-pane="art" aria-selected="${pane === 'art'}">文章</button><button role="tab" data-pane="q" aria-selected="${pane === 'q'}">${g && !g.pending ? `题目 · ${got}/${tot} 分` : `题目 ${na}/${nq}`}</button></div>`;
@@ -1226,7 +1414,7 @@ function vCal() {
     if (c && c.done) doneN++;
     const cls = ['cd', c && c.done ? 'done' : c && c.n ? 'part' : (dates.has(ds) || c) ? 'avail' : '', ds === t ? 'today' : '', ds === S.date ? 'sel' : ''].join(' ');
     const inner = c && c.done ? '<span class="ck" aria-label="已打卡">✓</span>'
-      : c && (c.n || c.r) ? `<span class="pp">${c.n}/${c.t}${c.r ? ' · 读' : ''}</span>`
+      : c && (c.n || c.r) ? `<span class="pp">${c.n}/${c.t}${c.q ? ' · 关' : ''}${c.r ? ' · 读' : ''}</span>`
       : dates.has(ds) ? '<span class="pp">有题</span>' : '';
     cells += `<button class="${cls}" data-date="${ds}" ${fut ? 'disabled' : ''}><span class="dn">${k}</span>${inner}</button>`;
   }
@@ -1235,7 +1423,7 @@ function vCal() {
       <div class="calnav"><button class="btn sm" data-month="${prevM}">‹ 上个月</button><button class="btn sm" data-month="${t.slice(0, 7)}">本月</button><button class="btn sm" data-month="${nextM}" ${nextM > t.slice(0, 7) ? 'disabled' : ''}>下个月 ›</button></div></div>
     <div class="calstats"><span><b>${doneN}</b> 天本月打卡</span><span><b>${streak()}</b> 天连续打卡</span></div>
     <div class="calgrid">${['一','二','三','四','五','六','日'].map(w => `<span class="wd">周${w}</span>`).join('')}${cells}</div>
-    <div class="legend"><span><i class="lg done"></i>已打卡（新词 + 复习 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
+    <div class="legend"><span><i class="lg done"></i>已打卡（新词 + 过关 + 复习 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
     <p class="sub">点任意一天可以打开那天的单词和阅读。每天的题和你的答题记录都会保留。</p>
   </div>`;
 }
@@ -1268,6 +1456,7 @@ function vSet() {
     <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，发布到这个网站，打开页面就能直接开始。如果打开时还没出好，稍后刷新即可。</p>
     <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
     <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
+    <p>看完当天的新词后还有“复习过关”：每个新词出一道题（看德语选意思、看中文选德语、听发音选意思、拼写），答错的词过几题换个题型再考，全部答对才过关。从 10 月 14 日起，过关也算在打卡里。</p>
     <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
     <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
     <section class="sec"><h3>发音</h3><p>切换到下一个单词（新词和复习都算）时，自动用德语读一遍这个词，名词连冠词一起读。想再听就点单词旁边的喇叭。</p>
@@ -1504,6 +1693,9 @@ document.addEventListener('click', e => {
   if (t.dataset.date) { goDate(t.dataset.date); return; }
   if (t.dataset.month) { S.calMonth = t.dataset.month; render(); return; }
   if (t.dataset.speak) { speak(t.dataset.speak); return; }
+  if (t.dataset.qpick !== undefined) { const q = S.day && S.day.quiz, it = q && q.items[q.k]; if (it && !qa) quizAnswer(Number(t.dataset.qpick) === it.i, Number(t.dataset.qpick), null); return; }
+  if (t.dataset.qins) { const inp = $('#qin'); if (inp) { const a = inp.selectionStart ?? inp.value.length, b = inp.selectionEnd ?? a; inp.value = inp.value.slice(0, a) + t.dataset.qins + inp.value.slice(b); qTyped = inp.value; inp.focus(); inp.setSelectionRange(a + 1, a + 1); } return; }
+  if (t.dataset.qgo !== undefined) { S.wmode = 'new'; go(Number(t.dataset.qgo)); return; }
   if (t.dataset.mark) { mark(S.idx, t.dataset.mark); if (innerWidth <= 820) setTimeout(() => $('#detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30); return; }
   if (t.dataset.go !== undefined) { go(Number(t.dataset.go)); return; }
   if (t.dataset.rmark) { const m = t.dataset.rmark; rmark(S.ridx, m).then(() => { if (innerWidth <= 820) setTimeout(() => $('#detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30); }); return; }
@@ -1526,6 +1718,11 @@ document.addEventListener('click', e => {
   else if (act === 'grade') gradeReading();
   else if (act === 'redo') { S.day.grading = null; S.day.answers = {}; S.justDone = false; save(S.dayRef, { grading: null, answers: {} }); syncCal(); render(); }
   else if (act === 'load-cards') { Object.keys(S.cards).forEach(k => { if (S.cards[k] === false) delete S.cards[k]; }); ensureCards(); render(); }
+  else if (act === 'quiz-start' || act === 'quiz-again') quizStart();
+  else if (act === 'quiz-next') quizNext();
+  else if (act === 'quiz-play') quizPlay();
+  else if (act === 'quiz-giveup') quizAnswer(false, null, ($('#qin') || {}).value || '');
+  else if (act === 'go-quiz') { S.view = 'words'; S.wmode = 'quiz'; render(); window.scrollTo({ top: 0 }); }
   else if (act === 'stop-speak') { try { speechSynthesis.cancel(); } catch (e) {} }
   else if (act === 'ask-regen') { S.confirmRegen = true; render(); }
   else if (act === 'cancel-regen') { S.confirmRegen = false; render(); }
@@ -1541,6 +1738,12 @@ document.addEventListener('click', e => {
     })();
   }
 });
+document.addEventListener('submit', e => {
+  if (!e.target.classList.contains('qspell')) return;
+  e.preventDefault();
+  const v = ($('#qin') || {}).value || '', q = S.day && S.day.quiz, it = q && q.items[q.k]; if (!it || qa || !v.trim()) return;
+  const w = S.day.words[it.i]; quizAnswer(fold(v) === fold((w && w.word) || S.day.lemmas[it.i]), null, v);
+});
 document.addEventListener('change', e => {
   const t = e.target;
   if (t.id === 'tr-toggle') { S.showTr = t.checked; render(); return; }
@@ -1553,7 +1756,8 @@ function segLbl() {
 }
 let tTimer;
 document.addEventListener('input', e => {
-  const t = e.target; if (!t.dataset.q) return;
+  const t = e.target; if (t.id === 'qin') { qTyped = t.value; return; }
+  if (!t.dataset.q) return;
   S.day.answers[t.dataset.q] = t.value; segLbl();
   clearTimeout(tTimer); tTimer = setTimeout(() => save(S.dayRef, { answers: S.day.answers }), 1200);
 });
@@ -1569,6 +1773,7 @@ document.addEventListener('touchend', e => {
   const p = e.changedTouches[0], dx = p.clientX - sw.x, dy = p.clientY - sw.y, dt = Date.now() - sw.t; sw = null;
   if (dt > 700 || Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
   const sel = getSelection(); if (sel && !sel.isCollapsed) return;
+  if (wmode() === 'quiz') return;
   if (wmode() === 'rev') { const nj = S.ridx + (dx < 0 ? 1 : -1); if (nj >= 0 && S.ridx < S.day.review.length) rgo(nj); return; }
   const ni = S.idx + (dx < 0 ? 1 : -1);
   if (ni >= 0 && S.idx < S.day.lemmas.length) go(ni);
@@ -1595,6 +1800,11 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && !pop.hidden) { closePop(); return; }
   if (S.view !== 'words' || !S.day || e.target.closest('textarea,input')) return;
   const map = { '1': 'k', '2': 'f', '3': 'u' };
+  if (wmode() === 'quiz') {
+    if (e.key === 'Enter' && qa) { e.preventDefault(); quizNext(); }
+    else if (/^[1-4]$/.test(e.key) && !qa) { const b = document.querySelectorAll('.qopt')[Number(e.key) - 1]; if (b) b.click(); }
+    return;
+  }
   if (wmode() === 'rev') {
     if (map[e.key] && S.ridx < S.day.review.length) rmark(S.ridx, map[e.key]);
     else if (e.key === 'ArrowRight') rgo(S.ridx + 1);
