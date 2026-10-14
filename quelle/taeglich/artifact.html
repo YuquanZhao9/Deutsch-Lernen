@@ -911,10 +911,20 @@ function toast(msg, ms) {
   el.textContent = msg; el.hidden = false; clearTimeout(toastT);
   toastT = setTimeout(() => { el.hidden = true; }, ms || 6000);
 }
+/* iPhone: web speech plays in the "ambient" audio session, which the silent switch mutes on the speaker (headphones still play).
+   Asking for the "playback" session (Safari 16.4+) and playing a tiny silent clip from a tap lets it use the speaker anyway. */
+const SILENT_WAV = 'data:audio/wav;base64,UklGRkQDAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YSADAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA==';
+let audioUnlocked = false;
+function unlockAudio() {
+  try { if (navigator.audioSession && navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback'; } catch (e) {}
+  if (audioUnlocked) return; audioUnlocked = true;
+  try { const a = new Audio(SILENT_WAV); a.setAttribute('playsinline', ''); const pr = a.play(); if (pr && pr.catch) pr.catch(() => { audioUnlocked = false; }); } catch (e) { audioUnlocked = false; }
+}
 const NO_SOUND = '没播出声音。手机请关掉静音模式、调大媒体音量；电脑请看看系统里有没有德语语音。';
 function speak(text, manual) {
   if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance !== 'function') { if (manual !== false) toast('这个浏览器不支持朗读，换 Safari 或 Chrome 打开试试。'); return; }
   const ss = speechSynthesis, my = ++speakSeq;
+  unlockAudio();
   const attempt = (n) => {
     if (my !== speakSeq) return;
     const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = 0.9; u.volume = 1;
@@ -941,6 +951,7 @@ function speak(text, manual) {
 const autoSpeakOn = () => S.profile.autoSpeak !== false;
 let spokenKey = null, userActed = false;
 for (const ev of ['pointerdown', 'keydown', 'touchend']) addEventListener(ev, () => { userActed = true; }, { capture: true, passive: true });
+for (const ev of ['touchend', 'click', 'keydown']) addEventListener(ev, () => { if (!audioUnlocked) unlockAudio(); }, { capture: true, passive: true });
 const speakText = (w, l, g0) => { const g = artCls(w ? w.gender : g0); return (g ? g + ' ' : '') + ((w && w.word) || l); };
 function curCard() {
   const d = S.day; if (!d || wmode() === 'quiz') return null;
@@ -1526,7 +1537,7 @@ function vSet() {
     <section class="sec"><h3>发音</h3><p>切换到下一个单词（新词和复习都算）时，自动用德语读一遍这个词，名词连冠词一起读。想再听就点单词旁边的喇叭。</p>
     <div class="filter" role="group" aria-label="自动朗读"><span class="sub" style="align-self:center">翻到新单词时自动朗读</span><button data-autospeak="1" aria-pressed="${autoSpeakOn()}">开</button><button data-autospeak="0" aria-pressed="${!autoSpeakOn()}">关</button></div>
     <div class="qrow"><button class="btn" data-act="test-speak">试听一句</button><span class="sub" style="align-self:center">${voiceInfo()}</span></div>
-    <p class="sub">刚打开页面时浏览器不允许网页自己出声，所以第一个词不会自动读；点过页面之后，每翻到一个新词都会读。声音用的是设备自带的德语语音。没有声音时：iPhone 先关掉侧面的静音开关（静音模式下网页朗读不出声），再调大媒体音量；电脑请在系统设置里添加德语语音。</p></section>
+    <p class="sub">刚打开页面时浏览器不允许网页自己出声，所以第一个词不会自动读；点过页面之后，每翻到一个新词都会读。声音用的是设备自带的德语语音。iPhone 开着静音模式时，页面会尽量照样用扬声器读；如果还是只有戴耳机才有声音，就关掉侧面的静音开关（或控制中心里的铃铛），再调大音量。电脑没声音的话，请在系统设置里添加德语语音。</p></section>
     <section class="sec"><h3>同步</h3><p>${S.db ? '题目、进度、打卡记录和生词本都保存在云端。手机和电脑打开同一个链接、登录同一个 claude.ai 账号即可同步；切回这个页面时会自动拉取最新内容。' : '当前没有连上云端存储，进度只保留在这次打开的页面里。请在 claude.ai 中登录后打开。'}</p></section>
     <section class="sec"><h3>说明</h3><p>简答题的批改，以及在页面里手动生成题目时，用的是你自己的 Claude 额度，第一次使用时页面会请求允许。</p></section></div>`;
 }
