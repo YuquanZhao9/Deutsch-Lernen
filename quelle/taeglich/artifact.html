@@ -858,12 +858,11 @@ async function generateReading() {
 - 长度约 ${len} 个词，话题贴近生活或时事常识（如城市生活、工作、科技、环境、社会、文化），内容要有信息量，读起来自然。
 - 尽量自然地用上这些今天学过的词中的 6-10 个（可变形）：${pick.join(', ')}。在正文中用 [[ ]] 把这些词包起来，例如 [[verzichtet]]。
 - 分 3-4 段，每段给出对应的中文翻译。
-- 出 5 道德语题：3 道选择题（4 个选项，只有一个正确，干扰项要有迷惑性），2 道简答题（需要用德语一两句话回答，考查理解和表达）。
+- 出 3 道德语选择题（4 个选项，只有一个正确，干扰项要有迷惑性，考查推断和观点理解），不出简答题。
 只返回 JSON：
 {"title":"德语标题","title_zh":"中文标题","paragraphs":[{"de":"……","zh":"……"}],
  "questions":[
-   {"type":"mc","q":"德语问题","options":["…","…","…","…"],"answer":0,"explain":"中文解析"},
-   {"type":"short","q":"德语问题","reference":"德语参考答案","explain":"中文说明答题要点"}
+   {"type":"mc","q":"德语问题","options":["…","…","…","…"],"answer":0,"explain":"中文解析"}
  ],
  "glossDe":[{"p":段落序号（从 0 开始）,"w":"正文中原样出现的一个词形","h":"词条：名词带冠词和复数，如 der Reißverschluss, ¨-e；动词写不定式；固定搭配写完整，如 etw. infrage stellen","e":"仿照 Deutsch perfekt 的边注，用简单德语一句话解释（≈ 表示近义解释，↔ 表示反义）"}],
  "gloss":{"正文中每个词形的小写":{"l":"原形","g":"der/die/das 或 null","p":"中文词性","m":"在文中的中文意思"}}
@@ -1517,7 +1516,7 @@ function vRead() {
   if (!r) {
     if (!d.lemmas.length) return `<div class="view">${dateBar()}${head}${noContent('阅读')}</div>`;
     return `<div class="view">${dateBar()}${head}${errBox}
-      ${S.gen.read === S.date ? `<div class="notice"><span class="spin"></span>正在写一篇用上这天单词的短文，并出 5 道题，大约需要一两分钟…</div>`
+      ${S.gen.read === S.date ? `<div class="notice"><span class="spin"></span>正在写一篇用上这天单词的短文，并出 3 道选择题，大约需要一两分钟…</div>`
         : `<div class="notice">这一天的文章还没出好。<div style="margin-top:12px"><button class="btn primary" data-act="gen-read">现在就在页面里生成</button></div></div>`}</div>`;
   }
   const g = d.grading;
@@ -1553,7 +1552,7 @@ function vRead() {
   if (g && !g.pending) {
     r.questions.forEach((q, i) => { tot += 2; got += q.type === 'mc' ? (g[i]?.ok ? 2 : 0) : (g[i]?.score || 0); });
     const st = dayStatus(d);
-    scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">选择题每题 2 分，简答题按内容和语法打 0–2 分。</span></div>
+    scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">${r.questions.some(q => q.type !== 'mc') ? '选择题每题 2 分，简答题按内容和语法打 0–2 分。' : '每题 2 分。'}</span></div>
       ${isDone(d.date) ? stamp(d.date, S.justDone) : st.n < st.t ? `<span class="sub">还有 ${st.t - st.n} 个词没选（新词和复习），选完${st.q === false ? '并过关' : ''}就能打卡。</span>` : st.q === false ? `<span class="sub">再完成复习过关就能打卡。<button class="btn sm" data-act="go-quiz" style="margin-left:6px">去过关</button></span>` : ''}</div>`;
   }
   const pane = S.readPane === 'q' ? 'q' : 'art';
