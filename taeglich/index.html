@@ -659,7 +659,9 @@ async function buildReview() {
     await srsMigrate();
     let due = [];
     try {
-      const q = await S.profileRef.collection('srs').where('minDue', '<=', t).get();
+      // the website's local storage has no where(): read every srs doc and filter below
+      const col = S.profileRef.collection('srs');
+      const q = await (typeof col.where === 'function' ? col.where('minDue', '<=', t) : col).get();
       q.docs.forEach(x => {
         const doc = clone(x.data()); if (!doc.date || doc.date >= t) return;
         S.srs[doc.date] = doc;
@@ -1274,8 +1276,8 @@ const quizPool = d => d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortM
 const revPool = d => (d.review || []).map((r, j) => j).filter(j => (d.rmarks || {})[j] !== 'k' && (x => x && shortMean(x.w))(qword(d, { r: j })));
 const revLeft = d => (d.review || []).filter((r, j) => (d.rmarks || {})[j] !== 'k').length;
 const allMarked = d => Object.keys(d.marks || {}).length >= d.lemmas.length;
-// a round from before review words were part of 过关 still needs today's review words added
-const quizStale = d => !!(d.quiz && !d.quiz.rv && d.date === today() && revLeft(d) > 0);
+// a round built before today's review list was there (older page, or the list was not ready) still needs the review words added
+const quizStale = d => !!(d.quiz && (d.quiz.rv || 0) < 2 && d.date === today() && revLeft(d) > 0);
 const quizOk = d => d.quiz ? !!d.quiz.done && !quizStale(d) : allMarked(d) && !quizPool(d).length && !revLeft(d);
 // rounds started before 认识 words were left out asked every word: drop the 认识 words that were not answered wrong
 function quizTrim(d) {
@@ -1300,13 +1302,14 @@ function qtypes(d, list, from) {
 }
 function quizNew(d) {
   const items = qtypes(d, shuffle(quizPool(d).map(i => ({ i })).concat(revPool(d).map(r => ({ r })))), 0);
-  return { items, k: 0, pass: {}, miss: {}, done: !items.length, n: items.length, sel: 1, rv: 1 };
+  return { items, k: 0, pass: {}, miss: {}, done: !items.length, n: items.length, sel: 1, rv: Array.isArray(d.review) ? 2 : 0 };
 }
 // add today's review words to a round that was started without them (they go after the words still waiting)
 function quizAddRev(d) {
-  const q = d.quiz; if (!q || q.rv) return;
-  const add = qtypes(d, shuffle(revPool(d).map(r => ({ r }))), q.items.length);
-  q.rv = 1;
+  const q = d.quiz; if (!q || (q.rv || 0) >= 2 || !Array.isArray(d.review)) return;
+  const have = new Set(q.items.filter(it => it.r != null).map(it => it.r));
+  const add = qtypes(d, shuffle(revPool(d).filter(r => !have.has(r)).map(r => ({ r }))), q.items.length);
+  q.rv = 2;
   if (add.length) { q.items = q.items.concat(add); q.n += add.length; q.done = false; }
   if (S.dayRef && S.day === d) save(S.dayRef, { quiz: q });
 }
