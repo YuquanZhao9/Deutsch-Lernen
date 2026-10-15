@@ -47,7 +47,7 @@ a.tab{text-decoration:none}
 .sync{display:flex;align-items:center;gap:6px}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
 .dot.ok{background:var(--good)} .dot.warn{background:var(--warn)}
-main{padding-inline:32px;padding-block:28px 48px;min-width:0}
+main{padding-inline:32px;padding-block:28px 48px;min-width:0;overflow-x:clip}
 .view{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
 .head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .head h1{margin:0;font-family:var(--display);font-size:30px;font-weight:600;text-wrap:balance}
@@ -503,7 +503,7 @@ function scheduleCache() {
     try {
       if (!S.day || !S.content) return;
       const c = cacheRead(); c.days = c.days || {};
-      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], trans: S.day.trans || [], review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0, quiz: S.day.quiz || null } };
+      c.days[S.day.date] = { content: S.content, prog: { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], trans: S.day.trans || [], review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0, revV: S.day.revV, quiz: S.day.quiz || null } };
       const keep = Object.keys(c.days).sort().slice(-4); for (const k of Object.keys(c.days)) if (!keep.includes(k)) delete c.days[k];
       c.settings = S.settings; c.cal = S.profile.cal;
       localStorage.setItem(CK, JSON.stringify(c));
@@ -594,7 +594,7 @@ async function openDate(date, refresh) {
     save(S.dayRef, p, true);
   }
   const keep = refresh && S.day && S.day.date === date && (!c || JSON.stringify(c.lemmas) === JSON.stringify(S.day.lemmas || []) || !(S.day.lemmas || []).length);
-  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], trans: S.day.trans || [], review: S.day.review, rmarks: S.day.rmarks, rpos: S.day.rpos, quiz: S.day.quiz || null } : emptyProg());
+  const prog = p ? { ...emptyProg(), ...p } : (keep ? { marks: S.day.marks, pos: S.day.pos, answers: S.day.answers, grading: S.day.grading, notes: S.day.notes || [], trans: S.day.trans || [], review: S.day.review, rmarks: S.day.rmarks, rpos: S.day.rpos, revV: S.day.revV, quiz: S.day.quiz || null } : emptyProg());
   S.day = { date, ...prog };
   applyContent(c);
   quizTrim(S.day);
@@ -645,8 +645,10 @@ async function srsLearn(date, i, m, l, g) {
   if (!S.profileRef) return;
   const doc = await srsDoc(date), old = doc.items[i];
   if (old && old.n > 0) return; // already in review: the first answer no longer decides the schedule
+  // only words marked 模糊 or 不认识 come back for review; 认识 takes a word out again
+  if (m === 'k') { if (old && old.due) { doc.items[i] = { ...old, m, due: null }; srsPut(date, i); } return; }
   const L = INIT_L[m] ?? 0;
-  doc.items[i] = { l, g: g || null, L, due: addDays(today(), LADDER[L]), n: 0, x: 0 };
+  doc.items[i] = { l, g: g || null, L, due: addDays(today(), LADDER[L]), n: 0, x: 0, m };
   srsPut(date, i);
 }
 async function srsMigrate() {
@@ -659,17 +661,31 @@ async function srsMigrate() {
       const marks = ps.exists ? (ps.data().marks || {}) : {}, c = cs.exists ? cs.data() : null;
       if (!c || !Object.keys(marks).length) continue;
       const doc = { date, items: {}, minDue: null };
-      Object.entries(marks).forEach(([i, m]) => { const L = INIT_L[m] ?? 0; doc.items[i] = { l: (c.lemmas || [])[i] || '', g: artCls(c.words?.[i]?.gender) || null, L, due: addDays(date, LADDER[L]), n: 0, x: 0 }; });
+      Object.entries(marks).filter(([i, m]) => m === 'f' || m === 'u').forEach(([i, m]) => { const L = INIT_L[m] ?? 0; doc.items[i] = { l: (c.lemmas || [])[i] || '', g: artCls(c.words?.[i]?.gender) || null, L, due: addDays(date, LADDER[L]), n: 0, x: 0, m }; });
       doc.minDue = minDueOf(doc); S.srs[date] = doc;
       await srsRef(date).set(doc);
     }
     S.profile.srsV = 1; save(S.profileRef, { srsV: 1 });
   } catch (e) { console.warn('srs migrate', e); }
 }
+const srsKnown = it => it.m === 'k' || (it.m == null && !it.n && (it.L || 0) >= INIT_L.k);
+// today's list from before the 模糊/不认识-only rule can be rebuilt while none of its words has been answered
+function reviewReset(d) {
+  if (Object.keys(d.rmarks || {}).length) return false;
+  const q = d.quiz;
+  if (q && Array.isArray(q.items) && q.items.some(it => it.r != null)) {
+    // unanswered review words always sit at or after q.k, so the answered part of the round stays as it is
+    q.items = q.items.filter(it => it.r == null); q.n = new Set(q.items.map(it => it.i)).size; q.done = q.k >= q.items.length;
+    if (S.dayRef && S.day === d) save(S.dayRef, { quiz: q });
+  }
+  delete d.review; S.ridx = 0; S.ridxDate = null;
+  return true;
+}
 async function buildReview() {
   // today's review list is fixed once per day: due words, oldest first, up to the daily cap
   const t = today();
-  if (!S.profileRef || S.date !== t || !S.day || Array.isArray(S.day.review)) return;
+  if (!S.profileRef || S.date !== t || !S.day) return;
+  if (Array.isArray(S.day.review) && !(S.day.revV !== 2 && reviewReset(S.day))) return;
   if (S.revBuilding) return S.revBuilding;
   S.revBuilding = (async () => {
     await srsMigrate();
@@ -681,15 +697,15 @@ async function buildReview() {
       q.docs.forEach(x => {
         const doc = clone(x.data()); if (!doc.date || doc.date >= t) return;
         S.srs[doc.date] = doc;
-        Object.entries(doc.items || {}).forEach(([i, it]) => { if (it.due && it.due <= t) due.push({ d: doc.date, i: Number(i), l: it.l, g: it.g || null, due: it.due, L: it.L || 0 }); });
+        Object.entries(doc.items || {}).forEach(([i, it]) => { if (it.due && it.due <= t && !srsKnown(it)) due.push({ d: doc.date, i: Number(i), l: it.l, g: it.g || null, due: it.due, L: it.L || 0 }); });
       });
     } catch (e) { return; }
     due.sort((a, b) => (a.due > b.due) - (a.due < b.due) || a.L - b.L || (a.d > b.d) - (a.d < b.d) || a.i - b.i);
     const cap = revCap(); if (cap) due = due.slice(0, cap);
     if (S.date !== t || !S.day || Array.isArray(S.day.review)) return;
     S.day.review = due.map(({ d, i, l, g }) => ({ d, i, l, g }));
-    S.day.rmarks = {}; S.day.rpos = 0;
-    save(S.dayRef, { review: S.day.review, rmarks: {}, rpos: 0 });
+    S.day.rmarks = {}; S.day.rpos = 0; S.day.revV = 2;
+    save(S.dayRef, { review: S.day.review, rmarks: {}, rpos: 0, revV: 2 });
     initRev(); syncCal(); render();
   })();
   try { await S.revBuilding; } finally { S.revBuilding = null; }
@@ -699,7 +715,7 @@ function initRev() {
   const R = d.review || [], n = R.length, done = Object.keys(d.rmarks || {}).length;
   if (S.ridxDate !== d.date) { S.ridxDate = d.date; S.wmode = null; S.ridx = 0; }
   if (S.ridx === 0 && n) S.ridx = done >= n ? n : Math.min(d.rpos || 0, n - 1);
-  if (S.wmode == null && d.lemmas.length) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : !quizOk(d) ? 'quiz' : done < n ? 'rev' : 'new'; }
+  if (S.wmode == null && d.lemmas.length) { const newLeft = d.lemmas.length - Object.keys(d.marks || {}).length; S.wmode = newLeft > 0 ? 'new' : !quizOk(d) ? 'quiz' : 'new'; }
 }
 const wmode = () => { const d = S.day; if (S.wmode === 'quiz' && d && d.lemmas.length) return 'quiz'; return (d && d.review || []).length && S.wmode === 'rev' ? 'rev' : 'new'; };
 let cardsLoading = null;
@@ -748,7 +764,8 @@ function rgo(j) {
 /* ---------------- check-in ---------------- */
 function dayStatus(d) {
   const R = d.review || [], nl = d.lemmas.length;
-  const t = nl + R.length, n = Math.min(Object.keys(d.marks || {}).length, nl) + Math.min(Object.keys(d.rmarks || {}).length, R.length), r = !!(d.grading && !d.grading.pending);
+  const rm = d.rmarks || {}, q = d.quiz, rDone = R.filter((x, j) => rm[j] || (q && q.done && Array.isArray(q.items) && !q.items.some(it => it.r === j))).length;
+  const t = nl + R.length, n = Math.min(Object.keys(d.marks || {}).length, nl) + rDone, r = !!(d.grading && !d.grading.pending);
   const st = { n, t, r, done: nl > 0 && n >= t && r };
   if (d.date >= QUIZ_FROM && nl > 0) { st.q = quizOk(d); st.done = st.done && st.q; }
   return st;
@@ -1034,7 +1051,7 @@ function updateBadges() {
   $('#b-book').textContent = S.book.length || '';
   const k = streak();
   $('#b-cal').textContent = k ? k + ' 天' : '';
-  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成新词、过关、复习和阅读即可打卡';
+  $('#streak-lbl').textContent = k ? '已连续打卡 ' + k + ' 天' : '完成新词、复习过关和阅读即可打卡';
 }
 function render() {
   const qFocus = !!(document.activeElement && document.activeElement.id === 'qin');
@@ -1147,9 +1164,8 @@ function wseg() {
   const d = S.day, R = d.review || [], nl = d.lemmas.length; if (!nl) return '';
   const mode = wmode(), nm = Math.min(Object.keys(d.marks || {}).length, nl), rm = Object.keys(d.rmarks || {}).length, q = d.quiz;
   const tabs = [`<button role="tab" data-wmode="new" aria-selected="${mode === 'new'}">新词 ${nm}/${nl}</button>`,
-    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">过关 ${quizOk(d) ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n : quizPool(d).length + revLeft(d))}</button>`];
-  if (R.length) tabs.push(`<button role="tab" data-wmode="rev" aria-selected="${mode === 'rev'}">复习 ${rm}/${R.length}</button>`);
-  return `<div class="rseg wseg" role="tablist" aria-label="新词、过关和复习" style="grid-template-columns:repeat(${tabs.length},minmax(0,1fr))">${tabs.join('')}</div>`;
+    `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">复习过关 ${quizOk(d) ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n + (m => m.n.length + m.r.length)(quizMissing(d)) : quizPool(d).length + revLeft(d))}</button>`];
+  return `<div class="rseg wseg" role="tablist" aria-label="新词和复习过关" style="grid-template-columns:repeat(${tabs.length},minmax(0,1fr))">${tabs.join('')}</div>`;
 }
 function vWords() {
   if (wmode() === 'rev') return vReview();
@@ -1255,8 +1271,8 @@ function vWordsDone() {
   const graded = d.grading && !d.grading.pending;
   const R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length;
   const qd = quizOk(d), qNeed = !qd && d.date >= QUIZ_FROM;
-  const need = [qNeed ? '过关' : '', rleft > 0 ? '复习' : '', graded ? '' : '阅读题'].filter(Boolean).join('、').replace(/、([^、]*)$/, '和$1');
-  const btns = (qd ? '' : `<button class="btn primary" data-wmode="quiz">${d.quiz ? '继续复习过关' : '开始复习过关'}</button>`) + (rleft > 0 ? `<button class="btn ${qd ? 'primary' : ''}" data-wmode="rev">开始复习（${rleft} 个）</button>` : '') + (graded ? '' : `<button class="btn ${qd && !(rleft > 0) ? 'primary' : ''}" data-view-go="read">去做${esc(dayName())}阅读</button>`);
+  const need = [qNeed || (!qd && rleft > 0) ? '复习过关' : '', graded ? '' : '阅读题'].filter(Boolean).join('和');
+  const btns = (qd ? '' : `<button class="btn primary" data-wmode="quiz">${d.quiz ? '继续复习过关' : '开始复习过关'}</button>`) + (graded ? '' : `<button class="btn ${qd ? 'primary' : ''}" data-view-go="read">去做${esc(dayName())}阅读</button>`);
   return `<div class="view">${dateBar()}
     <div class="head"><div><h1>${left ? '还有 ' + left + ' 个词没选' : esc(dayName()) + '的新词完成了'}</h1>${!left && need ? `<p class="sub">再做完${need}就能打卡。</p>` : ''}</div>${btns ? `<div style="display:flex;gap:8px;flex-wrap:wrap">${btns}</div>` : ''}</div>${wseg()}
     ${progBar()}
@@ -1289,12 +1305,21 @@ function qword(d, it) {
   if (it.r != null) { const r = (d.review || [])[it.r]; if (!r) return null; const cs = S.cards[r.d], w = cs ? cs[r.i] : null; return w ? { w, l: r.l, r } : null; }
   const w = d.words[it.i]; return w ? { w, l: d.lemmas[it.i] } : null;
 }
-const quizPool = d => d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortMean(d.words[i]) && d.marks[i] !== 'k');
+const quizPool = d => d.lemmas.map((l, i) => i).filter(i => d.words[i] && shortMean(d.words[i]) && (d.marks[i] === 'f' || d.marks[i] === 'u'));
 const revPool = d => (d.review || []).map((r, j) => j).filter(j => (d.rmarks || {})[j] !== 'k' && (x => x && shortMean(x.w))(qword(d, { r: j })));
 const revLeft = d => (d.review || []).filter((r, j) => (d.rmarks || {})[j] !== 'k').length;
 const allMarked = d => Object.keys(d.marks || {}).length >= d.lemmas.length;
 // a round built before today's review list was there (older page, or the list was not ready) still needs the review words added
-const quizStale = d => !!(d.quiz && (d.quiz.rv || 0) < 2 && d.date === today() && revLeft(d) > 0);
+const cardsIn = d => (d.review || []).every(r => S.cards[r.d] !== undefined);
+// words that belong in the round but are not in it yet: new words marked 模糊/不认识 after it started, and today's review words
+function quizMissing(d) {
+  const q = d.quiz; if (!q || !Array.isArray(q.items)) return { n: [], r: [] };
+  const hi = new Set(q.items.filter(it => it.r == null).map(it => it.i)), hr = new Set(q.items.filter(it => it.r != null).map(it => it.r));
+  const n = quizPool(d).filter(i => !hi.has(i));
+  const r = d.date === today() && Array.isArray(d.review) ? (cardsIn(d) ? revPool(d) : d.review.map((x, j) => j).filter(j => (d.rmarks || {})[j] !== 'k')).filter(j => !hr.has(j)) : [];
+  return { n, r };
+}
+const quizStale = d => { const m = quizMissing(d); return !!(m.n.length || m.r.length); };
 const quizOk = d => d.quiz ? !!d.quiz.done && !quizStale(d) : allMarked(d) && !quizPool(d).length && !revLeft(d);
 // rounds started before 认识 words were left out asked every word: drop the 认识 words that were not answered wrong
 function quizTrim(d) {
@@ -1323,9 +1348,9 @@ function quizNew(d) {
 }
 // add today's review words to a round that was started without them (they go after the words still waiting)
 function quizAddRev(d) {
-  const q = d.quiz; if (!q || (q.rv || 0) >= 2 || !Array.isArray(d.review)) return;
-  const have = new Set(q.items.filter(it => it.r != null).map(it => it.r));
-  const add = qtypes(d, shuffle(revPool(d).filter(r => !have.has(r)).map(r => ({ r }))), q.items.length);
+  const q = d.quiz; if (!q || !cardsIn(d)) return;
+  const m = quizMissing(d); if (!m.n.length && !m.r.length) return;
+  const add = qtypes(d, shuffle(m.n.map(i => ({ i })).concat(m.r.map(r => ({ r })))), q.items.length);
   q.rv = 2;
   if (add.length) { q.items = q.items.concat(add); q.n += add.length; q.done = false; }
   if (S.dayRef && S.day === d) save(S.dayRef, { quiz: q });
@@ -1369,7 +1394,7 @@ async function srsMiss(date, i, l, g) {
   if (!S.profileRef) return;
   const doc = await srsDoc(date), it = doc.items[i], due = addDays(today(), LADDER[0]);
   if (it && (it.n > 0 || (it.L === 0 && it.due <= due))) return;
-  doc.items[i] = { ...(it || { l, g: g || null, n: 0, x: 0 }), L: 0, due };
+  doc.items[i] = { ...(it || { l, g: g || null, n: 0, x: 0 }), L: 0, due, m: 'u' };
   srsPut(date, i);
 }
 function quizAnswer(ok, pick, typed) {
@@ -1432,7 +1457,7 @@ function vQuiz() {
   const wait = msg => `<div class="view">${dateBar()}${head}${wseg()}<div class="qz"><div class="qcard"><p><span class="spin"></span>${msg}</p></div></div></div>`;
   if (S.qBusy) return wait('正在准备题目，把今天该复习的旧词也放进来…');
   if (quizStale(d)) {
-    if (Array.isArray(d.review) && d.review.every(r => S.cards[r.d] !== undefined)) quizAddRev(d);
+    if (cardsIn(d)) quizAddRev(d);
     else { quizReady(d).then(() => { if (S.view === 'words' && wmode() === 'quiz') render(); }); return wait('正在把今天该复习的旧词加进这一轮…'); }
   }
   const pool = quizPool(d), kn = d.lemmas.filter((l, i) => d.marks[i] === 'k').length, rl = revLeft(d);
@@ -1442,9 +1467,9 @@ function vQuiz() {
       <div class="qrow">${d.grading && !d.grading.pending ? '' : `<button class="btn primary" data-view-go="read">去做${esc(dayName())}阅读</button>`}<button class="btn" data-wmode="new">回看新词</button></div></div></div></div>`;
   if (!q) return `<div class="view">${dateBar()}${head}${wseg()}
     <div class="qz"><div class="qcard"><h2>${rl ? `把 ${pool.length} 个新词和 ${rl} 个旧词再过一遍` : `把${esc(dayName())}没记牢的 ${pool.length} 个词再过一遍`}</h2>
-      <p>像百词斩一样，考你选了“模糊”和“不认识”的新词${kn ? `（标了“认识”的 ${kn} 个不考）` : ''}${rl ? `，还有之前学过、按记忆曲线今天该复习的 ${rl} 个旧词` : ''}。每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。</p>
+      <p>复习和过关放在一起：考你选了“模糊”和“不认识”的新词${kn ? `（标了“认识”的 ${kn} 个不考）` : ''}${rl ? `，还有之前学过、按记忆曲线今天该复习的 ${rl} 个旧词` : ''}。每个词出一道题，题型混着来：看德语选意思、看中文选德语、听发音选意思、拼写。答错的词过几题会换个题型再考，直到每个词都答对才算过关。</p>
       <p>答错的词会收进生词本，并且明天再考；旧词一次答对，下次复习的间隔就拉长。</p>
-      ${newLeft > 0 ? `<p class="sub">还有 ${newLeft} 个新词没看，没看的词也会考，建议先看完再来过关。</p>` : ''}
+      ${newLeft > 0 ? `<p class="sub">还有 ${newLeft} 个新词没看。没看的词不考；看完后选了“模糊”或“不认识”的，会自动加进这一轮。</p>` : ''}
       ${d.date >= QUIZ_FROM ? '<p class="sub">过关也算在每天的打卡里。</p>' : ''}
       <div class="qrow"><button class="btn primary" data-act="quiz-start">开始过关</button>${newLeft > 0 ? '<button class="btn" data-wmode="new">先看新词</button>' : ''}</div></div></div></div>`;
   if (q.done && !qa) return vQuizDone();
@@ -1496,8 +1521,7 @@ function vQuizDone() {
   const nOld = new Set(q.items.filter(it => it.r != null).map(it => it.r)).size;
   const graded = d.grading && !d.grading.pending, R = d.review || [], rleft = R.length - Object.keys(d.rmarks || {}).length, newLeft = d.lemmas.length - Object.keys(d.marks || {}).length;
   const btns = [newLeft > 0 ? `<button class="btn primary" data-wmode="new">继续看新词（还剩 ${newLeft} 个）</button>` : '',
-    rleft > 0 ? `<button class="btn ${newLeft > 0 ? '' : 'primary'}" data-wmode="rev">开始复习（${rleft} 个）</button>` : '',
-    graded ? '' : `<button class="btn ${newLeft > 0 || rleft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`].join('');
+    graded ? '' : `<button class="btn ${newLeft > 0 ? '' : 'primary'}" data-view-go="read">去做${esc(dayName())}阅读</button>`].join('');
   const pills = missed.map(k => {
     const it = k[0] === 'r' ? { r: Number(k.slice(1)) } : { i: Number(k) }, me = qword(d, it); if (!me) return '';
     return `<button class="wpill u" ${it.r != null ? `data-qrgo="${it.r}"` : `data-qgo="${it.i}"`}>${esc(deLabel(me.w, me.l))} · ${esc(shortMean(me.w))}${it.r != null ? ' · 旧词' : ''}${miss[k] > 1 ? ' ×' + miss[k] : ''}</button>`;
@@ -1553,7 +1577,7 @@ function vRead() {
     r.questions.forEach((q, i) => { tot += 2; got += q.type === 'mc' ? (g[i]?.ok ? 2 : 0) : (g[i]?.score || 0); });
     const st = dayStatus(d);
     scoreLine = `<div class="q scoreq"><div><span class="score">${got} / ${tot} 分</span><span class="sub">${r.questions.some(q => q.type !== 'mc') ? '选择题每题 2 分，简答题按内容和语法打 0–2 分。' : '每题 2 分。'}</span></div>
-      ${isDone(d.date) ? stamp(d.date, S.justDone) : st.n < st.t ? `<span class="sub">还有 ${st.t - st.n} 个词没选（新词和复习），选完${st.q === false ? '并过关' : ''}就能打卡。</span>` : st.q === false ? `<span class="sub">再完成复习过关就能打卡。<button class="btn sm" data-act="go-quiz" style="margin-left:6px">去过关</button></span>` : ''}</div>`;
+      ${isDone(d.date) ? stamp(d.date, S.justDone) : (d.lemmas.length - Object.keys(d.marks || {}).length) > 0 ? `<span class="sub">还有 ${d.lemmas.length - Object.keys(d.marks || {}).length} 个新词没选，选完并完成复习过关就能打卡。</span>` : st.q === false || st.n < st.t ? `<span class="sub">再完成复习过关就能打卡。<button class="btn sm" data-act="go-quiz" style="margin-left:6px">去过关</button></span>` : ''}</div>`;
   }
   const pane = S.readPane === 'q' ? 'q' : 'art';
   const rseg = `<div class="rseg only-m" role="tablist"><button role="tab" data-pane="art" aria-selected="${pane === 'art'}">文章</button><button role="tab" data-pane="q" aria-selected="${pane === 'q'}">${g && !g.pending ? `题目 · ${got}/${tot} 分` : `题目 ${na}/${nq}`}</button></div>`;
@@ -1593,7 +1617,7 @@ function vCal() {
       <div class="calnav"><button class="btn sm" data-month="${prevM}">‹ 上个月</button><button class="btn sm" data-month="${t.slice(0, 7)}">本月</button><button class="btn sm" data-month="${nextM}" ${nextM > t.slice(0, 7) ? 'disabled' : ''}>下个月 ›</button></div></div>
     <div class="calstats"><span><b>${doneN}</b> 天本月打卡</span><span><b>${streak()}</b> 天连续打卡</span></div>
     <div class="calgrid">${['一','二','三','四','五','六','日'].map(w => `<span class="wd">周${w}</span>`).join('')}${cells}</div>
-    <div class="legend"><span><i class="lg done"></i>已打卡（新词 + 过关 + 复习 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
+    <div class="legend"><span><i class="lg done"></i>已打卡（新词 + 复习过关 + 阅读）</span><span><i class="lg part"></i>做了一部分</span><span><i class="lg avail"></i>有题未开始</span></div>
     <p class="sub">点任意一天可以打开那天的单词和阅读。每天的题和你的答题记录都会保留。</p>
   </div>`;
 }
@@ -1625,8 +1649,8 @@ function vSet() {
       : `<button class="btn" data-act="ask-regen">现在按 ${esc(lv)} 重出今天的题</button>`}</div>
     <section class="sec"><h3>每日出题</h3><p>${SCHEDULE_TIME}，Claude 会按你的水平提前出好当天的 30 个单词（含词意、用法、词根、词源）和一篇阅读，打开页面就能直接开始。如果打开时还没出好，可以点“现在就在页面里生成”。</p>
     <p class="sub">已学过 ${(S.settings.seen || []).length} 个词，出题时会自动避开。</p></section>
-    <section class="sec"><h3>每日复习</h3><p>学过的词会按记忆曲线自动安排复习：第一次选“不认识”的第二天再出现，“模糊”的隔两天，“认识”的一周后。复习时选“记得”，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；选“忘了”就从第二天重新开始。复习也算在每天的单词里，新词、复习和阅读都做完才打卡。</p>
-    <p>看完当天的新词后还有“复习过关”：选了“模糊”和“不认识”的新词，加上按记忆曲线当天该复习的旧词，各出一道题（看德语选意思、看中文选德语、听发音选意思、拼写）；标了“认识”的新词和复习里选了“记得”的旧词不考。答错的词过几题换个题型再考，全部答对才过关，并且第二天还会再考；旧词一次答对就算“记得”，下次间隔拉长。从 10 月 14 日起，过关也算在打卡里。</p>
+    <section class="sec"><h3>每日复习</h3><p>只有选了“模糊”或“不认识”的词才会按记忆曲线安排复习：“不认识”的第二天再出现，“模糊”的隔两天。选了“认识”的词不再复习，没看过、没选过的词也不会进复习，所以哪天没学也不会多出没背过的词。复习时答对，下次间隔就拉长（1、2、4、7、15、30、60、120 天）；答错就从第二天重新开始。</p>
+    <p>复习和过关合在一起，叫“复习过关”：看完当天的新词后，选了“模糊”和“不认识”的新词，加上今天到期的旧词，各出一道题（看德语选意思、看中文选德语、听发音选意思、拼写）。答错的词过几题换个题型再考，全部答对才过关；新词答错第二天还会再考，旧词一次答对下次间隔就拉长。新词、复习过关和阅读都做完就打卡。</p>
     <div class="filter" role="group" aria-label="每日复习上限"><span class="sub" style="align-self:center">每天最多复习</span>${REV_CAPS.map(([v, l]) => `<button data-revcap="${v}" aria-pressed="${revCap() === v}">${l}</button>`).join('')}</div>
     <p class="sub">到期的词超过上限时，先复习拖得最久的，剩下的顺延到第二天。今天还没开始复习的话，改了上限马上生效，否则从明天起生效。</p></section>
     <section class="sec"><h3>发音</h3><p>切换到下一个单词（新词和复习都算）时，自动用德语读一遍这个词，名词连冠词一起读。想再听就点单词旁边的喇叭。</p>
@@ -1876,7 +1900,7 @@ document.addEventListener('click', e => {
   if (t.dataset.revcap !== undefined) {
     const v = Number(t.dataset.revcap); S.profile.revCap = v; save(S.profileRef, { revCap: v });
     const d = S.day;
-    if (d && d.date === today() && Array.isArray(d.review) && !Object.keys(d.rmarks || {}).length) { delete d.review; S.ridx = 0; S.wmode = null; S.ridxDate = null; buildReview(); }
+    if (d && d.date === today() && Array.isArray(d.review) && reviewReset(d)) { S.wmode = null; buildReview(); }
     render(); return;
   }
   if (t.dataset.autospeak !== undefined) { const v = t.dataset.autospeak === '1'; S.profile.autoSpeak = v; save(S.profileRef, { autoSpeak: v }); render(); return; }
@@ -1907,7 +1931,7 @@ document.addEventListener('click', e => {
       await openDate(today());
       Object.assign(S.day, emptyProg(), { lemmas: [], words: [], reading: null, level: S.settings.level });
       S.content = null; S.idx = 0; S.view = 'words';
-      save(S.dayRef, { ...emptyProg(), ...(Array.isArray(S.day.review) ? { review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0 } : {}) }, true);
+      save(S.dayRef, { ...emptyProg(), ...(Array.isArray(S.day.review) ? { review: S.day.review, rmarks: S.day.rmarks || {}, rpos: S.day.rpos || 0, revV: S.day.revV || 0 } : {}) }, true);
       generateWords();
     })();
   }
