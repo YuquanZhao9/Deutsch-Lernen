@@ -483,9 +483,9 @@ function renderEntry(e) {
         <div class="zh">${esc(s.zh)}</div>${s.de ? `<div class="de">${esc(s.de)}</div>` : ''}
         ${(s.ex || []).map(x => `<div class="ex"><div class="d">${esc(x.de)}</div><div class="z">${esc(x.zh)}</div></div>`).join('')}
       </div></div>`).join('')}</section>` : ''}
-    ${(e.use || []).length ? `<section class="sec"><h2>用法与搭配</h2><ul class="use">${e.use.map(u => `<li>${esc(u)}</li>`).join('')}</ul></section>` : ''}
     ${e.root ? `<section class="sec"><h2>构词</h2><div class="prose">${esc(e.root)}</div>${(e.fam || []).length ? `<div class="chips">${e.fam.map(f => `<button class="chip" data-find="${esc(f)}">${esc(f)}</button>`).join('')}</div>` : ''}</section>` : ''}
     ${e.ety || e.cog ? `<section class="sec"><h2>词源</h2>${e.ety ? `<div class="prose">${esc(e.ety)}</div>` : ''}${e.cog ? `<div class="prose"><b>同源 / 来源词：</b>${esc(e.cog)}</div>` : ''}</section>` : ''}
+    ${(e.use || []).length ? `<section class="sec"><h2>用法与搭配</h2><ul class="use">${e.use.map(u => `<li>${esc(u)}</li>`).join('')}</ul></section>` : ''}
     ${e.tip ? `<section class="sec tip"><h2>辨析与易错</h2><div class="prose">${esc(e.tip)}</div></section>` : ''}
     <button class="btn ghost" id="back">返回</button>
   </article>`;
