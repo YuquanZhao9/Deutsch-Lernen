@@ -165,6 +165,29 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0;overflow-x:clip}
 .nextrev{margin:0;font-size:13px;color:var(--muted)}
 .nextrev b{color:var(--ink);font-weight:600}
 .srcday{color:var(--muted)}
+/* 背单词 entry card and the full-screen study view (body.focus hides the app chrome) */
+.startcard{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:36px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.startcard .eyebrow{margin:0}
+.sc-n{font-family:var(--display);font-size:64px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.sc-n small{font-size:26px;color:var(--muted);font-weight:600}
+.startcard p{margin:0;color:var(--muted)}
+.sc-next{font-family:var(--display);font-size:24px;font-weight:600;color:var(--ink)}
+.btn.huge{font-size:19px;padding:16px 28px;border-radius:14px;width:100%;max-width:380px}
+.fbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--bg);display:flex;align-items:center;gap:12px;padding-block:8px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fx{flex:none;width:38px;height:38px;border:1px solid var(--line);background:var(--paper);border-radius:50%;font-size:16px;line-height:1;display:grid;place-items:center}
+.fl{font-weight:600;color:var(--ink);flex:none}
+body.focus .rail,body.focus .mtop{display:none}
+body.focus .app{grid-template-columns:minmax(0,1fr)}
+body.focus .view{gap:14px}
+body.focus .card{min-height:min(72vh,640px);top:calc(env(safe-area-inset-top,0px) + 70px)}
+body.focus .card .word-row{margin-top:auto}
+body.focus .card .ask{margin-bottom:auto;font-size:16px}
+body.focus .card .lemma{font-size:clamp(40px,15cqi,68px)}
+body.focus .card .art{font-size:28px}
+body.focus .card .speak{width:48px;height:48px}
+body.focus .think{display:none}
+body.focus .study:has(.think){grid-template-columns:minmax(0,640px);justify-content:center}
+body.focus .secnav{top:calc(env(safe-area-inset-top,0px) + 54px)}
 @media (min-width: 821px){.only-m{display:none !important}}
 /* 复习过关 (quiz on the day's new words) */
 .qz{display:flex;justify-content:center}
@@ -418,6 +441,11 @@ textarea{width:100%;box-sizing:border-box;min-height:84px;border:1px solid var(-
   .article .para{font-size:17px}
   .summary{grid-template-columns:repeat(3,minmax(0,1fr))}
   .stat b{font-size:26px}
+  body.focus main{padding-block:6px 24px}
+  body.focus .dock{bottom:0;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+  body.focus .card{min-height:calc(100svh - 190px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));padding:22px 20px}
+  body.focus .sec{scroll-margin-top:62px}
+  .startcard{padding:30px 20px}
 }
 </style>
 
@@ -476,7 +504,7 @@ const S = { db:null, sample:null, uid:null, profileRef:null, settingsRef:null, c
   settings:{ level: DEFAULT_LEVEL, seen: [], dates: [] }, profile:{ cal: {} },
   date: today(), day:null, content:null, calMonth: today().slice(0, 7),
   view:'words', idx:0, gen:{ words:null, read:null }, err:{}, book:[], bookFilter:'all', openBook:null, showTr:false, showGl:true, readPane:'art', slide:null, wmode:null, ridx:0, ridxDate:null, srs:{}, cards:{}, revBuilding:null, pop:null, lookup:{}, lookingUp:null, bookGen:null,
-  cloud:'connecting', justDone:false, confirmRegen:false };
+  focus:false, cloud:'connecting', justDone:false, confirmRegen:false };
 
 /* ---------------- storage ---------------- */
 let wq = Promise.resolve();
@@ -1002,7 +1030,7 @@ function curCard() {
   return { key: d.date + '|n|' + S.idx + '|' + d.lemmas[S.idx], text: speakText(d.words[S.idx], d.lemmas[S.idx]) };
 }
 function autoSpeak() {
-  const c = curCard(), k = c ? c.key : null;
+  const c = document.querySelector('.fview') ? curCard() : null, k = c ? c.key : null;
   if (k === spokenKey) return;
   spokenKey = k;
   if (c && autoSpeakOn() && userActed && document.visibilityState !== 'hidden') speak(c.text, false);
@@ -1061,10 +1089,12 @@ function render() {
   document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-current', String(t.dataset.view === S.view)));
   updateBadges();
   const m = $('#main');
+  document.body.classList.remove('focus');
   if (S.view === 'cal') { m.innerHTML = vCal(); return; }
   if (!S.day) { m.innerHTML = `<div class="view"><div class="notice"><span class="spin"></span>正在载入…</div></div>`; return; }
   m.innerHTML = ({ words: vWords, read: vRead, book: vBook, set: vSet })[S.view]();
   S.slide = null;
+  document.body.classList.toggle('focus', !!m.querySelector('.fview'));
   if (S.view === 'read') requestAnimationFrame(layoutGl);
   if (S.view === 'words') { spy(); autoSpeak(); if (wmode() === 'quiz') quizAfterRender(qFocus); }
 }
@@ -1168,6 +1198,22 @@ function wseg() {
     `<button role="tab" data-wmode="quiz" aria-selected="${mode === 'quiz'}">复习过关 ${quizOk(d) ? '✓' : (q ? Object.keys(q.pass || {}).length : 0) + '/' + (q ? q.n + (m => m.n.length + m.r.length)(quizMissing(d)) : quizPool(d).length + revLeft(d))}</button>`];
   return `<div class="rseg wseg" role="tablist" aria-label="新词和复习过关" style="grid-template-columns:repeat(${tabs.length},minmax(0,1fr))">${tabs.join('')}</div>`;
 }
+function focusBar(label, done, n) {
+  return `<div class="fbar"><button class="fx" data-act="focus-off" aria-label="退出背单词" title="退出（Esc）">✕</button><span class="fl">${label}</span><div class="qbar"><i style="width:${n ? Math.round(done / n * 100) : 0}%"></i></div><span>${done} / ${n}</span></div>`;
+}
+function startCard(kind) {
+  const d = S.day;
+  if (kind === 'rev') {
+    const R = d.review, n = R.length, done = Object.keys(d.rmarks || {}).length, r = R[Math.min(S.ridx, n - 1)];
+    return `<div class="startcard"><span class="eyebrow">今天要复习的旧词</span><div class="sc-n">${done}<small> / ${n}</small></div>
+      <p>下一个：<span class="sc-next">${esc(r ? r.l : '')}</span></p>
+      <button class="btn primary huge" data-act="focus-on">${done ? '继续复习' : '开始复习'}</button><p>点进去是全屏的背单词界面，随时可以点 ✕ 退出。</p></div>`;
+  }
+  const n = d.lemmas.length, done = Math.min(Object.keys(d.marks || {}).length, n);
+  return `<div class="startcard"><span class="eyebrow">${esc(dayName())}的新词</span><div class="sc-n">${done}<small> / ${n}</small></div>
+    <p>${done ? `接着从第 ${S.idx + 1} 个开始` : '一共 ' + n + ' 个，一个一个来'}</p>
+    <button class="btn primary huge" data-act="focus-on">${done ? '继续背单词' : '开始背单词'}</button><p>点进去是全屏的背单词界面，随时可以点 ✕ 退出。</p></div>`;
+}
 function vWords() {
   if (wmode() === 'rev') return vReview();
   if (wmode() === 'quiz') return vQuiz();
@@ -1176,13 +1222,14 @@ function vWords() {
   const head = `<div class="head hm"><div><h1>${esc(dayName())} 30 词</h1></div>${S.gen.words === S.date && n ? `<span class="skeleton"><span class="spin"></span>后面的词还在生成</span>` : ''}</div>`;
   if (!n) return `<div class="view">${dateBar()}${head}${errBox}${noContent('单词')}</div>`;
   if (S.idx >= n) return vWordsDone();
+  if (!S.focus) return `<div class="view">${dateBar()}${head}${wseg()}${progBar()}${errBox}${startCard('new')}</div>`;
   const i = S.idx, w = d.words[i], m = d.marks[i];
   let right;
   if (!w) right = S.gen.words === S.date
     ? `<div class="empty-detail"><span><span class="spin"></span>这个词的讲解还在生成…</span><span>生成完会自动出现，可以先判断认不认识。</span></div>`
     : `<div class="empty-detail"><b>这个词的讲解还没生成</b><span>可以先判断认不认识。</span><div><button class="btn sm" data-act="retry-words">补全讲解</button></div></div>`;
   else if (m) right = secnavHTML(w) + detailHTML(w);
-  else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span class="only-d">选好之后，这里会展开词意、词源、词根和用法。</span><span class="only-m">在下面选认识、模糊或不认识，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
+  else right = `<div class="empty-detail think"><b>先想一想它是什么意思</b><span class="only-d">选好之后，这里会展开词意、词源、词根和用法。</span><span class="only-m">在下面选认识、模糊或不认识，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
   const wmap = `<div class="wmap only-d" aria-label="30 个词">${d.lemmas.map((l, k) => `<button class="${d.marks[k] || ''}" data-go="${k}" title="${k + 1}. ${esc(d.words[k]?.word || l)}" aria-label="第 ${k + 1} 个" ${k === i ? 'aria-current="true"' : ''}></button>`).join('')}</div>`;
   const dock = `<div class="dock only-m" role="group" aria-label="认识程度">
     <button class="dk nav" data-go="${i - 1}" ${i === 0 ? 'disabled' : ''} aria-label="上一个">‹</button>
@@ -1190,8 +1237,7 @@ function vWords() {
     <button class="dk f ${m === 'f' ? 'sel' : ''}" data-mark="f">模糊</button>
     <button class="dk u ${m === 'u' ? 'sel' : ''}" data-mark="u">不认识</button>
     <button class="dk nav ${i === n - 1 ? 'txt' : ''} ${m ? 'go' : ''}" data-go="${i + 1}" aria-label="${i === n - 1 ? '完成' : '下一个'}">${i === n - 1 ? '完成' : '›'}</button></div>`;
-  return `<div class="view">${dateBar()}${head}${wseg()}
-    ${progBar()}${errBox}
+  return `<div class="view fview">${focusBar('新词', Math.min(Object.keys(d.marks || {}).length, n), n)}${errBox}
     <div class="study">
       <div class="card ${S.slide || ''}">
         <span class="num">第 ${i + 1} 个 · 共 ${n} 个</span>
@@ -1212,11 +1258,12 @@ function vWords() {
 function vReview() {
   const d = S.day, R = d.review, n = R.length, rm = d.rmarks || {};
   if (S.ridx >= n) return vReviewDone();
+  if (!S.focus) return `<div class="view">${dateBar()}<div class="head hm"><div><h1>${esc(dayName())}复习</h1></div></div>${wseg()}${progBar(rm, n, REVL)}${startCard('rev')}</div>`;
   ensureCards();
   const j = S.ridx, r = R[j], m = rm[j], cs = S.cards[r.d], w = cs ? cs[r.i] : null;
   const it = S.srs[r.d] && S.srs[r.d].items && S.srs[r.d].items[r.i];
   let right;
-  if (!m) right = `<div class="empty-detail"><b>先回想它的意思</b><span class="only-d">想好以后选“记得、模糊或忘了”，这里会展开完整讲解。</span><span class="only-m">在下面选记得、模糊或忘了，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 记得 · 2 模糊 · 3 忘了 · ← → 翻页</span></div>`;
+  if (!m) right = `<div class="empty-detail think"><b>先回想它的意思</b><span class="only-d">想好以后选“记得、模糊或忘了”，这里会展开完整讲解。</span><span class="only-m">在下面选记得、模糊或忘了，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 记得 · 2 模糊 · 3 忘了 · ← → 翻页</span></div>`;
   else if (cs === undefined) right = `<div class="empty-detail"><span><span class="spin"></span>正在载入这个词的讲解…</span></div>`;
   else if (!w) right = `<div class="empty-detail"><b>讲解没有载入</b><span>可能是网络问题。</span><div><button class="btn sm" data-act="load-cards">重试</button></div></div>`;
   else right = secnavHTML(w) + detailHTML(w);
@@ -1228,8 +1275,7 @@ function vReview() {
     <button class="dk f ${m === 'f' ? 'sel' : ''}" data-rmark="f">模糊</button>
     <button class="dk u ${m === 'u' ? 'sel' : ''}" data-rmark="u">忘了</button>
     <button class="dk nav ${j === n - 1 ? 'txt' : ''} ${m ? 'go' : ''}" data-rgo="${j + 1}" aria-label="${j === n - 1 ? '完成' : '下一个'}">${j === n - 1 ? '完成' : '›'}</button></div>`;
-  return `<div class="view">${dateBar()}<div class="head hm"><div><h1>${esc(dayName())}复习</h1></div></div>${wseg()}
-    ${progBar(rm, n, REVL)}
+  return `<div class="view fview">${focusBar('复习', Object.keys(rm).length, n)}
     <div class="study">
       <div class="card ${S.slide || ''}">
         <span class="num">复习 第 ${j + 1} 个 · 共 ${n} 个 · <span class="srcday">${esc(fmtShort(r.d))}学的</span></span>
@@ -1921,6 +1967,8 @@ document.addEventListener('click', e => {
   else if (act === 'quiz-nols') quizNoListen();
   else if (act === 'test-speak') speak('Guten Tag! Das ist die Kirchenglocke.');
   else if (act === 'quiz-giveup') quizAnswer(false, null, ($('#qin') || {}).value || '');
+  else if (act === 'focus-on') { S.focus = true; S.slide = null; render(); window.scrollTo({ top: 0 }); }
+  else if (act === 'focus-off') { S.focus = false; render(); window.scrollTo({ top: 0 }); }
   else if (act === 'go-quiz') { S.view = 'words'; S.wmode = 'quiz'; render(); window.scrollTo({ top: 0 }); }
   else if (act === 'stop-speak') { try { speechSynthesis.cancel(); } catch (e) {} }
   else if (act === 'ask-regen') { S.confirmRegen = true; render(); }
@@ -2004,6 +2052,7 @@ document.addEventListener('selectionchange', () => { clearTimeout(selT); selT = 
 document.addEventListener('scroll', e => { if (!pop.hidden && innerWidth > 820 && e.target && e.target.classList && e.target.classList.contains('article')) closePop(); }, true);
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && !pop.hidden) { closePop(); return; }
+  if (e.key === 'Escape' && document.body.classList.contains('focus')) { S.focus = false; render(); window.scrollTo({ top: 0 }); return; }
   if (S.view !== 'words' || !S.day || e.target.closest('textarea,input')) return;
   const map = { '1': 'k', '2': 'f', '3': 'u' };
   if (wmode() === 'quiz') {
@@ -2011,6 +2060,7 @@ document.addEventListener('keydown', e => {
     else if (/^[1-4]$/.test(e.key) && !qa) { const b = document.querySelectorAll('.qopt')[Number(e.key) - 1]; if (b) b.click(); }
     return;
   }
+  if (!document.body.classList.contains('focus')) { if (e.key === 'Enter' && $('[data-act="focus-on"]')) $('[data-act="focus-on"]').click(); return; }
   if (wmode() === 'rev') {
     if (map[e.key] && S.ridx < S.day.review.length) rmark(S.ridx, map[e.key]);
     else if (e.key === 'ArrowRight') rgo(S.ridx + 1);
