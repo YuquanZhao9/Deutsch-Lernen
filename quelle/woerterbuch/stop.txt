@@ -15,3 +15,5 @@ Round C FINAL (start 08:37 UTC 2026-10-13, scheduled): batches 443–462 (+more 
 Round C DONE 08:59 UTC 2026-10-13: 23074 entries (v35). Expansion to 23000 FINISHED; no further rounds. Full JSON 25.57 MB (limit 26.21 MB).
 Round 25k-A (start 20:21 UTC 2026-10-17): target 25000. Batches 463–482. STOP_AFTER=482.
 Round 25k-A DONE 20:42 UTC 2026-10-17: 24056 entries (v39). Full JSON 26.57 MB > 25 MiB: mirror uses web/ manifest + 4 parts. Round 25k-B scheduled 01:30 UTC 10-18.
+Round 25k-B / 27k (start 23:11 UTC 2026-10-17): user: 现在就开始, 不要等五个小时, 做到27000. Continuous; publish+sync every ~1000 words. Batches 483–545 (+more if < 27000).
+25k-B build 23:34 UTC 2026-10-17: 25084 entries (v40). Continuing toward 27000.
