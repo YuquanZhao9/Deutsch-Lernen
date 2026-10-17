@@ -114,6 +114,7 @@ ul.use li { font-size: 15px; }
 .hitbar { background: var(--accent-soft); color: var(--ink); border-radius: 10px; padding: 9px 12px; font-size: 14px; line-height: 1.5; }
 .hitbar b { font-family: var(--f-head); color: var(--accent); }
 .row .gl .hint { color: var(--accent); }
+.row .gl mark { background: none; color: var(--ink); font-weight: 600; }
 .row.h2 { flex-direction: column; align-items: stretch; gap: 2px; padding-right: 86px; position: relative; }
 .row.h2 .gl { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .row.h2 .gl .pos { color: var(--accent); font-style: normal; margin-right: 4px; }
@@ -161,6 +162,59 @@ a.btn { text-decoration: none; display: inline-block; }
 .trw .w .m { flex-basis: 100%; font-size: 15px; }
 .note a { color: var(--accent); }
 @media (prefers-reduced-motion: no-preference) { main { scroll-behavior: smooth; } }
+/* ---- visual polish (v38): softer cards, clearer hierarchy; layout and behaviour unchanged ---- */
+:root { --shadow: 0 1px 2px rgba(23,33,43,.05), 0 2px 8px rgba(23,33,43,.04); --ring: rgba(29,79,122,.14); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --shadow: 0 1px 2px rgba(0,0,0,.35); --ring: rgba(140,184,230,.18); } }
+:root[data-theme="dark"] { --shadow: 0 1px 2px rgba(0,0,0,.35); --ring: rgba(140,184,230,.18); }
+header.top { background: var(--surface); border-bottom-color: transparent; box-shadow: 0 1px 0 var(--line), 0 4px 14px rgba(23,33,43,.04); padding-top: 12px; }
+.brand b { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); }
+.brand b::before { content: ""; width: 8px; height: 22px; border-radius: 4px; background: linear-gradient(var(--der) 0 33%, var(--die) 33% 66%, var(--das) 66%); }
+.search { background: var(--bg); border-color: transparent; border-radius: 14px; height: 48px; transition: border-color .15s, box-shadow .15s, background .15s; }
+.search:focus-within { background: var(--surface); border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+.search input::placeholder { color: var(--muted); opacity: .8; }
+.search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; display: none; }
+.umlauts { gap: 6px; }
+.umlauts button { height: 32px; border-color: transparent; background: var(--bg); border-radius: 10px; color: var(--ink); transition: background .12s, color .12s; }
+.umlauts button:hover { background: var(--accent-soft); color: var(--accent); }
+.pad { padding: 14px 16px 28px; }
+.list, .sec, .card, .forms { border-color: var(--line); box-shadow: var(--shadow); }
+.list, .sec, .card { border-radius: 14px; }
+.row { padding: 12px 16px; transition: background .12s; }
+.row .hw { font-size: 17.5px; }
+.row .gl mark { color: var(--accent); }
+.label { font-weight: 600; letter-spacing: .06em; margin: 2px 2px 8px; }
+.sec { padding: 14px 16px; gap: 10px; }
+.sec h2 { display: flex; align-items: center; gap: 8px; font-size: 13.5px; }
+.sec h2::before { content: ""; width: 3px; height: 14px; border-radius: 2px; background: currentColor; opacity: .85; }
+.sense { grid-template-columns: 24px 1fr; gap: 0 10px; }
+.sense + .sense { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; }
+.sense .n { width: 22px; height: 22px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-size: 13px; display: grid; place-items: center; margin-top: 3px; }
+.ex { margin-top: 8px; padding: 6px 10px; border-left: 3px solid var(--accent-soft); background: color-mix(in srgb, var(--accent-soft) 35%, transparent); border-radius: 0 8px 8px 0; }
+.lvl { border: 0; background: var(--accent-soft); border-radius: 999px; padding: 1px 9px; }
+.pos { font-style: normal; background: var(--bg); border-radius: 999px; padding: 1px 9px; font-size: 12.5px; }
+.ehead { padding: 4px 2px 2px; }
+.ehead .line1 .iconbtn { background: var(--surface); box-shadow: var(--shadow); border: 1px solid var(--line); border-radius: 50%; }
+.forms { border-radius: 12px; }
+.hitbar { border-radius: 12px; border-left: 3px solid var(--accent); }
+.tip { border-radius: 14px; box-shadow: none; }
+.chip { transition: border-color .12s, color .12s, background .12s; }
+.chip:hover { background: var(--accent-soft); border-color: transparent; }
+.btn { border-radius: 12px; transition: filter .12s; }
+.btn:not(.ghost):hover { filter: brightness(1.08); }
+.btn.ghost:hover { background: var(--accent-soft); }
+nav.tabs { border-top-color: transparent; box-shadow: 0 -1px 0 var(--line), 0 -4px 14px rgba(23,33,43,.04); padding-top: 4px; }
+nav.tabs button svg { padding: 2px 16px; width: 54px; height: 28px; border-radius: 999px; box-sizing: border-box; transition: background .15s; }
+nav.tabs button[aria-selected="true"] svg { background: var(--accent-soft); }
+nav.tabs button.switch { border-left: 0; }
+.empty { padding: 32px 12px; line-height: 1.7; }
+.welcome { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 26px 16px; }
+.welcome .big { font-family: var(--f-head); font-size: 22px; font-weight: 700; color: var(--ink); }
+.welcome p { margin: 0; color: var(--muted); font-size: 14.5px; }
+.legend { justify-content: center; gap: 16px; color: var(--muted); }
+.legend span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: currentColor; margin-right: 6px; vertical-align: 1px; }
+.toast { border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+.iconbtn[hidden] { display: none; }
+.brand { align-items: center; }
 </style>
 
 </head><body>
@@ -169,7 +223,7 @@ a.btn { text-decoration: none; display: inline-block; }
     <div class="brand"><b>Wortwurzel</b><span id="count">词库加载中</span></div>
     <div class="search">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muted);flex:none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+      <input id="q" type="search" placeholder="查德语或中文，如 Haus、房子" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
       <button class="iconbtn" id="clear" aria-label="清空" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="umlauts" id="uml">
@@ -395,7 +449,7 @@ function buildIndex() {
       if (!h.items.some(([a, b]) => a === f && b === label)) h.items.push([f, label]);
     }
     const zh = (e.senses || []).map(s => s.zh).join('；');
-    return { e, k: fold(e.w), forms: [...new Set(forms.map(fold))], exact: new Set(forms.map(f => String(f).toLowerCase())), zh };
+    return { e, k: fold(e.w), forms: [...new Set(forms.map(fold))], exact: new Set(forms.map(f => String(f).toLowerCase())), zh, zt: (e.senses || []).map(s => zhTerms(s.zh)) };
   });
   $('#count').textContent = DICT.entries.length + ' 词 · ' + (DICT.version || '');
 }
@@ -411,9 +465,32 @@ function hitFor(e, raw) {
 
 function lev(a, b) { if (Math.abs(a.length - b.length) > 2) return 9; const d = Array.from({length: a.length + 1}, (_, i) => [i]); for (let j = 1; j <= b.length; j++) d[0][j] = j; for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + (a[i-1] === b[j-1] ? 0 : 1)); return d[a.length][b.length]; }
 
+// "（法）偏颇，偏见；利益冲突" -> ["偏颇", "偏见", "利益冲突"]: the bare Chinese equivalents of one sense, without bracketed notes
+function zhTerms(zh) { return String(zh || '').replace(/（[^）]*）|\([^)]*\)|【[^】]*】/g, '').split(/[，；、,;／\/：:]|……|…/).map(t => t.replace(/^[\s“”"]+|[\s“”"。！？]+$/g, '')).filter(Boolean); }
+const LVLRANK = { A1: 0, A2: 1, B1: 2, B2: 3, C1: 4, C2: 5 };
+// Chinese query: an entry whose meaning *is* the query (银行 -> Bank) beats one that only mentions it (银行家, 投资银行),
+// an early sense beats a late one, and a basic word beats a rare one
+function searchZh(s) {
+  const out = [];
+  for (const x of INDEX) {
+    let best = null;
+    x.zt.forEach((terms, i) => {
+      terms.forEach((t, j) => {
+        const c = t === s || t === s + '的' || t + '的' === s || t === s + '地' ? 0 : t.length <= s.length + 2 && (t.startsWith(s) || t.endsWith(s)) ? 1 : t.includes(s) ? 2 : null;
+        const r = c === null ? null : [c, Math.min(i, 3), Math.min(j, 3)];
+        if (r && (!best || (r[0] - best[0] || r[1] - best[1] || r[2] - best[2]) < 0)) best = r;
+      });
+    });
+    if (!best && x.zh.includes(s)) best = [3, 9, 9]; // only inside a bracketed note: （狗、狐狸等）吠
+    if (best) out.push([...best, LVLRANK[String(x.e.lvl || '').slice(0, 2)] ?? 6, x.k.length, x.e]);
+  }
+  out.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3] || a[4] - b[4]);
+  return out.slice(0, 100).map(x => x[5]);
+}
+
 function search(raw) {
   const s = raw.trim(); if (!s) return [];
-  if (/[一-鿿]/.test(s)) return INDEX.filter(x => x.zh.includes(s)).map(x => x.e).slice(0, 60);
+  if (/[一-鿿]/.test(s)) return searchZh(s.replace(/\s+/g, ''));
   const f = fold(s), lo = s.toLowerCase(); const out = [];
   for (const x of INDEX) {
     let r = null;
@@ -431,7 +508,11 @@ function hwHtml(e) { return (e.pos === 'n' && e.gen ? `<span class="art g-${e.ge
 function rowHtml(e, raw) {
   const h = raw ? hitFor(e, raw) : null;
   const hint = (h ? `<span class="hint">${esc(h.form)}：${esc(h.labels.join('；'))}</span> · ` : '') + (e.ext ? `<span class="hint">${esc(e.src)}</span> · ` : '');
-  return `<li><button class="row" data-open="${esc(keyOf(e))}"><span class="hw">${hwHtml(e)}</span><span class="gl">${hint}${esc((e.senses?.[0]?.zh) || '')}</span></button></li>`;
+  // a Chinese query: show the sense that matched (not always the first), with the query in bold
+  const zq = raw && isZh(raw) ? raw.replace(/\s+/g, '') : '';
+  const sense = zq ? ((e.senses || []).find(x => String(x.zh).includes(zq)) || e.senses?.[0]) : e.senses?.[0];
+  const gl = esc(sense?.zh || ''), glHtml = zq ? gl.split(esc(zq)).join(`<mark>${esc(zq)}</mark>`) : gl;
+  return `<li><button class="row" data-open="${esc(keyOf(e))}"><span class="hw">${hwHtml(e)}</span><span class="gl">${hint}${glHtml}</span></button></li>`;
 }
 
 const POSAB = { n: '', v: 'v.', adj: 'adj.', adv: 'adv.', konj: 'konj.', präp: 'präp.', part: 'part.', pron: 'pron.', num: 'num.', art: 'art.', interj: 'interj.' };
@@ -449,8 +530,8 @@ function renderHome() {
   view.innerHTML = `<div class="stack">
 
     ${rows.length ? `<section><div class="label">查词记录 · ${rows.length}</div><ul class="list">${rows.join('')}</ul></section>
-    <div class="btns"><button class="btn ghost" id="clearhist">清空记录</button></div>` : `<div class="empty">查过的词和翻译过的句子会按时间列在这里。</div>`}
-    <section class="legend"><span class="g-m">■ der 阳性</span><span class="g-f">■ die 阴性</span><span class="g-n">■ das 中性</span></section>
+    <div class="btns"><button class="btn ghost" id="clearhist">清空记录</button></div>` : `<div class="card welcome"><div class="big">德语 ⇄ 中文</div><p>输入德语词或中文意思都能查，也能整句翻译。查过的词会按时间列在这里。</p><div class="chips"><button class="chip" data-find="Haus">Haus</button><button class="chip" data-find="房子">房子</button><button class="chip" data-find="gingen">gingen</button></div></div>`}
+    <section class="legend"><span class="g-m">der 阳性</span><span class="g-f">die 阴性</span><span class="g-n">das 中性</span></section>
   </div>`;
 }
 
@@ -615,7 +696,7 @@ function wantSentence(v) { return isSentence(v) || (!!forceTr && forceTr === Str
 // what counts as "a sentence" rather than a dictionary query
 function isSentence(raw) {
   const s = String(raw || '').trim(); if (!s) return false;
-  if (isZh(s)) return /[，。！？；,.!?]/.test(s) || s.length >= 6 || (s.length >= 4 && !search(s).length);
+  if (isZh(s)) return /[，。！？；,.!?]/.test(s) || s.length >= 8 || (s.length >= 4 && !search(s).length);
   const words = s.split(/\s+/).length;
   return words >= 3 || (words === 2 && /[.!?]$/.test(s)) || (words >= 2 && /[,;:]/.test(s));
 }

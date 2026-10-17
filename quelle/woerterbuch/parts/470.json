@@ -1,0 +1,2018 @@
+[
+ {
+  "w": "heroisch",
+  "pos": "adj",
+  "ipa": "heˈʁoːɪʃ",
+  "lvl": "C1",
+  "forms": "heroischer · am heroischsten",
+  "senses": [
+   {
+    "zh": "英雄的，英勇的，壮烈的",
+    "de": "heldenhaft, mutig und opferbereit",
+    "ex": [
+     {
+      "de": "Die Feuerwehrleute leisteten einen heroischen Einsatz.",
+      "zh": "消防员们进行了英勇的救援。"
+     },
+     {
+      "de": "Sein Kampf gegen die Krankheit wurde als heroisch beschrieben.",
+      "zh": "他与疾病的抗争被形容为英勇无畏。"
+     }
+    ]
+   },
+   {
+    "zh": "（文艺）英雄题材的；（风格）雄壮、宏伟的",
+    "de": "Helden darstellend; pathetisch, erhaben (Kunst)",
+    "ex": [
+     {
+      "de": "Das Gemälde zeigt eine heroische Landschaft.",
+      "zh": "这幅画描绘的是一幅雄伟的英雄式风景。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine heroische Tat / ein heroischer Kampf — 英勇的行为／英勇的斗争",
+   "heroisch kämpfen / sterben — 英勇作战／壮烈牺牲",
+   "oft ironisch: ein heroischer Versuch — 常带讽刺：一次“壮烈”的尝试"
+  ],
+  "root": "hero·isch：Heros（英雄，希腊语借词）+ -isch（形容词后缀）→ 英雄般的",
+  "fam": [
+   "der Held",
+   "der Heros",
+   "der Heroismus",
+   "die Heroine"
+  ],
+  "ety": "借自拉丁语 heroicus，后者源自希腊语 hērōikós（英雄的），由 hḗrōs（英雄、半神）派生；一般认为约在近代早期经学者用语进入德语。",
+  "cog": "英 heroic, hero；法 héroïque",
+  "tip": "日常口语更常用 heldenhaft；heroisch 偏书面、庄重，也常带讽刺意味。"
+ },
+ {
+  "w": "hiergegen",
+  "pos": "adv",
+  "ipa": "hiːɐ̯ˈɡeːɡn̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（书面）对此，针对这一点（表示反对、抵制）",
+    "de": "gegen dies, gegen das hier Genannte",
+    "ex": [
+     {
+      "de": "Hiergegen kann innerhalb eines Monats Widerspruch eingelegt werden.",
+      "zh": "对此可在一个月内提出异议。"
+     },
+     {
+      "de": "Hiergegen spricht, dass die Kosten zu hoch sind.",
+      "zh": "反对这一点的理由是成本太高。"
+     }
+    ]
+   },
+   {
+    "zh": "（书面）与此相比，相比之下",
+    "de": "im Vergleich hierzu",
+    "ex": [
+     {
+      "de": "Hiergegen wirken die alten Zahlen fast bescheiden.",
+      "zh": "与此相比，以前的数字几乎显得微不足道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "代副词：hier + gegen，指代前文提到的事物，相当于 gegen dies",
+   "公文常用：Hiergegen ist ... zulässig. — 对此可……（法律救济说明）",
+   "口语中多用 dagegen 代替"
+  ],
+  "root": "hier·gegen：hier（这里、此）+ gegen（反对、针对）→ 针对此事",
+  "fam": [
+   "dagegen",
+   "hiermit",
+   "hierzu",
+   "gegen"
+  ],
+  "ety": "由 hier 与介词 gegen 组合而成的代副词。gegen < 中古高地德语 gegen < 古高地德语 gegin。",
+  "cog": "英 against（与 gegen 同源）",
+  "tip": "指物不指人：针对人要说 gegen ihn / gegen sie，不能说 hiergegen。"
+ },
+ {
+  "w": "hinauszögern",
+  "pos": "v",
+  "ipa": "hɪˈnaʊ̯sˌt͡søːɡɐn",
+  "lvl": "C1",
+  "forms": "zögert hinaus · zögerte hinaus · hat hinausgezögert",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "拖延，推迟（使某事延后发生）",
+    "de": "etw. absichtlich verzögern, auf später verschieben",
+    "ex": [
+     {
+      "de": "Die Firma versucht, die Entscheidung hinauszuzögern.",
+      "zh": "公司试图拖延做出决定。"
+     },
+     {
+      "de": "Er hat die Abgabe seiner Arbeit immer wieder hinausgezögert.",
+      "zh": "他一再拖延交论文。"
+     }
+    ]
+   },
+   {
+    "zh": "sich hinauszögern：被拖延，延后",
+    "de": "sich verzögern, später geschehen als geplant",
+    "ex": [
+     {
+      "de": "Der Baubeginn zögert sich um mehrere Monate hinaus.",
+      "zh": "开工时间推迟了好几个月。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) hinauszögern — 拖延某事",
+   "sich (um + Zeitangabe) hinauszögern — （被）推迟（多久）",
+   "das Unvermeidliche hinauszögern — 拖延不可避免之事"
+  ],
+  "root": "hin·aus·zöger·n：hinaus（向外、向后延）+ zögern（犹豫、迟疑）→ 迟疑着把事情往后推",
+  "fam": [
+   "zögern",
+   "verzögern",
+   "die Verzögerung",
+   "zögerlich"
+  ],
+  "ety": "zögern 为早期新高地德语词，一般认为是 mhd. zogen（拉、拖）的反复动词形式，与 ziehen 同族（一说）。",
+  "cog": "与 ziehen 同族；英 tug（一说）",
+  "tip": "和 verschieben 区别：verschieben 是“改期”，hinauszögern 强调故意拖着不办。"
+ },
+ {
+  "w": "hinfahren",
+  "pos": "v",
+  "ipa": "ˈhɪnfaːʁən",
+  "lvl": "A2–B1",
+  "forms": "fährt hin · fuhr hin · ist hingefahren",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（乘车、开车）去那里，前往",
+    "de": "zu einem bestimmten Ort fahren",
+    "ex": [
+     {
+      "de": "Das Konzert ist in Leipzig – fahren wir zusammen hin?",
+      "zh": "音乐会在莱比锡——我们一起去吗？"
+     },
+     {
+      "de": "Wir sind mit dem Zug hingefahren und mit dem Bus zurück.",
+      "zh": "我们坐火车去，坐大巴回来。"
+     }
+    ]
+   },
+   {
+    "zh": "开车把（某人/某物）送去",
+    "de": "jdn./etw. mit einem Fahrzeug an einen Ort bringen",
+    "ex": [
+     {
+      "de": "Ich kann dich morgen zum Bahnhof hinfahren.",
+      "zh": "明天我可以开车送你去火车站。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "不及物用 sein：Wir sind hingefahren. — 我们去了",
+   "及物用 haben：Er hat mich hingefahren. — 他开车送我去了",
+   "hin- 表示“离开说话人向某处”，反义 herfahren"
+  ],
+  "root": "hin·fahr·en：hin（往那边，离开说话者）+ fahren（乘车行进）→ 开/坐车去那边",
+  "fam": [
+   "fahren",
+   "hingehen",
+   "zurückfahren",
+   "die Hinfahrt"
+  ],
+  "ety": "fahren < 中古高地德语 varn < 古高地德语 faran，原始日耳曼语 *faraną（行走、前往）。",
+  "cog": "英 fare（如 farewell, wayfarer）；荷 varen",
+  "tip": "注意 hin 与 her 的方向：说话者“去那边”用 hinfahren，“过来”用 herfahren；Hinfahrt（去程）↔ Rückfahrt（回程）。"
+ },
+ {
+  "w": "hinzusetzen",
+  "pos": "v",
+  "ipa": "hɪnˈt͡suːˌzɛt͡sn̩",
+  "lvl": "C1",
+  "forms": "setzt hinzu · setzte hinzu · hat hinzugesetzt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（说话、写作时）补充，附加（一句）",
+    "de": "ergänzend sagen oder schreiben, hinzufügen",
+    "ex": [
+     {
+      "de": "„Aber nur heute“, setzte sie lächelnd hinzu.",
+      "zh": "“不过只限今天。”她笑着补充道。"
+     }
+    ]
+   },
+   {
+    "zh": "sich hinzusetzen：（走过去）和别人坐在一起",
+    "de": "sich zu anderen setzen",
+    "ex": [
+     {
+      "de": "Darf ich mich hinzusetzen?",
+      "zh": "我可以坐过来一起吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) hinzusetzen — 补充说/写某事（多用于引语后）",
+   "sich (zu jdm.) hinzusetzen — 坐到（某人）旁边加入",
+   "近义：hinzufügen, ergänzen"
+  ],
+  "root": "hin·zu·setz·en：hinzu（加到……上）+ setzen（放置）→ 加放上去 → 补充",
+  "fam": [
+   "hinzufügen",
+   "setzen",
+   "hinzukommen",
+   "der Zusatz"
+  ],
+  "ety": "setzen < 中古高地德语 setzen < 古高地德语 sezzen，原始日耳曼语 *satjaną，是 sitzen 的使役动词（使坐下、放置）。",
+  "cog": "英 set；荷 zetten",
+  "tip": "表示“补充说”时常见于小说中的引语：…, setzte er hinzu. 日常更常说 hinzufügen 或 ergänzen。"
+ },
+ {
+  "w": "Hirntumor",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Hirntumoren",
+  "gs": "des Hirntumors",
+  "ipa": "ˈhɪʁnˌtuːmoːɐ̯",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "脑瘤，脑肿瘤",
+    "de": "Geschwulst im Gehirn",
+    "ex": [
+     {
+      "de": "Bei ihm wurde ein gutartiger Hirntumor entdeckt.",
+      "zh": "他被查出患有良性脑瘤。"
+     },
+     {
+      "de": "Hirntumoren bei Kindern sind selten, aber gefährlich.",
+      "zh": "儿童脑瘤虽然少见，但很危险。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein gutartiger / bösartiger Hirntumor — 良性／恶性脑瘤",
+   "einen Hirntumor entfernen / operieren — 切除脑瘤",
+   "复数也作 Hirntumore（口语）"
+  ],
+  "root": "Hirn·tumor：Hirn（脑）+ Tumor（肿瘤，拉丁语借词）",
+  "fam": [
+   "das Gehirn",
+   "der Tumor",
+   "die Hirnhautentzündung"
+  ],
+  "ety": "Hirn < 中古高地德语 hirne < 古高地德语 hirni；Tumor 借自拉丁语 tumor（肿胀），源自 tumēre（肿起）。",
+  "cog": "英 tumour/tumor；Hirn 与古挪威语 hjarni 同源",
+  "tip": "复数重音移位：der Túmor → die Tumóren；标准复数是 Tumoren。"
+ },
+ {
+  "w": "Hochofen",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Hochöfen",
+  "gs": "des Hochofens",
+  "ipa": "ˈhoːxʔoːfn̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "高炉，炼铁炉",
+    "de": "großer Schachtofen zur Gewinnung von Roheisen aus Erz",
+    "ex": [
+     {
+      "de": "Der letzte Hochofen im Revier wurde 2015 stillgelegt.",
+      "zh": "该工业区最后一座高炉于2015年停产。"
+     },
+     {
+      "de": "Im Hochofen wird Eisenerz zu Roheisen verhüttet.",
+      "zh": "铁矿石在高炉中被冶炼成生铁。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Hochofen anblasen / stilllegen — 高炉点火开炉／停炉",
+   "Stahlindustrie: Hochofen, Stahlwerk, Walzwerk — 钢铁工业：高炉、炼钢厂、轧钢厂"
+  ],
+  "root": "Hoch·ofen：hoch（高）+ Ofen（炉子）→ 高大的竖炉",
+  "fam": [
+   "der Ofen",
+   "hoch",
+   "die Hütte",
+   "das Roheisen"
+  ],
+  "ety": "Ofen < 中古高地德语 oven < 古高地德语 ovan，原始日耳曼语 *uhnaz（一说）。",
+  "cog": "英 oven；荷 oven",
+  "tip": "复数变音：Hochöfen。鲁尔区、萨尔州的工业史中常见。"
+ },
+ {
+  "w": "Hoftheater",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Hoftheater",
+  "gs": "des Hoftheaters",
+  "ipa": "ˈhoːftheˌaːtɐ",
+  "lvl": "C1–C2",
+  "senses": [
+   {
+    "zh": "宫廷剧院（由王侯宫廷资助和管理的剧院）",
+    "de": "von einem Fürstenhof unterhaltenes Theater",
+    "ex": [
+     {
+      "de": "Goethe leitete viele Jahre das Weimarer Hoftheater.",
+      "zh": "歌德曾多年主持魏玛宫廷剧院。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das ehemalige Hoftheater — 前宫廷剧院（1918年后多改为国家/州立剧院）",
+   "类似构词：Hofkapelle, Hofoper — 宫廷乐队、宫廷歌剧院"
+  ],
+  "root": "Hof·theater：Hof（宫廷）+ Theater（剧院）",
+  "fam": [
+   "der Hof",
+   "höfisch",
+   "das Theater",
+   "die Hofoper"
+  ],
+  "ety": "Hof < 古高地德语 hof（院落；宫廷）；Theater 经法语 théâtre 借自拉丁语 theatrum，源自希腊语 théatron（观看之所）。",
+  "cog": "英 theatre；荷 hof（宫廷、院子）",
+  "tip": "历史、文化类文本用词；今天的 Staatstheater 很多前身就是 Hoftheater。"
+ },
+ {
+  "w": "Hügelland",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Hügelländer",
+  "gs": "des Hügellandes",
+  "ipa": "ˈhyːɡl̩ˌlant",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "丘陵地带，丘陵地区",
+    "de": "von Hügeln geprägte Landschaft",
+    "ex": [
+     {
+      "de": "Das Weingebiet liegt in einem sanften Hügelland.",
+      "zh": "这片葡萄酒产区位于平缓的丘陵地带。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein sanftes / welliges Hügelland — 平缓的／起伏的丘陵地",
+   "地理名称中常见：das Tertiärhügelland — 第三纪丘陵地（巴伐利亚）",
+   "比较：Flachland（平原）– Hügelland – Bergland / Gebirge（山地）"
+  ],
+  "root": "Hügel·land：Hügel（小山丘）+ Land（地区）",
+  "fam": [
+   "der Hügel",
+   "hügelig",
+   "das Flachland",
+   "das Bergland"
+  ],
+  "ety": "Hügel 为早期新高地德语词（经路德译经而通行），一般认为与中古高地德语 hübel（小丘）有关，具体来源有争议；Land < 古高地德语 lant。",
+  "cog": "英 land；荷 land",
+  "tip": "复数 Hügelländer 极少用；形容词 hügelig（丘陵起伏的）更常见。"
+ },
+ {
+  "w": "Informationsdienst",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Informationsdienste",
+  "gs": "des Informationsdienstes",
+  "ipa": "ɪnfɔʁmaˈt͡si̯oːnsˌdiːnst",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "信息服务（机构）；资讯服务",
+    "de": "Einrichtung oder Service, der Informationen sammelt und weitergibt",
+    "ex": [
+     {
+      "de": "Der Verband betreibt einen Informationsdienst für seine Mitglieder.",
+      "zh": "该协会为会员运营一项资讯服务。"
+     },
+     {
+      "de": "Der Informationsdienst Wissenschaft verbreitet Pressemitteilungen von Hochschulen.",
+      "zh": "“科学信息服务”平台发布各高校的新闻稿。"
+     }
+    ]
+   },
+   {
+    "zh": "（委婉）情报机构",
+    "de": "Nachrichtendienst, Geheimdienst",
+    "ex": [
+     {
+      "de": "Der Bericht stammt aus Kreisen des militärischen Informationsdienstes.",
+      "zh": "这份报告来自军事情报部门人士。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Informationsdienst abonnieren — 订阅资讯服务",
+   "近义：Nachrichtendienst（新闻社；情报机构），Newsletter"
+  ],
+  "root": "Information·s·dienst：Information（信息）+ -s-（连接音）+ Dienst（服务）",
+  "fam": [
+   "die Information",
+   "informieren",
+   "der Dienst",
+   "der Nachrichtendienst"
+  ],
+  "ety": "Information 借自拉丁语 informatio（塑形；教导），源自 informare；Dienst < 古高地德语 dionōst。",
+  "cog": "英 information service",
+  "tip": "“情报机构”的标准说法是 Nachrichtendienst / Geheimdienst，Informationsdienst 多指一般资讯服务。"
+ },
+ {
+  "w": "Innenverteidigung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Innenverteidigung",
+  "ipa": "ˈɪnənfɛɐ̯ˌtaɪ̯dɪɡʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（足球等）中路防守；中后卫组合",
+    "de": "die zentralen Verteidiger einer Mannschaft; Abwehrzentrum",
+    "ex": [
+     {
+      "de": "Der Neuzugang soll die Innenverteidigung verstärken.",
+      "zh": "这位新援将加强中后卫线。"
+     },
+     {
+      "de": "Trainer Müller setzt in der Innenverteidigung auf Erfahrung.",
+      "zh": "米勒教练在中卫位置上倚重经验丰富的球员。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Innenverteidigung spielen — 踢中后卫",
+   "der Innenverteidiger — 中后卫（球员）",
+   "对应：Außenverteidigung / Außenverteidiger — 边后卫"
+  ],
+  "root": "Innen·verteidig·ung：innen（内侧、中路）+ Verteidigung（防守）",
+  "fam": [
+   "der Innenverteidiger",
+   "verteidigen",
+   "die Abwehr",
+   "der Außenverteidiger"
+  ],
+  "ety": "verteidigen < 中古高地德语 vertegedingen（在法庭上为人辩护），由 tagedinc（法庭日、审理）派生，tagedinc 由 Tag（日）+ Ding（集会、审判）构成。",
+  "cog": "Ding 与英 thing 同源",
+  "tip": "体育新闻用词，指集体（中卫线）；单个球员用 Innenverteidiger。"
+ },
+ {
+  "w": "Integrationspolitik",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Integrationspolitik",
+  "ipa": "ɪnteɡʁaˈt͡si̯oːnspoliˌtiːk",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "融入政策，移民融合政策",
+    "de": "Politik zur Eingliederung von Zuwanderern in die Gesellschaft",
+    "ex": [
+     {
+      "de": "Die Integrationspolitik der Regierung steht in der Kritik.",
+      "zh": "政府的移民融合政策受到批评。"
+     },
+     {
+      "de": "Sprachkurse sind ein zentraler Baustein der Integrationspolitik.",
+      "zh": "语言课程是融合政策的核心组成部分。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine gescheiterte / erfolgreiche Integrationspolitik — 失败的／成功的融合政策",
+   "Integrations- und Migrationspolitik — 融合与移民政策",
+   "相关：Integrationskurs — 融入课程（德语+社会常识）"
+  ],
+  "root": "Integration·s·politik：Integration（融入、整合）+ -s- + Politik（政策）",
+  "fam": [
+   "die Integration",
+   "integrieren",
+   "der Integrationskurs",
+   "die Politik"
+  ],
+  "ety": "Integration 借自拉丁语 integratio（恢复完整），源自 integrare，与 integer（完整的）同族；Politik 经法语 politique 源自希腊语 politikḗ（城邦事务）。",
+  "cog": "英 integration policy",
+  "tip": "德国政治讨论高频词。注意 Integration 读 [ɪnteɡʁaˈt͡si̯oːn]，-tion 读 [t͡si̯oːn]。"
+ },
+ {
+  "w": "Juniorpartner",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Juniorpartner",
+  "gs": "des Juniorpartners",
+  "ipa": "ˈjuːni̯oːɐ̯ˌpaʁtnɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（联合政府中的）小伙伴，较小的执政伙伴",
+    "de": "kleinerer, schwächerer Partner in einer Koalition",
+    "ex": [
+     {
+      "de": "Die Liberalen waren jahrelang Juniorpartner der Union.",
+      "zh": "自由民主党多年来一直是联盟党的小执政伙伴。"
+     },
+     {
+      "de": "Als Juniorpartner konnte die Partei nur wenige Ziele durchsetzen.",
+      "zh": "作为小伙伴，该党只能实现少数目标。"
+     }
+    ]
+   },
+   {
+    "zh": "（律所、企业中的）初级合伙人",
+    "de": "jüngerer Teilhaber eines Unternehmens",
+    "ex": [
+     {
+      "de": "Sie wurde nach fünf Jahren Juniorpartnerin der Kanzlei.",
+      "zh": "五年后她成为律所的初级合伙人。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Juniorpartner in einer Koalition sein — 在联合政府中当小伙伴",
+   "阴性：die Juniorpartnerin",
+   "对应：Seniorpartner — 高级合伙人"
+  ],
+  "root": "Junior·partner：Junior（年轻者、资历浅者，拉丁语）+ Partner（伙伴，英语借词）",
+  "fam": [
+   "der Partner",
+   "die Partnerschaft",
+   "der Junior",
+   "der Seniorpartner"
+  ],
+  "ety": "Junior 来自拉丁语 iunior（更年轻的，iuvenis 的比较级）；Partner 借自英语 partner。",
+  "cog": "英 junior partner",
+  "tip": "政治报道中常见，指联合政府里票数较少的党，常含“话语权有限”之意。"
+ },
+ {
+  "w": "Karbon",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Karbons",
+  "ipa": "kaʁˈboːn",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（地质）石炭纪",
+    "de": "Erdzeitalter des Paläozoikums (vor ca. 359–299 Mio. Jahren)",
+    "ex": [
+     {
+      "de": "Die meisten Steinkohlevorkommen Europas stammen aus dem Karbon.",
+      "zh": "欧洲大部分硬煤矿床形成于石炭纪。"
+     }
+    ]
+   },
+   {
+    "zh": "（口语）碳纤维（也写作 Carbon）",
+    "de": "kohlenstofffaserverstärkter Kunststoff",
+    "ex": [
+     {
+      "de": "Der Rahmen des Rennrads ist aus Karbon.",
+      "zh": "这辆公路车的车架是碳纤维的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Karbon — 在石炭纪",
+   "ein Fahrrad aus Karbon / Carbon — 碳纤维自行车",
+   "化学元素“碳”是 der Kohlenstoff，不是 Karbon"
+  ],
+  "root": "Karbon < 拉丁语 carbo（煤），因该时期形成大量煤层而得名",
+  "fam": [
+   "das Karbonat",
+   "der Kohlenstoff",
+   "karbonisieren"
+  ],
+  "ety": "源自拉丁语 carbo, carbonis（煤、木炭），因该时期形成大量煤层而得名（参照英语 Carboniferous）。",
+  "cog": "英 carbon, Carboniferous；法 carbone",
+  "tip": "Karbon（地质时期）重音在后：[kaʁˈboːn]。“碳元素”德语说 Kohlenstoff。"
+ },
+ {
+  "w": "Karteikarte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Karteikarten",
+  "gs": "der Karteikarte",
+  "ipa": "kaʁˈtaɪ̯kaʁtə",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "卡片，索引卡；（背单词用的）学习卡片",
+    "de": "Karte einer Kartei; kleine Karte zum Lernen oder Notieren",
+    "ex": [
+     {
+      "de": "Ich lerne Vokabeln mit Karteikarten.",
+      "zh": "我用卡片背单词。"
+     },
+     {
+      "de": "Für das Referat habe ich mir Stichpunkte auf Karteikarten notiert.",
+      "zh": "为了做报告，我把要点记在了卡片上。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Vokabeln auf Karteikarten schreiben — 把单词写在卡片上",
+   "digitale Karteikarten — 电子学习卡片（如 Anki）",
+   "die Kartei — 卡片索引（整套）；der Karteikasten — 卡片盒"
+  ],
+  "root": "Kartei·karte：Kartei（卡片索引，Karte + -ei）+ Karte（卡片）",
+  "fam": [
+   "die Kartei",
+   "die Karte",
+   "der Karteikasten",
+   "die Ansichtskarte"
+  ],
+  "ety": "Karte 经法语 carte 借自拉丁语 charta（纸张），源自希腊语 chártēs（纸莎草纸）；Kartei 一般认为是20世纪初造出的词，用来替代外来词 Kartothek。",
+  "cog": "英 card, chart；法 carte",
+  "tip": "德国学生和学德语的人常用 Karteikarten 复习；“名片”是 Visitenkarte。"
+ },
+ {
+  "w": "Kartellrecht",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Kartellrechts",
+  "ipa": "kaʁˈtɛlʁɛçt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "反垄断法，卡特尔法",
+    "de": "Rechtsgebiet, das Wettbewerbsbeschränkungen und Kartelle regelt",
+    "ex": [
+     {
+      "de": "Die Fusion muss nach dem Kartellrecht geprüft werden.",
+      "zh": "这项合并必须依据反垄断法进行审查。"
+     },
+     {
+      "de": "Der Konzern hat gegen das europäische Kartellrecht verstoßen.",
+      "zh": "该集团违反了欧洲反垄断法。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "gegen das Kartellrecht verstoßen — 违反反垄断法",
+   "kartellrechtlich prüfen — 从反垄断法角度审查",
+   "das Bundeskartellamt — 联邦卡特尔局（德国反垄断机构）"
+  ],
+  "root": "Kartell·recht：Kartell（卡特尔，企业联合垄断）+ Recht（法律）",
+  "fam": [
+   "das Kartell",
+   "kartellrechtlich",
+   "das Kartellamt",
+   "das Wettbewerbsrecht"
+  ],
+  "ety": "Kartell 经法语 cartel 借自意大利语 cartello（纸条；挑战书），为 carta（纸）的指小词；19世纪末用于经济领域指企业联盟。",
+  "cog": "英 cartel, antitrust law",
+  "tip": "德语用 Kartellrecht 或 Wettbewerbsrecht，不直译 Antitrust。"
+ },
+ {
+  "w": "Kartusche",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kartuschen",
+  "gs": "der Kartusche",
+  "ipa": "kaʁˈtʊʃə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（装胶、墨粉、燃气等的）筒，墨盒，药筒",
+    "de": "Behälter mit Füllung, z. B. für Toner, Silikon oder Gas",
+    "ex": [
+     {
+      "de": "Die Kartusche des Druckers muss gewechselt werden.",
+      "zh": "打印机的墨盒该换了。"
+     },
+     {
+      "de": "Für die Fugen braucht man eine Kartusche Silikon.",
+      "zh": "填缝需要一支硅胶筒。"
+     }
+    ]
+   },
+   {
+    "zh": "（建筑、艺术）涡卷饰框，椭圆形装饰框",
+    "de": "ornamentaler Rahmen für Inschriften oder Wappen",
+    "ex": [
+     {
+      "de": "Über dem Portal befindet sich eine barocke Kartusche mit Wappen.",
+      "zh": "大门上方有一个带纹章的巴洛克式装饰框。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Kartusche einsetzen / wechseln — 装入／更换墨盒（滤芯等）",
+   "Gaskartusche / Tonerkartusche / Silikonkartusche — 气罐／墨粉盒／硅胶筒",
+   "近义：Patrone（墨水管、子弹）"
+  ],
+  "root": "Kartusche < 法 cartouche，词根 carta（纸）：原指纸卷包着的弹药",
+  "fam": [
+   "die Patrone",
+   "die Karte",
+   "die Gaskartusche"
+  ],
+  "ety": "借自法语 cartouche，后者来自意大利语 cartoccio（纸袋、纸卷），由 carta（纸）派生；最初指用纸包的火药筒。",
+  "cog": "英 cartridge, cartouche；法 cartouche",
+  "tip": "打印机墨水用 Patrone 和 Kartusche 都可以；激光打印机的墨粉多说 Tonerkartusche。"
+ },
+ {
+  "w": "Kauf",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Käufe",
+  "gs": "des Kauf(e)s",
+  "ipa": "kaʊ̯f",
+  "lvl": "A2",
+  "senses": [
+   {
+    "zh": "购买，买",
+    "de": "das Kaufen, Erwerb gegen Bezahlung",
+    "ex": [
+     {
+      "de": "Beim Kauf eines Gebrauchtwagens sollte man vorsichtig sein.",
+      "zh": "买二手车时应该小心。"
+     },
+     {
+      "de": "Der Kauf der Wohnung war die beste Entscheidung unseres Lebens.",
+      "zh": "买这套房子是我们一生中最好的决定。"
+     }
+    ]
+   },
+   {
+    "zh": "买来的东西，所购之物",
+    "de": "das Gekaufte",
+    "ex": [
+     {
+      "de": "Das Sofa war ein guter Kauf.",
+      "zh": "这张沙发买得很值。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. zum Kauf anbieten — 出售某物",
+   "etw.(A) in Kauf nehmen — 甘愿承受（缺点、代价）",
+   "Kauf auf Raten — 分期付款购买",
+   "der Kaufvertrag / das Kaufhaus — 购买合同／百货商店"
+  ],
+  "root": "Kauf：动词 kaufen 的词干名词化",
+  "fam": [
+   "kaufen",
+   "der Käufer",
+   "verkaufen",
+   "das Kaufhaus",
+   "einkaufen"
+  ],
+  "ety": "中古高地德语 kouf < 古高地德语 kouf（交易）；kaufen < 古高地德语 koufen。一般认为日耳曼语 *kaupōną 是很早从拉丁语 caupo（小贩、酒馆老板）借入的。",
+  "cog": "英 cheap（古英语 cēap 交易）；荷 kopen；瑞典 köpa",
+  "tip": "“etw. in Kauf nehmen” 非常常用，意思不是“买”，而是“接受（不利之处）”：Lange Wartezeiten nimmt man in Kauf。"
+ },
+ {
+  "w": "Kickboxen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Kickboxens",
+  "ipa": "ˈkɪkbɔksn̩",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "踢拳，自由搏击",
+    "de": "Kampfsport, bei dem Schläge und Fußtritte erlaubt sind",
+    "ex": [
+     {
+      "de": "Seit zwei Jahren macht sie Kickboxen.",
+      "zh": "她练踢拳已经两年了。"
+     },
+     {
+      "de": "Kickboxen trainiert Kraft, Ausdauer und Koordination.",
+      "zh": "踢拳能锻炼力量、耐力和协调性。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kickboxen machen / trainieren — 练踢拳",
+   "der Kickboxer / die Kickboxerin — 踢拳运动员"
+  ],
+  "root": "Kick·box·en：英 kick（踢）+ boxen（拳击）",
+  "fam": [
+   "boxen",
+   "der Boxer",
+   "der Kick",
+   "kicken"
+  ],
+  "ety": "借自英语 kickboxing（20世纪中后期出现的格斗运动名称）。",
+  "cog": "英 kickboxing",
+  "tip": "名词化不定式，作中性名词；表示“练踢拳”常说 Kickboxen machen / trainieren。"
+ },
+ {
+  "w": "Kimono",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kimonos",
+  "gs": "des Kimonos",
+  "ipa": "ˈkiːmono",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "和服；和服式长袍（晨衣）",
+    "de": "traditionelles japanisches Gewand; weiter Morgenmantel in diesem Schnitt",
+    "ex": [
+     {
+      "de": "Zur Teezeremonie trug sie einen seidenen Kimono.",
+      "zh": "她穿着丝绸和服参加茶道仪式。"
+     },
+     {
+      "de": "Morgens läuft er gern im Kimono durch die Wohnung.",
+      "zh": "早上他喜欢穿着和服式晨袍在家里走来走去。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Kimono tragen — 穿和服",
+   "der Kimonoärmel — 和服袖（连肩袖）",
+   "发音也作 [kiˈmoːno]"
+  ],
+  "root": "Kimono < 日语 kimono（着物，“穿的东西”）",
+  "fam": [
+   "der Morgenmantel",
+   "der Bademantel"
+  ],
+  "ety": "借自日语 kimono（着物），字面义“穿着之物”；一般认为19世纪经欧洲其他语言进入德语。",
+  "cog": "英 kimono；法 kimono",
+  "tip": "阳性：der Kimono（不是 das）。"
+ },
+ {
+  "w": "Kindergärtnerin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kindergärtnerinnen",
+  "gs": "der Kindergärtnerin",
+  "ipa": "ˈkɪndɐˌɡɛʁtnəʁɪn",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "幼儿园女教师，幼师",
+    "de": "Frau, die beruflich Kinder im Kindergarten betreut",
+    "ex": [
+     {
+      "de": "Unsere Tochter liebt ihre Kindergärtnerin.",
+      "zh": "我们的女儿很喜欢她的幼儿园老师。"
+     },
+     {
+      "de": "Sie hat eine Ausbildung zur Kindergärtnerin gemacht.",
+      "zh": "她接受过幼师职业培训。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "阳性：der Kindergärtner — 男幼师",
+   "正式职称现多用：Erzieherin / Erzieher — 保育员、教育员",
+   "als Kindergärtnerin arbeiten — 当幼师"
+  ],
+  "root": "Kinder·gärtner·in：Kindergarten（幼儿园）+ -er（人）+ -in（阴性）",
+  "fam": [
+   "der Kindergarten",
+   "die Erzieherin",
+   "die Kita",
+   "der Gärtner"
+  ],
+  "ety": "Kindergarten 由福禄贝尔（Friedrich Fröbel）于1840年命名，意为“孩子的花园”；Garten < 古高地德语 garto。",
+  "cog": "英 kindergarten（德语借词）",
+  "tip": "日常口语仍说 Kindergärtnerin，但官方职业名称是 Erzieherin；德国幼儿园常称 Kita。"
+ },
+ {
+  "w": "Kindertag",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kindertage",
+  "gs": "des Kindertag(e)s",
+  "ipa": "ˈkɪndɐtaːk",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "儿童节",
+    "de": "Gedenk- und Feiertag für Kinder",
+    "ex": [
+     {
+      "de": "Am Internationalen Kindertag am 1. Juni gibt es viele Feste.",
+      "zh": "六一国际儿童节有很多庆祝活动。"
+     },
+     {
+      "de": "In Deutschland feiert man den Weltkindertag am 20. September.",
+      "zh": "在德国，世界儿童日是9月20日。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Internationale Kindertag (1. Juni) — 国际儿童节（东德及中国等地庆祝）",
+   "der Weltkindertag (20. September) — 世界儿童日（德国西部传统，图林根州为法定假日）",
+   "am Kindertag — 在儿童节那天"
+  ],
+  "root": "Kinder·tag：Kinder（儿童，复数）+ Tag（日子）",
+  "fam": [
+   "das Kind",
+   "der Tag",
+   "der Weltkindertag",
+   "der Muttertag"
+  ],
+  "ety": "Kind < 古高地德语 kind；Tag < 古高地德语 tag，原始日耳曼语 *dagaz。",
+  "cog": "英 day；荷 dag",
+  "tip": "德国有两个儿童节：6月1日（东部传统）与9月20日世界儿童日；中国人说的“六一”对应 Internationaler Kindertag。"
+ },
+ {
+  "w": "klanglich",
+  "pos": "adj",
+  "ipa": "ˈklaŋlɪç",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "音色上的，声音（效果）方面的",
+    "de": "den Klang betreffend",
+    "ex": [
+     {
+      "de": "Klanglich überzeugt der neue Lautsprecher voll.",
+      "zh": "这款新音箱在音质上完全令人信服。"
+     },
+     {
+      "de": "Die Aufnahme ist klanglich leider etwas dumpf.",
+      "zh": "可惜这段录音在音色上有些沉闷。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "多作副词修饰整句：klanglich gesehen — 从音色角度看",
+   "klangliche Qualität / Unterschiede — 音质／音色差异",
+   "近义：akustisch（声学上的）"
+  ],
+  "root": "klang·lich：Klang（声音、音色）+ -lich（“在……方面”）",
+  "fam": [
+   "der Klang",
+   "klingen",
+   "die Klangfarbe",
+   "wohlklingend"
+  ],
+  "ety": "Klang < 中古高地德语 klanc；与 klingen 同源，一般认为属拟声词族。",
+  "cog": "英 clang, clink（同为拟声，关系一说）",
+  "tip": "乐评、音响测评常用词；表示“听起来”说 klingen，“音色上”说 klanglich。"
+ },
+ {
+  "w": "Kniescheibe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Kniescheiben",
+  "gs": "der Kniescheibe",
+  "ipa": "ˈkniːʃaɪ̯bə",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "膝盖骨，髌骨",
+    "de": "flacher Knochen vorn am Kniegelenk",
+    "ex": [
+     {
+      "de": "Beim Sturz hat er sich die Kniescheibe gebrochen.",
+      "zh": "他摔倒时摔断了髌骨。"
+     },
+     {
+      "de": "Die Kniescheibe ist herausgesprungen.",
+      "zh": "髌骨脱位了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich die Kniescheibe brechen / ausrenken — 髌骨骨折／脱位",
+   "医学术语：die Patella — 髌骨"
+  ],
+  "root": "Knie·scheibe：Knie（膝）+ Scheibe（圆片、盘）→ 膝前的圆片骨",
+  "fam": [
+   "das Knie",
+   "die Scheibe",
+   "knien",
+   "das Kniegelenk"
+  ],
+  "ety": "Knie < 古高地德语 kniu；Scheibe < 古高地德语 skība（圆盘）。",
+  "cog": "英 knee；荷 knie；拉丁 genu 远亲",
+  "tip": "Knie 读 [kniː]，k 要发音，与英语 knee 不同。"
+ },
+ {
+  "w": "Kochlöffel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kochlöffel",
+  "gs": "des Kochlöffels",
+  "ipa": "ˈkɔxlœfl̩",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "（烹饪用的）长柄木勺，锅铲勺",
+    "de": "großer, meist hölzerner Löffel zum Umrühren beim Kochen",
+    "ex": [
+     {
+      "de": "Rühr die Soße mit dem Kochlöffel um, damit sie nicht anbrennt.",
+      "zh": "用木勺把酱汁搅一搅，别让它糊了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit dem Kochlöffel umrühren — 用木勺搅拌",
+   "den Kochlöffel schwingen（谐）— 掌勺，下厨"
+  ],
+  "root": "Koch·löffel：kochen（烹煮）+ Löffel（勺子）",
+  "fam": [
+   "kochen",
+   "der Löffel",
+   "der Esslöffel",
+   "der Schöpflöffel"
+  ],
+  "ety": "Löffel < 中古高地德语 leffel < 古高地德语 leffil，一般认为与古高地德语 laffan（舔、啜）有关；kochen 早期借自拉丁语 coquere。",
+  "cog": "英 cook（同源于拉丁 coquere）",
+  "tip": "Kochlöffel 多指木勺；盛汤的大勺叫 Schöpflöffel / Kelle。"
+ },
+ {
+  "w": "Konsistorium",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Konsistorien",
+  "gs": "des Konsistoriums",
+  "ipa": "kɔnzɪsˈtoːʁi̯ʊm",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（天主教）枢机主教会议，教皇主持的红衣主教会议",
+    "de": "Versammlung der Kardinäle unter Vorsitz des Papstes",
+    "ex": [
+     {
+      "de": "Der Papst ernannte im Konsistorium zwanzig neue Kardinäle.",
+      "zh": "教皇在枢机会议上任命了二十位新枢机主教。"
+     }
+    ]
+   },
+   {
+    "zh": "（新教）宗教事务管理机构，教务会",
+    "de": "oberste Verwaltungsbehörde einer evangelischen Landeskirche",
+    "ex": [
+     {
+      "de": "Das Konsistorium entschied über die Besetzung der Pfarrstelle.",
+      "zh": "教务会决定了该牧师职位的人选。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Konsistorium einberufen — 召开枢机会议",
+   "教会、历史文本用词"
+  ],
+  "root": "con·sist·orium：拉 consistere（一起站立、集会）+ -orium（场所）→ 集会之所",
+  "fam": [
+   "konsistent",
+   "die Konsistenz"
+  ],
+  "ety": "借自拉丁语 consistorium（集会场所；罗马帝国皇帝的枢密会议），源自 consistere（站在一起）；后用于教会。",
+  "cog": "英 consistory；法 consistoire",
+  "tip": "复数：Konsistorien。"
+ },
+ {
+  "w": "Krankengeschichte",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Krankengeschichten",
+  "gs": "der Krankengeschichte",
+  "ipa": "ˈkʁaŋkn̩ɡəˌʃɪçtə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "病史；病历",
+    "de": "Verlauf aller Krankheiten eines Patienten; schriftliche Aufzeichnung darüber",
+    "ex": [
+     {
+      "de": "Der Arzt fragte nach meiner Krankengeschichte.",
+      "zh": "医生询问了我的病史。"
+     },
+     {
+      "de": "In der Krankengeschichte sind alle Operationen vermerkt.",
+      "zh": "病历中记录了所有手术。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Krankengeschichte aufnehmen — 采集病史",
+   "医学术语：die Anamnese — 病史采集",
+   "病历文件多称 die Krankenakte / Patientenakte"
+  ],
+  "root": "Kranke·n·geschichte：Kranke（病人）+ -n- + Geschichte（经过、历史）",
+  "fam": [
+   "krank",
+   "die Krankheit",
+   "die Geschichte",
+   "die Krankenakte"
+  ],
+  "ety": "krank < 中古高地德语 kranc（虚弱的）；Geschichte < 中古高地德语 geschiht（发生的事），由 geschehen 派生。",
+  "cog": "英 history（意义对应，不同源）",
+  "tip": "“病史”也常说 Vorgeschichte / Vorerkrankungen；Krankengeschichte 偏正式。"
+ },
+ {
+  "w": "Kriegsfall",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kriegsfälle",
+  "gs": "des Kriegsfall(e)s",
+  "ipa": "ˈkʁiːksfal",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "战争情况，战时（战争爆发的情形）",
+    "de": "Fall, dass ein Krieg ausbricht",
+    "ex": [
+     {
+      "de": "Im Kriegsfall müssen die Reservisten einrücken.",
+      "zh": "一旦发生战争，预备役人员必须入伍。"
+     },
+     {
+      "de": "Für den Kriegsfall wurden Notvorräte angelegt.",
+      "zh": "为应对战时情况储备了应急物资。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Kriegsfall — 一旦发生战争",
+   "für den Kriegsfall vorsorgen — 为战时做准备",
+   "相关：Verteidigungsfall（宪法术语：防御状态）"
+  ],
+  "root": "Krieg·s·fall：Krieg（战争）+ -s- + Fall（情况）",
+  "fam": [
+   "der Krieg",
+   "der Fall",
+   "der Notfall",
+   "der Verteidigungsfall"
+  ],
+  "ety": "Krieg < 中古高地德语 kriec（努力、争斗）；Fall < 古高地德语 fal。",
+  "cog": "Fall 与英 fall 同源",
+  "tip": "几乎只用于 im Kriegsfall / für den Kriegsfall；德国基本法中的正式术语是 Verteidigungsfall。"
+ },
+ {
+  "w": "Kulturarbeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Kulturarbeit",
+  "ipa": "kʊlˈtuːɐ̯ʔaʁbaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "文化工作（组织、推广文化活动）",
+    "de": "Tätigkeit zur Förderung und Vermittlung von Kultur",
+    "ex": [
+     {
+      "de": "Die Stadt kürzt die Mittel für die freie Kulturarbeit.",
+      "zh": "市政府削减了独立文化工作的经费。"
+     },
+     {
+      "de": "Sie engagiert sich seit Jahren in der Kulturarbeit mit Jugendlichen.",
+      "zh": "她多年来一直投身于青少年文化工作。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "kommunale / soziale Kulturarbeit — 市镇／社会文化工作",
+   "in der Kulturarbeit tätig sein — 从事文化工作"
+  ],
+  "root": "Kultur·arbeit：Kultur（文化）+ Arbeit（工作）",
+  "fam": [
+   "die Kultur",
+   "kulturell",
+   "die Arbeit",
+   "der Kulturbetrieb"
+  ],
+  "ety": "Kultur 借自拉丁语 cultura（耕作；修养），源自 colere（耕种、照料）；Arbeit < 古高地德语 ar(a)beit（辛劳）。",
+  "cog": "英 culture",
+  "tip": "Kultur 重音在第二音节：[kʊlˈtuːɐ̯]。"
+ },
+ {
+  "w": "Kundenkontakt",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Kundenkontakte",
+  "gs": "des Kundenkontakt(e)s",
+  "ipa": "ˈkʊndn̩kɔnˌtakt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "客户接触，与客户的联系",
+    "de": "direkter Kontakt mit Kunden",
+    "ex": [
+     {
+      "de": "Die Stelle erfordert viel Kundenkontakt.",
+      "zh": "这个岗位需要大量与客户打交道。"
+     },
+     {
+      "de": "Mitarbeiter mit Kundenkontakt müssen eine Maske tragen.",
+      "zh": "接触客户的员工必须戴口罩。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kundenkontakt haben — 与客户有接触",
+   "im direkten Kundenkontakt arbeiten — 直接面对客户工作",
+   "招聘广告常见：Freude am Kundenkontakt — 乐于与客户打交道"
+  ],
+  "root": "Kunde·n·kontakt：Kunde（顾客）+ -n- + Kontakt（接触）",
+  "fam": [
+   "der Kunde",
+   "der Kundendienst",
+   "der Kontakt",
+   "kontaktieren"
+  ],
+  "ety": "Kunde < 古高地德语 kundo（熟人），与 kennen 同族；Kontakt 借自拉丁语 contactus（接触）。",
+  "cog": "英 contact；Kunde 与英 couth / uncouth 同源",
+  "tip": "招聘启事高频词，一般用单数不可数：viel Kundenkontakt。"
+ },
+ {
+  "w": "Kühlwasser",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Kühlwassers",
+  "ipa": "ˈkyːlvasɐ",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "冷却水",
+    "de": "Wasser zum Kühlen von Motoren oder Anlagen",
+    "ex": [
+     {
+      "de": "Vor einer langen Fahrt sollte man das Kühlwasser prüfen.",
+      "zh": "长途行驶前应检查冷却液。"
+     },
+     {
+      "de": "Das Kraftwerk entnimmt sein Kühlwasser dem Rhein.",
+      "zh": "这座发电厂从莱茵河取冷却水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Kühlwasser nachfüllen — 加冷却液",
+   "die Kühlwassertemperatur — 水温（汽车仪表）",
+   "汽车上也说 Kühlflüssigkeit（冷却液）"
+  ],
+  "root": "Kühl·wasser：kühlen（冷却）+ Wasser（水）",
+  "fam": [
+   "kühl",
+   "kühlen",
+   "der Kühlschrank",
+   "das Wasser"
+  ],
+  "ety": "kühl < 古高地德语 kuoli；Wasser < 古高地德语 wazzar。",
+  "cog": "英 cool, water",
+  "tip": "汽车语境中 Kühlwasser 常泛指防冻冷却液。"
+ },
+ {
+  "w": "Lackierer",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Lackierer",
+  "gs": "des Lackierers",
+  "ipa": "laˈkiːʁɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "喷漆工，油漆工",
+    "de": "Handwerker, der Fahrzeuge oder Gegenstände lackiert",
+    "ex": [
+     {
+      "de": "Nach dem Unfall musste das Auto zum Lackierer.",
+      "zh": "事故后车得送去喷漆。"
+     },
+     {
+      "de": "Er macht eine Ausbildung zum Fahrzeuglackierer.",
+      "zh": "他正在接受汽车喷漆工培训。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Lackierer bringen — 送去喷漆",
+   "阴性：die Lackiererin；相关：die Lackiererei — 喷漆厂",
+   "区别：Maler（粉刷墙面的油漆工）"
+  ],
+  "root": "Lack·ier·er：Lack（漆）+ -ieren（动词后缀）+ -er（从事者）",
+  "fam": [
+   "der Lack",
+   "lackieren",
+   "die Lackiererei",
+   "der Nagellack"
+  ],
+  "ety": "Lack 经意大利语 lacca 借入，一般认为最终源自阿拉伯语 lakk 及波斯语、梵语中指“紫胶”的词。",
+  "cog": "英 lacquer；意 lacca",
+  "tip": "刷墙的油漆工是 Maler，给汽车、家具喷漆的是 Lackierer。"
+ },
+ {
+  "w": "Liegestuhl",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Liegestühle",
+  "gs": "des Liegestuhl(e)s",
+  "ipa": "ˈliːɡəʃtuːl",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "躺椅，折叠沙滩椅",
+    "de": "zusammenklappbarer Stuhl zum Liegen, z. B. im Garten oder am Strand",
+    "ex": [
+     {
+      "de": "Im Sommer liegt er stundenlang im Liegestuhl und liest.",
+      "zh": "夏天他会在躺椅上一躺好几个小时看书。"
+     },
+     {
+      "de": "Am Strand kann man Liegestühle mieten.",
+      "zh": "海滩上可以租躺椅。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "sich in den Liegestuhl legen — 躺到躺椅上",
+   "im Liegestuhl liegen — 躺在躺椅上",
+   "近义：die Sonnenliege — 日光躺床"
+  ],
+  "root": "Liege·stuhl：liegen（躺）+ Stuhl（椅子）",
+  "fam": [
+   "liegen",
+   "der Stuhl",
+   "die Liege",
+   "der Strandkorb"
+  ],
+  "ety": "liegen < 古高地德语 liggen；Stuhl < 古高地德语 stuol。",
+  "cog": "英 lie, stool；荷 liggen, stoel",
+  "tip": "介词搭配：im Liegestuhl（在躺椅里），不说 auf dem Liegestuhl（也有人用，但 im 更常见）。"
+ },
+ {
+  "w": "linksgrün",
+  "pos": "adj",
+  "ipa": "ˈlɪŋksɡʁyːn",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "左翼和绿党的，左绿的（常带贬义）",
+    "de": "politisch links und grün (ökologisch) orientiert",
+    "ex": [
+     {
+      "de": "Die Opposition kritisiert die linksgrüne Stadtregierung.",
+      "zh": "反对派批评左绿联合的市政府。"
+     },
+     {
+      "de": "Der Begriff „linksgrün“ wird oft abwertend gebraucht.",
+      "zh": "“左绿”一词常带贬义。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein linksgrünes Milieu — 左绿圈子",
+   "也写作 links-grün",
+   "贬义说法：linksgrün versifft（右翼骂人的话，避免使用）"
+  ],
+  "root": "links·grün：links（左翼）+ grün（绿党、生态）",
+  "fam": [
+   "links",
+   "grün",
+   "die Grünen",
+   "linksliberal"
+  ],
+  "ety": "links 是 link（左的）的副词形式，link < 中古高地德语 linc；grün < 古高地德语 gruoni。",
+  "cog": "grün 与英 green 同源",
+  "tip": "政论用词，带价值判断色彩；中性表达可说 rot-grün（社民党与绿党联合）或 links und ökologisch。"
+ },
+ {
+  "w": "linksliberal",
+  "pos": "adj",
+  "ipa": "ˈlɪŋksliberaːl",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "左翼自由派的，中左自由主义的",
+    "de": "liberal mit sozialer, linker Ausrichtung",
+    "ex": [
+     {
+      "de": "Die Zeitung gilt als linksliberal.",
+      "zh": "这家报纸被认为是左翼自由派的。"
+     },
+     {
+      "de": "Sie vertritt linksliberale Positionen in der Gesellschaftspolitik.",
+      "zh": "她在社会政策上持左翼自由派立场。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine linksliberale Zeitung — 左翼自由派报纸（如《南德意志报》常被如此形容）",
+   "das linksliberale Milieu — 左翼自由派圈子",
+   "对应：rechtskonservativ — 右翼保守的"
+  ],
+  "root": "links·liberal：links（左翼）+ liberal（自由主义的）",
+  "fam": [
+   "liberal",
+   "der Liberalismus",
+   "links",
+   "linksgrün"
+  ],
+  "ety": "liberal 经法语 libéral 借自拉丁语 liberalis（自由人的；慷慨的），源自 liber（自由的）。",
+  "cog": "英 left-liberal；liberal",
+  "tip": "重音在 links 上；liberal 单独读 [libeˈʁaːl]。"
+ },
+ {
+  "w": "luven",
+  "pos": "v",
+  "ipa": "ˈluːfn̩",
+  "lvl": "C2",
+  "forms": "luvt · luvte · hat geluvt",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（航海）转向迎风，抢风（使船头更靠近风向）",
+    "de": "den Bug des Schiffes mehr in den Wind drehen",
+    "ex": [
+     {
+      "de": "Der Steuermann luvte, um der Boje auszuweichen.",
+      "zh": "舵手转向迎风以避开浮标。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "航海术语；常用 anluven",
+   "反义：abfallen — 顺风偏转",
+   "名词：die Luv — 上风侧；反义 Lee — 下风侧"
+  ],
+  "root": "luv·en：Luv（上风侧）+ -en（动词后缀）",
+  "fam": [
+   "die Luv",
+   "anluven",
+   "das Lee",
+   "luvwärts"
+  ],
+  "ety": "Luv 来自低地德语/荷兰语航海用语（荷 loef），借入标准德语；更早的来源不详。",
+  "cog": "荷 loeven；英 luff（同源）",
+  "tip": "发音 [ˈluːfn̩]，也读 [ˈluːvn̩]。只在帆船语境出现。"
+ },
+ {
+  "w": "Lämpchen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Lämpchen",
+  "gs": "des Lämpchens",
+  "ipa": "ˈlɛmpçən",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "小灯；指示灯",
+    "de": "kleine Lampe; Kontroll- oder Signalleuchte",
+    "ex": [
+     {
+      "de": "Wenn das rote Lämpchen leuchtet, ist der Akku leer.",
+      "zh": "红色指示灯亮起时，表示电池没电了。"
+     },
+     {
+      "de": "Auf dem Tisch stand ein kleines Lämpchen.",
+      "zh": "桌上放着一盏小灯。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Lämpchen leuchtet / blinkt — 指示灯亮着／在闪",
+   "das Kontrolllämpchen — 指示灯，警示灯",
+   "-chen 指小名词一律中性，复数不变"
+  ],
+  "root": "Lämp·chen：Lampe（灯）+ -chen（指小后缀，引起变音 a→ä）",
+  "fam": [
+   "die Lampe",
+   "die Leuchte",
+   "das Licht",
+   "die Taschenlampe"
+  ],
+  "ety": "Lampe 经古法语 lampe 借自拉丁语 lampas，源自希腊语 lampás（火炬）。",
+  "cog": "英 lamp；法 lampe",
+  "tip": "Lampe 是阴性，但 Lämpchen 是中性：das Lämpchen。"
+ },
+ {
+  "w": "Machtwechsel",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Machtwechsel",
+  "gs": "des Machtwechsels",
+  "ipa": "ˈmaxtvɛksl̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "政权更替，权力交接",
+    "de": "Übergang der Regierungsgewalt auf eine andere Person oder Partei",
+    "ex": [
+     {
+      "de": "Nach der Wahl kam es zu einem friedlichen Machtwechsel.",
+      "zh": "选举后实现了和平的政权更替。"
+     },
+     {
+      "de": "Der Machtwechsel in Bonn 1982 beendete die sozialliberale Koalition.",
+      "zh": "1982年波恩的政权更替结束了社民党与自民党的联合执政。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein friedlicher / demokratischer Machtwechsel — 和平／民主的政权更替",
+   "den Machtwechsel einleiten — 开启权力交接",
+   "近义：Regierungswechsel"
+  ],
+  "root": "Macht·wechsel：Macht（权力）+ Wechsel（更换）",
+  "fam": [
+   "die Macht",
+   "mächtig",
+   "der Wechsel",
+   "wechseln",
+   "der Regierungswechsel"
+  ],
+  "ety": "Macht < 古高地德语 maht，与 mögen 同族；Wechsel < 古高地德语 wehsal（交换）。",
+  "cog": "英 might；Wechsel 与英 week 远亲（一说）",
+  "tip": "政治新闻高频词；“政变”则是 Putsch / Staatsstreich。"
+ },
+ {
+  "w": "Maibaum",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Maibäume",
+  "gs": "des Maibaum(e)s",
+  "ipa": "ˈmaɪ̯baʊ̯m",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "五月树，五朔节花柱（5月1日在村镇广场竖立的装饰高杆）",
+    "de": "geschmückter hoher Baumstamm, der zum 1. Mai aufgestellt wird",
+    "ex": [
+     {
+      "de": "Am 30. April stellt das ganze Dorf den Maibaum auf.",
+      "zh": "4月30日全村人一起竖起五月树。"
+     },
+     {
+      "de": "In Bayern ist es Tradition, den Maibaum des Nachbardorfs zu stehlen.",
+      "zh": "在巴伐利亚，“偷”邻村的五月树是一种传统。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Maibaum aufstellen — 竖五月树",
+   "das Maibaumaufstellen / der Tanz in den Mai — 竖五月树活动／五月前夜舞会",
+   "地区习俗：年轻男子在心上人家门前放一棵装饰的小桦树，也叫 Maibaum"
+  ],
+  "root": "Mai·baum：Mai（五月）+ Baum（树）",
+  "fam": [
+   "der Mai",
+   "der Baum",
+   "der Maifeiertag"
+  ],
+  "ety": "Mai 借自拉丁语 (mensis) Maius（五月）；Baum < 古高地德语 boum。",
+  "cog": "英 maypole, May；荷 meiboom",
+  "tip": "巴伐利亚、奥地利尤为盛行的民俗，常饰以白蓝纹路和行会标志。"
+ },
+ {
+  "w": "Mannschaftskapitän",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Mannschaftskapitäne",
+  "gs": "des Mannschaftskapitäns",
+  "ipa": "ˈmanʃaft͡skapiˌtɛːn",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "（运动队）队长",
+    "de": "Spieler, der eine Sportmannschaft auf dem Feld anführt",
+    "ex": [
+     {
+      "de": "Der Mannschaftskapitän trägt die Binde am linken Arm.",
+      "zh": "队长在左臂上戴着袖标。"
+     },
+     {
+      "de": "Nach seinem Wechsel braucht das Team einen neuen Mannschaftskapitän.",
+      "zh": "他转会之后，球队需要一位新队长。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zum Mannschaftskapitän ernannt werden — 被任命为队长",
+   "口语常简称 der Kapitän / der Kapitän der Mannschaft",
+   "die Kapitänsbinde — 队长袖标"
+  ],
+  "root": "Mannschaft·s·kapitän：Mannschaft（队伍）+ -s- + Kapitän（船长、队长）",
+  "fam": [
+   "die Mannschaft",
+   "der Kapitän",
+   "die Kapitänsbinde",
+   "der Spielführer"
+  ],
+  "ety": "Kapitän 经意大利语 capitano 借入，源自晚期拉丁语 capitaneus（首领），由 caput（头）派生。",
+  "cog": "英 captain；法 capitaine",
+  "tip": "足球中也称 Spielführer。Kapitän 重音在最后：[kapiˈtɛːn]。"
+ },
+ {
+  "w": "Massenschlägerei",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Massenschlägereien",
+  "gs": "der Massenschlägerei",
+  "ipa": "ˈmasn̩ʃlɛːɡəˌʁaɪ̯",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "群殴，大规模斗殴",
+    "de": "Schlägerei, an der viele Personen beteiligt sind",
+    "ex": [
+     {
+      "de": "Nach dem Spiel kam es vor dem Stadion zu einer Massenschlägerei.",
+      "zh": "比赛结束后，体育场外发生了群殴。"
+     },
+     {
+      "de": "Die Polizei musste eine Massenschlägerei im Freibad auflösen.",
+      "zh": "警方不得不驱散露天泳池里的一场群殴。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "es kommt zu einer Massenschlägerei — 发生群殴",
+   "an einer Massenschlägerei beteiligt sein — 卷入群殴"
+  ],
+  "root": "Masse·n·schläger·ei：Masse（大量人群）+ Schläger（打架者）+ -ei（行为名词后缀）",
+  "fam": [
+   "die Schlägerei",
+   "schlagen",
+   "die Masse",
+   "der Schläger"
+  ],
+  "ety": "schlagen < 古高地德语 slahan；Masse 借自拉丁语 massa（团块）。",
+  "cog": "英 slay（与 schlagen 同源），mass",
+  "tip": "警务新闻常用词；两人打架用 Schlägerei / Prügelei 即可。"
+ },
+ {
+  "w": "Mettbrötchen",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Mettbrötchen",
+  "gs": "des Mettbrötchens",
+  "ipa": "ˈmɛtbʁøːtçən",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "生猪肉末面包（涂有调味生猪肉馅的小圆面包）",
+    "de": "Brötchen mit rohem, gewürztem Schweinehack",
+    "ex": [
+     {
+      "de": "Zum Frühstück gab es Mettbrötchen mit Zwiebeln.",
+      "zh": "早餐有配洋葱的生猪肉末面包。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein halbes Mettbrötchen — 半个肉末面包（面包切开，一半涂肉）",
+   "das Mett / das Hackepeter — 调味生猪肉末（北德／东德说法）",
+   "Mettigel — 刺猬造型的生肉末拼盘（聚会小吃）"
+  ],
+  "root": "Mett·brötchen：Mett（调味生猪肉末）+ Brötchen（小面包，Brot + -chen）",
+  "fam": [
+   "das Mett",
+   "das Brötchen",
+   "das Brot",
+   "die Mettwurst"
+  ],
+  "ety": "Mett 来自低地德语，中古低地德语 met（不带肥膘的猪肉末）；一般认为与古撒克逊语 meti（食物）及英语 meat 同源。",
+  "cog": "英 meat（一说同源）",
+  "tip": "德国特色食品，生吃；孕妇和免疫力低者不宜。"
+ },
+ {
+  "w": "Mieterhöhung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Mieterhöhungen",
+  "gs": "der Mieterhöhung",
+  "ipa": "ˈmiːtʔɛɐ̯ˌhøːʊŋ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "涨房租，租金上调",
+    "de": "Anhebung der Miete",
+    "ex": [
+     {
+      "de": "Der Vermieter hat eine Mieterhöhung um zehn Prozent angekündigt.",
+      "zh": "房东宣布房租上涨百分之十。"
+     },
+     {
+      "de": "Gegen die Mieterhöhung kann man Widerspruch einlegen.",
+      "zh": "可以对涨租提出异议。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Mieterhöhung verlangen / ankündigen — 要求／宣布涨租",
+   "der Mieterhöhung zustimmen — 同意涨租",
+   "相关：die Mietpreisbremse — 租金上涨限制（法规）"
+  ],
+  "root": "Miet·erhöh·ung：Miete（租金）+ Erhöhung（提高，erhöhen + -ung）",
+  "fam": [
+   "die Miete",
+   "mieten",
+   "der Mieter",
+   "erhöhen",
+   "die Erhöhung"
+  ],
+  "ety": "Miete < 古高地德语 mieta（报酬、工钱）；erhöhen 由 hoch 派生。",
+  "cog": "Miete 与英 meed（报酬，古语）同源",
+  "tip": "不要读成 Mieter-höhung：词的切分是 Miet-erhöhung。"
+ },
+ {
+  "w": "Milchreis",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Milchreises",
+  "ipa": "ˈmɪlçʁaɪ̯s",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "牛奶米布丁（用牛奶煮的甜米饭）；（做这道甜品用的）圆粒米",
+    "de": "in Milch gekochter, süßer Reisbrei; Rundkornreis dafür",
+    "ex": [
+     {
+      "de": "Als Kind habe ich Milchreis mit Zimt und Zucker geliebt.",
+      "zh": "小时候我最爱吃撒肉桂和糖的牛奶米布丁。"
+     },
+     {
+      "de": "Für Milchreis braucht man Rundkornreis.",
+      "zh": "做牛奶米布丁需要圆粒米。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Milchreis kochen — 煮牛奶米布丁",
+   "Milchreis mit Zimt und Zucker / mit Kirschen — 配肉桂糖／配樱桃的米布丁"
+  ],
+  "root": "Milch·reis：Milch（牛奶）+ Reis（米）",
+  "fam": [
+   "die Milch",
+   "der Reis",
+   "der Grießbrei"
+  ],
+  "ety": "Milch < 古高地德语 miluh；Reis 一般认为经中古拉丁语 risus / 意大利语 riso 借入，最终源自希腊语 óryza。",
+  "cog": "英 milk, rice",
+  "tip": "在德国常作主餐（甜食当正餐），不只是饭后甜点。"
+ },
+ {
+  "w": "Minimierung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Minimierungen",
+  "gs": "der Minimierung",
+  "ipa": "miniˈmiːʁʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "最小化，尽量减少",
+    "de": "das Verringern auf ein möglichst geringes Maß",
+    "ex": [
+     {
+      "de": "Ziel ist die Minimierung der Risiken.",
+      "zh": "目标是把风险降到最低。"
+     },
+     {
+      "de": "Die Minimierung des Energieverbrauchs senkt die Kosten.",
+      "zh": "最大限度降低能耗可以减少成本。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Minimierung von Kosten / Risiken — 成本／风险最小化",
+   "反义：die Maximierung — 最大化",
+   "动词：etw.(A) minimieren"
+  ],
+  "root": "Minim·ier·ung：Minimum（最小值，拉丁语）+ -ieren（动词后缀）+ -ung（名词后缀）",
+  "fam": [
+   "minimieren",
+   "das Minimum",
+   "minimal",
+   "die Maximierung"
+  ],
+  "ety": "源自动词 minimieren，由拉丁语 minimum（最小的，minimus 的中性形式）派生。",
+  "cog": "英 minimization；法 minimisation",
+  "tip": "书面、技术用语；口语说 so gering wie möglich halten。"
+ },
+ {
+  "w": "Mischpult",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Mischpulte",
+  "gs": "des Mischpult(e)s",
+  "ipa": "ˈmɪʃpʊlt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "调音台，混音台",
+    "de": "Gerät zum Mischen und Regeln von Tonsignalen",
+    "ex": [
+     {
+      "de": "Der Tontechniker sitzt am Mischpult.",
+      "zh": "音响师坐在调音台前。"
+     },
+     {
+      "de": "Das Mischpult hat zwölf Kanäle.",
+      "zh": "这台调音台有十二个通道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "am Mischpult sitzen / stehen — 坐在／站在调音台前",
+   "ein digitales / analoges Mischpult — 数字／模拟调音台"
+  ],
+  "root": "Misch·pult：mischen（混合）+ Pult（台、桌）",
+  "fam": [
+   "mischen",
+   "die Mischung",
+   "das Pult",
+   "das Rednerpult"
+  ],
+  "ety": "mischen 很早借自拉丁语 miscēre（混合）；Pult < 中古高地德语 pulpit，源自拉丁语 pulpitum（讲台）。",
+  "cog": "英 mix, pulpit",
+  "tip": "中性：das Pult, das Mischpult。"
+ },
+ {
+  "w": "mitfühlen",
+  "pos": "v",
+  "ipa": "ˈmɪtfyːlən",
+  "lvl": "B2–C1",
+  "forms": "fühlt mit · fühlte mit · hat mitgefühlt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "同情，感同身受",
+    "de": "die Gefühle eines anderen nachempfinden, Anteil nehmen",
+    "ex": [
+     {
+      "de": "Ich kann gut mit dir mitfühlen – mir ging es genauso.",
+      "zh": "我很能体会你的感受——我当时也是这样。"
+     },
+     {
+      "de": "Wir fühlen mit den Angehörigen der Opfer mit.",
+      "zh": "我们对遇难者家属深表同情。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit jdm. mitfühlen — 同情某人，感同身受",
+   "mitfühlend — 富有同情心的",
+   "名词：das Mitgefühl"
+  ],
+  "root": "mit·fühl·en：mit（一起）+ fühlen（感受）→ 和别人一起感受",
+  "fam": [
+   "fühlen",
+   "das Mitgefühl",
+   "mitfühlend",
+   "das Gefühl",
+   "das Mitleid"
+  ],
+  "ety": "fühlen < 中古高地德语 vüelen < 古高地德语 fuolen。",
+  "cog": "英 feel；荷 voelen",
+  "tip": "注意双 mit：Ich fühle mit dir mit. 第一个 mit 是介词，第二个是可分前缀。"
+ },
+ {
+  "w": "mitrechnen",
+  "pos": "v",
+  "ipa": "ˈmɪtʁɛçnən",
+  "lvl": "B1–B2",
+  "forms": "rechnet mit · rechnete mit · hat mitgerechnet",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（计算时）把……算进去，计入",
+    "de": "etw. in eine Rechnung einbeziehen",
+    "ex": [
+     {
+      "de": "Die Mehrwertsteuer ist noch nicht mitgerechnet.",
+      "zh": "增值税还没算进去。"
+     },
+     {
+      "de": "Hast du die Fahrtkosten mitgerechnet?",
+      "zh": "你把路费算进去了吗？"
+     }
+    ]
+   },
+   {
+    "zh": "跟着一起算",
+    "de": "gleichzeitig mit jdm. rechnen, nachrechnen",
+    "ex": [
+     {
+      "de": "Rechnen Sie bitte mit, ob die Summe stimmt.",
+      "zh": "请您一起算算总数对不对。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) mitrechnen — 把某物计算在内",
+   "nicht mitgerechnet — 不计入（常作插入语：Trinkgeld nicht mitgerechnet）",
+   "区别：mit etw.(D) rechnen — 预料到某事"
+  ],
+  "root": "mit·rechn·en：mit（一起、包括）+ rechnen（计算）",
+  "fam": [
+   "rechnen",
+   "die Rechnung",
+   "einrechnen",
+   "berechnen",
+   "mit etw. rechnen"
+  ],
+  "ety": "rechnen < 中古高地德语 rechenen < 古高地德语 rehhanōn，与 recht 同族（一说）。",
+  "cog": "英 reckon；荷 rekenen",
+  "tip": "勿混淆：etw. mitrechnen（算进去）≠ mit etw. rechnen（料到某事）。"
+ },
+ {
+  "w": "Mittelkonsole",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Mittelkonsolen",
+  "gs": "der Mittelkonsole",
+  "ipa": "ˈmɪtl̩kɔnˌzoːlə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（汽车）中控台，前排座椅之间的中央通道台",
+    "de": "Bereich zwischen Fahrer- und Beifahrersitz im Auto",
+    "ex": [
+     {
+      "de": "Das Handy liegt in der Ablage der Mittelkonsole.",
+      "zh": "手机放在中控台的储物格里。"
+     },
+     {
+      "de": "Der Touchscreen in der Mittelkonsole steuert die Klimaanlage.",
+      "zh": "中控台上的触摸屏用来控制空调。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in der Mittelkonsole — 在中控台里",
+   "汽车相关：das Armaturenbrett（仪表盘），das Lenkrad（方向盘）"
+  ],
+  "root": "Mittel·konsole：Mittel-（中间的）+ Konsole（托架、控制台）",
+  "fam": [
+   "die Mitte",
+   "die Konsole",
+   "die Spielkonsole",
+   "das Armaturenbrett"
+  ],
+  "ety": "Konsole 借自法语 console（托架、支架），具体来源有争议。",
+  "cog": "英 centre console；法 console",
+  "tip": "Konsole 也指“游戏机”（Spielkonsole）。"
+ }
+]

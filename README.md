@@ -3,7 +3,7 @@
 网页版：https://yuquanzhao9.github.io/Deutsch-Lernen/ （打开就是词典，底部「每日学习」切到 Deutsch täglich；手机用 Safari 打开，点分享 → 添加到主屏幕）
 
 - **Deutsch täglich**（`taeglich/`）：每天 30 个词（释义、用法、词根、词源）+ 一篇阅读和 5 道德语题，打卡日历，生词本。
-- **Wortwurzel**（`woerterbuch/`）：德汉词典（23074 词），可输德语或中文，打开过一次后可离线使用。`Wortwurzel离线版.html` 下载后直接打开也能用。
+- **Wortwurzel**（`woerterbuch/`）：德汉词典（24056 词），可输德语或中文，打开过一次后可离线使用。
 
 ## 网页版和 claude.ai 版的区别
 
@@ -17,7 +17,7 @@
 
 - `index.html`、`manifest.webmanifest`、图标：网站首页
 - `taeglich/`：每日学习页（由构建脚本生成）和每日内容
-- `woerterbuch/`：词典页（由构建脚本生成）、词库 `wortwurzel.json`、离线版
+- `woerterbuch/`：词典页（由构建脚本生成）、词库（`wortwurzel.json` 是目录，词条分在 `wortwurzel-1..4.json`，每个文件都在 Cloudflare 单文件 25 MiB 上限以下；完整词库和离线版超过上限，只放在 claude-relay 备份里）
 - `quelle/taeglich/artifact.html`：每日学习页的 claude.ai 原版源码；`Deutsch-taeglich.bat` 是打开 claude.ai 版的 Windows 启动器
 - `quelle/woerterbuch/`：词典源文件（SCHEMA.md、页面模板、build.py、分批词条 parts/）
 - `fonts/`：网页用的字体（本地副本，国内打不开 Google Fonts）；`tools/fonts.py` 重新下载它们

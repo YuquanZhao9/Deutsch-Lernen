@@ -13,3 +13,5 @@ Round B (start 03:36 UTC 2026-10-13, scheduled): batches 423–442. STOP_AFTER=4
 Round B DONE 03:57 UTC 2026-10-13: 22082 entries (v34). Round C via send_later 08:36 UTC.
 Round C FINAL (start 08:37 UTC 2026-10-13, scheduled): batches 443–462 (+more if build < 23000). STOP_AFTER=462.
 Round C DONE 08:59 UTC 2026-10-13: 23074 entries (v35). Expansion to 23000 FINISHED; no further rounds. Full JSON 25.57 MB (limit 26.21 MB).
+Round 25k-A (start 20:21 UTC 2026-10-17): target 25000. Batches 463–482. STOP_AFTER=482.
+Round 25k-A DONE 20:42 UTC 2026-10-17: 24056 entries (v39). Full JSON 26.57 MB > 25 MiB: mirror uses web/ manifest + 4 parts. Round 25k-B scheduled 01:30 UTC 10-18.
