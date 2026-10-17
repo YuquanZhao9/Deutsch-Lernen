@@ -125,7 +125,7 @@ main{padding-inline:32px;padding-block:28px 48px;min-width:0;overflow-x:clip}
 .skeleton{color:var(--muted);font-size:14px}
 .empty-detail{border:1px dashed var(--line);border-radius:var(--r);padding:28px 22px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
 .empty-detail b{color:var(--ink);font-family:var(--display);font-size:18px}
-/* detail section nav: sticky chips that jump to 词意 / 用法 / 词根 / 词源 */
+/* detail section nav: sticky chips that jump to 词意 / 词源 / 词根 / 用法 */
 .secnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:3;background:var(--bg);display:flex;align-items:center;gap:6px;padding-block:10px}
 .secnav .sw{font-family:var(--display);font-size:19px;font-weight:600;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .secnav .sw .art{font-size:15px;margin-right:4px}
@@ -1137,9 +1137,9 @@ function detailHTML(w) {
   const mean = sn.length ? `<ol class="senses ${sn.length > 1 ? 'multi' : ''}">${sn.map(x => `<li><span class="s-zh">${esc(x.zh)}</span>${x.de ? `<span class="s-de" lang="de">${esc(x.de)}</span>` : ''}</li>`).join('')}</ol>` : `<p class="big-mean">${esc(w.meaning)}</p>`;
   return `
   <section class="sec" data-s="mean"><h3>词意${w.lvl ? `<em class="lvl">${esc(w.lvl)}</em>` : ''}${dictLink(dictKey(w))}</h3>${mean}${wordMeta(w)}</section>
-  <section class="sec" data-s="use"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}${w.tip ? `<div class="tip note"><b>提示：</b>${esc(w.tip)}</div>` : ''}</section>
-  <section class="sec" data-s="root"><h3>词根 <span>Wortbildung</span></h3>${parts ? `<div class="parts">${parts}</div>` : ''}<p>${esc(w.root?.explain)}</p>${fam ? `<div class="eyebrow" style="margin-top:4px">同族词</div><div class="pairs">${fam}</div>` : ''}</section>
   <section class="sec" data-s="ety"><h3>词源 <span>Herkunft</span></h3>${chain ? `<div class="chain">${chain}</div>` : ''}<p class="ety">${esc(ety)}</p>${cog ? `<div class="eyebrow" style="margin-top:4px">同源词</div><div class="pairs">${cog}</div>` : ''}</section>
+  <section class="sec" data-s="root"><h3>词根 <span>Wortbildung</span></h3>${parts ? `<div class="parts">${parts}</div>` : ''}<p>${esc(w.root?.explain)}</p>${fam ? `<div class="eyebrow" style="margin-top:4px">同族词</div><div class="pairs">${fam}</div>` : ''}</section>
+  <section class="sec" data-s="use"><h3>用法</h3><p>${esc(w.usage)}</p>${col ? `<div class="pairs">${col}</div>` : ''}${ex}${w.tip ? `<div class="tip note"><b>提示：</b>${esc(w.tip)}</div>` : ''}</section>
   ${w.mnemonic ? `<div class="tip"><b>记忆提示：</b>${esc(w.mnemonic)}</div>` : ''}`;
 }
 function progBar(marks, total, lab) {
@@ -1159,7 +1159,7 @@ function noContent(what) {
 
 function secnavHTML(w) {
   const g = artCls(w.gender);
-  return `<nav class="secnav" aria-label="讲解目录"><b class="sw only-m">${g ? `<span class="art ${g}">${g}</span>` : ''}${esc(w.word)}</b>${[['mean','词意'],['use','用法'],['root','词根'],['ety','词源']].map(([k, l]) => `<button data-sec="${k}">${l}</button>`).join('')}</nav>`;
+  return `<nav class="secnav" aria-label="讲解目录"><b class="sw only-m">${g ? `<span class="art ${g}">${g}</span>` : ''}${esc(w.word)}</b>${[['mean','词意'],['ety','词源'],['root','词根'],['use','用法']].map(([k, l]) => `<button data-sec="${k}">${l}</button>`).join('')}</nav>`;
 }
 function wseg() {
   const d = S.day, R = d.review || [], nl = d.lemmas.length; if (!nl) return '';
@@ -1182,7 +1182,7 @@ function vWords() {
     ? `<div class="empty-detail"><span><span class="spin"></span>这个词的讲解还在生成…</span><span>生成完会自动出现，可以先判断认不认识。</span></div>`
     : `<div class="empty-detail"><b>这个词的讲解还没生成</b><span>可以先判断认不认识。</span><div><button class="btn sm" data-act="retry-words">补全讲解</button></div></div>`;
   else if (m) right = secnavHTML(w) + detailHTML(w);
-  else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span class="only-d">选好之后，这里会展开词意、用法、词根和词源。</span><span class="only-m">在下面选认识、模糊或不认识，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
+  else right = `<div class="empty-detail"><b>先想一想它是什么意思</b><span class="only-d">选好之后，这里会展开词意、词源、词根和用法。</span><span class="only-m">在下面选认识、模糊或不认识，讲解会展开在这里。左右滑动可以换词。</span><span class="kbd only-d">键盘：1 认识 · 2 模糊 · 3 不认识 · ← → 翻页</span></div>`;
   const wmap = `<div class="wmap only-d" aria-label="30 个词">${d.lemmas.map((l, k) => `<button class="${d.marks[k] || ''}" data-go="${k}" title="${k + 1}. ${esc(d.words[k]?.word || l)}" aria-label="第 ${k + 1} 个" ${k === i ? 'aria-current="true"' : ''}></button>`).join('')}</div>`;
   const dock = `<div class="dock only-m" role="group" aria-label="认识程度">
     <button class="dk nav" data-go="${i - 1}" ${i === 0 ? 'disabled' : ''} aria-label="上一个">‹</button>
