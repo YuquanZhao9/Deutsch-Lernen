@@ -170,10 +170,25 @@ async function defaultTranslate(ai, text, to) {
 
 // the dictionary page sends its own prompt asking for a JSON object {tr, alt, words, notes}
 const parseJsonReply = t => {
+  if (t && typeof t === 'object') return t; // Workers AI with a json_schema already returns an object
   t = String(t || '').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
   const i = t.indexOf('{'), j = t.lastIndexOf('}');
   try { return JSON.parse(i >= 0 && j > i ? t.slice(i, j + 1) : t); } catch { return { tr: t }; }
 };
+// models sometimes nest fields ({tr: {zh: '…'}}) or skip them: always hand the page {tr, alt, words, notes} with tr a string
+const flat = v => typeof v === 'string' ? v.trim() : v && typeof v === 'object'
+  ? flat(Object.values(v).find(x => typeof x === 'string' && x.trim()) || '') : v == null ? '' : String(v);
+function pageResult(res) {
+  if (!res || typeof res !== 'object') return null;
+  const tr = flat(res.tr);
+  if (!tr) return null;
+  return { tr, alt: flat(res.alt),
+    words: (Array.isArray(res.words) ? res.words : []).filter(w => w && typeof w === 'object').map(w => ({ de: flat(w.de), form: flat(w.form), zh: flat(w.zh) })).filter(w => w.de),
+    notes: (Array.isArray(res.notes) ? res.notes : []).map(flat).filter(Boolean) };
+}
+const str = { type: 'string' };
+const PAGE_SCHEMA = { type: 'json_schema', json_schema: { type: 'object', required: ['tr'], properties: { tr: str, alt: str,
+  words: { type: 'array', items: { type: 'object', properties: { de: str, form: str, zh: str } } }, notes: { type: 'array', items: str } } } };
 async function chat(cfg, prompt, json) {
   const req = { model: cfg.model, temperature: 0.2, messages: [{ role: 'user', content: prompt }] };
   const send = body => fetch(chatUrl(cfg.url), { method: 'POST',
@@ -196,17 +211,19 @@ async function pageTranslate(b, u, db, env) {
     } else if (u) cfg = await trConfig(db, u.id);
     if (cfg && cfg.provider === 'deepl') return { ok: true, result: { tr: await translateWith(cfg, text, to), alt: '', words: [], notes: [] }, source: 'custom' };
     if (cfg) {
-      const res = parseJsonReply(await chat(cfg, prompt, true));
-      if (!res.tr) fail(502, '你的翻译接口没有返回译文');
+      const res = pageResult(parseJsonReply(await chat(cfg, prompt, true)));
+      if (!res) fail(502, '你的翻译接口没有返回译文');
       return { ok: true, result: res, source: 'custom' };
     }
     if (!env.AI) fail(503, '网站的免费翻译还没有开通');
     let res = null;
+    const ask = extra => env.AI.run(AI_CHAT, { temperature: 0.2, max_tokens: 1500, messages: [{ role: 'user', content: prompt }], ...extra });
     try {
-      const r = await env.AI.run(AI_CHAT, { temperature: 0.2, max_tokens: 1500, messages: [{ role: 'user', content: prompt }] });
-      res = r && parseJsonReply(r.response);
+      let r;
+      try { r = await ask({ response_format: PAGE_SCHEMA }); } catch (e) { console.error('workers ai json_schema', e); r = await ask({}); }
+      res = r && pageResult(parseJsonReply(r.response));
     } catch (e) { console.error('workers ai chat', e); }
-    if (!res || !res.tr) res = { tr: await defaultTranslate(env.AI, text, to), alt: '', words: [], notes: [] };
+    if (!res) res = { tr: await defaultTranslate(env.AI, text, to), alt: '', words: [], notes: [] };
     return { ok: true, result: res, source: 'workers-ai' };
   } catch (e) {
     if (e instanceof HttpError) return { ok: false, error: e.message };
