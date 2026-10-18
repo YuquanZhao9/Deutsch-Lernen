@@ -1,0 +1,2162 @@
+[
+ {
+  "w": "verspätet",
+  "pos": "adj",
+  "ipa": "fɛɐ̯ˈʃpɛːtət",
+  "lvl": "B1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "迟到的，晚点的，延误的",
+    "de": "später als geplant oder erwartet",
+    "ex": [
+     {
+      "de": "Wegen eines Unwetters traf der Zug zwei Stunden verspätet in Hamburg ein.",
+      "zh": "因为暴风雨，火车晚了两个小时才抵达汉堡。"
+     },
+     {
+      "de": "Für verspätete Zahlungen werden Mahngebühren fällig.",
+      "zh": "逾期付款须缴纳催款费。"
+     }
+    ]
+   },
+   {
+    "zh": "迟来的，（时机上）过晚的",
+    "de": "zu spät kommend, nachträglich",
+    "ex": [
+     {
+      "de": "Herzliche, wenn auch verspätete Glückwünsche zum Geburtstag!",
+      "zh": "衷心祝你生日快乐，虽然祝福来得晚了些！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "verspätet ankommen / eintreffen — 晚到，延误抵达",
+   "eine verspätete Abgabe / Lieferung — 逾期提交 / 延迟交货",
+   "动词 sich verspäten — 迟到；名词 die Verspätung — 晚点，延误"
+  ],
+  "root": "ver·spät·et：sich verspäten（迟到，由 spät“晚的”+ 前缀 ver- 构成）的第二分词形容词化 → “被弄晚了的” → 延误的",
+  "fam": [
+   "sich verspäten",
+   "die Verspätung",
+   "spät",
+   "später"
+  ],
+  "ety": "sich verspäten 的过去分词作形容词。spät < 中古高地德语 spæte < 古高地德语 spāti。",
+  "cog": "英语无对应的常用同源词",
+  "tip": "说“火车晚点了”可说 Der Zug ist verspätet 或 Der Zug hat Verspätung，后者更口语常见；不要说 *Der Zug ist spät。"
+ },
+ {
+  "w": "verschrotten",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈʃʁɔtn̩",
+  "lvl": "C1",
+  "forms": "verschrottet · verschrottete · hat verschrottet",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（把车辆、机器等）报废，拆成废铁",
+    "de": "zu Schrott verarbeiten, als Schrott entsorgen",
+    "ex": [
+     {
+      "de": "Nach dem Unfall musste das Auto verschrottet werden.",
+      "zh": "事故之后，这辆车只能报废了。"
+     },
+     {
+      "de": "Die Marine will bis 2030 mehrere alte Fregatten verschrotten.",
+      "zh": "海军计划在2030年前拆解报废数艘旧护卫舰。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) verschrotten (lassen) — （送去）报废某物",
+   "die Verschrottung — 报废，拆解",
+   "die Abwrackprämie — 汽车报废补贴（相关词）"
+  ],
+  "root": "ver·schrott·en：ver-（使变成……）+ Schrott（废铁）→ 使成为废铁 → 报废",
+  "fam": [
+   "der Schrott",
+   "die Verschrottung",
+   "Schrottplatz",
+   "schrottreif"
+  ],
+  "ety": "由 Schrott（废金属）派生。Schrott 源自低地德语，与 Schrot（碎块；粗磨谷物）同源，中古高地德语 schrōt 义为“砍下的一块”。",
+  "cog": "一般认为与英 shred（撕碎）同源",
+  "tip": "verschrotten 只用于金属制品、车辆、机器；扔掉一般物品用 wegwerfen 或 entsorgen。"
+ },
+ {
+  "w": "Vertragsbruch",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Vertragsbrüche",
+  "gs": "des Vertragsbruch(e)s",
+  "ipa": "fɛɐ̯ˈtʁaːksˌbʁʊx",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "违约，违反合同",
+    "de": "Verletzung oder Nichterfüllung eines Vertrags",
+    "ex": [
+     {
+      "de": "Der Verein wirft dem Spieler Vertragsbruch vor.",
+      "zh": "俱乐部指责这名球员违约。"
+     },
+     {
+      "de": "Bei Vertragsbruch droht eine hohe Vertragsstrafe.",
+      "zh": "一旦违约，将面临高额违约金。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "(einen) Vertragsbruch begehen — 违约",
+   "jmdm. Vertragsbruch vorwerfen — 指责某人违约",
+   "wegen Vertragsbruchs klagen — 以违约为由起诉"
+  ],
+  "root": "Vertrag·s·bruch：Vertrag（合同）+ 连接音 -s- + Bruch（断裂；违反）→ 撕毁/违反合同",
+  "fam": [
+   "der Vertrag",
+   "brechen",
+   "der Wortbruch",
+   "vertragsbrüchig"
+  ],
+  "ety": "复合词。Vertrag 来自 vertragen（达成一致）；Bruch < 中古高地德语 bruch < 古高地德语 bruh，与 brechen 同族。",
+  "cog": "英 break, breach",
+  "tip": "法律语境中也说 Vertragsverletzung；“违约的”是 vertragsbrüchig（vertragsbrüchig werden）。"
+ },
+ {
+  "w": "Vertragslaufzeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Vertragslaufzeiten",
+  "gs": "der Vertragslaufzeit",
+  "ipa": "fɛɐ̯ˈtʁaːksˌlaʊ̯ft͡saɪ̯t",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "合同期限，合约期",
+    "de": "Zeitraum, für den ein Vertrag gilt",
+    "ex": [
+     {
+      "de": "Die Mindestvertragslaufzeit beträgt 24 Monate.",
+      "zh": "最短合约期为24个月。"
+     },
+     {
+      "de": "Während der Vertragslaufzeit ist eine ordentliche Kündigung ausgeschlossen.",
+      "zh": "合同期内不得进行常规解约。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Vertragslaufzeit beträgt … — 合同期为……",
+   "die Mindestvertragslaufzeit — 最短合约期（手机、健身房合同常见）",
+   "nach Ablauf der Vertragslaufzeit — 合同期满后"
+  ],
+  "root": "Vertrag·s·lauf·zeit：Vertrag（合同）+ Laufzeit（有效期，原义“运行时间”）",
+  "fam": [
+   "der Vertrag",
+   "die Laufzeit",
+   "laufen",
+   "die Kündigungsfrist"
+  ],
+  "ety": "现代复合词，各成分为德语固有词：Vertrag（vertragen）、laufen、Zeit。",
+  "cog": "英 leap（与 laufen 同源）；英 tide（与 Zeit 同源）",
+  "tip": "签手机、网络、健身房合同时必看的词；常与 Kündigungsfrist（解约通知期）一起出现。"
+ },
+ {
+  "w": "Vertragsverhandlung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Vertragsverhandlungen",
+  "gs": "der Vertragsverhandlung",
+  "ipa": "fɛɐ̯ˈtʁaːksfɛɐ̯ˌhandlʊŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "合同谈判，签约谈判（多用复数）",
+    "de": "Verhandlung über den Abschluss oder Inhalt eines Vertrags",
+    "ex": [
+     {
+      "de": "Die Vertragsverhandlungen mit dem Trainer sind gescheitert.",
+      "zh": "与主教练的续约谈判破裂了。"
+     },
+     {
+      "de": "Beide Seiten wollen die Vertragsverhandlungen bis Ende des Jahres abschließen.",
+      "zh": "双方希望在年底前结束合同谈判。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Vertragsverhandlungen führen / aufnehmen — 进行/开始合同谈判",
+   "in Vertragsverhandlungen stehen (mit jmdm.) — 正在（与某人）谈合同",
+   "die Vertragsverhandlungen abbrechen — 中断合同谈判"
+  ],
+  "root": "Vertrag·s·ver·hand·lung：Vertrag（合同）+ Verhandlung（谈判，来自 verhandeln）",
+  "fam": [
+   "der Vertrag",
+   "verhandeln",
+   "die Verhandlung",
+   "der Verhandlungspartner"
+  ],
+  "ety": "复合词。verhandeln < 中古高地德语 verhandeln（处理），由 handeln（行事，源于 Hand）构成。",
+  "cog": "英 hand, handle",
+  "tip": "体育新闻中常见，指球员与俱乐部的续约谈判；Verhandlung 单独也可指法庭审理。"
+ },
+ {
+  "w": "Vertriebsmitarbeiter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Vertriebsmitarbeiter",
+  "gs": "des Vertriebsmitarbeiters",
+  "ipa": "fɛɐ̯ˈtʁiːpsˌmɪtʔaʁbaɪ̯tɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "销售人员，销售专员",
+    "de": "Angestellter im Vertrieb (Verkauf) eines Unternehmens",
+    "ex": [
+     {
+      "de": "Wir suchen einen Vertriebsmitarbeiter im Außendienst für die Region Süd.",
+      "zh": "我们招聘一名负责南部地区的外勤销售专员。"
+     },
+     {
+      "de": "Als Vertriebsmitarbeiterin betreut sie rund fünfzig Großkunden.",
+      "zh": "作为销售专员，她负责约五十家大客户。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Vertriebsmitarbeiter (m/w/d) im Innendienst / Außendienst — 内勤/外勤销售（招聘广告）",
+   "阴性：die Vertriebsmitarbeiterin",
+   "der Vertrieb — 销售部；销售"
+  ],
+  "root": "Vertrieb·s·mit·arbeit·er：Vertrieb（销售，来自 vertreiben“销售”）+ Mitarbeiter（员工）",
+  "fam": [
+   "der Vertrieb",
+   "vertreiben",
+   "der Mitarbeiter",
+   "der Vertriebsleiter"
+  ],
+  "ety": "复合词。Vertrieb 来自 vertreiben（推销、出售，原义“驱赶”），treiben < 古高地德语 trīban。",
+  "cog": "英 drive（与 treiben 同源）",
+  "tip": "Vertrieb 侧重销售渠道与客户开发，Verkauf 侧重买卖行为本身；招聘中 Vertriebsmitarbeiter 比 Verkäufer 更偏 B2B。"
+ },
+ {
+  "w": "verwahrlosen",
+  "pos": "v",
+  "ipa": "fɛɐ̯ˈvaːɐ̯loːzn̩",
+  "lvl": "C1",
+  "forms": "verwahrlost · verwahrloste · ist verwahrlost",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "（房屋、园地等）荒废，失修，破败",
+    "de": "durch mangelnde Pflege herunterkommen",
+    "ex": [
+     {
+      "de": "Nach dem Tod des Besitzers verwahrloste das Grundstück zusehends.",
+      "zh": "房主去世后，这块地明显荒废了。"
+     }
+    ]
+   },
+   {
+    "zh": "（人，尤指儿童）无人照管，潦倒，堕落",
+    "de": "(von Menschen) ohne Fürsorge sozial und körperlich herunterkommen",
+    "ex": [
+     {
+      "de": "Das Jugendamt holte die verwahrlosten Kinder aus der Wohnung.",
+      "zh": "青少年局把那些无人照管的孩子从住处接走了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "verwahrlosen lassen — 任其荒废/无人照管",
+   "形容词 verwahrlost — 荒废的；邋遢潦倒的",
+   "die Verwahrlosung — 荒废；（儿童）缺乏照管"
+  ],
+  "root": "ver·wahr·los·en：ver-（变坏）+ wahrlos（旧词，“不加照看的”：wahr“照看”+ -los“无”）→ 因无人照看而变坏",
+  "fam": [
+   "verwahrlost",
+   "die Verwahrlosung",
+   "bewahren",
+   "aufbewahren",
+   "gewahr"
+  ],
+  "ety": "中古高地德语 verwarlōsen，源自 warlōs（疏忽的），其中 war 意为“注意、照看”（古高地德语 wara），与 bewahren、gewahr 同族。",
+  "cog": "英 aware, beware, ward（与 wahr“照看”同源）",
+  "tip": "完成时用 sein：Das Haus ist verwahrlost。此处 wahr 与 wahr（真实的）无关。"
+ },
+ {
+  "w": "Verwertungsgesellschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Verwertungsgesellschaften",
+  "gs": "der Verwertungsgesellschaft",
+  "ipa": "fɛɐ̯ˈveːɐ̯tʊŋsɡəˌzɛlʃaft",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "著作权集体管理组织（代表作者收取并分配版权使用费）",
+    "de": "Organisation, die Urheberrechte und Leistungsschutzrechte treuhänderisch für ihre Mitglieder wahrnimmt",
+    "ex": [
+     {
+      "de": "Die GEMA ist die Verwertungsgesellschaft für Musikrechte in Deutschland.",
+      "zh": "GEMA 是德国的音乐著作权集体管理组织。"
+     },
+     {
+      "de": "Für das Abspielen von Musik im Laden verlangt die Verwertungsgesellschaft Gebühren.",
+      "zh": "在店里播放音乐，著作权集体管理组织会收取使用费。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Gebühren an die Verwertungsgesellschaft zahlen — 向著作权管理组织缴费",
+   "die Verwertung — 利用，开发利用；（版权）使用",
+   "verwerten — 利用，加以使用"
+  ],
+  "root": "Verwert·ung·s·gesell·schaft：Verwertung（利用，来自 verwerten，Wert“价值”）+ Gesellschaft（协会，公司）",
+  "fam": [
+   "verwerten",
+   "die Verwertung",
+   "der Wert",
+   "das Urheberrecht",
+   "die Gesellschaft"
+  ],
+  "ety": "复合词。verwerten 由 Wert（价值）构成，Wert < 古高地德语 werd。",
+  "cog": "英 worth（与 Wert 同源）",
+  "tip": "专业法律词汇，德国常见的有 GEMA（音乐）、VG Wort（文字）、VG Bild-Kunst（图像）。"
+ },
+ {
+  "w": "Verwesung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Verwesung",
+  "ipa": "fɛɐ̯ˈveːzʊŋ",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（尸体等有机物的）腐烂，腐败",
+    "de": "Zersetzung toter organischer, besonders tierischer und menschlicher Körper",
+    "ex": [
+     {
+      "de": "Die Leiche befand sich bereits in einem fortgeschrittenen Stadium der Verwesung.",
+      "zh": "尸体已处于严重腐烂阶段。"
+     },
+     {
+      "de": "Im Keller roch es nach Verwesung.",
+      "zh": "地下室里有一股腐臭味。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "in Verwesung übergehen — 开始腐烂",
+   "der Verwesungsgeruch — 尸臭，腐臭",
+   "动词 verwesen（ist verwest）— 腐烂"
+  ],
+  "root": "ver·wes·ung：verwesen（腐烂）+ -ung（名词后缀）",
+  "fam": [
+   "verwesen",
+   "der Verwesungsgeruch",
+   "die Fäulnis",
+   "verfaulen"
+  ],
+  "ety": "verwesen < 中古高地德语 verwesen < 古高地德语 firwesan（消亡）；一说与 wesen（存在，sein 的旧动词）同族，即“不复存在”。",
+  "cog": "一说与英 was 同族",
+  "tip": "Verwesung 多指尸体腐烂（法医、刑侦语境）；水果蔬菜腐烂用 Fäulnis / verfaulen，木头叶子用 verrotten。"
+ },
+ {
+  "w": "Veterinärmedizin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Veterinärmedizin",
+  "ipa": "veteʁiˈnɛːɐ̯mediˌt͡siːn",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "兽医学",
+    "de": "Tiermedizin, Tierheilkunde",
+    "ex": [
+     {
+      "de": "Sie studiert Veterinärmedizin an der Freien Universität Berlin.",
+      "zh": "她在柏林自由大学学习兽医学。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Veterinärmedizin studieren — 学兽医",
+   "近义 die Tiermedizin（更通俗）",
+   "der Veterinär — 兽医（书面）；日常说 der Tierarzt"
+  ],
+  "root": "Veterinär·medizin：Veterinär（兽医，源自拉丁语 veterinae“役畜”）+ Medizin（医学）",
+  "fam": [
+   "der Veterinär",
+   "veterinärmedizinisch",
+   "die Tiermedizin",
+   "der Tierarzt",
+   "die Medizin"
+  ],
+  "ety": "Veterinär 经法语 vétérinaire 借自拉丁语 veterinarius（与役畜有关的），源于 veterinae（役畜）；Medizin 借自拉丁语 medicina。",
+  "cog": "英 veterinary (vet)；法 vétérinaire",
+  "tip": "口语一般说 Tiermedizin、Tierarzt；Veterinär 用于官方（Veterinäramt 兽医局）。"
+ },
+ {
+  "w": "vierhundert",
+  "pos": "num",
+  "ipa": "ˈfiːɐ̯ˌhʊndɐt",
+  "lvl": "A1–A2",
+  "senses": [
+   {
+    "zh": "四百",
+    "de": "die Kardinalzahl 400",
+    "ex": [
+     {
+      "de": "Wegen des Brandes mussten rund vierhundert Menschen evakuiert werden.",
+      "zh": "由于火灾，约四百人不得不疏散。"
+     },
+     {
+      "de": "Die Strecke ist knapp vierhundert Kilometer lang.",
+      "zh": "这段路程将近四百公里。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "数字连写：vierhundertachtzig（480）",
+   "序数：der/die/das vierhundertste",
+   "vor vierhundert Jahren — 四百年前"
+  ],
+  "root": "vier·hundert：vier（四）+ hundert（百）",
+  "fam": [
+   "vier",
+   "hundert",
+   "Jahrhundert",
+   "vierhundertste"
+  ],
+  "ety": "vier < 古高地德语 fior；hundert < 中古高地德语 hundert。",
+  "cog": "英 four hundred",
+  "tip": "数词连写，不写 *vier hundert；重音在 vier 上。"
+ },
+ {
+  "w": "vierundzwanzig",
+  "pos": "num",
+  "ipa": "ˈfiːɐ̯ʊntˌt͡svant͡sɪç",
+  "lvl": "A1",
+  "senses": [
+   {
+    "zh": "二十四",
+    "de": "die Kardinalzahl 24",
+    "ex": [
+     {
+      "de": "Die Apotheke hat vierundzwanzig Stunden geöffnet.",
+      "zh": "这家药店二十四小时营业。"
+     },
+     {
+      "de": "Er ist erst vierundzwanzig und leitet schon ein Team.",
+      "zh": "他才二十四岁，就已经带领一个团队了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "德语先说个位再说十位：vier-und-zwanzig（四和二十）",
+   "rund um die Uhr / vierundzwanzig Stunden am Tag — 全天候",
+   "序数：der/die/das vierundzwanzigste（24.）"
+  ],
+  "root": "vier·und·zwanzig：vier（四）+ und（和）+ zwanzig（二十）",
+  "fam": [
+   "vier",
+   "zwanzig",
+   "vierundzwanzigste",
+   "Vierundzwanzigstundendienst"
+  ],
+  "ety": "vier < 古高地德语 fior；zwanzig < 古高地德语 zweinzug（“两个十”）。",
+  "cog": "英 four, twenty",
+  "tip": "中国学习者听写时易把 24 写成 42：个位在前。全词连写。"
+ },
+ {
+  "w": "Vogelgezwitscher",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Vogelgezwitschers",
+  "ipa": "ˈfoːɡl̩ɡəˌt͡svɪt͡ʃɐ",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "鸟鸣，鸟儿的啁啾声",
+    "de": "das Zwitschern von Vögeln",
+    "ex": [
+     {
+      "de": "Am Morgen wurde ich vom Vogelgezwitscher geweckt.",
+      "zh": "早晨我被鸟鸣声唤醒。"
+     },
+     {
+      "de": "Abseits der Straße hört man nur noch Vogelgezwitscher.",
+      "zh": "远离马路的地方只听得见鸟儿啁啾。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "fröhliches / lautes Vogelgezwitscher — 欢快的/嘈杂的鸟鸣",
+   "动词 zwitschern — （鸟）叽叽喳喳地叫",
+   "Ge-…-e/-er 构词表示“持续的、反复的声音”，如 Gezwitscher, Geschrei, Gelächter"
+  ],
+  "root": "Vogel·ge·zwitsch·er：Vogel（鸟）+ Gezwitscher（ge- 集合/反复前缀 + zwitschern“啁啾”）",
+  "fam": [
+   "der Vogel",
+   "zwitschern",
+   "das Gezwitscher",
+   "der Vogelgesang"
+  ],
+  "ety": "Vogel < 中古高地德语 vogel < 古高地德语 fogal；zwitschern 为拟声词，中古高地德语 zwitzern。",
+  "cog": "英 fowl（与 Vogel 同源）；英 twitter（同为拟声词）",
+  "tip": "Vogelgezwitscher 是不可数的集合名词，不用复数；“鸟叫”也可说 Vogelgesang（偏诗意）。"
+ },
+ {
+  "w": "Volldampf",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Volldampf(e)s",
+  "ipa": "ˈfɔlˌdampf",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（口）全速，全力（多用于 mit Volldampf）",
+    "de": "(ugs.) höchste Kraft, größtes Tempo",
+    "ex": [
+     {
+      "de": "Die Bauarbeiten laufen mit Volldampf, damit die Brücke im Herbst fertig wird.",
+      "zh": "施工正在全速推进，好让大桥在秋天完工。"
+     },
+     {
+      "de": "Nach der Pause ging die Mannschaft mit Volldampf in die zweite Halbzeit.",
+      "zh": "中场休息后，球队全力投入下半场。"
+     }
+    ]
+   },
+   {
+    "zh": "（蒸汽机的）满汽压，全速蒸汽",
+    "de": "voller Dampfdruck einer Dampfmaschine",
+    "ex": [
+     {
+      "de": "„Volldampf voraus!“, rief der Kapitän.",
+      "zh": "“全速前进！”船长喊道。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "mit Volldampf (arbeiten / fahren) — 全力（工作）/ 全速（行驶）",
+   "Volldampf geben — 开足马力，全力以赴",
+   "Volldampf voraus! — 全速前进！"
+  ],
+  "root": "Voll·dampf：voll（满的）+ Dampf（蒸汽）→ 蒸汽机开到满汽压 → 全速、全力",
+  "fam": [
+   "der Dampf",
+   "dampfen",
+   "voll",
+   "der Dampfer"
+  ],
+  "ety": "源自蒸汽机时代的航运用语。Dampf < 中古高地德语 dampf（烟，蒸汽）；voll < 古高地德语 fol。",
+  "cog": "英 damp（潮湿的，与 Dampf 同源）；英 full（与 voll 同源）",
+  "tip": "口语、略带夸张；正式文体可用 mit Hochdruck（加紧地）或 auf Hochtouren。"
+ },
+ {
+  "w": "vorbeilaufen",
+  "pos": "v",
+  "ipa": "foːɐ̯ˈbaɪ̯ˌlaʊ̯fn̩",
+  "lvl": "B1",
+  "forms": "läuft vorbei · lief vorbei · ist vorbeigelaufen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（跑着或走着）经过，从旁边走过/跑过",
+    "de": "an jmdm./etw. vorüberlaufen",
+    "ex": [
+     {
+      "de": "Sie ist einfach an mir vorbeigelaufen, ohne zu grüßen.",
+      "zh": "她直接从我身边走过，连招呼都没打。"
+     },
+     {
+      "de": "Jeden Morgen laufe ich auf dem Weg zur Arbeit an der Bäckerei vorbei.",
+      "zh": "每天早上上班路上我都会经过那家面包店。"
+     }
+    ]
+   },
+   {
+    "zh": "（口）顺便去一下",
+    "de": "(ugs.) kurz bei jmdm./irgendwo vorbeigehen",
+    "ex": [
+     {
+      "de": "Ich laufe schnell bei der Post vorbei und komme dann nach.",
+      "zh": "我快去一趟邮局，然后再跟上来。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "an jmdm./etw.(D) vorbeilaufen — 从某人/某物旁走过",
+   "bei jmdm. vorbeilaufen（口）— 顺路去某人那儿",
+   "近义 vorbeigehen（走过）, vorbeikommen（顺便来访）"
+  ],
+  "root": "vorbei·lauf·en：vorbei（经过，从旁边）+ laufen（走，跑）",
+  "fam": [
+   "vorbei",
+   "laufen",
+   "vorbeigehen",
+   "vorbeikommen",
+   "der Lauf"
+  ],
+  "ety": "复合动词。laufen < 中古高地德语 loufen < 古高地德语 (h)louffan。",
+  "cog": "英 leap（与 laufen 同源）；荷 lopen",
+  "tip": "vorbei 重音在 bei：vorˈbei；完成时用 sein。laufen 在南德/口语里常就是“走”，不一定是跑。"
+ },
+ {
+  "w": "vorbelastet",
+  "pos": "adj",
+  "ipa": "ˈfoːɐ̯bəˌlastət",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "（因过去的经历、前科等）有包袱的，有污点的，先入为主的",
+    "de": "durch frühere Ereignisse, Erfahrungen o. Ä. belastet",
+    "ex": [
+     {
+      "de": "Das Verhältnis zwischen den beiden Ländern ist historisch vorbelastet.",
+      "zh": "两国关系背负着历史包袱。"
+     },
+     {
+      "de": "Als ehemaliger Lobbyist gilt der Kandidat als vorbelastet.",
+      "zh": "这位候选人曾当过说客，被认为身上有包袱。"
+     }
+    ]
+   },
+   {
+    "zh": "（遗传上）有易患倾向的",
+    "de": "durch Veranlagung gefährdet",
+    "ex": [
+     {
+      "de": "Wer erblich vorbelastet ist, sollte regelmäßig zur Vorsorge gehen.",
+      "zh": "有家族遗传倾向的人应定期做预防性检查。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "erblich / genetisch vorbelastet sein — 有遗传倾向",
+   "(politisch / historisch) vorbelastet — （政治上/历史上）有包袱的",
+   "die Vorbelastung — 既有负担；病史；前科"
+  ],
+  "root": "vor·be·last·et：vor-（事先）+ belasten（加重负担）的第二分词 → 事先已有负担的",
+  "fam": [
+   "belasten",
+   "die Last",
+   "die Vorbelastung",
+   "die Belastung"
+  ],
+  "ety": "由 belasten 加前缀 vor- 构成的分词形容词。Last < 中古高地德语 last < 古高地德语 (h)last。",
+  "cog": "荷 last（负担，同源）",
+  "tip": "也可半开玩笑说 musikalisch vorbelastet（家里有音乐背景，“家学渊源”）。"
+ },
+ {
+  "w": "Vorstandschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Vorstandschaften",
+  "gs": "der Vorstandschaft",
+  "ipa": "ˈfoːɐ̯ʃtantʃaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（尤指南德协会、社团的）理事会，董事会全体成员",
+    "de": "(bes. südd.) Gesamtheit der Vorstandsmitglieder, Vorstand (eines Vereins)",
+    "ex": [
+     {
+      "de": "Die Mitgliederversammlung hat eine neue Vorstandschaft gewählt.",
+      "zh": "会员大会选出了新一届理事会。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine neue Vorstandschaft wählen — 选举新一届理事会",
+   "近义 der Vorstand（通用，更常见）",
+   "in die Vorstandschaft gewählt werden — 当选理事"
+  ],
+  "root": "Vor·stand·schaft：Vorstand（理事会）+ -schaft（集合名词后缀）",
+  "fam": [
+   "der Vorstand",
+   "vorstehen",
+   "der Vorsitzende",
+   "die Mitgliederversammlung"
+  ],
+  "ety": "由 Vorstand（来自 vorstehen“主持、领导”）加后缀 -schaft 构成。stehen < 古高地德语 stān/stēn。",
+  "cog": "英 stand（与 stehen 同源）",
+  "tip": "多见于巴伐利亚等南德地区的协会章程；全国通用说 der Vorstand。公司董事会也用 Vorstand，一般不用 Vorstandschaft。"
+ },
+ {
+  "w": "vortreiben",
+  "pos": "v",
+  "ipa": "ˈfoːɐ̯ˌtʁaɪ̯bn̩",
+  "lvl": "C2",
+  "forms": "treibt vor · trieb vor · hat vorgetrieben",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "（采矿、隧道施工）掘进，向前开凿",
+    "de": "(Bergbau, Tunnelbau) einen Stollen, Tunnel o. Ä. in das Gestein treiben",
+    "ex": [
+     {
+      "de": "Die Mineure treiben den Tunnel täglich um etwa zehn Meter vor.",
+      "zh": "隧道工人每天向前掘进约十米。"
+     }
+    ]
+   },
+   {
+    "zh": "向前驱赶，往前推",
+    "de": "nach vorn treiben",
+    "ex": [
+     {
+      "de": "Der Hirte trieb die Herde zum Tor vor.",
+      "zh": "牧人把畜群往前赶到大门口。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Stollen / Tunnel vortreiben — 掘进巷道/隧道",
+   "der Vortrieb — 掘进；（物）推进力",
+   "比较 vorantreiben — 推动（项目、改革等）"
+  ],
+  "root": "vor·treib·en：vor-（向前）+ treiben（驱赶，推动）",
+  "fam": [
+   "treiben",
+   "der Vortrieb",
+   "vorantreiben",
+   "der Antrieb"
+  ],
+  "ety": "复合动词。treiben < 中古高地德语 trīben < 古高地德语 trīban。",
+  "cog": "英 drive（与 treiben 同源）",
+  "tip": "“推动项目、改革”要用 vorantreiben（Reformen vorantreiben），不要用 vortreiben；vortreiben 主要是工程术语。"
+ },
+ {
+  "w": "Wacholder",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Wacholder",
+  "gs": "des Wacholders",
+  "ipa": "vaˈxɔldɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "刺柏，杜松（常绿针叶灌木）；杜松子",
+    "de": "immergrüner Nadelstrauch mit blauschwarzen Beeren",
+    "ex": [
+     {
+      "de": "Auf der Heide wachsen vor allem Wacholder und Birken.",
+      "zh": "荒原上主要生长着杜松和桦树。"
+     },
+     {
+      "de": "Für den Sauerbraten braucht man ein paar Wacholderbeeren.",
+      "zh": "做醋焖牛肉需要几颗杜松子。"
+     }
+    ]
+   },
+   {
+    "zh": "杜松子酒",
+    "de": "Wacholderschnaps",
+    "ex": [
+     {
+      "de": "Nach dem Essen gab es einen Wacholder.",
+      "zh": "饭后喝了一杯杜松子酒。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Wacholderbeere — 杜松子（调料，金酒的主要香料）",
+   "der Wacholderschnaps — 杜松子烧酒",
+   "比较 der Gin — 金酒（英式杜松子酒）"
+  ],
+  "root": "Wach·older：历史形式 ahd. wehhaltar，构词不透明；-der 一说是树木名后缀（同 Holunder“接骨木”）",
+  "fam": [
+   "die Wacholderbeere",
+   "der Wacholderschnaps",
+   "der Holunder",
+   "die Heide"
+  ],
+  "ety": "中古高地德语 wecholter < 古高地德语 wehhaltar；前一成分来源不确定，词源不详。",
+  "cog": "英 juniper 非同源（来自拉丁语 iuniperus）",
+  "tip": "重音在第二音节：waˈcholder；复数不变。“杜松子”是 Wacholderbeeren，不是 *Wacholderfrüchte。"
+ },
+ {
+  "w": "Waffenrecht",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Waffenrecht(e)s",
+  "ipa": "ˈvafn̩ˌʁɛçt",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "武器法，枪支管理法规",
+    "de": "Gesamtheit der gesetzlichen Vorschriften über Erwerb, Besitz und Führen von Waffen",
+    "ex": [
+     {
+      "de": "Nach dem Amoklauf forderten viele Politiker eine Verschärfung des Waffenrechts.",
+      "zh": "枪击案发生后，许多政界人士要求收紧枪支管理法规。"
+     },
+     {
+      "de": "Das deutsche Waffenrecht gilt als eines der strengsten in Europa.",
+      "zh": "德国的枪支法被认为是欧洲最严格的之一。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Waffenrecht verschärfen / lockern — 收紧/放宽枪支法",
+   "das Waffengesetz — 武器法（具体法律名称）",
+   "der Waffenschein — 持枪许可证"
+  ],
+  "root": "Waffe·n·recht：Waffe（武器）+ 连接音 -n- + Recht（法律）",
+  "fam": [
+   "die Waffe",
+   "das Recht",
+   "das Waffengesetz",
+   "der Waffenschein",
+   "bewaffnet"
+  ],
+  "ety": "复合词。Waffe < 中古高地德语 wāfen < 古高地德语 wāffan；Recht < 古高地德语 reht。",
+  "cog": "英 weapon（与 Waffe 同源）；英 right（与 Recht 同源）",
+  "tip": "das Recht 作“法律体系”讲时一般无复数；Waffenrecht 中的 Recht 是“法规”，不是“权利”。"
+ },
+ {
+  "w": "Wahlbeobachter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Wahlbeobachter",
+  "gs": "des Wahlbeobachters",
+  "ipa": "ˈvaːlbəˌʔoːbaxtɐ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "选举观察员",
+    "de": "jmd., der (im Auftrag einer Organisation) den ordnungsgemäßen Ablauf einer Wahl überprüft",
+    "ex": [
+     {
+      "de": "Internationale Wahlbeobachter kritisierten zahlreiche Unregelmäßigkeiten.",
+      "zh": "国际选举观察员批评了大量违规现象。"
+     },
+     {
+      "de": "Die OSZE entsendet rund 300 Wahlbeobachter in das Land.",
+      "zh": "欧安组织向该国派出约300名选举观察员。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Wahlbeobachter entsenden — 派遣选举观察员",
+   "阴性：die Wahlbeobachterin",
+   "die Wahlbeobachtung — 选举观察"
+  ],
+  "root": "Wahl·be·obacht·er：Wahl（选举）+ Beobachter（观察者，来自 beobachten）",
+  "fam": [
+   "die Wahl",
+   "beobachten",
+   "der Beobachter",
+   "die Wahlbeobachtung"
+  ],
+  "ety": "复合词。Wahl < 古高地德语 wala；beobachten 由 be- + 中古高地德语 obahten（注意）构成。",
+  "cog": "一般认为与英 will 同族（wählen 与 wollen 相关）",
+  "tip": "常与 OSZE（欧安组织）、Unregelmäßigkeiten（违规）、Wahlbetrug（选举舞弊）一起出现。"
+ },
+ {
+  "w": "Wahlvorschlag",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Wahlvorschläge",
+  "gs": "des Wahlvorschlag(e)s",
+  "ipa": "ˈvaːlˌfoːɐ̯ʃlaːk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "候选人提名（名单），选举提名",
+    "de": "Benennung von Kandidaten für eine Wahl; Kandidatenliste",
+    "ex": [
+     {
+      "de": "Die Parteien müssen ihre Wahlvorschläge bis zum 69. Tag vor der Wahl einreichen.",
+      "zh": "各政党须在选举日前第69天之前提交候选人提名。"
+     },
+     {
+      "de": "Der Wahlausschuss hat den Wahlvorschlag der Kleinpartei zurückgewiesen.",
+      "zh": "选举委员会驳回了该小党的提名名单。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "einen Wahlvorschlag einreichen — 提交候选人提名",
+   "einen Wahlvorschlag zulassen / zurückweisen — 批准/驳回提名",
+   "Unterschriften für einen Wahlvorschlag sammeln — 为提名征集签名"
+  ],
+  "root": "Wahl·vor·schlag：Wahl（选举）+ Vorschlag（建议，提名，来自 vorschlagen）",
+  "fam": [
+   "die Wahl",
+   "vorschlagen",
+   "der Vorschlag",
+   "der Kandidat"
+  ],
+  "ety": "复合词。Vorschlag 来自 vorschlagen；schlagen < 古高地德语 slahan。",
+  "cog": "英 slay（与 schlagen 同源）",
+  "tip": "选举法术语；日常说“谁被提名了”多用 aufstellen / nominieren。"
+ },
+ {
+  "w": "Walfang",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Walfang(e)s",
+  "ipa": "ˈvaːlˌfaŋ",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "捕鲸",
+    "de": "das Jagen und Fangen von Walen",
+    "ex": [
+     {
+      "de": "Trotz internationaler Proteste hält das Land am kommerziellen Walfang fest.",
+      "zh": "尽管遭到国际抗议，该国仍坚持商业捕鲸。"
+     },
+     {
+      "de": "Der Walfang ist seit 1986 weitgehend verboten.",
+      "zh": "捕鲸自1986年起基本被禁止。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "kommerzieller Walfang — 商业捕鲸",
+   "das Walfangverbot / das Walfangmoratorium — 捕鲸禁令",
+   "der Walfänger — 捕鲸者；捕鲸船"
+  ],
+  "root": "Wal·fang：Wal（鲸）+ Fang（捕捉，来自 fangen）",
+  "fam": [
+   "der Wal",
+   "fangen",
+   "der Fang",
+   "der Walfänger"
+  ],
+  "ety": "Wal < 中古高地德语 wal < 古高地德语 wal；Fang 与 fangen 同族，古高地德语 fāhan。",
+  "cog": "英 whale（与 Wal 同源）；英 fang（獠牙，与 fangen 同族）",
+  "tip": "Wal 读长音 [vaːl]，与 die Wahl（选举）同音；鲸不是鱼，口语里的 Walfisch 不够准确。"
+ },
+ {
+  "w": "Wampe",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wampen",
+  "gs": "der Wampe",
+  "ipa": "ˈvampə",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（口，贬）大肚腩，啤酒肚",
+    "de": "(ugs. abwertend) dicker Bauch",
+    "ex": [
+     {
+      "de": "Seit er im Homeoffice arbeitet, hat er eine ordentliche Wampe bekommen.",
+      "zh": "自从在家办公以来，他长出了一个大肚腩。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Wampe haben / bekommen — 有/长出大肚子",
+   "近义 der Bierbauch（啤酒肚）, der Ranzen（口）",
+   "比较中性词 der Bauch"
+  ],
+  "root": "Wampe：单纯词，原义“肚子，腹部”",
+  "fam": [
+   "der Bauch",
+   "der Bierbauch",
+   "der Ranzen"
+  ],
+  "ety": "中古高地德语 wambe, wamme < 古高地德语 wamba（腹部，子宫）。",
+  "cog": "英 womb（子宫，同源）",
+  "tip": "俗语，带贬义或调侃，不宜在正式场合用于他人；南德、奥地利口语更常见。"
+ },
+ {
+  "w": "Warnweste",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Warnwesten",
+  "gs": "der Warnweste",
+  "ipa": "ˈvaʁnˌvɛstə",
+  "lvl": "B1–B2",
+  "senses": [
+   {
+    "zh": "反光背心，警示背心",
+    "de": "auffällig gefärbte, reflektierende Weste zur besseren Sichtbarkeit",
+    "ex": [
+     {
+      "de": "In Deutschland muss in jedem Auto eine Warnweste mitgeführt werden.",
+      "zh": "在德国，每辆车上都必须配备一件反光背心。"
+     },
+     {
+      "de": "Bei einer Panne auf der Autobahn sollte man sofort die Warnweste anziehen.",
+      "zh": "在高速公路上车辆抛锚时，应立即穿上反光背心。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Warnweste tragen / anziehen — 穿反光背心",
+   "das Warndreieck — 三角警示牌（与 Warnweste 同为车载必备）",
+   "die Gelbwesten — （法国）黄背心运动"
+  ],
+  "root": "Warn·weste：warnen（警告）+ Weste（背心，马甲）",
+  "fam": [
+   "warnen",
+   "die Warnung",
+   "die Weste",
+   "das Warndreieck"
+  ],
+  "ety": "现代复合词。warnen < 古高地德语 warnōn；Weste 经法语 veste 借自意大利语 veste（衣服），源于拉丁语 vestis。",
+  "cog": "英 warn（同源）；英 vest（借词，同出拉丁语 vestis）",
+  "tip": "也叫 Sicherheitsweste；Weste 是“背心/马甲”，英语式的 vest（汗衫）德语是 Unterhemd。"
+ },
+ {
+  "w": "Warteraum",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Warteräume",
+  "gs": "des Warteraum(e)s",
+  "ipa": "ˈvaʁtəˌʁaʊ̯m",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "候车室，候诊室，等候室",
+    "de": "Raum, in dem man wartet",
+    "ex": [
+     {
+      "de": "Bitte nehmen Sie im Warteraum Platz, Sie werden gleich aufgerufen.",
+      "zh": "请在等候室就座，马上就会叫到您。"
+     },
+     {
+      "de": "Der Warteraum am Gate war völlig überfüllt.",
+      "zh": "登机口的候机区挤得满满的。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "im Warteraum warten / Platz nehmen — 在等候室等候/就座",
+   "近义 das Wartezimmer（诊所候诊室，最常用）, der Wartesaal（车站候车大厅，较旧）",
+   "die Wartehalle — 候车厅，候机厅"
+  ],
+  "root": "Warte·raum：warten（等待）+ Raum（房间，空间）",
+  "fam": [
+   "warten",
+   "das Wartezimmer",
+   "der Wartesaal",
+   "der Raum"
+  ],
+  "ety": "复合词。warten < 古高地德语 wartēn（守望，注意）；Raum < 古高地德语 rūm。",
+  "cog": "英 ward（与 warten 同族）；英 room（与 Raum 同源）",
+  "tip": "看医生时最常说 Wartezimmer；Warteraum 更泛指公共场所的等候区。"
+ },
+ {
+  "w": "Wasserbau",
+  "pos": "n",
+  "gen": "m",
+  "pl": "—",
+  "gs": "des Wasserbau(e)s",
+  "ipa": "ˈvasɐˌbaʊ̯",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "水利工程；水工建筑（学科）",
+    "de": "Teilgebiet des Bauingenieurwesens, das sich mit dem Bau von Anlagen an und in Gewässern befasst",
+    "ex": [
+     {
+      "de": "Er hat Bauingenieurwesen mit dem Schwerpunkt Wasserbau studiert.",
+      "zh": "他学的是土木工程，主攻水利工程。"
+     },
+     {
+      "de": "Deiche, Schleusen und Talsperren gehören zum klassischen Wasserbau.",
+      "zh": "堤坝、船闸和水库大坝属于传统水利工程。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Wasserbauwerk — 水工建筑物",
+   "der Hochwasserschutz — 防洪（Wasserbau 的重要领域）",
+   "der Wasserbauingenieur — 水利工程师"
+  ],
+  "root": "Wasser·bau：Wasser（水）+ Bau（建造，工程）",
+  "fam": [
+   "das Wasser",
+   "der Bau",
+   "bauen",
+   "das Wasserbauwerk"
+  ],
+  "ety": "复合词。Wasser < 古高地德语 wazzar；Bau 与 bauen 同族，古高地德语 būan。",
+  "cog": "英 water（同源）",
+  "tip": "专业术语；“水利”在德语中分得更细：Wasserbau（工程建设）、Wasserwirtschaft（水资源管理）。"
+ },
+ {
+  "w": "Wasserski",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Wasserskier",
+  "gs": "des Wasserskis",
+  "ipa": "ˈvasɐˌʃiː",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "滑水板，滑水橇",
+    "de": "breiter Ski zum Gleiten auf dem Wasser",
+    "ex": [
+     {
+      "de": "Er schnallte sich die Wasserskier an und wartete auf das Boot.",
+      "zh": "他绑好滑水板，等着快艇开动。"
+     }
+    ]
+   },
+   {
+    "zh": "滑水运动（此义为中性 das Wasserski，无复数）",
+    "de": "(das; ohne Plural) Wassersport, bei dem man auf Skiern über das Wasser gezogen wird",
+    "ex": [
+     {
+      "de": "Im Urlaub am Gardasee wollen wir Wasserski fahren.",
+      "zh": "在加尔达湖度假时我们想去滑水。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Wasserski fahren / laufen — 滑水",
+   "die Wasserskianlage — （缆绳牵引的）滑水场",
+   "比较 Ski fahren — 滑雪"
+  ],
+  "root": "Wasser·ski：Wasser（水）+ Ski（滑雪板）",
+  "fam": [
+   "der Ski",
+   "Ski fahren",
+   "das Wasser",
+   "der Skifahrer"
+  ],
+  "ety": "Ski 借自挪威语 ski，源于古诺尔斯语 skíð（劈开的木片，滑雪板）；Wasser < 古高地德语 wazzar。",
+  "cog": "英 water ski",
+  "tip": "Ski 读 [ʃiː]（不读 [skiː]）；复数 Skier 读 [ˈʃiːɐ]，也可写 Ski。“滑水”说 Wasserski fahren，此时 Wasserski 不带冠词。"
+ },
+ {
+  "w": "Wegbeschreibung",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wegbeschreibungen",
+  "gs": "der Wegbeschreibung",
+  "ipa": "ˈveːkbəˌʃʁaɪ̯bʊŋ",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "路线说明，指路（说明）",
+    "de": "Beschreibung, wie man an einen bestimmten Ort gelangt",
+    "ex": [
+     {
+      "de": "Eine genaue Wegbeschreibung finden Sie auf unserer Website.",
+      "zh": "详细的路线说明请见我们的网站。"
+     },
+     {
+      "de": "Kannst du mir eine Wegbeschreibung zum Hotel schicken?",
+      "zh": "你能把去酒店的路线发给我吗？"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm. eine Wegbeschreibung geben / schicken — 给某人指路/发路线",
+   "die Anfahrt(sbeschreibung) — 交通路线说明（网站、邀请函常见）",
+   "nach dem Weg fragen — 问路"
+  ],
+  "root": "Weg·be·schreib·ung：Weg（路）+ Beschreibung（描述，来自 beschreiben）",
+  "fam": [
+   "der Weg",
+   "beschreiben",
+   "die Beschreibung",
+   "die Anfahrt"
+  ],
+  "ety": "复合词。Weg < 古高地德语 weg；schreiben 借自拉丁语 scribere。",
+  "cog": "英 way（与 Weg 同源）；英 describe（同出拉丁语）",
+  "tip": "Weg 读长音 [veːk]，但 weg（离开）读短音 [vɛk]。"
+ },
+ {
+  "w": "wegspülen",
+  "pos": "v",
+  "ipa": "ˈvɛkˌʃpyːlən",
+  "lvl": "B2",
+  "forms": "spült weg · spülte weg · hat weggespült",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "冲走，冲掉",
+    "de": "durch fließendes Wasser entfernen, mit sich fortreißen",
+    "ex": [
+     {
+      "de": "Das Hochwasser hat die Brücke einfach weggespült.",
+      "zh": "洪水把桥直接冲走了。"
+     },
+     {
+      "de": "Der Regen spülte den Sand vom Weg weg.",
+      "zh": "雨水把路上的沙子冲掉了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw.(A) wegspülen — 冲走某物",
+   "vom Wasser / von den Wellen weggespült werden — 被水/海浪冲走",
+   "比较 abspülen（冲洗干净）, ausspülen（冲洗内部；漱口）"
+  ],
+  "root": "weg·spül·en：weg（离开，走掉）+ spülen（冲洗）→ 冲走",
+  "fam": [
+   "spülen",
+   "abspülen",
+   "die Spülung",
+   "die Spülmaschine",
+   "wegwerfen"
+  ],
+  "ety": "复合动词。spülen < 中古高地德语 spüelen < 古高地德语 spuolen。",
+  "cog": "荷 spoelen（冲洗）",
+  "tip": "weg 读短音 [vɛk]；也可比喻：Sorgen mit Alkohol wegspülen（借酒浇愁）。"
+ },
+ {
+  "w": "Weinstock",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Weinstöcke",
+  "gs": "des Weinstock(e)s",
+  "ipa": "ˈvaɪ̯nˌʃtɔk",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "葡萄藤，葡萄树（一株）",
+    "de": "einzelne Pflanze der Weinrebe",
+    "ex": [
+     {
+      "de": "An den steilen Hängen der Mosel stehen die Weinstöcke dicht an dicht.",
+      "zh": "摩泽尔河陡峭的山坡上，葡萄藤一株挨着一株。"
+     },
+     {
+      "de": "Manche dieser Weinstöcke sind über hundert Jahre alt.",
+      "zh": "其中一些葡萄树已有一百多年树龄。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Weinstöcke beschneiden — 修剪葡萄藤",
+   "近义 die Rebe / die Weinrebe — 葡萄藤",
+   "der Weinberg — 葡萄园（山坡）"
+  ],
+  "root": "Wein·stock：Wein（葡萄酒；葡萄）+ Stock（棍，株）→ 葡萄植株",
+  "fam": [
+   "der Wein",
+   "die Weinrebe",
+   "der Weinberg",
+   "der Winzer",
+   "der Stock"
+  ],
+  "ety": "Wein 早期借自拉丁语 vinum（经古高地德语 wīn）；Stock < 古高地德语 stoc。",
+  "cog": "英 wine（同出拉丁语 vinum）；英 stock（与 Stock 同源）",
+  "tip": "德语 Wein 也可指“葡萄”这种植物（wilder Wein 爬山虎），但“葡萄果实”说 Weintraube / Traube。"
+ },
+ {
+  "w": "weiterverfolgen",
+  "pos": "v",
+  "ipa": "ˈvaɪ̯tɐfɛɐ̯ˌfɔlɡn̩",
+  "lvl": "B2–C1",
+  "forms": "verfolgt weiter · verfolgte weiter · hat weiterverfolgt",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "继续推进，继续跟进（计划、目标、线索等）",
+    "de": "(einen Plan, ein Ziel, eine Spur) weiterhin verfolgen",
+    "ex": [
+     {
+      "de": "Die Regierung will das Projekt trotz der Kritik weiterverfolgen.",
+      "zh": "尽管有批评，政府仍打算继续推进这个项目。"
+     },
+     {
+      "de": "Die Polizei verfolgt mehrere Hinweise weiter.",
+      "zh": "警方正在继续跟进几条线索。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Idee / ein Ziel / einen Plan weiterverfolgen — 继续推进想法/目标/计划",
+   "eine Spur weiterverfolgen — 继续追查线索",
+   "nicht weiterverfolgt werden — 被搁置，不再推进"
+  ],
+  "root": "weiter·ver·folg·en：weiter（继续）+ verfolgen（追踪，追求，来自 folgen“跟随”）",
+  "fam": [
+   "verfolgen",
+   "folgen",
+   "die Verfolgung",
+   "weiter"
+  ],
+  "ety": "复合动词。folgen < 中古高地德语 volgen < 古高地德语 folgēn。",
+  "cog": "英 follow（与 folgen 同源）",
+  "tip": "weiter 可分：Wir verfolgen die Sache weiter；第二分词 weiterverfolgt（不加 ge-，因为 verfolgen 不可分前缀 ver-）。"
+ },
+ {
+  "w": "Welttag",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Welttage",
+  "gs": "des Welttag(e)s",
+  "ipa": "ˈvɛltˌtaːk",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "世界……日（国际纪念日、宣传日）",
+    "de": "internationaler Gedenk- oder Aktionstag zu einem bestimmten Thema",
+    "ex": [
+     {
+      "de": "Am 23. April ist Welttag des Buches.",
+      "zh": "4月23日是世界读书日。"
+     },
+     {
+      "de": "Anlässlich des Welttags der Pressefreiheit fordern Journalisten mehr Schutz.",
+      "zh": "在世界新闻自由日之际，记者们呼吁加强保护。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "der Welttag des Buches / der Pressefreiheit — 世界读书日 / 世界新闻自由日",
+   "anlässlich des Welttags … — 在世界……日之际",
+   "比较 Welt-Aids-Tag, Weltfrauentag — 世界艾滋病日、国际妇女节"
+  ],
+  "root": "Welt·tag：Welt（世界）+ Tag（日）",
+  "fam": [
+   "die Welt",
+   "der Tag",
+   "der Gedenktag",
+   "der Aktionstag"
+  ],
+  "ety": "复合词。Welt < 古高地德语 weralt（原义“人的时代”）；Tag < 古高地德语 tag。",
+  "cog": "英 world, day（分别同源）",
+  "tip": "Welttag 后接第二格名称：Welttag des Wassers（世界水日）；有些纪念日则直接合成，如 Weltkindertag。"
+ },
+ {
+  "w": "Wendigkeit",
+  "pos": "n",
+  "gen": "f",
+  "pl": "—",
+  "gs": "der Wendigkeit",
+  "ipa": "ˈvɛndɪçkaɪ̯t",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（车、船、飞机等的）灵活性，机动性",
+    "de": "Fähigkeit, sich leicht lenken und wenden zu lassen",
+    "ex": [
+     {
+      "de": "Der Kleinwagen überzeugt durch seine Wendigkeit im Stadtverkehr.",
+      "zh": "这款小车在城市交通中的灵活性令人信服。"
+     }
+    ]
+   },
+   {
+    "zh": "（思维、行动上的）灵活，机敏，应变能力",
+    "de": "geistige Beweglichkeit, Anpassungsfähigkeit",
+    "ex": [
+     {
+      "de": "In den Verhandlungen bewies sie große diplomatische Wendigkeit.",
+      "zh": "谈判中她展现了高超的外交应变能力。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "形容词 wendig — 灵活的，机动的；机敏的",
+   "近义 die Beweglichkeit, die Flexibilität",
+   "die Wendigkeit eines Fahrzeugs — 车辆的操控灵活性"
+  ],
+  "root": "wend·ig·keit：wenden（转向）+ -ig（形容词后缀）+ -keit（名词后缀）→ 易于转向的性质 → 灵活",
+  "fam": [
+   "wendig",
+   "wenden",
+   "die Wende",
+   "die Wendung"
+  ],
+  "ety": "由形容词 wendig 派生。wenden < 中古高地德语 wenden < 古高地德语 wenten（winden 的使役动词）。",
+  "cog": "英 wend（行走，古雅）；英 wind（缠绕，与 winden 同源）",
+  "tip": "用于人时可带贬义（“见风使舵”），视上下文而定；中性说法用 Flexibilität。"
+ },
+ {
+  "w": "Werbetrommel",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Werbetrommeln",
+  "gs": "der Werbetrommel",
+  "ipa": "ˈvɛʁbəˌtʁɔml̩",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "（仅用于习语）宣传鼓：die Werbetrommel rühren 大力宣传，大肆鼓吹",
+    "de": "nur in: die Werbetrommel (für jmdn./etw.) rühren / schlagen = intensiv Werbung machen",
+    "ex": [
+     {
+      "de": "Vor der Wahl rührt die Partei kräftig die Werbetrommel für ihren Kandidaten.",
+      "zh": "选举前，该党为自己的候选人大张旗鼓地宣传。"
+     },
+     {
+      "de": "Der Bürgermeister rührte auf der Messe die Werbetrommel für seine Stadt.",
+      "zh": "市长在展会上为自己的城市大力宣传。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Werbetrommel (für etw.) rühren — 为某事大力宣传",
+   "die Werbetrommel schlagen — 同上（较少）",
+   "近义 kräftig Werbung machen, die Trommel rühren"
+  ],
+  "root": "Werbe·trommel：werben（招募，宣传）+ Trommel（鼓）→ 源于旧时击鼓招募士兵 → 大力宣传",
+  "fam": [
+   "werben",
+   "die Werbung",
+   "die Trommel",
+   "trommeln"
+  ],
+  "ety": "来自旧时募兵者击鼓招人的习俗。Trommel < 中古高地德语 trumel（拟声来源）；werben < 古高地德语 werban（转动；忙碌）。",
+  "cog": "英 drum（经荷兰语 trom，与 Trommel 同源）",
+  "tip": "几乎只出现在习语 die Werbetrommel rühren 中；这里的 rühren 是旧义“击（鼓）”，不是“搅拌”。"
+ },
+ {
+  "w": "Werkzeugkasten",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Werkzeugkästen",
+  "gs": "des Werkzeugkastens",
+  "ipa": "ˈvɛʁkt͡sɔɪ̯kˌkastn̩",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "工具箱",
+    "de": "Kasten zum Aufbewahren von Werkzeug",
+    "ex": [
+     {
+      "de": "Hol mal den Schraubenzieher aus dem Werkzeugkasten!",
+      "zh": "去工具箱里把螺丝刀拿来！"
+     }
+    ]
+   },
+   {
+    "zh": "（喻）手段，一套办法",
+    "de": "(übertragen) Gesamtheit der verfügbaren Mittel und Methoden",
+    "ex": [
+     {
+      "de": "Die Zentralbank hat noch einige Instrumente in ihrem Werkzeugkasten.",
+      "zh": "央行的工具箱里还有一些政策工具可用。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "etw. aus dem Werkzeugkasten holen — 从工具箱里拿东西",
+   "der Werkzeugkoffer — 手提工具箱",
+   "（喻）in den Werkzeugkasten greifen — 动用（政策）手段"
+  ],
+  "root": "Werk·zeug·kasten：Werkzeug（工具：Werk“工作”+ Zeug“器具”）+ Kasten（箱子）",
+  "fam": [
+   "das Werkzeug",
+   "der Kasten",
+   "das Werk",
+   "das Zeug"
+  ],
+  "ety": "复合词。Werk < 古高地德语 werc；Zeug < 古高地德语 (gi)ziug；Kasten < 古高地德语 kasto。",
+  "cog": "英 work（与 Werk 同源）",
+  "tip": "复数 Werkzeugkästen（变音）；“工具”Werkzeug 是集合名词，单个工具说 ein Werkzeug / Werkzeuge。"
+ },
+ {
+  "w": "Widerstandskraft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Widerstandskräfte",
+  "gs": "der Widerstandskraft",
+  "ipa": "ˈviːdɐʃtant͡sˌkʁaft",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "抵抗力，抗压能力，韧性",
+    "de": "Fähigkeit, Belastungen, Krankheiten o. Ä. standzuhalten",
+    "ex": [
+     {
+      "de": "Regelmäßige Bewegung stärkt die Widerstandskraft des Körpers.",
+      "zh": "规律运动能增强身体的抵抗力。"
+     },
+     {
+      "de": "Die Krise hat die Widerstandskraft der Wirtschaft auf die Probe gestellt.",
+      "zh": "这场危机考验了经济的韧性。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "die Widerstandskraft stärken / schwächen — 增强/削弱抵抗力",
+   "die Widerstandskraft gegen etw.(A) — 对……的抵抗力",
+   "近义 die Resilienz（心理、经济韧性，学术）, die Abwehrkräfte（免疫力，常用复数）"
+  ],
+  "root": "Wider·stand·s·kraft：Widerstand（抵抗：wider“对着”+ Stand“站立”）+ Kraft（力量）",
+  "fam": [
+   "der Widerstand",
+   "widerstehen",
+   "widerstandsfähig",
+   "die Kraft"
+  ],
+  "ety": "复合词。wider < 古高地德语 widar（对着，反对）；Kraft < 古高地德语 kraft。",
+  "cog": "英 craft（与 Kraft 同源）；英 withstand（构词相同）",
+  "tip": "wider（反对）与 wieder（再次）同音不同义：Widerstand 不写 *Wiederstand。"
+ },
+ {
+  "w": "Wirtschaftsprüfungsgesellschaft",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Wirtschaftsprüfungsgesellschaften",
+  "gs": "der Wirtschaftsprüfungsgesellschaft",
+  "ipa": "ˈvɪʁtʃaft͡sˌpʁyːfʊŋsɡəˌzɛlʃaft",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "会计师事务所，审计公司",
+    "de": "Unternehmen, das Jahresabschlüsse prüft und Unternehmen berät",
+    "ex": [
+     {
+      "de": "Der Jahresabschluss wurde von einer unabhängigen Wirtschaftsprüfungsgesellschaft geprüft.",
+      "zh": "年度财务报表经过一家独立会计师事务所审计。"
+     },
+     {
+      "de": "Nach dem Bilanzskandal geriet auch die Wirtschaftsprüfungsgesellschaft in die Kritik.",
+      "zh": "财务丑闻曝光后，那家审计公司也受到了批评。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Wirtschaftsprüfungsgesellschaft beauftragen — 委托会计师事务所",
+   "der Wirtschaftsprüfer — 审计师，注册会计师",
+   "die Big Four — 四大会计师事务所（德语中也直接这样说）"
+  ],
+  "root": "Wirtschaft·s·prüf·ung·s·gesell·schaft：Wirtschaftsprüfung（审计：Wirtschaft“经济”+ Prüfung“检查”）+ Gesellschaft（公司）",
+  "fam": [
+   "der Wirtschaftsprüfer",
+   "prüfen",
+   "die Prüfung",
+   "die Wirtschaft",
+   "die Gesellschaft"
+  ],
+  "ety": "复合词。prüfen 经中古高地德语 prüeven 借自古法语 prover（< 拉丁语 probare“检验”）；Wirtschaft 来自 Wirt。",
+  "cog": "英 prove（与 prüfen 同出拉丁语 probare）",
+  "tip": "德国法律上 Wirtschaftsprüfer 是受保护的职业头衔，相当于中国的注册会计师（审计方向）。"
+ },
+ {
+  "w": "Wunderwerk",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Wunderwerke",
+  "gs": "des Wunderwerk(e)s",
+  "ipa": "ˈvʊndɐˌvɛʁk",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "奇迹般的杰作，奇观，精妙之作",
+    "de": "etw. Bewundernswertes, außergewöhnlich kunstvoll Gemachtes",
+    "ex": [
+     {
+      "de": "Die neue Brücke gilt als Wunderwerk der Ingenieurskunst.",
+      "zh": "这座新桥被视为工程技术的杰作。"
+     },
+     {
+      "de": "Das menschliche Auge ist ein Wunderwerk der Natur.",
+      "zh": "人眼是大自然的奇妙杰作。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Wunderwerk der Technik / der Natur — 技术/自然的奇迹",
+   "近义 das Meisterwerk（杰作）, das Wunder（奇迹）"
+  ],
+  "root": "Wunder·werk：Wunder（奇迹）+ Werk（作品）→ 奇迹般的作品",
+  "fam": [
+   "das Wunder",
+   "wunderbar",
+   "sich wundern",
+   "das Werk",
+   "das Meisterwerk"
+  ],
+  "ety": "复合词。Wunder < 古高地德语 wuntar；Werk < 古高地德语 werc。",
+  "cog": "英 wonder, work（分别同源）",
+  "tip": "几乎总带第二格补足：ein Wunderwerk der Technik；不要与宗教意义上的 Wunder 混同。"
+ },
+ {
+  "w": "wässern",
+  "pos": "v",
+  "ipa": "ˈvɛsɐn",
+  "lvl": "C1",
+  "forms": "wässert · wässerte · hat gewässert",
+  "sep": false,
+  "senses": [
+   {
+    "zh": "浇水，灌溉",
+    "de": "(Pflanzen, Boden) gründlich mit Wasser versorgen",
+    "ex": [
+     {
+      "de": "Bei dieser Hitze sollte man den Rasen abends wässern.",
+      "zh": "天这么热，应该在傍晚给草坪浇水。"
+     },
+     {
+      "de": "Frisch gepflanzte Bäume müssen regelmäßig gewässert werden.",
+      "zh": "新栽的树需要定期浇水。"
+     }
+    ]
+   },
+   {
+    "zh": "（烹饪）浸泡（以去盐、泡软）",
+    "de": "in Wasser legen, um Salz zu entziehen oder es aufquellen zu lassen",
+    "ex": [
+     {
+      "de": "Die Salzheringe vor der Zubereitung mehrere Stunden wässern.",
+      "zh": "腌鲱鱼烹调前要先浸泡几个小时。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "den Garten / die Bäume wässern — 给花园/树浇水",
+   "近义 gießen（浇花，日常）, bewässern（灌溉，农业）",
+   "名词化 das Wässern — 浇水；浸泡"
+  ],
+  "root": "wäss·er·n：Wasser（水）+ 动词后缀 -n，词干变音 → 加水，浸水",
+  "fam": [
+   "das Wasser",
+   "bewässern",
+   "die Bewässerung",
+   "wässrig",
+   "entwässern"
+  ],
+  "ety": "由 Wasser 派生（词干变音）。Wasser < 古高地德语 wazzar。",
+  "cog": "英 water（作动词“浇水”，同源）",
+  "tip": "日常给花浇水用 gießen；wässern 强调“浇透”（园艺）或“浸泡”（烹饪）。"
+ },
+ {
+  "w": "Zeitgefühl",
+  "pos": "n",
+  "gen": "n",
+  "pl": "—",
+  "gs": "des Zeitgefühls",
+  "ipa": "ˈt͡saɪ̯tɡəˌfyːl",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "时间感，对时间的感知",
+    "de": "Gefühl dafür, wie viel Zeit vergangen ist",
+    "ex": [
+     {
+      "de": "Im Urlaub habe ich völlig das Zeitgefühl verloren.",
+      "zh": "度假时我完全失去了时间感。"
+     },
+     {
+      "de": "Kleine Kinder haben noch kein ausgeprägtes Zeitgefühl.",
+      "zh": "小孩子还没有成熟的时间观念。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "das Zeitgefühl verlieren — 失去时间感，忘了时间",
+   "ein gutes / schlechtes Zeitgefühl haben — 时间感好/差",
+   "jedes Zeitgefühl verlieren — 完全忘了时间"
+  ],
+  "root": "Zeit·gefühl：Zeit（时间）+ Gefühl（感觉，来自 fühlen）",
+  "fam": [
+   "die Zeit",
+   "das Gefühl",
+   "fühlen",
+   "der Zeitgeist"
+  ],
+  "ety": "复合词。Zeit < 古高地德语 zīt；fühlen < 古高地德语 fuolen。",
+  "cog": "英 tide（与 Zeit 同源）；英 feel（与 fühlen 同源）",
+  "tip": "“没有时间观念、老迟到”可说 kein Zeitgefühl haben 或 unpünktlich sein。"
+ },
+ {
+  "w": "Zeitlimit",
+  "pos": "n",
+  "gen": "n",
+  "pl": "Zeitlimits",
+  "gs": "des Zeitlimits",
+  "ipa": "ˈt͡saɪ̯tˌlɪmɪt",
+  "lvl": "B2",
+  "senses": [
+   {
+    "zh": "时限，时间限制",
+    "de": "zeitliche Begrenzung, Frist",
+    "ex": [
+     {
+      "de": "Für die Prüfung gibt es ein Zeitlimit von neunzig Minuten.",
+      "zh": "考试限时九十分钟。"
+     },
+     {
+      "de": "Die Läuferin blieb knapp unter dem Zeitlimit.",
+      "zh": "这名女选手以微弱优势在限定时间内完赛。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Zeitlimit setzen / festlegen — 设定时限",
+   "das Zeitlimit überschreiten — 超时",
+   "unter Zeitdruck — 在时间压力下"
+  ],
+  "root": "Zeit·limit：Zeit（时间）+ Limit（限度，借自英语）",
+  "fam": [
+   "die Zeit",
+   "das Limit",
+   "limitieren",
+   "die Frist",
+   "der Zeitdruck"
+  ],
+  "ety": "Limit 借自英语 limit，后者经法语 limite 源于拉丁语 limes（界线）；Zeit < 古高地德语 zīt。",
+  "cog": "英 time limit",
+  "tip": "das Limit 为中性，复数 Limits；正式文件中常用 die Frist（期限）。"
+ },
+ {
+  "w": "zeitversetzt",
+  "pos": "adj",
+  "ipa": "ˈt͡saɪ̯tfɛɐ̯ˌzɛt͡st",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "错时的，延时的，非同步的",
+    "de": "zu einem späteren Zeitpunkt als ursprünglich; mit zeitlichem Abstand",
+    "ex": [
+     {
+      "de": "Das Spiel wird zeitversetzt im Fernsehen übertragen.",
+      "zh": "这场比赛将在电视上延时转播。"
+     },
+     {
+      "de": "Die Mitarbeiter arbeiten zeitversetzt, damit das Büro nicht überfüllt ist.",
+      "zh": "员工错时上班，以免办公室过于拥挤。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zeitversetzt fernsehen / ausstrahlen — 延时观看/播出",
+   "zeitversetzt arbeiten — 错峰上班",
+   "近义 zeitverzögert（延迟的）, asynchron（异步的）"
+  ],
+  "root": "zeit·ver·setz·t：Zeit（时间）+ versetzt（错开的，versetzen“移位”的第二分词）→ 时间上错开的",
+  "fam": [
+   "versetzen",
+   "die Zeitverschiebung",
+   "die Zeit",
+   "setzen"
+  ],
+  "ety": "现代复合形容词。versetzen 由 ver- + setzen 构成；setzen < 古高地德语 sezzen。",
+  "cog": "英 set（与 setzen 同源）",
+  "tip": "通常作状语用；“时差”不说 *Zeitversetzung，而说 die Zeitverschiebung。"
+ },
+ {
+  "w": "zivilrechtlich",
+  "pos": "adj",
+  "ipa": "t͡siˈviːlˌʁɛçtlɪç",
+  "lvl": "C1–C2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "民法上的，民事的",
+    "de": "das Zivilrecht betreffend, nach dem Zivilrecht",
+    "ex": [
+     {
+      "de": "Die Geschädigten wollen zivilrechtlich gegen den Konzern vorgehen.",
+      "zh": "受害者打算对该集团提起民事诉讼。"
+     },
+     {
+      "de": "Neben der Strafe drohen ihm auch zivilrechtliche Schadenersatzforderungen.",
+      "zh": "除了刑罚，他还可能面临民事赔偿要求。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zivilrechtlich gegen jmdn. vorgehen / klagen — 对某人提起民事诉讼",
+   "zivilrechtliche Ansprüche — 民事请求权",
+   "反义 strafrechtlich — 刑法上的，刑事的"
+  ],
+  "root": "zivil·recht·lich：Zivilrecht（民法：zivil“公民的”+ Recht“法”）+ -lich（形容词后缀）",
+  "fam": [
+   "das Zivilrecht",
+   "zivil",
+   "der Zivilprozess",
+   "strafrechtlich",
+   "das Recht"
+  ],
+  "ety": "zivil 经法语 civil 借自拉丁语 civilis（公民的，源于 civis“公民”）；Recht < 古高地德语 reht。",
+  "cog": "英 civil（同出拉丁语 civilis）；英 right（与 Recht 同源）",
+  "tip": "zivilrechtlich 与 strafrechtlich 常对举：民事责任 vs. 刑事责任；“民事诉讼”是 Zivilprozess / Zivilklage。"
+ },
+ {
+  "w": "Zloty",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Zloty / Zlotys",
+  "gs": "des Zloty(s)",
+  "ipa": "ˈslɔti, ˈzlɔti",
+  "lvl": "C1",
+  "senses": [
+   {
+    "zh": "兹罗提（波兰货币单位）",
+    "de": "Währungseinheit Polens (Abk. PLN)",
+    "ex": [
+     {
+      "de": "Polen hat den Euro noch nicht eingeführt und zahlt weiterhin mit dem Zloty.",
+      "zh": "波兰尚未采用欧元，仍使用兹罗提。"
+     },
+     {
+      "de": "Das Zimmer kostet 250 Zloty pro Nacht.",
+      "zh": "房间每晚250兹罗提。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "数词后通常不变：50 Zloty",
+   "也写原文拼法 Złoty",
+   "der Kurs des Zloty gegenüber dem Euro — 兹罗提对欧元汇率"
+  ],
+  "root": "借词：波兰语 złoty（“金的”），源于 złoto（金子）",
+  "fam": [
+   "der Euro",
+   "die Währung",
+   "der Groschen"
+  ],
+  "ety": "借自波兰语 złoty（金的、金币），派生自 złoto（金）；斯拉夫语 zoloto/złoto 与日耳曼语 Gold 一般认为远缘同源。",
+  "cog": "波 złoto（金）；俄 золото；与英 gold 远缘同源",
+  "tip": "1 Zloty = 100 Groszy（格罗什，与德语 Groschen 同出中世纪拉丁语 grossus）；波兰语 ł 读 [w]。"
+ },
+ {
+  "w": "zugutekommen",
+  "pos": "v",
+  "ipa": "t͡suˈɡuːtəˌkɔmən",
+  "lvl": "C1",
+  "forms": "kommt zugute · kam zugute · ist zugutegekommen",
+  "sep": true,
+  "senses": [
+   {
+    "zh": "有益于，惠及，对……有利",
+    "de": "jmdm./etw. nützen, zum Vorteil gereichen",
+    "ex": [
+     {
+      "de": "Die Erlöse des Konzerts kommen einem Kinderhospiz zugute.",
+      "zh": "音乐会的收入将捐给一家儿童临终关怀院。"
+     },
+     {
+      "de": "Ihre Auslandserfahrung kam ihr bei der Bewerbung zugute.",
+      "zh": "她的海外经历在求职时对她很有帮助。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "jmdm./etw.(D) zugutekommen — 有利于某人/某事",
+   "jmdm. etw. zugutehalten — 考虑到某人的某个有利因素而予以体谅",
+   "etw. kommt der Allgemeinheit zugute — 某事惠及公众"
+  ],
+  "root": "zu·gute·komm·en：zugute（有利地，zu + gut 的旧与格形式 gute）+ kommen（来）→ 好处落到某人身上",
+  "fam": [
+   "zugute",
+   "zugutehalten",
+   "gut",
+   "das Gute",
+   "kommen"
+  ],
+  "ety": "由介词短语 zu Gute（“归于好处”）凝固而成；gut < 古高地德语 guot；kommen < 古高地德语 queman。",
+  "cog": "英 good（与 gut 同源）；英 come（与 kommen 同源）",
+  "tip": "2006 年正字法改革后连写 zugutekommen（旧写法 zugute kommen）；支配第三格；完成时用 sein。"
+ },
+ {
+  "w": "Zukunftsplan",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Zukunftspläne",
+  "gs": "des Zukunftsplan(e)s",
+  "ipa": "ˈt͡suːkʊnft͡sˌplaːn",
+  "lvl": "B1",
+  "senses": [
+   {
+    "zh": "未来规划，前途打算（多用复数）",
+    "de": "Plan für die (eigene) Zukunft",
+    "ex": [
+     {
+      "de": "Nach dem Abitur hatte er noch keine konkreten Zukunftspläne.",
+      "zh": "高中毕业后他还没有具体的未来规划。"
+     },
+     {
+      "de": "Das Paar schmiedet schon Zukunftspläne.",
+      "zh": "这对恋人已经在筹划未来了。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Zukunftspläne schmieden / haben — 筹划/有未来打算",
+   "über seine Zukunftspläne sprechen — 谈论自己的未来规划",
+   "Was sind deine Zukunftspläne? — 你对未来有什么打算？"
+  ],
+  "root": "Zukunft·s·plan：Zukunft（未来，zu + kommen 的名词化）+ Plan（计划）",
+  "fam": [
+   "die Zukunft",
+   "der Plan",
+   "planen",
+   "zukünftig"
+  ],
+  "ety": "复合词。Zukunft < 中古高地德语 zuokunft（到来）；Plan 借自法语 plan（平面图，计划）。",
+  "cog": "英 plan（同出法语）",
+  "tip": "固定搭配 Pläne schmieden（打造计划 → 筹划），比 Pläne machen 更生动。"
+ },
+ {
+  "w": "Zukunftsvision",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Zukunftsvisionen",
+  "gs": "der Zukunftsvision",
+  "ipa": "ˈt͡suːkʊnft͡sviˌzi̯oːn",
+  "lvl": "B2–C1",
+  "senses": [
+   {
+    "zh": "未来愿景，对未来的设想",
+    "de": "Vorstellung davon, wie die Zukunft aussehen könnte oder sollte",
+    "ex": [
+     {
+      "de": "Der Konzern präsentierte seine Zukunftsvision vom autonomen Fahren.",
+      "zh": "该集团展示了其对自动驾驶的未来愿景。"
+     },
+     {
+      "de": "Was vor zwanzig Jahren eine Zukunftsvision war, ist heute Alltag.",
+      "zh": "二十年前还是未来设想的东西，如今已成日常。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "eine Zukunftsvision entwickeln / entwerfen — 构想未来愿景",
+   "die Zukunftsvision von etw.(D) — 关于……的未来设想",
+   "近义 die Utopie（乌托邦，常带不切实际意味）"
+  ],
+  "root": "Zukunft·s·vision：Zukunft（未来）+ Vision（愿景，幻象）",
+  "fam": [
+   "die Zukunft",
+   "die Vision",
+   "visionär",
+   "der Visionär"
+  ],
+  "ety": "Vision 借自拉丁语 visio（看，景象），源于 videre（看）；Zukunft < 中古高地德语 zuokunft。",
+  "cog": "英 vision（同出拉丁语）",
+  "tip": "Vision 在德语里有时带“不切实际”的意味（名言：Wer Visionen hat, soll zum Arzt gehen），语境中需注意。"
+ },
+ {
+  "w": "Zuschauerin",
+  "pos": "n",
+  "gen": "f",
+  "pl": "Zuschauerinnen",
+  "gs": "der Zuschauerin",
+  "ipa": "ˈt͡suːʃaʊ̯əʁɪn",
+  "lvl": "A2–B1",
+  "senses": [
+   {
+    "zh": "（女）观众，（女）旁观者",
+    "de": "weibliche Person, die bei etw. zuschaut",
+    "ex": [
+     {
+      "de": "Eine Zuschauerin filmte den Vorfall mit ihrem Handy.",
+      "zh": "一名女观众用手机拍下了这一事件。"
+     },
+     {
+      "de": "Liebe Zuschauerinnen und Zuschauer, herzlich willkommen!",
+      "zh": "亲爱的观众朋友们，欢迎收看！"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "Zuschauerinnen und Zuschauer — 观众们（电视节目开场白）",
+   "阳性 der Zuschauer；中性泛称 das Publikum",
+   "比较 die Zuhörerin（听众）, die Leserin（读者）"
+  ],
+  "root": "zu·schau·er·in：zuschauen（观看）+ -er（施动者后缀）+ -in（阴性后缀）",
+  "fam": [
+   "zuschauen",
+   "der Zuschauer",
+   "schauen",
+   "das Publikum"
+  ],
+  "ety": "由 Zuschauer 加阴性后缀 -in 构成。schauen < 中古高地德语 schouwen < 古高地德语 scouwōn。",
+  "cog": "英 show（与 schauen 同源）",
+  "tip": "体育赛事“观众人数”说 Zuschauerzahl；电视观众也可说 Fernsehzuschauer。"
+ },
+ {
+  "w": "zweiteilig",
+  "pos": "adj",
+  "ipa": "ˈt͡svaɪ̯ˌtaɪ̯lɪç",
+  "lvl": "B2",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "由两部分组成的，两件式的；（影视）分上下两集的",
+    "de": "aus zwei Teilen bestehend",
+    "ex": [
+     {
+      "de": "Der Krimi wird als zweiteiliger Film am Sonntag und Montag ausgestrahlt.",
+      "zh": "这部犯罪片分上下两集，周日和周一播出。"
+     },
+     {
+      "de": "Sie trug einen zweiteiligen Badeanzug.",
+      "zh": "她穿着一件分体式泳衣。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein zweiteiliger Film / Roman — 上下两部的电影/小说",
+   "der Zweiteiler — 两件套（衣服）；上下集节目",
+   "类推 dreiteilig, mehrteilig — 三件式的，多部分的"
+  ],
+  "root": "zwei·teil·ig：zwei（二）+ Teil（部分）+ -ig（形容词后缀）",
+  "fam": [
+   "der Teil",
+   "teilen",
+   "der Zweiteiler",
+   "einteilig",
+   "mehrteilig"
+  ],
+  "ety": "复合形容词。Teil < 古高地德语 teil；zwei < 古高地德语 zwei。",
+  "cog": "英 two-part；英 deal（与 Teil 同源）",
+  "tip": "数字写法也可用 2-teilig；名词化 der Zweiteiler 常指两集电视剧或两件式套装。"
+ },
+ {
+  "w": "Zwitter",
+  "pos": "n",
+  "gen": "m",
+  "pl": "Zwitter",
+  "gs": "des Zwitters",
+  "ipa": "ˈt͡svɪtɐ",
+  "lvl": "C2",
+  "senses": [
+   {
+    "zh": "（生物）雌雄同体；（旧，现多视为歧视性）两性人",
+    "de": "(Biol.) Lebewesen mit männlichen und weiblichen Geschlechtsmerkmalen",
+    "ex": [
+     {
+      "de": "Regenwürmer und Schnecken sind Zwitter.",
+      "zh": "蚯蚓和蜗牛是雌雄同体的。"
+     }
+    ]
+   },
+   {
+    "zh": "（喻）混合体，两不像",
+    "de": "(übertragen) Mischform aus zwei verschiedenen Dingen",
+    "ex": [
+     {
+      "de": "Das Fahrzeug ist ein Zwitter aus Geländewagen und Limousine.",
+      "zh": "这款车是越野车和轿车的混合体。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "ein Zwitter aus A und B — A 与 B 的混合体",
+   "形容词 zwittrig — 雌雄同体的；两栖性质的",
+   "指人时应说 intergeschlechtlich / intersexuell"
+  ],
+  "root": "Zwitt·er：与 zwei（二）同族，原义“双重来源者，混血”",
+  "fam": [
+   "zwei",
+   "zwittrig",
+   "das Zwitterwesen",
+   "der Hermaphrodit"
+  ],
+  "ety": "中古高地德语 zwitarn，可追溯至古高地德语，原义“杂种，混血”，与 zwi-（二）同族。",
+  "cog": "英 twi-（如 twilight，与 zwi- 同源）",
+  "tip": "用于人有冒犯性，现代德语用 intergeschlechtlich；科技、产品语境中的比喻用法（Zwitter aus …）很常见且中性。"
+ },
+ {
+  "w": "zyklisch",
+  "pos": "adj",
+  "ipa": "ˈt͡syːklɪʃ",
+  "lvl": "C1",
+  "forms": "—",
+  "senses": [
+   {
+    "zh": "周期性的，循环的",
+    "de": "in regelmäßig wiederkehrenden Abständen ablaufend",
+    "ex": [
+     {
+      "de": "Die Autoindustrie ist eine stark zyklische Branche.",
+      "zh": "汽车工业是一个周期性很强的行业。"
+     },
+     {
+      "de": "Die Daten werden zyklisch gesichert.",
+      "zh": "数据会定期备份。"
+     }
+    ]
+   },
+   {
+    "zh": "（化）环状的，环式的",
+    "de": "(Chemie) ringförmig",
+    "ex": [
+     {
+      "de": "Benzol ist eine zyklische Verbindung.",
+      "zh": "苯是一种环状化合物。"
+     }
+    ]
+   }
+  ],
+  "use": [
+   "zyklische Aktien / Branchen — 周期性股票/行业",
+   "反义 antizyklisch — 逆周期的",
+   "der Zyklus — 周期；（月经）周期；组曲"
+  ],
+  "root": "zykl·isch：Zyklus（周期，源自希腊语 kýklos“圆、轮”）+ -isch（形容词后缀）",
+  "fam": [
+   "der Zyklus",
+   "antizyklisch",
+   "konjunkturell",
+   "das Recycling",
+   "der Zyklon"
+  ],
+  "ety": "由 Zyklus 派生；Zyklus 借自拉丁语 cyclus，后者源于希腊语 kýklos（圆圈，轮）。",
+  "cog": "英 cycle, cyclic",
+  "tip": "读 [ˈt͡syːklɪʃ]，y 读 [yː]；经济新闻常见 zyklisch / antizyklisch / prozyklisch。"
+ }
+]
