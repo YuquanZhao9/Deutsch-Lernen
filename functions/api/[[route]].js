@@ -50,6 +50,9 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS verifies (user_id TEXT PRIMARY KEY, token TEXT NOT NULL, expires INTEGER NOT NULL, sent INTEGER NOT NULL)`,
   `CREATE INDEX IF NOT EXISTS verifies_token ON verifies(token)`,
   `CREATE TABLE IF NOT EXISTS testdaf_runs (code TEXT PRIMARY KEY, data TEXT NOT NULL, t INTEGER NOT NULL)`,
+  `CREATE TABLE IF NOT EXISTS testdaf_subs (id TEXT PRIMARY KEY, cid TEXT NOT NULL, kind TEXT NOT NULL, mode TEXT NOT NULL,
+     score INTEGER NOT NULL, total INTEGER NOT NULL, parts TEXT NOT NULL, ans TEXT NOT NULL, at INTEGER NOT NULL)`,
+  `CREATE INDEX IF NOT EXISTS testdaf_subs_kind ON testdaf_subs(kind, at)`,
 ];
 let schemaReady = null;
 // columns added after the first release: ALTER fails harmlessly once they exist
@@ -487,6 +490,52 @@ Object.assign(routes, {
     await db.prepare('INSERT INTO testdaf_runs (code, data, t) VALUES (?, ?, ?) ON CONFLICT(code) DO UPDATE SET data = excluded.data, t = excluded.t')
       .bind(code, data, Date.now()).run();
     return { runs };
+  },
+});
+
+// 德福听力自测：匿名收集每次交卷，供统计全体正确率（不收集姓名、邮箱、IP）
+const TD_ID = /^[A-Za-z0-9_-]{4,40}$/;
+const TD_KINDS = ['papier-1', 'papier-2'];
+Object.assign(routes, {
+  async 'POST /api/testdaf/submit'({ request, db }) {
+    const b = await body(request);
+    if (!TD_ID.test(b.id || '') || !TD_ID.test(b.cid || '')) fail(400, '参数不对');
+    if (!TD_KINDS.includes(b.kind)) fail(400, '没有这套题');
+    const ans = {};
+    for (const [k, a] of Object.entries(b.answers || {}).slice(0, 60)) {
+      if (!/^[a-z][0-9]_[0-9]{1,2}$/.test(k) || !a) continue;
+      ans[k] = { v: a.v == null ? null : String(a.v).slice(0, 200), ok: !!a.ok };
+    }
+    const parts = (Array.isArray(b.parts) ? b.parts : []).slice(0, 10).map(n => Math.max(0, Math.min(99, n | 0)));
+    const score = Object.values(ans).filter(a => a.ok).length, total = Math.max(1, Math.min(99, b.total | 0));
+    await db.prepare(`INSERT INTO testdaf_subs (id, cid, kind, mode, score, total, parts, ans, at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(id) DO UPDATE SET score = excluded.score, parts = excluded.parts, ans = excluded.ans WHERE testdaf_subs.cid = excluded.cid`)
+      .bind(b.id, b.cid, b.kind, b.mode === 'prac' ? 'prac' : 'exam', score, total, JSON.stringify(parts), JSON.stringify(ans), Date.now()).run();
+    return { ok: true };
+  },
+  async 'GET /api/testdaf/stats'({ db, url, env }) {
+    const kind = url.searchParams.get('kind');
+    if (!TD_KINDS.includes(kind)) fail(400, '没有这套题');
+    const mode = url.searchParams.get('mode');
+    const rows = (await db.prepare(`SELECT cid, mode, score, total, parts, ans, at FROM testdaf_subs WHERE kind = ?${mode === 'exam' ? " AND mode = 'exam'" : ''} ORDER BY at DESC LIMIT 5000`)
+      .bind(kind).all()).results || [];
+    const key = url.searchParams.get('key');
+    const admin = !!(env.TESTDAF_ADMIN_KEY && key && key === env.TESTDAF_ADMIN_KEY);
+    const q = {}, dist = {}, wrong = {};
+    let sum = 0, partSum = [];
+    for (const r of rows) {
+      sum += r.score; dist[r.score] = (dist[r.score] || 0) + 1;
+      JSON.parse(r.parts).forEach((n, i) => { partSum[i] = (partSum[i] || 0) + n; });
+      for (const [k, a] of Object.entries(JSON.parse(r.ans))) {
+        const c = q[k] || (q[k] = [0, 0]); c[1]++; if (a.ok) c[0]++;
+        if (admin && !a.ok && a.v != null && String(a.v).trim()) { const w = wrong[k] || (wrong[k] = {}); const v = String(a.v).trim(); w[v] = (w[v] || 0) + 1; }
+      }
+    }
+    const n = rows.length;
+    const out = { n, people: new Set(rows.map(r => r.cid)).size, avg: n ? sum / n : 0, parts: partSum.map(s => n ? s / n : 0),
+      total: n ? rows[0].total : 0, dist, q, admin, last: n ? rows[0].at : 0 };
+    if (admin) out.wrong = Object.fromEntries(Object.entries(wrong).map(([k, w]) => [k, Object.entries(w).sort((a, b) => b[1] - a[1]).slice(0, 8)]));
+    return out;
   },
 });
 

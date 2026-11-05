@@ -91,6 +91,7 @@ footer{font-size:12px;color:var(--mute)}
     <div class="eyebrow" id="eyebrow">TestDaF · Hörverstehen · 纸笔版 Modellsatz 1（模拟）</div>
     <h1>德福听力自测 · 纸笔版</h1>
     <p class="lead" id="lead">共 3 个 Hörtext、25 题，音频约 8 分钟（第 3 部分听两遍）。按纸笔版德福听力的题型编写：笔记填空 8 题、判断对错 10 题、简答 7 题。题目和音频都是原创模拟（德语合成音），不是官方真题。</p>
+    <p class="note">交卷后，你的作答会匿名上传，用来统计每道题的全体正确率（不包含姓名或联系方式）。<a href="../statistik/">看全体统计 →</a></p>
     <p class="note">判分参照德福标准放宽：填空和简答只要意思对、关键信息在就给分，拼写小错、变格变位错误、大小写都不扣分；判得不准还可以手动改。</p>
     <p class="note">考试模式：Hörtext 1 和 2 只能听一遍，Hörtext 3 可以听两遍，不能暂停和拖动，先读题再点播放。练习模式：随便重听、拖动。答案自动保存在本浏览器里，全部做完点最下面的「交卷」。</p>
   </header>
@@ -299,6 +300,7 @@ function grade(){
    <p class="note">每部分下方现在可以展开听力原文，音频也解锁了，可以对照原文重听错题。</p>`;
   document.getElementById('submitBox').hidden=true;
   Object.values(audios).forEach(a=>a._refresh());
+  if (window.__afterGrade) window.__afterGrade();
 }
 let armed=false;
 document.getElementById('submit').onclick=()=>{
@@ -409,6 +411,42 @@ if (st.submitted) grade();
   $('syncForm').addEventListener('submit',e=>{ e.preventDefault(); const c=clean($('syncInput').value); if(!/^[A-HJ-NP-Z2-9]{10}$/.test(c)){ state('同步码是 10 位字母和数字，请检查'); return; }
     code=c; try{ localStorage.setItem(CK,c); }catch(_){} $('syncCode').textContent=fmt(c); $('syncInput').value=''; pull(); });
   pull();
+})();
+</script>
+<script>
+// ---- 匿名上传作答 + 显示全体正确率（只在网站版）----
+(function(){
+  const API = /pages\.dev$/.test(location.hostname) ? '/api' : 'https://deutsch-lernen-1ca.pages.dev/api';
+  if (location.protocol==='file:') return;
+  let cid=null; try{ cid=localStorage.getItem('testdaf-cid'); }catch(e){}
+  if(!cid){ cid=[...crypto.getRandomValues(new Uint8Array(12))].map(b=>b.toString(36).padStart(2,'0')).join('').slice(0,20); try{ localStorage.setItem('testdaf-cid',cid); }catch(e){} }
+  const kind='papier-'+SID;
+  const prevPush=window.__syncPush;
+  window.__syncPush=function(runs){
+    if(prevPush) prevPush(runs);
+    const r=runs[runs.length-1]; if(!r) return;
+    fetch(API+'/testdaf/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:r.id,cid,kind,mode:r.mode,parts:r.parts,total:r.total,answers:r.answers})})
+      .then(()=>loadStats()).catch(()=>{});
+  };
+  let stats=null;
+  async function loadStats(){
+    try{ const r=await fetch(API+'/testdaf/stats?kind='+kind); if(!r.ok) return; stats=await r.json(); annotate(); }catch(e){}
+  }
+  function annotate(){
+    if(!stats||!st.submitted||!stats.n) return;
+    DATA.forEach(p=>p.qs.forEach(q=>{
+      const c=stats.q[q.k]; const fb=document.getElementById('fb-'+q.k); if(!c||!fb) return;
+      let el=fb.querySelector('.crowd'); if(!el){ el=document.createElement('div'); el.className='crowd cn'; el.style.fontSize='12px'; fb.appendChild(el); }
+      el.textContent=`全体正确率 ${Math.round(c[0]/c[1]*100)}%（${c[1]} 次作答）`;
+    }));
+    const res=document.getElementById('result'); if(res && !res.hidden){
+      let el=document.getElementById('crowdAvg'); if(!el){ el=document.createElement('p'); el.id='crowdAvg'; el.style.margin='0'; res.insertBefore(el,res.children[2]); }
+      el.innerHTML=`全体平均分 <b>${stats.avg.toFixed(1)} / ${stats.total}</b>（${stats.people} 人，${stats.n} 次交卷）。<a href="../statistik/#${kind}" style="color:var(--accent)">看完整统计 →</a>`;
+    }
+  }
+  const prevAfter=window.__afterGrade;
+  window.__afterGrade=function(){ if(prevAfter) prevAfter(); annotate(); };
+  if(st.submitted) loadStats();
 })();
 </script>
 </body></html>

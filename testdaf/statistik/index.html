@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>德福听力 · 全体统计</title>
+<link rel="stylesheet" href="../../fonts/a65a5a2d7f.css">
+<style>
+:root{--bg:#eef1ee;--sheet:#fff;--ink:#18221e;--mute:#5d6b65;--line:#d5dcd8;--accent:#0d5f73;--accent-soft:#dcebef;--ok:#1d7a46;--warn:#b5741a;--bad:#b23a2e}
+@media (prefers-color-scheme:dark){:root{--bg:#121816;--sheet:#1a2320;--ink:#e3ebe7;--mute:#93a39c;--line:#2d3a35;--accent:#5fb6cc;--accent-soft:#1d3239;--ok:#5cc58a;--warn:#e0a54f;--bad:#ec7f72;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "IBM Plex Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif;padding:28px max(16px,env(safe-area-inset-left)) 48px max(16px,env(safe-area-inset-right))}
+.w{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1{font:700 28px/1.2 "Zilla Slab",Georgia,serif;margin:0}
+h2{font:600 18px "Zilla Slab",Georgia,serif;margin:0}
+.mute{color:var(--mute);margin:0}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tab{padding:7px 14px;border:1px solid var(--line);border-radius:8px;color:var(--mute);text-decoration:none;background:var(--sheet)}
+.tab[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.sheet{background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.kpi b{display:block;font:700 28px/1.1 "Zilla Slab",Georgia,serif;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--mute)}
+.dist{display:flex;align-items:flex-end;gap:3px;height:120px;border-bottom:1px solid var(--line)}
+.dist div{flex:1;background:var(--accent);border-radius:3px 3px 0 0;min-height:1px;position:relative}
+.axis{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--mute);font-weight:500}
+.pct{white-space:nowrap;font-variant-numeric:tabular-nums;width:120px}
+.meter{height:6px;background:var(--line);border-radius:3px;margin-top:4px;overflow:hidden}
+.meter i{display:block;height:100%}
+.ans{color:var(--mute);font-size:13px}
+.wrong{font-size:13px;color:var(--bad)}
+input{font:14px inherit;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+button{font:600 14px inherit;padding:7px 14px;border-radius:8px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+label.chk{display:flex;gap:6px;align-items:center;font-size:14px;color:var(--mute)}
+a{color:var(--accent)}
+</style></head><body><div class="w">
+<h1>德福听力 · 全体统计</h1>
+<p class="mute">所有人交卷后匿名上传的结果（不包含姓名、邮箱等信息）。同一个人做多次会算多次交卷，「人数」按浏览器去重。</p>
+<div class="bar"><a class="tab" id="t1" href="#papier-1">纸笔版 第 1 套</a><a class="tab" id="t2" href="#papier-2">纸笔版 第 2 套（较难）</a>
+<label class="chk"><input type="checkbox" id="examOnly"> 只看考试模式</label></div>
+<section class="sheet"><div class="kpis" id="kpis"><div class="kpi"><b>…</b><span>加载中</span></div></div>
+<div><div class="dist" id="dist"></div><div class="axis" id="axis"></div><p class="mute" style="font-size:12px">分数分布（横轴：得分，纵轴：交卷次数）</p></div></section>
+<section class="sheet"><h2>每题正确率</h2><p class="mute" style="font-size:13px">按题号排列。颜色：绿 ≥ 70%，黄 40–69%，红 &lt; 40%。</p>
+<div class="tbl"><table><thead><tr><th>#</th><th>题目与参考答案</th><th class="pct">正确率</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section class="sheet"><h2>看大家写错了什么</h2><p class="mute" style="font-size:13px">填空题和简答题的错误答案只有输入管理密钥才显示（防止别人在答案里乱写的内容被公开）。</p>
+<form id="kf" class="bar"><input type="password" id="key" placeholder="管理密钥" autocomplete="off"><button>显示错误答案</button><span class="mute" id="kmsg"></span></form></section>
+<p><a href="../">← 德福听力首页</a></p>
+</div>
+<script>
+const QS={"papier-1": [{"k": "p1_0", "n": 1, "part": "Hörtext 1", "q": "Bewerbung: frühestens ___ Monate vor Einzug", "a": "6"}, {"k": "p1_1", "n": 2, "part": "Hörtext 1", "q": "Wartezeit Einzelzimmer in WG: ca. ___ Monate", "a": "4"}, {"k": "p1_2", "n": 3, "part": "Hörtext 1", "q": "Miete: ___ Euro pro Monat (warm, inkl. Internet)", "a": "340"}, {"k": "p1_3", "n": 4, "part": "Hörtext 1", "q": "Kaution: ___ Euro", "a": "500"}, {"k": "p1_4", "n": 5, "part": "Hörtext 1", "q": "Mindestmietdauer: zwei ___", "a": "Semester"}, {"k": "p1_5", "n": 6, "part": "Hörtext 1", "q": "vor Einzug nachreichen: ___bescheinigung", "a": "Immatrikulations"}, {"k": "p1_6", "n": 7, "part": "Hörtext 1", "q": "falls kein Zimmer: Projekt „Wohnen für ___“", "a": "Hilfe"}, {"k": "p1_7", "n": 8, "part": "Hörtext 1", "q": "offene Sprechstunde: ___, 10–12 Uhr", "a": "Donnerstag"}, {"k": "p2_0", "n": 9, "part": "Hörtext 2", "q": "Felix Berg hat sich vor Studienbeginn gründlich über das Jurastudium informiert.", "a": "falsch"}, {"k": "p2_1", "n": 10, "part": "Hörtext 2", "q": "Felix hatte im Jurastudium schlechte Noten.", "a": "falsch"}, {"k": "p2_2", "n": 11, "part": "Hörtext 2", "q": "Felix blieb länger im Jurastudium, weil er Angst hatte, der Wechsel könnte im Lebenslauf schlecht aussehen.", "a": "richtig"}, {"k": "p2_3", "n": 12, "part": "Hörtext 2", "q": "Laut Frau Reuter sehen Arbeitgeber einen frühen Fachwechsel meist kritisch.", "a": "falsch"}, {"k": "p2_4", "n": 13, "part": "Hörtext 2", "q": "In den Ingenieurwissenschaften brechen viele wegen Leistungsproblemen ab.", "a": "richtig"}, {"k": "p2_5", "n": 14, "part": "Hörtext 2", "q": "Studierende, die viel neben dem Studium arbeiten, brechen häufiger ab.", "a": "richtig"}, {"k": "p2_6", "n": 15, "part": "Hörtext 2", "q": "In der Studienberatung musste Felix vor allem Tests ausfüllen.", "a": "falsch"}, {"k": "p2_7", "n": 16, "part": "Hörtext 2", "q": "Felix konnte sich mehrere Jura-Module für sein neues Studium anrechnen lassen.", "a": "falsch"}, {"k": "p2_8", "n": 17, "part": "Hörtext 2", "q": "Wer bis zum Ende des vierten Semesters aus wichtigem Grund wechselt, kann in der Regel weiter BAföG bekommen.", "a": "richtig"}, {"k": "p2_9", "n": 18, "part": "Hörtext 2", "q": "Frau Reuter hält Online-Self-Assessments für einen vollwertigen Ersatz für eine Beratung.", "a": "falsch"}, {"k": "p3_0", "n": 19, "part": "Hörtext 3", "q": "Warum ist die Stadtimkerei laut Lindner meist kein Beitrag zum Artenschutz?", "a": "Die Honigbiene ist ein Nutztier und nicht bedroht; bedroht sind die Wildbienen."}, {"k": "p3_1", "n": 20, "part": "Hörtext 3", "q": "Wie viele Wildbienenarten in Deutschland sind gefährdet?", "a": "Etwa die Hälfte (von rund 560 Arten), sie stehen auf der Roten Liste."}, {"k": "p3_2", "n": 21, "part": "Hörtext 3", "q": "Warum können Wildbienen der Konkurrenz durch Honigbienen nicht ausweichen?", "a": "Sie fliegen meist nur wenige hundert Meter weit."}, {"k": "p3_3", "n": 22, "part": "Hörtext 3", "q": "Was brauchen Wildbienen vor allem? (zwei Dinge)", "a": "Nahrung (bestimmte Pflanzen) und Nistplätze."}, {"k": "p3_4", "n": 23, "part": "Hörtext 3", "q": "Wo nisten die meisten Wildbienenarten?", "a": "Im Boden (an offenen, sandigen Stellen)."}, {"k": "p3_5", "n": 24, "part": "Hörtext 3", "q": "Was kritisiert Lindner an vielen gekauften Insektenhotels? (ein Punkt genügt)", "a": "Sie sind schlecht gemacht (splitternde Löcher, Tiere verletzen sich die Flügel) / helfen nur wenigen Arten."}, {"k": "p3_6", "n": 25, "part": "Hörtext 3", "q": "Welche Maßnahme der Stadtpolitik hält Lindner für am wichtigsten?", "a": "Grünflächen anders pflegen: seltener mähen (nur zweimal im Jahr)."}], "papier-2": [{"k": "q1_0", "n": 1, "part": "Hörtext 1", "q": "Anmeldeschluss (Bachelor Maschinenbau): der ___ März", "a": "15"}, {"k": "q1_1", "n": 2, "part": "Hörtext 1", "q": "Formular: Unterschriften von Erstbetreuer und ___", "a": "Zweitprüfer"}, {"k": "q1_2", "n": 3, "part": "Hörtext 1", "q": "Verlängerung der Bearbeitungszeit: höchstens ___ Wochen", "a": "4"}, {"k": "q1_3", "n": 4, "part": "Hörtext 1", "q": "Umfang: ca. 40 Seiten, ohne Literaturverzeichnis und ___", "a": "Anhang"}, {"k": "q1_4", "n": 5, "part": "Hörtext 1", "q": "Abgabe: zwei gebundene Exemplare im ___", "a": "Prüfungsamt"}, {"k": "q1_5", "n": 6, "part": "Hörtext 1", "q": "unbedingt einbinden: die ___ Erklärung", "a": "eidesstattliche"}, {"k": "q1_6", "n": 7, "part": "Hörtext 1", "q": "Kolloquium insgesamt: ca. ___ Minuten", "a": "30"}, {"k": "q1_7", "n": 8, "part": "Hörtext 1", "q": "Sprechstunde Prof. Kaya in diesem Semester: am ___", "a": "Freitag"}, {"k": "q2_0", "n": 9, "part": "Hörtext 2", "q": "Professor Hartmann glaubt, dass die Hausarbeit keine Zukunft mehr hat.", "a": "falsch"}, {"k": "q2_1", "n": 10, "part": "Hörtext 2", "q": "Professor Hartmann hält Programme zur Erkennung von KI-Texten für zu unzuverlässig.", "a": "richtig"}, {"k": "q2_2", "n": 11, "part": "Hörtext 2", "q": "Niklas lässt sich von der KI Textteile für seine Arbeiten schreiben.", "a": "falsch"}, {"k": "q2_3", "n": 12, "part": "Hörtext 2", "q": "Niklas weist darauf hin, dass falsche Antworten der KI nicht leicht als falsch zu erkennen sind.", "a": "richtig"}, {"k": "q2_4", "n": 13, "part": "Hörtext 2", "q": "Ein Verbot würde laut Hartmann vor allem diejenigen benachteiligen, die sich an Regeln halten.", "a": "richtig"}, {"k": "q2_5", "n": 14, "part": "Hörtext 2", "q": "Die Angabe der verwendeten Hilfsmittel hat sich an Hartmanns Institut schlechter bewährt als erwartet.", "a": "falsch"}, {"k": "q2_6", "n": 15, "part": "Hörtext 2", "q": "Niklas kritisiert, dass die Regeln zum KI-Einsatz je nach Lehrveranstaltung sehr unterschiedlich sind.", "a": "richtig"}, {"k": "q2_7", "n": 16, "part": "Hörtext 2", "q": "Hartmann möchte, dass die Hochschule alle Details für alle Fächer einheitlich regelt.", "a": "falsch"}, {"k": "q2_8", "n": 17, "part": "Hörtext 2", "q": "Hartmann hält mündliche Prüfungen auch in sehr großen Lehrveranstaltungen für eine praktikable Lösung.", "a": "falsch"}, {"k": "q2_9", "n": 18, "part": "Hörtext 2", "q": "Hartmann meint, dass man KI-Antworten nur mit eigenem Fachwissen sinnvoll überprüfen kann.", "a": "richtig"}, {"k": "q3_0", "n": 19, "part": "Hörtext 3", "q": "Warum sollte Zweisprachigkeit nach der These vom „bilingualen Vorteil“ die exekutiven Funktionen trainieren?", "a": "Beide Sprachen sind ständig aktiv; man muss die nicht benötigte unterdrücken → trainiert Ausblenden von Störendem / Aufgabenwechsel."}, {"k": "q3_1", "n": 20, "part": "Hörtext 3", "q": "Was geschah mit dem Effekt in größeren Studien?", "a": "Er ist weitgehend verschwunden (kaum/kein Vorteil mehr)."}, {"k": "q3_2", "n": 21, "part": "Hörtext 3", "q": "Was versteht Sommer unter „Publikationsverzerrung“?", "a": "Studien mit positivem Ergebnis (Vorteil gefunden) wurden häufiger veröffentlicht als Studien ohne Effekt → zu positives Bild."}, {"k": "q3_3", "n": 22, "part": "Hörtext 3", "q": "Welches methodische Problem gab es beim Vergleich der Gruppen?", "a": "Die Gruppen unterschieden sich auch in der sozialen Herkunft: Zweisprachige kamen oft aus Familien mit höherer Bildung."}, {"k": "q3_4", "n": 23, "part": "Hörtext 3", "q": "In welchem Bereich sind die Befunde relativ stabil, und was zeigt sich dort?", "a": "Im Alter: Demenzsymptome treten bei lebenslang Zweisprachigen einige Jahre später auf (kognitive Reserve)."}, {"k": "q3_5", "n": 24, "part": "Hörtext 3", "q": "Welche Sorge vieler Eltern ist laut Sommer widerlegt?", "a": "Dass Zweisprachigkeit Kinder verwirrt / ihre Sprachentwicklung verzögert."}, {"k": "q3_6", "n": 25, "part": "Hörtext 3", "q": "Warum lässt sich bei Erwachsenen schwer sagen, was genau das Sprachenlernen bewirkt?", "a": "Mehrere Faktoren wirken zusammen (Lernen hält aktiv, soziale Kontakte, Reisen) und lassen sich kaum auseinanderhalten."}]};
+const API=/pages\.dev$/.test(location.hostname)?'/api':'https://deutsch-lernen-1ca.pages.dev/api';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let key=''; try{ key=sessionStorage.getItem('td-key')||''; }catch(e){}
+const kind=()=>location.hash==='#papier-2'?'papier-2':'papier-1';
+async function load(){
+  const k=kind(); document.getElementById('t1').setAttribute('aria-current',k==='papier-1'); document.getElementById('t2').setAttribute('aria-current',k==='papier-2');
+  const ex=document.getElementById('examOnly').checked;
+  let s; try{ const r=await fetch(`${API}/testdaf/stats?kind=${k}${ex?'&mode=exam':''}${key?'&key='+encodeURIComponent(key):''}`); s=await r.json(); if(!r.ok) throw new Error(s.error); }
+  catch(e){ document.getElementById('kpis').innerHTML=`<p class="mute">统计暂时加载不了：${esc(e.message||'网络错误')}</p>`; return; }
+  const T=s.total||25;
+  document.getElementById('kpis').innerHTML=[[s.n,'次交卷'],[s.people,'人（按浏览器）'],[s.n?s.avg.toFixed(1)+' / '+T:'—','平均分'],[s.n?Math.round(s.avg/T*100)+'%':'—','平均正确率'],[s.parts.length?s.parts.map(x=>x.toFixed(1)).join(' / '):'—','H1 / H2 / H3 平均']].map(([b,t])=>`<div class="kpi"><b>${b}</b><span>${t}</span></div>`).join('');
+  const max=Math.max(1,...Object.values(s.dist));
+  document.getElementById('dist').innerHTML=Array.from({length:T+1},(_,i)=>`<div title="${i} 分：${s.dist[i]||0} 次" style="height:${(s.dist[i]||0)/max*100}%"></div>`).join('');
+  document.getElementById('axis').innerHTML=`<span>0</span><span>${Math.round(T/2)}</span><span>${T}</span>`;
+  document.getElementById('rows').innerHTML=QS[k].map(q=>{ const c=s.q[q.k]; const p=c?c[0]/c[1]:null; const col=p==null?'var(--line)':p>=.7?'var(--ok)':p>=.4?'var(--warn)':'var(--bad)';
+    const w=s.wrong&&s.wrong[q.k]?`<div class="wrong">常见错答：${s.wrong[q.k].map(([v,n])=>esc(v)+'（'+n+'）').join('；')}</div>`:'';
+    return `<tr><td>${q.n}</td><td>${esc(q.q)}<div class="ans">${esc(q.part)} · 答案：${esc(q.a)}</div>${w}</td><td class="pct">${p==null?'—':Math.round(p*100)+'%'} <span class="mute" style="font-size:12px">${c?c[0]+'/'+c[1]:''}</span><div class="meter"><i style="width:${p==null?0:p*100}%;background:${col}"></i></div></td></tr>`; }).join('');
+  document.getElementById('kmsg').textContent= key ? (s.admin?'已显示错误答案':'密钥不对，或服务器上还没设置密钥') : '';
+}
+document.getElementById('kf').addEventListener('submit',e=>{ e.preventDefault(); key=document.getElementById('key').value.trim(); try{ sessionStorage.setItem('td-key',key); }catch(_){} load(); });
+document.getElementById('examOnly').addEventListener('change',load);
+window.addEventListener('hashchange',load);
+load();
+</script></body></html>
