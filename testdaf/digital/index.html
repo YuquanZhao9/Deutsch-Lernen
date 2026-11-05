@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>德福听力自测 · Modellsatz 1</title>
+<link rel="stylesheet" href="../../fonts/a65a5a2d7f.css">
+<style>
+/* Layout: one narrow exam column; each Aufgabe is a sheet with its own player, a sticky score/status bar on top */
+:root{
+  --bg:#eef1ee; --sheet:#ffffff; --ink:#18221e; --mute:#5d6b65; --line:#d5dcd8;
+  --accent:#0d5f73; --accent-soft:#dcebef; --ok:#1d7a46; --ok-soft:#e1f2e7; --bad:#b23a2e; --bad-soft:#f8e3e0;
+  --display:"Zilla Slab",Georgia,"Songti SC",serif; --body:"IBM Plex Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif; --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121816; --sheet:#1a2320; --ink:#e3ebe7; --mute:#93a39c; --line:#2d3a35;
+  --accent:#5fb6cc; --accent-soft:#1d3239; --ok:#5cc58a; --ok-soft:#183024; --bad:#ec7f72; --bad-soft:#3a1f1c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121816; --sheet:#1a2320; --ink:#e3ebe7; --mute:#93a39c; --line:#2d3a35;
+  --accent:#5fb6cc; --accent-soft:#1d3239; --ok:#5cc58a; --ok-soft:#183024; --bad:#ec7f72; --bad-soft:#3a1f1c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+header.top{padding-top:28px;display:flex;flex-direction:column;gap:8px}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 30px/1.15 var(--display);margin:0;text-wrap:balance}
+.lead{color:var(--mute);margin:0;max-width:62ch}
+.note{font-size:13px;color:var(--mute);border-left:3px solid var(--line);padding:2px 0 2px 10px;margin:0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--sheet)}
+.seg button{border:0;background:none;color:var(--mute);font:500 13px var(--body);padding:7px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.bar .spacer{flex:1}
+.prog{font:500 13px var(--mono);color:var(--mute);font-variant-numeric:tabular-nums}
+.btn{font:600 14px var(--body);border-radius:8px;padding:9px 16px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:#fff}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:focus-visible,.seg button:focus-visible,input:focus-visible,select:focus-visible,.play:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sheet{background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.sheet h2{font:600 19px/1.3 var(--display);margin:0}
+.instr{margin:0}.cn{margin:0;color:var(--mute);font-size:14px}
+.player{display:flex;align-items:center;gap:12px;background:var(--accent-soft);border-radius:8px;padding:10px 12px}
+.play{width:42px;height:42px;border-radius:50%;border:0;background:var(--accent);color:#fff;cursor:pointer;flex:none;display:grid;place-items:center}
+.play:disabled{opacity:.4;cursor:not-allowed}
+.play svg{width:18px;height:18px;fill:currentColor}
+.track{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+.rail{height:6px;background:var(--line);border-radius:3px;position:relative;overflow:hidden}
+.rail.seekable{cursor:pointer}
+.fill{position:absolute;inset:0 auto 0 0;width:0;background:var(--accent)}
+.meta{display:flex;justify-content:space-between;font:500 12px var(--mono);color:var(--mute);font-variant-numeric:tabular-nums;gap:8px;flex-wrap:wrap}
+.bank{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;border:1px dashed var(--line);border-radius:6px;padding:3px 8px;color:var(--mute)}
+ol.qs{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px;counter-reset:q}
+.q{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:8px;border-radius:6px}
+.q .qt{font-weight:500;display:flex;gap:8px}
+.q .num{font:500 13px var(--mono);color:var(--accent);flex:none;padding-top:2px}
+.opts{display:flex;flex-direction:column;gap:4px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:6px 8px;border-radius:6px;cursor:pointer}
+.opt:hover{background:var(--accent-soft)}
+.opt input{margin-top:4px;accent-color:var(--accent)}
+.row{display:flex;flex-wrap:wrap;gap:6px}
+.row .opt{border:1px solid var(--line)}
+input[type=text],select{font:15px var(--body);padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);max-width:100%}
+input[type=text]{width:220px}
+.q.ok{background:var(--ok-soft);padding:12px 10px 10px}
+.q.bad{background:var(--bad-soft);padding:12px 10px 10px}
+.fb{font-size:13px}.q.ok .fb{color:var(--ok)}.q.bad .fb{color:var(--bad)}
+.override{font-size:12px;background:none;border:0;color:var(--accent);text-decoration:underline;cursor:pointer;padding:0;align-self:flex-start}
+details.tr{border-top:1px solid var(--line);padding-top:10px}
+details.tr summary{cursor:pointer;color:var(--accent);font-weight:500}
+.tr p{margin:8px 0 0;max-width:68ch}.tr b{font-weight:600}
+.result{background:var(--sheet);border:2px solid var(--accent);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.big{font:700 40px/1 var(--display);font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+td,th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+td:last-child,th:last-child{text-align:right}
+footer{font-size:12px;color:var(--mute)}
+@media (max-width:480px){h1{font-size:25px}.sheet{padding:16px}input[type=text]{width:100%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head><body>
+
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">TestDaF · Hörverstehen · Modellsatz 1（模拟）</div>
+    <h1>德福听力自测</h1>
+    <p class="lead">共 7 部分、34 题，音频约 14 分钟。按数字版德福听力的题型编写，题目和音频都是原创模拟（语音为德语合成音），不是官方真题。</p>
+    <p class="note">考试模式：每段音频只能完整播放一次，不能暂停和拖动，先读题再点播放。练习模式：随便重听、拖动。答案自动保存在本浏览器里，全部做完点最下面的「交卷」。</p>
+  </header>
+
+  <div class="bar" role="toolbar" aria-label="控制">
+    <div class="seg" role="group" aria-label="模式">
+      <button id="m-exam" aria-pressed="true">考试模式</button>
+      <button id="m-prac" aria-pressed="false">练习模式</button>
+    </div>
+    <span class="prog" id="prog">已答 0/34</span>
+    <span class="spacer"></span>
+    <button class="btn ghost" id="reset">重新开始</button>
+  </div>
+
+  <div id="parts" class="wrap" style="gap:18px"></div>
+
+  <div id="submitBox" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+    <button class="btn" id="submit">交卷并查看答案</button>
+    <span class="note" id="confirmNote" hidden></span>
+  </div>
+
+  <section class="result" id="result" hidden></section>
+  <footer>原创模拟题，供个人练习。官方模拟题可在 testdaf.de 的备考区找到。　<a href="../">← 德福听力首页</a></footer>
+</div>
+
+<script>
+const DATA = [{"id": "a1", "title": "Aufgabe 1 · Kurze Mitteilungen auf dem Campus", "cn": "四段校园短通知/留言，每段一题，三选一。", "instr": "Sie hören vier kurze Texte. Zu jedem Text gibt es eine Aufgabe. Wählen Sie die richtige Antwort.", "script": [{"s": "Ansage", "t": "Aufgabe eins. Sie hören vier kurze Texte. Zu jedem Text gibt es eine Aufgabe. Wählen Sie die richtige Antwort. Text eins."}, {"s": "Prüfungsamt", "t": "Hallo Frau Nowak, hier spricht Petra Hansen vom Prüfungsamt. Sie hatten gestern nach der Anmeldung zur Statistik-Klausur gefragt. Die gute Nachricht: Die Frist ist bis Freitag verlängert worden. Allerdings nehmen wir keine Formulare mehr auf Papier an, auch nicht persönlich hier im Büro. Die Anmeldung läuft ausschließlich über das Online-Portal. Wenn Sie dabei technische Probleme haben, wenden Sie sich bitte an den IT-Support, nicht an uns. Schönen Tag noch."}, {"s": "Ansage", "t": "Text zwei."}, {"s": "Studierendenwerk", "t": "Eine Information des Studierendenwerks: Ab dem ersten Dezember kann in allen Mensen und Cafeterien nur noch mit der neuen Campuskarte bezahlt werden. Bargeld wird dann nicht mehr angenommen. Ihre neue Karte erhalten Sie kostenlos im Servicebüro. Ein Restguthaben auf der alten Mensakarte wird nicht automatisch übertragen. Sie können es sich aber noch bis Ende Januar am Automaten im Foyer der Hauptmensa auszahlen lassen."}, {"s": "Ansage", "t": "Text drei."}, {"s": "Campusradio", "t": "Und hier noch ein Hinweis in eigener Sache vom Campusradio: Der für heute Abend angekündigte Vortrag in der Reihe „Wissenschaft im Dialog“ muss leider ausfallen, weil die Referentin erkrankt ist. Er wird im Januar nachgeholt, den genauen Termin geben wir rechtzeitig bekannt. Damit Sie den Abend trotzdem nicht umsonst einplanen: Im Hörsaal eins zeigen wir um neunzehn Uhr den Dokumentarfilm „Das Klima der Städte“. Der Eintritt ist frei, eine Anmeldung ist diesmal nicht nötig."}, {"s": "Ansage", "t": "Text vier."}, {"s": "Tim", "t": "Hey Sophie, hier ist Tim. Kurz wegen morgen: Die Gruppenräume in der Bibliothek sind leider alle ausgebucht. Wir treffen uns deshalb bei mir in der WG, Gartenstraße zwölf. Und weil Jana erst später aus dem Labor kommt, fangen wir eine Stunde später an, also um fünf statt um vier. Am Thema ändert sich nichts, wir machen wie besprochen Kapitel vier. Bring am besten dein Skript mit. Bis morgen!"}], "qs": [{"type": "mc", "q": "Text 1: Was soll Frau Nowak tun?", "o": ["Das Anmeldeformular persönlich im Prüfungsamt abgeben.", "Sich bis Freitag über das Online-Portal anmelden.", "Sich bei Problemen direkt an Frau Hansen wenden."], "a": 1}, {"type": "mc", "q": "Text 2: Was gilt für das Restguthaben auf der alten Mensakarte?", "o": ["Es wird am ersten Dezember automatisch auf die neue Karte übertragen.", "Es verfällt, wenn man es nicht vor Dezember ausgibt.", "Man kann es sich bis Ende Januar auszahlen lassen."], "a": 2}, {"type": "mc", "q": "Text 3: Was findet heute Abend statt?", "o": ["Der Vortrag in verkürzter Form.", "Eine Filmvorführung, für die man sich nicht anmelden muss.", "Eine Filmvorführung, für die man sich vorher anmelden muss."], "a": 1}, {"type": "mc", "q": "Text 4: Was ändert sich beim Treffen der Lerngruppe?", "o": ["Der Ort und die Uhrzeit.", "Nur der Ort.", "Der Ort und das Thema."], "a": 0}], "dur": 120}, {"id": "a2", "title": "Aufgabe 2 · Gespräch in der Studienberatung", "cn": "学生在国际办公室咨询交换学期。边听边补全笔记，每空填一个词或数字。", "instr": "Sie hören ein Gespräch im Akademischen Auslandsamt. Ergänzen Sie die Notizen. Schreiben Sie nur ein Wort oder eine Zahl.", "script": [{"s": "Ansage", "t": "Aufgabe zwei. Sie hören ein Gespräch im Akademischen Auslandsamt. Ergänzen Sie beim Hören die Notizen. Schreiben Sie nur ein Wort oder eine Zahl."}, {"s": "Lukas Berger", "t": "Guten Tag, ich bin Lukas Berger, ich studiere Maschinenbau im dritten Semester. Ich würde gern im nächsten Wintersemester ein Auslandssemester in Schweden machen und wollte fragen, wie das genau abläuft."}, {"s": "Beraterin", "t": "Guten Tag, Herr Berger, setzen Sie sich. Schweden, das passt gut, wir haben dort zwei Partneruniversitäten. Das Wichtigste zuerst: Die Bewerbungsfrist für das kommende Wintersemester ist der fünfzehnte Januar. Viele denken, man hätte bis zum Frühjahr Zeit, aber das ist nicht so."}, {"s": "Lukas Berger", "t": "Fünfzehnter Januar, okay. Und was muss ich alles einreichen?"}, {"s": "Beraterin", "t": "Sie brauchen ein Motivationsschreiben, eine aktuelle Notenübersicht und einen Sprachnachweis. Die Lehrveranstaltungen dort sind auf Englisch, und verlangt wird mindestens das Niveau B2. Ein Zertifikat aus der Schule reicht übrigens nicht, es muss ein Test aus den letzten zwei Jahren sein, zum Beispiel vom Sprachenzentrum."}, {"s": "Lukas Berger", "t": "Das Sprachenzentrum bietet doch auch Tests an, oder?"}, {"s": "Beraterin", "t": "Genau, die sind sogar kostenlos für Studierende. Dann das Learning Agreement, also die Liste der Kurse, die Sie im Ausland belegen und die Ihnen hier anerkannt werden sollen. Das unterschreibe nicht ich, sondern der Fachkoordinator Ihrer Fakultät. Bei Maschinenbau ist das Professor Brandt."}, {"s": "Lukas Berger", "t": "Brandt, gut. Und wie sieht es mit der Finanzierung aus? Schweden ist ja nicht gerade billig."}, {"s": "Beraterin", "t": "Das stimmt. Sie bekommen über Erasmus ein Stipendium. Für Schweden sind das im Moment etwa vierhundertfünfzig Euro im Monat. Damit sind natürlich nicht alle Kosten gedeckt, aber es hilft. Zusätzlich können Sie Auslands-BAföG beantragen, und zwar auch dann, wenn Sie im Inland kein BAföG bekommen."}, {"s": "Lukas Berger", "t": "Ah, das wusste ich nicht. Gibt es dazu noch irgendwo mehr Informationen?"}, {"s": "Beraterin", "t": "Ja, am kommenden Dienstag haben wir eine Infoveranstaltung speziell für Skandinavien, um sechzehn Uhr im Raum zwei Punkt vierzehn hier im Verwaltungsgebäude. Da berichten auch Studierende, die schon dort waren."}, {"s": "Lukas Berger", "t": "Prima, da komme ich vorbei. Vielen Dank!"}], "qs": [{"type": "gap", "q": "Bewerbungsfrist: der ___ Januar", "a": ["15", "15.", "fünfzehnte", "fünfzehnten", "fuenfzehnte", "fuenfzehnten"]}, {"type": "gap", "q": "Sprachnachweis Englisch: mindestens Niveau ___", "a": ["B2", "b2"]}, {"type": "gap", "q": "Learning Agreement unterschreibt: Professor ___", "a": ["Brandt", "brandt", "Prof. Brandt"]}, {"type": "gap", "q": "Erasmus-Stipendium für Schweden: ca. ___ Euro pro Monat", "a": ["450", "450,-", "vierhundertfünfzig"]}, {"type": "gap", "q": "Infoveranstaltung: Dienstag, 16 Uhr, Raum ___", "a": ["2.14", "2,14", "2.14.", "2 14", "zwei punkt vierzehn"]}], "dur": 127}, {"id": "a3", "title": "Aufgabe 3 · Gespräch unter Studierenden", "cn": "两名学生聊“打工 vs. 实习”。判断每句话对（richtig）还是错（falsch）。", "instr": "Sie hören ein Gespräch zwischen zwei Studierenden. Entscheiden Sie: Ist die Aussage richtig oder falsch?", "script": [{"s": "Ansage", "t": "Aufgabe drei. Sie hören ein Gespräch zwischen zwei Studierenden, Mara und Jonas. Entscheiden Sie, ob die Aussagen richtig oder falsch sind."}, {"s": "Mara", "t": "Jonas! Na, wie läuft dein neuer Job? Du arbeitest doch jetzt als Werkstudent bei dieser Softwarefirma, oder?"}, {"s": "Jonas", "t": "Ja, seit Oktober. Zwanzig Stunden die Woche. Ehrlich gesagt ist es anstrengender, als ich dachte. Nicht wegen der Arbeit selbst, die macht Spaß, sondern weil ich jetzt alles um die Arbeitszeiten herum planen muss."}, {"s": "Mara", "t": "Zwanzig Stunden sind aber auch viel neben dem Studium."}, {"s": "Jonas", "t": "Eben. Ich habe deshalb schon eine Vorlesung auf das nächste Semester verschoben. Mein Chef wäre zwar flexibel, aber ich will in der Firma auch nicht ständig fehlen. Und du? Du wolltest doch ein Praktikum machen."}, {"s": "Mara", "t": "Ja, und ich habe mich jetzt tatsächlich für ein Pflichtpraktikum im Sommer entschieden, beim Umweltbundesamt. Drei Monate, Vollzeit. Ich hatte auch überlegt, so wie du nebenher zu jobben, aber ich glaube, ich lerne mehr, wenn ich mich eine Zeit lang ganz auf eine Sache konzentriere."}, {"s": "Jonas", "t": "Wird das denn bezahlt?"}, {"s": "Mara", "t": "Kaum. Bei Pflichtpraktika muss ja kein Mindestlohn gezahlt werden. Ich bekomme eine kleine Aufwandsentschädigung, das reicht gerade für die Fahrkarte. Deshalb arbeite ich jetzt im Winter noch ein bisschen mehr im Café, damit ich im Sommer über die Runden komme."}, {"s": "Jonas", "t": "Verstehe. Bei mir ist es umgekehrt: Das Geld ist gut, aber ich habe manchmal das Gefühl, ich mache immer dieselben Aufgaben. Für den Lebenslauf ist es trotzdem super, das sagen alle."}, {"s": "Mara", "t": "Na ja, ob die Personalabteilungen später wirklich so genau hinschauen? Ich glaube, am Ende zählt vor allem, ob man erklären kann, was man dabei gelernt hat."}, {"s": "Jonas", "t": "Da hast du wahrscheinlich recht. Vielleicht frage ich meinen Chef mal, ob ich auch in ein anderes Projekt reinschauen kann."}], "qs": [{"type": "tf", "q": "Jonas findet vor allem die Aufgaben in seinem Job anstrengend.", "a": false}, {"type": "tf", "q": "Jonas hat wegen des Jobs eine Lehrveranstaltung verschoben.", "a": true}, {"type": "tf", "q": "Mara macht ihr Praktikum parallel zum Studium in Teilzeit.", "a": false}, {"type": "tf", "q": "Mara arbeitet im Winter mehr, um das Praktikum finanzieren zu können.", "a": true}, {"type": "tf", "q": "Mara ist überzeugt, dass ein Werkstudentenjob im Lebenslauf besonders viel zählt.", "a": false}], "dur": 102}, {"id": "a4", "title": "Aufgabe 4 · Vorlesung: Städtische Wärmeinseln", "cn": "大学课堂片段（城市热岛）。按讲课内容把下拉选项填进结构图，每个选项最多用一次，有多余选项。", "instr": "Sie hören einen Ausschnitt aus einer Vorlesung. Ergänzen Sie die Übersicht. Wählen Sie aus der Liste. Nicht alle Begriffe passen.", "script": [{"s": "Ansage", "t": "Aufgabe vier. Sie hören einen Ausschnitt aus einer Vorlesung zur Stadtökologie. Ergänzen Sie beim Hören die Übersicht."}, {"s": "Dozentin", "t": "Guten Morgen zusammen. Heute geht es um ein Phänomen, das viele von Ihnen aus eigener Erfahrung kennen, auch wenn Sie den Fachbegriff vielleicht noch nicht gehört haben: die städtische Wärmeinsel. Gemeint ist, dass es in Städten deutlich wärmer ist als im Umland. In einer Großstadt wie Stuttgart kann der Unterschied in einer Sommernacht acht bis zehn Grad betragen."}, {"s": "Dozentin", "t": "Woran liegt das? Ich möchte drei Hauptursachen unterscheiden. Erstens die Versiegelung. Asphalt, Beton und Dachflächen speichern tagsüber Wärme und geben sie nachts nur langsam wieder ab. Gleichzeitig kann Regenwasser nicht versickern, und damit fehlt die kühlende Verdunstung. Zweitens die Bebauungsstruktur: Dichte, hohe Bebauung bremst den Wind. Die sogenannten Frischluftschneisen, also die Korridore, über die kühle Luft aus dem Umland in die Stadt strömen kann, werden zugebaut. Drittens, und das wird oft unterschätzt: die Abwärme. Klimaanlagen, Verkehr und Industrie geben zusätzlich Wärme ab. Und hier sehen Sie schon einen Teufelskreis: Je heißer die Stadt, desto mehr Klimaanlagen, desto mehr Abwärme."}, {"s": "Dozentin", "t": "Kommen wir zu den Folgen. Am gravierendsten sind die gesundheitlichen Auswirkungen. Besonders gefährlich sind die sogenannten Tropennächte, in denen die Temperatur nicht unter zwanzig Grad fällt. Der Körper kann sich dann nachts nicht erholen, und das betrifft vor allem ältere Menschen. Daneben gibt es ökonomische Folgen, etwa einen höheren Energieverbrauch für Kühlung."}, {"s": "Dozentin", "t": "Was kann man tun? Die wirksamste Einzelmaßnahme ist nach heutigem Stand mehr Grün: Bäume spenden Schatten und kühlen durch Verdunstung. Ein einzelner großer Stadtbaum hat einen Kühleffekt, der dem von mehreren Klimageräten entspricht. Zweitens helle Oberflächen, also Dächer und Straßenbeläge, die mehr Sonnenlicht reflektieren. Und drittens, auf der Ebene der Stadtplanung: Frischluftschneisen müssen freigehalten werden. Das heißt konkret, dass in bestimmten Gebieten eben nicht gebaut werden darf, auch wenn Wohnraum knapp ist. Und genau darin liegt der Konflikt, über den wir nächste Woche sprechen werden."}], "bank": ["Versiegelung", "Abwärme", "Tropennächte", "helle Oberflächen", "Frischluftschneisen freihalten", "mehr Stadtbäume", "Luftverschmutzung", "Lärm"], "qs": [{"type": "sel", "q": "Ursache 1: ___ (Wärme wird gespeichert, keine Verdunstung)", "a": "Versiegelung"}, {"type": "sel", "q": "Ursache 3: ___ (Klimaanlagen, Verkehr, Industrie)", "a": "Abwärme"}, {"type": "sel", "q": "Folge (Gesundheit): ___ – Körper kann sich nachts nicht erholen", "a": "Tropennächte"}, {"type": "sel", "q": "Maßnahme laut Dozentin am wirksamsten: ___", "a": "mehr Stadtbäume"}, {"type": "sel", "q": "Maßnahme Stadtplanung (im Konflikt mit Wohnungsbau): ___", "a": "Frischluftschneisen freihalten"}], "dur": 121}, {"id": "a5", "title": "Aufgabe 5 · Radiointerview: Schlaf und Lernen", "cn": "电台采访一位睡眠研究者。三选一。", "instr": "Sie hören ein Interview. Wählen Sie die richtige Antwort.", "script": [{"s": "Ansage", "t": "Aufgabe fünf. Sie hören ein Interview aus der Sendung „Campus und Wissen“. Wählen Sie bei jeder Aufgabe die richtige Antwort."}, {"s": "Moderator", "t": "Herzlich willkommen zu „Campus und Wissen“. Prüfungszeit ist Lernzeit, und für viele Studierende heißt das auch: wenig Schlaf. Bei mir im Studio ist Dr. Katrin Seifert, sie forscht am Schlaflabor der Universität. Frau Seifert, ist eine durchlernte Nacht vor der Prüfung wirklich so schlimm?"}, {"s": "Dr. Seifert", "t": "Kurz gesagt: ja. Und zwar weniger, weil man am nächsten Morgen müde ist, das kann man mit Kaffee noch einigermaßen ausgleichen. Das eigentliche Problem ist, dass ohne Schlaf ein großer Teil dessen, was man am Vortag gelernt hat, gar nicht erst dauerhaft gespeichert wird."}, {"s": "Moderator", "t": "Was passiert denn im Schlaf mit dem Gelernten?"}, {"s": "Dr. Seifert", "t": "Vereinfacht gesagt spielt das Gehirn in den Tiefschlafphasen die Informationen des Tages noch einmal ab und überträgt sie vom Kurzzeitspeicher in das Langzeitgedächtnis. Wir sprechen von Konsolidierung. Interessant ist, dass dabei nicht alles gleich behandelt wird. In unseren Studien wurde vor allem das besser behalten, von dem die Versuchspersonen wussten, dass sie es später brauchen würden."}, {"s": "Moderator", "t": "Das heißt, es lohnt sich, sich vor dem Schlafen bewusst zu machen, was prüfungsrelevant ist?"}, {"s": "Dr. Seifert", "t": "Genau das legen unsere Ergebnisse nahe. Eine kurze Wiederholung am Abend, zehn, fünfzehn Minuten, ist sehr effektiv. Was ich dagegen nicht empfehle, ist, bis kurz vor dem Einschlafen neuen, schwierigen Stoff zu lernen. Dann ist man oft so aufgewühlt, dass man schlecht einschläft."}, {"s": "Moderator", "t": "Viele Studierende schwören ja auf einen Mittagsschlaf. Bringt das etwas?"}, {"s": "Dr. Seifert", "t": "Durchaus, wenn er kurz ist. Zwanzig Minuten verbessern Aufmerksamkeit und Konzentration deutlich. Wer allerdings eine Stunde oder länger schläft, gerät in den Tiefschlaf und wacht dann oft benommen auf. Ein Ersatz für den Nachtschlaf ist der Mittagsschlaf aber in keinem Fall."}, {"s": "Moderator", "t": "Zum Schluss: Was raten Sie Studierenden konkret für die Prüfungsphase?"}, {"s": "Dr. Seifert", "t": "Das Wichtigste ist Regelmäßigkeit. Möglichst jeden Tag zur gleichen Zeit ins Bett gehen und aufstehen, auch am Wochenende. Das klingt banal, aber unser Körper liebt Routinen. Und wer lernen will, sollte den Schlaf nicht als verlorene Zeit betrachten, sondern als Teil des Lernens."}], "qs": [{"type": "mc", "q": "Was ist laut Dr. Seifert das Hauptproblem einer durchlernten Nacht?", "o": ["Man ist am Prüfungstag zu müde, um sich zu konzentrieren.", "Das Gelernte wird nicht ins Langzeitgedächtnis übertragen.", "Man trinkt zu viel Kaffee und wird nervös."], "a": 1}, {"type": "mc", "q": "Was zeigten die Studien des Schlaflabors?", "o": ["Im Schlaf wird alles Gelernte gleich gut gespeichert.", "Neue Informationen werden vor allem im Traumschlaf gespeichert.", "Wissen, das man später braucht, wird besser behalten."], "a": 2}, {"type": "mc", "q": "Was empfiehlt Dr. Seifert für den Abend?", "o": ["Den wichtigsten Stoff kurz zu wiederholen.", "Bis zum Einschlafen schwierigen neuen Stoff zu lernen.", "Abends gar nicht mehr zu lernen."], "a": 0}, {"type": "mc", "q": "Was sagt sie über den Mittagsschlaf?", "o": ["Er kann fehlenden Nachtschlaf ausgleichen.", "Er hilft, wenn er nicht länger als etwa zwanzig Minuten dauert.", "Er sollte mindestens eine Stunde dauern."], "a": 1}, {"type": "mc", "q": "Was ist ihr wichtigster Rat für die Prüfungsphase?", "o": ["Am Wochenende länger zu schlafen.", "Regelmäßige Schlafenszeiten einzuhalten.", "Weniger zu lernen und mehr zu schlafen."], "a": 1}], "dur": 123}, {"id": "a6", "title": "Aufgabe 6 · Diskussion: Anwesenheitspflicht an der Uni?", "cn": "圆桌讨论“大学该不该强制出勤”。判断每个观点是谁说的。", "instr": "Sie hören eine Diskussion. Wer vertritt welche Meinung? Ordnen Sie zu.", "people": ["Prof. Keller", "Aylin Demir", "Dr. Wolf"], "script": [{"s": "Ansage", "t": "Aufgabe sechs. Sie hören eine Diskussion zum Thema Anwesenheitspflicht an Hochschulen. Es diskutieren Professor Martin Keller, Aylin Demir vom Studierendenrat und Dr. Thomas Wolf, Hochschuldidaktiker. Ordnen Sie beim Hören die Aussagen den Personen zu."}, {"s": "Moderatorin", "t": "Herzlich willkommen zu unserer Diskussion. Herr Keller, Sie fordern eine Anwesenheitspflicht in allen Seminaren. Warum?"}, {"s": "Prof. Keller", "t": "Weil ein Seminar vom Austausch lebt. Wenn von dreißig angemeldeten Studierenden nur zwölf kommen, und dann jede Woche andere zwölf, dann kann ich keine Diskussion aufbauen. Das ist unfair gegenüber denen, die regelmäßig kommen und sich vorbereiten."}, {"s": "Moderatorin", "t": "Frau Demir, Sie sehen das anders."}, {"s": "Aylin Demir", "t": "Ja, ganz entschieden. Über die Hälfte der Studierenden arbeitet neben dem Studium, viele haben Kinder oder pflegen Angehörige. Eine Anwesenheitspflicht trifft genau diese Gruppen. Wir sind erwachsene Menschen und sollten selbst entscheiden können, wie wir lernen. Am Ende zählt doch, ob man die Prüfung besteht."}, {"s": "Prof. Keller", "t": "Aber genau das ist der Punkt. Die Statistik zeigt eindeutig: Wer regelmäßig anwesend ist, schneidet in den Prüfungen besser ab."}, {"s": "Dr. Wolf", "t": "Wenn ich da kurz einhaken darf: Diese Statistik ist richtig, aber sie beweist nicht, was Sie daraus schließen. Studierende, die ohnehin motiviert sind, kommen eher und schreiben bessere Noten. Ob die Anwesenheit selbst die Ursache ist, ist damit nicht gesagt."}, {"s": "Moderatorin", "t": "Herr Wolf, was wäre aus Ihrer Sicht die Lösung?"}, {"s": "Dr. Wolf", "t": "Ich halte von einer pauschalen Regel weder in die eine noch in die andere Richtung viel. In einer großen Vorlesung, die ohnehin aufgezeichnet wird, ist eine Pflicht sinnlos. In einem Laborpraktikum oder einem Sprachkurs, wo man nur durch Mitmachen lernt, kann sie dagegen gerechtfertigt sein. Man muss also nach Veranstaltungsform unterscheiden."}, {"s": "Aylin Demir", "t": "Damit könnte ich leben, wenn es dann klare Ausnahmeregeln gibt, zum Beispiel für Studierende mit Kindern."}, {"s": "Prof. Keller", "t": "Ausnahmen ja, aber sie dürfen nicht zur Regel werden. Sonst haben wir am Ende wieder leere Seminarräume. Und noch etwas: Lehrende sollten ihre Seminare natürlich auch so gestalten, dass sich das Kommen lohnt. Das gehört zur Wahrheit dazu."}, {"s": "Dr. Wolf", "t": "Da stimme ich Ihnen ausdrücklich zu. Die beste Anwesenheitspflicht ist eine gute Lehrveranstaltung."}], "qs": [{"type": "who", "q": "Ohne regelmäßige Teilnahme ist keine sinnvolle Diskussion im Seminar möglich.", "a": 0}, {"type": "who", "q": "Eine Anwesenheitspflicht benachteiligt Studierende, die arbeiten oder Familie haben.", "a": 1}, {"type": "who", "q": "Ein statistischer Zusammenhang ist noch kein Beweis für eine Ursache.", "a": 2}, {"type": "who", "q": "Ob eine Pflicht sinnvoll ist, hängt von der Art der Lehrveranstaltung ab.", "a": 2}, {"type": "who", "q": "Ein Kompromiss ist akzeptabel, wenn es feste Ausnahmen gibt.", "a": 1}, {"type": "who", "q": "Auch Lehrende tragen Verantwortung dafür, dass Studierende kommen.", "a": 0}], "dur": 133}, {"id": "a7", "title": "Aufgabe 7 · Vortrag: Mikroplastik im Boden", "cn": "学术报告（土壤中的微塑料）。选出最能概括每一部分要点的说法（四选一）。", "instr": "Sie hören einen Vortrag. Welche Aussage gibt den Inhalt am besten wieder?", "script": [{"s": "Ansage", "t": "Aufgabe sieben. Sie hören einen Vortrag auf einer studentischen Fachtagung. Wählen Sie bei jeder Aufgabe die Aussage, die den Inhalt am besten wiedergibt."}, {"s": "Referent", "t": "Meine Damen und Herren, wenn wir an Mikroplastik denken, haben wir meist Bilder von Stränden und Meerestieren im Kopf. Das ist verständlich, denn die Forschung hat sich jahrzehntelang fast ausschließlich auf die Meere konzentriert. Inzwischen gehen viele Fachleute aber davon aus, dass die Belastung der Böden um ein Vielfaches höher ist als die der Ozeane. Über diese weniger sichtbare Seite des Problems möchte ich heute sprechen."}, {"s": "Referent", "t": "Zunächst: Wie gelangt Plastik in den Boden? Eine wichtige Quelle ist ausgerechnet etwas, das wir als ökologisch sinnvoll betrachten, nämlich Kompost und Klärschlamm, die als Dünger auf Felder ausgebracht werden. Darin befinden sich Plastikreste aus falsch entsorgtem Biomüll oder aus Kleidung, deren Fasern beim Waschen ins Abwasser gelangen. Hinzu kommen Folien aus der Landwirtschaft selbst, die mit der Zeit zerfallen, und der Abrieb von Autoreifen entlang von Straßen."}, {"s": "Referent", "t": "Was richtet das Mikroplastik im Boden an? Hier muss ich vorsichtig sein, denn die Forschung steht noch am Anfang. Laborversuche zeigen, dass Plastikpartikel die Struktur des Bodens verändern können. Er speichert dann zum Beispiel Wasser schlechter. Auch Regenwürmer, die für fruchtbare Böden unverzichtbar sind, wachsen in belasteten Böden langsamer. Ob diese Effekte unter realen Bedingungen auf dem Feld genauso stark auftreten, wissen wir aber noch nicht sicher."}, {"s": "Referent", "t": "Und was folgt daraus? Ich plädiere nicht dafür, auf Kompost zu verzichten, das wäre ökologisch der falsche Weg. Entscheidend ist, den Eintrag an der Quelle zu verringern: durch bessere Mülltrennung, durch Filter in Waschmaschinen und durch strengere Grenzwerte für Plastik in Dünger. Vor allem aber brauchen wir standardisierte Messmethoden. Bisher verwendet fast jedes Labor ein eigenes Verfahren, sodass sich die Ergebnisse kaum vergleichen lassen. Solange das so bleibt, kann die Politik keine fundierten Grenzwerte festlegen."}], "qs": [{"type": "mc", "q": "Einleitung:", "o": ["Mikroplastik im Meer ist inzwischen kein großes Problem mehr.", "Die Böden sind vermutlich stärker belastet als die Meere, wurden aber lange kaum erforscht.", "Die Belastung der Böden und der Meere ist ungefähr gleich hoch.", "Die Forschung hat sich schon immer stärker für Böden als für Meere interessiert."], "a": 1}, {"type": "mc", "q": "Quellen:", "o": ["Mikroplastik gelangt vor allem durch Abrieb von Autoreifen in den Boden.", "Plastik im Boden stammt fast ausschließlich aus der Industrie.", "Paradoxerweise trägt auch umweltfreundliche Düngung zur Belastung bei.", "Biomüll enthält kein Plastik und ist deshalb unproblematisch."], "a": 2}, {"type": "mc", "q": "Auswirkungen:", "o": ["Es ist bewiesen, dass Mikroplastik die Ernten auf den Feldern halbiert.", "Mikroplastik hat nach heutigem Wissen keinerlei Auswirkungen auf den Boden.", "Erste Laborergebnisse deuten auf Schäden hin, die auf dem Feld aber noch nicht gesichert sind.", "Regenwürmer helfen, das Mikroplastik im Boden abzubauen."], "a": 2}, {"type": "mc", "q": "Schlussfolgerung:", "o": ["Landwirte sollten keinen Kompost mehr verwenden.", "Vor allem vergleichbare Messverfahren sind nötig, damit Grenzwerte möglich werden.", "Die Politik sollte sofort strenge Grenzwerte ohne weitere Forschung einführen.", "Filter in Waschmaschinen lösen das Problem vollständig."], "a": 1}], "dur": 108}];
+const LETTERS = 'ABCD';
+const KEY = 'testdaf-hv-1';
+let st = {mode:'exam', ans:{}, played:{}, submitted:false, over:{}};
+try { const s = JSON.parse(localStorage.getItem(KEY)||'null'); if (s) st = Object.assign(st, s); } catch(e){}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch(e){} };
+const TOTAL = DATA.reduce((n,p)=>n+p.qs.length,0);
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = t => { t=Math.max(0,Math.floor(t||0)); return Math.floor(t/60)+':'+String(t%60).padStart(2,'0'); };
+const norm = s => String(s||'').toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss').replace(/[\s.,\-–€]/g,'').replace(/euro$/,'');
+const PLAY='<svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg>', PAUSE='<svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg>';
+
+let qn = 0;
+const root = document.getElementById('parts');
+DATA.forEach(p => {
+  const sec = document.createElement('section'); sec.className='sheet'; sec.id='sec-'+p.id;
+  let h = `<h2>${esc(p.title)}</h2><p class="instr">${esc(p.instr)}</p><p class="cn">${esc(p.cn)}</p>
+  <div class="player"><button class="play" id="pb-${p.id}" aria-label="播放">${PLAY}</button>
+   <div class="track"><div class="rail" id="rail-${p.id}"><div class="fill" id="fill-${p.id}"></div></div>
+   <div class="meta"><span id="tm-${p.id}">0:00 / ${fmt(p.dur)}</span><span id="st-${p.id}"></span></div></div>
+   <audio id="au-${p.id}" src="audio/${p.id}.mp3" preload="metadata"></audio></div>`;
+  if (p.bank) h += `<div class="bank" aria-label="可选词">${p.bank.map(b=>`<span class="chip">${esc(b)}</span>`).join('')}</div>`;
+  h += '<ol class="qs">';
+  p.qs.forEach((q,i) => {
+    qn++; const k = p.id+'_'+i; q.k=k; q.n=qn;
+    h += `<li class="q" id="q-${k}"><div class="qt"><span class="num">${qn}</span><span>${esc(q.q)}</span></div>`;
+    if (q.type==='mc') h += '<div class="opts">'+q.o.map((o,j)=>`<label class="opt"><input type="radio" name="${k}" value="${j}"><span><b>${LETTERS[j]}</b>&nbsp; ${esc(o)}</span></label>`).join('')+'</div>';
+    if (q.type==='tf') h += '<div class="row">'+['richtig','falsch'].map((o,j)=>`<label class="opt"><input type="radio" name="${k}" value="${j}"><span>${o}</span></label>`).join('')+'</div>';
+    if (q.type==='who') h += '<div class="row">'+p.people.map((o,j)=>`<label class="opt"><input type="radio" name="${k}" value="${j}"><span>${esc(o)}</span></label>`).join('')+'</div>';
+    if (q.type==='gap') h += `<input type="text" id="in-${k}" name="${k}" autocomplete="off" spellcheck="false" aria-label="答案">`;
+    if (q.type==='sel') h += `<select id="in-${k}" name="${k}" aria-label="选择"><option value="">— bitte wählen —</option>${p.bank.map(b=>`<option>${esc(b)}</option>`).join('')}</select>`;
+    h += `<div class="fb" id="fb-${k}"></div></li>`;
+  });
+  h += '</ol>';
+  h += `<details class="tr" id="tr-${p.id}" hidden><summary>听力原文（Transkript）</summary>${p.script.map(l=>`<p><b>${esc(l.s)}：</b>${esc(l.t)}</p>`).join('')}</details>`;
+  sec.innerHTML = h; root.appendChild(sec);
+});
+
+// restore + record answers
+DATA.forEach(p => p.qs.forEach(q => {
+  const v = st.ans[q.k];
+  if (q.type==='gap'||q.type==='sel') { const el=document.getElementById('in-'+q.k); if (v!=null) el.value=v; el.addEventListener('input',()=>{st.ans[q.k]=el.value;save();upd();}); }
+  else document.getElementsByName(q.k).forEach(r => { if (v!=null && +r.value===+v) r.checked=true; r.addEventListener('change',()=>{st.ans[q.k]=+r.value;save();upd();}); });
+}));
+function answered(q){ const v=st.ans[q.k]; return v!=null && String(v).trim()!==''; }
+function upd(){ let n=0; DATA.forEach(p=>p.qs.forEach(q=>{if(answered(q))n++;})); document.getElementById('prog').textContent=`已答 ${n}/${TOTAL}`; }
+upd();
+
+// audio
+const audios = {};
+DATA.forEach(p => {
+  const au=document.getElementById('au-'+p.id), pb=document.getElementById('pb-'+p.id), fill=document.getElementById('fill-'+p.id), tm=document.getElementById('tm-'+p.id), ss=document.getElementById('st-'+p.id), rail=document.getElementById('rail-'+p.id);
+  audios[p.id]=au;
+  const refresh = () => {
+    const exam = st.mode==='exam' && !st.submitted, done = st.played[p.id]==='done';
+    rail.classList.toggle('seekable', !exam);
+    if (au.paused) { pb.innerHTML=PLAY; pb.setAttribute('aria-label','播放'); }
+    else { pb.innerHTML=PAUSE; pb.setAttribute('aria-label','暂停'); }
+    pb.disabled = exam && (done || !au.paused);
+    ss.textContent = exam ? (done ? '已播放（考试模式只能听一次）' : (au.paused ? '只能播放一次' : '播放中…')) : '练习模式';
+  };
+  pb.addEventListener('click', () => {
+    if (au.paused) {
+      Object.values(audios).forEach(a=>{ if(a!==au && !a.paused) a.pause(); });
+      if (st.mode==='exam' && !st.submitted) { au.currentTime=0; st.played[p.id]='started'; save(); }
+      au.play().catch(()=>{ ss.textContent='音频加载失败，请刷新页面'; });
+    } else if (!(st.mode==='exam' && !st.submitted)) au.pause();
+    refresh();
+  });
+  au.addEventListener('timeupdate', () => { const d=au.duration||p.dur; fill.style.width=(au.currentTime/d*100)+'%'; tm.textContent=fmt(au.currentTime)+' / '+fmt(d); });
+  au.addEventListener('ended', () => { if (st.mode==='exam' && !st.submitted) { st.played[p.id]='done'; save(); } refresh(); });
+  au.addEventListener('pause', refresh); au.addEventListener('play', refresh);
+  rail.addEventListener('click', e => { if (st.mode==='exam' && !st.submitted) return; const r=rail.getBoundingClientRect(); au.currentTime=(e.clientX-r.left)/r.width*(au.duration||p.dur); });
+  // exam mode: reloading during playback counts as played
+  if (st.played[p.id]==='started') st.played[p.id]='done';
+  au._refresh = refresh; refresh();
+});
+save();
+
+function setMode(m){
+  if (m===st.mode) return;
+  st.mode=m; save();
+  document.getElementById('m-exam').setAttribute('aria-pressed', m==='exam');
+  document.getElementById('m-prac').setAttribute('aria-pressed', m==='prac');
+  Object.values(audios).forEach(a=>{ a.pause(); a._refresh(); });
+}
+document.getElementById('m-exam').onclick=()=>setMode('exam');
+document.getElementById('m-prac').onclick=()=>setMode('prac');
+document.getElementById('m-exam').setAttribute('aria-pressed', st.mode==='exam');
+document.getElementById('m-prac').setAttribute('aria-pressed', st.mode==='prac');
+
+function correctText(p,q){
+  if (q.type==='mc') return LETTERS[q.a]+' '+q.o[q.a];
+  if (q.type==='tf') return q.a?'richtig':'falsch';
+  if (q.type==='who') return p.people[q.a];
+  if (q.type==='gap') return q.a[0];
+  return q.a;
+}
+function isRight(p,q){
+  const v=st.ans[q.k]; if (st.over[q.k]) return true;
+  if (v==null||String(v).trim()==='') return false;
+  if (q.type==='tf') return (+v===0)===q.a;
+  if (q.type==='mc'||q.type==='who') return +v===q.a;
+  if (q.type==='gap') return q.a.map(norm).includes(norm(v));
+  return v===q.a;
+}
+function grade(){
+  let tot=0; const rows=[];
+  DATA.forEach(p=>{
+    let s=0;
+    p.qs.forEach(q=>{
+      const ok=isRight(p,q); if(ok) s++;
+      const li=document.getElementById('q-'+q.k), fb=document.getElementById('fb-'+q.k);
+      li.classList.toggle('ok',ok); li.classList.toggle('bad',!ok);
+      fb.innerHTML = ok ? (st.over[q.k]?'✓ 已手动算对':'✓ 正确') : `✗ 正确答案：<b>${esc(correctText(p,q))}</b>`;
+      if (!ok && q.type==='gap' && answered(q)) {
+        const b=document.createElement('button'); b.className='override'; b.textContent='我的写法也对，算我对';
+        b.onclick=()=>{st.over[q.k]=true;save();grade();}; fb.appendChild(document.createTextNode('　')); fb.appendChild(b);
+      }
+    });
+    document.getElementById('tr-'+p.id).hidden=false;
+    tot+=s; rows.push([p.title.split(' · ')[0]+' · '+p.title.split(' · ')[1], s, p.qs.length]);
+  });
+  document.querySelectorAll('#parts input,#parts select').forEach(el=>el.disabled=true);
+  const pct=tot/TOTAL;
+  const lvl = pct>=.85?'接近 TDN 5（C1 高段）':pct>=.65?'接近 TDN 4（B2–C1）':pct>=.45?'接近 TDN 3（B2）':'低于 TDN 3';
+  const r=document.getElementById('result'); r.hidden=false;
+  r.innerHTML = `<div class="eyebrow">Ergebnis</div><div class="big">${tot} / ${TOTAL}</div>
+   <p style="margin:0">正确率 ${Math.round(pct*100)}%，粗略对应：<b>${lvl}</b>。这只是按正确率的大致参考，不是官方换算。</p>
+   <div class="tbl"><table><thead><tr><th>部分</th><th>得分</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${r[1]} / ${r[2]}</td></tr>`).join('')}</tbody></table></div>
+   <p class="note">每部分下方现在可以展开听力原文，音频也解锁了，可以对照原文重听错题。</p>`;
+  document.getElementById('submitBox').hidden=true;
+  Object.values(audios).forEach(a=>a._refresh());
+}
+let armed=false;
+document.getElementById('submit').onclick=()=>{
+  const left=DATA.reduce((n,p)=>n+p.qs.filter(q=>!answered(q)).length,0);
+  const cn=document.getElementById('confirmNote');
+  if (left && !armed) { armed=true; cn.hidden=false; cn.textContent=`还有 ${left} 题没答。再点一次就交卷。`; return; }
+  st.submitted=true; save(); grade(); document.getElementById('result').scrollIntoView({behavior:'smooth'});
+};
+let resetArmed=false;
+document.getElementById('reset').onclick=e=>{
+  if(!resetArmed){resetArmed=true;e.target.textContent='确定清空？再点一次';setTimeout(()=>{resetArmed=false;e.target.textContent='重新开始';},4000);return;}
+  try{localStorage.removeItem(KEY);}catch(_){}
+  location.reload();
+};
+if (st.submitted) grade();
+</script>
+
+</body></html>
