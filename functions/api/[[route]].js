@@ -495,7 +495,7 @@ Object.assign(routes, {
 
 // 德福听力自测：匿名收集每次交卷，供统计全体正确率（不收集姓名、邮箱、IP）
 const TD_ID = /^[A-Za-z0-9_-]{4,40}$/;
-const TD_KINDS = ['papier-1', 'papier-2'];
+const TD_KINDS = Array.from({ length: 10 }, (_, i) => 'papier-' + (i + 1));
 Object.assign(routes, {
   async 'POST /api/testdaf/submit'({ request, db }) {
     const b = await body(request);
