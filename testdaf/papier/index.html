@@ -113,6 +113,12 @@ footer{font-size:12px;color:var(--mute)}
   </div>
 
   <section class="result" id="result" hidden></section>
+  <section class="sheet" id="history">
+    <h2>作答记录</h2>
+    <p class="cn" id="histNote">每次交卷都会自动记录在这台设备的浏览器里：日期、套题、分数和每题的作答。</p>
+    <div class="tbl"><table><thead><tr><th>时间（德国）</th><th>套题</th><th>H1 / H2 / H3</th><th>总分</th></tr></thead><tbody id="histBody"><tr><td colspan="4" class="cn">还没有记录，做完一套交卷后会出现在这里。</td></tr></tbody></table></div>
+    <div id="weak"></div>
+  </section>
   <footer>原创模拟题，供个人练习。语音由 Piper 德语模型合成（dii、miro 为 OpenVoiceOS 模型，CC BY-NC-SA 4.0；thorsten）。官方模拟题可在 testdaf.de 的备考区找到。　<a href="../">← 德福听力首页</a></footer>
 </div>
 
@@ -243,7 +249,7 @@ function grade(){
       else fb.innerHTML = ok ? (man?'✓ 已手动算对':'✓ 正确') : `✗ 正确答案：<b>${esc(correctText(p,q))}</b>`;
       if ((q.type==='gap' && !ok && answered(q)) || q.type==='open') {
         const b=document.createElement('button'); b.className='override'; b.textContent= ok ? '其实不对，算错' : '我的答案意思对，算我对';
-        b.onclick=()=>{st.over[q.k]=!ok;save();grade();}; fb.appendChild(b);
+        b.onclick=()=>{st.over[q.k]=!ok;save();grade();record();}; fb.appendChild(b);
       }
     });
     document.getElementById('tr-'+p.id).hidden=false;
@@ -265,7 +271,7 @@ document.getElementById('submit').onclick=()=>{
   const left=DATA.reduce((n,p)=>n+p.qs.filter(q=>!answered(q)).length,0);
   const cn=document.getElementById('confirmNote');
   if (left && !armed) { armed=true; cn.hidden=false; cn.textContent=`还有 ${left} 题没答。再点一次就交卷。`; return; }
-  st.submitted=true; save(); grade(); document.getElementById('result').scrollIntoView({behavior:'smooth'});
+  st.submitted=true; st.runId=Date.now().toString(36); st.runAt=new Date().toISOString(); save(); grade(); record(); document.getElementById('result').scrollIntoView({behavior:'smooth'});
 };
 let resetArmed=false;
 document.getElementById('reset').onclick=e=>{
@@ -273,6 +279,70 @@ document.getElementById('reset').onclick=e=>{
   try{localStorage.removeItem(KEY);}catch(_){}
   location.reload();
 };
+
+// ---- 作答记录：已登录 claude.ai 时存到页面数据库（所有设备可见，Claude 也能读来分析），否则存在本机浏览器 ----
+const LKEY='testdaf-hv-pb-history';
+let DB=null, UID=null, runs=[], allDocs=null;
+function runRecord(){
+  const parts=DATA.map(p=>p.qs.filter(q=>isRight(p,q)).length);
+  const answers={}; DATA.forEach(p=>p.qs.forEach(q=>{ answers[q.k]={v: st.ans[q.k]??null, ok: isRight(p,q)}; }));
+  return {id:st.runId, set:SID, at:st.runAt||new Date().toISOString(), mode:st.mode, parts, score:parts.reduce((a,b)=>a+b,0), total:TOTAL, answers};
+}
+function localRuns(){ try{ return JSON.parse(localStorage.getItem(LKEY)||'[]'); }catch(e){ return []; } }
+let writing=Promise.resolve();
+async function record(){
+  if(!st.runId) return;
+  const r=runRecord();
+  runs=runs.filter(x=>x.id!==r.id).concat([r]);
+  if(!DB){ try{ const l=localRuns().filter(x=>x.id!==r.id).concat([r]); localStorage.setItem(LKEY,JSON.stringify(l)); runs=l; }catch(e){} renderHist(); return; }
+  renderHist();
+  writing=writing.then(()=>DB.doc('attempts/'+UID).set({runs, updatedAt:new Date().toISOString()})).catch(e=>{
+    document.getElementById('histNote').textContent='这次记录没能存到云端（'+(e&&e.code||'错误')+'），已先保存在本机浏览器。';
+    try{ localStorage.setItem(LKEY,JSON.stringify(runs)); }catch(_){}
+  });
+}
+const berlin=iso=>{ try{ return new Date(iso).toLocaleString('zh-CN',{timeZone:'Europe/Berlin',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}); }catch(e){ return iso.slice(0,16).replace('T',' '); } };
+function qText(k){ for(const set of SETS) for(const p of set) for(const q of p.qs) if(q.k===k) return q; return null; }
+function renderHist(){
+  const src = allDocs || runs;
+  const rows=[...src].sort((a,b)=>b.at.localeCompare(a.at));
+  const body=document.getElementById('histBody');
+  if(!rows.length){ body.innerHTML='<tr><td colspan="4" class="cn">还没有记录，做完一套交卷后会出现在这里。</td></tr>'; document.getElementById('weak').innerHTML=''; return; }
+  body.innerHTML=rows.slice(0,50).map(r=>`<tr><td>${berlin(r.at)}${r.who?' · '+esc(r.who):''}</td><td>第 ${r.set} 套${r.mode==='prac'?'（练习）':''}</td><td>${r.parts.join(' / ')}</td><td>${r.score} / ${r.total}</td></tr>`).join('');
+  // 当前这套最常错的题
+  const mine=rows.filter(r=>r.set===SID); const cnt={};
+  mine.forEach(r=>Object.entries(r.answers||{}).forEach(([k,a])=>{ cnt[k]=cnt[k]||[0,0]; cnt[k][1]++; if(!a.ok) cnt[k][0]++; }));
+  const bad=Object.entries(cnt).filter(([k,c])=>c[0]>0).sort((a,b)=>b[1][0]/b[1][1]-a[1][0]/a[1][1]).slice(0,6);
+  document.getElementById('weak').innerHTML = bad.length ? `<p class="cn" style="margin-top:10px">第 ${SID} 套错得最多的题（共 ${mine.length} 次作答）：</p><ul style="margin:6px 0 0;padding-left:20px">${bad.map(([k,c])=>{const q=qText(k);return `<li>${q?q.n+'. '+esc(q.q):k} — 错 ${c[0]}/${c[1]} 次</li>`;}).join('')}</ul>` : '';
+}
+runs=localRuns(); renderHist();
+(async()=>{
+  try{
+    if(!window.claude||!claude.use) return;
+    const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);
+    if(!db||!user) return;
+    const id=await user.id(); if(!id) return;
+    DB=db; UID=id;
+    document.getElementById('histNote').textContent='每次交卷自动记录到你的账号（换设备也能看到）。';
+    const snap=await db.doc('attempts/'+id).get();
+    const cloud=(snap.exists && snap.data().runs)||[];
+    const local=localRuns(); const ids=new Set(cloud.map(r=>r.id));
+    runs=cloud.concat(local.filter(r=>!ids.has(r.id)));
+    if(local.some(r=>!ids.has(r.id))) { await db.doc('attempts/'+id).set({runs,updatedAt:new Date().toISOString()}); try{localStorage.removeItem(LKEY);}catch(e){} }
+    if(user.isOwner()){
+      const all=await db.collection('attempts').get();
+      const others=all.docs.filter(d=>d.id!==id);
+      if(others.length){
+        const ps=await user.profiles(others.map(d=>d.id)).catch(()=>({}));
+        allDocs=runs.slice();
+        others.forEach(d=>((d.data()||{}).runs||[]).forEach(r=>allDocs.push(Object.assign({},r,{who:(ps[d.id]&&ps[d.id].name)||'其他人'}))));
+        document.getElementById('histNote').textContent=`每次交卷自动记录。你是页面所有者，这里也显示其他 ${others.length} 位作答者的记录。`;
+      }
+    }
+    renderHist();
+  }catch(e){ /* 没有数据库时继续用本机记录 */ }
+})();
+
 if (st.submitted) grade();
 </script>
 
