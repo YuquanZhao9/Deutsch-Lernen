@@ -116,9 +116,21 @@ footer{font-size:12px;color:var(--mute)}
   <section class="result" id="result" hidden></section>
   <section class="sheet" id="history">
     <h2>作答记录</h2>
-    <p class="cn" id="histNote">每次交卷都会自动记录在这台设备的浏览器里：日期、套题、分数和每题的作答。</p>
+    <p class="cn" id="histNote">每次交卷都会自动记录：日期、套题、分数和每题的作答。</p>
     <div class="tbl"><table><thead><tr><th>时间（德国）</th><th>套题</th><th>H1 / H2 / H3</th><th>总分</th></tr></thead><tbody id="histBody"><tr><td colspan="4" class="cn">还没有记录，做完一套交卷后会出现在这里。</td></tr></tbody></table></div>
     <div id="weak"></div>
+<div id="syncBox" style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+  <p class="cn" style="margin:0">换浏览器或换设备也想看到记录？不用注册：记下这个<b>同步码</b>，在别的浏览器里输入它就行（拿到同步码的人都能看到这份记录）。</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+    <code id="syncCode" style="font:600 16px var(--mono);letter-spacing:.08em;background:var(--accent-soft);padding:6px 10px;border-radius:6px">……</code>
+    <button class="btn ghost" id="syncCopy" type="button">复制</button>
+    <span class="cn" id="syncState"></span>
+  </div>
+  <form id="syncForm" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+    <input type="text" id="syncInput" placeholder="输入另一台设备上的同步码" autocomplete="off" style="width:240px">
+    <button class="btn ghost" type="submit">使用这个同步码</button>
+  </form>
+</div>
   </section>
   <footer>原创模拟题，供个人练习。语音由 Piper 德语模型合成（dii、miro 为 OpenVoiceOS 模型，CC BY-NC-SA 4.0；thorsten）。官方模拟题可在 testdaf.de 的备考区找到。　<a href="../">← 德福听力首页</a></footer>
 </div>
@@ -316,7 +328,7 @@ async function record(){
   if(!st.runId) return;
   const r=runRecord();
   runs=runs.filter(x=>x.id!==r.id).concat([r]);
-  if(!DB){ try{ const l=localRuns().filter(x=>x.id!==r.id).concat([r]); localStorage.setItem(LKEY,JSON.stringify(l)); runs=l; }catch(e){} renderHist(); return; }
+  if(!DB){ try{ const l=localRuns().filter(x=>x.id!==r.id).concat([r]); localStorage.setItem(LKEY,JSON.stringify(l)); runs=l; }catch(e){} renderHist(); if(window.__syncPush) window.__syncPush(runs); return; }
   renderHist();
   writing=writing.then(()=>DB.doc('attempts/'+UID).set({runs, updatedAt:new Date().toISOString()})).catch(e=>{
     document.getElementById('histNote').textContent='这次记录没能存到云端（'+(e&&e.code||'错误')+'），已先保存在本机浏览器。';
@@ -338,6 +350,7 @@ function renderHist(){
   document.getElementById('weak').innerHTML = bad.length ? `<p class="cn" style="margin-top:10px">第 ${SID} 套错得最多的题（共 ${mine.length} 次作答）：</p><ul style="margin:6px 0 0;padding-left:20px">${bad.map(([k,c])=>{const q=qText(k);return `<li>${q?q.n+'. '+esc(q.q):k} — 错 ${c[0]}/${c[1]} 次</li>`;}).join('')}</ul>` : '';
 }
 runs=localRuns(); renderHist();
+window.__tdRuns={ get:()=>runs, set:r=>{ runs=r; try{ localStorage.setItem(LKEY,JSON.stringify(r)); }catch(e){} renderHist(); } };
 (async()=>{
   try{
     if(!window.claude||!claude.use) return;
@@ -368,4 +381,34 @@ runs=localRuns(); renderHist();
 if (st.submitted) grade();
 </script>
 
+<script>
+(function(){
+  const API = /pages\.dev$/.test(location.hostname) ? '/api' : 'https://deutsch-lernen-1ca.pages.dev/api';
+  const CK='testdaf-sync-code', A='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const fmt=c=>c.slice(0,4)+'-'+c.slice(4,8)+'-'+c.slice(8);
+  const clean=c=>String(c||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+  let code=null; try{ code=localStorage.getItem(CK); }catch(e){}
+  if(!code){ const b=crypto.getRandomValues(new Uint8Array(10)); code=[...b].map(x=>A[x%A.length]).join(''); try{ localStorage.setItem(CK,code); }catch(e){} }
+  const $=id=>document.getElementById(id), state=t=>{ $('syncState').textContent=t; };
+  $('syncCode').textContent=fmt(code);
+  $('syncCopy').onclick=()=>{ const t=fmt(code); (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>state('已复制'),()=>{ const r=document.createRange(); r.selectNodeContents($('syncCode')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); state('已选中，请手动复制'); }); };
+  const merge=(a,b)=>{ const m=new Map(); a.concat(b).forEach(r=>m.set(r.id,r)); return [...m.values()]; };
+  async function push(runs){
+    try{ const r=await fetch(API+'/testdaf/runs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({code,runs})}); const j=await r.json(); if(!r.ok) throw new Error(j.error); window.__tdRuns.set(j.runs); state('已同步'); }
+    catch(e){ state('暂时没能同步（'+(e.message||'网络错误')+'），记录先存在本机'); }
+  }
+  async function pull(){
+    if(location.protocol==='file:'){ $('syncBox').hidden=true; return; }
+    state('同步中…');
+    try{ const r=await fetch(API+'/testdaf/runs?code='+code); const j=await r.json(); if(!r.ok) throw new Error(j.error);
+      const local=window.__tdRuns.get(), all=merge(j.runs,local);
+      if(all.length!==j.runs.length) await push(all); else { window.__tdRuns.set(all); state('已同步'); } }
+    catch(e){ state('暂时连不上同步服务，记录先存在本机'); }
+  }
+  window.__syncPush=push;
+  $('syncForm').addEventListener('submit',e=>{ e.preventDefault(); const c=clean($('syncInput').value); if(!/^[A-HJ-NP-Z2-9]{10}$/.test(c)){ state('同步码是 10 位字母和数字，请检查'); return; }
+    code=c; try{ localStorage.setItem(CK,c); }catch(_){} $('syncCode').textContent=fmt(c); $('syncInput').value=''; pull(); });
+  pull();
+})();
+</script>
 </body></html>

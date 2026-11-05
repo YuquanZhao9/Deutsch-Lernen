@@ -49,6 +49,7 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS settings (user_id TEXT PRIMARY KEY, translate TEXT)`,
   `CREATE TABLE IF NOT EXISTS verifies (user_id TEXT PRIMARY KEY, token TEXT NOT NULL, expires INTEGER NOT NULL, sent INTEGER NOT NULL)`,
   `CREATE INDEX IF NOT EXISTS verifies_token ON verifies(token)`,
+  `CREATE TABLE IF NOT EXISTS testdaf_runs (code TEXT PRIMARY KEY, data TEXT NOT NULL, t INTEGER NOT NULL)`,
 ];
 let schemaReady = null;
 // columns added after the first release: ALTER fails harmlessly once they exist
@@ -463,6 +464,29 @@ Object.assign(routes, {
     }
     if (!env.AI) fail(503, '还没有可用的句子翻译：请在账号页填写你自己的翻译接口');
     return { text: await defaultTranslate(env.AI, text, to), source: 'default' };
+  },
+});
+
+// 德福听力自测：不用注册，用一个随机同步码在不同浏览器之间同步作答记录（拿到同步码的人都能读写这份记录）
+const TD_CODE = /^[A-HJ-NP-Z2-9]{10}$/;
+const tdCode = c => { c = String(c || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if (!TD_CODE.test(c)) fail(400, '同步码格式不对'); return c; };
+const tdClean = runs => (Array.isArray(runs) ? runs : []).filter(r => r && typeof r.id === 'string' && r.id.length <= 40 && typeof r.at === 'string');
+Object.assign(routes, {
+  async 'GET /api/testdaf/runs'({ db, url }) {
+    const row = await db.prepare('SELECT data FROM testdaf_runs WHERE code = ?').bind(tdCode(url.searchParams.get('code'))).first();
+    return { runs: row ? JSON.parse(row.data) : [] };
+  },
+  async 'POST /api/testdaf/runs'({ request, db }) {
+    const b = await body(request), code = tdCode(b.code);
+    const row = await db.prepare('SELECT data FROM testdaf_runs WHERE code = ?').bind(code).first();
+    const map = new Map(tdClean(row ? JSON.parse(row.data) : []).map(r => [r.id, r]));
+    for (const r of tdClean(b.runs)) map.set(r.id, r);
+    const runs = [...map.values()].sort((x, y) => x.at.localeCompare(y.at)).slice(-500);
+    const data = JSON.stringify(runs);
+    if (data.length > MAX_DOC) fail(413, '记录太多了，最多保留 500 次作答');
+    await db.prepare('INSERT INTO testdaf_runs (code, data, t) VALUES (?, ?, ?) ON CONFLICT(code) DO UPDATE SET data = excluded.data, t = excluded.t')
+      .bind(code, data, Date.now()).run();
+    return { runs };
   },
 });
 
