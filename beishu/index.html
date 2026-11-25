@@ -473,17 +473,42 @@ function save() {
 }
 const cls = () => S.classes[S.cur] || S.classes[0];
 const rkey = (cid, date) => cid + '|' + date;
+/* 同一天可以背好几项：读背记录的键是 班级|日期（第一项）、班级|日期|2、|3 …；每项各有自己的名单状态 */
+const slotNo = k => +(k.split('|')[2] || 1);
+const keyCmp = (a, b) => { const [, da] = a.split('|'), [, db] = b.split('|'); return da.localeCompare(db) || slotNo(a) - slotNo(b); };
+const dayKeys = (cid, date) => { const b = rkey(cid, date); return Object.keys(S.records).filter(k => k === b || k.startsWith(b + '|')).sort(keyCmp); };
+const classKeys = (store, cid, from = '', to = '9999') => Object.keys(store).filter(k => { const [c, d] = k.split('|'); return c === cid && d >= from && d <= to; }).sort(keyCmp);
+const slotSel = {};
+function activeKey(cid, date) {
+  const b = rkey(cid, date), sel = slotSel[b];
+  if (sel && (S.records[sel] || sel === b)) return sel;
+  const ks = dayKeys(cid, date); return ks.length ? ks[ks.length - 1] : b;
+}
+const hasMarks = r => !!r && (Object.keys(r.s || {}).length > 0 || Object.keys(r.n || {}).length > 0);
+// 选了新的背诵内容：当前这项已经有人打卡，就另开一项（名单清空）；还没打卡就直接改内容
+function chooseContent(cid, date, content, pid) {
+  const b = rkey(cid, date), ks = dayKeys(cid, date);
+  const same = ks.find(k => S.records[k].content === content);
+  const ak = activeKey(cid, date), r = S.records[ak];
+  if (same) { if (r && ak !== same && !hasMarks(r)) delete S.records[ak]; slotSel[b] = same; return 'switch'; }
+  let k = ak, how = 'rename';
+  if (hasMarks(r)) { const n = Math.max(1, ...ks.map(slotNo)) + 1; k = b + '|' + n; how = 'new'; }
+  const nr = S.records[k] || (S.records[k] = { content: '', s: {}, n: {} });
+  nr.content = content; if (pid) nr.pid = pid; else delete nr.pid;
+  slotSel[b] = k; return how;
+}
 const rec = (mod, cid = cls().id, date = S.date, create = false) => {
-  const store = S[MODS[mod].store], k = rkey(cid, date);
+  const store = S[MODS[mod].store], k = mod === 'recite' ? activeKey(cid, date) : rkey(cid, date);
   if (!store[k] && create) store[k] = mod === 'recite' ? { content: '', s: {}, n: {} } : { s: {} };
   return store[k];
 };
 function prune(mod, cid, date) {
-  const store = S[MODS[mod].store], k = rkey(cid, date), r = store[k];
+  const store = S[MODS[mod].store], k = mod === 'recite' ? activeKey(cid, date) : rkey(cid, date), r = store[k];
   if (r && !r.content && !Object.keys(r.s).length && !Object.keys(r.n || {}).length) delete store[k];
 }
-function stats(mod, c, date) {
-  const r = rec(mod, c.id, date), out = { total: c.students.length, none: 0 };
+function stats(mod, c, date) { return statsOf(mod, c, rec(mod, c.id, date)); }
+function statsOf(mod, c, r) {
+  const out = { total: c.students.length, none: 0 };
   MODS[mod].S.forEach(s => out[s.k] = 0);
   c.students.forEach(st => { const v = r && r.s[st.id]; if (v && out[v] != null) out[v]++; else out.none++; });
   out.passed = MODS[mod].passed.reduce((a, k) => a + out[k], 0);
@@ -570,15 +595,17 @@ function snapshot(label, what) { // what: {mod} = one day's record of the curren
   const c = cls();
   let data;
   if (what.key) data = JSON.stringify(S[what.key]);
-  else { const r = rec(what.mod); data = r ? JSON.stringify(r) : null; }
-  undoStack.push({ label, what, cid: c.id, date: S.date, data });
+  let key = null;
+  if (!what.key) { key = what.mod === 'recite' ? activeKey(c.id, S.date) : rkey(c.id, S.date); const r = S[MODS[what.mod].store][key]; data = r ? JSON.stringify(r) : null; }
+  undoStack.push({ label, what, cid: c.id, date: S.date, data, rk: key, slots: what.slots ? JSON.stringify(dayKeys(c.id, S.date).map(k => [k, S.records[k]])) : null });
   if (undoStack.length > 40) undoStack.shift();
   $('#btnUndo').disabled = false;
 }
 function undo() {
   const u = undoStack.pop(); if (!u) return;
   if (u.what.key) S[u.what.key] = JSON.parse(u.data);
-  else { const store = S[MODS[u.what.mod].store], k = rkey(u.cid, u.date); if (u.data) store[k] = JSON.parse(u.data); else delete store[k]; S.date = u.date; }
+  else if (u.slots) { dayKeys(u.cid, u.date).forEach(k => delete S.records[k]); JSON.parse(u.slots).forEach(([k, r]) => S.records[k] = r); slotSel[rkey(u.cid, u.date)] = u.rk; S.date = u.date; }
+  else { const store = S[MODS[u.what.mod].store], k = u.rk; if (u.data) store[k] = JSON.parse(u.data); else delete store[k]; if (u.what.mod === 'recite') slotSel[rkey(u.cid, u.date)] = k; S.date = u.date; }
   const ci = S.classes.findIndex(c => c.id === u.cid); if (ci >= 0) S.cur = ci;
   $('#btnUndo').disabled = !undoStack.length;
   save(); render(); toast('已撤销：' + u.label);
@@ -771,12 +798,14 @@ function vCheck(mod, v) {
   v.append(datebar());
   if (mod === 'recite') {
     const inp = el('input', { class: 'content-input', id: 'content', type: 'text', placeholder: '例如：唯物论 · 物质与意识', autocomplete: 'off', enterkeyhint: 'done' });
-    inp.addEventListener('input', () => { setContent(inp.value); renderTabs(); });
-    inp.addEventListener('change', renderContent);
+    // 当前这项还没打卡：边打字边改内容；已经有人打卡：输完（回车/离开输入框）后另开一项，名单清空
+    inp.addEventListener('input', () => { if (!hasMarks(rec('recite'))) { setContent(inp.value); renderTabs(); } });
+    inp.addEventListener('change', () => { const v = inp.value.trim(), r = rec('recite');
+      if (hasMarks(r) && v && v !== r.content) pickContent(v); else if (!v && hasMarks(r)) inp.value = r.content; else renderContent(); });
     inp.addEventListener('keydown', e => { if (e.key === 'Enter') inp.blur(); });
     v.append(el('section', { class: 'card' },
       el('div', { class: 'label' }, '今天背诵的内容', el('span', { class: 'spacer' }), el('button', { class: 'link-btn', text: '同步到全部班级', onclick: syncContent })),
-      inp, el('div', { class: 'chips', id: 'chips' }), el('div', { id: 'planBox' })));
+      el('div', { class: 'chips wrap', id: 'slots' }), inp, el('div', { class: 'chips', id: 'chips' }), el('div', { id: 'planBox' })));
   }
   v.append(el('section', { style: 'display:grid;gap:8px' }, el('div', { class: 'bar', id: 'bar' }), el('div', { class: 'counts', id: 'counts' })));
   v.append(el('div', { class: 'toolrow' },
@@ -797,7 +826,15 @@ function renderContent() {
   const last = ks.length ? S.records[ks[ks.length - 1]].content : '';
   const cur = (r && r.content) || '';
   const nx = nextPlan(cls());
-  if (nx && planLabel(nx) !== cur) chips.append(el('button', { class: 'chip last', title: '背诵清单里下一条还没背的', text: '下一条：' + nx.t, onclick: () => { setPlan(nx, [cls().id]); renderContent(); renderTabs(); } }));
+  // 今天已经背的几项（≥2 项时显示，可切换）
+  const sl = $('#slots'); sl.replaceChildren();
+  const dk = dayKeys(cls().id, S.date), ak = activeKey(cls().id, S.date);
+  if (dk.length > 1 || hasMarks(r)) {
+    dk.forEach(k => { const st = statsOf('recite', cls(), S.records[k]);
+      sl.append(el('button', { class: 'chip', 'aria-pressed': String(k === ak), text: `${S.records[k].content || '（未填内容）'} · ${st.passed}/${st.total}`, onclick: () => { slotSel[rkey(cls().id, S.date)] = k; selected.clear(); render(); } })); });
+    if (hasMarks(r)) sl.append(el('button', { class: 'chip edit', id: 'btnNewSlot', text: '＋ 今天再背一项', onclick: () => { const b = rkey(cls().id, S.date), n = Math.max(1, ...dayKeys(cls().id, S.date).map(slotNo)) + 1; S.records[b + '|' + n] = { content: '', s: {}, n: {} }; slotSel[b] = b + '|' + n; save(); render(); const i = $('#content'); if (i) i.focus(); } }));
+  }
+  if (nx && planLabel(nx) !== cur) chips.append(el('button', { class: 'chip last', title: '背诵清单里下一条还没背的', text: '下一条：' + nx.t, onclick: () => pickContent(planLabel(nx), nx.id) }));
   chips.append(el('button', { class: 'chip', text: '从背诵清单选…', onclick: openPlanPicker }));
   const box = $('#planBox'); box.replaceChildren();
   const it = planOf(r);
@@ -808,19 +845,28 @@ function renderContent() {
   }
   const used = [...new Set(Object.values(S.records).map(x => x.content).filter(Boolean))];
   [...new Set([last, ...(S.topics || []), ...used])].filter(c => c && c !== cur).forEach(c => chips.append(
-    el('button', { class: 'chip' + (c === last ? ' last' : ''), title: c === last ? '上次背的' : '', text: c, onclick: () => { setContent(c); renderContent(); renderTabs(); } })));
+    el('button', { class: 'chip' + (c === last ? ' last' : ''), title: c === last ? '上次背的' : '', text: c, onclick: () => pickContent(c) })));
   chips.append(el('button', { class: 'chip edit', text: '编辑常用…', onclick: openTopics }));
+}
+function pickContent(content, pid) {
+  const c = cls();
+  snapshot('换背诵内容', { mod: 'recite', slots: true });
+  if (!pid) { const it = S.plan.find(x => planLabel(x) === content); if (it) pid = it.id; }
+  const how = chooseContent(c.id, S.date, content, pid);
+  prune('recite', c.id, S.date); selected.clear(); save(); render();
+  if (how === 'new') toast(`已另开一项「${content}」，名单重新记录；上一项的记录保留着`, { label: '撤销', fn: undo });
+  else if (how === 'switch') toast(`切换到「${content}」`);
 }
 function setContent(v) { const r = rec('recite', undefined, undefined, true); r.content = v.trim(); const it = S.plan.find(x => planLabel(x) === r.content); if (it) r.pid = it.id; else delete r.pid; prune('recite', cls().id, S.date); save(); }
 let showText = true;
 const planOf = r => r && (S.plan.find(x => x.id === r.pid) || S.plan.find(x => planLabel(x) === r.content)) || null;
-function setPlan(it, cids, date = S.date) { cids.forEach(cid => { const r = rec('recite', cid, date, true); r.content = planLabel(it); r.pid = it.id; }); save(); }
+function setPlan(it, cids, date = S.date) { cids.forEach(cid => chooseContent(cid, date, planLabel(it), it.id)); save(); }
 function planProgress(c) { // id -> {times, first, last, rate}
   const out = {};
-  Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).sort().forEach(k => {
+  classKeys(S.records, c.id).forEach(k => {
     const r = S.records[k], it = planOf(r); if (!it) return; const d = k.split('|')[1];
     const o = out[it.id] = out[it.id] || { times: 0, first: d };
-    o.times++; o.last = d; const st = stats('recite', c, d); if (st.total - st.none) o.rate = `${st.passed}/${st.total}`;
+    o.times++; o.last = d; const st = statsOf('recite', c, r); if (st.total - st.none) o.rate = `${st.passed}/${st.total}`;
   });
   return out;
 }
@@ -833,7 +879,7 @@ function openPlanPicker() {
     S.plan.forEach(it => {
       if (it.u !== u) { u = it.u; list.append(el('div', { style: 'background:var(--surface-2);font-size:12.5px;font-weight:600;color:var(--muted);padding:6px 12px' }, u)); }
       const p = pg[it.id];
-      list.append(el('button', { onclick: () => { setPlan(it, [c.id]); close(); } }, el('span', { class: 'lv ' + it.lv, text: LV[it.lv] }), el('span', { class: 'c', text: it.t }),
+      list.append(el('button', { onclick: () => { $('#layer').replaceChildren(); pickContent(planLabel(it), it.id); } }, el('span', { class: 'lv ' + it.lv, text: LV[it.lv] }), el('span', { class: 'c', text: it.t }),
         el('span', { class: 'd', text: p ? `背过 ${p.times} 次` : '未开始' })));
     });
     sh.append(list);
@@ -842,7 +888,7 @@ function openPlanPicker() {
 function syncContent() {
   const r = rec('recite'); const v = r && r.content;
   if (!v) { toast('先填写今天背诵的内容'); return; }
-  S.classes.forEach(c => { rec('recite', c.id, S.date, true).content = v; });
+  S.classes.forEach(c => { if (c.id !== cls().id) chooseContent(c.id, S.date, v, r.pid); });
   save(); renderTabs(); toast(`全部班级 ${md(S.date)} 都设为「${v}」`);
 }
 function renderSummary(mod) {
@@ -928,13 +974,13 @@ function openHistory(mod) {
   openSheet((sh, close) => {
     const c = cls(), store = S[MODS[mod].store];
     sh.append(head(MODS[mod].title + '记录 · ' + c.name, close));
-    const ds = Object.keys(store).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).sort().reverse();
-    if (!ds.length) { sh.append(el('p', { class: 'hint', text: '这个班还没有任何记录。' })); return; }
-    sh.append(el('p', { class: 'hint', text: '点一天跳过去查看或补记。' }));
-    sh.append(el('div', { class: 'list' }, ...ds.map(d => {
-      const st = stats(mod, c, d), r = store[rkey(c.id, d)];
+    const ks = classKeys(store, c.id).reverse();
+    if (!ks.length) { sh.append(el('p', { class: 'hint', text: '这个班还没有任何记录。' })); return; }
+    sh.append(el('p', { class: 'hint', text: '点一条跳过去查看或补记。' }));
+    sh.append(el('div', { class: 'list' }, ...ks.map(k => {
+      const d = k.split('|')[1], r = store[k], st = statsOf(mod, c, r);
       const bad = mod === 'att' ? st.absent : st.fail;
-      return el('button', { onclick: () => { S.date = d; close(); } },
+      return el('button', { onclick: () => { S.date = d; if (mod === 'recite') slotSel[rkey(c.id, d)] = k; close(); } },
         el('span', { class: 'd', text: md(d) + ' ' + WD[parse(d).getDay()] }),
         el('span', { class: 'c', text: mod === 'recite' ? (r.content || '（未填内容）') : `迟到 ${st.late} · 早退 ${st.early} · 请假 ${st.leave}` }),
         el('span', { class: 'n', text: `${st.passed}/${st.total}` }),
@@ -1234,10 +1280,10 @@ function vTimetable(v) {
     el('button', { class: 'mini', text: '−', 'aria-label': '少一节', onclick: () => { if (T.periods > 1) { S.timetable = { ...T, periods: T.periods - 1 }; save(); render(); } } }),
     el('button', { class: 'mini', text: '+', 'aria-label': '多一节', onclick: () => { if (T.periods < 12) { S.timetable = { ...T, periods: T.periods + 1 }; save(); render(); } } })), el('div', { class: 'tbl-wrap' }, tbl)));
   const first = {}, times = {}, lastRate = {};
-  Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).sort().forEach(k => {
+  classKeys(S.records, c.id).forEach(k => {
     const r = S.records[k], d = k.split('|')[1]; if (!r.content) return;
     first[r.content] = first[r.content] || d; times[r.content] = (times[r.content] || 0) + 1;
-    const st = stats('recite', c, d); lastRate[r.content] = st.total - st.none ? `${st.passed}/${st.total}` : '';
+    const st = statsOf('recite', c, r); lastRate[r.content] = st.total - st.none ? `${st.passed}/${st.total}` : '';
   });
   const topics = [...new Set([...S.topics, ...Object.keys(first)])];
   const done = topics.filter(t => first[t]).length;
@@ -1327,10 +1373,9 @@ function openStudent(stu) {
     prof.addEventListener('change', () => { const v = prof.value.trim(); if (v) stu.note = v; else delete stu.note; S.classes = S.classes.slice(); save(); });
     sh.append(el('label', { class: 'field' }, el('h3', { text: '今天的读背备注' }), note), el('label', { class: 'field' }, el('h3', { text: '档案备注' }), prof));
     sh.append(el('h3', { text: '累计：' + MODS.recite.S.map(s => `${s.label} ${o.r[s.k]}`).join(' · ') + ' ｜ ' + MODS.att.S.filter(s => s.k !== 'ok').map(s => `${s.label} ${o.a[s.k]}`).join(' · ') }));
-    const ds = Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).sort().reverse();
-    const rows = ds.map(d => { const rr = S.records[rkey(c.id, d)]; return [d, rr.content, rr.s[stu.id] || '', rr.n && rr.n[stu.id]]; });
-    if (rows.length) sh.append(el('div', { class: 'list' }, ...rows.slice(0, 30).map(([d, ct, v, n]) =>
-      el('button', { onclick: () => { S.date = d; $('#layer').replaceChildren(); go('recite'); } }, el('span', { class: 'd', text: md(d) }), el('span', { class: 'c', text: (ct || '（未填内容）') + (n ? ' · ' + n : '') }),
+    const rows = classKeys(S.records, c.id).reverse().map(k => { const rr = S.records[k]; return [k.split('|')[1], rr.content, rr.s[stu.id] || '', rr.n && rr.n[stu.id], k]; });
+    if (rows.length) sh.append(el('div', { class: 'list' }, ...rows.slice(0, 30).map(([d, ct, v, n, k]) =>
+      el('button', { onclick: () => { S.date = d; slotSel[rkey(c.id, d)] = k; $('#layer').replaceChildren(); go('recite'); } }, el('span', { class: 'd', text: md(d) }), el('span', { class: 'c', text: (ct || '（未填内容）') + (n ? ' · ' + n : '') }),
         el('span', { class: 'pill', 'data-c': v ? MODS.recite.map[v].c : '', text: v ? MODS.recite.map[v].label : '未记录' })))));
   });
 }
@@ -1477,7 +1522,7 @@ function buildWorkbook(classes, from, to) {
   for (const nt of S.notes) if (nt.date >= from && nt.date <= to && (!nt.cid || ids.has(nt.cid))) { any = true;
     noteRows.push([nt.date, (S.classes.find(c => c.id === nt.cid) || {}).name || '全部班级', nt.title, nt.plan || '', nt.refl || '']); }
   for (const c of classes) {
-    const dates = Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).filter(d => d >= from && d <= to).sort();
+    const keys = classKeys(S.records, c.id, from, to).filter(k => hasMarks(S.records[k])), dOf = k => k.split('|')[1];
     c.students.forEach((s, i) => { const o = studentSummary(c, s); prof.push([c.name, i + 1, s.name, o.r.done + o.r.redo, o.r.weak, o.r.fail, o.a.late, o.a.absent, o.pts, o.score === '—' ? '' : o.score, s.note || '']); });
     for (const [k, r] of Object.entries(S.att)) { const [cid, d] = k.split('|'); if (cid !== c.id || d < from || d > to) continue; any = true;
       c.students.forEach((s, i) => { const v = r.s[s.id]; if (v) attRows.push([d, WD[parse(d).getDay()], c.name, i + 1, s.name, MODS.att.map[v].label]); }); }
@@ -1485,31 +1530,31 @@ function buildWorkbook(classes, from, to) {
       e.sids.forEach(id => ptsRows.push([e.date, c.name, (c.students.find(s => s.id === id) || {}).name || '已删学生', e.delta, e.reason])); }
     for (const ex of S.scores[c.id] || []) { if (ex.date < from || ex.date > to) continue; any = true;
       c.students.forEach((s, i) => scoreRows.push([ex.name, ex.date, ex.full, c.name, i + 1, s.name, typeof ex.s[s.id] === 'number' ? ex.s[s.id] : ''])); }
-    if (!dates.length) continue;
+    if (!keys.length) continue;
     any = true;
     const r1 = [{ v: c.name + ' 读背过关表', s: 8 }];
     const h1 = [{ v: '序号', s: 1 }, { v: '姓名', s: 1 }], h2 = [{ v: '', s: 1 }, { v: '背诵内容 →', s: 1 }];
-    dates.forEach(d => { h1.push({ v: `${md(d)} ${WD[parse(d).getDay()]}`, s: 1 }); h2.push({ v: S.records[rkey(c.id, d)].content || '', s: 11 }); });
+    keys.forEach(k => { const d = dOf(k); h1.push({ v: `${md(d)} ${WD[parse(d).getDay()]}` + (keys.filter(x => dOf(x) === d).length > 1 ? ` (${keys.filter(x => dOf(x) === d).indexOf(k) + 1})` : ''), s: 1 }); h2.push({ v: S.records[k].content || '', s: 11 }); });
     ['已背', '不熟', '未背', '补背', '请假', '过关率'].forEach(t => { h1.push({ v: t, s: 1 }); h2.push({ v: '', s: 1 }); });
     const rows = [r1, h1, h2];
     c.students.forEach((stu, i) => {
       const row = [{ v: i + 1, s: 10 }, { v: stu.name, s: 2 }]; const t = { done: 0, weak: 0, fail: 0, redo: 0, leave: 0 };
-      dates.forEach(d => {
-        const rr = S.records[rkey(c.id, d)], v = rr.s[stu.id] || '', note = rr.n && rr.n[stu.id];
+      keys.forEach(k => {
+        const d = dOf(k), rr = S.records[k], v = rr.s[stu.id] || '', note = rr.n && rr.n[stu.id];
         if (v) t[v]++;
         row.push({ v: v ? MODS.recite.map[v].xl + (note ? '（' + note + '）' : '') : (note || ''), s: v ? XS[v] : 2 });
         detail.push([d, WD[parse(d).getDay()], c.name, rr.content || '', i + 1, stu.name, v ? MODS.recite.map[v].label : '未记录', note || '']);
       });
-      const denom = dates.length - t.leave;
+      const denom = keys.length - t.leave;
       row.push({ v: t.done, s: 10 }, { v: t.weak, s: 10 }, { v: t.fail, s: 10 }, { v: t.redo, s: 10 }, { v: t.leave, s: 10 }, { v: denom > 0 ? (t.done + t.redo) / denom : '', s: 9 });
       rows.push(row);
     });
     const tot = [{ v: '', s: 1 }, { v: '当天过关', s: 1 }];
-    dates.forEach(d => { const st = stats('recite', c, d); tot.push({ v: `${st.passed}/${st.total}`, s: 1 });
-      contentRows.push([d, WD[parse(d).getDay()], c.name, S.records[rkey(c.id, d)].content || '', st.done, st.weak, st.fail, st.redo, st.leave, st.none, st.total,
+    keys.forEach(k => { const d = dOf(k), st = statsOf('recite', c, S.records[k]); tot.push({ v: `${st.passed}/${st.total}`, s: 1 });
+      contentRows.push([d, WD[parse(d).getDay()], c.name, S.records[k].content || '', st.done, st.weak, st.fail, st.redo, st.leave, st.none, st.total,
         { v: st.total - st.leave > 0 ? st.passed / (st.total - st.leave) : '', s: 9 }]); });
     rows.push(tot);
-    sheets.push({ name: c.name + '读背', rows, cols: [6, 10, ...dates.map(() => 13), 7, 7, 7, 7, 7, 9], freeze: { r: 3, c: 2 }, merges: [`A1:${colName(Math.max(2, h1.length) - 1)}1`], heights: { 1: 26, 3: 34 } });
+    sheets.push({ name: c.name + '读背', rows, cols: [6, 10, ...keys.map(() => 13), 7, 7, 7, 7, 7, 9], freeze: { r: 3, c: 2 }, merges: [`A1:${colName(Math.max(2, h1.length) - 1)}1`], heights: { 1: 26, 3: 34 } });
   }
   const style = rows => rows.map((r, i) => r.map(v => (v && typeof v === 'object') ? v : { v, s: i === 0 ? 1 : 2 }));
   const sortBody = (rows, cmp) => { const h = rows.shift(); rows.sort(cmp); rows.unshift(h); };
