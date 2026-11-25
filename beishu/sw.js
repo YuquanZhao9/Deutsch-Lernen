@@ -1,5 +1,5 @@
 // 页面和同步脚本：联网时总是取最新版（网络优先），断网时用缓存。图标：缓存优先。不碰 /api/。
-const CACHE = 'beishu-v6';
+const CACHE = 'beishu-v7';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png', './icon-maskable-512.png', '../konto/sync.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('beishu-v') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
