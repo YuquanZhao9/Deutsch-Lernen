@@ -72,6 +72,8 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; 
 .top .wrap { padding-block: 10px 10px; display: grid; gap: 10px; }
 .row1 { display: flex; align-items: center; gap: 10px; }
 .brand { font-family: var(--f-display); font-weight: 700; font-size: 18px; letter-spacing: .06em; white-space: nowrap; }
+.brand small.warn { color: var(--fail); text-decoration: underline; cursor: pointer; }
+.brand small.ok { color: var(--done); }
 .brand small { font-family: var(--f-body); font-weight: 400; font-size: 12px; color: var(--muted); letter-spacing: 0; margin-left: 6px; }
 .spacer { flex: 1; }
 .icon-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; height: 36px; padding: 0 11px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; white-space: nowrap; }
@@ -317,8 +319,10 @@ let synced = {}; // 已和账号一致的文档：path -> JSON
 function showSaveState() {
   const t = !storageOk ? '无法保存：请先导出备份'
     : SYNC && SYNC.user() ? ({ syncing: '正在同步…', offline: '离线，联网后自动同步', error: '同步出错，本机已保存' }[SYNC.state()] || '已同步到账号')
-    : '已保存在本机';
-  $('#saveState').textContent = t;
+    : SYNC ? '未登录，不会同步 · 点此登录' : '已保存在本机';
+  const st = $('#saveState'); st.textContent = t;
+  st.classList.toggle('warn', !!(SYNC && !SYNC.user()));
+  st.classList.toggle('ok', !!(SYNC && SYNC.user() && SYNC.state() !== 'error'));
 }
 function docsOf() {
   const d = { classes: JSON.stringify(S.classes), topics: JSON.stringify(S.topics || []) };
@@ -962,6 +966,7 @@ window.__beishu = { XLSX, buildWorkbook, get state() { return S; } }; // 供调�
 
 /* ---------- events ---------- */
 $('#btnUndo').addEventListener('click', undo);
+$('#saveState').addEventListener('click', () => { if (SYNC && !SYNC.user()) location.href = SYNC.root + 'konto/?next=' + encodeURIComponent(location.pathname); });
 $('#btnMenu').addEventListener('click', openMenu);
 $('#btnHistory').addEventListener('click', openHistory);
 $('#btnExport').addEventListener('click', openExport);
