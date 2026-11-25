@@ -321,15 +321,16 @@ function docsOf() {
   for (const [k, r] of Object.entries(S.records)) d['r/' + k] = JSON.stringify(r);
   return d;
 }
+let pulledFull = false; // 本机已从账号完整拉过一次打卡数据，才允许上传（避免示例名单盖掉账号里的真名单）
 function syncDiff() {
-  if (!SYNC || !SYNC.user()) return;
+  if (!SYNC || !SYNC.user() || !pulledFull) return;
   const cur = docsOf();
+  if (S.example) delete cur.classes; // 示例名单不上传
   for (const [p, j] of Object.entries(cur)) if (synced[p] !== j) { SYNC.changed(SP + p, JSON.parse(j)); synced[p] = j; }
   for (const p of Object.keys(synced)) if (!(p in cur)) { SYNC.changed(SP + p, null); delete synced[p]; }
 }
 let remoteT = 0;
-if (SYNC) {
-  SYNC.bind(SP, { apply(path, data) {
+function applyDoc(path, data) {
     if (path === 'classes') {
       if (!Array.isArray(data) || !data.length) return;
       S.classes = data; S.example = false; S.cur = Math.min(S.cur || 0, data.length - 1);
@@ -339,9 +340,29 @@ if (SYNC) {
     if (data == null) delete synced[path]; else synced[path] = JSON.stringify(data);
     clearTimeout(remoteT);
     remoteT = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} if (!$('#layer').firstChild) render(); }, 120);
-  } });
-  SYNC.onChange(() => showSaveState());
-  SYNC.ready.then(() => { syncDiff(); showSaveState(); render(); });
+}
+// 打开页面时用本页自己的进度游标拉一次：德语网站的同步会推进共用游标，期间别的设备上传的打卡数据会被跳过
+async function fullPull() {
+  const u = SYNC.user(); if (!u) return;
+  const ck = 'beishu-since:' + u;
+  let since = 0; try { since = +localStorage.getItem(ck) || 0; } catch (e) {}
+  const r = await fetch(SYNC.api + '/data?since=' + since, { cache: 'no-store', headers: SYNC.authHeaders() });
+  if (!r.ok) throw new Error('pull ' + r.status);
+  const j = await r.json();
+  let queued = {}; try { queued = JSON.parse(localStorage.getItem('dl-sync-queue') || '{}') || {}; } catch (e) {}
+  for (const d of j.docs || []) if (d.path.startsWith(SP) && !(d.path in queued)) applyDoc(d.path.slice(SP.length), d.data);
+  try { localStorage.setItem(ck, String(j.now)); } catch (e) {}
+  pulledFull = true;
+}
+if (SYNC) {
+  SYNC.bind(SP, { apply: applyDoc });
+  SYNC.onChange(() => { showSaveState(); if (SYNC.user() && !pulledFull) fullPull().then(syncDiff).catch(() => {}); });
+  // 页面开着时每 10 秒拉一次别的设备的改动（只取增量，很省流量）
+  const pullNow = () => { if (SYNC.user()) fullPull().then(syncDiff).catch(() => {}); };
+  setInterval(() => { if (document.visibilityState === 'visible') pullNow(); }, 10000);
+  window.addEventListener('focus', pullNow);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') pullNow(); });
+  SYNC.ready.then(fullPull).then(() => { syncDiff(); }).catch(e => console.warn('beishu full pull', e)).then(() => { showSaveState(); render(); });
 }
 S = load();
 S.date = ymd(new Date()); // 每次打开默认今天
@@ -984,6 +1005,6 @@ render();
 })();
 </script>
 
-<script>if ('serviceWorker' in navigator && window.isSecureContext) navigator.serviceWorker.register('sw.js').catch(() => {});</script>
+<script>if ('serviceWorker' in navigator && window.isSecureContext) navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(r => r.update()).catch(() => {});</script>
 </body>
 </html>
