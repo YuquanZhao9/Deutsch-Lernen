@@ -3,55 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>背书打卡台</title>
-<meta name="theme-color" content="#1e5a55">
+<title>教学工作台</title>
+<meta name="theme-color" content="#17855a">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="背书打卡">
+<meta name="apple-mobile-web-app-title" content="教学工作台">
 <meta name="format-detection" content="telephone=no">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
-<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
 <script src="../konto/sync.js"></script>
 </head>
 <body>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
-/* Layout: one-column phone ledger. Sticky header (class tabs + date), content strip, status summary,
-   name tiles grid, sticky bottom "brush" bar. Wider screens just get more tile columns. */
+/* Layout: teacher workbench. Desktop = sticky top bar + left nav grouped by job (教学工具/学情分析/学生管理/班级常规) + content.
+   Phone = top bar with drawer nav; check-in views keep a bottom "status brush" dock. Mint ground, deep green accent, warm marker for highlights. */
 :root {
-  --bg: #f3f4ef;          /* 点名册纸色，略带青灰 */
+  --bg: #f1f7f3;
   --surface: #ffffff;
-  --surface-2: #e9ebe4;
-  --line: #d5d9cf;
-  --fg: #1d2421;
-  --muted: #66706a;
-  --accent: #1e5a55;      /* 墨青 */
+  --surface-2: #e5f1ea;
+  --line: #d2e2d8;
+  --fg: #15231c;
+  --muted: #5d7066;
+  --accent: #17855a;
   --accent-fg: #ffffff;
-  --accent-soft: #d8e7e3;
+  --accent-soft: #d5efe1;
+  --marker: #f2b33d;
   --done: #2f8a4c;  --done-bg: #dcf1e1;
   --weak: #b7791f;  --weak-bg: #fbedd0;
-  --fail: #c2413b;  --fail-bg: #f9dcd9;
+  --fail: #c9423b;  --fail-bg: #f9dcd9;
   --redo: #2f6db5;  --redo-bg: #dbe7f7;
   --leave: #6f7681; --leave-bg: #e6e8eb;
-  --shadow: 0 1px 2px rgba(20,40,35,.08), 0 4px 14px rgba(20,40,35,.06);
-  --f-display: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --shadow: 0 1px 2px rgba(20,60,40,.06), 0 6px 18px rgba(20,60,40,.06);
+  --f-display: "ZCOOL XiaoWei", "Noto Serif SC", "Songti SC", "STSong", serif;
   --f-body: -apple-system, "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
   --f-num: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
-  --r: 12px;
+  --r: 14px;
+  --side-w: 220px;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #121715; --surface: #1b2220; --surface-2: #232c29; --line: #33403b;
-  --fg: #e6ece8; --muted: #95a29b; --accent: #6fc0b4; --accent-fg: #0d1a17; --accent-soft: #1f3833;
+  --bg: #0f1613; --surface: #17201c; --surface-2: #1f2b25; --line: #2f3f37;
+  --fg: #e4eee8; --muted: #93a69c; --accent: #5ccf9b; --accent-fg: #082016; --accent-soft: #1b3a2c; --marker: #e6a93a;
   --done: #5cc07a; --done-bg: #1c3824; --weak: #e2a84a; --weak-bg: #3b2e14;
   --fail: #ef7a72; --fail-bg: #43201e; --redo: #77a9ec; --redo-bg: #1d2f48;
   --leave: #a3aab4; --leave-bg: #2b3035; --shadow: 0 1px 2px rgba(0,0,0,.4);
   color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --bg: #121715; --surface: #1b2220; --surface-2: #232c29; --line: #33403b;
-  --fg: #e6ece8; --muted: #95a29b; --accent: #6fc0b4; --accent-fg: #0d1a17; --accent-soft: #1f3833;
+  --bg: #0f1613; --surface: #17201c; --surface-2: #1f2b25; --line: #2f3f37;
+  --fg: #e4eee8; --muted: #93a69c; --accent: #5ccf9b; --accent-fg: #082016; --accent-soft: #1b3a2c; --marker: #e6a93a;
   --done: #5cc07a; --done-bg: #1c3824; --weak: #e2a84a; --weak-bg: #3b2e14;
   --fail: #ef7a72; --fail-bg: #43201e; --redo: #77a9ec; --redo-bg: #1d2f48;
   --leave: #a3aab4; --leave-bg: #2b3035; --shadow: 0 1px 2px rgba(0,0,0,.4);
@@ -59,185 +61,268 @@
 
 * { box-sizing: border-box; }
 html, body { background: var(--bg); }
-body { color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.45;
-  -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+body { margin: 0; color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.45; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface); }
 button, input, textarea, select { font: inherit; color: inherit; }
 button { cursor: pointer; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.wrap { max-width: 980px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.gut { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 
-/* header */
+/* top bar */
 header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line); }
-.top .wrap { padding-block: 10px 10px; display: grid; gap: 10px; }
-.row1 { display: flex; align-items: center; gap: 10px; }
-.brand { font-family: var(--f-display); font-weight: 700; font-size: 18px; letter-spacing: .06em; white-space: nowrap; }
+.top-in { padding-block: 9px; display: grid; gap: 9px; max-width: 1280px; margin: 0 auto; }
+.row1 { display: flex; align-items: center; gap: 8px; }
+.brand { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.logo { width: 32px; height: 32px; border-radius: 9px; background: var(--accent); color: var(--accent-fg); display: grid; place-items: center; flex: none; }
+.logo svg { width: 19px; height: 19px; }
+.brand b { font-family: var(--f-display); font-size: 19px; letter-spacing: .04em; white-space: nowrap; font-weight: 700; }
+.brand > span:last-child { min-width: 0; }
+.brand small { display: block; font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand small.warn { color: var(--fail); text-decoration: underline; cursor: pointer; }
 .brand small.ok { color: var(--done); }
-.brand small { font-family: var(--f-body); font-weight: 400; font-size: 12px; color: var(--muted); letter-spacing: 0; margin-left: 6px; }
 .spacer { flex: 1; }
 .icon-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; height: 36px; padding: 0 11px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; white-space: nowrap; }
 .icon-btn:active { background: var(--surface-2); }
 .icon-btn svg { width: 17px; height: 17px; flex: none; }
 .icon-btn[disabled] { opacity: .4; }
+.icon-btn.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.primary { background: var(--accent) !important; color: var(--accent-fg) !important; border-color: var(--accent) !important; font-weight: 600; }
+.hamb { display: none; }
+@media (max-width: 440px) { .row1 .icon-btn .lbl { display: none; } .row1 .icon-btn { padding: 0 9px; } }
 .tabs { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--surface-2); border-radius: 11px; padding: 3px; gap: 3px; }
-.tab { border: 0; background: transparent; border-radius: 9px; padding: 8px 4px; font-weight: 600; font-size: 14px; color: var(--muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tab { border: 0; background: transparent; border-radius: 9px; padding: 7px 4px; font-weight: 600; font-size: 14px; color: var(--muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tab .pct { display: block; font-weight: 400; font-size: 11px; font-family: var(--f-num); }
 .tab[aria-selected="true"] { background: var(--surface); color: var(--fg); box-shadow: var(--shadow); }
+
+/* shell */
+.shell { display: grid; grid-template-columns: var(--side-w) minmax(0, 1fr); max-width: 1280px; margin: 0 auto; }
+aside.side { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 112px); align-self: start; max-height: calc(100vh - 120px); overflow-y: auto; padding: 14px 10px 30px 16px; display: grid; gap: 2px; }
+.side h4 { margin: 12px 10px 4px; font-size: 11.5px; color: var(--muted); font-weight: 600; letter-spacing: .1em; }
+.nav { display: flex; align-items: center; gap: 10px; border: 0; background: none; border-radius: 10px; padding: 8px 10px; text-align: left; font-size: 14.5px; color: var(--fg); width: 100%; }
+.nav svg { width: 18px; height: 18px; color: var(--muted); flex: none; }
+.nav:hover { background: var(--surface-2); }
+.nav[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.nav[aria-current="page"] svg { color: var(--accent); }
+.nav .badge { margin-left: auto; font-size: 11px; font-family: var(--f-num); background: var(--fail); color: #fff; border-radius: 99px; padding: 0 6px; }
+main.view { min-width: 0; padding-block: 16px 160px; display: grid; gap: 16px; align-content: start; }
+@media (max-width: 899px) {
+  .shell { display: block; }
+  .hamb { display: inline-flex; }
+  aside.side { position: fixed; z-index: 45; top: 0; bottom: 0; left: 0; width: min(280px, 82vw); max-height: none; background: var(--surface); box-shadow: 0 0 40px rgba(0,0,0,.25);
+    transform: translateX(-105%); transition: transform .2s; padding-top: calc(env(safe-area-inset-top, 0px) + 14px); padding-left: max(14px, env(safe-area-inset-left, 0px)); align-content: start; }
+  aside.side.open { transform: none; }
+  .side-scrim { position: fixed; inset: 0; z-index: 44; background: rgba(10,25,18,.4); }
+}
+@media (min-width: 900px) { .side-scrim { display: none !important; } main.view { padding-right: max(20px, env(safe-area-inset-right, 0px)); padding-left: 8px; } }
+
+/* page head */
+.page-head { display: flex; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.page-head h1 { margin: 0; font-family: var(--f-display); font-size: 26px; line-height: 1.15; letter-spacing: .03em; font-weight: 700; text-wrap: balance; }
+.page-head h1 em { font-style: normal; background: linear-gradient(transparent 62%, color-mix(in srgb, var(--marker) 55%, transparent) 62%); }
+.page-head p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.card h3 { margin: 0; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.card h3 svg { width: 18px; height: 18px; color: var(--accent); }
+.card h3 .spacer { flex: 1; }
+.card h3 .tag { font-size: 11.5px; font-weight: 600; color: var(--fail); background: var(--fail-bg); border-radius: 99px; padding: 1px 8px; }
+.cols { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: start; }
+
+/* overview */
+.hero { background: linear-gradient(120deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 70%, #0b3d2a) 100%); color: var(--accent-fg); border-radius: var(--r); padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; font-size: 13.5px; }
+.hero b { font-family: var(--f-num); font-size: 15px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+@media (max-width: 420px) { .stats { grid-template-columns: 1fr 1fr; } }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 2px; text-align: left; }
+.stat .k { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.stat .k svg { width: 15px; height: 15px; }
+.stat .v { font-family: var(--f-num); font-size: 26px; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.stat .v small { font-size: 14px; color: var(--muted); font-weight: 500; }
+.stat.alert .v { color: var(--fail); }
+.quick { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; }
+.qt { border: 1px solid var(--line); background: var(--surface-2); border-radius: 12px; padding: 12px 6px 10px; display: grid; justify-items: center; gap: 6px; font-size: 13px; }
+.qt svg { width: 24px; height: 24px; color: var(--accent); }
+.qt:active { transform: scale(.97); }
+.todo-row { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-top: 1px dashed var(--line); }
+.todo-row:first-child { border-top: 0; }
+.todo-row input[type=checkbox] { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--accent); flex: none; }
+.todo-row .tx { flex: 1; min-width: 0; word-break: break-word; }
+.todo-row .tx.done { text-decoration: line-through; color: var(--muted); }
+.todo-row .due { font-size: 12px; font-family: var(--f-num); color: var(--muted); white-space: nowrap; }
+.todo-row .due.late { color: var(--fail); font-weight: 600; }
+.todo-row .go { border: 0; background: var(--accent-soft); color: var(--accent); border-radius: 8px; padding: 3px 9px; font-size: 12.5px; white-space: nowrap; }
+.muted { color: var(--muted); font-size: 13px; margin: 0; }
+.qadd { width: 100%; border: 1px dashed var(--line); border-radius: 10px; background: var(--bg); padding: 8px 10px; }
+
+/* check views (读背/考勤) */
 .datebar { display: flex; align-items: center; gap: 6px; }
-.datebar input[type=date] { flex: 1; min-width: 0; height: 38px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 0 10px; font-family: var(--f-num); font-size: 15px; }
+.datebar input[type=date] { flex: 1; min-width: 0; height: 38px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 0 10px; font-family: var(--f-num); font-size: 15px; max-width: 220px; }
 .weekday { font-size: 13px; color: var(--muted); min-width: 2.6em; text-align: center; }
-
-main.wrap { padding-block: 14px 150px; display: grid; gap: 14px; }
-
-/* recitation content */
-.content-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; display: grid; gap: 8px; }
 .label { font-size: 12px; letter-spacing: .08em; color: var(--muted); display: flex; align-items: center; gap: 8px; }
 .label .spacer { flex: 1; }
 .link-btn { border: 0; background: none; color: var(--accent); font-size: 13px; padding: 2px 0; }
-.content-input { width: 100%; border: 0; border-bottom: 2px solid var(--line); background: transparent; padding: 4px 0 6px; font-family: var(--f-display); font-size: 21px; font-weight: 700; }
+.content-input { width: 100%; border: 0; border-bottom: 2px solid var(--line); background: transparent; padding: 4px 0 6px; font-family: var(--f-display); font-size: 22px; font-weight: 700; }
 .content-input:focus { outline: none; border-bottom-color: var(--accent); }
 .content-input::placeholder { color: var(--muted); font-weight: 400; opacity: .7; }
 .chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .chips::-webkit-scrollbar { display: none; }
+.chips.wrap { flex-wrap: wrap; overflow: visible; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; padding: 4px 11px; font-size: 13px; white-space: nowrap; }
 .chip.last { border-color: var(--accent); color: var(--accent); }
 .chip.edit { background: transparent; border-style: dashed; color: var(--muted); }
-.chip { flex: none; border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; padding: 4px 11px; font-size: 13px; white-space: nowrap; }
-
-/* summary */
-.summary { display: grid; gap: 8px; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
 .bar { height: 8px; border-radius: 99px; background: var(--surface-2); display: flex; overflow: hidden; }
 .bar span { display: block; height: 100%; transition: width .25s; }
 .counts { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); }
 .counts b { font-family: var(--f-num); color: var(--fg); font-weight: 600; margin-left: 3px; }
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
-
 .toolrow { display: flex; flex-wrap: wrap; gap: 8px; }
 .toolrow .icon-btn { height: 34px; font-size: 13px; }
-.icon-btn.on { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
-
-/* students */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; }
 .stu { position: relative; border: 1px solid var(--line); background: var(--surface); border-radius: 11px; min-height: 64px; padding: 8px 8px 7px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; gap: 2px; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: manipulation; transition: transform .08s; }
 .stu:active { transform: scale(.97); }
 .stu .no { font-family: var(--f-num); font-size: 11px; color: var(--muted); }
 .stu .nm { font-size: 16px; font-weight: 600; line-height: 1.2; word-break: break-all; }
 .stu .st { font-size: 12px; font-weight: 600; min-height: 1.2em; }
+.stu .pts { position: absolute; top: 6px; right: 8px; font-family: var(--f-num); font-size: 12px; font-weight: 700; color: var(--accent); }
+.stu .pts.neg { color: var(--fail); }
 .stu .note-flag { position: absolute; top: 7px; right: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-.stu[data-s="done"]  { background: var(--done-bg);  border-color: var(--done); }  .stu[data-s="done"] .st  { color: var(--done); }
-.stu[data-s="weak"]  { background: var(--weak-bg);  border-color: var(--weak); }  .stu[data-s="weak"] .st  { color: var(--weak); }
-.stu[data-s="fail"]  { background: var(--fail-bg);  border-color: var(--fail); }  .stu[data-s="fail"] .st  { color: var(--fail); }
-.stu[data-s="redo"]  { background: var(--redo-bg);  border-color: var(--redo); }  .stu[data-s="redo"] .st  { color: var(--redo); }
-.stu[data-s="leave"] { background: var(--leave-bg); border-color: var(--leave); } .stu[data-s="leave"] .st { color: var(--leave); }
+.stu[data-c="done"]  { background: var(--done-bg);  border-color: var(--done); }  .stu[data-c="done"] .st  { color: var(--done); }
+.stu[data-c="weak"]  { background: var(--weak-bg);  border-color: var(--weak); }  .stu[data-c="weak"] .st  { color: var(--weak); }
+.stu[data-c="fail"]  { background: var(--fail-bg);  border-color: var(--fail); }  .stu[data-c="fail"] .st  { color: var(--fail); }
+.stu[data-c="redo"]  { background: var(--redo-bg);  border-color: var(--redo); }  .stu[data-c="redo"] .st  { color: var(--redo); }
+.stu[data-c="leave"] { background: var(--leave-bg); border-color: var(--leave); } .stu[data-c="leave"] .st { color: var(--leave); }
 .stu.sel { outline: 3px solid var(--accent); outline-offset: -1px; }
-.stu.sel::after { content: "✓"; position: absolute; top: 4px; right: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-size: 12px; display: grid; place-items: center; }
-.empty { text-align: center; padding: 30px 10px; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--r); }
+.stu.sel::after { content: "✓"; position: absolute; bottom: 6px; right: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-size: 12px; display: grid; place-items: center; }
+.empty { text-align: center; padding: 26px 10px; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--r); }
 .example-tag { font-size: 12px; color: var(--weak); background: var(--weak-bg); border-radius: 6px; padding: 2px 8px; justify-self: start; }
 
-/* bottom brush bar */
+/* bottom dock */
 .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); box-shadow: 0 -4px 18px rgba(0,0,0,.06); }
-.dock .wrap { padding-block: 8px 8px; display: grid; gap: 7px; }
-.dock-hint { font-size: 12px; color: var(--muted); display: flex; gap: 8px; align-items: center; min-height: 18px; }
-.dock-hint .spacer { flex: 1; }
+.dock-in { padding-block: 8px; display: grid; gap: 7px; max-width: 820px; margin: 0 auto; }
+.dock-hint { font-size: 12px; color: var(--muted); min-height: 18px; min-width: 0; }
 .brushes { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; }
 .brush { border: 1.5px solid var(--line); background: var(--surface); border-radius: 10px; padding: 7px 2px 6px; font-size: 13px; font-weight: 600; display: grid; justify-items: center; gap: 2px; min-width: 0; }
 .brush i { font-style: normal; font-size: 16px; line-height: 1; }
-.brush[data-s="done"] i { color: var(--done); } .brush[data-s="weak"] i { color: var(--weak); }
-.brush[data-s="fail"] i { color: var(--fail); } .brush[data-s="redo"] i { color: var(--redo); }
-.brush[data-s="leave"] i { color: var(--leave); } .brush[data-s=""] i { color: var(--muted); }
+.brush[data-c="done"] i { color: var(--done); } .brush[data-c="weak"] i { color: var(--weak); }
+.brush[data-c="fail"] i { color: var(--fail); } .brush[data-c="redo"] i { color: var(--redo); }
+.brush[data-c="leave"] i { color: var(--leave); } .brush[data-c=""] i { color: var(--muted); }
 .brush[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
 .apply-row { display: flex; gap: 8px; }
 .apply-row .icon-btn { flex: 1; justify-content: center; }
-.primary { background: var(--accent) !important; color: var(--accent-fg) !important; border-color: var(--accent) !important; font-weight: 600; }
+.apply-row .icon-btn.primary { flex: 2; }
 
-/* sheets */
-.scrim { position: fixed; inset: 0; background: rgba(10,20,18,.45); z-index: 40; display: flex; align-items: flex-end; justify-content: center; }
-.sheet { background: var(--surface); width: 100%; max-width: 640px; max-height: 88vh; overflow-y: auto; border-radius: 16px 16px 0 0; padding: 16px max(16px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 14px; animation: up .18s ease-out; }
-@media (min-width: 700px) { .scrim { align-items: center; } .sheet { border-radius: 16px; } }
-@keyframes up { from { transform: translateY(24px); opacity: .6; } }
-@media (prefers-reduced-motion: reduce) { .sheet { animation: none; } .bar span { transition: none; } }
-.sheet h2 { margin: 0; font-family: var(--f-display); font-size: 19px; display: flex; align-items: center; gap: 8px; }
-.sheet h2 .spacer { flex: 1; }
-.sheet h3 { margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: .06em; }
-.field { display: grid; gap: 6px; }
-.field input[type=text], .field input[type=date], .field textarea, .field select { width: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); padding: 9px 11px; }
-.field textarea { min-height: 120px; resize: vertical; line-height: 1.6; }
-.hint { font-size: 12.5px; color: var(--muted); margin: 0; }
+/* rollcall */
+.roll { text-align: center; padding: 26px 14px; display: grid; gap: 12px; justify-items: center; background: radial-gradient(circle at 50% 0%, var(--accent-soft), var(--surface) 70%); }
+.roll .big { font-family: var(--f-display); font-size: clamp(40px, 12vw, 72px); font-weight: 700; letter-spacing: .08em; line-height: 1.1; min-height: 1.1em; word-break: break-all; }
+.roll .big.spin { color: var(--muted); }
+.roll .sub { color: var(--muted); font-size: 13px; }
+.roll .go-btn { height: 48px; padding: 0 30px; font-size: 17px; border-radius: 99px; }
 .seg { display: flex; flex-wrap: wrap; gap: 6px; }
 .seg button { border: 1px solid var(--line); background: var(--surface); border-radius: 9px; padding: 7px 12px; font-size: 14px; }
 .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
-.roster { display: grid; gap: 6px; }
-.roster-row { display: grid; grid-template-columns: 2.2em 1fr auto auto auto; gap: 6px; align-items: center; }
-.roster-row .idx { font-family: var(--f-num); font-size: 12px; color: var(--muted); text-align: right; }
-.roster-row input { min-width: 0; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); padding: 7px 9px; }
-.mini { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; width: 32px; height: 32px; display: grid; place-items: center; font-size: 14px; padding: 0; }
-.mini.danger { color: var(--fail); }
-.list { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.list > * { padding: 10px 12px; border-top: 1px solid var(--line); display: flex; gap: 10px; align-items: center; background: var(--surface); text-align: left; border-left: 0; border-right: 0; border-bottom: 0; width: 100%; }
+.switch { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
+.switch input { width: 18px; height: 18px; accent-color: var(--accent); }
+
+/* tables & lists */
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+table.tbl { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+.tbl th, .tbl td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.tbl th { background: var(--surface-2); font-weight: 600; font-size: 12.5px; color: var(--muted); }
+.tbl td.num, .tbl th.num { text-align: right; font-family: var(--f-num); font-variant-numeric: tabular-nums; }
+.tbl tr:last-child td { border-bottom: 0; }
+.tbl tr.click { cursor: pointer; }
+.tbl tr.click:hover td { background: var(--surface-2); }
+.tt input { width: 100%; min-width: 72px; border: 0; background: transparent; padding: 9px 4px; text-align: center; }
+.tt td { padding: 0; border-right: 1px solid var(--line); }
+.tt th.today, .tt td.today { background: var(--accent-soft); }
+.list { display: grid; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.list > * { padding: 10px 12px; border-top: 1px solid var(--line); display: flex; gap: 10px; align-items: center; background: var(--surface); text-align: left; border-left: 0; border-right: 0; border-bottom: 0; width: 100%; min-width: 0; }
 .list > *:first-child { border-top: 0; }
 .list .d { font-family: var(--f-num); font-size: 13px; color: var(--muted); white-space: nowrap; }
 .list .c { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .list .n { font-family: var(--f-num); font-size: 13px; white-space: nowrap; }
 .pill { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 99px; white-space: nowrap; }
-.pill[data-s="done"] { background: var(--done-bg); color: var(--done); } .pill[data-s="weak"] { background: var(--weak-bg); color: var(--weak); }
-.pill[data-s="fail"] { background: var(--fail-bg); color: var(--fail); } .pill[data-s="redo"] { background: var(--redo-bg); color: var(--redo); }
-.pill[data-s="leave"] { background: var(--leave-bg); color: var(--leave); } .pill[data-s=""] { background: var(--surface-2); color: var(--muted); }
+.pill[data-c="done"] { background: var(--done-bg); color: var(--done); } .pill[data-c="weak"] { background: var(--weak-bg); color: var(--weak); }
+.pill[data-c="fail"] { background: var(--fail-bg); color: var(--fail); } .pill[data-c="redo"] { background: var(--redo-bg); color: var(--redo); }
+.pill[data-c="leave"] { background: var(--leave-bg); color: var(--leave); } .pill[data-c=""] { background: var(--surface-2); color: var(--muted); }
+.dist { display: grid; gap: 5px; }
+.dist-row { display: grid; grid-template-columns: 5.5em 1fr 2.5em; gap: 8px; align-items: center; font-size: 12.5px; }
+.dist-row .tr { height: 12px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+.dist-row .tr span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+.dist-row .n { font-family: var(--f-num); text-align: right; }
+.score-row { display: grid; grid-template-columns: 2.4em 1fr 6.5em; gap: 8px; align-items: center; padding: 4px 0; border-top: 1px dashed var(--line); }
+.score-row:first-child { border-top: 0; }
+.score-row input { width: 100%; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); padding: 6px 8px; text-align: right; font-family: var(--f-num); }
+
+/* sheets */
+.scrim { position: fixed; inset: 0; background: rgba(10,25,18,.45); z-index: 50; display: flex; align-items: flex-end; justify-content: center; }
+.sheet { background: var(--surface); width: 100%; max-width: 640px; max-height: 88vh; overflow-y: auto; border-radius: 16px 16px 0 0; padding: 16px max(16px, env(safe-area-inset-right, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); display: grid; gap: 14px; animation: up .18s ease-out; }
+@media (min-width: 700px) { .scrim { align-items: center; } .sheet { border-radius: 16px; } }
+@keyframes up { from { transform: translateY(24px); opacity: .6; } }
+@media (prefers-reduced-motion: reduce) { .sheet { animation: none; } .bar span { transition: none; } aside.side { transition: none; } }
+.sheet h2 { margin: 0; font-family: var(--f-display); font-size: 20px; display: flex; align-items: center; gap: 8px; }
+.sheet h2 .spacer { flex: 1; }
+.sheet h3, .field > h3 { margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: .06em; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field input[type=text], .field input[type=date], .field input[type=number], .field textarea, .field select { width: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); padding: 9px 11px; }
+.field textarea { min-height: 110px; resize: vertical; line-height: 1.6; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+.row > .field { flex: 1 1 140px; }
+.hint { font-size: 12.5px; color: var(--muted); margin: 0; }
+.roster { display: grid; gap: 6px; }
+.roster-row { display: grid; grid-template-columns: 2.2em 1fr auto auto auto; gap: 6px; align-items: center; }
+.roster-row .idx { font-family: var(--f-num); font-size: 12px; color: var(--muted); text-align: right; }
+.roster-row input { min-width: 0; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); padding: 7px 9px; }
+.mini { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; min-width: 32px; height: 32px; display: grid; place-items: center; font-size: 13px; padding: 0 6px; white-space: nowrap; }
+.mini.danger { color: var(--fail); }
 .btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .btns .icon-btn { height: 40px; }
 .danger-btn { color: var(--fail) !important; }
-.toast { position: fixed; left: 50%; bottom: calc(150px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 9px 16px; border-radius: 99px; font-size: 14px; z-index: 60; box-shadow: var(--shadow); max-width: calc(100% - 32px); display: flex; gap: 12px; align-items: center; }
-.toast button { background: none; border: 0; color: var(--accent-soft); font-weight: 700; padding: 0; }
+.toast { position: fixed; left: 50%; bottom: calc(170px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 9px 16px; border-radius: 99px; font-size: 14px; z-index: 60; box-shadow: var(--shadow); max-width: calc(100% - 32px); display: flex; gap: 12px; align-items: center; }
+.toast button { white-space: nowrap; background: none; border: 0; color: var(--accent-soft); font-weight: 700; padding: 0; }
 .confirm-box { border: 1px solid var(--fail); background: var(--fail-bg); border-radius: 10px; padding: 10px 12px; display: grid; gap: 8px; font-size: 14px; }
+.plan-text { white-space: pre-wrap; font-size: 14.5px; line-height: 1.75; background: var(--surface-2); border-radius: 10px; padding: 10px 12px; margin: 0; }
+.plan-item { display: grid; gap: 8px; padding: 12px 0; border-top: 1px solid var(--line); }
+.plan-item:first-of-type { border-top: 0; }
+.plan-item .pt { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.plan-item .pt b { font-size: 15.5px; }
+.plan-item .meta { font-size: 12.5px; color: var(--muted); }
+.lv { font-size: 11.5px; font-weight: 700; border-radius: 6px; padding: 1px 7px; }
+.lv.must { background: var(--fail-bg); color: var(--fail); } .lv.key { background: var(--redo-bg); color: var(--redo); }
+.plan-now { border: 1.5px solid var(--accent); }
+.plan-edit { display: grid; gap: 6px; padding: 10px; border: 1px solid var(--line); border-radius: 12px; }
+.plan-edit .row input, .plan-edit select { border: 1px solid var(--line); border-radius: 9px; background: var(--bg); padding: 7px 9px; min-width: 0; }
+.plan-edit textarea { width: 100%; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); padding: 8px 10px; min-height: 90px; line-height: 1.6; }
+.note-item { display: grid; gap: 4px; padding: 10px 0; border-top: 1px solid var(--line); }
+.note-item:first-child { border-top: 0; }
+.note-item .t { font-weight: 600; }
+.note-item .s { font-size: 13px; color: var(--muted); white-space: pre-wrap; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 </style>
 
 <header class="top">
-  <div class="wrap">
+  <div class="top-in gut">
     <div class="row1">
-      <div class="brand">背书打卡<small id="saveState">已保存在本机</small></div>
+      <button class="icon-btn hamb" id="btnNav" aria-label="打开导航"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="brand">
+        <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11a5 5 0 0 1 5 5v9H9a5 5 0 0 1-5-5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+        <span><b>教学工作台</b><small id="saveState">已保存在本机</small></span>
+      </div>
       <div class="spacer"></div>
-      <button class="icon-btn" id="btnUndo" disabled aria-label="撤销上一步">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg>撤销
-      </button>
-      <button class="icon-btn" id="btnMenu" aria-label="更多：名单、导出、备份">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>菜单
-      </button>
+      <button class="icon-btn" id="btnUndo" disabled aria-label="撤销上一步"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg><span class="lbl">撤销</span></button>
+      <button class="icon-btn" id="btnMenu" aria-label="设置：名单、导出、备份"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><span class="lbl">设置</span></button>
     </div>
-    <div class="tabs" id="tabs" role="tablist"></div>
-    <div class="datebar">
-      <button class="icon-btn" id="prevDay" aria-label="前一天">‹</button>
-      <input type="date" id="date" aria-label="选择日期">
-      <span class="weekday" id="weekday"></span>
-      <button class="icon-btn" id="nextDay" aria-label="后一天">›</button>
-      <button class="icon-btn" id="today">今天</button>
-    </div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="切换班级"></div>
   </div>
 </header>
 
-<main class="wrap">
-  <section class="content-card">
-    <div class="label">今天背诵的内容<span class="spacer"></span><button class="link-btn" id="syncContent">同步到三个班</button></div>
-    <input class="content-input" id="content" type="text" placeholder="例如：唯物论 · 物质与意识" autocomplete="off">
-    <div class="chips" id="chips"></div>
-  </section>
+<div class="shell">
+  <div class="side-scrim" id="sideScrim" hidden></div>
+  <aside class="side" id="side" aria-label="功能导航"></aside>
+  <main class="view gut" id="view"></main>
+</div>
 
-  <section class="summary">
-    <div class="bar" id="bar"></div>
-    <div class="counts" id="counts"></div>
-  </section>
-
-  <div class="toolrow">
-    <button class="icon-btn" id="btnSelect">多选</button>
-    <button class="icon-btn" id="btnFillRest">其余都标为…</button>
-    <button class="icon-btn" id="btnHistory">往日记录</button>
-    <button class="icon-btn" id="btnExport">导出 Excel</button>
-  </div>
-
-  <div id="exampleTag" class="example-tag" hidden>当前是示例名单：点「菜单 → 编辑名单」换成你的学生</div>
-  <section class="grid" id="grid" aria-label="学生名单"></section>
-</main>
-
-<nav class="dock" aria-label="打卡状态">
-  <div class="wrap">
+<nav class="dock" id="dock" aria-label="批量操作" hidden>
+  <div class="dock-in gut">
     <div class="dock-hint" id="dockHint"></div>
     <div class="brushes" id="brushes"></div>
     <div class="apply-row" id="applyRow" hidden>
@@ -254,68 +339,161 @@ main.wrap { padding-block: 14px 150px; display: grid; gap: 14px; }
 <script>
 (() => {
 'use strict';
-const STATUSES = [
-  { k: 'done',  label: '已背', icon: '✓', xl: '✓已背' },
-  { k: 'weak',  label: '不熟', icon: '△', xl: '△不熟' },
-  { k: 'fail',  label: '未背', icon: '✗', xl: '✗未背' },
-  { k: 'redo',  label: '补背', icon: '↻', xl: '↻补背' },
-  { k: 'leave', label: '请假', icon: '—', xl: '请假' },
-];
-const SMAP = Object.fromEntries(STATUSES.map(s => [s.k, s]));
-const KEY = 'beishu-checkin-v1';
+/* ---------- helpers ---------- */
 const $ = s => document.querySelector(s);
 const el = (tag, attrs = {}, ...kids) => {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
-    if (k === 'class') e.className = v; else if (k === 'text') e.textContent = v;
+    if (k === 'class') e.className = v; else if (k === 'text') e.textContent = v; else if (k === 'html') e.innerHTML = v;
     else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else if (k === 'value') e.value = v;
     else if (v === true) e.setAttribute(k, ''); else if (v !== false && v != null) e.setAttribute(k, v);
   }
-  for (const c of kids) if (c != null) e.append(c);
+  for (const c of kids) if (c != null && c !== false) e.append(c);
   return e;
 };
+const svgEl = html => { const s = el('span', { html }); s.style.display = 'contents'; return s; };
 const uid = () => Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-3);
 const pad = n => String(n).padStart(2, '0');
 const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 const parse = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
 const addDays = (s, n) => { const d = parse(s); d.setDate(d.getDate() + n); return ymd(d); };
+const today = () => ymd(new Date());
 const WD = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+const md = d => d.slice(5).replace('-', '/');
+const fmt1 = x => (Math.round(x * 10) / 10).toString();
+const I = p => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+const ICON = {
+  overview: I('<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>'),
+  recite: I('<path d="M4 5h11a5 5 0 0 1 5 5v9H9a5 5 0 0 1-5-5z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>'),
+  rollcall: I('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M17 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/>'),
+  timetable: I('<rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8 13.5h3M13 13.5h3M8 17h3"/>'),
+  notes: I('<path d="M5 3.5h10l4 4v13H5z"/><path d="M14.5 3.5v4.5h4.5M8.5 12h7M8.5 15.5h7"/>'),
+  scores: I('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'),
+  students: I('<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2.5"/><path d="M5.5 17a3.5 3.5 0 0 1 7 0M15 10h3M15 13.5h3"/>'),
+  att: I('<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>'),
+  points: I('<path d="m12 3 2.7 5.6 6.1.8-4.4 4.3 1 6.1L12 17l-5.4 2.8 1-6.1-4.4-4.3 6.1-.8z"/>'),
+  todos: I('<path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/>'),
+  excel: I('<path d="M6 2.5h9l4 4v15H6z"/><path d="m9.5 11 4.5 6M14 11l-4.5 6"/>'),
+  bell: I('<path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/>'),
+  flash: I('<path d="M13 2.5 4.5 13.5H12l-1 8 8.5-11H12z"/>'),
+  people: I('<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>'),
+  warn: I('<path d="M12 3.5 2.5 20h19z"/><path d="M12 10v4.5M12 17.5v.01"/>'),
+  plan: I('<path d="M6 3.5h12v17H6z"/><path d="M9 8h6M9 12h6M9 16h3"/><path d="M3.5 6.5v11"/>'),
+  gear: I('<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>'),
+};
+
+/* ---------- status sets ---------- */
+const MODS = {
+  recite: { store: 'records', title: '读背过关', S: [
+    { k: 'done', label: '已背', icon: '✓', xl: '✓已背', c: 'done' },
+    { k: 'weak', label: '不熟', icon: '△', xl: '△不熟', c: 'weak' },
+    { k: 'fail', label: '未背', icon: '✗', xl: '✗未背', c: 'fail' },
+    { k: 'redo', label: '补背', icon: '↻', xl: '↻补背', c: 'redo' },
+    { k: 'leave', label: '请假', icon: '—', xl: '请假', c: 'leave' }],
+    passed: ['done', 'redo'] },
+  att: { store: 'att', title: '考勤管理', S: [
+    { k: 'ok', label: '到', icon: '✓', xl: '到', c: 'done' },
+    { k: 'late', label: '迟到', icon: '⏱', xl: '迟到', c: 'weak' },
+    { k: 'early', label: '早退', icon: '↗', xl: '早退', c: 'redo' },
+    { k: 'leave', label: '请假', icon: '—', xl: '请假', c: 'leave' },
+    { k: 'absent', label: '缺勤', icon: '✗', xl: '缺勤', c: 'fail' }],
+    passed: ['ok', 'late', 'early'] },
+};
+for (const m of Object.values(MODS)) m.map = Object.fromEntries(m.S.map(s => [s.k, s]));
 
 /* ---------- state ---------- */
+const DEFAULT_PLAN = [
+  { u: '唯物论', id: 'p01', t: '自然界的物质性 · 物质决定意识', lv: 'must', x: '自然界在本质上是物质的。要尊重自然，顺应自然，保护自然，学会与自然和谐相处。\n物质决定意识。要求我们要坚持一切从实际出发，实事求是。' },
+  { u: '唯物论', id: 'p02', t: '意识对物质的反作用', lv: 'must', x: '意识对物质具有反作用。正确的意识，能够促进客观事物的发展；错误的意识，则会阻碍客观事物的发展。要求我们要重视意识的作用，树立正确的意识，克服错误的意识。' },
+  { u: '唯物论', id: 'p03', t: '规律的普遍性和客观性', lv: 'must', x: '规律是普遍的、客观的。①要求我们必须尊重规律，按规律办事，不能违背规律；②人可以在认识和把握规律的基础上，利用规律，改造客观世界，造福人类。' },
+  { u: '唯物论', id: 'p04', t: '意识的能动作用', lv: 'must', x: '【原理】①人能够能动地认识世界。意识活动具有目的性、自觉选择性和能动创造性（意识的特征）。②人能够能动地改造世界。③尊重客观规律是正确发挥主观能动性的前提条件。\n【方法论】①要重视意识的作用，树立正确的意识，克服错误的意识。②坚持在尊重客观规律的基础上发挥意识的能动作用。' },
+  { u: '联系观', id: 'p05', t: '联系的普遍性、客观性、多样性', lv: 'must', x: '(1) 联系具有普遍性。要求我们要用联系的观点看问题。\n(2) 联系具有客观性。要求我们要从事物固有的联系中把握事物，切忌主观随意性。根据事物固有的联系，改变事物的状态，建立新的联系。\n【注意】自在事物的联系和人为事物的联系，都是客观的。\n(3) 联系具有多样性。要求我们一切以时间、地点、条件为转移。' },
+  { u: '联系观', id: 'p06', t: '整体与部分', lv: 'must', x: '①整体居于主导地位，统率着部分，具有部分所不具备的功能。立足整体，优化组合，选择最佳方案，实现整体的最优目标。（强调整体）\n②部分处于被支配地位，部分的功能及其变化会影响整体的功能，关键部分甚至对整体起决定作用。重视部分的作用，用局部的发展推动整体的发展。（强调部分）' },
+  { u: '联系观', id: 'p07', t: '掌握系统优化的方法', lv: 'must', x: '【原理】系统具有整体性、有序性、内部结构的优化趋向的特征。\n【方法论】①树立全局观念，掌握系统优化的方法，用综合的思维方法认识事物。②要立足整体，把各个部分、各个要素联系起来考察，优化组合，选择最佳方案，实现整体的最优目标。③重视部分的作用，用局部的发展推动整体的发展。' },
+  { u: '发展观', id: 'p08', t: '发展的普遍性和实质', lv: 'must', x: '发展具有普遍性；发展的实质是事物的前进和上升，是新事物的产生和旧事物的灭亡。要求我们要用发展的观点看问题，树立创新意识。' },
+  { u: '发展观', id: 'p09', t: '量变与质变', lv: 'must', x: '①事物的发展总是从量变开始，量变是质变的必要准备。要求我们要重视量的积累。\n②量变达到一定程度必然引起质变，质变是量变的必然结果。要求我们要果断地抓住时机，促成质变，实现事物的飞跃。\n③事物的发展是由量变到质变，又在新质的基础上开始新的量变，如此循环往复，不断前进。要坚持量变与质变的统一。' },
+  { u: '发展观', id: 'p10', t: '辩证否定', lv: 'must', x: '①任何事物都要经历肯定、否定，再到否定之否定的辩证发展过程。\n②辩证否定的实质是扬弃，自己否定自己，自己发展自己。\n③辩证的否定是联系和发展的环节。\n④要求我们要树立创新意识。' },
+  { u: '发展观', id: 'p11', t: '前进性和曲折性的统一', lv: 'must', x: '①事物发展是前进性和曲折性的统一，要坚持二者相统一。\n②事物发展的前途是光明的，要对未来充满信心。\n③事物发展的道路是曲折的，勇敢地接受挫折与考验。' },
+  { u: '矛盾', id: 'p12', t: '矛盾的含义和基本属性', lv: 'must', x: '(1) 矛盾即对立统一，要求我们要用一分为二的观点看问题。\n(2) 矛盾的基本属性：同一性和斗争性。\n【原理】①同一性和斗争性是矛盾的基本属性，同一性是相对的，斗争性是绝对的。②矛盾的同一性不能脱离斗争性而存在。③矛盾的斗争性不能脱离同一性而存在，斗争性寓于同一性中，并为同一性所制约。④矛盾双方对立统一推动事物的运动、变化和发展，是事物发展的源泉和动力。\n【方法论】在对立中把握统一，在统一中把握对立。' },
+  { u: '矛盾', id: 'p13', t: '矛盾的普遍性和特殊性', lv: 'must', x: '(1) 矛盾的普遍性，承认矛盾的普遍性是坚持唯物辩证法的前提。\n【原理】矛盾具有普遍性，事事有矛盾，时时有矛盾。【方法论】我们要敢于承认矛盾，分析矛盾，积极寻找正确的方法解决矛盾。\n(2) 矛盾的特殊性。【原理】矛盾具有特殊性。【方法论】坚持具体问题具体分析。' },
+  { u: '矛盾', id: 'p14', t: '矛盾普遍性和特殊性的关系', lv: 'must', x: '【原理】①矛盾的普遍性和特殊性相互联结。普遍性寓于特殊性之中，并通过特殊性表现出来，没有特殊性就没有普遍性；特殊性离不开普遍性。②矛盾的普遍性和特殊性在一定条件下相互转化。\n【方法论】坚持矛盾的普遍性与特殊性、共性与个性的具体的历史的统一。' },
+  { u: '矛盾', id: 'p15', t: '主要矛盾和次要矛盾', lv: 'must', x: '①主要矛盾在事物发展过程中处于支配地位，对事物发展起决定作用，要求我们善于抓重点，集中力量解决主要矛盾。\n②主次矛盾相互依赖，相互影响，在一定条件下相互转化，要求我们统筹兼顾，恰当处理次要矛盾。\n③要坚持两点论与重点论相统一。' },
+  { u: '矛盾', id: 'p16', t: '矛盾的主要方面和次要方面', lv: 'must', x: '①矛盾的主要方面处于支配地位，起着主导作用，事物的性质主要是由主要矛盾的主要方面决定的。要求我们抓主流，善于分清主流和支流。\n②矛盾主次方面相互依赖，相互排斥，在一定条件下相互转化。要求看问题要全面，不能忽视次要方面。\n③要坚持两点论与重点论相统一。' },
+  { u: '矛盾', id: 'p17', t: '两点论与重点论 · 具体问题具体分析', lv: 'key', x: '框架图里只列了这两个标题，没有展开。可以和上面两条合起来考：两点论与重点论相统一；具体问题具体分析。（需要补原文时在“编辑清单”里改）' },
+  { u: '认识论', id: 'p18', t: '实践的特点 · 实践和认识的辩证关系', lv: 'must', x: '实践的特点：客观物质性、主观能动性、社会历史性、直接现实性。\n【原理】①实践是认识的基础。实践是认识的来源，实践是认识发展的动力，实践是检验认识的真理性的唯一标准，实践是认识的目的。②认识对实践具有反作用，正确的认识促进实践的发展，错误的认识阻碍实践的发展。\n【方法论】①要坚持实践第一的观点，积极投身社会实践；②要重视科学理论的指导作用，坚持理论与实践相结合。' },
+  { u: '认识论', id: 'p19', t: '真理是客观的、具体的、有条件的', lv: 'must', x: '(1)【原理】真理具有客观性。【方法论】真理面前人人平等。\n(2)【原理】真理是有条件的、具体的。【方法论】勇于承认和纠正探索真理过程中的错误，实现主观与客观、理论与实践的具体的历史的统一。' },
+  { u: '认识论', id: 'p20', t: '认识的反复性、无限性、上升性', lv: 'must', x: '【原理】认识具有反复性、无限性、上升性，从实践到认识，从认识到实践的循环是一种波浪式前进螺旋式上升。追求真理是一个不断超越自身的过程。\n【方法论】与时俱进，开拓创新，在实践中认识和发现真理，在实践中检验和发展真理。' },
+  { u: '历史唯物主义', id: 'p21', t: '社会存在与社会意识 · 两大基本规律', lv: 'must', x: '①社会存在决定社会意识，社会意识对社会存在具有反作用。\n②生产关系一定要适合生产力状况的规律，上层建筑一定要适合经济基础状况的规律是在任何社会都起作用的普遍规律。' },
+  { u: '历史唯物主义', id: 'p22', t: '人民群众是历史的创造者', lv: 'must', x: '人民群众是社会历史的创造者。要坚持群众观点和群众路线。' },
+  { u: '历史唯物主义', id: 'p23', t: '价值观 · 价值判断和价值选择', lv: 'must', x: '价值观对人们认识和改造世界、人生道路的选择具有导向作用。要树立正确的价值观。\n做出正确的价值判断和价值选择要自觉遵循社会发展的客观规律。\n做出正确的价值判断和价值选择要自觉站在最广大人民的立场上。价值判断和价值选择具有社会历史性。' },
+  { u: '历史唯物主义', id: 'p24', t: '创造和实现人生价值', lv: 'key', x: '（1）在劳动和奉献中创造和实现价值；（2）在个人和社会的统一中创造和实现价值；（3）在砥砺自我中创造和实现价值。' },
+  { u: '历史唯物主义', id: 'p25', t: '改革的根本目的和作用', lv: 'must', x: '改革的根本目的就是使生产关系适应生产力的发展，使上层建筑适应经济基础的发展。改革是发展中国特色社会主义的强大动力。' },
+];
+const KEY = 'beishu-checkin-v1';
+const LV = { must: '必背', key: '熟记要点' };
+const planLabel = it => `${it.u} · ${it.t}`;
+const DEFAULT_TOPICS = ['唯物论', '联系观', '发展观', '矛盾', '认识论', '历史唯物主义', '侵权责任模板', '合同模板', '人身权利', '财产权'];
+const DEFAULT_REASONS = ['回答问题', '背书优秀', '作业优秀', '进步明显', '值日认真', '未交作业', '课堂违纪', '迟到'];
 const EXAMPLE = [
   ['陈思远','李雨桐','王浩然','张欣怡','刘子轩','杨梓涵','赵一鸣','黄诗琪','周俊杰','吴佳怡','徐晨阳','孙可欣','马天宇','朱梦瑶','胡志强','郭雅婷','林嘉豪','何思琪'],
   ['高子墨','罗欣妍','梁宇航','宋雨萱','郑博文','谢紫涵','韩明轩','唐语嫣','冯浩宇','于心怡','董子豪','萧雨晴','程泽宇','曹若曦','袁一凡','邓欣然'],
   ['许天佑','傅诗涵','沈家乐','曾子琪','彭宇轩','吕佳琪','苏明哲','卢梓萱','蒋皓轩','蔡依诺','贾俊熙','丁语桐','魏思辰','薛可馨','叶晨曦','阎雨欣','余子航'],
 ];
-const DEFAULT_TOPICS = ['唯物论', '联系观', '发展观', '矛盾', '认识论', '历史唯物主义', '侵权责任模板', '合同模板', '人身权利', '财产权'];
 function freshState() {
   return {
-    v: 1, example: true, cur: 0, date: ymd(new Date()),
-    classes: ['高一（1）班', '高一（2）班', '高一（3）班'].map((name, i) => ({
-      id: 'c' + (i + 1), name, students: EXAMPLE[i].map(n => ({ id: uid(), name: n })),
-    })),
-    topics: DEFAULT_TOPICS.slice(),
-    records: {}, // "classId|date" -> { content, s: {studentId: status}, n: {studentId: note} }
+    v: 2, example: true, cur: 0, date: today(),
+    classes: ['高一（1）班', '高一（2）班', '高一（3）班'].map((name, i) => ({ id: 'c' + (i + 1), name, students: EXAMPLE[i].map(n => ({ id: uid(), name: n })) })),
+    topics: DEFAULT_TOPICS.slice(), reasons: DEFAULT_REASONS.slice(),
+    plan: DEFAULT_PLAN.map(x => ({ ...x })), records: {}, att: {}, points: {}, scores: {}, notes: [], todos: [],
+    timetable: { periods: 8, cells: {} },
   };
 }
-let S;
+function upgrade(o) {
+  const f = freshState();
+  for (const k of ['plan', 'topics', 'reasons', 'records', 'att', 'points', 'scores', 'notes', 'todos', 'timetable']) if (o[k] == null) o[k] = f[k];
+  if (!Array.isArray(o.topics)) o.topics = DEFAULT_TOPICS.slice();
+  if (!o.timetable.cells) o.timetable = f.timetable;
+  o.v = 2; return o;
+}
 function load() {
-  try { const raw = localStorage.getItem(KEY); if (raw) { const o = JSON.parse(raw); if (o && o.classes) return o; } } catch (e) {}
+  try { const raw = localStorage.getItem(KEY); if (raw) { const o = JSON.parse(raw); if (o && o.classes) return upgrade(o); } } catch (e) {}
   return freshState();
 }
+let S = load();
+S.date = today();
+try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
 let saveTimer = null, storageOk = true;
 function save() {
   clearTimeout(saveTimer);
   saveTimer = setTimeout(() => {
-    try { localStorage.setItem(KEY, JSON.stringify(S)); storageOk = true; }
-    catch (e) { storageOk = false; }
-    syncDiff();
-    showSaveState();
+    try { localStorage.setItem(KEY, JSON.stringify(S)); storageOk = true; } catch (e) { storageOk = false; }
+    syncDiff(); showSaveState();
   }, 150);
 }
+const cls = () => S.classes[S.cur] || S.classes[0];
+const rkey = (cid, date) => cid + '|' + date;
+const rec = (mod, cid = cls().id, date = S.date, create = false) => {
+  const store = S[MODS[mod].store], k = rkey(cid, date);
+  if (!store[k] && create) store[k] = mod === 'recite' ? { content: '', s: {}, n: {} } : { s: {} };
+  return store[k];
+};
+function prune(mod, cid, date) {
+  const store = S[MODS[mod].store], k = rkey(cid, date), r = store[k];
+  if (r && !r.content && !Object.keys(r.s).length && !Object.keys(r.n || {}).length) delete store[k];
+}
+function stats(mod, c, date) {
+  const r = rec(mod, c.id, date), out = { total: c.students.length, none: 0 };
+  MODS[mod].S.forEach(s => out[s.k] = 0);
+  c.students.forEach(st => { const v = r && r.s[st.id]; if (v && out[v] != null) out[v]++; else out.none++; });
+  out.passed = MODS[mod].passed.reduce((a, k) => a + out[k], 0);
+  return out;
+}
+const ptsOf = (cid, sid) => (S.points[cid] || []).reduce((a, e) => a + (e.sids.includes(sid) ? e.delta : 0), 0);
+
 /* ---------- 账号同步（网页版里有 ../konto/sync.js 时启用，和德语学习网站共用账号） ---------- */
 const SYNC = window.DLSync || null, SP = 'beishu/';
-let synced = {}; // 已和账号一致的文档：path -> JSON
+let synced = {};
 function showSaveState() {
   const t = !storageOk ? '无法保存：请先导出备份'
     : SYNC && SYNC.user() ? ({ syncing: '正在同步…', offline: '离线，联网后自动同步', error: '同步出错，本机已保存' }[SYNC.state()] || '已同步到账号')
@@ -324,34 +502,44 @@ function showSaveState() {
   st.classList.toggle('warn', !!(SYNC && !SYNC.user()));
   st.classList.toggle('ok', !!(SYNC && SYNC.user() && SYNC.state() !== 'error'));
 }
+const SINGLE = ['classes', 'plan', 'topics', 'reasons', 'todos', 'timetable', 'notes'];
 function docsOf() {
-  const d = { classes: JSON.stringify(S.classes), topics: JSON.stringify(S.topics || []) };
+  const d = {};
+  for (const k of SINGLE) d[k] = JSON.stringify(S[k]);
   for (const [k, r] of Object.entries(S.records)) d['r/' + k] = JSON.stringify(r);
+  for (const [k, r] of Object.entries(S.att)) d['a/' + k] = JSON.stringify(r);
+  for (const [k, r] of Object.entries(S.points)) if (r.length) d['p/' + k] = JSON.stringify(r);
+  for (const [k, r] of Object.entries(S.scores)) if (r.length) d['s/' + k] = JSON.stringify(r);
   return d;
 }
-let pulledFull = false; // 本机已从账号完整拉过一次打卡数据，才允许上传（避免示例名单盖掉账号里的真名单）
+let pulledFull = false;
 function syncDiff() {
   if (!SYNC || !SYNC.user() || !pulledFull) return;
   const cur = docsOf();
   if (S.example) delete cur.classes; // 示例名单不上传
   for (const [p, j] of Object.entries(cur)) if (synced[p] !== j) { SYNC.changed(SP + p, JSON.parse(j)); synced[p] = j; }
-  for (const p of Object.keys(synced)) if (!(p in cur)) { SYNC.changed(SP + p, null); delete synced[p]; }
+  for (const p of Object.keys(synced)) if (!(p in cur) && p !== 'classes') { SYNC.changed(SP + p, null); delete synced[p]; }
 }
 let remoteT = 0;
 function applyDoc(path, data) {
-    if (path === 'classes') {
-      if (!Array.isArray(data) || !data.length) return;
-      S.classes = data; S.example = false; S.cur = Math.min(S.cur || 0, data.length - 1);
-    } else if (path === 'topics') {
-      if (!Array.isArray(data)) return; S.topics = data;
-    } else if (path.startsWith('r/')) {
-      const k = path.slice(2); if (data) S.records[k] = data; else delete S.records[k];
-    } else return;
-    if (data == null) delete synced[path]; else synced[path] = JSON.stringify(data);
-    clearTimeout(remoteT);
-    remoteT = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} if (!$('#layer').firstChild) render(); }, 120);
+  if (path === 'classes') {
+    if (!Array.isArray(data) || !data.length) return;
+    S.classes = data; S.example = false; S.cur = Math.min(S.cur || 0, data.length - 1);
+  } else if (SINGLE.includes(path)) {
+    if (data == null) return; S[path] = data;
+  } else {
+    const m = /^([raps])\/(.+)$/.exec(path); if (!m) return;
+    const store = { r: S.records, a: S.att, p: S.points, s: S.scores }[m[1]];
+    if (data) store[m[2]] = data; else delete store[m[2]];
+  }
+  if (data == null) delete synced[path]; else synced[path] = JSON.stringify(data);
+  clearTimeout(remoteT);
+  remoteT = setTimeout(() => {
+    try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+    const a = document.activeElement;
+    if (!$('#layer').firstChild && !(a && /INPUT|TEXTAREA|SELECT/.test(a.tagName) && $('#view').contains(a))) render();
+  }, 150);
 }
-// 打开页面时用本页自己的进度游标拉一次：德语网站的同步会推进共用游标，期间别的设备上传的打卡数据会被跳过
 async function fullPull() {
   const u = SYNC.user(); if (!u) return;
   const ck = 'beishu-since:' + u;
@@ -361,151 +549,323 @@ async function fullPull() {
   const j = await r.json();
   let queued = {}; try { queued = JSON.parse(localStorage.getItem('dl-sync-queue') || '{}') || {}; } catch (e) {}
   for (const d of j.docs || []) if (d.path.startsWith(SP) && !(d.path in queued)) applyDoc(d.path.slice(SP.length), d.data);
-  try { localStorage.setItem(ck, String(j.now)); } catch (e) {}
+  // 先把拉到的数据写进本机，再记下同步位置；否则页面马上关掉会漏数据
+  try { localStorage.setItem(KEY, JSON.stringify(S)); localStorage.setItem(ck, String(j.now)); } catch (e) {}
   pulledFull = true;
 }
+const loginUrl = () => SYNC.root + 'konto/?next=' + encodeURIComponent(location.pathname);
 if (SYNC) {
   SYNC.bind(SP, { apply: applyDoc });
   SYNC.onChange(() => { showSaveState(); if (SYNC.user() && !pulledFull) fullPull().then(syncDiff).catch(() => {}); });
-  // 页面开着时每 10 秒拉一次别的设备的改动（只取增量，很省流量）
   const pullNow = () => { if (SYNC.user()) fullPull().then(syncDiff).catch(() => {}); };
   setInterval(() => { if (document.visibilityState === 'visible') pullNow(); }, 10000);
   window.addEventListener('focus', pullNow);
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') pullNow(); });
-  SYNC.ready.then(fullPull).then(() => { syncDiff(); }).catch(e => console.warn('beishu full pull', e)).then(() => { showSaveState(); render(); });
-}
-S = load();
-S.date = ymd(new Date()); // 每次打开默认今天
-if (!Array.isArray(S.topics)) S.topics = DEFAULT_TOPICS.slice();
-try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
-
-const cls = () => S.classes[S.cur];
-const rkey = (cid, date) => cid + '|' + date;
-const rec = (cid = cls().id, date = S.date, create = false) => {
-  const k = rkey(cid, date);
-  if (!S.records[k] && create) S.records[k] = { content: '', s: {}, n: {} };
-  return S.records[k];
-};
-function prune(cid, date) {
-  const k = rkey(cid, date), r = S.records[k];
-  if (r && !r.content && !Object.keys(r.s).length && !Object.keys(r.n || {}).length) delete S.records[k];
+  SYNC.ready.then(fullPull).then(() => { syncDiff(); }).catch(e => console.warn('beishu pull', e)).then(() => { showSaveState(); render(); });
 }
 
 /* ---------- undo ---------- */
 const undoStack = [];
-function snapshot(label) {
-  const c = cls(), r = rec();
-  undoStack.push({ label, cid: c.id, date: S.date, data: r ? JSON.stringify(r) : null });
+function snapshot(label, what) { // what: {mod} = one day's record of the current class/date; {key} = a whole collection
+  const c = cls();
+  let data;
+  if (what.key) data = JSON.stringify(S[what.key]);
+  else { const r = rec(what.mod); data = r ? JSON.stringify(r) : null; }
+  undoStack.push({ label, what, cid: c.id, date: S.date, data });
   if (undoStack.length > 40) undoStack.shift();
   $('#btnUndo').disabled = false;
 }
 function undo() {
   const u = undoStack.pop(); if (!u) return;
-  const k = rkey(u.cid, u.date);
-  if (u.data) S.records[k] = JSON.parse(u.data); else delete S.records[k];
+  if (u.what.key) S[u.what.key] = JSON.parse(u.data);
+  else { const store = S[MODS[u.what.mod].store], k = rkey(u.cid, u.date); if (u.data) store[k] = JSON.parse(u.data); else delete store[k]; S.date = u.date; }
   const ci = S.classes.findIndex(c => c.id === u.cid); if (ci >= 0) S.cur = ci;
-  S.date = u.date;
   $('#btnUndo').disabled = !undoStack.length;
   save(); render(); toast('已撤销：' + u.label);
 }
 
-/* ---------- UI state ---------- */
-let brush = 'done', selecting = false, selected = new Set();
-
-function setStatus(sid, st) {
-  const r = rec(undefined, undefined, true);
-  if (st) r.s[sid] = st; else delete r.s[sid];
+/* ---------- toast & sheets ---------- */
+let toastT;
+function toast(msg, action) {
+  const old = document.querySelector('.toast'); if (old) old.remove(); clearTimeout(toastT);
+  const t = el('div', { class: 'toast', role: 'status' }, msg);
+  if (action) t.append(el('button', { text: action.label, onclick: () => { t.remove(); action.fn(); } }));
+  document.body.append(t); toastT = setTimeout(() => t.remove(), 3200);
 }
-function onTileTap(stu) {
-  if (selecting) { selected.has(stu.id) ? selected.delete(stu.id) : selected.add(stu.id); renderGrid(); renderDock(); return; }
-  const r = rec(), curS = r && r.s[stu.id] || '';
-  const next = (brush && curS === brush) ? '' : brush; // 再点一次同样状态 = 取消
-  snapshot(stu.name + (next ? ' → ' + SMAP[next].label : ' 清除'));
-  setStatus(stu.id, next); prune(cls().id, S.date);
-  save(); renderGrid(); renderSummary(); renderTabs();
-  if (navigator.vibrate) try { navigator.vibrate(8); } catch (e) {}
+function openSheet(build) {
+  const layer = $('#layer'); layer.replaceChildren();
+  const sheet = el('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true' });
+  const scrim = el('div', { class: 'scrim', onclick: e => { if (e.target === scrim) close(); } }, sheet);
+  const close = () => { layer.replaceChildren(); render(); };
+  build(sheet, close);
+  layer.append(scrim);
+  return close;
+}
+const head = (title, close) => el('h2', {}, title, el('span', { class: 'spacer' }), el('button', { class: 'icon-btn', text: '完成', onclick: close }));
+function armed(btn, label, fn) { // two-tap confirm for deletes
+  let on = false, t; const orig = btn.textContent;
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    if (!on) { on = true; btn.textContent = label; btn.classList.add('danger-btn'); t = setTimeout(() => { on = false; btn.textContent = orig; btn.classList.remove('danger-btn'); }, 2600); return; }
+    clearTimeout(t); fn();
+  });
+  return btn;
 }
 
-/* ---------- render ---------- */
-function render() { renderTabs(); renderDate(); renderContent(); renderSummary(); renderGrid(); renderDock(); $('#exampleTag').hidden = !S.example; }
-
-function stats(c, date) {
-  const r = rec(c.id, date), out = { total: c.students.length, none: 0 };
-  STATUSES.forEach(s => out[s.k] = 0);
-  c.students.forEach(st => { const v = r && r.s[st.id]; if (v && out[v] != null) out[v]++; else out.none++; });
-  return out;
+/* ---------- navigation ---------- */
+const VIEWS = [
+  { k: 'overview', g: '', t: '总览' },
+  { k: 'recite', g: '教学工具', t: '读背过关' },
+  { k: 'plan', g: '教学工具', t: '背诵清单' },
+  { k: 'rollcall', g: '教学工具', t: '随机点名' },
+  { k: 'timetable', g: '教学工具', t: '课表与进度' },
+  { k: 'notes', g: '教学工具', t: '备课反思' },
+  { k: 'scores', g: '学情分析', t: '成绩分析' },
+  { k: 'students', g: '学生管理', t: '学生档案' },
+  { k: 'att', g: '班级常规', t: '考勤管理' },
+  { k: 'points', g: '班级常规', t: '加减分' },
+  { k: 'todos', g: '班级常规', t: '待办与提醒' },
+];
+const VMAP = Object.fromEntries(VIEWS.map(v => [v.k, v]));
+let view = VMAP[(location.hash || '').slice(1)] ? location.hash.slice(1) : 'overview';
+let brush = { recite: 'done', att: 'absent' }, selecting = false;
+const selected = new Set();
+function go(k) {
+  if (!VMAP[k]) k = 'overview';
+  view = k; selecting = false; selected.clear();
+  try { if (location.hash.slice(1) !== k) history.replaceState(null, '', '#' + k); } catch (e) {}
+  closeNav(); render(); window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', () => { const k = location.hash.slice(1); if (VMAP[k] && k !== view) go(k); });
+function openNav() { $('#side').classList.add('open'); $('#sideScrim').hidden = false; }
+function closeNav() { $('#side').classList.remove('open'); $('#sideScrim').hidden = true; }
+const dueTodos = () => S.todos.filter(t => !t.done && t.due && t.due <= today()).length;
+function renderSide() {
+  const side = $('#side'); side.replaceChildren();
+  let g = null;
+  for (const v of VIEWS) {
+    if (v.g !== g) { g = v.g; if (g) side.append(el('h4', { text: g })); }
+    const b = el('button', { class: 'nav', 'aria-current': v.k === view ? 'page' : false, onclick: () => go(v.k) }, svgEl(ICON[v.k]), v.t);
+    if (v.k === 'todos' && dueTodos()) b.append(el('span', { class: 'badge', text: dueTodos() }));
+    side.append(b);
+  }
+  side.append(el('h4', { text: '数据' }),
+    el('button', { class: 'nav', onclick: () => { closeNav(); openExport(); } }, svgEl(ICON.excel), '导出 Excel'),
+    el('button', { class: 'nav', onclick: () => { closeNav(); openMenu(); } }, svgEl(ICON.gear), '名单 / 备份 / 账号'));
 }
 function renderTabs() {
   const t = $('#tabs'); t.replaceChildren();
+  const mod = view === 'att' ? 'att' : 'recite';
   S.classes.forEach((c, i) => {
-    const st = stats(c, S.date), recd = st.total - st.none;
+    const st = stats(mod, c, view === 'overview' ? today() : S.date), recd = st.total - st.none;
+    const sub = (view === 'recite' || view === 'att' || view === 'overview') && recd ? `${st.passed}/${st.total}` : `${st.total}人`;
     t.append(el('button', { class: 'tab', role: 'tab', 'aria-selected': String(i === S.cur), onclick: () => { S.cur = i; selected.clear(); save(); render(); } },
-      c.name, el('span', { class: 'pct', text: recd ? `${st.done + st.redo}/${st.total}` : `${st.total}人` })));
+      c.name, el('span', { class: 'pct', text: sub })));
   });
 }
-function renderDate() {
-  $('#date').value = S.date;
-  const isToday = S.date === ymd(new Date());
-  $('#weekday').textContent = WD[parse(S.date).getDay()];
-  $('#today').classList.toggle('on', isToday);
+
+/* ---------- render ---------- */
+function render() {
+  renderSide(); renderTabs(); showSaveState();
+  const v = $('#view'); v.replaceChildren();
+  ({ overview: vOverview, recite: v => vCheck('recite', v), att: v => vCheck('att', v), rollcall: vRollcall, timetable: vTimetable,
+    notes: vNotes, scores: vScores, plan: vPlan, students: vStudents, points: vPoints, todos: vTodos })[view](v);
+  const isCheck = view === 'recite' || view === 'att';
+  $('#dock').hidden = !isCheck && view !== 'points';
+  if (isCheck) renderDock(view); else if (view === 'points') renderPointsDock();
 }
-function allContents() {
-  const seen = new Map();
-  Object.entries(S.records).sort((a, b) => b[0].split('|')[1].localeCompare(a[0].split('|')[1]))
-    .forEach(([k, r]) => { if (r.content && !seen.has(r.content)) seen.set(r.content, 1); });
-  return [...seen.keys()].slice(0, 12);
+function pageHead(title, sub, ...right) {
+  return el('div', { class: 'page-head' }, el('div', {}, el('h1', {}, el('em', { text: title })), sub ? el('p', { text: sub }) : null), el('span', { class: 'spacer' }), ...right);
+}
+
+/* ===== 总览 ===== */
+function vOverview(v) {
+  const c = cls(), t = today(), wd = parse(t).getDay();
+  const rs = stats('recite', c, t), as = stats('att', c, t);
+  const lessons = wd >= 1 && wd <= 5 ? Array.from({ length: S.timetable.periods }, (_, p) => S.timetable.cells[`${wd}-${p}`]).filter(Boolean) : [];
+  const exams = (S.scores[c.id] || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+  const ex = exams[0], exStat = ex ? examStats(c, ex) : null;
+  const rr = rec('recite', c.id, t);
+  v.append(pageHead('总览 · ' + c.name, `${t} ${WD[wd]}` + (rr && rr.content ? ` · 今天背：${rr.content}` : '')));
+  const open = S.todos.filter(x => !x.done), late = open.filter(x => x.due && x.due < t).length;
+  v.append(el('div', { class: 'hero' },
+    el('span', {}, '今日课节 ', el('b', { text: lessons.length })),
+    el('span', {}, '待办 ', el('b', { text: open.length }), late ? `（${late} 项逾期）` : ''),
+    ex ? el('span', {}, `最近考试「${ex.name}」均分 `, el('b', { text: exStat.n ? fmt1(exStat.avg) : '—' })) : el('span', { text: '还没有录入考试成绩' })));
+  const stat = (k, icon, val, sub, to, alert) => el('button', { class: 'stat' + (alert ? ' alert' : ''), onclick: () => go(to) },
+    el('span', { class: 'k' }, svgEl(icon), k), el('span', { class: 'v' }, String(val), sub ? el('small', { text: sub }) : null));
+  const rDone = rs.total - rs.none, aDone = as.total - as.none;
+  v.append(el('div', { class: 'stats' },
+    stat('今日读背过关', ICON.recite, rDone ? rs.passed : '—', rDone ? ` / ${rs.total}` : ' 未记录', 'recite'),
+    stat('读背未过', ICON.warn, rs.fail + rs.weak, ' 人', 'recite', rs.fail > 0),
+    stat('今日出勤', ICON.att, aDone ? as.passed : '—', aDone ? ` / ${as.total}` : ' 未记录', 'att'),
+    stat('缺勤', ICON.people, as.absent, ' 人', 'att', as.absent > 0),
+    stat('班级人数', ICON.students, c.students.length, ' 人', 'students'),
+    stat('待办事项', ICON.todos, open.length, ' 项', 'todos', late > 0)));
+
+  const quick = el('div', { class: 'quick' }, ...['recite', 'rollcall', 'att', 'points', 'scores', 'timetable', 'notes', 'students'].map(k =>
+    el('button', { class: 'qt', onclick: () => go(k) }, svgEl(ICON[k]), VMAP[k].t)),
+    el('button', { class: 'qt', onclick: openExport }, svgEl(ICON.excel), '导出 Excel'));
+  v.append(el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.flash), '快捷操作'), quick));
+
+  // 今天要处理
+  const due = open.filter(x => x.due && x.due <= t).sort((a, b) => a.due.localeCompare(b.due));
+  const auto = [];
+  const nxp = nextPlan(c);
+  if (c.students.length && !rDone) auto.push([rr && rr.content ? `今天背「${rr.content}」，还没开始记录` : nxp ? `今天的读背还没记录，按清单下一条是「${nxp.t}」` : '今天的读背还没记录', rr && rr.content || !nxp ? 'recite' : 'plan']);
+  if (rs.fail) auto.push([`${rs.fail} 人今天未背，安排补背`, 'recite']);
+  if (c.students.length && !aDone && wd >= 1 && wd <= 5) auto.push(['今天的考勤还没记录', 'att']);
+  const todoCard = el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.todos), '今天要处理', due.some(x => x.due < t) ? el('span', { class: 'tag', text: '有逾期' }) : null));
+  const list = el('div');
+  due.forEach(x => list.append(todoRow(x)));
+  auto.forEach(([tx, k]) => list.append(el('div', { class: 'todo-row' }, el('span', { class: 'tx', text: tx }), el('button', { class: 'go', text: '立即处理', onclick: () => go(k) }))));
+  if (!list.firstChild) list.append(el('p', { class: 'muted', text: '今天没有要处理的事。' }));
+  todoCard.append(list, quickAddTodo());
+  // 近期提醒
+  const soon = open.filter(x => x.due && x.due > t && x.due <= addDays(t, 7)).sort((a, b) => a.due.localeCompare(b.due));
+  const remind = el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.bell), '近期提醒'));
+  const rl = el('div');
+  soon.forEach(x => rl.append(el('div', { class: 'todo-row' }, el('span', { class: 'tx', text: x.text }), el('span', { class: 'due', text: md(x.due) + ' ' + WD[parse(x.due).getDay()] }))));
+  weakStudents(c).slice(0, 5).forEach(([stu, n]) => rl.append(el('div', { class: 'todo-row' },
+    el('span', { class: 'tx', text: `${stu.name}：最近 7 天有 ${n} 次未背或不熟` }), el('button', { class: 'go', text: '看档案', onclick: () => openStudent(stu) }))));
+  if (!rl.firstChild) rl.append(el('p', { class: 'muted', text: '未来 7 天没有到期的事，也没有需要特别盯的学生。' }));
+  remind.append(rl);
+  v.append(el('div', { class: 'cols' }, todoCard, remind));
+}
+function weakStudents(c) {
+  const t = today(), from = addDays(t, -6), cnt = {};
+  for (const [k, r] of Object.entries(S.records)) {
+    const [cid, d] = k.split('|'); if (cid !== c.id || d < from || d > t) continue;
+    for (const [sid, v] of Object.entries(r.s)) if (v === 'fail' || v === 'weak') cnt[sid] = (cnt[sid] || 0) + 1;
+  }
+  return c.students.map(s => [s, cnt[s.id] || 0]).filter(x => x[1] >= 2).sort((a, b) => b[1] - a[1]);
+}
+function todoRow(x) {
+  const t = today();
+  const cb = el('input', { type: 'checkbox', 'aria-label': '完成：' + x.text });
+  cb.checked = !!x.done;
+  cb.addEventListener('change', () => { snapshot('勾选待办', { key: 'todos' }); x.done = cb.checked; save(); render(); if (cb.checked) toast('已完成：' + x.text, { label: '撤销', fn: undo }); });
+  return el('div', { class: 'todo-row' }, cb, el('span', { class: 'tx' + (x.done ? ' done' : ''), text: x.text }),
+    x.due ? el('span', { class: 'due' + (!x.done && x.due < t ? ' late' : ''), text: !x.done && x.due < t ? `${md(x.due)} 已逾期` : x.due === t ? '今天' : md(x.due) }) : null);
+}
+function quickAddTodo() {
+  const inp = el('input', { type: 'text', class: 'qadd', id: 'qtodo', placeholder: '＋ 加一条今天的待办，回车保存', enterkeyhint: 'done' });
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter' && inp.value.trim()) { S.todos.push({ id: uid(), text: inp.value.trim(), due: today(), done: false }); save(); render(); const q = $('#qtodo'); if (q) q.focus(); } });
+  return inp;
+}
+
+/* ===== 读背过关 / 考勤 ===== */
+function datebar() {
+  const d = el('input', { type: 'date', id: 'date', 'aria-label': '选择日期', value: S.date });
+  d.addEventListener('change', () => { if (d.value) { S.date = d.value; selected.clear(); render(); } });
+  const shift = n => { S.date = addDays(S.date, n); selected.clear(); render(); };
+  return el('div', { class: 'datebar' },
+    el('button', { class: 'icon-btn', 'aria-label': '前一天', text: '‹', onclick: () => shift(-1) }), d,
+    el('span', { class: 'weekday', text: WD[parse(S.date).getDay()] }),
+    el('button', { class: 'icon-btn', 'aria-label': '后一天', text: '›', onclick: () => shift(1) }),
+    el('button', { class: 'icon-btn' + (S.date === today() ? ' on' : ''), text: '今天', onclick: () => { S.date = today(); render(); } }));
+}
+function vCheck(mod, v) {
+  const M = MODS[mod];
+  v.append(pageHead(M.title, mod === 'recite' ? '先选背诵内容，再点名字记录；长按名字看详情、写备注' : '先点出迟到、请假、缺勤的学生，再一键把其余标为「到」'));
+  v.append(datebar());
+  if (mod === 'recite') {
+    const inp = el('input', { class: 'content-input', id: 'content', type: 'text', placeholder: '例如：唯物论 · 物质与意识', autocomplete: 'off', enterkeyhint: 'done' });
+    inp.addEventListener('input', () => { setContent(inp.value); renderTabs(); });
+    inp.addEventListener('change', renderContent);
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') inp.blur(); });
+    v.append(el('section', { class: 'card' },
+      el('div', { class: 'label' }, '今天背诵的内容', el('span', { class: 'spacer' }), el('button', { class: 'link-btn', text: '同步到全部班级', onclick: syncContent })),
+      inp, el('div', { class: 'chips', id: 'chips' }), el('div', { id: 'planBox' })));
+  }
+  v.append(el('section', { style: 'display:grid;gap:8px' }, el('div', { class: 'bar', id: 'bar' }), el('div', { class: 'counts', id: 'counts' })));
+  v.append(el('div', { class: 'toolrow' },
+    el('button', { class: 'icon-btn' + (selecting ? ' on' : ''), id: 'btnSelect', text: selecting ? '退出多选' : '多选', onclick: () => { selecting = !selecting; selected.clear(); render(); } }),
+    el('button', { class: 'icon-btn', id: 'btnFill', text: mod === 'att' ? '其余都标为到' : '其余都标为…', onclick: () => mod === 'att' ? fillRest('att', 'ok') : openFillRest(mod) }),
+    el('button', { class: 'icon-btn', text: '往日记录', onclick: () => openHistory(mod) }),
+    el('button', { class: 'icon-btn', text: '导出 Excel', onclick: openExport })));
+  if (S.example) v.append(el('div', { class: 'example-tag', text: '当前是示例名单：点右上角「设置 → 编辑名单」换成你的学生' }));
+  v.append(el('section', { class: 'grid', id: 'grid', 'aria-label': '学生名单' }));
+  if (mod === 'recite') renderContent();
+  renderSummary(mod); renderGrid(mod);
 }
 function renderContent() {
-  const r = rec(), inp = $('#content');
+  const r = rec('recite'), inp = $('#content'); if (!inp) return;
   if (document.activeElement !== inp) inp.value = r ? r.content : '';
   const chips = $('#chips'); chips.replaceChildren();
-  const yesterday = (() => { // 最近一次（本班、今天之前）的内容
-    const ks = Object.keys(S.records).filter(k => k.startsWith(cls().id + '|') && k.split('|')[1] < S.date && S.records[k].content).sort();
-    return ks.length ? S.records[ks[ks.length - 1]].content : '';
-  })();
+  const ks = Object.keys(S.records).filter(k => k.startsWith(cls().id + '|') && k.split('|')[1] < S.date && S.records[k].content).sort();
+  const last = ks.length ? S.records[ks[ks.length - 1]].content : '';
   const cur = (r && r.content) || '';
-  // 顺序：上次背的 → 常用背诵内容（按课本顺序）→ 其他背过的
-  const list = [...new Set([yesterday, ...(S.topics || []), ...allContents()])].filter(c => c && c !== cur);
-  list.forEach(c => chips.append(el('button', { class: 'chip' + (c === yesterday ? ' last' : ''), title: c === yesterday ? '上次背的' : '', text: c, onclick: () => { setContent(c); renderContent(); } })));
+  const nx = nextPlan(cls());
+  if (nx && planLabel(nx) !== cur) chips.append(el('button', { class: 'chip last', title: '背诵清单里下一条还没背的', text: '下一条：' + nx.t, onclick: () => { setPlan(nx, [cls().id]); renderContent(); renderTabs(); } }));
+  chips.append(el('button', { class: 'chip', text: '从背诵清单选…', onclick: openPlanPicker }));
+  const box = $('#planBox'); box.replaceChildren();
+  const it = planOf(r);
+  if (it) {
+    const tg = el('button', { class: 'link-btn', text: showText ? '收起原文' : '看原文（对照检查）', onclick: () => { showText = !showText; renderContent(); } });
+    box.append(el('div', { class: 'label' }, el('span', { class: 'lv ' + it.lv, text: LV[it.lv] }), it.t, el('span', { class: 'spacer' }), tg));
+    if (showText) box.append(el('p', { class: 'plan-text', text: it.x }));
+  }
+  const used = [...new Set(Object.values(S.records).map(x => x.content).filter(Boolean))];
+  [...new Set([last, ...(S.topics || []), ...used])].filter(c => c && c !== cur).forEach(c => chips.append(
+    el('button', { class: 'chip' + (c === last ? ' last' : ''), title: c === last ? '上次背的' : '', text: c, onclick: () => { setContent(c); renderContent(); renderTabs(); } })));
   chips.append(el('button', { class: 'chip edit', text: '编辑常用…', onclick: openTopics }));
 }
-function openTopics() {
+function setContent(v) { const r = rec('recite', undefined, undefined, true); r.content = v.trim(); const it = S.plan.find(x => planLabel(x) === r.content); if (it) r.pid = it.id; else delete r.pid; prune('recite', cls().id, S.date); save(); }
+let showText = true;
+const planOf = r => r && (S.plan.find(x => x.id === r.pid) || S.plan.find(x => planLabel(x) === r.content)) || null;
+function setPlan(it, cids, date = S.date) { cids.forEach(cid => { const r = rec('recite', cid, date, true); r.content = planLabel(it); r.pid = it.id; }); save(); }
+function planProgress(c) { // id -> {times, first, last, rate}
+  const out = {};
+  Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).sort().forEach(k => {
+    const r = S.records[k], it = planOf(r); if (!it) return; const d = k.split('|')[1];
+    const o = out[it.id] = out[it.id] || { times: 0, first: d };
+    o.times++; o.last = d; const st = stats('recite', c, d); if (st.total - st.none) o.rate = `${st.passed}/${st.total}`;
+  });
+  return out;
+}
+const nextPlan = c => { const pg = planProgress(c); return S.plan.find(x => !pg[x.id]); };
+function openPlanPicker() {
   openSheet((sh, close) => {
-    sh.append(head('常用背诵内容', close));
-    sh.append(el('p', { class: 'hint', text: '一行一个，按讲课顺序排。会显示在“今天背诵的内容”下面，点一下就填好。也可以写细一点，比如“矛盾 · 主要矛盾和次要矛盾”。' }));
-    const ta = el('textarea', { id: 'topicsText', style: 'min-height:260px' });
-    ta.value = (S.topics || []).join('\n');
-    ta.addEventListener('input', () => { S.topics = ta.value.split(/\n+/).map(x => x.trim()).filter(Boolean); save(); });
-    sh.append(el('label', { class: 'field' }, ta));
+    const c = cls(), pg = planProgress(c);
+    sh.append(head('从背诵清单选 · ' + md(S.date), close));
+    let u = null; const list = el('div', { class: 'list' });
+    S.plan.forEach(it => {
+      if (it.u !== u) { u = it.u; list.append(el('div', { style: 'background:var(--surface-2);font-size:12.5px;font-weight:600;color:var(--muted);padding:6px 12px' }, u)); }
+      const p = pg[it.id];
+      list.append(el('button', { onclick: () => { setPlan(it, [c.id]); close(); } }, el('span', { class: 'lv ' + it.lv, text: LV[it.lv] }), el('span', { class: 'c', text: it.t }),
+        el('span', { class: 'd', text: p ? `背过 ${p.times} 次` : '未开始' })));
+    });
+    sh.append(list);
   });
 }
-function setContent(v) {
-  const r = rec(undefined, undefined, true); r.content = v.trim(); prune(cls().id, S.date); save();
+function syncContent() {
+  const r = rec('recite'); const v = r && r.content;
+  if (!v) { toast('先填写今天背诵的内容'); return; }
+  S.classes.forEach(c => { rec('recite', c.id, S.date, true).content = v; });
+  save(); renderTabs(); toast(`全部班级 ${md(S.date)} 都设为「${v}」`);
 }
-function renderSummary() {
-  const st = stats(cls(), S.date), bar = $('#bar'), counts = $('#counts');
+function renderSummary(mod) {
+  const M = MODS[mod], st = stats(mod, cls(), S.date), bar = $('#bar'), counts = $('#counts'); if (!bar) return;
   bar.replaceChildren(); counts.replaceChildren();
-  STATUSES.forEach(s => {
-    if (st[s.k]) bar.append(el('span', { style: `width:${st[s.k] / Math.max(1, st.total) * 100}%;background:var(--${s.k})` }));
-    counts.append(el('span', {}, el('i', { class: 'dot', style: `background:var(--${s.k})` }), s.label, el('b', { text: st[s.k] })));
+  M.S.forEach(s => {
+    if (st[s.k]) bar.append(el('span', { style: `width:${st[s.k] / Math.max(1, st.total) * 100}%;background:var(--${s.c})` }));
+    counts.append(el('span', {}, el('i', { class: 'dot', style: `background:var(--${s.c})` }), s.label, el('b', { text: st[s.k] })));
   });
   counts.append(el('span', {}, '未记录', el('b', { text: st.none })), el('span', {}, '共', el('b', { text: st.total })));
 }
-function renderGrid() {
-  const g = $('#grid'), c = cls(), r = rec(); g.replaceChildren();
+function renderGrid(mod) {
+  const g = $('#grid'), c = cls(), r = rec(mod), M = MODS[mod]; if (!g) return; g.replaceChildren();
   if (!c.students.length) {
-    g.append(el('div', { class: 'empty', style: 'grid-column:1/-1' }, '这个班还没有学生。', el('br'),
-      el('button', { class: 'link-btn', text: '去添加名单', onclick: openRoster })));
+    g.append(el('div', { class: 'empty', style: 'grid-column:1/-1' }, '这个班还没有学生。', el('br'), el('button', { class: 'link-btn', text: '去添加名单', onclick: openRoster })));
     return;
   }
   c.students.forEach((stu, i) => {
-    const s = (r && r.s[stu.id]) || '';
-    const tile = el('button', { class: 'stu' + (selected.has(stu.id) ? ' sel' : ''), 'data-s': s, 'aria-label': `${stu.name} ${s ? SMAP[s].label : '未记录'}` },
-      el('span', { class: 'no', text: pad(i + 1) }),
-      el('span', { class: 'nm', text: stu.name }),
-      el('span', { class: 'st', text: s ? SMAP[s].icon + ' ' + SMAP[s].label : '' }));
+    const s = (r && r.s[stu.id]) || '', sd = M.map[s];
+    const tile = el('button', { class: 'stu' + (selected.has(stu.id) ? ' sel' : ''), 'data-c': sd ? sd.c : '', 'aria-label': `${stu.name} ${sd ? sd.label : '未记录'}` },
+      el('span', { class: 'no', text: pad(i + 1) }), el('span', { class: 'nm', text: stu.name }), el('span', { class: 'st', text: sd ? sd.icon + ' ' + sd.label : '' }));
     if (r && r.n && r.n[stu.id]) tile.append(el('span', { class: 'note-flag', title: '有备注' }));
-    bindPress(tile, () => onTileTap(stu), () => openStudent(stu));
+    bindPress(tile, () => onTileTap(mod, stu), () => openStudent(stu));
     g.append(tile);
   });
 }
@@ -518,171 +878,546 @@ function bindPress(node, tap, long) {
   node.addEventListener('contextmenu', e => e.preventDefault());
   node.addEventListener('click', e => { if (fired) { e.preventDefault(); fired = false; return; } tap(); });
 }
-function renderDock() {
-  const b = $('#brushes'); b.replaceChildren();
-  [...STATUSES, { k: '', label: '清除', icon: '○' }].forEach(s => b.append(
-    el('button', { class: 'brush', 'data-s': s.k, 'aria-pressed': String(brush === s.k), onclick: () => { brush = s.k; renderDock(); } },
-      el('i', { text: s.icon }), s.label)));
-  const name = brush ? SMAP[brush].label : '清除';
-  const hint = $('#dockHint'); hint.replaceChildren();
-  if (selecting) {
-    hint.append(`多选中：已选 ${selected.size} 人，选好后点「标记所选」为「${name}」`);
-    $('#selApply').textContent = `标记所选为${name}`;
-  } else hint.append(`点名字 = 标为「${name}」，再点一次取消 · 长按看详情和备注`);
+function setStatus(mod, sid, st, cid, date) { const r = rec(mod, cid, date, true); if (st) r.s[sid] = st; else delete r.s[sid]; }
+function onTileTap(mod, stu) {
+  if (selecting) { selected.has(stu.id) ? selected.delete(stu.id) : selected.add(stu.id); renderGrid(mod); renderDock(mod); return; }
+  const r = rec(mod), cur = r && r.s[stu.id] || '', b = brush[mod];
+  const next = (b && cur === b) ? '' : b;
+  snapshot(stu.name + (next ? ' → ' + MODS[mod].map[next].label : ' 清除'), { mod });
+  setStatus(mod, stu.id, next); prune(mod, cls().id, S.date);
+  save(); renderGrid(mod); renderSummary(mod); renderTabs();
+  if (navigator.vibrate) try { navigator.vibrate(8); } catch (e) {}
+}
+function renderDock(mod) {
+  const M = MODS[mod], b = $('#brushes'); b.replaceChildren();
+  b.style.gridTemplateColumns = 'repeat(6, 1fr)';
+  [...M.S, { k: '', label: '清除', icon: '○', c: '' }].forEach(s => b.append(
+    el('button', { class: 'brush', 'data-c': s.c, 'aria-pressed': String(brush[mod] === s.k), onclick: () => { brush[mod] = s.k; renderDock(mod); } }, el('i', { text: s.icon }), s.label)));
+  const name = brush[mod] ? M.map[brush[mod]].label : '清除';
+  $('#dockHint').textContent = selecting ? `多选中：已选 ${selected.size} 人，选好后点「标记所选」` : `点名字 = 标为「${name}」，再点一次取消 · 长按看详情和备注`;
+  $('#selApply').textContent = `标记所选为${name}`;
   $('#applyRow').hidden = !selecting;
-  $('#btnSelect').classList.toggle('on', selecting);
-  $('#btnSelect').textContent = selecting ? '退出多选' : '多选';
+  $('#selApply').onclick = () => {
+    if (!selected.size) { toast('先点名字选人'); return; }
+    const n = selected.size;
+    snapshot(`${n} 人 → ${name}`, { mod });
+    selected.forEach(id => setStatus(mod, id, brush[mod])); prune(mod, cls().id, S.date);
+    selected.clear(); selecting = false; save(); render();
+    toast(`已把 ${n} 人标为${name}`, { label: '撤销', fn: undo });
+  };
+  $('#selAll').onclick = () => { cls().students.forEach(s => selected.add(s.id)); renderGrid(mod); renderDock(mod); };
+  $('#selNone').onclick = () => { selected.clear(); renderGrid(mod); renderDock(mod); };
 }
-
-/* ---------- toast ---------- */
-let toastT;
-function toast(msg, action) {
-  const old = document.querySelector('.toast'); if (old) old.remove(); clearTimeout(toastT);
-  const t = el('div', { class: 'toast', role: 'status' }, msg);
-  if (action) t.append(el('button', { text: action.label, onclick: () => { t.remove(); action.fn(); } }));
-  document.body.append(t); toastT = setTimeout(() => t.remove(), 3200);
+function fillRest(mod, k) {
+  const st = stats(mod, cls(), S.date); if (!st.none) { toast('已经全部记录了'); return; }
+  snapshot(`未记录的 ${st.none} 人 → ${MODS[mod].map[k].label}`, { mod });
+  const r = rec(mod, undefined, undefined, true);
+  cls().students.forEach(x => { if (!r.s[x.id]) r.s[x.id] = k; });
+  save(); render(); toast(`已把 ${st.none} 人标为${MODS[mod].map[k].label}`, { label: '撤销', fn: undo });
 }
-
-/* ---------- sheets ---------- */
-function openSheet(build) {
-  const layer = $('#layer'); layer.replaceChildren();
-  const sheet = el('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true' });
-  const scrim = el('div', { class: 'scrim', onclick: e => { if (e.target === scrim) close(); } }, sheet);
-  const close = () => { layer.replaceChildren(); render(); };
-  build(sheet, close);
-  layer.append(scrim);
-  return close;
-}
-const head = (title, close) => el('h2', {}, title, el('span', { class: 'spacer' }), el('button', { class: 'icon-btn', text: '完成', onclick: close }));
-
-function openMenu() {
+function openFillRest(mod) {
   openSheet((sh, close) => {
-    sh.append(head('菜单', close));
-    sh.append(el('div', { class: 'list' },
-      el('button', { onclick: openRoster }, el('span', { class: 'c', text: '编辑名单和班级名称' }), el('span', { class: 'd', text: cls().name })),
-      el('button', { onclick: openExport }, el('span', { class: 'c', text: '导出 Excel（.xlsx）' })),
-      el('button', { onclick: openHistory }, el('span', { class: 'c', text: '往日记录' })),
-      SYNC ? el('button', { onclick: () => { location.href = SYNC.root + 'konto/?next=' + encodeURIComponent(location.pathname); } },
-        el('span', { class: 'c', text: SYNC.user() ? '账号同步：已登录' : '登录账号，手机和电脑同步' }), el('span', { class: 'd', text: SYNC.user() || '' })) : null,
-      el('button', { onclick: openBackup }, el('span', { class: 'c', text: '备份 / 恢复 / 换手机' })),
-      el('button', { onclick: openInstall }, el('span', { class: 'c', text: '添加到主屏幕' }))));
-    sh.append(el('p', { class: 'hint', text: SYNC && SYNC.user() ? '已登录：名单、背诵内容和打卡会自动同步到账号，换手机登录同一账号即可。'
-      : SYNC ? '没登录时数据只存在这台设备的浏览器里。登录账号（和德语学习网站同一个账号）后，名单和打卡会在手机、电脑之间自动同步。'
-      : '所有数据只存在这台设备的这个浏览器里。清理浏览器数据会丢失记录，建议每周导出一次备份。' }));
+    const st = stats(mod, cls(), S.date);
+    sh.append(head('未记录的 ' + st.none + ' 人统一标为', close));
+    if (!st.none) { sh.append(el('p', { class: 'hint', text: '今天这个班已经全部记录了。' })); return; }
+    sh.append(el('p', { class: 'hint', text: '常用做法：先把没背的、请假的点出来，再把剩下的一次标成「已背」。' }));
+    sh.append(el('div', { class: 'seg' }, ...MODS[mod].S.map(s => el('button', { text: s.label, onclick: () => { $('#layer').replaceChildren(); fillRest(mod, s.k); } }))));
+  });
+}
+function openHistory(mod) {
+  openSheet((sh, close) => {
+    const c = cls(), store = S[MODS[mod].store];
+    sh.append(head(MODS[mod].title + '记录 · ' + c.name, close));
+    const ds = Object.keys(store).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).sort().reverse();
+    if (!ds.length) { sh.append(el('p', { class: 'hint', text: '这个班还没有任何记录。' })); return; }
+    sh.append(el('p', { class: 'hint', text: '点一天跳过去查看或补记。' }));
+    sh.append(el('div', { class: 'list' }, ...ds.map(d => {
+      const st = stats(mod, c, d), r = store[rkey(c.id, d)];
+      const bad = mod === 'att' ? st.absent : st.fail;
+      return el('button', { onclick: () => { S.date = d; close(); } },
+        el('span', { class: 'd', text: md(d) + ' ' + WD[parse(d).getDay()] }),
+        el('span', { class: 'c', text: mod === 'recite' ? (r.content || '（未填内容）') : `迟到 ${st.late} · 早退 ${st.early} · 请假 ${st.leave}` }),
+        el('span', { class: 'n', text: `${st.passed}/${st.total}` }),
+        bad ? el('span', { class: 'pill', 'data-c': 'fail', text: (mod === 'att' ? '缺勤' : '未背') + bad }) : null);
+    })));
+  });
+}
+function openTopics() {
+  openSheet((sh, close) => {
+    sh.append(head('常用背诵内容', close));
+    sh.append(el('p', { class: 'hint', text: '一行一个，按讲课顺序排。会显示在“今天背诵的内容”下面，点一下就填好；课表与进度页也按这个顺序列出进度。' }));
+    const ta = el('textarea', { id: 'topicsText', style: 'min-height:260px' });
+    ta.value = (S.topics || []).join('\n');
+    ta.addEventListener('input', () => { S.topics = ta.value.split(/\n+/).map(x => x.trim()).filter(Boolean); save(); });
+    sh.append(el('label', { class: 'field' }, ta));
   });
 }
 
+/* ===== 背诵清单 ===== */
+let planOpen = {};
+function vPlan(v) {
+  const c = cls(), pg = planProgress(c), t = today();
+  const nMust = S.plan.filter(x => x.lv === 'must').length, started = S.plan.filter(x => pg[x.id]).length;
+  const tr = rec('recite', c.id, t), curIt = planOf(tr);
+  v.append(pageHead('背诵清单', `按必修四哲学框架整理：${S.plan.length} 条，其中必背 ${nMust} 条（原理和方法论逐句背），熟记要点 ${S.plan.length - nMust} 条（能说出要点即可）。一节课检查一条，按顺序约 ${Math.ceil(S.plan.length / 5)} 周背完。`,
+    el('button', { class: 'icon-btn', text: '编辑清单', onclick: openPlanEditor })));
+  const nx = nextPlan(c);
+  v.append(el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.plan), `${c.name} 进度`, el('span', { class: 'spacer' }), el('span', { class: 'muted', text: `已开始 ${started} / ${S.plan.length}` })),
+    el('div', { class: 'bar' }, el('span', { style: `width:${S.plan.length ? started / S.plan.length * 100 : 0}%;background:var(--accent)` })),
+    el('p', { class: 'muted', text: curIt ? `今天（${md(t)}）背：${curIt.t}` : nx ? `下一条还没背的：${nx.u} · ${nx.t}` : '清单里的内容都背过至少一次了，可以开始轮回复习。' }),
+    !curIt && nx ? el('div', { class: 'btns' },
+      el('button', { class: 'icon-btn primary', id: 'planNext', text: '今天背下一条', onclick: () => { S.date = t; setPlan(nx, [c.id]); toast(`${c.name} 今天背：${nx.t}`); go('recite'); } }),
+      el('button', { class: 'icon-btn', text: '三个班都背这条', onclick: () => { S.date = t; setPlan(nx, S.classes.map(x => x.id)); toast(`全部班级今天背：${nx.t}`); go('recite'); } })) : null));
+  let u = null, card = null;
+  S.plan.forEach((it, i) => {
+    if (it.u !== u) {
+      u = it.u; const items = S.plan.filter(x => x.u === u), done = items.filter(x => pg[x.id]).length;
+      card = el('section', { class: 'card' }, el('h3', {}, u, el('span', { class: 'spacer' }), el('span', { class: 'muted', text: `${done}/${items.length}` })));
+      v.append(card);
+    }
+    const p = pg[it.id], open = planOpen[it.id] ?? (curIt && curIt.id === it.id);
+    const meta = p ? `背过 ${p.times} 次 · 首次 ${md(p.first)}${p.last !== p.first ? ' · 最近 ' + md(p.last) : ''}${p.rate ? ' · 最近过关 ' + p.rate : ''}` : '未开始';
+    card.append(el('div', { class: 'plan-item' },
+      el('div', { class: 'pt' }, el('span', { class: 'muted', text: String(i + 1).padStart(2, '0') }), el('span', { class: 'lv ' + it.lv, text: LV[it.lv] }), el('b', { text: it.t }),
+        p ? el('span', { class: 'pill', 'data-c': 'done', text: '已开始' }) : null),
+      el('div', { class: 'meta', text: meta }),
+      open ? el('p', { class: 'plan-text', text: it.x }) : null,
+      el('div', { class: 'btns' },
+        el('button', { class: 'mini', text: open ? '收起原文' : '看原文', onclick: () => { planOpen[it.id] = !open; render(); } }),
+        el('button', { class: 'mini', text: '今天背这条', onclick: () => { S.date = t; setPlan(it, [c.id]); toast(`${c.name} 今天背：${it.t}`); go('recite'); } }),
+        el('button', { class: 'mini', text: '全部班级', onclick: () => { S.date = t; setPlan(it, S.classes.map(x => x.id)); toast(`全部班级今天背：${it.t}`); go('recite'); } }))));
+  });
+}
+function openPlanEditor() {
+  openSheet((sh, close) => {
+    sh.append(head('编辑背诵清单', close));
+    sh.append(el('p', { class: 'hint', text: '改动会自动保存并同步。已经记录过的日子靠条目编号关联，改标题、改原文都不会丢记录。' }));
+    const box = el('div', { style: 'display:grid;gap:10px' });
+    const commit = () => { S.plan = S.plan.slice(); save(); };
+    const draw = () => {
+      box.replaceChildren();
+      S.plan.forEach((it, i) => {
+        const uIn = el('input', { type: 'text', value: it.u, 'aria-label': '单元', style: 'flex:1 1 90px' });
+        const tIn = el('input', { type: 'text', value: it.t, 'aria-label': '条目', style: 'flex:3 1 180px' });
+        const lv = el('select', { 'aria-label': '要求' }, el('option', { value: 'must', text: '必背' }), el('option', { value: 'key', text: '熟记要点' })); lv.value = it.lv;
+        const x = el('textarea', { 'aria-label': '原文' }); x.value = it.x;
+        uIn.addEventListener('change', () => { it.u = uIn.value.trim() || it.u; commit(); });
+        tIn.addEventListener('change', () => { it.t = tIn.value.trim() || it.t; commit(); });
+        lv.addEventListener('change', () => { it.lv = lv.value; commit(); });
+        x.addEventListener('change', () => { it.x = x.value; commit(); });
+        const mv = d => { const j = i + d; if (j < 0 || j >= S.plan.length) return; const a = S.plan.slice(); [a[i], a[j]] = [a[j], a[i]]; S.plan = a; save(); draw(); };
+        box.append(el('div', { class: 'plan-edit' }, el('div', { class: 'row', style: 'gap:6px;align-items:center' }, el('span', { class: 'muted', text: i + 1 }), uIn, tIn, lv,
+          el('button', { class: 'mini', text: '↑', 'aria-label': '上移', onclick: () => mv(-1) }), el('button', { class: 'mini', text: '↓', 'aria-label': '下移', onclick: () => mv(1) }),
+          armed(el('button', { class: 'mini danger', text: '删' }), '确定?', () => { S.plan = S.plan.filter(y => y.id !== it.id); save(); draw(); })), x));
+      });
+    };
+    draw();
+    sh.append(box, el('div', { class: 'btns' },
+      el('button', { class: 'icon-btn primary', text: '+ 加一条', onclick: () => { const last = S.plan[S.plan.length - 1]; S.plan = [...S.plan, { id: 'p' + uid(), u: last ? last.u : '新单元', t: '新条目', lv: 'must', x: '' }]; save(); draw(); } }),
+      armed(el('button', { class: 'icon-btn', text: '恢复成默认清单' }), '确定恢复？再点一次', () => { S.plan = DEFAULT_PLAN.map(x => ({ ...x })); save(); draw(); toast('已恢复默认清单'); })));
+  });
+}
+
+/* ===== 随机点名 ===== */
+const roll = { picked: [], last: [], noRepeat: true, onlyUnpassed: false, n: 1, cid: null };
+function vRollcall(v) {
+  const c = cls();
+  if (roll.cid !== c.id) { roll.cid = c.id; roll.picked = []; roll.last = []; }
+  const name = id => (c.students.find(s => s.id === id) || {}).name;
+  v.append(pageHead('随机点名', '可以只抽今天还没背过关的学生；抽到后可以直接记读背或加分'));
+  const pool = () => c.students.filter(s => {
+    if (roll.noRepeat && roll.picked.includes(s.id)) return false;
+    if (roll.onlyUnpassed) { const r = rec('recite', c.id, today()); const st = r && r.s[s.id]; if (st && MODS.recite.passed.includes(st)) return false; }
+    return true;
+  });
+  const big = el('div', { class: 'big', id: 'rollName', 'aria-live': 'polite', text: roll.last.length ? roll.last.map(name).filter(Boolean).join('  ') : '准备好了' });
+  const sub = el('div', { class: 'sub', text: `可抽 ${pool().length} 人 · 已抽 ${roll.picked.length} 人` });
+  const btn = el('button', { class: 'icon-btn primary go-btn', id: 'btnRoll', text: '抽 ' + roll.n + ' 人' });
+  btn.addEventListener('click', () => {
+    const p = pool();
+    if (!p.length) { toast(roll.noRepeat ? '都抽过了，点「重新开始」' : '没有可抽的学生'); return; }
+    const n = Math.min(roll.n, p.length), names = p.map(s => s.name);
+    const a = p.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    const pick = a.slice(0, n);
+    const steps = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 14;
+    btn.disabled = true; big.classList.add('spin');
+    let i = 0;
+    const tick = () => {
+      if (i++ < steps) { big.textContent = names[Math.floor(Math.random() * names.length)]; setTimeout(tick, 40 + i * 8); return; }
+      roll.last = pick.map(s => s.id); roll.picked.push(...roll.last);
+      render();
+    };
+    tick();
+  });
+  const card = el('section', { class: 'card roll' }, big, sub, btn);
+  if (roll.last.length) {
+    const ids = roll.last.slice();
+    const markR = k => { S.date = today(); snapshot(`点名 ${ids.length} 人 → ${MODS.recite.map[k].label}`, { mod: 'recite' }); ids.forEach(id => setStatus('recite', id, k)); save(); toast(`已记为今天的「${MODS.recite.map[k].label}」`); render(); };
+    card.append(el('div', { class: 'btns', style: 'justify-content:center' },
+      el('button', { class: 'icon-btn', text: '✓ 已背', onclick: () => markR('done') }), el('button', { class: 'icon-btn', text: '△ 不熟', onclick: () => markR('weak') }),
+      el('button', { class: 'icon-btn', text: '✗ 未背', onclick: () => markR('fail') }),
+      el('button', { class: 'icon-btn', text: '+1 分', onclick: () => { addPoints(c.id, ids, 1, '回答问题'); toast('已加 1 分（回答问题）'); render(); } })));
+  }
+  v.append(card);
+  const sw = (label, key) => { const i = el('input', { type: 'checkbox' }); i.checked = roll[key]; i.addEventListener('change', () => { roll[key] = i.checked; render(); }); return el('label', { class: 'switch' }, i, label); };
+  const opts = el('section', { class: 'card' }, el('h3', { text: '抽取设置' }),
+    el('div', { class: 'row' }, sw('不重复抽', 'noRepeat'), sw('只抽今天还没背过关的', 'onlyUnpassed')),
+    el('div', { class: 'seg' }, ...[1, 2, 3, 5].map(n => el('button', { 'aria-pressed': String(roll.n === n), text: `一次 ${n} 人`, onclick: () => { roll.n = n; render(); } }))),
+    el('div', { class: 'btns' }, el('button', { class: 'icon-btn', text: '重新开始', onclick: () => { roll.picked = []; roll.last = []; render(); } })));
+  if (roll.picked.length) opts.append(el('p', { class: 'hint', text: '已抽：' + roll.picked.map(name).filter(Boolean).join('、') }));
+  v.append(opts);
+}
+
+/* ===== 加减分 ===== */
+let ptsDelta = 1, ptsReason = '';
+function addPoints(cid, sids, delta, reason) {
+  snapshot(`${sids.length} 人 ${delta > 0 ? '+' : ''}${delta}`, { key: 'points' });
+  S.points = { ...S.points, [cid]: [...(S.points[cid] || []), { id: uid(), t: Date.now(), date: today(), sids: sids.slice(), delta, reason: reason || '' }] };
+  save();
+}
+function vPoints(v) {
+  const c = cls();
+  v.append(pageHead('加减分', '点学生选人（可多选），在底部选分值和原因，再点「记」'));
+  const g = el('section', { class: 'grid', id: 'grid' });
+  c.students.forEach((stu, i) => {
+    const p = ptsOf(c.id, stu.id);
+    const tile = el('button', { class: 'stu' + (selected.has(stu.id) ? ' sel' : ''), 'aria-label': `${stu.name} 积分 ${p}` },
+      el('span', { class: 'no', text: pad(i + 1) }), el('span', { class: 'nm', text: stu.name }), el('span', { class: 'st' }),
+      el('span', { class: 'pts' + (p < 0 ? ' neg' : ''), text: (p > 0 ? '+' : '') + p }));
+    bindPress(tile, () => { selected.has(stu.id) ? selected.delete(stu.id) : selected.add(stu.id); tile.classList.toggle('sel'); renderPointsDock(); }, () => openStudent(stu));
+    g.append(tile);
+  });
+  if (!c.students.length) g.append(el('div', { class: 'empty', style: 'grid-column:1/-1', text: '这个班还没有学生。' }));
+  v.append(el('div', { class: 'toolrow' }, el('button', { class: 'icon-btn', text: '编辑原因', onclick: openReasons })), g);
+  const log = (S.points[c.id] || []).slice().reverse();
+  const rank = c.students.map(s => [s, ptsOf(c.id, s.id)]).sort((a, b) => b[1] - a[1]);
+  const rk = el('section', { class: 'card' }, el('h3', { text: '积分排行' }));
+  if (log.length) rk.append(el('div', { class: 'list' }, ...rank.slice(0, 10).map(([s, p], i) => el('button', { onclick: () => openStudent(s) },
+    el('span', { class: 'd', text: i + 1 }), el('span', { class: 'c', text: s.name }), el('span', { class: 'n', text: (p > 0 ? '+' : '') + p })))));
+  else rk.append(el('p', { class: 'muted', text: '还没有加减分记录。' }));
+  const lc = el('section', { class: 'card' }, el('h3', { text: '最近记录' }));
+  if (log.length) lc.append(el('div', { class: 'list' }, ...log.slice(0, 30).map(e => {
+    const names = e.sids.map(id => (c.students.find(s => s.id === id) || {}).name || '已删学生');
+    return el('div', {}, el('span', { class: 'd', text: md(e.date) }), el('span', { class: 'c', text: `${names.length > 3 ? names.slice(0, 3).join('、') + ` 等${names.length}人` : names.join('、')} · ${e.reason || '无原因'}` }),
+      el('span', { class: 'n', style: `color:var(--${e.delta < 0 ? 'fail' : 'done'})`, text: (e.delta > 0 ? '+' : '') + e.delta }),
+      armed(el('button', { class: 'mini danger', text: '删' }), '确定?', () => { snapshot('删除一条加减分', { key: 'points' }); S.points = { ...S.points, [c.id]: S.points[c.id].filter(x => x.id !== e.id) }; save(); render(); }));
+  })));
+  else lc.append(el('p', { class: 'muted', text: '选几个学生，在底部点 +1 或 −1 试试。' }));
+  v.append(el('div', { class: 'cols' }, rk, lc));
+}
+function renderPointsDock() {
+  const b = $('#brushes'); b.replaceChildren();
+  b.style.gridTemplateColumns = 'repeat(6, 1fr)';
+  [1, 2, 5, -1, -2, -5].forEach(d => b.append(el('button', { class: 'brush', 'data-c': d > 0 ? 'done' : 'fail', 'aria-pressed': String(ptsDelta === d), onclick: () => { ptsDelta = d; renderPointsDock(); } },
+    el('i', { text: (d > 0 ? '+' : '−') + Math.abs(d) }), d > 0 ? '加分' : '扣分')));
+  const hint = $('#dockHint'); hint.replaceChildren(el('div', { class: 'chips' }, ...S.reasons.map(r => el('button', { class: 'chip', 'aria-pressed': String(ptsReason === r), text: r, onclick: () => { ptsReason = ptsReason === r ? '' : r; renderPointsDock(); } }))));
+  $('#applyRow').hidden = false;
+  $('#selAll').onclick = () => { cls().students.forEach(s => selected.add(s.id)); render(); };
+  $('#selNone').onclick = () => { selected.clear(); render(); };
+  const ds = (ptsDelta > 0 ? '+' : '−') + Math.abs(ptsDelta);
+  $('#selApply').textContent = selected.size ? `给 ${selected.size} 人记 ${ds}` : `先选人，再记 ${ds}`;
+  $('#selApply').onclick = () => {
+    if (!selected.size) { toast('先点学生选人'); return; }
+    const n = selected.size; addPoints(cls().id, [...selected], ptsDelta, ptsReason);
+    selected.clear(); render(); toast(`已给 ${n} 人记 ${ds}${ptsReason ? '（' + ptsReason + '）' : ''}`, { label: '撤销', fn: undo });
+  };
+}
+function openReasons() {
+  openSheet((sh, close) => {
+    sh.append(head('加减分原因', close), el('p', { class: 'hint', text: '一行一个，会显示成底部的快捷按钮。' }));
+    const ta = el('textarea', { id: 'reasonsText' }); ta.value = S.reasons.join('\n');
+    ta.addEventListener('input', () => { S.reasons = ta.value.split(/\n+/).map(x => x.trim()).filter(Boolean); save(); });
+    sh.append(el('label', { class: 'field' }, ta));
+  });
+}
+
+/* ===== 成绩分析 ===== */
+let curExam = null;
+function examStats(c, ex) {
+  const vals = c.students.map(s => ex.s[s.id]).filter(x => typeof x === 'number' && isFinite(x));
+  const n = vals.length, full = ex.full || 100;
+  if (!n) return { n: 0, full };
+  const sum = vals.reduce((a, b) => a + b, 0);
+  return { n, avg: sum / n, max: Math.max(...vals), min: Math.min(...vals), pass: vals.filter(x => x >= full * .6).length / n, good: vals.filter(x => x >= full * .85).length / n, vals, full };
+}
+const pct = x => Math.round(x * 100) + '%';
+function vScores(v) {
+  const c = cls(), exams = (S.scores[c.id] || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+  v.append(pageHead('成绩分析', '录入一次考试，自动算平均分、最高最低分、及格率（60%）、优秀率（85%）和分数段', el('button', { class: 'icon-btn primary', text: '+ 新建考试', onclick: () => openExam() })));
+  if (!exams.length) { v.append(el('div', { class: 'empty' }, '还没有考试。', el('br'), el('button', { class: 'link-btn', text: '新建一次考试', onclick: () => openExam() }))); return; }
+  if (!exams.find(e => e.id === curExam)) curExam = exams[0].id;
+  const ex = exams.find(e => e.id === curExam);
+  v.append(el('div', { class: 'chips wrap' }, ...exams.map(e => el('button', { class: 'chip', 'aria-pressed': String(e.id === curExam), text: `${e.name} · ${md(e.date)}`, onclick: () => { curExam = e.id; render(); } }))));
+  const statsBox = el('div', { class: 'stats', id: 'scoreStats' });
+  v.append(statsBox);
+  const left = el('section', { class: 'card' }, el('h3', {}, `录入分数（满分 ${ex.full}）`, el('span', { class: 'spacer' }), el('button', { class: 'link-btn', text: '从 Excel 粘贴', onclick: () => openPasteScores(ex) })));
+  const rows = el('div');
+  c.students.forEach((s, i) => {
+    const inp = el('input', { type: 'text', inputmode: 'decimal', enterkeyhint: 'next', 'aria-label': s.name + ' 分数', value: ex.s[s.id] != null ? String(ex.s[s.id]) : '' });
+    inp.addEventListener('change', () => { const x = parseFloat(inp.value); if (isFinite(x)) ex.s[s.id] = x; else { delete ex.s[s.id]; inp.value = ''; } S.scores = { ...S.scores }; save(); side(); });
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') { const nx = rows.querySelectorAll('input')[i + 1]; if (nx) nx.focus(); else inp.blur(); } });
+    rows.append(el('div', { class: 'score-row' }, el('span', { class: 'muted', text: pad(i + 1) }), el('span', { text: s.name }), inp));
+  });
+  if (!c.students.length) rows.append(el('p', { class: 'muted', text: '这个班还没有学生。' }));
+  left.append(rows);
+  const right = el('section', { class: 'card' });
+  v.append(el('div', { class: 'cols' }, left, right));
+  v.append(el('div', { class: 'btns' }, el('button', { class: 'icon-btn', text: '修改考试信息', onclick: () => openExam(ex) }),
+    armed(el('button', { class: 'icon-btn', text: '删除这次考试' }), '确定删除？再点一次', () => { snapshot('删除考试', { key: 'scores' }); S.scores = { ...S.scores, [c.id]: S.scores[c.id].filter(e => e.id !== ex.id) }; save(); render(); toast('已删除', { label: '撤销', fn: undo }); })));
+  side();
+  function side() {
+    const st = examStats(c, ex);
+    statsBox.replaceChildren(...[['平均分', st.n ? fmt1(st.avg) : '—'], ['最高分', st.n ? st.max : '—'], ['最低分', st.n ? st.min : '—'], ['及格率', st.n ? pct(st.pass) : '—'], ['优秀率', st.n ? pct(st.good) : '—'], ['已录入', `${st.n}/${c.students.length}`]]
+      .map(([k, val]) => el('div', { class: 'stat' }, el('span', { class: 'k', text: k }), el('span', { class: 'v', text: String(val) }))));
+    right.replaceChildren(el('h3', { text: '分数段' }));
+    if (!st.n) { right.append(el('p', { class: 'muted', text: '录入分数后显示分布。' })); return; }
+    const bands = [[.9, Infinity, '90% 以上'], [.8, .9, '80–90%'], [.7, .8, '70–80%'], [.6, .7, '60–70%'], [-Infinity, .6, '不及格']];
+    right.append(el('div', { class: 'dist' }, ...bands.map(([a, b, lab]) => { const n = st.vals.filter(x => x / st.full >= a && x / st.full < b).length;
+      return el('div', { class: 'dist-row' }, el('span', { text: lab }), el('span', { class: 'tr' }, el('span', { style: `width:${n / st.n * 100}%;${b === .6 ? 'background:var(--fail)' : ''}` })), el('span', { class: 'n', text: n })); })));
+    const lows = c.students.filter(s => typeof ex.s[s.id] === 'number' && ex.s[s.id] < st.full * .6);
+    if (lows.length) right.append(el('p', { class: 'hint', text: '需要补差：' + lows.map(s => `${s.name}（${ex.s[s.id]}）`).join('、') }));
+    const top = c.students.filter(s => typeof ex.s[s.id] === 'number').sort((a, b) => ex.s[b.id] - ex.s[a.id]).slice(0, 5);
+    right.append(el('p', { class: 'hint', text: '前五名：' + top.map(s => `${s.name}（${ex.s[s.id]}）`).join('、') }));
+  }
+}
+function openExam(ex) {
+  openSheet((sh, close) => {
+    const c = cls();
+    sh.append(head(ex ? '修改考试' : '新建考试 · ' + c.name, close));
+    const n = el('input', { type: 'text', id: 'exName', placeholder: '例如：第一单元测验', value: ex ? ex.name : '' });
+    const d = el('input', { type: 'date', id: 'exDate', value: ex ? ex.date : today() });
+    const f = el('input', { type: 'number', id: 'exFull', value: ex ? ex.full : 100, min: 1 });
+    sh.append(el('label', { class: 'field' }, el('h3', { text: '考试名称' }), n), el('div', { class: 'row' }, el('label', { class: 'field' }, el('h3', { text: '日期' }), d), el('label', { class: 'field' }, el('h3', { text: '满分' }), f)));
+    sh.append(el('div', { class: 'btns' }, el('button', { class: 'icon-btn primary', id: 'exSave', text: ex ? '保存' : '创建', onclick: () => {
+      const name = n.value.trim() || '未命名考试', full = parseFloat(f.value) || 100;
+      if (ex) Object.assign(ex, { name, date: d.value || today(), full });
+      else { const e = { id: uid(), name, date: d.value || today(), full, s: {} }; S.scores = { ...S.scores, [c.id]: [...(S.scores[c.id] || []), e] }; curExam = e.id; }
+      S.scores = { ...S.scores }; save(); close();
+    } })));
+  });
+}
+function openPasteScores(ex) {
+  openSheet((sh, close) => {
+    const c = cls();
+    sh.append(head('粘贴分数', close), el('p', { class: 'hint', text: '从 Excel 复制两列「姓名 分数」粘贴进来；只有一列分数时，按名单顺序填入。' }));
+    const ta = el('textarea', { id: 'pasteScores', placeholder: '张三\t92\n李四\t85' });
+    sh.append(el('label', { class: 'field' }, ta), el('div', { class: 'btns' }, el('button', { class: 'icon-btn primary', id: 'pasteGo', text: '填入', onclick: () => {
+      const lines = ta.value.split(/\r?\n/).map(x => x.trim()).filter(Boolean); let n = 0; const miss = [];
+      const byName = new Map(c.students.map(s => [s.name, s.id]));
+      lines.forEach((ln, i) => {
+        const parts = ln.split(/[\t,，\s]+/).filter(Boolean);
+        if (parts.length === 1 && isFinite(parseFloat(parts[0]))) { const s = c.students[i]; if (s) { ex.s[s.id] = parseFloat(parts[0]); n++; } return; }
+        const sc = parseFloat(parts[parts.length - 1]), nm = parts.slice(0, -1).join('');
+        const id = byName.get(nm); if (id && isFinite(sc)) { ex.s[id] = sc; n++; } else miss.push(nm || ln);
+      });
+      S.scores = { ...S.scores }; save(); close(); toast(`填入 ${n} 人` + (miss.length ? `，没对上：${miss.slice(0, 3).join('、')}${miss.length > 3 ? '…' : ''}` : ''));
+    } })));
+  });
+}
+
+/* ===== 课表与进度 ===== */
+function vTimetable(v) {
+  const c = cls(), T = S.timetable, wd = parse(today()).getDay();
+  v.append(pageHead('课表与进度', '格子里直接写课程或班级；下面的背诵进度根据每天的读背记录自动生成'));
+  const tbl = el('table', { class: 'tbl tt' });
+  tbl.append(el('tr', {}, el('th', { text: '节次' }), ...[1, 2, 3, 4, 5].map(d => el('th', { class: d === wd ? 'today' : '', text: WD[d] }))));
+  for (let p = 0; p < T.periods; p++) {
+    const tr = el('tr', {}, el('th', { text: `第${p + 1}节` }));
+    for (let d = 1; d <= 5; d++) {
+      const inp = el('input', { type: 'text', 'aria-label': `${WD[d]} 第${p + 1}节`, value: T.cells[`${d}-${p}`] || '' });
+      inp.addEventListener('change', () => { const x = inp.value.trim(); if (x) T.cells[`${d}-${p}`] = x; else delete T.cells[`${d}-${p}`]; S.timetable = { ...T }; save(); });
+      tr.append(el('td', { class: d === wd ? 'today' : '' }, inp));
+    }
+    tbl.append(tr);
+  }
+  v.append(el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.timetable), '我的课表', el('span', { class: 'spacer' }),
+    el('button', { class: 'mini', text: '−', 'aria-label': '少一节', onclick: () => { if (T.periods > 1) { S.timetable = { ...T, periods: T.periods - 1 }; save(); render(); } } }),
+    el('button', { class: 'mini', text: '+', 'aria-label': '多一节', onclick: () => { if (T.periods < 12) { S.timetable = { ...T, periods: T.periods + 1 }; save(); render(); } } })), el('div', { class: 'tbl-wrap' }, tbl)));
+  const first = {}, times = {}, lastRate = {};
+  Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).sort().forEach(k => {
+    const r = S.records[k], d = k.split('|')[1]; if (!r.content) return;
+    first[r.content] = first[r.content] || d; times[r.content] = (times[r.content] || 0) + 1;
+    const st = stats('recite', c, d); lastRate[r.content] = st.total - st.none ? `${st.passed}/${st.total}` : '';
+  });
+  const topics = [...new Set([...S.topics, ...Object.keys(first)])];
+  const done = topics.filter(t => first[t]).length;
+  const tb = el('table', { class: 'tbl' }, el('tr', {}, el('th', { text: '背诵内容' }), el('th', { text: '首次' }), el('th', { class: 'num', text: '背过次数' }), el('th', { class: 'num', text: '最近过关' }), el('th', { text: '状态' })));
+  topics.forEach(tp => tb.append(el('tr', {}, el('td', { text: tp }), el('td', { text: first[tp] ? md(first[tp]) : '—' }), el('td', { class: 'num', text: times[tp] || 0 }), el('td', { class: 'num', text: lastRate[tp] || '—' }),
+    el('td', {}, el('span', { class: 'pill', 'data-c': first[tp] ? 'done' : '', text: first[tp] ? '已开始' : '未开始' })))));
+  v.append(el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.recite), `背诵进度 · ${c.name}`, el('span', { class: 'spacer' }), el('button', { class: 'link-btn', text: '编辑常用背诵内容', onclick: openTopics })),
+    el('div', { class: 'bar' }, el('span', { style: `width:${topics.length ? done / topics.length * 100 : 0}%;background:var(--accent)` })),
+    el('p', { class: 'muted', text: `已开始 ${done} / ${topics.length} 项` }), el('div', { class: 'tbl-wrap' }, tb)));
+}
+
+/* ===== 备课反思 ===== */
+let editingNote = null;
+function vNotes(v) {
+  v.append(pageHead('备课反思', '记下每节课的设计要点和课后反思，按日期保存，会同步也会导出'));
+  const n = editingNote ? S.notes.find(x => x.id === editingNote) : null;
+  const title = el('input', { type: 'text', id: 'noteTitle', placeholder: '课题，例如：矛盾的普遍性和特殊性', value: n ? n.title : '' });
+  const date = el('input', { type: 'date', id: 'noteDate', value: n ? n.date : today() });
+  const csel = el('select', { id: 'noteClass' }, el('option', { value: '', text: '全部班级' }), ...S.classes.map(c => el('option', { value: c.id, text: c.name })));
+  csel.value = n ? (n.cid || '') : cls().id;
+  const plan = el('textarea', { id: 'notePlan', placeholder: '教学目标、重难点、导入、问题链、板书……' }); plan.value = n ? n.plan || '' : '';
+  const refl = el('textarea', { id: 'noteRefl', placeholder: '这节课哪里好、哪里卡住了、下次怎么改' }); refl.value = n ? n.refl || '' : '';
+  const chips = el('div', { class: 'chips' }, ...S.topics.map(tp => el('button', { class: 'chip', text: tp, onclick: () => { if (!title.value) title.value = tp; title.focus(); } })));
+  v.append(el('section', { class: 'card' }, el('h3', {}, svgEl(ICON.notes), n ? '编辑记录' : '新建一条'),
+    el('div', { class: 'row' }, el('label', { class: 'field', style: 'flex:3 1 220px' }, el('h3', { text: '课题' }), title), el('label', { class: 'field' }, el('h3', { text: '日期' }), date), el('label', { class: 'field' }, el('h3', { text: '班级' }), csel)),
+    chips, el('label', { class: 'field' }, el('h3', { text: '备课要点' }), plan), el('label', { class: 'field' }, el('h3', { text: '课后反思' }), refl),
+    el('div', { class: 'btns' }, el('button', { class: 'icon-btn primary', id: 'noteSave', text: n ? '保存修改' : '保存', onclick: () => {
+      if (!title.value.trim() && !plan.value.trim() && !refl.value.trim()) { toast('先写点内容'); return; }
+      const data = { title: title.value.trim() || '（无课题）', date: date.value || today(), cid: csel.value, plan: plan.value, refl: refl.value };
+      S.notes = n ? S.notes.map(x => x.id === n.id ? { ...x, ...data } : x) : [...S.notes, { id: uid(), ...data }];
+      editingNote = null; save(); render(); toast('已保存');
+    } }), n ? el('button', { class: 'icon-btn', text: '取消', onclick: () => { editingNote = null; render(); } }) : null)));
+  const list = el('section', { class: 'card' }, el('h3', { text: `记录（${S.notes.length}）` }));
+  const items = S.notes.slice().sort((a, b) => b.date.localeCompare(a.date));
+  if (!items.length) list.append(el('p', { class: 'muted', text: '还没有记录。写完上面的表单点保存。' }));
+  items.forEach(x => {
+    const cn = (S.classes.find(c => c.id === x.cid) || {}).name || '全部班级';
+    list.append(el('div', { class: 'note-item' },
+      el('div', { class: 'row', style: 'align-items:center;gap:8px' }, el('span', { class: 't', text: x.title }), el('span', { class: 'muted', text: `${x.date} · ${cn}` }), el('span', { class: 'spacer' }),
+        el('button', { class: 'mini', text: '编辑', onclick: () => { editingNote = x.id; render(); window.scrollTo(0, 0); } }),
+        armed(el('button', { class: 'mini danger', text: '删' }), '确定?', () => { snapshot('删除备课记录', { key: 'notes' }); S.notes = S.notes.filter(y => y.id !== x.id); save(); render(); toast('已删除', { label: '撤销', fn: undo }); })),
+      x.plan ? el('div', { class: 's', text: '备课：' + x.plan }) : null, x.refl ? el('div', { class: 's', text: '反思：' + x.refl }) : null));
+  });
+  v.append(list);
+}
+
+/* ===== 学生档案 ===== */
+function studentSummary(c, s) {
+  const o = { r: { done: 0, weak: 0, fail: 0, redo: 0, leave: 0 }, a: { ok: 0, late: 0, early: 0, leave: 0, absent: 0 } };
+  for (const [k, r] of Object.entries(S.records)) if (k.startsWith(c.id + '|')) { const v = r.s[s.id]; if (v in o.r) o.r[v]++; }
+  for (const [k, r] of Object.entries(S.att)) if (k.startsWith(c.id + '|')) { const v = r.s[s.id]; if (v in o.a) o.a[v]++; }
+  o.pts = ptsOf(c.id, s.id);
+  const ex = (S.scores[c.id] || []).slice().sort((a, b) => b.date.localeCompare(a.date)).find(e => typeof e.s[s.id] === 'number');
+  o.score = ex ? `${ex.s[s.id]}（${ex.name}）` : '—';
+  return o;
+}
+function vStudents(v) {
+  const c = cls();
+  v.append(pageHead('学生档案 · ' + c.name, '各模块的记录自动汇总到这里；点一行看详情、写档案备注', el('button', { class: 'icon-btn', text: '编辑名单', onclick: openRoster })));
+  if (!c.students.length) { v.append(el('div', { class: 'empty', text: '这个班还没有学生。' })); return; }
+  const tb = el('table', { class: 'tbl' }, el('tr', {}, ...['序号', '姓名', '已背', '不熟', '未背', '迟到', '缺勤', '积分', '最近成绩'].map((h, i) => el('th', { class: i >= 2 && i <= 7 ? 'num' : '', text: h }))));
+  c.students.forEach((s, i) => {
+    const o = studentSummary(c, s);
+    tb.append(el('tr', { class: 'click', onclick: () => openStudent(s) }, el('td', { text: pad(i + 1) }), el('td', {}, s.name, s.note ? ' 📝' : ''),
+      el('td', { class: 'num', text: o.r.done + o.r.redo }), el('td', { class: 'num', text: o.r.weak }), el('td', { class: 'num', style: o.r.fail ? 'color:var(--fail)' : '', text: o.r.fail }),
+      el('td', { class: 'num', text: o.a.late }), el('td', { class: 'num', style: o.a.absent ? 'color:var(--fail)' : '', text: o.a.absent }), el('td', { class: 'num', text: o.pts }), el('td', { text: o.score })));
+  });
+  v.append(el('div', { class: 'tbl-wrap' }, tb));
+}
+function openStudent(stu) {
+  openSheet((sh, close) => {
+    const c = cls(), o = studentSummary(c, stu);
+    sh.append(head(stu.name, close));
+    sh.append(el('p', { class: 'hint', text: `${c.name} · 积分 ${o.pts} · 最近成绩 ${o.score}` }));
+    for (const mod of ['recite', 'att']) {
+      const r = rec(mod), cur = (r && r.s[stu.id]) || '';
+      sh.append(el('h3', { text: `${MODS[mod].title} · ${md(S.date)}` + (mod === 'recite' && r && r.content ? ` · ${r.content}` : '') }),
+        el('div', { class: 'seg' }, ...[...MODS[mod].S, { k: '', label: '未记录' }].map(s => el('button', { 'aria-pressed': String(cur === s.k), text: s.label, onclick: () => {
+          snapshot(stu.name + ' → ' + s.label, { mod }); setStatus(mod, stu.id, s.k); prune(mod, c.id, S.date); save(); openStudent(stu);
+        } }))));
+    }
+    const rn = rec('recite');
+    const note = el('input', { type: 'text', id: 'stuNote', placeholder: '今天的读背备注，比如：第二段卡壳，周五再抽', value: (rn && rn.n && rn.n[stu.id]) || '' });
+    note.addEventListener('change', () => { const rr = rec('recite', undefined, undefined, true); rr.n = rr.n || {}; const v = note.value.trim(); if (v) rr.n[stu.id] = v; else delete rr.n[stu.id]; prune('recite', c.id, S.date); save(); });
+    const prof = el('textarea', { id: 'stuProfile', placeholder: '档案备注：性格特点、家庭情况、谈话记录……（会同步，也会导出）', style: 'min-height:80px' });
+    prof.value = stu.note || '';
+    prof.addEventListener('change', () => { const v = prof.value.trim(); if (v) stu.note = v; else delete stu.note; S.classes = S.classes.slice(); save(); });
+    sh.append(el('label', { class: 'field' }, el('h3', { text: '今天的读背备注' }), note), el('label', { class: 'field' }, el('h3', { text: '档案备注' }), prof));
+    sh.append(el('h3', { text: '累计：' + MODS.recite.S.map(s => `${s.label} ${o.r[s.k]}`).join(' · ') + ' ｜ ' + MODS.att.S.filter(s => s.k !== 'ok').map(s => `${s.label} ${o.a[s.k]}`).join(' · ') }));
+    const ds = Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).sort().reverse();
+    const rows = ds.map(d => { const rr = S.records[rkey(c.id, d)]; return [d, rr.content, rr.s[stu.id] || '', rr.n && rr.n[stu.id]]; });
+    if (rows.length) sh.append(el('div', { class: 'list' }, ...rows.slice(0, 30).map(([d, ct, v, n]) =>
+      el('button', { onclick: () => { S.date = d; $('#layer').replaceChildren(); go('recite'); } }, el('span', { class: 'd', text: md(d) }), el('span', { class: 'c', text: (ct || '（未填内容）') + (n ? ' · ' + n : '') }),
+        el('span', { class: 'pill', 'data-c': v ? MODS.recite.map[v].c : '', text: v ? MODS.recite.map[v].label : '未记录' })))));
+  });
+}
+
+/* ===== 待办 ===== */
+function vTodos(v) {
+  const t = today();
+  v.append(pageHead('待办与提醒', '到期当天出现在总览的「今天要处理」，未来 7 天的出现在「近期提醒」'));
+  const tx = el('input', { type: 'text', id: 'todoText', placeholder: '要做的事，例如：交教研组听课记录', enterkeyhint: 'done' });
+  const du = el('input', { type: 'date', id: 'todoDue', value: t });
+  const add = () => { if (!tx.value.trim()) { tx.focus(); return; } S.todos = [...S.todos, { id: uid(), text: tx.value.trim(), due: du.value || '', done: false }]; save(); render(); const q = $('#todoText'); if (q) q.focus(); };
+  tx.addEventListener('keydown', e => { if (e.key === 'Enter') add(); });
+  v.append(el('section', { class: 'card' }, el('div', { class: 'row', style: 'align-items:flex-end' },
+    el('label', { class: 'field', style: 'flex:3 1 220px' }, el('h3', { text: '待办' }), tx), el('label', { class: 'field' }, el('h3', { text: '到期日' }), du),
+    el('button', { class: 'icon-btn primary', id: 'todoAdd', style: 'height:40px', text: '添加', onclick: add }))));
+  const groups = [['已逾期', x => !x.done && x.due && x.due < t], ['今天', x => !x.done && x.due === t], ['以后', x => !x.done && (!x.due || x.due > t)], ['已完成', x => x.done]];
+  for (const [name, f] of groups) {
+    const items = S.todos.filter(f).sort((a, b) => (a.due || '9').localeCompare(b.due || '9'));
+    if (!items.length) continue;
+    const card = el('section', { class: 'card' }, el('h3', {}, `${name}（${items.length}）`, name === '已完成' ? el('span', { class: 'spacer' }) : null,
+      name === '已完成' ? el('button', { class: 'link-btn', text: '清空已完成', onclick: () => { snapshot('清空已完成', { key: 'todos' }); S.todos = S.todos.filter(x => !x.done); save(); render(); toast('已清空', { label: '撤销', fn: undo }); } }) : null));
+    items.forEach(x => { const row = todoRow(x); row.append(armed(el('button', { class: 'mini danger', text: '删' }), '确定?', () => { snapshot('删除待办', { key: 'todos' }); S.todos = S.todos.filter(y => y.id !== x.id); save(); render(); })); card.append(row); });
+    v.append(card);
+  }
+  if (!S.todos.length) v.append(el('p', { class: 'muted', text: '没有待办。' }));
+}
+
+/* ---------- 设置菜单 ---------- */
+function openMenu() {
+  openSheet((sh, close) => {
+    sh.append(head('设置', close));
+    sh.append(el('div', { class: 'list' },
+      el('button', { onclick: openRoster }, el('span', { class: 'c', text: '编辑名单和班级名称' }), el('span', { class: 'd', text: cls().name })),
+      el('button', { onclick: openTopics }, el('span', { class: 'c', text: '常用背诵内容' }), el('span', { class: 'd', text: S.topics.length + ' 项' })),
+      el('button', { onclick: openExport }, el('span', { class: 'c', text: '导出 Excel（.xlsx）' })),
+      SYNC ? el('button', { onclick: () => { location.href = loginUrl(); } }, el('span', { class: 'c', text: SYNC.user() ? '账号同步：已登录' : '登录账号，手机和电脑同步' }), el('span', { class: 'd', text: SYNC.user() || '' })) : null,
+      el('button', { onclick: openBackup }, el('span', { class: 'c', text: '备份 / 恢复 / 换手机' })),
+      el('button', { onclick: openInstall }, el('span', { class: 'c', text: '添加到主屏幕' }))));
+    sh.append(el('p', { class: 'hint', text: SYNC && SYNC.user() ? '已登录：所有模块的数据都会自动同步到账号，换设备登录同一账号即可。'
+      : SYNC ? '没登录时数据只存在这台设备的浏览器里。登录账号（和德语学习网站同一个账号）后，所有模块会在手机、电脑之间自动同步。'
+      : '所有数据只存在这台设备的这个浏览器里。清理浏览器数据会丢失记录，建议每周导出一次备份。' }));
+  });
+}
 function openRoster() {
   openSheet((sh, close) => {
     const c = cls();
+    const touch = () => { S.classes = S.classes.slice(); save(); };
     sh.append(head('编辑名单 · ' + c.name, close));
     sh.append(el('div', { class: 'seg' }, ...S.classes.map((x, i) => el('button', { 'aria-pressed': String(i === S.cur), text: x.name, onclick: () => { S.cur = i; openRoster(); } }))));
     const nameIn = el('input', { type: 'text', id: 'className', value: c.name });
-    nameIn.addEventListener('input', () => { c.name = nameIn.value.trim() || c.name; save(); });
+    nameIn.addEventListener('input', () => { c.name = nameIn.value.trim() || c.name; touch(); });
     sh.append(el('label', { class: 'field' }, el('h3', { text: '班级名称' }), nameIn));
-
     const roster = el('div', { class: 'roster' });
     const drawRows = () => {
       roster.replaceChildren();
       c.students.forEach((stu, i) => {
         const inp = el('input', { type: 'text', value: stu.name, 'aria-label': '姓名' });
-        inp.addEventListener('change', () => { const v = inp.value.trim(); if (v) { stu.name = v; save(); } else inp.value = stu.name; });
-        const move = d => { const j = i + d; if (j < 0 || j >= c.students.length) return; [c.students[i], c.students[j]] = [c.students[j], c.students[i]]; save(); drawRows(); };
-        let armed = false;
-        const del = el('button', { class: 'mini danger', 'aria-label': '删除 ' + stu.name, text: '✕' });
-        del.addEventListener('click', () => {
-          if (!armed) { armed = true; del.textContent = '删?'; del.style.width = '40px'; setTimeout(() => { armed = false; del.textContent = '✕'; del.style.width = ''; }, 2500); return; }
-          c.students.splice(i, 1); save(); drawRows();
-        });
+        inp.addEventListener('change', () => { const v = inp.value.trim(); if (v) { stu.name = v; touch(); } else inp.value = stu.name; });
+        const move = d => { const j = i + d; if (j < 0 || j >= c.students.length) return; [c.students[i], c.students[j]] = [c.students[j], c.students[i]]; touch(); drawRows(); };
         roster.append(el('div', { class: 'roster-row' }, el('span', { class: 'idx', text: i + 1 }), inp,
           el('button', { class: 'mini', 'aria-label': '上移', text: '↑', onclick: () => move(-1) }),
-          el('button', { class: 'mini', 'aria-label': '下移', text: '↓', onclick: () => move(1) }), del));
+          el('button', { class: 'mini', 'aria-label': '下移', text: '↓', onclick: () => move(1) }),
+          armed(el('button', { class: 'mini danger', 'aria-label': '删除 ' + stu.name, text: '✕' }), '删?', () => { c.students.splice(i, 1); touch(); drawRows(); })));
       });
       if (!c.students.length) roster.append(el('p', { class: 'hint', text: '还没有学生，在下面粘贴名单。' }));
     };
     drawRows();
     sh.append(el('div', { class: 'field' }, el('h3', { text: `学生（${c.students.length} 人）· 改名不会丢失以前的记录` }), roster));
-
     const ta = el('textarea', { id: 'pasteNames', placeholder: '一行一个名字，也可以从 Excel 整列复制粘贴，或用逗号、空格分隔' });
-    const addBtn = el('button', { class: 'icon-btn primary', text: '加入名单', onclick: () => {
-      const names = ta.value.split(/[\n\r,，、;；\t]+|\s{1,}/).map(s => s.replace(/^\d+[.、)]?/, '').trim()).filter(Boolean);
-      const have = new Set(c.students.map(s => s.name)); let n = 0;
+    const parseNames = () => ta.value.split(/[\n\r,，、;；\t]+|\s{1,}/).map(s => s.replace(/^\d+[.、)]?/, '').trim()).filter(Boolean);
+    const addBtn = el('button', { class: 'icon-btn primary', id: 'rosterAdd', text: '加入名单', onclick: () => {
+      const names = parseNames(), have = new Set(c.students.map(s => s.name)); let n = 0;
       names.forEach(nm => { if (!have.has(nm)) { c.students.push({ id: uid(), name: nm }); have.add(nm); n++; } });
-      ta.value = ''; save(); drawRows(); toast(`加入了 ${n} 人` + (names.length > n ? `，${names.length - n} 个重名已跳过` : ''));
+      if (n) S.example = false;
+      ta.value = ''; touch(); openRoster(); toast(`加入了 ${n} 人` + (names.length > n ? `，${names.length - n} 个重名已跳过` : ''));
     } });
-    const replBtn = el('button', { class: 'icon-btn', text: '用粘贴的名单替换整班' });
-    let replArmed = false;
-    replBtn.addEventListener('click', () => {
-      const names = ta.value.split(/[\n\r,，、;；\t]+|\s{1,}/).map(s => s.replace(/^\d+[.、)]?/, '').trim()).filter(Boolean);
+    const replBtn = armed(el('button', { class: 'icon-btn', id: 'rosterReplace', text: '用粘贴的名单替换整班' }), '确定替换？再点一次', () => {
+      const names = parseNames();
       if (!names.length) { toast('先在上面粘贴名单'); return; }
-      if (!replArmed) { replArmed = true; replBtn.textContent = '确定替换？再点一次'; replBtn.classList.add('danger-btn'); return; }
-      const old = new Map(c.students.map(s => [s.name, s.id]));
-      c.students = [...new Set(names)].map(nm => ({ id: old.get(nm) || uid(), name: nm }));
-      S.example = false; ta.value = ''; replArmed = false; replBtn.textContent = '用粘贴的名单替换整班'; replBtn.classList.remove('danger-btn');
-      save(); drawRows(); toast(`${c.name} 现在有 ${c.students.length} 人，同名学生的记录已保留`);
+      const old = new Map(c.students.map(s => [s.name, s]));
+      c.students = [...new Set(names)].map(nm => old.get(nm) || { id: uid(), name: nm });
+      S.example = false; ta.value = ''; touch(); openRoster(); toast(`${c.name} 现在有 ${c.students.length} 人，同名学生的记录已保留`);
     });
     sh.append(el('div', { class: 'field' }, el('h3', { text: '批量添加' }), ta, el('div', { class: 'btns' }, addBtn, replBtn)));
-    if (S.example) {
-      sh.append(el('div', { class: 'btns' }, el('button', { class: 'icon-btn', text: '清空三个班的示例名单', onclick: () => {
-        S.classes.forEach(x => x.students = []); S.records = {}; S.example = false; save(); openRoster();
-      } })));
-    }
-  });
-}
-
-function openStudent(stu) {
-  openSheet((sh, close) => {
-    const c = cls();
-    const r = rec(); const cur = (r && r.s[stu.id]) || '';
-    sh.append(head(stu.name, close));
-    sh.append(el('p', { class: 'hint', text: `${c.name} · ${S.date} ${WD[parse(S.date).getDay()]}` + (r && r.content ? ` · ${r.content}` : '') }));
-    sh.append(el('div', { class: 'seg' }, ...[...STATUSES, { k: '', label: '未记录' }].map(s => el('button', { 'aria-pressed': String(cur === s.k), text: s.label, onclick: () => {
-      snapshot(stu.name + ' → ' + s.label); setStatus(stu.id, s.k); prune(c.id, S.date); save(); openStudent(stu);
-    } }))));
-    const note = el('input', { type: 'text', id: 'stuNote', placeholder: '比如：第二段卡壳，周五再抽', value: (r && r.n && r.n[stu.id]) || '' });
-    note.addEventListener('change', () => { const rr = rec(undefined, undefined, true); rr.n = rr.n || {}; const v = note.value.trim(); if (v) rr.n[stu.id] = v; else delete rr.n[stu.id]; prune(c.id, S.date); save(); });
-    sh.append(el('label', { class: 'field' }, el('h3', { text: '备注（会一起导出）' }), note));
-    const hist = Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).sort().reverse();
-    const tally = {}; STATUSES.forEach(s => tally[s.k] = 0);
-    const rows = [];
-    hist.forEach(d => { const rr = S.records[rkey(c.id, d)]; const v = rr.s[stu.id] || ''; if (v) tally[v]++; rows.push([d, rr.content, v, rr.n && rr.n[stu.id]]); });
-    sh.append(el('h3', { text: '累计：' + STATUSES.map(s => `${s.label} ${tally[s.k]}`).join(' · ') }));
-    if (rows.length) sh.append(el('div', { class: 'list' }, ...rows.slice(0, 30).map(([d, ct, v, n]) =>
-      el('button', { onclick: () => { S.date = d; close(); } }, el('span', { class: 'd', text: d.slice(5) }), el('span', { class: 'c', text: (ct || '（未填内容）') + (n ? ' · ' + n : '') }),
-        el('span', { class: 'pill', 'data-s': v, text: v ? SMAP[v].label : '未记录' })))));
-  });
-}
-
-function openHistory() {
-  openSheet((sh, close) => {
-    const c = cls();
-    sh.append(head('往日记录 · ' + c.name, close));
-    const ds = Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).sort().reverse();
-    if (!ds.length) { sh.append(el('p', { class: 'hint', text: '这个班还没有任何记录。' })); return; }
-    sh.append(el('p', { class: 'hint', text: '点一天跳过去查看或补记。' }));
-    sh.append(el('div', { class: 'list' }, ...ds.map(d => {
-      const st = stats(c, d), r = S.records[rkey(c.id, d)];
-      return el('button', { onclick: () => { S.date = d; close(); } },
-        el('span', { class: 'd', text: d.slice(5) + ' ' + WD[parse(d).getDay()] }),
-        el('span', { class: 'c', text: r.content || '（未填内容）' }),
-        el('span', { class: 'n', text: `${st.done + st.redo}/${st.total}` }),
-        st.fail ? el('span', { class: 'pill', 'data-s': 'fail', text: '未背' + st.fail }) : null);
-    })));
-  });
-}
-
-function openFillRest() {
-  openSheet((sh, close) => {
-    const st = stats(cls(), S.date);
-    sh.append(head('未记录的 ' + st.none + ' 人统一标为', close));
-    if (!st.none) { sh.append(el('p', { class: 'hint', text: '今天这个班已经全部记录了。' })); return; }
-    sh.append(el('p', { class: 'hint', text: '常用做法：先把没背的、请假的点出来，再把剩下的一次标成「已背」。' }));
-    sh.append(el('div', { class: 'seg' }, ...STATUSES.map(s => el('button', { text: s.label, onclick: () => {
-      snapshot(`未记录的 ${st.none} 人 → ${s.label}`);
-      const r = rec(undefined, undefined, true);
-      cls().students.forEach(x => { if (!r.s[x.id]) r.s[x.id] = s.k; });
-      save(); close(); toast(`已把 ${st.none} 人标为${s.label}`, { label: '撤销', fn: undo });
-    } }))));
+    if (S.example) sh.append(el('div', { class: 'btns' }, el('button', { class: 'icon-btn', text: '清空所有班级的示例名单', onclick: () => {
+      S.classes.forEach(x => x.students = []); S.classes = S.classes.slice(); S.records = {}; S.att = {}; S.points = {}; S.scores = {}; S.example = false; save(); openRoster();
+    } })));
   });
 }
 
@@ -700,24 +1435,23 @@ function openExport() {
   openSheet((sh, close) => {
     sh.append(head('导出 Excel', close));
     const scopeSeg = el('div', { class: 'seg' });
-    const drawScope = () => { scopeSeg.replaceChildren(...[['cur', '当前班：' + cls().name], ['all', '三个班（每班一个工作表）']].map(([k, t]) =>
+    const drawScope = () => { scopeSeg.replaceChildren(...[['cur', '当前班：' + cls().name], ['all', '全部班级']].map(([k, t]) =>
       el('button', { 'aria-pressed': String(exportScope === k), text: t, onclick: () => { exportScope = k; drawScope(); } }))); };
     drawScope();
     sh.append(el('div', { class: 'field' }, el('h3', { text: '范围' }), scopeSeg));
-    const rangeSeg = el('div', { class: 'seg' });
-    const custom = el('div', { class: 'btns' });
+    const rangeSeg = el('div', { class: 'seg' }), custom = el('div', { class: 'row' });
     const fIn = el('input', { type: 'date', id: 'exFrom', value: S.date.slice(0, 8) + '01' }), tIn = el('input', { type: 'date', id: 'exTo', value: S.date });
-    custom.append(el('label', { class: 'field', style: 'flex:1' }, '从', fIn), el('label', { class: 'field', style: 'flex:1' }, '到', tIn));
+    custom.append(el('label', { class: 'field' }, '从', fIn), el('label', { class: 'field' }, '到', tIn));
     const drawRange = () => {
-      rangeSeg.replaceChildren(...[['day', '只导出这一天'], ['week', '这一周'], ['month', '这个月'], ['all', '全部日期'], ['custom', '自选日期']].map(([k, t]) =>
+      rangeSeg.replaceChildren(...[['day', '这一天'], ['week', '这一周'], ['month', '这个月'], ['all', '全部日期'], ['custom', '自选日期']].map(([k, t]) =>
         el('button', { 'aria-pressed': String(exportRange === k), text: t, onclick: () => { exportRange = k; drawRange(); } })));
       custom.hidden = exportRange !== 'custom';
     };
     drawRange();
     sh.append(el('div', { class: 'field' }, el('h3', { text: '日期（以当前选中的 ' + S.date + ' 为准）' }), rangeSeg, custom));
-    sh.append(el('p', { class: 'hint', text: '表格包含：每班一个“打卡表”（学生 × 日期，带颜色和统计）、“背诵内容”汇总、“明细”（可筛选）。' }));
-    const go = el('button', { class: 'icon-btn primary', text: '生成并导出 .xlsx' });
-    go.addEventListener('click', async () => {
+    sh.append(el('p', { class: 'hint', text: '包含：每班一张读背过关表（学生 × 日期，带颜色和统计）、背诵内容汇总、读背明细、背诵清单、考勤明细、加减分记录、成绩、备课反思、学生档案。没有数据的部分不导出。' }));
+    const btn = el('button', { class: 'icon-btn primary', id: 'exGo', text: '生成并导出 .xlsx' });
+    btn.addEventListener('click', async () => {
       const [a, b] = rangeDates(exportRange, fIn.value, tIn.value);
       const from = a <= b ? a : b, to = a <= b ? b : a;
       const classes = exportScope === 'all' ? S.classes : [cls()];
@@ -725,66 +1459,88 @@ function openExport() {
       if (empty) { toast('这个范围内还没有记录'); return; }
       await deliver(bytes, filename);
     });
-    sh.append(el('div', { class: 'btns' }, go));
+    sh.append(el('div', { class: 'btns' }, btn));
   });
 }
 function buildWorkbook(classes, from, to) {
-  const sheets = [], contentRows = [['日期', '星期', '班级', '背诵内容', '已背', '不熟', '未背', '补背', '请假', '未记录', '总人数', '完成率']], detail = [['日期', '星期', '班级', '背诵内容', '序号', '姓名', '情况', '备注']];
+  const sheets = [];
+  const contentRows = [['日期', '星期', '班级', '背诵内容', '已背', '不熟', '未背', '补背', '请假', '未记录', '总人数', '过关率']];
+  const detail = [['日期', '星期', '班级', '背诵内容', '序号', '姓名', '情况', '备注']];
+  const attRows = [['日期', '星期', '班级', '序号', '姓名', '考勤']];
+  const ptsRows = [['日期', '班级', '姓名', '分值', '原因']];
+  const scoreRows = [['考试', '日期', '满分', '班级', '序号', '姓名', '分数']];
+  const noteRows = [['日期', '班级', '课题', '备课要点', '课后反思']];
+  const prof = [['班级', '序号', '姓名', '已背', '不熟', '未背', '迟到', '缺勤', '积分', '最近成绩', '档案备注']];
   let any = false;
-  const sumCols = ['已背', '不熟', '未背', '补背', '请假', '完成率'];
+  const XS = { done: 3, weak: 4, fail: 5, redo: 6, leave: 7 };
+  const ids = new Set(classes.map(c => c.id));
+  for (const nt of S.notes) if (nt.date >= from && nt.date <= to && (!nt.cid || ids.has(nt.cid))) { any = true;
+    noteRows.push([nt.date, (S.classes.find(c => c.id === nt.cid) || {}).name || '全部班级', nt.title, nt.plan || '', nt.refl || '']); }
   for (const c of classes) {
     const dates = Object.keys(S.records).filter(k => k.startsWith(c.id + '|')).map(k => k.split('|')[1]).filter(d => d >= from && d <= to).sort();
-    if (dates.length) any = true; else if (classes.length > 1) continue;
-    const r1 = [{ v: c.name + ' 背书打卡表', s: 8 }];
+    c.students.forEach((s, i) => { const o = studentSummary(c, s); prof.push([c.name, i + 1, s.name, o.r.done + o.r.redo, o.r.weak, o.r.fail, o.a.late, o.a.absent, o.pts, o.score === '—' ? '' : o.score, s.note || '']); });
+    for (const [k, r] of Object.entries(S.att)) { const [cid, d] = k.split('|'); if (cid !== c.id || d < from || d > to) continue; any = true;
+      c.students.forEach((s, i) => { const v = r.s[s.id]; if (v) attRows.push([d, WD[parse(d).getDay()], c.name, i + 1, s.name, MODS.att.map[v].label]); }); }
+    for (const e of S.points[c.id] || []) { if (e.date < from || e.date > to) continue; any = true;
+      e.sids.forEach(id => ptsRows.push([e.date, c.name, (c.students.find(s => s.id === id) || {}).name || '已删学生', e.delta, e.reason])); }
+    for (const ex of S.scores[c.id] || []) { if (ex.date < from || ex.date > to) continue; any = true;
+      c.students.forEach((s, i) => scoreRows.push([ex.name, ex.date, ex.full, c.name, i + 1, s.name, typeof ex.s[s.id] === 'number' ? ex.s[s.id] : ''])); }
+    if (!dates.length) continue;
+    any = true;
+    const r1 = [{ v: c.name + ' 读背过关表', s: 8 }];
     const h1 = [{ v: '序号', s: 1 }, { v: '姓名', s: 1 }], h2 = [{ v: '', s: 1 }, { v: '背诵内容 →', s: 1 }];
-    dates.forEach(d => { h1.push({ v: `${d.slice(5).replace('-', '/')} ${WD[parse(d).getDay()]}`, s: 1 }); h2.push({ v: S.records[rkey(c.id, d)].content || '', s: 11 }); });
-    sumCols.forEach(t => { h1.push({ v: t, s: 1 }); h2.push({ v: '', s: 1 }); });
+    dates.forEach(d => { h1.push({ v: `${md(d)} ${WD[parse(d).getDay()]}`, s: 1 }); h2.push({ v: S.records[rkey(c.id, d)].content || '', s: 11 }); });
+    ['已背', '不熟', '未背', '补背', '请假', '过关率'].forEach(t => { h1.push({ v: t, s: 1 }); h2.push({ v: '', s: 1 }); });
     const rows = [r1, h1, h2];
     c.students.forEach((stu, i) => {
       const row = [{ v: i + 1, s: 10 }, { v: stu.name, s: 2 }]; const t = { done: 0, weak: 0, fail: 0, redo: 0, leave: 0 };
       dates.forEach(d => {
         const rr = S.records[rkey(c.id, d)], v = rr.s[stu.id] || '', note = rr.n && rr.n[stu.id];
         if (v) t[v]++;
-        row.push({ v: v ? SMAP[v].xl + (note ? '（' + note + '）' : '') : (note || ''), s: v ? { done: 3, weak: 4, fail: 5, redo: 6, leave: 7 }[v] : 2 });
-        detail.push([d, WD[parse(d).getDay()], c.name, rr.content || '', i + 1, stu.name, v ? SMAP[v].label : '未记录', note || '']);
+        row.push({ v: v ? MODS.recite.map[v].xl + (note ? '（' + note + '）' : '') : (note || ''), s: v ? XS[v] : 2 });
+        detail.push([d, WD[parse(d).getDay()], c.name, rr.content || '', i + 1, stu.name, v ? MODS.recite.map[v].label : '未记录', note || '']);
       });
       const denom = dates.length - t.leave;
-      row.push({ v: t.done, s: 10 }, { v: t.weak, s: 10 }, { v: t.fail, s: 10 }, { v: t.redo, s: 10 }, { v: t.leave, s: 10 },
-        { v: denom > 0 ? (t.done + t.redo) / denom : '', s: 9 });
+      row.push({ v: t.done, s: 10 }, { v: t.weak, s: 10 }, { v: t.fail, s: 10 }, { v: t.redo, s: 10 }, { v: t.leave, s: 10 }, { v: denom > 0 ? (t.done + t.redo) / denom : '', s: 9 });
       rows.push(row);
     });
-    // 每日合计行
-    const tot = [{ v: '', s: 1 }, { v: '当天完成', s: 1 }];
-    dates.forEach(d => { const st = stats(c, d); tot.push({ v: `${st.done + st.redo}/${st.total}`, s: 1 });
+    const tot = [{ v: '', s: 1 }, { v: '当天过关', s: 1 }];
+    dates.forEach(d => { const st = stats('recite', c, d); tot.push({ v: `${st.passed}/${st.total}`, s: 1 });
       contentRows.push([d, WD[parse(d).getDay()], c.name, S.records[rkey(c.id, d)].content || '', st.done, st.weak, st.fail, st.redo, st.leave, st.none, st.total,
-        { v: st.total - st.leave > 0 ? (st.done + st.redo) / (st.total - st.leave) : '', s: 9 }]); });
+        { v: st.total - st.leave > 0 ? st.passed / (st.total - st.leave) : '', s: 9 }]); });
     rows.push(tot);
-    sheets.push({ name: c.name, rows, cols: [6, 10, ...dates.map(() => 13), 7, 7, 7, 7, 7, 9], freeze: { r: 3, c: 2 },
-      merges: [`A1:${colName(Math.max(2, h1.length) - 1)}1`], heights: { 1: 26, 3: 34 } });
+    sheets.push({ name: c.name + '读背', rows, cols: [6, 10, ...dates.map(() => 13), 7, 7, 7, 7, 7, 9], freeze: { r: 3, c: 2 }, merges: [`A1:${colName(Math.max(2, h1.length) - 1)}1`], heights: { 1: 26, 3: 34 } });
   }
-  const dh = detail.shift(); detail.sort((x, y) => x[0].localeCompare(y[0]) || classes.findIndex(c => c.name === x[2]) - classes.findIndex(c => c.name === y[2]) || x[4] - y[4]); detail.unshift(dh);
   const style = rows => rows.map((r, i) => r.map(v => (v && typeof v === 'object') ? v : { v, s: i === 0 ? 1 : 2 }));
-  sheets.push({ name: '背诵内容', rows: style(contentRows), cols: [12, 6, 14, 24, 7, 7, 7, 7, 7, 8, 8, 9], freeze: { r: 1, c: 0 }, filter: true });
-  sheets.push({ name: '明细', rows: style(detail), cols: [12, 6, 14, 24, 6, 10, 8, 30], freeze: { r: 1, c: 0 }, filter: true });
-  const tag = classes.length === 1 ? classes[0].name : '三个班';
+  const sortBody = (rows, cmp) => { const h = rows.shift(); rows.sort(cmp); rows.unshift(h); };
+  sortBody(detail, (x, y) => x[0].localeCompare(y[0]) || x[2].localeCompare(y[2]) || x[4] - y[4]);
+  sortBody(attRows, (x, y) => x[0].localeCompare(y[0]) || x[2].localeCompare(y[2]) || x[3] - y[3]);
+  sortBody(ptsRows, (x, y) => x[0].localeCompare(y[0]));
+  sortBody(noteRows, (x, y) => x[0].localeCompare(y[0]));
+  if (contentRows.length > 1) sheets.push({ name: '背诵内容', rows: style(contentRows), cols: [12, 6, 14, 24, 7, 7, 7, 7, 7, 8, 8, 9], freeze: { r: 1, c: 0 }, filter: true });
+  if (detail.length > 1) sheets.push({ name: '读背明细', rows: style(detail), cols: [12, 6, 14, 24, 6, 10, 8, 30], freeze: { r: 1, c: 0 }, filter: true });
+  if (attRows.length > 1) sheets.push({ name: '考勤明细', rows: style(attRows), cols: [12, 6, 14, 6, 10, 8], freeze: { r: 1, c: 0 }, filter: true });
+  if (ptsRows.length > 1) sheets.push({ name: '加减分记录', rows: style(ptsRows), cols: [12, 14, 10, 6, 20], freeze: { r: 1, c: 0 }, filter: true });
+  if (scoreRows.length > 1) sheets.push({ name: '成绩', rows: style(scoreRows), cols: [18, 12, 6, 14, 6, 10, 8], freeze: { r: 1, c: 0 }, filter: true });
+  if (noteRows.length > 1) sheets.push({ name: '备课反思', rows: style(noteRows), cols: [12, 14, 24, 50, 50], freeze: { r: 1, c: 0 }, filter: true });
+  const pgs = classes.map(c => planProgress(c));
+  const planRows = [['序号', '单元', '条目', '要求', '原文', ...classes.map(c => c.name + ' 背过次数')]];
+  S.plan.forEach((it, i) => planRows.push([i + 1, it.u, it.t, LV[it.lv], it.x, ...pgs.map(pg => pg[it.id] ? pg[it.id].times : 0)]));
+  if (any) sheets.push({ name: '背诵清单', rows: style(planRows), cols: [6, 12, 26, 9, 70, ...classes.map(() => 12)], freeze: { r: 1, c: 0 }, filter: true });
+  if (any) sheets.push({ name: '学生档案', rows: style(prof), cols: [14, 6, 10, 6, 6, 6, 6, 6, 6, 18, 36], freeze: { r: 1, c: 0 }, filter: true });
+  const tag = classes.length === 1 ? classes[0].name : '全部班级';
   const span = from === to ? from : (from.startsWith('0000') ? '全部' : `${from}至${to}`);
-  const filename = `背书打卡_${tag}_${span}.xlsx`.replace(/[\\/:*?"<>|（）()\s]/g, '');
-  return { bytes: XLSX.build(sheets), filename, empty: !any };
+  const filename = `教学工作台_${tag}_${span}.xlsx`.replace(/[\\/:*?"<>|（）()\s]/g, '');
+  return { bytes: any ? XLSX.build(sheets) : null, filename, empty: !any };
 }
-let dl = null; // claude.ai artifact downloads capability (if this page runs there)
-async function deliver(bytes, filename) {
-  const mime = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+let dl = null;
+async function deliver(bytes, filename, mime = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
   const blob = new Blob([bytes], { type: mime });
-  if (dl) {
-    try { await dl.save({ filename, data: blob }); toast('已导出 ' + filename); return; }
-    catch (e) { if (e && e.code === 'declined') return; }
-  }
+  if (dl) { try { await dl.save({ filename, data: blob }); toast('已导出 ' + filename); return; } catch (e) { if (e && e.code === 'declined') return; } }
   const coarse = window.matchMedia && matchMedia('(pointer: coarse)').matches;
   if (coarse && navigator.canShare) {
-    try {
-      const f = new File([blob], filename, { type: mime });
-      if (navigator.canShare({ files: [f] })) { await navigator.share({ files: [f], title: filename }); return; }
-    } catch (e) { if (e && e.name === 'AbortError') return; }
+    try { const f = new File([blob], filename, { type: mime }); if (navigator.canShare({ files: [f] })) { await navigator.share({ files: [f], title: filename }); return; } }
+    catch (e) { if (e && e.name === 'AbortError') return; }
   }
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename;
   document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000);
@@ -795,28 +1551,18 @@ async function deliver(bytes, filename) {
 function openBackup() {
   openSheet((sh, close) => {
     sh.append(head('备份与恢复', close));
-    sh.append(el('p', { class: 'hint', text: '备份文件（.json）包含三个班的名单、每天的背诵内容和全部打卡。换手机或换浏览器时，在新设备打开本页面再点「从备份恢复」。' }));
-    const n = Object.keys(S.records).length;
+    sh.append(el('p', { class: 'hint', text: '备份文件（.json）包含所有班级名单和所有模块的记录。换手机或换浏览器时，在新设备打开本页面再点「从备份恢复」。' }));
     sh.append(el('div', { class: 'btns' },
-      el('button', { class: 'icon-btn primary', text: `导出备份（${n} 条日记录）`, onclick: async () => {
-        const bytes = new TextEncoder().encode(JSON.stringify(S, null, 1));
-        const name = `背书打卡备份_${ymd(new Date())}.json`;
-        if (dl) { try { await dl.save({ filename: name, data: bytes }); toast('备份已导出'); return; } catch (e) { if (e && e.code === 'declined') return; } }
-        const blob = new Blob([bytes], { type: 'application/json' });
-        const coarse = window.matchMedia && matchMedia('(pointer: coarse)').matches;
-        if (coarse && navigator.canShare) { try { const f = new File([blob], name, { type: 'application/json' }); if (navigator.canShare({ files: [f] })) { await navigator.share({ files: [f] }); return; } } catch (e) { if (e && e.name === 'AbortError') return; } }
-        const a = el('a', { href: URL.createObjectURL(blob), download: name }); document.body.append(a); a.click(); setTimeout(() => a.remove(), 3000);
-      } }),
+      el('button', { class: 'icon-btn primary', text: '导出备份', onclick: () => deliver(new TextEncoder().encode(JSON.stringify(S, null, 1)), `教学工作台备份_${today()}.json`, 'application/json') }),
       el('button', { class: 'icon-btn', text: '从备份恢复', onclick: () => $('#fileIn').click() })));
     const box = el('div');
-    const wipe = el('button', { class: 'icon-btn danger-btn', text: '清空全部数据…', onclick: () => {
-      box.replaceChildren(el('div', { class: 'confirm-box' }, '会删掉三个班的名单和全部打卡记录，无法撤销。建议先导出备份。',
+    sh.append(el('div', { class: 'btns' }, el('button', { class: 'icon-btn danger-btn', text: '清空全部数据…', onclick: () => {
+      box.replaceChildren(el('div', { class: 'confirm-box' }, '会删掉所有班级的名单和全部记录，无法撤销。建议先导出备份。',
         el('div', { class: 'btns' }, el('button', { class: 'icon-btn', text: '算了', onclick: () => box.replaceChildren() }),
           el('button', { class: 'icon-btn primary', text: '确认清空', onclick: () => {
             S = freshState(); S.classes.forEach(c => c.students = []); S.example = false; undoStack.length = 0; save(); close();
           } }))));
-    } });
-    sh.append(el('div', { class: 'btns' }, wipe), box);
+    } })), box);
   });
 }
 $('#fileIn').addEventListener('change', async e => {
@@ -824,11 +1570,12 @@ $('#fileIn').addEventListener('change', async e => {
   try {
     const o = JSON.parse(await f.text());
     if (!o || !Array.isArray(o.classes) || typeof o.records !== 'object') throw new Error('bad');
-    S = o; S.date = ymd(new Date()); S.cur = Math.min(S.cur || 0, S.classes.length - 1); undoStack.length = 0; save();
+    S = upgrade(o); S.date = today(); S.cur = Math.min(S.cur || 0, S.classes.length - 1); undoStack.length = 0; save();
     $('#layer').replaceChildren(); render(); toast('已从备份恢复');
   } catch (err) { toast('这个文件不是本工作台的备份'); }
 });
-
+let installEvt = null;
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; });
 function openInstall() {
   openSheet((sh, close) => {
     sh.append(head('添加到主屏幕', close));
@@ -836,12 +1583,10 @@ function openInstall() {
       el('div', {}, el('span', { class: 'c', style: 'white-space:normal', text: 'iPhone / iPad：用 Safari 打开本页 → 点底部「分享」→「添加到主屏幕」。' })),
       el('div', {}, el('span', { class: 'c', style: 'white-space:normal', text: '安卓：用 Chrome 或 Edge 打开 → 右上角「⋮」→「添加到主屏幕 / 安装应用」。' })),
       el('div', {}, el('span', { class: 'c', style: 'white-space:normal', text: '电脑：Chrome / Edge 地址栏右侧的「安装」图标。' }))));
-    sh.append(el('p', { class: 'hint', text: '注意：在 iPhone 上，从主屏幕打开的页面和在 Safari 里打开的页面数据不互通。选定一种方式长期使用；要换就用「备份 / 恢复」搬数据。' }));
+    sh.append(el('p', { class: 'hint', text: '在 iPhone 上，主屏幕图标和 Safari 里的页面是分开存储的，登录账号后两边的数据会自动同步。' }));
     if (installEvt) sh.append(el('div', { class: 'btns' }, el('button', { class: 'icon-btn primary', text: '现在安装', onclick: () => { installEvt.prompt(); installEvt = null; close(); } })));
   });
 }
-let installEvt = null;
-window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; });
 
 /* ---------- XLSX writer (real OOXML in a ZIP, no library) ---------- */
 function colName(i) { let s = ''; i++; while (i) { const m = (i - 1) % 26; s = String.fromCharCode(65 + m) + s; i = Math.floor((i - 1) / 26); } return s; }
@@ -962,66 +1707,38 @@ const XLSX = (() => {
   }
   return { build };
 })();
-window.__beishu = { XLSX, buildWorkbook, get state() { return S; } }; // 供调试
+
+window.__beishu = { XLSX, buildWorkbook, get state() { return S; }, go };
 
 /* ---------- events ---------- */
 $('#btnUndo').addEventListener('click', undo);
-$('#saveState').addEventListener('click', () => { if (SYNC && !SYNC.user()) location.href = SYNC.root + 'konto/?next=' + encodeURIComponent(location.pathname); });
 $('#btnMenu').addEventListener('click', openMenu);
-$('#btnHistory').addEventListener('click', openHistory);
-$('#btnExport').addEventListener('click', openExport);
-$('#btnFillRest').addEventListener('click', openFillRest);
-$('#btnSelect').addEventListener('click', () => { selecting = !selecting; selected.clear(); renderGrid(); renderDock(); });
-$('#selAll').addEventListener('click', () => { cls().students.forEach(s => selected.add(s.id)); renderGrid(); renderDock(); });
-$('#selNone').addEventListener('click', () => { selected.clear(); renderGrid(); renderDock(); });
-$('#selApply').addEventListener('click', () => {
-  if (!selected.size) { toast('先点名字选人'); return; }
-  const lab = brush ? SMAP[brush].label : '清除', n = selected.size;
-  snapshot(`${n} 人 → ${lab}`);
-  selected.forEach(id => setStatus(id, brush)); prune(cls().id, S.date);
-  selected.clear(); selecting = false; save(); render();
-  toast(`已把 ${n} 人标为${lab}`, { label: '撤销', fn: undo });
-});
-$('#date').addEventListener('change', e => { if (e.target.value) { S.date = e.target.value; selected.clear(); save(); render(); } });
-$('#prevDay').addEventListener('click', () => { S.date = addDays(S.date, -1); selected.clear(); render(); });
-$('#nextDay').addEventListener('click', () => { S.date = addDays(S.date, 1); selected.clear(); render(); });
-$('#today').addEventListener('click', () => { S.date = ymd(new Date()); render(); });
-const ci = $('#content');
-ci.addEventListener('input', () => { setContent(ci.value); renderTabs(); });
-ci.addEventListener('change', renderContent);
-ci.addEventListener('keydown', e => { if (e.key === 'Enter') ci.blur(); });
-$('#syncContent').addEventListener('click', () => {
-  const r = rec(); const v = r && r.content;
-  if (!v) { toast('先填写今天背诵的内容'); return; }
-  S.classes.forEach(c => { const rr = rec(c.id, S.date, true); rr.content = v; });
-  save(); toast(`三个班 ${S.date.slice(5)} 都设为「${v}」`);
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#layer').firstChild) { $('#layer').replaceChildren(); render(); } });
+$('#btnNav').addEventListener('click', openNav);
+$('#sideScrim').addEventListener('click', closeNav);
+$('#saveState').addEventListener('click', () => { if (SYNC && !SYNC.user()) location.href = loginUrl(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { if ($('#layer').firstChild) { $('#layer').replaceChildren(); render(); } closeNav(); } });
 window.addEventListener('storage', e => { if (e.key === KEY) { S = load(); render(); } });
 
-/* ---------- home-screen icon & manifest (generated, so the file stays single) ---------- */
+/* ---------- home-screen icon & manifest for the single-file version ---------- */
 (function installMeta() {
   try {
+    if (document.querySelector('link[rel="manifest"]')) return;
     const cv = document.createElement('canvas'); cv.width = cv.height = 512; const g = cv.getContext('2d');
-    g.fillStyle = '#1e5a55'; g.fillRect(0, 0, 512, 512);
-    g.fillStyle = '#f3f4ef'; g.beginPath(); g.roundRect ? g.roundRect(112, 96, 288, 320, 28) : g.rect(112, 96, 288, 320); g.fill();
-    g.strokeStyle = '#c9d6d2'; g.lineWidth = 10; for (let y = 170; y <= 330; y += 54) { g.beginPath(); g.moveTo(150, y); g.lineTo(362, y); g.stroke(); }
-    g.strokeStyle = '#2f8a4c'; g.lineWidth = 34; g.lineCap = 'round'; g.lineJoin = 'round';
+    g.fillStyle = '#17855a'; g.fillRect(0, 0, 512, 512);
+    g.fillStyle = '#f1f7f3'; g.beginPath(); g.roundRect ? g.roundRect(112, 96, 288, 320, 28) : g.rect(112, 96, 288, 320); g.fill();
+    g.strokeStyle = '#c9e0d3'; g.lineWidth = 10; for (let y = 170; y <= 330; y += 54) { g.beginPath(); g.moveTo(150, y); g.lineTo(362, y); g.stroke(); }
+    g.strokeStyle = '#17855a'; g.lineWidth = 34; g.lineCap = 'round'; g.lineJoin = 'round';
     g.beginPath(); g.moveTo(196, 262); g.lineTo(248, 314); g.lineTo(346, 200); g.stroke();
     const png = cv.toDataURL('image/png');
     const add = (tag, attrs) => { const n = document.createElement(tag); Object.entries(attrs).forEach(([k, v]) => n.setAttribute(k, v)); document.head.append(n); };
     if (!document.querySelector('link[rel="apple-touch-icon"]')) add('link', { rel: 'apple-touch-icon', href: png });
     add('link', { rel: 'icon', href: png });
-    if (/^https?:/.test(location.protocol) && !document.querySelector('link[rel="manifest"]')) {
+    if (/^https?:/.test(location.protocol)) {
       const start = location.href.split('#')[0];
-      const m = { name: '背书打卡台', short_name: '背书打卡', start_url: start, scope: start.replace(/[^/]*$/, ''), display: 'standalone',
-        background_color: '#f3f4ef', theme_color: '#1e5a55', icons: [{ src: png, sizes: '512x512', type: 'image/png', purpose: 'any maskable' }] };
-      add('link', { rel: 'manifest', href: 'data:application/manifest+json,' + encodeURIComponent(JSON.stringify(m)) });
+      add('link', { rel: 'manifest', href: 'data:application/manifest+json,' + encodeURIComponent(JSON.stringify({ name: '教学工作台', short_name: '工作台', start_url: start, display: 'standalone', background_color: '#f1f7f3', theme_color: '#17855a', icons: [{ src: png, sizes: '512x512', type: 'image/png' }] })) });
     }
   } catch (e) {}
 })();
-
-/* ---------- claude.ai artifact: use its download capability when present ---------- */
 try { if (window.claude && typeof window.claude.use === 'function') window.claude.use('downloads').then(d => { dl = d; }).catch(() => {}); } catch (e) {}
 
 render();
