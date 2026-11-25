@@ -98,6 +98,8 @@ main.wrap { padding-block: 14px 150px; display: grid; gap: 14px; }
 .content-input::placeholder { color: var(--muted); font-weight: 400; opacity: .7; }
 .chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .chips::-webkit-scrollbar { display: none; }
+.chip.last { border-color: var(--accent); color: var(--accent); }
+.chip.edit { background: transparent; border-style: dashed; color: var(--muted); }
 .chip { flex: none; border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; padding: 4px 11px; font-size: 13px; white-space: nowrap; }
 
 /* summary */
@@ -283,12 +285,14 @@ const EXAMPLE = [
   ['高子墨','罗欣妍','梁宇航','宋雨萱','郑博文','谢紫涵','韩明轩','唐语嫣','冯浩宇','于心怡','董子豪','萧雨晴','程泽宇','曹若曦','袁一凡','邓欣然'],
   ['许天佑','傅诗涵','沈家乐','曾子琪','彭宇轩','吕佳琪','苏明哲','卢梓萱','蒋皓轩','蔡依诺','贾俊熙','丁语桐','魏思辰','薛可馨','叶晨曦','阎雨欣','余子航'],
 ];
+const DEFAULT_TOPICS = ['唯物论', '联系观', '发展观', '矛盾', '认识论', '历史唯物主义', '侵权责任模板', '合同模板', '人身权利', '财产权'];
 function freshState() {
   return {
     v: 1, example: true, cur: 0, date: ymd(new Date()),
     classes: ['高一（1）班', '高一（2）班', '高一（3）班'].map((name, i) => ({
       id: 'c' + (i + 1), name, students: EXAMPLE[i].map(n => ({ id: uid(), name: n })),
     })),
+    topics: DEFAULT_TOPICS.slice(),
     records: {}, // "classId|date" -> { content, s: {studentId: status}, n: {studentId: note} }
   };
 }
@@ -317,7 +321,7 @@ function showSaveState() {
   $('#saveState').textContent = t;
 }
 function docsOf() {
-  const d = { classes: JSON.stringify(S.classes) };
+  const d = { classes: JSON.stringify(S.classes), topics: JSON.stringify(S.topics || []) };
   for (const [k, r] of Object.entries(S.records)) d['r/' + k] = JSON.stringify(r);
   return d;
 }
@@ -334,6 +338,8 @@ function applyDoc(path, data) {
     if (path === 'classes') {
       if (!Array.isArray(data) || !data.length) return;
       S.classes = data; S.example = false; S.cur = Math.min(S.cur || 0, data.length - 1);
+    } else if (path === 'topics') {
+      if (!Array.isArray(data)) return; S.topics = data;
     } else if (path.startsWith('r/')) {
       const k = path.slice(2); if (data) S.records[k] = data; else delete S.records[k];
     } else return;
@@ -366,6 +372,7 @@ if (SYNC) {
 }
 S = load();
 S.date = ymd(new Date()); // 每次打开默认今天
+if (!Array.isArray(S.topics)) S.topics = DEFAULT_TOPICS.slice();
 try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
 
 const cls = () => S.classes[S.cur];
@@ -452,10 +459,21 @@ function renderContent() {
     const ks = Object.keys(S.records).filter(k => k.startsWith(cls().id + '|') && k.split('|')[1] < S.date && S.records[k].content).sort();
     return ks.length ? S.records[ks[ks.length - 1]].content : '';
   })();
-  const list = allContents().filter(c => c !== (r && r.content));
-  if (yesterday && yesterday !== (r && r.content)) { const i = list.indexOf(yesterday); if (i > 0) { list.splice(i, 1); list.unshift(yesterday); } }
-  list.forEach(c => chips.append(el('button', { class: 'chip', text: c, onclick: () => { setContent(c); renderContent(); } })));
-  chips.hidden = !list.length;
+  const cur = (r && r.content) || '';
+  // 顺序：上次背的 → 常用背诵内容（按课本顺序）→ 其他背过的
+  const list = [...new Set([yesterday, ...(S.topics || []), ...allContents()])].filter(c => c && c !== cur);
+  list.forEach(c => chips.append(el('button', { class: 'chip' + (c === yesterday ? ' last' : ''), title: c === yesterday ? '上次背的' : '', text: c, onclick: () => { setContent(c); renderContent(); } })));
+  chips.append(el('button', { class: 'chip edit', text: '编辑常用…', onclick: openTopics }));
+}
+function openTopics() {
+  openSheet((sh, close) => {
+    sh.append(head('常用背诵内容', close));
+    sh.append(el('p', { class: 'hint', text: '一行一个，按讲课顺序排。会显示在“今天背诵的内容”下面，点一下就填好。也可以写细一点，比如“矛盾 · 主要矛盾和次要矛盾”。' }));
+    const ta = el('textarea', { id: 'topicsText', style: 'min-height:260px' });
+    ta.value = (S.topics || []).join('\n');
+    ta.addEventListener('input', () => { S.topics = ta.value.split(/\n+/).map(x => x.trim()).filter(Boolean); save(); });
+    sh.append(el('label', { class: 'field' }, ta));
+  });
 }
 function setContent(v) {
   const r = rec(undefined, undefined, true); r.content = v.trim(); prune(cls().id, S.date); save();
